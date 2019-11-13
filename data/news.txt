@@ -10,1142 +10,794 @@
 
 
 
-# Visual suggestion: a bit quirky or weird; expression is content, confident, or stoic
-news "human merchant anywhere"
+news "news anywhere"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Hai"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Merchant captain"
+			"News"
 	portrait
-		portrait/human02
-		portrait/human04
-		portrait/human06
-		portrait/human10
-		portrait/human15
-		portrait/human17
-		portrait/human31
-		portrait/human58
-		portrait/human63
-		portrait/human72
-		portrait/human73
-		portrait/human76
-		portrait/human79
-		portrait/human98
-		portrait/human112
+		portrait/news
 	message
 		word
-			"Can you believe how little they pay for used ships and outfits these days? It's just a scandal!"
-			"You know, planets as nice as this one make me want to think about selling off my fleet and retiring."
-			"I can't wait to get off this planet. What a dump!"
-			"Nice ship, captain. I hope I can afford something like that some day."
-			"I keep hearing rumors about ships disappearing north of Syndicate space. It's probably a bunch of hot air, but either way, I'm staying away from there!"
-			"I'm barely able to turn a profit with the terrible prices at this port."
-			"It kind of boggles my mind to imagine that tomorrow I'll be a dozen light-years away. We lead exciting lives, but sometimes I wonder if we don't take enough time to appreciate what's right in front of us."
-			"Watch out for pirates! Those lowlifes will snatch every spool of thread out of your hold if you give them the chance. My advice: when you run into them, don't leave anything left to bury."
-
-
-
-# Visual suggestion: a bit quirky or weird; expression is content, confident, or stoic
-news "human merchant in human space"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	name
-		word
-			"Merchant captain"
-	portrait
-		portrait/human02
-		portrait/human04
-		portrait/human06
-		portrait/human10
-		portrait/human15
-		portrait/human17
-		portrait/human31
-		portrait/human58
-		portrait/human63
-		portrait/human72
-		portrait/human73
-		portrait/human76
-		portrait/human79
-		portrait/human98
-		portrait/human108
-		portrait/human112
-		portrait/human125
-	message
-		word
-			"Pirate attacks keep getting more and more frequent, even in star systems that used to be perfectly safe. Why isn't the Navy doing something about it?"
-			"I keep hearing rumors about ships disappearing north of Syndicate space. It's probably a bunch of hot air, but either way, I'm staying away from there!"
-			"I try to stick to safe parts of space, if I can. Pirate attacks are too much risk for my tastes."
-			"It's such a shame how much the political situation has deteriorated. We're all humans; why can't we just get along?"
-			"I always buy my engines in the Deep. They sell the best of the best up there."
-			"With all these pirate attacks, so many people seem to be arming up and outfitting themselves for war, but I think that's a waste of money. Powerful engines, a scram drive, an afterburner, and some anti-missile defenses are all you need to stay safe."
-			"Slow and steady wins the race. Hauling cargo may not be very glamorous, but with a big enough fleet, you can net a million a week."
+			"In Economic news, the influx of captured ships has shaken local economies. Ship and outfit depreciation remains at an all time high."
+			"Retirement community crisis! Is the retirement of wealthy merchants ruining high society? Find out tonight at 11."
+			"Tonight in travel news, the increase in Northern Union activity continues putting tourists on edge. Find out why and what's being done about it at 9."
+			"Rustbucket Syndrome! Why most shipyards refuse to sell used starships, tonight at 10."
+			"In other news, kidnappings continue to be a major problem in the far north, especially along the Northern Union boarder."
+			"Special report: Supply and Demand. Find out how lone captians are completely ruining local economies tonight at 6."
+			"Find out how a dog managed to travel half way across the galaxy to be reunited with it's family, this afternoon at 4."
+			"Cartel Unmasked! Find out more about this shadowy organization during our midnight special report!"
+			"Navy overstreached? Why pirate and Northern Union attacks have been increasing galaxy wide, tomorrow morning at 5."
+			"Tonight in political news, the feud between the Deep and Syndicate continues. The caravan route is once again in jepordy as the Syndicate threatens to hire more independent merchants."
+			"Special report: Are Atomic engines really worth the price? Find out tonight at 9:30. Brought to you by Syndicated Systems."
+			"In Economic news, weapon manufacturers continue to see growth across the board! These record profits are being brought on by the formation of local militias and merchants looking to defend themselves from pirate threats."
+			"Merchants, be on the lookout! The Navy is once again looking for merchant owner operators to sign on as Contractors and Privateers, and are seeking private captians out in local spaceports."
 			"Have you ever done any of those jobs moving black cubes around the Deep? I did that a few times but started to get a really weird vibe, and now I stay away if I can. They're hiding something big up there, and I don't want to have any part in it."
-			"Have you visited the collapsed wormhole north of Delta Velorum? Well, that's what I think it is, at least. I keep waiting for news that an alien fleet is pouring out of it. I'm sure there must be a way in, too. Haven't found it yet, but I'm not giving up!"
-			"A lot of people don't seem to like Syndicate tech, but I don't see what they're complaining about. It's cheap and it gets the job done."
-			"My first ship was a Star Barge. Took me seven weeks to get across the galaxy in that old tin can, and my cargo hold smelled of fish the whole time!"
-			"My first ship was a Sparrow. How I survived my first week in space, I'm still not sure!"
-			"My first ship was a Shuttle. I kind of miss that glorified tour bus."
-			"I love doing Syndicate jobs. Easy money for not much work. I guess they're all so rich that they can afford to pay for the best."
-
-
-
-# Visual suggestion: a bit quirky or weird; expression is content, confident, or stoic
-news "human merchant in Hai space"
+			"Alien threat! Find out more about exactly how the Tarazed defense fleet protects us from any potential incursion from the south tonight at 8:30."
+			"Syndicated Systems has once again issued a recall on their version 'Frame-01' communicators after losing yet another lawsuit today. The suit accuses the Syndicate of rereleasing the sensor screen without correcting or fixing any of it's previous defects."
+			"Crop wars! Are farmers using harmful pesticides on neighboring fields to pad their pocket books? Find out more tomorrow at 4:30."
+			"Studies have shown that ultimate fulfillment in life comes from doing valuable work."
+			"Studies show that little bit of stress is not a bad thing, if it drives someone to be more productive."
+			"Studies show that it is a great idea for businesses to routinely evaluate employees for sociopathic tendencies, narcissism, and other signs that show they might be excellent candidates for upper management positions."
+			"Today at 3:30, we explore how Capitalism is the best system ever invented for driving a productive economy. Brought to you by Syndicated Prospecting."
+			"Is collective bargaining ruining the economy? Find out more tonight at 7:45. Brought to you by Megaparsec Shipyards."
+			"In Economic news, the economic downturn continues. Syndicate managers are now only getting paid three times as much as their employees on avarage."
+			"The Economy is looking up! Merchant profits continue to increase as death benefit insurance is no longer required, proving once again that deregulation is the answer."
+			"Interest rates remain steady, as most all merchants can pay off their ship loans within the first year."
+			"Asteroid mining remains a very profitable venture for most new merchants, but older pilots tend to prefer capturing and selling Northern Union vessels."
+			"Parlaiment remains as traditional as ever. This week a motion to remove the several centuries old laws against inflicting bodily harm on people to convince them to pay off their debts failed once again."
+			"Productivity continues to suffer, some factories are requiring their workers to work sixty-hour weeks just to meet monthly quotas."
+			
+news "advertisement generic"
 	location
-		government "Hai"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Merchant captain"
+			"Advertisement"
 	portrait
-		portrait/human02
-		portrait/human04
-		portrait/human06
-		portrait/human10
-		portrait/human15
-		portrait/human17
-		portrait/human31
-		portrait/human58
-		portrait/human63
-		portrait/human72
-		portrait/human73
-		portrait/human76
-		portrait/human79
-		portrait/human98
-		portrait/human108
-		portrait/human112
-		portrait/human125
+		portrait/advertgeneric
 	message
 		word
-			"Can you believe these Hai? They're light-years ahead of us, right under our noses."
-			"Hai Tech is incredible compared to ours. Every time I add a ship to my fleet, I always make a trip up here to stock up on Hai tech."
-			"Have you tried out one of those Hai anti-missile systems? They'll waste any missile in Human space."
-			"These Hai are so creepy. What are they hiding? I can't wait to get back to human space."
-			"Don't go too far north up here. The Hai have their own pirates, and they're much more powerful than anything we're used to in human space."
-			"Have you visited the Quarg ringworld here in Hai space? It's a humbling sight. There's probably more Quarg in there than there are humans anywhere. Makes you feel pretty insignificant."
-			"The Hai don't like my ship's armory of laser rifles, but I was once boarded by a pirate crew and I'm never letting that happen again! If some overgrown squirrel is going to take away my rifle, it'll have to be from my cold dead hands!"
-
-
-
-# Visual suggestion: hard-bitten, tough, often dark-skinned and/or wearing a hat
-news "human farming"
+			"Thirsty captians drink Blue Sun Vodka. Blue Sun Vodka, availible at your nearest spaceport bar!"
+			"Slurm! It's highly addictive!"
+			"At Dr. Slumber's eternity home, you don't have to go alone!"
+			"Grab yourself a Dr. Spicy's Miracle Cure, guerenteed to cure your thirst!"
+			"Enjoy Conke."
+			"Drink Bepis."
+			"Do Sprib."
+			"For only 10% of your income total income, you can buy an extended warranty for your starship! Visit your nearest Northern Union dealership!" 
+			"Now hiring Strike Breakers from select worlds! Visit your local job workshop for details."
+			"Check out the new and improved 'Frame-01' at your local communicator dealer today!"
+			"Tourism, it's not just for the rich anymore! Merchant captians check job boards all the time, be sure to register to take a trip soon!"
+			"Have you or a loved one been permanently injured or killed by a Frame-01 communicator? Contact Hubbard Smith and Associates today!" 
+			"Have you lost a bodypart in a tragic Gold smelting accident? Call Scruwem and Associates today!" 
+			"Thirsty? Crack open a nice, relaxing pal-lite! It's like water, with alcohol!" 
+			"Decent hackers use the P.A.L.M."
+			"Picky moms pick, Jeff Penutbutter."
+			"Let's face it, if your ship insurance isn't Sol, it sucks. Contact one of our agents and switch today!"
+			"Only do the drugs your insurance covers. This is a public service announcement."
+			"Across the galaxy, poor and abused trees are begging for your help. Will you hear their cries? Donate to the happy tree foundation today to let them know you truly love them."
+			"You feed it, and it grows! Woah! Some of them even glow in the dark! Rad! Kids, tell your parents to buy you a Fancy Mushroom today!"
+			"The Shadow Bank, for all your tax evasion needs! Contact us today!" 
+			"Does your foot hair feel dead and flat? Try Love Body Lotion and Hair Tonic!"
+			"Take command of your burial with Glasgow Rest Home. After all, it's your funeral!"
+			"Vote Jeff Johnson, because at least I'm not John Jeffnson!"
+			"Vote John Jeffson, because at least I'm not Jeff Johnson!"
+			"Hungry and angry? Eat a snacker bar."
+			"Hershals chocolate, you know you want it."
+			"Need a perfect place to get together with your friends, but don't want to go through all the hassle of actually hanging out with them? Try Fakelife! Memberships start at only 99 credits a month!"
+			"Fruti Communicators. It's not just a communicator, it's a satus symbol!"
+			"Captians, don't forget to pick up a Map next time you are at an outfitter!"
+			
+news "advertisement frag"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "farming"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Farmer"
+			"Sponsor: Frags
 	portrait
-		portrait/human03
-		portrait/human05
-		portrait/human08
-		portrait/human09
-		portrait/human20
-		portrait/human21
-		portrait/human22
-		portrait/human52
-		portrait/human53
-		portrait/human78
-		portrait/human113
-		portrait/human116
-		portrait/human119
-		portrait/human120
-		portrait/human121
-		portrait/human126
+		outfit/"fragmentation grenades"
 	message
 		word
-			"My neighbor is using some sort of newfangled pesticides. The wind carried their residue onto my fields and destroyed half my crops."
-			"This year, only the farms with enough money to pay for irrigation are thriving. In most of my fields, there's nothing growing but knotweed and razor grass. I hope we can make it to the next season."
-			"The corporate farms keep buying out more and more small farmers to expand their own operations. Pretty soon there won't be any of us left."
-			"Fancy folks in the big cities and the Paradise planets think they've got life all figured out, but if you scratch the surface, you'll find that they're slaves to their lifestyles, and we're the ones who are free."
-			"I moved here from a richer world and wouldn't ever go back."
-			"Surprised to see horses and wooden carts in the 31st century, huh? Sometimes the old ways are the best."
-			"Everybody who wants to stay here is crazy. We can't hardly make any money and nobody appreciates what we do."
-			"I hope I make enough money this season to afford passage to Maker. I hear there are at least opportunities to get ahead there."
-			"Why don't those bureaucrats ever leave us alone? With all the regulations and taxes I have to plan for, it's tough to make ends meet."
-			"I hear that merchant captains don't pay any taxes. What a racket! They tax hard-working folks like me who produce the real value in this galaxy and ignore the parasites like you who just move it around!"
-			"It's a good thing the Republic still lets the Syndicate sell pesticides. Without those, I'm not sure how we could grow anything at all what with the tough native weeds on this planet."
-			"Did you eat today? Thank a farmer."
-			"I used to be a merchant captain like you. Bank account got up to a few million at one point. Thought I had it all. One day I realized none of it was making me happy. I bought this farm and gave the rest away. Best thing I ever did."
-			"I came out here because I liked the company of animals more than people like you. Go away."
-
-
-
-# Visual suggestion: young, normal-looking, more female than male
-news "human textiles"
+			"Guns are bad and you should feel bad for using them. Fragmentation Grenades are a superior choice. Safer, cleaner, and never used in mass shootings!"
+			"Why rely on a fancy Laser Rifle when you can blow it up instead? Buy Fragmentation Grenades!"
+			"Fragmentation Grenades, for when you need to make a problem go away!"
+			"Fragmentation Grenades, great for pests of all shapes and sizes!"
+			"Fragmentation Grenades, because if it ain't broke you aren't trying!"
+		
+news "advertisement laser rifle"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "textiles"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Textile worker"
+			"Sponsor: Deep Sky"
 	portrait
-		portrait/human00
-		portrait/human01
-		portrait/human11
-		portrait/human18
-		portrait/human35
-		portrait/human55
-		portrait/human66
-		portrait/human69
-		portrait/human114
-		portrait/human123
-		portrait/human128
+		outfit/"laser rifle"
 	message
 		word
-			"Two days ago I ran over my finger with an industrial sewing machine. Put a hole straight through my thumb. But at least they paid my medical bill and gave me a week of sick leave."
-			"Working in the mill is hard, but I'm making good money. Someday I hope to buy my own spaceship like yours."
-			"Can you believe it's the year 3000 and they still need people like me to work in textile mills? Where are the robot factories to do all the work while I live a life of ease?"
-			"I'm just working here until I can save up enough money to go to college."
-			"I'm just working here until I can save up enough money to buy my own spaceship, just like yours!"
-			"Almost everyone else here can't wait to get out, but I'm proud of the work I do. Without people like me, you wouldn't have anything to wear!"
+			"If you use Fragmentation Grenades, you could end up blowing yourself up. With Laser Rifles, there's no such risk!"
+			"Laser Rifles, made the most advanced technology available!"
+			"The Fragmentation Grenades are old, expensive and ineffective. Choose the Laser Rifle!"
+			"You can't defend your ship with Fragmentation Grenades. Laser Rifles are the best choice!"
+			"Laser Rifles are sold in every part of the galaxy, from the smallest shop to the largest outfitter!"
 
-
-
-# Visual suggestion: unhappy-looking, predominately male, usually wearing a beanie or a hard hat
-news "human mining"
+news "advertisement aerie"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "mining"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Miner"
+			"Sponsor: Lionheart"
 	portrait
-		portrait/human07
-		portrait/human36
-		portrait/human41
-		portrait/human42
-		portrait/human50
-		portrait/human54
-		portrait/human60
-		portrait/human70
-		portrait/human77
-		portrait/human82
-		portrait/human102
-		portrait/human115
-		portrait/human117
+		thumbnail/"aerie"
 	message
 		word
-			"Mining's the best opportunity on this whole planet, but I worry about my health. I've started to cough up blood when I get sick. It's a good thing the company pays for our medical bills."
-			"I buried my dad last week. He was a miner, too. The company didn't give me any time off so I had to pay to attend my own father's funeral. Can you believe that?"
-			"A few years of this and I'll be able to afford my own starship. I pulled in more than 120,000 credits last year! That's more than my brother makes on Hermes, and he's a scientist."
-			"My team is sinking in the rankings again. I should have known better than to put 500 credits on them when they had such a bad season opener."
-
-
-
-# Visual suggestion: worn-down-looking, often older
-news "human factory"
+			"For all of your Light Carrier needs, the Lionheart Aerie!"
+			"Forming a local militia? Consider a Lionheart Aerie! With room for two fighters, it is perfect for patrol and enforcement!" 
+			"Talk to your planetary governor about the Lionheart Aerie!"
+			"Northern Union got you down? Grab an Aerie!"
+			
+news "advertisement corvette"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes factory
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Factory worker"
+			"Sponsor: Lionheart"
 	portrait
-		portrait/human23
-		portrait/human75
-		portrait/human92
-		portrait/human94
-		portrait/human97
-		portrait/human111
+		thumbnail/"corvette"
 	message
 		word
-			"Everybody I know wound up working in the plant, so I guess I was gonna go, too. It was inevitable or something, right?"
-			"The plant's all right. I don't have to do much more than show up on time, and I can make a decent living. It's hard work, but I don't mind."
-			"Management keeps threatening to move the plant to a planet with lower wages if our union doesn't accept concessions. I think they're bluffing; the move would cost more than they'd ever make back in profit."
-			"Working around so many huge machines is exciting. Every day we build things that would have blown the mind of anyone a thousand years ago. We're the backbone of interstellar civilization!"
-			"I don't like those news shows that tell you what to think! When I'm in the voting booth it's only MY opinion that counts!"
-
-
-
-news "street vendor"
+			"The Lionheart Corvette, because sometimes speed is the only answer."
+			"There is no speed limit in space. Lionheart Corvette."
+			"Buy a Lionheart Corvette. Turning is for losers."
+			"Outrun your feelings in the Lionheart Corvette!"
+			"It's only a midlife crisis if your wife can catch you. Outrun your problems in a Lionheart Corvette!"
+			
+news "advertisement raven"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "urban"
-		not
-			attributes "paradise"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Street vendor"
-			"Food stall operator"
+			"Sponsor: Lionheart"
 	portrait
-		portrait/human26
-		portrait/human31
-		portrait/human57
-		portrait/human68
+		thumbnail/"raven"
 	message
 		word
-			"With the right marinade, rat meat can be delicious. Of course, they don't let us sell the ones that were already dead when we collected them."
-			"This is my own famous delicacy, Yogurt on a Stick. No, it's not frozen yogurt. It's more like, well... congealed..."
-			"Can I interest you in some vegan falafels? Trust me, you don't want to eat any of the meat that's getting sold on this street."
-
-
-
-news "company psychologist"
+			"Lionheart Raven, because you can't be on the cutting edge if you are the edge."
+			"The Lionheart Raven, as dark as your feelings and twice as deep."
+			"Quoth the Lionheart Raven,  'Be afraid nevermore.'"
+			"The Lionheart Raven, as dark as chocolate and twice as sweet."
+			
+news "advertisement headhunter"
 	location
-		government "Syndicate"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Company psychologist"
+			"Sponsor: Lionheart"
 	portrait
-		portrait/human12
-		portrait/human28
-		portrait/human47
-		portrait/human93
-		portrait/human103
+		thumbnail/"headhunter"
 	message
 		word
-			"Studies have shown that ultimate fulfillment in life comes from doing valuable work. My calling is to help all our workers achieve that sort of self-actualization by being as productive as possible."
-			"My job is to help workers deal with stress and channel it in healthy directions. A little bit of stress is not a bad thing, if it drives someone to be more productive."
-			"We routinely evaluate employees for sociopathic tendencies, narcissism, and other signs that they might be excellent candidates for upper management positions."
-			"I've gotten incredibly good at doing this thing with my face that makes it look like I care."
-
-
-
-news "genetic counselor"
+			"Real Operators fly the Lionheart Headhunter."
+			"A military classic, reimagined. All the firepower of a navy gunship combined with the grace of an interceptor. The Lionheart Headhunter."
+			"The Lionheart Headhunter. Perfect for Mercenary work, and perfect for you."
+			"You're tough, and you want a ship as tough as you are. Get a Lionheart Headhunter, you won't regret it."
+			"For Military effectiveness at Hitman prices, get yourself a Lionheart Headhunter."
+			
+news "advertisement flivver"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "rich" "urban"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Genetic counselor"
-			"Personal geneticist"
+			"Sponsor: Lionheart"
 	portrait
-		portrait/human43
-		portrait/human71
-		portrait/human72
-		portrait/human90
+		thumbnail/"flivver"
 	message
 		word
-			"Of course the technology to manipulate genes is tightly controlled. But just reading a person's genome, and advising them based on the results, is perfectly legal."
-			"Technically speaking, social status is a much better predictor of future health outcomes than anything in your genome. But most of my clients are too rich to ever need to worry about that."
-			"I just had to break the news to one of my clients that he's likely to develop alarmingly long nose hair as he ages. He took it surprisingly well."
-			"No, science can't make anyone immortal, but for anyone with enough money it can substantially reduce their chances of dying young."
+			"Silence is golden, solitude is grace. Lionheart Flivver."
+			"Sometimes it's best to travel alone. Lionheart Flivver."
+			"You don't need passengers, you need speed and elegance. Lionheart Flivver."
+			"Lionheart Flivver, what more needs to be said?"
 
-
-
-news "unemployed youth"
+news "advertisement dagger"
 	location
-		government "Republic" "Free Worlds" "Neutral" "Independent"
-		attributes "urban" "near earth" "dirt belt" "south"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Unemployed youth"
+			"Sponsor: Lionheart"
 	portrait
-		portrait/human27
-		portrait/human34
-		portrait/human39
-		portrait/human98
-		portrait/human109
+		thumbnail/"dagger"
 	message
 		word
-			"I may be living on the street, but at least I haven't let myself get trapped in debt slavery like the workers on Syndicate worlds."
-			"Actually, I'm working on a novel. Well, right now I'm just doing world-building and research, so I haven't written much of the actual story yet."
-			"Do you know how lucky you are, that you can visit a different world every week if you want to? I've been stuck on this one filthy little planet my whole life."
-
-
-
-news "union organizer"
+			"With a design so sharp, only one name would do. The Lionheart Dagger."
+			"Lionheart Dagger, because who needs a hyperdrive anyway?"
+			"The number 1 choice of civillian fighter jockies, the Lionheart Dagger."
+			"If your carrier has empty bays, there is only one real option. The Lionheart Dagger."
+			
+news "advertisement mule"
 	location
-		government "Syndicate"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Union organizer"
+			"Sponsor: Lionheart"
 	portrait
-		portrait/human08
-		portrait/human33
-		portrait/human38
-		portrait/human56
+		thumbnail/"mule"
 	message
 		word
-			"Capitalism is the best system ever invented for driving a productive economy. But without organized labor, the fruits of that productivity will not be shared with the workers."
-			"There's more than enough wealth to go around. All that we're asking for is our fair share."
-			"Syndicate managers get paid three times as much as their employees, just for sitting in an office all day and watching us sweat."
-			"My job is to encourage workers to place a higher value on their own lives despite being surrounded by a culture that tells them they are worthless."
+			"Book your next trip aboard a Mule city ship!"
+			"All the luxuries of home, in space. Book your next trip on the Mule."
+			"Lionheart Cruises invites you to spend your next vacation aboard a beautiful Mule! Complete with luxury accomidations, a casino, live shows. You can't go wrong!"
+			"The Lionheart Mule, because planets are overrated."
 
-
-
-news "dock worker"
+news "advertisement bactrian"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "dirt belt" "rim" "factory" "south" "core"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Dock worker"
+			"Sponsor: Lionheart"
 	portrait
-		portrait/human03
-		portrait/human45
-		portrait/human69
-		portrait/human92
+		thumbnail/"bactrian"
 	message
 		word
-			"It seems crazy to me that people on other planets would be willing to pay money for the sort of junk that we're loading into starships here."
-			"The robots do most of the heavy lifting for us, but every so often one of them malfunctions and drops a crate on someone's toe."
-			"Why do they make the cargo bay doors on certain starships so small? You wouldn't believe how hard it is sometimes to load larger items onto a ship."
-
-
-
-news "housekeeper"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "rich" "paradise"
-	name
-		word
-			"Housekeeper"
-			"Domestic worker"
-	portrait
-		portrait/human18
-		portrait/human23
-		portrait/human65
-		portrait/human75
-	message
-		word
-			"How is it possible that a man who manages a billion-credit corporation can still be so incompetent or so careless that he routinely misses the toilet bowl when he takes a piss?"
-			"The family I work for offered to let me live in a room in the attic for free, but I'm not sure I want to have that little separation between work and my personal life."
-			"If rich kids are so pampered that they've never so much as had to wash a dish in their entire lives, it makes me wonder how they hope to be independent adults one day."
-
-
-
-news "groundskeeper"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "rich" "paradise"
-	name
-		word
-			"Groundskeeper"
-			"Gardener"
-	portrait
-		portrait/human05
-		portrait/human22
-		portrait/human26
-		portrait/human63
-	message
-		word
-			"The family I work for has an odd fascination with carnivorous plants. I have to keep rotting piles of refuse around just to produce enough flies to feed them all."
-			"They told me that they wanted the landscaping to be classic and entertaining, so I constructed a giant hedge maze."
-			"Despite all our best terraforming efforts, it can still be hard to get native Earth plants to grow on an alien world."
-
-
-
-news "hair stylist"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "rich" "urban" "paradise"
-	name
-		word
-			"Hair stylist"
-	portrait
-		portrait/human17
-		portrait/human40
-		portrait/human67
-		portrait/human79
-	message
-		word
-			"For too long, the creativity of trend-setting stylists like myself has been held in check by the limited height of the doorways in most houses."
-			"My work is made possible by vision, creativity, and hairspray. Lots and lots of hairspray."
-			"The newest fad is hairstyles made to look like starships. Those boxy Navy ships are particularly hard to model in such a fluid medium."
-
-
-
-news "tour guide"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "tourism"
-	name
-		word
-			"Tour guide"
-	portrait
-		portrait/human15
-		portrait/human25
-		portrait/human52
-		portrait/human77
-	message
-		word
-			"I've delivered the same speech so many times now that the whole thing runs on continuous repeat in my head when I'm trying to sleep."
-			"Some famous people who you've probably never heard of died near here. If I weren't on break right now I would tell you all about them."
-			"At least they don't make me dress up like anything. I knew a woman whose tour job made her dress up like a twenty-first century person. Apparently back then they all wore very tight-fitting pants."
-			"It's kind of amazing to me that people would travel halfway across the galaxy to see this dump. To me, it's the one place I've always wished I could get away from."
-
-
-
-news "human resources worker"
-	location
-		government "Syndicate"
-	name
-		word
-			"Human resources worker"
-	portrait
-		portrait/human04
-		portrait/human11
-		portrait/human33
-		portrait/human72
-		portrait/human125
-	message
-		word
-			"We always put our employees first. But sometimes they do things that are bad for their careers. Like, accusing a high-ranking manager of harassment."
-			"I once had to find a delicate way to explain to a worker that he smelled bad. Like, so bad that no one could bear to be in a small meeting room with him."
-			"For most jobs, it's essential to know how to get along with others and be a team player. But I bet a freelance pilot like you never needs to worry about that."
-
-
-
-news "loan officer"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	name
-		word
-			"Loan officer"
-			"Mortgage broker"
-	portrait
-		portrait/human02
-		portrait/human29
-		portrait/human83
-		portrait/human86
-	message
-		word
-			"You probably think the interest rates we charge are exorbitant, but with all the ships getting blown up by pirates these days, we barely break even."
-			"We charge however much interest the market will support. The only captains who can't manage to pay their debts are the ones with no business sense whatsoever."
-			"Sadly, for the last several centuries there have been laws against inflicting bodily harm on people to convince them to pay off their debts."
-			"I still think we should be able to charge double the interest on loans to buy a Sparrow, but the regulators won't let us."
-
-
-
-news "hyperspace relay engineer"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	name
-		word
-			"Hyperspace relay engineer"
-	portrait
-		portrait/human13
-		portrait/human42
-		portrait/human76
-		portrait/human96
-	message
-		word
-			"All of human space is linked into a single communications network by relay beacons. It's something that most people just take for granted."
-			"Hyperspace links don't just allow faster-than-light travel. They also allow near-instantaneous communication, if you have the right sort of relay on both ends."
-			"The hyperspace communications network is a marvel of public infrastructure, but most people just take it for granted."
-
-
-
-news "geological engineer"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "mining"
-	name
-		word
-			"Geological engineer"
-	portrait
-		portrait/human07
-		portrait/human35
-		portrait/human50
-		portrait/human75
-	message
-		word
-			"With the right equipment, you can see inside a planet as easily as if it were... um... a tomato held up in front of an arc lamp. Sorry, I'm awful at similes."
-			"I have equipment that would let me trigger an earthquake just by pressing a button. That's why they never allow me into the office when I'm drunk."
-			"For centuries people have been saying that asteroid mining is going to put terrestrial resource extraction companies out of business, but it still hasn't happened."
-			"A few times, I've traveled so deep underground that the rock felt warm to the touch. But I imagine that's nowhere near as exciting as traveling through space."
-
-
-
-news "agricultural scientist"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "farming"
-	name
-		word
-			"Agricultural scientist"
-	portrait
-		portrait/human39
-		portrait/human53
-		portrait/human95
-		portrait/human97
-	message
-		word
-			"I hope you checked your shoes for invasive species before setting foot on my planet. The last thing we want is for our crops to get infected with the Arcturan Blight."
-			"Even though there are some alien ungulates that put on weight much quicker than Earth animals, or that have much leaner meat, most people still prefer to eat cows."
-			"I've heard that the corporate farms on some paradise worlds don't even need irrigation systems. They can just call up the terraforming office and order a rainstorm whenever they need one."
-			"People have been farming for thousands of years, but finding the best way to maximize yields without wearing out the land is still a hard problem to solve."
-
-
-
-news "epidemiologist"
+			"Lionheart Bactrian, because sometimes bigger is better. Talk to your local caravan recruiter today!"
+			"Caravan fleets near you are now hiring! Sign up today!"
+			"Landing gear is overrated. Sign up to serve aboard a Lionheart Bactrian today!"
+			"Tired of your homeworld? Join a caravan fleet today and never have to set foot on a planet again!"
+			
+news "advertisement navy"
 	location
 		government "Republic"
 	name
 		word
-			"Epidemiologist"
+			"Sponsor: Republic Navy"
 	portrait
-		portrait/human01
-		portrait/human10
-		portrait/human37
-		portrait/human79
-		portrait/human110
+		thumbnail/"cruiser"
+		thumbnail/"carrier"
+		thumbnail/"frigate"
+		thumbnail/"lance"
+		thumbnail/"rainmaker"
 	message
 		word
-			"People always worry about extra-terrestrial viruses and bacteria, but the deadliest diseases are very often caused by microbes we brought with us to the stars from good old Mother Earth."
-			"Would you be willing to donate a saliva sample? Frequent interstellar travelers are the primary vector for pandemics, so we're supposed to monitor any starship captains that come though here."
-			"It's been so many centuries since the Rigellian Plague that most spaceports don't even have quarantine facilities anymore. When the next big one comes, we'll be woefully unprepared."
-			"Don't listen to those conspiracy theories that say you can catch awful viruses from the Quarg. Their physiology is so alien that we're immune to all their diseases."
+			"Like what you see? Sign up to serve in the Republic Navy today!"
+			"Ever wondered what one of these looked like on the inside? Find out by enlisting today!"
+			"Unemployed? Broke? Homeless? Hopeless? If you are any of these things, take charge of your life! Join the Republic Navy today!"
+			"Honor. Duty. Service. The Republic Navy."
+			"Does your child's future seem bleak? The Cadet Accademy can turn their life around in a snap. Sign them up today!"
+			"Do your part and get paid for it. Join the Republic Navy."
+			"Love to travel? Why not get paid for it? Visit a Navy recruiter today!"
+			"Like what you see? Why not defend one! The Republic Navy is looking for Marines. Sign up today!"
+			"First responders, medics, rescue teams, construction crews. The Navy has all of these and more. Sign up today and protect your community!"
+			"What's better than being a hero? Getting paid to be a hero! Join the Navy today!"
+
+news "advertisement star barge"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Syndicated Shipyards"
+	portrait
+		thumbnail/"star barge"
+	message
+		word
+			"Smart captians chose the Syndicated Shipyard's Star Barge!"
+			"First time buyer? Talk to your bank about financing a Star Barge! The cheapest and most reliable freighter for new captians!"
+			"Not enough cargo room? The Syndicated Shipyards has you covered. Visit your local dealer and pick up a Star Barge!"
+			"Fast, cheap, effective. The Syndicated Shipyards Star Barge!"
+
+news "advertisement wasp"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Syndicated Shipyards"
+	portrait
+		thumbnail/"wasp"
+	message
+		word
+			"In space, it's sting or be stung. The Syndicated Shipyard's Wasp."
+			"The Syndicated Shipyard's Wasp. Why bite when you can sting?"
+			"Swarm your enemy with Syndicated Shipyards! Buy a fleet of Wasps today!"
+			"Take the high ground in a Wasp! Brought to you by Syndicated Shipyards."
+
+news "advertisement freighter"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Syndicated Shipyards"
+	portrait
+		thumbnail/"freighter"
+	message
+		word
+			"She needs no introduction, the Syndicated Shipyards Freighter."
+			"Why mess with a good thing? The Sydicated Shipyards Freighter."
+			"If it ain't broke, don't fix it. Syndicated Shipyards Freighter."
+			"The Freighter. Brought to you by Syndicated Shipyards."
+
+news "advertisement protector"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Syndicated Shipyards"
+	portrait
+		thumbnail/"protector"
+	message
+		word
+			"Voted the 'ugliest ship in the sky' by Stars and Starships Magazine, the Syndicated Shipyards Protector."
+			"You don't want pretty, you want cheap and effective. We can do cheap. Syndicated Shipyards Protector."
+			"A turret platform, not a work of art. The Protector. Brought to you by Syndicated Shipyards."
+			"Protector by Syndicated Shipyards. Cheap. Durable. Effective. 
+			
+news "advertisement vanguard"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Syndicated Shipyards"
+	portrait
+		thumbnail/"vanguard"
+	message
+		word
+			"For when you have a problem and need it to go away. The Vanguard, by Syndicated Shipyards."
+			"More firepower is the answer, but what was the question? Syndicated Shipyards Vanguard."
+			"Face your problems head on with the Syndicated Shipyards Vanguard."
+			"The Vanguard, by Syndicated Shipyards. If you call it a 'Battlespork' we'll sue you."
+			
+news "advertisement bulk freighter"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Syndicated Shipyards"
+	portrait
+		thumbnail/"bulk freighter"
+	message
+		word
+			"A fleet onto itself. The Bulk Freighter, brought to you by Syndicated Shipyards."
+			"The one thing space always needs is more space. Do your part by buying a Bulk Freighter from Syndicated Shipyards."
+			"Who needs a fleet of freighters when you have a Syndicated Shipyards Bulk Freighter?"
+			"Whatever you need moved, this can move it. The Syndicated Shipyards Bulk Freighter."
+			
+news "advertisement barb"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Syndicated Shipyards"
+	portrait
+		thumbnail/"barb"
+		thumbnail/"barbp"
+	message
+		word
+			"More than a fighter, the Syndicated Shipyards Barb!"
+			"If you need a turret or extra proton gun, there's a version of the Barb for you! Check out Syndicated Shipyards for more information!"
+			"Have one of those useless Deep carriers? Syndicated Systems has a solution! Use it to house a Barb!"
+			"Need a spaceworthy ship but don't need a hyperdrive? The barb is perfect for system patrols and local defense!"
+
+news "advertisement arrow"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Syndicated Shipyards"
+	portrait
+		thumbnail/"arrow"
+	message
+		word
+			"As fast as its name implies. The Syndicated Shipyards Arrow!"
+			"The top choice of corporate executives. The Syndicated Shipyards Arrow!"
+			"Plan your next corporate getaway with an Arrow! Brought to you by Syndicated Shipyards.
+			"Not to toot our own horn, but we here at Syndicated Shipyards really outdid ourselves with the Arrow!"
+			
+news "advertisement sparrow"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Tarazed"
+	portrait
+		thumbnail/"sparrow"
+	message
+		word
+			"Live dangerously with the Tarazed Sparrow!"
+			"Are you good enough to survive a week in a Tarazed Sparrow?"
+			"Looking to start your own mining corporation? The Tarazed Sparrow is the ship for you!"
+			"The cheapest interceptor on the market. The Tarazed Sparrow!"
+
+news "advertisement hawk"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Tarazed"
+	portrait
+		thumbnail/"hawk"
+	message
+		word
+			"Chase down your problems in a Tarazed Hawk!"
+			"The Tarazed Hawk, a perfect escort for your merchant fleet!"
+			"Mine Asteroids in your Tarazed Hawk, it pays for itself!"
+			"Protect your homeworld, join your local militia and buy a Tarazed Hawk!"
+
+news "advertisement blackbird"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Tarazed"
+	portrait
+		thumbnail/"blackbird"
+	message
+		word
+			"Name a more iconic combat capable transport than the Tarazed Blackbird. We'll wait."
+			"Run or Fight? You seldom have to choose in a Tarazed Blackbird!"
+			"They said it was impossible to make a combat ready Transport. We here at Tarazed corporation proved them wrong with the Blackbird."
+			"Inspired by Aliens, improved by Humans. The Tarazed Blackbird."
+
+news "advertisement osprey"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Tarazed"
+	portrait
+		thumbnail/"osprey"
+	message
+		word
+			"They said we were crazy when we decided to study Alien ships. Maybe we are, but the Osprey proves that insanity can pay off."
+			"Beautiful, powerful, fast. All these thingsand more describe the Osprey."
+			"The Tarazed Osprey. Come on, just look at it!"
+			"Travel in style with the Tarazed Osprey."
+			
+			
+news "advertisement falcon"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Tarazed"
+	portrait
+		thumbnail/"falcon"
+	message
+		word
+			"Arguably the most powerful ship on the market, the Tarazed Falcon."
+			"Fast and powerful, the Tarazed Falcon."
+			"A true capital ship, the Tarazed Falcon."
+			"Prized by militias everywhere, the Tarazed Falcon. Add one to your fleet today!"
+
+news "advertisement clipper"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Southbound"
+	portrait
+		thumbnail/"clipper"
+	message
+		word
+			"The best general purpose ship in its class, period. The Southbound Clipper."
+			"It may be classed as a light freighter, but the Southbound Clipper makesa great interceptor, light warship, transport, and mining vessel."
+			"The Southbound Clipper, perfect for just about anything."
+			"Good in virtually any role, you need a Southbound Clipper in your fleet today!"
+			
+news "advertisement argosy"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Southbound"
+	portrait
+		thumbnail/"argosy"
+	message
+		word
+			"Starting your own fleet? The Southbound Argosy makes a great first flagship!"
+			"How can a freighter be prized by local militias? Buy an Argosy from Southbound Shipyards and find out!"
+			"Transporting freight in dangerous space? The Southbound Argosy is perfect for you!"
+			"Worried about rogue pirates? Fly a Southbound Argosy!"
+
+news "advertisement fury"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Southbound"
+	portrait
+		thumbnail/"fury"
+	message
+		word
+			"Get the most bang for your buck with a Southbound Fury!"
+			"The most powerful interceptor money can buy, the Southbound Fury!"
+			"The Southbound Fury, because with this many guns, who needs shields?"
+			"The Fury, it truly lives up to its name! Check out Southbound Shipyards for more information!"
+			
+news "advertisement hauler"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Southbound"
+	portrait
+		thumbnail/"hauler i"
+		thumbnail/"hauler ii"
+		thumbnail/"hauler iii"
+		thumbnail/"nest"
+		thumbnail/"roost"
+		thumbnail/"skein"
+	message
+		word
+			"Simplicity incarnate. The Hauler series, from Southbound."
+			"The hauler series, with a range of custom options. Only from Southbound."
+			"If you need a Freighter or a Carrier, consider Southbound's Hauler series."
+			"Southbound did it again! A freighter strong enough to defend itself, yet still affordable. The Hauler series."
+			
+news "advertisement bastion"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Southbound"
+	portrait
+		thumbnail/"bastion"
+	message
+		word
+			"A warship with the space of a freighter. The Southbound Bastion."
+			"Southbound's Bastion is perfect for a fledgling militia"
+			"The Southern Mutual Defense Pact has used the Bastion for years. Why wouldn't you?"
+			"Voted best in it's class for medium warships! The Southbound Bastion."
+			
+news "advertisement quicksilver"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Megaparsec"
+	portrait
+		thumbnail/"quicksilver"
+	message
+		word
+			"Deadly and Sexy, the Megaparsec Quicksilver."
+			"Hit them fast and hard with a Megaparsec Quicksilver!"
+			"Great for asteroid mining, the Megaparsec Quicksilver."
+			"Security and law enforcement love the Megaparsec Quicksilver!"
+
+news "advertisement bounder"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Megaparsec"
+	portrait
+		thumbnail/"bounder"
+	message
+		word
+			"Starting your own taxi empire? Consider a Megaparsec Bounder!"
+			"The Megaparsec Bounder does it's job and does it well. Check out our Transport showroom on Sunracer!"
+			"Sometimes you just need a solid way of moving people around. The Megaparsec Bounder will do that job."
+			"Add a Bounder to your fleet! Visit a Megaparsec Dealership near you!"
+			
+news "advertisement splinter"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Megaparsec"
+	portrait
+		thumbnail/"splinter"
+	message
+		word
+			"Faster than a Corvette and twice as sexy! The Megaparsec Splinter!"
+			"Challenge a Corvette to a drag race and win in your new Megaparsec Splinter!"
+			"An excellent escort, with room to haul cargo! The speedy Megaparsec Splinter!"
+			"Speed is everything, prove it in your Megaparsec Splinter!"
+			
+news "advertisement manta"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Megaparsec"
+	portrait
+		thumbnail/"manta"
+	message
+		word
+			"Loved by bounty hunters galaxy wide, the Megaparsec Manta!"
+			"A well balanced escort, perfect for your fleet. The Megaparsec Manta."
+			"How could you go wrong with such a wingspan? Pick up a Megaparsec Manta today!"
+			"Mining asteroids is easy in a Megaparsec Manta!"
+			
+news "advertisement shuttle"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Betelgeuse"
+	portrait
+		thumbnail/"shuttle"
+		thumbnail/"heavy shuttle"
+	message
+		word
+			"Sometimes you just need to get around. The Betelgeuse Shuttle will get you there."
+			"Planning a family trip? Consider buying a Betelgeuse Shuttle. The Minivan of the stars!"
+			"Light and small enough to park virtually anywhere! The Betelgeuse Shuttle!"
+			"Investment tip: Add a Betelgeuse Shuttle to your fleet to carry extra passengers!"
+			
+news "advertisement beserker"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Betelgeuse"
+	portrait
+		thumbnail/"beserker"
+	message
+		word
+			"Ever just want to go beserk? Buy a Betelgeuse Beserker and break stuff!"
+			"The most reliable interceptor on the market, the Betelgeuse Beserker!"
+			"Mining asteroids is a breeze in a Beserker! From Betelgeuse."
+			"If you ever see a squad of Betelgeuse Beserker coming your way, run! Better yet, buy one and join them!"
+
+news "advertisement firebird"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Betelgeuse"
+	portrait
+		thumbnail/"firebird"
+	message
+		word
+			"Did you know there are Betelgeuse Firebirds in the sky that have been around since the Augment wars? Get yourself a reliable classic!"
+			"A design so powerful it never went out of style! The Betelgeuse Firebird!"
+			"Some things never change, like the perfect design of the Betelgeuse Firebird!"
+			"Several centuries strong, the Betelgeuse Firebird!"
+
+news "advertisement leviathan"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Betelgeuse"
+	portrait
+		thumbnail/"leviathan"
+	message
+		word
+			"For centuries, Betelgeuse has rolled Leviathans off the assembly line. We don't plan on stopping anytime soon!"
+			"Older than the Republic and twice as useful, the Betelgeuse Leviathan!"
+			"Pirates fear the Betelgeuse Leviathan!"
+			"If you can't beat them, you probably don't have a Betelgeuse Leviathan!"
+			
+
+news "advertisement behemoth"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Betelgeuse"
+	portrait
+		thumbnail/"behemoth"
+	message
+		word
+			"With a freighter like this, who needs an escort? The Betelgeuse Behemoth!"
+			"Some people would call this a warship. Us? We call it the Betelgeuse Behemoth!"
+			"A dangerous freighter for a dangerous galaxy, the Betelgeuse Behemoth!"
+			"Pirates beware! The Behemoth has teeth! Visit Betelgeuse today to buy your own!"
 
 
+news "advertisement star queen"
+	location
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+	name
+		word
+			"Sponsor: Betelgeuse"
+	portrait
+		thumbnail/"star queen"
+	message
+		word
+			"Book your next trip aboard a Betelgeuse Star Queen!"
+			"There is only one ship worthy of royalty, the Betelgeuse Star Queen!"
+			"Once you board a Betelgeuse Star Queen, you'll never want to leave!"
+			"A flying mansion, the Betelgeuse Star Queen!" 
 
-news "economist"
+news "advertisement free worlds militia"
+	location
+		government "Free Worlds"
+	name
+		word
+			"Sponsor: Free Worlds"
+	portrait
+		portrait/"free worlds"
+	message
+		word
+			"Protect the citizens the Republic has forgotten, join the Free Worlds."
+			"What has the Republic ever done for you? Sign up today to take charge of your life!"
+			"They took your taxes, and for what? To terraform some paradise world? Join the Free Worlds and let your voice be heard!"
+			"Affordable terraforming for all is a primary goal of the Free Worlds!"
+			"Have your own ship? We have a job for you! Join the Free Worlds militia today!"
+			"If the Republic wont protect you, then you must protect yourself. Join the Free Worlds to do your part today!"
+			"The galactic south can stand on its own, help us prove it by joining the Free Worlds today!"
+			"Merchants wanted! Visit the Job Board on a Free Worlds planet today!"
+			"First responders, medics, rescue teams, construction crews. The Free Worlds needs all of these and more. Sign up today and protect your community!"
+			"What's better than being a hero? Getting paid to be a hero! Join the Free Worlds today!"
+
+news "advertisement syndicate propaganda"
 	location
 		government "Syndicate"
 	name
 		word
-			"Economist"
-	portrait
-		portrait/human20
-		portrait/human49
-		portrait/human83
-		portrait/human91
-		portrait/human104
+			"Obvious Propaganda"
+		portrait/"syndicate"
 	message
 		word
-			"We're actually required by local law to predict that the economy will continue to do well, because the government thinks that any dire predictions will be a self-fulfilling prophecy."
-			"It's crazy that we live in an age where technology lets us predict solar storms a month in advance, but we still can't predict what the stock market will do a week from today."
-			"The hardest part of being an economist isn't the difficulty of seeing a disaster coming; it's the difficulty of convincing those in power to do something about it."
-			"An economy is almost like a living organism, and if you're able to grasp its intricacy and scope, it's actually a very beautiful thing."
+			"Union dues are just taxation without representation!"
+			"Don't call your laywer, call your boss!"
+			"What has a Union ever done for you?"
+			"Union organizers like to throw big words around like 'Collective Bargaining.' That just means other people are making decisions for you!"
+			"Healthcare? You wouldn't want to pay for someone else who is sick, why would you expect someone to pay for you?"
+			"Death Benefits don't help anyone, you can't spend money when you're dead!"
+			"Only greedy people use terms like 'living wage.' Are you greedy?"
+			"The more money the company hands out in raises, the less people get employed. It's just basic math!"
+			"Remember: Industrial accidents are always the fault of an employee. Observe safe practices at work!"
+			"Outside contractors are your friends, treat them like family!"
+			"Strike? Your family depends on you to put food on the table!"
+			"Strike? Do you really want to spend time marching without pay while someone else takes your job?"
+			"If unions really had your best interest at heart, they wouldn't require dues!"
+			"Education is overrated, get that freeloader a job!"
+			"Unions talk of weekend pay, as if we don't already pay you on weekends!"
+			"Paid time off? Do you really want to get paid for work you didn't do?"
+			"Take a spin on the workplace accident wheel! Play stupid games, win stupid prizes!"
+			"Poor working conditions? Says who? Don't let these buzzwords fool you!"
+			"Report anyone who mentions organizing a protest, get a cash reward!"
+			"Are your co-workers considering a walk out? Tell us who, it's the right thing to do!"
+			"Don't sign your name! Union organizers will try to trick you into signing their peitition!"
+			"Don't believe union propaganda, you are the face of our company, your voice is already being heard!"
+			"Join a union and pay someone who lives worlds away to make decisions for you? Why would anyone give up their freedom in such a way?"
+			"Protect your information! Don't sign a petition!"
 
-
-
-news "nuclear technician"
+news "advertisement cartel"
 	location
-		government "Syndicate"
+		government "Cartel"
 	name
 		word
-			"Nuclear technician"
-	portrait
-		portrait/human15
-		portrait/human41
-		portrait/human51
-		portrait/human75
+			"Warning"
+		outfit/"laser rifle"
 	message
 		word
-			"Last year all the hair on the left hand side of my face turned white and fell out. The company swears it was just a weird illness and had nothing to do with my work."
-			"My kids keep asking me to bring a bar of plutonium home for them to play with. Some stupid video convinced them that it would give them super powers."
-			"Nuclear reactors are remarkably safe these days. I don't know why the government won't let us build them in residential neighborhoods."
-			"In all of human space, there hasn't been a single nuclear meltdown in fourteen years. And that was just a tiny one, hardly even worth mentioning."
-			"My company's motto is, 'We bring the power of the stars down to earth, and send earthlings to the stars.' I think we should change it to something catchier."
+			"Do your business and leave."
+			"No visitors beyond this point."
+			"No sudden movements."
+			"Tresspassers are spies, and spies get shot."
 
-
-
-news "substance abuse counselor"
+news "advertisement northern union"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "poor" "dirt belt" "near earth" "south"
+		government "Northern Union"
 	name
 		word
-			"Substance abuse counselor"
-	portrait
-		portrait/human37
-		portrait/human61
-		portrait/human64
-		portrait/human93
+			"Advertisement"
+		portrait/"advertisement"
 	message
 		word
-			"I know some folks try to talk captains like you into carrying drugs on the side. I wish all of you could see the real human cost of that industry."
-			"Zooming around in your fancy space ship, I bet you don't realize the sort of desperation that some of the folks down here below you are carrying around."
-			"The government pays my salary. They say it's worth it, because every credit spent on me prevents ten credits of lost productivity."
-			"Honestly, drugs are a problem throughout human space, but the richer folks have the resources to keep their addictions well-managed and well-hidden."
-
-
-
-news "reporter"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-	name
-		word
-			"Reporter"
-	portrait
-		portrait/human00
-		portrait/human14
-		portrait/human68
-		portrait/human80
-	message
-		word
-			"I'm doing a human interest story about a llama that stowed away in a ship's cargo hold. Llamas are so cute, people will watch anything that involves them."
-			"My job is to bring sunlight into dark places and expose things that people are trying to keep hidden... and to avoid being killed in the process."
-			"A free and independent press is a critical component of any healthy democracy. But sensationalism is a whole lot more lucrative."
-			"I've been interviewing elderly starship captains. You wouldn't believe the tall tales that some of them tell!"
-			`Read my new article! 'Ten Things the Quarg Are Hiding from Us - Number Seven Will Surprise You!'`
-
-
-
-news "museum curator"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "tourism" "near earth" "paradise" "rich"
-	name
-		word
-			"Museum curator"
-	portrait
-		portrait/human36
-		portrait/human66
-		portrait/human73
-		portrait/human92
-	message
-		word
-			"You would not believe the sorts of things that the inhabitants of ancient Earth did for entertainment back before interstellar travel was a reality."
-			"I operate an arboretum with trees and shrubs from more than fifty worlds. Fortunately, none of them are particularly invasive species."
-			"The most popular exhibit in our entire Children's Museum is the interactive starship simulator. You're living a life that those kids can only dream of."
-			"Did you know that humans used to rely on explosive fuel mixtures to propel them into orbit? Imagine how mad you'd have to be to do that!"
-			"We recently put a restored 20th-century shipping container on display. You can hardly tell the difference from the ones in use today! Isn't historical inertia fascinating?"
-
-
-
-news "actor"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "south" "paradise" "near earth"
-	name
-		word
-			"Actor"
-	portrait
-		portrait/human02
-		portrait/human06
-		portrait/human51
-		portrait/human84
-		portrait/human105
-	message
-		word
-			"We're doing a production of the Scottish Play where the three witches are made up to look like Quarg. I know it sounds weird, but it works in our context."
-			"I just finished a project doing voice acting for an animated children's book. It's kind of a relief to be done with it, honestly. Certain lines are still stuck in my brain."
-			"Right now I'm mostly just doing commercials, but I'm working on a concept for a zero-gravity musical that will be truly epic."
-			"I have a rich client on Hestia who pays me a thousand credits a day just for recording videos where I bestow extravagant compliments on him."
-
-
-
-news "technical writer"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "north" "rim" "core" "near earth"
-	name
-		word
-			"Technical writer"
-	portrait
-		portrait/human27
-		portrait/human52
-		portrait/human64
-		portrait/human94
-	message
-		word
-			"Do you have a few minutes to listen to my thoughts on the importance of the serial comma?"
-			"People who over-use the passive voice should be lined up and shot. It doesn't make your writing more formal, it just makes it harder to read."
-			"Documents are written once, and read many times. So every minute I spend polishing someone's writing will pay off many times over in the long run."
-			"Communication skills are essential no matter what you job is. If you can't write well, people will think you're an idiot. Or at least, people like me will think that."
-
-
-
-news "dietitian"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "rich" "paradise" "rim" "near earth"
-	name
-		word
-			"Dietitian"
-	portrait
-		portrait/human04
-		portrait/human37
-		portrait/human57
-		portrait/human66
-	message
-		word
-			"I actually have several recipes that can make processed algae delicious. Or at least, visually appealing. Quite edible. I mean, it's not that hard to mask the taste."
-			"One of my rich clients wants me to figure out how she can subsist on eating nothing but flowers. She thinks eating the leaves and roots of plants is cruel."
-			"A few years ago I worked for the Syndicate, designing prepackaged liquid meals for factory workers. They were incredibly nutritious, but they tasted disgusting."
-			"There are probably thousands of edible native plants on every world human beings have colonized, but people still prefer the plants we brought with us from ancient Earth."
-
-
-
-news "chef"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "rich" "paradise"
-	name
-		word
-			"Chef"
-	portrait
-		portrait/human00
-		portrait/human18
-		portrait/human31
-		portrait/human48
-	message
-		word
-			"For a recent corporate gala, I constructed a fire pit large enough to roast an entire Antarean thunder-lizard. The fat was perfectly rendered. It was amazing."
-			"I'm employed as the chef on a luxury cruise ship. A Star Queen. The captain tells me that Star Queens are considered the safest way to travel in outer space."
-			"A rich client of mine shot a spiny-tailed gorgebeast on a safari expedition and asked me to cook it for him. The flavor profile was quite... unique."
-			"I was a dish-washer when I started, and now I'm a sous-chef. And people say there's no upward mobility in the galaxy these days!" 
-
-
-
-news "insurance agent"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "rich" "urban" "paradise" "near earth"
-	name
-		word
-			"Insurance agent"
-	portrait
-		portrait/human43
-		portrait/human49
-		portrait/human78
-		portrait/human97
-		portrait/human127
-	message
-		word
-			"No, we don't sell insurance policies on private starships in this day and age. We also don't insure buildings in flood plains and houses inhabited by convicted serial arsonists."
-			"Among the paradise worlds, there's currently a fad of taking out insurance policies on pets, to pay for therapy if the animal dies unexpectedly."
-			"Insurance is all about mitigating risks. But you're flying around the vacuum of space in a tin can, so you probably don't know much about that."
-			"I just got done handling an insurance fraud case where the owner claimed her entire home had been eaten by Sagittarian sand-fleas."
-
-
-
-news "excavation specialist"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "mining"
-	name
-		word
-			"Excavation specialist"
-			"Explosives worker"
-	portrait
-		portrait/human24
-		portrait/human41
-		portrait/human42
-		portrait/human75
-	message
-		word
-			"Those newfangled mining lasers are pretty cool, but there's nothing like good old-fashioned dynamite for shifting a lot of rock in a hurry."
-			"Sure, you may have been to outer space, but I bet you've never been ten kilometers underground."
-			"For hundreds of years we've been worried that asteroid harvesting will put terrestrial miners out of business, but it still hasn't happened."
-			"Once I've worked here for another decade, I plan to move to some paradise world and earn a living excavating bunkers for paranoid rich folks to hide in."
-			"Once we had to stop work on a mine for a month because the archaeologists thought we found evidence of a million-year-old civilization. It turned out the site was just radioactive. Dodged that one!"
-
-
-
-news "chauffeur"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "rich" "paradise"
-	name
-		word
-			"Chauffeur"
-	portrait
-		portrait/human07
-		portrait/human41
-		portrait/human67
-		portrait/human83
-	message
-		word
-			"I fly the missus to her appointments in a private shuttlecraft, because she hates being stuck in traffic."
-			"The family I work for is so rich that they pay me to ride in the back of their self-driving car just so I can open the doors for them when they arrive wherever they're going."
-			"My company gives private gyrocopter rides to rich tourists. I built the gyrocopter myself, but it's a very safe vehicle."
-			"You wouldn't believe the sorts of things that go on in the back of my car after certain extravagant social galas."
-			"You'll never believe what happened on my first day on the job. Someone tried to rob a building while I was in the parking lot. I had to ram their van to keep them from getting away!"
-
-
-
-# Visual suggestion: old
-news "human retiree"
-	location
-		attributes "paradise"
-	name
-		word
-			"Retiree"
-	portrait
-		portrait/human26
-		portrait/human29
-		portrait/human30
-		portrait/human38
-	message
-		word
-			"Retiring is the best thing I ever did. They should make it mandatory!"
-			"All of my children have gone to the most prestigious academy on Hestia. They're so brilliant, it was the only place that would do."
-			"It makes me feel so safe to know that there are half a dozen Navy warships in orbit. The barbarians north of here wouldn't dare attack us!"
-			"This is such a great place to retire. They tax income much more heavily than investments and business profits, so if you make most of your money elsewhere, you can avoid paying practically any taxes at all!"
-			"I don't stand for it when I hear youngsters complain about the fact that I have a generous pension. I worked for 40 years to earn this retirement!"
-			"I feel sorry for the young workers who are supporting me right now. They have to pay more in taxes and pension contributions than I ever did, and they probably won't get to retire until they're 70, at least."
-			"We're very fortunate to have been able to retire here. Don't ever take your blessings for granted, captain."
-
-
-
-# Visual suggestion: middle-aged people wearing professional attire
-news "human financial analyst"
-	location
-		attributes "paradise" "near earth"
-	name
-		word
-			"Financial analyst"
-	portrait
-		portrait/human14
-		portrait/human16
-		portrait/human32
-		portrait/human39
-		portrait/human49
-		portrait/human56
-		portrait/human65
-	message
-		word
-			"You must be a very brave captain, if you have traveled to some of the... less civilized parts of human space."
-			"I can't believe how expensive college tuition is these days. My kid's first semester just set me back 172,000 credits!"
-			"My daughter's Flivver is a few years old already... maybe it's time for an upgrade? I hear the new ones are much safer."
-			"Have you heard about the Navy admiral who married a commoner? I just can't believe things like that still happen."
-			"I'm about to lose my vacation home on Martini! Next time I'm insisting on a pre-nuptial agreement."
-			"My son won a silver trophy in his last game. He's going to be a great athlete some day."
-			"The galactic economy's in trouble, mark my words. Indicators haven't been this negative in more than 50 years, but nobody wants to hear it."
-			"God, these taxes are killing me. I make a good income, but it feels like half of it goes to the Republic, and I've got bills to pay, too."
-			"I manage 8-figure portfolios, but what gets me up in the morning is the sight of a beautiful sunrise. I know it's all geo-engineered, but is a painting any less sublime just because it was made by human hands?"
-			"Nearly lost my shirt in the commodities market last week. If my boss ever found out, it'd be curtains for me!"
-
-
-
-# Visual suggestion: well-dressed young men, often looking kind of cocky
-news "human syndicate manager"
-	location
-		government "Syndicate"
-	name
-		word
-			"Syndicate manager"
-	portrait
-		portrait/human12
-		portrait/human33
-		portrait/human67
-		portrait/human68
-		portrait/human91
-	message
-		word
-			"We've had to ask everyone to work sixty-hour weeks just to meet this month's quotas. The workers complain to me, but I tell them I'm in the same boat as they are."
-			"The Syndicate makes us take the same stupid workspace harassment training every single year. How would you like it if some bohemian outside consultant was telling you what you can and can't do in your social life?"
-			"In general, the women in my factory are much more conscientious workers than most of the men. Too bad so few of them have the sort of assertiveness and commanding presence you need in a manager."
-			"I had to resign my union membership when I was promoted to a manager, but I still try to do what's best for the folks who report to me."
-			"Outside of Syndicate space, kids aren't allowed to work until they turn eighteen. No wonder their economies are so much less productive than ours."
-			"You look like the kind of captain who could benefit from a Syndicate Proton Gun. Would you care to schedule a test-firing?"
-			"Have you considered a Syndicate Freighter for your next ship? Captains like you swear by them!"
-			"Nobody ever got fired for buying Syndicate."
-
-
-
-# Visual suggestion: glasses, clean-cut attire, possibly scientific accoutrements
-news "human scientist"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "research" "deep"
-	name
-		word
-			"Scientist"
-	portrait
-		portrait/human13
-		portrait/human37
-		portrait/human43
-		portrait/human64
-		portrait/human71
-		portrait/human83
-	message
-		word
-			"It's so exciting being on the cutting edge of human knowledge, but I wish it were easier to secure funding. A lot of my equipment is more than 40 years old."
-			"This neutronium alloy I'm working on will be what's armoring your next starship - no doubt about it."
-			"Yesterday I almost lost all my research notes when my computer crashed. I can't believe we still have to worry about things like this! What are the software guys doing all day?"
-			"We've got student interns in the lab this month. A few of them are very bright!"
-			"Excuse me, captain, I have to resume work on a paper I'm co-authoring. Would you like an advance copy?"
-			"My research concerns force fields. No, not those kinds of force fields."
-
-
-
-# Visual suggestion: young and optimistic
-news "human student"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "research" "deep"
-	name
-		word
-			"Student"
-	portrait
-		portrait/human28
-		portrait/human90
-		portrait/human93
-		portrait/human96
-		portrait/human107
-	message
-		word
-			"I'm going to be a teacher some day!"
-			"I'm going to be a doctor some day!"
-			"I'm going to be a financial manager some day!"
-			"I'm going to be an engineer some day!"
-			"I'm going to be a scientist some day!"
-			"Sorry no time to talk; I'm busy studying."
-			"People keep telling me to go into STEM, but it's just so hard. Besides, I really like PR. I think I'll be fine."
-			"Tuition is so high these days that I've had to take three side jobs just to get through the semester. It's hard to focus on my studies, but I'll manage somehow."
-			"After graduation, I think I'd like to work in industry somewhere, but my advisor is encouraging me to go on and get my master's degree. What do you think?"
-			"Sorry, no time to chat. My master's thesis is already late and I'm hiding from my advisor."
-			"This is the life! I'm only in class like 3, so my days are totally open! I know it'll end in a few years, but I'm going to enjoy it while I can. After you graduate, it's just work work work until you're dead."
-
-
-
-# Visual suggestion: relaxed, happy, possibly wearing traditional religious dress
-news "human religious"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "religious"
-	name
-		word
-			"Mystic"
-	portrait
-		portrait/human45
-		portrait/human57
-		portrait/human61
-		portrait/human124
-		portrait/human126
-	message
-		word
-			"May God be with you!"
-			"The path to enlightenment is fraught with sacrifice."
-			"We spend all our lives striving, but everything we need is always right in front of us."
-			"When we spend our lives chasing desire, we find that it turns to ashes in our mouths, and that which we seek most becomes a prison. What do you seek?"
-			"I thought I needed to come to this place to seek spiritual fulfillment, but I have since learned that it was inside myself all along."
-			"In a few weeks, I'm leaving here to join the Navy. The pirate attacks are getting worse and worse, and what good are we if we cannot defend our own holy sites? The eternal may listen to words and prayers, but pirates respect only guns and warships."
-			"It's been many years I came to this world seeking out cosmic truth, and I sense that my journey may soon be at an end."
-			"Can you spare a few credits for the poor, captain? In this universe of abundance, so many still suffer."
-			"Praise Jesus! This day is a blessing."
-			"Praise Allah! This day is a blessing."
-			"Praise God! This day is a blessing."
-
-
-
-# Visual suggestion: attractive or sexy, looking either happy or bored
-news "human tourism"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "deep" "rich" "paradise" "tourism"
-		not attributes station
-	name
-		word
-			"Tourist"
-	portrait
-		portrait/human40
-		portrait/human46
-		portrait/human47
-		portrait/human48
-		portrait/human84
-		portrait/human86
-		portrait/human95
-		portrait/human122
-	message
-		word
-			"This place is so romantic. I wish I could stay forever."
-			"I may have paid a small fortune to get here, but it was worth it! Don't you just love this place?"
-			"I paid so much money to get here, and look at the place - it's a dump. I'll try to make the best of it, I suppose."
-			"Next year I hope I can afford to book passage on a ship with nicer accommodations. I had to listen to the reactor's noisy humming for the whole five-day trip here!"
-			"I come here every year."
-			"Can you believe that our ship was attacked by pirates on the way here? It's lucky a Navy patrol showed up and chased them off before our shields dropped. It was all so exciting! I'm taking the same route again next year."
-			"I can't wait to go skiing here! Haha, just kidding."
-			"It's too bad I have to leave tomorrow. I only get two weeks of vacation a year, and it's hard to leave after spending half that time in transit here and back."
-
-
-
-# Visual suggestion: determined, tough, irregular-looking military/warrior accoutrements
-news "human mercenary"
-	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
-		attributes "frontier"
-	name
-		word
-			"Mercenary"
-	portrait
-		portrait/human88
-		portrait/human89
-	message
-		word
-			"I've tracked fugitives halfway across the galaxy, and they have me on... guard duty. These guys must really be desperate given the kind of money they waved in my face."
-			"Security may be expensive, but think of it this way: it's better to be poor than dead."
-			"Nothing beats the thrill of boarding a crippled starship, laser rifle in your hands."
-			"Have you ever been to a pirate world? The conditions there are nearly inhuman!"
-
-
-
-# Visual suggestion: military beret, soldier's clothing, not too fancy
-news "human republic soldier"
-	location
-		government "Republic"
-		attributes "military"
-	name
-		word
-			"Republic Soldier"
-	portrait
-		portrait/human80
-		portrait/human81
-		portrait/human85
-		portrait/human100
-		portrait/human101
-		portrait/human118
-	message
-		word
-			"I bet you think that starship of yours is hot stuff, huh? Try tooling around in a cruiser with Atomic Engines sometime. You can run circles around interceptors."
-			"As soon as I leave the service, I'm buying my own ship like yours. It'll be nice to give the orders for a change!"
-			"Nice ship, captain. We trashed one just like it the other day during a pirate raid. Plating behind the engine room was real weak once the shields dropped, and a volley of sidewinders crippled her. You might want to look into that on yours."
-			"I used to be in the Syndicate Armed Forces before resigning my commission and joining the Navy. Here we actually train and fight instead of filling out paperwork all day."
-			"I can't wait until the day I get out. These rations are going to make me lose my mind. What I wouldn't give for a home-cooked meal..."
-			"Let me give you a piece of advice: particle cannons are some of the best weapons out there. Pirates don't stand a chance."
-			"I hope I don't get posted to fighter duty next week. Those things are deathtraps. By the time you get close enough to fire your lasers, you've already lost half your shields!"
-			"Nobody thinks about the Alphas anymore, but don't forget that they just disappeared. They could return at any time. If that happens, I'm going to kill every last one of 'em."
-
-
-
-# Visual suggestion: expensive-looking tactical gear
-news "human syndicate soldier"
-	location
-		government "Syndicate"
-		attributes "military"
-	name
-		word
-			"Syndicate Soldier"
-	portrait
-		portrait/human87
-		portrait/human99
-	message
-		word
-			"What a terrible posting. I thought I'd filed my transfer paperwork right, but it turned out my commander's seal had to be a certified original and not a copy, so now I'm stuck here for another two years."
-			"I did a stint in the Republic military a few years ago, but the Syndicate pays so much more. Now I can actually save some money for my daughter's college tuition."
-			"You're living the dream, captain! Someday I'm going to retire from the Syndicate military and buy my own ship."
-			"After 20 years, you're eligible for a lifetime pension. I've only got 8 years left, and then I'm home free!"
-			"It's a scandal how many pirates are out here. We do our best, but upper management ties our hands with ridiculous rules of engagement."
-			"Everybody knows where the pirate planets are, so why don't ever go on a mission to wipe 'em out? I don't understand it."
-
-
-
-# Visual suggestion: dangerous mofos, lunatics, reavers
-news "human pirate"
-	location
-		government "Pirate"
-	name
-		word
-			"Pirate"
-	portrait
-		portrait/human19
-		portrait/human24
-		portrait/human25
-		portrait/human27
-		portrait/human34
-		portrait/human44
-		portrait/human51
-		portrait/human59
-		portrait/human62
-	message
-		word
-			"Next time we meet up, maybe I'll be plundering your ship."
-			"What are you looking at, punk?"
-			"Hobbes and Darwin got it right: it's a war of all against all, and only the strongest deserve to survive. Without that pistol at your side, I'd slit your throat right now and take everything you own."
-			"Slaves for sale! Slaves for sale! Here is an oriental beauty with eyes full of fire that you can buy!"
-			"Wanna buy some death sticks?"
-			"Sometimes I wonder if what I'm doing is wrong."
-			"Every morning I look in the mirror... and I like what I see."
-			"Why did I become a pirate? It's the only way to truly be free. I was born a slave, and look at me now! I command a fleet of warships. I pay no taxes. I obey no laws. What a life!"
-			"Just watch yourself, and maybe we'll let you live."
-			"At half your age, I was richer than you'll ever be. This is the life, baby."
-			"Don't look at me like that. You wouldn't survive five minutes of my life."
-			"Just knocked over a fat merchant ship. Can't wait to blow all this cash on slaves and drugs!"
-			"I used to be a soft-bellied merchant captain before my life took a turn. Gotta get tough or get dead in this galaxy."
-			"Just a word of warning: don't fall asleep in the hotels here."
+			"Visit Muddy Green's Snack Shack!"
+			"Got transport passengers? Sell them to us! Political prisoners and prisoners of war are great bargaining chips, and we pay well!"
+			"Now accepting hostages!"
+			"No gods, no masters."
+			"The Northern Union isn't a government, we're a way of life!"
+			"Pirates welcome."
+			"Raiders welcome."
+			"Smugglers welcome."
+			"Just escaped from prison? Join a Northern Union crew!"
+			"Looking for Recreational Pharmacuticals? Visit your nearest rest stop!"
+			"Exotic pets for sale, most of these alien creatures aren't even legal in Republic space! Buy yours today!"
+			"Member of a pirate crew? Purchase arrest protection today! We'll bail you out or give you an alibi!"
+			"Now hiring marauders!"
+			"Working together against the Republic, the Northern Union!"
+			"Now forming wolf packs capable of ambushing Navy patrols! Keep what you kill, and get paid for it!"
+			"Now selling Marauder vessels!"
+			"Now selling Modified ships!"
+			"No weapon should be illegal!"
+			"Now hiring smugglers!"
+			"Wanted individuals around the galaxy need you to transport them!"
+			"Hiring smugglers to help preform a jail break!"
+			"Local militias hurting your profits? Hire a Northern Union Wolf Pack today!"
+			"Real pirates don't fly stock ships. Get yourself a Marauder!"
+			"Looking for cutting edge tech to reverse engineer, steal it and sell it here!"
