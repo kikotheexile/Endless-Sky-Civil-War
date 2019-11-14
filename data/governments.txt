@@ -9,7 +9,6 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 government "Alpha"
-	swizzle 1
 	"crew attack" 1.4
 	"crew defense" 2.2
 	"player reputation" -1000
@@ -20,13 +19,11 @@ government "Author"
 	"bribe" 0
 
 government "Bounty"
-	swizzle 6
 	"player reputation" -1000
 	"fine" 0
 	"hostile hail" "hostile bounty"
 
 government "Bounty Hunter"
-	swizzle 6
 	color .78 0 0
 
 	"player reputation" -1000
@@ -34,31 +31,59 @@ government "Bounty Hunter"
 	"fine" 0
 	"hostile hail" "hostile bounty hunter"
 
-government "Coalition"
-	swizzle 5
-	color 1 .6 .7
-	"crew attack" .6
-	"crew defense" 3
-	language "Coalition"
+government "Caravan"
 	"player reputation" 1
 	"attitude toward"
-		"Heliarch" 1
-
-government "Deep"
-	swizzle 0
-	"player reputation" -1000
-
-government "Deep Security"
-	swizzle 0
-	"player reputation" 1
-	"attitude toward"
+		"Local" 1
 		"Merchant" .5
+		"Northern Union" -.01
 		"Pirate" -.2
 	"friendly hail" "friendly deep"
 	"hostile hail" "hostile deep"
 
+government "Cartel"
+	color .89 .38 .62
+	"player reputation" 1
+	"attitude toward"
+		"Local" 1
+		"Author" -.01
+		"Republic" -.01
+		"Korath" -.01
+		"Merchant" 1
+		"Syndicate" 1
+	"bribe" .05
+	"fine" 0	
+
+government "Coalition"
+	color 1 .6 .7
+	language "Coalition"
+	"player reputation" 1
+	"attitude toward"
+		"Heliarch" 1
+		
+government "Deep"
+	color .88 .3 .1
+	"player reputation" 1
+	"attitude toward"
+		"Local" 1
+		"Merchant" .5
+		"Northern Union" -.01
+		"Pirate" -.2
+		"Caravan" 1
+		"Deep Security" 1
+
+government "Deep Security"
+	"player reputation" 1
+	"attitude toward"
+		"Local" 1
+		"Merchant" .5
+		"Northern Union" -.01
+		"Pirate" -.2
+		"Caravan" 5
+	"friendly hail" "friendly deep"
+	"hostile hail" "hostile deep"
+
 government "Drak"
-	swizzle 5
 	color 1 1 1
 	"player reputation" 1
 	"fine" 0
@@ -66,15 +91,14 @@ government "Drak"
 		"Indigenous Lifeform" 1
 
 government "Escort"
-	swizzle 5
 	"fine" 0
 
 government "Free Worlds"
-	swizzle 2
 	color .06 .68 0
 	
 	"player reputation" 1
 	"attitude toward"
+		"Local" 2
 		"Merchant" .3
 		"Militia" .3
 		"Pirate" -.4
@@ -85,21 +109,18 @@ government "Free Worlds"
 	raid "pirate raid"
 
 government "Hai"
-	swizzle 0
 	color .84 .42 .81
 	
 	"player reputation" 0
 	"attitude toward"
-		"Hai (Unfettered)" -.1
+		"Hai (Unfettered)" -.5
 		"Merchant" .01
 	"bribe" .02
+	"fine" 0
 	"friendly hail" "friendly hai"
-	"friendly disabled hail" "friendly disabled hai"
 	"hostile hail" "hostile hai"
-	"hostile disabled hail" "hostile disabled hai"
 
 government "Hai (Unfettered)"
-	swizzle 4
 	color .69 .33 .82
 	
 	"player reputation" -1000
@@ -112,26 +133,18 @@ government "Hai (Unfettered)"
 	"bribe" .02
 	"fine" 0
 	"friendly hail" "friendly unfettered"
-	"friendly disabled hail" "friendly disabled unfettered"
 	"hostile hail" "hostile unfettered"
-	"hostile disabled hail" "hostile disabled unfettered"
 
 government "Heliarch"
-	swizzle 0
 	color 1 .8 .5
-	"crew attack" 1.3
-	"crew defense" 2.8
 	"player reputation" 1
 	"friendly hail" "friendly heliarch"
-	"friendly disabled hail" "friendly disabled heliarch"
 	"hostile hail" "hostile heliarch"
-	"hostile disabled hail" "hostile disabled heliarch"
 	"attitude toward"
 		"Quarg" -.01
 		"Coalition" 1
 
 government "Independent"
-	swizzle 6
 	color .78 .36 .36
 	
 	"player reputation" 10
@@ -154,7 +167,6 @@ government "Indigenous Lifeform"
 		atrocity 0
 
 government "Korath"
-	swizzle 0
 	color .8 .5 .1
 	"crew attack" 1.4
 	"crew defense" 2.6
@@ -169,7 +181,6 @@ government "Korath Nanobots"
 	"player reputation" -1000
 
 government "Kor Efret"
-	swizzle 4
 	color .49 .33 .69
 	language "Korath"
 	
@@ -180,7 +191,6 @@ government "Kor Efret"
 	"player reputation" 1
 
 government "Kor Mereti"
-	swizzle 5
 	color .32 .36 .65
 	language "Korath"
 	
@@ -191,7 +201,6 @@ government "Kor Mereti"
 	"player reputation" -1000
 
 government "Kor Sestor"
-	swizzle 0
 	color .75 .27 .37
 	language "Korath"
 	
@@ -205,18 +214,14 @@ government "Kor Sestor"
 	
 	"player reputation" -1000
 
-government "Marauder"
-	swizzle 6
-	"player reputation" 1
-	"bribe" .1
-	"fine" 0
-	"hostile hail" "hostile pirate"
-
-government "Merchant"
-	swizzle 5
+government "Local"	
+	"player reputation" 0
+	"hostile hail" "hostile civilian"	
 	
+government "Merchant"
 	"player reputation" 10
 	"attitude toward"
+		"Local" 1
 		"Pirate" -.2
 		"Korath" -.2
 	"bribe" .05
@@ -225,11 +230,11 @@ government "Merchant"
 	"hostile hail" "hostile civilian"
 
 government "Militia"
-	swizzle 2
 	color .06 .68 0
 	
 	"player reputation" 0
 	"attitude toward"
+		"Local" 1
 		"Merchant" .3
 		"Pirate" -.4
 	"bribe" .1
@@ -237,7 +242,6 @@ government "Militia"
 	"hostile hail" "hostile militia"
 
 government "Navy Intelligence"
-	swizzle 0
 	"crew attack" 1.2
 	"crew defense" 2.2
 	"attitude toward"
@@ -245,13 +249,13 @@ government "Navy Intelligence"
 		"Pirate" -.3
 
 government "Navy (Oathkeeper)"
-	swizzle 0
 	color .91 .42 .09
 	"crew attack" 1.2
 	"crew defense" 2.2
 	
 	"player reputation" 100
 	"attitude toward"
+		"Local" .1
 		"Alpha" -.3
 		"Merchant" .25
 		"Militia" .1
@@ -263,29 +267,44 @@ government "Navy (Oathkeeper)"
 	"hostile hail" "hostile navy"
 
 government "Neutral"
-	swizzle 0
 	color .84 .61 .37
 	
 	"player reputation" 1
 	"attitude toward"
+		"Local" 1
 		"Merchant" .3
 		"Pirate" -.2
 	"bribe" .05
 	"friendly hail" "friendly civilian"
 	"hostile hail" "hostile civilian"
 	raid "pirate raid"
+	
+government "Northern Union"
+	color .05 .35 .25
+	"player reputation" -10
+	"attitude toward"
+		"Local" -1
+		"Author" -.01
+		"Hai" -.01
+		"Korath" -.01
+		"Merchant" -.1
+		"Syndicate" -.01
+		"Pirate" -.01
+	"bribe" .05
+	"fine" 0
+	"friendly hail" "friendly pirate"
+	"hostile hail" "hostile pirate"
 
 government "Parrot"
-	swizzle 2
 	"player reputation" 1
 	"bribe" 0
 
 government "Pirate"
-	swizzle 6
 	color .78 0 0
 	
 	"player reputation" -10
 	"attitude toward"
+		"Local" .01
 		"Author" -.01
 		"Hai" -.01
 		"Korath" -.01
@@ -298,20 +317,17 @@ government "Pirate"
 	raid "pirate raid"
 
 government "Pug"
-	swizzle 0
 	color .99 .89 .70
 	
 	"player reputation" 1
 	"attitude toward"
+		"Local" 1
 		"Drak" -.01
 		"Quarg" -.01
 	"friendly hail" "friendly pug"
-	"friendly disabled hail" "friendly disabled pug"
 	"hostile hail" "hostile pug"
-	"hostile disabled hail" "hostile pug"
 
 government "Quarg"
-	swizzle 0
 	color .88 .77 0
 	
 	"player reputation" 1
@@ -323,10 +339,8 @@ government "Quarg"
 		"Hai" .01
 		"Pirate" -.01
 	"hostile hail" "hostile quarg"
-	"hostile disabled hail" "hostile quarg"
 
 government "Remnant"
-	swizzle 0
 	color .89 .38 .62
 	"crew defense" 2.2
 	
@@ -336,13 +350,13 @@ government "Remnant"
 		"Korath" -.01
 
 government "Republic"
-	swizzle 0
 	color .91 .42 .09
 	"crew attack" 1.2
 	"crew defense" 2.2
 	
 	"player reputation" 2
 	"attitude toward"
+		"Local" 1
 		"Alpha" -.3
 		"Merchant" .25
 		"Militia" .1
@@ -350,16 +364,17 @@ government "Republic"
 		"Navy Intelligence" 1
 		"Navy (Oathkeeper)" 1
 		"Neutral" .1
+		"Northern Union" -.3
 	"friendly hail" "friendly navy"
 	"hostile hail" "hostile navy"
 	raid "pirate raid"
 
 government "Syndicate"
-	swizzle 4
 	color 0 .41 .71
 	
 	"player reputation" 2
 	"attitude toward"
+		"Local" 1
 		"Merchant" .3
 		"Pirate" -.4
 		"Korath" -.5
@@ -369,7 +384,6 @@ government "Syndicate"
 	raid "pirate raid"
 
 government "Syndicate (Extremist)"
-	swizzle 1
 	color 0 .41 .71
 	
 	"player reputation" -1000
@@ -381,7 +395,6 @@ government "Syndicate (Extremist)"
 	"hostile hail" "hostile syndicate"
 
 government "Test Dummy"
-	swizzle 3
 	"player reputation" -1000
 	"hostile hail" "test dummy"
 	"hostile disabled hail" "disabled test dummy"
@@ -390,11 +403,9 @@ government "Uninhabited"
 	color .4 .4 .4
 
 government "Wanderer"
-	swizzle 2
 	color .70 .91 .12
 	"player reputation" 1
 	language "Wanderer"
 	"friendly hail" "wanderer untranslated"
-	"friendly disabled hail" "wanderer untranslated"
 	"hostile hail" "wanderer untranslated"
 	"hostile disabled hail" "wanderer untranslated"
