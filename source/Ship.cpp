@@ -87,8 +87,19 @@ namespace {
 		}
 	}
 }
-
+	// Ship categories, be sure to preserve legacy ship classes (From base endless sky) to support crossover plugins.
 const vector<string> Ship::CATEGORIES = {
+	"Yacht"
+	"Freighter"
+	"Container Ship"
+	"Gunship"
+	"Frigate"
+	"Destroyer"
+	"Cruiser"
+	"Battlecruiser"
+	"Battleship"
+	"Colony Ship"
+	"City Ship"
 	"Transport",
 	"Light Freighter",
 	"Heavy Freighter",
