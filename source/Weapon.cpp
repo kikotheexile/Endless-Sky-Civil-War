@@ -323,9 +323,9 @@ double Weapon::TotalDamage(int index) const
 	{
 		for(int i = 0; i < DAMAGE_TYPES; ++i)
 		{
-			for(const auto &it : submunitions)
-				damage[i] += it.first->TotalDamage(i) * it.second;
-			doesDamage |= (damage[i] > 0.);
+//			for(const auto &it : submunitions)
+//				damage[i] += it.first->TotalDamage(i) * it.second;
+//			doesDamage |= (damage[i] > 0.);
 		}
 		
 		calculatedDamage = true;
