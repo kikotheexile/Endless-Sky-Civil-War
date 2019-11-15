@@ -93,11 +93,13 @@ const vector<string> Ship::CATEGORIES = {
 	"Freighter"
 	"Container Ship"
 	"Gunship"
+	"Corvette"
 	"Frigate"
 	"Destroyer"
 	"Cruiser"
 	"Battlecruiser"
 	"Battleship"
+	"Carrier"
 	"Colony Ship"
 	"City Ship"
 	"Transport",
