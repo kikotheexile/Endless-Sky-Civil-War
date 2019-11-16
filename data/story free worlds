@@ -13,7 +13,6 @@
 
 
 # Free Worlds Intro / Pact
-
 mission "Pact Recon 0"
 	name "Pirate Reconnaissance"
 	description "Fly through the <waypoints> systems, then report to <destination> so the Southern Defense Pact can analyze your logs of pirate activity (if any)."
@@ -30,53 +29,55 @@ mission "Pact Recon 0"
 	
 	on offer
 		conversation
-			`You can't help noticing that the freighter parked next to the <ship> is in very bad shape, its hull pockmarked with blaster scars, as well as larger dents that may be from missiles. The crew is busy welding new hull plating onto it; the captain is having an animated conversation with a young female militia officer.`
+		`	It's difficult to ignore the freighter parked beside your own, pockmarked with blaster scars as well as larger dents, you can only image that it's tangled with pirates or worse. The crew is hard at work welding new hull plating onto it, but it looks like a losing battle as you overhear scraps of the conversation between the captain and a rather animated young militia officer. “Beginning to wonder if Captain life isn't all it's cracked up to be?” The captain says, noticing your blatant attempt to eavesdrop.`
+		choice
+		`	“I'm wondering if there's anything I can do to keep my ship from going through the ringer like that.” `
+			goto ringer
+		`	“I'm starting to wonder if I should save up for a warship.”`												
+			goto warship
+
+		label warship
+		`	You might need one if we can't get a handle on these pirate attacks.” The Militia captain replies. “Hey, have you ever considered volunteering for the Southern Mutual Defense Pact?”
+		choice
+		`	“Maybe if I knew what it was.”`
+			goto smdp
+		`	“I thought the goal was not getting shot to pieces.”`
+			goto initiative	
+
+		label ringer
+		`“Funny you should ask.” The militia officer says. “Have you  considered volunteering for the Southern Mutual Defense Pact?`
 			choice
-				`	(Approach them and find out what happened.)`
-				`	(Ignore them.)`
-					decline
-			`	You overhear enough of the conversation to figure out that the freighter was attacked by pirates. Eventually, they stop talking, and the militia officer, seeing you nearby, walks over to you. "The pirate fleets keep getting stronger every year," she says.`
+		`	“Maybe if I knew what it was.”`
+			goto smdp
+		`	“I thought the goal was not getting shot to pieces.”`
+			goto initiative	
+		label smdp	
+		`	“Since the Navy can't be bothered to patrol this part of the galaxy, we have to keep the pirates in check ourselves. So all the worlds in this area have decided to work together, that way if the pirates try to take over a whole planet or something, the entire pact can be called to assist.”`
 			choice
-				`	"Is there something I can do to help?"`
-					goto help
-				`	"I wish I could help, but my ship is not a warship."`
-					goto warship
-			label help
-			`	"There is indeed," she says. "Have you heard of the Southern Mutual Defense Pact?"`
-				goto pact
-			label warship
-			`	"There are other ways you could help us," she says. "Have you heard of the Southern Mutual Defense Pact?"`
-				goto pact
-			label pact
+		`	“Maybe I'll just head back to Republic space.”`
+			decline
+		`	“Does volunteering require dealing with pirates? I had to take out a loan for this ship.”`
+			goto initiative
+		label initiative
+		`	“You don't have to fight anyone, don't worry.” She says, reassuringly. “If you're interested, the Pact is launching a new initiative, called 'Thousand Eyes'; we're asking ship captains to let us access their scanner logs, basically using merchants as a surveillance network. All you have to do is let us know if you see any pirates. Can we count on you to do your part?”`
 			choice
-				`	"Yes."`
-					goto eyes
-				`	"No. What is it?"`
-			`	She says, "We're a collection of worlds that have decided that since the Navy doesn't patrol this part of the galaxy anymore, it's up to us to keep the pirates in check. The idea is that if the pirates ever try something big, like capturing an entire planet, that planet can call on the entire Pact to assist them."`
-			`	"Sounds like a good idea," you say.`
-			label eyes
-			`	"The Pact is launching a new initiative," she says. "We're calling it the 'Thousand Eyes.' We're asking ship captains to let us access their scanner logs, basically using merchants as a surveillance network. You don't have to fight the pirates, just let us know if you see them. Interested?"`
-			choice
-				`	"Sure, I would be glad to help."`
-				`	"Sorry, sounds too risky."`
-					decline
-			`	"Great!" she says. "Right now, we need more eyes on a few systems on the edge of Southern space. All you need to do is fly through those systems, then report to our base on Glaze. I'll mark the target systems on your map."`
+		`	"Absolutely, sign me up."`
+		`	"I think I'll just head back to Republic space, I don't mess around with pirates."
+			decline
+		`	"That's the spirit!" She says."Right now, we need more eyes on a few systems on the edge of Southern space. All you need to do is fly through those systems, then report to our base on Glaze. I'll mark the target systems on your map."`
 				accept
 	
 	on accept
 		log "Volunteered to help the Southern Mutual Defense Pact keep tabs on pirate activity in their region of space. Pirate attacks seem to be getting worse because the Navy doesn't bother to patrol down here anymore."
-	
-	on complete
+on complete
 		payment 25000
 		dialog
-			`A different female militia officer approaches you when you land on <planet>, and gives you <payment> in exchange for your scanner logs of the southern systems. "My name is Freya Winters," she says. "I'll be in touch when we've got a new assignment for you."`
-
-
+			`A different female militia officer approaches you when you land on <planet>, and gives you <payment> in exchange for your scanner logs of the southern systems. "I'm Freya Winters," she says. "I'll be in touch when we've got a new assignment for you."`
 
 mission "Pact Recon 1"
 	landing
 	name "Pirate Reconnaissance"
-	description "Fly through the <waypoints> systems, then report to <destination> so the Southern Defense Pact can analyze your logs of pirate activity (if any)."
+	description "Fly through the <waypoints> systems, then report to <destination> so the Southern Defense Pact can analyze your logs of pirate activity."
 	waypoint "Wei"
 	waypoint "Alnasl"
 	waypoint "Eber"
@@ -91,19 +92,17 @@ mission "Pact Recon 1"
 	
 	on offer
 		dialog
-			`You receive a message from Freya, the militia officer in charge of tracking pirate activity. "We need some more eyes on the empty systems in the middle of the Dirt Belt," she says. "Pay would be a bit better than last time. Interested?"`
+			`You receive a message from Freya, the militia officer in charge of the Thousand Eyes Initiative. "We need some more eyes on the empty systems in the middle of the Dirt Belt," she says. "Pay would be an improvement from last time. Interested?"`
 	
 	on complete
 		payment 35000
 		dialog
 			`You transfer your sensor logs to Officer Winters. She thanks you for your work, and pays you <payment>. She says, "I'll let you know when we need your services again."`
 
-
-
 mission "Pact Recon 2"
 	landing
 	name "Pirate Reconnaissance"
-	description "Fly through the <waypoints> systems, then report to <destination> so the Southern Defense Pact can analyze your logs of pirate activity (if any)."
+	description "Fly through the <waypoints> systems, then report to <destination> so the Southern Defense Pact can analyze your logs of pirate activity."
 	waypoint "Men"
 	waypoint "Antares"
 	waypoint "Shaula"
@@ -118,12 +117,12 @@ mission "Pact Recon 2"
 	
 	on offer
 		dialog
-			`You receive another message from Freya: "Hello Captain! I've got a more challenging and lucrative mission for you. We need someone to do a flyby of all four pirate systems here in the south, to gauge their strength. Again, no fighting is required. What do you say?"`
+			`You receive another message from Freya: "Hello Captain <last>, I hope you're looking for a challenge today! We need someone to fly through all four pirate systems here in the south so we can better gauge their strength. No fighting is required, but I wouldn't complain if you took a few of them out. What do you say?"`
 	
 	on complete
 		payment 60000
 		dialog
-			`Freya Winters meets up with you in person soon after you land. "I hope you didn't have much trouble," she says, as she hands you a credit chip for <payment>. "You've been a great help to us. I'll be sure to contact you next time we need a scout."`
+			`Freya Winters meets up with you in person soon after you land. "I hope that was as fun as it sounded." she says, as she hands you a credit chip for <payment>. "You've been a fantastic help to this project, I'll be sure to contact you next time we need a scout."`
 
 
 
@@ -145,7 +144,7 @@ mission "Pact Recon 3"
 	
 	on offer
 		dialog
-			`Once again, you receive a message from Freya Winters. "We have another mission for you," she says, "this one a bit more dangerous. We've heard rumors of a pirate fleet massing in one of the seldom-visited systems in the Dirt Belt, and we need to know where they are. Interested in helping to track them down? As before, you don't need to fight them, just observe them."`
+			`You receive another message from Freya Winters. "I've got something a little dangerous for you today." she says, "We've heard rumors of a pirate fleet massing in one of the seldom-visited systems in the Dirt Belt, and we need someone to go observe them that we're sure will actually make it back. Are you interested?"`
 	
 	npc
 		government "Pirate"
@@ -157,9 +156,7 @@ mission "Pact Recon 3"
 	on complete
 		payment 80000
 		dialog
-			`You report to Freya that you found a sizable pirate fleet in the Naper system, as well as spotting some pirates elsewhere. She thanks you, and pays you <payment>. "Thank you for your assistance," she says. "Again, I'll be in touch if we need you."`
-
-
+			`You report to Freya that you found a sizable pirate fleet in the Naper system, as well as spotting some pirates elsewhere. She thanks you, and pays you <payment>. "Always lovely working with you."`
 
 mission "Pact Questioning"
 	source
@@ -171,123 +168,93 @@ mission "Pact Questioning"
 		random < 15
 	
 	on offer
-		log "Apparently the Navy is suspicious of anyone who worked with the Southern Mutual Defense Pact; got questioned about it by an officer. It was unclear what his rank or position in the Navy was."
-		conversation
-			`As you are walking through the spaceport, a middle-aged man in a Navy uniform walks up to you and says, "Excuse me, Captain <last>. Could I speak with you for a few minutes?"`
+		log "Apparently the Navy is suspicious of anyone working with the Southern Mutual Defense Pact. Come to think of it though, it's unclear what that officer's rank or position was."
+			conversation
+			`	Until now, you've generally been left alone by the officers of the republic Navy that are a fixture of most spaceports, so you're rather surprised when you're accosted by an officer in a plain black uniform, missing the usual markings of rank that you're familiar with, save a pin in the shape of an eye, the blue iris staring you down from where the usual rank badge goes. “Excuse me, Captain <Last>, could I speak with you for a few minutes?”`
+		choice
+			`	"I've got time. What's the job?"`
+				goto job
+			`	"Sorry, I've got to see a man about some bull semen."`
+				goto what
+			label job
+			`	"No work today, unfortunetly." The officer replies. "I just have some questions for you."`
+		choice
+			`	"I only have time for paying customers."`
+				goto customer
+			`	"I've got a couple minutes, ask away."`
+				goto ask
+		label customer
+			`	"I really must insist, this shouldn't take long." The officer replies. You get the feeling that complying is in your best interest.`
+		choice
+			`	"Alright, make it quick then."`
+			goto ask
+			`	"Well, since you're asking so nicely."`
+			goto ask
+		label what
+			`	 It's obvious that was not the response the officer was expecting, and he takes a moment to maintain his composure. “You are keeping it on ice, yes? I'm sure you have a couple minutes to spare. I just have some questions and you can be on your way.”`
+		choice
+			`	"I only have time for paying customers."`
+				goto customer
+			`	"I've got a couple minutes, ask away."`
+				goto ask
+		label customer
+			`	"I really must insist, this shouldn't take long." The officer replies. You get the feeling that complying is in your best interest.`
+		choice
+			`	"Alright, make it quick then."`
+			goto ask
+			`	"Well, since you're asking so nicely."`
+			goto ask
+		label ask
+			`	"Thank you," he says. "Am I correct that you performed some missions for the Southern Defense Pact, this would be before they declared themselves the Free Worlds`."`
+			`	"I've done some work here and there."
+			goto easy
+		label business
+			`	The officer's expression does not change. "I'm going to level with you, I already know what I need to know, but I have some paperwork that needs filled out. So you can either make this easy on both of us, or I can ground your ship while I subpoena your records."
+			`	"I've done a little work for them here and there." You admit.
+				goto easy
+		label easy
+			`	"Tell me," he says, "was there someone who you reported to every time, or was it someone different every time?" As he is speaking, you again search him over for any indentifiers on his uniform. The Navy personell you have encountered in the past have a name badge on their lapel and rank insignia on their collar, but his uniform is entirely blank, save the eye on his lapel that has been staring you down the entire conversation.`
 			choice
-				`	"Okay."`
-				`	"Sorry, I'm really busy right now."`
-					defer
-			branch free
-				has "event: war begins"
-			`	"Thank you," he says. "Am I correct that you have been assisting the Southern Mutual Defense Pact?"`
-				goto start
-			label free
-			`	"Thank you," he says. "Am I correct that you performed some missions for the Southern Defense Pact, back before they became the Free Worlds?"`
-			label start
-			`	His voice is very friendly, and he is not armed or accompanied by any other officers that you can see, so it doesn't seem like you are in trouble or in danger of being arrested - especially since your work for the Pact was perfectly legal.`
+			`	"I don't really pay attention to names, just my bank account."`
+			goto account
+			`	"Her last name was a season I think, I don't really remember."`
+			goto freya
+		label account	
+			`	"Always the same with you merchants, isn't it?" He complains. "Would five grand effectively jog your memory?"`
 			choice
-				`	"I don't know what you are talking about."`
-				`	"I did take a few jobs helping out the local militias, yes."`
-					goto pact
-				`	"Yes, I ran several missions for the Pact."`
-					goto pact
-				`	"I'm sorry, but I don't want to talk to you about that."`
-					goto quit
-			`	He has been looking intently into your eye, and when you lie to him, he frowns. "It really isn't necessary to lie to me," he says. You are not sure what to say in response, so you remain quiet.`
-			label pact
-			`	"Tell me," he says, "was there one particular militia officer who you reported to, or was it someone different every time?" As he is speaking, you look for clues of who he is or why he is questioning you, and you notice something very odd. All Navy personnel you have encountered in the past have a name badge on their lapel and rank insignia on their collar, but his uniform is entirely blank.`
+			`	"I wish, but I honestly don't remember."
+			goto wish
+			`	"My memory, no. But my bank account seems to remember one Freya Winters."`
+			goto freya
+		label wish
+			`	"No matter then. Can you tell me what nature of work you were performing?"`
 			choice
-				`	"I don't remember anyone's name in particular."`
-				`	"I would rather not name any names."`
-				`	"I usually reported to an officer named Freya Winters."`
-					goto freya
-				`	"I don't want to talk about this. I'm leaving."`
-					goto quit
-			`	"Oh well," he says, "it was worth asking. Would you at least be willing to tell me the nature of the missions you were performing?"`
-				goto missions
-			label freya
-			`	"Ah yes, Miss Winters," he says. "A very capable woman, although she's more skilled as an engineer than as a leader. Can you tell me what sort of work you were performing for her?"`
-			label missions
-			choice
-				`	"I'd rather not say."`
-					goto quit
-				`	"Who are you? Why are you asking me these questions?"`
-					goto questions
-				`	"Reconnaissance missions, tracking pirate movements."`
-					goto recon
-				`	"Sorry, I'm done talking to you."`
-					goto quit
+			`	"Nothing worthy of this sort of interoggation, just some pirate recon."`
 			label recon
-			`	"Are you certain your reconnaissance was only targeted at pirates?" he asks. "Did they collect only your logs on pirate ships, or on every ship you saw?"`
-			choice 
-				`	"I honestly don't know."`
-				`	"I think it was only the pirate ships."`
-				`	"I just gave them all my logs. I'm not sure what parts of them they ended up using."`
-			`	"I see," he says. "I wonder why they didn't share more of the details of their work with you."`
-			`	"Why are you asking me all these questions?" you say.`
-			label questions
-			`	"I'm just collecting information," he says. "Anything you tell me is interesting to me." Then, with a mischievous grin, he adds, "Anything you refuse to tell me is also interesting. Anyway, I won't detain you any longer. Thank you for your time." He smiles and walks away. You are left with no idea of what is going on.`
-				decline
-			label quit
-			`	"Understood," he says. "Thank you for your time." He makes no effort to detain you. As you walk away, you glance over your shoulder a few times to make sure you are not being watched or followed, but see no one.`
-				decline
-
-
-
-mission "FW Recon 0"
-	name "Transport Militia Officer"
-	description "This militia officer asked if you could transport him to <destination>."
-	minor
-	source
-		government "Free Worlds"
-		near Aldhibain 1 10
-	destination Glaze
-	to offer
-		has "event: initial deployment 4"
-		or
-			and
-				"assisted free worlds" == 0
-				random < 35
-			and
-				"assisted free worlds" == 1
-				random < 40
-			and
-				"assisted free worlds" == 2
-				random < 40
-			and
-				"assisted free worlds" == 3
-				random < 65
-	passengers 1
-	to fail
-		has "chosen sides"
-	
-	on offer
-		conversation
-			`A man in a militia uniform approaches you and asks whether you would be willing to give him a lift to <destination>.`
+			`	"Oh all the usual ways of undermining the republic, but mostly pirate recon."`
+			label recon
+		label freya
+			`	"Ah yes, Miss Winters," he says. "A very capable woman, though she's more skilled as an engineer than as a leader. Can you tell me what sort of work you were performing for her?"`
 			choice
-				`	"Sure, I'd be glad to help!"`
-					accept
-				`	"Sorry, I'm busy with something else right now."`
-					defer
-				`	"Are you connected to the Free Worlds?"`
-			`	"Yes, I'm an officer in their militia. Is that a problem?"`
+			`	"Nothing worthy of this sort of interoggation, just some pirate recon."`
+			label recon
+			`	"Oh all the usual ways of undermining the republic, but mostly pirate recon."`
+			label recon
+		label recon
+			`	If your response was meant to be funny, he doesn't laugh. "Are you certain your reconnaissance was only targeted at pirates?" he asks. "Did they collect only your logs on pirate ships, or on every ship you saw?"`
 			choice
-				`	"Sorry, I really don't want to assist the rebels."`
-					decline
-				`	"No problem at all. I'd be glad to help with your cause!"`
-					accept
-				`	"No problem. But I'm afraid I don't have space for you right now."`
-					defer
+			`	"No idea, I handed over all my sensor logs for the area, what they did with them is their problem."
+			label problem
+			`	"Just the pirate ships, not much else in the areas I was sent to. Do you want the same information so maybe the Navy can do their job?"`
+			label job
+		label problem
+			`	"So it would appear." He replies. "No further questions then, thank you for your time." And with that, he walks away, leaving you wondering what sort of trouble you have gotten yourself into.
+			decline
+		label job
+			`	"That wont be necessary." He replies coldly. "You're free to go for now, but I'll be in touch if I have any further questions." This last part sounds a bit like a threat, but you decide not to comment and instead take your leave, occasionally glancing back over your shoulder as you do to confirm you aren't being watched or followed. Of either, you're unsure.`
+			decline
 	
-	on complete
-		payment
-		dialog
-			`The militia officer thanks you for the ride and pays you <payment>. As he is leaving, he says, "If you're interested in doing more work for us, head to the spaceport bar and find my commander. I'll tell him to keep an eye out for you."`
-
-
-
-mission "FW Recon 1"
+	mission "FW Recon 1"
 	name "Free Worlds Reconnaissance"
 	description "Perform an outfit scan on the cruiser <npc>, then report to a Free Worlds officer on <destination>."
 	source
@@ -299,20 +266,20 @@ mission "FW Recon 1"
 	
 	on offer
 		conversation
-			`When you walk into the spaceport bar, a man in a militia uniform flags you down, and says, "Excuse me, Captain <last>. Would you be willing to do a small service for the Free Worlds?"`
+			`The spaceport bar is mostly empty, save a man in a militia uniform who seems to have a job for you. "Captain <last>, I thought I saw you in the spaceport earlier. Would you be interested in a small job?"`
 			choice
-				`	"Perhaps. What do you want me to do?"`
-				`	"Sorry, I want no part in your rebellion."`
-					decline
-			`	"It's a rather simple matter," he says. "Most of the Republic ships that have come through this system seem to be outfitted for surveillance, not combat. But there is one in orbit right now, the <npc>, that seems to be equipped as a warship. Would you be willing to scan its outfits and report to us what you find? We will pay <payment>."`
+				`	"You could at least buy me a drink first."`
+				`	"Not right now, I'm about to get neck deep into a fishbowl of margaritas."`
+					defer
+			`	"How about you do this and I owe you one." he laughs. "Basically, most of the Republic ships that have come through this system seem to be outfitted for surveillance rather than combat. But this bastard in orbit right now, the <npc>, it looks like a warship and it's got a few of us a little concerned. Would you mind hopping out there and giving it a scan for us?"`
 			choice
-				`	"Sure, that sounds simple enough."`
+				`	"Sure, I'll be back in time for happy hour."`
 					accept
-				`	"Sorry, I don't want to assist rebels."`
+				`	"No thanks, I just paid for my ship to get a full wash and wax and don't want to interrupt that."`
 					decline
 	
 	on accept
-		log "Volunteered to do some recon work for the Free Worlds, as long as there is nothing illegal involved."
+		log "Volunteered to do some recon work for the Free Worlds. Hopefully there's nothing illegal involved."
 	
 	npc "scan outfits"
 		government Republic
@@ -327,25 +294,23 @@ mission "FW Recon 1"
 			choice
 				`	"I was just wondering what sort of engines you've got that let you move so fast."`
 					goto engines
-				`	"Never mind sir, I was just admiring your... impressive equipment."`
-					goto equipment
+				`	"Some dude in the spaceport bet me a drink that I couldn't scan your ship and be back by happy hour."`
+					goto dude
 			label engines
-			`	"Nice, aren't they?" he says. "Atomic engines, the very latest in propulsion technology from Deep Sky. They're so smooth and responsive, I feel like I'm back piloting a shuttlecraft again."`
+			`	"Beautiful, aren't they?" he says. "Atomic engines, the very latest in propulsion technology from Deep Sky. They're so smooth and responsive, I feel like I'm back piloting a shuttlecraft again."`
 			`	He pauses, then adds, "They pay me a thousand credits every time I say that."`
 				goto close
-			label equipment
-			`	He looks awfully pleased with himself. "Yes, I suppose a ship like this is sure to turn a few heads. Next time we're on the same planet, stop by my berth and I'd be glad to give you a... private tour." He winks at you. You feel a little bit creepy.`
+			label dude
+			`	"Maybe catch me after happy hour and I'll give you a proper tour." He winks, and you're almost tempted to take him up on that.
 				goto close
 			label close
-			`	You cut the commlink and breathe a sigh of relief that the conversation is over.`
+			`	You cut the commlink, relieved that it was that easy.`
 	
 	on complete
-		dialog `Soon after you land, the militia officer comes to your ship and pays you <payment> in exchange for your sensor logs regarding the <npc>. He says, "If you would be interested in continuing to work for us, meet me in the spaceport bar in an hour."`
+		dialog `Soon after you land, the militia officer comes to your ship and pays you <payment> in exchange for your sensor logs regarding the <npc>. He says, "If you would be interested in continuing to work for us, meet me in the spaceport bar in an hour. Drinks are on me."`
 		payment 10000
 
-
-
-mission "FW Recon 2"
+		mission "FW Recon 2"
 	name "Free Worlds Reconnaissance"
 	description "Scan any ships in the <waypoints> system that are equipped like the combat-ready cruiser you scanned previously, then return to <destination>."
 	source
@@ -358,13 +323,13 @@ mission "FW Recon 2"
 	
 	on offer
 		conversation
-			`You meet up with the militia officer in the spaceport bar. "Glad you showed up," he says, "I'm Jean-Jacques, by the way, but you can call me JJ."`
+			`You meet back up with the militia officer in the spaceport bar. "Glad you showed up," he says, "I'm Jean-Jacques, by the way, but you can call me JJ."`
 			`	You introduce yourself in return, and he continues. "Here's the deal. I'm the commander of the militia on Glaze. So far, we and the Navy are not shooting at each other, because no one wants to fire the first shot. But if they're getting ready to change that, they'll start refitting their cruisers with heavy weaponry instead of surveillance equipment. So, I need to know how many more of their ships are equipped like the one you just scanned."`
 			`	He continues, "I'd like you to go to <waypoints>, where they're building some sort of secret base. Scan any ships you think match the one we just saw, then bring your scanner logs back here for me to look at."`
 			choice
-				`	"Sure, I'd be glad to do that."`
+				`	"No problem, after you buy me that drink."`
 					accept
-				`	"Sorry, after the way this last captain responded to me scanning him, I'm not sure I want to risk it again."`
+				`	"I'm not sure if I want to risk scanning any more military vessels, I'd hate to start getting a record for this kind of thing."`
 					decline
 	
 	npc "scan outfits"
@@ -379,14 +344,12 @@ mission "FW Recon 2"
 		dialog "You've scanned all the ships you can find here that seem to be upgraded for combat. Time to return to <planet> to collect your payment."
 	
 	on complete
-		dialog `JJ meets you as soon as you land, and you hand over the scanner data. "Thank you again," he says. "If you're willing to take on one more recon mission, meet me in the bar." He hands you <payment>.`
+		dialog `JJ meets you as soon as you land, and you hand over the scanner data. "Thank you again," he says. "If you're willing to take on one more recon mission, I'll be at the bar until it closes." He says, handing you a <payment> chip.`
 		payment 50000
-
-
-
-mission "FW Recon 3"
+	
+	mission "FW Recon 3"
 	name "Free Worlds Reconnaissance"
-	description "Land on <destination> and secretly collect information on the developing Navy base there."
+	description "Land on <destination> and collect information on the developing Navy base there."
 	source
 		planet Glaze
 	destination
@@ -398,23 +361,23 @@ mission "FW Recon 3"
 	
 	on offer
 		conversation
-			`You meet JJ again in the bar. "I have one more reconnaissance mission for you," he says. "The Navy is building a base on New Wales, adjacent to the existing spaceport. From what I understand, they're employing thousands of locals to build it, so one more worker walking around would not seem out of place. I need you to walk around the base, take notes on the number and size of the landing pads and hangars, take pictures if you can, and report back to me. What do you say?"`
+			`You meet JJ back in the spaceport bar. "I just have one more thing on my todo list today." he says. "The Navy is building a base on New Wales, adjacent to the existing spaceport. From what I understand, they're employing thousands of locals to build it, so one more worker walking around shouldn't seem out of place. Just wander about and take notes on what they have built so far, maybe take some pictures if you can manage it. Try to focus on hangars and landing pads, I don't care about their interior design choices."`
 			choice
-				`	"Sure, I can do that."`
-					accept
-				`	"What if they arrest me?"`
-			
-			`	"From what I understand," says JJ, "the base is not actually closed off to civilians. So as long as you keep out of any areas that are marked off limits, you won't be committing any crime."`
+				`	"Sure, what's a little treason in the morning?"`
+				`	"There's nothing like trespassing to spice up my arrest record."`		
+			`	"From what I understand," says JJ, "the base isn't actually closed off to civilians. So as long as you don't try any elite spy nonsense, you won't have to dip into your bail fund."`
 			choice
-				`	"Okay, I'll do it."`
+				`	"Alright, I'm in. It'll be interesting to see the new base."`
 					accept
-				`	"Sorry, I've decided I don't really want to side with the Free Worlds."`
+				`	"I'm starting to think I'm getting in too deep. It's been fun, but I think I'm going to go back to transporting medical supplies and farm equipment."`
 			
-			`	"I'm really sorry to hear that," says JJ. "We had high hopes for you."`
+			`	"I'm really sorry to hear that," says JJ. "But I understand, if I had a choice anymore I'd probably get out too."`
 				decline
 
 
 
+	
+	
 mission "FW Recon 3B"
 	name "Free Worlds Reconnaissance"
 	description "Return to <destination> with information on the Navy base on <origin>."
@@ -435,7 +398,7 @@ mission "FW Recon 3B"
 			`	You stop to tie your shoe and try to listen in. "What's the message?" asks the other.`
 			`	"I can't tell you here," says the first, and they duck behind one of the storage sheds.`
 			choice
-				`	(Ignore them and return to my ship.)`
+				`	(Sounds like elite spy nonsense, don't try it.)`
 					accept
 				`	(Follow them and listen in.)`
 			
@@ -464,7 +427,6 @@ mission "FW Recon 3B"
 		dialog `JJ meets you as soon as you land, and you pass off your information and photos to him. He pays you <payment> and says, "I'll be sure to let the Free Worlds Council know how helpful you have been."`
 		payment 80000
 		log "Gave the Free Worlds some photos and information on the Navy base on New Wales. Jean-Jacques, the militia contact, was very grateful for the help."
-
 
 
 mission "FW Katya 1"
