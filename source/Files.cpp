@@ -118,7 +118,7 @@ void Files::Init(const char * const *argv)
 	// the executable, but are under the same prefix (/usr or /usr/local).
 	static const string LOCAL_PATH = "/usr/local/";
 	static const string STANDARD_PATH = "/usr/";
-	static const string RESOURCE_PATH = "share/games/endless-sky/";
+	static const string RESOURCE_PATH = "share/games/endless-sky-civil-war/";
 	if(!resources.compare(0, LOCAL_PATH.length(), LOCAL_PATH))
 		resources = LOCAL_PATH + RESOURCE_PATH;
 	else if(!resources.compare(0, STANDARD_PATH.length(), STANDARD_PATH))
@@ -146,7 +146,7 @@ void Files::Init(const char * const *argv)
 	{
 		// Find the path to the directory for saved games (and create it if it does
 		// not already exist). This can also be overridden in the command line.
-		char *str = SDL_GetPrefPath("endless-sky", "saves");
+		char *str = SDL_GetPrefPath("endless-sky-civil-war", "saves");
 		if(!str)
 			throw runtime_error("Unable to get path to saves directory!");
 		
@@ -172,7 +172,7 @@ void Files::Init(const char * const *argv)
 	// Create the "plugins" directory if it does not yet exist, so that it is
 	// clear to the user where plugins should go.
 	{
-		char *str = SDL_GetPrefPath("endless-sky", "plugins");
+		char *str = SDL_GetPrefPath("endless-sky-civil-war", "plugins");
 		if(str != nullptr)
 			SDL_free(str);
 	}
