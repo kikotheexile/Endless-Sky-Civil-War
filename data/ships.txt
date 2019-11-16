@@ -47,7 +47,7 @@ ship "Sentinel Drone"
 	explode "tiny explosion" 15
 	description "Combat drones are pilotless attack ships used primarily by the Republic Navy. Although very weak and easy to destroy, they can be very effective in large numbers. Because drones do not need a cockpit, they can be filled entirely with equipment and solid metal, which makes their hulls stronger than other small ships."
 
-ship "Thea Drone"
+ship "Remote Eye"
 	sprite "ship/surveillance drone"
 	thumbnail "thumbnail/surveillance drone"
 	attributes
@@ -684,7 +684,7 @@ ship "Star Queen"
 		"landing gear" 1
 		"required crew" 41
 		"bunks" 112
-		"mass" 230
+		"mass" 276
 		"drag" 5.5
 		"heat dissipation" .65
 		"fuel capacity" 500
@@ -2141,7 +2141,7 @@ ship "Manta"
 		"landing gear" 1
 		"required crew" 6
 		"bunks" 10
-		"mass" 170
+		"mass" 238
 		"drag" 4.7
 		"heat dissipation" .8
 		"fuel capacity" 400
@@ -2198,7 +2198,7 @@ ship "Osprey"
 		"landing gear" 1
 		"required crew" 9
 		"bunks" 24
-		"mass" 270
+		"mass" 378
 		"drag" 6.1
 		"heat dissipation" .8
 		"fuel capacity" 600
@@ -2257,7 +2257,7 @@ ship "Splinter"
 		"landing gear" 1
 		"required crew" 7
 		"bunks" 21
-		"mass" 250
+		"mass" 350
 		"drag" 4.0
 		"heat dissipation" .7
 		"fuel capacity" 600
@@ -2314,7 +2314,7 @@ ship "Aerie"
 		"landing gear" 1
 		"required crew" 10
 		"bunks" 28
-		"mass" 130
+		"mass" 182
 		"drag" 4.1
 		"heat dissipation" .7
 		"fuel capacity" 500
@@ -2375,7 +2375,7 @@ ship "Bastion"
 		"landing gear" 1
 		"required crew" 17
 		"bunks" 40
-		"mass" 580
+		"mass" 720
 		"drag" 10.3
 		"heat dissipation" .5
 		"fuel capacity" 500
@@ -2439,7 +2439,7 @@ ship "Challenger"
 		"landing gear" 1
 		"required crew" 8
 		"bunks" 32
-		"mass" 150
+		"mass" 210
 		"drag" 3.5
 		"heat dissipation" .7
 		"fuel capacity" 500
@@ -2499,7 +2499,7 @@ ship "Firebird"
 		"landing gear" 1
 		"required crew" 7
 		"bunks" 22
-		"mass" 290
+		"mass" 400
 		"drag" 4.5
 		"heat dissipation" .6
 		"fuel capacity" 400
@@ -2561,7 +2561,7 @@ ship "Aletheia"
 		"landing gear" 1
 		"required crew" 21
 		"bunks" 44
-		"mass" 310
+		"mass" 434
 		"drag" 5.2
 		"heat dissipation" .7
 		"fuel capacity" 500
@@ -2632,7 +2632,7 @@ ship "Arete"
 		"landing gear" 1
 		"required crew" 111
 		"bunks" 184
-		"mass" 910
+		"mass" 1250
 		"drag" 17.7
 		"heat dissipation" .45
 		"fuel capacity" 700
@@ -2718,7 +2718,7 @@ ship "Nomos"
 		"landing gear" 1
 		"required crew" 81
 		"bunks" 136
-		"mass" 680
+		"mass" 950
 		"drag" 10.1
 		"heat dissipation" .45
 		"fuel capacity" 600
@@ -2791,7 +2791,7 @@ ship "Elpis"
 		"landing gear" 1
 		"required crew" 84
 		"bunks" 147
-		"mass" 630
+		"mass" 885
 		"drag" 10.1
 		"heat dissipation" .65
 		"fuel capacity" 600
@@ -2858,7 +2858,7 @@ ship "Falcon"
 		"landing gear" 1
 		"required crew" 52
 		"bunks" 75
-		"mass" 510
+		"mass" 1000
 		"drag" 6.7
 		"heat dissipation" .7
 		"fuel capacity" 600
@@ -2921,7 +2921,7 @@ ship "Leviathan"
 		"landing gear" 1
 		"required crew" 43
 		"bunks" 64
-		"mass" 480
+		"mass" 700
 		"drag" 7.6
 		"heat dissipation" .5
 		"fuel capacity" 500
@@ -2981,7 +2981,7 @@ ship "Protector"
 		"landing gear" 1
 		"required crew" 30
 		"bunks" 69
-		"mass" 500
+		"mass" 700
 		"drag" 10.3
 		"heat dissipation" .6
 		"fuel capacity" 400
@@ -3042,7 +3042,7 @@ ship "Vanguard"
 		"landing gear" 1
 		"required crew" 23
 		"bunks" 45
-		"mass" 500
+		"mass" 700
 		"drag" 8
 		"heat dissipation" .6
 		"fuel capacity" 400
@@ -3100,7 +3100,7 @@ ship "Mule"
 		"hull" 4400
 		"required crew" 6
 		"bunks" 43
-		"mass" 320
+		"mass" 3200
 		"drag" 5.7
 		"heat dissipation" .5
 		"fuel capacity" 600
@@ -3162,7 +3162,7 @@ ship "Bactrian"
 		"hull" 8600
 		"required crew" 70
 		"bunks" 245
-		"mass" 940
+		"mass" 9400
 		"drag" 16.1
 		"heat dissipation" .4
 		"fuel capacity" 700
