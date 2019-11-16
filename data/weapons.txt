@@ -20,7 +20,7 @@ outfit "Energy Blaster"
 		sprite "projectile/blaster"
 		sound "blaster"
 		"hit effect" "blaster impact"
-		"inaccuracy" 3
+		"inaccuracy" 24
 		"velocity" 10.625
 		"lifetime" 48
 		"reload" 12
@@ -45,8 +45,8 @@ outfit "Blaster Turret"
 		"hardpoint offset" 9.
 		sound "blaster"
 		"hit effect" "blaster impact"
-		"inaccuracy" 3
-		"turret turn" 3.7
+		"inaccuracy" 24
+		"turret turn" 15.3
 		"velocity" 10.625
 		"lifetime" 48
 		"reload" 6
@@ -71,8 +71,8 @@ outfit "Quad Blaster Turret"
 		"hardpoint offset" 9.
 		sound "blaster"
 		"hit effect" "blaster impact"
-		"inaccuracy" 3
-		"turret turn" 3.2
+		"inaccuracy" 28
+		"turret turn" 20.34
 		"velocity" 10.625
 		"lifetime" 48
 		"reload" 3
@@ -103,7 +103,7 @@ outfit "Modified Blaster"
 		sprite "projectile/mod blaster"
 		sound "mod blaster"
 		"hit effect" "blaster impact"
-		"inaccuracy" 4
+		"inaccuracy" 14
 		"velocity" 10
 		"lifetime" 48
 		"reload" 12
@@ -128,8 +128,8 @@ outfit "Modified Blaster Turret"
 		"hardpoint offset" 9.
 		sound "mod blaster"
 		"hit effect" "blaster impact"
-		"inaccuracy" 4
-		"turret turn" 3.5
+		"inaccuracy" 14
+		"turret turn" 14
 		"velocity" 10
 		"lifetime" 48
 		"reload" 6
@@ -159,8 +159,8 @@ outfit "Beam Laser"
 		"reload" 1
 		"firing energy" .5
 		"firing heat" 1.2
-		"shield damage" 1
-		"hull damage" 1.3
+		"shield damage" .1
+		"hull damage" 2.3
 	description "In the early part of the space era, the settlements in the region of space known as the Deep developed in relative isolation from the rest of human space. One result of that isolation is that their weapons technology mostly uses beam weapons, instead of the energy projectile weapons that are more common elsewhere."
 
 outfit "Laser Turret"
@@ -186,8 +186,8 @@ outfit "Laser Turret"
 		"reload" 1
 		"firing energy" 1
 		"firing heat" 2.4
-		"shield damage" 2
-		"hull damage" 2.6
+		"shield damage" .2
+		"hull damage" 4.6
 	description "Laser Turrets are hated by fighter pilots because it is nearly impossible to dodge them once you are within their reach. This turret carries a pair of lasers and can swivel almost instantly to fire on new targets as they approach. Laser Turrets are especially useful when mounted on slow-moving freighters to fend off packs of small pirate vessels."
 
 effect "beam laser impact"
@@ -219,8 +219,8 @@ outfit "Heavy Laser"
 		"reload" 1
 		"firing energy" 1
 		"firing heat" 2.1
-		"shield damage" 1.7
-		"hull damage" 2.4
+		"shield damage" .7
+		"hull damage" 3.4
 	description "The Heavy Laser is an upgraded Beam Laser with a significantly longer range and higher power. It is mostly intended for larger ships, where energy and space are plentiful, but some pilots consider a single Heavy Laser to be a worthwhile alternative to a pair of Beam Lasers, because the longer range makes up for the fact that it does not quite deal twice as much damage."
 
 outfit "Heavy Laser Turret"
@@ -246,8 +246,8 @@ outfit "Heavy Laser Turret"
 		"reload" 1
 		"firing energy" 2
 		"firing heat" 4.2
-		"shield damage" 3.4
-		"hull damage" 4.8
+		"shield damage" 1.4
+		"hull damage" 6.8
 	description "For ships with enough space to install one, the Heavy Laser Turret is a powerful weapon, equally useful for driving off fighters and for bombarding larger targets with continuous fire without having to worry about pointing your ship in the right direction."
 
 effect "heavy laser impact"
@@ -301,7 +301,7 @@ outfit "Electron Turret"
 		sound "electron beam"
 		"hit effect" "electron impact"
 		"inaccuracy" .3
-		"turret turn" 1.4
+		"turret turn" 19.4
 		"velocity" 450
 		"lifetime" 1
 		"reload" 1
@@ -399,10 +399,12 @@ outfit "Particle Cannon"
 		"firing force" 10
 		"firing heat" 120
 		"hit force" 80
-		"shield damage" 54
+		"shield damage" 24
 		"hull damage" 52
-	description "The Particle Cannon works by accelerating a short burst of particles to near-relativistic speeds. When mounted on a ship that can turn fast enough to keep it trained on approaching ships, it becomes a nearly unbeatable weapon, capable of destroying smaller ships before they can even approach close enough for their comparatively short-ranged weapons to be effective."
-
+		"piercing" .2
+	description "Developed by Lovelace and favored by the Navy, the Particle Cannon makes up for its low shield damage with its high range and ability to knock back hostile ships."
+	description "	The stresses endured by ships on the recieving end of this cannon are too much for most hulls to bare, leading to heafty damage even while their shields are still active."
+	
 effect "particle impact"
 	sprite "effect/particle impact"
 		"no repeat"
@@ -426,7 +428,7 @@ outfit "Proton Gun"
 		sprite "projectile/proton"
 		sound "proton"
 		"hit effect" "proton impact" 3
-		"inaccuracy" 4
+		"inaccuracy" 15
 		"submunition" "Proton Fragment" 3
 		"velocity" 24
 		"lifetime" 2
@@ -434,8 +436,9 @@ outfit "Proton Gun"
 		"firing energy" 15
 		"firing force" 2
 		"firing heat" 60
-	description "The Proton Gun started out as the Syndicate's attempt to reverse engineer and mass produce a cheap competitor for the Particle Cannon. Unfortunately, they were unable to find a reliable way to keep the beam coherent, but the resulting weapon is still popular with some captains, particularly as an anti-fighter gun."
-
+	description "The Syndicated Systems Proton Gun may seem like a knockoff Particle Cannon to the untrained eye, but this rapid fire cannon is anything but."
+	description "	If you are from the school of Spray and Pray, this is the gun for you.
+	
 outfit "Proton Fragment"
 	weapon
 		sprite "projectile/proton fragment"
@@ -472,7 +475,7 @@ outfit "Proton Turret"
 		"hardpoint offset" 14.
 		sound "proton"
 		"hit effect" "proton impact" 3
-		"inaccuracy" 4
+		"inaccuracy" 15
 		"turret turn" 2.0
 		"submunition" "Proton Fragment" 3
 		"velocity" 24
@@ -481,8 +484,180 @@ outfit "Proton Turret"
 		"firing energy" 15
 		"firing force" 2
 		"firing heat" 60
-	description "The Syndicate Proton Turret is a relatively new product designed to compete with Deep Sky's perennially popular laser turrets in the anti-fighter defense market. Though cruder than its competition, the Proton Turret maintains a loyal following among captains dissatisfied with laser weapons' short range."
+	description "Developed by Syndicated Systems, the Proton Turret's rate of fire and hitforce makes it arguably the best anti-fighter weapon on the market."
 
+
+outfit "Pulse Cannon"
+	category "Guns"
+	cost 130000
+	thumbnail "outfit/pulse cannon"
+	"mass" 13
+	"outfit space" -13
+	"weapon capacity" -13
+	"gun ports" -1
+	weapon
+		sprite "projectile/pulse"
+		sound "pulse"
+		"hit effect" "pulse impact"
+		"inaccuracy" 1
+		"velocity" 15
+		"lifetime" 30
+		"reload" 20
+		"firing energy" 24
+		"firing heat" 70
+		"shield damage" 45
+		"hull damage" 34
+	description "Reverse engineered by Tarazed Systems from Alien technology, the Pulse Cannon's efficiency makes it great alternative to the Blaster cannon."
+
+outfit "Pulse Turret"
+	category "Turrets"
+	cost 590000
+	thumbnail "outfit/pulse turret"
+	"mass" 34
+	"outfit space" -34
+	"weapon capacity" -34
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/pulse"
+		"hardpoint sprite" "hardpoint/pulse turret"
+		"hardpoint offset" 7.
+		sound "pulse"
+		"hit effect" "pulse impact"
+		"inaccuracy" 1
+		"turret turn" 2.3
+		"velocity" 15
+		"lifetime" 30
+		"reload" 10
+		"firing energy" 24
+		"firing heat" 70
+		"shield damage" 45
+		"hull damage" 34
+	description "The Tarazed Systems Pulse Turret mounts two Pulse Cannons side by side on a turret mount. Their light weight leads to a fast tracking anti-fighter weapon."
+
+effect "pulse impact"
+	sprite "effect/pulse impact"
+		"no repeat"
+		"frame rate" 10
+	"lifetime" 20
+	"random angle" 360
+	"random spin" 4
+	"random velocity" .6
+	"velocity scale" -.1
+
+
+outfit "Ion Cannon"
+	category "Guns"
+	cost 490000
+	thumbnail "outfit/ion cannon"
+	"mass" 47
+	"outfit space" -47
+	"weapon capacity" -47
+	"gun ports" -1
+	weapon
+		sprite "projectile/ion bolt"
+			"frame rate" 5
+		sound "ion"
+		"hit effect" "ion impact" 2
+		"inaccuracy" 1
+		"velocity" 16
+		"lifetime" 50
+		"reload" 60
+		"firing energy" 120
+		"firing force" 10
+		"firing heat" 150
+		"hit force" 120
+		"shield damage" 168
+		"hull damage" 15
+		"ion damage" 5
+		"slowing damage" .5
+	description "The Tarazed Systems' Ion Cannon is a reverse engineered Alien weapon. The exotic properties of this weapon not only drain shields, but disrupt power supplies."
+	description "	When this cannon hits, it will interfere with a ships engines system as well, making its target move slower. However, it does virtually no damage to a ship's armor beyond some blown out power conduits."
+
+effect "ion impact"
+	sprite "effect/ion impact"
+		"no repeat"
+		"frame rate" 30
+	sound "ion impact"
+	"lifetime" 9
+	"random angle" 360
+	"random spin" 30
+	"random velocity" 2
+	"velocity scale" -.05
+
+
+outfit "Railgun Slug"
+	category "Ammunition"
+	cost 60
+	thumbnail "outfit/railslug"
+	"mass" 0.02
+	"railgun slug capacity" -1
+	description "These railgun slugs incorporate energy-discharging capacitors that deal a small amount of hull damage even when the target's shields are functioning, and they can punch crippling holes in the hull of a ship whose shields are down."
+
+outfit "Railgun"
+	category "Secondary Weapons"
+	cost 20000
+	thumbnail "outfit/railgun"
+	"mass" 4
+	"outfit space" -7
+	"weapon capacity" -7
+	"gun ports" -1
+	"railgun slug capacity" 150
+	weapon
+		sprite "projectile/rail slug"
+			"frame rate" 30
+		ammo "Railgun Slug"
+		icon "icon/rail gun"
+		sound "ion impact"
+		"fire effect" "rail sparks" 2
+		"live effect" "rail sparks" 5
+		"hit effect" "bullet impact"
+		"inaccuracy" 3
+		"velocity" 22
+		"lifetime" 1
+		"reload" 120
+		"firing energy" 92
+		"firing heat" 39
+		"hit force" 44
+		"stream"
+		"submunition" "rslug" 1
+	description "The Hai created this compact weapon for their Flea drones, providing mobile long-range support for the close quarters Pond Strider carrier."
+
+outfit "rslug"
+	weapon
+		"acceleration" .022
+		"drag" .001
+		"lifetime" 99
+		sprite "projectile/rail slug"
+			"frame rate" 30
+		"live effect" "rail sparks" 5
+		"hit effect" "bullet impact"
+		"shield damage" 65
+		"hull damage" 95
+		"homing" 1
+		"optical tracking" .4
+		"turn" .3
+		"hit force" 44
+		"missile strength" 14
+		"piercing" .1
+
+effect "bullet impact"
+	sprite "effect/bullet impact"
+		"no repeat"
+		"frame rate" 60
+	"lifetime" 8
+	"random angle" 40
+	"velocity scale" -.05
+
+effect "rail sparks"
+	sprite "effect/railspark"
+		"random start frame"
+		"frame rate" 30
+		"rewind"
+	"lifetime" 6
+	"random angle" 360
+	"random spin" 30
+	"velocity scale" 1.2
 
 outfit "Plasma Cannon"
 	category "Guns"
@@ -500,14 +675,14 @@ outfit "Plasma Cannon"
 		"inaccuracy" 2
 		"velocity" 12
 		"lifetime" 40
-		"reload" 18
+		"reload" 60
 		"firing energy" 30
 		"firing heat" 180
 		"hit force" 30
-		"shield damage" 63
-		"hull damage" 25
+		"shield damage" 168
+		"hull damage" 15
 		"heat damage" 340
-	description "The Plasma Cannon fires bursts of superheated plasma. In addition to damaging your target, these plasma bursts impart a significant amount of heat, especially to a target whose shields are down."
+	description "The Kraz Cybernetics Plasma Cannon is a reverse engineer of the Tarazed Systems' reverse engineered Ion Cannon. However, instead of focusing on overwhelming the target's electrical systems, the Plasma Cannon focuses on overheating it's target."
 
 outfit "Plasma Turret"
 	category "Turrets"
@@ -525,18 +700,18 @@ outfit "Plasma Turret"
 		"hardpoint offset" 15.
 		sound "plasma"
 		"hit effect" "plasma explosion"
-		"inaccuracy" 2
+		"inaccuracy" 8
 		"turret turn" 1.2
 		"velocity" 12
 		"lifetime" 40
-		"reload" 9
+		"reload" 60
 		"firing energy" 30
 		"firing heat" 180
 		"hit force" 30
-		"shield damage" 63
-		"hull damage" 25
+		"shield damage" 168
+		"hull damage" 15
 		"heat damage" 340
-	description "The Plasma Turret is a pair of plasma cannons mounted on a turret so that they can fire in any direction. It is a fearsome weapon, but only the largest of ships have the space and the energy that it requires."
+	description "Developed by Kraz Cybernetics out of desparation, the Plasma Turret is a weapon designed to counter hostile Navy vessels who otherwise signifigantly outmatch Free Worlds vessels."
 
 effect "plasma explosion"
 	sprite "effect/plasma explosion"
@@ -693,21 +868,21 @@ outfit "Sidewinder Missile Rack"
 	ammo "Sidewinder Missile"
 	description "The Sidewinder Missile Rack is used to store extra ammunition for Sidewinder Missile Launchers."
 
-outfit "Sidewinder Missile Launcher"
+outfit "Ranger Missile Launcher"
 	category "Secondary Weapons"
 	cost 60000
 	thumbnail "outfit/sidewinder launcher"
 	"mass" 5
-	"outfit space" -14
-	"weapon capacity" -14
+	"outfit space" -29
+	"weapon capacity" -29
 	"gun ports" -1
-	"sidewinder capacity" 45
+	"sidewinder capacity" 200
 	weapon
 		sprite "projectile/sidewinder"
 			"no repeat"
 			"frame rate" .25
 		sound "sidewinder"
-		ammo "Sidewinder Missile"
+		ammo "Ranger Missile"
 		icon "icon/sidewinder"
 		"fire effect" "sidewinder fire"
 		"die effect" "missile death"
@@ -715,7 +890,7 @@ outfit "Sidewinder Missile Launcher"
 		"inaccuracy" 4
 		"velocity" 14
 		"lifetime" 470
-		"reload" 60
+		"reload" 20
 		"firing energy" 1
 		"firing heat" 15
 		"acceleration" 1.2
@@ -723,10 +898,10 @@ outfit "Sidewinder Missile Launcher"
 		"turn" 4
 		"homing" 4
 		"radar tracking" .9
-		"shield damage" 180
-		"hull damage" 125
-		"hit force" 170
-		"missile strength" 12
+		"shield damage" 60
+		"hull damage" 45
+		"hit force" 55
+		"missile strength" 4
 	description "The Sidewinder Missile is designed by Lovelace Labs, which is ironically also the designer of the Anti-Missile Turret. Rumors say that the two engineering teams at Lovelace who make the missiles and the anti-missiles are locked in furious competition with each other: the result has been generation after generation of smarter missiles and then smarter turrets to fend them off."
 	description "	Although not as powerful or cheap as the popular Meteor missiles, Sidewinders have several advantages, including their superior maneuverability, better tracking systems, and protective casings that make them much harder for anti-missile systems to destroy."
 
@@ -809,10 +984,10 @@ outfit "Torpedo Launcher"
 	cost 80000
 	thumbnail "outfit/torpedo launcher"
 	"mass" 13
-	"outfit space" -25
-	"weapon capacity" -25
+	"outfit space" -15
+	"weapon capacity" -15
 	"gun ports" -1
-	"torpedo capacity" 30
+	"torpedo capacity" 15
 	weapon
 		sprite "projectile/torpedo"
 			"frame rate" 2
@@ -824,20 +999,21 @@ outfit "Torpedo Launcher"
 		"hit effect" "torpedo hit"
 		"die effect" "tiny explosion"
 		"inaccuracy" 5
-		"velocity" 6
-		"lifetime" 600
+		"velocity" 4
+		"lifetime" 120
 		"reload" 150
 		"firing energy" 2
 		"firing heat" 45
-		"acceleration" .15
+		"acceleration" 1
 		"drag" .025
-		"turn" 1.5
+		"turn" 2.5
 		"homing" 3
 		"optical tracking" .8
-		"shield damage" 680
+		"shield damage" 10
 		"hull damage" 680
+		"piercing" .9
 		"hit force" 300
-		"missile strength" 30
+		"missile strength" 10
 	description "Torpedoes are the most powerful homing weapon, but they move slowly enough that fast ships can simply outrun them, making them most useful against large targets or against small ships at times when they are too distracted to dodge. Torpedo launchers are also much larger than other missile systems, so they are most often found in capital ships."
 
 effect "torpedo fire"
@@ -871,10 +1047,10 @@ outfit "Typhoon Launcher"
 	cost 260000
 	thumbnail "outfit/typhoon launcher"
 	"mass" 20
-	"outfit space" -35
-	"weapon capacity" -35
+	"outfit space" -20
+	"weapon capacity" -20
 	"gun ports" -1
-	"typhoon capacity" 30
+	"typhoon capacity" 15
 	weapon
 		sprite "projectile/typhoon"
 			"frame rate" 4
@@ -887,17 +1063,18 @@ outfit "Typhoon Launcher"
 		"die effect" "tiny explosion"
 		"inaccuracy" 5
 		"velocity" 5
-		"lifetime" 600
+		"lifetime" 120
 		"reload" 120
 		"firing energy" 4
 		"firing heat" 50
-		"acceleration" .1
+		"acceleration" 1
 		"drag" .02
 		"turn" 1.5
 		"homing" 4
 		"optical tracking" .9
-		"shield damage" 880
+		"shield damage" 20
 		"hull damage" 880
+		"piercing" .9
 		"hit force" 450
 		"missile strength" 40
 	description "Typhoon Torpedoes are an improved torpedo technology; they do considerably more damage than ordinary torpedoes. However, they are also much slower, because they are intended mostly for use against large and slow-moving capital ships. As a result, sufficiently skilled pilots can often dodge around them."
