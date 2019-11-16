@@ -16,7 +16,7 @@ fleet "Small Southern Merchants"
 		confusion 40
 		timid frugal appeasing
 	variant 60
-		"Shuttle"
+		"Heavy Shuttle"
 	variant 30
 		"Star Barge"
 	variant 20
@@ -49,12 +49,6 @@ fleet "Small Southern Merchants"
 		"Sparrow"
 	variant 20
 		"Blackbird"
-	variant 1
-		"Mule"
-		"Dagger"
-	variant 1
-		"Mule (Heavy)"
-		"Dagger"
 	variant 2
 		"Bounder"
 	variant 4
@@ -140,9 +134,6 @@ fleet "Large Southern Merchants"
 	variant 10
 		"Blackbird"
 		"Sparrow" 2
-	variant 2
-		"Bactrian"
-		"Dagger" 3
 	variant 12
 		"Hauler III"
 		"Hauler II"
@@ -162,7 +153,7 @@ fleet "Small Core Merchants"
 		confusion 30
 		timid frugal appeasing
 	variant 40
-		"Shuttle"
+		"Heavy Shuttle"
 	variant 60
 		"Star Barge (Armed)"
 	variant 30
@@ -179,7 +170,7 @@ fleet "Small Core Merchants"
 		"Star Barge (Armed)" 2
 	variant 20
 		"Freighter"
-		"Shuttle" 2
+		"Heavy Shuttle" 2
 		"Quicksilver"
 	variant 50
 		"Bounder"
@@ -189,12 +180,6 @@ fleet "Small Core Merchants"
 	variant 10
 		"Freighter"
 		"Wasp" 2
-	variant 1
-		"Mule"
-		"Dagger"
-	variant 1
-		"Mule (Heavy)"
-		"Dagger"
 	variant 3
 		"Argosy"
 	variant 2
@@ -321,12 +306,6 @@ fleet "Large Core Merchants"
 	variant 20
 		"Bounder"
 		"Quicksilver" 2
-	variant 1
-		"Bactrian"
-		"Dagger" 3
-	variant 1
-		"Bactrian"
-		"Lance" 3
 	variant 5
 		"Arrow"
 		"Wasp (Proton)" 2
@@ -341,10 +320,10 @@ fleet "Paradise Merchants"
 		confusion 50
 		timid frugal appeasing
 	variant 20
-		"Shuttle"
+		"Heavy Shuttle"
 	variant 20
 		"Heavy Shuttle"
-		"Shuttle" 2
+		"Heavy Shuttle" 2
 	variant 40
 		"Star Queen"
 	variant 3
@@ -402,10 +381,10 @@ fleet "Small Northern Merchants"
 		confusion 40
 		timid frugal appeasing
 	variant 50
-		"Shuttle"
+		"Heavy Shuttle"
 	variant 40
 		"Star Barge"
-		"Shuttle" 2
+		"Heavy Shuttle" 2
 	variant 30
 		"Freighter"
 	variant 10
@@ -414,7 +393,7 @@ fleet "Small Northern Merchants"
 		"Freighter (Proton)"
 	variant 20
 		"Freighter"
-		"Shuttle" 4
+		"Heavy Shuttle" 4
 	variant 6
 		"Freighter"
 		"Berserker"
@@ -426,21 +405,15 @@ fleet "Small Northern Merchants"
 		"Berserker (Strike)"
 	variant 5
 		"Freighter (Fancy)"
-		"Shuttle" 4
+		"Heavy Shuttle" 4
 	variant 5
 		"Freighter (Proton)"
-		"Shuttle" 4
+		"Heavy Shuttle" 4
 	variant 10
 		"Freighter" 3
 		"Sparrow" 1
 	variant 10
 		"Blackbird"
-	variant 3
-		"Mule"
-		"Dagger"
-	variant 3
-		"Mule (Heavy)"
-		"Dagger"
 	variant 2
 		"Bounder"
 	variant 2
@@ -595,12 +568,6 @@ fleet "Large Northern Merchants"
 		"Sparrow" 2
 		"Firebird" 1
 	variant 2
-		"Bactrian"
-		"Dagger" 3
-	variant 2
-		"Bactrian"
-		"Lance" 3
-	variant 2
 		"Arrow"
 	variant 1
 		"Star Queen"
@@ -647,17 +614,17 @@ fleet "Small Human Merchants (Hai)"
 		confusion 40
 		timid frugal appeasing
 	variant 50
-		"Shuttle"
+		"Heavy Shuttle"
 	variant 40
 		"Star Barge"
-		"Shuttle" 2
+		"Heavy Shuttle" 2
 	variant 30
 		"Freighter"
 	variant 10
 		"Freighter (Hai)"
 	variant 20
 		"Freighter"
-		"Shuttle" 4
+		"Heavy Shuttle" 4
 	variant 6
 		"Freighter (Hai)"
 		"Berserker"
@@ -666,16 +633,10 @@ fleet "Small Human Merchants (Hai)"
 		"Berserker (Afterburner)"
 	variant 5
 		"Freighter (Hai)"
-		"Shuttle" 4
+		"Heavy Shuttle" 4
 	variant 10
 		"Freighter" 3
 		"Sparrow" 1
-	variant 3
-		"Mule (Hai Engines)"
-		"Dagger"
-	variant 3
-		"Mule (Hai Weapons)"
-		"Dagger"
 	variant 2
 		"Bounder"
 	variant 2
@@ -692,7 +653,7 @@ fleet "Small Human Merchants (Hai)"
 		"Hauler II"
 		"Hauler (Hai)"
 	variant 1
-		"Shuttle"
+		"Heavy Shuttle"
 		"Aphid"
 	variant 1
 		"Star Barge"
@@ -797,12 +758,6 @@ fleet "Large Human Merchants (Hai)"
 		"Freighter (Fancy)" 4
 		"Sparrow" 2
 		"Firebird (Plasma)" 1
-	variant 2
-		"Bactrian (Hai Weapons)"
-		"Dagger" 3
-	variant 2
-		"Bactrian (Hai Engines)"
-		"Lance" 3
 	variant 2
 		"Arrow (Hai)"
 	variant 1
@@ -1176,18 +1131,18 @@ fleet "Small Republic"
 	personality
 		heroic opportunistic
 	variant 6
-		"Rainmaker" 2
+		"Achlys" 2
 	variant 5
-		"Gunboat"
-		"Rainmaker"
+		"Narcissus"
+		"Achlys"
 	variant 4
-		"Frigate"
+		"Aletheia"
 	variant 3
-		"Gunboat" 2
+		"Narcissus" 2
 	variant 1
-		"Rainmaker" 3
+		"Achlys" 3
 	variant 6
-		"Gunboat"
+		"Narcissus"
 
 fleet "Large Republic"
 	government "Republic"
@@ -1197,38 +1152,38 @@ fleet "Large Republic"
 	personality
 		heroic opportunistic
 	variant 5
-		"Frigate" 2
-		"Rainmaker"
-		"Gunboat"
+		"Aletheia" 2
+		"Achlys"
+		"Narcissus"
 	variant 3
-		"Cruiser"
-		"Combat Drone" 4
+		"Nomos"
+		"Sentinel Drone" 4
 	variant 3
-		"Cruiser"
-		"Combat Drone" 4
-		"Frigate"
-		"Rainmaker"
+		"Nomos"
+		"Sentinel Drone" 4
+		"Aletheia"
+		"Achlys"
 	variant 2
-		"Carrier"
+		"Arete"
 		"Lance" 4
-		"Combat Drone" 6
+		"Sentinel Drone" 6
 	variant 1
-		"Carrier"
+		"Arete"
 		"Lance" 4
-		"Combat Drone" 6
-		"Cruiser"
-		"Combat Drone" 4
-		"Frigate" 2
-		"Rainmaker" 2
-		"Gunboat" 2
+		"Sentinel Drone" 6
+		"Nomos"
+		"Sentinel Drone" 4
+		"Aletheia" 2
+		"Achlys" 2
+		"Narcissus" 2
 	variant 1
-		"Cruiser"
-		"Combat Drone" 4
-		"Frigate" 2
+		"Nomos"
+		"Sentinel Drone" 4
+		"Aletheia" 2
 	variant 1
-		"Frigate"
-		"Rainmaker" 2
-		"Gunboat"
+		"Aletheia"
+		"Achlys" 2
+		"Narcissus"
 
 fleet "Navy Surveillance"
 	government "Republic"
@@ -1238,10 +1193,10 @@ fleet "Navy Surveillance"
 	personality
 		surveillance opportunistic
 	variant 10
-		"Cruiser"
-		"Surveillance Drone" 4
+		"Nomos"
+		"Thea Drone" 4
 	variant 10
-		"Gunboat" 2
+		"Narcissus" 2
 
 fleet "Small Deep Merchants"
 	government "Merchant"
@@ -1253,19 +1208,9 @@ fleet "Small Deep Merchants"
 	variant 4
 		"Aerie"
 		"Dagger" 2
-	variant 6
-		"Mule"
-		"Dagger"
 	variant 2
-		"Mule (Heavy)"
-		"Dagger"
-	variant 2
-		"Mule"
-		"Dagger"
 		"Raven"
 	variant 1
-		"Mule (Heavy)"
-		"Dagger"
 		"Raven (Heavy)"
 	variant 3
 		"Headhunter"
@@ -1296,30 +1241,13 @@ fleet "Large Deep Merchants"
 	variant 3
 		"Aerie" 2
 		"Dagger" 4
-	variant 8
-		"Bactrian"
-		"Dagger" 3
 	variant 2
-		"Bactrian"
-		"Dagger" 3
 		"Raven"
 		"Aerie"
 		"Dagger" 2
 	variant 2
-		"Bactrian"
-		"Dagger" 3
 		"Raven (Heavy)"
 		"Aerie"
-		"Dagger" 2
-	variant 5
-		"Bactrian"
-		"Dagger" 3
-		"Mule" 2
-		"Dagger" 2
-	variant 2
-		"Bactrian"
-		"Dagger" 3
-		"Mule (Heavy)" 2
 		"Dagger" 2
 	variant 1
 		"Star Queen"
@@ -1434,18 +1362,18 @@ fleet "Small Oathkeeper"
 	personality
 		heroic opportunistic
 	variant 6
-		"Rainmaker" 2
+		"Achlys" 2
 	variant 5
-		"Gunboat"
-		"Rainmaker"
+		"Narcissus"
+		"Achlys"
 	variant 4
-		"Frigate"
+		"Aletheia"
 	variant 3
-		"Gunboat" 2
+		"Narcissus" 2
 	variant 1
-		"Rainmaker" 3
+		"Achlys" 3
 	variant 6
-		"Gunboat"
+		"Narcissus"
 
 fleet "Large Oathkeeper"
 	government "Navy (Oathkeeper)"
@@ -1455,38 +1383,38 @@ fleet "Large Oathkeeper"
 	personality
 		heroic opportunistic
 	variant 5
-		"Frigate" 2
-		"Rainmaker"
-		"Gunboat"
+		"Aletheia" 2
+		"Achlys"
+		"Narcissus"
 	variant 3
-		"Cruiser"
-		"Combat Drone" 4
+		"Nomos"
+		"Sentinel Drone" 4
 	variant 3
-		"Cruiser"
-		"Combat Drone" 4
-		"Frigate"
-		"Rainmaker"
+		"Nomos"
+		"Sentinel Drone" 4
+		"Aletheia"
+		"Achlys"
 	variant 2
-		"Carrier"
+		"Arete"
 		"Lance" 4
-		"Combat Drone" 6
+		"Sentinel Drone" 6
 	variant 1
-		"Carrier"
+		"Arete"
 		"Lance" 4
-		"Combat Drone" 6
-		"Cruiser"
-		"Combat Drone" 4
-		"Frigate" 2
-		"Rainmaker" 2
-		"Gunboat" 2
+		"Sentinel Drone" 6
+		"Nomos"
+		"Sentinel Drone" 4
+		"Aletheia" 2
+		"Achlys" 2
+		"Narcissus" 2
 	variant 1
-		"Cruiser"
-		"Combat Drone" 4
-		"Frigate" 2
+		"Nomos"
+		"Sentinel Drone" 4
+		"Aletheia" 2
 	variant 1
-		"Frigate"
-		"Rainmaker" 2
-		"Gunboat"
+		"Aletheia"
+		"Achlys" 2
+		"Narcissus"
 
 fleet "Small Syndicate"
 	government "Syndicate"
@@ -1689,16 +1617,6 @@ fleet "Large Southern Pirates"
 		"Clipper (Heavy)"
 	variant 2
 		"Clipper (Speedy)"
-	variant 1
-		"Osprey"
-		"Fury"
-	variant 1
-		"Osprey"
-		"Sparrow"
-	variant 1
-		"Osprey (Missile)"
-	variant 1
-		"Osprey (Laser)"
 	variant 2
 		"Clipper"
 		"Hawk"
@@ -1985,18 +1903,6 @@ fleet "Large Core Pirates"
 		"Firebird (Plasma)"
 	variant 1
 		"Firebird (Missile)"
-	variant 1
-		"Vanguard (Particle)"
-	variant 1
-		"Vanguard (Missile)"
-	variant 1
-		"Vanguard"
-	variant 1
-		"Protector (Laser)"
-	variant 1
-		"Protector (Proton)"
-	variant 1
-		"Protector"
 
 fleet "Small Northern Pirates"
 	government "Pirate"
@@ -2032,12 +1938,6 @@ fleet "Small Northern Pirates"
 	variant 1
 		"Hawk (Bomber)"
 		"Sparrow"
-	variant 1
-		"Aerie"
-		"Lance" 2
-	variant 1
-		"Aerie"
-		"Dagger" 2
 	variant 3
 		"Headhunter"
 	variant 2
@@ -2103,31 +2003,6 @@ fleet "Large Northern Pirates"
 	variant 1
 		"Headhunter (Particle)" 2
 		"Headhunter (Strike)"
-	variant 1
-		"Aerie"
-		"Dagger" 2
-		"Corvette"
-	variant 1
-		"Aerie"
-		"Dagger" 2
-		"Raven"
-	variant 2
-		"Aerie" 2
-		"Dagger" 4
-	variant 2
-		"Aerie"
-		"Dagger" 2
-		"Corvette (Missile)"
-	variant 1
-		"Aerie" 2
-		"Dagger" 4
-		"Firebird"
-	variant 2
-		"Mule"
-		"Lance"
-	variant 2
-		"Mule (Heavy)"
-		"Dagger"
 	variant 2
 		"Leviathan"
 		"Firebird"
@@ -2155,9 +2030,6 @@ fleet "Large Northern Pirates"
 	variant 1
 		"Fury (Heavy)" 2
 		"Firebird (Missile)"
-	variant 1
-		"Bactrian"
-		"Dagger" 3
 
 fleet "pirate raid"
 	government "Pirate"
@@ -2889,11 +2761,7 @@ fleet "Hired Guns"
 		"Leviathan (Laser)"
 		"Modified Argosy" 2
 	variant 1
-		"Leviathan (Laser)"
-		"Mule (Heavy)"
-		"Dagger"
-	variant 1
-		"Leviathan (Laser)"
+		"Leviathan (Laser)" 2
 		"Corvette"
 	variant 1
 		"Leviathan (Laser)"
@@ -2903,8 +2771,6 @@ fleet "Hired Guns"
 		"Modified Argosy" 2
 	variant 1
 		"Falcon (Laser)"
-		"Mule (Heavy)"
-		"Dagger"
 	variant 1
 		"Falcon (Laser)"
 		"Corvette"
@@ -2919,8 +2785,6 @@ fleet "Hired Guns"
 		"Headhunter (Strike)" 2
 	variant 1
 		"Vanguard (Particle)"
-		"Mule (Heavy)"
-		"Dagger"
 	variant 1
 		"Vanguard (Particle)"
 		"Corvette"
@@ -2931,22 +2795,7 @@ fleet "Hired Guns"
 		"Vanguard (Particle)"
 		"Splinter (Proton)"
 	variant 1
-		"Bactrian (Hired Gun)"
-		"Dagger" 3
 		"Modified Argosy" 2
-	variant 1
-		"Bactrian (Hired Gun)"
-		"Mule (Heavy)"
-		"Dagger" 4
-	variant 1
-		"Bactrian (Hired Gun)"
-		"Dagger" 3
 		"Corvette"
-	variant 1
-		"Bactrian (Hired Gun)"
-		"Dagger" 3
 		"Splinter (Laser)"
-	variant 1
-		"Bactrian (Hired Gun)"
-		"Dagger" 3
 		"Splinter (Proton)"
