@@ -437,7 +437,7 @@ outfit "Proton Gun"
 		"firing force" 2
 		"firing heat" 60
 	description "The Syndicated Systems Proton Gun may seem like a knockoff Particle Cannon to the untrained eye, but this rapid fire cannon is anything but."
-	description "	If you are from the school of Spray and Pray, this is the gun for you.
+	description "	If you are from the school of Spray and Pray, this is the gun for you."
 	
 outfit "Proton Fragment"
 	weapon
