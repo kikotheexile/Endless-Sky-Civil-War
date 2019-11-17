@@ -972,7 +972,7 @@ mission "Wanderers: Alpha Surveillance C (Pug)"
 
 
 
-ship "Carrier" "Carrier (Alpha)"
+ship "Arete" "Arete (Alpha)"
 	outfits
 		"Ion Cannon" 2
 		"Hai Tracker Pod" 4
