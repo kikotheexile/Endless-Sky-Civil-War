@@ -93,7 +93,7 @@ news "advertisement frag"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Frags
+			"Sponsor: Frags "
 	portrait
 		outfit/"fragmentation grenades"
 	message
@@ -325,7 +325,7 @@ news "advertisement protector"
 			"Voted the 'ugliest ship in the sky' by Stars and Starships Magazine, the Syndicated Shipyards Protector."
 			"You don't want pretty, you want cheap and effective. We can do cheap. Syndicated Shipyards Protector."
 			"A turret platform, not a work of art. The Protector. Brought to you by Syndicated Shipyards."
-			"Protector by Syndicated Shipyards. Cheap. Durable. Effective. 
+			"Protector by Syndicated Shipyards. Cheap. Durable. Effective."
 			
 news "advertisement vanguard"
 	location
@@ -385,7 +385,7 @@ news "advertisement arrow"
 		word
 			"As fast as its name implies. The Syndicated Shipyards Arrow!"
 			"The top choice of corporate executives. The Syndicated Shipyards Arrow!"
-			"Plan your next corporate getaway with an Arrow! Brought to you by Syndicated Shipyards.
+			"Plan your next corporate getaway with an Arrow! Brought to you by Syndicated Shipyards."
 			"Not to toot our own horn, but we here at Syndicated Shipyards really outdid ourselves with the Arrow!"
 			
 news "advertisement sparrow"
@@ -758,6 +758,7 @@ news "advertisement cartel"
 	name
 		word
 			"Warning"
+	portrait
 		outfit/"laser rifle"
 	message
 		word
