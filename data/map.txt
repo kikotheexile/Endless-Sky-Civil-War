@@ -1435,22 +1435,18 @@ system Alnair
 	object
 		sprite star/m4
 		period 10
-		belt 1969
 	object Hippocrates
 		sprite planet/cloud4
 		distance 160.25
 		period 69.8377
-		belt 1969
 	object
 		sprite planet/lava7-b
 		distance 614.29
 		period 524.147
-		belt 1969
 	object
 		sprite planet/gas17-b
 		distance 1355.45
 		period 1717.98
-		belt 1969
 		object
 			sprite planet/oberon
 			distance 214
@@ -1467,7 +1463,6 @@ system Alnair
 		sprite planet/gas5-b
 		distance 2418.94
 		period 4095.72
-		belt 1969
 		object
 			sprite planet/europa
 			distance 274
@@ -5711,8 +5706,6 @@ system Ka'ch'chrai
 			sprite planet/rock7-b
 			distance 153
 			period 18.7183
-			belt 1745
-			minables titanium 4 3.84667
 	object
 		sprite planet/gas13
 		distance 3482.61
@@ -12049,14 +12042,10 @@ system whp1
 			sprite planet/callisto-b
 			distance 272
 			period 15.8216
-			belt 1805
-			minables titanium 12 5.39802
 		object
 			sprite planet/rock3-b
 			distance 406
 			period 28.8527
-			belt 1805
-			minables titanium 12 5.39802
 	object "Wormhole Beta"
 		sprite planet/wormhole-red
 		distance 2077.64
