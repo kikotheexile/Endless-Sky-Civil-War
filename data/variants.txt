@@ -455,7 +455,7 @@ ship "Bulk Freighter" "Bulk Freighter (Proton)"
 
 
 
-ship "Carrier" "Carrier (Jump)"
+ship "Arete" "Arete (Jump)"
 	outfits
 		"Particle Cannon" 4
 		"Sidewinder Missile Launcher" 4
@@ -491,7 +491,7 @@ ship "Carrier" "Carrier (Jump)"
 	turret "Electron Turret"
 
 
-ship "Carrier" "Carrier (Mark II)"
+ship "Arete" "Arete (Mark II)"
 	outfits
 		"Particle Cannon" 4
 		"Sidewinder Missile Launcher" 4
@@ -567,7 +567,7 @@ ship "Clipper" "Clipper (Speedy)"
 
 
 
-ship "Corvette" "Corvette (Hai)"
+ship "Challenger" "Challenger (Hai)"
 	outfits
 		"Hai Tracker Pod" 4
 		"Hai Tracker" 224
@@ -583,7 +583,7 @@ ship "Corvette" "Corvette (Hai)"
 		"Hyperdrive"
 
 
-ship "Corvette" "Corvette (Missile)"
+ship "Challenger" "Challenger (Missile)"
 	outfits
 		"Torpedo Launcher" 2
 		"Torpedo" 60
@@ -606,7 +606,7 @@ ship "Corvette" "Corvette (Missile)"
 	gun "Torpedo Launcher"
 
 
-ship "Corvette" "Corvette (Speedy)"
+ship "Challenger" "Challenger (Speedy)"
 	outfits
 		"Particle Cannon" 4
 		"Heavy Anti-Missile Turret"
@@ -622,7 +622,7 @@ ship "Corvette" "Corvette (Speedy)"
 
 
 
-ship "Cruiser" "Cruiser (Heavy)"
+ship "Nomos" "Nomos (Heavy)"
 	outfits
 		"Heavy Rocket Launcher" 2
 		"Heavy Rocket" 40
@@ -657,7 +657,7 @@ ship "Cruiser" "Cruiser (Heavy)"
 	turret "Heavy Anti-Missile Turret"
 
 
-ship "Cruiser" "Cruiser (Jump)"
+ship "Nomos" "Nomos (Jump)"
 	outfits
 		"Typhoon Launcher" 2
 		"Typhoon Torpedo" 60
@@ -691,7 +691,7 @@ ship "Cruiser" "Cruiser (Jump)"
 	turret "Heavy Anti-Missile Turret"
 
 
-ship "Cruiser" "Cruiser (Mark II)"
+ship "Nomos" "Nomos (Mark II)"
 	outfits
 		"Typhoon Launcher" 2
 		"Typhoon Torpedo" 60
@@ -725,7 +725,7 @@ ship "Cruiser" "Cruiser (Mark II)"
 
 
 
-ship "Dreadnought" "Dreadnought (Jump)"
+ship "Elpis" "Elpis (Jump)"
 	outfits
 		"Torpedo Launcher" 4
 		"Torpedo" 120
@@ -993,7 +993,7 @@ ship "Freighter" "Freighter (Secret Cargo)"
 
 
 
-ship "Frigate" "Frigate (Mark II)"
+ship "Aletheia" "Aletheia (Mark II)"
 	outfits
 		"Particle Cannon" 4
 		"Anti-Missile Turret"
@@ -1109,7 +1109,7 @@ ship "Fury" "Fury (Miner)"
 
 
 
-ship "Gunboat" "Gunboat (Mark II)"
+ship "Narcissus" "Narcissus (Mark II)"
 	outfits
 		"Electron Beam" 2
 		"Electron Turret"
@@ -1764,7 +1764,7 @@ ship "Quicksilver" "Quicksilver (Scanner)"
 
 
 
-ship "Rainmaker" "Rainmaker (Mark II)"
+ship "Achlys" "Achlys (Mark II)"
 	outfits
 		"Sidewinder Missile Launcher" 4
 		"Sidewinder Missile" 180
@@ -1833,7 +1833,7 @@ ship "Roost" "Roost (Sidewinder)"
 
 
 
-ship "Scout" "Scout (Speedy)"
+ship "Caravel" "Caravel (Speedy)"
 	outfits
 		"Meteor Missile Launcher"
 		"Meteor Missile" 30

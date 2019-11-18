@@ -42,14 +42,14 @@ mission "Intro [0]"
 			choice
 				`	"You're a captain?"`
 					goto captain
-				`	"I'm sure, but it's time for me to get off this rock. Goodbye."
+				`	"I'm sure, but it's time for me to get off this rock. Goodbye."`
 					decline
 			label bigger
 			`	He smiles. "I'm sure you will. But there's something nice to having a ship you can pilot all by yourself. Believe me, once you have to start managing crew and paying salaries, or keeping track of a whole fleet, you'll miss these days when everything was simple."`
 			choice
 				`	"You're a captain?"`
 					goto captain
-				`	"I'm sure I'll soon find out, but it's time for me to leave the nest. Goodbye."
+				`	"I'm sure I'll soon find out, but it's time for me to leave the nest.` Goodbye."
 					decline
 			label captain
 			`	"Was," he says. "Sold off my fleet a few days ago, and I already miss it. But it was time. Time for me to retire." His voice trails off, then his face lights up. "Say, any chance I could hitch a ride with you, maybe show you the ropes, give you some pointers? I could pay you, of course."`
@@ -73,9 +73,9 @@ mission "Intro [0]"
 			choice
 				`	"Sure, glad to have you aboard."`
 					goto end
-				`	"Pay, you say? Shall I help you with your bags?"
+				`	"Pay, you say? Shall I help you with your bags?"`
 					goto end
-				`	"I always skip tutorials. Always. Even if the money is really good."
+				`	"I always skip tutorials. Always. Even if the money is really good."`
 					decline
 			label end
 			`	"Great," he says. "My name is James, by the way."`
