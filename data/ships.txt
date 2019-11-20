@@ -581,7 +581,7 @@ ship "Heavy Shuttle"
 	thumbnail "thumbnail/heavy shuttle"
 	attributes
 		category "Yacht"
-		"cost" 320000
+		"cost" 220000
 		"shields" 700
 		"hull" 700
 		"landing gear" 1
