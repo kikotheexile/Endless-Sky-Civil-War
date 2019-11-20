@@ -3093,6 +3093,8 @@ ship "Vanguard"
 ship "Mule"
 	sprite "ship/mule"
 	thumbnail "thumbnail/mule"
+		"frame rate" 30
+		"random start frame"
 	attributes
 		category "Colony Ship"
 		"cost" 4580000
@@ -3153,6 +3155,8 @@ ship "Mule"
 ship "Bactrian"
 	sprite "ship/bactrian"
 	thumbnail "thumbnail/bactrian"
+		"frame rate" 30
+		"random start frame"
 	attributes
 		licenses
 			City-Ship
