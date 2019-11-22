@@ -1,3 +1,5 @@
+# Originally written by @Muffindrake
+
 PREFIX ?= /usr/local
 
 .PHONY: release debug profile all clean install
@@ -6,7 +8,7 @@ OPTLEVEL ?= -O3
 LIBS += sdl2 libpng libjpeg gl glew openal mad
 CXXFLAGS += -std=c++11 -Wall
 CXXFLAGS += $(shell pkg-config $(LIBS) --cflags)
-LDFLAGS += $(shell pkg-config $(LIBS) --libs) -lpthread -static
+LDFLAGS += $(shell pkg-config $(LIBS) --libs) -lpthread
 
 PROG = endless-sky
 PROG_DEBUG = $(PROG)-debug
