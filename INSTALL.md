@@ -1,8 +1,4 @@
 ###### Building Endless Sky
-_NOTE: If you have strayed here by accident and are inexperienced with building
-software and the command line, it may be a better idea to grab the program from
-your package manager, the releases section in GitHub, or Steam, rather than
-fruitlessly wasting your time_
 
 ### Linux
 You must install both headers and runtimes of the following libraries:
@@ -23,7 +19,7 @@ You then run the following commands in the same directory as the `Makefile`:
     $ make
     $ ./endless-sky
 
-`-j9` may be passed to `make` to make the build go faster at the expense of
+`-j$(nproc)` may be passed to `make` to make the build go faster at the expense of
 memory and CPU time. Setting an environment variable `OPTFLAGS` will alter the
 default optimisation flags, while `CXXFLAGS` and `LDFLAGS` will let you change
 the compiler and linker flags respectively, if any changes are necessary.
@@ -78,7 +74,7 @@ Simply create a plain text file named `gl.pc` with a plain text editor, place
 the above contents with no leading whitespace inside said file, then place that
 file in `/usr/lib/pkgconfig`.
 
-After sufficient cursing at Apple, you may proceed to build and run:
+To build and run:
 
     $ make
     $ ./endless-sky

@@ -6,7 +6,7 @@ OPTLEVEL ?= -O3
 LIBS += sdl2 libpng libjpeg gl glew openal mad
 CXXFLAGS += -std=c++11 -Wall
 CXXFLAGS += $(shell pkg-config $(LIBS) --cflags)
-LDFLAGS += $(shell pkg-config $(LIBS) --libs) -lpthread
+LDFLAGS += $(shell pkg-config $(LIBS) --libs) -lpthread -static
 
 PROG = endless-sky
 PROG_DEBUG = $(PROG)-debug
