@@ -451,7 +451,7 @@ ship "Blackbird"
 		"engine capacity" 110
 		"cloak" .02
 		"cloaking energy" 5
-		"cloaking heat" 100
+		"cloaking heat" 190
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -639,7 +639,7 @@ ship "Caravel"
 		"engine capacity" 100
 		"cloak" .02
 		"cloaking energy" 5
-		"cloaking heat" 100
+		"cloaking heat" 125
 		weapon
 			"blast radius" 16
 			"shield damage" 160
@@ -807,7 +807,7 @@ ship "Fury"
 		"engine capacity" 60
 		"cloak" .02
 		"cloaking energy" 5
-		"cloaking heat" 100
+		"cloaking heat" 120
 		weapon
 			"blast radius" 24
 			"shield damage" 240
@@ -860,7 +860,7 @@ ship "Hawk"
 		"engine capacity" 70
 		"cloak" .02
 		"cloaking energy" 5
-		"cloaking heat" 100
+		"cloaking heat" 200
 		weapon
 			"blast radius" 30
 			"shield damage" 300
@@ -1016,7 +1016,7 @@ ship "Argosy"
 		"engine capacity" 80
 		"cloak" .02
 		"cloaking energy" 5
-		"cloaking heat" 100
+		"cloaking heat" 210
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -1079,7 +1079,7 @@ ship "Clipper"
 		"engine capacity" 80
 		"cloak" .02
 		"cloaking energy" 5
-		"cloaking heat" 100
+		"cloaking heat" 210
 		weapon
 			"blast radius" 36
 			"shield damage" 360
@@ -1908,7 +1908,7 @@ ship "Modified Argosy"
 		"engine capacity" 80
 		"cloak" .02
 		"cloaking energy" 5
-		"cloaking heat" 100
+		"cloaking heat" 195
 		weapon
 			"blast radius" 80
 			"shield damage" 800
@@ -2028,7 +2028,7 @@ ship "Achlys"
 		"engine capacity" 50
 		"cloak" .02
 		"cloaking energy" 5
-		"cloaking heat" 100
+		"cloaking heat" 200
 		weapon
 			"blast radius" 40
 			"shield damage" 400
