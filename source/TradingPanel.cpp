@@ -14,6 +14,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 #include "Color.h"
 #include "Command.h"
+#include "Crew.h"
 #include "FillShader.h"
 #include "Font.h"
 #include "FontSet.h"
@@ -73,10 +74,16 @@ TradingPanel::~TradingPanel()
 			+ (tonsSold == 1 ? " ton" : " tons") + " of cargo ";
 		
 		if(profit < 0)
-			message += "at a loss of " + Format::Credits(-profit) + " credits.";
+			message += "at a loss of " + Format::Credits(-profit) + " credits";
 		else
-			message += "for a total profit of " + Format::Credits(profit) + " credits.";
+			message += "for a profit of " + Format::Credits(profit) + " credits";
 		
+		if(sharedProfit > 0)
+		{
+			message += " and distributed " + Format::Credits(sharedProfit) + " credits among your crew";
+		}
+		message += ".";
+			
 		Messages::Add(message);
 	}
 }
@@ -240,11 +247,13 @@ bool TradingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, 
 			
 			int64_t basis = player.GetBasis(it.name, -amount);
 			player.AdjustBasis(it.name, basis);
-			profit += amount * price + basis;
+			int64_t grossProfit = amount * price + basis;
+			profit += grossProfit;
 			tonsSold += amount;
-			
+			int64_t profitShare = Crew::ShareProfit(player.Ships(), player.Flagship(), grossProfit);
+			sharedProfit += profitShare;
 			player.Cargo().Remove(it.name, amount);
-			player.Accounts().AddCredits(amount * price);
+			player.Accounts().AddCredits(amount * price - profitShare);
 			GameData::AddPurchase(system, it.name, -amount);
 		}
 		int day = player.GetDate().DaysSinceEpoch();
@@ -258,7 +267,9 @@ bool TradingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command, 
 			tonsSold += static_cast<int>(it.second * it.first->Mass());
 			
 			player.AddStock(it.first, it.second);
-			player.Accounts().AddCredits(value);
+			int64_t profitShare = Crew::ShareProfit(player.Ships(), player.Flagship(), value);
+			sharedProfit += profitShare;
+			player.Accounts().AddCredits(value - profitShare);
 			player.Cargo().Remove(it.first, it.second);
 		}
 	}
@@ -319,6 +330,7 @@ void TradingPanel::Buy(int64_t amount)
 		tonsSold += -amount;
 	}
 	amount = player.Cargo().Add(type, amount);
-	player.Accounts().AddCredits(-amount * price);
+	sharedProfit += Crew::ShareProfit(player.Ships(), player.Flagship(), profit);
+	player.Accounts().AddCredits(-amount * price - sharedProfit);
 	GameData::AddPurchase(system, type, amount);
 }

@@ -13,6 +13,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "ShipInfoPanel.h"
 
 #include "Command.h"
+#include "Crew.h"
 #include "Dialog.h"
 #include "Font.h"
 #include "FontSet.h"
@@ -103,6 +104,7 @@ void ShipInfoPanel::Draw()
 	plunderZones.clear();
 	Rectangle cargoBounds = interface->GetBox("cargo");
 	DrawShipStats(interface->GetBox("stats"));
+	DrawCrew(interface->GetBox("crew"));
 	DrawOutfits(interface->GetBox("outfits"), cargoBounds);
 	DrawWeapons(interface->GetBox("weapons"));
 	DrawCargo(cargoBounds);
@@ -586,6 +588,52 @@ void ShipInfoPanel::DrawCargo(const Rectangle &bounds)
 		table.Draw("passengers:", dim);
 		table.Draw(to_string(cargo.Passengers()), bright);
 	}
+}
+
+
+
+void ShipInfoPanel::DrawCrew(const Rectangle &bounds)
+{
+	const shared_ptr<Ship> &ship = *shipIt;
+
+	// Get standard colors to draw with.
+	const Color &labelColor = *GameData::Colors().Get("medium");
+	const Color &valueColor = *GameData::Colors().Get("bright");
+	
+	Table table;
+	table.AddColumn(10, Table::LEFT);
+	table.AddColumn(WIDTH - 80, Table::RIGHT);
+	table.AddColumn(WIDTH - 10, Table::RIGHT);
+	table.SetHighlight(0, WIDTH);
+	table.DrawAt(bounds.TopLeft());
+	table.DrawGap(10.);
+	
+	table.Advance();
+	table.Draw("shares", labelColor);
+	table.Draw("salaries", labelColor);
+
+	int64_t totalSalaries = 0;
+	int64_t totalShares = 0;
+	
+	for(const pair<const string, int64_t> &crewEntry : Crew::ShipManifest(ship, ship.get() == player.Flagship()))
+	{
+		const Crew * crew = GameData::Crews().Get(crewEntry.first);
+		
+		// CheckHover(table, tableLabels[i]);
+		table.Draw(crew->Name() + ":", labelColor);
+		
+		int64_t shares = (ship->IsParked() ? crew->ParkedShares() : crew->Shares()) * crewEntry.second;
+		totalShares += shares;
+		table.Draw(shares, valueColor);
+		
+		int64_t salaries = (ship->IsParked() ? crew->ParkedSalary() : crew->Salary()) * crewEntry.second;
+		totalSalaries += salaries;
+		table.Draw(Format::Credits(salaries), valueColor);
+	}
+	
+	table.Draw("Total:", labelColor);
+	table.Draw(totalShares, valueColor);
+	table.Draw(Format::Credits(totalSalaries), valueColor);
 }
 
 
