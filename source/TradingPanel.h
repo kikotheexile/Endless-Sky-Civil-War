@@ -52,8 +52,9 @@ private:
 	// everything except outfits.
 	bool sellOutfits = false;
 	
-	// Keep track of how much we sold and how much profit was made.
+	// Keep track of how much we sold, and how much profit we made / shared.
 	int tonsSold = 0;
+	int64_t sharedProfit = 0;
 	int64_t profit = 0;
 };
 

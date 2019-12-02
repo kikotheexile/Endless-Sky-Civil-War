@@ -13,6 +13,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "PlayerInfoPanel.h"
 
 #include "Command.h"
+#include "Crew.h"
 #include "Font.h"
 #include "FontSet.h"
 #include "Format.h"
@@ -524,6 +525,11 @@ void PlayerInfoPanel::DrawPlayer(const Rectangle &bounds)
 		table.Draw("fleet: " + deterrenceRating, dim);
 		table.Draw("(-" + Format::Decimal(deterrenceLevel, 1) + ")", dim);
 	}
+	
+	// Fleet summary:
+	vector<pair<int64_t, string>> fleetSummary = Crew::FleetSummary(player);
+	DrawList(fleetSummary, table, "fleet summary: ");
+	
 	// Other special information:
 	auto salary = Match(player, "salary: ", "");
 	sort(salary.begin(), salary.end());

@@ -8,22 +8,32 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+crew "player"
+  name "Player"
+  shares 1000
+  "avoids escorts"
+  "place at" 1
+
 crew "regular"
   name "Regular Crew"
   salary 100
+  shares 1
 
-# crew "pilot"
-#   name "Pilots"
-#   salary 250
-#   "avoids flagship"
-#   "place at" 1
-# 
-# crew "junior officer"
-#   name "Junior Officers"
-#   salary 500
-#   "ship population per member" 5
-# 
-# crew "senior officer"
-#   name "Senior Officers"
-#   salary 2000
-#   "ship population per member" 20
+crew "pilot"
+  name "Pilot"
+  salary 250
+  shares 20
+  "avoids flagship"
+  "place at" 1
+
+crew "junior officer"
+  name "Junior Officers"
+  salary 500
+  shares 10
+  "ship population per member" 5
+
+crew "senior officer"
+  name "Senior Officers"
+  salary 2000
+  shares 50
+  "ship population per member" 20

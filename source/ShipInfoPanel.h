@@ -60,6 +60,7 @@ private:
 	void DrawOutfits(const Rectangle &bounds, Rectangle &cargoBounds);
 	void DrawWeapons(const Rectangle &bounds);
 	void DrawCargo(const Rectangle &bounds);
+	void DrawCrew(const Rectangle &bounds);
 	
 	// Helper functions.
 	void DrawLine(const Point &from, const Point &to, const Color &color) const;
