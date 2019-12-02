@@ -2344,6 +2344,7 @@ system Arneb
 	pos -121.285 -339.734
 	government Independent
 	habitable 1715
+	link Xanthe
 	link Hatysa
 	link Endios
 	trade Clothing 365
