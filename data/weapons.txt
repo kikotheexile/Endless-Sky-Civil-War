@@ -8,138 +8,67 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-outfit "Energy Blaster"
-	category "Guns"
-	cost 16000
-	thumbnail "outfit/blaster"
-	"mass" 5
-	"outfit space" -5
-	"weapon capacity" -5
-	"gun ports" -1
-	weapon
-		sprite "projectile/blaster"
-		sound "blaster"
-		"hit effect" "blaster impact"
-		"inaccuracy" 24
-		"velocity" 10.625
-		"lifetime" 48
-		"reload" 12
-		"firing energy" 9.6
-		"firing heat" 30
-		"shield damage" 9.6
-		"hull damage" 6
-	description "Although not the most accurate or damaging of weapons, the Energy Blaster is popular because it is small enough to be installed on even the tiniest of ships. One blaster is not enough to do appreciable damage to anything larger than a fighter, but a ship equipped with several of them becomes a force to be reckoned with."
+# Search (CRTL+F) "# AMS" For Anti Missile Systems, "# Beams" For Laser systems, "# Blasters" for small energy projectiles
+# Search (CRTL+F) "# Cannons" For large energy projectiles, "ASL" For Ammunition, Submunitions, and launchers
 
-outfit "Blaster Turret"
+# AMS
+outfit "Anti-Missile Turret"
 	category "Turrets"
-	cost 100000
-	thumbnail "outfit/blaster turret"
-	"mass" 15
-	"outfit space" -15
-	"weapon capacity" -15
+	cost 60000
+	thumbnail "outfit/anti-missile"
+	"mass" 16
+	"outfit space" -16
+	"weapon capacity" -16
 	"turret mounts" -1
-	"required crew" 1
 	weapon
-		sprite "projectile/blaster"
-		"hardpoint sprite" "hardpoint/blaster turret"
-		"hardpoint offset" 9.
-		sound "blaster"
-		"hit effect" "blaster impact"
-		"inaccuracy" 24
-		"turret turn" 15.3
-		"velocity" 10.625
-		"lifetime" 48
-		"reload" 6
-		"firing energy" 9.6
-		"firing heat" 30
-		"shield damage" 9.6
-		"hull damage" 6
-	description "A Blaster Turret is a pair of Energy Blasters mounted on a rotating platform, allowing it to fire in any direction. Sophisticated software algorithms allow the turret to correct for a target's motion, making the Blaster Turret effective even against small, quickly moving fighters. Because it needs a special mounting point with a 360 degree field of view, not all ships are capable of being equipped with a turret."
+		"hardpoint sprite" "hardpoint/anti-missile"
+		"hardpoint offset" 4.
+		"hit effect" "small anti-missile"
+		"anti-missile" 5
+		"velocity" 150
+		"lifetime" 1
+		"reload" 8
+		"firing energy" 5
+		"firing heat" 3
+	description "Centuries ago, space battles were fought mostly with missiles, with the outcome dependent only on which ship had more shielding or ammunition. Lovelace Labs was originally founded to remedy that situation by developing a protective system that could shoot missiles out of the air, defending freighter convoys from pirates who could otherwise simply bombard them into submission without ever venturing within range of their guns."
 
-outfit "Quad Blaster Turret"
-	category "Turrets"
-	cost 230000
-	thumbnail "outfit/quad blaster turret"
-	"mass" 25
-	"outfit space" -25
-	"weapon capacity" -25
-	"turret mounts" -1
-	"required crew" 1
-	weapon
-		sprite "projectile/blaster"
-		"hardpoint sprite" "hardpoint/quad blaster turret"
-		"hardpoint offset" 9.
-		sound "blaster"
-		"hit effect" "blaster impact"
-		"inaccuracy" 28
-		"turret turn" 20.34
-		"velocity" 10.625
-		"lifetime" 48
-		"reload" 3
-		"firing energy" 9.6
-		"firing heat" 30
-		"shield damage" 9.6
-		"hull damage" 6
-	description "A Quad Blaster Turret carries four guns on a single turret mount, doubling the firepower of an ordinary Blaster Turret for ships with enough space to install one and energy to drive it."
-
-effect "blaster impact"
-	sprite "effect/blaster impact"
+effect "small anti-missile"
+	sprite "effect/small anti missile"
 		"no repeat"
-		"frame rate" 30
-	"lifetime" 7
-	"random angle" 40
-	"velocity scale" -.05
+		"frame rate" 3
+	sound "anti-missile"
+	"lifetime" 21
+	"velocity scale" 1
 
 
-outfit "Modified Blaster"
-	category "Guns"
-	cost 35000
-	thumbnail "outfit/mod blaster"
-	"mass" 6
-	"outfit space" -6
-	"weapon capacity" -6
-	"gun ports" -1
-	weapon
-		sprite "projectile/mod blaster"
-		sound "mod blaster"
-		"hit effect" "blaster impact"
-		"inaccuracy" 14
-		"velocity" 10
-		"lifetime" 48
-		"reload" 12
-		"firing energy" 10.8
-		"firing heat" 42
-		"shield damage" 12
-		"hull damage" 8
-	description "This is an Energy Blaster that has been tampered with to increase its power slightly, at the cost of reduced range and higher energy consumption. Modified Blasters also produce an extreme amount of heat when firing, increasing the risk that your ship will overheat."
-
-outfit "Modified Blaster Turret"
+outfit "Heavy Anti-Missile Turret"
 	category "Turrets"
-	cost 170000
-	thumbnail "outfit/mod blaster turret"
-	"mass" 18
-	"outfit space" -18
-	"weapon capacity" -18
+	cost 150000
+	thumbnail "outfit/heavy anti-missile"
+	"mass" 30
+	"outfit space" -30
+	"weapon capacity" -30
 	"turret mounts" -1
-	"required crew" 1
 	weapon
-		sprite "projectile/mod blaster"
-		"hardpoint sprite" "hardpoint/mod blaster turret"
-		"hardpoint offset" 9.
-		sound "mod blaster"
-		"hit effect" "blaster impact"
-		"inaccuracy" 14
-		"turret turn" 14
-		"velocity" 10
-		"lifetime" 48
+		"hardpoint sprite" "hardpoint/heavy anti-missile"
+		"hardpoint offset" 5.
+		"hit effect" "large anti-missile"
+		"anti-missile" 8
+		"velocity" 200
+		"lifetime" 1
 		"reload" 6
-		"firing energy" 10.8
-		"firing heat" 42
-		"shield damage" 12
-		"hull damage" 8
-	description "This is a turreted version of the Modified Blaster, which is an Energy Blaster modified for greater power at the cost of higher energy consumption and heat. These turrets are popular with pirates and others who are trying to cram as much firepower into their ships as possible."
+		"firing energy" 10
+		"firing heat" 5
+	description "The Heavy Anti-Missile turret has a longer range, higher power, and shorter reload time than its smaller sibling. The only way to overcome it is by firing missiles in a cluster so that while one is being targeted, the others can get through, and as a result all missile systems on the market now default to firing in clusters if multiple copies of the same launcher are installed, rather than staggering their fire as ordinary guns do."
 
-
+effect "large anti-missile"
+	sprite "effect/large anti missile"
+		"no repeat"
+		"frame rate" 2
+	sound "heavy anti-missile"
+	"lifetime" 31
+	"velocity scale" 1
+# Beams
 outfit "Beam Laser"
 	category "Guns"
 	cost 29000
@@ -320,72 +249,310 @@ effect "electron impact"
 	"random spin" 1
 	"velocity scale" -.003
 
-
-outfit "Anti-Missile Turret"
-	category "Turrets"
-	cost 60000
-	thumbnail "outfit/anti-missile"
-	"mass" 16
-	"outfit space" -16
-	"weapon capacity" -16
-	"turret mounts" -1
+# Blasters
+outfit "Energy Blaster"
+	category "Guns"
+	cost 16000
+	thumbnail "outfit/blaster"
+	"mass" 5
+	"outfit space" -5
+	"weapon capacity" -5
+	"gun ports" -1
 	weapon
-		"hardpoint sprite" "hardpoint/anti-missile"
-		"hardpoint offset" 4.
-		"hit effect" "small anti-missile"
-		"anti-missile" 5
-		"velocity" 150
-		"lifetime" 1
-		"reload" 8
-		"firing energy" 5
-		"firing heat" 3
-	description "Centuries ago, space battles were fought mostly with missiles, with the outcome dependent only on which ship had more shielding or ammunition. Lovelace Labs was originally founded to remedy that situation by developing a protective system that could shoot missiles out of the air, defending freighter convoys from pirates who could otherwise simply bombard them into submission without ever venturing within range of their guns."
+		sprite "projectile/blaster"
+		sound "blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 24
+		"velocity" 10.625
+		"lifetime" 48
+		"reload" 12
+		"firing energy" 9.6
+		"firing heat" 30
+		"shield damage" 9.6
+		"hull damage" 6
+	description "Although not the most accurate or damaging of weapons, the Energy Blaster is popular because it is small enough to be installed on even the tiniest of ships. One blaster is not enough to do appreciable damage to anything larger than a fighter, but a ship equipped with several of them becomes a force to be reckoned with."
 
-effect "small anti-missile"
-	sprite "effect/small anti missile"
-		"no repeat"
-		"frame rate" 3
-	sound "anti-missile"
-	"lifetime" 21
-	"velocity scale" 1
-
-
-outfit "Heavy Anti-Missile Turret"
+outfit "Blaster Turret"
 	category "Turrets"
-	cost 150000
-	thumbnail "outfit/heavy anti-missile"
-	"mass" 30
-	"outfit space" -30
-	"weapon capacity" -30
+	cost 100000
+	thumbnail "outfit/blaster turret"
+	"mass" 15
+	"outfit space" -15
+	"weapon capacity" -15
 	"turret mounts" -1
+	"required crew" 1
 	weapon
-		"hardpoint sprite" "hardpoint/heavy anti-missile"
-		"hardpoint offset" 5.
-		"hit effect" "large anti-missile"
-		"anti-missile" 8
-		"velocity" 200
-		"lifetime" 1
+		sprite "projectile/blaster"
+		"hardpoint sprite" "hardpoint/blaster turret"
+		"hardpoint offset" 9.
+		sound "blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 24
+		"turret turn" 15.3
+		"velocity" 10.625
+		"lifetime" 48
 		"reload" 6
-		"firing energy" 10
-		"firing heat" 5
-	description "The Heavy Anti-Missile turret has a longer range, higher power, and shorter reload time than its smaller sibling. The only way to overcome it is by firing missiles in a cluster so that while one is being targeted, the others can get through, and as a result all missile systems on the market now default to firing in clusters if multiple copies of the same launcher are installed, rather than staggering their fire as ordinary guns do."
+		"firing energy" 9.6
+		"firing heat" 30
+		"shield damage" 9.6
+		"hull damage" 6
+	description "A Blaster Turret is a pair of Energy Blasters mounted on a rotating platform, allowing it to fire in any direction. Sophisticated software algorithms allow the turret to correct for a target's motion, making the Blaster Turret effective even against small, quickly moving fighters. Because it needs a special mounting point with a 360 degree field of view, not all ships are capable of being equipped with a turret."
 
-effect "large anti-missile"
-	sprite "effect/large anti missile"
+outfit "Quad Blaster Turret"
+	category "Turrets"
+	cost 230000
+	thumbnail "outfit/quad blaster turret"
+	"mass" 25
+	"outfit space" -25
+	"weapon capacity" -25
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/blaster"
+		"hardpoint sprite" "hardpoint/quad blaster turret"
+		"hardpoint offset" 9.
+		sound "blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 28
+		"turret turn" 20.34
+		"velocity" 10.625
+		"lifetime" 48
+		"reload" 3
+		"firing energy" 9.6
+		"firing heat" 30
+		"shield damage" 9.6
+		"hull damage" 6
+	description "A Quad Blaster Turret carries four guns on a single turret mount, doubling the firepower of an ordinary Blaster Turret for ships with enough space to install one and energy to drive it."
+
+effect "blaster impact"
+	sprite "effect/blaster impact"
 		"no repeat"
-		"frame rate" 2
-	sound "heavy anti-missile"
-	"lifetime" 31
-	"velocity scale" 1
+		"frame rate" 30
+	"lifetime" 7
+	"random angle" 40
+	"velocity scale" -.05
 
+
+outfit "Modified Blaster"
+	category "Guns"
+	cost 35000
+	thumbnail "outfit/mod blaster"
+	"mass" 6
+	"outfit space" -6
+	"weapon capacity" -6
+	"gun ports" -1
+	weapon
+		sprite "projectile/mod blaster"
+		sound "mod blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 14
+		"velocity" 10
+		"lifetime" 48
+		"reload" 12
+		"firing energy" 10.8
+		"firing heat" 42
+		"shield damage" 12
+		"hull damage" 8
+	description "This is an Energy Blaster that has been tampered with to increase its power slightly, at the cost of reduced range and higher energy consumption. Modified Blasters also produce an extreme amount of heat when firing, increasing the risk that your ship will overheat."
+
+outfit "Modified Blaster Turret"
+	category "Turrets"
+	cost 170000
+	thumbnail "outfit/mod blaster turret"
+	"mass" 18
+	"outfit space" -18
+	"weapon capacity" -18
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/mod blaster"
+		"hardpoint sprite" "hardpoint/mod blaster turret"
+		"hardpoint offset" 9.
+		sound "mod blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 14
+		"turret turn" 14
+		"velocity" 10
+		"lifetime" 48
+		"reload" 6
+		"firing energy" 10.8
+		"firing heat" 42
+		"shield damage" 12
+		"hull damage" 8
+	description "This is a turreted version of the Modified Blaster, which is an Energy Blaster modified for greater power at the cost of higher energy consumption and heat. These turrets are popular with pirates and others who are trying to cram as much firepower into their ships as possible."
+
+outfit "Pulse Cannon"
+	category "Guns"
+	cost 130000
+	thumbnail "outfit/pulse cannon"
+	"mass" 13
+	"outfit space" -13
+	"weapon capacity" -13
+	"gun ports" -1
+	weapon
+		sprite "projectile/pulse"
+		sound "pulse"
+		"hit effect" "pulse impact"
+		"inaccuracy" 1
+		"velocity" 15
+		"lifetime" 30
+		"reload" 20
+		"firing energy" 24
+		"firing heat" 70
+		"shield damage" 20
+		"hull damage" 10
+	description "Reverse engineered by Tarazed Systems from Alien technology, the Pulse Cannon's efficiency makes it great alternative to the Blaster cannon."
+
+outfit "Pulse Turret"
+	category "Turrets"
+	cost 590000
+	thumbnail "outfit/pulse turret"
+	"mass" 34
+	"outfit space" -34
+	"weapon capacity" -34
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/pulse"
+		"hardpoint sprite" "hardpoint/pulse turret"
+		"hardpoint offset" 7.
+		sound "pulse"
+		"hit effect" "pulse impact"
+		"inaccuracy" 1
+		"turret turn" 2.3
+		"velocity" 15
+		"lifetime" 30
+		"reload" 10
+		"firing energy" 24
+		"firing heat" 70
+		"shield damage" 40
+		"hull damage" 20
+	description "The Tarazed Systems Pulse Turret mounts two Pulse Cannons side by side on a turret mount. Their light weight leads to a fast tracking anti-fighter weapon."
+
+effect "pulse impact"
+	sprite "effect/pulse impact"
+		"no repeat"
+		"frame rate" 10
+	"lifetime" 20
+	"random angle" 360
+	"random spin" 4
+	"random velocity" .6
+	"velocity scale" -.1
+
+# Cannons
+outfit "Ion Cannon"
+	category "Guns"
+	cost 490000
+	thumbnail "outfit/ion cannon"
+	"mass" 47
+	"outfit space" -25
+	"weapon capacity" -25
+	"gun ports" -1
+	weapon
+		sprite "projectile/ion bolt"
+			"frame rate" 5
+		sound "ion"
+		"hit effect" "ion impact" 2
+		"inaccuracy" 1
+		"velocity" 16
+		"lifetime" 50
+		"reload" 60
+		"firing energy" 120
+		"firing force" 10
+		"firing heat" 150
+		"hit force" 30
+		"shield damage" 168
+		"hull damage" 20
+		"ion damage" 2.5
+		"slowing damage" .5
+		"disruption damage" .1
+	description "The Tarazed Systems' Ion Cannon is a reverse engineered Alien weapon. The exotic properties of this weapon not only drain shields, but disrupt power supplies."
+	description "	When this cannon hits, it will interfere with a ships engines system as well, making its target move slower. However, it does virtually no damage to a ship's armor beyond some blown out power conduits."
+
+effect "ion impact"
+	sprite "effect/ion impact"
+		"no repeat"
+		"frame rate" 30
+	sound "ion impact"
+	"lifetime" 9
+	"random angle" 360
+	"random spin" 30
+	"random velocity" 2
+	"velocity scale" -.05
+	
+
+outfit "Plasma Cannon"
+	category "Guns"
+	cost 190000
+	thumbnail "outfit/plasma cannon"
+	"mass" 25
+	"outfit space" -25
+	"weapon capacity" -25
+	"gun ports" -1
+	weapon
+		sprite "projectile/plasma"
+			"frame rate" 3
+		sound "plasma"
+		"hit effect" "plasma explosion"
+		"inaccuracy" 2
+		"velocity" 12
+		"lifetime" 40
+		"reload" 60
+		"firing energy" 30
+		"firing heat" 180
+		"hit force" 30
+		"shield damage" 168
+		"hull damage" 30
+		"heat damage" 340
+	description "The Kraz Cybernetics Plasma Cannon is a reverse engineer of the Tarazed Systems' reverse engineered Ion Cannon. However, instead of focusing on overwhelming the target's electrical systems, the Plasma Cannon focuses on overheating it's target."
+
+outfit "Plasma Turret"
+	category "Turrets"
+	cost 520000
+	thumbnail "outfit/plasma turret"
+	"mass" 60
+	"outfit space" -60
+	"weapon capacity" -60
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/plasma"
+			"frame rate" 3
+		"hardpoint sprite" "hardpoint/plasma turret"
+		"hardpoint offset" 15.
+		sound "plasma"
+		"hit effect" "plasma explosion"
+		"inaccuracy" 8
+		"turret turn" 1.2
+		"velocity" 12
+		"lifetime" 40
+		"reload" 30
+		"firing energy" 30
+		"firing heat" 180
+		"hit force" 30
+		"shield damage" 168
+		"hull damage" 30
+		"heat damage" 340
+	description "Developed by Kraz Cybernetics out of desparation, the Plasma Turret is a weapon designed to counter hostile Navy vessels who otherwise signifigantly outmatch Free Worlds vessels."
+
+effect "plasma explosion"
+	sprite "effect/plasma explosion"
+		"no repeat"
+		"frame rate" 20
+	sound "explosion tiny"
+	"lifetime" 21
+	"random angle" 360
+	"random spin" 4
+	"random velocity" .1
+	"velocity scale" -.05
 
 outfit "Particle Cannon"
 	category "Guns"
 	cost 220000
 	thumbnail "outfit/particle cannon"
 	"mass" 30
-	"outfit space" -30
-	"weapon capacity" -30
+	"outfit space" -25
+	"weapon capacity" -25
 	"gun ports" -1
 	weapon
 		sprite "projectile/particle beam"
@@ -400,7 +567,7 @@ outfit "Particle Cannon"
 		"firing heat" 120
 		"hit force" 80
 		"shield damage" 24
-		"hull damage" 52
+		"hull damage" 45
 		"piercing" .2
 	description "Developed by Lovelace and favored by the Navy, the Particle Cannon makes up for its low shield damage with its high range and ability to knock back hostile ships."
 	description "	The stresses endured by ships on the recieving end of this cannon are too much for most hulls to bare, leading to heafty damage even while their shields are still active."
@@ -421,8 +588,8 @@ outfit "Proton Gun"
 	cost 150000
 	thumbnail "outfit/proton gun"
 	"mass" 28
-	"outfit space" -28
-	"weapon capacity" -28
+	"outfit space" -25
+	"weapon capacity" -25
 	"gun ports" -1
 	weapon
 		sprite "projectile/proton"
@@ -448,8 +615,8 @@ outfit "Proton Fragment"
 		"inaccuracy" 2
 		"lifetime" 24
 		"hit force" 6
-		"shield damage" 8.4
-		"hull damage" 7
+		"shield damage" 3.75
+		"hull damage" 2.5
 
 effect "proton impact"
 	sprite "effect/proton impact"
@@ -486,106 +653,7 @@ outfit "Proton Turret"
 		"firing heat" 60
 	description "Developed by Syndicated Systems, the Proton Turret's rate of fire and hitforce makes it arguably the best anti-fighter weapon on the market."
 
-
-outfit "Pulse Cannon"
-	category "Guns"
-	cost 130000
-	thumbnail "outfit/pulse cannon"
-	"mass" 13
-	"outfit space" -13
-	"weapon capacity" -13
-	"gun ports" -1
-	weapon
-		sprite "projectile/pulse"
-		sound "pulse"
-		"hit effect" "pulse impact"
-		"inaccuracy" 1
-		"velocity" 15
-		"lifetime" 30
-		"reload" 20
-		"firing energy" 24
-		"firing heat" 70
-		"shield damage" 45
-		"hull damage" 34
-	description "Reverse engineered by Tarazed Systems from Alien technology, the Pulse Cannon's efficiency makes it great alternative to the Blaster cannon."
-
-outfit "Pulse Turret"
-	category "Turrets"
-	cost 590000
-	thumbnail "outfit/pulse turret"
-	"mass" 34
-	"outfit space" -34
-	"weapon capacity" -34
-	"turret mounts" -1
-	"required crew" 1
-	weapon
-		sprite "projectile/pulse"
-		"hardpoint sprite" "hardpoint/pulse turret"
-		"hardpoint offset" 7.
-		sound "pulse"
-		"hit effect" "pulse impact"
-		"inaccuracy" 1
-		"turret turn" 2.3
-		"velocity" 15
-		"lifetime" 30
-		"reload" 10
-		"firing energy" 24
-		"firing heat" 70
-		"shield damage" 45
-		"hull damage" 34
-	description "The Tarazed Systems Pulse Turret mounts two Pulse Cannons side by side on a turret mount. Their light weight leads to a fast tracking anti-fighter weapon."
-
-effect "pulse impact"
-	sprite "effect/pulse impact"
-		"no repeat"
-		"frame rate" 10
-	"lifetime" 20
-	"random angle" 360
-	"random spin" 4
-	"random velocity" .6
-	"velocity scale" -.1
-
-
-outfit "Ion Cannon"
-	category "Guns"
-	cost 490000
-	thumbnail "outfit/ion cannon"
-	"mass" 47
-	"outfit space" -47
-	"weapon capacity" -47
-	"gun ports" -1
-	weapon
-		sprite "projectile/ion bolt"
-			"frame rate" 5
-		sound "ion"
-		"hit effect" "ion impact" 2
-		"inaccuracy" 1
-		"velocity" 16
-		"lifetime" 50
-		"reload" 60
-		"firing energy" 120
-		"firing force" 10
-		"firing heat" 150
-		"hit force" 120
-		"shield damage" 168
-		"hull damage" 15
-		"ion damage" 5
-		"slowing damage" .5
-	description "The Tarazed Systems' Ion Cannon is a reverse engineered Alien weapon. The exotic properties of this weapon not only drain shields, but disrupt power supplies."
-	description "	When this cannon hits, it will interfere with a ships engines system as well, making its target move slower. However, it does virtually no damage to a ship's armor beyond some blown out power conduits."
-
-effect "ion impact"
-	sprite "effect/ion impact"
-		"no repeat"
-		"frame rate" 30
-	sound "ion impact"
-	"lifetime" 9
-	"random angle" 360
-	"random spin" 30
-	"random velocity" 2
-	"velocity scale" -.05
-
-
+# ASL
 outfit "Railgun Slug"
 	category "Ammunition"
 	cost 60
@@ -658,134 +726,6 @@ effect "rail sparks"
 	"random angle" 360
 	"random spin" 30
 	"velocity scale" 1.2
-
-outfit "Plasma Cannon"
-	category "Guns"
-	cost 190000
-	thumbnail "outfit/plasma cannon"
-	"mass" 25
-	"outfit space" -25
-	"weapon capacity" -25
-	"gun ports" -1
-	weapon
-		sprite "projectile/plasma"
-			"frame rate" 3
-		sound "plasma"
-		"hit effect" "plasma explosion"
-		"inaccuracy" 2
-		"velocity" 12
-		"lifetime" 40
-		"reload" 60
-		"firing energy" 30
-		"firing heat" 180
-		"hit force" 30
-		"shield damage" 168
-		"hull damage" 15
-		"heat damage" 340
-	description "The Kraz Cybernetics Plasma Cannon is a reverse engineer of the Tarazed Systems' reverse engineered Ion Cannon. However, instead of focusing on overwhelming the target's electrical systems, the Plasma Cannon focuses on overheating it's target."
-
-outfit "Plasma Turret"
-	category "Turrets"
-	cost 520000
-	thumbnail "outfit/plasma turret"
-	"mass" 60
-	"outfit space" -60
-	"weapon capacity" -60
-	"turret mounts" -1
-	"required crew" 1
-	weapon
-		sprite "projectile/plasma"
-			"frame rate" 3
-		"hardpoint sprite" "hardpoint/plasma turret"
-		"hardpoint offset" 15.
-		sound "plasma"
-		"hit effect" "plasma explosion"
-		"inaccuracy" 8
-		"turret turn" 1.2
-		"velocity" 12
-		"lifetime" 40
-		"reload" 60
-		"firing energy" 30
-		"firing heat" 180
-		"hit force" 30
-		"shield damage" 168
-		"hull damage" 15
-		"heat damage" 340
-	description "Developed by Kraz Cybernetics out of desparation, the Plasma Turret is a weapon designed to counter hostile Navy vessels who otherwise signifigantly outmatch Free Worlds vessels."
-
-effect "plasma explosion"
-	sprite "effect/plasma explosion"
-		"no repeat"
-		"frame rate" 20
-	sound "explosion tiny"
-	"lifetime" 21
-	"random angle" 360
-	"random spin" 4
-	"random velocity" .1
-	"velocity scale" -.05
-
-
-outfit "Flamethrower"
-	category "Secondary Weapons"
-	cost 190000
-	thumbnail "outfit/flamethrower"
-	"mass" 9
-	"outfit space" -9
-	"weapon capacity" -9
-	"gun ports" -1
-	weapon
-		sprite "effect/explosion/small"
-			"frame rate" 60
-			"no repeat"
-		sound "flamethrower"
-		icon "icon/flamethrower"
-		"submunition" "Flamethrower Projectile"
-		"inaccuracy" 12
-		"velocity" 9
-		"lifetime" 5
-		"reload" 1
-		"firing energy" .1
-		"firing fuel" .25
-		"firing heat" 2
-	description "A crude but impressive-looking weapon, the Flamethrower ignites your hyperspace fuel and directs a stream of it towards your adversaries. The damage it does is relatively minor, but it can be useful for causing a target that is already operating near its thermal capacity to overheat, temporarily taking it out of the fight."
-
-outfit "Flamethrower Projectile"
-	weapon
-		sprite "projectile/flamethrower"
-			"frame rate" 17
-			"random start frame"
-		"hit effect" "flamethrower hit"
-		"die effect" "flamethrower die"
-		"inaccuracy" 20
-		"lifetime" 22
-		"shield damage" .8
-		"hull damage" .7
-		"heat damage" 200
-
-effect "flamethrower die"
-	sprite "effect/explosion/small"
-		"no repeat"
-		"frame rate" 15
-		"random start frame"
-	"lifetime" 24
-	"random angle" 360
-	"random frame rate" 5
-	"random spin" 2
-	"random velocity" .4
-	"velocity scale" .4
-
-effect "flamethrower hit"
-	sprite "effect/explosion/medium"
-		"no repeat"
-		"frame rate" 15
-		"random start frame"
-	"lifetime" 28
-	"random angle" 360
-	"random frame rate" 5
-	"random spin" 3
-	"random velocity" .6
-	"velocity scale" .4
-
 
 outfit "Meteor Missile"
 	category "Ammunition"
@@ -987,7 +927,7 @@ outfit "Torpedo Launcher"
 	"outfit space" -15
 	"weapon capacity" -15
 	"gun ports" -1
-	"torpedo capacity" 15
+	"torpedo capacity" 10
 	weapon
 		sprite "projectile/torpedo"
 			"frame rate" 2
@@ -1000,12 +940,12 @@ outfit "Torpedo Launcher"
 		"die effect" "tiny explosion"
 		"inaccuracy" 5
 		"velocity" 4
-		"lifetime" 120
+		"lifetime" 75
 		"reload" 150
 		"firing energy" 2
 		"firing heat" 45
 		"acceleration" 1
-		"drag" .025
+		"drag" .25
 		"turn" 2.5
 		"homing" 3
 		"optical tracking" .8
@@ -1284,3 +1224,4 @@ outfit "gbullet"
 		"hull damage" 6
 		"hit force" 2
 		"hit effect" "bullet impact"
+
