@@ -25,7 +25,6 @@ government "Bounty"
 
 government "Bounty Hunter"
 	color .78 0 0
-
 	"player reputation" -1000
 	"bribe" .2
 	"fine" 0
@@ -95,7 +94,6 @@ government "Escort"
 
 government "Free Worlds"
 	color .06 .68 0
-	
 	"player reputation" 1
 	"attitude toward"
 		"Local" 2
@@ -110,7 +108,6 @@ government "Free Worlds"
 
 government "Hai"
 	color .84 .42 .81
-	
 	"player reputation" 0
 	"attitude toward"
 		"Hai (Unfettered)" -.5
@@ -122,7 +119,6 @@ government "Hai"
 
 government "Hai (Unfettered)"
 	color .69 .33 .82
-	
 	"player reputation" -1000
 	"attitude toward"
 		"Hai" -.01
@@ -146,7 +142,6 @@ government "Heliarch"
 
 government "Independent"
 	color .78 .36 .36
-	
 	"player reputation" 10
 	"bribe" .05
 	"fine" 0
@@ -171,10 +166,8 @@ government "Korath"
 	"crew attack" 1.4
 	"crew defense" 2.6
 	language "Korath"
-	
 	"attitude toward"
 		"Kor Sestor" -.01
-	
 	"player reputation" -10
 
 government "Korath Nanobots"
@@ -183,17 +176,14 @@ government "Korath Nanobots"
 government "Kor Efret"
 	color .49 .33 .69
 	language "Korath"
-	
 	"attitude toward"
 		"Kor Mereti" -.01
 		"Kor Sestor" -.01
-	
 	"player reputation" 1
 
 government "Kor Mereti"
 	color .32 .36 .65
 	language "Korath"
-	
 	"attitude toward"
 		"Kor Sestor" -.01
 		"Wanderer" -.01
@@ -203,7 +193,6 @@ government "Kor Mereti"
 government "Kor Sestor"
 	color .75 .27 .37
 	language "Korath"
-	
 	"attitude toward"
 		"Kor Mereti" -.01
 		"Wanderer" -.01
@@ -231,7 +220,6 @@ government "Merchant"
 
 government "Militia"
 	color .06 .68 0
-	
 	"player reputation" 0
 	"attitude toward"
 		"Local" 1
@@ -252,7 +240,6 @@ government "Navy (Oathkeeper)"
 	color .91 .42 .09
 	"crew attack" 1.2
 	"crew defense" 2.2
-	
 	"player reputation" 100
 	"attitude toward"
 		"Local" .1
@@ -268,7 +255,6 @@ government "Navy (Oathkeeper)"
 
 government "Neutral"
 	color .84 .61 .37
-	
 	"player reputation" 1
 	"attitude toward"
 		"Local" 1
@@ -301,7 +287,6 @@ government "Parrot"
 
 government "Pirate"
 	color .78 0 0
-	
 	"player reputation" -10
 	"attitude toward"
 		"Local" .01
@@ -318,7 +303,6 @@ government "Pirate"
 
 government "Pug"
 	color .99 .89 .70
-	
 	"player reputation" 1
 	"attitude toward"
 		"Local" 1
@@ -329,7 +313,6 @@ government "Pug"
 
 government "Quarg"
 	color .88 .77 0
-	
 	"player reputation" 1
 	"attitude toward"
 		"Merchant" .01
@@ -343,7 +326,6 @@ government "Quarg"
 government "Remnant"
 	color .89 .38 .62
 	"crew defense" 2.2
-	
 	"player reputation" 1
 	"bribe" 0
 	"attitude toward"
@@ -353,7 +335,6 @@ government "Republic"
 	color .91 .42 .09
 	"crew attack" 1.2
 	"crew defense" 2.2
-	
 	"player reputation" 2
 	"attitude toward"
 		"Local" 1
@@ -371,7 +352,6 @@ government "Republic"
 
 government "Syndicate"
 	color 0 .41 .71
-	
 	"player reputation" 2
 	"attitude toward"
 		"Local" 1
@@ -385,9 +365,23 @@ government "Syndicate"
 
 government "Syndicate (Extremist)"
 	color 0 .41 .71
-	
 	"player reputation" -1000
 	"attitude toward"
+
+government "Tarazed"
+	color .06 .68 0
+	"player reputation" 0
+	"attitude toward"
+		"Wanderer" 2
+		"Hai" 2
+		"Caravan" 2
+		"Local" 1
+		"Merchant" .3
+		"Pirate" -.4
+		"Cartel" -.1
+	"bribe" .1
+	"friendly hail" "friendly militia"
+	"hostile hail" "hostile militia"
 		"Syndicate" -.01
 		"Republic" -.01
 		"Free Worlds" -.01
