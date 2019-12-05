@@ -753,6 +753,8 @@ system Alderamin
 	fleet "Large Core Merchants" 3200
 	fleet "Small Syndicate" 800
 	fleet "Large Syndicate" 800
+	fleet "Small Core Pirates" 1000
+	fleet "Large Core Pirates" 1200
 	belt 1908
 	object
 		sprite star/g0
@@ -847,6 +849,7 @@ system Algenib
 	government Cartel
 	habitable 455.625
 	link Gienah
+	link No-Where
 	trade Clothing 357
 	trade Electronics 660
 	trade Equipment 386
@@ -1045,6 +1048,8 @@ system Algorel
 	fleet "Large Southern Merchants" 900
 	fleet "Small Militia" 2000
 	fleet "Small Republic" 3000
+	fleet "Small Southern Pirates" 1600
+	fleet "Large Southern Pirates" 5000
 	belt 1993
 	object
 		sprite star/k5
@@ -1214,6 +1219,8 @@ system Alioth
 	fleet "Small Southern Merchants" 400
 	fleet "Large Southern Merchants" 600
 	fleet "Small Militia" 900
+	fleet "Small Southern Pirates" 1200
+	fleet "Large Southern Pirates" 2400
 	belt 1889
 	minables copper 1 4.44449
 	object
@@ -1406,6 +1413,7 @@ system Alnair
 	habitable 135
 	link Persian
 	link Alderamin
+	link No-Where
 	trade Clothing 294
 	trade Electronics 711
 	trade Equipment 381
@@ -1417,6 +1425,8 @@ system Alnair
 	trade Metal 241
 	trade Plastic 467
 	fleet "Small Core Merchants" 2000
+	fleet "Small Core Pirates" 3000
+	fleet "Large Core Pirates" 4000
 	fleet "Small Syndicate" 4000
 	fleet "Large Syndicate" 6000
 	fleet "Human Miners" 2000
@@ -1483,6 +1493,7 @@ system Alnasl
 	fleet "Large Southern Merchants" 2000
 	fleet "Small Militia" 3000
 	fleet "Large Militia" 6000
+	fleet "Small Southern Pirates" 4000
 	belt 1412
 	minables aluminum 4 3.53834
 	minables iron 2 4.61991
@@ -1726,6 +1737,8 @@ system "Alpha Arae"
 	fleet "Large Southern Merchants" 6000
 	fleet "Small Militia" 4000
 	fleet "Large Militia" 9000
+	fleet "Small Southern Pirates" 4000
+	fleet "Large Southern Pirates" 9000
 	belt 1405
 	minables silicon 10 3.80746
 	object
@@ -1955,6 +1968,7 @@ system Alphecca
 	trade Plastic 498
 	fleet "Small Southern Merchants" 2000
 	fleet "Large Southern Merchants" 3500
+	fleet "Small Southern Pirates" 3000
 	fleet "Small Militia" 5000
 	belt 1101
 	object
@@ -2332,6 +2346,7 @@ system Arneb
 	pos -121.285 -339.734
 	government Independent
 	habitable 1715
+	link Xanthe
 	link Hatysa
 	link Endios
 	trade Clothing 365
@@ -2397,6 +2412,7 @@ system Ascella
 	fleet "Small Southern Merchants" 600
 	fleet "Large Southern Merchants" 1000
 	fleet "Small Militia" 4000
+	fleet "Small Southern Pirates" 3000
 	fleet "Human Miners" 1600
 	belt 1971
 	minables silicon 33 1.74588
@@ -3229,6 +3245,7 @@ system Cebalrai
 	fleet "Small Southern Merchants" 600
 	fleet "Large Southern Merchants" 2000
 	fleet "Small Militia" 4000
+	fleet "Small Southern Pirates" 4000
 	belt 1955
 	minables gold 1 3.87594
 	minables silicon 10 5.51354
@@ -3281,6 +3298,7 @@ system "Cor Caroli"
 	trade Plastic 485
 	fleet "Small Southern Merchants" 700
 	fleet "Large Southern Merchants" 1300
+	fleet "Small Southern Pirates" 2000
 	fleet "Small Republic" 10000
 	fleet "Small Militia" 7000
 	fleet "Human Miners" 3000
@@ -3450,6 +3468,7 @@ system "Delta Capricorni"
 	fleet "Small Core Merchants" 700
 	fleet "Large Core Merchants" 800
 	fleet "Small Syndicate" 2000
+	fleet "Small Core Pirates" 4000
 	fleet "Human Miners" 3000
 	fleet "Caravan Large" 5500
 	belt 1329
@@ -4599,6 +4618,8 @@ system "Gamma Cassiopeiae"
 	trade Medical 694
 	trade Metal 261
 	trade Plastic 284
+	fleet "Small Core Pirates" 1000
+	fleet "Large Core Pirates" 2000
 	fleet "Large Syndicate" 5000
 	fleet "Human Miners" 2000
 	belt 1779
@@ -5391,6 +5412,7 @@ system Hintar
 	trade Plastic 421
 	fleet "Small Southern Merchants" 1000
 	fleet "Small Militia" 5000
+	fleet "Small Southern Pirates" 2000
 	belt 1725
 	minables tungsten 10 3.44444
 	object
@@ -5445,6 +5467,7 @@ system Holeb
 	trade Plastic 437
 	fleet "Small Southern Merchants" 1000
 	fleet "Large Southern Merchants" 3000
+	fleet "Small Southern Pirates" 5000
 	fleet "Small Militia" 5000
 	belt 1181
 	object
@@ -5536,6 +5559,7 @@ system Ipsing
 	trade Metal 388
 	trade Plastic 416
 	fleet "Small Southern Merchants" 2000
+	fleet "Small Southern Pirates" 3000
 	belt 1107
 	object
 		sprite star/g0-old
@@ -5758,6 +5782,7 @@ system "Kaus Australis"
 	link Dabih
 	link Tais
 	link Peacock
+	link No-Where
 	trade Clothing 279
 	trade Electronics 717
 	trade Equipment 591
@@ -5816,6 +5841,7 @@ system "Kaus Borealis"
 	fleet "Small Southern Merchants" 600
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Militia" 8000
+	fleet "Small Southern Pirates" 5000
 	belt 1074
 	object
 		sprite star/k0
@@ -6523,6 +6549,8 @@ system Matar
 	trade Plastic 407
 	fleet "Small Core Merchants" 2000
 	fleet "Large Core Merchants" 2500
+	fleet "Small Core Pirates" 2000
+	fleet "Large Core Pirates" 4000
 	fleet "Small Syndicate" 3000
 	fleet "Large Syndicate" 6000
 	belt 1308
@@ -7232,6 +7260,7 @@ system Mirach
 	trade Plastic 299
 	fleet "Small Core Merchants" 1000
 	fleet "Large Core Merchants" 1200
+	fleet "Small Core Pirates" 4000
 	fleet "Small Syndicate" 3000
 	fleet "Large Syndicate" 5000
 	fleet "Human Miners" 3000
@@ -7399,6 +7428,7 @@ system Mizar
 	trade Plastic 486
 	fleet "Small Southern Merchants" 1000
 	fleet "Large Southern Merchants" 3500
+	fleet "Small Southern Pirates" 6000
 	belt 1876
 	object
 		sprite star/g0-old
@@ -7610,6 +7640,7 @@ system Muphrid
 	trade Plastic 455
 	fleet "Small Southern Merchants" 800
 	fleet "Large Southern Merchants" 3500
+	fleet "Small Southern Pirates" 6000
 	fleet "Small Republic" 5000
 	belt 1759
 	minables tungsten 3 4.9859
@@ -7891,6 +7922,39 @@ system Nihal
 			sprite planet/mercury-b
 			distance 363
 			period 23.3833
+
+system No-Where
+	pos -242.077 362.649
+	government Cartel
+	habitable 425.92
+	link Persian
+	link "Kaus Australis"
+	link Peacock
+	link Alnair
+	link Gienah
+	asteroids "small rock" 2 8.127
+	asteroids "medium rock" 1 4.347
+	asteroids "large rock" 1 5.985
+	asteroids "small metal" 5 6.363
+	asteroids "medium metal" 6 3.15
+	asteroids "large metal" 10 8.568
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	object
+		sprite star/yn
+		period 10
+	object "No-Where Station"
+		sprite planet/rock19
+		distance 161.64
+		period 39.8308
 
 
 system Nocte
@@ -8202,6 +8266,7 @@ system Peacock
 	link Tais
 	link "Kaus Australis"
 	link Ascella
+	link No-Where
 	trade Clothing 334
 	trade Electronics 700
 	trade Equipment 633
@@ -8270,6 +8335,7 @@ system Persian
 	link Alnair
 	link Gienah
 	link Matar
+	link No-Where
 	trade Clothing 260
 	trade Electronics 661
 	trade Equipment 400
@@ -8282,6 +8348,8 @@ system Persian
 	trade Plastic 502
 	fleet "Small Syndicate" 800
 	fleet "Large Syndicate" 1200
+	fleet "Small Core Pirates" 600
+	fleet "Large Core Pirates" 2000
 	fleet "Human Miners" 3000
 	belt 1308
 	minables lead 6 12.3487
@@ -8667,6 +8735,7 @@ system Porrima
 	fleet "Small Southern Merchants" 1000
 	fleet "Large Southern Merchants" 3000
 	fleet "Small Republic" 8000
+	fleet "Small Southern Pirates" 6000
 	belt 1636
 	minables aluminum 4 6.34101
 	minables titanium 5 4.95139
@@ -8942,6 +9011,8 @@ system Rasalhague
 	trade Plastic 332
 	fleet "Small Southern Merchants" 1500
 	fleet "Large Southern Merchants" 2000
+	fleet "Small Southern Pirates" 4000
+	fleet "Large Southern Pirates" 8000
 	fleet "Caravan Large" 6000
 	belt 1282
 	minables aluminum 7 4.62949
@@ -9108,6 +9179,8 @@ system Regulus
 	trade Metal 406
 	trade Plastic 318
 	fleet "Small Southern Merchants" 6000
+	fleet "Small Southern Pirates" 2000
+	fleet "Large Southern Pirates" 8000
 	fleet "Small Republic" 10000
 	fleet "Human Miners" 3000
 	belt 1605
@@ -9748,6 +9821,8 @@ system Scheat
 	fleet "Large Core Merchants" 600
 	fleet "Small Syndicate" 1000
 	fleet "Large Syndicate" 2000
+	fleet "Small Core Pirates" 3000
+	fleet "Large Core Pirates" 5000
 	belt 1536
 	object
 		sprite star/g5
@@ -10608,10 +10683,12 @@ system Tarazed
 		sprite planet/cloud2
 		distance 1221.26
 		period 489.761
-		object Echo
-			sprite planet/dust3
-			distance 184
-			period 18.9407
+		object "Echo Station"
+			sprite planet/station2
+			distance 177.193
+			period 18.9732
+			offset 31.5543
+			belt 1169
 	object
 		sprite planet/gas15-b
 		distance 1880.55
@@ -11156,6 +11233,8 @@ system Vindemiatrix
 	trade Plastic 408
 	fleet "Small Southern Merchants" 600
 	fleet "Large Southern Merchants" 3000
+	fleet "Small Southern Pirates" 2000
+	fleet "Large Southern Pirates" 4000
 	belt 1957
 	minables aluminum 13 5.95585
 	minables iron 2 7.3644
@@ -11366,6 +11445,7 @@ system Wei
 	trade Plastic 486
 	fleet "Small Southern Merchants" 600
 	fleet "Large Southern Merchants" 2000
+	fleet "Small Southern Pirates" 4000
 	fleet "Small Militia" 3000
 	fleet "Large Militia" 5000
 	belt 1927
@@ -11672,6 +11752,8 @@ system "Zeta Aquilae"
 	trade Plastic 361
 	fleet "Small Southern Merchants" 1000
 	fleet "Large Southern Merchants" 3000
+	fleet "Small Southern Pirates" 2000
+	fleet "Large Southern Pirates" 5000
 	belt 1829
 	minables uranium 3 10.6251
 	object
@@ -12542,13 +12624,16 @@ planet Earth
 		threshold 20000
 		fleet "Large Republic" 50
 
-planet Echo
-	attributes quarg moon
-	landscape land/desert2
-	description `This is a small Wanderer outpost, which you suspect was built mostly to keep an eye on Tarazed Corporation and their alien-influenced research on the planet below.`
+planet "Echo Station"
+	attributes shipyard station
+	landscape land/earthrise
+	description `The main construction and trade platform used by Tarazed corporation. This massive shipyard can churn out hundreds of heavy warships in a year. More recently, it has been repurposed to service the new Battle Cruiser class vessels, such as Tarazed's new prototype, the Vulture. `
+	spaceport `The docking and storage rings of this station were built to accomidate Caravan fleets, which has proven very useful for all of the various visiting factions. Wanderer Freighters and Hai Transports dock and disembark to mingle with the several thousand humans crowding the internal streets of this sprawling station. The Bird-Like wanderers can often be seen taking to the air to get to specialty shops that service them. Towering Quarg wearing their trademark pressure suits try their best to not trip over humans and their squirrel-like Hai counterparts. `
+	shipyard "Tarazed Shipyards"
+	outfitter "Tarazed Systems"
 	bribe 0
 	security 0.9
-	government Wanderer
+	government Tarazed
 
 planet "Far Monad"
 	landscape land/water0
@@ -13624,6 +13709,14 @@ planet Nimbus
 	tribute 300
 		threshold 2500
 		fleet "Small Syndicate" 4
+
+planet "No-Where Station"
+	attributes deep fishing moon
+	landscape land/beach4
+	description `This inegmatic station is known only for how handidly and rapidly they turn people away. They allow you to dock for repairs, but you aren't permitted to leave your ship.`
+	bribe 0.4
+	security 0
+
 
 planet Norn
 	attributes deep fishing moon
