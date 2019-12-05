@@ -1802,7 +1802,7 @@ fleet "Large Independent"
 		"Falcon (Laser)"
 
 fleet "Small Core Pirates"
-	government "Pirate"
+	government "Cartel"
 	names "pirate"
 	cargo 1
 	personality
@@ -1843,7 +1843,7 @@ fleet "Small Core Pirates"
 		"Wasp (Proton)"
 
 fleet "Large Core Pirates"
-	government "Pirate"
+	government "Cartel"
 	names "pirate"
 	cargo 1
 	personality
