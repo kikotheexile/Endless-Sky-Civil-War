@@ -254,12 +254,11 @@ const map<const string, int64_t> Crew::ShipManifest(const shared_ptr<Ship> &ship
 	int64_t remainingCrewMembers = (includeExtras
 			? ship->Crew()
 			: ship->RequiredCrew()
-		) - crewAccountedFor
-		// If this is the flagship, one of the crew members is the player
-		- isFlagship;
+		) - crewAccountedFor;
 	
 	// Fill out the ranks with the cheapest type of crew member
-	manifest[get<0>(cheapestCrew)] = get<1>(cheapestCrew) + remainingCrewMembers;
+	if(remainingCrewMembers)
+		manifest[get<0>(cheapestCrew)] = get<1>(cheapestCrew) + remainingCrewMembers;
 	
 	return manifest;
 }
