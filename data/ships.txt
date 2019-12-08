@@ -390,7 +390,7 @@ ship "Arrow"
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 5
-		"mass" 130
+		"mass" 90
 		"drag" 2.7
 		"heat dissipation" .85
 		"fuel capacity" 400
@@ -441,7 +441,7 @@ ship "Blackbird"
 		"landing gear" 1
 		"required crew" 3
 		"bunks" 28
-		"mass" 220
+		"mass" 150
 		"drag" 5.0
 		"heat dissipation" .7
 		"fuel capacity" 700
@@ -542,7 +542,7 @@ ship "Flivver"
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 3
-		"mass" 40
+		"mass" 20
 		"drag" 1.0
 		"heat dissipation" .9
 		"fuel capacity" 500
@@ -684,7 +684,7 @@ ship "Star Queen"
 		"landing gear" 1
 		"required crew" 41
 		"bunks" 112
-		"mass" 276
+		"mass" 350
 		"drag" 5.5
 		"heat dissipation" .65
 		"fuel capacity" 500
@@ -741,7 +741,7 @@ ship "Berserker"
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 2
-		"mass" 110
+		"mass" 50
 		"drag" 2.2
 		"heat dissipation" .85
 		"fuel capacity" 400
@@ -797,7 +797,7 @@ ship "Fury"
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 3
-		"mass" 70
+		"mass" 35
 		"drag" 1.6
 		"heat dissipation" .9
 		"fuel capacity" 600
@@ -850,7 +850,7 @@ ship "Hawk"
 		"landing gear" 1
 		"required crew" 2
 		"bunks" 4
-		"mass" 150
+		"mass" 75
 		"drag" 2.1
 		"heat dissipation" .8
 		"fuel capacity" 300
@@ -901,7 +901,7 @@ ship "Sparrow"
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 2
-		"mass" 50
+		"mass" 25
 		"drag" .9
 		"heat dissipation" .8
 		"fuel capacity" 300
@@ -949,7 +949,7 @@ ship "Wasp"
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 2
-		"mass" 60
+		"mass" 30
 		"drag" 1.2
 		"heat dissipation" .8
 		"fuel capacity" 400
@@ -1176,7 +1176,7 @@ ship "Star Barge"
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 3
-		"mass" 70
+		"mass" 45
 		"drag" 2.1
 		"heat dissipation" .8
 		"fuel capacity" 300
@@ -1594,7 +1594,7 @@ ship "Class C Freighter"
 		"landing gear" 1
 		"required crew" 18
 		"bunks" 43
-		"mass" 810
+		"mass" 850
 		"drag" 16.4
 		"heat dissipation" .5
 		"fuel capacity" 600
@@ -1783,7 +1783,7 @@ ship "Narcissus"
 		"landing gear" 1
 		"required crew" 7
 		"bunks" 12
-		"mass" 150
+		"mass" 100
 		"drag" 3.1
 		"heat dissipation" .8
 		"fuel capacity" 600
@@ -2018,7 +2018,7 @@ ship "Achlys"
 		"landing gear" 1
 		"required crew" 7
 		"bunks" 14
-		"mass" 180
+		"mass" 80
 		"drag" 3.8
 		"heat dissipation" .6
 		"fuel capacity" 500
@@ -2622,7 +2622,7 @@ ship "Arete"
 	sprite "ship/carrier"
 	thumbnail "thumbnail/carrier"
 	attributes
-		category "Cruiser"
+		category "Carrier"
 		licenses
 			Navy
 			Carrier
@@ -2632,7 +2632,7 @@ ship "Arete"
 		"landing gear" 1
 		"required crew" 111
 		"bunks" 184
-		"mass" 1250
+		"mass" 2050
 		"drag" 17.7
 		"heat dissipation" .45
 		"fuel capacity" 700
@@ -2718,7 +2718,7 @@ ship "Nomos"
 		"landing gear" 1
 		"required crew" 81
 		"bunks" 136
-		"mass" 950
+		"mass" 1900
 		"drag" 10.1
 		"heat dissipation" .45
 		"fuel capacity" 600
@@ -2921,7 +2921,7 @@ ship "Leviathan"
 		"landing gear" 1
 		"required crew" 43
 		"bunks" 64
-		"mass" 700
+		"mass" 1400
 		"drag" 7.6
 		"heat dissipation" .5
 		"fuel capacity" 500
@@ -2981,7 +2981,7 @@ ship "Protector"
 		"landing gear" 1
 		"required crew" 30
 		"bunks" 69
-		"mass" 700
+		"mass" 800
 		"drag" 10.3
 		"heat dissipation" .6
 		"fuel capacity" 400
@@ -3042,7 +3042,7 @@ ship "Vanguard"
 		"landing gear" 1
 		"required crew" 23
 		"bunks" 45
-		"mass" 700
+		"mass" 620
 		"drag" 8
 		"heat dissipation" .6
 		"fuel capacity" 400
@@ -3116,12 +3116,7 @@ ship "Mule"
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		"Sidewinder Missile Launcher" 2
-		"Sidewinder Missile" 136
-		"Sidewinder Missile Rack" 2
-		"Heavy Laser Turret" 3
-		"Heavy Anti-Missile Turret"
-		
+	
 		"NT-200 Nucleovoltaic"
 		"LP072a Battery Pack"
 		"D41-HY Shield Generator"
@@ -3133,15 +3128,34 @@ ship "Mule"
 		"X3200 Ion Steering"
 		"Hyperdrive"
 		
-	engine -12 123
-	engine 12 123
-	gun -9 -119 "Sidewinder Missile Launcher"
-	gun 9 -119 "Sidewinder Missile Launcher"
-	turret 22 -65 "Heavy Laser Turret"
-	turret -37 -21 "Heavy Laser Turret"
-	turret 39 35 "Heavy Laser Turret"
-	turret -9 59 "Heavy Anti-Missile Turret"
-	fighter -16 -9
+	engine -26 252.5
+	engine -35.5 258
+	engine -44 252
+	engine -5.5 241.5
+	engine -8.5 252.5
+	engine 0 258
+	engine 26 252.5
+	engine 35.5 258
+	engine 44 252
+	engine 5.5 241.5
+	engine 8.5 252.5
+	fighter -42 -48 over
+	fighter -42 -40
+	fighter -46 159.5 over
+	fighter -46 159.5
+	fighter 42 -48 over
+	fighter 42 -40
+	fighter 46 159.5 over
+	fighter 46 159.5
+	turret -42.5 56.5
+	turret -5.5 241.5
+	turret -71.5 -47
+	turret -72 -67
+	turret 0 -232
+	turret 42.5 56.5
+	turret 5.5 241.5
+	turret 71.5 -47
+	turret 72 -67
 	leak "leak" 50 50
 	leak "flame" 80 80
 	leak "big leak" 80 30
@@ -3180,13 +3194,6 @@ ship "Bactrian"
 			"hull damage" 1300
 			"hit force" 3900
 	outfits
-		"Sidewinder Missile Launcher" 2
-		"Sidewinder Missile" 90
-		"Torpedo Launcher" 2
-		"Torpedo" 60
-		"Heavy Laser Turret" 4
-		"Heavy Anti-Missile Turret" 2
-		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
 		"D94-YV Shield Generator"
@@ -3198,28 +3205,36 @@ ship "Bactrian"
 		"X5200 Ion Steering"
 		"Hyperdrive"
 		
-	engine -18 230
-	engine 18 230
-	engine -46 451.5
-	engine -54.5 455.5
-	engine -62.5 452
-	engine -8.5 459
-	engine 0 463.5
-	engine 46 451.5
-	engine 54.5 455
-	engine 62.5 452
-	engine 8.5 459
-	turret -146.5 149
-	turret -148 101
-	turret -148.5 53.5
-	turret -40.5 -219.5
-	turret 0 -20
-	turret 0 -435
-	turret 0 22
-	turret 146.5 149
-	turret 148 101
-	turret 148.5 53.5
-	turret 40.5 -219.5
+	engine -10 527.5
+	engine -50.5 517.5
+	engine -64 520
+	engine -74 517
+	engine 0 530
+	engine 10 527.5
+	engine 50.5 517.5
+	engine 64 520
+	engine 74 517
+	fighter -11 -255.5 
+	fighter -28.5 0 over
+	fighter -47.5 -255 over
+	fighter -69.5 -144.5 over left
+	fighter -69.5 -87 over left
+	fighter 11 -255.5 
+	fighter 28.5 0 over
+	fighter 47.5 -255 over
+	fighter 0 0
+	fighter 0 0
+	fighter 0 0
+	fighter 0 0
+	turret -169 60.5
+	turret -170 114.5
+	turret -170 170
+	turret 0 -26
+	turret 0 -501.5
+	turret 0 21.5
+	turret 169 60.5
+	turret 170 114.5
+	turret 170 170
 	leak "leak" 30 50
 	leak "flame" 30 80
 	leak "big leak" 50 30
@@ -3230,4 +3245,80 @@ ship "Bactrian"
 	"final explode" "final explosion large"
 	description "The Lionheart Bactrian is the last of the great city-ships, a design hearkening back to the early days of space colonization when a long-distance vessel needed to be a self-contained world, able to survive for weeks at a time without encountering an inhabited planet. It is not only a freighter, but a carrier, and a capable warship either at short range or at a distance."
 	description "	Naturally, this versatility also makes it extremely expensive, and the Bactrian is normally only for sale to citizens who have been vetted by the local government of the Deep."
-
+	
+	# Battle Cruisers
+	
+ship "Prototype Vulture"
+	sprite "ship/vulture"
+	thumbnail "thumbnail/vulture"
+	attributes
+		category "Battlecruiser"
+		licenses
+			"Battlecruiser"
+			"Tarazed"
+		"cost" 45000000
+		"shields" 75000
+		"hull" 45000
+		"required crew" 120
+		"bunks" 300
+		"mass" 1000
+		"drag" 12
+		"vulture talon" 1
+		"heat dissipation" 0.55
+		"fuel capacity" 500
+		"cargo space" 98
+		"outfit space" 960
+		"weapon capacity" 428
+		"engine capacity" 140
+		weapon
+			"blast radius" 400
+			"shield damage" 4000
+			"hull damage" 200
+			"hit force" 600
+	outfits
+		"Fusion Reactor"
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"Small Radar Jammer" 2
+		"Ramscoop"
+		"Laser Rifle"
+		
+		"Orca Plasma Steering"
+		"Impala Plasma Thruster"
+		
+	fighter -77.5 99.5 left
+	fighter -77.5 99.5 left
+	fighter -78 68.5 left
+	fighter -78 68.5 left
+	fighter 77.5 99.5 right
+	fighter 77.5 99.5 right
+	fighter 78 68.5 right
+	fighter 78 68.5 right
+	gun 0 -231
+	turret -105.5 64.5
+	turret -120.5 75.5
+	turret -136.5 89.5
+	turret -176 169
+	turret -176 237.5
+	turret -50.5 -143.5
+	turret -59 -12
+	turret 105.5 64.5
+	turret 120.5 75.5
+	turret 136.5 89.5
+	turret 176 169
+	turret 176 237.5
+	turret 50.5 -143.5
+	turret 59 -12
+	engine -129 293.5
+	engine -28.5 309
+	engine -81 286.5
+	engine 129 293.5
+	engine 28.5 309
+	engine 81 286.5
+	explode "small explosion" 20
+	explode "medium explosion" 80
+	explode "large explosion" 70
+	explode "huge explosion" 30
+	"final explode" "final explosion large" 1
+	description "Protecting humans and aliens from each other is a top priority here at Tarazed! In the interest of defense and trade, the Republic has tasked us with creating a new line of warships."
+	description " The Vulture will be the lead ship on this initiative. It may only be in prototype, but it has already single handedly repelled pirate raids!"
