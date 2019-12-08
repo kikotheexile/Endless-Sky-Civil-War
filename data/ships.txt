@@ -3250,6 +3250,9 @@ ship "Bactrian"
 	
 ship "Prototype Vulture"
 	sprite "ship/vulture"
+		"frame rate" 15
+		"delay" 10
+		"random start frame"
 	thumbnail "thumbnail/vulture"
 	attributes
 		category "Battlecruiser"
