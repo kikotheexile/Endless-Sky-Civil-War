@@ -3250,9 +3250,6 @@ ship "Bactrian"
 	
 ship "Prototype Vulture"
 	sprite "ship/vulture"
-		"frame rate" 15
-		"delay" 10
-		"random start frame"
 	thumbnail "thumbnail/vulture"
 	attributes
 		category "Battlecruiser"
@@ -3264,30 +3261,28 @@ ship "Prototype Vulture"
 		"hull" 45000
 		"required crew" 120
 		"bunks" 300
-		"mass" 1000
-		"drag" 12
+		"mass" 3500
+		"drag" 20
 		"vulture talon" 1
-		"heat dissipation" 0.55
-		"fuel capacity" 500
+		"heat dissipation" 0.25
+		"fuel capacity" 100
 		"cargo space" 98
-		"outfit space" 960
-		"weapon capacity" 428
-		"engine capacity" 140
+		"outfit space" 1050
+		"weapon capacity" 425
+		"engine capacity" 300
 		weapon
 			"blast radius" 400
 			"shield damage" 4000
 			"hull damage" 200
 			"hit force" 600
 	outfits
+		"D94-YV Shield Generator"
+		"Tactical Scanner"
+		"LP576a Battery Pack"
 		"Fusion Reactor"
-		"LP072a Battery Pack"
-		"D41-HY Shield Generator"
-		"Small Radar Jammer" 2
-		"Ramscoop"
-		"Laser Rifle"
-		
-		"Orca Plasma Steering"
-		"Impala Plasma Thruster"
+	
+		"Tyrant Plasma Steering"
+		"Tyrant Plasma Thruster"
 		
 	fighter -77.5 99.5 left
 	fighter -77.5 99.5 left
