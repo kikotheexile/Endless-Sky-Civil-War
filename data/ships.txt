@@ -3088,6 +3088,67 @@ ship "Vanguard"
 	"final explode" "final explosion medium"
 	description `The Vanguard is Syndicated Systems' newest warship intended for the heavy anti-pirate defense market. Vanguards offer an unusual feature set, focusing on powerful fixed guns and featuring Syndicated Systems' latest automation technologies, resulting in an atypically low crew complement for a ship its size. Few capital ships will endure for long under the withering fusillade of gunfire that it can unleash against those in front of it.`
 
+
+ship "Unnamed Prototype"
+	sprite "ship/kestrel"
+	"never disabled"
+	thumbnail "thumbnail/kestrel"
+	attributes
+		License:
+			Not-For-Sale
+		category "Cruiser"
+		"cost" 14700000
+		"shields" 19400
+		"hull" 7200
+		"required crew" 64
+		"bunks" 128
+		"mass" 740
+		"drag" 11
+		"heat dissipation" .6
+		"fuel capacity" 500
+		"cargo space" 120
+		"outfit space" 810
+		"weapon capacity" 390
+		"engine capacity" 210
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+	outfits
+		"Particle Cannon" 4
+		"Torpedo Launcher" 2
+		"Torpedo" 60
+		"Heavy Laser Turret" 4
+		
+		"Fusion Reactor"
+		"LP144a Battery Pack"
+		"D94-YV Shield Generator"
+		"Liquid Nitrogen Cooler"
+		"Tactical Scanner" 2
+		
+		"Orca Plasma Thruster"
+		"Orca Plasma Steering"
+		"Hyperdrive"
+	engine -14 177
+	engine 14 177
+	gun -75 57 "Torpedo Launcher"
+	gun 75 57 "Torpedo Launcher"
+	gun -53 61 "Particle Cannon"
+	gun 53 61 "Particle Cannon"
+	gun -31 66 "Particle Cannon"
+	gun 31 66 "Particle Cannon"
+	turret -7 -4 "Heavy Laser Turret"
+	turret 7 -4 "Heavy Laser Turret"
+	turret -23 14 "Heavy Laser Turret"
+	turret 23 14 "Heavy Laser Turret"
+	explode "small explosion" 25
+	explode "medium explosion" 35
+	explode "large explosion" 45
+	explode "huge explosion" 30
+	"final explode" "final explosion large"
+	description "Tarazed's Vultures may be massive and powerful, but are virtually useless without support ships. This prototype Cruiser should fill that niche, all it needs are a few tweaks and a name." 
+
 #Colony and City Ships
 
 ship "Mule"
@@ -3096,6 +3157,8 @@ ship "Mule"
 		"frame rate" 30
 		"random start frame"
 	attributes
+		licenses
+			Colony-Ship
 		category "Colony Ship"
 		"cost" 4580000
 		"shields" 5400
@@ -3251,6 +3314,7 @@ ship "Bactrian"
 ship "Prototype Vulture"
 	sprite "ship/vulture"
 	thumbnail "thumbnail/vulture"
+	"never disabled"
 	attributes
 		category "Battlecruiser"
 		licenses
