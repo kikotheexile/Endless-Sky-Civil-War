@@ -1581,7 +1581,7 @@ fleet "Small Southern Pirates"
 	variant 1
 		"Clipper (Speedy)"
 	variant 1
-		"Modified Argosy"
+		"Odyssey"
 
 fleet "Large Southern Pirates"
 	government "Pirate"
@@ -1604,7 +1604,7 @@ fleet "Large Southern Pirates"
 	variant 2
 		"Argosy (Turret)"
 	variant 1
-		"Modified Argosy"
+		"Odyssey"
 	variant 1
 		"Modified Argosy (Heavy)"
 	variant 1
@@ -1654,7 +1654,7 @@ fleet "Large Southern Pirates"
 		"Argosy (Missile)"
 		"Hawk (Rocket)"
 	variant 1
-		"Modified Argosy"
+		"Odyssey"
 		"Sparrow" 2
 	variant 1
 		"Modified Argosy (Heavy)"
@@ -2045,7 +2045,7 @@ fleet "pirate raid"
 	variant 2
 		"Argosy (Turret)"
 	variant 1
-		"Modified Argosy"
+		"Odyssey"
 	variant 1
 		"Modified Argosy (Heavy)"
 	variant 1
@@ -2759,7 +2759,7 @@ fleet "Hired Guns"
 		nemesis waiting heroic
 	variant 1
 		"Leviathan (Laser)"
-		"Modified Argosy" 2
+		"Odyssey" 2
 	variant 1
 		"Leviathan (Laser)" 2
 		"Corvette"
@@ -2768,7 +2768,7 @@ fleet "Hired Guns"
 		"Splinter (Laser)"
 	variant 1
 		"Falcon (Laser)"
-		"Modified Argosy" 2
+		"Odyssey" 2
 	variant 1
 		"Falcon (Laser)"
 	variant 1
@@ -2779,7 +2779,7 @@ fleet "Hired Guns"
 		"Splinter (Laser)"
 	variant 1
 		"Vanguard (Particle)"
-		"Modified Argosy" 2
+		"Odyssey" 2
 	variant 1
 		"Vanguard (Missile)"
 		"Headhunter (Strike)" 2
@@ -2795,7 +2795,7 @@ fleet "Hired Guns"
 		"Vanguard (Particle)"
 		"Splinter (Proton)"
 	variant 1
-		"Modified Argosy" 2
+		"Odyssey" 2
 		"Corvette"
 		"Splinter (Laser)"
 		"Splinter (Proton)"
