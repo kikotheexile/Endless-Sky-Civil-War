@@ -2481,7 +2481,7 @@ fleet "Marauder fleet IV"
 		"Crow"
 		"Gallium"
 	variant 2
-		""Stinger"
+		"Stinger"
 		"Crow"
 		"Gallium"
 
@@ -2524,7 +2524,7 @@ fleet "Marauder fleet V"
 		"Crow"
 		"Gallium"
 	variant 2
-		""Stinger"
+		"Stinger"
 		"Crow"
 		"Gallium"
 
@@ -2567,7 +2567,7 @@ fleet "Marauder fleet VI"
 		"Crow"
 		"Gallium"
 	variant 2
-		""Stinger"
+		"Stinger"
 		"Crow"
 		"Gallium"
 
