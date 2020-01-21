@@ -641,7 +641,7 @@ mission "FW Katya 1C"
 				`	"Are you at least going to pay me for my lost time, here?"`
 					goto greedy
 				`	"I'm of a mind to report this violation of my privacy!"`
-					goto manager
+					goto karen
 				`	"Since when has the Republic gotten so heavy handed about searching civilian ships?"`
 					goto angry
 				`	"I'm just happy you didn't shoot me."
@@ -655,7 +655,7 @@ mission "FW Katya 1C"
 			`	"Wow you spacers really are all the same, aren't you? Just, please let this issue rest." They leave.`
 				decline
 				
-			label manager
+			label karen
 			`	"Are you really going to ask to speak to my supervisor? I thought I was free of that when I quit cashiering to join the Navy." He sighs briefly, "Let's just part ways, captian." He and his guards walk off your ship.`
 				decline
 
