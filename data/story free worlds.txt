@@ -3280,16 +3280,16 @@ mission "FW Flamethrower 2"
 				`	(No.)`
 					defer
 			scene scene/loc5
-			`	You give your name to the receptionist, and she directs you to the hangar where the weapons group does their design and prototyping. Barmy Edward shakes your hand warmly and says, "Here's the deal. We've got a new weapon, something a little out of the ordinary. We're hoping it will be useful against the pirates, in particular."
+			`	You give your name to the receptionist, and she directs you to the hangar where the weapons group does their design and prototyping. Barmy Edward shakes your hand warmly and says, "Here's the deal. We've got a new weapon, something a little out of the ordinary. We're hoping it will be useful against the pirates, in particular."`
 			`	He is clearly very excited and continues, "I won't share the details, because I want you to get the full effect of the surprise. But, there's a ship in orbit, the Doombat, that has been fitted with a few of these new weapons. Your job will be to fight it and disable it, then tell us what you think of its weapons."`
 			`	He shakes a finger in your face and says, "Now mind you, we just want you to disable the Doombat, not destroy it. We bought it from a scrapyard, so it's barely spaceworthy, but all the same I want to be able to keep using it for future tests. Understood?"`
 			choice
 				`	"Okay, I promise not to destroy it or steal it."`
 				`	"Are you expecting a pinky promise? I'll do my best."`
-				`	"I'll try not to blow up your precious fury or steal your crazy technology."
+				`	"I'll try not to blow up your precious fury or steal your crazy technology."`
 				`	"Sorry, this sounds a bit too risky. I'd rather not be involved in this sort of testing."`
 					decline
-			`	"Great," he says, rubbing his hands together with a gleeful expression on his face. He's clearly looking forward to hearing what you think of his latest invention.`
+			`	"Great," he says, with a gleeful expression on his face. He's clearly looking forward to hearing what you think of his latest invention.`
 				accept
 	
 	npc save disable
@@ -3320,7 +3320,7 @@ mission "FW Flamethrower 2"
 			`	"Oh." He seems somewhat dejected. "Well, if you were flying a smaller ship, you might think differently. Or if your ship didn't have adequate cooling. My idea was to target pirate ships with those illegal modified blasters that run hotter than usual."`
 				goto available
 			label available
-			`	"Anyway," he continues, "I should have an initial model for sale in a month or so," he says. "I'll be interested to see what uses you or anyone else might find for them. Anyway, thanks for your help." You say goodbye and head back to your ship.`
+			`	"Anyway," he continues, "I should have an initial model for sale in a month or so. I'll be interested to see what uses you or anyone else might find for them. Anyway, thanks for your help." You say goodbye and head back to your ship.`
 
 ship "Fury" "Doombat"
 	add attributes
@@ -3484,11 +3484,11 @@ mission "FW Pirates 3.1"
 			choice
 				`	"That's good news! I think the Senate made the right choice."`
 					goto agree
-				`	"Ok, the senate has spoken."
+				`	"Ok, the senate has spoken."`
 					goto agree
 				`	"That doesn't make any sense. If we leave those pirate worlds alone, they'll stab us in the back some time in the future."`
 					goto disagree
-				`	"I am not happy about this, it's begging for trouble."
+				`	"I am not happy about this, it's begging for trouble."`
 					goto disagree
 			label agree
 			`	"Well, I think the Senate has water flowing through their veins instead of blood," says Tomek, "and I think asking anarchists to make a binding diplomatic contract is an exercise in futility." His face is very flushed: he may be drunk.`
@@ -3500,7 +3500,7 @@ mission "FW Pirates 3.1"
 			`	JJ says, "Captain <last>, the Senate wants you to travel to Thule and deliver their ultimatum. You will be given a single Falcon as an escort: not enough for a battle fleet, just enough to keep you safe. You are to avoid engaging any pirates you meet, if possible."`
 			`	"I'll introduce you to your escort," says Tomek, and he leads you out of the bar. Once you are outside, he pulls you aside and says, "If by any chance you are attacked by pirates along the way, and if you have any reason to suspect that they originate from the <system> system, you would be totally justified in attacking that system instead of following your initial orders. I could even supply you with a backup fleet, if that happened."`
 			choice
-				`	"I really shouldn't agree to this."
+				`	"I really shouldn't agree to this."`
 				`	"You're asking me to go against the Senate's decision?"`
 				`	"Understood."`
 					accept
@@ -3825,7 +3825,7 @@ mission "FW Pirates 4.1"
 			choice
 				`	"Yes. I was aware."`
 					goto reason
-				`	"Yes. The diplomacy not make sense at the time."
+				`	"Yes. The diplomacy not make sense at the time."`
 					goto reason
 				`	"No, I was led to believe that I was following the Senate's orders."`
 			`	"Interesting," says Arianna. "That's not what Tomek told us. And JJ and Freya both said that you were well aware of the Senate's wishes."`
@@ -3834,7 +3834,7 @@ mission "FW Pirates 4.1"
 			choice
 				`	"I wanted to do something to end the pirate threat."`
 				`	"I trusted that Tomek would know the best strategy."`
-				`	"I figured the best way to negotiate with the anarchist worlds was from a position of power."
+				`	"I figured the best way to negotiate with the anarchist worlds was from a position of power."`
 				`	"I guess I got too caught up in trying to be a hero."`
 					goto hero
 			`	"And how did that work out?" says the old man. "How long after the battle did it take you to realize that we have no way of holding on to the planet you conquered?"`
@@ -3879,7 +3879,7 @@ mission "FW Refinery 1"
 					goto next
 				`	"How can the Senate have him arrested? He's part of the Council!"`
 					goto defend
-				`	"Sometimes the Senate will make the wrong call. I thought it was the Council's job to fill in the gaps."
+				`	"I'm not surprised. Sometimes the Senate will make the wrong call. I thought it was the Council's job to fill in the gaps."`
 					goto defend
 			label attack
 			`	"That's easy to answer," says JJ. "He didn't like the idea of taking orders from the Senate. He thought they should treat him like a hero and go along with whatever he thought best."`
@@ -3997,7 +3997,7 @@ mission "FW Diplomacy 1B"
 			choice
 				`	"Why isn't this public knowledge yet?"`
 					goto heard
-				`	"This could be a huge morale boost, why isn't it all over the news?"
+				`	"This could be a huge morale boost, why isn't it all over the news?"`
 					goto heard
 			label heard
 			`	"Well," says Alondo, "apparently the Senate was not being as secretive as they thought. Somehow word leaked out to the Republic that those worlds were defecting, and a massive Navy fleet moved to occupy those systems. Which means we're on the brink of another bloody battle."`
@@ -4018,6 +4018,9 @@ mission "FW Diplomacy 1B"
 			choice
 				`	"Okay, let's go to Earth!"`
 					accept
+				`	"Who wants to live forever anyway?"`
+					accept
+				`	"I would normally turn down a job like this, but I don't think I have a choice."`
 				`	"How do we know this isn't a trap? You're willing to risk your life for this?"`
 			`	"If we can save thousands of lives from being lost in a needless battle, it's worth the risk," he says. "Now come on, the clock is ticking. We need to be safely back in Free space before your safe passage expires."`
 				accept
@@ -4050,11 +4053,15 @@ mission "FW Diplomacy 1C"
 					goto fight
 				`	"Maybe they're afraid of the precedent it would set if they give in to us."`
 					goto precedent
+				`	"The Dirt Belt is a huge supplier of food and resources to the Republic. Why wouldn't they fight to hold onto it?"
+					goto resources
 			label fight
 			`	"That's right," he says. "Amazing how heedless they can be, sitting in their comfy Parliament house deciding the fates of others."`
 				goto next
 			label precedent
 			`	"Yes, that seems to be what's at stake," he says. "But by now they should see the writing on the wall. Amazing how callous they can be about the lives of the Navy crews who are following their orders."`
+			label resources
+			`	"That's an interesting viewpoint," he says. "I hadn't looked at it from that angle. You may be right, they might just be afraid of us starving them out." He pauses for a second to consider this, and continues. "We can't just pass up this opportunity, though. I've already made arrangements to meet with some of the Navy's leadership on <planet>. We should still keep that appointment."`
 			label next
 			`	"We're not just going to head home in defeat," he says. "While we have the chance, I want to talk with the Navy leadership directly. Landing near the secret base on New Austria would be way too provocative, so I've arranged to meet with them on their base on <planet> instead."`
 			choice
@@ -4109,7 +4116,7 @@ mission "FW Southern Recon 1"
 	on offer
 		event "fw safe passage ends"
 		conversation
-			`Alondo and JJ are in a somber mood when you meet up with them in the bar. You can't help remembering that Tomek always used to be a part of these gatherings, before he turned against the Senate. And now it looks like your next major battle will be fought without Tomek's expert guidance.`
+			`Alondo and JJ are in a somber mood when you meet up with them in the bar. After all Tomek always used to be a part of these gatherings, before he turned against the Senate. Now it looks like your next major battle will be fought without Tomek's expert guidance.`
 			`	JJ says, "We've done all we can. Sooner or later we will have to fight the Navy for those star systems. So to start with, <first>, we'd like you to scout them out and report back to us on the Navy's presence there. Freya is on Trinket, gathering a fleet. Report to her there when you're done."`
 				accept
 
@@ -4140,7 +4147,7 @@ mission "FW Southern Recon 1B"
 			choice
 				`	"Disable Narcissus-Class, steal gun. Got it."`
 					accept
-				`	"Just like that time Katya asked me to steal a sensor pod from a drone. I'm in."
+				`	"Just like that time Katya asked me to steal a sensor pod from a drone. I'm in."`
 					accept
 				`	"How can I find a Narcissus that's all by itself? They're usually a part of a bigger fleet."`
 			`	She thinks about that for a moment, then says, "The Navy has shifted most of their capital ships to the defecting systems in the south. That means that some of the systems up north will have lighter defenses. You might try Wei or Alnasl. Good luck, Captain."`
@@ -4291,13 +4298,14 @@ mission "FW Southern Battle 2"
 			choice
 				`	"What's the battle plan?"`
 					goto plan
-				`	"What's with those two Behemoths? And is that a Blackbird?"
+				`	"What's with those two Behemoths? And is that a Blackbird?"`
 					goto behemoths
 			label plan
 			`	"The fleet from Southbound Shipyards will be traveling with you," she says. "Other fleets with other commanders will be converging on Rastaban separately, at approximately the same time. So, you have no time to lose. You must travel directly to Rastaban from here, or else you will arrive too late to join in the fight. Good luck, captain."`
 				accept
 			label behemoths
 			`	"They're a part of the logistics fleet under my command." Freya shrugs, "I put out word that I needed some combat capable ships to help screen against missiles and torpedoes, and these crews heroically volunteered to keep you alive. Now hurry up, the you're on a time limit!"
+				accept
 	npc
 		government "Free Worlds"
 		personality heroic disables escort
@@ -4463,9 +4471,12 @@ mission "FW Southern Prisoners - Release"
 			`	"And since we cannot agree," says Alondo, "we are giving you the deciding vote."`
 			choice
 				`	"What do you mean?"`
+				`	"Care to repeat that?"`
+				`	"You lost me."`
+				`	"Oh, so I decide their fate? Neat."`
 			`	"We will be putting you in charge of the prisoner convoy," says Alondo, "and arranging a week of safe passage for you. If you think we should return the prisoners as a gesture of goodwill to improve our chances of a diplomatic end to this war, bring the convoy to <planet>."`
 			`	"But if you think we should hold on to the prisoners until we receive Katya safely back," says Freya, "bring the convoy to Clink. Understand?"`
-			`	It's a serious choice facing you, with no clear right decision. You thank them for trusting you, and begin preparations to escort the prisoners.`
+			`	It's a serious choice with no clear right decision.`
 				accept
 	
 	on accept
@@ -4529,7 +4540,7 @@ mission "FW Southern Prisoners - Released"
 		conversation
 			`<origin> has become the home of a major Navy base almost overnight; the number of ships and people here is almost overwhelming. You return the prisoners, who have all taken an oath of parole to take no further part in the war against the Free Worlds. One of the four Navy admirals who you and Alondo met with earlier is here, and as you are unloading the prisoners, he says, "More volunteers for the 'Oathkeepers,' I see."`
 			choice
-				`	"Ah, I'm glad to see the Republic let the released Navy officers keep their word. I had best be going now."
+				`	"Ah, I'm glad to see the Republic let the released Navy officers keep their word. I had best be going now."`
 					launch
 				`	"Refresh my memory, who are the 'Oathkeepers'?"`
 			`	"The officers you granted parole to months ago. We reassigned them all to duty in the north, patrolling for pirates."`
@@ -4684,11 +4695,16 @@ mission "FW Northern 2"
 			choice
 				`	"Is everything okay?"`
 				`	"Did they agree to join us?"`
+				`	"Are you alright?"`
+				`	"Progress has been made this day."
 			`	"Yes, yes, of course," he says. "But taking on six more worlds all of a sudden - I just hope it's not more than we can handle. When the Navy recovers from the battle at Rastaban and strikes back, now we have much less idea where that strike will fall."`
-			`	"So, what do we do next?" you ask.`
 			`	"We need to move more of our fleet up here to the front," he says, "but I'd be willing to bet that the Navy has installed surveillance equipment on Hope, and maybe a few other planets in this sector too. Which I should have thought of before, because in order to be sure we've tracked every last one down, we need Freya's expertise in signals and sensors. So, I'm sending you to meet up with her on Dancer."`
 			choice
 				`	"No problem. Don't worry, we'll be able to handle this just fine."`
+					accept
+				`	"It's a bit late for them to stop us now. You'll be fine."`
+					accept
+				`	"Be seeing you."`
 					accept
 				`	"Aren't you afraid the Navy will strike while I'm off fetching her?"`
 			`	"Of course," he says. "But I talked with JJ, and he thinks they're still recovering from the last battle. And if their sensors all go dark, that will be a big deterrent to keep them from attacking - certainly more of a deterrent than you could add by staying here with our fleet."`
@@ -4830,12 +4846,12 @@ mission "FW Northern 3"
 			`	"I don't know," she says. "I hope the Navy will keep their promise. But in the meantime, three people on Council is too few. We didn't want to say anything to you until the Senate cleared it, but we've nominated you to take Tomek's spot on the Council. What do you say?"`
 			choice
 				`	"I'd be honored. Thank you."`
-				`	"That's pretty awesome, not gunna lie. I'm in."
-				`	"I get to be my own boss? Make my own hours? Thank you!"
+				`	"That's pretty awesome. I'm in."`
+				`	"I get to be my own boss? Make my own hours? Thank you!"`
 			`	She grins. "Don't mention it. You've been with us since the beginning, and we've all come to trust what you have to say. I wish we could throw you a big dinner or something to celebrate, but... well, we're all busy with the war right now. But Alondo and JJ both said to tell you they're glad to have you on board. And you'll get a salary increase, of course. Which you ought to celebrate by buying us both a few drinks in the spaceport bar before you leave. Okay?"`
 			choice
 				`	"Okay, I'll meet you back at the spaceport in a few hours."`
-				`	"Be my own boss and get paid more? First rounds on me!" 
+				`	"Be my own boss and get paid more? First rounds on me!"`
 			`	"Great," she says, smiling. "See you then." She picks up her suitcase, and hurries over to the shipyard.`
 
 
@@ -4860,19 +4876,19 @@ mission "FW Northern 3B"
 				`	"Where's your home planet?"`
 					goto home
 				`	"How long do you think it will be before they're mass-producing Elpis?"`
-					goto Elpis
+					goto elpis
 			label council
 			`	"Well," she says, "you know the Council. Visionaries, big picture people. They needed someone who could take care of the actual concrete details. Data crunching for our 'thousand eyes' program tracking pirate fleet movements. Supply chain management. This was back in the days of the Pact, of course, before we had officially separated from the Republic. And I had worked with JJ in the past, so he asked me to come with him and help out on a larger scale."`
 				goto leave
 			label home
 			`	"I grew up on Earth," she says, "deep in the bowels of one of the major cities. Even as a kid I hated that dirty old planet and knew my only shot of leaving there was to be smarter than everyone else. It wasn't until years later, when I came back to visit with some money in my pocket and a bit more perspective, that I was able to travel to the few parts of Earth that are still pretty, and realize how precious our home world is."`
 				goto leave
-			label Elpis
-			`	"Ugh," she says, "let's not talk about work while we're busy relaxing." You refrain from commenting that all her talk about starship design sounded a lot more like work than like a fun relaxing topic of conversation.`
+			label elpis
+			`	"Ugh," she says, "let's not talk about work while we're busy relaxing."`
 				goto leave
 			label leave
-			`	You hang out in the bar for another hour or so, and then she says to the bartender, "Two bottles of champagne to go, please." He gives her an odd look, but the Council is well enough respected that he does not question her.`
-			`	You walk over to the shipyard, where the two newly completed Elpis are parked side by side. "Time to christen our new ships," she says, handing you one of the bottles. You each fling a bottle at one of the ships, and shout out...`
+			`	After hanging out for another hour or so, and then she says to the bartender, "Two bottles of champagne to go, please." He gives her an odd look, but the Council is well enough respected that he does not question her.`
+			`	She leads you to the shipyard, where the two newly completed Elpis are parked side by side. "Time to christen our new ships," she says, handing you one of the bottles. You each fling a bottle at one of the ships, and shout out...`
 			choice
 				`	"For victory!"`
 				`	"For peace!"`
@@ -5014,6 +5030,8 @@ mission "FW Alphas 1.1"
 					goto loyalty
 				`	"If they're not one of our worlds, why should we help them?"`
 					goto help
+				`	"How is this our problem?"`
+					goto help
 			label loyalty
 			`	"Possibly," says Alondo. "But that's not what is important. Before they were overrun by pirate troops, one of the colonists managed to take a photo of the pirate leader."`
 				goto photo
@@ -5021,9 +5039,9 @@ mission "FW Alphas 1.1"
 			`	"Because one of the colonists took a picture of the leader of the pirates who attacked them," says Alondo.`
 				goto photo
 			label photo
-			`	He hands you a small printout of a photograph. It is a somewhat blurry picture of a group of armed pirates running down a street in a desert town. What grabs your attention immediately is that several of the pirates appear to have green skin. You recognize that as the mark of the Alphas, the sociopathic, genetically engineered super-humans who enslaved entire planets during the Alpha Wars, five centuries ago.`
+			`	He hands you a small printout of a photograph. It is a somewhat blurry picture of a group of armed pirates running down a street in a desert town. It is immediately obvious is that several of the pirates appear to have no noses at all. That as the mark of the Alphas, the sociopathic, genetically engineered super-humans who enslaved entire planets during the Alpha Wars, five centuries ago.`
 			choice
-				`	"It must be a trick. There can't still be Alphas around. Maybe the pirates dyed their skin green to make people fear them."`
+				`	"It must be a trick. There can't still be Alphas around. Maybe the pirates had cosmetic surgery to make people fear them."`
 				`	"How is it possible that some of the Alphas are still alive?"`
 			`	Alondo says, "This may be a trick, but we can't afford to take that risk. The Alphas were the greatest threat humanity has ever faced. And before they contacted us for help, Poisonwood reached out to the Navy." As he is speaking, a shadow passes overhead. You look up and see the unmistakable silhouette of a Navy Nomos, coming in for a landing.`
 			choice
@@ -5068,11 +5086,15 @@ mission "FW Alphas 1.1"
 					goto shoot
 				`	(Try to grab it.)`
 					goto grab
+				`	(Hold my fire.)`
+					goto hold
 			label shoot
 			`	You open fire, but it is leaping back and forth so fast that it is almost impossible to hit. But then you see Commander Nguyen climb onto a nearby dumpster and leap into the air, managing to grab the creature by the leg as it flies by.`
 				goto pin
 			label grab
 			`	Unfortunately, by now the creature is far outside your reach. But then you see Commander Nguyen climb onto a nearby dumpster and leap into the air, managing to grab the creature by the leg as it flies by.`
+				goto pin
+			`	Following the lead of the Navy soldiers, you hold your fire to avoid hitting them. You see Commander Nguyen leap onto a nearby dumpster and jump off of it, catching the creature by the leg while they're both in the air.`
 				goto pin
 			label pin
 			`	The two of them fall to the ground and roll over and over in a jumble of limbs. You and the Navy troops run after them, afraid to shoot for fear of hitting Nguyen. But somehow Nguyen gets the upper hand, pinning the creature in a full nelson hold, with his legs wrapped around its body to keep it from kicking him. "Kill it!" he shouts.`
@@ -5082,10 +5104,10 @@ mission "FW Alphas 1.1"
 				`	(Let the Navy troops deal with this.)`
 					goto navy
 			label kill
-			`	While Nguyen holds the creature still, you put a gun to its head and pull the trigger. Not even an Alpha can survive that; the creature goes limp. Now that you can get a good look at it, you can see that it does indeed have green skin.`
+			`	While Nguyen holds the creature still, you put a gun to its head and pull the trigger. Not even an Alpha can survive that; the creature goes limp. Now that you can get a good look at it, you can see that it does indeed have slits in place of a nose.`
 				goto end
 			label navy
-			`	While Nguyen holds the creature still, one of the Navy troops puts a gun to its head and pulls the trigger. Not even an Alpha can survive that; the creature goes limp. Now that you can get a good look at it, you can see that it does indeed have green skin.`
+			`	While Nguyen holds the creature still, one of the Navy troops puts a gun to its head and pulls the trigger. Not even an Alpha can survive that; the creature goes limp. Now that you can get a good look at it, you can see that it does indeed have slits in place of a nose.`
 				goto end
 			label end
 			`	Nguyen gets shakily to his feet; he looks stunned and very pale. "Thank you," he says. The sounds of gunfire within the factory eventually dies down. "We'll continue to patrol the city," says Nguyen, "in case there are more of them. Then I'll meet you in the spaceport." He heads off back into the city.`
@@ -5122,9 +5144,9 @@ mission "FW Alphas 1.2"
 			`	"Because one of the colonists took a picture of the leader of the pirates who attacked them," says Alondo.`
 				goto photo
 			label photo
-			`	He hands you a small printout of a photograph. It is a somewhat blurry picture of a group of armed pirates running down a street in a desert town. What grabs your attention immediately is that several of the pirates appear to have green skin. You recognize that as the mark of the Alphas, the sociopathic, genetically engineered super-humans who enslaved entire planets during the Alpha Wars, five centuries ago.`
+			`	He hands you a small printout of a photograph. It is a somewhat blurry picture of a group of armed pirates running down a street in a desert town. What grabs your attention immediately is that several of the pirates appear to have no nose. That is the mark of the Alphas, the sociopathic, genetically engineered super-humans who enslaved entire planets during the Alpha Wars, five centuries ago.`
 			choice
-				`	"It must be a trick. There can't still be Alphas around. Maybe the pirates dyed their skin green to make people fear them."`
+				`	"It must be a trick. There can't still be Alphas around. Maybe the pirates had cosmetic surgery to make people fear them."`
 				`	"How is it possible that some of the Alphas are still alive?"`
 			`	Alondo says, "This may be a trick, but we can't afford to take that risk. The Alphas were the greatest threat humanity has ever faced. We have very few people trained in ground combat, but I've gathered some of our best and loaded them onto a fleet that will be accompanying you. Destroy any pirate ships in orbit, then land and secure the facility. Understood? And don't let any of your escorts die; they're carrying the troops you'll need for the ground battle." You nod, and prepare to take off for the <system> system.`
 				accept
@@ -5184,6 +5206,10 @@ mission "FW Alphas 1.1A"
 					goto kill
 				`	"Couldn't we let the children be born, if that's what the women want, then imprison them or something if they do turn out to be Alphas?"`
 					goto live
+				`	"So in order to correct the fact these women had no choice in their conception, you are removing even more of their choice? Haven't they been through enough?"`
+					goto autonomy
+				`	"Have you considered, I don't know, asking the women what they want?"`
+					goto autonomy
 			label street
 			`	"Yes," he says. "Silly, isn't it? Anyway, this is my job to deal with; you need to go find Danforth."`
 				goto end
@@ -5192,6 +5218,10 @@ mission "FW Alphas 1.1A"
 				goto end
 			label live
 			`	"The Alphas were originally bred to be super-soldiers," he says, "a weapon in the hands of a despotic government. As much as I hate to admit it, there are certain branches of the Republic who would love to get their hands on a small army of impressionable Alpha children. Far better for them to die than for that to happen. Anyway, that's my job to deal with; you need to go find Danforth."`
+				goto end
+			label autonomy
+			`	"I don't know what you want from me, here." He says, clearly frustrated by the situation, "If they decide to carry to term, the Alphas they birth will still be taken from them and thrown in some secret government lab somewhere. What kind of life would that be for the Alphas, let alone the mothers?"`
+			`	He pauses for a minute and considers your argument. "Well," he says, "I will put in a recommendation that we do our upmost to respect the autonomy of the alpha's victims. I doubt any will want to carry to term, anyway, and this gesture could be a good first step in their recovery from this trauma."`
 				goto end
 			label end
 			`	He leaves, and you return to Danforth's ship. Danforth says, "Hello there, temporary ally. It was an honor to fight alongside you, while it lasted."`
