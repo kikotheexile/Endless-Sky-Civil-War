@@ -559,7 +559,7 @@ mission "FW Katya 1B"
 				`	"Pleased to meet you both. Why the deception?"`
 				`	"Wait a minute... were they the secret cargo?"`
 				`	"I already figured that out."`
-				`	"Yea that's nice but what's this about?"
+				`	"Yea that's nice but what's this about?"`
 			
 			`	Katya explains, "The Andersons are defecting to the Free Worlds. Their dream is to make terraforming a public service, supported by government funds, rather than a luxury available only to the richest of planets. We worked for years to get Parliament to accept that idea, but with no luck. And because of Henry's background and knowledge about the intelligence community, the Republic would have stopped them if they knew they were defecting."`
 			`	She adds, "The real secret cargo, which arrived several days ago via a faster ship, was their personal possessions and Lynn's lab equipment and instruments, which were loaded onto a ship supposedly bound for Hestia."`
@@ -609,11 +609,11 @@ mission "FW Katya 1C"
 			choice
 				`	"Just medical supplies. Surgical gear, mostly."`
 					goto medical
-				`	"I don't really remember. I think it was surgical supplies, if the cargo manifest is to be believed."
+				`	"I don't really remember. I think it was surgical supplies, if the cargo manifest is to be believed."`
 					goto medical
 				`	"Just some secret illegal things."`
 					goto illegal
-				`	"Thirty three and a half used whoopie cushions, in teal."
+				`	"Thirty three and a half used whoopie cushions, in teal."`
 					goto illegal
 				`	"I've never seen those crates before in my life. I don't know where they came from."`
 					goto denial
@@ -640,8 +640,8 @@ mission "FW Katya 1C"
 					goto gracious
 				`	"Are you at least going to pay me for my lost time, here?"`
 					goto greedy
-				`	"I'm of a mind to report this violation of my privacy!"
-					goto karen
+				`	"I'm of a mind to report this violation of my privacy!"`
+					goto manager
 				`	"Since when has the Republic gotten so heavy handed about searching civilian ships?"`
 					goto angry
 				`	"I'm just happy you didn't shoot me."
@@ -655,7 +655,7 @@ mission "FW Katya 1C"
 			`	"Wow you spacers really are all the same, aren't you? Just, please let this issue rest." They leave.`
 				decline
 				
-			label karen
+			label manager
 			`	"Are you really going to ask to speak to my supervisor? I thought I was free of that when I quit cashiering to join the Navy." He sighs briefly, "Let's just part ways, captian." He and his guards walk off your ship.`
 				decline
 
@@ -702,7 +702,7 @@ mission "FW Katya Alt 2"
 			choice
 				`	"See, this is how you recruit people. No ill-conceived tests of calm and loyalty with armed guards and arresting people. I'll hear you out this time."`
 				`	"I mean, why not?"`
-				`	"Anything for the cause, I guess."
+				`	"Anything for the cause, I guess."`
 				`	"Okay, as long as you don't point any more guns at me. That wasn't very nice."`
 				`	"Sorry, if it means working for you, consider me out of the Free Worlds."`
 					decline
@@ -710,11 +710,11 @@ mission "FW Katya Alt 2"
 			choice
 				`	"Sure, I would be glad to."`
 					accept
-				`	"I'm a simple person. The job pays, I take it."
+				`	"I'm a simple person. The job pays, I take it."`
 					accept
-				`	"I mean, if it helps the cause I'm in."
+				`	"I mean, if it helps the cause I'm in."`
 					accept
-				`	"No thank you, I will no longer be doing business with the Free Worlds."
+				`	"No thank you, I will no longer be doing business with the Free Worlds."`
 					decline
 				`	"Ok the free worlds is starting to sound like a bad spy movie. I'm out."`
 					decline
@@ -742,7 +742,7 @@ mission "FW Katya 2"
 			choice
 				`	"Sure, I'd be glad to transport him."`
 				`	"More secret cargo, I'm in."`
-				`	"Job pays, I take. Simple."
+				`	"Job pays, I take. Simple."`
 				`	"Sorry, but I've decided working for the Free Worlds just isn't worth the risk."`
 					decline
 			
@@ -796,14 +796,14 @@ mission "FW Katya 2B"
 			`	"I'm Ijs Springborn," he says, pronouncing the name like "Eyes." He takes off the glasses and hat. "Councilor Reynolds told me to meet you here."`
 			choice
 				`	"Wait, 'Councilor' Reynolds? You mean Katya is in Parliament?"`
-				`	"I thought Katya was just a cop."
+				`	"I thought Katya was just a cop."`
 				`	"What do you mean by 'Councilor' Reynolds?"`
 			
 			`	He looks genuinely shocked. "You didn't know? That woman is a legend. Did two terms representing the Dirt Belt. Defender of small worlds and the common people. In some circles her work has made her almost as unpopular as me. But she got tired of working for reform and decided to create her own government instead."`
 			choice	
 				`	"And what do you do for work?"`
-				`	"Ok so Katya's important, what does that make you?"
-				`	"Ok so why does she need you?"
+				`	"Ok so Katya's important, what does that make you?"`
+				`	"Ok so why does she need you?"`
 			`	"I'm a vigilante nuclear power plant inspector," he says, nonchalantly.`
 			choice
 				`	"Um... what?"`
@@ -827,7 +827,7 @@ mission "FW Katya 2B"
 			`	"Absolutely," he says. "It makes no sense. First of all, that attack hurt their cause more than it helped it. And second, I've known Katerina and her friends in the Coalition for a long time. There's no way they would agree to such a thing. So, whoever is responsible is out there somewhere, and the Free Worlds will bring them to justice."`
 			choice
 				`	"Well, then, what's our plan?"`
-				`	"Well if you're such a Smarty McSmarterson with your fancy book learning, what do we do next, smart guy?"
+				`	"Well if you're such a Smarty McSmarterson with your fancy book learning, what do we do next, smart guy?"`
 			label plan
 			`	"First," he says, "we need to go to Geminus, where the attack happened. I can explain more when we get there. In the meantime, I should also warn you that I seem to have terrible luck with pirates showing up wherever I go. It's almost like someone has put a price on my head." He grins.`
 				accept
@@ -923,9 +923,9 @@ mission "FW Katya 3"
 					goto agree
 				`	"I'm sorry, but this is a bit farther than I'm willing to go. Count me out."`
 					decline
-				`	"Can't spend my money if I'm dead. Have a wonderful life."
+				`	"Can't spend my money if I'm dead. Have a wonderful life."`
 					decline
-				`	"Two words. Hard. Pass."
+				`	"Two words. Hard. Pass."`
 					decline
 			
 			label agree
@@ -972,7 +972,7 @@ mission "FW Katya 4"
 			choice
 				`	"You're making the Navy sound like heroes. I thought they were your enemies."`
 				`	"You've almost convinced me to join the Navy."`
-				`	"It's a paycheck to them, don't make them out to be heroes."
+				`	"It's a paycheck to them, don't make them out to be heroes."`
 			
 			`	"Our fight isn't with the Navy," says Katya. "Most of them are good people. I'm sure they don't want war any more than we do. They're like police officers who are suddenly being asked to fight against the very people they swore to protect and serve."`
 			`	"I was a child on Vinci while this was happening," says Eyes. "A paradise world. I would listen to the news and could never understand why all the adults around me were so very, very angry that the Navy had gone off to rescue two million people from freezing to death. But they told me that we lived in one little island of safety in a dangerous galaxy, and that without the Navy protecting us the pirates or even maybe aliens would sweep in and destroy our homes and take our money. That it was us against the whole galaxy."`
@@ -1003,7 +1003,7 @@ mission "FW Katya 5"
 					goto months
 				`	"Are there any other ships helping us search, or is it just us?"`
 					goto search
-				`	"Are we going to ask for help from the Thousand Eyes program?"
+				`	"Are we at least going to ask for help from the Thousand Eyes program?"`
 					goto search
 			
 			label months
@@ -1042,9 +1042,9 @@ mission "FW Katya 5"
 					accept
 				`	"I hope I get to shoot something after this job, at least."`
 					accept
-				`	"Let's get going already!"
+				`	"Let's get going already!"`
 					accept
-				`	"This is a lot of talking and not a lot of doing, lets do the thing."
+				`	"This is a lot of talking and not a lot of doing, lets do the thing."`
 					accept
 				`	"Sorry, but I think I'm done with helping the Free Worlds. I'd rather strike out on my own."`
 					decline
@@ -1080,7 +1080,7 @@ mission "FW Katya 5B"
 					goto odd
 				`	"Why would anyone want to reach out to pirates?"`
 					goto outreach
-				`	"Aren't pirates the bad guys?"
+				`	"Aren't pirates the bad guys?"`
 					goto outreach
 			
 			label odd
@@ -1095,7 +1095,7 @@ mission "FW Katya 5B"
 			choice
 				`	"Sure, I'd be glad to."`
 					goto prayer
-				`	"We don't share a religion. Sorry, brother."
+				`	"We don't share a religion. Sorry, brother."`
 					goto excuse
 				`	"Sorry, I've got some other stuff to get done tonight."`
 					goto excuse
@@ -1166,7 +1166,7 @@ mission "FW Katya 6"
 				`	"Sure, I definitely want to help solve this case!"`
 				`	"I mean, you're paying so I'm in."`
 				`	"I've nothing better to do."`
-				`	"I'll do whatever it takes to clear the Free Worlds' good name!"
+				`	"I'll do whatever it takes to clear the Free Worlds' good name!"`
 				`	"Sorry, I'm through with helping the Free Worlds. I don't think we have a chance of beating the Navy to the punch."`
 					decline
 			
@@ -1231,11 +1231,11 @@ mission "FW Katya 7"
 			choice
 				`	"Sounds like a good possibility. Let's give it a try!"`
 					accept
-				`	"I'm just the pilot, tell me where to go and I get you there."
+				`	"I'm just the pilot, tell me where to go and I get you there."`
 					accept
 				`	"Sorry, I've got some other missions I need to run instead of continuing this wild goose chase."`
 					decline
-				`	"Sorry, this isn't paying well enough for me. I should find other work."
+				`	"Sorry, this isn't paying well enough for me. I should find other work."`
 					decline
 
 
@@ -1406,7 +1406,7 @@ mission "FW Escort 1"
 			label ship
 			`	"I would call it target saturation, but that scares off potential pilots. Are you in or what?"
 			choice
-				`	"I'm in"
+				`	"I'm in"`
 					goto accept
 				`	"I need a better ship first."`
 					defer
@@ -1708,7 +1708,7 @@ mission "FW Escort Second Chance"
 			`	He doesn't look entirely satisfied with that response. "I had to write letters to five different families telling them why their son or daughter or husband had been killed on a routine cargo mission. You promised to keep them safe, and you failed. You understand that, right?"`
 			choice
 				`	"Well, space is a dangerous place. Bad things happen. I can't stop that."`
-				`	"If you are asking me to beg forgiveness for something beyond my control, you need a reality check."
+				`	"If you are asking me to beg forgiveness for something beyond my control, you need a reality check."`
 				`	"Yes, I know that I failed, and I'm very sorry for their loss."`
 					goto responsible
 			`	"That is not an appropriate response," he says. "If we offer you a mission, we have to be able to trust that you will complete it, with no excuses. I'm sorry, but I have no interest in working with you in the future. Goodbye, Captain." He walks away.`
@@ -1809,7 +1809,7 @@ mission "FW Bounty 2"
 		conversation
 			`A Free Worlds officer waves to you as you are walking through the spaceport. "Hello Captain <last>," he says. "I've heard you've helped us in the past to deal with pirate threats. Interested in another bounty-hunting mission?"`
 			choice
-				`	"Good pay and whatever loot I can capture, how could I say no?"
+				`	"Good pay and whatever loot I can capture, how could I say no?"`
 				`	"Sure, I do love destroying pirates!"`
 				`	"Sorry, I'm way too busy right now. Another time?"`
 					defer
@@ -1857,7 +1857,7 @@ mission "FW Bounty 3"
 			choice
 				`	"Yes, I'm sure my ship will be up to the challenge."`
 				`	"Alien loot, you say? I'm in."`
-				`	"Sorry, my ship just isn't up to the challenge yet. In the future, perhaps?"
+				`	"Sorry, my ship just isn't up to the challenge yet. In the future, perhaps?"`
 					defer
 				`	"Sorry, I'm not interested in giving the Free Worlds more assistance."`
 					decline
@@ -1944,7 +1944,7 @@ mission "Rescue Katya 1"
 					goto rescue
 				`	"We can't allow them to do that. We should gather our fleets and attack."`
 					goto attack
-				`	"That's a key chokepoint. We must counterattack or risk being cut off!"
+				`	"That's a key chokepoint. We must counterattack or risk being cut off!"`
 					goto attack
 			
 			label rescue
@@ -2044,9 +2044,9 @@ mission "Defend Sabik"
 			choice
 				`	"Sure."`
 					goto chip
-				`	"Too late to back out now, I guess."
+				`	"Too late to back out now, I guess."`
 					goto chip.
-				`	"Being officially a merchant could serve us well."
+				`	"Me being officially a just a merchant could serve us well."`
 				`	"I can't just keep flying merchant colors?"`
 			
 			`	"No," he says, "it would be dishonest, and if you were to fight alongside us you would be classified as a partisan, a criminal rather than an enemy combatant. Believe it or not, you're better off as an official prisoner of war than as a partisan, if you ever do get captured. So, time to start painting."`
@@ -2193,13 +2193,13 @@ mission "Liberate Kornephoros"
 			choice
 				`	"She took a bit of a pounding, but I've patched her up."`
 				`	"Just fine. It'd take more than a few Nomos to destroy the <ship>."`
-				`	"Falling apart as always, just with a few new dents to accent her rust holes."`
+				`	"Falling apart as always."`
 			
 			`	"Glad to hear it," he says. "Listen, we need to press our advantage before the Republic has time to call for reinforcements. If we strike quickly, we could be able to retake Kornephoros from them. It's important to break the blockade on that system just for the sake of trade with the rest of the galaxy, and on top of that, of course, Katya needs to be rescued."`
 			`	"Indeed," you say.`
 			`	"We have a large fleet of reinforcements coming in from the Rim," he continues, "and a few ships here that are able to fight another battle. I need you to take off with them, wait for the reinforcements to arrive, and then retake Kornephoros. If the Navy ships retreat, let them retreat. If they surrender, let them surrender. If they stay and fight, disable them if you can, destroy them if you must. Understood?"`
 			choice
-				`	"On it."
+				`	"On it."`
 					accept
 				`	"Yes, sir."`
 					accept
@@ -2410,7 +2410,7 @@ mission "FW Prisoner Parole 2"
 			choice
 				`	"So, what do we do now?"`
 					goto next
-				`	"Awaiting orders."
+				`	"Awaiting orders."`
 					goto next
 				`	"I wish we'd known that a few days earlier. We could have arranged a prisoner exchange."`
 					goto exchange
@@ -2812,7 +2812,7 @@ mission "FW Hope Recon 1D"
 				goto next
 			`	"You have a point."`
 				goto next
-			`	"Ok but what if there were and I missed them? I need to go back!"
+			`	"Ok but what if there were and I missed them? I need to go back!"`
 				goto attack
 			label next
 			`	"Good," says Freya, "because I've got a much more interesting job for you to do next. The people at Kraz Cybernetics have a new toy they want to test out, and I volunteered you to help out. They're waiting for you on Rust, in the Kraz system."`
@@ -2912,7 +2912,7 @@ mission "FW Plasma Testing 1B"
 			choice
 				`	"It's so... big!"`
 					goto big
-				`	"That is a work of art. If it had eyes, I bet they'd follow me."
+				`	"That is a work of art. If it had eyes, I bet they'd follow me."`
 					goto big
 				`	"I want one!"`
 					goto want
@@ -2938,7 +2938,7 @@ mission "FW Plasma Testing 1B"
 			choice
 				`	"You bet!"`
 					accept
-				`	"Escort Falcon, blow up pirate. Got it."
+				`	"Escort Falcon, blow up pirate. Got it."`
 					accept
 				`	"What sort of ship is the Red Nile?"`
 			
@@ -3147,7 +3147,7 @@ mission "FW Pirates 1A"
 			`	He grins. "Well, that's a tangent, anyway. My real advice is this: figure out what the people on those pirate worlds want, and how to offer it to them. Freedom from government intervention would be a good start. But that means no annexing their territory for the Free Worlds. Instead, you could offer them some sort of pact: they stop supporting pirate fleets, and you agree to leave their planets in peace."`
 			choice
 				`	"Thanks for the advice. I'll see if we can work out something like that."`
-				`	"I didn't come all the way here just to ignore you, I'll consider your words."
+				`	"I didn't come all the way here just to ignore you, I'll consider your words."`
 				`	"No way. We need to speak the language they understand. Overwhelming force."`
 					goto force
 			`	He wishes you the best of luck, and you return to the port.`
@@ -3203,16 +3203,18 @@ mission "FW Senate 1B"
 				`	"Don't worry, it was never their intention to hold on to power once each world had had sufficient time to elect their own representatives."`
 				`	"Hey, the Council has provided great leadership at a time when no one else was ready to take charge. Give them some respect."`
 				`	"Can we move on, already?"`
-				`	"You sure do love the sound of your own voice."
+				`	"You sure do love the sound of your own voice."`
 			`	She looks angry for a minute, then her expression softens. "Oh, pardon me," she says. "I was treating you like another scheming politician, but now I realize you're way too clueless for that. Tell me, Captain, do you know what makes politics similar to piloting a ship?"`
 			choice
 				`	(Say nothing.)`
 				`	"Nothing."`
+				`	"The fact you aren't qualified to do either."`
 				`	"I have no idea."`
 				`	"Ummm... they both involve momentous decisions that have serious consequences?"`
 				`	"They both require someone skilled and decisive to be in command?"`
 				`	"You seem to have me confused with someone interested in arguing with you."`
-				`	"You're going to say the same thing no matter what I say, aren't you? Pre-planned speeches and all."
+				`	"You're going to say the same thing no matter what I say, aren't you? Pre-planned speeches and all."`
+				`	"Are you wearing earplugs? I. Do. Not. Care!"`
 			`	"The correct answer," she says, "was, 'nothing whatsoever; they are entirely different disciplines.' Now, hurry up, I hope to be on Bourne a week from now." What she suggests is impossible with human technology, but it's clear that she doesn't care.`
 				accept
 	
