@@ -5249,7 +5249,7 @@ mission "FW Alphas 1.1A"
 		set "fw alphas done"
 
 
-mission "FW Death of Nguyen"
+mission "FW lost Giftbringer"
 	landing
 	source
 		near Sol 100
