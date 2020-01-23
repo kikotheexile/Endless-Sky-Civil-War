@@ -5049,7 +5049,7 @@ mission "FW Alphas 1.1"
 				`	"Are you insane? You're letting the Navy come here?"`
 				`	"We're going to work side by side with the Navy right after that awful battle?"`
 			`	Alondo explains, "It's only two 'Oathkeeper' ships. They've sworn to take no part in our war. Besides, the Free Worlds have almost no troops trained for ground combat, so without the Navy's help we would be unlikely to be able to eliminate the Alphas."`
-			`	The Navy ship lands, and a man steps off who is immediately recognizable: Admiral William Danforth, who is something of a folk hero throughout human space, and who has become the commander of the entire Oathkeepers regiment. With him is a man who he introduces as Commander Aaron Nguyen of the Navy Humanitarian Corps. As Nguyen shakes your hand, you are struck by the fact that although he is your enemy, you see no trace of hostility in his eyes - in fact, his expression is surprisingly warm and affectionate.`
+			`	The Navy ship lands, and a man steps off who is immediately recognizable: Admiral William Danforth, who is something of a folk hero throughout human space, and who has become the commander of the entire Oathkeepers regiment. With him is a short, well built man who he introduces as Commander Aaron Nguyen of the Navy Humanitarian Corps. As Nguyen shakes your hand, you are struck by the fact that although he is your enemy, you see no trace of hostility in his eyes - in fact, his expression is surprisingly warm and affectionate.`
 			`	"We have no room for error," says Danforth. "These Alphas must be eliminated, and they must not be allowed to escape. On that, at least, we can all agree."`
 			`	Freya says, "Councilor <last> will lead the attack." She beckons to two of the Free Worlds captains. "Marco, Emily, you will join them with your Falcons. Destroy any pirate ships in orbit, then land and secure the facility. Understood?" You nod, and prepare to take off for the <system> system.`
 				accept
@@ -5101,6 +5101,7 @@ mission "FW Alphas 1.1"
 			label grab
 			`	Unfortunately, by now the creature is far outside your reach. But then you see Commander Nguyen climb onto a nearby dumpster and leap into the air, managing to grab the creature by the leg as it flies by.`
 				goto pin
+			label hold
 			`	Following the lead of the Navy soldiers, you hold your fire to avoid hitting them. You see Commander Nguyen leap onto a nearby dumpster and jump off of it, catching the creature by the leg while they're both in the air.`
 				goto pin
 			label pin
