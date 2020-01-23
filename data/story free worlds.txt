@@ -2654,7 +2654,8 @@ mission "FW Syndicate Diplomacy 1D"
 				goto threat
 			
 			label threat
-			`	"What sort of threat?" you ask.`
+			choice
+			`	"What sort of threat?"`
 				goto story
 			
 			label story
@@ -2662,14 +2663,14 @@ mission "FW Syndicate Diplomacy 1D"
 			choice
 				`	"What was the Disappearance?"`
 			
-			`	"I was a teenage slave working in the factories at the time," she says. "Exactly the wrong age, as it turned out. One day the overseers informed us that all the eighteen-year-old girls had to have mandatory 'health checkups' that day. I won't describe what the 'checkup' involved, but it was bewildering and unpleasant. And nearly all those girls disappeared, that day. They never returned from the 'checkups.' Only a few of us were left behind. Most of the leftovers were girls who had been unlucky enough to already be pregnant at that age. Or lucky, as it turned out. But I didn't understand why they didn't take me."`
-			`	Alondo seems very disturbed by the story. "They were selling girls into prostitution?" he says.`
-			`	"That's what we assumed," she says, "but there were dozens of girls like me who were not taken, even though we were not pregnant. It didn't make sense. Anyway, somehow news of that event got off-world and not long after, the Navy came in massive numbers, destroyed the slaver fleets and liberated our planet. In the process, they tried to invade an underground facility up in the mountains, which is where they thought the girls were being kept. But the facility was rigged to self-destruct, and they never found out what had been going on inside the facility. No one inside it survived."`
+			`	"I was a teenage slave working in the factories at the time," she says. "Exactly the wrong age, as it turned out. One day the overseers informed us that all the eighteen-year-olds had to have mandatory 'health checkups' that day. I won't describe what the 'checkup' involved, but it was bewildering and unpleasant. And nearly all of us disappeared, that day. Most never returned from the 'checkups.' Only a few of us were left behind. "`
+			`	Alondo seems very disturbed by the story. "Forced into piracy, or something worse?" he says.`
+			`	"That's what we assumed," she says, "but there were dozens of people like me who were not taken. They began to fall ill afterwards, and most died agonizing deaths. Anyway, somehow news of that event got off-world and not long after, the Navy came in massive numbers, destroyed the Alpha fleets and liberated our planet. In the process, they tried to invade an underground facility up in the mountains, which is where they thought the rest of us were being kept. But the facility was rigged to self-destruct, and they never found out what had been going on inside the facility. No one inside it survived."`
 			choice
-				`	"Did you ever find out why they let you go?"`
+				`	"You mentioned most of your fellows died. How did you survive?"`
 			
-			`	"My parents said it was because I was so willful and stubborn, too hard to control," she says. "But years later, we began to discover that all of us who were passed over had one thing in common. We were all infertile. Had been already, the day of the Disappearance. Which means that either a bunch of pirates had suddenly decided they wanted to leave behind their lives of crime and settle down and raise families... or those girls were being used as incubators."`
-			`	Alondo says, "I hear that was common during the Alpha wars. Alpha genetics were so unstable, they needed hundreds of test subjects to produce a handful of viable Alpha babies. Those were evil days."`
+			`	"My parents said it was because I was so willful and stubborn, too stupid to die," she says. "but after the Navy liberated us, they ran tests on the survivors. We had all shown signs of recovering from severe radiation exposure, the kind no one but Alphas should be able to live through."`
+			`	Alondo says, "Those must have been painful days, I'm sorry."`
 			`	"Days that may yet return," she says. "Somewhere, maybe even nearby on Bloodsea or Greenrock or Albatross, the remnants of the Alphas may still be hiding. Creatures bred to be strong and clever and able to kill without a hint of remorse. And now that this sector of space is yours, the duty of defending against them becomes yours, as well. That is why I agreed to talk with you: to warn you of that reality."`
 			`	You and Alondo return to your ship with one more thing for the fledgling Free Worlds to worry about. "I guess now we should return to <planet> and report to the Council," he says.`
 				accept
@@ -5036,10 +5037,10 @@ mission "FW Alphas 1.1"
 			`	"Possibly," says Alondo. "But that's not what is important. Before they were overrun by pirate troops, one of the colonists managed to take a photo of the pirate leader."`
 				goto photo
 			label help
-			`	"Because one of the colonists took a picture of the leader of the pirates who attacked them," says Alondo.`
+			`	"Because one of the colonists sent a picture of the leader of the pirates who attacked them," says Alondo.`
 				goto photo
 			label photo
-			`	He hands you a small printout of a photograph. It is a somewhat blurry picture of a group of armed pirates running down a street in a desert town. It is immediately obvious is that several of the pirates appear to have no noses at all. That as the mark of the Alphas, the sociopathic, genetically engineered super-humans who enslaved entire planets during the Alpha Wars, five centuries ago.`
+			`	He hands you a small printout of a photograph. It is a somewhat blurry picture of a group of armed pirates running down a street in a desert town. It is immediately obvious is that several of the pirates appear to have no noses at all. That as the mark of the Alphas, the sociopathic, genetically engineered super-humans who enslaved entire planets during the Augment Wars, five centuries ago.`
 			choice
 				`	"It must be a trick. There can't still be Alphas around. Maybe the pirates had cosmetic surgery to make people fear them."`
 				`	"How is it possible that some of the Alphas are still alive?"`
@@ -5047,8 +5048,8 @@ mission "FW Alphas 1.1"
 			choice
 				`	"Are you insane? You're letting the Navy come here?"`
 				`	"We're going to work side by side with the Navy right after that awful battle?"`
-			`	Alondo explains, "It's only one Nomos, an 'Oathkeeper' ship, sworn to take no part in our war. The Free Worlds have almost no troops trained for ground combat, so without the Navy's help we would be unlikely to be able to eliminate the Alphas."`
-			`	The Navy ship lands, and a man steps off who you recognize immediately: Admiral William Danforth, who is something of a folk hero throughout human space, and who you have heard is the commander of the entire Oathkeepers regiment. With him is a man who he introduces as Commander Aaron Nguyen of the Navy Humanitarian Corps. As Nguyen shakes your hand, you are struck by the fact that although he is your enemy, you see no trace of hostility in his eyes - in fact, his expression is surprisingly warm and affectionate.`
+			`	Alondo explains, "It's only two 'Oathkeeper' ships. They've sworn to take no part in our war. Besides, the Free Worlds have almost no troops trained for ground combat, so without the Navy's help we would be unlikely to be able to eliminate the Alphas."`
+			`	The Navy ship lands, and a man steps off who is immediately recognizable: Admiral William Danforth, who is something of a folk hero throughout human space, and who has become the commander of the entire Oathkeepers regiment. With him is a man who he introduces as Commander Aaron Nguyen of the Navy Humanitarian Corps. As Nguyen shakes your hand, you are struck by the fact that although he is your enemy, you see no trace of hostility in his eyes - in fact, his expression is surprisingly warm and affectionate.`
 			`	"We have no room for error," says Danforth. "These Alphas must be eliminated, and they must not be allowed to escape. On that, at least, we can all agree."`
 			`	Freya says, "Councilor <last> will lead the attack." She beckons to two of the Free Worlds captains. "Marco, Emily, you will join them with your Falcons. Destroy any pirate ships in orbit, then land and secure the facility. Understood?" You nod, and prepare to take off for the <system> system.`
 				accept
@@ -5057,6 +5058,7 @@ mission "FW Alphas 1.1"
 		government "Navy (Oathkeeper)"
 		personality escort heroic
 		ship "Nomos (Mark II)" "N.S. Peacemaker"
+		ship "Arete (Mark II)" "N.S. Giftbringer"
 	npc
 		government "Free Worlds"
 		personality heroic escort
@@ -5071,15 +5073,20 @@ mission "FW Alphas 1.1"
 		ship "Firebird (Plasma)" "Vengeance"
 		ship "Firebird (Missile)" "Revenant"
 		ship "Firebird" "Draugbreath"
-	
+	npc
+		government "Alpha"
+		personality staying derelict
+		ship "Unidentified Alpha Destroyer" "Ghazzu"
+		ship "Unidentified Alpha Destroyer"  "Reaver"
+		ship "Leviathan" "Majestic Wrath"
 	on visit
 		dialog "You have reached <planet>, but the battle is not over - you've either failed to kill one of the pirates, or left one of your ships behind in a different system."
 
 	on complete
 		event "liberation of Poisonwood"
 		conversation
-			`The ships in orbit are eliminated, but there are still the Alphas and their servants here on the ground to take care of. Danforth's ship unloads a squadron of troops in heavy battle suits. The Navy troops move with far more precision and purpose than you have ever seen among the poorly trained Free Worlds soldiers.`
-			`	They sweep the city and quickly ascertain that the Alphas are holed up in a large factory. The troops encircle the building and burst through the doors, and soon you hear the sounds of explosions and gunfire within. You wait with Commander Nguyen in an alley facing the building. "I'm with the Humanitarian Corps," he explains. "Killing things is not in my job description."`
+			`The ships in orbit are eliminated, but there are still the Alphas and their servants here on the ground to take care of. Danforth's ships unload a sizable number of troops in heavy battle suits. The Navy troops move with far more precision and purpose than you have ever seen among the poorly trained Free Worlds soldiers.`
+			`	They sweep the city and quickly ascertain that the Alphas are holed up in a large factory, with hostages. The troops encircle the building and burst through the doors, and soon you hear the sounds of explosions and gunfire within. You wait with Commander Nguyen in an alley facing the building. "I'm with the Humanitarian Corps," he explains. "Killing things is not in my job description."`
 			`	Just then, one of the second floor windows shatters and a figure comes tumbling out, rolls, and starts running in your direction. Then it does something you would swear no human being is capable of: while still moving in your direction, it begins leaping from one wall of the alley to the other as easily as you would run up a staircase, gaining altitude with each jump so that soon it will pass two or three meters above your heads. Several Navy troops are running after it, but they hold their fire to avoid hitting you and Nguyen.`
 			choice
 				`	(Try to shoot it.)`
@@ -5098,11 +5105,17 @@ mission "FW Alphas 1.1"
 				goto pin
 			label pin
 			`	The two of them fall to the ground and roll over and over in a jumble of limbs. You and the Navy troops run after them, afraid to shoot for fear of hitting Nguyen. But somehow Nguyen gets the upper hand, pinning the creature in a full nelson hold, with his legs wrapped around its body to keep it from kicking him. "Kill it!" he shouts.`
+			`	The creature screams, "They're using you, the others! You're all cogs in their plan!"`
 			choice
 				`	(Kill it.)`
 					goto kill
 				`	(Let the Navy troops deal with this.)`
 					goto navy
+				`	(Listen to and question it.)
+					goto listen
+			label listen
+			`	You don't get a chance to ask it anything, and its shouts become unintelligible as the Navy forces surrounded it.`
+				goto navy
 			label kill
 			`	While Nguyen holds the creature still, you put a gun to its head and pull the trigger. Not even an Alpha can survive that; the creature goes limp. Now that you can get a good look at it, you can see that it does indeed have slits in place of a nose.`
 				goto end
@@ -5111,6 +5124,7 @@ mission "FW Alphas 1.1"
 				goto end
 			label end
 			`	Nguyen gets shakily to his feet; he looks stunned and very pale. "Thank you," he says. The sounds of gunfire within the factory eventually dies down. "We'll continue to patrol the city," says Nguyen, "in case there are more of them. Then I'll meet you in the spaceport." He heads off back into the city.`
+			`	Not long after, two ships roar overhead. One of them is completely unrecognizable, and the other is the Giftbringer in persuit.` 
 
 
 
@@ -5136,6 +5150,8 @@ mission "FW Alphas 1.2"
 				`	"If we liberate them, will they switch their loyalty to our side?"`
 					goto loyalty
 				`	"If they're not one of our worlds, why should we help them?"`
+					goto help
+				`	"How is this our problem?"`
 					goto help
 			label loyalty
 			`	"Possibly," says Alondo. "But that's not what is important. Before they were overrun by pirate troops, one of the colonists managed to take a photo of the pirate leader."`
@@ -5166,6 +5182,12 @@ mission "FW Alphas 1.2"
 		ship "Firebird (Plasma)" "Vengeance"
 		ship "Firebird (Missile)" "Revenant"
 		ship "Firebird" "Draugbreath"
+	npc
+		government "Alpha"
+		personality staying derelict
+		ship "Unidentified Alpha Destroyer" "Ghazzu"
+		ship "Unidentified Alpha Destroyer"  "Reaver"
+		ship "Leviathan" "Majestic Wrath"
 	
 	on visit
 		dialog "You have reached <planet>, but the battle is not over - you've either failed to kill one of the pirates, or left one of your ships behind in a different system."
@@ -5195,21 +5217,17 @@ mission "FW Alphas 1.1A"
 		log "With the help of the Oathkeepers, liberated Poisonwood from the Alpha invaders."
 		event "death of nguyen" 35
 		conversation
-			`When you meet up with Nguyen, he still looks very worried. "We think we killed them all," he says, "but we can't be sure. Also, we recovered some instruments for genetic manipulation from the factory. The Alphas can't breed normally, because if their offspring inherit some of the Alpha mutations but not others, the result is rarely viable, and even those that live long enough to be born don't have all the Alpha traits. So, they rely on artificial insemination instead."`
+			`When you meet up with Nguyen, he still looks very worried. "We didn't kill them all," he says, "but we dispatched the Giftbringer to track down the escaping ship. We also recovered the hostages, and secured the resources that the Alphas were hoarding. They appear to be materials to make Neutron Bombs."`
 			choice
-				`	"Well, it's good news that you recovered those instruments, then."`
-			`	"It would be," says Nguyen, "except that we also discovered that several dozen of the women who were taken as slaves... are now pregnant. We'll have to ask them to terminate their pregnancies. It's the only safe decision, but I still don't like it." He sighs. "I'm a Buddhist, you know. Committed to doing harm to no living thing. That's why I joined the Humanitarian Corps. They promised me I'd never be asked to take a life."`
+				`	"It's a good thing we were able to rescue the hostages."`
+			`	"It would be," says Nguyen, "Except they have all been exposed to lethal amounts of radiation. Some of them are asking for our help, so they can die on their own terms. It's their decision, but I still don't like it." He sighs. "I'm a Buddhist, you know. Committed to doing harm to no living thing. That's why I joined the Humanitarian Corps. They promised me I'd never be asked to take a life."`
 			choice
 				`	"Is that why you didn't kill that Alpha yourself, on the street?"`
 					goto street
-				`	"That doesn't seem like a moral dilemma to me. We know those children will grow up to be monsters."`
+				`	"That doesn't seem like a moral dilemma to me. It's their lives, and if they are going to die soon anyway, might as well be on their terms."`
 					goto kill
-				`	"Couldn't we let the children be born, if that's what the women want, then imprison them or something if they do turn out to be Alphas?"`
+				`	"Aren't there treatments for late stage radiation exposure these days?"`
 					goto live
-				`	"So in order to correct the fact these women had no choice in their conception, you are removing even more of their choice? Haven't they been through enough?"`
-					goto autonomy
-				`	"Have you considered, I don't know, asking the women what they want?"`
-					goto autonomy
 			label street
 			`	"Yes," he says. "Silly, isn't it? Anyway, this is my job to deal with; you need to go find Danforth."`
 				goto end
@@ -5217,11 +5235,7 @@ mission "FW Alphas 1.1A"
 			`	"Well," he says, "I envy you for living in a universe where decision like this are easy. But to me it's still a painful choice to make. Anyway, that's my problem to deal with, not yours; you need to go find Danforth."`
 				goto end
 			label live
-			`	"The Alphas were originally bred to be super-soldiers," he says, "a weapon in the hands of a despotic government. As much as I hate to admit it, there are certain branches of the Republic who would love to get their hands on a small army of impressionable Alpha children. Far better for them to die than for that to happen. Anyway, that's my job to deal with; you need to go find Danforth."`
-				goto end
-			label autonomy
-			`	"I don't know what you want from me, here." He says, clearly frustrated by the situation, "If they decide to carry to term, the Alphas they birth will still be taken from them and thrown in some secret government lab somewhere. What kind of life would that be for the Alphas, let alone the mothers?"`
-			`	He pauses for a minute and considers your argument. "Well," he says, "I will put in a recommendation that we do our upmost to respect the autonomy of the alpha's victims. I doubt any will want to carry to term, anyway, and this gesture could be a good first step in their recovery from this trauma."`
+			`	"Not at this late of stage," he says, "Once so much damage has been done, its irreversible. There's nothing for us to do except make them comfortable, or..." He trails off for a moment. "Anyway, that's my job to deal with; you need to go find Danforth."`
 				goto end
 			label end
 			`	He leaves, and you return to Danforth's ship. Danforth says, "Hello there, temporary ally. It was an honor to fight alongside you, while it lasted."`
@@ -5233,6 +5247,20 @@ mission "FW Alphas 1.1A"
 	
 	on complete
 		set "fw alphas done"
+
+
+mission "FW Death of Nguyen"
+	landing
+	source
+		near Sol 100
+	to offer
+		has "event: death of nguyen"
+		has "event: fw bloodsea done"
+	
+	on offer
+		conversation
+			`Soon after landing on <origin>, you receive an encoded message from Admiral Danforth, the leader of the Oathkeepers. "Captain <last>," he says, "I would like to thank you once again for allowing us to assist you on Poisonwood. Unfortunately, I have bad news that may concern you. We have lost contact with the Giftbringer, the Carrier that joined us to secure Poisonwood. We can only assume it was destroyed by the survivng Alphas it was chasing down. With deepest regards - Danforth."`
+				decline
 
 
 
@@ -5295,7 +5323,7 @@ mission "FW Bloodsea 1"
 			`You report in to Alondo, who listens to your description of the battle for Poisonwood with a grim expression on his face. "It's not the end, of course," he says. "It seems like no matter how many times we win a battle against the Alphas, there are more of them out there. But I'm glad that the immediate crisis has been dealt with."`
 			choice
 				`	"Isn't there any way we can track down the rest of the Alphas?"`
-				`	"What is our next mission now?"`
+				`	"What is our next mission?"`
 					goto next
 			`	"Not really," he says. "There are probably small enclaves throughout human space, and perhaps beyond our space as well. All we can do is make it harder for them to grow powerful." He turns his attention to his communicator.`
 			label next
