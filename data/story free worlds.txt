@@ -5218,14 +5218,14 @@ mission "FW Alphas 1.1A"
 		log "With the help of the Oathkeepers, liberated Poisonwood from the Alpha invaders."
 		event "death of nguyen" 35
 		conversation
-			`When you meet up with Nguyen, he still looks very worried. "We didn't kill them all," he says, "but we dispatched the Giftbringer to track down the escaping ship. We also recovered the hostages, and secured the resources that the Alphas were hoarding. They appear to be materials to make Neutron Bombs."`
+			`When you meet up with Nguyen, he still looks very worried. "We didn't kill them all," he says, "but we dispatched the Giftbringer to track down the escaping ship. We also recovered the hostages, and secured the resources that the Alphas were hoarding. They appear to be materials to make delivery systems for small Neutron Bombs."`
 			choice
 				`	"It's a good thing we were able to rescue the hostages."`
-			`	"It would be," says Nguyen, "Except they have all been exposed to lethal amounts of radiation. Some of them are asking for our help, so they can die on their own terms. It's their decision, but I still don't like it." He sighs. "I'm a Buddhist, you know. Committed to doing harm to no living thing. That's why I joined the Humanitarian Corps. They promised me I'd never be asked to take a life."`
+			`	"It would be," says Nguyen, "Except they have all been exposed to lethal amounts of radiation due to some sort of N-bomb test. A few of them are asking for our help; so they can die on their own terms. It's their decision, but I still don't like it." He sighs. "I'm a Buddhist, you know. Committed to doing harm to no living thing. That's why I joined the Humanitarian Corps. They promised me I'd never be asked to take a life."`
 			choice
 				`	"Is that why you didn't kill that Alpha yourself, on the street?"`
 					goto street
-				`	"That doesn't seem like a moral dilemma to me. It's their lives, and if they are going to die soon anyway, might as well be on their terms."`
+				`	"That doesn't seem like a moral dilemma to me. It's their lives. If they are going to die soon anyway, might as well be on their terms."`
 					goto kill
 				`	"Aren't there treatments for late stage radiation exposure these days?"`
 					goto live
@@ -5243,7 +5243,8 @@ mission "FW Alphas 1.1A"
 			choice
 				`	"You too. I wish we could bring this war to an end."`
 				`	"If the Republic would just leave us alone, we wouldn't need to be enemies."`
-			`	"I know," he says. "But for now, I need to return to my fleet. Which means I'll be needing an escort out of your territory, just to make sure no one attacks me. Maybe you could take us by way of New Tibet? I'm sure Commander Nguyen would appreciate one last visit to the Buddhist monasteries there before that world becomes closed off to us completely." You agree, and he begins preparing his ship for takeoff.`
+				`	"When this war ends, we may yet fight together once more. Maybe even against the Alpha threat."`
+			`	"I know," he says. "But for now, I need to return to my fleet. Which means I'll be needing an escort out of your territory, just to make sure no one attacks me. Maybe you could take us by way of New Tibet? I'm sure Commander Nguyen would appreciate one last visit to the Buddhist monasteries there before that world becomes closed off to us completely."`
 				accept
 	
 	on complete
