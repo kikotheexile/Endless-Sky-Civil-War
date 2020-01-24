@@ -2425,7 +2425,7 @@ bool AI::DoCloak(Ship &ship, Command &command)
 		// or 40% farther away before it begins decloaking again.
 		double hysteresis = ship.Commands().Has(Command::CLOAK) ? .4 : 0.;
 		// If cloaking costs nothing, and no one has asked you for help, cloak at will.
-		bool cloakFreely = (fuelCost <= 0.) && !ship.GetShipToAssist();
+		bool cloakFreely = (fuelCost <= 0.) && !ship.GetShipToAssist() && ship.Shields() < 0.2 && ship.Heat() < 0.8;
 		// If this ship is injured / repairing, it should cloak while under threat.
 		bool cloakToRepair = (ship.Health() < RETREAT_HEALTH + hysteresis)
 				&& (attributes.Get("shield generation") || attributes.Get("hull repair rate"));
