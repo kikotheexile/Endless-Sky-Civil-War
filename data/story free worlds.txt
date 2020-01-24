@@ -13,6 +13,7 @@
 
 
 # Free Worlds Intro / Pact
+
 mission "Pact Recon 0"
 	name "Pirate Reconnaissance"
 	description "Fly through the <waypoints> systems, then report to <destination> so the Southern Defense Pact can analyze your logs of pirate activity (if any)."
@@ -24,52 +25,52 @@ mission "Pact Recon 0"
 		attributes "south"
 	destination "Glaze"
 	to offer
-		random < 60
+		random < 80
 		not "event: war begins"
 	
 	on offer
 		conversation
-		`	It's difficult to ignore the freighter parked beside your own, pockmarked with blaster scars as well as larger dents, you can only image that it's tangled with pirates or worse. The crew is hard at work welding new hull plating onto it, but it looks like a losing battle as you overhear scraps of the conversation between the captain and a rather animated young militia officer. “Beginning to wonder if Captain life isn't all it's cracked up to be?” The captain says, noticing your blatant attempt to eavesdrop.`
-		choice
-		`	“I'm wondering if there's anything I can do to keep my ship from going through the ringer like that.” `
-			goto ringer
-		`	“I'm starting to wonder if I should save up for a warship.”`												
-			goto warship
+			`	It's difficult to ignore the freighter parked beside your own, pockmarked with blaster scars as well as larger dents, you can only image that it's tangled with pirates or worse. The crew is hard at work welding new hull plating onto it, but it looks like a losing battle as you overhear scraps of the conversation between the captain and a rather animated young militia officer. "Beginning to wonder if Captain life isn't all it's cracked up to be?" The captain says, noticing your blatant attempt to eavesdrop.`
+			choice
+				`	"I'm wondering if there's anything I can do to keep my ship from going through the ringer like that."`
+					goto ringer
+				`	"I'm starting to wonder if I should save up for a warship."`												
+					goto warship
 
-		label warship
-		`	You might need one if we can't get a handle on these pirate attacks.” The Militia captain replies. “Hey, have you ever considered volunteering for the Southern Mutual Defense Pact?”
-		choice
-		`	“Maybe if I knew what it was.”`
-			goto smdp
-		`	“I thought the goal was not getting shot to pieces.”`
-			goto initiative	
+			label warship
+			`	"You might need one if we can't get a handle on these pirate attacks." The Militia captain replies. "Hey, have you ever considered volunteering for the Southern Mutual Defense Pact?"
+			choice
+				`	"Maybe if I knew what it was."`
+					goto smdp
+				`	"I thought the goal was not getting shot to pieces."`
+					goto initiative	
 
-		label ringer
-		`“Funny you should ask.” The militia officer says. “Have you  considered volunteering for the Southern Mutual Defense Pact?`
+			label ringer
+			`	"Funny you should ask." The militia officer says. "Have you  considered volunteering for the Southern Mutual Defense Pact?"`
 			choice
-		`	“Maybe if I knew what it was.”`
-			goto smdp
-		`	“I thought the goal was not getting shot to pieces.”`
-			goto initiative	
-		label smdp	
-		`	“Since the Navy can't be bothered to patrol this part of the galaxy, we have to keep the pirates in check ourselves. So all the worlds in this area have decided to work together, that way if the pirates try to take over a whole planet or something, the entire pact can be called to assist.”`
+				`	"Maybe if I knew what it was."`
+					goto smdp
+				`	"I thought the goal was not getting shot to pieces."`
+					goto initiative	
+			label smdp	
+			`	"Since the Navy can't be bothered to patrol this part of the galaxy, we have to keep the pirates in check ourselves. So all the worlds in this area have decided to work together, that way if the pirates try to take over a whole planet or something, the entire pact can be called to assist."`
 			choice
-		`	“Maybe I'll just head back to Republic space.”`
-			decline
-		`	“Does volunteering require dealing with pirates? I had to take out a loan for this ship.”`
-			goto initiative
-		label initiative
-		`	“You don't have to fight anyone, don't worry.” She says, reassuringly. “If you're interested, the Pact is launching a new initiative, called 'Thousand Eyes'; we're asking ship captains to let us access their scanner logs, basically using merchants as a surveillance network. All you have to do is let us know if you see any pirates. Can we count on you to do your part?”`
+				`	"Maybe I'll just head back to Republic space."`
+					decline
+				`	"Does volunteering require dealing with pirates? I had to take out a loan for this ship."`
+					goto initiative
+			label initiative
+			`	"You don't have to fight anyone, don't worry." She says, reassuringly. "If you're interested, the Pact is launching a new initiative, called 'Thousand Eyes'; we're asking ship captains to let us access their scanner logs, basically using merchants as a surveillance network. All you have to do is let us know if you see any pirates. Can we count on you to do your part?"`
 			choice
-		`	"Absolutely, sign me up."`
-		`	"I think I'll just head back to Republic space, I don't mess around with pirates."
-			decline
-		`	"That's the spirit!" She says."Right now, we need more eyes on a few systems on the edge of Southern space. All you need to do is fly through those systems, then report to our base on Glaze. I'll mark the target systems on your map."`
-				accept
+				`	"Absolutely, sign me up."`
+				`	"I think I'll just head back to Republic space, I don't mess around with pirates."
+					decline
+			`	"That's the spirit!" She says."Right now, we need more eyes on a few systems on the edge of Southern space. All you need to do is fly through those systems, then report to our base on Glaze. I'll mark the target systems on your map."`
+					accept
 	
 	on accept
 		log "Volunteered to help the Southern Mutual Defense Pact keep tabs on pirate activity in their region of space. Pirate attacks seem to be getting worse because the Navy doesn't bother to patrol down here anymore."
-on complete
+	on complete
 		payment 25000
 		dialog
 			`A different female militia officer approaches you when you land on <planet>, and gives you <payment> in exchange for your scanner logs of the southern systems. "I'm Freya Winters," she says. "I'll be in touch when we've got a new assignment for you."`
@@ -170,7 +171,7 @@ mission "Pact Questioning"
 	on offer
 		log "Apparently the Navy is suspicious of anyone working with the Southern Mutual Defense Pact. Come to think of it though, it's unclear what that officer's rank or position was."
 			conversation
-			`	Until now, you've generally been left alone by the officers of the republic Navy that are a fixture of most spaceports, so you're rather surprised when you're accosted by an officer in a plain black uniform, missing the usual markings of rank that you're familiar with, save a pin in the shape of an eye, the blue iris staring you down from where the usual rank badge goes. “Excuse me, Captain <Last>, could I speak with you for a few minutes?”`
+			`	Until now, you've generally been left alone by the officers of the republic Navy that are a fixture of most spaceports, so you're rather surprised when you're accosted by an officer in a plain black uniform, missing the usual markings of rank that you're familiar with, save a pin in the shape of an eye, the blue iris staring you down from where the usual rank badge goes. "Excuse me, Captain <Last>, could I speak with you for a few minutes?"`
 		choice
 			`	"I've got time. What's the job?"`
 				goto job
@@ -191,7 +192,7 @@ mission "Pact Questioning"
 			`	"Well, since you're asking so nicely."`
 			goto ask
 		label what
-			`	 It's obvious that was not the response the officer was expecting, and he takes a moment to maintain his composure. “You are keeping it on ice, yes? I'm sure you have a couple minutes to spare. I just have some questions and you can be on your way.”`
+			`	 It's obvious that was not the response the officer was expecting, and he takes a moment to maintain his composure. "You are keeping it on ice, yes? I'm sure you have a couple minutes to spare. I just have some questions and you can be on your way."`
 		choice
 			`	"I only have time for paying customers."`
 				goto customer
