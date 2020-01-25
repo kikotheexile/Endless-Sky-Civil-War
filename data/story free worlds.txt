@@ -155,6 +155,7 @@ mission "Pact Recon 3"
 		fleet "Large Northern Pirates"
 	
 	on complete
+		"assisted free worlds" ++
 		payment 80000
 		dialog
 			`You report to Freya that you found a sizable pirate fleet in the Naper system, as well as spotting some pirates elsewhere. She thanks you, and pays you <payment>. "Always lovely working with you."`
@@ -254,8 +255,54 @@ mission "Pact Questioning"
 		label job
 			`	"That wont be necessary." He replies coldly. "You're free to go for now, but I'll be in touch if I have any further questions." This last part sounds a bit like a threat, but you decide not to comment and instead take your leave, occasionally glancing back over your shoulder as you do to confirm you aren't being watched or followed. Of either, you're unsure.`
 			decline
+
+mission "FW Recon 0"
+	name "Transport Militia Officer"
+	description "This militia officer asked if you could transport him to <destination>."
+	minor
+	source
+		government "Free Worlds"
+		near Aldhibain 1 10
+	destination Glaze
+	to offer
+		has "event: initial deployment 4"
+	passengers 1
+	to fail
+		has "chosen sides"
 	
-	mission "FW Recon 1"
+	on offer
+		conversation
+			`A man in a militia uniform approaches you and asks whether you would be willing to give him a lift to <destination>.`
+			choice
+				`	"Sure, I'd be glad to help!"`
+					accept
+				`	"As long as it pays."`
+					accept
+				`	"Anything for the cause!"`
+					accept
+				`	"Sorry, I'm busy with something else right now."`
+					defer
+				`	"Are you connected to the Free Worlds?"`
+			`	"Yes, I'm an officer in their militia. Is that a problem?"`
+			choice
+				`	"Sorry, I really don't want to assist the rebels."`
+					decline
+				`	"I'm trying to get a Navy gig, can't risk it by helping you out. Sorry."`
+					decline
+				`	"No problem at all. I'd be glad to help with your cause!"`
+					accept
+				`	"No problem. But I'm afraid I don't have space for you right now."`
+					defer
+	
+	on visit
+		dialog `You land on <planet>, but you realize that the militia officer is on one of your escorts that hasn't entered the system yet. Better depart and wait for it to arrive.`
+	on complete
+		payment
+		dialog
+			`The militia officer thanks you for the ride and pays you <payment>. As he is leaving, he says, "If you're interested in doing more work for us, head to the spaceport bar and find my commander. I'll tell him to keep an eye out for you."`
+
+	
+mission "FW Recon 1"
 	name "Free Worlds Reconnaissance"
 	description "Perform an outfit scan on the Nomos <npc>, then report to a Free Worlds officer on <destination>."
 	source
@@ -272,10 +319,15 @@ mission "Pact Questioning"
 				`	"You could at least buy me a drink first."`
 				`	"Not right now, I'm about to get neck deep into a fishbowl of margaritas."`
 					defer
+				`	"I hear the burgers here are really good, but expensive."`
 			`	"How about you do this and I owe you one." he laughs. "Basically, most of the Republic ships that have come through this system seem to be outfitted for surveillance rather than combat. But this bastard in orbit right now, the <npc>, it looks like a warship and it's got a few of us a little concerned. Would you mind hopping out there and giving it a scan for us?"`
 			choice
 				`	"Sure, I'll be back in time for happy hour."`
 					accept
+				`	"What's the worst that could happen?
+					accept
+				`	"I just came here on my lunch break. Boss doesn't like me talking with the locals. Says they offer dangerous jobs."`
+					decline
 				`	"No thanks, I just paid for my ship to get a full wash and wax and don't want to interrupt that."`
 					decline
 	
@@ -295,14 +347,14 @@ mission "Pact Questioning"
 			choice
 				`	"I was just wondering what sort of engines you've got that let you move so fast."`
 					goto engines
-				`	"Some dude in the spaceport bet me a drink that I couldn't scan your ship and be back by happy hour."`
+				`	"Some guy in the spaceport bet me a drink that I couldn't scan your ship and be back by happy hour."`
 					goto dude
 			label engines
 			`	"Beautiful, aren't they?" he says. "Atomic engines, the very latest in propulsion technology from Deep Sky. They're so smooth and responsive, I feel like I'm back piloting a shuttlecraft again."`
 			`	He pauses, then adds, "They pay me a thousand credits every time I say that."`
 				goto close
 			label dude
-			`	"Maybe catch me after happy hour and I'll give you a proper tour." He winks, and you're almost tempted to take him up on that.
+			`	"Maybe catch me after happy hour and I'll give you a proper tour." He winks, and its tempting to take him up on that.
 				goto close
 			label close
 			`	You cut the commlink, relieved that it was that easy.`
@@ -311,7 +363,7 @@ mission "Pact Questioning"
 		dialog `Soon after you land, the militia officer comes to your ship and pays you <payment> in exchange for your sensor logs regarding the <npc>. He says, "If you would be interested in continuing to work for us, meet me in the spaceport bar in an hour. Drinks are on me."`
 		payment 10000
 
-		mission "FW Recon 2"
+mission "FW Recon 2"
 	name "Free Worlds Reconnaissance"
 	description "Scan any ships in the <waypoints> system that are equipped like the combat-ready Nomos you scanned previously, then return to <destination>."
 	source
@@ -328,8 +380,13 @@ mission "Pact Questioning"
 			`	You introduce yourself in return, and he continues. "Here's the deal. I'm the commander of the militia on Glaze. So far, we and the Navy are not shooting at each other, because no one wants to fire the first shot. But if they're getting ready to change that, they'll start refitting their Nomos with heavy weaponry instead of surveillance equipment. So, I need to know how many more of their ships are equipped like the one you just scanned."`
 			`	He continues, "I'd like you to go to <waypoints>, where they're building some sort of secret base. Scan any ships you think match the one we just saw, then bring your scanner logs back here for me to look at."`
 			choice
+				`	"I don't drink, so I wouldn't come seeking you out in a bar if I wasn't down to help the cause."`
+					accept
 				`	"No problem, after you buy me that drink."`
 					accept
+				`	"I think you owe me a burger first."`
+					accept
+				`	"Scan ships, get paid. Gotcha"`
 				`	"I'm not sure if I want to risk scanning any more military vessels, I'd hate to start getting a record for this kind of thing."`
 					decline
 	
@@ -348,7 +405,7 @@ mission "Pact Questioning"
 		dialog `JJ meets you as soon as you land, and you hand over the scanner data. "Thank you again," he says. "If you're willing to take on one more recon mission, I'll be at the bar until it closes." He says, handing you a <payment> chip.`
 		payment 50000
 	
-	mission "FW Recon 3"
+mission "FW Recon 3"
 	name "Free Worlds Reconnaissance"
 	description "Land on <destination> and collect information on the developing Navy base there."
 	source
@@ -1070,6 +1127,8 @@ mission "FW Katya 5B"
 			`Katya and Eyes lead you to the monastery. As you are approaching, you meet a monk who is wearing a long black robe and kneeling in a small vegetable garden, pulling weeds. When he looks up and sees you, he leaps to his feet and runs over. "Katya! And Ijs! Welcome back!" Then he turns to you. "I'm David," he says.`
 			choice
 				`	"I'm <first>. Pleased to meet you."`
+				`	"Captain <last>.`
+				`	"The meter is running, Katya."`
 			
 			`	Katya asks, "Is Brother Greg here?"`
 			`	"Sure," says David. "Come inside." The monastery building is a stone and brick structure that looks like pictures you have seen of ancient Earth. He leads you down a long hallway and into a sitting room with furniture that looks equally antique, and then leaves.`
@@ -1134,7 +1193,10 @@ mission "FW Katya 5C"
 			`Brother Greg disappears for several hours to talk with his various contacts, then returns and reports to you and Katya. "No one has heard anything specific," he says, "and they say keeping a nuclear program secret would take an incredible amount of resources, or a very remote location with very good security."`
 			`	"Any hints on where we should look?" asks Katya.`
 			`	"A few. I talked to one friend who had done research into nuclear development 'for purely academic reasons,' and he said that only a fool would perform atmospheric tests; Intelligence would notice that immediately, no matter what world you were on. He said the ideal development location would be a sparsely populated planet with some abandoned deep underground mines."`
-			`	"Anything else?" you ask.`
+			choice
+				`	"Anything else?"`
+				`	"Did we get anything useful?"`
+				`	"What about some juicy gossip?"`
 			`	"Just one more thing," says Greg. "Several people mentioned that they think the Navy itself may have a nuclear arsenal, and that a renegade may have stolen the weapons from them. Much easier than developing them yourself."`
 			`	"Well, let's head back to <planet> and see what Eyes thinks," says Katya, "but I can't imagine the Navy would have such an arsenal. Searching on mining planets sounds like our best bet for now."`
 				accept
@@ -1735,19 +1797,7 @@ mission "FW Bounty 1"
 		government "Free Worlds"
 	to offer
 		"combat rating" > 200
-		or
-			and
-				"assisted free worlds" == 0
-				random < 20
-			and
-				"assisted free worlds" == 1
-				random < 25
-			and
-				"assisted free worlds" == 2
-				random < 40
-			and
-				"assisted free worlds" == 3
-				random < 65
+		random < 85
 		not "chosen sides"
 	
 	on offer
@@ -1791,19 +1841,7 @@ mission "FW Bounty 2"
 		government "Free Worlds"
 	to offer
 		has "FW Bounty 1: done"
-		or
-			and
-				"assisted free worlds" == 0
-				random < 25
-			and
-				"assisted free worlds" == 1
-				random < 30
-			and
-				"assisted free worlds" == 2
-				random < 45
-			and
-				"assisted free worlds" == 3
-				random < 65
+		random < 80
 		not "chosen sides"
 	
 	on offer
@@ -1837,19 +1875,7 @@ mission "FW Bounty 3"
 		government "Free Worlds"
 	to offer
 		has "FW Bounty 2: done"
-		or
-			and
-				"assisted free worlds" == 0
-				random < 30
-			and
-				"assisted free worlds" == 1
-				random < 35
-			and
-				"assisted free worlds" == 2
-				random < 50
-			and
-				"assisted free worlds" == 3
-				random < 65
+		random < 85
 		not "chosen sides"
 	
 	on offer
