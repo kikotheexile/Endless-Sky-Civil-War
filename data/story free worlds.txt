@@ -492,19 +492,7 @@ mission "FW Katya 1"
 	description "Stop by <destination>, pick up two passengers and some cargo, and distract the Republic from a more important cargo exchange going on simultaneously."
 	minor
 	to offer
-		or
-			and
-				"assisted free worlds" == 0
-				random < 10
-			and
-				"assisted free worlds" == 1
-				random < 20
-			and
-				"assisted free worlds" == 2
-				random < 50
-			and
-				"assisted free worlds" == 3
-				random < 80
+		random < 80
 	to fail
 		has "chosen sides"
 	source
@@ -654,7 +642,7 @@ mission "FW Katya 1C"
 					goto flee
 			
 			label attack
-			`	You draw your gun. The officer shouts in alarm and dives out of the way. His companions, who turn out to be wearing body armor, open fire. You die quickly. Katya will be very disappointed.`
+			`	You draw your gun and shout "Death to Tyrants!" The officer shouts in alarm and dives out of the way. His companions, who turn out to be wearing body armor, open fire. You die quickly. Katya will be very disappointed, you died exactly the way she hoped you wouldn't.`
 				die
 			
 			label flee
@@ -1127,7 +1115,7 @@ mission "FW Katya 5B"
 			`Katya and Eyes lead you to the monastery. As you are approaching, you meet a monk who is wearing a long black robe and kneeling in a small vegetable garden, pulling weeds. When he looks up and sees you, he leaps to his feet and runs over. "Katya! And Ijs! Welcome back!" Then he turns to you. "I'm David," he says.`
 			choice
 				`	"I'm <first>. Pleased to meet you."`
-				`	"Captain <last>.`
+				`	"Captain <last>."`
 				`	"The meter is running, Katya."`
 			
 			`	Katya asks, "Is Brother Greg here?"`
@@ -1192,12 +1180,12 @@ mission "FW Katya 5C"
 		conversation
 			`Brother Greg disappears for several hours to talk with his various contacts, then returns and reports to you and Katya. "No one has heard anything specific," he says, "and they say keeping a nuclear program secret would take an incredible amount of resources, or a very remote location with very good security."`
 			`	"Any hints on where we should look?" asks Katya.`
-			`	"A few. I talked to one friend who had done research into nuclear development 'for purely academic reasons,' and he said that only a fool would perform atmospheric tests; Intelligence would notice that immediately, no matter what world you were on. He said the ideal development location would be a sparsely populated planet with some abandoned deep underground mines."`
+			`	"A few. I talked to one friend who had done research into nuclear and n-bomb development 'for purely academic reasons,' and he said that only a fool would perform atmospheric tests; Intelligence would notice that immediately, no matter what world you were on. He said the ideal development location would be a sparsely populated planet with some abandoned deep underground mines."`
 			choice
 				`	"Anything else?"`
 				`	"Did we get anything useful?"`
 				`	"What about some juicy gossip?"`
-			`	"Just one more thing," says Greg. "Several people mentioned that they think the Navy itself may have a nuclear arsenal, and that a renegade may have stolen the weapons from them. Much easier than developing them yourself."`
+			`	"Just one more thing," says Greg. "Several people mentioned that they think the Navy itself may have a n-bomb arsenal, and that a renegade may have stolen the weapons from them. Much easier than developing them yourself."`
 			`	"Well, let's head back to <planet> and see what Eyes thinks," says Katya, "but I can't imagine the Navy would have such an arsenal. Searching on mining planets sounds like our best bet for now."`
 				accept
 	
@@ -1363,7 +1351,7 @@ mission "FW Katya 7C"
 	to fail
 		has "chosen sides"
 	on offer
-		log "Found evidence of nuclear testing on Clink, a mining moon on the edge of Free Worlds territory. It's strange that the perpetrators left such clear evidence behind; the Navy's drones will certainly have discovered it before we did. Katya stayed behind to try to infiltrate the mining compound and collect more information."
+		log "Found evidence of n-bomb testing on Clink, a mining moon on the edge of Free Worlds territory. It's strange that the perpetrators left such clear evidence behind; the Navy's drones will certainly have discovered it before we did. Katya stayed behind to try to infiltrate the mining compound and collect more information."
 		conversation
 			`You land some distance from the mining settlement, and Mr. Eyes goes into the airlock in a pressure suit, cycling it to bring in some of the moon's thin atmosphere for him to test. "Firing up my instruments now," he says through the commlink. There is a long pause, and then he starts spouting a long string of creative profanity. Katya runs over to the airlock window to see what is happening.`
 			`	Finally, Eyes calms down enough to say, "It's a match! Not only has there been a recent test here, but the signature matches the one we took on Geminus. This is it."`
@@ -1415,6 +1403,9 @@ mission "FW Escort 1"
 			and
 				"assisted free worlds" == 3
 				random < 70
+			and
+				"assisted free worlds" == 4
+				random < 90
 	to fail
 		has "chosen sides"
 	
@@ -1767,7 +1758,7 @@ mission "FW Escort Second Chance"
 					goto responsible
 				`	"There was really nothing I could have done against so many pirates."`
 				`	"I'm sorry for what happened. It won't happen again."`
-				`	"Did you see what I was flying at the time? You sent me into the lions den armed with dull stick!"
+				`	"Did you see what I was flying at the time? You sent me into the lions den armed with dull stick!"`
 			`	He doesn't look entirely satisfied with that response. "I had to write letters to five different families telling them why their son or daughter or husband had been killed on a routine cargo mission. You promised to keep them safe, and you failed. You understand that, right?"`
 			choice
 				`	"Well, space is a dangerous place. Bad things happen. I can't stop that."`
@@ -1796,7 +1787,7 @@ mission "FW Bounty 1"
 	source
 		government "Free Worlds"
 	to offer
-		"combat rating" > 200
+		"combat rating" > 150
 		random < 85
 		not "chosen sides"
 	
@@ -4162,14 +4153,14 @@ mission "FW Southern Battle 1"
 	on offer
 		event "normal in Alnasl"
 		conversation
-			`Because this world is a tourist destination, there are innumerable fancy cafes in the spaceport. You meet up with Freya in one of the smaller ones. "Thank you for acquiring that weapon sample for us," she says. "It's typical Republic weaponry: far more efficient than anything we're able to make, and very well designed. My engineers were kind of in awe as they disassembled it."`
+			`Because this world is a tourist destination, there are innumerable fancy cafes in the spaceport. You meet up with Freya in one of the smaller ones. "Thank you for scouting those systems for us," she says. "It seems the Republic has been researching new weapons, however. They are the typical Deep Sky design: far more efficient than anything we're able to make, and very well designed. My engineers were kind of in awe as they disassembled it."`
 			choice
 				`	"Do you have any tactical advice on fighting ships with one of those installed?"`
 					goto advice
 				`	"Is there any chance we can reverse engineer it and build our own?"`
 					goto reverse
 			label advice
-			`	"Well," she says, "its range is very slightly shorter than our plasma turrets. You might be able to use that to your advantage if you can position your ship just right so that you can hit an enemy target but they can't hit you. You may find that useful in the upcoming battle."`
+			`	"Well," she says, "the electron beam's range is very slightly shorter than our plasma turrets. You might be able to use that to your advantage if you can position your ship just right so that you can hit an enemy target but they can't hit you. You may find that useful in the upcoming battle."`
 				goto battle
 			label reverse
 			`	"Maybe, although we haven't even mastered the art of building heavy lasers yet," she says. "We certainly won't have time before the upcoming battle."`
@@ -5890,7 +5881,7 @@ mission "FW Defend New Tibet"
 			`	"That's insane," says Freya.`
 			`	"But not completely implausible," says JJ.`
 			label evidence
-			`	The monk says, "He brought a great deal of evidence. Plans for a nuclear device. Data from underground testing. A manufactured bomb casing. Samples of fissile material. And he named the planet where the development was done: Mutiny, in the Gienah system. We hid his ship in a cave. A day later, a Syndicate fleet appeared in orbit. They do not know where the defector landed, but they say they will destroy whatever settlement is harboring him unless he is returned to them immediately."`
+			`	The monk says, "He brought a great deal of evidence. Plans for several nuclear devices. Data from underground testing of high yeild versions. A manufactured bomb casing. Samples of fissile material. And he named the planet where the development was done: Mutiny, in the Gienah system. We hid his ship in a cave. A day later, a Syndicate fleet appeared in orbit. They do not know where the defector landed, but they say they will destroy whatever settlement is harboring him unless he is returned to them immediately."`
 			`	After a moment, JJ says, "If these allegations are true, if we can prove that the Free Worlds was innocent of any involvement in those attacks, the Republic might make peace with us, or at least agree to a ceasefire. I vote that we try to shelter this defector and hear his story."`
 			`	"And if it's a lie," says Freya, "and we refuse the Syndicate's demands, we lose our only ally. And many civilians will be killed, as well. I care about justice, but trading a definite ally for a slim possibility of peace: that is an unwise investment. I vote that we hand this man over to the Syndicate."`
 			`	The monk says, "We want to see justice done, and peace prevail. If you ask us to, we will flee to the mountains and take refuge until help arrives."`
@@ -6685,7 +6676,7 @@ mission "FW Reconciliation Break"
 				goto wait
 			
 			label wait
-			`	Alondo says, "We should use this time of peace well, to prepare for another battle ahead. Those Syndicate ships on New Tibet had equipment I've never seen before, and who knows what else the Syndicate has up their sleeves - especially if they've begun producing nuclear weapons. Captain <last>, you should take this time to make sure your ship is as well armed as possible for our next strike. Ijs and Katya, what will you do with this time?"`
+			`	Alondo says, "We should use this time of peace well, to prepare for another battle ahead. Those Syndicate ships on New Tibet had equipment I've never seen before, and who knows what else the Syndicate has up their sleeves - especially if they've begun producing n-bombs. Captain <last>, you should take this time to make sure your ship is as well armed as possible for our next strike. Ijs and Katya, what will you do with this time?"`
 			`	Katya glances at Ijs and then says, "I would certainly welcome a small sabbatical, and a chance to spend time together and catch up on all we've missed. Professor Springborn, do you think the Conservatory would extend your leave of absence long enough for us to make a trip to <planet>?"`
 			`	Ijs laughs. "That sounds wonderful, Councilor," he says. "<first>, do you think you could bring us there on your way to wherever you go next?"`
 			`	You tell him you would be glad to, and you all get ready for yet another journey together.`
@@ -6978,15 +6969,15 @@ mission "FW Syndicate Capture 1B"
 	
 	on enter Ankaa
 		dialog
-			`There is a warning light on your ship's main control panel that has never turned on. It is a relic of the dark age of galactic travel, part of a sensor system that is built into every starship, to detect incoming nuclear warheads. You had almost forgotten it even existed, because you have never seen it flash.`
+			`There is a warning light on your ship's main control panel that has never turned on. It is a relic of the dark age of galactic travel, part of a sensor system that is built into every starship, to detect incoming n-bombs. You had almost forgotten it even existed, because you have never seen it flash.`
 			`	It begins flashing now.`
 	on enter Scheat
 		dialog
-			`There is a warning light on your ship's main control panel that has never turned on. It is a relic of the dark age of galactic travel, part of a sensor system that is built into every starship, to detect incoming nuclear warheads. You had almost forgotten it even existed, because you have never seen it flash.`
+			`There is a warning light on your ship's main control panel that has never turned on. It is a relic of the dark age of galactic travel, part of a sensor system that is built into every starship, to detect incoming n-bombs. You had almost forgotten it even existed, because you have never seen it flash.`
 			`	It begins flashing now.`
 	on enter Sheratan
 		dialog
-			`There is a warning light on your ship's main control panel that has never turned on. It is a relic of the dark age of galactic travel, part of a sensor system that is built into every starship, to detect incoming nuclear warheads. You had almost forgotten it even existed, because you have never seen it flash.`
+			`There is a warning light on your ship's main control panel that has never turned on. It is a relic of the dark age of galactic travel, part of a sensor system that is built into every starship, to detect incoming n-bombs warheads. You had almost forgotten it even existed, because you have never seen it flash.`
 			`	It begins flashing now.`
 
 
@@ -7008,7 +6999,7 @@ mission "FW Syndicate Capture 1C"
 		log `Succeeded in capturing a Syndicate executive named Alexander Soylent, but the Syndicate has responded by sending a massive fleet to Sol, supposedly to "protect" Earth but more likely to put pressure on Parliament and the people of Earth to side with the Syndicate.`
 		event "syndicate occupies sol"
 		conversation
-			`Edrick meets you soon after you land, and oversees the transfer of your captive to a local, well-defended jail. You tell him about your narrow escape from Syndicate space, and the fact that the Syndicate used nuclear weapons against your fleet, in violation of the rules of war that humankind has abided by for centuries.`
+			`Edrick meets you soon after you land, and oversees the transfer of your captive to a local, well-defended jail. You tell him about your narrow escape from Syndicate space, and the fact that the Syndicate used n-bombs against your fleet, in violation of the rules of war that humankind has abided by for centuries.`
 			`	"Unfortunately," says Edrick, "all the other witnesses to that event were allied with the Syndicate, so people will believe whatever they want to believe. Already the Syndicate is spreading stories about a renegade fleet of rebels and extremists that attacked one of their worlds in an assassination attempt on one of their leaders. Worse, they've taken this as an excuse to send a massive Syndicate fleet to the Sol system - to defend Earth from attack, they say."`
 			choice
 				`	"Sounds more like the goal is to intimidate Parliament into siding with the Syndicate."`
@@ -7302,7 +7293,7 @@ mission "FW Pug 2B"
 			choice
 				`	"You're saying you'll provide the jump drives, and we'll provide the ships? Sounds fair enough."`
 					goto deal
-				`	"Wait, you're saying that your fleet that was in orbit around Earth... was armed with nuclear weapons? Are you genocidal?"`
+				`	"Wait, you're saying that your fleet that was in orbit around Earth... was armed with n-bombs? Are you genocidal?"`
 			
 			`	Alastair seems like the kind of person who seldom admits he is wrong, but your question definitely flusters him. "Okay, okay, I admit, we've been making one bad decision after another ever since... well, since that first bad decision. It just got out of control. We thought the Navy was going to raid us and put us all behind bars. We thought we needed a deterrent. It was stupid. I admit it, okay? Now please, let's just move on. We need your capital ships, and you need our jump drives."`
 			
@@ -7485,7 +7476,7 @@ mission "FWC Cebalrai 1"
 		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
 	
 	on offer
-		log "Captured the Kaus Borealis system from the Navy, even though the locals are still loyal to the Republic. Also, learned that the Wolf Pack ships have been using nuclear missiles, and that is why they were so effective in decimating the Navy fleet."
+		log "Captured the Kaus Borealis system from the Navy, even though the locals are still loyal to the Republic. Also, learned that the Wolf Pack ships have been using n-bombs, and that is why they were so effective in decimating the Navy fleet."
 		conversation
 			`As you bring your ship in for a landing, it occurs to you that this is the first time that you have fought a battle for a star system that had not voluntarily decided to join the Free Worlds, and you are not sure what to do next. Fortunately, soon more Free Worlds ships begin arriving, and one of them is carrying Alondo. Tomek is with him. "Hi there, <first>," says Tomek. "Bet you didn't expect to see me again, huh?"`
 			`	Alondo says, "<first>, I'll leave you and Tomek to catch up. I should go talk to the governor immediately. There's no way the locals will have failed to notice the nuclear explosions happening in space right over their heads."`
@@ -7717,7 +7708,7 @@ mission "FWC Nuke Supply 1B"
 mission "FWC Nuke Supply 1C"
 	landing
 	name "Warhead Convoy"
-	description "Escort a freighter carrying nuclear warheads to Solace."
+	description "Escort a freighter carrying n-bombs to Solace."
 	source Greenrock
 	destination Solace
 	to offer
@@ -7756,7 +7747,7 @@ mission "FWC Diplomacy 1"
 			choice
 				`	"Great! I think I'd like a dozen of them."`
 					goto yes
-				`	"Sorry, I'm following orders by bringing this convoy here, but I want no part in the use of nuclear weapons, even for the sake of winning this war."`
+				`	"Sorry, I'm following orders by bringing this convoy here, but I want no part in the use of n-bombs, even for the sake of winning this war."`
 					goto no
 				`	"Wait, 'Fifi'? Is that your leader?"`
 					goto fifi
@@ -7853,7 +7844,7 @@ mission "FWC Diplomacy 1C"
 				`	"What? We were guaranteed safe passage!"`
 				`	"You will regret this! If you arrest us, the Free Worlds will retaliate against you."`
 			`	As you try to protest, Alondo speaks up. He is not shouting, but his voice carries over the murmur of other voices. "We have a ship in orbit. If we do not return--"`
-			`	Xao cuts him off. "Your ship is no threat to us. We have already verified that it carries no nuclear weapons, and this building's shielding and anti-missile systems are quite sufficient to defend against conventional weapons. And there is nothing in its cargo hold but ordinary, non-radioactive metals."`
+			`	Xao cuts him off. "Your ship is no threat to us. We have already verified that it carries no nuclear weapons or n-bombs, and this building's shielding and anti-missile systems are quite sufficient to defend against conventional weapons. And there is nothing in its cargo hold but ordinary, non-radioactive metals."`
 			`	Alondo says, "That's right. Tungsten, to be exact. Aerodynamic tungsten rods, each the size of a tree trunk, with a simple guidance system on one end. Our ship is in low earth orbit, traveling at a velocity of roughly eight kilometers per second." As he speaks, the Parliament chamber gradually grows very quiet. "So we will be returning to our ship," says Alondo, "with Miss Reynolds. If the ship in orbit does not hear from me every two minutes, it will jettison its cargo, and there will be nothing left of this building but a crater." He points to the watch he is wearing, and you realize that it must be some sort of communicator.`
 			`	After a brief whispered consultation with a few of the other members of Parliament, Xao says, "You will lose this war, and you will pay dearly for it. Guards, let them return to their ship." You hurry back to your ship and take off immediately, aware that as soon as you are out of range of Earth, the Navy will probably be more than willing to attack you.`
 				launch
@@ -8075,7 +8066,7 @@ mission "FWC Checkmate 1"
 				"Osprey (Missile)"
 	
 	on complete
-		log "Defended Tundra against a major Navy counter-offensive. From here, the only recourse available to the Free Worlds seems to be to push deep into Republic territory and capture the Sol system, forcing the Navy to surrender. Nuclear weapons are now for sale on Solace to aid in the final assault."
+		log "Defended Tundra against a major Navy counter-offensive. From here, the only recourse available to the Free Worlds seems to be to push deep into Republic territory and capture the Sol system, forcing the Navy to surrender. N-bombs are now for sale on Solace to aid in the final assault."
 		event "fwc defended cebalrai"
 		event "fwc solace has nukes"
 		"salary: Free Worlds" = 6000
@@ -8089,7 +8080,7 @@ mission "FWC Checkmate 1"
 mission "FWC Checkmate 1: Equipment"
 	landing
 	name "Upgrade Your Ship"
-	description "If you want, travel to <destination> to install nuclear missiles in your ship. You may also want to invest in some other upgrades. Then meet Tomek and the others in the spaceport on Tundra."
+	description "If you want, travel to <destination> to install n-bombs missiles in your ship. You may also want to invest in some other upgrades. Then meet Tomek and the others in the spaceport on Tundra."
 	source Tundra
 	destination Solace
 	to offer
