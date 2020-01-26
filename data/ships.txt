@@ -27,6 +27,7 @@ ship "Sentinel Drone"
 		"outfit space" 58
 		"weapon capacity" 8
 		"engine capacity" 28
+		"self destruct" .15
 		weapon
 			"blast radius" 5
 			"shield damage" 50
@@ -63,6 +64,7 @@ ship "Thea Drone"
 		"outfit space" 53
 		"weapon capacity" 0
 		"engine capacity" 28
+		"self destruct" .05
 		weapon
 			"blast radius" 3
 			"shield damage" 30
@@ -93,7 +95,7 @@ ship "Dagger"
 		"hull" 300
 		"landing gear" 1
 		"required crew" 1
-		"bunks" 1
+		"bunks" 3
 		"mass" 20
 		"drag" .63
 		"heat dissipation" .9
@@ -126,6 +128,7 @@ ship "Dagger"
 	explode "tiny explosion" 15
 	explode "small explosion" 5
 	description "The Dagger is a fighter designed by Lionheart Industries, intended to be carried by their Aerie warship, although other ships have been known to carry them, as well. As with many Lionheart ships, its chassis is largely composed of lightweight composite materials, making it considerably faster than other fighters."
+	description "As it is primarily used in police forces, it has additional bunk room and requires a pilot."
 
 ship "Finch"
 	plural "Finches"
@@ -137,7 +140,7 @@ ship "Finch"
 		"shields" 1100
 		"hull" 200
 		"landing gear" 1
-		"required crew" 1
+		"automation" 1
 		"bunks" 1
 		"mass" 40
 		"drag" .83
@@ -180,14 +183,14 @@ ship "Lance"
 		"shields" 800
 		"hull" 400
 		"landing gear" 1
-		"required crew" 1
-		"bunks" 1
+		"automation" 1
 		"mass" 30
 		"drag" .7
 		"heat dissipation" .8
 		"outfit space" 100
 		"weapon capacity" 20
 		"engine capacity" 30
+		"self destruct" .15
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -255,6 +258,7 @@ ship "Barb"
 	explode "tiny explosion" 15
 	explode "small explosion" 5
 	description `Though the Syndicate doesn't build fighter carriers, it is testing the waters with the Barb, a cheap and flexible carrier-launched craft featuring newly-developed miniaturized ion engines. The design philosophy of the Barb seems to have been "uglier than the Protector," and as you look at the cockpit nestled between the massive gun port and turret mount, you wonder where the power systems are supposed to go. Though an awkward-looking ship, it seems flexible enough to become a dangerous addition to any fleet with carriers.`
+	description	`Unlike other fighters, this ship does require additional crew to pilot and man the turret`
 
 
 ship "Thorn"
@@ -265,8 +269,7 @@ ship "Thorn"
 		"cost" 50000
 		"shields" 800
 		"hull" 200
-		"landing gear" 1
-		"required crew" 1
+		"automation" 1
 		"bunks" 1
 		"mass" 20
 		"drag" .8
@@ -274,6 +277,7 @@ ship "Thorn"
 		"outfit space" 85
 		"weapon capacity" 28
 		"engine capacity" 22
+		"self destruct" .15
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -373,7 +377,7 @@ ship "Shuttle"
 	leak "leak" 60 50
 	explode "tiny explosion" 10
 	explode "small explosion" 5
-	description "Although Betelgeuse Shipyards produces other ship models as well, the majority of their profits come from sales of the Shuttle. This versatile ship serves equally well as a passenger transport or a cargo courier. It also happens to be the cheapest ship you can buy which is capable of hyperspace travel."
+	description "Although Betelgeuse Shipyards produces other ship models as well, the majority of their profits come from sales of the Shuttle. This versatile ship serves well as an additional passenger transport or a cargo courier."
 	description `	Shuttles are not designed to withstand combat of any sort, but they are fast and maneuverable enough to get out of harm's way if attacked by a larger, slower ship. Although they are typically unarmed, they have enough space for one weapon, which is the origin of the popular phrase, "as useless as a blaster cannon on a shuttlecraft."`
 
 #Yachts
@@ -3257,6 +3261,8 @@ ship "Bactrian"
 			"hull damage" 1300
 			"hit force" 3900
 	outfits
+		"Blaster Turret" 9
+		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
 		"D94-YV Shield Generator"
@@ -3289,15 +3295,15 @@ ship "Bactrian"
 	fighter 0 0
 	fighter 0 0
 	fighter 0 0
-	turret -169 60.5
-	turret -170 114.5
-	turret -170 170
-	turret 0 -26
-	turret 0 -501.5
-	turret 0 21.5
-	turret 169 60.5
-	turret 170 114.5
-	turret 170 170
+	turret -169 60.5 "Blaster Turret"
+	turret -170 114.5 "Blaster Turret"
+	turret -170 170 "Blaster Turret"
+	turret 0 -26 "Blaster Turret"
+	turret 0 -501.5 "Blaster Turret"
+	turret 0 21.5 "Blaster Turret"
+	turret 169 60.5 "Blaster Turret"
+	turret 170 114.5 "Blaster Turret"
+	turret 170 170 "Blaster Turret"
 	leak "leak" 30 50
 	leak "flame" 30 80
 	leak "big leak" 50 30
@@ -3340,6 +3346,8 @@ ship "Prototype Vulture"
 			"hull damage" 200
 			"hit force" 600
 	outfits
+		"Blaster Turret" 14
+		
 		"D94-YV Shield Generator"
 		"Tactical Scanner"
 		"LP576a Battery Pack"
@@ -3356,21 +3364,21 @@ ship "Prototype Vulture"
 	fighter 77.5 99.5 right
 	fighter 78 68.5 right
 	fighter 78 68.5 right
-	gun 0 -231
-	turret -105.5 64.5
-	turret -120.5 75.5
-	turret -136.5 89.5
-	turret -176 169
-	turret -176 237.5
-	turret -50.5 -143.5
-	turret -59 -12
-	turret 105.5 64.5
-	turret 120.5 75.5
-	turret 136.5 89.5
-	turret 176 169
-	turret 176 237.5
-	turret 50.5 -143.5
-	turret 59 -12
+	gun 0 -231 "Beam Talon"
+	turret -105.5 64.5 "Blaster Turret"
+	turret -120.5 75.5 "Blaster Turret"
+	turret -136.5 89.5 "Blaster Turret"
+	turret -176 169 "Blaster Turret"
+	turret -176 237.5 "Blaster Turret"
+	turret -50.5 -143.5 "Blaster Turret"
+	turret -59 -12 "Blaster Turret"
+	turret 105.5 64.5 "Blaster Turret"
+	turret 120.5 75.5 "Blaster Turret"
+	turret 136.5 89.5 "Blaster Turret"
+	turret 176 169 "Blaster Turret"
+	turret 176 237.5 "Blaster Turret"
+	turret 50.5 -143.5 "Blaster Turret"
+	turret 59 -12 "Blaster Turret"
 	engine -129 293.5
 	engine -28.5 309
 	engine -81 286.5
@@ -3438,7 +3446,7 @@ ship "Dart"
 	description "This Arrow has had numerous modifications to its hull and internal systems to make more room for outfits - mostly with combat in mind. More shields, weapons, engines, outfit space, and a turret mount nearly push this ship into classification as a frigate, and definitely make it one of the heaviest gunships you're likely to find."
 
 
-ship "Bolt" "Marauder Arrow (Engines)"
+ship "Bolt"
 	sprite "ship/marrowe"
 	thumbnail "thumbnail/marrowe"
 	add attributes
@@ -3461,7 +3469,7 @@ ship "Bolt" "Marauder Arrow (Engines)"
 	description "With a third engine mount, this Arrow seems more like an oversized missile than a ship. The beefed-up engines, a little extra outfit capacity, extra shield emitters, and thicker hull plating make this vessel a very competent gunship."
 
 
-ship "Missile" "Marauder Arrow (Weapons)"
+ship "Missile"
 	sprite "ship/marroww"
 	thumbnail "thumbnail/marroww"
 	add attributes
