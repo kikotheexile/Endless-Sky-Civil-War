@@ -1090,7 +1090,7 @@ effect "heavy rocket hit"
 	"velocity scale" .4
 
 
-outfit "Nuclear Missile"
+outfit "N-Bomb"
 	category "Secondary Weapons"
 	cost 1000000
 	thumbnail "outfit/nuke"
@@ -1106,6 +1106,7 @@ outfit "Nuclear Missile"
 		ammo "Nuclear Missile"
 		stream
 		icon "icon/nuke"
+		"hit effect" "ion impact" 2
 		"hit effect" "nuke explosion"
 		"hit effect" "nuke residue fast" 10
 		"hit effect" "nuke residue slow" 10
@@ -1124,12 +1125,12 @@ outfit "Nuclear Missile"
 		"optical tracking" 1
 		"trigger radius" 30
 		"blast radius" 150
-		"shield damage" 9000
-		"hull damage" 7000
+		"shield damage" 10000
+		"hull damage" 2000
 		"hit force" 4000
-		"missile strength" 200
-	description "It has been centuries since the last nuclear war was fought, and until very recently, most people in the galaxy assumed that that era of chaos and destruction was forever behind us..."
-	description "	[Nuclear missiles are a one-shot weapon: each missile occupies a gun slot, and after it is fired, the slot it was in is left empty.]"
+		"missile strength" 20
+	description "Neutron Bombs are low yeild, high radiation nuclear weapons. Developed well over a thousand years ago, these weapons have been improved and upgraded by the Alphas. Until recently, human factions found these "Nukes" so abhorrent that it was a war crime to use them..."
+	description "	[A N-Bomb is a one-shot weapon: each missile occupies a gun slot, and after it is fired, the slot it was in is left empty.]"
 
 effect "nuke explosion"
 	sprite "effect/explosion/nuke"
