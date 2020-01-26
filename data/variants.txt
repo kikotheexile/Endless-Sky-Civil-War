@@ -543,7 +543,7 @@ ship "Clipper" "Clipper (Heavy)"
 
 ship "Clipper" "Clipper (Nuclear)"
 	outfits
-		"Nuclear Missile" 4
+		"N-Bomb" 4
 		"S3 Thermionic"
 		"Supercapacitor"
 		"D67-TM Shield Generator"
@@ -1436,7 +1436,7 @@ ship "Manta" "Manta (Mark II)"
 ship "Manta" "Manta (Nuclear)"
 	outfits
 		"Particle Cannon" 4
-		"Nuclear Missile" 2
+		"N-Bomb" 2
 		"Fission Reactor"
 		"LP072a Battery Pack"
 		"S-270 Regenerator"
@@ -1449,8 +1449,8 @@ ship "Manta" "Manta (Nuclear)"
 	gun "Particle Cannon"
 	gun "Particle Cannon"
 	gun "Particle Cannon"
-	gun "Nuclear Missile"
-	gun "Nuclear Missile"
+	gun "N-Bomb"
+	gun "N-Bomb"
 
 
 ship "Manta" "Manta (Proton)"
