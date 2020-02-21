@@ -849,7 +849,6 @@ system Algenib
 	government Cartel
 	habitable 455.625
 	link Gienah
-	link No-Where
 	trade Clothing 357
 	trade Electronics 660
 	trade Equipment 386
@@ -2346,6 +2345,7 @@ system Arneb
 	pos -121.285 -339.734
 	government Independent
 	habitable 1715
+	link Agamede
 	link Xanthe
 	link Hatysa
 	link Endios
@@ -4718,6 +4718,7 @@ system Gienah
 	pos -176 354
 	government Cartel
 	habitable 534.375
+	link No-Where
 	link Persian
 	link Algenib
 	trade Clothing 320
@@ -7952,7 +7953,7 @@ system No-Where
 		sprite star/yn
 		period 10
 	object "No-Where Station"
-		sprite planet/rock19
+		sprite planet/station3
 		distance 161.64
 		period 39.8308
 
@@ -13711,9 +13712,10 @@ planet Nimbus
 		fleet "Small Syndicate" 4
 
 planet "No-Where Station"
-	attributes deep fishing moon
-	landscape land/beach4
-	description `This inegmatic station is known only for how handidly and rapidly they turn people away. They allow you to dock for repairs, but you aren't permitted to leave your ship.`
+	attributes 
+	landscape land/sivael6
+	description `This inegmatic station is known only for how handidly and rapidly they turn people away. They allow you to dock for repairs, but you aren't permitted to leave the common room of the Spaceport.`
+	spaceport `You can only imagine what the interior of the station looks like, considering you have never seen it and aren't likely to. The common room, however, is rather plain and filled with dull and uninspiring fixtures. Although visitors are a rare few, you can still sometimes share a coffee with a stranger.`
 	bribe 0.4
 	security 0
 
