@@ -1,0 +1,142 @@
+event "unique fleet population 1"
+	date 20 11 3013
+
+mission "Earth Defense Force"
+	invisible
+	landing
+	source
+		government Republic
+	to offer
+		has "event: unique fleet population"
+	to fail
+		has "event: war begins"
+	
+	npc kill
+		personality heroic staying plunders
+		government "Republic"
+		system Sol
+		ship "Nomos" "N.S. Sancta Terra"
+		ship "Nomos" "N.S. God of War"
+		ship "Nomos" "N.S. Sky Huntress"
+		ship "Nomos" "N.S. Cupid's Bow"
+	on complete
+		set "edf killed: done"
+
+
+mission "Pollux Defenders"
+	invisible
+	landing
+	source
+		government Republic
+	to offer
+		has "event: unique fleet population"
+	to fail
+		has "event: war begins"
+	
+	npc kill
+		personality heroic staying plunders
+		government "Republic"
+		system Pollux
+		ship "Arete" "N.S. Athens"
+		ship "Nomos" "N.S. Sparta"
+		ship "Nomos" "N.S. Patras"
+	on complete
+		set "pd killed: done"
+		
+mission "Castor Defenders"
+	invisible
+	landing
+	source
+		government Republic
+	to offer
+		has "event: unique fleet population"
+	to fail
+		has "event: war begins"
+	
+	npc kill
+		personality heroic staying plunders
+		government "Republic"
+		system Castor
+		ship "Arete" "N.S. Rome"
+		ship "Nomos" "N.S. Milan"
+		ship "Nomos" "N.S. Naples"
+	on complete
+		set "cd killed: done"
+		
+mission "DSF"
+	invisible
+	landing
+	source
+		government Republic
+	to offer
+		has "event: unique fleet population"
+	to fail
+		has "event: war begins"
+	
+	npc kill
+		personality heroic staying plunders
+		government "Republic"
+		system Zosma
+		ship "Bactrian" "D.S.S. Odin"
+		ship "Mule" "D.S.S. Loki"
+		ship "Mule" "D.S.S. Thor"
+		ship "Aerie" "D.S.S. Gungnir"
+		ship "Aerie" "D.S.S. Skofnung"
+		ship "Challenger" "D.S.S. Mjolnir"
+		ship "Challenger" "D.S.S. Dainsleif"		
+		fleet
+			names "republic fighters"
+			variant
+				Dagger 28
+	on complete
+		set "dsf killed: done"
+		
+mission "Tarazed Prototypes"
+	invisible
+	landing
+	source
+		government "Republic"
+	to offer
+		has "event: unique fleet population"
+	
+	npc kill
+		personality heroic staying plunders
+		government "Tarazed"
+		system Tarazed
+		ship "Vulture" "X-305 Vulture"
+		ship "Unnamed Prototype" "X-301 Wraith"
+		ship "Unnamed Prototype" "X-301 Goose"
+		ship "Falcon" "X-279 Duckhunt"
+		ship "Falcon" "X-279 Raptor"
+		ship "Falcon" "X-279 Skyfire"
+		ship "Falcon" "X-279 Nightflare"		
+	on complete
+		set "vulture destroyed: done"
+
+mission "defensepactdefenders"
+	invisible
+	landing
+	source
+		government Republic
+	to offer
+		has "event: unique fleet population"
+	to fail
+		has "event: war begins"
+	
+	npc kill
+		personality heroic staying plunders
+		government "Republic"
+		system Sabik
+		ship "Bactrian" "S.S. Shieldmaiden"
+		ship "Vanguard" "S.S. Logic"
+		ship "Vanguard" "S.S. Battlespork"
+		ship "Bastion" "S.S. Defender"
+		ship "Bastion" "S.S. Nemesis"
+		ship "Argosy" "S.S. Aruba"
+		ship "Argosy" "S.S. Kansas"
+		ship "Clipper (Speedy)" "S.S. Obsidian"
+		ship "Clipper (Speedy)" "S.S. Never"
+		ship "Clipper (Speedy)" "S.S. Light"
+		ship "Clipper (Speedy)" "S.S. Blazer"
+	on complete
+		set "militia killed: done"
