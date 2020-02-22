@@ -31,7 +31,7 @@ mission "Meeting an Alpha 0"
 	
 	on offer
 		conversation
-			`A man in a tattered and heavily defaced Navy uniform approaches you and asks whether you would be willing to give him a lift to <destination>. The jacket has "Warlord Peg" stitched where the name patch normally would be.`
+			`A man in a tattered and heavily defaced Navy uniform approaches you as you walked out of your ship and asking whether you would be willing to give him a lift to <destination>. His jacket has "Warlord Peg" stitched where the name patch normally would be.`
 			choice
 				`	"Sure, I'd be glad to help!"`
 					accept
@@ -40,11 +40,11 @@ mission "Meeting an Alpha 0"
 				`	"Sorry, I'm busy with something else right now."`
 					defer
 				`	"Are you a pirate?"`
-			`	"Yes, in fact until very recently I had my own gang."`
+			`	"Yes, in fact until very recently I had my own gang," he replies.`
 			choice
 				`	"Find someone else to dupe."`
 					decline
-				`	"I doubt you would feel comofortable in my brig, then. Find another ride."`
+				`	"I doubt you would feel comfortable in my brig, then. Find another ride."`
 					decline
 				`	"No problem at all, just making sure we're on the same page."`
 					accept
@@ -56,7 +56,7 @@ mission "Meeting an Alpha 0"
 	on complete
 		payment
 		dialog
-			`The warlord thanks you for the ride and pays you <payment>. As he is leaving, he says, "If you're interested in meeting my boss, head to a shop called "The Rusted Wheel" and find my commander. He's impossible to miss, try not to stare."`
+			`The warlord thanks you for the ride and pays you <payment>. As he is leaving, he says, "If you're interested in meeting my boss, head to a shop called "The Rusted Wheel" and find my commander. He's impossible to miss, though, try not to stare."`
 
 mission "Meeting an Alpha 1"
 	name "Free Worlds Reconnaissance"
@@ -82,9 +82,12 @@ mission "Meeting an Alpha 1"
 				`	(Join him and place an order)`
 				`	(Leave.)`
 					decline
-			`	"Good decision, joining me. My boss will be over any minute now." Some time passes before eventually an incredibly tall, noseless man joins you. He looks almost exactly like the descriptions of the Augments known as Alphas from centuries ago.`
-			`	"Boss, I have brought you tribute!" Peg shouts, as you feel a hard, cold object press against the side of your skull. Before you even get a chance to react, you feel a warm splattering on your cheek. You look over to see Peg, dying, with some sort of metal spike sticking out of his forehead.`
-			`	"I would appologize for the mess," the towering beast drones, "Considering I just saved your life from my incompetent underling, I'll assume you have already forgiven me." He gives off a strange huffing sound that almost seems like a chuckle, "Please, stay. I sense you aren't as useless as this deflating mess next to you."`
+			`	"Good decision, joining me. My boss will be here any minute now."` 
+			
+			`Some time passes before eventually an incredibly tall, noseless man joins you. He looks almost exactly like the descriptions of the Augments known as Alphas from centuries ago.`
+			
+			`	"Boss, I've brought you a tribute!" Peg shouts, as you feel a hard, cold object press against the side of your skull. Before you even get a chance to react, you feel something warm splattering on your cheek. You look over to see Peg, dying, with some sort of metal spike sticking out of his forehead.`
+			`	"I would appologize for the mess," the towering beast drones, "Considering I just saved your life from my incompetent underling, I'll assume you've already forgiven me." He gives off a strange huffing sound that almost seems like a chuckle, "Please, stay. I sense you aren't as useless as this deflating mess next to you."`
 
 			choice
 				`	(Run for your life!)`
@@ -139,9 +142,9 @@ mission "Meeting an Alpha 1"
 			apply
 				set "alpha lore 1: done"
 			`	The Alpha casually grabs Peg out of his seat, throws him across the cafe, and sits in the warlord's now vacant seat. "Oh, where do I begin? Let's start with our genesis."`
-			`	"I'm sure you know already that we were created as super soldiers to be used by various factions, but the reason for that is because those in charge were getting reports of normal soldiers refusing orders.  Things such as leveling towns full of innocent bystanders, shooting down unarmed passenger ships, contaminating spaceports with radiation or bioweapons, that sort of thing. The human soldiers were apparently brought up with the idea that 'life was sacred' or something." His tone turns to what you can only assume is mockery, "And that 'only bad people' should be killed, and when faced with the flimsy excuses for why they were slaughtering these innocents, they tended to refuse like the cowards they were."`
+			`	"I'm sure you know already that we were created as super soldiers to be used by various factions, but the reason for that is because those in charge were getting reports of normal soldiers refusing orders.  Things such as leveling towns full of innocent bystanders, shooting down unarmed passenger ships, contaminating spaceports with radiation or bioweapons, that sort of thing. The human soldiers were apparently brought up with the idea that 'life was sacred' or something." His tone turns to what you can only assume is mockery. "And that 'only bad people' should be killed. And when faced with the flimsy excuses for why they were slaughtering these innocents, they tended to refuse like the cowards they were."`
 			`	The being calls over a waiter, and whispers his order, before continuing. There is an interesting smell in the air, which both turns your stomach and compels you to be silent.`
-			`	"So, where was I?" He pauses, "Ah yes, our origins. It was decided that there was a need for soldiers who were "emotionless," and well cheaper to maintain for increased combat efficiency.  Starting with your "basic" human, it was decided to focus on developing a streamlined combat being, one which would obey orders without question, and could be fielded without much overhead. Turns out your human frame is about the only useful thing about you in combat, however. The limits of genetic engineering at the time, however, seemed to be infinite. So they started taking samples from various bugs. Cockroaches, bacteria strains, grasshoppers. They set out to create the perfect beings, us. A perfect blend of strenght, agility, tactical prowess, radiation and bioweapon resistances, and natural built in and regenerating armor in the form of our exoskeleton. Capable of surviving and fighting for hours in empty space, or under water, or in most any environment, really. Only occasionally with extra gear."`
+			`	"So, where was I?" He pauses, "Ah yes, our origins. It was decided that there was a need for soldiers who were "emotionless," and, well, cheaper to maintain for increased combat efficiency. Starting with your "basic" human, it was decided to focus on developing a streamlined combat being, one which would obey orders without question, and could be fielded without much overhead. Turns out your human frame is about the only useful thing about you in combat, however. The limits of genetic engineering at the time, however, seemed to be infinite. So they started taking samples from various bugs. Cockroaches, bacteria strains, grasshoppers. They set out to create the perfect beings, us. A perfect blend of strengh, agility, tactical prowess, radiation and bioweapon resistances, and natural built in and regenerating armor in the form of our exoskeleton. Capable of surviving and fighting for hours in empty space, or under water, or in most any environment, really. Only occasionally with extra gear."`
 			choice
 				`	(Attempt to resist the smell and speak freely.)`
 				`	(Continue sitting in silence.)`
@@ -173,8 +176,8 @@ mission "Meeting an Alpha 1"
 					decline
 	
 	on accept
-		log "Volunteered to scan the Star Blade, currently one of the largest ships in human space."
-		dialog "Upon returning to your ship you go to check your communicator, only to find that you have two. Upon opening the second one, you find out this belonged to Peg and is full of intel that could be useful to the Republic. Maybe they'll pay you for it?"
+		log "Volunteered to scan the Star Blade, one of the largest vessel in human space."
+		dialog "Upon returning to your ship you check your communicator, only to find that you have two messages. Upon opening the second one, you find out this belonged to Peg and is full of intel that could be useful to the Republic. Maybe they'll pay you for it?"
 		
 	npc "scan outfits"
 		government Betelgeuse
@@ -198,7 +201,7 @@ mission "Meeting an Alpha 1"
 			`	You cut the commlink, relieved that it was that easy.`
 	
 	on complete
-		dialog `Soon after you land, a courier comes to your ship and pays you <payment> in exchange for your sensor logs regarding the <npc>. She says, "If you would be interested in continuing to work for my Godlord, render yourself before him at the Rusted Wheel Cafe. He has a gift for you."`
+		dialog `Soon after you land, a courier comes to your ship and pays you <payment> in exchange for your sensor logs regarding the <npc>. "If you would be interested in continuing to work for my Godlord, render yourself before him at the Rusted Wheel Cafe. He has a gift for you."`
 		payment 20000
 
 mission "Meeting an Alpha 2"
