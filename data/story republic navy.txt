@@ -134,7 +134,7 @@ mission "Republic Bounty 3"
 		log "Hunting a pirate ship called the <npc>, who has captured multiple merchant captains. The ship was last sighted in the Tais system."
 		
 	on complete
-		"assisted Republic" ++
+		"assisted republic" ++
 		payment 250000
 		dialog `"Everyone is home safe, thanks to you." Captain Shah informs you after you land. "The Republic owes you a debt of gratitude. If you are interested in more tangible benefits, <payment> have been transferred to your account, and I have informed my superiors of your excellent work today."`
 		log "Captain Shah says she has put a good word in for me with her superiors."
@@ -259,8 +259,46 @@ mission "Navy Scouting 3"
 			`	You cut the comlink and breathe a sigh of relief that the conversation is over.`
 	
 	on complete
-		"assisted Republic" ++
+		"assisted republic" ++
 		dialog `You happily trade <payment> for your sensor logs when you meet back up with Captain Mulgrew "No alien tech, I see." She says, dissapointed. "While that would have been a great find, I will admit I'm happy I don't have to engineer a defence for it. I've let my supervisors know how helpful you've been, hopefully we can work together again soon." `
 		payment 50000
 		log "Captain Melgrew says she has put a good word in for me with her superiors."
 		
+mission "Meeting an Alpha 2b"
+	name "Turn in Peg's communicator"
+	description "Visit <destination> and turn over the communicator to the Authorities."
+	source
+		attributes "near earth" "paradise"
+		government "Republic"
+	to offer
+		has "Meeting an Alpha 1: accepted"
+	to fail
+		has "chosen sides"
+	destination Farpoint
+	on offer
+		conversation
+			`This planet is very likely to have a Republic office. Would you like to turn in the pirate communicator you found?`
+			choice
+				`	(Sure.)`
+				`	(Not right now.)`
+					defer
+			
+			`	You find your way through the spaceport before finally coming to a stop just outside of the Republic offices, and enter. Like most Republic offices, you have to scan your identification or pilots license upon entry, and there is an officer serving as a receptionist. He ask how he can help you.`
+			choice
+				`	"I found this and was hoping maybe you could return it to it's rightful owner."`
+					goto found
+				`	"I had a meeting with someone I believe is an Alpha. This is his underling's communicator."`
+					goto alpha
+				`	"Nevermind, I was just looking for a bathroom."`
+					defer
+			label found
+			`	The receptionist grabs the communicator and quickly finds that it is unlocked. As he reads through it, his eyes widen. "You say you just found this, huh? Well, Captain, this communicator belongs to Peg. An infamous pirate warlord." He pauses for a moment while going through the messages, before slamming his hand on the desk. "Captain, I could kiss you! You just earned me a promotion. Information on a real, live Alpha! We have information on Gaven! Captain, we'll call you when we need more information, but for now you're free to go." He hands you <payment> and rushes you out the door.`
+				decline
+			label alpha
+			`	He rolls his eyes, clearly thinking this is some sort of prank. "Oh, an Alpha, huh? I'm sure you're being entirely honest and I wont have to arrest you for attempting to file a false report." He takes the communicator from you and begins to look through it. His eyes widen as he begins looking through it. "Oh my, no this is good. This is very, very good. I can hardly believe this. Look, I need to talk this over with my superiors. We have your information, and will call you if we need to bring you in for an interview. Thank you so much for bringing this in to us!" He hands you <payment> and rushes you out the door.`
+				decline
+	on decline
+		payment 275000
+		log "Turned over Warlord Peg's communicator to the Republic. They say they'll call me if they need more information."
+		"pegs communicator: done"
+		"assisted republic" ++
