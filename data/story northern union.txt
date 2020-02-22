@@ -31,7 +31,7 @@ mission "Meeting an Alpha 0"
 	
 	on offer
 		conversation
-			`A man in a tattered and heavily defaced Navy uniform approaches you and asks whether you would be willing to give him a lift to <destination>.`
+			`A man in a tattered and heavily defaced Navy uniform approaches you and asks whether you would be willing to give him a lift to <destination>. The jacket has "Warlord Peg" stitched where the name patch normally would be.`
 			choice
 				`	"Sure, I'd be glad to help!"`
 					accept
@@ -64,7 +64,7 @@ mission "Meeting an Alpha 1"
 	source
 		planet Haven
 	to offer
-		has "Meeting an Alpha 0"
+		has "Meeting an Alpha 0: done"
 	to fail
 		has "chosen sides"
 	
@@ -117,6 +117,8 @@ mission "Meeting an Alpha 1"
 			choice
 				`	"Wait, you're an alpha?"`
 					goto die
+				`	"I've never met an Alpha. Tell me about your kind."`
+					goto interview
 				`	"I've heard the propaganda, but tell me your side of the story. How did you come to be?"`
 					goto interview
 				`	"Sure, what's the job?"`
@@ -172,7 +174,8 @@ mission "Meeting an Alpha 1"
 	
 	on accept
 		log "Volunteered to scan the Star Blade, currently one of the largest ships in human space."
-	
+		dialog "Upon returning to your ship you go to check your communicator, only to find that you have two. Upon opening the second one, you find out this belonged to Peg and is full of intel that could be useful to the Republic. Maybe they'll pay you for it?"
+		
 	npc "scan outfits"
 		government Betelgeuse
 		personality staying uninterested
@@ -204,7 +207,7 @@ mission "Meeting an Alpha 2"
 	source
 		planet Haven
 	to offer
-		has "Meeting an Alpha 1"
+		has "Meeting an Alpha 1: done"
 	to fail
 		has "chosen sides"
 	destination Hephaestus
@@ -286,7 +289,7 @@ mission "Meeting an Alpha 3"
 	source
 		planet Hephaestus
 	to offer
-		has "Meeting an Alpha 2"
+		has "Meeting an Alpha 2: done"
 	to fail
 		has "chosen sides"
 	destination Haven
@@ -321,8 +324,9 @@ mission "Meeting an Alpha 3"
 			label run
 			`	You head back to your ship, but even as you rush back, the firefight behind you continues to get louder.`
 				goto end
+			label end
 			`	Before you get a chance to react, your world view is almost completely obstructed by a black bag. Dylans familliar shouting tells you to move. Before long you feel yourself climbing the ramp to your airlock. As you hear it seal behind you, she removes your bag."`
-			`	"That was considerably less quiet than I expected." She states between breaths, "Now hurry up and return me to my God, I have his prized information!"`
+			`	"That was considerably less quiet than I expected." She states between breaths, "Now hurry up and return me to my Godlord, I have his prized information!"`
 			`	As you reach orbit, you pick up four Syndicated Security ships. Two gunships and two frigates. You also recieve word that Gavin is a nearby system, coming to your rescue.`
 				launch
 
@@ -364,7 +368,7 @@ government "Syndicated Security"
 	"hostile hail" "hostile syndicate"
 
 government "Gaven"
-	"player peputation" 1
+	"player reputation" 1
 	"bribe" 0
 	"attitude toward"
 		"Syndicated Security" -.1
