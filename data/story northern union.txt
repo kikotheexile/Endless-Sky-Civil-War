@@ -31,7 +31,7 @@ mission "Meeting an Alpha 0"
 	
 	on offer
 		conversation
-			`A man in a tattered and heavily defaced Navy uniform approaches you as you walked out of your ship and asking whether you would be willing to give him a lift to <destination>. His jacket has "Warlord Peg" stitched where the name patch normally would be.`
+			`A man in a tattered and heavily defaced Navy uniform approaches you as you walk out of your ship and asks whether you would be willing to give him a lift to <destination>. His jacket has "Warlord Peg" stitched where the name patch normally would be.`
 			choice
 				`	"Sure, I'd be glad to help!"`
 					accept
@@ -40,7 +40,7 @@ mission "Meeting an Alpha 0"
 				`	"Sorry, I'm busy with something else right now."`
 					defer
 				`	"Are you a pirate?"`
-			`	"Yes, in fact until very recently I had my own gang," he replies.`
+			`	"Yes. In fact, until very recently I had my own gang," he replies.`
 			choice
 				`	"Find someone else to dupe."`
 					decline
@@ -56,7 +56,7 @@ mission "Meeting an Alpha 0"
 	on complete
 		payment
 		dialog
-			`The warlord thanks you for the ride and pays you <payment>. As he is leaving, he says, "If you're interested in meeting my boss, head to a shop called "The Rusted Wheel" and find my commander. He's impossible to miss, though, try not to stare."`
+			`The warlord thanks you for the ride and pays you <payment>. As he is leaving he says, "If you're interested in meeting my boss, head to a shop called "The Rusted Wheel" and find my commander. He's impossible to miss, though try not to stare."`
 
 mission "Meeting an Alpha 1"
 	name "Free Worlds Reconnaissance"
@@ -72,22 +72,22 @@ mission "Meeting an Alpha 1"
 		conversation
 			`If pirate worlds had a "nice side of town," the Rusted Wheel Cafe would be located in it. You enter this cute shop, and immediately hear a familiar voice. "Captain <last>, I knew you would join us."`
 			choice
-				`	"Glad to see you again, stranger. I never did catch your name."`
-				`	(politely wave, order a sandwich, and leave.)`
+				`	"Glad to see you again, stranger. I did not catch your name before."`
+				`	(Politely wave, order a sandwich, and leave.)`
 					defer
 				`	"I really want a coffee, but the price here is outrageous."`
 			`	"Name's Pete, but everyone calls me peg," he sighs. "Come join me and whatever you want off the menu is my treat."`
 
 			choice
-				`	(Join him and place an order)`
+				`	(Join him and place an order.)`
 				`	(Leave.)`
 					decline
 			`	"Good decision, joining me. My boss will be here any minute now."` 
 			
 			`Some time passes before eventually an incredibly tall, noseless man joins you. He looks almost exactly like the descriptions of the Augments known as Alphas from centuries ago.`
 			
-			`	"Boss, I've brought you a tribute!" Peg shouts, as you feel a hard, cold object press against the side of your skull. Before you even get a chance to react, you feel something warm splattering on your cheek. You look over to see Peg, dying, with some sort of metal spike sticking out of his forehead.`
-			`	"I would appologize for the mess," the towering beast drones, "Considering I just saved your life from my incompetent underling, I'll assume you've already forgiven me." He gives off a strange huffing sound that almost seems like a chuckle, "Please, stay. I sense you aren't as useless as this deflating mess next to you."`
+			`	"Boss, I've brought you a tribute!" Peg shouts, as you feel a hard, cold object press against the side of your skull. Before you even get a chance to react, you feel something warm splattering on your cheek. You look over to see Peg dying, with some sort of metal spike sticking out of his forehead.`
+			`	"I would apologize for the mess," the towering beast drones, "but considering I just saved your life from my incompetent underling, I'll assume you've already forgiven me." He gives off a strange huffing sound that almost seems like a chuckle, "Please, stay. I sense you aren't as useless as this deflating mess next to you."`
 
 			choice
 				`	(Run for your life!)`
@@ -95,7 +95,7 @@ mission "Meeting an Alpha 1"
 				`	(Remain silent but stay.)`
 				`	(Stare blankly at the creature.)`
 					goto stare
-				`	"Well, there's blood in my food anyway."
+				`	"Well, there's blood in my food anyway."`
 			`	"See, you're already better at following kindly worded directives than Peg. Now, before we begin, you must have questions for me."`
 
 			choice
@@ -107,16 +107,16 @@ mission "Meeting an Alpha 1"
 					goto leave
 			
 			label leave
-			`	"Go now in peace, and in one piece."` The creature gestures towards the door. You follow its directive, and return to your ship.`
+			`	"Go now in peace, and in one piece." The creature gestures towards the door. You follow its directive, and return to your ship.`
 				decline 
 			
 			label stare
-			`	If this were a staring contest, you would have lost several times over. After an uncomfortable silence, the towering being leaves you in peace. Eventually you leave the cafe and return to your ship.`
+			`	If this were a staring contest, you would have lost several times over. After an uncomfortable silence, the towering being leaves you in peace. Eventually, you leave the cafe and return to your ship.`
 				decline 
 			
 			label alpha
-			`	"Not human," the creature makes that strange chuckling sound again, "I'm a genetically modified life form, similar to human augments, but not quite. I am specifically of the species known as Alphas."`
-			`"Do you have any other questions? Before you say it, yes I am an Alpha, and I promised myself the next person to say 'Wait you're an Alpha` would die slowly by my hand."
+			`	"Not human." The creature makes that strange chuckling sound again, "I'm a genetically modified life form, similar to human augments, but not quite. I am specifically of the species known as Alphas."`
+			`"Do you have any other questions? Before you say it, yes I am an Alpha, and I promised myself the next person to say, 'Wait, you're an Alpha?' would die slowly by my hand."`
 			choice
 				`	"Wait, you're an alpha?"`
 					goto die
@@ -128,56 +128,56 @@ mission "Meeting an Alpha 1"
 					goto work
 					
 			label interview
-			`	"Oh my, do you really have time for me to wax poetic about the nature of my existance?"`
+			`	"Oh my, do you really have time for me to wax poetic about the nature of my existence?"`
 			choice
-				`	"Absolutely, I'm a sucker for this kind of stuff."
+				`	"Absolutely, I'm a sucker for this kind of stuff."`
 					goto yes
 				`	"Sure."`
 					goto yes
-				`	"I mean why not?"`
+				`	"I mean, why not?"`
 					goto yes
-				`	"On second thought, what's the job?"`
+				`	"On second thought, nevermind, what's the job?"`
 					goto work
 			label yes
 			apply
 				set "alpha lore 1: done"
-			`	The Alpha casually grabs Peg out of his seat, throws him across the cafe, and sits in the warlord's now vacant seat. "Oh, where do I begin? Let's start with our genesis."`
-			`	"I'm sure you know already that we were created as super soldiers to be used by various factions, but the reason for that is because those in charge were getting reports of normal soldiers refusing orders.  Things such as leveling towns full of innocent bystanders, shooting down unarmed passenger ships, contaminating spaceports with radiation or bioweapons, that sort of thing. The human soldiers were apparently brought up with the idea that 'life was sacred' or something." His tone turns to what you can only assume is mockery. "And that 'only bad people' should be killed. And when faced with the flimsy excuses for why they were slaughtering these innocents, they tended to refuse like the cowards they were."`
-			`	The being calls over a waiter, and whispers his order, before continuing. There is an interesting smell in the air, which both turns your stomach and compels you to be silent.`
-			`	"So, where was I?" He pauses, "Ah yes, our origins. It was decided that there was a need for soldiers who were "emotionless," and, well, cheaper to maintain for increased combat efficiency. Starting with your "basic" human, it was decided to focus on developing a streamlined combat being, one which would obey orders without question, and could be fielded without much overhead. Turns out your human frame is about the only useful thing about you in combat, however. The limits of genetic engineering at the time, however, seemed to be infinite. So they started taking samples from various bugs. Cockroaches, bacteria strains, grasshoppers. They set out to create the perfect beings, us. A perfect blend of strengh, agility, tactical prowess, radiation and bioweapon resistances, and natural built in and regenerating armor in the form of our exoskeleton. Capable of surviving and fighting for hours in empty space, or under water, or in most any environment, really. Only occasionally with extra gear."`
+			`	The Alpha casually lifts Peg out of his seat, throws him across the cafe, and sits in the warlord's now vacant seat. "Oh, where do I begin? Let's start with our genesis."`
+			`	"I'm sure you know already that we were created as super soldiers to be used by various factions, but the reason for that is because those in charge were getting reports of normal soldiers refusing orders. Things such as leveling towns full of innocent bystanders, shooting down unarmed passenger ships, contaminating spaceports with radiation or bioweapons, that sort of things. The human soldiers were apparently brought up with the idea that 'life was sacred' or something." His tone turns to what you can only assume is mockery. "And that 'only bad people' should be killed. And when faced with the flimsy excuses for why they were slaughtering these innocents, they tended to refuse like the cowards they are."`
+			`	The being calls over a waiter, and whispers his order before continuing. There is an interesting smell in the air, which both turns your stomach and compels you to be silent.`
+			`	"So, where was I?" He pauses, "Ah yes, our origins. It was decided that there was a need for soldiers who were "emotionless," and, well, cheaper to maintain for increased combat efficiency. Starting with your "basic" human, it was decided to focus on developing a streamlined combat being, one which would obey orders without question, and could be fielded without much overhead. Turns out your human frame is the only useful thing about you in combat. However, the limits of genetic engineering at the time seemed to be infinite. They started taking samples from various bugs; cockroaches, bacteria strains, grasshoppers and the like. They set out to create the perfect beings, us. A perfect blend of strengh, agility, tactical prowess, radiation and bioweapon resistances, and natural built-in and regenerating armor in the form of our exoskeleton. Capable of surviving and fighting for hours in empty space, under water, in mostly any environment, really. Only occasionally with extra gear."`
 			choice
 				`	(Attempt to resist the smell and speak freely.)`
 				`	(Continue sitting in silence.)`
 			`	The scent is overpowering, you can't resist it. After making the initial choice to listen, he apparently wanted to make sure his story wasn't interrupted.`
-			`	"Ah, but I have gone on for too long. for this one conversation, and I can tell you would like to move on."`
+			`	"Ah, but I have gone on for too long for this one conversation, and I can tell you would like to move on."`
 			choice
 				`	(Run for your life!)`
 					decline
 				`	"Are you all so tall?"`
 					goto tall
-				`	"Yes, lets move on. I heard you were offering work?"
+				`	"Yes, lets move on. I heard you were offering work?"`
 					goto work
 			label tall
-			`	He makes that chuckling sound again, "No, in fact some of my kind are even shorter than you. I was created specifically for interrogation and command. Unlike my smaller brethren, intended mostly for combat. Now, let's talk about that job."`
+			`	He makes that chuckling sound again, "No, in fact some of my kind are even shorter than you. I was created specifically for interrogation and command, unlike my smaller brethren, intended mostly for combat. Now, let's talk about that job."`
 				goto work
 			label die
 			`	Your death is indeed slow and painful, and everyone around is indifferent to your suffering. Perhaps you shouldn't have mocked the creature who just effortlessly killed a pirate warlord next to you...`
 				die
 			label work 
-			`	"The job is an incredibly simple and straight forward one. Surely you have seen the news reports of the Star Blade, yes? The new Veles class battle cruiser out of Betelgeuse? I want you to take some scans of it. I think it's currently in the patroling the shipyards where it was constructed. Are you interested?"
+			`	"The job is an incredibly simple and straight-forward one. Surely you have seen the news reports of the Star Blade, yes? The new Veles class battle cruiser from Betelgeuse? I want you to take some scans of it. I think it's currently patrolling the shipyards where it was constructed. Are you interested?"`
 			choice
 				`	"Simple enough."`
 					accept
-				`	"What's the worst that could happen?
+				`	"What's the worst that could happen?`
 					accept
-				`	"Sorry, but I cant make money when I'm dead."`
+				`	"Sorry, but I can't make money when I'm dead."`
 					decline
-				`	"Scan a Battle Cruiser? Do you think I'm suicidal?"`
+				`	"Scan a battle cruiser? Do you think I'm suicidal?"`
 					decline
 	
 	on accept
-		log "Volunteered to scan the Star Blade, one of the largest vessel in human space."
-		dialog "Upon returning to your ship you check your communicator, only to find that you have two messages. Upon opening the second one, you find out this belonged to Peg and is full of intel that could be useful to the Republic. Maybe they'll pay you for it?"
+		log "Volunteered to scan the Star Blade, one of the largest vessels in human space."
+		dialog "Upon returning to your ship, you check your communicator, only to find that you have two messages. Upon opening the second one, you find out this belonged to Peg and is full of intel that could be useful to the Republic. Maybe they'll pay you for it?"
 		
 	npc "scan outfits"
 		government Betelgeuse
@@ -185,17 +185,17 @@ mission "Meeting an Alpha 1"
 		ship Veles "Star Blade"
 		system "Betelgeuse"
 		conversation
-			`As soon as you scan the <npc> its captain hails you. "Excuse me, captain," she says, "we detected an unauthorized scan of Betelgeuse technology, do you have a permit?"`
+			`As soon as you scan the <npc>, its captain hails you. "Excuse me, captain," she says, "we detected an unauthorized scan of Betelgeuse technology. Do you have a permit?"`
 			choice
 				`	"I left it in my other pants."`
 					goto pants
 				`	"It's just such a gorgeous ship, I needed to know what you had aboard it!"`
 					goto stunning
 			label pants
-			`	She laughs, "That is the lamest excuse I've heard all day, now get out of here before we're forced to turn you into dust."`
+			`	She laughs, and says, "That is the lamest excuse I've heard all day. Now get out of here before we're forced to turn you into dust."`
 				goto close
 			label stunning
-			`	"There's nothing wrong with curiosity," she states, "By taking these scans you accept the terms and conditions of scanning a Veles class. The punishment for sharing corporate secrets scale in intensity from suspension of your pilots license and a fifty-million credit fine, all the way up to and and including, termination of your life. So keep those scans to yourself."`
+			`	"There's nothing wrong with curiosity," she states, "by taking these scans you accept the terms and conditions of scanning a Veles class. The punishment for sharing corporate secrets scale in intensity from suspension of your pilot's license and a fifty million credit fine, all the way up to and including termination of your life. So keep those scans to yourself."`
 				goto close
 			label close
 			`	You cut the commlink, relieved that it was that easy.`
@@ -216,7 +216,7 @@ mission "Meeting an Alpha 2"
 	destination Hephaestus
 	on offer
 		conversation
-			`	This time as you enter this nice little sandwich shop, you are greeted by the same courier as before, who shouts at you. "Bow when you enter, mortal scum. You are in the presence of the Godlord!"`
+			`	This time as you enter this nice little sandwich shop, you are greeted by the same courier as before, who shouts at you, "Bow when you enter, mortal scum. You are in the presence of the Godlord!"`
 			choice
 				`	"Godlord?"`
 				`	"I'm here for the job."`
@@ -235,18 +235,18 @@ mission "Meeting an Alpha 2"
 					goto kneel
 				`	(Remain standing.)`
 					goto stand
-				`	(Laugh openly.)
+				`	(Laugh openly.)`
 					goto laugh
 			label kneel
-			`	You quickly bend your knee and bow your head as the Alpha approaches you. "Rise, you aren't even an initiate in my cult yet. There's no reason to obey every order I give you yet."
+			`	You quickly bend your knee and bow your head as the Alpha approaches you. "Rise, you aren't even an initiate in my cult yet. There's no reason to obey every order I give you yet."`
 				goto reward
 			label stand
-			`	You stand tall as the being seems to hover up to you. "A human with an exoskeleton for once? Lovely, you'll do well in my service."
+			`	You stand tall as the being seemingly hovers up to you. "A human with an exoskeleton for once? Lovely, you'll do well in my service."`
 				goto reward
 			label laugh
 			`	The being quickly approaches you as you laugh uncontrollably. In between breaths you can hear his strange chuckle as well. "Very good, human. Fearlessness is exactly what I need out of an underling right now."`
 			label reward
-			`	"I have a conditional gift for you." He motions over to the courier, "My acolyte Dylan here will provide it to you upon returning to your ship, the condition is only that you accept this job. If you decide it is too much for you, my acolyte will return to me with news, but the item shall remain yours to keep."`
+			`	"I have a conditional gift for you." He motions over to the courier, "My acolyte Dylan here will provide it to you upon returning to your ship. The condition is only that you accept this job. If you decide it is too much for you, my acolyte will return to me with news, but the item shall remain yours to keep."`
 			
 			choice
 				`	"I accept."`
@@ -258,20 +258,20 @@ mission "Meeting an Alpha 2"
 				`	"No."`
 					decline
 			label accept
-			`	"Good. Its only a little bit of corporate espionage. Head to <destination> and find out any information you can on these new Proton Turrets the Star Blade was using. Dylan, please join <first> aboard the <ship> and provide my gift."`
+			`	"Good. It's only a little bit of corporate espionage. Head to <destination> and find out any information you can on these new Proton Turrets the Star Blade was using. Dylan, please join <first> aboard the <ship> and provide my gift."`
 				accept
 			label godlord
-			`	"I can't tell if you are being serious or not, but it doesn't matter. Just head to <destination> with my acolyte, find out what you can of the Proton Turret, and return to me for payment."
+			`	"I can't tell if you are being serious or not, but it doesn't matter. Just head to <destination> with my acolyte, find out what you can of the Proton Turret, and return to me for payment."`
 			choice
 				`	"Ok."`
 					accept
 				`	"I'll do it."`
 					accept
-				`	"No, Godlord, I wont do it."`
+				`	"No, Godlord, I won't do it."`
 			`	"That really is disappointing to hear. Remove yourself from my sight before I end you."`
 				decline
 			label details
-			`	"The job is incredibly straight forward. You and Dylan can go places I simply cannot, and acquire information most would consider benign if not for an Alpha requesting it." He gives a reassuring nod to his cultist, "Go to <destination> and collect information on this Paticle Turret the Starblade was using."`
+			`	"The job is incredibly straight-forward. You and Dylan can go places I simply cannot, and acquire information most would consider benign if not for an Alpha requesting it." He gives a reassuring nod to his cultist, "Go to <destination> and collect information on this Particle Turret the Starblade was using."`
 			choice
 				`	"Ok."`
 					accept
@@ -283,8 +283,8 @@ mission "Meeting an Alpha 2"
 
 	on complete
 		conversation
-		`	As you arrive in orbit above <destination>, Dylan presents you with a box. Inside is a plasma pistol with "Lucky" scratched on the side.`
-		`	In her ever aggressive voice, Dylan speaks. "My master believes this shotgun will be of use to you on this quest. Meet with me near the landing pad nearest the outfitter as soon as you make yourself inconspicuous. Now, go!"
+		`	As you arrive in orbit above <destination>, Dylan presents you with a box. Inside it is a plasma pistol with "Lucky" scratched on the side.`
+		`	In her ever aggressive voice, Dylan speaks. "My master believes this gun will be of use to you on this quest. Meet me near the landing pad closest to the outfitter as soon as you make yourself inconspicuous. Now, go!"`
 
 mission "Meeting an Alpha 3"
 	name "Corporate Espionage"
@@ -303,34 +303,34 @@ mission "Meeting an Alpha 3"
 		choice
 			`	(Investigate.)`
 				goto investigate
-			`	(Stay put)`
+			`	(Stay put.)`
 				goto stay
-			`	(Return to your ship.)
+			`	(Return to your ship.)`
 				goto run
 			label investigate
 			`	As you approach, you hear Dylan shouting while exchanging fire with local security forces. You catch her shouting things like "Die for the Godlord, mortal scum!" while falling back.`
 			choice
 			`	(Use your fancy new sidearm, Lucky, to help her.)`
 				goto help
-			`	(Return to your ship.)
+			`	(Return to your ship.)`
 				goto run
 			label stay
 			`	You find cover and wait. The firefight slowly approaches you until eventually it is upon you. It's Dylan, taking on nearly the entire spaceport security team by herself.`
 			`	(Use your fancy new sidearm, Lucky, to help her.)`
 				goto help
-			`	(Return to your ship.)
+			`	(Return to your ship.)`
 				goto run
 			label help
-			`	You draw Lucky and begin firing. Each squeeze of the trigger releases a satisfying and confusing amount of plasma bolts. Before long, you and Dylan have managed to completely suppress the securty forces persuing her.`
-			`	"You idiot!" Dylan shouts at you, "You aren't even wearing a mask! Lucky for you I have disabled the cameras in this area. Now put your gun away I'm taking you hostage!"`
+			`	You draw Lucky and begin firing. Each squeeze of the trigger releases a satisfying and confusing amount of plasma bolts. Before long, you and Dylan have managed to completely suppress the securty forces pursuing her.`
+			`	"You idiot!" Dylan shouts at you, "You aren't even wearing a mask! Lucky for you I have disabled the cameras in this area. Now put your gun away, I'm taking you hostage!"`
 				goto end
 			label run
 			`	You head back to your ship, but even as you rush back, the firefight behind you continues to get louder.`
 				goto end
 			label end
-			`	Before you get a chance to react, your world view is almost completely obstructed by a black bag. Dylans familliar shouting tells you to move. Before long you feel yourself climbing the ramp to your airlock. As you hear it seal behind you, she removes your bag."`
+			`	Before you get a chance to react, your world view is almost completely obstructed by a black bag. Dylan's familiar shouting tells you to move. Before long, you feel yourself climbing the ramp to your airlock. As you hear it seal behind you, she removes your bag."`
 			`	"That was considerably less quiet than I expected." She states between breaths, "Now hurry up and return me to my Godlord, I have his prized information!"`
-			`	As you reach orbit, you pick up four Syndicated Security ships. Two gunships and two frigates. You also recieve word that Gavin is a nearby system, coming to your rescue.`
+			`	As you reach orbit, you pick up four Syndicated Security ships. Two gunships and two frigates. You also receive word that Gaven is in a nearby system, coming to your rescue.`
 				launch
 
 	npc
@@ -354,7 +354,7 @@ mission "Meeting an Alpha 3"
 		"assisted northern union" ++
 		payment 100000
 		dialog
-			`As you land, you recieve a direct message from Gavin's ship. "Sorry we'll not be meeting in person again, <first>. But I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues, "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership."`
+			`As you land, you receive a direct message from Gavin's ship. "I'm sorry that we'll not be meeting in person again, <first>, but I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues, "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership."`
 
 
 # Northern Union Resources
