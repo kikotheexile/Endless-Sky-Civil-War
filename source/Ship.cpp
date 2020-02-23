@@ -1695,7 +1695,7 @@ void Ship::DoGeneration()
 		energy += attributes.Get("energy generation") - attributes.Get("energy consumption");
 		energy -= ionization;
 		fuel += attributes.Get("fuel generation");
-		heat += attributes.Get("heat generation");
+		heat += attributes.Get("heat generation") - attributes.Get("heat consumption");
 		heat -= coolingEfficiency * attributes.Get("cooling");
 		
 		// Convert fuel into energy and heat only when the required amount of fuel is available.
@@ -1705,7 +1705,21 @@ void Ship::DoGeneration()
 			energy += attributes.Get("fuel energy");
 			heat += attributes.Get("fuel heat");
 		}
-		
+
+		// Apply active heating before cooling.
+		double activeHeating = attributes.Get("heat generation") * attributes.Get("active heating");
+		double heatConsumption = attributes.Get("heat consumption");
+		if(activeHeating > 0.)
+		{
+			if(heatConsumption > 0.)
+			{
+				double trueActiveHeating = min(heatConsumption, attributes.Get("heat generation")) * attributes.Get("active heating");
+				heat += trueActiveHeating;
+			}
+			else
+				heat += activeHeating;
+		}
+
 		// Apply active cooling. The fraction of full cooling to apply equals
 		// your ship's current fraction of its maximum temperature.
 		double activeCooling = coolingEfficiency * attributes.Get("active cooling");
