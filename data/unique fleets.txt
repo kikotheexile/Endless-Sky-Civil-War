@@ -1,5 +1,59 @@
-event "unique fleet population 1"
+# Copyright (c) 2020 Vincent Rohlf
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+event "unique fleet population"
 	date 20 11 3013
+event "FW unique fleet population"
+	date 5 7 3014
+
+
+mission "Sabik Fleet, no Kornephoros"
+	invisible
+	landing
+	source
+		government "Free Worlds"
+	to offer
+		and
+			has "kk killed: done"
+			has "capture of Kornephoros"
+Add to fail on this line
+	npc kill
+		personality heroic staying plunders
+		government "Free Worlds"
+		system Sabik
+		ship "Vanguard" "F.S. Battlespork"
+		ship "Firebird" "F.S. Credit Report"
+	on complete
+		set "sf killed: done"
+
+# Kornephoros FW fleet, joins the Sabik fleet if it survives
+mission "Kornephoros Krusaders"
+	invisible
+	landing
+	source
+		government "Free Worlds"
+	to offer
+		has "FW unique fleet population"
+	to fail
+		has "capture of Kornephoros"
+		
+	npc kill
+		personality heroic staying plunders
+		government "Free Worlds"
+		system Kornephoros
+		ship "Falcon" "F.S. Frisky"
+		ship "Bastion" "F.S. Pete'sa Shack"
+		ship "Sparrow" "F.S. Meteor"
+		ship "Sparrow" "F.S. Finch"
+	on complete
+		set "kk killed: done"
 
 mission "Earth Defense Force"
 	invisible
