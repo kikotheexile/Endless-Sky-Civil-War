@@ -150,7 +150,7 @@ mission "Navy Scouting 1"
 	source
 		government "Republic" 
 		attributes "paradise"
-	destination "Glaze"
+	destination "Chiron"
 	to offer
 		Has "event: war begins"
 		not "chosen sides"
