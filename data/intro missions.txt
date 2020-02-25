@@ -9,6 +9,36 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 
+mission "Trust fund baby"
+	invisible
+	priority
+	landing
+	source "New Boston"
+	destination "New Greenland"
+	to offer
+		has "trustfund baby"
+	on offer
+		payment 250000
+		dialog `You recieve notice that some of your inheritance has been transferred to your account. This is <payment> that can go to paying down your loan or customizing your ship!`
+
+mission "A pirate's life!"
+	invisible
+	landing
+	source
+		government "Republic"
+	destination "Haven"
+	to offer
+		has "a pirates life"
+		
+	on offer
+		dialog `The <npc> has landed next to you! This bounty hunter has been on your tail for weeks now, almost as if they're tracking your movements somehow. The Vanguard is slow and easy enough to avoid, but having a hostile Cruiser chasing you will make paying off this loan considerably more difficult.`
+
+	npc kill
+		personality nemesis
+		government "Bounty Hunter"
+		ship "Vanguard" "Dry Wolf"
+
+
 mission "Intro [0]"
 	priority
 	name "Passenger to <planet>"
@@ -17,6 +47,9 @@ mission "Intro [0]"
 	passengers 1
 	source "New Boston"
 	destination "New Greenland"
+	to fail
+		has "a pirates life"
+
 	
 	on offer
 		log "Finally scraped together enough money for a down payment on a starship. The interest on the mortgage is exorbitant."
