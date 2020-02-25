@@ -13,6 +13,27 @@ event "unique fleet population"
 event "FW unique fleet population"
 	date 5 7 3014
 
+mission "Sabik Fleet, plus Kornephoros"
+	invisible
+	landing
+	source
+		government "Free Worlds"
+	to offer
+		and
+			has "capture of Kornephoros"
+			has "Kornephoros and Sabik fleets merge"
+	npc kill
+		personality heroic staying plunders
+		government "Free Worlds"
+		system Sabik
+		ship "Vanguard" "F.S. Battlespork"
+		ship "Firebird" "F.S. Credit Report"
+		ship "Falcon" "F.S. Frisky"
+		ship "Bastion" "F.S. Pete'sa Shack"
+		ship "Sparrow" "F.S. Meteor"
+		ship "Sparrow" "F.S. Finch"
+	on complete
+	`	set "sf killed: done"
 
 mission "Sabik Fleet, no Kornephoros"
 	invisible
@@ -43,7 +64,6 @@ mission "Kornephoros Krusaders"
 		has "FW unique fleet population"
 	to fail
 		has "capture of Kornephoros"
-		
 	npc kill
 		personality heroic staying plunders
 		government "Free Worlds"
@@ -54,6 +74,8 @@ mission "Kornephoros Krusaders"
 		ship "Sparrow" "F.S. Finch"
 	on complete
 		set "kk killed: done"
+	on fail
+		set "Kornephoros and Sabik fleets merge"
 
 mission "Earth Defense Force"
 	invisible
