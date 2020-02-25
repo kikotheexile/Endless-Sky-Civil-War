@@ -16,12 +16,114 @@
 
 # Northern Union Intro / Pact
 
+mission "Northern Union Escort 1"
+	name "Restock the fleets"
+	description "Escort a number of yatchs to <destination>."
+	minor
+	autosave
+	source
+		near Haven 1 5
+	destination Foundry
+	to offer
+		has "event: remembrance day"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`As you are walking through the spaceport, a woman calls you over. "Are you for hire?" she asks.`
+			choice
+				`	"I am."`
+					goto job
+				`	"That depends on the job."`
+					goto job
+				`	"Not right now, but perhaps later."`
+					defer
+			label job
+			`	"You'll love this, its easy money." She says, "We need a fresh face to escort some perfectly legitimate businessmen into Syndicate space to purchase some Cruisers from them. The North is getting dangerous what with the Northern Union aggression and all." She winks. "So, naturally, these captians need new escorts to protect their fleets."` 
+			choice
+				`	"I'll take the job"`
+					goto accept
+				`	"You had me at 'Easy Money.' I'm in."`
+					goto accept
+				`	"I need a better ship first."`
+					defer
+				`	"Maybe in the future."`
+					defer
+				
+			label accept
+			`	"Great!" She says. "You'll be escorting six ships into Syndicate space. If they all make it safely there, you'll escort their shiny new Vanguards and Protectors back. Your payment will be four hundred thousand credits, paid in full upon completion."`
+				accept
+	
+	npc accompany save
+		personality escort timid
+		government Merchant
+		ship Bounder "Innocence"
+		ship Bounder "Princess Celestia"
+		ship Freighter "Icarus"
+		ship Arrow "Tom"
+		ship "Heavy Shuttle" "Fatale"
+		ship "Heavy Shuttle" "Shadow"
+
+	on accept
+		log "Serving as an escort for a Northern Union scheme, it seems they are buying vessels from the Syndicate."
+	
+	on fail
+		set "no second chances"
+	
+	on visit
+		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
+		
+mission "Northern Union Escort 1B"
+	landing
+	name "Restock the fleets"
+	description "Escort the new combat ships to <destination>."
+	autosave
+	source Foundry
+	destination Zenith
+	to offer
+		has "Northern Union Escort 1: done"
+	to fail
+		has "chosen sides"
+	
+	npc accompany save
+		personality escort timid
+		government Merchant
+		ship Bounder "Innocence"
+		ship Bounder "Princess Celestia"
+		ship Freighter "Icarus"
+		ship Arrow "Tom"
+		ship "Heavy Shuttle" "Fatale"
+		ship "Heavy Shuttle" "Shadow"
+		ship Vanguard "Gand Harbinger"
+		ship Vanguard "Galaxy's Passenger"
+		ship Vanguard "Analyzer"
+		ship Vanguard "Assassin"
+		ship Protector "Tortoise"
+		ship Protector "Porpoise"
+
+	on offer
+		conversation
+			`Your convoy of freighters reaches <origin> intact without issue. The merchant captains disembark and head for the shipyard, where they purchase the new vessels. When ready, they give you the signal to take off, and prepare to follow you to <destination>`
+				accept
+	
+	on complete
+		payment 400000
+		conversation
+			`You are met at the spaceport by the same woman from before. She thanks you and the other captains for your service, and pays you each <payment>. "This was too easy," she says, "so of course we're going to push our luck. Meet me at the nearest spaceport bar if you are interested in making some more money."`
+	
+	on fail
+		set "no second chances"
+	
+	on visit
+		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
+
+
 mission "Meeting an Alpha 0"
 	name "Transport a Warlord"
 	description "This dejected looking pirate warlord asked if you could transport him to <destination>."
 	minor
 	source
-		government "Northern Union"
+		near Haven 1 10
 	destination Haven
 	to offer
 		has "event: remembrance day"
