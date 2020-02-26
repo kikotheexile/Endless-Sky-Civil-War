@@ -94,7 +94,7 @@ mission "Northern Union Escort 1B"
 		ship Arrow "Tom"
 		ship "Heavy Shuttle" "Fatale"
 		ship "Heavy Shuttle" "Shadow"
-		ship Vanguard "Gand Harbinger"
+		ship Vanguard "Grand Harbinger"
 		ship Vanguard "Galaxy's Passenger"
 		ship Vanguard "Analyzer"
 		ship Vanguard "Assassin"
@@ -103,7 +103,7 @@ mission "Northern Union Escort 1B"
 
 	on offer
 		conversation
-			`Your convoy of freighters reaches <origin> intact without issue. The merchant captains disembark and head for the shipyard, where they purchase the new vessels. When ready, they give you the signal to take off, and prepare to follow you to <destination>`
+			`Your convoy of yatchs reaches <origin> intact without issue. The merchant captains disembark and head for the shipyard, where they purchase the new vessels. When ready, they give you the signal to take off, and prepare to follow you to <destination>`
 				accept
 	
 	on complete
@@ -116,6 +116,165 @@ mission "Northern Union Escort 1B"
 	
 	on visit
 		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
+
+mission "Northern Union Escort 2"
+	name "Restock the fleets again"
+	description "Escort a number of yatchs to <destination>."
+	minor
+	autosave
+	source Longjump
+	destination Foundry
+	to offer
+		has "Northern Union Escort 1B: done"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`All of the escort captians, yourself included, have stuck around for another mission. The woman meets you in the spaceport and and says, "Hi everyone! I think its past time you learn for sure who you are working for. You can call me Ruby, I'm formerly Syndicated Security specializing in corporate espionage. Defected to the Northern Union when the Syndicate disavowed my actions and left me hanging during a raid on a Deep Sky research lab. So this is my way of getting back at them, and getting us all filthy rich in the process." She grins and looks around the room, "Well, now that you all know who you're working for and why I'm doing this, I have another job offer for you. It's the same deal as before, and same payment. Go get these Cruisers, bring them back. Try not to attract too much attention."`
+			choice
+				`	(Volunteer.)`
+				`	(Go find some other work to do.)`
+					defer
+			
+			`	"Nice!" says Ruby. "I knew the money was too good to pass up. As long as nothing goes wrong, you'll all be stinking rich by the end of this!"`
+				accept
+				
+	npc accompany save
+		personality escort timid
+		government Merchant
+		ship Bounder "Innocence"
+		ship Bounder "Princess Celestia"
+		ship Freighter "Icarus"
+		ship Arrow "Tom"
+		ship "Heavy Shuttle" "Fatale"
+		ship "Heavy Shuttle" "Shadow"
+
+	on fail
+		set "no second chances"
+	
+	on visit
+		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
+
+mission "Northern Union Escort 2B"
+	landing
+	name "Restock the fleets"
+	description "Escort the new combat ships to <destination>."
+	autosave
+	source Foundry
+	destination Zenith
+	to offer
+		has "Northern Union Escort 2: done"
+	to fail
+		has "chosen sides"
+
+	npc accompany save
+		personality escort timid
+		government Merchant
+		ship Bounder "Innocence"
+		ship Bounder "Princess Celestia"
+		ship Freighter "Icarus"
+		ship Arrow "Tom"
+		ship "Heavy Shuttle" "Fatale"
+		ship "Heavy Shuttle" "Shadow"
+		ship Vanguard "Brute"
+		ship Vanguard "Vindicator"
+		ship Vanguard "Colossus"
+		ship Vanguard "Disciple"
+		ship Protector "Constellation"
+		ship Protector "Revenant"
+
+	npc
+		personality plunders entering
+		government Pirate
+		fleet "Large Northern Pirates"
+	npc
+		personality plunders staying
+		government Pirate
+		fleet "Large Southern Pirates"
+		system "Sheratan"
+	npc
+		personality plunders staying
+		government Pirate
+		fleet "Large Southern Pirates"
+		system "Alcyone"
+	npc
+		personality plunders waiting
+		government Pirate
+		fleet "Large Southern Pirates" 2
+		system "Endios"
+
+	on offer
+		conversation
+			`Your convoy of yatchs reaches <origin> once again without issue. The merchant captains disembark and head for the shipyard, where they purchase the next batch of cruisers. When ready, they give you the signal to take off, and prepare to follow you to <destination>. One mentions that they can't shake the feeling they're being watched...`
+				accept
+	
+	on complete
+		payment 400000
+		conversation
+			`You are met at the spaceport by Ruby again. She thanks you and the other captains for your service, and pays you each <payment>. "Some of these ships look a little scratched up," she says, "that's not a good sign. I think we might have one last run in us before I need to find fresh faces. I'll start recruiting now. Come find me in the spaceport if you are interested in trying again."`
+
+mission "Northern Union Escort Finale"
+	landing
+	name "Deliver the vessels to <destination>."
+	description "Escort the new combat ships to <destination> and retire the invaders!"
+	autosave
+	source Zenith
+	destination "Lost Cause"
+	to offer
+		has "Northern Union Escort 2B: done"
+	to fail
+		has "chosen sides"
+
+	npc 
+		personality escort heroic
+		government "Northern Union"
+		ship Vanguard "Grand Harbinger"
+		ship Vanguard "Galaxy's Passenger"
+		ship Vanguard "Analyzer"
+		ship Vanguard "Assassin"
+		ship Protector "Tortoise"
+		ship Protector "Porpoise"
+		ship Vanguard "Brute"
+		ship Vanguard "Vindicator"
+		ship Vanguard "Colossus"
+		ship Vanguard "Disciple"
+		ship Protector "Constellation"
+		ship Protector "Revenant"
+
+	npc evade
+		personality plunders staying
+		government "Cartel"
+		system Aganippe
+		fleet "Small Core Pirates" 4
+		fleet "Large Core Pirates"
+	
+	on offer
+		conversation
+			`You track down Ruby in the spaceport, she is once again flagging down merchant captians as they disembark their ships.`
+			choice
+				`	"I'm here for my final assignment."`
+				`	"I heard you had a job for me?"`
+				`	(Go find some other work to do.)`
+					defer
+			
+			`	"Yes hello again!" she shouts, seeming relieved to see you. "I do have a job for you, but unfortunately its not going to be what you expected. It turns out the Syndicate is onto us, and has hired the cartel to blockade <destination>. Are you down for some light combat?"`
+			choice
+				`	"Sure am."`
+				`	"Any excuse to kill Cartel thugs is a good excuse."`
+				`	"I really shouldn't take combat jobs. I'll pass.`
+					decline
+			`	"Awesome!" she says, "You'll be joining the vessels we previously purchased. Get to <destination>, disable or destroy the Cartel blockade, and deliver the ships. The payment of <payment> will be transferred directly to your account upon confirmation that the vessels were safely delivered."`
+				accept
+	
+	on visit
+		dialog "You have reached <planet>, but you either left part of the convoy behind, or there are still Cartel ships in orbit. Better depart to take care of that!"
+
+	on complete
+		"assisted northern union" ++
+		payment 800000
+		dialog `Ruby contacts you soon after you land. "Very nicely done!" she says, "Not many merchants are willing to do this kind of heavy lifting. Your reward of <payment> has been transferred to your account, and I also put in a good word for you with the Northern Union's partnership committee.`
+		log "People" "Ruby" `Ruby is a former Syndicated Security officer with a grudge. She is currently working to make her fortune with the Northern Union, and is on their Partnership Committee.`
+					
 
 
 mission "Meeting an Alpha 0"
@@ -456,7 +615,7 @@ mission "Meeting an Alpha 3"
 		"assisted northern union" ++
 		payment 100000
 		dialog
-			`As you land, you receive a direct message from Gavin's ship. "I'm sorry that we'll not be meeting in person again, <first>, but I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues, "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership."`
+			`As you land, you receive a direct message from Gavin's ship. "I'm sorry that we'll not be meeting in person again, <first>, but I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues, "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership committee."`
 
 
 # Northern Union Resources
