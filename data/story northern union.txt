@@ -559,6 +559,7 @@ mission "Meeting an Alpha 3"
 		has "chosen sides"
 	destination Haven
 	on offer
+		"gunslinger" ++
 		outfit "Lucky" 1
 		conversation
 		`	After your normal routine of walking around the spaceport, you wander off towards the landing pad closest to the outfitter. As you approach, you hear shots from various weapons being fired.`
@@ -617,6 +618,200 @@ mission "Meeting an Alpha 3"
 		payment 100000
 		dialog
 			`As you land, you receive a direct message from Gavin's ship. "I'm sorry that we'll not be meeting in person again, <first>, but I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues, "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership committee."`
+
+mission "NU Bounty 1"
+	name "Northern Union Bounty Hunting"
+	description `Hunt down and destroy the <npc>. It was were last seen the Seginus system.`
+	minor
+	source
+		planet Haven
+	destination Haven
+	to offer
+		"combat rating" > 150
+		random < 85
+		not "chosen sides"
+	passengers 1
+	
+	on offer
+		conversation
+			`As you walk through the desert waste that is Haven's spaceport, a man in a duster and rediculous looking cowboy hat flags you down. "Are you Captain of the <ship>?" he asks. You nod. "I'm a famous bounty hunter," he says. "Names Mouser, maybe you've heard of me?"`
+			choice
+				`	"Who?"`
+					goto who
+				`	"Thats an awfully fancy hat."`
+					goto hat
+				`	"If you're offering me a job, I'm not interested."`
+					decline
+				`	"Sure, Mouser, I've heard of you."`
+					goto lie
+					
+			label who
+			`	"Mouser, the bounty hunter?" he says doing a pose, "I had a drama about my life and everything. You must just not follow that sort of thing." He pauses looking a bit disappointed, then he lights up. "Hey, I approached you because I have a job. I'm hunting the captian of the <npc>, wanted dead. Our ships were about equally matched, so unfortunately I had to retreat. Feel like finishing them off? I'll split the payment."`
+			choice
+				`	"I'm in."`
+					accept
+				`	"I'm in, but I need more details"
+					goto accept
+				`	"Not interested."`
+					decline
+					
+			label hat
+			`	"You really like it? Thank you! I had it made custom." he states, clearly unused to getting praise for his attire. "Let's get back to business though. The captain of the <npc> has apparently aggravated the wrong people, because he has a huge bounty on his head. Dead only. I managed to disable them in my ship, but was forced to fall back for repairs. Are you interested in finishing them off and splitting the bounty?"
+			choice
+				`	"I'm in."`
+					accept
+				`	"I'm in, but I need more details"
+					goto accept
+				`	"Not interested."`
+					decline
+					
+			label lie
+			`	"So you also know my reputation," he says, "You must also know that I hunt the most dangerous people in the galaxy, then! The captain of the <npc> is one such person, and he has quite the bounty on him. Dead only. I managed to disable them in my ship, but was forced to fall back for repairs. Are you interested in finishing them off and splitting the bounty?"
+			choice
+				`	"I'm in."`
+					accept
+				`	"I'm in, but I need more details."
+					goto accept
+				`	"Not interested."`
+					decline
+			label accept
+			`	"Fantastic!" he shouts, "The NPC is an absolutely menacing headhunter, which is stranded in Rajak. They should be just about done with repairs by the time we arrive."
+				accept
+	on accept
+		log "I signed on with a bounty hunter called Mouser to hunt down some dangerous individuals."
+	
+	npc kill
+		personality heroic staying nemesis target
+		government Bounty
+		system Rajak
+		ship "Headhunter" "Rubber Ducky"
+		dialog `The <npc> has been eliminated. You can claim the bounty payment by returning to <destination>.`
+	
+	on complete
+		payment 20000
+		dialog `When you drop off Mouser he tells you to stay put for a moment. Returning some time later with a rather paltry sum of <payment>, he congratulates you. "A good payment for a hard fought battle. Look me up around the spaceport here on Haven if you are interested in more work." He pats you on the shoulder and walks away.`
+
+mission "NU Bounty 2"
+	name "Corporate Espionage"
+	description "Visit <destination> and find out whatever information you can on the Proton Turret."
+	source
+		planet Haven
+	to offer
+		has "NU Bounty 1: done"
+	to fail
+		has "chosen sides"
+	destination Haven
+	on offer
+		conversation
+			`	As you once again wander the dusty spaceport on <planet>, you encounter mouser again. He is poorly hidden behind a stack of crates, and is signalling you over to meet with him.`
+			choice
+				`	(Meet with him.)`
+				`	(Leave.)`
+					defer
+			`	"Well, if it isn't my old pal, uh, I never caught your name." he whispers to you, "I've got another job that I could use your help on. Say, by any chance are you experienced with a gun?"`
+			branch gunslinger
+				has "gunslinger" >= 1
+			choice
+				`	"None whatsoever."`
+				`	"I'm a fast study."`
+				`	(Just walk away.)`
+					defer
+			`	"Well that could be problematic" he says, "I'm going to level with you, I need to capture someone alive. That someone happens to have their own ship and crew, and I dont think I can take them all on alone. Will you help me?"` 
+			choice
+				`	"No."`
+					decline
+				`	"Sure."`
+					goto sure
+			
+			label gunslinger
+			`	"You do!" He exclaims, "I could tell by the look in your eyes as soon as I asked. By any chance would you be willing to help me capture a bounty alive? It may require we shoot some things, and possibly people."`
+			choice
+				`	"No."`
+					decline
+				`	"Sure."`
+					goto sure
+			
+			label sure
+			`	Mouser is absolutely beaming at this statement. "Fantastic!" he shouts "Our target is aboard a Leviathan parked not far from here. Almost the entire crew is out on shore leave, save some personal guards and dock workers. This should be easy with the two of us. Follow me." He keeps himself crouched over, and hides behind any cover he can while the two of you make the long trek across town to the docked warship.`
+			`	As you finally arrive at the Leviathan, Mouser points to the vessel. Being the only ship docked on this side of town, it was impossible to miss anyway. "There it is," He whispers excitedly, "This is our target. So, uh, how do you want to approach this?"`
+			choice
+				`	"Frontal assault."`
+					goto assault
+				`	"Sneak in by loading ourselves into a crate."`
+					goto crate
+				`	"Just walk into the ship like we're part of the crew."`
+					goto crew
+			
+			label assault
+			set
+				"gunslinger"++
+			`	"A brilliant and unexpected tactic!" He exclaims, before laying down fire on the unsuspecting dock workers who are unloading cargo from the Leviathan. Being unarmed, innocent bystanders, they of course run at the first sign of violence. You find yourself in the cargo bay and consider your next move.`
+				goto cargo
+			label crate
+			`	"Captain, are you trying to get close to me? Because all you need do is ask." He uncomfortably winks with one eye, then the other, before crawling into a crate barely big enough for the two of you. Before you get a chance to reconsider your options, he grabs you and pulls you in as well, and pulls shut the lid over you. As he does so, you catch a glimps of the label, which reads "Bulkhead grinder." These tools are generally only used in decomissions and refits.`
+			`	An uncomfortable amount of time is spent in this cramped crate with this creepy bounty hunter, the two of you stare at each other in silence as eventually the dockworkers retrieve and load your crate into the cargo bay. After some more time sitting in silence with this strange man and his cowboy hat, he opens the crate. You find yourselves in the cargo bay, just up the loading ramp from where you began.`
+				goto cargo
+			label crew
+			`	The two of you calmly walk up the ramp into the cargo bay. Neither the ships crew nor the dock workers acknowledge your presence as you enter the cargo bay and consider your next move.`
+				goto cargo
+			
+			label cargo
+			`	Considering the only accessible ramp leading into the ship was the cargo ramp, it is no surprise that you ended up in the cargo bay. Mouser asks you what your next move will be.`
+			choice
+				`	(To the Bridge!)`
+					goto bridge
+				`	(Ask a member of the crew where the captain is.)`
+					goto quarters
+				`	(To engineering, sabotage the ship!)`
+					goto engineering
+				`	(Look for items of value in the cargo hold.)`
+					goto loot
+					
+			label loot
+			apply
+				set "greedy bountyhunter"
+			`	You quickly look for anything small enough to pocket, or anything you can carry on your person that wont slow you down. You manage to find a backpack and a satchel. You have no time to investigate their contents, so you grab them and wear them. You still have to decide where to go next. 
+				`	(To the Bridge!)`
+					goto bridge
+				`	(Ask a member of the crew where the captain is.)`
+					goto crew
+				`	(To engineering, sabotage the ship!)`
+					goto engineering
+					
+			label bridge
+			apply
+				set "lost bounty"
+			`	You and mouser quickly rush to the bridge in order to capture the Captain of this vessel, only to find the room completely empty. As you look around and try to find any clues as to where the Captain might be, the eerie silence begins to set in.`
+			`	Mouser feels it too, and soon he begins swearing. "They sold the ship, it's being scrapped! We surely missed our chance to capture the target this time, I'll find him again. Just you wait! I'll call you when I have a lead."`
+			`	Although you made the logical choice of assuming the target would be on the bridge, you were wrong this time. Defeated, you return to your ship.`
+				decline
+			
+			label engineering
+			apply
+				set "lost bounty"
+			`	Engineering is to the aft of the ship, and on a leviathan that's no short walk. As you approach your destination, the hallways are getting progressively messier and less kept. Eventually you arrive in the engine room, only to find the whole thing gutted.`
+			`	Mouser is irate, and begins swearing and kicking debries. "They sold the ship, it's being scrapped! There's no way our target is still aboard now. Fear not, for I will track him down and we will still get our bounty. Just not today."
+			`	You didn't make a bad choice by going to the engine room, you were just unlucky. Defeated, you return to your ship.`
+				decline 
+				
+				
+			label crew
+			`	Crew on this ship is shockingly difficult to find, but eventually you flag one down and ask where the captain is. The crewman is surprisingly forthcoming with his information, and informs you that your target is in the crew quarters looting whatever of value he can find before leaving the ship behind. Do you believe him?`
+			choice
+				`	(No. To the Bridge!)`
+					goto bridge
+				`	(No. To engineering, let's sabotage the ship!)`
+					goto engineering
+				`	(Yes, to crew quarters!)`
+					goto quarters
+			
+			label quarters
+			apply
+				set "captured bounty"
+			`	You and mouser quickly rush to the crew quarters in order to capture the Captain of this vessel. As you look around and try to find any clues as to where the Captain might be, you hear footsteps exiting a room up ahead of you.`
+			`	Mouser raises his gun and begins barking commands, the startled captain of course complies. "I don't know what you did to anger the partnership, but it must have been really bad if they want you back alive." Mouse says to the captain, who resigned himself to his fate.`
+			`	You and Mouser escort the captain off of the leviathan at gunpoint. "I have it from here captain, return to your ship. I'll forward your half of the money as soon as I have it, but neither of us are getting paid until I turn him in." Protesting would do you no good, so you return to your ship.`
+				decline
 
 
 # Northern Union Resources
