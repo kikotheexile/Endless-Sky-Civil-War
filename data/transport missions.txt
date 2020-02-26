@@ -1487,7 +1487,7 @@ mission "Hallucination"
 		
 	on complete
 		log `Agreed to transport illegal drugs. Tried some of them while refueling and instantly regretted it. The sky truly is endless.`
-
+		"sanity" ++
 
 
 mission "Shady passenger transport 1"
@@ -1718,6 +1718,7 @@ mission "Shady passenger transport 3 - double cross"
 	on complete
 		dialog `You hand off your prisoners to the planetary authorities who gratefully take them into custody. It turns out that they were wanted, and there's a substantial bounty. You find yourself richer to the tune of <payment>.`
 		payment 250000
+		"sanity" ++
 
 	npc
 		government "Bounty Hunter"
@@ -2639,7 +2640,7 @@ mission "A wolf, a goat, and a cabbage"
 		dialog
 			`The man who collects the wolf from you on the landing pad is furious. "I told the shipping company not to put the goat in the same ship as the wolf or the cabbage," he says, "but I guess they tried to save money by subcontracting it all to the same captain."`
 			`	Because you only delivered a third of the cargo safely, he only pays you 33,000 credits.`
-
+		"sanity" ++
 
 
 mission "Terminus exploration"
@@ -3469,3 +3470,4 @@ mission "Inheritance Redirection"
 				decline
 	on complete
 		dialog "There is no inheritance for Mr. Pappa waiting for you at the bank, but there are many other victims that paid some credits while expecting to earn a larger amount of credits in return. Some make a big fuss about it, until the alerted authorities start fining them for attempted inheritance fraud. You leave the bank in silence."
+		"sanity" ++
