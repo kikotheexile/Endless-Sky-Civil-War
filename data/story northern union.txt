@@ -212,6 +212,7 @@ mission "Northern Union Escort 2B"
 		payment 400000
 		conversation
 			`You are met at the spaceport by Ruby again. She thanks you and the other captains for your service, and pays you each <payment>. "Some of these ships look a little scratched up," she says, "that's not a good sign. I think we might have one last run in us before I need to find fresh faces. I'll start recruiting now. Come find me in the spaceport if you are interested in trying again."`
+		"reputation: Cartel" = -1000
 
 mission "Northern Union Escort Finale"
 	landing
