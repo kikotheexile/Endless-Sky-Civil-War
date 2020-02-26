@@ -620,7 +620,7 @@ mission "Meeting an Alpha 3"
 			`As you land, you receive a direct message from Gavin's ship. "I'm sorry that we'll not be meeting in person again, <first>, but I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues, "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership committee."`
 
 mission "NU Bounty 1"
-	name "Northern Union Bounty Hunting"
+	name "Wanted: Dead"
 	description `Hunt down and destroy the <npc>. It was were last seen the Seginus system.`
 	minor
 	source
@@ -692,8 +692,8 @@ mission "NU Bounty 1"
 		dialog `When you drop off Mouser he tells you to stay put for a moment. Returning some time later with a rather paltry sum of <payment>, he congratulates you. "A good payment for a hard fought battle. Look me up around the spaceport here on Haven if you are interested in more work." He pats you on the shoulder and walks away.`
 
 mission "NU Bounty 2"
-	name "Corporate Espionage"
-	description "Visit <destination> and find out whatever information you can on the Proton Turret."
+	name "Wanted: Dead or Alive"
+	description "Sneak aboard a pirate leviathan and capture its Captain."
 	source
 		planet Haven
 	to offer
@@ -813,6 +813,84 @@ mission "NU Bounty 2"
 			`	You and Mouser escort the captain off of the leviathan at gunpoint. "I have it from here captain, return to your ship. I'll forward your half of the money as soon as I have it, but neither of us are getting paid until I turn him in." Protesting would do you no good, so you return to your ship.`
 				decline
 
+mission "NU Bounty 2B"
+	landing
+	name "Wanted: Dead or Alive, Redemption"
+	description "Find and kill the <npc>, last seen near the Cardax system."
+	source
+		random < 40
+		near Arneb 1 20
+	destination "Haven"
+	to offer
+		random < 40
+		not "chosen sides"
+		has "lost bounty"
+	
+	on offer
+		dialog
+			`You receive a message from Mouser. "I've got something a little dangerous for you today." he says, "That pirate who got away has been spotted flying a Firebird named the <npc> near Cardax. Are you interested in finishing him off?"`
+	
+	npc kill
+		government "Pirate"
+		personality staying plunders disables
+		system "Volax"
+		ship "Firebird" "Can Nibble"
+	
+	on complete
+		set "captured bounty"
+		dialog
+			`You report to Mouser that you have killed the <npc> and provide sensor logs as evidence. He thanks you, and but oddly enough doesn't pay you. "Always a pleasure working with you, captain. I'll transfer your half of the money to you as soon as I am paid."`
+
+mission "dead or alive payment"
+	invisible
+	priority
+	landing
+	source
+		near Arneb 1 50	
+	destination "New Greenland"
+	to offer
+		has "captured bounty"
+	on offer
+		set "doa complete"
+		payment 250000
+		dialog `You recieve a message from Mouser letting you know that he has transferred your half of the bounty to your account. You have recieved <payment> for your trouble.`
+
+mission "NU Bounty 3"
+	landing
+	name "Wanted: Alive"
+	description "A ship with a price on it in orbit around <planet>. Fight and disable it (but do not board or destroy it!) and then land to collect your bounty."
+	source Haven
+	to offer
+		has "doa complete"
+	
+	on offer
+		conversation
+			`You receive a message recently from Mouser asking you to stop by the spaceport to help hunt another pirate. Do you take him up on the offer?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					defer
+
+			`	"I'm glad you decided to join us!" Mouser exclaims, while being the only person in the room. "Captain this job is so easy that you could probably do it on your own. The <npc> is a unique ship, and was for a long time believed lost to time. A heavily modified Leviathan with expanded weapons capability. But here's the best part! The bounty is on the ship, not any member of the crew. So all you need to do is get into orbit and disable it, then we collect our pay! Just disable it. Do not board it, steal it, loot it, or destroy it." 
+			choice
+				`	"Okay, I promise not to destroy it or steal it."`
+				`	"Are you expecting a pinky promise? I'll do my best."`
+				`	"I'll resist the temptation to steal the legendary heavily armed leviathan."`
+				`	"Sorry, this sounds a bit too risky. I'd rather not be involved in this sort of testing."`
+					decline
+			`	"Great," he says, with a gleeful expression on his face. He's clearly looking forward to the payday this will bring in.`
+				accept
+	
+	npc save disable
+		personality disables staying heroic
+		government "Test Dummy"
+		ship "Bakunawa" "Bakunawa"
+
+	on complete
+		"assisted northern union" ++
+		payment 2000000
+		dialog
+			`As you land, you receive a direct message from Mouser as well as a notification of a payment hitting your account. "Great job disabling the <npc>! I have already disabled its self distruct capabilities and informed the client that the ship is now theirs. They have already sent me the money, and I have forwarded your half, <payment>, to your account. The client is also on the Partnership committee, and will put a good word in for you."`
 
 # Northern Union Resources
 
