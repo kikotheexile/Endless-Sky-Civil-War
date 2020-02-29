@@ -650,32 +650,32 @@ mission "NU Bounty 1"
 			choice
 				`	"I'm in."`
 					accept
-				`	"I'm in, but I need more details"
+				`	"I'm in, but I need more details"`
 					goto accept
 				`	"Not interested."`
 					decline
 					
 			label hat
-			`	"You really like it? Thank you! I had it made custom." he states, clearly unused to getting praise for his attire. "Let's get back to business though. The captain of the <npc> has apparently aggravated the wrong people, because he has a huge bounty on his head. Dead only. I managed to disable them in my ship, but was forced to fall back for repairs. Are you interested in finishing them off and splitting the bounty?"
+			`	"You really like it? Thank you! I had it made custom." he states, clearly unused to getting praise for his attire. "Let's get back to business though. The captain of the <npc> has apparently aggravated the wrong people, because he has a huge bounty on his head. Dead only. I managed to disable them in my ship, but was forced to fall back for repairs. Are you interested in finishing them off and splitting the bounty?"`
 			choice
 				`	"I'm in."`
 					accept
-				`	"I'm in, but I need more details"
+				`	"I'm in, but I need more details"`
 					goto accept
 				`	"Not interested."`
 					decline
 					
 			label lie
-			`	"So you also know my reputation," he says, "You must also know that I hunt the most dangerous people in the galaxy, then! The captain of the <npc> is one such person, and he has quite the bounty on him. Dead only. I managed to disable them in my ship, but was forced to fall back for repairs. Are you interested in finishing them off and splitting the bounty?"
+			`	"So you also know my reputation," he says, "You must also know that I hunt the most dangerous people in the galaxy, then! The captain of the <npc> is one such person, and he has quite the bounty on him. Dead only. I managed to disable them in my ship, but was forced to fall back for repairs. Are you interested in finishing them off and splitting the bounty?"`
 			choice
 				`	"I'm in."`
 					accept
-				`	"I'm in, but I need more details."
+				`	"I'm in, but I need more details."`
 					goto accept
 				`	"Not interested."`
 					decline
 			label accept
-			`	"Fantastic!" he shouts, "The NPC is an absolutely menacing headhunter, which is stranded in Rajak. They should be just about done with repairs by the time we arrive."
+			`	"Fantastic!" he shouts, "The NPC is an absolutely menacing headhunter, which is stranded in Rajak. They should be just about done with repairs by the time we arrive."`
 				accept
 	on accept
 		log "I signed on with a bounty hunter called Mouser to hunt down some dangerous individuals."
@@ -770,7 +770,7 @@ mission "NU Bounty 2"
 			label loot
 			apply
 				set "greedy bountyhunter"
-			`	You quickly look for anything small enough to pocket, or anything you can carry on your person that wont slow you down. You manage to find a backpack and a satchel. You have no time to investigate their contents, so you grab them and wear them. You still have to decide where to go next. 
+			`	You quickly look for anything small enough to pocket, or anything you can carry on your person that wont slow you down. You manage to find a backpack and a satchel. You have no time to investigate their contents, so you grab them and wear them. You still have to decide where to go next.`
 				`	(To the Bridge!)`
 					goto bridge
 				`	(Ask a member of the crew where the captain is.)`
@@ -790,7 +790,7 @@ mission "NU Bounty 2"
 			apply
 				set "lost bounty"
 			`	Engineering is to the aft of the ship, and on a leviathan that's no short walk. As you approach your destination, the hallways are getting progressively messier and less kept. Eventually you arrive in the engine room, only to find the whole thing gutted.`
-			`	Mouser is irate, and begins swearing and kicking debries. "They sold the ship, it's being scrapped! There's no way our target is still aboard now. Fear not, for I will track him down and we will still get our bounty. Just not today."
+			`	Mouser is irate, and begins swearing and kicking debries. "They sold the ship, it's being scrapped! There's no way our target is still aboard now. Fear not, for I will track him down and we will still get our bounty. Just not today."`
 			`	You didn't make a bad choice by going to the engine room, you were just unlucky. Defeated, you return to your ship.`
 				decline 
 				
@@ -871,7 +871,7 @@ mission "NU Bounty 3"
 				`	(No.)`
 					defer
 
-			`	"I'm glad you decided to join us!" Mouser exclaims, while being the only person in the room. "Captain this job is so easy that you could probably do it on your own. The <npc> is a unique ship, and was for a long time believed lost to time. A heavily modified Leviathan with expanded weapons capability. But here's the best part! The bounty is on the ship, not any member of the crew. So all you need to do is get into orbit and disable it, then we collect our pay! Just disable it. Do not board it, steal it, loot it, or destroy it." 
+			`	"I'm glad you decided to join us!" Mouser exclaims, while being the only person in the room. "Captain this job is so easy that you could probably do it on your own. The <npc> is a unique ship, and was for a long time believed lost to time. A heavily modified Leviathan with expanded weapons capability. But here's the best part! The bounty is on the ship, not any member of the crew. So all you need to do is get into orbit and disable it, then we collect our pay! Just disable it. Do not board it, steal it, loot it, or destroy it."`
 			choice
 				`	"Okay, I promise not to destroy it or steal it."`
 				`	"Are you expecting a pinky promise? I'll do my best."`
