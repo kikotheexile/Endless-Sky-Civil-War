@@ -1,13 +1,11 @@
-Welcome to Endless Sky!
-version 0.9.10
+Welcome to Endless Sky: Stories!
 
 This game is open source.
 To report bugs, give feedback,
 or contribute to story writing,
 artwork, or programming, visit:
-https://endless-sky.github.io
-The game's Steam forums
-Discord (invite: ZeuASSx)
+https://github.com/kikotheexile
+Discord (invite: ND788CC)
 
 Programming
   Michael Zahniser
