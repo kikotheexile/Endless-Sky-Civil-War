@@ -30,7 +30,12 @@ mission "Pact Recon 0"
 	
 	on offer
 		conversation
-			`	It's difficult to ignore the freighter parked beside your own, pockmarked with blaster scars as well as larger dents, you can only image that it's tangled with pirates or worse. The crew is hard at work welding new hull plating onto it, but it looks like a losing battle as you overhear scraps of the conversation between the captain and a rather animated young militia officer. "Beginning to wonder if Captain life isn't all it's cracked up to be?" The captain says, noticing your blatant attempt to eavesdrop.`
+			`	It's difficult to ignore the freighter parked beside your own, pockmarked with blaster scars as well as larger dents, you can only image that it's tangled with pirates or worse. The crew is hard at work welding new hull plating onto it, but it looks like a losing battle as you overhear scraps of the conversation between the captain and a rather animated young militia officer.`
+			choice
+				`	(Listen in.)`
+				`	(Ignore Them.)`
+					decline 
+			`	"Beginning to wonder if Captain life isn't all it's cracked up to be?" The captain says, noticing your blatant attempt to eavesdrop.`
 			choice
 				`	"I'm wondering if there's anything I can do to keep my ship from going through the ringer like that."`
 					goto ringer
