@@ -3315,7 +3315,7 @@ ship "Bactrian"
 	description "The Lionheart Bactrian is the last of the great city-ships, a design hearkening back to the early days of space colonization when a long-distance vessel needed to be a self-contained world, able to survive for weeks at a time without encountering an inhabited planet. It is not only a freighter, but a carrier, and a capable warship either at short range or at a distance."
 	description "	Naturally, this versatility also makes it extremely expensive, and the Bactrian is normally only for sale to citizens who have been vetted by the local government of the Deep."
 	
-	# Battle Cruisers
+# Battle Cruisers
 	
 ship "Prototype Vulture"
 	sprite "ship/vulture"
@@ -3476,7 +3476,7 @@ ship "Veles"
 	explode "large explosion" 70
 	explode "huge explosion" 30
 	"final explode" "final explosion large" 1
-	description "The Veles class is an incredible feat of engineering. A first of its kind true Star Cruiser, intended to single handedly crush the Northern Union. This ship signals a resurgence in Betelgeuse's research and development department, which has finally come out of it's centuries long stagnation."
+	description "The Veles class is an incredible feat of engineering. A first of its kind true Star Cruiser, intended to single handedly crush the Northern Union. This ship signals a resurgence in Betelgeuse's research and development department, which has finally come out of its centuries-long stagnation."
 
 
 # "Marauders"
@@ -4059,7 +4059,7 @@ ship "Bakunawa" "Marauder Leviathan (Weapons)"
 	turret 14.5 -11.5 "Heavy Laser Turret"
 	turret -26 11.5 "Heavy Laser Turret"
 	turret 26 11.5 "Heavy Laser Turret"
-	description "This Leviathan once belonged to an infamous pirate captain whose name has been lost to the ages. It's had so much custom work done to it that can hardly even be considered the same ship; the weapons capacity, in particular, has been massively increased."
+	description "This Leviathan once belonged to an infamous pirate captain whose name has been lost to the ages. It's had so much custom work done to it that can hardly even be considered the same ship. The weapons capacity, in particular, has been massively increased."
 
 
 
