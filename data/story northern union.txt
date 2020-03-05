@@ -18,7 +18,7 @@
 
 mission "Northern Union Escort 1"
 	name "Restock the fleets"
-	description "Escort a number of yatchs to <destination>."
+	description "Escort a number of yachts to <destination>."
 	minor
 	autosave
 	source
@@ -30,7 +30,7 @@ mission "Northern Union Escort 1"
 		has "chosen sides"
 	on offer
 		conversation
-			`As you are walking through the spaceport, a woman calls you over. "Are you for hire?" she asks.`
+			`As you are walking through the spaceport, a woman calls you over and asks, "Are you for hire?"`
 			choice
 				`	"I am."`
 					goto job
@@ -39,19 +39,19 @@ mission "Northern Union Escort 1"
 				`	"Not right now, but perhaps later."`
 					defer
 			label job
-			`	"You'll love this, its easy money." She says, "We need a fresh face to escort some perfectly legitimate businessmen into Syndicate space to purchase some Cruisers from them. The North is getting dangerous what with the Northern Union aggression and all." She winks. "So, naturally, these captians need new escorts to protect their fleets."` 
+			`	"You'll love this, it's easy money." She says, "We need a fresh face to escort some perfectly legitimate businessmen into Syndicate space to purchase some Cruisers from them. The North is getting dangerous what with the Northern Union aggression and all." She winks and continues: "So, naturally, these captains need new escorts to protect their fleets."` 
 			choice
-				`	"I'll take the job"`
+				`	"I'll take the job."`
 					goto accept
-				`	"You had me at 'Easy Money.' I'm in."`
+				`	"You had me at 'easy money.' I'm in."`
 					goto accept
-				`	"I need a better ship first."`
+				`	"I'll need a better ship first."`
 					defer
 				`	"Maybe in the future."`
 					defer
 				
 			label accept
-			`	"Great!" She says. "You'll be escorting six ships into Syndicate space. If they all make it safely there, you'll escort their shiny new Vanguards and Protectors back. Your payment will be four hundred thousand credits, paid in full upon completion."`
+			`	"Great," she says, "you'll be escorting six ships into Syndicate space. If they all make it there safely, you'll escort their shiny new Vanguards and Protectors back. Your payment will be four hundred thousand credits, paid in full upon completion."`
 				accept
 	
 	npc accompany save
@@ -65,7 +65,7 @@ mission "Northern Union Escort 1"
 		ship "Heavy Shuttle" "Shadow"
 
 	on accept
-		log "Serving as an escort for a Northern Union scheme, it seems they are buying vessels from the Syndicate."
+		log "Serving as an escort for a Northern Union scheme. It seems they are buying vessels from the Syndicate."
 	
 	on fail
 		set "no second chances"
@@ -103,7 +103,7 @@ mission "Northern Union Escort 1B"
 
 	on offer
 		conversation
-			`Your convoy of yatchs reaches <origin> intact without issue. The merchant captains disembark and head for the shipyard, where they purchase the new vessels. When ready, they give you the signal to take off, and prepare to follow you to <destination>`
+			`Your convoy of yachts reaches <origin> intact without issues. The merchant captains disembark and head for the shipyard where they purchase the new vessels. Once ready, they give you the signal to take off, and prepare to follow you to <destination>.`
 				accept
 	
 	on complete
@@ -119,7 +119,7 @@ mission "Northern Union Escort 1B"
 
 mission "Northern Union Escort 2"
 	name "Restock the fleets again"
-	description "Escort a number of yatchs to <destination>."
+	description "Escort a number of yachts to <destination>."
 	minor
 	autosave
 	source Longjump
@@ -130,13 +130,13 @@ mission "Northern Union Escort 2"
 		has "chosen sides"
 	on offer
 		conversation
-			`All of the escort captians, yourself included, have stuck around for another mission. The woman meets you in the spaceport and and says, "Hi everyone! I think its past time you learn for sure who you are working for. You can call me Ruby, I'm formerly Syndicated Security specializing in corporate espionage. Defected to the Northern Union when the Syndicate disavowed my actions and left me hanging during a raid on a Deep Sky research lab. So this is my way of getting back at them, and getting us all filthy rich in the process." She grins and looks around the room, "Well, now that you all know who you're working for and why I'm doing this, I have another job offer for you. It's the same deal as before, and same payment. Go get these Cruisers, bring them back. Try not to attract too much attention."`
+			`All of the escort captains, yourself included, have stuck around for another mission. The woman meets you in the spaceport and and says: "Hi, everyone! I think it's past time you learn for sure who you are working for. You can call me Ruby. I'm formerly Syndicated Security specializing in corporate espionage. I defected to the Northern Union when the Syndicate disavowed my actions and left me hanging during a raid on a Deep Sky research lab. So this is my way of getting back at them, and getting us all filthy rich in the process." She grins and looks around the room, then continues: "Well, now that you all know who you're working for and why I'm doing this, I have another job offer for you. It's the same deal as before, and the same payment. Go get these cruisers and bring them back. Try not to attract too much attention."`
 			choice
 				`	(Volunteer.)`
 				`	(Go find some other work to do.)`
 					defer
 			
-			`	"Nice!" says Ruby. "I knew the money was too good to pass up. As long as nothing goes wrong, you'll all be stinking rich by the end of this!"`
+			`	"Nice," says Ruby, "I knew the money was too good to pass up on. As long as nothing goes wrong, you'll all be stinking rich by the end of this!"`
 				accept
 				
 	npc accompany save
@@ -205,13 +205,13 @@ mission "Northern Union Escort 2B"
 
 	on offer
 		conversation
-			`Your convoy of yatchs reaches <origin> once again without issue. The merchant captains disembark and head for the shipyard, where they purchase the next batch of cruisers. When ready, they give you the signal to take off, and prepare to follow you to <destination>. One mentions that they can't shake the feeling they're being watched...`
+			`Your convoy of yachts reaches <origin> once again without issues. The merchant captains disembark and head for the shipyard, where they purchase the next batch of cruisers. When ready, they give you the signal to take off, and prepare to follow you to <destination>. One mentions that they can't shake the feeling they're being watched...`
 				accept
 	
 	on complete
 		payment 400000
 		conversation
-			`You are met at the spaceport by Ruby again. She thanks you and the other captains for your service, and pays you each <payment>. "Some of these ships look a little scratched up," she says, "that's not a good sign. I think we might have one last run in us before I need to find fresh faces. I'll start recruiting now. Come find me in the spaceport if you are interested in trying again."`
+			`You are met at the spaceport by Ruby again. She thanks you and the other captains for your service, and pays you each <payment>. "Some of these ships look a little scratched up," she says, "that's not a good sign. I think we might have one last run in us before I need to find fresh faces. I'll start recruiting now. Come find me in the spaceport if you are interested in trying once again."`
 		"reputation: Cartel" = -1000
 
 mission "Northern Union Escort Finale"
@@ -251,20 +251,20 @@ mission "Northern Union Escort Finale"
 	
 	on offer
 		conversation
-			`You track down Ruby in the spaceport, she is once again flagging down merchant captians as they disembark their ships.`
+			`You track down Ruby in the spaceport. She is once again flagging down merchant captains as they disembark their ships.`
 			choice
 				`	"I'm here for my final assignment."`
 				`	"I heard you had a job for me?"`
 				`	(Go find some other work to do.)`
 					defer
 			
-			`	"Yes hello again!" she shouts, seeming relieved to see you. "I do have a job for you, but unfortunately its not going to be what you expected. It turns out the Syndicate is onto us, and has hired the cartel to blockade <destination>. Are you down for some light combat?"`
+			`	"Yes, hello again," she shouts, seemingly relieved to see you, "I have a job for you, but unfortunately it's not going to be what you expected. It turns out the Syndicate is onto us, and has hired the Cartel to blockade <destination>. Are you down for some light combat?"`
 			choice
 				`	"Sure am."`
 				`	"Any excuse to kill Cartel thugs is a good excuse."`
 				`	"I really shouldn't take combat jobs. I'll pass.`
 					decline
-			`	"Awesome!" she says, "You'll be joining the vessels we previously purchased. Get to <destination>, disable or destroy the Cartel blockade, and deliver the ships. The payment of <payment> will be transferred directly to your account upon confirmation that the vessels were safely delivered."`
+			`	"Awesome," she says, "you'll be joining the vessels we previously purchased. Get to <destination>, disable or destroy the Cartel blockade, and deliver the ships. The payment of <payment> will be transferred directly to your account upon confirmation that the vessels were safely delivered."`
 				accept
 	
 	on visit
@@ -273,7 +273,7 @@ mission "Northern Union Escort Finale"
 	on complete
 		"assisted northern union" ++
 		payment 800000
-		dialog `Ruby contacts you soon after you land. "Very nicely done!" she says, "Not many merchants are willing to do this kind of heavy lifting. Your reward of <payment> has been transferred to your account, and I also put in a good word for you with the Northern Union's partnership committee.`
+		dialog `Ruby contacts you soon after you land. "Very nicely done," she says, "not many merchants are willing to do this kind of heavy lifting. Your reward of <payment> has been transferred to your account, and I also put in a good word for you with the Northern Union's partnership committee.`
 		log "People" "Ruby" `Ruby is a former Syndicated Security officer with a grudge. She is currently working to make her fortune with the Northern Union, and is on their Partnership Committee.`
 					
 
@@ -293,7 +293,7 @@ mission "Meeting an Alpha 0"
 	
 	on offer
 		conversation
-			`A man in a tattered and heavily defaced Navy uniform approaches you as you walk out of your ship and asks whether you would be willing to give him a lift to <destination>. His jacket has "Warlord Peg" stitched where the name patch normally would be.`
+			`A man in a tattered and heavily defaced Navy uniform approaches you as you walk out of your ship and asks whether you would be willing to give him a lift to <destination>. His jacket has "Warlord Peg" stitched where the name patch would normally be.`
 			choice
 				`	"Sure, I'd be glad to help!"`
 					accept
@@ -318,7 +318,7 @@ mission "Meeting an Alpha 0"
 	on complete
 		payment
 		dialog
-			`The warlord thanks you for the ride and pays you <payment>. As he is leaving he says, "If you're interested in meeting my boss, head to a shop called "The Rusted Wheel" and find my commander. He's impossible to miss, though try not to stare."`
+			`The warlord thanks you for the ride and pays you <payment>. As he is leaving he says: "If you're interested in meeting my boss, head to a shop called "The Rusted Wheel" and find my commander. He's impossible to miss, though try not to stare."`
 
 mission "Meeting an Alpha 1"
 	name "Free Worlds Reconnaissance"
@@ -332,13 +332,13 @@ mission "Meeting an Alpha 1"
 	
 	on offer
 		conversation
-			`If pirate worlds had a "nice side of town," the Rusted Wheel Cafe would be located in it. You enter this cute shop, and immediately hear a familiar voice. "Captain <last>, I knew you would join us."`
+			`If pirate worlds had a "nice side of town," the Rusted Wheel Cafe would be located in it. You enter the cafe, and immediately hear a familiar voice say: "Captain <last>, I knew you would join us."`
 			choice
 				`	"Glad to see you again, stranger. I did not catch your name before."`
 				`	(Politely wave, order a sandwich, and leave.)`
 					defer
 				`	"I really want a coffee, but the price here is outrageous."`
-			`	"Name's Pete, but everyone calls me peg," he sighs. "Come join me and whatever you want off the menu is my treat."`
+			`	"Name's Pete, but everyone calls me Peg," he sighs, "come join me and whatever you want off the menu is my treat."`
 
 			choice
 				`	(Join him and place an order.)`
@@ -346,10 +346,10 @@ mission "Meeting an Alpha 1"
 					decline
 			`	"Good decision, joining me. My boss will be here any minute now."` 
 			
-			`Some time passes before eventually an incredibly tall, noseless man joins you. He looks almost exactly like the descriptions of the Augments known as Alphas from centuries ago.`
+			`Some time passes before eventually an incredibly tall, noseless man joins you. He looks almost exactly like the description of the augments known as Alphas from centuries ago.`
 			
 			`	"Boss, I've brought you a tribute!" Peg shouts, as you feel a hard, cold object press against the side of your skull. Before you even get a chance to react, you feel something warm splattering on your cheek. You look over to see Peg dying, with some sort of metal spike sticking out of his forehead.`
-			`	"I would apologize for the mess," the towering beast drones, "but considering I just saved your life from my incompetent underling, I'll assume you've already forgiven me." He gives off a strange huffing sound that almost seems like a chuckle, "Please, stay. I sense you aren't as useless as this deflating mess next to you."`
+			`	"I would apologize for the mess," the towering beast drones, "but considering I just saved your life from my incompetent underling, I'll assume you've already forgiven me." He gives off a strange huffing sound that almost seems like a chuckle, and continues: "Please, stay. I sense you aren't as useless as the deflating mess next to you."`
 
 			choice
 				`	(Run for your life!)`
@@ -365,7 +365,7 @@ mission "Meeting an Alpha 1"
 					goto alpha
 				`	"Do you have a job for me?"`
 					goto work
-				`	"Am I free to leave without getting a spike lodged in my body?"`
+				`	"Am I free to leave without getting a spike lodged into my body?"`
 					goto leave
 			
 			label leave
@@ -377,7 +377,7 @@ mission "Meeting an Alpha 1"
 				decline 
 			
 			label alpha
-			`	"Not human." The creature makes that strange chuckling sound again, "I'm a genetically modified life form, similar to human augments, but not quite. I am specifically of the species known as Alphas."`
+			`	"Not human." The creature makes that strange chuckling sound again, and says: "I'm a genetically modified life form, similar to human augments, but not quite. I am specifically of the species known as Alphas."`
 			`"Do you have any other questions? Before you say it, yes I am an Alpha, and I promised myself the next person to say, 'Wait, you're an Alpha?' would die slowly by my hand."`
 			choice
 				`	"Wait, you're an alpha?"`
@@ -392,54 +392,53 @@ mission "Meeting an Alpha 1"
 			label interview
 			`	"Oh my, do you really have time for me to wax poetic about the nature of my existence?"`
 			choice
-				`	"Absolutely, I'm a sucker for this kind of stuff."`
+				`	"Absolutely! I'm a sucker for this kind of stuff."`
 					goto yes
 				`	"Sure."`
 					goto yes
 				`	"I mean, why not?"`
 					goto yes
-				`	"On second thought, nevermind, what's the job?"`
+				`	"On second thought, nevermind. What's the job?"`
 					goto work
 			label yes
 			apply
 				set "alpha lore 1: done"
 			`	The Alpha casually lifts Peg out of his seat, throws him across the cafe, and sits in the warlord's now vacant seat. "Oh, where do I begin? Let's start with our genesis."`
-			`	"I'm sure you know already that we were created as super soldiers to be used by various factions, but the reason for that is because those in charge were getting reports of normal soldiers refusing orders. Things such as leveling towns full of innocent bystanders, shooting down unarmed passenger ships, contaminating spaceports with radiation or bioweapons, that sort of things. The human soldiers were apparently brought up with the idea that 'life was sacred' or something." His tone turns to what you can only assume is mockery. "And that 'only bad people' should be killed. And when faced with the flimsy excuses for why they were slaughtering these innocents, they tended to refuse like the cowards they are."`
+			`	"I'm sure you know already that we were created as super soldiers to be used by various factions. The reason for that, however, is because those in charge were getting reports of normal soldiers refusing orders. Things such as leveling towns full of innocent bystanders, shooting down unarmed passenger ships, and contaminating spaceports with radiation or bioweapons. The human soldiers were apparently brought up with the idea that 'life was sacred' or something." His tone turns to what you can only assume is mockery: "That 'only bad people' should be killed, and when faced with the flimsy excuses for why they were slaughtering these innocents, they tended to refuse to explain like the cowards they are."`
 			`	The being calls over a waiter, and whispers his order before continuing. There is an interesting smell in the air, which both turns your stomach and compels you to be silent.`
-			`	"So, where was I?" He pauses, "Ah yes, our origins. It was decided that there was a need for soldiers who were "emotionless," and, well, cheaper to maintain for increased combat efficiency. Starting with your "basic" human, it was decided to focus on developing a streamlined combat being, one which would obey orders without question, and could be fielded without much overhead. Turns out your human frame is the only useful thing about you in combat. However, the limits of genetic engineering at the time seemed to be infinite. They started taking samples from various bugs; cockroaches, bacteria strains, grasshoppers and the like. They set out to create the perfect beings, us. A perfect blend of strengh, agility, tactical prowess, radiation and bioweapon resistances, and natural built-in and regenerating armor in the form of our exoskeleton. Capable of surviving and fighting for hours in empty space, under water, in mostly any environment, really. Only occasionally with extra gear."`
+			`	"So, where was I? Ah yes, our origins. It was decided that there was a need for soldiers who were 'emotionless,' and, well, cheaper to maintain for increased combat efficiency. Starting with your 'basic' human, it was decided to focus on developing a streamlined combat being, one who would obey orders without question, and could be fielded without much overhead. Turns out your human frame is the only useful thing about you in combat. However, the limits of genetic engineering at the time seemed to be infinite. They started taking samples from various sources; cockroaches, bacteria strains, grasshoppers and the like. They set out to create the perfect beings, us. A perfect blend of strengh, agility, tactical prowess, radiation and bioweapon resistances, and natural built-in regenerating armor in the form of our exoskeleton. Capable of surviving and fighting for hours in empty space, underwater, in mostly any environment, really. And only occasionally with extra gear."`
 			choice
 				`	(Attempt to resist the smell and speak freely.)`
 				`	(Continue sitting in silence.)`
-			`	The scent is overpowering, you can't resist it. After making the initial choice to listen, he apparently wanted to make sure his story wasn't interrupted.`
-			`	"Ah, but I have gone on for too long for this one conversation, and I can tell you would like to move on."`
+			`	The scent is overpowering; you can't resist it. After pausing for a brief moment, he continues: "Ah, but I have gone on for too long for this one conversation, and I can tell you would like to move on."`
 			choice
 				`	(Run for your life!)`
 					decline
-				`	"Are you all so tall?"`
+				`	"Are all of you so tall?"`
 					goto tall
 				`	"Yes, lets move on. I heard you were offering work?"`
 					goto work
 			label tall
-			`	He makes that chuckling sound again, "No, in fact some of my kind are even shorter than you. I was created specifically for interrogation and command, unlike my smaller brethren, intended mostly for combat. Now, let's talk about that job."`
+			`	He makes that chuckling sound again, and says: "No. In fact some of my kind are even shorter than you. I was created specifically for interrogation and command, unlike my smaller brethren, intended mostly for combat. Now, let's talk about that job."`
 				goto work
 			label die
-			`	Your death is indeed slow and painful, and everyone around is indifferent to your suffering. Perhaps you shouldn't have mocked the creature who just effortlessly killed a pirate warlord next to you...`
+			`	Your death is indeed slow and painful, and everyone around you is indifferent to your suffering. Perhaps you shouldn't have mocked the creature who just effortlessly killed a pirate warlord next to you...`
 				die
 			label work 
-			`	"The job is an incredibly simple and straight-forward one. Surely you have seen the news reports of the Star Blade, yes? The new Veles class battle cruiser from Betelgeuse? I want you to take some scans of it. I think it's currently patrolling the shipyards where it was constructed. Are you interested?"`
+			`	"The job is an incredibly simple and straight-forward one. Surely you have seen the news reports of the Star Blade, yes? The new Veles class battlecruiser from Betelgeuse? I want you to take some scans of it. I think it's currently patrolling the shipyards where it was constructed. Are you interested?"`
 			choice
-				`	"Simple enough."`
+				`	"Sounds simple enough."`
 					accept
 				`	"What's the worst that could happen?`
 					accept
 				`	"Sorry, but I can't make money when I'm dead."`
 					decline
-				`	"Scan a battle cruiser? Do you think I'm suicidal?"`
+				`	"Scan a battlecruiser? Do you think I'm suicidal?"`
 					decline
 	
 	on accept
 		log "Volunteered to scan the Star Blade, one of the largest vessels in human space."
-		dialog "Upon returning to your ship, you check your communicator, only to find that you have two messages. Upon opening the second one, you find out this belonged to Peg and is full of intel that could be useful to the Republic. Maybe they'll pay you for it?"
+		dialog "Upon returning to your ship, you check your communicator and find that you have received two messages. Upon opening the second one, you find out it belonged to Peg and is full of intel that could be useful to the Republic. Maybe they'll pay you for it?"
 		
 	npc "scan outfits"
 		government Betelgeuse
@@ -447,17 +446,17 @@ mission "Meeting an Alpha 1"
 		ship Veles "Star Blade"
 		system "Betelgeuse"
 		conversation
-			`As soon as you scan the <npc>, its captain hails you. "Excuse me, captain," she says, "we detected an unauthorized scan of Betelgeuse technology. Do you have a permit?"`
+			`As soon as you scan the <npc>, its captain hails you: "Excuse me, captain," she says, "we detected an unauthorized scan of Betelgeuse technology. Do you have a permit?"`
 			choice
 				`	"I left it in my other pants."`
 					goto pants
-				`	"It's just such a gorgeous ship, I needed to know what you had aboard it!"`
+				`	"It's just such a gorgeous ship, I had to know what you had aboard it!"`
 					goto stunning
 			label pants
-			`	She laughs, and says, "That is the lamest excuse I've heard all day. Now get out of here before we're forced to turn you into dust."`
+			`	She laughs, and says: "That is the lamest excuse I've heard all day. Now get out of here before we're forced to turn you into dust."`
 				goto close
 			label stunning
-			`	"There's nothing wrong with curiosity," she states, "by taking these scans you accept the terms and conditions of scanning a Veles class. The punishment for sharing corporate secrets scale in intensity from suspension of your pilot's license and a fifty million credit fine, all the way up to and including termination of your life. So keep those scans to yourself."`
+			`	"There's nothing wrong with curiosity," she states, "but by taking these scans you accept the terms and conditions of scanning a Veles class. The punishment for sharing corporate secrets scale in intensity, from suspension of your pilot's license and a fifty million credit fine, all the way up to and including termination of your life. So keep those scans to yourself."`
 				goto close
 			label close
 			`	You cut the commlink, relieved that it was that easy.`
@@ -468,7 +467,7 @@ mission "Meeting an Alpha 1"
 
 mission "Meeting an Alpha 2"
 	name "Corporate Espionage"
-	description "Visit <destination> and find out whatever information you can on the Proton Turret."
+	description "Visit <destination> and find whatever information you can on the Proton Turret."
 	source
 		planet Haven
 	to offer
@@ -478,20 +477,20 @@ mission "Meeting an Alpha 2"
 	destination Hephaestus
 	on offer
 		conversation
-			`	This time as you enter this nice little sandwich shop, you are greeted by the same courier as before, who shouts at you, "Bow when you enter, mortal scum. You are in the presence of the Godlord!"`
+			`	This time as you enter the cafe, you are greeted by the same courier as before, who shouts at you: "Bow when you enter, mortal scum. You are in the presence of the Godlord!"`
 			choice
 				`	"Godlord?"`
 				`	"I'm here for the job."`
 				`	"Would you please stop shouting?"`
 				`	(Leave.)`
 					decline
-			`	"Silence, mortal!" She continues shouting, "You dare not incur the wrath of Gaven the Destroyer! He who sits upon the Plasma throne and bathes in chaos should not be taken lightly!"`
+			`	"Silence, mortal!" She continues shouting: "You dare not incur the wrath of Gaven the Destroyer! He who sits upon the plasma throne and bathes in chaos should not be taken lightly!"`
 			choice
 				`	"Gaven the Destroyer?"`
 				`	"You've got to be kidding."`
 				`	(Just walk away.)`
 					decline
-			`	"Silence!" She shouts again, as the tall figure enters the room. "All shall kneel before their Godlord!" She quickly takes a knee.` 
+			`	"Silence!" She shouts again, as the tall figure enters the room, and says: "All shall kneel before the Godlord!" After which she quickly takes a knee.` 
 			choice
 				`	(Kneel.)`
 					goto kneel
@@ -500,15 +499,15 @@ mission "Meeting an Alpha 2"
 				`	(Laugh openly.)`
 					goto laugh
 			label kneel
-			`	You quickly bend your knee and bow your head as the Alpha approaches you. "Rise, you aren't even an initiate in my cult yet. There's no reason to obey every order I give you yet."`
+			`	You quickly bend your knee and bow your head as the Alpha approaches you: "Rise, you aren't even an initiate in my cult yet. There's no reason to obey every order I give you yet."`
 				goto reward
 			label stand
-			`	You stand tall as the being seemingly hovers up to you. "A human with an exoskeleton for once? Lovely, you'll do well in my service."`
+			`	You stand tall as the being seemingly hovers up to you. "A human with an exoskeleton for once? Lovely. You'll do well in my service."`
 				goto reward
 			label laugh
-			`	The being quickly approaches you as you laugh uncontrollably. In between breaths you can hear his strange chuckle as well. "Very good, human. Fearlessness is exactly what I need out of an underling right now."`
+			`	The being quickly approaches you as you laugh uncontrollably. In between breaths you can hear his strange chuckle as well. "Very good, human. Fearlessness is exactly what I need from an underling right now."`
 			label reward
-			`	"I have a conditional gift for you." He motions over to the courier, "My acolyte Dylan here will provide it to you upon returning to your ship. The condition is only that you accept this job. If you decide it is too much for you, my acolyte will return to me with news, but the item shall remain yours to keep."`
+			`	"I have a conditional gift for you." He motions over to the courier: "My acolyte Dylan here will provide it to you upon returning to your ship. The condition is only that you accept this job. If you later decide it is too much for you, my acolyte will return to me with news, but the item shall remain yours to keep."`
 			
 			choice
 				`	"I accept."`
@@ -520,10 +519,10 @@ mission "Meeting an Alpha 2"
 				`	"No."`
 					decline
 			label accept
-			`	"Good. It's only a little bit of corporate espionage. Head to <destination> and find out any information you can on these new Proton Turrets the Star Blade was using. Dylan, please join <first> aboard the <ship> and provide my gift."`
+			`	"Good. It's only a little bit of corporate espionage. Head to <destination> and find out any information you can on those new Proton Turrets the Star Blade was using. Dylan, please join <first> aboard the <ship> and provide my gift."`
 				accept
 			label godlord
-			`	"I can't tell if you are being serious or not, but it doesn't matter. Just head to <destination> with my acolyte, find out what you can of the Proton Turret, and return to me for payment."`
+			`	"I can't tell if you are being serious or not, but it doesn't matter. Just head to <destination> with my acolyte, find out what you can about the Proton Turret, and return to me for payment."`
 			choice
 				`	"Ok."`
 					accept
@@ -533,24 +532,24 @@ mission "Meeting an Alpha 2"
 			`	"That really is disappointing to hear. Remove yourself from my sight before I end you."`
 				decline
 			label details
-			`	"The job is incredibly straight-forward. You and Dylan can go places I simply cannot, and acquire information most would consider benign if not for an Alpha requesting it." He gives a reassuring nod to his cultist, "Go to <destination> and collect information on this Particle Turret the Starblade was using."`
+			`	"The job is incredibly straight-forward. You and Dylan can go places I simply cannot, and acquire information most would consider benign if not for an Alpha requesting it." He gives a reassuring nod to his cultist: "Go to <destination> and collect information about this Proton Turret the Star Blade was using."`
 			choice
 				`	"Ok."`
 					accept
 				`	"I'll do it."`
 					accept
 				`	"No, Godlord, I wont do it."`
-			`	"That really is disappointing to hear. Remove yourself from my sight before I end you."`
+			`	"That is really disappointing to hear. Remove yourself from my sight before I end you."`
 				decline
 
 	on complete
 		conversation
 		`	As you arrive in orbit above <destination>, Dylan presents you with a box. Inside it is a plasma pistol with "Lucky" scratched on the side.`
-		`	In her ever aggressive voice, Dylan speaks. "My master believes this gun will be of use to you on this quest. Meet me near the landing pad closest to the outfitter as soon as you make yourself inconspicuous. Now, go!"`
+		`	In her ever aggressive voice, Dylan says: "My master believes this gun will be of use to you on this quest. Meet me near the landing pad closest to the outfitter as soon as you make yourself inconspicuous. Now, go!"`
 
 mission "Meeting an Alpha 3"
 	name "Corporate Espionage"
-	description "Return to <destination> and outrun or destroy the people chasing you!"
+	description "Return to <destination> and outrun or destroy the ships pursuing you!"
 	source
 		planet Hephaestus
 	to offer
@@ -562,7 +561,7 @@ mission "Meeting an Alpha 3"
 		"gunslinger" ++
 		outfit "Lucky" 1
 		conversation
-		`	After your normal routine of walking around the spaceport, you wander off towards the landing pad closest to the outfitter. As you approach, you hear shots from various weapons being fired.`
+		`	After your routine walk around the spaceport, you wander off towards the landing pad closest to the outfitter. As you approach, you hear gunfire from various weapons.`
 		choice
 			`	(Investigate.)`
 				goto investigate
@@ -578,22 +577,22 @@ mission "Meeting an Alpha 3"
 			`	(Return to your ship.)`
 				goto run
 			label stay
-			`	You find cover and wait. The firefight slowly approaches you until eventually it is upon you. It's Dylan, taking on nearly the entire spaceport security team by herself.`
+			`	You find cover and wait. The firefight slowly approaches you until it is eventually upon you. It's Dylan, taking on nearly the entire spaceport security team by herself.`
 			`	(Use your fancy new sidearm, Lucky, to help her.)`
 				goto help
 			`	(Return to your ship.)`
 				goto run
 			label help
 			`	You draw Lucky and begin firing. Each squeeze of the trigger releases a satisfying and confusing amount of plasma bolts. Before long, you and Dylan have managed to completely suppress the securty forces pursuing her.`
-			`	"You idiot!" Dylan shouts at you, "You aren't even wearing a mask! Lucky for you I have disabled the cameras in this area. Now put your gun away, I'm taking you hostage!"`
+			`	"You idiot," Dylan shouts at you, "you aren't even wearing a mask! Lucky for you I have disabled the cameras in this area. Now put your gun away, I'm taking you hostage!"`
 				goto end
 			label run
-			`	You head back to your ship, but even as you rush back, the firefight behind you continues to get louder.`
+			`	You rush back to your ship as the firefight behind you continues to get louder.`
 				goto end
 			label end
-			`	Before you get a chance to react, your world view is almost completely obstructed by a black bag. Dylan's familiar shouting tells you to move. Before long, you feel yourself climbing the ramp to your airlock. As you hear it seal behind you, she removes your bag."`
-			`	"That was considerably less quiet than I expected." She states between breaths, "Now hurry up and return me to my Godlord, I have his prized information!"`
-			`	As you reach orbit, you pick up four Syndicated Security ships. Two gunships and two frigates. You also receive word that Gaven is in a nearby system, coming to your rescue.`
+			`	Before you get a chance to react, your view is almost completely obstructed by a black bag. Dylan's familiar shouting tells you to move. Before long, you feel yourself climbing the ramp to your airlock. As you hear it seal behind you, she removes your bag."`
+			`	"That was considerably less quiet than I expected," she states between breaths, "now hurry up and return me to my Godlord, I have his prized information!"`
+			`	As you reach orbit, you pick up four Syndicated Security ships; two interceptors and two gunships. You also receive word that Gaven is in a nearby system, coming to your rescue.`
 				launch
 
 	npc
@@ -617,11 +616,11 @@ mission "Meeting an Alpha 3"
 		"assisted northern union" ++
 		payment 100000
 		dialog
-			`As you land, you receive a direct message from Gavin's ship. "I'm sorry that we'll not be meeting in person again, <first>, but I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues, "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership committee."`
+			`As you land, you receive a direct message from Gavin's ship: "I'm sorry that we'll not be meeting in person again, <first>, but I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues: "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership committee."`
 
 mission "NU Bounty 1"
 	name "Wanted: Dead"
-	description `Hunt down and destroy the <npc>. It was were last seen the Seginus system.`
+	description `Hunt down and destroy the <npc>, which was last seen the Seginus system.`
 	minor
 	source
 		planet Haven
@@ -634,11 +633,11 @@ mission "NU Bounty 1"
 	
 	on offer
 		conversation
-			`As you walk through the desert waste that is Haven's spaceport, a man in a duster and rediculous looking cowboy hat flags you down. "Are you Captain of the <ship>?" he asks. You nod. "I'm a famous bounty hunter," he says. "Names Mouser, maybe you've heard of me?"`
+			`As you walk through the desert waste that is Haven's spaceport, a man in a duster and a ridiculous-looking cowboy hat flags you down: "Are you the captain of the <ship>?" You nod, and he continues: "I'm a famous bounty hunter. Name's Mouser. Perhaps you've heard of me?"`
 			choice
 				`	"Who?"`
 					goto who
-				`	"Thats an awfully fancy hat."`
+				`	"That's an awfully fancy hat."`
 					goto hat
 				`	"If you're offering me a job, I'm not interested."`
 					decline
@@ -646,27 +645,27 @@ mission "NU Bounty 1"
 					goto lie
 					
 			label who
-			`	"Mouser, the bounty hunter?" he says doing a pose, "I had a drama about my life and everything. You must just not follow that sort of thing." He pauses looking a bit disappointed, then he lights up. "Hey, I approached you because I have a job. I'm hunting the captian of the <npc>, wanted dead. Our ships were about equally matched, so unfortunately I had to retreat. Feel like finishing them off? I'll split the payment."`
+			`	"Mouser? The bounty hunter?" he says doing a pose: "I had a drama about my life and everything. You must just not follow that sort of thing." He pauses, looking a bit disappointed, then lights up and says: "Hey, I approached you because I have a job. I'm hunting the captain of the <npc>, wanted dead. Our ships were about equally matched, so unfortunately I had to retreat. Feel like finishing them off? I'll split the payment."`
 			choice
 				`	"I'm in."`
 					accept
-				`	"I'm in, but I need more details"`
+				`	"I'm in, but I need more details."`
 					goto accept
 				`	"Not interested."`
 					decline
 					
 			label hat
-			`	"You really like it? Thank you! I had it made custom." he states, clearly unused to getting praise for his attire. "Let's get back to business though. The captain of the <npc> has apparently aggravated the wrong people, because he has a huge bounty on his head. Dead only. I managed to disable them in my ship, but was forced to fall back for repairs. Are you interested in finishing them off and splitting the bounty?"`
+			`	"You really like it? Thank you! I had it custom-made," he states, clearly unused to getting praise for his attire: "Let's get back to business though. The captain of the <npc> has apparently aggravated the wrong people, since he has a huge bounty on his head. Dead only. I managed to disable them in my ship, but was forced to fall back for repairs. Are you interested in finishing them off and splitting the bounty?"`
 			choice
 				`	"I'm in."`
 					accept
-				`	"I'm in, but I need more details"`
+				`	"I'm in, but I need more details."`
 					goto accept
 				`	"Not interested."`
 					decline
 					
 			label lie
-			`	"So you also know my reputation," he says, "You must also know that I hunt the most dangerous people in the galaxy, then! The captain of the <npc> is one such person, and he has quite the bounty on him. Dead only. I managed to disable them in my ship, but was forced to fall back for repairs. Are you interested in finishing them off and splitting the bounty?"`
+			`	"So you also know my reputation," he says, "then you must also know that I hunt the most dangerous people in the galaxy! The captain of the <npc> is one such person, and he has quite the bounty on him. Dead only. I managed to disable them in my ship, but was forced to fall back for repairs. Are you interested in finishing them off and splitting the bounty?"`
 			choice
 				`	"I'm in."`
 					accept
@@ -675,10 +674,10 @@ mission "NU Bounty 1"
 				`	"Not interested."`
 					decline
 			label accept
-			`	"Fantastic!" he shouts, "The NPC is an absolutely menacing headhunter, which is stranded in Rajak. They should be just about done with repairs by the time we arrive."`
+			`	"Fantastic!" he shouts: "The NPC is an absolutely menacing Headhunter, which is stranded in Rajak. They should be just about done with repairs by the time we arrive."`
 				accept
 	on accept
-		log "I signed on with a bounty hunter called Mouser to hunt down some dangerous individuals."
+		log "Signed on with a bounty hunter called Mouser to hunt down some dangerous individuals."
 	
 	npc kill
 		personality heroic staying nemesis target
@@ -689,11 +688,11 @@ mission "NU Bounty 1"
 	
 	on complete
 		payment 20000
-		dialog `When you drop off Mouser he tells you to stay put for a moment. Returning some time later with a rather paltry sum of <payment>, he congratulates you. "A good payment for a hard fought battle. Look me up around the spaceport here on Haven if you are interested in more work." He pats you on the shoulder and walks away.`
+		dialog `When you drop off Mouser, he tells you to stay put for a moment. He returns some time later with a rather paltry sum of <payment>, and congratulates you: "A good payment for a hard-fought battle. Look me up around the spaceport here on Haven if you are interested in more work." He pats you on the shoulder and walks away.`
 
 mission "NU Bounty 2"
 	name "Wanted: Dead or Alive"
-	description "Sneak aboard a pirate leviathan and capture its Captain."
+	description "Sneak aboard a pirate Leviathan and capture its captain."
 	source
 		planet Haven
 	to offer
@@ -703,12 +702,12 @@ mission "NU Bounty 2"
 	destination Haven
 	on offer
 		conversation
-			`	As you once again wander the dusty spaceport on <planet>, you encounter mouser again. He is poorly hidden behind a stack of crates, and is signalling you over to meet with him.`
+			`	As you once again wander the dusty spaceport on <planet>, you encounter Mouser again. He is poorly hidden behind a stack of crates, and beckons you.`
 			choice
 				`	(Meet with him.)`
 				`	(Leave.)`
 					defer
-			`	"Well, if it isn't my old pal, uh, I never caught your name." he whispers to you, "I've got another job that I could use your help on. Say, by any chance are you experienced with a gun?"`
+			`	"Well, if it isn't my old pal. I never caught your name," he whispers to you, "but I've got another job that I could use your help with. Say, are you experienced with a gun, by any chance?"`
 			branch gunslinger
 				has "gunslinger" >= 1
 			choice
@@ -716,7 +715,7 @@ mission "NU Bounty 2"
 				`	"I'm a fast study."`
 				`	(Just walk away.)`
 					defer
-			`	"Well that could be problematic" he says, "I'm going to level with you, I need to capture someone alive. That someone happens to have their own ship and crew, and I dont think I can take them all on alone. Will you help me?"` 
+			`	"Well, that could be problematic," he says, "I'm going to level with you; I need to capture someone alive. That someone happens to have their own ship and crew, and I don't think I can take them all on alone. Will you help me?"` 
 			choice
 				`	"No."`
 					decline
@@ -724,7 +723,7 @@ mission "NU Bounty 2"
 					goto sure
 			
 			label gunslinger
-			`	"You do!" He exclaims, "I could tell by the look in your eyes as soon as I asked. By any chance would you be willing to help me capture a bounty alive? It may require we shoot some things, and possibly people."`
+			`	"You do!" he exclaims: "I could tell by the look in your eyes as soon as I asked. Would you by any chance be willing to help me capture a bounty alive? It may require shooting some things, and possibly people."`
 			choice
 				`	"No."`
 					decline
@@ -732,8 +731,8 @@ mission "NU Bounty 2"
 					goto sure
 			
 			label sure
-			`	Mouser is absolutely beaming at this statement. "Fantastic!" he shouts "Our target is aboard a Leviathan parked not far from here. Almost the entire crew is out on shore leave, save some personal guards and dock workers. This should be easy with the two of us. Follow me." He keeps himself crouched over, and hides behind any cover he can while the two of you make the long trek across town to the docked warship.`
-			`	As you finally arrive at the Leviathan, Mouser points to the vessel. Being the only ship docked on this side of town, it was impossible to miss anyway. "There it is," He whispers excitedly, "This is our target. So, uh, how do you want to approach this?"`
+			`	Mouser is absolutely beaming at this statement: "Fantastic! Our target is aboard a Leviathan parked not far from here. Almost the entire crew is out on shore leave, save some personal guards and dock workers. This should be easy with the two of us. Follow me." He keeps himself crouched over, and hides behind any cover he can while the two of you make the long trek across town to the docked warship.`
+			`	As you finally arrive at the Leviathan, Mouser points to the vessel. Being the only ship docked on this side of town, it was impossible to miss anyway: "There it is, that's our target. So, uh, how do you want to approach this?"`
 			choice
 				`	"Frontal assault."`
 					goto assault
@@ -745,14 +744,14 @@ mission "NU Bounty 2"
 			label assault
 			set
 				"gunslinger"++
-			`	"A brilliant and unexpected tactic!" He exclaims, before laying down fire on the unsuspecting dock workers who are unloading cargo from the Leviathan. Being unarmed, innocent bystanders, they of course run at the first sign of violence. You find yourself in the cargo bay and consider your next move.`
+			`	"A brilliant and unexpected tactic!" he exclaims, before laying down fire on the unsuspecting dock workers who are unloading cargo from the Leviathan. Being unarmed, innocent bystanders, they run at the first sign of violence. You find yourself in the cargo bay and consider your next move.`
 				goto cargo
 			label crate
-			`	"Captain, are you trying to get close to me? Because all you need do is ask." He uncomfortably winks with one eye, then the other, before crawling into a crate barely big enough for the two of you. Before you get a chance to reconsider your options, he grabs you and pulls you in as well, and pulls shut the lid over you. As he does so, you catch a glimps of the label, which reads "Bulkhead grinder." These tools are generally only used in decomissions and refits.`
-			`	An uncomfortable amount of time is spent in this cramped crate with this creepy bounty hunter, the two of you stare at each other in silence as eventually the dockworkers retrieve and load your crate into the cargo bay. After some more time sitting in silence with this strange man and his cowboy hat, he opens the crate. You find yourselves in the cargo bay, just up the loading ramp from where you began.`
+			`	"Captain, are you trying to get close to me? Because all you need to do is ask." He uncomfortably winks with one eye, then the other, before crawling into a crate barely big enough for the two of you. Before you get a chance to reconsider your options, he grabs you and pulls you in as well. As he shuts the lid, you catch a glimpse of the label, which reads "Bulkhead grinder." These tools are generally only used in decommissions and refits.`
+			`	An uncomfortable amount of time is spent in the cramped crate with this creepy bounty hunter. The two of you stare at each other in silence until eventually the dockworkers retrieve your crate and load it into the cargo bay. After some more time sitting in silence with this strange man and his cowboy hat, he opens the crate. You find yourselves in the cargo bay, just up the loading ramp from where you began.`
 				goto cargo
 			label crew
-			`	The two of you calmly walk up the ramp into the cargo bay. Neither the ships crew nor the dock workers acknowledge your presence as you enter the cargo bay and consider your next move.`
+			`	The two of you calmly walk up the ramp into the cargo bay. Neither the ship's crew nor the dock workers acknowledge your presence as you enter the cargo bay and consider your next move.`
 				goto cargo
 			
 			label cargo
@@ -770,7 +769,7 @@ mission "NU Bounty 2"
 			label loot
 			apply
 				set "greedy bountyhunter"
-			`	You quickly look for anything small enough to pocket, or anything you can carry on your person that wont slow you down. You manage to find a backpack and a satchel. You have no time to investigate their contents, so you grab them and wear them. You still have to decide where to go next.`
+			`	You quickly look for anything small enough to pocket, or anything you can carry on your person that won't slow you down. You manage to find a backpack and a satchel. You have no time to investigate their contents, so you grab and wear them both. You still have to decide where to go next.`
 				`	(To the Bridge!)`
 					goto bridge
 				`	(Ask a member of the crew where the captain is.)`
@@ -781,22 +780,22 @@ mission "NU Bounty 2"
 			label bridge
 			apply
 				set "lost bounty"
-			`	You and mouser quickly rush to the bridge in order to capture the Captain of this vessel, only to find the room completely empty. As you look around and try to find any clues as to where the Captain might be, the eerie silence begins to set in.`
-			`	Mouser feels it too, and soon he begins swearing. "They sold the ship, it's being scrapped! We surely missed our chance to capture the target this time, I'll find him again. Just you wait! I'll call you when I have a lead."`
-			`	Although you made the logical choice of assuming the target would be on the bridge, you were wrong this time. Defeated, you return to your ship.`
+			`	Mouser and you quickly rush to the bridge in order to capture the captain, only to find the room completely empty. As you look around and try to find any clues as to where the captain might be, the eerie silence begins to set in.`
+			`	Mouser feels it too, and soon he begins swearing: "They sold the ship, it's being scrapped! We surely missed our chance to capture the target this time. I'll find him again, though, you just wait! I'll call you when I have a lead."`
+			`	Although you made the logical choice of assuming the target would be on the bridge, you turned out to be wrong this time. Defeated, you return to your ship.`
 				decline
 			
 			label engineering
 			apply
 				set "lost bounty"
-			`	Engineering is to the aft of the ship, and on a leviathan that's no short walk. As you approach your destination, the hallways are getting progressively messier and less kept. Eventually you arrive in the engine room, only to find the whole thing gutted.`
-			`	Mouser is irate, and begins swearing and kicking debries. "They sold the ship, it's being scrapped! There's no way our target is still aboard now. Fear not, for I will track him down and we will still get our bounty. Just not today."`
+			`	Engineering is to the aft of the ship, and on a Leviathan that's no short walk. As you approach your destination, the hallways are getting progressively messier and less maintained. Eventually you arrive in the engine room, only to find the whole thing gutted.`
+			`	Mouser is irate, and begins swearing and kicking debris: "They sold the ship, it's being scrapped! There's no way our target is still aboard now. Fear not, for I will track him down and we will still get our bounty. Just not today."`
 			`	You didn't make a bad choice by going to the engine room, you were just unlucky. Defeated, you return to your ship.`
 				decline 
 				
 				
 			label crew
-			`	Crew on this ship is shockingly difficult to find, but eventually you flag one down and ask where the captain is. The crewman is surprisingly forthcoming with his information, and informs you that your target is in the crew quarters looting whatever of value he can find before leaving the ship behind. Do you believe him?`
+			`	Crew on this ship is shockingly difficult to find, but eventually you flag one down and ask where the captain is. The crewman is surprisingly forthcoming with his information, and informs you that your target is in the crew quarters looting anything of value he can find before leaving the ship behind. Do you believe him?`
 			choice
 				`	(No. To the Bridge!)`
 					goto bridge
@@ -808,9 +807,9 @@ mission "NU Bounty 2"
 			label quarters
 			apply
 				set "captured bounty"
-			`	You and mouser quickly rush to the crew quarters in order to capture the Captain of this vessel. As you look around and try to find any clues as to where the Captain might be, you hear footsteps exiting a room up ahead of you.`
-			`	Mouser raises his gun and begins barking commands, the startled captain of course complies. "I don't know what you did to anger the partnership, but it must have been really bad if they want you back alive." Mouse says to the captain, who resigned himself to his fate.`
-			`	You and Mouser escort the captain off of the leviathan at gunpoint. "I have it from here captain, return to your ship. I'll forward your half of the money as soon as I have it, but neither of us are getting paid until I turn him in." Protesting would do you no good, so you return to your ship.`
+			`	Mouser and you quickly rush to the crew quarters in order to capture the captain of this vessel. As you look around and try to find any clues as to where the captain might be, you hear footsteps exiting a room up ahead of you.`
+			`	Mouser raises his gun and begins barking commands, and the startled captain complies: "I don't know what you did to anger the partnership, but it must have been really bad if they want you back alive." Mouser says to the captain, who resigned himself to his fate.`
+			`	Mouser and you escort the captain off of the Leviathan at gunpoint: "I'll handle it from here, captain, you can return to your ship. I'll forward your half of the money as soon as I have it, but neither of us are getting paid until I turn him in." Protesting would do you no good, so you return to your ship.`
 				decline
 
 mission "NU Bounty 2B"
@@ -828,7 +827,7 @@ mission "NU Bounty 2B"
 	
 	on offer
 		dialog
-			`You receive a message from Mouser. "I've got something a little dangerous for you today." he says, "That pirate who got away has been spotted flying a Firebird named the <npc> near Cardax. Are you interested in finishing him off?"`
+			`You receive a message from Mouser: "I've got something a little dangerous for you today," he says, "that pirate who got away has been spotted flying a Firebird named the <npc> near Cardax. Are you interested in finishing him off?"`
 	
 	npc kill
 		government "Pirate"
@@ -839,7 +838,7 @@ mission "NU Bounty 2B"
 	on complete
 		set "captured bounty"
 		dialog
-			`You report to Mouser that you have killed the <npc> and provide sensor logs as evidence. He thanks you, and but oddly enough doesn't pay you. "Always a pleasure working with you, captain. I'll transfer your half of the money to you as soon as I am paid."`
+			`You report to Mouser that you have killed the <npc> and provide sensor logs as evidence. He thanks you, but oddly enough doesn't pay you: "Always a pleasure working with you, captain. I'll transfer your half of the money to you as soon as I am paid."`
 
 mission "dead or alive payment"
 	invisible
@@ -853,30 +852,30 @@ mission "dead or alive payment"
 	on offer
 		set "doa complete"
 		payment 250000
-		dialog `You recieve a message from Mouser letting you know that he has transferred your half of the bounty to your account. You have recieved <payment> for your trouble.`
+		dialog `You receive a message from Mouser letting you know that he has transferred your half of the bounty to your account. You have received <payment> for your trouble.`
 
 mission "NU Bounty 3"
 	landing
 	name "Wanted: Alive"
-	description "A ship with a price on it in orbit around <planet>. Fight and disable it (but do not board or destroy it!) and then land to collect your bounty."
+	description "Fight and disable the ship in orbit around <planet> (but do not board or destroy it!) and land to collect your bounty."
 	source Haven
 	to offer
 		has "doa complete"
 	
 	on offer
 		conversation
-			`You receive a message recently from Mouser asking you to stop by the spaceport to help hunt another pirate. Do you take him up on the offer?`
+			`You receive a message from Mouser asking you to stop by the spaceport to help hunt another pirate. Do you take him up on the offer?`
 			choice
 				`	(Yes.)`
 				`	(No.)`
 					defer
 
-			`	"I'm glad you decided to join us!" Mouser exclaims, while being the only person in the room. "Captain this job is so easy that you could probably do it on your own. The <npc> is a unique ship, and was for a long time believed lost to time. A heavily modified Leviathan with expanded weapons capability. But here's the best part! The bounty is on the ship, not any member of the crew. So all you need to do is get into orbit and disable it, then we collect our pay! Just disable it. Do not board it, steal it, loot it, or destroy it."`
+			`	"I'm glad you decided to join us!" Mouser exclaims, while being the only other person in the room: "Captain, this job is so easy that you could probably do it on your own. The <npc> is a unique ship, and was, for a long time, believed to be lost to time. A heavily modified Leviathan with expanded weapons capability. But here's the best part! The bounty is on the ship, not any member of the crew. So all you need to do is get into orbit and disable it, then we collect our pay! Just disable it, though, do not board it, steal it, loot it, or destroy it."`
 			choice
-				`	"Okay, I promise not to destroy it or steal it."`
+				`	"Okay, I promise not to destroy or steal it."`
 				`	"Are you expecting a pinky promise? I'll do my best."`
-				`	"I'll resist the temptation to steal the legendary heavily armed leviathan."`
-				`	"Sorry, this sounds a bit too risky. I'd rather not be involved in this sort of testing."`
+				`	"I'll resist the temptation to steal the legendary heavily-armed Leviathan."`
+				`	"Sorry, this sounds a bit too risky. I'd rather not get involved in this sort of testing."`
 					decline
 			`	"Great," he says, with a gleeful expression on his face. He's clearly looking forward to the payday this will bring in.`
 				accept
@@ -890,7 +889,7 @@ mission "NU Bounty 3"
 		"assisted northern union" ++
 		payment 2000000
 		dialog
-			`As you land, you receive a direct message from Mouser as well as a notification of a payment hitting your account. "Great job disabling the <npc>! I have already disabled its self distruct capabilities and informed the client that the ship is now theirs. They have already sent me the money, and I have forwarded your half, <payment>, to your account. The client is also on the Partnership committee, and will put a good word in for you."`
+			`As you land, you receive a direct message from Mouser as well as a notification of a payment hitting your account: "Great job disabling the <npc>! I have already disabled its self-destruct capabilities and informed the client that the ship is now theirs. They have already sent me the money, and I have forwarded your half, <payment>, to your account. The client is also on the Partnership committee, and will put a good word in for you."`
 
 # Northern Union Resources
 
