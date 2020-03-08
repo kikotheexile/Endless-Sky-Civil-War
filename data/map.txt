@@ -2779,7 +2779,7 @@ system Betelgeuse
 		sprite planet/rock0-b
 		distance 535.69
 		period 150.91
-	object "Beanstalk Station"
+	object "Orion Station"
 		sprite planet/placeholderstation
 		distance 1050
 		period 475
@@ -4312,7 +4312,7 @@ system "Epsilon Leonis"
 		sprite planet/earth
 		distance 1027.21
 		period 351.954
-	object "Val Habar Station"
+	object "Brokkr Station"
 		sprite planet/stationcaravan
 		distance 1000
 		period 300
@@ -13118,11 +13118,11 @@ planet Hopper
 		threshold 2000
 		fleet "Large Militia" 5
 
-planet "Val Habar Station"
+planet "Brokkr Station"
 	attributes deep factory station
 	landscape land/sivael2
-	description `Val Habar Station is where Lionheart produces the biggest and best of its lineup, ships that can't leave the average atmosphere. All kinds of people gather here, but almost everyone you see looks like they have money, work to do, or both.`
-	spaceport `Val Habar is the starting point for Deep caravans, large trading fleets built around the almost larger colony ships produced here. These caravans can be seen all around the galaxy, trading at all kinds of destinations. This station can house several full caravans, dwarfing most stations, some of which can barely land a single colony ship.`
+	description `Brokkr Station is where Lionheart produces the biggest and best of its lineup, ships so massive they require special landing clearance. All kinds of people gather here, but almost everyone you see looks like they have money, work to do, or both.`
+	spaceport `Brokkr is the starting point for Deep caravans, large trading fleets built around the almost larger colony ships produced here. These caravans can be seen all around the galaxy, trading at all kinds of destinations. This station can house several full caravans, dwarfing most stations.`
 	shipyard "Lionheart Shipyards"
 	outfitter "Common Outfits"
 	outfitter "Basic Weapons"
@@ -13135,11 +13135,11 @@ planet "Val Habar Station"
 		threshold 6000
 		fleet "Large Deep Security" 19
 		
-planet "Carnation Station"
+planet "Hammer Station"
 	attributes core factory station
 	landscape land/sivael2
-	description `Carnation Station runs like a factory first and a warehouse second: Ships come in, drop off imports, ships are produced, and the other imports are shipped off-station. The only things that aren't all business are the protests, and those don't last long.`
-	spaceport `The spaceport is a collection of ports, some very large, others very small, and many in between, with drones in place to offload cargo and drivers waiting nearby to offload people. It runs like clockwork, even though something has to go wrong sometime...`
+	description `Although it is the heart of Syndicated Shipyard's sales department, Hammer Station runs like a factory first and a warehouse second. Even as merchants disembark to purchase new vessels, Syndicated ships are buzzing around mechanically. The only things that aren't all business are the protests, and those don't last long.`
+	spaceport `The spaceport is a collection of ports, some very large, others very small, and many in between, with drones in place to offload cargo and drivers waiting nearby to offload people. It runs like clockwork, with their forcasting screens even accounting for human error and hardware failures.`
 	shipyard "Syndicated Shipyards"
 	outfitter "Common Outfits"
 	outfitter "Basic Weapons"
@@ -13150,11 +13150,11 @@ planet "Carnation Station"
 	security 0.9
 	music ambient/machinery
 	
-planet "Bulwark Station"
+planet "Rampart Station"
 	attributes paradise station factory
 	landscape land/sivael2
-	description `Bulwark Station is one of the few places certified to produce Navy ships, and the largest are produced here. Many of them will be sent further north to combat the Northern Union, while others will be deployed right in the paradise worlds, and a few stray fleets might be found in the Dirt Belt.`
-	spaceport `Lying right on the caravan trade route, Bulwark Station is often full of merchants, negotiating deals with Navy workers or the stray Republic representative. It's very easy for the station to give off the feeling of being above your head.`
+	description `Rampart Station is one of the few places certified to produce Navy ships, and the only place capable of producing their largest. The Nomos drone carrier and Arete dedicated carrier are almost exclusively produced here.`
+	spaceport `Lying right on the caravan trade route, Rampart Station is often full of merchants, negotiating deals with Navy workers or the stray Republic representative. It's very easy for the station to give off the feeling of being above your head.`
 	shipyard "Navy Shipyards"
 	outfitter "Common Oufits"
 	outfitter "Basic Weapons"
@@ -13164,11 +13164,11 @@ planet "Bulwark Station"
 	security 0.9
 	music ambient/machinery
 	
-planet "Beanstalk Station"
+planet "Orion Station"
 	attributes north station factory
 	landscape land/sivael2
-	description `Beanstalk Station is full of ships making sales, usually metals and components to support the strong ship-building operation here. Betelgeuse is relatively out of the way, but its shipyards are still well-known across the galaxy, and among captains, so are the trade opportunities.`
-	spaceport `The spaceport is as busy as a map of the North, with merchants and the Navy and Betelgeuse employees all scrambling around with some goal in mind. Just like the North, the station sticks around through it all.`
+	description `Orion Station is crowded with merchant ships making sales, usually metals and components to support the strong ship-building operation here. Betelgeuse is relatively out of the way, but its shipyards are still well-known across the galaxy, and among captains, so are the trade opportunities.`
+	spaceport `The spaceport is incredibly busy, with merchants and the Navy and Betelgeuse employees all scrambling around with some goal in mind.`
 	shipyard "Betelgeuse Shipyards"
 	outfitter "Common Outfits"
 	outfitter "Basic Weapons"
