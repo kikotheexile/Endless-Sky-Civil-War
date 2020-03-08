@@ -160,6 +160,10 @@ system Achernar
 		sprite planet/desert3
 		distance 211.24
 		period 49.1229
+	object "Carnation Station"
+		sprite planet/placeholderstation
+		distance 530
+		period 190
 	object Foundry
 		sprite planet/forest1-b
 		distance 548
@@ -2775,6 +2779,10 @@ system Betelgeuse
 		sprite planet/rock0-b
 		distance 535.69
 		period 150.91
+	object "Beanstalk Station"
+		sprite planet/placeholderstation
+		distance 1050
+		period 475
 	object Prime
 		sprite planet/forest2-b
 		distance 1081.98
@@ -3193,6 +3201,10 @@ system Castor
 		sprite planet/rock0
 		distance 758.695
 		period 254.287
+	object "Bulwark Station"
+		sprite planet/placeholderstation
+		distance 980
+		period 365
 	object Geminus
 		sprite planet/rock18
 		distance 994.305
@@ -4300,6 +4312,10 @@ system "Epsilon Leonis"
 		sprite planet/earth
 		distance 1027.21
 		period 351.954
+	object "Val Habar Station"
+		sprite planet/stationcaravan
+		distance 1000
+		period 300
 	object
 		sprite planet/gas7
 		distance 2086.25
@@ -13102,6 +13118,67 @@ planet Hopper
 		threshold 2000
 		fleet "Large Militia" 5
 
+planet "Val Habar Station"
+	attributes deep factory station
+	landscape land/sivael2
+	description `Val Habar Station is where Lionheart produces the biggest and best of its lineup, ships that can't leave the average atmosphere. All kinds of people gather here, but almost everyone you see looks like they have money, work to do, or both.`
+	spaceport `Val Habar is the starting point for Deep caravans, large trading fleets built around the almost larger colony ships produced here. These caravans can be seen all around the galaxy, trading at all kinds of destinations. This station can house several full caravans, dwarfing most stations, some of which can barely land a single colony ship.`
+	shipyard "Lionheart Shipyards"
+	outfitter "Common Outfits"
+	outfitter "Basic Weapons"
+	outfitter "Ammo North"
+	outfitter "Deep Sky Advanced"
+	bribe 0.1
+	security 0.9
+	music ambient/machinery
+	tribute 2000
+		threshold 6000
+		fleet "Large Deep Security" 19
+		
+planet "Carnation Station"
+	attributes core factory station
+	landscape land/sivael2
+	description `Carnation Station runs like a factory first and a warehouse second: Ships come in, drop off imports, ships are produced, and the other imports are shipped off-station. The only things that aren't all business are the protests, and those don't last long.`
+	spaceport `The spaceport is a collection of ports, some very large, others very small, and many in between, with drones in place to offload cargo and drivers waiting nearby to offload people. It runs like clockwork, even though something has to go wrong sometime...`
+	shipyard "Syndicated Shipyards"
+	outfitter "Common Outfits"
+	outfitter "Basic Weapons"
+	outfitter "Ammo North"
+	outfitter "Ammo South"
+	outfitter "Syndicate Advanced"
+	bribe 0.1
+	security 0.9
+	music ambient/machinery
+	
+planet "Bulwark Station"
+	attributes paradise station factory
+	landscape land/sivael2
+	description `Bulwark Station is one of the few places certified to produce Navy ships, and the largest are produced here. Many of them will be sent further north to combat the Northern Union, while others will be deployed right in the paradise worlds, and a few stray fleets might be found in the Dirt Belt.`
+	spaceport `Lying right on the caravan trade route, Bulwark Station is often full of merchants, negotiating deals with Navy workers or the stray Republic representative. It's very easy for the station to give off the feeling of being above your head.`
+	shipyard "Navy Shipyards"
+	outfitter "Common Oufits"
+	outfitter "Basic Weapons"
+	outfitter "Ammo North"
+	outfitter "Lovelace Advanced"
+	bribe 0.1
+	security 0.9
+	music ambient/machinery
+	
+planet "Beanstalk Station"
+	attributes north station factory
+	landscape land/sivael2
+	description `Beanstalk Station is full of ships making sales, usually metals and components to support the strong ship-building operation here. Betelgeuse is relatively out of the way, but its shipyards are still well-known across the galaxy, and among captains, so are the trade opportunities.`
+	spaceport `The spaceport is as busy as a map of the North, with merchants and the Navy and Betelgeuse employees all scrambling around with some goal in mind. Just like the North, the station sticks around through it all.`
+	shipyard "Betelgeuse Shipyards"
+	outfitter "Common Outfits"
+	outfitter "Basic Weapons"
+	outfitter "Ammo North"
+	outfitter "Syndicate Basics"
+	outfitter "Lovelace Basics"
+	bribe 0.1
+	security 0.9
+	music ambient/machinery
+
 planet "Huginn Station"
 	attributes deep station
 	landscape land/sivael2
@@ -14073,6 +14150,11 @@ planet Slylandro
 	landscape land/nasa9
 	description `Far beneath the swirling blue surface of Slylandro's atmosphere, void sprites and other strange creatures float about. As improbable as it may seem, the void sprites must have somehow evolved the capability to manipulate gravity fields, because every once in a while one of them will rise up from the surface powered by an antigravity field similar to the landing repulsors used by human ships. When they do so, the decrease in atmospheric pressure causes them to nearly double in size.`
 	security 0
+
+planet "Pokke Station"
+	attributes north factory station
+	landscape land/loc1
+	description `The pride of Betelgeuse Shipyards, Pokke Station overlooks Prime and provides 
 
 planet "Smuggler's Den"
 	attributes pirate station "south pirate"
