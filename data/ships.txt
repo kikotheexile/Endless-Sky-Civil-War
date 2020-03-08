@@ -383,6 +383,54 @@ ship "Shuttle"
 #Yachts
 ###############################################
 
+ship "Millipede"
+	sprite "ship/hai centipede"
+	thumbnail "thumbnail/hai centipede"
+	attributes
+		category "Yacht"
+		"cost" 12500000
+		"shields" 6600
+		"hull" 2400
+		"required crew" 40
+		"bunks" 131
+		"mass" 187
+		"drag" 3.9
+		"heat dissipation" .75
+		"fuel capacity" 600
+		"cargo space" 35
+		"outfit space" 375
+		"weapon capacity" 78
+		"engine capacity" 88
+		weapon
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
+	outfits
+		"NT-200 Nucleovoltaic"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Scram Drive"
+		
+	engine -15 113
+	engine 15 113
+	gun -11 -113 
+	gun 11 -113 
+	turret 0 -19 "Bullfrog Anti-Missile"
+	leak "leak" 60 50
+	leak "flame" 40 40
+	leak "big leak" 10 10
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
+	"final explode" "final explosion medium"
+	description `One half of a joint venture between the Hai and Humans to produce hybrid transports, the Tarazed Millipede is one of the most advanced yachts for sale in human space. It's Hai inspired hull also makes it a formidable combat ship in spite of its classification.`
+
+
 ship "Arrow"
 	sprite "ship/arrow"
 	thumbnail "thumbnail/arrow"
@@ -998,6 +1046,41 @@ ship "Wasp"
 #Freighter (light)
 ###############################################
 
+ship "Mason"
+	sprite "ship/earth shaper"
+	thumbnail "thumbnail/earth shaper"
+	attributes
+		category "Freighter"
+		"cost" 500000
+		"hull" 3300
+		"mass" 30
+		"required crew" 1
+		"bunks" 1
+		"drag" .9
+		"heat dissipation" .9
+		"fuel capacity" 300
+		"cargo space" 60
+		"outfit space" 59
+		"engine capacity" 26
+		"atmosphere scan" 100
+		weapon
+			"blast radius" 10
+			"shield damage" 100
+			"hull damage" 150
+			"hit force" 250
+	outfits
+		"Small Biochemical Cell"
+		
+		"Type 1 Radiant Thruster"
+		"Type 1 Radiant Steering"
+		"Hyperdrive"
+		
+	engine -9 30
+	engine 9 30
+	explode "tiny explosion" 20
+	explode "small explosion" 10
+	description "The mason is a modified Earth Shaper drone, specifically made for sale on Human markets. It's cramped interior and lack of living space betray its original design."
+
 ship "Argosy"
 	plural "Argosies"
 	sprite "ship/argosy"
@@ -1587,70 +1670,50 @@ ship "Skein"
 #Freighter (medium-heavy)
 ###############################################
 
-ship "Class C Freighter"
-	sprite "ship/bulk freighter"
-	thumbnail "thumbnail/bulk freighter"
+ship "Wyvern"
+	sprite "ship/skylark"
+	thumbnail "thumbnail/skylark"
 	attributes
-		category "Carrier"
-		"cost" 11400000
-		"shields" 13500
-		"hull" 7600
-		"landing gear" 1
-		"required crew" 18
-		"bunks" 43
-		"mass" 850
-		"drag" 16.4
-		"heat dissipation" .5
-		"fuel capacity" 600
-		"cargo space" 20
-		"outfit space" 400
-		"weapon capacity" 140
-		"engine capacity" 85
+		category "Container Ship"
+		"cost" 20000000
+		"shields" 10000
+		"hull" 7000
+		"required crew" 12
+		"bunks" 21
+		"mass" 460
+		"drag" 12.3
+		"heat dissipation" .7
+		"fuel capacity" 1000
+		"cargo space" 200
+		"outfit space" 120
+		"engine capacity" 120
+		"hull repair rate" .15
+		"hull energy" .15
+		"energy generation" 4.8
+		"energy capacity" 2200
+		"shield generation" .82
+		"shield energy" .82
+		"ramscoop" 1
 		weapon
-			"blast radius" 200
-			"shield damage" 2000
-			"hull damage" 1000
-			"hit force" 3000
+			"blast radius" 250
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
 	outfits
-		"Heavy Laser Turret" 2
-		"Heavy Anti-Missile Turret" 2
+		"A370 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Hyperdrive"
 		
-		"Fission Reactor"
-		"LP072a Battery Pack"
-		"D94-YV Shield Generator"
-		"Laser Rifle" 5
-		
-		"X3700 Ion Thruster"
-		"X3200 Ion Steering"
-		"Scram Drive"
-		
-	engine -22 198
-	engine 22 198
-	turret -12 -155 "Heavy Laser Turret"
-	turret 12 -155 "Heavy Anti-Missile Turret"
-	turret 30 175 "Heavy Laser Turret"
-	turret -30 175 "Heavy Anti-Missile Turret"
-	drone -66 -115 left
-	drone -66 -65 left
-	drone -66 -15 left
-	drone -66 35 left
-	drone -66 85 left
-	drone -66 135 left
-	drone 66 -115 right
-	drone 66 -65 right
-	drone 66 -15 right
-	drone 66 35 right
-	drone 66 85 right
-	drone 66 135 right
-	leak "leak" 30 50
-	leak "flame" 50 80
-	leak "big leak" 40 30
-	explode "small explosion" 15
-	explode "medium explosion" 25
-	explode "large explosion" 35
+	engine -15 117
+	engine 15 117
+	explode "tiny explosion" 12
+	explode "small explosion" 16
+	explode "medium explosion" 30
+	explode "large explosion" 40
 	explode "huge explosion" 20
-	"final explode" "final explosion large"
-	description `The Class C "Freighter" is a stealth warship designed by the Syndicate for baiting pirates with the offer of a seemingly helpless, ordinary bulk freighter. Inside, its cargo space has all been converted into drone bays, allowing it to carry a dozen combat drones.`
+	"final explode" "final explosion medium"
+	description "The Quarg's favored packmule, this ship is popular enough to be for sale on the human market. Equipped with its own power and shield generation, this ship needs no additional outfits."
+	description "As Quarg and Human technology is largely incompatible, this ship has little-to-no room for additional outfits, and can fit no weapons."
 
 ship "Behemoth"
 	sprite "ship/behemoth"
@@ -2621,6 +2684,71 @@ ship "Aletheia"
 ###############################################
 
 
+ship "Class C Freighter"
+	sprite "ship/bulk freighter"
+	thumbnail "thumbnail/bulk freighter"
+	attributes
+		category "Carrier"
+		"cost" 11400000
+		"shields" 13500
+		"hull" 7600
+		"landing gear" 1
+		"required crew" 18
+		"bunks" 43
+		"mass" 850
+		"drag" 16.4
+		"heat dissipation" .5
+		"fuel capacity" 600
+		"cargo space" 20
+		"outfit space" 400
+		"weapon capacity" 140
+		"engine capacity" 85
+		weapon
+			"blast radius" 200
+			"shield damage" 2000
+			"hull damage" 1000
+			"hit force" 3000
+	outfits
+		"Heavy Laser Turret" 2
+		"Heavy Anti-Missile Turret" 2
+		
+		"Fission Reactor"
+		"LP072a Battery Pack"
+		"D94-YV Shield Generator"
+		"Laser Rifle" 5
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Scram Drive"
+		
+	engine -22 198
+	engine 22 198
+	turret -12 -155 "Heavy Laser Turret"
+	turret 12 -155 "Heavy Anti-Missile Turret"
+	turret 30 175 "Heavy Laser Turret"
+	turret -30 175 "Heavy Anti-Missile Turret"
+	drone -66 -115 left
+	drone -66 -65 left
+	drone -66 -15 left
+	drone -66 35 left
+	drone -66 85 left
+	drone -66 135 left
+	drone 66 -115 right
+	drone 66 -65 right
+	drone 66 -15 right
+	drone 66 35 right
+	drone 66 85 right
+	drone 66 135 right
+	leak "leak" 30 50
+	leak "flame" 50 80
+	leak "big leak" 40 30
+	explode "small explosion" 15
+	explode "medium explosion" 25
+	explode "large explosion" 35
+	explode "huge explosion" 20
+	"final explode" "final explosion large"
+	description `The Class C "Freighter" is a stealth warship designed by the Syndicate for baiting pirates with the offer of a seemingly helpless, ordinary bulk freighter. Inside, its cargo space has all been converted into drone bays, allowing it to carry a dozen combat drones.`
+
 
 ship "Arete"
 	sprite "ship/carrier"
@@ -3315,7 +3443,7 @@ ship "Bactrian"
 	description "The Lionheart Bactrian is the last of the great city-ships, a design hearkening back to the early days of space colonization when a long-distance vessel needed to be a self-contained world, able to survive for weeks at a time without encountering an inhabited planet. It is not only a freighter, but a carrier, and a capable warship either at short range or at a distance."
 	description "	Naturally, this versatility also makes it extremely expensive, and the Bactrian is normally only for sale to citizens who have been vetted by the local government of the Deep."
 	
-# Battle Cruisers
+	# Battle Cruisers
 	
 ship "Prototype Vulture"
 	sprite "ship/vulture"
@@ -3476,7 +3604,7 @@ ship "Veles"
 	explode "large explosion" 70
 	explode "huge explosion" 30
 	"final explode" "final explosion large" 1
-	description "The Veles class is an incredible feat of engineering. A first of its kind true Star Cruiser, intended to single handedly crush the Northern Union. This ship signals a resurgence in Betelgeuse's research and development department, which has finally come out of its centuries-long stagnation."
+	description "The Veles class is an incredible feat of engineering. A first of its kind true Star Cruiser, intended to single handedly crush the Northern Union. This ship signals a resurgence in Betelgeuse's research and development department, which has finally come out of it's centuries long stagnation."
 
 
 # "Marauders"
@@ -4029,7 +4157,7 @@ ship "Selma" "Marauder Leviathan (Engines)"
 	description "As if the Leviathan wasn't a terrifying enough ship already, this one has been heavily modified with special attention paid to the engine capacity, enabling it to bring its guns to bear even faster."
 
 
-ship "Bakunawa" "Marauder Leviathan (Weapons)"
+ship "Bakunawa"
 	sprite "ship/mleviathanw"
 	thumbnail "thumbnail/mleviathanw"
 	add attributes
@@ -4059,7 +4187,7 @@ ship "Bakunawa" "Marauder Leviathan (Weapons)"
 	turret 14.5 -11.5 "Heavy Laser Turret"
 	turret -26 11.5 "Heavy Laser Turret"
 	turret 26 11.5 "Heavy Laser Turret"
-	description "This Leviathan once belonged to an infamous pirate captain whose name has been lost to the ages. It's had so much custom work done to it that can hardly even be considered the same ship. The weapons capacity, in particular, has been massively increased."
+	description "This Leviathan once belonged to an infamous pirate captain whose name has been lost to the ages. It's had so much custom work done to it that can hardly even be considered the same ship; the weapons capacity, in particular, has been massively increased."
 
 
 
