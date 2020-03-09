@@ -12123,7 +12123,7 @@ planet Ada
 	shipyard "Megaparsec Basics"
 	outfitter "Lovelace Advanced"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	"required reputation" 2
 	bribe 0.1
 	security 0.9
@@ -12138,8 +12138,7 @@ planet Albatross
 	description `	The anarchist farming communes, each operating independently but trading with outsiders to gain necessary supplies, are clustered in the barely temperate climate near the equator. The pirate bases, having a much more ready source of supplies, are located wherever there are flat landing areas close to craggy, defensible mountains.`
 	spaceport `You are glad you put on a warm coat before leaving your ship. The wind blows in strong gusts down the streets of this small spaceport town. You pass by ranchers herding cattle, a few farmers driving old, rusted-out trucks full of produce, and a couple of shady figures huddled in an alleyway negotiating what looks like a drug deal. In the center of town is a small merchant's exchange and a couple of greasy spoon diners.`
 	spaceport `	The sign over the spaceport bar reads, "No Gods, No Masters." Below it in slightly smaller writing is another sign which reads, "No Cybernetic Implants. No Badgers, Weasels, Or Polecats." You have no idea what a "polecat" is.`
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Common Outfits"
 	outfitter "Pirate Outfits"
 	"required reputation" -20
@@ -12169,19 +12168,12 @@ planet Alfheim
 	spaceport `The spaceport is in the middle of a field of oil derricks so vast that from above, the desert seemed to be covered in spiky grey fur. The spaceport itself is a soaring canopy, made to look like a tent, or sails on a ship. But it is built of a sturdy composite of plastic and carbon fiber, and coated in reflective plastic. Inside, hovercraft and massive sand-crawlers are bringing cargo to and from the refineries and factories scattered across the planet's surface.`
 	outfitter "Basic Outfits"
 	outfitter "Deep Sky Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.05
 	security 0.7
 	tribute 1200
 		threshold 5000
 		fleet "Small Deep Security" 27
-
-planet Allhome
-	attributes hai farming "human tourism"
-	landscape land/dmottl0
-	description `This Earth-like planet has been settled both by human beings and by the Hai, the species that controls this region of space. The human settlements are relatively small, mostly farming communities founded by people who came here to escape the chaos and uncertainty of human space.`
-	spaceport `In the spaceport, a handful of human merchants and colonists wander about amid throngs of Hai - vaguely squirrel-like aliens who are somewhat shorter than the average human being, but make up for it with an abundance of energy. You feel a little bit like an adult wading through a sea of hyperactive children as you try to locate the commodity exchange and the other services offered here.`
-	outfitter "Hai Basics"
 
 planet "Alta Hai"
 	attributes quarg station
@@ -12250,7 +12242,7 @@ planet Asgard
 	outfitter "Deep Sky Advanced"
 	outfitter "Lovelace Basics"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.05
 	security 0.7
 	tribute 4000
@@ -12276,7 +12268,7 @@ planet Bivrost
 	spaceport `	A video screen plays a looping advertisement from the local chamber of commerce. A prosperous-looking man is saying, "I knew there was a fortune to be made in uranium - but I was afraid my children would start glowing in the dark."`
 	outfitter "Basic Outfits"
 	outfitter "Deep Sky Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.8
 	tribute 3600
 		threshold 7000
@@ -12290,8 +12282,7 @@ planet Bloodsea
 	spaceport `When you landed your ship near one of the larger outposts, no one even came out to greet you or to check your paperwork - not that anyone on a pirate world would care about such things. In the center of town is an open-air marketplace where large men armed with large guns stand guard over piles of crates, while others examine the wares that are for sale and haggle over prices.`
 	spaceport `	The local slang incorporates threats of extreme violence as a seemingly meaningless verbal tic. "Hey, I'm gonna cut off your fingers one by one until you buy a meat patty!" a vendor calls out cheerfully as you pass. "First one's free, and I'll tie a knot in your spine if you don't like it."`
 	outfitter "Basic Outfits"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Pirate Outfits"
 	"required reputation" -10
 	security 0
@@ -12331,7 +12322,7 @@ planet Bourne
 	outfitter "Common Outfits"
 	outfitter "Kraz Advanced"
 	outfitter "Delta V Basics"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.4
 	tribute 2200
 		threshold 4500
@@ -12347,8 +12338,7 @@ planet "Buccaneer Bay"
 	shipyard "Northern Union"
 	outfitter "Syndicate Basics"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Pirate Outfits"
 	security 0
 	tribute 800
@@ -12437,7 +12427,7 @@ planet Chiron
 	shipyard "Betelgeuse Basics"
 	shipyard "Betelgeuse Advanced"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Lovelace Basics"
 	outfitter "Syndicate Basics"
 	bribe 0.02
@@ -12455,6 +12445,7 @@ planet Clark
 	spaceport `	In the central building, dozens of workers fill a large cafeteria with several stations serving different types of food. The mood here feels boisterous and energetic, very different from most of the Dirt Belt worlds you have visited.`
 	shipyard "Basic Ships"
 	outfitter "Basic Outfits"
+	outfitter "Ammo"
 	security 0.1
 	tribute 400
 		threshold 2500
@@ -12468,14 +12459,6 @@ planet Clink
 	tribute 200
 		threshold 1500
 		fleet "Small Militia" 15
-
-planet Cloudfire
-	attributes hai military
-	landscape land/sea11-sfiera
-	description `Cloudfire's atmosphere is unusually hazy, with almost constant cloud cover, making agriculture unproductive here even though it is a warm and damp environment. There are several major cities here that were abandoned centuries ago, due to conflict with the Unfettered. The one major city that remains is the closest thing the Hai have to a military base, with new supplies of weapons and ammunition constantly pouring in from the rest of Hai space.`
-	spaceport `The spaceport has massive hangars and advanced repair facilities designed to accommodate the largest Hai warships. Where a fleet has just returned from a recent battle, the hangars are lit with flashes from robotic welders as damaged hull plates are swapped out for fresh ones and weakened joints are reinforced. The actual process of building these warships, however, takes place on the Hai homeworld, where the facilities will not be vulnerable to attack.`
-	shipyard "Hai Basics"
-	outfitter "Hai Intermediate"
 
 planet Cornucopia
 	attributes south farming research frontier
@@ -12495,8 +12478,7 @@ planet Covert
 	description `Covert is home to a powerful mining cartel, operating outside the control of Republic law or any other external authority. It is rumored to be one of the few planets in human space where weapons-grade uranium and plutonium is mined and enriched. Any goods for sale here were most likely produced by slave labor, often by survivors of ships that have been captured by pirates. A massive pirate fleet is docked on the outskirts of the spaceport, a warning to any private pilot who might think of cheating or opposing the cartel.`
 	spaceport `From the moment you landed, you have been followed by a pair of security guards with earpieces and laser guns. The spaceport is one enormous building, with square, straight hallways and featureless walls, and nearly every door you pass is locked. Cameras at each hallway intersection pivot to watch as you approach. This is simultaneously one of the most secure spaceports you have visited, and one of the most dangerous, although if you do not do anything to provoke the animosity of the cartel, you will probably be able to leave in peace.`
 	shipyard "Southern Pirates"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Pirate Outfits"
 	"required reputation" 10
 	bribe 0.1
@@ -12513,7 +12495,7 @@ planet Crossroads
 	spaceport `The spaceport is marked out with radio beacons to allow ships to land or take off even if the air is too dusty to see the ground. The dusty air tastes metallic on your tongue. It is laced with radioactive elements, and you try your best not to breathe in too much of the dust while making your way from your ship to the low stone buildings of the port.`
 	outfitter "Syndicate Basics"
 	outfitter "Basic Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.2
 	tribute 1100
 		threshold 3500
@@ -12531,29 +12513,13 @@ planet Dancer
 		threshold 2000
 		fleet "Small Militia" 23
 
-planet Darkcloak
-	attributes unfettered
-	landscape land/water6
-	description `Darkcloak is a world that is almost always obscured by a thick layer of clouds, making it difficult to produce food here.`
-	description `	Although the Hai tend to be an easygoing and nonviolent species, there are always a few in each generation that yearn for excitement, warfare, and conquest. These "Unfettered" Hai have built a major military base here, and they launch raids from here on convoys traveling through the nearby systems.`
-	spaceport `The occupants of this spaceport are not visibly different from the Hai you have encountered elsewhere, but they seem much more tense, angry, and hostile. As the only human here, you are being watched very closely, but no one threatens you directly.`
-	spaceport `	It is likely that most of the goods available for trade here were stolen from one of the nearby Hai systems.`
-	shipyard "Hai Basics"
-	outfitter "Hai Basics"
-
-planet Darkmetal
-	attributes hai mining "hai tourism"
-	landscape land/canyon02
-	description `Darkmetal is a cold, dry mining world, the source of much of the heavy metals that are used in Hai space. A haze of slightly radioactive dust hangs in the sky whenever it has been more than a week since the last rainstorm. Most of the mining is carried out by slow-moving vehicles the size of a small city, which ingest layers of dirt and bedrock, crush it to extract any valuable elements, then mix the remaining material with water to form a cement-like slurry that can be extruded in solid blocks, to reduce the amount of additional dust that is added to the atmosphere.`
-	spaceport `The spaceport is hermetically sealed, with gantry tubes that can adapt to fit the hatches of human ships as well as Hai. The seal is to keep radioactive dust out of the living spaces, but its purpose is primarily to reduce the long-term exposure of the station's permanent inhabitants; for visitors, the risks are minimal.`
-
 planet Darkstone
 	attributes south farming frontier
 	landscape land/valley8
 	description `Darkstone is a rainy, mountainous planet. The major continents are spidered with rivers and green valleys. A few enterprising settlers have built farming communities here, but the population remains low because of the threat of piracy from neighboring systems.`
 	description `	Among the farmers who choose to stay, the attitude seems to be that piracy can't last forever, but good land will always be good land. Despite some low-level cynicism and bitterness, there is surprisingly little outright anger at either the pirates themselves or any government that might have been expected to control them.`
 	spaceport `Once every few months, one pirate band or another will land here demanding tribute in the form of food. The locals respond by just keeping a big enough supply on hand to satisfy them; any sort of planetary defenses would cost far more than the price of the amount of food that an average fleet of warships can carry. But once they recognize that you are here to trade and not to steal, they greet you quite enthusiastically.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.1
 	tribute 200
 		threshold 1500
@@ -12569,8 +12535,7 @@ planet "Deadman's Cove"
 	description `Deadman's Cove is an ocean planet; the continents take up only a tenth of its surface area. Legends tell of massive sea creatures hiding in the deeps: serpents hundreds of meters long; colossal sea turtles; strange tentacled monsters and exotic fish.`
 	description `	One island archipelago is home to the spaceport, the only part of the planet where it is safe to land uninvited. The other islands - even some that seem from a distance to be uninhabited - are often used as staging bases for pirate fleets, who guard their secrets closely.`
 	spaceport `Your ship is on a landing pad only a few meters above the pounding surf, and you can't help worrying about what might happen if the tide rises any higher. If nothing else, the salt water is bound to corrode your hull if you stay here too long. You make your way to a bar where a cage hanging from the ceiling holds an actual parrot. After trying for a while to get it to talk to you, you realize that it is dead, stuffed and nailed to its perch.`
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Pirate Outfits"
 	bribe 0.03
 	security 0
@@ -12598,7 +12563,7 @@ planet Delve
 	shipyard "Syndicate Basics"
 	outfitter "Syndicate Advanced"
 	outfitter "Basic Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.2
 	tribute 1600
 		threshold 4500
@@ -12610,7 +12575,7 @@ planet Dune
 	description `Dune is a mostly desert world, which was uninhabited until very recently when geologists discovered that the bedrock under the desert is home to many rare mineral deposits and gemstones. Most of the inhabitants live deep underground to avoid the hot sunlight and frequent sandstorms. It is a dangerous life; cave-ins are common in the mines, and the sand on the surface can shift so suddenly that it is not uncommon for one of the underground villages to find its surface entrance buried, and to need to call for help from another village. But the mines operate with a joint ownership model where all the workers profit equally, so working here pays well. Many of the miners stay here only for five or ten years, while sending money back to their families off-world.`
 	spaceport `The spaceport is an enormous concrete tower rising a hundred meters above the sand, with the intention that it should be high enough to avoid being buried in even the largest of sandstorms. Each pad has landing clamps to secure your ship in case of high winds. Even so, you are a bit nervous as you leave your ship behind and board one of the cargo elevators to the complex below.`
 	spaceport `	There are no windows inside the port, but the tall ceilings and bright strips of sun-lamps keep it from feeling too claustrophobic.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Kraz Basics"
 	security 0.05
 	tribute 300
@@ -12633,7 +12598,7 @@ planet Earth
 	outfitter "Common Outfits"
 	outfitter "Lovelace Basics"
 	outfitter "Syndicate Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	"required reputation" 2
 	bribe 0.03
 	security 0.3
@@ -12648,6 +12613,7 @@ planet "Echo Station"
 	spaceport `The docking and storage rings of this station were built to accomidate Caravan fleets, which has proven very useful for all of the various visiting factions. Wanderer Freighters and Hai Transports dock and disembark to mingle with the several thousand humans crowding the internal streets of this sprawling station. The Bird-Like wanderers can often be seen taking to the air to get to specialty shops that service them. Towering Quarg wearing their trademark pressure suits try their best to not trip over humans and their squirrel-like Hai counterparts. `
 	shipyard "Tarazed Shipyards"
 	outfitter "Tarazed Systems"
+	outfitter "Ammo"
 	bribe 0
 	security 0.9
 	government Tarazed
@@ -12665,7 +12631,7 @@ planet Farpoint
 	spaceport `	The massive scale of the fortifications, coupled with their state of near-total disuse, puts you in mind of the fabled Maginot Line on Earth - a relic of an anticipated battle that failed to materialize according to plan.`
 	outfitter "Common Outfits"
 	outfitter "Lovelace Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	"required reputation" 2
 	bribe 0.08
 	security 0.8
@@ -12742,7 +12708,7 @@ planet Follower
 	shipyard "Lionheart Basics"
 	outfitter "Common Outfits"
 	outfitter "Deep Sky Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.03
 	security 0.4
 	tribute 2400
@@ -12769,7 +12735,7 @@ planet Foundry
 	shipyard "Megaparsec Advanced"
 	outfitter "Common Outfits"
 	outfitter "Syndicate Advanced"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.1
 	security 0.5
 	tribute 2900
@@ -12793,8 +12759,7 @@ planet Freedom
 	shipyard "Basic Ships"
 	shipyard "Northern Union"
 	shipyard "Betelgeuse Basics"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Basic Outfits"
 	"required reputation" -10
 	security 0
@@ -12816,7 +12781,7 @@ planet Furnace
 	spaceport `The spaceport is mostly a military base. Uniformed crew members hurry back and forth without giving you a second glance. The food in the mess hall is standard military fare, hearty but bland and unappetizing, and there are few shops or other services catering to civilians.`
 	outfitter "Syndicate Basics"
 	outfitter "Basic Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.05
 	security 0.1
 	tribute 1200
@@ -12836,7 +12801,7 @@ planet Geminus
 	shipyard "Betelgeuse Basics"
 	shipyard "Lionheart Basics"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Lovelace Advanced"
 	outfitter "Syndicate Basics"
 	bribe 0.1
@@ -12863,21 +12828,13 @@ planet Geyser
 	description `	In recent years, Geyser's economy has not been able to support repairs to the centuries-old terraforming equipment, and as a result the climate has become increasingly arid, and it is difficult to grow food crops here.`
 	spaceport `This spaceport was built seven or eight centuries ago, and its once-grand architecture has now fallen into decay. A ring of hangars with arched cement ceilings surrounds a central complex of warehouse towers, whose upper stories once held food courts and luxury hotel rooms. But now, many of the hangars have collapsed, and the ones that remain have rugged plastic netting bolted to the ceilings to protect ships from falling fragments of cement. Only one of the food courts remains active, and although a few of the hotel rooms are still used, the marble fixtures and tile floors that were once so polished and clean are now chipped and cracked and worn down.`
 	outfitter "Basic Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Syndicate Basics"
 	outfitter "Lovelace Basics"
 	security 0.3
 	tribute 1300
 		threshold 3500
 		fleet "Large Militia" 20
-
-planet Giverstone
-	attributes hai mining
-	landscape land/valley5
-	description `On this mining world, the Hai are using boring machines to drill tunnels straight into the hearts of the mountains. Each tunnel twists and turns to intersect the regions of rock with the highest concentrations of valuable ore. Most of the tunnels also join up with other tunnels that have been dug through the same mountains, so that there are multiple exits from any given point in the mines.`
-	spaceport `The spaceport is in the center of one of the large cities that are built high up in the mountains where the air is cooler. It consists mostly of open-air landing pads: enormous slabs of metal embedded into the mountainside at different levels, with winding roads connecting them to the main marketplace and warehouse district. Several old mine entrances, well reinforced with metal struts, have been converted into hangar bays or warehouse space.`
-	shipyard "Hai Intermediate"
-	outfitter "Hai Intermediate"
 
 planet Glaze
 	attributes south tourism
@@ -12890,7 +12847,7 @@ planet Glaze
 	outfitter "Common Outfits"
 	outfitter "Delta V Basics"
 	outfitter "Kraz Basics"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.2
 	tribute 1700
 		threshold 3500
@@ -12932,8 +12889,7 @@ planet Greenrock
 	shipyard "Southern Pirates"
 	shipyard "Northern Union"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Delta V Basics"
 	outfitter "Kraz Basics"
 	outfitter "Syndicate Basics"
@@ -12943,23 +12899,6 @@ planet Greenrock
 	tribute 1800
 		threshold 3500
 		fleet "Large Northern Union" 13
-
-planet Greenwater
-	attributes hai farming fishing "human tourism"
-	landscape land/myrabella2
-	description `Greenwater is one of the few worlds in Hai space that is home to a sizable human population. The temperature on most of the planet's surface is too warm for the Hai, but tolerable for human beings. Close to the equator are scattered human settlements for farming or fishing, which trade with the Hai cities closer to the poles for technology and equipment.`
-	spaceport `In this bustling spaceport, deeply tanned human merchants are busy haggling with the Hai natives over the price of loads of fish and produce. The atmosphere is quite friendly and relaxed - even here, well into the planet's temperate zone, it is warm enough that everyone, Hai and human alike, moves at a languid pace.`
-	shipyard "Hai Basics"
-	outfitter "Hai Basics"
-
-planet Hai-home
-	attributes hai
-	landscape land/valley2
-	description `This is the home world of the Hai. Well over half the planet's surface is oceans. The land is mostly covered by sprawling cities, except for some mountain ranges too high or too snowy to build on. Despite its population of nearly eight billion, Hai-home is relatively free of pollution or overcrowding.`
-	spaceport `The spaceport in the capital city of Haimat is massive, with towers well over a kilometer high and hangars large enough to park an entire fleet of capital ships in. Although the port is bustling, with ships taking off and landing almost every minute, nearly three quarters of the landing pads and hangars are empty, and whole sections of the spaceport appear to be unused. Clearly, this port was designed to handle far more traffic than this.`
-	shipyard "Hai Advanced"
-	outfitter "Hai Advanced"
-	"required reputation" 10
 
 planet Harmony
 	attributes south farming religious frontier
@@ -12977,8 +12916,7 @@ planet Haven
 	spaceport `The spaceport is old and dingy, with piles of litter in the gutters and graffiti on many of the alley walls. Many of the shops are closed, the windows boarded over or covered with yellowing paper. This is an independent world, and a relatively stable settlement, but the effects of its separation from the rest of the galaxy are evident. A few young people carrying large backpacks eye you with interest, perhaps trying to gauge their chances of getting you to give them a cheap lift off-planet.`
 	shipyard "Northern Union"
 	outfitter "Basic Outfits"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Pirate Outfits"
 	bribe 0.03
 	security 0
@@ -12996,7 +12934,7 @@ planet Haze
 	shipyard "Lionheart Basics"
 	outfitter "Basic Outfits"
 	outfitter "Deep Sky Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.6
 	tribute 2600
 		threshold 5500
@@ -13008,19 +12946,11 @@ planet Heartland
 	description `Heartland is a pleasant world, with a geography mostly consisting of low hills, plains, and oceans. The farms here produce bountiful crops, and as a result it has drawn tens of millions of settlers. Many of them now work in factories or assembly lines, in which most of the farm equipment used here and in the surrounding systems is built. Tractors from Heartland are trusted to be well-built and sturdy, and easy to repair; some are still in use that were built over a century ago.`
 	spaceport `The spaceport is a cluster of low buildings. At the center of the port is a special, taller building with glass walls on all sides. It houses the tractor showroom. The farmers visiting the showroom look about as excited as you do when touring a large and well-appointed shipyard. There are tractors with rubber wheels, spiked wheels, and tracks; with plows, combines, balers, and chaser bins; tractors barely big enough to sit on and tractors the size of a small freighter. It's somewhat overwhelming.`
 	outfitter "Basic Outfits"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.2
 	tribute 900
 		threshold 3500
 		fleet "Large Republic" 4
-
-planet Heartvalley
-	attributes hai manufacturing "hai tourism"
-	landscape land/fog0
-	description `An extreme amount of tectonic activity in its distant past has left Heartvalley with mountain ranges five to ten kilometers high in some places. Most of the Hai settlements here are in the valleys closer to sea level, where the air is dense enough for them to breathe comfortably. The tectonic activity has left many ancient sea-beds exposed, providing access to bountiful supplies of oil. To the Hai, oil is too precious a resource to be used for fuel; instead they process it into plastic and use the byproducts in other chemical processes.`
-	spaceport `The spaceport is built halfway up the slope of one of the most heavily settled valleys. Farther down the valley, the tallest buildings of the city seem tiny compared to the mountains that surround them. On the outskirts of the city sit strange engines the size of a spacecraft, with pipes snaking out from them in all directions and sinking deep into the ground.`
-	shipyard "Hai Basics"
-	outfitter "Hai Basics"
 
 planet Heatstroke
 	attributes north "northern pirate" mining
@@ -13052,7 +12982,7 @@ planet Hephaestus
 	outfitter "Common Outfits"
 	outfitter "Lovelace Basics"
 	outfitter "Syndicate Advanced"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.1
 	security 0.7
 	tribute 3400
@@ -13065,7 +12995,7 @@ planet Hermes
 	description `No one is permitted to settle on Hermes without a government permit. It is a sparsely populated world, mostly used for medical research and development - including some research that, if the rumors are true, are carried out here in isolation so that if something goes wrong, entire districts can be quarantined or even "sterilized" by orbital bombardment.`
 	description `	The landscape is nondescript, mostly rolling plains and forests. The oceans are relatively small, and as a result it is a somewhat dry planet.`
 	spaceport `The spaceport is far removed from any of this world's cities. It consists of a single, ring-shaped building; the docking bays open onto the central atrium, which visiting ships fly through to reach them. Industrial strength ultraviolet lasers are mounted on turrets throughout the atrium, and fire automatically at entering and departing ships to sterilize them. Once you land, the docking bay is hermetically sealed. Based on the precautions they are taking, you find yourself wanting to spend as little time as possible breathing the air here.`
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Lovelace Advanced"
 	"required reputation" 10
 	bribe 0.1
@@ -13080,7 +13010,7 @@ planet Hestia
 	description `In the distant past, Hestia was a nearly lifeless ice world. It is now a sub-tropical paradise, one of the great victories from the heyday of planetary engineering back when the galactic economy had more money to spare for terraforming. Today it is mostly a retirement community for those who can afford it, although most of the population consists of young service workers in rented housing who take care of the retirees. On Hestia, the poor live in cities; the rich live in country estates. Aside from the urban centers, most of this world is covered in rolling green hills and oceans.`
 	spaceport `Hestia has two separate spaceports. The port where rich residents and their visitors arrive and depart is private, owned by a local company. Here in the public spaceport, no attempt has been made at impressive architecture: everything is spare and utilitarian, with floors of bare cement. There are a few trucks and forklifts carrying cargo, but the streets that connect the landing pads are mostly full of people on foot, walking toward the customs building.`
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Lovelace Basics"
 	bribe 0.04
 	security 0.5
@@ -13093,7 +13023,7 @@ planet Hippocrates
 	landscape land/water11-harro
 	description `Hippocrates is a sparsely settled world, home mostly to scientific research outposts. The environment here, orbiting so close to a red dwarf star, is very different from most other settled planets. The scientists estimate this star system to be over ten billion years old, enough that life here has had much more time to develop and evolve than on any planet orbiting a brighter, more short-lived star.`
 	spaceport `The spaceport is a single building, and half the landing pads are just packed dirt. This port was not designed for large volumes of cargo or of visitors. Within the building is a sun-lit atrium, with separate storefronts for the commodity exchange, the job center, and the bank. The only place you can see where you might be able to get something to eat is a bar, advertised by a sign showing an Erlenmeyer flask with a folding paper umbrella hung over the rim.`
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.1
 	tribute 800
 		threshold 2500
@@ -13112,7 +13042,7 @@ planet Hopper
 	landscape land/myrabella1
 	description `Hopper is a temperate world of oceans, mountains, and plains, but with unfortunately high levels of sulfuric acid in its atmosphere. Metal and stone that are exposed to the atmosphere corrode quickly, requiring frequent maintenance. As a result, Hopper has only a few small settlements on it, and most of the industry is focused on underground mining. The oceans are populated only by a few indigenous life forms that have adapted to their high acidity; Earth fish could not be introduced successfully here.`
 	spaceport `The spaceport consists mostly of a cluster of steel-framed warehouses with tin roofs, surrounded by concrete slabs for ships to land on. Scattered among the warehouses are a few smaller wooden buildings, housing a pub, a restaurant, and a small inn. Some of the warehouses are relatively new, with metal that still gleams; others are covered in rust, and a few stand in ruins, with large holes worn through their roofs and rusted girders poking through like dead trees.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.05
 	tribute 300
 		threshold 2000
@@ -13126,7 +13056,7 @@ planet "Brokkr Station"
 	shipyard "Lionheart Shipyards"
 	outfitter "Common Outfits"
 	outfitter "Basic Weapons"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Deep Sky Advanced"
 	bribe 0.1
 	security 0.9
@@ -13143,8 +13073,7 @@ planet "Hammer Station"
 	shipyard "Syndicated Shipyards"
 	outfitter "Common Outfits"
 	outfitter "Basic Weapons"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Syndicate Advanced"
 	bribe 0.1
 	security 0.9
@@ -13158,7 +13087,7 @@ planet "Rampart Station"
 	shipyard "Navy Shipyards"
 	outfitter "Common Oufits"
 	outfitter "Basic Weapons"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Lovelace Advanced"
 	bribe 0.1
 	security 0.9
@@ -13172,7 +13101,7 @@ planet "Orion Station"
 	shipyard "Betelgeuse Shipyards"
 	outfitter "Common Outfits"
 	outfitter "Basic Weapons"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Syndicate Basics"
 	outfitter "Lovelace Basics"
 	bribe 0.1
@@ -13197,7 +13126,7 @@ planet Humanika
 	landscape land/beach2
 	description `The gravity is too strong on this planet for the Quarg to inhabit it, so they have welcomed human settlers instead. Many people who want freedom from the dangers of human space and the endless instability of human government have settled here. Although the regions near the equator are far too warm to be comfortable, the climate closer to the poles is almost ideal; the only reason Humanika is not as densely populated as some of the worlds farther to the galactic north is the distrust with which most humans view the Quarg.`
 	spaceport `The spaceport is a towering steel structure, built by the Quarg, with docks for their pilot-less cargo drones in addition to the platforms for human ships. The hallways inside have disconcerting proportions, somewhat narrow but with very tall ceilings. In addition to the human inhabitants, there are a few tall, almost fragile-looking robots with digitigrade limbs and narrow torsos patterned after the anatomy of a Quarg. Most of the robots stand still in the corners, like statues, but a few are moving around and interacting with people, apparently as remote control proxies for Quarg in orbit. It is a clear reminder of who owns this planet.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	bribe 0.05
 	security 0.9
 	tribute 1000
@@ -13225,14 +13154,6 @@ planet Icefall
 		threshold 3000
 		fleet "Small Syndicate" 8
 
-planet Icelake
-	attributes hai factory "human tourism"
-	landscape land/sky4
-	description `Icelake is the second most populous Hai planet. Since its oil and natural gas reserves have long since been depleted, the large cities and factories here rely heavily on geothermal and wind energy. One fortunate side effect of that is that the air here is almost as pristine as on a non-industrial world.`
-	spaceport `The largest hangars in the spaceport are built of metal beams more than a meter wide, with thick glass panels between them to let in the sunlight. Even the smaller and newer warehouses on the outskirts of the port seem as solid and permanent as the mountains themselves. Thousands of Hai are walking back and forth between the buildings, and many of them regard you with curiosity; there are very few human visitors here.`
-	shipyard "Hai Intermediate"
-	outfitter "Hai Advanced"
-
 planet Ingot
 	attributes "dirt belt" volcanic mining moon
 	landscape land/mountain8
@@ -13240,27 +13161,11 @@ planet Ingot
 	spaceport `In this spaceport, ships dock inside a hangar whose ceiling protects them from meteorite impacts. The hangar is not pressurized, so there are also landing tubes that connect to each of the visiting ships. Many of the people inside are carrying emergency oxygen masks in case a sudden impact ruptures the building.`
 	spaceport `	In addition to being the spaceport, this complex is also the repair and control center for the mining robots. There are a handful of buildings elsewhere on Ingot, but not many. You cannot imagine spending so much time with so little space or change of scenery.`
 	outfitter "Basic Outfits"
+	outfitter "Ammo"
 	security 0.1
 	tribute 200
 		threshold 1500
 		fleet "Small Militia" 15
-
-planet "Kort Kehai"
-	attributes wanderer
-	landscape land/lava6
-	description `This planet has a temperate climate, yet its surface is nearly lifeless, perhaps due in part to the high concentration of radioactive isotopes in the soil. The only plant growing on most of the land is a hardy bioengineered moss designed by the Wanderers to accumulate heavy metals and other toxins in its root system. These plants are then periodically harvested by flocks of unpiloted robots and buried in deep pits near the planet's poles.`
-	spaceport `This is the only Wanderer spaceport on the entire planet, with a population of no more than a few hundred Wanderers, most of them engineers and robot technicians. At the center of the port is a glass dome nearly a hundred meters tall, enclosing a garden with cliffs, streams, and towering trees, where the Wanderers can stretch their wings and relax in a green and growing environment without being exposed to the outside air.`
-	spaceport `	The hallway that loops around the outside of the garden is decorated with an incredibly detailed mural. At one end the mural depicts a barren and blasted landscape, which gradually transitions along the length of the hallway to a green and growing world. The mural must be a reminder to the workers of what they are striving to accomplish here.`
-	"required reputation" 2
-	bribe 0
-
-planet "Kort Vek'kri"
-	attributes wanderer
-	landscape land/mountain10-sfiera
-	description `This world is nearly unpopulated, with very little animal life and strange, twisted plants with odd coloration. In small patches of land, the native vegetation gives way to green forests and fields, which were probably planted there by the Wanderers. In some of the larger forests, birds and insects have begun to flourish.`
-	spaceport `This small spaceport is unmistakably a research station, and the Wanderers walking or flying from one building to another have a self-absorbed attitude not unlike what you would expect from human scientists. Around the outskirts of the port village are pens that hold a staggering variety of animals, mostly ruminants and other herbivores, and the work of the scientists seems to revolve around convincing these animals to eat the local flora.`
-	"required reputation" 2
-	bribe 0
 
 planet "Kraken Station"
 	attributes "near earth" station
@@ -13308,7 +13213,7 @@ planet Lichen
 	description `	Planetary government, or indeed any government above the village level, is virtually nonexistent. Most farms are small and family-owned, negotiating sales directly with off-world corporations who then arrange for transportation of the produce.`
 	spaceport `The spaceport is built on a small mountain, one of the rare places where enough bedrock rises above the soil to provide a firm foundation for large buildings and a flood-free location. The warehouses and market are built of concrete, but the smaller buildings on the outskirts of the port are wood framed. Moss is growing everywhere, and in places the wood is stippled with mold. But the people are friendly enough, unhurried and peaceful.`
 	spaceport `	A noodle soup restaurant near the center of the port town seems to be the gathering place of choice. Whatever they're cooking inside, it smells delicious.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.05
 	tribute 500
 		threshold 3000
@@ -13333,7 +13238,7 @@ planet Longjump
 	spaceport `You can recognize the natives immediately because they are almost all taller than you, a result of growing up in a low-gravity environment. The spaceport consists of four large towers, connected by bridges, with openings for hangars in the sides. The upper stories are for landing ships; business takes place down below, at street level.`
 	outfitter "Basic Outfits"
 	outfitter "Delta V Basics"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.1
 	tribute 600
 		threshold 3000
@@ -13358,7 +13263,7 @@ planet Luna
 	outfitter "Common Outfits"
 	outfitter "Lovelace Basics"
 	outfitter "Syndicate Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.05
 	security 0.2
 	tribute 2500
@@ -13373,7 +13278,7 @@ planet Maelstrom
 	spaceport `The spaceport is a single massive complex of buildings, with hangars large enough for even a bulk freighter or a Navy flagship. A railroad runs through several of the nearby mining towns and straight into the spaceport building itself, allowing ore and processed metal to be loaded directly from the mine cars into the waiting freighters.`
 	outfitter "Lovelace Basics"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.5
 	tribute 2700
 		threshold 5500
@@ -13389,7 +13294,7 @@ planet Mainsail
 	shipyard "Betelgeuse Basics"
 	outfitter "Basic Outfits"
 	outfitter "Lovelace Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.06
 	security 0.5
 	tribute 1600
@@ -13404,25 +13309,18 @@ planet Maker
 	spaceport `	In the commercial sector of the port, robotic cargo trucks rumble through the streets at frightening speeds, while pedestrians walk from building to building along skyways several stories up.`
 	outfitter "Basic Outfits"
 	outfitter "Syndicate Basics"
+	outfitter "Ammo"
 	security 0.4
 	tribute 1700
 		threshold 4500
 		fleet "Large Syndicate" 10
-
-planet Makerplace
-	attributes hai manufacturing "hai tourism"
-	landscape land/lava0
-	description `Makerplace has an unusual degree of volcanic activity due to high concentrations of radioactive elements in the planet's mantle. Although it is warm by Hai standards, the abundance of geothermal energy, combined with plentiful solar energy and wind power, has made it an ideal world for manufacturing. Several cities in the temperate regions have populations of over a hundred million Hai, and the factories surrounding the cities spread out for dozens of kilometers in all directions. Near the equator, much of the land is desert or volcanic wasteland.`
-	spaceport `A fair number of the Hai walking through this spaceport are wearing no clothing at all, perhaps as a response to the warm temperatures. Given that they seem to attract no notice or disapproval by doing so, it appears that this is perfectly normal behavior. Others appear to have trimmed their fur shorter than normal as an alternative way to deal with the heat.`
-	shipyard "Hai Intermediate"
-	outfitter "Hai Advanced"
 
 planet Mani
 	attributes deep moon
 	landscape land/nasa6
 	description `Mani is a small moon, with an atmosphere thick enough to keep your blood from boiling off but too thin to breathe without assistance. It is used only as a cargo depot and a spot for refueling and repairs. The native plant life mostly consists of pale-colored lichens and a few species of grass. The only animals are insects.`
 	spaceport `The spaceport is shaped like a wheel with no rim: a series of spokes jutting out from a central hub, where each spoke is a docking tunnel that can connect to any ship that lands beside it. Inside are about a dozen people and a couple hundred robots. The people and robots alike seem uninterested in any interactions with you. It is a strange sort of aloofness that you have heard is common to all the worlds in the Deep.`
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.6
 	tribute 500
 		threshold 3000
@@ -13456,7 +13354,7 @@ planet Memory
 	description `	This planet was first settled only a few centuries ago, and the population is still relatively low, but they have developed a diverse set of industries including manufacturing and medical research.`
 	spaceport `The local government has not yet seen the need to set aside funds to replace the spaceport built by the original settlers: mostly just a collection of poured concrete pads where larger ships can land without sinking into the sand of the desert. They have added some large hangars for richer clients and Navy ships, however, and over the years more and more buildings have sprung up along the periphery of the landing field.`
 	outfitter "Deep Sky Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.8
 	tribute 700
 		threshold 4000
@@ -13483,7 +13381,7 @@ planet Midgard
 	shipyard "Lionheart Basics"
 	shipyard "Lionheart Advanced"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Deep Sky Advanced"
 	bribe 0.05
 	security 0.8
@@ -13499,7 +13397,7 @@ planet Millrace
 	spaceport `The spaceport is ugly. As the population of Millrace has grown, the spaceport has been expanded to support the increase immigration; you can recognize the different sections because in the newer ones, the bare cement walls are lighter and have accumulated less soot and grime. Most of the restaurants are of the greasy spoon variety.`
 	outfitter "Basic Outfits"
 	outfitter "Syndicate Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.2
 	tribute 1400
 		threshold 4000
@@ -13519,6 +13417,7 @@ planet Moonshake
 	spaceport `The smog is so thick here that you could barely see the landing pad until you were only half a kilometer above it. At street level, the smog is less evident, but the air leaves a faint metallic taste in your mouth. The spaceport, like the rest of this city, is overcrowded, with people walking along the narrow streets and trying to thread their way in between large cargo trucks loaded with crates. You see signs for restaurants of every variety imaginable, but most of them look dirty and dimly lit.`
 	outfitter "Common Outfits"
 	outfitter "Syndicate Basics"
+	outfitter "Ammo"
 	security 0.2
 	tribute 1200
 		threshold 3500
@@ -13568,7 +13467,7 @@ planet "New Argentina"
 	description `	Cattle handlers here do their work on horseback, because they believe modern vehicles are more likely to spook the animals.`
 	spaceport `The spaceport is on the outskirts of one of New Argentina's largest towns... which has a population of barely ten thousand people. Many of the dock workers are teenagers or barely past their teens, children of ranchers who are not drawn to the solitary sort of life that their parents enjoy. Aside from the church and the hospital, the largest building in town is "The Grange," a function hall with a sign out front advertising square dances and line dances three nights a week.`
 	outfitter "Basic Outfits"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.05
 	tribute 1000
 		threshold 3500
@@ -13591,7 +13490,7 @@ planet "New Boston"
 	spaceport `Some day New Boston may be a prosperous enough planet to afford a better spaceport, but not yet. Many of the concrete landing pads have sunk into the muddy soil over the years since they were poured, and are now tilted and uneven. The market where ship captains buy and sell cargo is a large tent rather than a permanent building, but it is sturdy enough to keep off the rain, and high enough for loads to be brought in and out by trucks and the occasional hovercraft. And, some enterprising local mechanics have set up not only a repair shop and outfitter, but also a shipyard with several small, refurbished ships for sale.`
 	shipyard "Basic Ships"
 	outfitter "Basic Outfits"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.05
 	tribute 300
 		threshold 2500
@@ -13606,7 +13505,7 @@ planet "New Britain"
 	shipyard "Basic Ships"
 	shipyard "Tarazed Basics"
 	outfitter "Common Outfits"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Delta V Basics"
 	outfitter "Kraz Basics"
 	security 0.2
@@ -13621,7 +13520,7 @@ planet "New China"
 	spaceport `The "new port" here was built several centuries ago, when the grand but impractical spaceport built by the original settlers had deteriorated to the point where it was no longer usable. This port is much simpler by comparison: just a ring of landing pads of various sizes around a large central building with ten levels of warehouse space accessible by freight elevator.`
 	spaceport `	There are always locals hanging around the port, some of them mere children, who are trying to find a cheap ride off-planet.`
 	outfitter "Common Outfits"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Delta V Basics"
 	outfitter "Kraz Basics"
 	security 0.1
@@ -13647,7 +13546,7 @@ planet "New Holland"
 	description `	As the population has boomed, and as the farms have been consolidated and become more mechanized, large cities have grown to house factories and workers.`
 	spaceport `The spaceport is on the fringes of one of the factory towns. In the distance are row after row of identical brick buildings; in the opposite direction, a safe distance from the city, are the cooling towers of several nuclear power plants. The port itself is laid out for maximum efficiency in loading and unloading cargo regardless of the weather or time of day: a row of hangars, open at one side to ships coming in and departing, and on the other to a road carrying a steady stream of trucks.`
 	outfitter "Basic Outfits"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Delta V Basics"
 	security 0.1
 	tribute 700
@@ -13672,7 +13571,7 @@ planet "New India"
 	description `New India was first settled less than a century ago, and the settlers are still struggling to establish themselves. It is a hospitable climate, but the amount of labor needed to clear forests and to plow rocky fields has meant that the towns here can only grow very slowly. The farms grow both food crops and cotton, and very recently they have begun manufacturing their own textiles instead of just shipping the raw cotton off-world for processing.`
 	spaceport `New India's spaceport is a ring of low wooden buildings around a wide landing area paved with concrete slabs. Around the perimeter carts of trade goods are driven, some being pulled by tractors and others, by horses or oxen. You even think you see a few carts being pulled by water buffalo.`
 	spaceport `	Most of the buildings are for storage, but from somewhere nearby you can smell fresh-baked bread.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.05
 	tribute 200
 		threshold 2000
@@ -13734,7 +13633,7 @@ planet "New Wales"
 	landscape land/mountain7
 	description `New Wales is home to a few mining outposts which extract and refine rare earth minerals and heavy metals. It is dangerous work: the mines are deep underground and prone to noxious gases and cave-ins, and the refineries work with molten radioactive materials and caustic chemicals. Due to the somewhat dim light of the star Algorel, and the cloudiness of the atmosphere, this is not a good world for farming, and the population remains quite small.`
 	spaceport `The warehouses at the spaceport are kept under continuous guard due to the high value of the refined metals they contain. There are several missile silos and laser turrets as well; New Wales has survived several pirate attacks in the last decade. Within the spaceport cafeteria, however, the locals are quite friendly and excited to connect with visitors and hear news of the outside world. The cafeteria is cooking lamb stew, and the smell of it pervades the whole building.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Basic Outfits"
 	security 0.2
 	tribute 400
@@ -13751,14 +13650,6 @@ planet "New Washington"
 		threshold 2000
 		fleet "Large Militia" 3
 
-planet Newhome
-	attributes hai textiles
-	landscape land/myrabella7
-	description `Newhome's gravity, climate, and geography is very similar to the Hai homeworld. Several billion Hai live here. Most dwell in large factory cities, but there are also ranches in the undeveloped areas where the Hai raise animals that are larger than elephants but produce wool similar to sheep. Shearing them is a dangerous undertaking, but their wool can be used to make excellent, long-lasting clothing.`
-	spaceport `The roads in the spaceport are very wide, so that Hai ranchers can lead their massive, sheep-like beasts along them. The animals seem docile enough, but their size is alarming.`
-	spaceport `	Most of the shops only sell clothing made for the Hai, but a few enterprising artisans have begun making clothing for humans as well: larger dimensions, and no tail holes in the pants.`
-	outfitter "Hai Basics"
-
 planet Nifel
 	attributes deep research medical
 	landscape land/mountain3
@@ -13767,7 +13658,7 @@ planet Nifel
 	spaceport `As with many of the fanciest buildings in the Deep, the spaceport here is built of carbon fiber and plastic composite instead of more traditional materials. The particular composite used here is slightly translucent, so the hallways and hangars are all bathed in dim and diffuse sunlight. The port is located near the equator, but the air is still uncomfortably cold. The spaceport is large enough to house ten times the number of people and ships that are currently here.`
 	outfitter "Basic Outfits"
 	outfitter "Deep Sky Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.05
 	security 0.7
 	tribute 1500
@@ -13782,7 +13673,7 @@ planet Nimbus
 	spaceport `The spaceport is on a small island, but well above the high water mark. The mixture of ocean spray and fog and drizzling rain is enough to turn your clothes damp even just on the short walk from your landing pad to the main cluster of buildings. Thankfully, the weather is warm, but you are glad to find a cozy, dry, and welcoming space in the coffeehouse across from the warehouse district.`
 	outfitter "Basic Outfits"
 	outfitter "Syndicate Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.3
 	tribute 300
 		threshold 2500
@@ -13803,7 +13694,7 @@ planet Norn
 	description `Norn is a water world, with low gravity but an atmosphere dense enough to breathe easily. Large mats of seaweed and algae form natural rafts that drift around with the ocean currents, and a few intrepid settlers have colonized them, people who prefer a life of relative solitude and are willing to trust their fates to wherever the winds might take them. Others have settled the few, low islands, which are prone to frequent flooding. Fish are common here, including a few species of flying fish which travel in large packs and are a considerable nuisance for the land-dwellers.`
 	spaceport `The spaceport is on one of the larger islands, a network of small buildings connected by bridges and raised up on enormous stilts about fifty meters high. Cargo winches are used to load and unload cargo from the boats that dock below. Starships dock in individual hangars, to protect them from the wind. The whole complex sways slightly, almost imperceptibly, as if it were a large boat at sea. The walkways all have tall railings, but you still find yourself afraid to venture too near the edge or to look down at the island and the sea below. The locals, however, walk swiftly and gracefully, with no sign of fear.`
 	shipyard "Lionheart Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Basic Outfits"
 	outfitter "Deep Sky Basics"
 	bribe 0.04
@@ -13840,7 +13731,7 @@ planet Oblivion
 	landscape land/sky7
 	description `The atmosphere here is a toxic mix of ammonia, sulfur, and methane. Although breathable by human beings if necessary, the locals use masks to reduce the risk of chronic respiratory problems. Even so, the life expectancy here is short, but that is partly because the two best-paying industries are oil drilling and mining for radioactive elements.`
 	spaceport `The spaceport is a long landing strip paved in asphalt, with warehouses on either side of it constructed from stone and mortar. Inside are stacked lead-lined crates of radioactive materials for sale. Unlike many Dirt Belt worlds, you see few curious children watching ships land or playing among the buildings; this is not the sort of world where many people choose to put down roots and build a family.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.05
 	tribute 500
 		threshold 3000
@@ -13900,7 +13791,7 @@ planet Poisonwood
 	description `	Today, most of the inhabitants are children of the liberated slaves, and like their parents they remain grateful and fiercely loyal to the Republic.`
 	spaceport `The starport is a hodgepodge of small metal structures, built from the remains of Navy and pirate ships that fought for control of this world. The locals are unusually courteous and proud to welcome you to their planet.`
 	spaceport `	The tavern in the center of the port is named The Parting Glass. The walls are covered with photographs from after the war: liberated slaves boarding Navy ships to leave this planet that had brought them so much pain; Navy officers leaving their ships to retire on this world that they liberated; friends gone away, and friends left behind. It is a strange feeling to sit here so deeply immersed in signs of a history that you had no part in.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	"required reputation" 2
 	bribe 0.04
 	security 0.5
@@ -13916,7 +13807,7 @@ planet Poseidos
 	spaceport `The spaceport is on one of the larger archipelagos. It is built half on land, and half over the water, with a series of bridges and wide canals allowing foot traffic above and cargo barges below. The bridges are built with stone arches rather than steel truss structures, partly to allow more clearance for boats below but also partly just for appearance. For a spaceport, it is an unusually beautiful place.`
 	outfitter "Basic Outfits"
 	outfitter "Kraz Basics"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.1
 	tribute 400
 		threshold 3000
@@ -13932,7 +13823,7 @@ planet Prime
 	shipyard "Navy Basics"
 	shipyard "Megaparsec Basics"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Lovelace Basics"
 	"required reputation" 2
 	bribe 0.05
@@ -13982,7 +13873,7 @@ planet Relic
 	landscape land/valley4
 	description `As a borderline-habitable planet in one of the systems neighboring Sol, Relic was colonized hundreds of years ago in the early years of the space race. Because of its low gravity and limited natural resources, only a few minor settlements are left.`
 	spaceport `The spaceport on Relic consists of one low building surrounded by open-air concrete slabs for ships to land on. If rain were more common here, you would worry about your ship rusting, but in this environment the only threat to it is the infrequent sand storms.`
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.2
 	tribute 700
 		threshold 3000
@@ -13999,7 +13890,7 @@ planet Reunion
 	shipyard "Megaparsec Basics"
 	outfitter "Common Outfits"
 	outfitter "Lovelace Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.3
 	tribute 2900
 		threshold 5000
@@ -14017,7 +13908,7 @@ planet Rust
 	outfitter "Common Outfits"
 	outfitter "Delta V Basics"
 	outfitter "Kraz Advanced"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	bribe 0.04
 	security 0.5
 	tribute 1200
@@ -14043,7 +13934,7 @@ planet Shangri-La
 	shipyard "Megaparsec Basics"
 	outfitter "Syndicate Advanced"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	"required reputation" 5
 	bribe 0.07
 	security 0.7
@@ -14165,21 +14056,13 @@ planet "Smuggler's Den"
 	outfitter "Delta V Advanced"
 	outfitter "Kraz Advanced"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Pirate Outfits"
 	bribe 0.06
 	security 0
 	tribute 400
 		threshold 2000
 		fleet "Small Southern Pirates" 21
-
-planet Snowfeather
-	attributes hai "hai tourism"
-	landscape land/dmottl4
-	description `Snowfeather is a world with unusually chaotic weather patterns, where snow can fall even in the middle of summer but will melt away within days when the temperature shifts and becomes warmer again. Surprisingly, it is a popular vacation spot for the Hai, who find the unpredictability and occasional violence of the weather here to be invigorating.`
-	spaceport `The core of the spaceport is two rows of hangars, back to back. Their thick metal roofs slope backwards, away from the entrance to each hangar, so that any snow or ice that slides off the roofs will not fall across the opening while ships or people are passing through. The hangars are also elevated about six meters above the ground, to protect against flash floods.`
-	outfitter "Hai Basics"
 
 planet Solace
 	attributes south urban factory frontier
@@ -14191,7 +14074,7 @@ planet Solace
 	outfitter "Delta V Advanced"
 	outfitter "Kraz Basics"
 	outfitter "Common Outfits"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	bribe 0.04
 	security 0.5
 	tribute 1000
@@ -14219,20 +14102,11 @@ planet Starcross
 	landscape land/sky1
 	description `Starcross is a stormy, ocean-dappled planet that was not settled until the planets farther out on this arm of the galaxy grew prosperous enough to create a need for a stop-over point for cargo. Structures must be built strong and on high enough ground to avoid the frequent floods. A few enterprising settlers have taken up farming of some native plants that are edible for humans, including one plant similar to cranberries that has come to be considered a rare delicacy by many.`
 	spaceport `The spaceport is rudimentary: just a couple of landing pads, each with thick cement walls around it to protect your ship from being buffeted by any storms that strike. The central building is a squat, windowless cement fortress. Inside, however, it is completely different: the ceilings are high, with sun-lamps that provide some sense of warmth and cheer, and native wood paneling or stucco on most of the walls to soften them.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.05
 	tribute 300
 		threshold 2500
 		fleet "Small Militia" 22
-
-planet Stonebreak
-	attributes hai manufacturing
-	landscape land/hills7-harro
-	description `Stonebreak is home to some of the largest cities in Hai space aside from their homeworld: massive planned communities built in concentric rings, where housing space and community buildings alternate with zones of factories and shipyards. This star system has an unusual number of metallic asteroids, which the Hai harvest for the raw materials for Stonebreak's industries.`
-	spaceport `From above, this city has almost perfect radial symmetry, a sure sign that it was planned and built as a single unit rather than expanding at random over time. Every single building in the city is made from the same metal alloy, a dull and slightly irregular grey color. The corners of each building are slightly beveled instead of meeting at right angles.`
-	spaceport `	Even the spaceport is symmetrical: a ring of hangars, facing outwards, at evenly spaced intervals, with warehouses and living quarters inside the ring.`
-	shipyard "Hai Intermediate"
-	outfitter "Hai Intermediate"
 
 planet Stormhold
 	attributes pirate "core pirate"
@@ -14240,8 +14114,7 @@ planet Stormhold
 	description `A cold planet, with dense, foggy atmosphere. As with many pirate outposts, Stormhold is home to an unknown number of villages and hidden outposts, each controlled by a different pirate faction. It is also said that some of the most dangerous fugitives in the galaxy live deep in the forests of this planet, escaping detection by living underground or by avoiding the use of electronic devices.`
 	spaceport `The spaceport is a large town, with a population of roughly thirty thousand. People of all races and cultures mingle freely, while keeping a wary eye open for off-worlders who may be Republic agents in disguise.`
 	outfitter "Basic Outfits"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Pirate Outfits"
 	bribe 0.03
 	security 0
@@ -14284,7 +14157,7 @@ planet Sunracer
 	outfitter "Common Outfits"
 	outfitter "Syndicate Advanced"
 	outfitter "Lovelace Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.06
 	security 0.7
 	tribute 1700
@@ -14298,7 +14171,7 @@ planet Thrall
 	description `	The locals are prevented from seeking more lucrative employment elsewhere partly by the crushingly low wages, which make the cost of space transport prohibitively high for most, and partly by the educational system, which is among the worst in the galaxy.`
 	spaceport `The spaceport consists of a vast asphalt-paved field for landing ships, and some wooden buildings a few stories tall. Most of the materials for export are stored in sheds or stacked under plastic tarps, with a few police officers clustered around them to make sure no ship picks up cargo that has not been paid for. Inside the buildings, two restaurants with different names serve an identical selection of fried foods.`
 	outfitter "Basic Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.04
 	security 0.5
 	tribute 2000
@@ -14313,35 +14186,13 @@ planet Thule
 	outfitter "Delta V Advanced"
 	outfitter "Kraz Advanced"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Pirate Outfits"
 	bribe 0.05
 	security 0.6
 	tribute 900
 		threshold 2500
 		fleet "Large Southern Pirates" 16
-
-planet Thunder
-	attributes rim
-	landscape land/mountain20-harro
-	description `When the first colonists landed, they thought that they had found a dream world on Thunder: perfect gravity, perfect temperature, perfect atmosphere. Unfortunately, they soon discovered that the planet has unusually high tectonic activity, enough that building anything higher than two stories is almost impossible. Because of the earthquakes, attracting settlers has always been difficult for Thunder, and right now the population is only a few million.`
-	spaceport `The spaceport's landing pads are all solid slabs of metal; poured concrete would be far too prone to cracking. The spaceport village itself is a sprawling collection of squat, sturdy buildings, and a sign near the entrance to the cargo warehouse reads, "Do not stack crates."`
-	outfitter "Basic Outfits"
-	outfitter "Kraz Basics"
-	security 0.1
-	tribute 300
-		threshold 2500
-		fleet "Small Militia" 20
-
-planet "Tik Klai"
-	attributes wanderer research
-	landscape land/badlands2
-	description `This world is uncomfortably hot, even for the Wanderers, and so close to its star that the surface is bathed in dangerous levels of ultraviolet light. The few Wanderer installations here are buried underground, with only a few access hatches and storage buildings on the surface.`
-	spaceport `Most of the spaceport facility is closed to non-Wanderer personnel, and apparently to many of the off-world Wanderers who are visiting, as well. The underground passageways are comfortably wide and tall for a human, but the wanderers walking through them must tuck their wings in close to their bodies to avoid scraping against the ceilings.`
-	spaceport `	The warning signs marking restricted areas are in the undecipherable Wanderer language, but accompanied by a symbol you easily recognize: a DNA double helix undergoing replication.`
-	"required reputation" 35
-	bribe 0
 
 planet Tinker
 	attributes "near earth" factory mining
@@ -14353,7 +14204,7 @@ planet Tinker
 	shipyard "Syndicate Basics"
 	shipyard "Megaparsec Basics"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Syndicate Basics"
 	outfitter "Lovelace Basics"
 	bribe 0.04
@@ -14369,8 +14220,7 @@ planet Trinket
 	spaceport `The spaceport is a long, two-story building of wood and stone with hundreds of stalls selling fruit and clothing and bad artwork. Many of the starships parked here have scorch marks and dents on their hulls, a sure sign of recent battle. It is likely that some of the people walking through the port are in fact pirates, posing as civilians in order to sell stolen cargo or to take a vacation incognito.`
 	outfitter "Basic Outfits"
 	outfitter "Delta V Basics"
-	outfitter "Ammo North"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	outfitter "Pirate Outfits"
 	bribe 0.02
 	security 0.4
@@ -14407,7 +14257,7 @@ planet Tundra
 	description `Millions of years ago, this was a warm world, perhaps even tropical. But some cataclysmic event, perhaps a meteor strike or a massive volcanic eruption, altered the planet's atmosphere enough to turn it into the nearly lifeless, frozen planet it is today.`
 	description `	The first settlers came here to drill for the oil trapped deep under the surface, a relic of Tundra's former, more lively days. Instead of refining the oil into plastic, which sells relatively cheap in this region, they have developed an industry in synthetic fabrics and clothing.`
 	spaceport `The spaceport village consists of several large domes, which keep out the wind and driving snow; ships enter and exit the largest of the domes through a hatch that closes as soon as they have come through. Every decade or so, enough snow piles up on top of one of the domes that it is in danger of collapsing under its own weight; the locals simply move out of that dome and build another one higher up on the snowpack.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.1
 	tribute 400
 		threshold 3000
@@ -14418,7 +14268,7 @@ planet Twinstar
 	landscape land/lava3
 	description `The only settlement on this small world is Twinstar Depot, a village created mostly just to service the spaceport, where food and equipment from the southern galactic arm is stored and sent out in all directions to supply the rest of human space. The gravity is far less than ideal for human development, but the atmosphere is breathable and some tourists come to the planet just for the experience of being able to run and jump in low gravity without the need for a suit or oxygen tanks.`
 	spaceport `The depot consists mostly of large storage racks, with automatic lifts constantly clanking up and down. Very few people are in sight, aside from a small cafe near the center of the port. It is not a hospitable place.`
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	security 0.2
 	tribute 200
 		threshold 2000
@@ -14456,156 +14306,13 @@ planet Valhalla
 	shipyard "Lionheart Advanced"
 	shipyard "Betelgeuse Basics"
 	outfitter "Common Outfits"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	outfitter "Deep Sky Advanced"
 	bribe 0.08
 	security 0.8
 	tribute 3600
 		threshold 7000
 		fleet "Large Deep Security" 35
-
-planet "Var' Kar'i'i"
-	attributes wanderer urban farming
-	landscape land/valley13-harro
-	description `This is a populous Wanderer world, with small farming villages scattered across all the land, and even a few larger population centers that might almost qualify as a city. But from the air, it is not evident at first that the planet is so heavily settled, because the village tree-houses are mostly hidden beneath the forest canopies. The farms, too, are almost indistinguishable from natural land, due to a permaculture system where many varieties of plants are growing side by side.`
-	spaceport `Apparently, just as humans use horses to carry loads and draw carts of produce, the Wanderers use a large breed of lizard, nearly eight feet tall and walking on their hind legs. The lizards are meat-eaters: next to the watering troughs are cages full of large rodents, which the Wanderers occasionally feed to their beasts.`
-	spaceport `	Many different forms of produce are for sale here in open-air markets, including dozens of different nuts and berries. Aside from the rodents to feed to the lizards, and a few species of fish, the Wanderers do not seem to raise animals for food.`
-	shipyard "Wanderer Basics"
-	outfitter "Wanderer Basics"
-	"required reputation" 5
-	bribe 0
-
-planet "Var' Kayi"
-	attributes wanderer urban
-	landscape land/water1
-	description `This is an Earth-like world with one major Wanderer city and countless smaller settlements. The settlements mostly consist of tree-houses built high up in living trees. The architecture of the city skyscrapers is full of cantilevered balconies and arches, mimicking the natural shape of a forest. Here and there a bit of smoke or steam rises from what must be a factory or power plant, but most of the land outside the city is green fields and pristine oceans.`
-	spaceport `This spaceport is as busy and chaotic as any major human trade hub, with the added complication that many of the Wanderers are flying from building to building instead of walking. Most of the buildings have balconies on every level, allowing visitors to enter from the air as well as from the streets.`
-	spaceport `	The starship landing pads are well outside the city, and ships land and take off along very tightly controlled vectors, probably to avoid midair collisions between the ships and the Wanderers who are flying on their own wings.`
-	shipyard "Wanderer Advanced"
-	outfitter "Wanderer Advanced"
-	"required reputation" 5
-	bribe 0
-
-planet "Var' Roi"
-	attributes wanderer research moon
-	landscape land/snow9
-	description `The surface of this small icy moon is constantly cracked and broken by tidal force from the gas giant that it orbits. The tidal disturbances also heat the moon enough to keep its oceans warm enough to support life despite the small amount of sunlight that reaches here.`
-	spaceport `The only habitation on this moon is a Wanderer research station suspended on metal pylons well above the icy surface of the ocean. The gravity here is low enough that even though the atmosphere is thin, the Wanderers who work in the station can fly out across the ocean on their own power, wearing some sort of breathing gear. The researchers also have a fleet of submarine ships, sturdy enough to pierce through the shifting ice and travel deep below the ocean surface.`
-	"required reputation" 25
-	bribe 0
-
-planet "Vara K'chrai"
-	attributes wanderer urban
-	landscape land/sea16-harro
-	description `This is the most populous Wanderer world, with dozens of large cities. The tallest buildings branch and cantilever out from their bases like metallic trees. More than half the surface of the planet is ocean, with a few small settlements built on massive living rafts of algae and seaweed, perhaps ten meters thick and up to several kilometers wide. Much of the land is forests, with villages built entirely in the treetops.`
-	description `	There are also farms here, but more like gardens or parks than a human farm: each with dozens of species of plants growing side by side, and harvested by autonomous robots.`
-	spaceport `The streets in the Wanderer capital city seem to be mostly reserved for cargo vehicles; the Wanderers themselves fly from one building to another instead, and the skyscrapers have balconies dozens of stories above the ground where visitors can land or take off. The air traffic seems utterly chaotic, but somehow they avoid colliding with each other in midair, and certain columns of airspace have been reserved for ships taking off and landing so that flying Wanderers will not get caught in the backwash from the ship engines.`
-	shipyard "Wanderer Advanced"
-	outfitter "Wanderer Advanced"
-	bribe 0
-
-planet "Vara Ke'sok"
-	attributes wanderer fishing
-	landscape land/beach6
-	description `The surface of this world is almost entirely ocean, and the Wanderers who inhabit it live on massive floating algae mats, some of them the size of a small city. Engines are attached to some of these floating villages, allowing them to be slowly propelled from one part of the planet's surface to another, and the only native industries are fishing and seaweed farming.`
-	spaceport `The raft of algae that supports the spaceport is probably at least a dozen meters thick, but flexible enough that it bends as the ocean swells pass underneath, causing individual buildings to rise up or tilt slightly relative to their neighbors. The effect is subtle, but disconcerting, and you cannot help but stumble drunkenly at times as you explore the island.`
-	"required reputation" 5
-	bribe 0
-
-planet "Vara Ke'stai"
-	attributes wanderer farming
-	landscape land/myrabella6
-	description `This is a desert world, but the Wanderers are working little by little to make the desert bloom: planting hardy shrubs and cacti that eventually transform the sand into a soil that can hold moisture. In some regions, especially closer to the poles, the deserts have given way to dense forests, but near the equator there are still large stretches of dry and barren sand, broken by the occasional belt of green where a narrow river winds between the dunes.`
-	spaceport `The spaceport is in a forest village near the planet's north pole. The landing pads are massive stone monoliths laid on the ground in a nearby clearing. But aside from a few large warehouses at ground level, the village itself is entirely made of tree-houses. A few mechanical lifts have been built into the sides of the trees to carry cargo up to the forest canopy where the Wanderers live, but the Wanderers themselves seem content to fly between the houses rather than using the lifts.`
-	outfitter "Wanderer Basics"
-	"required reputation" 5
-	bribe 0
-
-planet "Vara Kehi'ki"
-	attributes wanderer research farming
-	landscape land/sky9
-	description `This is a farming world, but the primary crops are medicinal plants rather than food: fields of brightly colored flowers and delicate shrubs. Large factories near the farms process the raw plants and extract useful chemical compounds. Their gleaming metal smokestacks belching steam into the air seem incongruous amid the natural beauty and bright colors of the fields of flowers.`
-	spaceport `The spaceport village is apparently not just a processing facility for the medicinal plants, but also a hospital of sorts. The village is designed to allow easy foot traffic as well as flight between buildings, and thousands of Wanderers, many of them appearing sick or elderly, live here. The main streets of the village are lined with vine trellises with flowers of every color imaginable, and mechanical lifts allow even the most frail Wanderers to travel up to the higher terraces and balconies.`
-	outfitter "Wanderer Basics"
-	"required reputation" 15
-	bribe 0
-
-planet "Vara Pug"
-	attributes pug
-	landscape land/bwerner5
-	description `Vara Pug is an ocean world, wild and almost unsettled, except for a single Pug city on the coast of one of the major continents. The animals and plants on the land are relatively uninteresting, but the oceans are home to an enormous variety of creatures, including whales the size of a bulk freighter, a highly intelligent species of jellyfish, and other, far stranger creatures that rarely venture up from the sunless ocean depths.`
-	description `	To avoid contact with these marine creatures, when the Pug travel to other parts of the planet they use massive solar-powered airships rather than boats.`
-	spaceport `The Pug here all seem to be busy with various tasks, none of which make any sense to you: rushing from building to building on their long, spindly legs; playing a game involving colored stones on a hexagonal table; constructing what appears to be collaborative holographic artwork.`
-	spaceport `	None of them speak to you, but a worker in the spaceport digs around in a closet for a while and comes up with a conversion attachment that allows your fuel tanks to be filled using their style of fuel nozzle.`
-	bribe 0
-	security 0.9
-
-planet "Vara Rakak"
-	attributes wanderer farming
-	landscape land/forest1
-	description `This is one of those rare worlds whose climate is already nearly perfect without the need for terraforming. The Wanderers have made it into a farming planet. The fields follow the natural contours and geology of the land rather than being laid out in rectangular lots like most human farms, and each field contains several different crop species designed to form a symbiotic ecosystem.`
-	spaceport `This could be a spaceport on any human farming world, except that the farmers hawking their wares have wings and beaks, and the wagons bringing produce to the market are drawn by massive lizards instead of horses. In several repair shops on the outskirts of town, Wanderer technicians work on massive harvester robots. The robots have four legs to walk on and dozens of dexterous manipulator arms for picking crops, and each arm has a camera eye on it.`
-	shipyard "Wanderer Basics"
-	outfitter "Wanderer Advanced"
-	"required reputation" 5
-	bribe 0
-
-planet "Varu Ek'lak'lai"
-	attributes wanderer mining
-	landscape land/canyon7
-	description `The Wanderers harvest metal ores not from planets, but from asteroids, in order to not expend even more of the resources of the planets that are under their care. This star system contains an unusually high concentration of metallic asteroids, and as a result they have built many large refineries here to process the ore that their drones harvest.`
-	spaceport `The vast majority of ships landing and taking off from this port are unmanned Wanderer drones used for mining asteroids. The drones are maneuverable enough to avoid collisions with the few ships that land under manual control.`
-	spaceport `	The port itself is a small village surrounded by towering refineries. Unlike other Wanderer architecture, the refineries are ugly, brutal buildings made of weathered concrete.`
-	outfitter "Wanderer Basics"
-	"required reputation" 15
-	bribe 0
-
-planet "Varu K'est"
-	attributes wanderer military
-	landscape land/canyon5
-	description `Varu K'est is a spare, ancient planet of arid plateaus and deep, meandering canyons, with too little rainfall to support any but the hardiest of shrubs. The Wanderers have converted nearly all their villages on this planet into military bases in order to oppose the encroaching Hai raiders, and have also been forced to postpone their attempts at improving the local ecology.`
-	spaceport `The spaceport is a massive shipyard, with facilities for repairing the few warships that the Wanderers possess as well as creating new ships and weapons. Dozens of battle-scarred ships are parked in the hangars here, a stark contrast to the ports in the more peaceful regions of the Wanderer territory.`
-	shipyard "Wanderer Basics"
-	outfitter "Wanderer Advanced"
-	"required reputation" 15
-	bribe 0
-
-planet "Varu K'prai"
-	attributes wanderer oil
-	landscape land/sea4
-	description `This is one of the only Wanderer worlds that still has large reserves of oil, albeit deep below the ocean surface where mining is difficult. Aside from the drilling companies and refineries, the largest local employer is the local government's safety oversight department, whose inspectors are constantly visiting the drilling platforms and shipping hubs to ensure that all the regulations for preventing oil spills are being followed.`
-	spaceport `Plastics and other refined oil products are as essential to Wanderer technology as to humans, but it is clear that those responsible for harvesting them are not held in high regard. The crews of visiting ships seem eager to interact with the locals as little as possible. However, that does not appear to stop the Wanderer freighters from purchasing large shipments of plastic, which will no doubt yield a substantial profit elsewhere in Wanderer space.`
-	outfitter "Wanderer Basics"
-	"required reputation" 15
-	bribe 0
-
-planet "Varu Mer'ek"
-	attributes wanderer factory
-	landscape land/valley11-harro
-	description `This Wanderer factory world is now home to more abandoned villages than populated ones: entire factories rusting and decaying as a result of the recent threat from the Unfettered Hai. Most of the factories that remain active have been repurposed to produce weapons or ammunition for the defense of Wanderer space.`
-	spaceport `Very few Wanderer children are present in the spaceport. Most of the inhabitants still live far above the ground in the customary Wanderer tree-houses, but that portion of the village is dwarfed by the more recently constructed factories and warehouses for war supplies. A steady stream of freighters brings in new equipment and raw materials for the factories.`
-	shipyard "Wanderer Advanced"
-	outfitter "Wanderer Advanced"
-	"required reputation" 15
-	bribe 0
-
-planet "Varu Tek'kai"
-	attributes wanderer factory moon
-	landscape land/badlands4
-	description `This Wanderer world is almost uninhabited and devoid of any indigenous ecosystem, except perhaps on the microscopic level. It has none of the beauty of other Wanderer settlements. Here, factories have been built to process the most dangerous and destructive of industrial chemicals. If disaster strikes one of the factories, the only result will be the contamination of a world that is already dead and lifeless - far better, in the judgment of the Wanderers, than allowing such risky industries to operate on a living world.`
-	spaceport `Nearly all the operations of the factories here are automated, and the outside atmosphere is too thin for even the Wanderers to breathe. The workers live in dormitory apartments in a ring surrounding a large central dome. Inside the dome, protected from the elements, is a park whose gardens contain everything from towering conifers to fields of wildflowers; a necessary place of sanctuary and rest for the Wanderers who must spend the rest of their time servicing machines in the bleak environment outside the spaceport.`
-	outfitter "Wanderer Basics"
-	"required reputation" 15
-	bribe 0
-
-planet "Varu Tev'kei"
-	attributes wanderer factory
-	landscape land/canyon04
-	description `This is a desert world, too hot and too close to its sun to support much animal or plant life. The Wanderers have covered large stretches of the desert with solar-powered factories: smelters that use the sun's reflected heat to melt ore, and fields of solar panels that support other industries.`
-	spaceport `It is easy to distinguish the local workers from the visitors, because the locals wrap their wings in thin white sheets of cloth rather than leaving them bare: a necessary protection for any Wanderer who chooses to fly outside of the protective shade of the spaceport. Many of the buildings here extend deep underground, to where the surrounding bedrock is cooler than the hot sands at the surface.`
-	outfitter "Wanderer Basics"
-	"required reputation" 15
-	bribe 0
 
 planet Vinci
 	attributes paradise factory
@@ -14643,7 +14350,7 @@ planet Wayfarer
 	outfitter "Delta V Advanced"
 	outfitter "Kraz Advanced"
 	outfitter "Common Outfits"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	bribe 0.07
 	security 0.3
 	tribute 1700
@@ -14658,7 +14365,7 @@ planet Windblain
 	spaceport `The spaceport is in one of the main cities, and is built partly on land and partly on piers that stretch out into the harbor, so that cargo can be brought to the port by truck or by barge. There are even a few runways for aircraft, in addition to the landing pads for starships. In the wharf area, fresh cooked fish and sushi are sold from a small cluster of wooden huts. Farther inland, cargo crates are stacked under the immense tents that serve as warehouses. There is a constant flow of people and cargo in between the harbor and the city.`
 	outfitter "Basic Outfits"
 	outfitter "Deep Sky Basics"
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	security 0.6
 	tribute 800
 		threshold 3500
@@ -14701,7 +14408,7 @@ planet Zenith
 	description `Zenith is a cold and unpleasant world, where the fog seldom lifts and the sun is rarely seen, where much of the lowlands are flooded each day by the tide, and storms are unpredictable and fierce. It has, however, one major advantage as a place to settle: it is far enough away that the Republic makes no attempt to control it.`
 	description `	Several villages have been founded near the equator, and in addition there are an unknown number of private holdings, ranging from underground bunkers to enormous cement fortresses. Because the land is owned by no government and anyone can build a dwelling without permission or paperwork as long as they are willing to fight off any other claimants, the total population of Zenith is unknown.`
 	spaceport `To create a spaceport for Zenith, one enterprising privateer a few centuries ago used a mixture of explosives and heavy machinery to shift the top of one of the tallest mountains down into the neighboring valleys, creating a high plateau that is (usually) above the fog line. There are landing pads both for starships like yours and for airships that carry cargo to and from the settlements elsewhere on the planet. The port is nearly deserted, however; it is clear that they do not do much business here.`
-	outfitter "Ammo North"
+	outfitter "Ammo"
 	bribe 0.04
 	security 0
 	tribute 400
@@ -14720,10 +14427,9 @@ planet Zug
 	outfitter "Delta V Advanced"
 	outfitter "Kraz Basics"
 	outfitter "Common Outfits"
-	outfitter "Ammo South"
+	outfitter "Ammo"
 	bribe 0.03
 	security 0.5
 	tribute 1200
 		threshold 3000
 		fleet "Large Militia" 18
-
