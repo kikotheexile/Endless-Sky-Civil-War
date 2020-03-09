@@ -27,6 +27,24 @@ outfit "Water Coolant System"
 	"cooling" 12
 	description "This system is a step up from ordinary cooling ducts; it circulates water in between an external radiator and your ship's hottest internal components to keep them from overheating."
 
+outfit "Quantum Shield Generator"
+	category "Systems"
+	cost 30000000
+	thumbnail "outfit/quarg quantum shield generator"
+	"mass" 120
+	"outfit space" -120
+	"shield generation" 10
+	"shield energy" 10
+
+outfit "Intrusion Countermeasures"
+	plural "Intrusion Countermeasures"
+	category "Hand to Hand"
+	thumbnail "outfit/quarg countermeasures"
+	"capture defense" 60
+	"unplunderable" 1
+	description "Quarg ships are outfitted with special systems for repelling boarders. Because no one wants to be caught by the Quarg with stolen technology, these systems are pretty much worthless on the open market."
+
+
 outfit "Liquid Nitrogen Cooler"
 	category "Systems"
 	cost 60000

@@ -33,6 +33,41 @@ effect "afterburner"
 	"velocity scale" 1.
 
 
+outfit "Type 1 Radiant Thruster"
+	category "Engines"
+	licenses
+		"Wanderer Outfits"
+	"cost" 135000
+	thumbnail "outfit/tiny radiant thruster"
+	"mass" 12
+	"outfit space" -12
+	"engine capacity" -12
+	"thrust" 6.6
+	"thrusting energy" 0.5
+	"thrusting heat" 0.9
+	"cooling" 1.5
+	"flare sprite" "effect/plasma flare/tiny"
+		"frame rate" 12
+	"flare sound" "plasma tiny"
+	description "This is the tiniest Wanderer engine. Like all their engines, it works in part by radiating excess heat, and as a result it doubles as a cooler for your ship."
+
+
+outfit "Type 1 Radiant Steering"
+	category "Engines"
+	licenses
+		"Wanderer Outfits"
+	"cost" 115000
+	thumbnail "outfit/tiny radiant steering"
+	"mass" 9
+	"outfit space" -9
+	"engine capacity" -9
+	"turn" 172.8
+	"turning energy" .3
+	"turning heat" 0.6
+	"cooling" 1.0
+	description "This tiny steering system is used by the Wanderers to power their unpiloted mining and surveying drones."
+
+
 outfit "Ionic Afterburner"
 	category "Engines"
 	"cost" 340000
@@ -57,6 +92,31 @@ effect "ionic afterburner"
 	"random spin" 30
 	"random velocity" 1.
 	"velocity scale" 1.
+	
+	
+outfit "Medium Graviton Thruster"
+	category "Engines"
+	"cost" 20000000
+	thumbnail "outfit/medium quarg thruster"
+	"mass" 70
+	"outfit space" -70
+	"engine capacity" -70
+	"thrust" 80
+	"thrusting energy" 20
+	"thrusting heat" 10
+	"flare sprite" "effect/medium graviton flare"
+	
+	
+outfit "Medium Graviton Steering"
+	category "Engines"
+	"cost" 16000000
+	thumbnail "outfit/medium quarg steering"
+	"mass" 50
+	"outfit space" -50
+	"engine capacity" -50
+	"turn" 1600
+	"turning energy" 10
+	"turning heat" 5
 
 
 

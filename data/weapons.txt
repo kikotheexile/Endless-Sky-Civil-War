@@ -12,6 +12,32 @@
 # Search (CRTL+F) "# Cannons" For large energy projectiles, "ASL" For Ammunition, Submunitions, and launchers
 
 # AMS
+outfit "Quarg Anti-Missile"
+	category "Turrets"
+	cost 6000000
+	thumbnail "outfit/quarg anti missile"
+	"mass" 40
+	"outfit space" -40
+	"weapon capacity" -40
+	"turret mounts" -1
+	weapon
+		"hit effect" "quarg anti-missile"
+		"hardpoint sprite" "hardpoint/quarg anti missile"
+		"hardpoint offset" 4
+		"anti-missile" 25
+		"velocity" 500
+		"lifetime" 1
+		"reload" 10
+		"firing energy" 50
+
+effect "quarg anti-missile"
+	sprite "effect/quarg anti missile"
+		"no repeat"
+		"frame rate" 3
+	sound "quarg anti-missile"
+	"lifetime" 21
+	"velocity scale" 1
+
 outfit "Anti-Missile Turret"
 	category "Turrets"
 	cost 60000
@@ -69,6 +95,42 @@ effect "large anti-missile"
 	"lifetime" 31
 	"velocity scale" 1
 # Beams
+outfit "Quarg Skylance"
+	category "Turrets"
+	cost 18000000
+	thumbnail "outfit/quarg skylance"
+	"mass" 60
+	"outfit space" -60
+	"weapon capacity" -60
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/skylance"
+			"frame rate" 1
+		"hardpoint sprite" "hardpoint/quarg skylance"
+		"hardpoint offset" 10
+		sound "skylance"
+		"hit effect" "skylance impact"
+		"inaccuracy" .4
+		"turret turn" 4.
+		"velocity" 500
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 30
+		"firing heat" 10
+		"shield damage" 50
+		"hull damage" 40
+		"ion damage" .1
+	description "These immensely powerful beam weapons are used by Quarg warships to strike fear into the hearts of all who dare oppose them."
+
+effect "skylance impact"
+	sprite "effect/skylance impact"
+		"no repeat"
+		"frame rate" 12
+	"lifetime" 10
+	"random angle" 180
+	"velocity scale" 0.
+
 outfit "Beam Laser"
 	category "Guns"
 	cost 29000
@@ -440,6 +502,164 @@ effect "pulse impact"
 	"velocity scale" -.1
 
 # Cannons
+outfit "Drak Distancer"
+	category "Turrets"
+	cost 1000000
+	thumbnail "outfit/unknown"
+	"mass" 64
+	"outfit space" -64
+	"weapon capacity" -64
+	"turret mounts" -1
+	weapon
+		"fire effect" "distancer flare"
+		"turret turn" 4.
+		"velocity" 2000
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 15
+		"firing heat" 10
+		"firing force" 60
+	description "This is a thruster that can produce force in any direction, allowing a Drak ship to keep a safe distance away from its target."
+
+effect "distancer flare"
+	sprite "effect/distancer"
+		"frame rate" 1.618
+	"lifetime" 0
+	"velocity scale" 1
+
+outfit "Drak Draining Field"
+	category "Turrets"
+	cost 1000000
+	thumbnail "outfit/unknown"
+	"mass" 84
+	"outfit space" -84
+	"weapon capacity" -84
+	"turret mounts" -1
+	weapon
+		"turret turn" 4.
+		"velocity" 400
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 20
+		"firing heat" 5
+		"firing force" 30
+		"hit force" 60
+		"shield damage" 50
+		"ion damage" .5
+	description "This device produces a field that drains energy from any ship within it."
+
+outfit "Drak Anti-Missile Field"
+	category "Turrets"
+	cost 1000000
+	thumbnail "outfit/unknown"
+	"mass" 66
+	"outfit space" -66
+	"weapon capacity" -66
+	"turret mounts" -1
+	weapon
+		"velocity" 400
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 10
+		"firing heat" 1
+		"anti-missile" 100
+	description "This device produces a field that destroys any missiles that come within it."
+
+outfit "Drak Turret"
+	category "Turrets"
+	cost 1000000
+	thumbnail "outfit/unknown"
+	"mass" 48
+	"outfit space" -48
+	"weapon capacity" -48
+	"turret mounts" -1
+	weapon
+		sprite "projectile/drak bolt"
+			"frame rate" 13.318
+			"random start frame"
+		"hit effect" "drak bolt impact"
+		"inaccuracy" 1
+		"turret turn" 4.
+		"velocity" 36
+		"lifetime" 30
+		"reload" 16
+		"firing energy" 160
+		"firing heat" 160
+		"shield damage" 256
+		"hull damage" 256
+		"hit force" 120
+	description "This is a turret based cannon with significant range and accuracy."
+
+effect "drak bolt impact"
+	sprite "effect/drak bolt impact"
+		"no repeat"
+		"frame rate" 30
+	sound "explosion small"
+	"lifetime" 20
+	"random angle" 20
+	"random spin" 10
+	"velocity scale" -.05
+
+outfit "Drak Antimatter Cannon"
+	category "Guns"
+	cost 10000000
+	thumbnail "outfit/unknown"
+	"mass" 96
+	"outfit space" -96
+	"weapon capacity" -96
+	"gun ports" -1
+	"inscrutable" 1
+	weapon
+		"inaccuracy" 0
+		"velocity" 20
+		"lifetime" 1
+		"submunition" "Drak Antimatter Fragment" 3
+		"hit effect" "antimatter dust" 10
+		"hit effect" "nuke explosion"
+		"safe"
+		"reload" 187
+		"firing energy" 5610
+		"firing heat" 1870
+		"blast radius" 100
+		"hit force" 1000
+	description "This is the Drak's ultimate weapon."
+
+outfit "Drak Antimatter Fragment"
+	weapon
+		sprite "projectile/drak bolt"
+			"frame rate" 9.835
+			"random start frame"
+		"live effect" "antimatter spark" 249
+		"live effect" "antimatter dust" 249
+		"hit effect" "antimatter dust" 10
+		"hit effect" "nuke explosion"
+		"safe"
+		"inaccuracy" 1
+		"lifetime" 499
+		"hit force" 1000
+		"shield damage" 5610
+		"hull damage" 5610
+		"blast radius" 100
+
+effect "antimatter spark"
+	sprite "effect/antimatter spark"
+		"frame rate" 3
+	"lifetime" 40
+	"random angle" 1
+	"random spin" .1
+	"random velocity" 8
+	"velocity scale" .6
+
+effect "antimatter dust"
+	sprite "effect/smoke"
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 13
+	"random angle" 30
+	"random spin" 50
+	"random velocity" 12
+	"velocity scale" .1
+
 outfit "Ion Cannon"
 	category "Guns"
 	cost 490000
