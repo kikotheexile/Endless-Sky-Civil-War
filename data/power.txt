@@ -8,6 +8,38 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+outfit "Nanotech Battery"
+	plural "Nanotech Batteries"
+	category "Power"
+	cost 3000000
+	thumbnail "outfit/quarg nanotech battery"
+	"mass" 50
+	"outfit space" -50
+	"energy capacity" 30000
+	
+outfit "Small Biochemical Cell"
+	category "Power"
+	licenses
+		"Wanderer Outfits"
+	cost 230000
+	thumbnail "outfit/small biochemical"
+	"mass" 17
+	"outfit space" -17
+	"energy generation" 1.6
+	"heat generation" 1.4
+	"energy capacity" 300
+	description "This tiny generator draws energy from the metabolic byproducts of a collection of microorganisms that have been engineered by the Wanderers specifically for this purpose."
+	
+outfit "Antimatter Core"
+	category "Power"
+	cost 100000000
+	thumbnail "outfit/quarg antimatter core"
+	"mass" 80
+	"outfit space" -80
+	"energy generation" 80
+	"heat generation" 20
+	"unplunderable" 1
+
 outfit "Supercapacitor"
 	category "Power"
 	cost 25000
