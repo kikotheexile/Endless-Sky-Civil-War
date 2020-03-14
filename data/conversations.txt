@@ -76,7 +76,7 @@ conversation "intro"
 			goto logbook
 			
 	label controls
-	`	The very first thing you need to know about the controls is the fact that they can be changed at any time. You can find them by pressing <Show main menu> and clicking Preferences.`
+	`	The very first thing you need to know about the controls is the fact that they can be changed at any time. You can find them by pressing the (ESC) key and clicking Preferences.`
 	``
 	`	The default keys you will use most are:` 
 	`(Esc) to view preferences, load saves, or create new characters.`
@@ -86,9 +86,8 @@ conversation "intro"
 	`(J) to jump to the next system.`
 	`(L) to land on your target planet, station, or moon in this system.`
 	`(T) to hail target ships, (Shift+T) to hail selected planets.`
-	choice
-		`	"Where can I find more information?"`
-			goto cmoreinfo
+	``
+		`	You can find more info on your controls by visiting the preferences screen. Access that by pressing the (ESC) key and clicking Preferences.`
 		`	(Back to Basics.)`
 			got basics
 		`	(Back to Menu.)`
@@ -96,7 +95,6 @@ conversation "intro"
 		`	(Continue to the intro.)`
 			goto logbook
 	label cmoreinfo
-	`	You can find more info on your controls by visiting the preferences screen. Access that by pressing <Show main menu> and clicking Preferences.`
 		`	(Back to Basics.)`
 			goto basics
 		`	(Back to Menu.)`
@@ -117,7 +115,7 @@ conversation "intro"
 	label combat		
 	`	Combat in Endless Sky is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you outrange and outrun your enemy, too!`
 	`	The main default keys you will use in combat are your arrow keys to move, (Tab) to fire your primary weapon, (W) to select your secondary weapon, and (Q) to fire your secondary weapon.`
-	`	Check Preferences under <Show main menu> for more details.`
+	`	Check Preferences by pressing the (ESC) key for more details.`
 	choice
 		`	(Back to Basics.)`
 			goto basics
@@ -184,7 +182,7 @@ conversation "intro"
 		`	(Continue to the intro.)`
 			goto logbook	
 	label logbook
-	`	The "flight manual" has be added to your logbook if you decide to review it later. The logbook is viewed in the player info screen (Default I). You can change this and other controls by pressing <Show main menu>.`
+	`	The "flight manual" has be added to your logbook if you decide to review it later. The logbook is viewed in the player info screen (Default I). You can change this and other controls by pressing the (ESC) key.`
 	choice
 		`	Next.`
 	`	Before your story can begin, you will need to select your background.`
