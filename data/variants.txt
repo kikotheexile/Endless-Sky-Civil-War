@@ -464,6 +464,7 @@ ship "Arete" "Arete (Jump)"
 		"Heavy Anti-Missile Turret" 2
 		"Laser Rifle" 40
 		"Fragmentation Grenades" 40
+		"Knockout Gas" 14
 		"Armageddon Core"
 		"Dwarf Core"
 		"LP072a Battery Pack"
@@ -509,6 +510,7 @@ ship "Arete" "Arete (Mark II)"
 		"Brig"
 		"Laser Rifle" 45
 		"Fragmentation Grenades" 45
+		"Knockout Gas" 17
 		"A860 Atomic Thruster"
 		"A525 Atomic Steering"
 		"Hyperdrive"
@@ -632,6 +634,7 @@ ship "Nomos" "Nomos (Heavy)"
 		"Quad Blaster Turret"
 		"Laser Rifle" 20
 		"Fragmentation Grenades" 20
+		"Knockout Gas" 9
 		"Armageddon Core"
 		"Dwarf Core"
 		"Supercapacitor"
@@ -667,6 +670,7 @@ ship "Nomos" "Nomos (Jump)"
 		"Heavy Anti-Missile Turret"
 		"Laser Rifle" 20
 		"Fragmentation Grenades" 20
+		"Knockout Gas" 9
 		"Armageddon Core"
 		"LP144a Battery Pack"
 		"LP036a Battery Pack"
@@ -709,6 +713,7 @@ ship "Nomos" "Nomos (Mark II)"
 		"Tactical Scanner"
 		"Laser Rifle" 25
 		"Fragmentation Grenades" 25
+		"Knockout Gas" 13
 		"A520 Atomic Thruster"
 		"A525 Atomic Steering"
 		"Hyperdrive"

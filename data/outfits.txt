@@ -407,6 +407,18 @@ outfit "Nerve Gas"
 	"unplunderable" 1
 	description "This is a highly illegal weapon for hand to hand combat when boarding an enemy ship. Because chemical weapons are banned by interstellar law, you can be severely fined for getting caught in possession of nerve gas canisters. But, they do clear out an enemy ship quicker than just about anything else..."
 
+outfit "Knockout Gas"
+	plural `Gas Canisters`
+	category "Hand to Hand"
+	cost 110000
+	thumbnail outfit/knockout_gas
+	"capture attack" 2.2
+	"capture defense" 1.2
+	licenses
+		Navy
+	unplunderable 1
+	description "Researchers from Lovelace Labs have found a way to weaponize the chemical compounds derived from psychoactive plants found on some of the more exotic planet ecosystems. Though not as powerful as nerve gas, knockout gas is non-fatal."
+
 
 outfit "Local Map"
 	category "Special"

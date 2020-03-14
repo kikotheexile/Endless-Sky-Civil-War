@@ -2754,6 +2754,7 @@ ship "Arete"
 		"Brig"
 		"Laser Rifle" 40
 		"Fragmentation Grenades" 40
+		"Knockout Gas" 14
 		"Security Station"
 		"Tactical Scanner"
 		
@@ -2838,6 +2839,7 @@ ship "Nomos"
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 20
 		"Fragmentation Grenades" 20
+		"Knockout Gas" 9
 		"Security Station"
 		"Tactical Scanner"
 		
