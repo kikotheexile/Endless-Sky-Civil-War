@@ -960,9 +960,9 @@ outfit "Meteor Missile Box"
 	category "Ammunition"
 	cost 9000
 	thumbnail "outfit/meteor storage"
-	"mass" 2
+	"mass" 3.5
 	"outfit space" -5
-	"meteor capacity" 30
+	"meteor capacity" 15
 	ammo "Meteor Missile"
 	description "The Meteor Missile Box is used to store extra ammunition for Meteor Missile Launchers."
 
@@ -988,7 +988,7 @@ outfit "Meteor Missile Launcher"
 		"inaccuracy" 5
 		"velocity" 11
 		"lifetime" 490
-		"reload" 80
+		"reload" 64
 		"firing energy" 1
 		"firing heat" 20
 		"acceleration" 1
@@ -996,8 +996,8 @@ outfit "Meteor Missile Launcher"
 		"turn" 1.35
 		"homing" 3
 		"infrared tracking" .8
-		"shield damage" 260
-		"hull damage" 160
+		"shield damage" 208
+		"hull damage" 128
 		"hit force" 220
 		"missile strength" 6
 	description "The Meteor Missile is the cheapest and simplest homing weapon available in human space. Meteor Missiles are quickly destroyed by anti-missile systems, and their infrared tracking systems have trouble homing in on targets with low heat levels. Nevertheless, their large warheads can spell doom for poorly-defended targets when the missiles are fired in great numbers."
@@ -1022,9 +1022,9 @@ outfit "Sidewinder Missile Rack"
 	category "Ammunition"
 	cost 20000
 	thumbnail "outfit/sidewinder storage"
-	"mass" 2
+	"mass" 9
 	"outfit space" -14
-	"sidewinder capacity" 120
+	"sidewinder capacity" 50
 	ammo "Sidewinder Missile"
 	description "The Sidewinder Missile Rack is used to store extra ammunition for Sidewinder Missile Launchers."
 
@@ -1032,11 +1032,11 @@ outfit "Ranger Missile Launcher"
 	category "Secondary Weapons"
 	cost 60000
 	thumbnail "outfit/sidewinder launcher"
-	"mass" 5
+	"mass" 9
 	"outfit space" -29
 	"weapon capacity" -29
 	"gun ports" -1
-	"sidewinder capacity" 240
+	"sidewinder capacity" 200
 	weapon
 		sprite "projectile/sidewinder"
 			"no repeat"
@@ -1085,9 +1085,9 @@ outfit "Javelin Storage Crate"
 	category "Ammunition"
 	cost 5000
 	thumbnail "outfit/javelin storage"
-	"mass" 2
+	"mass" 4
 	"outfit space" -6
-	"javelin capacity" 200
+	"javelin capacity" 100
 	ammo "Javelin"
 	description "The Javelin Storage Crate is used to store extra ammunition for Javelin Pods."
 
@@ -1109,11 +1109,11 @@ outfit "Javelin Pod"
 		"inaccuracy" 1
 		"velocity" 10
 		"lifetime" 60
-		"reload" 15
+		"reload" 12
 		"firing energy" .2
 		"firing heat" 12
-		"shield damage" 48
-		"hull damage" 26
+		"shield damage" 39
+		"hull damage" 20
 		"hit force" 50
 		"missile strength" 3
 	description "The Javelin Pod fires a rapid stream of unguided missiles. A Javelin Pod does far more damage than any gun of a comparable size, and has a longer range as well, but once a ship has expended all of its ammunition it must leave combat and find a planet where it can buy more, which makes Javelins less useful in protracted battles."
@@ -1258,9 +1258,9 @@ outfit "Heavy Rocket Rack"
 	category "Ammunition"
 	cost 20000
 	thumbnail "outfit/rocket storage"
-	"mass" 2
+	"mass" 4.5
 	"outfit space" -7
-	"rocket capacity" 20
+	"rocket capacity" 10
 	ammo "Heavy Rocket"
 	description "The Heavy Rocket Rack is used to store extra ammunition for Heavy Rocket Launchers."
 
@@ -1284,15 +1284,15 @@ outfit "Heavy Rocket Launcher"
 		"inaccuracy" 1
 		"velocity" 8
 		"lifetime" 125
-		"reload" 240
+		"reload" 192
 		"firing energy" 1
 		"firing heat" 250
 		"acceleration" .8
 		"drag" .1
 		"trigger radius" 20
 		"blast radius" 50
-		"shield damage" 850
-		"hull damage" 720
+		"shield damage" 680
+		"hull damage" 576
 		"hit force" 600
 		"missile strength" 16
 	description "Heavy Rockets are the most powerful missile weapon available, but at a price: Instead of having a homing system, they simply fire straight forward and rely on a proximity trigger to set them off. Once triggered, however, they damage all ships within their blast radius, making them highly effective against clusters of fighters."
