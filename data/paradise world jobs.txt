@@ -26,6 +26,7 @@ mission "Care package to <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Independent" += 2
 		payment
 		payment 5000
 		dialog "Still wondering why one university student would possibly need such a large quantity of <commodity>, you deliver the interstellar care package and collect your payment of <payment>."
@@ -48,6 +49,7 @@ mission "Birthday supplies to <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Independent" += 2
 		payment
 		payment 5000
 		dialog "You deliver the cargo to the garden of an imposing mansion in the countryside, wherein some pouty young sprout is throwing a very conspicuous fit at the center of a swarm of guests. The parents sheepishly hand you your payment of <payment>."
@@ -70,6 +72,7 @@ mission "Art delivery to <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Independent" += 2
 		payment
 		payment 5000
 		dialog "Your ship is directed to the rear loading dock of a palatial complex where your cargo of <commodity> is unloaded. You collect your payment of <payment>."
@@ -95,6 +98,7 @@ mission "Newlyweds to <planet>"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"reputation: Independent" += 3
 		payment 10000 250
 		dialog "You bid the two lovebirds goodbye on <planet> and collect your payment of <payment>."
 
@@ -116,6 +120,7 @@ mission "Theater props to <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 2
 		payment
 		payment 8000
 		dialog "Your ship is directed to the rear loading dock of a sprawling entertainment complex where your cargo of <commodity> is unloaded. You collect your payment of <payment>."
@@ -138,6 +143,7 @@ mission "Fine food to <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 2
 		payment
 		payment 8000
 		dialog "Your ship is directed to the rear loading dock of a very impressive eatery. White-gloved waiters gingerly unload the cargo of <commodity> and relay your payment of <payment>."
@@ -164,6 +170,7 @@ mission "Transport partiers [1]"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"reputation: Independent" += 2
 		payment 10000 200
 		dialog "You're not sorry to say goodbye to the rowdy and uncouth troublemakers you've been transporting. Their parents send you your payment of <payment> with not a word of acknowledgement."
 
@@ -187,6 +194,7 @@ mission "Transport partiers [2]"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"reputation: Independent" += 2
 		payment 5000 190
 		dialog "You bid goodbye to the students, who behaved surprisingly well during the journey - yielding many fascinating conversations on subjects as diverse as philosophy, microfluidics, and intergalactic economics. Their proud parents send you your payment of <payment>."
 
@@ -205,6 +213,7 @@ mission "Food donations to <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 2
 		payment 1000 90
 		dialog "You collect your payment of <payment>, but not before noticing the general robustness and ample bellies of the dockworkers unloading the donation of <commodity>."
 
@@ -224,6 +233,7 @@ mission "Clothing donations to <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 2
 		payment 1000 100
 		dialog "You collect your payment of <payment>, but not before noticing the fine quality of the clothes worn by the dockworkers unloading the donation of <commodity>."
 
@@ -243,6 +253,7 @@ mission "Medical aid to <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 2
 		payment 1000 100
 		dialog "You collect your payment of <payment>, but not before noticing the general health and vigor of the dockworkers unloading the donation of <commodity>."
 
@@ -262,6 +273,7 @@ mission "Charity goods to <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 2
 		payment 1000 100
 		dialog "You collect your payment of <payment>, but not before noticing the quality of the clothes, jewelry, and personal electronics carried by the dockworkers unloading the donation of <commodity>."
 
@@ -285,6 +297,7 @@ mission "Party goods to <planet>"
 	on visit
 		dialog "You've returned to <planet>, but forgot to pick up the <commodity> on <stopovers> first! Better head there before it's too late."
 	on complete
+		"reputation: Merchant" += 2
 		payment
 		payment 10000 135
 		dialog "Your ship is directed to land on a makeshift tarmac near a sprawling greenfield where novelty castles are being constructed. Sharply-dressed stewards unload the <commodity> and you collect your payment of <payment>."
@@ -305,6 +318,7 @@ mission "Estate assets to <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 2
 		payment
 		payment 10000
 		dialog "As you watch the dockworkers unload crate after crate, you can't help but wonder what would drive someone to collect such a huge quantity of <commodity>. You collect your payment of <payment>."
@@ -328,6 +342,7 @@ mission "Contract laborers to <planet>"
 	on visit
 		dialog phrase "generic missing stopover or passengers"
 	on complete
+		"reputation: Independent" += 2
 		payment 10000 50
 		dialog "The bedraggled contract laborers kept to themselves and didn't say a word to you throughout the entire trip. The scruffy foreman who receives you on <origin> seems pleased, however. He hands you your payment of <payment>."
 
@@ -347,6 +362,7 @@ mission "Waste disposal on <planet>"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 2
 		payment
 		dialog "You drop off the exceptionally foul shipment of <commodity> on <planet>, already looking forward to the chemical bath your cargo hold is going to receive. You collect your payment of <payment> and hope that somebody around here knows what to do with the unpleasant mess you dropped off."
 
@@ -368,6 +384,7 @@ mission "Transport high-class tourists"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"reputation: Independent" += 2
 		dialog "Your passengers begin to wander off, some of them sporting puzzled looks as the memories of glossy photos in the brochures give way to reality. You collect your payment of <payment>."
 		payment 25000 250
 
@@ -400,6 +417,8 @@ mission "Pleasure cruise security"
 	on visit
 		dialog "You have reached <planet>, but you can't complete this mission until the <npc> has visited <stopovers> with you and then joined you here."
 	on complete
+		"reputation: Merchant" += 2
+		"reputation: Independent" += 2
 		dialog "You bid goodbye to the captain of the <npc> and accept your payment of <payment>."
 		payment
 		payment 50000
