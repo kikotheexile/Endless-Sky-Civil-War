@@ -438,7 +438,7 @@ mission "Meeting an Alpha 1"
 	
 	on accept
 		log "Volunteered to scan the Star Blade, one of the largest vessels in human space."
-		dialog "Upon returning to your ship, you check your communicator and find that you have received two messages. Upon opening the second one, you find out it belonged to Peg and is full of intel that could be useful to the Republic. Maybe they'll pay you for it?"
+		dialog "Upon returning to your ship, you go and check your communicator, only to find a second communicator lying next to it. Upon checking the contents of the second one, you find out it belonged to Peg, and it's full of intel that could be useful to the Republic. Maybe they'll pay you for it?"
 		
 	npc "scan outfits"
 		government Betelgeuse
@@ -446,7 +446,7 @@ mission "Meeting an Alpha 1"
 		ship Veles "Star Blade"
 		system "Betelgeuse"
 		conversation
-			`As soon as you scan the <npc>, its captain hails you: "Excuse me, captain," she says, "we detected an unauthorized scan of Betelgeuse technology. Do you have a permit?"`
+			`As soon as you scan the <npc>, its captain hails you: "Excuse me, Captain," she says, "we detected an unauthorized scan of Betelgeuse technology. Do you have a permit?"`
 			choice
 				`	"I left it in my other pants."`
 					goto pants
@@ -838,7 +838,7 @@ mission "NU Bounty 2B"
 	on complete
 		set "captured bounty"
 		dialog
-			`You report to Mouser that you have killed the <npc> and provide sensor logs as evidence. He thanks you, but oddly enough doesn't pay you: "Always a pleasure working with you, captain. I'll transfer your half of the money to you as soon as I am paid."`
+			`You report to Mouser that you have killed the <npc> and provide sensor logs as evidence. He thanks you, but oddly enough doesn't pay you: "Always a pleasure working with you, Captain. I'll transfer your half of the money to you as soon as I am paid."`
 
 mission "dead or alive payment"
 	invisible
