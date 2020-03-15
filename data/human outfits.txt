@@ -2719,6 +2719,18 @@ outfit "Security Station"
 	"unplunderable" 1
 	description "This is a specially designed barricade, which can be installed in the hallways of your ship as a powerful defense against anyone who boards you in an attempt to take over your ship."
 
+outfit "Knockout Gas"
+	plural "Gas Canisters"
+	category "Hand to Hand"
+	cost 110000
+	thumbnail "outfit/knockout gas"
+	"capture attack" 2.2
+	"capture defense" 1.2
+	licenses
+		Navy
+	"unplunderable" 1
+	description "Researchers from Lovelace Labs have found a way to weaponize the chemical compounds derived from psychoactive plants found on some of the more exotic planet ecosystems. Though not as powerful as nerve gas, knockout gas is non-fatal."
+
 outfit "Nerve Gas"
 	plural "Nerve Gas"
 	category "Hand to Hand"
