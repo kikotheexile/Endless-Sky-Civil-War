@@ -26,12 +26,12 @@ mission "Republic Bounty 1"
 	
 	on offer
 		conversation
-			`	"You look like you're looking for work." A man says in a surprisingly cheerful tone as you leave your ship, barely getting your berrings. You take a look at him and his crisp, black Republic uniform, wondering why he had called out to you. "We're in need of someone to deal some pirates that have been causing trouble near Boral. Usually, we'd send the Navy, but today is your lucky day! So, how about it?"`
+			`	"You look like you're looking for work," a man says in a surprisingly cheerful tone as you leave your ship. You take a look at him and his crisp, black Republic uniform, wondering why he had called out to you: "We're in need of someone to deal with some pirates that have been causing trouble near Boral. Usually, we'd send the Navy, but today is your lucky day! So, how about it?"`
 			choice
 				`	"Luck has nothing to do with it. Consider it done."`
-				`	"You must have mistaken me for a bounty hunter, I'm not interested."`
+				`	"You must have mistaken me for a bounty hunter. I'm not interested."`
 					decline
-			`	"Much obliged," he says. "It's a ship called the <npc>. Its a tricky little devil, so don't let it take you off guard."`
+			`	"Much obliged," he says, "it's a ship called the <npc>. It's a tricky little devil, so don't let it take you off guard."`
 				accept
 	on accept
 		log "Hunted a pirate ship called the <npc>, which had been plundering ships near Boral."
@@ -46,7 +46,7 @@ mission "Republic Bounty 1"
 	
 	on complete
 		payment 175000
-		dialog `The man seems surprised that you've succeeded when you greets him upon landing. "Excellent work!" He says, shaking your hand. "I don't think I've introduced myself properly last time. I'm Commander Kent, and I'll be keeping an eye out for you should we require your assistance in the future." When you check later, you're pleased to find that <payment> has been credited to your account.`
+		dialog `After you land, you greet the man who offered you the bounty, who seems surprised that you've succeeded. He shakes your hand and says: "Excellent work! I don't think I've introduced myself properly last time. I'm Commander Kent, and I'll be keeping an eye out for you, should we require your assistance in the future." When you check later, you're pleased to find that <payment> has been credited to your account.`
 
 
 
@@ -63,7 +63,7 @@ mission "Republic Bounty 2"
 	
 	on offer
 		conversation
-			`Before you can decide where you want to go in the spaceport, you are flagged down by a Republic officer, a dour woman with black hair in a tight bun. "Captain <last>?" She asks. You nod. "I'm Captain Shah. Commander Kent has you listed as a privateer," she says with a quick, clipped tone. "We've been made aware that a criminal has been spotted near Alnasl. He is wanted dead." `
+			`Before you can decide where you want to go in the spaceport, you are flagged down by a Republic officer, a dour woman with black hair in a tight bun. "Captain <last>?" she asks. You nod, and she says: "I'm Captain Shah. Commander Kent has you listed as a privateer," she says with a quick, clipped tone: "We've been made aware that a criminal has been spotted near Alnasl. He is wanted, dead."`
 			choice
 				`	"Dead. Got it."`
 				` 	"You have an interesting way of asking."`
@@ -73,12 +73,12 @@ mission "Republic Bounty 2"
 			`	"He's aboard a ship named the <npc>. Considering your abilities it should hardly be a challenge."`
 			accept
 			label killer
-			`	"Your file leads me to believe otherwise," says Shah. "No matter then, we will be sure to update your record."`
+			`	Shah replies: "Your file leads me to believe otherwise. No matter then, we will be sure to update your record."`
 			decline
 			label asking
 			`	"Would you prefer a full dissertation on the simplicity of this job?"`
 			choice
-				`	"I don't think that's necessary. I'll do it."`
+				`	"I don't think that'll be necessary. I'll do it."`
 					accept
 				`	"Thank you, but I'm not interested in this kind of work."`
 					decline
@@ -95,13 +95,13 @@ mission "Republic Bounty 2"
 		
 	on complete
 		payment 200000
-		dialog `Captain Shah contacts you immediately after you've landed. "The Republic thanks you for your service, Captain. <payment> have been credited to your account. I'll be in touch should I have need of you again."`
-		log "People" "Kent and Shah" "Two Republic officials assigned to keep a watchful eye over the systems bordering the Free Worlds. Their uniforms does not match the standard Republic Uniform of the Navy."
+		dialog `Captain Shah contacts you immediately after you've landed: "The Republic thanks you for your service, Captain. <payment> have been credited to your account. I'll be in touch should I have need of you again."`
+		log "People" "Kent and Shah" "Two Republic officials assigned to keep a watchful eye over the systems bordering the Free Worlds. Their uniforms do not match the standard Republic uniform of the Navy."
 
 
 mission "Republic Bounty 3"
 	name "Republic Bounty Hunting"
-	description `Disable the <npc> which seems to be holding merchants for ransom. Do not destroy or attempt to capture the ship. It was last spotted in the Tais system`
+	description `Disable the <npc>, which seems to be holding merchants for ransom. Do not destroy or attempt to capture the ship. It was last spotted in the Tais system.`
 	source
 		government "Republic"
 		attributes "dirt belt"
@@ -112,17 +112,17 @@ mission "Republic Bounty 3"
 	
 	on offer
 		conversation
-			`As you wander the spaceport, you're surpised by a hand on your shoulder. You look around to find Captain Shah, still gripping you with a vice grip. "Captain <last>, the Republic has another job for you. It's different than the previous one but I'm sure you'll be interested."`
+			`As you wander the spaceport, you're surprised by a hand on your shoulder. You look around to find Captain Shah, who says: "Captain <last>, the Republic has another job for you. It's different than the previous one, but I'm sure you'll be interested."`
 			choice
 				`	"You have my attention."`
 				`	"Sorry, I have to see a man about a magic carpet."`
 					defer
-			`	"A ship called the <npc> has captured a number of wealthy merchants and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, they have made it clear they will kill the hostages if approached by one of our ships. Your mission will be to disable the ship and leave it to the Republic for further actions."`
+			`	"A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, they have made it clear they will kill the hostages if approached by one of our ships. Your mission will be to disable the ship and leave it to the Republic for further actions."`
 			choice
 				`	"Don't worry, I majored in Crisis Aversion at University."`
 				`	"I'm sorry, but that's definetly above my pay grade."`
 					decline
-			`	"Let's hope you were in the honors program," Captain Shah replies with a relieved smile. "The ship was last spotted in Tias. We believe you'll find it there."`
+			`	"Let's hope you were in the honors program," Captain Shah replies with a relieved smile: "The ship was last spotted in Tias. We believe you'll find it there."`
 				accept
 	npc disable
 		personality heroic staying nemesis target
@@ -131,18 +131,18 @@ mission "Republic Bounty 3"
 		ship "Falcon (Heavy)" "Gediminas"
 		dialog `The <npc> has been disabled. You can claim the bounty payment by returning to <destination>.`
 	on accept
-		log "Hunted a pirate ship called the <npc>, which has captured multiple merchant captains and disabled the ship at the Republic's request."
+		log "Hunted a pirate ship called the <npc>, which has captured multiple merchant captains, and disabled the ship at the Republic's request."
 		
 	on complete
 		"assisted republic" ++
 		payment 250000
-		dialog `"Everyone is home safe, thanks to you," Captain Shah informs you after you land, taking you to a nearby restaurant as thanks. "The Republic owes you a debt of gratitude. <payment> have been transferred to your account, and I've informed my superiors of your excellent work today."`
-		log "Captain Shah has put a good word in to her superiors on the mission I've completed."
+		dialog `"Everyone is home safe, thanks to you," Captain Shah informs you after you land. She takes you to a nearby restaurant as thanks: "The Republic owes you a debt of gratitude. <payment> have been transferred to your account, and I've informed my superiors of your excellent work today."`
+		log "Captain Shah has put in a good word for me to her superiors on the mission I've completed."
 
 		
 mission "Navy Scouting 1"
 	name "Hyperspace Relay Testing"
-	description "Fly through the <waypoints> systems, then report to <destination> so the Navy can analyze your logs network connectivity."
+	description "Fly through the <waypoints> systems, then report to <destination> so the Navy can analyze your log's network connectivity."
 	waypoint "Hassaleh"
 	waypoint "Sumar"
 	waypoint "Cardax"
@@ -158,32 +158,32 @@ mission "Navy Scouting 1"
 
 	on offer
 		conversation
-			`Another spaceport, another chance for adventure and glory. This time, however, you overhear a woman in a Navy uniform telling a rather bored looking merchant about satellites in the empty systems to the north. `
-			`	"That sounds.. interesting." The merchant tells her, "But I've got a cargo bay full of medical supplies headed the other direction." "An important endeavour," She replies. "I wish you safe travels."`
+			`Another spaceport, another chance for adventure and glory. This time, however, you overhear a woman in a Navy uniform telling a rather bored-looking merchant about satellites in the empty systems to the north.`
+			`	"That sounds interesting," the merchant tells her, "but I've got a cargo bay full of medical supplies headed the other direction." The woman replies: "An important endeavour, I wish you safe travels."`
 			choice
-				`	(Ask her what's going on)`
-				`	(Walk away)`
+				`	(Ask her what's going on.)`
+				`	(Walk away.)`
 					decline
-			`	"I overheard you were having trouble with a satellite?" You approach her, interested, as the other merchant captain walks away. "Not quite." She replies brightly. "We've been experiencing some lag between Farpoint and Maelstrom. If you're interested, I'll need you to fly through both systems so I could suss out what the trouble is from your ship log."`
+			`	"I overheard you were having trouble with a satellite?" You ask while approach her as the other merchant captain walks away. She answers: "Not quite. We've been experiencing some lag between Farpoint and Maelstrom. If you're interested, I'll need you to fly through both systems so I could find out what the trouble is with your ship log."`
 			choice
 				`	"That's a pretty area, I could use the diversion."`
 				`	"Sorry, I don't think I can help you either."`
 					decline
-			`	"Glad to hear it." She beams. "I'm Captain Jane Mulgrew, by the way. Lovely to be working with you."`
+			`	"Glad to hear it," she says, beaming, "I'm Captain Jane Mulgrew, by the way. Lovely to be working with you."`
 				accept
 
 	on accept
-		log "Volunteered to help track down the cause of some lag for the Republic."
+		log "Volunteered to help track down the cause of some satellite lag for the Republic."
 	
 	on complete
 		payment 30000
 		dialog
-			`Captain Mulgrew approaches you upon your return. "Thank you on behalf of not only the Republic, but everyone who uses my network," she says, shaking your hand as you thought about how nice it is to get paid <payment> just for flying between systems...`
+			`Captain Mulgrew approaches you upon your return: "Thank you on behalf of not only the Republic, but everyone who uses my network," she says, shaking your hand as you think about how nice it is to get paid <payment> just for flying between a few systems...`
 
 mission "Navy Scouting 2"
 	landing
 	name "Dead End System Scouting"
-	description "Fly through the <waypoints> systems, then report to <destination> so the Navy can analyze your logs of pirate activity (if any)."
+	description "Fly through the <waypoints> systems, then report to <destination> so the Navy can analyze your logs for any pirate activity that may be present."
 	waypoint "Regulus"
 	waypoint "Fingol"
 	waypoint "Nocte"
@@ -198,17 +198,17 @@ mission "Navy Scouting 2"
 
 		on offer
 		dialog
-			`You receive a message from Mulgrew, the Navy captain who asked you to fly through some uninhabited systems to the north. "I need some data from a few dead end systems," she says. "There's usually some pirate fleets in the area but they can't pirate sensor logs. Interested?"`
+			`You receive a message from Mulgrew, the Navy captain who asked you to fly through some uninhabited systems to the north: "I need some data from a few dead end systems," she says, "there's usually some pirate fleets in the area, but they can't pirate sensor logs. Interested?"`
 	
 	on complete
 		payment 40000
 		dialog
-			`You transfer your sensor logs to Captian Mulgrew who thanks you for your work, as well as crediting <payment> to your account. "I'll let you know when scientific progress calls your name again," she says.`
-		log "People" "Captain Jane Melgrew" "A Navy captain charged with all manner of odd technological jobs, from diagnosing hyperspace network problems, to scouting uninhabited systems."
+			`You transfer your sensor logs to Captain Mulgrew who thanks you for your work, as well as crediting <payment> to your account: "I'll let you know when scientific progress calls your name again," she says.`
+		log "People" "Captain Jane Melgrew" "A Navy captain charged with all manners of odd technological jobs, from diagnosing hyperspace network problems, to scouting uninhabited systems."
 
 mission "Navy Scouting 3"
 	name "Free Worlds Reconnaissance"
-	description "Perform an outfit scan on the falcon <npc> in Yed Prior, then report to Captain Melgrew on <destination>."
+	description "Perform an outfit scan on the Falcon <npc> in Yed Prior, then report to Captain Melgrew on <destination>."
 	source
 		government "Republic"
 	destination "Follower"
@@ -219,17 +219,17 @@ mission "Navy Scouting 3"
 	
 	on offer
 		conversation
-			`As you head back to your ship, you are accosted by an out of breath Captain Mulgrew. "Captain <last>!" she shouts. "Glad I caught you. I have another job, and this one I have to tell you in person.`
+			`As you head back to your ship, you are accosted by an out-of-breath Captain Mulgrew: "Captain <last>," she shouts, "glad I caught you! I have another job, and this one I have to tell you in person.`
 			choice
 				`	"What adventure awaits me today?"`
-				`	"Sorry, I've an urgent appointment today."`
+				`	"Sorry, I've got an urgent appointment today."`
 					decline
-			`	"We have good reason to believe that a ship loaded with alien tech is somewhere in the south," she says. "As I'm sure you've heard, the worlds in this area have been organizing a rebellion, and while alien tech is extremely exciting, I'd rather they not have it first. Would you be able to track down the ship and scan it?"`
+			`	"We have good reason to believe that a ship loaded with alien tech is somewhere in the south," she says: "As I'm sure you've heard, the worlds in this area have been organizing a rebellion, and while alien tech is extremely exciting, I'd rather they not have it first. Would you be able to track down the ship and scan it?"`
 			choice
 				`	"That sounds way more exciting than the mineral water I was going to transport."`
-				`	"Sorry, I've a vision warning me I'd die messing with alien tech."`
+				`	"Sorry, I've got a vision warning me I'd die messing with alien tech."`
 					decline
-			`	"Wonderful." She replies with her radiant trademark smile. "It's a Falcon named the <npc>, last seen near Yed Prior. If it does have alien technology, we'll be the first in the Republic to see it, isn't that exciting?`
+			`	"Wonderful," she replies with her radiant trademark smile: "It's a Falcon named the <npc>, last seen near Yed Prior. If it does have alien technology, we'll be the first in the Republic to see it. Isn't that exciting?`
 			accept
 	
 	on accept
@@ -239,34 +239,34 @@ mission "Navy Scouting 3"
 		government "Free Worlds"
 		personality staying uninterested
 		fleet
-			names "free worlds capital"
+			names "free worlds capital" 
 			variant
 				"Falcon (Heavy)"
 		conversation
-			`As soon as you scan the <npc> its captain hails you. "Excuse me, captain," he says, "mind telling me why you felt the need to probe my ship?"`
+			`As soon as you scan the <npc>, its captain hails you: "Excuse me, Captain," he says, "mind telling me why you felt the need to probe my ship?"`
 			choice
-				`	"Funny you should mention probing, with how powerful that ship looks I though it might be alien."`
+				`	"Funny that you mention probing. With how powerful that ship looks, I thought it might be alien."`
 					goto alien
-				`	"I've dreamed of having a ship so well outfitted since I was a barely big enough to see over the cockpit, and today seemed like the day to start that wish list."`
+				`	"I've dreamed of having a ship so well-outfitted since I was barely big enough to see over the cockpit, and today seemed like the day to start that wish list."`
 					goto equipment
 			label alien
-			`	"Alien, well maybe to someone flying a tub like yours," he says, chuckling. "No, I can assure you this is all standard human fare."`
+			`	"Alien, well maybe to someone flying a tub like yours," he says, chuckling: "No, I can assure you this is all standard human fare."`
 				goto close
 			label equipment
-			`	He looks awfully pleased with himself. "She is quite a dream. I would have never been able to afford anything like this without the Defense Pact's Thousand Eyes scouting program," he says. "She makes keeping pirates out of our territory as easy as running carpets to Longjump."`
+			`	He looks awfully pleased with himself: "She is quite a dream. I would have never been able to afford anything like this without the Defense Pact's Thousand Eyes scouting program," he says: "She makes keeping pirates out of our territory as easy as running carpets to Longjump."`
 				goto close
 			label close
-			`	You cut the comlink and breathe a sigh of relief that the conversation is over.`
+			`	You cut the commlink and breathe a sigh of relief that the conversation is over.`
 	
 	on complete
 		"assisted republic" ++
-		dialog `You happily trade <payment> for your sensor logs when you meet back up with Captain Mulgrew "No alien tech, I see." She says, dissapointed. "While that would have been a great find, I will admit I'm happy I don't have to engineer a defence for it. I've let my supervisors know how helpful you've been, hopefully we can work together again soon." `
+		dialog `You happily trade <payment> for your sensor logs when you meet back up with Captain Mulgrew: "No alien tech, I see," she says, dissapointed: "While that would have been a great find, I will admit I'm happy I don't have to engineer a defense for it. I've let my supervisors know how helpful you've been. Hopefully we can work together again soon."`
 		payment 50000
 		log "Captain Melgrew says she has put a good word in for me with her superiors."
 		
 mission "Meeting an Alpha 2b"
 	name "Turn in Peg's communicator"
-	description "Visit <destination> and turn over the communicator to the Authorities."
+	description "Visit <destination> and turn over the communicator to the authorities."
 	source
 		attributes "near earth" "paradise"
 		government "Republic"
@@ -283,19 +283,19 @@ mission "Meeting an Alpha 2b"
 				`	(Not right now.)`
 					defer
 			
-			`	You navigate your way through the spaceport before finally coming to a stop just outside of the Republic office. Like most Republic offices, you have to scan your identification or pilots license upon entry, and there is an officer serving as a receptionist who ask how he can help you.`
+			`	You navigate your way through the spaceport before finally coming to a stop just outside of the Republic office. Like most Republic offices, you have to scan your ID or pilot's license upon entry. There is an officer serving as a receptionist who asks how he can help you.`
 			choice
-				`	"I found this and was hoping maybe you could return it to it's rightful owner."`
+				`	"I found this and was hoping maybe you could return it to its rightful owner."`
 					goto found
 				`	"I had a meeting with someone I believe is an Alpha. This is his underling's communicator."`
 					goto alpha
-				`	"Nevermind, I was just looking for a bathroom."`
+				`	"Nevermind, I was just looking for the bathroom."`
 					defer
 			label found
-			`	The receptionist grabs the communicator and quickly finds that it is unlocked. As he reads through it, his eyes widen. "You say you just found this, huh? Well, Captain, this communicator belongs to Peg. An infamous pirate warlord." He pauses for a moment while going through the messages, before slamming his hand on the desk. "Captain, I could kiss you! You just earned me a promotion. Information on a real, live Alpha! We have information on Gaven! Captain, we'll call you when we need more information, but for now you're free to go." He hands you <payment> and rushes you out the door.`
+			`	The receptionist grabs the communicator and quickly finds that it is unlocked. As he reads through it, his eyes widen: "You say you just found this, huh? Well, Captain, this communicator belongs to Peg, an infamous pirate warlord." He pauses for a moment while going through the messages, before slamming his hand on the desk: "Captain, I could kiss you! You just earned me a promotion. Information on a real, live Alpha! We have information on Gaven! Captain, we'll call you when we need more information, but for now you're free to go." He hands you <payment> and rushes you out the door.`
 				decline
 			label alpha
-			`	He rolls his eyes, clearly thinking this is some sort of prank. "Oh, an Alpha, huh? I'm sure you're being entirely honest and I wont have to arrest you for attempting to file a false report." He takes the communicator from you and begins to look through it. His eyes widen as he begins looking through it. "Oh my, no this is good. This is very, very good. I can hardly believe this. Look, I need to talk this over with my superiors. We have your information, and will call you if we need to bring you in for an interview. Thank you so much for bringing this in to us!" He hands you <payment> and rushes you out the door.`
+			`	He rolls his eyes, clearly thinking this is some sort of prank: "Oh, an Alpha, huh? I'm sure you're being entirely honest and I won't have to arrest you for attempting to file a false report." He takes the communicator from you, and as he looks through it, his eyes widen: "Oh my, no, this is good. This is very, very good. I can hardly believe this. Look, I need to talk this over with my superiors. We have your information, and will call you if we need to bring you in for an interview. Thank you so much for bringing this to us!" He hands you <payment> and rushes you out the door.`
 				decline
 	on decline
 		payment 275000
