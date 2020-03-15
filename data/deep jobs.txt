@@ -65,6 +65,7 @@ mission "Deep Mystery Cube [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Deep" += 1
 		"mystery cube" ++
 		payment 5000 1000
 		dialog phrase "deep mystery cube dropoff payment"
@@ -95,6 +96,7 @@ mission "Deep Mystery Cube [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Deep" += 1
 		"mystery cube" ++
 		payment 5000 1000
 		dialog phrase "deep mystery cube dropoff payment"
@@ -125,6 +127,7 @@ mission "Deep Mystery Cube [2]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Deep" += 2
 		"mystery cube" ++
 		payment 5000 1000
 		dialog phrase "deep mystery cube dropoff payment"
@@ -155,6 +158,7 @@ mission "Deep Mystery Cube [3]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Deep" += 3
 		"mystery cube" ++
 		payment 5000 1000
 		dialog phrase "deep mystery cube dropoff payment"
@@ -184,6 +188,7 @@ mission "Mystery retrieval"
 	on visit
 		dialog phrase "generic missing stopover or cargo"
 	on complete
+		"reputation: Deep" += 3
 		"mystery cube" ++
 		payment 5000 1000
 		dialog phrase "deep mystery cube dropoff payment"
@@ -213,6 +218,7 @@ mission "Transport scientists"
 	on visit
 		dialog phrase "generic missing stopover or passengers"
 	on complete
+		"reputation: Deep" += 2
 		dialog "You bid goodbye to the scientists and accept your payment of <payment>."
 		payment
 		payment 30000
@@ -253,6 +259,7 @@ mission "Escort science vessel"
 	on visit
 		dialog "You have reached <planet>, but you can't complete this mission until the <npc> has visited <stopovers> with you and then joined you here."
 	on complete
+		"reputation: Deep" += 2
 		dialog "You bid goodbye to the captain of the <npc> and accept your payment of <payment>."
 		payment
 		payment 60000
@@ -284,5 +291,6 @@ mission "Record academic conference"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Deep" += 2
 		dialog phrase "academic conference recording payment"
 		payment 5000 1000
