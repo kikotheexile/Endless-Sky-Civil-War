@@ -31,8 +31,11 @@ mission "A pirate's life!"
 		has "a pirates life"
 		
 	on offer
-		dialog `The <npc> has landed next to you! This bounty hunter has been on your tail for weeks now, almost as if they're tracking your movements somehow. The Vanguard is slow and easy enough to avoid, but having a hostile Cruiser chasing you will make paying off this loan considerably more difficult.`
-
+		conversation
+			`The <npc> has landed next to you! This bounty hunter has been on your tail for weeks now, almost as if they're tracking your movements somehow. The Vanguard is slow and easy enough to avoid, but having a hostile Cruiser chasing you will make paying off this loan considerably more difficult.`
+				accept
+	
+	on accept
 	npc kill
 		personality nemesis
 		government "Bounty Hunter"
