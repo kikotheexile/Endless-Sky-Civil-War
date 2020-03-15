@@ -28,6 +28,7 @@ mission "Southbound Shipment [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 1
 		payment 0 160
 		dialog phrase "generic cargo delivery payment"
 
@@ -51,6 +52,7 @@ mission "Southbound Shipment [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 2
 		payment 0 160
 		dialog phrase "generic cargo delivery payment"
 
@@ -75,6 +77,7 @@ mission "Kraz Shipment"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Merchant" += 3
 		payment 0 160
 		dialog phrase "generic cargo delivery payment"
 
@@ -96,6 +99,7 @@ mission "Han Sizer Month [0]"
 		distance 5 10
 		attributes "rim"
 	on complete
+		"reputation: Merchant" += 1
 		payment 10000 170
 		dialog `Your passengers thank you for taking them on a journey around the Rim, and you collect your payment of <payment>.`
 
@@ -121,6 +125,7 @@ mission "Han Sizer Month [1]"
 		distance 5 10
 		attributes "rim"
 	on complete
+		"reputation: Merchant" += 1
 		payment 15000 170
 		dialog `Your passengers thank you for taking them on a journey around the Rim, and you collect your payment of <payment>.`
 
@@ -149,5 +154,6 @@ mission "Han Sizer Month [2]"
 		distance 5 10
 		attributes "rim"
 	on complete
+		"reputation: Merchant" += 1
 		payment 20000 170
 		dialog `Your passengers thank you for taking them on a journey around the Rim, and you collect your payment of <payment>.`
