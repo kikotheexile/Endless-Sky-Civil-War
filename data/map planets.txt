@@ -628,7 +628,6 @@ planet Foundry
 	spaceport `The spaceport is surrounded by kilometers of hangars and factories where new ships are being assembled. The port itself is a trio of towering buildings, with a skywalk on the top floors to provide a view of the surrounding area. Larger ships land on pads on the ground surrounding the towers, while smaller ships can fly into hangars built into the sides of the towers themselves. Everything is made of gleaming metal, and each tower is slightly tapered and adorned with painted fins that make it resemble an enormous starship.`
 	shipyard "Basic Ships"
 	shipyard "Syndicate Basics"
-	shipyard "Syndicate Advanced"
 	shipyard "Megaparsec Basics"
 	shipyard "Megaparsec Advanced"
 	outfitter "Common Outfits"
@@ -1717,7 +1716,6 @@ planet Prime
 	description `Prime is a very Earth-like ocean world, with a population of over a billion people. It is home to Betelgeuse Shipyards, and much of the industry on the planet is related to ship-building in one way or another, like refining and working metal, or developing exotic new hull and framing materials. Although some mining is done in more remote regions of the planet, Prime is reliant on shipments of metal and other goods to feed its industries.`
 	spaceport `The spaceport is a long, multi-story building designed to look like a carrier starship, but much larger. It is built mostly of steel and glass, with the sturdy beams and girders that support the building visible on the inside, giving it the look of a ship still in construction, whose interior has not yet been fully fitted out. In nearby hangars, final assembly is being done on ships, some of which have been completed and are now for sale.`
 	shipyard "Betelgeuse Basics"
-	shipyard "Betelgeuse Advanced"
 	shipyard "Navy Basics"
 	shipyard "Megaparsec Basics"
 	outfitter "Common Outfits"
