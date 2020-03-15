@@ -9,7 +9,7 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 conversation "intro"
-	`	Would you like a quick breifing on the controls, interface, and how the game is played before we begin?`
+	`	Would you like a quick briefing on the controls, interface, and how the game is played before we begin?`
 	choice
 		`	Yes.`
 			goto menu
@@ -19,12 +19,12 @@ conversation "intro"
 			goto skip
 
 	label skip
-		apply
+	`	The introduction has been skipped, the tutorial rejected, and the "hard" start selected. Please name your character.`
+	name
+	apply
 		set "a pirates life"
-		`	The introduction has been skipped, the tutorial rejected, and the "hard" start selected. Please name your character.`
-		name
-		`	Have fun out there, <first> <last>!`
-			accept
+	`	Have fun out there, <first> <last>!`
+		accept
 	label menu
 	`	What would you like to know?`
 	choice
