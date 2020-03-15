@@ -7,7 +7,2330 @@
 # Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#Power
 
+outfit "Nanotech Battery"
+	plural "Nanotech Batteries"
+	category "Power"
+	cost 3000000
+	thumbnail "outfit/quarg nanotech battery"
+	"mass" 50
+	"outfit space" -50
+	"energy capacity" 30000
+	
+outfit "Small Biochemical Cell"
+	category "Power"
+	licenses
+		"Wanderer Outfits"
+	cost 230000
+	thumbnail "outfit/small biochemical"
+	"mass" 17
+	"outfit space" -17
+	"energy generation" 1.6
+	"heat generation" 1.4
+	"energy capacity" 300
+	description "This tiny generator draws energy from the metabolic byproducts of a collection of microorganisms that have been engineered by the Wanderers specifically for this purpose."
+	
+outfit "Antimatter Core"
+	category "Power"
+	cost 100000000
+	thumbnail "outfit/quarg antimatter core"
+	"mass" 80
+	"outfit space" -80
+	"energy generation" 80
+	"heat generation" 20
+	"unplunderable" 1
+
+outfit "Supercapacitor"
+	category "Power"
+	cost 25000
+	thumbnail "outfit/supercapacitor"
+	"mass" 2
+	"outfit space" -2
+	"energy capacity" 150
+	description "With a powerful enough generator, many ships do not need batteries at all. The one exception is projectile weapons, which usually require a burst of energy far exceeding what the generator produces. Supercapacitors provide just enough energy storage for those weapons, without requiring you to install a bulky battery pack."
+
+outfit "LP036a Battery Pack"
+	category "Power"
+	cost 12000
+	thumbnail "outfit/tiny battery"
+	"mass" 10
+	"outfit space" -10
+	"energy capacity" 1000
+	description "A ship can run without batteries if its generator's instantaneous power output is higher than the total energy consumption of its systems, but batteries make it possible to store up energy when it is not needed and thus to use a much smaller and cheaper generator."
+
+outfit "LP072a Battery Pack"
+	category "Power"
+	cost 30000
+	thumbnail "outfit/small battery"
+	"mass" 20
+	"outfit space" -20
+	"energy capacity" 2200
+	description "This battery pack has more than twice the energy capacity of the most basic model, allowing your ship to engage in combat for longer periods of time before running out of energy. Some pilots have even been known to install these in lieu of any generator at all, trusting that they can reach their destination planet and recharge before running out of battery power, but that is a risky proposition."
+
+outfit "LP144a Battery Pack"
+	category "Power"
+	cost 67000
+	thumbnail "outfit/medium battery"
+	"mass" 40
+	"outfit space" -40
+	"energy capacity" 4800
+	description "This medium-sized battery pack is intended for ships that need to fire the occasional salvo of high-powered weaponry without running out of energy. As with all battery packs, relying on batteries is risky if combat lasts long enough for them to become depleted."
+
+outfit "LP288a Battery Pack"
+	category "Power"
+	cost 150000
+	thumbnail "outfit/large battery"
+	"mass" 80
+	"outfit space" -80
+	"energy capacity" 10400
+	description "This is a large battery pack designed for ships that may occasionally have high power needs but do not want the expense or the heat associated with a more powerful ship's generator."
+
+outfit "LP576a Battery Pack"
+	category "Power"
+	cost 380000
+	thumbnail "outfit/huge battery"
+	"mass" 160
+	"outfit space" -160
+	"energy capacity" 23000
+	description "For most ships that require this much power, a larger generator makes more sense than a battery this size. However, battery packs have the advantage that they generate no heat, so some captains use them instead of powerful generators if they do not expect to be in combat frequently or for extended periods of time."
+
+
+outfit "KP-6 Photovoltaic Panel"
+	category "Power"
+	cost 10000
+	thumbnail "outfit/tiny photovoltaic"
+	"mass" 3
+	"outfit space" -3
+	"solar collection" .1
+	description "This early commercial photovoltaic system was the driving force behind humanity's first interplanetary trade network. Rugged and modular, it can be bolted to the hull of any ship and has seen even the most remote parts of human space."
+
+outfit "KP-6 Photovoltaic Array"
+	category "Power"
+	cost 90000
+	thumbnail "outfit/small photovoltaic"
+	"mass" 24
+	"outfit space" -24
+	"solar collection" 1.1
+	description "The compact modularity of the KP-6 lent itself well to the creation of larger solar collection arrays. This original Korunak Photovoltaics model is equipped with a solar tracker, allowing it to make better use of available light."
+
+
+outfit "nGVF-AA Fuel Cell"
+	category "Power"
+	cost 40000
+	thumbnail "outfit/tiny fuel cell"
+	"mass" 20
+	"outfit space" -20
+	"energy generation" 1.2
+	"heat generation" 1.9
+	description "Fuel cells have been the cheapest and most common starship power sources since the dawn of the space era. This model produces only enough power for very small or slow ships."
+
+outfit "nGVF-BB Fuel Cell"
+	category "Power"
+	cost 47000
+	thumbnail "outfit/small fuel cell"
+	"mass" 30
+	"outfit space" -30
+	"energy generation" 1.9
+	"heat generation" 2.9
+	description "This is a step up from the smallest fuel cells, providing enough energy to power a few small guns in addition to your engines."
+
+outfit "nGVF-CC Fuel Cell"
+	category "Power"
+	cost 72000
+	thumbnail "outfit/medium fuel cell"
+	"mass" 40
+	"outfit space" -40
+	"energy generation" 2.6
+	"heat generation" 3.8
+	description "This is a medium-sized fuel cell, designed to be sufficient for larger civilian ships and small warships while still being more affordable than the more sophisticated generator options."
+
+outfit "nGVF-DD Fuel Cell"
+	category "Power"
+	cost 118000
+	thumbnail "outfit/large fuel cell"
+	"mass" 60
+	"outfit space" -60
+	"energy generation" 4.1
+	"heat generation" 5.7
+	description "This is a relatively large fuel cell. Other generators are available that produce more energy and fit into a smaller space, but they are much more expensive. As a result, large civilian ships that will not be frequently in combat often come equipped with these fuel cells."
+
+outfit "nGVF-EE Fuel Cell"
+	category "Power"
+	cost 177000
+	thumbnail "outfit/huge fuel cell"
+	"mass" 80
+	"outfit space" -80
+	"energy generation" 5.9
+	"heat generation" 7.8
+	description "This is the largest fuel cell available, larger than some nuclear reactors but much, much more affordable. Many captains on a tight budget are willing to put up with one of these until they can raise the money for something more efficient."
+
+
+outfit "RT-I Radiothermal"
+	category "Power"
+	cost 300000
+	thumbnail "outfit/small radiothermal"
+	"mass" 45
+	"outfit space" -45
+	"energy generation" 4.4
+	"heat generation" 18
+	description "Radiothermal generators harvest heat from radioactive isotopes and convert it into electricity. They are more powerful than fuel cells, but also produce a relatively high amount of heat."
+
+outfit "S3 Thermionic"
+	category "Power"
+	cost 360000
+	thumbnail "outfit/small thermionic"
+	"mass" 55
+	"outfit space" -55
+	"energy generation" 5.0
+	"heat generation" 12
+	description "Thermionic radioisotopic generators were designed as a cooler-running alternative to radiothermal generators."
+
+outfit "NT-200 Nucleovoltaic"
+	category "Power"
+	cost 570000
+	thumbnail "outfit/small nucleovoltaic"
+	"mass" 65
+	"outfit space" -65
+	"energy generation" 7.2
+	"heat generation" 15
+	description "Nucleovoltaic generators are a relatively recent generator technology that harvests energy from the decay of a radioisotope source and converts it directly into electricity. They are the most powerful generator that relies on nuclear decay instead of an active nuclear chain reaction."
+
+
+outfit "Dwarf Core"
+	category "Power"
+	cost 800000
+	thumbnail "outfit/dwarf core"
+	"mass" 36
+	"outfit space" -36
+	"energy generation" 4.8
+	"heat generation" 14
+	description "A Dwarf Core is a miniaturized nuclear reactor, small enough to be installed in any ship larger than a fighter. It was designed by Deep Sky to be paired with their power-hungry atomic engines."
+
+outfit "Fission Reactor"
+	category "Power"
+	cost 1500000
+	thumbnail "outfit/fission"
+	"mass" 65
+	"outfit space" -65
+	"energy generation" 9.4
+	"heat generation" 25
+	description "Fission reactors have been a mainstay of large military vessels since even before the dawn of the space era. Today's models are very safe and efficient, but some pilots still find them disconcerting."
+
+outfit "Breeder Reactor"
+	category "Power"
+	cost 2500000
+	thumbnail "outfit/breeder"
+	"mass" 80
+	"outfit space" -80
+	"energy generation" 12.8
+	"heat generation" 35
+	description "A breeder reactor is a more efficient fission reactor that captures some of the neutron radiation produced by the reactor and uses it to enrich more fuel. They are also, of course, bigger and more expensive as a result."
+
+outfit "Fusion Reactor"
+	category "Power"
+	cost 5000000
+	thumbnail "outfit/fusion"
+	"mass" 100
+	"outfit space" -100
+	"energy generation" 18.2
+	"heat generation" 40
+	description "The invention of practical fusion power near the end of the twenty-first century spurred a new era of prosperity and plenty. Centuries later, the generators have been reduced in size, but are still generally only used in capital warships."
+
+outfit "Armageddon Core"
+	category "Power"
+	cost 9000000
+	thumbnail "outfit/core"
+	"mass" 130
+	"outfit space" -130
+	"energy generation" 24.2
+	"heat generation" 70
+	description "The Armageddon Core was designed to meet the extreme power needs of the largest warships of the Republic Navy. One of these generators costs more than an entire fleet of smaller ships."
+
+outfit "Stack Core"
+	category "Power"
+	cost 4500000
+	thumbnail "outfit/stack core"
+	"mass" 140
+	"outfit space" -140
+	"energy generation" 22.9
+	"heat generation" 55
+	description "The Stack Core was created by the Free Worlds primarily as a power source for their Dreadnoughts. It is a fission reactor, and therefore less efficient than the Navy's fusion technology, but it is also significantly cheaper to produce."
+
+
+
+#Weapons
+# AMS
+outfit "Quarg Anti-Missile"
+	category "Turrets"
+	cost 6000000
+	thumbnail "outfit/quarg anti missile"
+	"mass" 40
+	"outfit space" -40
+	"weapon capacity" -40
+	"turret mounts" -1
+	weapon
+		"hit effect" "quarg anti-missile"
+		"hardpoint sprite" "hardpoint/quarg anti missile"
+		"hardpoint offset" 4
+		"anti-missile" 25
+		"velocity" 500
+		"lifetime" 1
+		"reload" 10
+		"firing energy" 50
+
+effect "quarg anti-missile"
+	sprite "effect/quarg anti missile"
+		"no repeat"
+		"frame rate" 3
+	sound "quarg anti-missile"
+	"lifetime" 21
+	"velocity scale" 1
+
+outfit "Anti-Missile Turret"
+	category "Turrets"
+	cost 60000
+	thumbnail "outfit/anti-missile"
+	"mass" 16
+	"outfit space" -16
+	"weapon capacity" -16
+	"turret mounts" -1
+	weapon
+		"hardpoint sprite" "hardpoint/anti-missile"
+		"hardpoint offset" 4.
+		"hit effect" "small anti-missile"
+		"anti-missile" 5
+		"velocity" 150
+		"lifetime" 1
+		"reload" 8
+		"firing energy" 5
+		"firing heat" 3
+	description "Centuries ago, space battles were fought mostly with missiles, with the outcome dependent only on which ship had more shielding or ammunition. Lovelace Labs was originally founded to remedy that situation by developing a protective system that could shoot missiles out of the air, defending freighter convoys from pirates who could otherwise simply bombard them into submission without ever venturing within range of their guns."
+
+effect "small anti-missile"
+	sprite "effect/small anti missile"
+		"no repeat"
+		"frame rate" 3
+	sound "anti-missile"
+	"lifetime" 21
+	"velocity scale" 1
+
+
+outfit "Heavy Anti-Missile Turret"
+	category "Turrets"
+	cost 150000
+	thumbnail "outfit/heavy anti-missile"
+	"mass" 30
+	"outfit space" -30
+	"weapon capacity" -30
+	"turret mounts" -1
+	weapon
+		"hardpoint sprite" "hardpoint/heavy anti-missile"
+		"hardpoint offset" 5.
+		"hit effect" "large anti-missile"
+		"anti-missile" 8
+		"velocity" 200
+		"lifetime" 1
+		"reload" 6
+		"firing energy" 10
+		"firing heat" 5
+	description "The Heavy Anti-Missile turret has a longer range, higher power, and shorter reload time than its smaller sibling. The only way to overcome it is by firing missiles in a cluster so that while one is being targeted, the others can get through, and as a result all missile systems on the market now default to firing in clusters if multiple copies of the same launcher are installed, rather than staggering their fire as ordinary guns do."
+
+effect "large anti-missile"
+	sprite "effect/large anti missile"
+		"no repeat"
+		"frame rate" 2
+	sound "heavy anti-missile"
+	"lifetime" 31
+	"velocity scale" 1
+# Beams
+outfit "Quarg Skylance"
+	category "Turrets"
+	cost 18000000
+	thumbnail "outfit/quarg skylance"
+	"mass" 60
+	"outfit space" -60
+	"weapon capacity" -60
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/skylance"
+			"frame rate" 1
+		"hardpoint sprite" "hardpoint/quarg skylance"
+		"hardpoint offset" 10
+		sound "skylance"
+		"hit effect" "skylance impact"
+		"inaccuracy" .4
+		"turret turn" 4.
+		"velocity" 500
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 30
+		"firing heat" 10
+		"shield damage" 50
+		"hull damage" 40
+		"ion damage" .1
+	description "These immensely powerful beam weapons are used by Quarg warships to strike fear into the hearts of all who dare oppose them."
+
+effect "skylance impact"
+	sprite "effect/skylance impact"
+		"no repeat"
+		"frame rate" 12
+	"lifetime" 10
+	"random angle" 180
+	"velocity scale" 0.
+
+outfit "Beam Laser"
+	category "Guns"
+	cost 29000
+	thumbnail "outfit/laser"
+	"mass" 8
+	"outfit space" -8
+	"weapon capacity" -8
+	"gun ports" -1
+	weapon
+		sprite "projectile/laser"
+			"frame rate" 1
+		sound "laser"
+		"hit effect" "beam laser impact"
+		"inaccuracy" .5
+		"velocity" 300
+		"lifetime" 1
+		"reload" 1
+		"firing energy" .5
+		"firing heat" 1.2
+		"shield damage" .1
+		"hull damage" 2.3
+	description "In the early part of the space era, the settlements in the region of space known as the Deep developed in relative isolation from the rest of human space. One result of that isolation is that their weapons technology mostly uses beam weapons, instead of the energy projectile weapons that are more common elsewhere."
+
+outfit "Laser Turret"
+	category "Turrets"
+	cost 140000
+	thumbnail "outfit/laser turret"
+	"mass" 22
+	"outfit space" -22
+	"weapon capacity" -22
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/2x laser"
+			"frame rate" 1
+		"hardpoint sprite" "hardpoint/laser turret"
+		"hardpoint offset" -0.5 8.
+		sound "laser"
+		"hit effect" "beam laser impact"
+		"inaccuracy" .5
+		"turret turn" 4.0
+		"velocity" 300
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 1
+		"firing heat" 2.4
+		"shield damage" .2
+		"hull damage" 4.6
+	description "Laser Turrets are hated by fighter pilots because it is nearly impossible to dodge them once you are within their reach. This turret carries a pair of lasers and can swivel almost instantly to fire on new targets as they approach. Laser Turrets are especially useful when mounted on slow-moving freighters to fend off packs of small pirate vessels."
+
+effect "beam laser impact"
+	sprite "effect/laser impact"
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 5
+	"random angle" 2
+	"random spin" 1
+	"velocity scale" -.005
+
+
+outfit "Heavy Laser"
+	category "Guns"
+	cost 60000
+	thumbnail "outfit/heavy laser"
+	"mass" 15
+	"outfit space" -15
+	"weapon capacity" -15
+	"gun ports" -1
+	weapon
+		sprite "projectile/heavy laser"
+			"frame rate" 1
+		sound "heavy laser"
+		"hit effect" "heavy laser impact"
+		"inaccuracy" .4
+		"velocity" 400
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 1
+		"firing heat" 2.1
+		"shield damage" .7
+		"hull damage" 3.4
+	description "The Heavy Laser is an upgraded Beam Laser with a significantly longer range and higher power. It is mostly intended for larger ships, where energy and space are plentiful, but some pilots consider a single Heavy Laser to be a worthwhile alternative to a pair of Beam Lasers, because the longer range makes up for the fact that it does not quite deal twice as much damage."
+
+outfit "Heavy Laser Turret"
+	category "Turrets"
+	cost 320000
+	thumbnail "outfit/heavy laser turret"
+	"mass" 40
+	"outfit space" -40
+	"weapon capacity" -40
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/2x heavy laser"
+			"frame rate" 1
+		"hardpoint sprite" "hardpoint/heavy laser turret"
+		"hardpoint offset" 8.
+		sound "heavy laser"
+		"hit effect" "heavy laser impact"
+		"inaccuracy" .4
+		"turret turn" 2.2
+		"velocity" 400
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 2
+		"firing heat" 4.2
+		"shield damage" 1.4
+		"hull damage" 6.8
+	description "For ships with enough space to install one, the Heavy Laser Turret is a powerful weapon, equally useful for driving off fighters and for bombarding larger targets with continuous fire without having to worry about pointing your ship in the right direction."
+
+effect "heavy laser impact"
+	sprite "effect/heavy laser impact"
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 5
+	"random angle" 2
+	"random spin" 1
+	"random velocity" 1
+	"velocity scale" -.007
+
+
+outfit "Electron Beam"
+	category "Guns"
+	cost 170000
+	thumbnail "outfit/electron beam"
+	"mass" 21
+	"outfit space" -21
+	"weapon capacity" -21
+	"gun ports" -1
+	weapon
+		sprite "projectile/electron"
+			"frame rate" 60
+		sound "electron beam"
+		"hit effect" "electron impact"
+		"inaccuracy" .3
+		"velocity" 450
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 1.5
+		"firing heat" 2.7
+		"shield damage" 2.4
+		"hull damage" 3.3
+	description "The Electron Beam is a recent development by the Deep Sky labs, a more powerful weapon with a design similar to their perennially popular laser guns."
+
+outfit "Electron Turret"
+	category "Turrets"
+	cost 720000
+	thumbnail "outfit/electron turret"
+	"mass" 54
+	"outfit space" -54
+	"weapon capacity" -54
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/2x electron"
+			"frame rate" 60
+		"hardpoint sprite" "hardpoint/electron turret"
+		"hardpoint offset" 8.
+		sound "electron beam"
+		"hit effect" "electron impact"
+		"inaccuracy" .3
+		"turret turn" 19.4
+		"velocity" 450
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 3.0
+		"firing heat" 5.4
+		"shield damage" 4.8
+		"hull damage" 6.6
+	description "This turret places two of Deep Sky's recently developed electron beam weapons onto a rotating turret, providing unsurpassed accuracy and power for shooting down fast-moving targets."
+
+effect "electron impact"
+	sprite "effect/electron impact"
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 5
+	"random angle" 2
+	"random spin" 1
+	"velocity scale" -.003
+
+# Blasters
+outfit "Energy Blaster"
+	category "Guns"
+	cost 16000
+	thumbnail "outfit/blaster"
+	"mass" 5
+	"outfit space" -5
+	"weapon capacity" -5
+	"gun ports" -1
+	weapon
+		sprite "projectile/blaster"
+		sound "blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 24
+		"velocity" 10.625
+		"lifetime" 48
+		"reload" 12
+		"firing energy" 9.6
+		"firing heat" 30
+		"shield damage" 9.6
+		"hull damage" 6
+	description "Although not the most accurate or damaging of weapons, the Energy Blaster is popular because it is small enough to be installed on even the tiniest of ships. One blaster is not enough to do appreciable damage to anything larger than a fighter, but a ship equipped with several of them becomes a force to be reckoned with."
+
+outfit "Blaster Turret"
+	category "Turrets"
+	cost 100000
+	thumbnail "outfit/blaster turret"
+	"mass" 15
+	"outfit space" -15
+	"weapon capacity" -15
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/blaster"
+		"hardpoint sprite" "hardpoint/blaster turret"
+		"hardpoint offset" 9.
+		sound "blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 24
+		"turret turn" 15.3
+		"velocity" 10.625
+		"lifetime" 48
+		"reload" 6
+		"firing energy" 9.6
+		"firing heat" 30
+		"shield damage" 9.6
+		"hull damage" 6
+	description "A Blaster Turret is a pair of Energy Blasters mounted on a rotating platform, allowing it to fire in any direction. Sophisticated software algorithms allow the turret to correct for a target's motion, making the Blaster Turret effective even against small, quickly moving fighters. Because it needs a special mounting point with a 360 degree field of view, not all ships are capable of being equipped with a turret."
+
+outfit "Quad Blaster Turret"
+	category "Turrets"
+	cost 230000
+	thumbnail "outfit/quad blaster turret"
+	"mass" 25
+	"outfit space" -25
+	"weapon capacity" -25
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/blaster"
+		"hardpoint sprite" "hardpoint/quad blaster turret"
+		"hardpoint offset" 9.
+		sound "blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 28
+		"turret turn" 20.34
+		"velocity" 10.625
+		"lifetime" 48
+		"reload" 3
+		"firing energy" 9.6
+		"firing heat" 30
+		"shield damage" 9.6
+		"hull damage" 6
+	description "A Quad Blaster Turret carries four guns on a single turret mount, doubling the firepower of an ordinary Blaster Turret for ships with enough space to install one and energy to drive it."
+
+effect "blaster impact"
+	sprite "effect/blaster impact"
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 7
+	"random angle" 40
+	"velocity scale" -.05
+
+
+outfit "Modified Blaster"
+	category "Guns"
+	cost 35000
+	thumbnail "outfit/mod blaster"
+	"mass" 6
+	"outfit space" -6
+	"weapon capacity" -6
+	"gun ports" -1
+	weapon
+		sprite "projectile/mod blaster"
+		sound "mod blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 14
+		"velocity" 10
+		"lifetime" 48
+		"reload" 12
+		"firing energy" 10.8
+		"firing heat" 42
+		"shield damage" 12
+		"hull damage" 8
+	description "This is an Energy Blaster that has been tampered with to increase its power slightly, at the cost of reduced range and higher energy consumption. Modified Blasters also produce an extreme amount of heat when firing, increasing the risk that your ship will overheat."
+
+outfit "Modified Blaster Turret"
+	category "Turrets"
+	cost 170000
+	thumbnail "outfit/mod blaster turret"
+	"mass" 18
+	"outfit space" -18
+	"weapon capacity" -18
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/mod blaster"
+		"hardpoint sprite" "hardpoint/mod blaster turret"
+		"hardpoint offset" 9.
+		sound "mod blaster"
+		"hit effect" "blaster impact"
+		"inaccuracy" 14
+		"turret turn" 14
+		"velocity" 10
+		"lifetime" 48
+		"reload" 6
+		"firing energy" 10.8
+		"firing heat" 42
+		"shield damage" 12
+		"hull damage" 8
+	description "This is a turreted version of the Modified Blaster, which is an Energy Blaster modified for greater power at the cost of higher energy consumption and heat. These turrets are popular with pirates and others who are trying to cram as much firepower into their ships as possible."
+
+outfit "Pulse Cannon"
+	category "Guns"
+	cost 130000
+	thumbnail "outfit/pulse cannon"
+	"mass" 13
+	"outfit space" -13
+	"weapon capacity" -13
+	"gun ports" -1
+	weapon
+		sprite "projectile/pulse"
+		sound "pulse"
+		"hit effect" "pulse impact"
+		"inaccuracy" 1
+		"velocity" 15
+		"lifetime" 30
+		"reload" 20
+		"firing energy" 24
+		"firing heat" 70
+		"shield damage" 20
+		"hull damage" 10
+	description "Reverse engineered by Tarazed Systems from Alien technology, the Pulse Cannon's efficiency makes it great alternative to the Blaster cannon."
+
+outfit "Pulse Turret"
+	category "Turrets"
+	cost 590000
+	thumbnail "outfit/pulse turret"
+	"mass" 34
+	"outfit space" -34
+	"weapon capacity" -34
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/pulse"
+		"hardpoint sprite" "hardpoint/pulse turret"
+		"hardpoint offset" 7.
+		sound "pulse"
+		"hit effect" "pulse impact"
+		"inaccuracy" 1
+		"turret turn" 2.3
+		"velocity" 15
+		"lifetime" 30
+		"reload" 10
+		"firing energy" 24
+		"firing heat" 70
+		"shield damage" 40
+		"hull damage" 20
+	description "The Tarazed Systems Pulse Turret mounts two Pulse Cannons side by side on a turret mount. Their light weight leads to a fast tracking anti-fighter weapon."
+
+effect "pulse impact"
+	sprite "effect/pulse impact"
+		"no repeat"
+		"frame rate" 10
+	"lifetime" 20
+	"random angle" 360
+	"random spin" 4
+	"random velocity" .6
+	"velocity scale" -.1
+
+# Cannons
+outfit "Drak Distancer"
+	category "Turrets"
+	cost 1000000
+	thumbnail "outfit/unknown"
+	"mass" 64
+	"outfit space" -64
+	"weapon capacity" -64
+	"turret mounts" -1
+	weapon
+		"fire effect" "distancer flare"
+		"turret turn" 4.
+		"velocity" 2000
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 15
+		"firing heat" 10
+		"firing force" 60
+	description "This is a thruster that can produce force in any direction, allowing a Drak ship to keep a safe distance away from its target."
+
+effect "distancer flare"
+	sprite "effect/distancer"
+		"frame rate" 1.618
+	"lifetime" 0
+	"velocity scale" 1
+
+outfit "Drak Draining Field"
+	category "Turrets"
+	cost 1000000
+	thumbnail "outfit/unknown"
+	"mass" 84
+	"outfit space" -84
+	"weapon capacity" -84
+	"turret mounts" -1
+	weapon
+		"turret turn" 4.
+		"velocity" 400
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 20
+		"firing heat" 5
+		"firing force" 30
+		"hit force" 60
+		"shield damage" 50
+		"ion damage" .5
+	description "This device produces a field that drains energy from any ship within it."
+
+outfit "Drak Anti-Missile Field"
+	category "Turrets"
+	cost 1000000
+	thumbnail "outfit/unknown"
+	"mass" 66
+	"outfit space" -66
+	"weapon capacity" -66
+	"turret mounts" -1
+	weapon
+		"velocity" 400
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 10
+		"firing heat" 1
+		"anti-missile" 100
+	description "This device produces a field that destroys any missiles that come within it."
+
+outfit "Drak Turret"
+	category "Turrets"
+	cost 1000000
+	thumbnail "outfit/unknown"
+	"mass" 48
+	"outfit space" -48
+	"weapon capacity" -48
+	"turret mounts" -1
+	weapon
+		sprite "projectile/drak bolt"
+			"frame rate" 13.318
+			"random start frame"
+		"hit effect" "drak bolt impact"
+		"inaccuracy" 1
+		"turret turn" 4.
+		"velocity" 36
+		"lifetime" 30
+		"reload" 16
+		"firing energy" 160
+		"firing heat" 160
+		"shield damage" 256
+		"hull damage" 256
+		"hit force" 120
+	description "This is a turret based cannon with significant range and accuracy."
+
+effect "drak bolt impact"
+	sprite "effect/drak bolt impact"
+		"no repeat"
+		"frame rate" 30
+	sound "explosion small"
+	"lifetime" 20
+	"random angle" 20
+	"random spin" 10
+	"velocity scale" -.05
+
+outfit "Drak Antimatter Cannon"
+	category "Guns"
+	cost 10000000
+	thumbnail "outfit/unknown"
+	"mass" 96
+	"outfit space" -96
+	"weapon capacity" -96
+	"gun ports" -1
+	"inscrutable" 1
+	weapon
+		"inaccuracy" 0
+		"velocity" 20
+		"lifetime" 1
+		"submunition" "Drak Antimatter Fragment" 3
+		"hit effect" "antimatter dust" 10
+		"hit effect" "nuke explosion"
+		"safe"
+		"reload" 187
+		"firing energy" 5610
+		"firing heat" 1870
+		"blast radius" 100
+		"hit force" 1000
+	description "This is the Drak's ultimate weapon."
+
+outfit "Drak Antimatter Fragment"
+	weapon
+		sprite "projectile/drak bolt"
+			"frame rate" 9.835
+			"random start frame"
+		"live effect" "antimatter spark" 249
+		"live effect" "antimatter dust" 249
+		"hit effect" "antimatter dust" 10
+		"hit effect" "nuke explosion"
+		"safe"
+		"inaccuracy" 1
+		"lifetime" 499
+		"hit force" 1000
+		"shield damage" 5610
+		"hull damage" 5610
+		"blast radius" 100
+
+effect "antimatter spark"
+	sprite "effect/antimatter spark"
+		"frame rate" 3
+	"lifetime" 40
+	"random angle" 1
+	"random spin" .1
+	"random velocity" 8
+	"velocity scale" .6
+
+effect "antimatter dust"
+	sprite "effect/smoke"
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 13
+	"random angle" 30
+	"random spin" 50
+	"random velocity" 12
+	"velocity scale" .1
+
+outfit "Ion Cannon"
+	category "Guns"
+	cost 490000
+	thumbnail "outfit/ion cannon"
+	"mass" 47
+	"outfit space" -25
+	"weapon capacity" -25
+	"gun ports" -1
+	weapon
+		sprite "projectile/ion bolt"
+			"frame rate" 5
+		sound "ion"
+		"hit effect" "ion impact" 2
+		"inaccuracy" 1
+		"velocity" 16
+		"lifetime" 50
+		"reload" 60
+		"firing energy" 120
+		"firing force" 10
+		"firing heat" 150
+		"hit force" 30
+		"shield damage" 168
+		"hull damage" 20
+		"ion damage" 2.5
+		"slowing damage" .5
+		"disruption damage" .1
+	description "The Tarazed Systems' Ion Cannon is a reverse engineered Alien weapon. The exotic properties of this weapon not only drain shields, but disrupt power supplies."
+	description "	When this cannon hits, it will interfere with a ships engines system as well, making its target move slower. However, it does virtually no damage to a ship's armor beyond some blown out power conduits."
+
+effect "ion impact"
+	sprite "effect/ion impact"
+		"no repeat"
+		"frame rate" 30
+	sound "ion impact"
+	"lifetime" 9
+	"random angle" 360
+	"random spin" 30
+	"random velocity" 2
+	"velocity scale" -.05
+	
+
+outfit "Plasma Cannon"
+	category "Guns"
+	cost 190000
+	thumbnail "outfit/plasma cannon"
+	"mass" 25
+	"outfit space" -25
+	"weapon capacity" -25
+	"gun ports" -1
+	weapon
+		sprite "projectile/plasma"
+			"frame rate" 3
+		sound "plasma"
+		"hit effect" "plasma explosion"
+		"inaccuracy" 2
+		"velocity" 12
+		"lifetime" 40
+		"reload" 60
+		"firing energy" 30
+		"firing heat" 180
+		"hit force" 30
+		"shield damage" 168
+		"hull damage" 30
+		"heat damage" 340
+	description "The Kraz Cybernetics Plasma Cannon is a reverse engineer of the Tarazed Systems' reverse engineered Ion Cannon. However, instead of focusing on overwhelming the target's electrical systems, the Plasma Cannon focuses on overheating it's target."
+
+outfit "Plasma Turret"
+	category "Turrets"
+	cost 520000
+	thumbnail "outfit/plasma turret"
+	"mass" 60
+	"outfit space" -60
+	"weapon capacity" -60
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/plasma"
+			"frame rate" 3
+		"hardpoint sprite" "hardpoint/plasma turret"
+		"hardpoint offset" 15.
+		sound "plasma"
+		"hit effect" "plasma explosion"
+		"inaccuracy" 8
+		"turret turn" 1.2
+		"velocity" 12
+		"lifetime" 40
+		"reload" 30
+		"firing energy" 30
+		"firing heat" 180
+		"hit force" 30
+		"shield damage" 168
+		"hull damage" 30
+		"heat damage" 340
+	description "Developed by Kraz Cybernetics out of desparation, the Plasma Turret is a weapon designed to counter hostile Navy vessels who otherwise signifigantly outmatch Free Worlds vessels."
+
+effect "plasma explosion"
+	sprite "effect/plasma explosion"
+		"no repeat"
+		"frame rate" 20
+	sound "explosion tiny"
+	"lifetime" 21
+	"random angle" 360
+	"random spin" 4
+	"random velocity" .1
+	"velocity scale" -.05
+
+outfit "Particle Cannon"
+	category "Guns"
+	cost 220000
+	thumbnail "outfit/particle cannon"
+	"mass" 30
+	"outfit space" -25
+	"weapon capacity" -25
+	"gun ports" -1
+	weapon
+		sprite "projectile/particle beam"
+		sound "particle"
+		"hit effect" "particle impact"
+		"inaccuracy" .5
+		"velocity" 30
+		"lifetime" 25
+		"reload" 20
+		"firing energy" 35
+		"firing force" 10
+		"firing heat" 120
+		"hit force" 80
+		"shield damage" 24
+		"hull damage" 45
+		"piercing" .2
+	description "Developed by Lovelace and favored by the Navy, the Particle Cannon makes up for its low shield damage with its high range and ability to knock back hostile ships."
+	description "	The stresses endured by ships on the recieving end of this cannon are too much for most hulls to bare, leading to heafty damage even while their shields are still active."
+	
+effect "particle impact"
+	sprite "effect/particle impact"
+		"no repeat"
+		"frame rate" 30
+	sound "explosion small"
+	"lifetime" 20
+	"random angle" 2
+	"random spin" 10
+	"velocity scale" -.05
+
+
+outfit "Proton Gun"
+	category "Guns"
+	cost 150000
+	thumbnail "outfit/proton gun"
+	"mass" 28
+	"outfit space" -25
+	"weapon capacity" -25
+	"gun ports" -1
+	weapon
+		sprite "projectile/proton"
+		sound "proton"
+		"hit effect" "proton impact" 3
+		"inaccuracy" 15
+		"submunition" "Proton Fragment" 3
+		"velocity" 24
+		"lifetime" 2
+		"reload" 8
+		"firing energy" 15
+		"firing force" 2
+		"firing heat" 60
+	description "The Syndicated Systems Proton Gun may seem like a knockoff Particle Cannon to the untrained eye, but this rapid fire cannon is anything but."
+	description "	If you are from the school of Spray and Pray, this is the gun for you."
+	
+outfit "Proton Fragment"
+	weapon
+		sprite "projectile/proton fragment"
+			"no repeat"
+			"frame rate" 2
+		"hit effect" "proton impact"
+		"inaccuracy" 2
+		"lifetime" 24
+		"hit force" 6
+		"shield damage" 3.75
+		"hull damage" 2.5
+
+effect "proton impact"
+	sprite "effect/proton impact"
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 20
+	"random angle" 2
+	"velocity scale" -.005
+
+
+outfit "Proton Turret"
+	category "Turrets"
+	cost 260000
+	thumbnail "outfit/proton turret"
+	"mass" 34
+	"outfit space" -34
+	"weapon capacity" -34
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/proton"
+		"hardpoint sprite" "hardpoint/proton turret"
+		"hardpoint offset" 14.
+		sound "proton"
+		"hit effect" "proton impact" 3
+		"inaccuracy" 15
+		"turret turn" 2.0
+		"submunition" "Proton Fragment" 3
+		"velocity" 24
+		"lifetime" 2
+		"reload" 8
+		"firing energy" 15
+		"firing force" 2
+		"firing heat" 60
+	description "Developed by Syndicated Systems, the Proton Turret's rate of fire and hitforce makes it arguably the best anti-fighter weapon on the market."
+
+# ASL
+outfit "Railgun Slug"
+	category "Ammunition"
+	cost 60
+	thumbnail "outfit/railslug"
+	"mass" 0.02
+	"railgun slug capacity" -1
+	description "These railgun slugs incorporate energy-discharging capacitors that deal a small amount of hull damage even when the target's shields are functioning, and they can punch crippling holes in the hull of a ship whose shields are down."
+
+outfit "Railgun"
+	category "Secondary Weapons"
+	cost 20000
+	thumbnail "outfit/railgun"
+	"mass" 4
+	"outfit space" -7
+	"weapon capacity" -7
+	"gun ports" -1
+	"railgun slug capacity" 150
+	weapon
+		sprite "projectile/rail slug"
+			"frame rate" 30
+		ammo "Railgun Slug"
+		icon "icon/rail gun"
+		sound "ion impact"
+		"fire effect" "rail sparks" 2
+		"live effect" "rail sparks" 5
+		"hit effect" "bullet impact"
+		"inaccuracy" 3
+		"velocity" 22
+		"lifetime" 1
+		"reload" 120
+		"firing energy" 92
+		"firing heat" 39
+		"hit force" 44
+		"stream"
+		"submunition" "rslug" 1
+	description "The Hai created this compact weapon for their Flea drones, providing mobile long-range support for the close quarters Pond Strider carrier."
+
+outfit "rslug"
+	weapon
+		"acceleration" .022
+		"drag" .001
+		"lifetime" 99
+		sprite "projectile/rail slug"
+			"frame rate" 30
+		"live effect" "rail sparks" 5
+		"hit effect" "bullet impact"
+		"shield damage" 65
+		"hull damage" 95
+		"homing" 1
+		"optical tracking" .4
+		"turn" .3
+		"hit force" 44
+		"missile strength" 14
+		"piercing" .1
+
+effect "bullet impact"
+	sprite "effect/bullet impact"
+		"no repeat"
+		"frame rate" 60
+	"lifetime" 8
+	"random angle" 40
+	"velocity scale" -.05
+
+effect "rail sparks"
+	sprite "effect/railspark"
+		"random start frame"
+		"frame rate" 30
+		"rewind"
+	"lifetime" 6
+	"random angle" 360
+	"random spin" 30
+	"velocity scale" 1.2
+
+outfit "Meteor Missile"
+	category "Ammunition"
+	cost 500
+	thumbnail "outfit/meteor"
+	"mass" .2
+	"meteor capacity" -1
+	description "A Meteor Missile serves as ammunition for the Meteor Missile Launcher. Each missile launcher has the capacity for 30 missiles; you cannot install missiles if you have not first purchased a launcher to store them in."
+
+outfit "Meteor Missile Box"
+	plural "Meteor Missile Boxes"
+	category "Ammunition"
+	cost 9000
+	thumbnail "outfit/meteor storage"
+	"mass" 2
+	"outfit space" -5
+	"meteor capacity" 15
+	ammo "Meteor Missile"
+	description "The Meteor Missile Box is used to store extra ammunition for Meteor Missile Launchers."
+
+outfit "Meteor Missile Launcher"
+	category "Secondary Weapons"
+	cost 15000
+	thumbnail "outfit/meteor launcher"
+	"mass" 4
+	"outfit space" -10
+	"weapon capacity" -10
+	"gun ports" -1
+	"meteor capacity" 30
+	weapon
+		sprite "projectile/meteor"
+			"no repeat"
+			"frame rate" .25
+		sound "meteor"
+		ammo "Meteor Missile"
+		icon "icon/meteor"
+		"fire effect" "meteor fire"
+		"die effect" "missile death"
+		"hit effect" "missile hit"
+		"inaccuracy" 5
+		"velocity" 11
+		"lifetime" 490
+		"reload" 80
+		"firing energy" 1
+		"firing heat" 20
+		"acceleration" 1
+		"drag" .1
+		"turn" 1.35
+		"homing" 3
+		"infrared tracking" .8
+		"shield damage" 260
+		"hull damage" 160
+		"hit force" 220
+		"missile strength" 6
+	description "The Meteor Missile is the cheapest and simplest homing weapon available in human space. Meteors are quickly destroyed by anti-missile systems, and their infrared tracking systems have trouble homing in on targets with low heat levels. Nevertheless, their large warheads can spell doom for poorly-defended targets when the missiles are fired in great numbers."
+
+effect "meteor fire"
+	sprite "effect/meteor fire"
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 12
+	"random velocity" 10
+
+
+outfit "Sidewinder Missile"
+	category "Ammunition"
+	cost 900
+	thumbnail "outfit/sidewinder"
+	"mass" .2
+	"sidewinder capacity" -1
+	description "The Sidewinder Missile is ammunition for the Sidewinder Missile Launcher; each launcher that you have installed can be armed with up to 45 of them. You cannot install a missile without a launcher to fire it from."
+
+outfit "Sidewinder Missile Rack"
+	category "Ammunition"
+	cost 20000
+	thumbnail "outfit/sidewinder storage"
+	"mass" 2.4
+	"outfit space" -7
+	"sidewinder capacity" 23
+	ammo "Sidewinder Missile"
+	description "The Sidewinder Missile Rack is used to store extra ammunition for Sidewinder Missile Launchers."
+
+outfit "Ranger Missile Launcher"
+	category "Secondary Weapons"
+	cost 60000
+	thumbnail "outfit/sidewinder launcher"
+	"mass" 5
+	"outfit space" -29
+	"weapon capacity" -29
+	"gun ports" -1
+	"sidewinder capacity" 200
+	weapon
+		sprite "projectile/sidewinder"
+			"no repeat"
+			"frame rate" .25
+		sound "sidewinder"
+		ammo "Ranger Missile"
+		icon "icon/sidewinder"
+		"fire effect" "sidewinder fire"
+		"die effect" "missile death"
+		"hit effect" "missile hit"
+		"inaccuracy" 4
+		"velocity" 14
+		"lifetime" 470
+		"reload" 20
+		"firing energy" 1
+		"firing heat" 15
+		"acceleration" 1.2
+		"drag" .1
+		"turn" 4
+		"homing" 4
+		"radar tracking" .9
+		"shield damage" 60
+		"hull damage" 45
+		"hit force" 55
+		"missile strength" 4
+	description "The Sidewinder Missile is designed by Lovelace Labs, which is ironically also the designer of the Anti-Missile Turret. Rumors say that the two engineering teams at Lovelace who make the missiles and the anti-missiles are locked in furious competition with each other: the result has been generation after generation of smarter missiles and then smarter turrets to fend them off."
+	description "	Although not as powerful or cheap as the popular Meteor missiles, Sidewinders have several advantages, including their superior maneuverability, better tracking systems, and protective casings that make them much harder for anti-missile systems to destroy."
+
+effect "sidewinder fire"
+	sprite "effect/sidewinder fire"
+		"no repeat"
+		"frame rate" 30
+	"lifetime" 9
+	"random velocity" 2
+
+
+outfit "Javelin"
+	category "Ammunition"
+	cost 50
+	thumbnail "outfit/javelin"
+	"mass" .04
+	"javelin capacity" -1
+	description "A Javelin missile is ammunition for the Javelin Pod; without a Pod to store them in you cannot purchase or use Javelins. Each pod stores up to 200 Javelins."
+
+outfit "Javelin Storage Crate"
+	category "Ammunition"
+	cost 5000
+	thumbnail "outfit/javelin storage"
+	"mass" 2
+	"outfit space" -6
+	"javelin capacity" 100
+	ammo "Javelin"
+	description "The Javelin Storage Crate is used to store extra ammunition for Javelin Pods."
+
+outfit "Javelin Pod"
+	category "Secondary Weapons"
+	cost 20000
+	thumbnail "outfit/javelin pod"
+	"mass" 4
+	"outfit space" -12
+	"weapon capacity" -12
+	"gun ports" -1
+	"javelin capacity" 200
+	weapon
+		sprite "projectile/javelin"
+		sound "javelin"
+		ammo "Javelin"
+		icon "icon/javelin"
+		"hit effect" "tiny explosion"
+		"inaccuracy" 1
+		"velocity" 10
+		"lifetime" 60
+		"reload" 15
+		"firing energy" .2
+		"firing heat" 12
+		"shield damage" 48
+		"hull damage" 26
+		"hit force" 50
+		"missile strength" 3
+	description "The Javelin Pod fires a rapid stream of unguided missiles. A Javelin Pod does far more damage than any gun of a comparable size, and has a longer range as well, but once a ship has expended all of its ammunition it must leave combat and find a planet where it can buy more, which makes Javelins less useful in protracted battles."
+	description "	The weapon's high rate of fire also makes it useful for saturating well-protected ships' anti-missile defenses so that more dangerous projectiles fired by allied ships can sneak through."
+
+
+outfit "Torpedo"
+	plural "Torpedoes"
+	category "Ammunition"
+	cost 1400
+	thumbnail "outfit/torpedo"
+	"mass" .4
+	"torpedo capacity" -1
+	description "Torpedoes are ammunition for the Torpedo Launcher. Each Torpedo Launcher can hold 30 of them. You cannot install torpedoes unless you have also installed a launcher to fire them from."
+
+outfit "Torpedo Storage Rack"
+	category "Ammunition"
+	cost 21000
+	thumbnail "outfit/torpedo storage"
+	"mass" 3
+	"outfit space" -9
+	"torpedo capacity" 15
+	ammo "Torpedo"
+	description "The Torpedo Storage Rack is used to store extra ammunition for Torpedo Launchers."
+
+outfit "Torpedo Launcher"
+	category "Secondary Weapons"
+	cost 80000
+	thumbnail "outfit/torpedo launcher"
+	"mass" 13
+	"outfit space" -15
+	"weapon capacity" -15
+	"gun ports" -1
+	"torpedo capacity" 10
+	weapon
+		sprite "projectile/torpedo"
+			"frame rate" 2
+			"random start frame"
+		sound "torpedo"
+		ammo "Torpedo"
+		icon "icon/torpedo"
+		"fire effect" "torpedo fire"
+		"hit effect" "torpedo hit"
+		"die effect" "tiny explosion"
+		"inaccuracy" 5
+		"velocity" 4
+		"lifetime" 75
+		"reload" 150
+		"firing energy" 2
+		"firing heat" 45
+		"acceleration" 1
+		"drag" .25
+		"turn" 2.5
+		"homing" 3
+		"optical tracking" .8
+		"shield damage" 10
+		"hull damage" 680
+		"piercing" .9
+		"hit force" 300
+		"missile strength" 10
+	description "Torpedoes are the most powerful homing weapon, but they move slowly enough that fast ships can simply outrun them, making them most useful against large targets or against small ships at times when they are too distracted to dodge. Torpedo launchers are also much larger than other missile systems, so they are most often found in capital ships."
+
+effect "torpedo fire"
+	sprite "effect/torpedo fire"
+		"no repeat"
+		"frame rate" 10
+	"lifetime" 15
+
+
+outfit "Typhoon Torpedo"
+	plural "Typhoon Torpedoes"
+	category "Ammunition"
+	cost 2700
+	thumbnail "outfit/typhoon"
+	"mass" .5
+	"typhoon capacity" -1
+	description "Typhoon Torpedoes are ammunition for the Typhoon Launcher. Each launcher can hold 30 of them. You cannot install Typhoon Torpedoes unless you have also installed a launcher to fire them from."
+
+outfit "Typhoon Storage Tube"
+	category "Ammunition"
+	cost 40500
+	thumbnail "outfit/typhoon storage"
+	"mass" 2.5
+	"outfit space" -10
+	"typhoon capacity" 15
+	ammo "Typhoon Torpedo"
+	description "The Typhoon Storage Tube is used to store extra ammunition for Typhoon Launchers."
+
+outfit "Typhoon Launcher"
+	category "Secondary Weapons"
+	cost 260000
+	thumbnail "outfit/typhoon launcher"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"gun ports" -1
+	"typhoon capacity" 15
+	weapon
+		sprite "projectile/typhoon"
+			"frame rate" 4
+			"random start frame"
+		sound "typhoon"
+		ammo "Typhoon Torpedo"
+		icon "icon/typhoon"
+		"fire effect" "typhoon fire"
+		"hit effect" "torpedo hit"
+		"die effect" "tiny explosion"
+		"inaccuracy" 5
+		"velocity" 5
+		"lifetime" 120
+		"reload" 120
+		"firing energy" 4
+		"firing heat" 50
+		"acceleration" 1
+		"drag" .02
+		"turn" 1.5
+		"homing" 4
+		"optical tracking" .9
+		"shield damage" 20
+		"hull damage" 880
+		"piercing" .9
+		"hit force" 450
+		"missile strength" 40
+	description "Typhoon Torpedoes are an improved torpedo technology; they do considerably more damage than ordinary torpedoes. However, they are also much slower, because they are intended mostly for use against large and slow-moving capital ships. As a result, sufficiently skilled pilots can often dodge around them."
+
+effect "typhoon fire"
+	sprite "effect/typhoon fire"
+		"no repeat"
+		"frame rate" 10
+	"lifetime" 15
+
+
+outfit "Heavy Rocket"
+	category "Ammunition"
+	cost 2000
+	thumbnail "outfit/rocket"
+	"mass" .5
+	"rocket capacity" -1
+	description "Heavy Rockets are ammunition for the Heavy Rocket Launcher. You cannot install one unless you have first installed a launcher to fire it from. Each launcher holds up to 20 rockets."
+
+outfit "Heavy Rocket Rack"
+	category "Ammunition"
+	cost 20000
+	thumbnail "outfit/rocket storage"
+	"mass" 2
+	"outfit space" -7
+	"rocket capacity" 10
+	ammo "Heavy Rocket"
+	description "The Heavy Rocket Rack is used to store extra ammunition for Heavy Rocket Launchers."
+
+outfit "Heavy Rocket Launcher"
+	category "Secondary Weapons"
+	cost 40000
+	thumbnail "outfit/rocket launcher"
+	"mass" 10
+	"outfit space" -20
+	"weapon capacity" -20
+	"gun ports" -1
+	"rocket capacity" 20
+	weapon
+		sprite "projectile/rocket"
+			"frame rate" 4
+		sound "rocket"
+		ammo "Heavy Rocket"
+		icon "icon/rocket"
+		"hit effect" "heavy rocket hit"
+		"die effect" "small explosion"
+		"inaccuracy" 1
+		"velocity" 8
+		"lifetime" 125
+		"reload" 240
+		"firing energy" 1
+		"firing heat" 250
+		"acceleration" .8
+		"drag" .1
+		"trigger radius" 20
+		"blast radius" 50
+		"shield damage" 850
+		"hull damage" 720
+		"hit force" 600
+		"missile strength" 16
+	description "Heavy Rockets are the most powerful missile weapon available, but at a price: instead of having a homing system, they simply fire straight forward and rely on a proximity trigger to set them off. Once triggered, however, they damage all ships within their blast radius, making them highly effective against clusters of fighters."
+
+effect "heavy rocket hit"
+	sprite "effect/explosion/huge"
+		"no repeat"
+		"frame rate" 15
+	sound "heavy rocket hit"
+	"lifetime" 36
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 5
+	"random velocity" 1
+	"velocity scale" .4
+
+
+outfit "N-Bomb"
+	category "Secondary Weapons"
+	cost 1000000
+	thumbnail "outfit/nuke"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"gun ports" -1
+	weapon
+		sprite "projectile/missile"
+			"no repeat"
+			"frame rate" .25
+		sound "nuke"
+		ammo "Nuclear Missile"
+		stream
+		icon "icon/nuke"
+		"hit effect" "ion impact" 2
+		"hit effect" "nuke explosion"
+		"hit effect" "nuke residue fast" 10
+		"hit effect" "nuke residue slow" 10
+		"die effect" "missile death"
+		"inaccuracy" 1
+		"velocity" 6
+		"lifetime" 800
+		"reload" 400
+		"firing energy" 10
+		"firing heat" 400
+		"acceleration" .8
+		"drag" .1
+		"turn" 4
+		"homing" 4
+		"radar tracking" .5
+		"optical tracking" 1
+		"trigger radius" 30
+		"blast radius" 150
+		"shield damage" 10000
+		"hull damage" 2000
+		"hit force" 4000
+		"missile strength" 20
+	description "Neutron Bombs are low yeild, high radiation nuclear weapons. Developed well over a thousand years ago, these weapons have been improved and upgraded by the Alphas. Until recently, human factions found these "Nukes" so abhorrent that it was a war crime to use them..."
+	description "	[A N-Bomb is a one-shot weapon: each missile occupies a gun slot, and after it is fired, the slot it was in is left empty.]"
+
+effect "nuke explosion"
+	sprite "effect/explosion/nuke"
+		"no repeat"
+		"frame rate" 30
+	sound "explosion nuke"
+	"lifetime" 15
+	"random angle" 360
+	"random spin" 5
+	"random velocity" 1
+	"velocity scale" .4
+
+effect "nuke residue fast"
+	sprite "effect/explosion/huge"
+		"no repeat"
+		"frame rate" 15
+	"lifetime" 36
+	"random angle" 360
+	"random spin" 5
+	"random velocity" 8
+	"velocity scale" 0.1
+
+effect "nuke residue slow"
+	sprite "effect/explosion/huge"
+		"no repeat"
+		"frame rate" 10
+	"lifetime" 60
+	"random angle" 360
+	"random spin" 5
+	"random velocity" 5
+	"velocity scale" 0.1
+
+
+outfit "Gatling Gun Ammo"
+	plural "Gatling Gun Ammo"
+	category "Ammunition"
+	cost 4
+	thumbnail "outfit/bullet"
+	"mass" .002
+	"gatling round capacity" -1
+	description "This simple cartridge is the ammunition for the Gatling Gun, with a projectile of depleted nuclear fuel or an illuminated tracer round. Since this ammunition is primarily manufactured on pirate worlds by slave children in poor working conditions, muzzle velocity can vary by up to 30%, and tracer distribution is seldom uniform."
+
+outfit "Bullet Boxes"
+	plural "Bullet Boxes"
+	category "Ammunition"
+	cost 3000
+	thumbnail "outfit/bullet storage"
+	"mass" 2
+	"outfit space" -5
+	"gatling round capacity" 1500
+	ammo "Gatling Gun Ammo"
+	description "Bullet Boxes are used to store extra ammunition for Gatling Guns."
+
+outfit "Gatling Gun"
+	category "Secondary Weapons"
+	cost 20000
+	thumbnail "outfit/gat"
+	"mass" 2
+	"outfit space" -8
+	"weapon capacity" -8
+	"gun ports" -1
+	"gatling round capacity" 3000
+	weapon
+		sprite "projectile/tinyflare"
+			"random start frame"
+		sound "explosion tiny"
+		ammo "Gatling Gun Ammo"
+		icon "icon/gat"
+		"inaccuracy" 2
+		"velocity" 16
+		"lifetime" 1
+		"reload" 3
+		"burst count" 180
+		"burst reload" 1
+		"firing energy" .03
+		"firing heat" 2.5
+		"submunition" "gbullet"
+		"cluster"
+		"hit effect" "bullet impact"
+	description `When Dr. Richard J. Gatling invented the rapid-fire gun bearing his name in the 19th century, he hoped that its destructiveness would lead to the end of war itself. Over a millennium later, this modern incarnation of the Gatling gun sees action in the stars, a testament to its fundamentally robust design - and Dr. Gatling's naivete. While capable of a high fire rate, this gun needs to cool down for twice as long as it fires, and can only sustain a maximum of three seconds of continuous fire.`
+
+outfit "gbullet"
+	weapon
+		sprite "projectile/bullet"
+			"delay" 5
+			"random start frame"
+			"frame rate" 0
+		"random velocity" 8
+		"lifetime" 20
+		"random lifetime" 5
+		"shield damage" 3
+		"hull damage" 6
+		"hit force" 2
+		"hit effect" "bullet impact"
+
+# Battlecruiser Guns
+
+outfit "Ion Talon"
+	category "Secondary Weapons"
+	cost 260000
+	thumbnail "outfit/unknown"
+	"gun ports" -1
+	"vulture talon" -1
+	weapon
+		sprite "projectile/talonbolt"
+			"frame rate" 5
+		sound "ion"
+		icon "icon/ahhbirbblue"
+		"hit effect" "ion impact" 2
+		"inaccuracy" 1
+		"velocity" 30
+		"lifetime" 30
+		"reload" 1
+		"firing energy" 2000
+		"firing force" 10
+		"firing heat" 30000
+		"hit force" 30
+		"shield damage" 10000
+		"hull damage" 20
+		"ion damage" 500
+		"slowing damage" 1
+		"disruption damage" .9
+	description "<placeholder> prototype dedicated support cannon"
+	
+outfit "Beam Talon"
+	category "Secondary Weapons"
+	cost 260000
+	thumbnail "outfit/unknown"
+	"gun ports" -1
+	"vulture talon" -1
+	weapon
+		sprite "projectile/lasertalon"
+			"frame rate" 1
+		sound "ion"
+		icon "icon/ahhbirb"
+		"hit effect" "finisher impact" 2
+		"inaccuracy" 1
+		"velocity" 2000
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 2000
+		"firing force" 10
+		"firing heat" 30000
+		"hit force" 30
+		"shield damage" 10
+		"hull damage" 5000
+		"piercing" .5
+	description "<placeholder> prototype dedicated kill cannon"
+
+
+
+#Engines
+outfit "Afterburner"
+	category "Engines"
+	"cost" 70000
+	thumbnail "outfit/afterburner"
+	"mass" 15
+	"outfit space" -15
+	"engine capacity" -15
+	"afterburner thrust" 25.0
+	"afterburner fuel" .5
+	"afterburner heat" 10.0
+	"afterburner effect" "afterburner"
+	description "An afterburner works by dumping hyperspace fuel into your engines and igniting it, producing a large amount of thrust. This can be very useful for dodging missiles or briefly escaping from faster opponents, but you must be careful to avoid using up so much fuel that you do not have enough left for hyperspace travel."
+
+effect "afterburner"
+	sprite "effect/afterburner"
+		"no repeat"
+		"frame rate" 30
+	sound "afterburner"
+	"lifetime" 10
+	"random angle" 30
+	"random spin" 10
+	"random velocity" 1.
+	"velocity scale" 1.
+
+
+outfit "Type 1 Radiant Thruster"
+	category "Engines"
+	licenses
+		"Wanderer Outfits"
+	"cost" 135000
+	thumbnail "outfit/tiny radiant thruster"
+	"mass" 12
+	"outfit space" -12
+	"engine capacity" -12
+	"thrust" 6.6
+	"thrusting energy" 0.5
+	"thrusting heat" 0.9
+	"cooling" 1.5
+	"flare sprite" "effect/plasma flare/tiny"
+		"frame rate" 12
+	"flare sound" "plasma tiny"
+	description "This is the tiniest Wanderer engine. Like all their engines, it works in part by radiating excess heat, and as a result it doubles as a cooler for your ship."
+
+
+outfit "Type 1 Radiant Steering"
+	category "Engines"
+	licenses
+		"Wanderer Outfits"
+	"cost" 115000
+	thumbnail "outfit/tiny radiant steering"
+	"mass" 9
+	"outfit space" -9
+	"engine capacity" -9
+	"turn" 172.8
+	"turning energy" .3
+	"turning heat" 0.6
+	"cooling" 1.0
+	description "This tiny steering system is used by the Wanderers to power their unpiloted mining and surveying drones."
+
+
+outfit "Ionic Afterburner"
+	category "Engines"
+	"cost" 340000
+	thumbnail "outfit/ionic afterburner"
+	"mass" 24
+	"outfit space" -24
+	"engine capacity" -24
+	"afterburner thrust" 29.0
+	"afterburner fuel" .1
+	"afterburner energy" 5.1
+	"afterburner heat" 12.0
+	"afterburner effect" "ionic afterburner"
+	description "The ionic afterburner was designed by the Syndicate to compensate for the primary weakness of an ordinary afterburner: namely, that it consumes hyperspace fuel at a prodigious rate. Ionic afterburners instead use a small amount of fuel combined with a large burst of energy from your ship's batteries to achieve the same effect."
+
+effect "ionic afterburner"
+	sprite "effect/ionic afterburner"
+		"no repeat"
+		"frame rate" 30
+	sound "ionic afterburner"
+	"lifetime" 12
+	"random angle" 360
+	"random spin" 30
+	"random velocity" 1.
+	"velocity scale" 1.
+	
+	
+outfit "Medium Graviton Thruster"
+	category "Engines"
+	"cost" 20000000
+	thumbnail "outfit/medium quarg thruster"
+	"mass" 70
+	"outfit space" -70
+	"engine capacity" -70
+	"thrust" 80
+	"thrusting energy" 20
+	"thrusting heat" 10
+	"flare sprite" "effect/medium graviton flare"
+	
+	
+outfit "Medium Graviton Steering"
+	category "Engines"
+	"cost" 16000000
+	thumbnail "outfit/medium quarg steering"
+	"mass" 50
+	"outfit space" -50
+	"engine capacity" -50
+	"turn" 1600
+	"turning energy" 10
+	"turning heat" 5
+
+
+
+outfit "X1050 Ion Engines"
+	category "Engines"
+	"cost" 20000
+	thumbnail "outfit/tiny ion engines"
+	"mass" 20
+	"outfit space" -20
+	"engine capacity" -20
+	"turn" 110
+	"turning energy" .25
+	"turning heat" .5
+	"thrust" 4.0
+	"thrusting energy" .4
+	"thrusting heat" .6
+	"flare sprite" "effect/ion flare/tiny"
+		"frame rate" 1.2
+	"flare sound" "ion tiny"
+	description `When designing the Barb, the Syndicate took the opportunity to integrate their smallest thruster models to create a more compact steering and thrusting engine. The result is not very useful on anything but a fighter, and is only "adequate" in that role. Still, if engine space is at a premium, this is the smallest set of engines that will still get you there (eventually).`
+
+
+
+outfit "X1700 Ion Thruster"
+	category "Engines"
+	"cost" 12000
+	thumbnail "outfit/tiny ion thruster"
+	"mass" 16
+	"outfit space" -16
+	"engine capacity" -16
+	"thrust" 6.0
+	"thrusting energy" .6
+	"thrusting heat" .9
+	"flare sprite" "effect/ion flare/tiny"
+		"frame rate" 1.2
+	"flare sound" "ion tiny"
+	description "This is the smallest thruster that you can buy, so weak that anything larger than a drone will accelerate quite slowly when using this engine. On the other hand, it is also very energy-efficient."
+	description "	Ion engines consume less energy than plasma engines and produce less heat, but they also take up more space."
+
+outfit "X2700 Ion Thruster"
+	category "Engines"
+	"cost" 26000
+	thumbnail "outfit/small ion thruster"
+	"mass" 27
+	"outfit space" -27
+	"engine capacity" -27
+	"thrust" 11.5
+	"thrusting energy" 1.1
+	"thrusting heat" 1.7
+	"flare sprite" "effect/ion flare/small"
+		"frame rate" 1.1
+	"flare sound" "ion small"
+	description "The X2700 ion thruster is intended mostly for use in small, single-person or two-person ships, as well as in fighters. It is also used in larger ships, such as freighters, that have very little space for propulsion systems or energy to drive them. But these larger ships move unbearably slowly as a result."
+	description "	Ion engines consume less energy than plasma engines and produce less heat, but they also take up more space."
+
+outfit "X3700 Ion Thruster"
+	category "Engines"
+	"cost" 58000
+	thumbnail "outfit/medium ion thruster"
+	"mass" 46
+	"outfit space" -46
+	"engine capacity" -46
+	"thrust" 22.1
+	"thrusting energy" 1.9
+	"thrusting heat" 3.2
+	"flare sprite" "effect/ion flare/medium"
+		"frame rate" 1.0
+	"flare sound" "ion medium"
+	description "The X3700 ion thruster is designed for heavy freighters and small capital ships. In theory, it could be installed in smaller ships too, if they have enough engine space, to attain almost ridiculous speeds."
+	description "	Ion engines consume less energy than plasma engines and produce less heat, but they also take up more space."
+
+outfit "X4700 Ion Thruster"
+	category "Engines"
+	"cost" 128000
+	thumbnail "outfit/large ion thruster"
+	"mass" 79
+	"outfit space" -79
+	"engine capacity" -79
+	"thrust" 42.5
+	"thrusting energy" 3.5
+	"thrusting heat" 6.2
+	"flare sprite" "effect/ion flare/large"
+		"frame rate" 0.9
+	"flare sound" "ion large"
+	description "The X4700 ion thruster was developed when the Republic Navy began building warships so large that the X3700 was not sufficient for them. It allows even a capital ship to move at a respectable speed."
+	description "	Ion engines consume less energy than plasma engines and produce less heat, but they also take up more space."
+
+outfit "X5700 Ion Thruster"
+	category "Engines"
+	"cost" 281000
+	thumbnail "outfit/huge ion thruster"
+	"mass" 134
+	"outfit space" -134
+	"engine capacity" -134
+	"thrust" 81.5
+	"thrusting energy" 6.3
+	"thrusting heat" 11.7
+	"flare sprite" "effect/ion flare/huge"
+		"frame rate" 0.8
+	"flare sound" "ion huge"
+	description "The X5700 thruster is intended for only the largest of capital ships. When the Syndicate first began producing them, these engines were considered little more than a publicity stunt, because no ship at the time was large enough to hold one."
+	description "	Ion engines consume less energy than plasma engines and produce less heat, but they also take up more space."
+
+
+outfit "X1200 Ion Steering"
+	category "Engines"
+	"cost" 10000
+	thumbnail "outfit/tiny ion steering"
+	"mass" 12
+	"outfit space" -12
+	"engine capacity" -12
+	"turn" 160
+	"turning energy" .3
+	"turning heat" .6
+	description "This is the smallest set of steering thrusters that you can buy, generally considered suitable only for tiny, pilotless drones. Occasionally pilots looking for some extra outfit space will try swapping out their larger steering systems for one of these, but the results are invariably disappointing."
+	description "	Ion engines consume less energy than plasma engines and produce less heat, but they also take up more space."
+
+outfit "X2200 Ion Steering"
+	category "Engines"
+	"cost" 21000
+	thumbnail "outfit/small ion steering"
+	"mass" 20
+	"outfit space" -20
+	"engine capacity" -20
+	"turn" 307
+	"turning energy" .6
+	"turning heat" 1.1
+	description "The X2200 steering system is designed for fighters and other small spacecraft, as well as for use in larger ships when maneuverability is not needed."
+	description "	Ion engines consume less energy than plasma engines and produce less heat, but they also take up more space."
+
+outfit "X3200 Ion Steering"
+	category "Engines"
+	"cost" 46000
+	thumbnail "outfit/medium ion steering"
+	"mass" 35
+	"outfit space" -35
+	"engine capacity" -35
+	"turn" 590
+	"turning energy" 1.1
+	"turning heat" 2.0
+	description "The X3200 steering system is intended for small warships and freighters. It produces enough turning force to lend agility to all but the largest of human ships, and it is considerably more energy-efficient than the plasma-drive alternatives."
+	description "	Ion engines consume less energy than plasma engines and produce less heat, but they also take up more space."
+
+outfit "X4200 Ion Steering"
+	category "Engines"
+	"cost" 102000
+	thumbnail "outfit/large ion steering"
+	"mass" 59
+	"outfit space" -59
+	"engine capacity" -59
+	"turn" 1132
+	"turning energy" 1.9
+	"turning heat" 3.9
+	description "The X4200 is a powerful steering system, designed mostly for warships because quick steering is seldom a requirement in freighter design."
+	description "	Ion engines consume less energy than plasma engines and produce less heat, but they also take up more space."
+
+outfit "X5200 Ion Steering"
+	category "Engines"
+	"cost" 225000
+	thumbnail "outfit/huge ion steering"
+	"mass" 100
+	"outfit space" -100
+	"engine capacity" -100
+	"turn" 2174
+	"turning energy" 3.5
+	"turning heat" 7.3
+	description "The X5200 is a steering system so large and powerful that only a handful of ships can install it. Due to its limited market, it is produced in small numbers."
+	description "	Ion engines consume less energy than plasma engines and produce less heat, but they also take up more space."
+
+
+
+outfit "Chipmunk Plasma Thruster"
+	category "Engines"
+	"cost" 20000
+	thumbnail "outfit/tiny plasma thruster"
+	"mass" 20
+	"outfit space" -20
+	"engine capacity" -20
+	"thrust" 9.6
+	"thrusting energy" 1.0
+	"thrusting heat" 1.8
+	"flare sprite" "effect/plasma flare/tiny"
+		"frame rate" 5
+	"flare sound" "plasma tiny"
+	description "This is the smallest of the plasma propulsion systems produced by Delta V Corporation, suitable for very light fighters and interceptors."
+	description "	Plasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat."
+
+outfit "Greyhound Plasma Thruster"
+	category "Engines"
+	"cost" 45000
+	thumbnail "outfit/small plasma thruster"
+	"mass" 34
+	"outfit space" -34
+	"engine capacity" -34
+	"thrust" 18.4
+	"thrusting energy" 1.8
+	"thrusting heat" 3.4
+	"flare sprite" "effect/plasma flare/small"
+		"frame rate" 6
+	"flare sound" "plasma small"
+	description "This thruster is intended for small ships and for freighters. It comes in a crate decorated with a stylized cartoon of a running greyhound."
+	description "	Plasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat."
+
+outfit "Impala Plasma Thruster"
+	category "Engines"
+	"cost" 99000
+	thumbnail "outfit/medium plasma thruster"
+	"mass" 58
+	"outfit space" -58
+	"engine capacity" -58
+	"thrust" 35.4
+	"thrusting energy" 3.2
+	"thrusting heat" 6.5
+	"flare sprite" "effect/plasma flare/medium"
+		"frame rate" 7
+	"flare sound" "plasma medium"
+	description "Impala class thrusters produce a significant amount of force, and are suitable for smaller capital ships. But, your ship may need extra cooling systems in order to handle them."
+	description "	Plasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat."
+
+outfit "Orca Plasma Thruster"
+	category "Engines"
+	"cost" 217000
+	thumbnail "outfit/large plasma thruster"
+	"mass" 98
+	"outfit space" -98
+	"engine capacity" -98
+	"thrust" 67.9
+	"thrusting energy" 5.8
+	"thrusting heat" 12.3
+	"flare sprite" "effect/plasma flare/large"
+		"frame rate" 8
+	"flare sound" "plasma large"
+	description "This engine draws enough power that a ship with anything short of a full-fledged nuclear reactor is unlikely to be able to use it, but the thrust it generates is impressive."
+	description "	Plasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat."
+
+outfit "Tyrant Plasma Thruster"
+	category "Engines"
+	"cost" 478000
+	thumbnail "outfit/huge plasma thruster"
+	"mass" 167
+	"outfit space" -167
+	"engine capacity" -167
+	"thrust" 130.5
+	"thrusting energy" 10.5
+	"thrusting heat" 23.5
+	"flare sprite" "effect/plasma flare/huge"
+		"frame rate" 9
+	"flare sound" "plasma huge"
+	description "The enormous crate that this thruster is sold in comes decorated with a picture of a grinning Tyrannosaurus Rex with an improbable number of teeth. Only a handful of ships are large enough to require an engine of this size... or to have the capacity for one."
+	description "	Plasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat."
+
+
+outfit "Chipmunk Plasma Steering"
+	category "Engines"
+	"cost" 16000
+	thumbnail "outfit/tiny plasma steering"
+	"mass" 15
+	"outfit space" -15
+	"engine capacity" -15
+	"turn" 256
+	"turning energy" .5
+	"turning heat" 1.1
+	description "This is the smallest plasma steering system that Delta V produces. The packaging features a cartoon of what appears to be a very highly caffeinated rodent."
+	description "	Plasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat."
+
+outfit "Greyhound Plasma Steering"
+	category "Engines"
+	"cost" 36000
+	thumbnail "outfit/small plasma steering"
+	"mass" 26
+	"outfit space" -26
+	"engine capacity" -26
+	"turn" 492
+	"turning energy" 0.9
+	"turning heat" 2.1
+	description "The Greyhound class plasma propulsion systems are Delta V's most popular product, suitable for a wide range of small starships."
+	description "	Plasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat."
+
+outfit "Impala Plasma Steering"
+	category "Engines"
+	"cost" 79000
+	thumbnail "outfit/medium plasma steering"
+	"mass" 43
+	"outfit space" -43
+	"engine capacity" -43
+	"turn" 944
+	"turning energy" 1.6
+	"turning heat" 4.1
+	description "Impala class plasma steering systems are suitable for most freighters and all but the largest warships, and are also considerably more compact than the ion propulsion systems produced by the Syndicate."
+	description "	Plasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat."
+
+outfit "Orca Plasma Steering"
+	category "Engines"
+	"cost" 174000
+	thumbnail "outfit/large plasma steering"
+	"mass" 74
+	"outfit space" -74
+	"engine capacity" -74
+	"turn" 1812
+	"turning energy" 2.9
+	"turning heat" 7.7
+	description "An Orca class steering system will allow any mid-sized ship to turn as quickly as a fighter, and is powerful enough to serve even the largest of warships."
+	description "	Plasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat."
+
+outfit "Tyrant Plasma Steering"
+	category "Engines"
+	"cost" 382000
+	thumbnail "outfit/huge plasma steering"
+	"mass" 125
+	"outfit space" -125
+	"engine capacity" -125
+	"turn" 3479
+	"turning energy" 5.2
+	"turning heat" 14.7
+	description "As with the corresponding thruster, the Tyrant class steering system is so large and powerful that very few ships can make use of it."
+	description "	Plasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat."
+
+
+
+outfit "A120 Atomic Thruster"
+	category "Engines"
+	"cost" 140000
+	thumbnail "outfit/tiny atomic thruster"
+	"mass" 22
+	"outfit space" -22
+	"engine capacity" -22
+	"thrust" 15.4
+	"thrusting energy" 1.8
+	"thrusting heat" 3.5
+	"flare sprite" "effect/atomic flare/tiny"
+		"frame rate" 14
+	"flare sound" "atomic tiny"
+	description "If you're looking for the most powerful engine that will fit into your ship, and have plenty of money to burn, Deep Sky's atomic thrusters are your answer. Of course, the extra energy and cooling they require can easily offset the benefit of their small size."
+
+outfit "A250 Atomic Thruster"
+	category "Engines"
+	"cost" 280000
+	thumbnail "outfit/small atomic thruster"
+	"mass" 34
+	"outfit space" -34
+	"engine capacity" -34
+	"thrust" 27.3
+	"thrusting energy" 3.1
+	"thrusting heat" 6.1
+	"flare sprite" "effect/atomic flare/small"
+		"frame rate" 13
+	"flare sound" "atomic small"
+	description "Deep Sky's atomic thrusters have been in production for centuries, but remain a niche product due to their high prices and high energy requirements."
+
+outfit "A370 Atomic Thruster"
+	category "Engines"
+	"cost" 560000
+	thumbnail "outfit/medium atomic thruster"
+	"mass" 53
+	"outfit space" -53
+	"engine capacity" -53
+	"thrust" 47.6
+	"thrusting energy" 5.1
+	"thrusting heat" 10.3
+	"flare sprite" "effect/atomic flare/medium"
+		"frame rate" 12
+	"flare sound" "atomic medium"
+	description "This thruster is small enough to fit in a light warship or freighter, but powerful enough to move any but the largest of ships. Naturally, such performance comes at an exorbitant price."
+
+outfit "A520 Atomic Thruster"
+	category "Engines"
+	"cost" 1120000
+	thumbnail "outfit/large atomic thruster"
+	"mass" 82
+	"outfit space" -82
+	"engine capacity" -82
+	"thrust" 81.9
+	"thrusting energy" 8.3
+	"thrusting heat" 17.4
+	"flare sprite" "effect/atomic flare/large"
+		"frame rate" 11
+	"flare sound" "atomic large"
+	description "If your ship is sporting a set of Deep Sky's atomic engines, you will be the envy of every pilot in the galaxy. No other form of propulsion that humanity has discovered produces so much thrust from such a small engine."
+
+outfit "A860 Atomic Thruster"
+	category "Engines"
+	"cost" 2240000
+	thumbnail "outfit/huge atomic thruster"
+	"mass" 127
+	"outfit space" -127
+	"engine capacity" -127
+	"thrust" 139.7
+	"thrusting energy" 13.3
+	"thrusting heat" 29.1
+	"flare sprite" "effect/atomic flare/huge"
+		"frame rate" 10
+	"flare sound" "atomic huge"
+	description "The A860 atomic thruster is the most powerful engine sold in human space, and is much more compact than any of the alternatives. But, you may need to upgrade your ship's power and cooling systems to handle it."
+
+
+outfit "A125 Atomic Steering"
+	category "Engines"
+	"cost" 120000
+	thumbnail "outfit/tiny atomic steering"
+	"mass" 16
+	"outfit space" -16
+	"engine capacity" -16
+	"turn" 392
+	"turning energy" 0.9
+	"turning heat" 2.2
+	description "Deep Sky's atomic thrusters are a popular choice for high-end starships. It is not uncommon for a set of atomic engines to cost more than the ship they are installed in."
+
+outfit "A255 Atomic Steering"
+	category "Engines"
+	"cost" 240000
+	thumbnail "outfit/small atomic steering"
+	"mass" 25
+	"outfit space" -25
+	"engine capacity" -25
+	"turn" 687
+	"turning energy" 1.5
+	"turning heat" 3.7
+	description "If you have exhausted all your other options for making your ship more maneuverable, it may be time to invest in a set of atomic engines."
+
+outfit "A375 Atomic Steering"
+	category "Engines"
+	"cost" 480000
+	thumbnail "outfit/medium atomic steering"
+	"mass" 38
+	"outfit space" -38
+	"engine capacity" -38
+	"turn" 1192
+	"turning energy" 2.5
+	"turning heat" 6.3
+	description "Bounty hunters and other captains who need to gain a speed advantage over the ships they are pursuing often dream of being able to save up enough money for a set of atomic engines."
+
+outfit "A525 Atomic Steering"
+	category "Engines"
+	"cost" 960000
+	thumbnail "outfit/large atomic steering"
+	"mass" 60
+	"outfit space" -60
+	"engine capacity" -60
+	"turn" 2050
+	"turning energy" 4.1
+	"turning heat" 10.5
+	description "This set of maneuvering thrusters from Deep Sky will allow small warships to turn as fast as a fighter. For larger ships, swapping the existing engines with a set of atomics can free up a considerable amount of space for other outfits or weapons."
+
+outfit "A865 Atomic Steering"
+	category "Engines"
+	"cost" 1920000
+	thumbnail "outfit/huge atomic steering"
+	"mass" 92
+	"outfit space" -92
+	"engine capacity" -92
+	"turn" 3509
+	"turning energy" 6.6
+	"turning heat" 17.5
+	description "Atomic engines are considered by many to be Deep Sky's crowning achievement. Although they are so expensive that relatively few of them are in use, there are few captains who do not dream of one day installing a set of them."
+
+
+outfit "AR120 Reverse Thruster"
+	category "Engines"
+	"cost" 140000
+	thumbnail "outfit/reverse thruster"
+	"mass" 22
+	"outfit space" -22
+	"weapon capacity" -22
+	"reverse thrust" 15.4
+	"reverse thrusting energy" 1.8
+	"reverse thrusting heat" 3.5
+	description "For pilots who want to be able to pull fancy tricks that most ships are not capable of emulating, a reverse thruster allows a ship to accelerate backwards, without needing to turn around. Because a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section."
+
+
+#Generic Outfits
 outfit "Cooling Ducts"
 	plural "Cooling Ducts"
 	category "Systems"
@@ -406,18 +2729,6 @@ outfit "Nerve Gas"
 	"illegal" 1000000
 	"unplunderable" 1
 	description "This is a highly illegal weapon for hand to hand combat when boarding an enemy ship. Because chemical weapons are banned by interstellar law, you can be severely fined for getting caught in possession of nerve gas canisters. But, they do clear out an enemy ship quicker than just about anything else..."
-
-outfit "Knockout Gas"
-	plural "Gas Canisters"
-	category "Hand to Hand"
-	cost 110000
-	thumbnail "outfit/knockout gas"
-	"capture attack" 2.2
-	"capture defense" 1.2
-	licenses
-		Navy
-	"unplunderable" 1
-	description "Researchers from Lovelace Labs have found a way to weaponize the chemical compounds derived from psychoactive plants found on some of the more exotic planet ecosystems. Though not as powerful as nerve gas, knockout gas is non-fatal."
 
 
 outfit "Local Map"
