@@ -160,7 +160,7 @@ system Achernar
 		sprite planet/desert3
 		distance 211.24
 		period 49.1229
-	object "Carnation Station"
+	object "Hammer Station"
 		sprite planet/placeholderstation
 		distance 530
 		period 190
@@ -3201,7 +3201,7 @@ system Castor
 		sprite planet/rock0
 		distance 758.695
 		period 254.287
-	object "Bulwark Station"
+	object "Rampart Station"
 		sprite planet/placeholderstation
 		distance 980
 		period 365
