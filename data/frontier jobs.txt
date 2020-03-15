@@ -38,6 +38,7 @@ mission "Frontier delivery [0]"
 		system destination
 		fleet "Small Northern Pirates" 2
 	on complete
+		"reputation: Merchant" += 3
 		payment 4000 180
 		dialog phrase "generic cargo delivery payment"
 
@@ -70,6 +71,7 @@ mission "Frontier delivery [1]"
 		system destination
 		fleet "Small Northern Pirates" 3
 	on complete
+		"reputation: Merchant" += 3
 		payment 4000 180
 		dialog phrase "generic cargo delivery payment"
 
@@ -101,6 +103,7 @@ mission "Frontier delivery [2]"
 		fleet "Small Northern Pirates"
 		fleet "Large Northern Pirates"
 	on complete
+		"reputation: Merchant" += 3
 		payment 4000 180
 		dialog phrase "generic cargo delivery payment"
 
@@ -122,6 +125,7 @@ mission "Frontier Emigration [0]"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		not attributes "frontier"
 	on complete
+		"reputation: Independent" += 3
 		payment 3000 140
 		dialog phrase "generic passenger dropoff payment"
 
@@ -143,6 +147,7 @@ mission "Frontier Emigration [1]"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		not attributes "frontier"
 	on complete
+		"reputation: Independent" += 3
 		payment 3000 140
 		dialog phrase "generic passenger dropoff payment"
 
@@ -164,6 +169,7 @@ mission "Frontier Emigration [2]"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
 		not attributes "frontier"
 	on complete
+		"reputation: Independent" += 3
 		payment 3000 140
 		dialog phrase "generic passenger dropoff payment"
 
@@ -186,6 +192,7 @@ mission "Disaster Relief"
 		attributes "frontier"
 		not planet "Shangri-La"
 	on complete
+		"reputation: Merchant" += 5
 		payment 10000 160
 		dialog "You drop off your cargo of <commodity> and collect your payment of <payment>. A group of <planet> citizens thank you and bid you farewell."
 
