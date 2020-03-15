@@ -42,6 +42,7 @@ mission "Pirate Occupation [0]"
 	on visit
 		dialog phrase "generic pirate fleet battle on visit"
 	on complete
+		"reputation: Militia" += 5
 		payment 100000
 		dialog phrase "generic pirate attack payment dialog"
 
@@ -80,6 +81,7 @@ mission "Pirate Occupation [1]"
 	on visit
 		dialog phrase "generic pirate fleet battle on visit"
 	on complete
+		"reputation: Militia" += 5
 		payment 150000
 		dialog phrase "generic pirate attack payment dialog"
 
@@ -118,6 +120,7 @@ mission "Pirate Occupation [2]"
 	on visit
 		dialog phrase "generic pirate fleet battle on visit"
 	on complete
+		"reputation: Militia" += 5
 		payment 200000
 		dialog phrase "generic pirate attack payment dialog"
 
@@ -150,6 +153,7 @@ mission "Sketchy Cargo [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		
 		payment 0 160
 		dialog "You drop off the unlabeled cargo in a warehouse not too dissimilar to the one you picked it up in. A man dressed in a cloak hands you <payment> after the last crate is removed from your ship."
 
