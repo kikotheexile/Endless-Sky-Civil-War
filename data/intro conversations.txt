@@ -66,9 +66,9 @@ conversation "intro"
 			goto logbook
 	label difficulties
 	`	The character you make is completely your own. Everything from their name, preferences, and identity is determined by your own imagination. However, in order to give you an interface with the universe, we do have some canonical backstories.`
-	`	The first and easiest choice is the Trust Fund Baby. This character grew up on a wealthy planet and only moved to New Boston to get their pilots license. They are currently waiting on their trust to pay up, but they wont have to wait long.`
-	`	The second is the normal start for Endless Sky. The Textile worker who grew up on New Boston and has been dreaming of being a space pilot since childhood. They finally saved up enough for a down payment on a loan while studying for their pilots license. Nothing special will happen to them unless they make it happen.`
-	`	The final and most difficult is the Reformed Pirate. A former outlaw rehabilitated by the Republic and granted a merchant pilots license, you barely qualify for a loan to purchase your new ship. However, you have made dangerous enemies in the past, and must be prepared to outrun them. You had better pick a fast ship!`
+	`	The first and easiest choice is the Trust Fund Baby. This character grew up on a wealthy planet and only moved to New Boston to get their pilot's license. They are currently waiting on their trust to pay up, but they won't have to wait long.`
+	`	The second is the normal start for Endless Sky. The Textile worker who grew up on New Boston and has been dreaming of being a space pilot since childhood. They finally saved up enough for a down payment on a loan while studying for their pilot's license. Nothing special will happen to them unless they make it happen.`
+	`	The final and most difficult is the Reformed Pirate. A former outlaw rehabilitated by the Republic and granted a merchant pilot's license, you barely qualify for a loan to purchase your new ship. However, you have made dangerous enemies in the past, and must be prepared to outrun them. You had better pick a fast ship!`
 	choice
 		`	(Back to Menu.)`
 			goto menu
@@ -79,7 +79,7 @@ conversation "intro"
 	`	The very first thing you need to know about the controls is the fact that they can be changed at any time. You can find them by pressing the (ESC) key and clicking Preferences.`
 	``
 	`	The default keys you will use most are:` 
-	`(Esc) to view preferences, load saves, or create new characters.`
+	`(ESC) to view preferences, load saves, or create new characters.`
 	`The Arrow Keys are your default navigation.`
 	`(Tab) to fire your primary weapon.)`
 	`(M) to open your map.`
@@ -143,8 +143,8 @@ conversation "intro"
 	label outfitters
 	`	The Shipyard and Outfitters operate largely on the same principle with slight differences.` 
 	`	In the Shipyard, you can buy, sell, and rearrange your ships. The left-hand side of the screen shows ships that are for sale. Select one to view its stats or purchase it. The right hand side of the screen will do the same thing for ships you own, allowing you to compare between the two.`
-	`	Mouseover any stat listed in the shipyard in order to see a tooltip, this will breif you on what those numbers mean.`
-	`	In the Outfitter, you will be able to view different equipment for your ship. Each piece of equipment requires a different amount of resources, however, so you will have to manage your outfit, engine, and weapons space accordingly. For this reason, the same view provided in the shipyard is availible on the right hand side of the screen. This will update your ships stats in real time with any changes you make.`
+	`	Mouseover any stat listed in the shipyard in order to see a tooltip, which will brief you on what those numbers mean.`
+	`	In the Outfitter, you will be able to view different equipment for your ship. Each piece of equipment requires a different amount of resources, however, so you will have to manage your outfit, engine, and weapons space accordingly. For this reason, the same view provided in the shipyard is availible on the right hand side of the screen. This will update your ship's stats in real time with any changes you make.`
 	choice
 		`	(Back to Sensor Screen.)`
 			goto ui
@@ -189,7 +189,7 @@ conversation "intro"
 	choice
 		`	Originally from the Paradise worlds, I only came to this planet because of how easy it is to get a pilots license.`
 			goto easy
-		`	I'm a normal textile worker who grew up on this world and just got my pilots license.`
+		`	I'm a normal textile worker who grew up on this world and just got my pilot's license.`
 			goto normal
 		`	Life has been hard for me, I'm a reformed pirate who's currently on the run from bounty hunters.`
 			goto hard
@@ -197,7 +197,7 @@ conversation "intro"
 	apply
 		set "trustfund baby"
 	scene "scene/lobby"
-	`The bank's architecture is one of the few bastions of culture on this backwater planet: story above story of curves and spires and balconies, all in gleaming metal. A doorman stands by each of the heavy glass doors.`
+	`The bank's architecture is one of the few bastions of culture on this backwater planet: story above story of curves, spires and balconies; all in gleaming metal. A doorman stands by each of the heavy glass doors.`
 	`	The loan broker's office is equally out of place for such a world. Large computer monitors fill the walls, with stock quotes and other information spilling down them almost too fast to read.`
 	`	The pen is heavy as lead but glides almost without friction as you print your initials on the bottom of page after page of ominous legal documents and sign several dozen statements, notices, and agreements. The banker, a balding middle-aged man in a suit that you suspect costs more than the spaceship you are about to purchase, flips the pages past you quickly, uttering a curt, "Sign here. Now here," as he points to each page. He moves swiftly, mechanically.`
 	`	The only moment when he becomes truly animated is when explaining the Truth in Lending statement to you. "You are borrowing 480,000 credits," he says, "to be repaid over the course of one year. Your daily interest rate is 0.4%, which means that your daily payments are 2,503 credits, and by the end of the year you will have paid... 434,000 credits in interest. Sign here." He grins.`
@@ -229,7 +229,7 @@ conversation "intro"
 	`	The only moment when he becomes truly animated is when explaining the Truth in Lending statement to you. "You are borrowing 480,000 credits," he says, "to be repaid over the course of one year. Your daily interest rate is 0.4%, which means that your daily payments are 2,503 credits, and by the end of the year you will have paid... 434,000 credits in interest. I expect this will be no problem for a seasoned spacer such as yourself. Sign here." He grins.`
 	`	You sign your name one final time:`
 	name
-	`	The elevator is so well-tuned that you do not even realize it is moving until it has deposited you back in the lobby. Even as you leave the bank, you are paranoid. You never know when you might be spotted by your persuers.`
+	`	The elevator is so well-tuned that you do not even realize it is moving until it has deposited you back in the lobby. Even as you leave the bank, you are paranoid. You never know when you might be spotted by your pursuers.`
 	`	Compared to the bank, you feel much more at home in the shipyard, walking among the rusted out hulks and newer ships that gleam in the sunlight. You smell grease and dirt and rocket fuel; wonderful smells. There are three ship models within your price range. Which one you choose will determine your future...`
 		accept
 	
