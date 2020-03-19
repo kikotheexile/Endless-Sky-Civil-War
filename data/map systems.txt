@@ -44,34 +44,6 @@ galaxy "label south"
 	pos -566 501
 	sprite label/south
 
-galaxy "label wanderers"
-	pos -145 -753
-	sprite ""
-
-galaxy "label hai"
-	pos -74 -497
-	sprite ""
-
-galaxy "label korath"
-	pos 165 -347
-	sprite ""
-
-galaxy "label saryds"
-	pos -1080 678
-	sprite ""
-
-galaxy "label kimek"
-	pos -1250 215
-	sprite ""
-
-galaxy "label arachi"
-	pos -750 615
-	sprite ""
-
-galaxy "label waste"
-	pos 80 315
-	sprite ""
-
 system Acamar
 	pos -284 -3
 	government Syndicate
