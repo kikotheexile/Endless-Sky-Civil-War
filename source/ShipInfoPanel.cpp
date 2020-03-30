@@ -603,11 +603,9 @@ void ShipInfoPanel::DrawCrew(const Rectangle &bounds)
 	const Color &valueColor = *GameData::Colors().Get("bright");
 	
 	Table table;
-	Font::Layout layout{Font::TRUNC_NONE, WIDTH - 100, Font::LEFT};
-	table.AddColumn(10, layout);
-	layout.align = Font::RIGHT;
-	table.AddColumn(WIDTH - 80, layout);
-	table.AddColumn(WIDTH - 10, layout);
+	table.AddColumn(10, Font::Layout{Font::TRUNC_NONE, static_cast<int>(WIDTH - 10), Font::LEFT});
+	table.AddColumn(WIDTH - 80, Font::Layout{Font::TRUNC_NONE, static_cast<int>(WIDTH - 80), Font::RIGHT});
+	table.AddColumn(WIDTH - 10, Font::Layout{Font::TRUNC_NONE, static_cast<int>(WIDTH - 10), Font::RIGHT});
 	table.SetHighlight(0, WIDTH);
 	table.DrawAt(bounds.TopLeft());
 	table.DrawGap(10.);
