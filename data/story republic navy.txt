@@ -285,7 +285,7 @@ mission "Story Direction 1"
 				`	<Yes.>`
 				`	<No.>`
 					defer
-			`	As you study this massive vessel, a voice catches you from behind. "She's a beauty, isn't she?" says a man, stepping into your line of sight.`
+			`	As you study this massive vessel, a voice catches you from behind: "She's a beauty, isn't she?" says a man, stepping into your line of sight.`
 			choice
 				`	"She sure is!"`
 					goto compliment
@@ -294,16 +294,16 @@ mission "Story Direction 1"
 				`	"What's with the flag?"`
 					goto flag
 			label compliment
-			`	He smiles wide, clearly proud of his ship. "She sure is. You know, it seems amazing to believe that only last year I was flying a Star Barge. The Republic really does pay its full time contractors well."`
+			`	He smiles wide, clearly proud of his ship: "She sure is. You know, it seems amazing to believe that only last year I was flying a Star Barge. The Republic really does pay its full-time contractors well."`
 				goto contractor
 			label insult
-			`	He winces for a moment. "Your words hurt, but ring true. Soon I will be able to afford something even better. The Republic really does pay its full time contractors well."`
+			`	He winces for a moment: "Your words hurt, but ring true. Soon I will be able to afford something even better. The Republic really does pay its full-time contractors well."`
 				goto contractor
 			label flag
-			`	"It's a custom paint job," he states plainly, "I am very proud of the fact I have been chosen to be a full time Republic Contractor. The pay is amazing, and I'm serving my nation.`
+			`	"It's a custom paint job," he states plainly: "I am very proud of the fact I have been chosen to be a full-time Republic contractor. The pay is amazing, and I'm serving my nation.`
 				goto contractor
 			label contractor
-			`	The man begins to walk away, then turns back. "You know, I wasn't selected by accident. I took the initiative, and investigated the Northern Union. Did some jobs for them, built up a network of contacts, then turned them all into the Republic. They offered me this job not long after. With these new 'Free Worlds' terrorists forming to the south, I'm sure you'll find opportunities to serve our great Republic if you play along with them a bit. You can also always do what I did. Check out the worlds south of Kornephoros, or north of Alcyone and east of Almaaz. Pirates and terrorists are always desperate for fresh merchant faces to do their dirty work. Find a name and turn them in."
+			`	The man begins to walk away, then turns back: "You know, I wasn't selected by accident. I took the initiative, and investigated the Northern Union. Did some jobs for them, built up a network of contacts, then turned them all into the Republic. They offered me this job not long after. With these new 'Free Worlds' terrorists forming to the south, I'm sure you'll find opportunities to serve our great Republic if you play along with them a bit. You can also always do what I did: check out the worlds south of Kornephoros, or north of Alcyone and east of Almaaz. Pirates and terrorists are always desperate for fresh merchant faces to do their dirty work. Find a name and turn them in."
 				accept
 
 mission "Meeting an Alpha 2b"
