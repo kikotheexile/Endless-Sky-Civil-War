@@ -32,11 +32,11 @@ namespace {
 
 ItemInfoDisplay::ItemInfoDisplay()
 {
-	description.SetAlignment(WrappedText::JUSTIFIED);
+	description.SetAlignment(Font::JUSTIFIED);
 	description.SetWrapWidth(WIDTH - 20);
 	description.SetFont(FontSet::Get(14));
 	
-	hoverText.SetAlignment(WrappedText::JUSTIFIED);
+	hoverText.SetAlignment(Font::JUSTIFIED);
 	hoverText.SetWrapWidth(WIDTH - 20);
 	hoverText.SetFont(FontSet::Get(14));
 }
@@ -170,9 +170,11 @@ Point ItemInfoDisplay::Draw(Point point, const vector<string> &labels, const vec
 	const Color &valueColor = *GameData::Colors().Get("bright");
 	
 	Table table;
+	Font::Layout layout{Font::TRUNC_NONE, WIDTH - 20, Font::LEFT};
 	// Use 10-pixel margins on both sides.
-	table.AddColumn(10, Table::LEFT);
-	table.AddColumn(WIDTH - 10, Table::RIGHT);
+	table.AddColumn(10, layout);
+	layout.align = Font::RIGHT;
+	table.AddColumn(WIDTH - 10, layout);
 	table.SetHighlight(0, WIDTH);
 	table.DrawAt(point);
 	

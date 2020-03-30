@@ -239,12 +239,10 @@ bool ShipyardPanel::CanSell(bool toCargo) const
 void ShipyardPanel::Sell(bool toCargo)
 {
 	static const int MAX_LIST = 20;
-	static const int MAX_NAME_WIDTH = 250 - 30;
 	
 	int count = playerShips.size();
 	int initialCount = count;
 	string message = "Sell the ";
-	const Font &font = FontSet::Get(14);
 	if(count == 1)
 		message += playerShip->Name();
 	else if(count <= MAX_LIST)
@@ -258,7 +256,7 @@ void ShipyardPanel::Sell(bool toCargo)
 		else
 		{
 			while(count-- > 1)
-				message += ",\n" + font.TruncateMiddle((*it++)->Name(), MAX_NAME_WIDTH);
+				message += ",\n" + (*it++)->Name();
 			message += ",\nand ";
 		}
 		message += (*it)->Name();
@@ -268,7 +266,7 @@ void ShipyardPanel::Sell(bool toCargo)
 		auto it = playerShips.begin();
 		message += (*it++)->Name() + ",\n";
 		for(int i = 1; i < MAX_LIST - 1; ++i)
-			message += font.TruncateMiddle((*it++)->Name(), MAX_NAME_WIDTH) + ",\n";
+			message += (*it++)->Name() + ",\n";
 		
 		message += "and " + to_string(count - (MAX_LIST - 1)) + " other ships";
 	}
@@ -279,8 +277,11 @@ void ShipyardPanel::Sell(bool toCargo)
 		toSell.push_back(it->shared_from_this());
 	int64_t total = player.FleetDepreciation().Value(toSell, day);
 	
-	message += ((initialCount > 2) ? "\nfor " : " for ") + Format::Credits(total) + " credits?";
-	GetUI()->Push(new Dialog(this, &ShipyardPanel::SellShip, message));
+	const bool lineBreaking = initialCount > 2;
+	const string separator(lineBreaking ? "\nfor " : " for ");
+	const Font::Truncate truncation = lineBreaking ? Font::TRUNC_MIDDLE : Font::TRUNC_NONE;
+	message += separator + Format::Credits(total) + " credits?";
+	GetUI()->Push(new Dialog(this, &ShipyardPanel::SellShip, message, truncation));
 }
 
 

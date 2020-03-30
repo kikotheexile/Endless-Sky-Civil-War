@@ -172,6 +172,10 @@ bool GameData::BeginLoad(const char * const *argv)
 	// Generate a catalog of music files.
 	Music::Init(sources);
 	
+	// Add font and config files.
+	for(const string &source : sources)
+		FontSet::Add(source + "fonts/");
+	
 	for(const string &source : sources)
 	{
 		// Iterate through the paths starting with the last directory given. That
@@ -253,7 +257,7 @@ void GameData::CheckReferences()
 		if(!it.second.GetGovernment() && !deferred["fleet"].count(it.first))
 			Files::LogError("Warning: fleet \"" + it.first + "\" is referred to, but never defined.");
 	for(const auto &it : governments)
-		if(it.second.GetName().empty() && !deferred["government"].count(it.first))
+		if(it.second.GetTrueName().empty() && !deferred["government"].count(it.first))
 			Files::LogError("Warning: government \"" + it.first + "\" is referred to, but never defined.");
 	for(const auto &it : minables)
 		if(it.second.Name().empty())
@@ -271,7 +275,7 @@ void GameData::CheckReferences()
 		if(it.second.Name().empty())
 			Files::LogError("Warning: phrase \"" + it.first + "\" is referred to, but never defined.");
 	for(const auto &it : planets)
-		if(it.second.Name().empty() && !deferred["planet"].count(it.first))
+		if(it.second.TrueName().empty() && !deferred["planet"].count(it.first))
 			Files::LogError("Warning: planet \"" + it.first + "\" is referred to, but never defined.");
 	for(const auto &it : ships)
 		if(it.second.ModelName().empty())
@@ -288,9 +292,6 @@ void GameData::CheckReferences()
 
 void GameData::LoadShaders()
 {
-	FontSet::Add(Files::Images() + "font/ubuntu14r.png", 14);
-	FontSet::Add(Files::Images() + "font/ubuntu18r.png", 18);
-	
 	// Load the key settings.
 	Command::LoadSettings(Files::Resources() + "keys.txt");
 	Command::LoadSettings(Files::Config() + "keys.txt");

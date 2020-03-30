@@ -18,6 +18,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Effect.h"
 #include "Files.h"
 #include "Flotsam.h"
+#include "Font.h"
 #include "Format.h"
 #include "GameData.h"
 #include "Government.h"
@@ -72,9 +73,9 @@ namespace {
 			return;
 		
 		// Energy and fuel costs are the energy or fuel required per unit repaired.
-		if(energyCost)
+		if(energyCost > 0.)
 			available = min(available, energy / energyCost);
-		if(fuelCost)
+		if(fuelCost > 0.)
 			available = min(available, fuel / fuelCost);
 		
 		double transfer = min(available, maximum - stat);
@@ -87,7 +88,7 @@ namespace {
 		}
 	}
 }
-	// Ship categories, be sure to preserve legacy ship classes (From base endless sky) to support crossover plugins.
+
 const vector<string> Ship::CATEGORIES = {
 	"Yacht",
 	"Freighter",
@@ -161,7 +162,8 @@ void Ship::Load(const DataNode &node)
 		else if(child.Token(0) == "thumbnail" && child.Size() >= 2)
 			thumbnail = SpriteSet::Get(child.Token(1));
 		else if(key == "name" && child.Size() >= 2)
-			name = child.Token(1);
+			// A Ship name may contain wrong markups when loading an old save file.
+			name = Font::EscapeMarkupHasError(child.Token(1));
 		else if(key == "plural" && child.Size() >= 2)
 			pluralModelName = child.Token(1);
 		else if(key == "noun" && child.Size() >= 2)
@@ -1687,8 +1689,10 @@ void Ship::DoGeneration()
 		{
 			double scale = .2 + 1.8 / (.001 * position.Length() + 1);
 			fuel += currentSystem->SolarWind() * .03 * scale * (sqrt(attributes.Get("ramscoop")) + .05 * scale);
-		
-			energy += currentSystem->SolarPower() * scale * attributes.Get("solar collection");
+			
+			double solarScaling = currentSystem->SolarPower() * scale;
+			energy += solarScaling * attributes.Get("solar collection");
+			heat += solarScaling * attributes.Get("solar heat");
 		}
 		
 		double coolingEfficiency = CoolingEfficiency();
@@ -2437,11 +2441,21 @@ double Ship::DisabledHull() const
 
 
 
-int Ship::JumpsRemaining() const
+int Ship::JumpsRemaining(bool followParent) const
 {
 	// Make sure this ship has some sort of hyperdrive, and if so return how
 	// many jumps it can make.
-	double jumpFuel = JumpFuel(targetSystem);
+	double jumpFuel = 0.;
+	if(!targetSystem && followParent)
+	{
+		// If this ship has no destination, the parent's substitutes for it,
+		// but only if the location is reachable.
+		auto p = GetParent();
+		if(p)
+			jumpFuel = JumpFuel(p->GetTargetSystem());
+	}
+	if(!jumpFuel)
+		jumpFuel = JumpFuel(targetSystem);
 	return jumpFuel ? fuel / jumpFuel : 0.;
 }
 
@@ -2981,7 +2995,7 @@ bool Ship::CanFire(const Weapon *weapon) const
 	if(weapon->Ammo())
 	{
 		auto it = outfits.find(weapon->Ammo());
-		if(it == outfits.end() || it->second <= 0)
+		if(it == outfits.end() || it->second < weapon->AmmoUsage())
 			return false;
 	}
 	
@@ -3006,7 +3020,7 @@ void Ship::ExpendAmmo(const Weapon *weapon)
 	if(!weapon)
 		return;
 	if(weapon->Ammo())
-		AddOutfit(weapon->Ammo(), -1);
+		AddOutfit(weapon->Ammo(), -weapon->AmmoUsage());
 	
 	energy -= weapon->FiringEnergy();
 	fuel -= weapon->FiringFuel();

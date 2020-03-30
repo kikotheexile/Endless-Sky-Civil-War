@@ -287,8 +287,8 @@ void PreferencesPanel::DrawControls()
 	Color red(.3f, 0.f, 0.f, .3f);
 	
 	Table table;
-	table.AddColumn(-115, Table::LEFT);
-	table.AddColumn(115, Table::RIGHT);
+	table.AddColumn(-115, Font::Layout{Font::TRUNC_NONE, 230, Font::LEFT});
+	table.AddColumn(115, Font::Layout{Font::TRUNC_NONE, 230, Font::RIGHT});
 	table.SetUnderline(-120, 120);
 	
 	int firstY = -248;
@@ -298,7 +298,7 @@ void PreferencesPanel::DrawControls()
 		"Navigation",
 		"Weapons",
 		"Targeting",
-		"Menus",
+		"Interface",
 		"Fleet"
 	};
 	const string *category = CATEGORIES;
@@ -327,6 +327,7 @@ void PreferencesPanel::DrawControls()
 		Command::MAP,
 		Command::INFO,
 		Command::FULLSCREEN,
+		Command::FASTFORWARD,
 		Command::NONE,
 		Command::DEPLOY,
 		Command::FIGHT,
@@ -360,7 +361,7 @@ void PreferencesPanel::DrawControls()
 			bool isEditing = (index == editing);
 			if(isConflicted || isEditing)
 			{
-				table.SetHighlight(66, 120);
+				table.SetHighlight(56, 120);
 				table.DrawHighlight(isEditing ? dim: red);
 			}
 			
@@ -368,7 +369,7 @@ void PreferencesPanel::DrawControls()
 			bool isHovering = (index == hover && !isEditing);
 			if(!isHovering && index == selected)
 			{
-				table.SetHighlight(-120, 64);
+				table.SetHighlight(-120, 54);
 				table.DrawHighlight(back);
 			}
 			
@@ -385,12 +386,12 @@ void PreferencesPanel::DrawControls()
 	}
 	
 	Table shiftTable;
-	shiftTable.AddColumn(125, Table::RIGHT);
+	shiftTable.AddColumn(125, Font::Layout{Font::TRUNC_NONE, 150, Font::RIGHT});
 	shiftTable.SetUnderline(0, 130);
 	shiftTable.DrawAt(Point(-400, 52));
 	
 	shiftTable.DrawUnderline(medium);
-	shiftTable.Draw("With <shift> key", bright);
+	shiftTable.Draw("With &lt;shift&gt; key", bright);
 	shiftTable.DrawGap(5);
 	shiftTable.Draw("Select nearest ship", medium);
 	shiftTable.Draw("Select next escort", medium);
@@ -408,8 +409,8 @@ void PreferencesPanel::DrawSettings()
 	const Color &bright = *GameData::Colors().Get("bright");
 	
 	Table table;
-	table.AddColumn(-115, Table::LEFT);
-	table.AddColumn(115, Table::RIGHT);
+	table.AddColumn(-115, Font::Layout{Font::TRUNC_NONE, 230, Font::LEFT});
+	table.AddColumn(115, Font::Layout{Font::TRUNC_NONE, 230, Font::RIGHT});
 	table.SetUnderline(-120, 120);
 	
 	int firstY = -248;
@@ -437,6 +438,7 @@ void PreferencesPanel::DrawSettings()
 		"Render motion blur",
 		"Reduce large graphics",
 		"Draw background haze",
+		"Draw starfield",
 		"Show hyperspace flash",
 		"",
 		"Other",
@@ -554,8 +556,9 @@ void PreferencesPanel::DrawPlugins()
 	const Color &medium = *GameData::Colors().Get("medium");
 	const Color &bright = *GameData::Colors().Get("bright");
 	
+	const int MAX_TEXT_WIDTH = 230;
 	Table table;
-	table.AddColumn(-115, Table::LEFT);
+	table.AddColumn(-115, Font::Layout{Font::TRUNC_MIDDLE, MAX_TEXT_WIDTH, Font::LEFT});
 	table.SetUnderline(-120, 120);
 	
 	int firstY = -238;
@@ -564,7 +567,6 @@ void PreferencesPanel::DrawPlugins()
 	table.Draw("Installed plugins:", bright);
 	table.DrawGap(5);
 	
-	const int MAX_TEXT_WIDTH = 230;
 	const Font &font = FontSet::Get(14);
 	for(const auto &plugin : GameData::PluginAboutText())
 	{
@@ -573,7 +575,7 @@ void PreferencesPanel::DrawPlugins()
 		bool isSelected = (plugin.first == selectedPlugin);
 		if(isSelected || plugin.first == hoverPlugin)
 			table.DrawHighlight(back);
-		table.Draw(font.TruncateMiddle(plugin.first, MAX_TEXT_WIDTH), isSelected ? bright : medium);
+		table.Draw(plugin.first, isSelected ? bright : medium);
 		
 		if(isSelected)
 		{
