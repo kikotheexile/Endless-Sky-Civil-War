@@ -263,49 +263,7 @@ mission "Navy Scouting 3"
 		dialog `You happily trade <payment> for your sensor logs when you meet back up with Captain Mulgrew: "No alien tech, I see," she says, dissapointed: "While that would have been a great find, I will admit I'm happy I don't have to engineer a defense for it. I've let my supervisors know how helpful you've been. Hopefully we can work together again soon."`
 		payment 50000
 		log "Captain Melgrew says she has put a good word in for me with her superiors."
-
-mission "Story Direction 1"
-	name "Impress the Republic"
-	description "Visit spaceports in Northern Union and Free Worlds space and see if you can find any useful information to impress the Republic. Return to Republic space when you are sure you have something."
-	minor
-	to offer
-		has "event: war begins"
-		random < 80
-	to fail
-		has "chosen sides"
-	source
-		government "Republic"
-	waypoint "Alcyone"
-	waypoint "Almaaz"
-	waypoint "Kornephoros"
-	on offer
-		conversation
-			`As you are wandering the spaceport, you come across a Bulk Freighter with a Republic flag painted on it. Do you stop to check it out?`
-			choice
-				`	<Yes.>`
-				`	<No.>`
-					defer
-			`	As you study this massive vessel, a voice catches you from behind. "She's a beauty, isn't she?" says a man, stepping into your line of sight.`
-			choice
-				`	"She sure is!"`
-					goto compliment
-				`	"I've seen nicer."`
-					goto insult
-				`	"What's with the flag?"`
-					goto flag
-			label compliment
-			`	He smiles wide, clearly proud of his ship. "She sure is. You know, it seems amazing to believe that only last year I was flying a Star Barge. The Republic really does pay its full time contractors well."`
-				goto contractor
-			label insult
-			`	He winces for a moment. "Your words hurt, but ring true. Soon I will be able to afford something even better. The Republic really does pay its full time contractors well."`
-				goto contractor
-			label flag
-			`	"It's a custom paint job," he states plainly, "I am very proud of the fact I have been chosen to be a full time Republic Contractor. The pay is amazing, and I'm serving my nation.`
-				goto contractor
-			label contractor
-			`	The man begins to walk away, then turns back. "You know, I wasn't selected by accident. I took the initiative, and investigated the Northern Union. Did some jobs for them, built up a network of contacts, then turned them all into the Republic. They offered me this job not long after. With these new 'Free Worlds' terrorists forming to the south, I'm sure you'll find opportunities to serve our great Republic if you play along with them a bit. You can also always do what I did. Check out the worlds south of Kornephoros, or north of Alcyone and east of Almaaz. Pirates and terrorists are always desperate for fresh merchant faces to do their dirty work. Find a name and turn them in."
-				accept
-
+		
 mission "Meeting an Alpha 2b"
 	name "Turn in Peg's communicator"
 	description "Visit <destination> and turn over the communicator to the authorities."
