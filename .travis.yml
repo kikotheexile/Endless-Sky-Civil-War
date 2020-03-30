@@ -14,7 +14,6 @@ addons:
         - libmad
         - libpng
         - jpeg-turbo
-        - pango
         - sdl2
         update: true
     apt:
@@ -28,7 +27,6 @@ addons:
         - libgl1-mesa-dev
         - libegl1-mesa-dev
         - libgles2-mesa-dev
-        - libpango1.0-dev
         - scons
 
 git:
