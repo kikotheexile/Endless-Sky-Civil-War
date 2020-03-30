@@ -121,7 +121,7 @@ void LogbookPanel::Draw()
 	
 	// Parameters for drawing the main text:
 	WrappedText wrap(font);
-	wrap.SetAlignment(WrappedText::JUSTIFIED);
+	wrap.SetAlignment(Font::JUSTIFIED);
 	wrap.SetWrapWidth(TEXT_WIDTH - 2. * PAD);
 	
 	// Draw the main text.
@@ -134,8 +134,8 @@ void LogbookPanel::Draw()
 		for(auto it = begin; it != end; ++it)
 		{
 			string date = it->first.ToString();
-			double dateWidth = font.Width(date);
-			font.Draw(date, pos + Point(TEXT_WIDTH - dateWidth - 2. * PAD, textOffset.Y()), dim);
+			Font::Layout layout{Font::TRUNC_NONE, static_cast<int>(TEXT_WIDTH - 2. * PAD), Font::RIGHT};
+			font.Draw(date, pos + Point(0., textOffset.Y()), dim, &layout);
 			pos.Y() += LINE_HEIGHT;
 		
 			wrap.Wrap(it->second);

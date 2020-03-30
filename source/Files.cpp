@@ -42,7 +42,7 @@ namespace {
 	string saves;
 	
 	mutex errorMutex;
-	FILE *errorLog = nullptr;
+	File errorLog;
 	
 	// Convert windows-style directory separators ('\\') to standard '/'.
 #if defined _WIN32
@@ -335,7 +335,7 @@ vector<string> Files::ListDirectories(string directory)
 	}
 	
 	closedir(dir);
-#endif	
+#endif
 	return list;
 }
 
@@ -476,6 +476,16 @@ string Files::Name(const string &path)
 
 
 
+// Get the last extension (.ext) of the filename from a path.
+string Files::Extension(const string &path)
+{
+	string name = Files::Name(path);
+	size_t i = name.rfind('.');
+	return i == string::npos ? "" : name.substr(i);
+}
+
+
+
 FILE *Files::Open(const string &path, bool write)
 {
 #if defined _WIN32
@@ -544,7 +554,7 @@ void Files::LogError(const string &message)
 	lock_guard<mutex> lock(errorMutex);
 	cerr << message << endl;
 	if(!errorLog)
-		errorLog = Open(config + "errors.txt", true);
+		errorLog = File(config + "errors.txt", true);
 	
 	Write(errorLog, message);
 	fwrite("\n", 1, 1, errorLog);

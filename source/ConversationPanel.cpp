@@ -136,6 +136,7 @@ void ConversationPanel::Draw()
 	{
 		// This conversation node is prompting the player to enter their name.
 		Point fieldSize(150, 20);
+		const Font::Layout layout{Font::TRUNC_FRONT, static_cast<int>(fieldSize.X() - 10)};
 		for(int side = 0; side < 2; ++side)
 		{
 			Point center = point + Point(side ? 420 : 190, 7);
@@ -149,16 +150,15 @@ void ConversationPanel::Draw()
 			// Fill in whichever entry box is active right now.
 			FillShader::Fill(center, fieldSize, selectionColor);
 			// Draw the text cursor.
-			string displayedText = font.TruncateFront(choice ? lastName : firstName, fieldSize.X() - 5);
-			center.X() += font.Width(displayedText) - 67;
+			center.X() += font.Width(choice ? lastName : firstName, &layout) - 67;
 			FillShader::Fill(center, Point(1., 16.), dim);
 		}
 		
 		font.Draw("First name:", point + Point(40, 0), dim);
-		font.Draw(font.TruncateFront(firstName, fieldSize.X() - 5), point + Point(120, 0), choice ? grey : bright);
+		font.Draw(firstName, point + Point(120, 0), choice ? grey : bright, &layout);
 		
 		font.Draw("Last name:", point + Point(270, 0), dim);
-		font.Draw(font.TruncateFront(lastName, fieldSize.X() - 5), point + Point(350, 0), choice ? bright : grey);
+		font.Draw(lastName, point + Point(350, 0), choice ? bright : grey, &layout);
 		
 		// Draw the OK button, and remember its location.
 		static const string ok = "[ok]";
@@ -206,7 +206,7 @@ bool ConversationPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &comm
 	if(node < 0)
 	{
 		// If the conversation has ended, the only possible action is to exit.
-		if(key == SDLK_RETURN || key == SDLK_KP_ENTER)
+		if(isNewPress && (key == SDLK_RETURN || key == SDLK_KP_ENTER))
 		{
 			Exit();
 			return true;
@@ -266,7 +266,7 @@ bool ConversationPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &comm
 		--choice;
 	else if(key == SDLK_DOWN && choice < conversation.Choices(node) - 1)
 		++choice;
-	else if((key == SDLK_RETURN || key == SDLK_KP_ENTER) && choice < conversation.Choices(node))
+	else if((key == SDLK_RETURN || key == SDLK_KP_ENTER) && isNewPress && choice < conversation.Choices(node))
 		Goto(conversation.NextNode(node, choice), choice);
 	else if(key >= '1' && key < static_cast<SDL_Keycode>('1' + choices.size()))
 		Goto(conversation.NextNode(node, key - '1'), key - '1');
@@ -310,9 +310,10 @@ void ConversationPanel::Goto(int index, int choice)
 		// Scroll to the start of the new text, unless the conversation ended.
 		if(index >= 0)
 		{
-			scroll = -11;
+			scroll = -MARGIN;
 			for(const Paragraph &it : text)
 				scroll -= it.Height();
+			scroll += text.back().BottomMargin();
 		}
 	}
 	
@@ -409,7 +410,7 @@ void ConversationPanel::ClickChoice(int index)
 ConversationPanel::Paragraph::Paragraph(const string &text, const Sprite *scene, bool isFirst)
 	: scene(scene), isFirst(isFirst)
 {
-	wrap.SetAlignment(WrappedText::JUSTIFIED);
+	wrap.SetAlignment(Font::JUSTIFIED);
 	wrap.SetWrapWidth(WIDTH);
 	wrap.SetFont(FontSet::Get(14));
 	
@@ -450,4 +451,12 @@ Point ConversationPanel::Paragraph::Draw(Point point, const Color &color) const
 	wrap.Draw(point, color);
 	point.Y() += wrap.Height();
 	return point;
+}
+
+
+
+// Bottom Margin
+int ConversationPanel::Paragraph::BottomMargin() const
+{
+	return wrap.BottomMargin();
 }

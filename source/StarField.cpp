@@ -90,8 +90,9 @@ void StarField::SetHaze(const Sprite *sprite)
 
 void StarField::Draw(const Point &pos, const Point &vel, double zoom) const
 {
-	// Draw the starfield unless it is disabled in the preferences
-	if(Preferences::Has("Draw starfield")) {
+	// Draw the starfield unless it is disabled in the preferences.
+	if(Preferences::Has("Draw starfield"))
+	{
 		glUseProgram(shader.Object());
 		glBindVertexArray(vao);
 	
@@ -134,7 +135,7 @@ void StarField::Draw(const Point &pos, const Point &vel, double zoom) const
 					static_cast<float>(off.Y())
 				};
 				glUniform2fv(translateI, 1, translate);
-			
+				
 				int index = (gx & widthMod) / TILE_SIZE + ((gy & widthMod) / TILE_SIZE) * tileCols;
 				int first = 6 * tileIndex[index];
 				int count = 6 * tileIndex[index + 1] - first;
@@ -144,7 +145,7 @@ void StarField::Draw(const Point &pos, const Point &vel, double zoom) const
 		glBindVertexArray(0);
 		glUseProgram(0);
 	}
-
+	
 	// Draw the background haze unless it is disabled in the preferences.
 	if(!Preferences::Has("Draw background haze"))
 		return;
