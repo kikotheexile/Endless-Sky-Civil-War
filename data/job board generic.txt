@@ -126,7 +126,7 @@ mission "Escort (Tiny, Northern, Dangerous Origin)"
 			variant
 				"Star Barge"
 	on complete
-	"reputation: Merchant" += 1
+		"reputation: Merchant" += 1
 		payment 15000
 		dialog phrase "generic safe escort completion dialog"
 	on visit
@@ -175,7 +175,7 @@ mission "Escort (Small, Northern, Dangerous Destination)"
 			variant
 				"Freighter"
 	on complete
-	"reputation: Merchant" += 3
+		"reputation: Merchant" += 3
 		payment 60000
 		dialog phrase "generic safe escort completion dialog"
 	on visit
@@ -280,7 +280,7 @@ mission "Escort (Medium, Northern, Dangerous Destination)"
 			variant
 				"Freighter"
 	on complete
-	"reputation: Merchant" += 3
+		"reputation: Merchant" += 3
 		payment 90000
 		dialog phrase "generic safe escort completion dialog"
 	on visit
@@ -2712,7 +2712,7 @@ mission "Bounty Hunting (Medium)"
 	on visit
 		dialog phrase "generic bounty hunting on visit"
 	on complete
-	"reputation: Independent" += 3
+		"reputation: Independent" += 3
 		payment 200000
 		dialog phrase "generic bounty hunting payment dialog"
 
