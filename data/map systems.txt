@@ -10677,7 +10677,6 @@ system Tarazed
 			distance 177.193
 			period 18.9732
 			offset 31.5543
-			belt 1169
 	object
 		sprite planet/gas15-b
 		distance 1880.55
