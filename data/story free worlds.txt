@@ -178,88 +178,88 @@ mission "Pact Questioning"
 		log "Apparently the Navy is suspicious of anyone working with the Southern Mutual Defense Pact. Come to think of it though, it's unclear what that officer's rank or position was."
 			conversation
 			`	Until now, you've generally been left alone by the officers of the republic Navy that are a fixture of most spaceports, so you're rather surprised when you're accosted by an officer in a plain black uniform, missing the usual markings of rank that you're familiar with, save a pin in the shape of an eye, the blue iris staring you down from where the usual rank badge goes. "Excuse me, Captain <Last>, could I speak with you for a few minutes?"`
-		choice
-			`	"I've got time. What's the job?"`
+			choice
+				`	"I've got time. What's the job?"`
 				goto job
-			`	"Sorry, I've got to see a man about some bull semen."`
+				`	"Sorry, I've got to see a man about some bull semen."`
 				goto what
 			label job
 			`	"No work today, unfortunetly." The officer replies. "I just have some questions for you."`
-		choice
-			`	"I only have time for paying customers."`
-				goto customer
-			`	"I've got a couple minutes, ask away."`
-				goto ask
-		label customer
+			choice
+				`	"I only have time for paying customers."`
+					goto customer
+				`	"I've got a couple minutes, ask away."`
+					goto ask
+			label customer
 			`	"I really must insist, this shouldn't take long." The officer replies. You get the feeling that complying is in your best interest.`
-		choice
-			`	"Alright, make it quick then."`
-			goto ask
-			`	"Well, since you're asking so nicely."`
-			goto ask
-		label what
+			choice
+				`	"Alright, make it quick then."`
+				goto ask
+				`	"Well, since you're asking so nicely."`
+				goto ask
+			label what
 			`	 It's obvious that was not the response the officer was expecting, and he takes a moment to maintain his composure. "You are keeping it on ice, yes? I'm sure you have a couple minutes to spare. I just have some questions and you can be on your way."`
-		choice
-			`	"I only have time for paying customers."`
-				goto customer
-			`	"I've got a couple minutes, ask away."`
-				goto ask
-		label customer
+			choice
+				`	"I only have time for paying customers."`
+					goto customer
+				`	"I've got a couple minutes, ask away."`
+					goto ask
+			label customer
 			`	"I really must insist, this shouldn't take long." The officer replies. You get the feeling that complying is in your best interest.`
-		choice
-			`	"Alright, make it quick then."`
-			goto ask
-			`	"Well, since you're asking so nicely."`
-			goto ask
-		label ask
+			choice
+				`	"Alright, make it quick then."`
+				goto ask
+				`	"Well, since you're asking so nicely."`
+				goto ask
+			label ask
 			`	"Thank you," he says. "Am I correct that you performed some missions for the Southern Defense Pact, this would be before they declared themselves the Free Worlds`."`
 			`	"I've done some work here and there."`
-			goto easy
-		label business
+				goto easy
+			label business
 			`	The officer's expression does not change. "I'm going to level with you, I already know what I need to know, but I have some paperwork that needs filled out. So you can either make this easy on both of us, or I can ground your ship while I subpoena your records."`
 			`	"I've done a little work for them here and there." You admit.`
 				goto easy
-		label easy
+			label easy
 			`	"Tell me," he says, "was there someone who you reported to every time, or was it someone different every time?" As he is speaking, you again search him over for any indentifiers on his uniform. The Navy personell you have encountered in the past have a name badge on their lapel and rank insignia on their collar, but his uniform is entirely blank, save the eye on his lapel that has been staring you down the entire conversation.`
 			choice
-			`	"I don't really pay attention to names, just my bank account."`
-			goto account
-			`	"Her last name was a season I think, I don't really remember."`
-			goto freya
-		label account	
+				`	"I don't really pay attention to names, just my bank account."`
+					goto account
+				`	"Her last name was a season I think, I don't really remember."`
+					goto freya
+			label account	
 			`	"Always the same with you merchants, isn't it?" He complains. "Would five grand effectively jog your memory?"`
 			choice
-			`	"I wish, but I honestly don't remember."`
-			goto wish
-			`	"My memory, no. But my bank account seems to remember one Freya Winters."`
-			goto freya
-		label wish
+				`	"I wish, but I honestly don't remember."`
+					goto wish
+				`	"My memory, no. But my bank account seems to remember one Freya Winters."`
+					goto freya
+			label wish
 			`	"No matter then. Can you tell me what nature of work you were performing?"`
 			choice
-			`	"Nothing worthy of this sort of interoggation, just some pirate recon."`
-			label recon
-			`	"Oh all the usual ways of undermining the republic, but mostly pirate recon."`
-			label recon
-		label freya
+				`	"Nothing worthy of this sort of interoggation, just some pirate recon."`
+					goto recon
+				`	"Oh all the usual ways of undermining the republic, but mostly pirate recon."`
+					goto recon
+			label freya
 			`	"Ah yes, Miss Winters," he says. "A very capable woman, though she's more skilled as an engineer than as a leader. Can you tell me what sort of work you were performing for her?"`
 			choice
-			`	"Nothing worthy of this sort of interoggation, just some pirate recon."`
+				`	"Nothing worthy of this sort of interoggation, just some pirate recon."`
+					goto recon
+				`	"Oh all the usual ways of undermining the republic, but mostly pirate recon."`
+					goto recon
 			label recon
-			`	"Oh all the usual ways of undermining the republic, but mostly pirate recon."`
-			label recon
-		label recon
 			`	If your response was meant to be funny, he doesn't laugh. "Are you certain your reconnaissance was only targeted at pirates?" he asks. "Did they collect only your logs on pirate ships, or on every ship you saw?"`
 			choice
-			`	"No idea, I handed over all my sensor logs for the area, what they did with them is their problem."`
+				`	"No idea, I handed over all my sensor logs for the area, what they did with them is their problem."`
+					goto problem
+				`	"Just the pirate ships, not much else in the areas I was sent to. Do you want the same information so maybe the Navy can do their job?"`
+					goto job
 			label problem
-			`	"Just the pirate ships, not much else in the areas I was sent to. Do you want the same information so maybe the Navy can do their job?"`
-			label job
-		label problem
 			`	"So it would appear." He replies. "No further questions then, thank you for your time." And with that, he walks away, leaving you wondering what sort of trouble you have gotten yourself into.`
-			decline
-		label job
+				decline
+			label job
 			`	"That wont be necessary." He replies coldly. "You're free to go for now, but I'll be in touch if I have any further questions." This last part sounds a bit like a threat, but you decide not to comment and instead take your leave, occasionally glancing back over your shoulder as you do to confirm you aren't being watched or followed. Of either, you're unsure.`
-			decline
+				decline
 
 mission "FW Recon 0"
 	name "Transport Militia Officer"
@@ -956,7 +956,7 @@ mission "FW Katya 3"
 			`	"Well," she says, "it started when the Syndicate began experimenting with fully automated mining facilities on uninhabitable planets. Pirates started raiding the mines to steal equipment, and the Syndicate claimed that these installations were 'colonies' and it was the Navy's job to defend them. The Act was Parliament's response, stating that taking goods from a human being is piracy, but if the owner or some living representative of theirs is not present in system, taking those goods is a legal salvage operation. The point was to keep the Navy from being obligated to defend every equipment cache or abandoned station in the galaxy. But by the same law, those Navy Thea Drones become abandoned goods the moment their motherships leave the system."`
 				goto response
 			
-			Label what
+			label what
 			`	"It's the act that declares all unmanned drones and stations to be legal salvage as long as their owner or owning body has no manned prescience in the system." She catches her breath, "It's the thing that makes this legal. I need you to attack and salvage a Thea Drone, rip out its scanner, and come back here."`
 				goto response
 				
@@ -2074,9 +2074,9 @@ mission "Defend Sabik"
 			`	He is carrying an identity chip. "Would you like to do the honors of installing this on your ship?"`
 			choice
 				`	"Sure."`
-					goto chip
+					#goto chip Where is the chip label?
 				`	"Too late to back out now, I guess."`
-					goto chip.
+					#goto chip. Same as with above. Should it be paint?
 				`	"Me being officially a just a merchant could serve us well."`
 				`	"I can't just keep flying merchant colors?"`
 			
@@ -2687,8 +2687,8 @@ mission "FW Syndicate Diplomacy 1D"
 			
 			label threat
 			choice
-			`	"What sort of threat?"`
-				goto story
+				`	"What sort of threat?"`
+					goto story
 			
 			label story
 			`	"Our world was enslaved for nearly a decade," she says. "Most of my childhood. We had been little more than an anarchist colony ourselves before that, though, so the Republic did nothing to aid us. Until the Disappearance."`
@@ -2838,15 +2838,15 @@ mission "FW Hope Recon 1D"
 				`	"Well, I'd rather not give them any advantage, no matter how slight."`
 					goto attack
 			
-			label pinguins
+			label penguins
 			`	Freya groans. "What is it with people thinking there will be penguins on Hope?"`
 			choice
-			`	"You know the ice and, well, nevermind."`
-				goto next
-			`	"You have a point."`
-				goto next
-			`	"Ok but what if there were and I missed them? I need to go back!"`
-				goto attack
+				`	"You know the ice and, well, nevermind."`
+					goto next
+				`	"You have a point."`
+					goto next
+				`	"Ok but what if there were and I missed them? I need to go back!"`
+					goto attack
 			label next
 			`	"Good," says Freya, "because I've got a much more interesting job for you to do next. The people at Kraz Cybernetics have a new toy they want to test out, and I volunteered you to help out. They're waiting for you on Rust, in the Kraz system."`
 				decline
@@ -3873,11 +3873,11 @@ mission "FW Pirates 4.1"
 			`	"And how did that work out?" says the old man. "How long after the battle did it take you to realize that we have no way of holding on to the planet you conquered?"`
 			choice
 				`	"I was almost immediately beaten over the head by this fact."`
-					goto sentance
+					goto sentence
 				`	"Not long."`
 					goto sentence
 				`	"I still believe it was the correct tactical choice, even if we can't hold the planet."`
-					goto sentance
+					goto sentence
 
 			label hero
 			`	"Indeed," says the senator. "And I bet it wasn't long after the battle that you realized saving the galaxy isn't that easy."`
@@ -5066,13 +5066,13 @@ mission "FW Alphas 1.1"
 					goto hold
 
 			label shoot
-			branch "hit" "shoot"
+			branch "hit" "miss"
 				has "gunslinger" >= 1
 
 			label hit
 			`	You quickly draw your weapon on reflex, but as you pull the trigger it leaps again. You manage to land a hit on its leg, which stuns the creature for long enough that Commander Nguyen can easily climb onto a nearby dumpster and leap into the air. He manages to grab the creature by the same leg as it soars past.`
 				goto pin
-			label shoot
+			label miss
 			`	You open fire, but it is leaping back and forth so fast that it is almost impossible to hit. But then you see Commander Nguyen climb onto a nearby dumpster and leap into the air, managing to grab the creature by the leg as it flies by.`
 				goto pin
 			label grab
