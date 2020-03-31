@@ -3729,7 +3729,8 @@ ship "Dart"
 ship "Bolt"
 	sprite "ship/marrowe"
 	thumbnail "thumbnail/marrowe"
-	"cost" 1320000
+	attributes
+		"cost" 1320000
 		"shields" 2300
 		"hull" 500
 		"required crew" 2
@@ -3770,7 +3771,8 @@ ship "Bolt"
 ship "Missile"
 	sprite "ship/marroww"
 	thumbnail "thumbnail/marroww"
-	"cost" 1320000
+	attributes
+		"cost" 1320000
 		"shields" 2300
 		"hull" 500
 		"required crew" 2
