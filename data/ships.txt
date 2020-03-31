@@ -3006,7 +3006,8 @@ ship "Archon"
 	
 ship "Archon" "Archon (Cloaked)"
 	"never disabled"
-	"cost" 1000000000
+	attributes
+		"cost" 1000000000
 		"shields" 4000000
 		"hull" 1000000
 		"required crew" 1
