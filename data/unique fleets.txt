@@ -33,7 +33,7 @@ mission "Sabik Fleet, plus Kornephoros"
 		ship "Sparrow" "F.S. Meteor"
 		ship "Sparrow" "F.S. Finch"
 	on complete
-	`	set "sf killed: done"
+		set "sf killed: done"
 
 mission "Sabik Fleet, no Kornephoros"
 	invisible
@@ -44,7 +44,7 @@ mission "Sabik Fleet, no Kornephoros"
 		and
 			has "kk killed: done"
 			has "capture of Kornephoros"
-Add to fail on this line
+#Add to fail on this line
 	npc kill
 		personality heroic staying plunders
 		government "Free Worlds"
