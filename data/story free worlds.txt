@@ -571,7 +571,7 @@ mission "FW Katya 1"
 				`	"Thank you for the good time, I guess."`
 				`	(Walk Away.)`
 	
-			`	She and her guards continue walking away, leaving you even more confused.`
+			`	She and her guards continue walking away, leaving you to your business.`
 				decline
 	on decline
 		event "FW Katya Alt 2: ready" 21
@@ -847,9 +847,12 @@ mission "FW Katya 2B"
 			`	"I'm Ijs Springborn," he says, pronouncing the name like "Eyes." He takes off the glasses and hat. "Councilor Reynolds told me to meet you here."`
 			choice
 				`	"Wait, 'Councilor' Reynolds? You mean Katya is in Parliament?"`
+					goto surprised
 				`	"I thought Katya was just a cop."`
-				`	"What do you mean by 'Councilor' Reynolds?"`
-			
+					goto surprised
+				`	"Yes, the hero of the dirt belt herself."`
+					goto unsurprised
+			label surprised
 			`	He looks genuinely shocked. "You didn't know? That woman is a legend. Did two terms representing the Dirt Belt. Defender of small worlds and the common people. In some circles her work has made her almost as unpopular as me. But she got tired of working for reform and decided to create her own government instead."`
 			choice	
 				`	"And what do you do for work?"`
@@ -873,12 +876,17 @@ mission "FW Katya 2B"
 					goto convinced
 				`	"Okay, what's our plan to do that?"`
 					goto plan
-			
+		
+			label unsurprised
+			`	Ijs lights up, "I take it you're familiar with her then, so we don't have to sing her praises. On to the job, then."`
+				goto plan
 			label convinced
 			`	"Absolutely," he says. "It makes no sense. First of all, that attack hurt their cause more than it helped it. And second, I've known Katerina and her friends in the Coalition for a long time. There's no way they would agree to such a thing. So, whoever is responsible is out there somewhere, and the Free Worlds will bring them to justice."`
 			choice
 				`	"Well, then, what's our plan?"`
+					goto plan
 				`	"Well if you're such a Smarty McSmarterson with your fancy book learning, what do we do next, smart guy?"`
+					goto plan
 			label plan
 			`	"First," he says, "we need to go to Geminus, where the attack happened. I can explain more when we get there. In the meantime, I should also warn you that I seem to have terrible luck with pirates showing up wherever I go. It's almost like someone has put a price on my head." He grins.`
 				accept
@@ -5056,6 +5064,14 @@ mission "FW Alphas 1.1"
 					goto grab
 				`	(Hold my fire.)`
 					goto hold
+
+			label shoot
+			branch "hit" "shoot"
+				has "gunslinger" >= 1
+
+            label hit
+            `    You quickly draw your weapon on reflex, but as you pull the trigger it leaps again. You manage to land a hit on its leg, which stuns the creature for long enough that Commander Nguyen can easily climb onto a nearby dumpster and leap into the air. He manages to grab the creature by the same leg as it soars past.`
+				goto pin
 			label shoot
 			`	You open fire, but it is leaping back and forth so fast that it is almost impossible to hit. But then you see Commander Nguyen climb onto a nearby dumpster and leap into the air, managing to grab the creature by the leg as it flies by.`
 				goto pin
