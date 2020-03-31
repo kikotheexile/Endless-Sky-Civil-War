@@ -54,7 +54,7 @@ conversation "intro"
 	choice
 		`	When I'm landed on a planet.`
 			goto planetui
-		`	Navigating "Shipyards" and "Outfitters."
+		`	Navigating "Shipyards" and "Outfitters."`
 			goto outfitters
 		`	What to watch while in space.`
 			goto space
@@ -87,9 +87,10 @@ conversation "intro"
 	`(L) to land on your target planet, station, or moon in this system.`
 	`(T) to hail target ships, (Shift+T) to hail selected planets.`
 	``
-		`	You can find more info on your controls by visiting the preferences screen. Access that by pressing the (ESC) key and clicking Preferences.`
+	`	You can find more info on your controls by visiting the preferences screen. Access that by pressing the (ESC) key and clicking Preferences.`
+	choice
 		`	(Back to Basics.)`
-			got basics
+			goto basics
 		`	(Back to Menu.)`
 			goto menu
 		`	(Continue to the intro.)`
