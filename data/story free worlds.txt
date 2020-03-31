@@ -43,7 +43,7 @@ mission "Pact Recon 0"
 					goto warship
 
 			label warship
-			`	"You might need one if we can't get a handle on these pirate attacks." The Militia captain replies. "Hey, have you ever considered volunteering for the Southern Mutual Defense Pact?"
+			`	"You might need one if we can't get a handle on these pirate attacks." The Militia captain replies. "Hey, have you ever considered volunteering for the Southern Mutual Defense Pact?"`
 			choice
 				`	"Maybe if I knew what it was."`
 					goto smdp
@@ -68,7 +68,7 @@ mission "Pact Recon 0"
 			`	"You don't have to fight anyone, don't worry." She says, reassuringly. "If you're interested, the Pact is launching a new initiative, called 'Thousand Eyes'; we're asking ship captains to let us access their scanner logs, basically using merchants as a surveillance network. All you have to do is let us know if you see any pirates. Can we count on you to do your part?"`
 			choice
 				`	"Absolutely, sign me up."`
-				`	"I think I'll just head back to Republic space, I don't mess around with pirates."
+				`	"I think I'll just head back to Republic space, I don't mess around with pirates."`
 					decline
 			`	"That's the spirit!" She says."Right now, we need more eyes on a few systems on the edge of Southern space. All you need to do is fly through those systems, then report to our base on Glaze. I'll mark the target systems on your map."`
 					accept
@@ -213,11 +213,11 @@ mission "Pact Questioning"
 			goto ask
 		label ask
 			`	"Thank you," he says. "Am I correct that you performed some missions for the Southern Defense Pact, this would be before they declared themselves the Free Worlds`."`
-			`	"I've done some work here and there."
+			`	"I've done some work here and there."`
 			goto easy
 		label business
-			`	The officer's expression does not change. "I'm going to level with you, I already know what I need to know, but I have some paperwork that needs filled out. So you can either make this easy on both of us, or I can ground your ship while I subpoena your records."
-			`	"I've done a little work for them here and there." You admit.
+			`	The officer's expression does not change. "I'm going to level with you, I already know what I need to know, but I have some paperwork that needs filled out. So you can either make this easy on both of us, or I can ground your ship while I subpoena your records."`
+			`	"I've done a little work for them here and there." You admit.`
 				goto easy
 		label easy
 			`	"Tell me," he says, "was there someone who you reported to every time, or was it someone different every time?" As he is speaking, you again search him over for any indentifiers on his uniform. The Navy personell you have encountered in the past have a name badge on their lapel and rank insignia on their collar, but his uniform is entirely blank, save the eye on his lapel that has been staring you down the entire conversation.`
@@ -229,7 +229,7 @@ mission "Pact Questioning"
 		label account	
 			`	"Always the same with you merchants, isn't it?" He complains. "Would five grand effectively jog your memory?"`
 			choice
-			`	"I wish, but I honestly don't remember."
+			`	"I wish, but I honestly don't remember."`
 			goto wish
 			`	"My memory, no. But my bank account seems to remember one Freya Winters."`
 			goto freya
@@ -250,12 +250,12 @@ mission "Pact Questioning"
 		label recon
 			`	If your response was meant to be funny, he doesn't laugh. "Are you certain your reconnaissance was only targeted at pirates?" he asks. "Did they collect only your logs on pirate ships, or on every ship you saw?"`
 			choice
-			`	"No idea, I handed over all my sensor logs for the area, what they did with them is their problem."
+			`	"No idea, I handed over all my sensor logs for the area, what they did with them is their problem."`
 			label problem
 			`	"Just the pirate ships, not much else in the areas I was sent to. Do you want the same information so maybe the Navy can do their job?"`
 			label job
 		label problem
-			`	"So it would appear." He replies. "No further questions then, thank you for your time." And with that, he walks away, leaving you wondering what sort of trouble you have gotten yourself into.
+			`	"So it would appear." He replies. "No further questions then, thank you for your time." And with that, he walks away, leaving you wondering what sort of trouble you have gotten yourself into.`
 			decline
 		label job
 			`	"That wont be necessary." He replies coldly. "You're free to go for now, but I'll be in touch if I have any further questions." This last part sounds a bit like a threat, but you decide not to comment and instead take your leave, occasionally glancing back over your shoulder as you do to confirm you aren't being watched or followed. Of either, you're unsure.`
@@ -329,7 +329,7 @@ mission "FW Recon 1"
 			choice
 				`	"Sure, I'll be back in time for happy hour."`
 					accept
-				`	"What's the worst that could happen?
+				`	"What's the worst that could happen?`
 					accept
 				`	"I just came here on my lunch break. Boss doesn't like me talking with the locals. Says they offer dangerous jobs."`
 					decline
@@ -359,7 +359,7 @@ mission "FW Recon 1"
 			`	He pauses, then adds, "They pay me a thousand credits every time I say that."`
 				goto close
 			label dude
-			`	"Maybe catch me after happy hour and I'll give you a proper tour." He winks, and its tempting to take him up on that.
+			`	"Maybe catch me after happy hour and I'll give you a proper tour." He winks, and its tempting to take him up on that.`
 				goto close
 			label close
 			`	You cut the commlink, relieved that it was that easy.`
@@ -668,7 +668,7 @@ mission "FW Katya 1C"
 					goto illegal
 				`	"I've never seen those crates before in my life. I don't know where they came from."`
 					goto denial
-				`	"Not really, no."
+				`	"Not really, no."`
 					goto denial
 			
 			label medical
@@ -695,7 +695,7 @@ mission "FW Katya 1C"
 					goto karen
 				`	"Since when has the Republic gotten so heavy handed about searching civilian ships?"`
 					goto angry
-				`	"I'm just happy you didn't shoot me."
+				`	"I'm just happy you didn't shoot me."`
 					goto shoot
 	
 			label gracious
@@ -769,7 +769,7 @@ mission "FW Katya Alt 2"
 					decline
 				`	"Ok the free worlds is starting to sound like a bad spy movie. I'm out."`
 					decline
-				`	(Do a mock karate stance and steriotypical shout, flail your arms in a chopping manner, then walk away.)
+				`	(Do a mock karate stance and steriotypical shout, flail your arms in a chopping manner, then walk away.)`
 					decline
 	
 	on complete
@@ -832,7 +832,7 @@ mission "FW Katya 2B"
 					goto dumb
 
 			label dumb
-			`	The man presses the button to close the hatch. "I'm dressed fine, thank you."
+			`	The man presses the button to close the hatch. "I'm dressed fine, thank you."`
 				goto name
 				
 			label weapon
@@ -964,9 +964,9 @@ mission "FW Katya 3"
 			choice
 				`	"Yup. That makes perfect sense to me."`
 					goto agree
-				`	"Kill drone, rip out guts, bring guts back. Simple."
+				`	"Kill drone, rip out guts, bring guts back. Simple."`
 					goto agree
-				`	"Legal piracy? I'm in."
+				`	"Legal piracy? I'm in."`
 					goto agree
 				`	"A suicide mission? Pass."`
 					goto disagree
@@ -1083,7 +1083,7 @@ mission "FW Katya 5"
 					accept
 				`	"If it pays."`
 					accept
-				`	"Anything for the cause!"'
+				`	"Anything for the cause!"`
 				`	"You guys have interesting friends. How do you know these monks?"`
 					goto friends
 				`	"Sounds boring. Can't we go shoot down more Thea Drones instead?"`
@@ -1471,7 +1471,7 @@ mission "FW Escort 1"
 				`	"Sorry, I'm busy with another mission at this moment."`
 					defer
 			label ship
-			`	"I would call it target saturation, but that scares off potential pilots. Are you in or what?"
+			`	"I would call it target saturation, but that scares off potential pilots. Are you in or what?"`
 			choice
 				`	"I'm in"`
 					goto accept
@@ -2344,7 +2344,7 @@ mission "Liberate Kornephoros"
 					goto quiet
 				`	"The battle was brutal. I hope we don't have to keep doing that."`
 					goto brutal
-				`	"They are obviously mad that they lost, and I hope we can avoid further bloodshed."
+				`	"They are obviously mad that they lost, and I hope we can avoid further bloodshed."`
 					goto brutal
 					
 			label quiet
@@ -3429,8 +3429,8 @@ mission "FW Pirates 2"
 			`	He frowns. "Negotiate with criminals?"`
 			choice
 				`	"I'm told that only a small portion of the people on those worlds actually engage in piracy," you say, "and many of them are children pressed into service as crew members."`
-				`	"Most pirates are slaves. They don't deserve to be killed, they deserve to be freed."
-				`	"These so-called pirate worlds are just anarchist worlds. Their people pose no threat to us."
+				`	"Most pirates are slaves. They don't deserve to be killed, they deserve to be freed."`
+				`	"These so-called pirate worlds are just anarchist worlds. Their people pose no threat to us."`
 			`	"That may be," he says, "but their leaders are dangerous criminals, perhaps even more dangerous than the Navy, because they have no honor or morality. And every anarchist world is a possible haven for other lawless individuals. Including any of the Alphas who are still in hiding. So I say, we need to capture and control those worlds."`
 			label next
 			`	"This is all a tangent, though." he states. "In the meantime, I've got a related mission for you. While the Senate is deliberating, I'd like you to lead a patrol through our systems in the southern rim, to keep up enough of a presence to hold the pirates at bay. Once you've finished patrolling, bring the fleet back to <planet>. By then I should be back there, and we'll discuss our next steps. Well, get on it."`
@@ -4086,7 +4086,7 @@ mission "FW Diplomacy 1C"
 					goto fight
 				`	"Maybe they're afraid of the precedent it would set if they give in to us."`
 					goto precedent
-				`	"The Dirt Belt is a huge supplier of food and resources to the Republic. Why wouldn't they fight to hold onto it?"
+				`	"The Dirt Belt is a huge supplier of food and resources to the Republic. Why wouldn't they fight to hold onto it?"`
 					goto resources
 			label fight
 			`	"That's right," he says. "Amazing how heedless they can be, sitting in their comfy Parliament house deciding the fates of others."`
@@ -4273,7 +4273,7 @@ mission "FW Southern Battle 2"
 			`	"The fleet from Southbound Shipyards will be traveling with you," she says. "Other fleets with other commanders will be converging on Rastaban separately, at approximately the same time. So, you have no time to lose. You must travel directly to Rastaban from here, or else you will arrive too late to join in the fight. Good luck, captain."`
 				accept
 			label behemoths
-			`	"They're a part of the logistics fleet under my command." Freya shrugs, "I put out word that I needed some combat capable ships to help screen against missiles and torpedoes, and these crews heroically volunteered to keep you alive. Now hurry up, the you're on a time limit!"
+			`	"They're a part of the logistics fleet under my command." Freya shrugs, "I put out word that I needed some combat capable ships to help screen against missiles and torpedoes, and these crews heroically volunteered to keep you alive. Now hurry up, the you're on a time limit!"`
 				accept
 	npc
 		government "Free Worlds"
@@ -4665,7 +4665,7 @@ mission "FW Northern 2"
 				`	"Is everything okay?"`
 				`	"Did they agree to join us?"`
 				`	"Are you alright?"`
-				`	"Progress has been made this day."
+				`	"Progress has been made this day."`
 			`	"Yes, yes, of course," he says. "But taking on six more worlds all of a sudden - I just hope it's not more than we can handle. When the Navy recovers from the battle at Rastaban and strikes back, now we have much less idea where that strike will fall."`
 			`	"We need to move more of our fleet up here to the front," he says, "but I'd be willing to bet that the Navy has installed surveillance equipment on Hope, and maybe a few other planets in this sector too. Which I should have thought of before, because in order to be sure we've tracked every last one down, we need Freya's expertise in signals and sensors. So, I'm sending you to meet up with her on Dancer."`
 			choice
@@ -5069,8 +5069,8 @@ mission "FW Alphas 1.1"
 			branch "hit" "shoot"
 				has "gunslinger" >= 1
 
-            label hit
-            `    You quickly draw your weapon on reflex, but as you pull the trigger it leaps again. You manage to land a hit on its leg, which stuns the creature for long enough that Commander Nguyen can easily climb onto a nearby dumpster and leap into the air. He manages to grab the creature by the same leg as it soars past.`
+			label hit
+			`	You quickly draw your weapon on reflex, but as you pull the trigger it leaps again. You manage to land a hit on its leg, which stuns the creature for long enough that Commander Nguyen can easily climb onto a nearby dumpster and leap into the air. He manages to grab the creature by the same leg as it soars past.`
 				goto pin
 			label shoot
 			`	You open fire, but it is leaping back and forth so fast that it is almost impossible to hit. But then you see Commander Nguyen climb onto a nearby dumpster and leap into the air, managing to grab the creature by the leg as it flies by.`
@@ -5089,7 +5089,7 @@ mission "FW Alphas 1.1"
 					goto kill
 				`	(Let the Navy troops deal with this.)`
 					goto navy
-				`	(Listen to and question it.)
+				`	(Listen to and question it.)`
 					goto listen
 			label listen
 			`	You don't get a chance to ask it anything, and its shouts become unintelligible as the Navy forces surrounded it.`
@@ -5572,7 +5572,7 @@ mission "FW Albatross 1"
 			choice
 				`	"Wait, doesn't Alondo usually handle the diplomacy?"`
 					goto locals
-				`	"Whatever you say, boss."
+				`	"Whatever you say, boss."`
 					accept
 			label locals
 			`	"Usually, yes," she says. "But the locals on Albatross specifically asked for JJ. They're a very traditional population, and JJ is well-known as both a family man and a brave soldier. Whereas Alondo is... Alondo."`
@@ -5588,7 +5588,7 @@ mission "FW Albatross 1"
 					goto metoo
 				`	"Alondo's husband is a troublemaker by Anarchist standards? I've got to meet him sometime!"`
 					goto trouble
-				`	"Wait, people have problems with who other people love? That's weird."
+				`	"Wait, people have problems with who other people love? That's weird."`
 			`	"Yes," she says. "Yes, it is. That's cults for you, though. Now, let's go meet up with JJ."`
 				accept
 			label trouble
@@ -5796,7 +5796,7 @@ mission "FW Rand 1B"
 			`	"I was afraid of this," says JJ, "but I didn't think it would happen so quickly. I wonder if they knew that these new worlds were joining us, and deliberately used them as a diversion."`
 			choice
 				`	"What do we do now?"`
-				`	"We strike back now, right?"
+				`	"We strike back now, right?"`
 			`	JJ says, "Freya, you said part of our fleet fled to Tarazed?"`
 			`	"Yes," she says. "Probably not a strong enough fleet to drive them off, though."`
 			`	"Well, I guess we should regroup with them," he says. "Hopefully then we can plan a coordinated strike. Or if necessary, we can abandon this sector and get our fleet back to the Rim without losing too many ships. Councilor <last>, can you take us to <destination>?"`
@@ -7321,7 +7321,7 @@ mission "FW Pug 2B"
 			label deal
 			`	"Hold on," says Alondo, "I have one condition to add. You will give us one of your jump drives immediately. We will install it in our ship and verify that you are telling the truth about the Pug. If you are, we will work together until this threat is dealt with... and once it is dealt with, we will return our attention to bringing every member of the Syndicate who had a hand in those terrorist attacks to justice. That is our best and final offer." You nod in agreement.`
 			`	It's clear that Alastair is none too happy about that deal, and is unable to accept it. "The jump drives are extremely volitile, the one we have is the one we need to harvest more," he says. "Our Systems division is trying to discover the secret behind them so we could put them in mass production, with little success. If you simply give us some time, we will have a spare jump drive for your ship."`
-			`	Alondo is clearly displeased with this idea, but begrudgingly accepts he will not be able to force this situation. "I guess we'll wait, but be quick about it."
+			`	Alondo is clearly displeased with this idea, but begrudgingly accepts he will not be able to force this situation. "I guess we'll wait, but be quick about it."`
 				accept
 	on complete
 		set "FW Rec Ending"
@@ -7332,7 +7332,7 @@ mission "ESCW FW Rec End"
 	to fail
 		has "FW Check Ending"
 	on offer
-		log `With the alien invasion, the civil war is over for all intents and purposes. It will take some time for the Syndicate to muster the necissary jump drives so that we can repell this invasion."
+		log `With the alien invasion, the civil war is over for all intents and purposes. It will take some time for the Syndicate to muster the necissary jump drives so that we can repell this invasion."`
 		dialog `You have reached one of the endings of Endless Sky Civil War, but the story is not yet over. Our first planned (free) expansion "Invasion" will be out relatively soon. Until then, feel free to experiment with the different endings. Side with different factions, make different choices.`
 
 		
@@ -7403,7 +7403,7 @@ mission "FWC Attack Kaus Borealis"
 				goto battle
 			label battle
 			choice
-				`	"No need for me to imagine their perspective, I share it. I signed up to prove the Free World's innocence, not fight."
+				`	"No need for me to imagine their perspective, I share it. I signed up to prove the Free World's innocence, not fight."`
 					goto diplomacy
 				`	"Well, we can't exactly conquer the Republic. Shouldn't we try diplomacy?"`
 					goto diplomacy
@@ -7532,7 +7532,7 @@ mission "FWC Cebalrai 1"
 				`	"After knowing that we are using N-bombs, I can't continue to be a party to this."`
 					goto defect
 			label defect
-			`	Tomek winces at your words, "This will stay between us, my friend. If you are going to leave our cause, now would be the time to do so before anyone tries to stop you. But you had best make sure this is what you want to do."
+			`	Tomek winces at your words, "This will stay between us, my friend. If you are going to leave our cause, now would be the time to do so before anyone tries to stop you. But you had best make sure this is what you want to do."`
 			choice
 				`	"I guess I'll continue helping the cause. What do we do now?"`
 					goto end
