@@ -7354,8 +7354,8 @@ mission "FWC Scouting 1"
 	on offer
 		log `Drove the Navy out of Delta Sagittarii with the help of the "Wolf Pack," a militia group in favor of more extreme measures who launched a preemptive strike before the main Free Worlds force arrived. The Free Worlds are now committed to fighting the Republic to a standstill rather than proving their innocence; the defector has been recaptured by the Syndicate and whatever information he had to share is now lost.`
 		conversation
-			`It was a close battle, and could have gone very differently if it were not for the Wolf Pack strike that happened before you arrived and that disabled or destroyed the majority of the Navy fleet. You can't help but wonder how the Wolf Pack managed to assemble a large enough fleet to do that sort of damage.`
-			`	"Well," says JJ, "the die is cast. It's too late now to wonder what that business with the Syndicate was about; now we're in a fight to the finish with the Republic. And that means we must strike soon, before they have time to bring in more reinforcements. Captain <last>, I'd like you to perform a scouting mission while I'm working on gathering a new fleet. Our next target has to be the Navy base on New Iceland. If we can drive them out of that system, our position will be much better. So, I'd like you to fly through Kaus Borealis and return here to report on their fleet strength. Understood?"`
+			`It was a close battle, and could have gone very differently if it were not for the Wolf Pack strike that happened before you arrived and that disabled or destroyed the majority of the Navy fleet.`
+			`	"Now the die is cast," says JJ, "It's too late now to wonder what that business with the Syndicate was about; now we're in a fight to the finish with the Republic. And that means we must strike soon, before they have time to bring in more reinforcements. Councilor <last>, I'd like you to perform a scouting mission while I'm working on gathering a new fleet. Our next target has to be the Navy base on New Iceland. If we can drive them out of that system, our position will be much better. So, I'd like you to fly through Kaus Borealis and return here to report on their fleet strength. Understood?"`
 			choice
 				`	"No problem."`
 					goto freya
@@ -7403,19 +7403,20 @@ mission "FWC Attack Kaus Borealis"
 				goto battle
 			label battle
 			choice
+				`	"No need for me to imagine their perspective, I share it. I signed up to prove the Free World's innocence, not fight."
+					goto diplomacy
 				`	"Well, we can't exactly conquer the Republic. Shouldn't we try diplomacy?"`
 					goto diplomacy
 				`	"It sounds to me like we need to make a convincing enough show of strength that Parliament will agree to a ceasefire."`
 					goto strength
 			label diplomacy
-			`	"Yes," says JJ, "it will have to be a diplomatic solution in the end. But we must negotiate that solution from a position of strength, not weakness. And that means driving the Navy out of our territory."`
+			`	"Indeed," says JJ, "we will have to push for a diplomatic solution in the end. But we must negotiate that solution from a position of strength, not weakness. And that means driving the Navy out of our territory."`
 				goto plan
 			label strength
 			`	"Precisely," says JJ, "and the only way to do that is to drive the Navy out of our territory. And if that isn't enough... we have plans for that contingency as well."`
 				goto plan
 			label plan
-			`	"So, now we attack Kaus Borealis?" you ask.`
-			`	"That's right," he says. "Once again, the Wolf Pack will go in first and soften them up, then you and your ships will clean up. I've already given the Wolf Pack orders to attack, so please head straight to Kaus Borealis so you can join the fray before they have time to recover."`
+			`	"Now we attack Kaus Borealis," he says. "Once again, the Wolf Pack will go in first and soften them up, then you and your ships will clean up. I've already given the Wolf Pack orders to attack, so please head straight to Kaus Borealis so you can join the fray before they have time to recover."`
 				accept
 	
 	on complete
@@ -7499,9 +7500,11 @@ mission "FWC Cebalrai 1"
 	on offer
 		log "Captured the Kaus Borealis system from the Navy, even though the locals are still loyal to the Republic. Also, learned that the Wolf Pack ships have been using n-bombs, and that is why they were so effective in decimating the Navy fleet."
 		conversation
-			`As you bring your ship in for a landing, it occurs to you that this is the first time that you have fought a battle for a star system that had not voluntarily decided to join the Free Worlds, and you are not sure what to do next. Fortunately, soon more Free Worlds ships begin arriving, and one of them is carrying Alondo. Tomek is with him. "Hi there, <first>," says Tomek. "Bet you didn't expect to see me again, huh?"`
+			`As you bring your ship in for a landing, it is a good time to reflect on the fact this is the first time that you have fought a battle for a star system that had not voluntarily decided to join the Free Worlds. Furthermore, you were provided with no orders as to where to go or who to report to once landed. Fortunately, soon more Free Worlds ships begin arriving, and one of them is carrying Alondo. Tomek is with him. "Hi there, <first>," says Tomek. "Bet you didn't expect to see me again, huh?"`
 			`	Alondo says, "<first>, I'll leave you and Tomek to catch up. I should go talk to the governor immediately. There's no way the locals will have failed to notice the nuclear explosions happening in space right over their heads."`
 			choice
+				`	"Oh, so that's how the Wolf Pack is so effective."`
+					goto wolf
 				`	"What? We weren't using nukes, just conventional weapons."`
 					goto conventional
 				`	"Wait, is that what the Wolf Pack was using?"`
@@ -7523,11 +7526,25 @@ mission "FWC Cebalrai 1"
 					goto end
 				`	"I'm still really confused about why we're using nukes. Or where we got them from."`
 			`	Tomek frowns. "I'm not too happy about that, myself. The Wolf Pack is buying them from a warlord on Greenrock. And the way they're paying him is with uranium, so every nuke he gives to us means another one or two he can build for himself. Not a good situation, if you ask me, but I guess the Wolf Pack thought it was the only way to turn the tide of the war."`
-			`	"So, what do we do now?" you ask.`
+			choice
+				`	"So, what do we do now?"`
+					goto end
+				`	"After knowing that we are using N-bombs, I can't continue to be a party to this."`
+					goto defect
+			label defect
+			`	Tomek winces at your words, "This will stay between us, my friend. If you are going to leave our cause, now would be the time to do so before anyone tries to stop you. But you had best make sure this is what you want to do."
+			choice
+				`	"I guess I'll continue helping the cause. What do we do now?"`
+					goto end
+				`	"I'm sure. Thank you for understanding Tomek, and goodbye."`
+					decline
 			label end
 			`	"Well," he says, "if we can take Cebalrai, our entire territory will be behind just two choke points, which will allow us to defend ourselves against the Navy without spreading the fleet too thin. So next, I'd like you to go scout out the Cebalrai system and report on the Navy's position there."`
 				accept
-	
+	on decline
+		event "defected: free worlds"
+		log "I have left the Free Worlds after discovering that they are using N-bombs and other nuclear weapons to fight the Navy."
+		
 	on enter "Cebalrai"
 		dialog
 			`There are a few Navy ships here, but nowhere near as many as were in the Kaus Borealis system before your last attack. Perhaps the Navy has decided to pull back their forces.`
