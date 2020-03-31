@@ -152,7 +152,7 @@ mission "Navy Scouting 1"
 		attributes "paradise"
 	destination "Chiron"
 	to offer
-		Has "event: war begins"
+		has "event: war begins"
 		not "chosen sides"
 		random < 60
 
@@ -196,7 +196,7 @@ mission "Navy Scouting 2"
 		not "chosen sides"	
 		random < 40
 
-		on offer
+	on offer
 		dialog
 			`You receive a message from Mulgrew, the Navy captain who asked you to fly through some uninhabited systems to the north: "I need some data from a few dead end systems," she says, "there's usually some pirate fleets in the area, but they can't pirate sensor logs. Interested?"`
 	
@@ -342,5 +342,5 @@ mission "Meeting an Alpha 2b"
 	on decline
 		payment 275000
 		log "Turned over Warlord Peg's communicator to the Republic. They say they'll call me if they need more information."
-		"pegs communicator: done"
+		set "pegs communicator: done"
 		"assisted republic" ++
