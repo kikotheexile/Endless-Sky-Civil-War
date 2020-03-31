@@ -3292,7 +3292,7 @@ ship "Unnamed Prototype"
 	"never disabled"
 	thumbnail "thumbnail/kestrel"
 	attributes
-		License:
+		licenses
 			Not-For-Sale
 		category "Cruiser"
 		"cost" 14700000
