@@ -5891,40 +5891,40 @@ mission "FW Defend New Tibet"
 		conversation
 			`The fleet in orbit around Wayfarer is pitifully small, surely not enough to take on more than a couple of Navy capital ships. JJ orders one of their communication officers to try to establish a secure link to Bourne or to any Free Worlds post on the other side of the Navy blockade. After about ten minutes, the officer returns and says, "Sir, we're receiving communications from New Tibet. You need to talk to them."`
 			`	"Our fleet is there?" asks JJ.`
-			`	"No sir, the Syndicate. They're under attack by the Syndicate."`
+			`	"No sir, the Syndicate. They're under seige by the Syndicate."`
 			`	"What?" says JJ. He rushes into the communication room, and you and Freya follow. On the video screen is a Buddhist monk in a maroon robe; behind him, you see other monks rushing about with none of the serenity you would usually expect of them. "What's going on there?" asks JJ.`
-			`	The monk explains, "Yesterday a Syndicate ship landed near our monastery, and the pilot sought refuge with us. He brings evidence that the Syndicate, or some faction within the Syndicate, was behind the attacks on Geminus and Martini."`
+			`	The monk explains, "Yesterday a Syndicate ship landed near our monastery, and the pilot sought sanctuary with us. He brings evidence that the Syndicate, or some faction within the Syndicate, was behind the attacks on Geminus and Martini."`
 			choice
 				`	"Why would the Syndicate do that?"`
 				`	"What sort of evidence?"`
 					goto evidence
 			`	"He claims that a certain faction within the Syndicate values economic growth above all else," says the monk, "and incited this war for that reason."`
 			`	"That's insane," says Freya.`
-			`	"But not completely implausible," says JJ.`
+			`	"But not completely implausible," adds JJ.`
 			label evidence
-			`	The monk says, "He brought a great deal of evidence. Plans for several nuclear devices. Data from underground testing of high yeild versions. A manufactured bomb casing. Samples of fissile material. And he named the planet where the development was done: Mutiny, in the Gienah system. We hid his ship in a cave. A day later, a Syndicate fleet appeared in orbit. They do not know where the defector landed, but they say they will destroy whatever settlement is harboring him unless he is returned to them immediately."`
+			`	The monk says, "He brought a great deal of evidence. Plans for several nuclear devices, including N-Bombs. Data from underground testing of versions designed to destroy shipyards. A manufactured bomb casing of some sort. Samples of some material. On top of it all, he named the planet where the development was done: Mutiny, in the Gienah system. We hid his ship in a cave. A day later, a Syndicate fleet appeared in orbit. They do not know where the he landed, but they claim to be seeking justice. They claim that if we turn the defector over, they will pledge their forces to the Free Worlds. However, I fear they are insincere, and if we reveal ourselves they may want to silence any witnesses."`
 			`	After a moment, JJ says, "If these allegations are true, if we can prove that the Free Worlds was innocent of any involvement in those attacks, the Republic might make peace with us, or at least agree to a ceasefire. I vote that we try to shelter this defector and hear his story."`
-			`	"And if it's a lie," says Freya, "and we refuse the Syndicate's demands, we lose our only ally. And many civilians will be killed, as well. I care about justice, but trading a definite ally for a slim possibility of peace: that is an unwise investment. I vote that we hand this man over to the Syndicate."`
+			`	"And if it's a lie," says Freya, "and we refuse the Syndicate's demands, we lose our primary supply chain. Many civilians will be killed as well. I care about justice, but trading the resources we need to stay in the fight for a slim possibility of peace? That is a trade we have taken in the past, and yet we are still at war. I vote we stay the course, and trade this man to remain in the good graces Syndicate."`
 			`	The monk says, "We want to see justice done, and peace prevail. If you ask us to, we will flee to the mountains and take refuge until help arrives."`
 			`	As the third Council member present, you have the deciding vote, and the entire course of this war may rest on your decision.`
 			choice
-				`	"I say we rescue the defector, even if it means war with the Syndicate."`
+				`	"I say we meet with the whistleblower and hear him out before we make a decision."`
 					goto rescue
-				`	"I say we hand the defector over to the Syndicate, and focus on winning the battle against the Republic."`
+				`	"I say we hand the defector over to the Syndicate, their resources will be invaluable in holding back the Republic."`
 					goto surrender
 			label rescue
 			`	"Are you sure?" asks Freya. "A lot of lives hang in the balance."`
 			choice
-				`	"Yes, I'm sure. We rescue the defector."`
+				`	"Yes, I'm sure. We rescue the whistleblower."`
 					goto "definitely rescue"
 				`	"Fine, we'll hand him over. But I don't think it's the right thing to do."`
 					goto "definitely surrender"
 			label surrender
 			`	"If Katya were here," says JJ, "she would tell us to choose justice over political expedience."`
 			choice
-				`	"Well, she's not here, and I say we can't afford to lose the Syndicate as an ally."`
+				`	"We're at war here. We can't pass up this opportunity for fresh forces and ships."`
 					goto "definitely surrender"
-				`	"I suppose you're right. Let's mount a rescue operation."`
+				`	"I suppose you're right. We can at least meet with the whistleblower and hear him out."`
 					goto "definitely rescue"
 			
 			label "definitely surrender"
@@ -5934,7 +5934,7 @@ mission "FW Defend New Tibet"
 				decline
 			
 			label "definitely rescue"
-			`	JJ seems very relieved at your choice. "I think that's the right choice, Captain," he says. "We can take the fleet we have here, sweep up north to avoid the thickest part of the Navy's occupying fleet, and cut over to New Tibet to drive the Syndicate ships away. Let's just hope these monks can stay hidden until then."`
+			`	JJ seems very relieved at your choice. "I think that's the right choice, Captain," he says. "I doubt the Syndicate forces will meet us with open arms, so we should take the fleet we have here. If we sweep up north to avoid the thickest part of the Navy's occupying fleet, and cut over to New Tibet, we should be able to meet with the whistleblower. Let's just hope the Syndicate is true to their word, and that we don't end up at war with them, too."`
 				accept
 	
 	on accept
@@ -7584,7 +7584,7 @@ mission "FWC Cebalrai 1B"
 			`You meet up with Tomek and Alondo and tell them that the defenses in the Cebalrai system did not seem particularly strong. "They must've seen the writing on the wall and pulled back the rest of their fleet," says Alondo.`
 			`	"Either that," says Tomek, "or they're wary of engaging us again now that they know we're willing to use nukes. Which I'm still not happy about, by the way. It's only a matter of time until they respond in kind. But in any case, our next move is clear: bring a fleet to Cebalrai and capture the system. <first>, you'll be in charge of that fleet. Alondo can travel with you to handle the diplomatic aftermath."`
 			`	"Before we go on," Alondo says, "you two should know that I just received word that Tarazed has decided to officially sever ties with us."`
-			`	Tomek looks rather somber before saying, "Bold move for a system we have completely surrounded. They're none of our concern right now. Let's make our way to Cebalrai."`
+			`	Tomek looks rather somber before saying, "They're none of our concern right now. Let's make our way to Cebalrai."`
 				accept
 	
 	on complete
@@ -7667,7 +7667,7 @@ mission "FWC Nuke Supply 1"
 				`	"Do you think we have any chance at a peace settlement?"`
 					goto peace
 			label destroy
-			`	"That would be an awful precedent," says Alondo, "perhaps worse than the fact we're using nukes. If civilian populations become a legitimate target, any of our worlds could be attacked at any time. And it's not like there's any way to defend a world from orbital bombardment. No one would ever be able to feel safe in their own homes again."`
+			`	"That would be an awful precedent," says Alondo, "perhaps worse than the fact we're using nukes. If civilian populations become a legitimate target, any of our worlds could be attacked at any time. And it's not like it's cheap or easy to defend a world from orbital bombardment. No one would ever be able to feel safe in their own homes again."`
 				goto next
 			label peace
 			`	"I hope so," says Alondo. "We'll let them keep shooting at us for a while, to vent their anger and let them prove their point. Then once they see the Navy isn't going to rescue them, we'll negotiate. That's really our only alternative. I do not want to be the person who authorizes the first attack on civilian targets since the dawn of the Republic."`
@@ -7757,7 +7757,7 @@ mission "FWC Nuke Supply 1C"
 	on offer
 		log "Delivered a load of enriched uranium to a warlord's fortress on Greenrock, in exchange for warheads for the Free Worlds to use against the Navy. Hopefully forming such a friendly relationship with dangerous criminals will not cause trouble for the Free Worlds in the future."
 		conversation
-			`You land at one of the many private fortresses on Greenrock owned by various competing warlords. Some workers unload the cargo from the Blue Yonder, and load it up with some lead-lined, well-padded crates that must contain nuclear warheads. You're not sure you like being a part of this, but it may be true that this is the only way you will stand a chance against the Navy.`
+			`You land at one of the many private fortresses on Greenrock owned by various competing warlords. Some workers unload the cargo from the Blue Yonder, and load it up with some lead-lined, well-padded crates that must contain nuclear warheads.`
 				accept
 	
 	npc accompany save
@@ -7880,10 +7880,13 @@ mission "FWC Diplomacy 1C"
 			`	Xao addresses the three of you. "We have heard your demands," he says, "and now, here is our response. Katerina Reynolds, Alondo Gruyere, and <first> <last>, you are hereby charged with treason and insurrection. Your trial will begin immediately."`
 			choice
 				`	"What? We were guaranteed safe passage!"`
-				`	"You will regret this! If you arrest us, the Free Worlds will retaliate against you."`
-			`	As you try to protest, Alondo speaks up. He is not shouting, but his voice carries over the murmur of other voices. "We have a ship in orbit. If we do not return--"`
+					goto protest
+				`	"Betrayal! We came here in good faith to negotiate peace."`
+					goto protest
+				`	<Remain Silent>`
+			`	Alondo speaks up. He is not shouting, but his voice carries over the murmur of other voices. "We have a ship under the planetary shields. If we do not return--"`
 			`	Xao cuts him off. "Your ship is no threat to us. We have already verified that it carries no nuclear weapons or n-bombs, and this building's shielding and anti-missile systems are quite sufficient to defend against conventional weapons. And there is nothing in its cargo hold but ordinary, non-radioactive metals."`
-			`	Alondo says, "That's right. Tungsten, to be exact. Aerodynamic tungsten rods, each the size of a tree trunk, with a simple guidance system on one end. Our ship is in low earth orbit, traveling at a velocity of roughly eight kilometers per second." As he speaks, the Parliament chamber gradually grows very quiet. "So we will be returning to our ship," says Alondo, "with Miss Reynolds. If the ship in orbit does not hear from me every two minutes, it will jettison its cargo, and there will be nothing left of this building but a crater." He points to the watch he is wearing, and you realize that it must be some sort of communicator.`
+			`	Alondo says, "That's right. Tungsten, to be exact. Aerodynamic tungsten rods, each the size of a tree trunk, with a simple guidance system on one end. Our ship is in low earth orbit, traveling at a velocity of roughly eight kilometers per second." As he speaks, the Parliament chamber gradually grows very quiet. "So we will be returning to our ship," says Alondo, "with Miss Reynolds. If the ship in orbit does not hear from me every two minutes, it will jettison its cargo, and there will be nothing left of this building and it's surroundings but a rather large crater." He points to the watch he is wearing, and you realize that it must be some sort of communicator.`
 			`	After a brief whispered consultation with a few of the other members of Parliament, Xao says, "You will lose this war, and you will pay dearly for it. Guards, let them return to their ship." You hurry back to your ship and take off immediately, aware that as soon as you are out of range of Earth, the Navy will probably be more than willing to attack you.`
 				launch
 	
@@ -7944,7 +7947,7 @@ mission "FWC Checkmate 1"
 	on offer
 		event "fwc defend cebalrai"
 		conversation
-			`When you land on Tundra, Tomek seems glad to see Katya back, but you sense that he's also a little wary of how she will respond to the choices the Free Worlds have been making. "Using nukes, threatening orbital bombardment," says Katya, "treating the Syndicate as an ally. Anything else I missed while I was gone?"`
+			`When you land on Tundra, Tomek seems glad to see Katya back, he's also a little wary of how she will respond to the choices the Free Worlds have been making. "Using nukes, threatening orbital bombardment," says Katya, "treating the Syndicate as an ally. Anything else I missed while I was gone?"`
 			choice
 				`	"We only want this war to be over as soon as possible."`
 				`	"We've just been trying to avoid being destroyed by the Navy, and things have gotten a bit out of hand."`
