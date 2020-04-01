@@ -22,7 +22,7 @@ mission "Trust fund baby"
 		conversation 
 			`	You recieve notice that some of your inheritance has been transferred to your account. This is <payment> that can go to paying down your loan or customizing your ship!`
 		payment 250000
-		accept
+			accept
 
 mission "A pirate's life!"
 	invisible

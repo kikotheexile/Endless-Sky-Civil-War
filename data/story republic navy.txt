@@ -152,7 +152,7 @@ mission "Navy Scouting 1"
 		attributes "paradise"
 	destination "Chiron"
 	to offer
-		Has "event: war begins"
+		has "event: war begins"
 		not "chosen sides"
 		random < 60
 
@@ -196,7 +196,7 @@ mission "Navy Scouting 2"
 		not "chosen sides"	
 		random < 40
 
-		on offer
+	on offer
 		dialog
 			`You receive a message from Mulgrew, the Navy captain who asked you to fly through some uninhabited systems to the north: "I need some data from a few dead end systems," she says, "there's usually some pirate fleets in the area, but they can't pirate sensor logs. Interested?"`
 	
@@ -303,7 +303,7 @@ mission "Story Direction 1"
 			`	"It's a custom paint job," he states plainly: "I am very proud of the fact I have been chosen to be a full-time Republic contractor. The pay is amazing, and I'm serving my nation.`
 				goto contractor
 			label contractor
-			`	The man begins to walk away, then turns back: "You know, I wasn't selected by accident. I took the initiative, and investigated the Northern Union. Did some jobs for them, built up a network of contacts, then turned them all into the Republic. They offered me this job not long after. With these new 'Free Worlds' terrorists forming to the south, I'm sure you'll find opportunities to serve our great Republic if you play along with them a bit. You can also always do what I did: check out the worlds south of Kornephoros, or north of Alcyone and east of Almaaz. Pirates and terrorists are always desperate for fresh merchant faces to do their dirty work. Find a name and turn them in."
+			`	The man begins to walk away, then turns back: "You know, I wasn't selected by accident. I took the initiative, and investigated the Northern Union. Did some jobs for them, built up a network of contacts, then turned them all into the Republic. They offered me this job not long after. With these new 'Free Worlds' terrorists forming to the south, I'm sure you'll find opportunities to serve our great Republic if you play along with them a bit. You can also always do what I did: check out the worlds south of Kornephoros, or north of Alcyone and east of Almaaz. Pirates and terrorists are always desperate for fresh merchant faces to do their dirty work. Find a name and turn them in."`
 				accept
 
 mission "Meeting an Alpha 2b"
@@ -342,5 +342,5 @@ mission "Meeting an Alpha 2b"
 	on decline
 		payment 275000
 		log "Turned over Warlord Peg's communicator to the Republic. They say they'll call me if they need more information."
-		"pegs communicator: done"
+		set "pegs communicator: done"
 		"assisted republic" ++

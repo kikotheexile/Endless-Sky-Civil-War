@@ -724,6 +724,7 @@ news "advertisement syndicate propaganda"
 	name
 		word
 			"Obvious Propaganda"
+	portrait
 		portrait/"syndicate"
 	message
 		word
@@ -773,6 +774,7 @@ news "advertisement northern union"
 	name
 		word
 			"Advertisement"
+	portrait
 		portrait/"advertisement"
 	message
 		word

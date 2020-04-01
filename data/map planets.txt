@@ -1577,7 +1577,6 @@ planet Nimbus
 		fleet "Small Syndicate" 4
 
 planet "No-Where Station"
-	attributes 
 	landscape land/sivael6
 	description `This inegmatic station is known only for how handidly and rapidly they turn people away. They allow you to dock for repairs, but you aren't permitted to leave the common room of the Spaceport.`
 	spaceport `You can only imagine what the interior of the station looks like, considering you have never seen it and aren't likely to. The common room, however, is rather plain and filled with dull and uninspiring fixtures. Although visitors are a rare few, you can still sometimes share a coffee with a stranger.`

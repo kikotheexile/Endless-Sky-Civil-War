@@ -544,8 +544,8 @@ mission "Meeting an Alpha 2"
 
 	on complete
 		conversation
-		`	As you arrive in orbit above <destination>, Dylan presents you with a box. Inside it is a plasma pistol with "Lucky" scratched on the side.`
-		`	In her ever aggressive voice, Dylan says: "My master believes this gun will be of use to you on this quest. Meet me near the landing pad closest to the outfitter as soon as you make yourself inconspicuous. Now, go!"`
+			`	As you arrive in orbit above <destination>, Dylan presents you with a box. Inside it is a plasma pistol with "Lucky" scratched on the side.`
+			`	In her ever aggressive voice, Dylan says: "My master believes this gun will be of use to you on this quest. Meet me near the landing pad closest to the outfitter as soon as you make yourself inconspicuous. Now, go!"`
 
 mission "Meeting an Alpha 3"
 	name "Corporate Espionage"
@@ -561,26 +561,27 @@ mission "Meeting an Alpha 3"
 		"gunslinger" ++
 		outfit "Lucky" 1
 		conversation
-		`	After your routine walk around the spaceport, you wander off towards the landing pad closest to the outfitter. As you approach, you hear gunfire from various weapons.`
-		choice
-			`	(Investigate.)`
+			`	After your routine walk around the spaceport, you wander off towards the landing pad closest to the outfitter. As you approach, you hear gunfire from various weapons.`
+			choice
+				`	(Investigate.)`
 				goto investigate
-			`	(Stay put.)`
+				`	(Stay put.)`
 				goto stay
-			`	(Return to your ship.)`
+				`	(Return to your ship.)`
 				goto run
 			label investigate
 			`	As you approach, you hear Dylan shouting while exchanging fire with local security forces. You catch her shouting things like "Die for the Godlord, mortal scum!" while falling back.`
 			choice
-			`	(Use your fancy new sidearm, Lucky, to help her.)`
+				`	(Use your fancy new sidearm, Lucky, to help her.)`
 				goto help
-			`	(Return to your ship.)`
+				`	(Return to your ship.)`
 				goto run
 			label stay
 			`	You find cover and wait. The firefight slowly approaches you until it is eventually upon you. It's Dylan, taking on nearly the entire spaceport security team by herself.`
-			`	(Use your fancy new sidearm, Lucky, to help her.)`
+			choice
+				`	(Use your fancy new sidearm, Lucky, to help her.)`
 				goto help
-			`	(Return to your ship.)`
+				`	(Return to your ship.)`
 				goto run
 			label help
 			`	You draw Lucky and begin firing. Each squeeze of the trigger releases a satisfying and confusing amount of plasma bolts. Before long, you and Dylan have managed to completely suppress the securty forces pursuing her.`
@@ -739,18 +740,17 @@ mission "NU Bounty 2"
 				`	"Sneak in by loading ourselves into a crate."`
 					goto crate
 				`	"Just walk into the ship like we're part of the crew."`
-					goto crew
+					goto crewmember
 			
 			label assault
-			set
-				"gunslinger"++
+			"gunslinger"++
 			`	"A brilliant and unexpected tactic!" he exclaims, before laying down fire on the unsuspecting dock workers who are unloading cargo from the Leviathan. Being unarmed, innocent bystanders, they run at the first sign of violence. You find yourself in the cargo bay and consider your next move.`
 				goto cargo
 			label crate
 			`	"Captain, are you trying to get close to me? Because all you need to do is ask." He uncomfortably winks with one eye, then the other, before crawling into a crate barely big enough for the two of you. Before you get a chance to reconsider your options, he grabs you and pulls you in as well. As he shuts the lid, you catch a glimpse of the label, which reads "Bulkhead grinder." These tools are generally only used in decommissions and refits.`
 			`	An uncomfortable amount of time is spent in the cramped crate with this creepy bounty hunter. The two of you stare at each other in silence until eventually the dockworkers retrieve your crate and load it into the cargo bay. After some more time sitting in silence with this strange man and his cowboy hat, he opens the crate. You find yourselves in the cargo bay, just up the loading ramp from where you began.`
 				goto cargo
-			label crew
+			label crewmember
 			`	The two of you calmly walk up the ramp into the cargo bay. Neither the ship's crew nor the dock workers acknowledge your presence as you enter the cargo bay and consider your next move.`
 				goto cargo
 			
@@ -770,6 +770,7 @@ mission "NU Bounty 2"
 			apply
 				set "greedy bountyhunter"
 			`	You quickly look for anything small enough to pocket, or anything you can carry on your person that won't slow you down. You manage to find a backpack and a satchel. You have no time to investigate their contents, so you grab and wear them both. You still have to decide where to go next.`
+			choice
 				`	(To the Bridge!)`
 					goto bridge
 				`	(Ask a member of the crew where the captain is.)`
@@ -817,7 +818,6 @@ mission "NU Bounty 2B"
 	name "Wanted: Dead or Alive, Redemption"
 	description "Find and kill the <npc>, last seen near the Cardax system."
 	source
-		random < 40
 		near Arneb 1 20
 	destination "Haven"
 	to offer
