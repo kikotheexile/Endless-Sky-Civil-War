@@ -5874,8 +5874,6 @@ event "end battle of alioth"
 		fleet "Large Republic" 4000
 		fleet "Navy Surveillance" 1600
 
-
-
 mission "FW Defend New Tibet"
 	landing
 	name "Defend New Tibet"
@@ -5891,7 +5889,7 @@ mission "FW Defend New Tibet"
 		conversation
 			`The fleet in orbit around Wayfarer is pitifully small, surely not enough to take on more than a couple of Navy capital ships. JJ orders one of their communication officers to try to establish a secure link to Bourne or to any Free Worlds post on the other side of the Navy blockade. After about ten minutes, the officer returns and says, "Sir, we're receiving communications from New Tibet. You need to talk to them."`
 			`	"Our fleet is there?" asks JJ.`
-			`	"No sir, the Syndicate. They're under siege by the Syndicate."`
+			`	"No sir, the Syndicate. They're under seige by the Syndicate."`
 			`	"What?" says JJ. He rushes into the communication room, and you and Freya follow. On the video screen is a Buddhist monk in a maroon robe; behind him, you see other monks rushing about with none of the serenity you would usually expect of them. "What's going on there?" asks JJ.`
 			`	The monk explains, "Yesterday a Syndicate ship landed near our monastery, and the pilot sought sanctuary with us. He brings evidence that the Syndicate, or some faction within the Syndicate, was behind the attacks on Geminus and Martini."`
 			choice
@@ -5985,17 +5983,17 @@ mission "FW Defend New Tibet"
 				`	(Give up and contact the rest of the Free Worlds fleet to figure out what to do next.)`
 					goto leave
 			`	You wait around for a while, but this mountain valley seems to be entirely desolate. Then finally, when you are about to give up hope, Freya spots the distant figures of a few dozen people coming down the side of one of the mountains.`
-				goto Narcissus
+				goto narcissus
 			label leave
 			`	You are just about to leave when Freya spots something and points. "Look," she says, "someone is coming down the mountain slope toward us." Sure enough, it's a group of several dozen people wearing the distinctive robes of the monks.`
-			label Narcissus
-			`	As you wait for them to approach, JJ receives a message from one of the militia crews. "Sir, you have incoming! A scout ship, with Republic markings. Apparently unarmed. Shall we intercept them?"`
+			label narcissus
+			`	As you wait for them to approach, JJ receives a message from one of the militia crews. "Sir, you have incoming! A lone gunship with Republic markings. Shall we intercept them?"`
 			`	"Oathkeepers?" asks JJ. "Or ordinary Navy? Who are they?"`
 			`	The voice on the other end pauses. "Neither. Navy Intelligence."`
 			`	JJ thinks about that for a second, then says, "Let them land. But follow them down, and if you see so much as a hint of them powering up weapons, blow them out of the sky. Understand?" The officer acknowledges his order and signs off.`
 			`	As the group of monks approaches from the mountainside, the scout ship comes in for a landing and skids to a halt in the dirt a few dozen meters away. A woman steps off it. She has dark skin, and is dressed entirely in black. Even the whites of her eyes are black: when she gets closer, you can see that it is actually a scleric tattoo, an intricate Celtic knotwork pattern inked into the whites of her eyes. She sees you staring at her, and winks at you with a friendly grin.`
 			choice
-				`	"I'm Captain <last> of the Free Worlds. What is your business here?"`
+				`	"I'm Councilor <last> of the Free Worlds. What is your business here?"`
 				`	"Who are you, and what gives you the right to land on our planet?"`
 					goto hostile
 			`	"My name is Raven," she says. "I'm here to question this defector. If he is telling the truth, our war with you will end today." She pauses, then adds, grimly, "And, another war will begin."`
@@ -6014,6 +6012,9 @@ mission "FW Defend New Tibet"
 			`	"My name is Sawyer," says the man. "I'm a physicist, a Syndicate employee. We had a secret project on Mutiny, a planet in a pirate system. We were developing nuclear weapons." He hesitates, and looks away for a second, then says, "They told me it was for fighting the pirates. I didn't realize otherwise until--"`
 			`	"That is a lie," says Raven, calmly.`
 			`	He seems flustered. "Okay, they didn't tell me what the weapons were for, and I didn't ask."`
+			`	"Another lie," Raven repeats, "not a good sign if you want us to help you."`
+			`	"Fine!" He declares loudly, "I knew exactly what they were for, and I built them anyway for the thrill of the job, and the money."`
+			`	"Better." Raven states calmly.
 			choice
 				`	"Why would the Syndicate attack the Republic?"`
 				`	"Why did you wait so long to report this?"`
@@ -6022,10 +6023,12 @@ mission "FW Defend New Tibet"
 			`	"What led you to report this?" asks Raven.`
 			label wait
 			`	He says, "It was when I heard that there had been another major battle. Up until then I had been telling myself that the worst of the damage was done. But after that battle, I knew that millions more could die because of our crime, and that I had the power to stop it."`
-			`	Raven continues to ask questions: who was involved, how the facility was hidden, where the raw materials came from. At one point, JJ pulls you aside and says, "She must be a Questioner. How they operate is a tightly kept secret. I'd always assumed their methods were... a bit more medieval."`
+			`	"Please stop lying," Raven says calmly. "If you had a conscience about this, you would have come clean after the initial bombings."`
+			`	Sawyer is clearly infuriated, his face becomes flushed. "My co-workers started going missing, and I fear I was next on the list. Can we stop arguing semantics?"`
+			`	As the monks tend to their dead and wounded, Raven continues to ask questions of Sawyer: who was involved, how the facility was hidden, where the raw materials came from. At one point, JJ pulls you aside and says, "She must be a Questioner. How they operate is a tightly kept secret. I'd always assumed their methods were a bit more medieval."`
 			`	Finally, Raven is satisfied, and radios her ship. "He's telling the truth," she tells them. "Send word to the admirals at once. And, release the captive."`
-			`	The door of her ship slides open, and another woman steps out - shakily, hesitantly, shielding her eyes against the sunlight. It takes you a few seconds to realize that it's Katya.`
-			`	As you all rush over to greet Katya, Raven taps your shoulder and says quietly, "Meet me in the main spaceport in a few hours and we'll figure out what's going to happen next." She returns to her ship.`
+			`	The door of her ship slides open, and another woman steps out. It takes you a few seconds to realize that it's Katya.`
+			`	As you all rush over to greet Katya, Raven taps your shoulder and says quietly, "We are being disrespectful to the survivors of this monestary. Meet me in the and we'll figure out what's going to happen next." She returns to her ship and takes off, heading for the spaceport.`
 
 
 
@@ -6183,7 +6186,7 @@ mission "FW Reconciliation 1"
 			`On your way to the spaceport, you fill Katya in on the state of the war. She says that Intelligence has been keeping her in a relatively comfortable but totally isolated cell; she's not even sure what world it was on. From the fact that her questioners seemed to be growing increasingly frustrated about the Free Worlds, she knew that you were still managing to resist the Navy, but they did not share any details with her.`
 			`	You meet up with Raven in a small tea shop, close enough to the spaceport that the tables shake each time another Free Worlds capital ship arrives in response to the Syndicate attack. "Thank you for allowing me to land here," says Raven. "Now, what questions do you have for me?"`
 			choice
-				`	"Are we at peace with the Republic now?"`
+				`	"I hope this cease fire blossoms into true peace."`
 					goto peace
 				`	"Are you some sort of mind reader?"`
 					goto read
@@ -6191,7 +6194,7 @@ mission "FW Reconciliation 1"
 					goto intelligence
 			
 			label peace
-			`	"Well," she says, "only Parliament can decide that. But the Navy has been ordered not to attack Free Worlds ships, and the news that Sawyer brought has become public knowledge, so you'll find that most Republic worlds will be willing to welcome you, now."`
+			`	"Well," she says, "only our Parliaments can decide that. But the Navy has been ordered not to attack Free Worlds ships, and the news that Sawyer brought has become public knowledge. I think you'll find that most Republic worlds will be willing to welcome you, now."`
 			choice
 				`	"Are you some sort of mind reader?"`
 					goto read2
@@ -6229,9 +6232,9 @@ mission "FW Reconciliation 1"
 			label next
 			`	Katya asks, "What do we do now? Will Sawyer's evidence be enough to end this war?"`
 			`	Raven says, "Possibly. Especially because the Syndicate incriminated themselves by chasing after him. But the Syndicate has so much power in Parliament that the more evidence we can collect, the better. And that means we should visit the world where he said the development was done, and look for more evidence there."`
-			`	Katya says, "Captain <last>, is Ijs Springborn still working for the Free Worlds?"`
+			`	Katya says, "Captain. I'm sorry, I mean Councilor <last>, is Mr. Eyes still working for the Free Worlds?"`
 			`	You tell her that the last you heard, Ijs was helping to found a new university on <planet>. She says, "We should bring him with us. Raven, will you be traveling with us too?"`
-			`	"Yes," she says. "I'll tell my ship and crew to get ready."`
+			`	"Yes," she says. "You'll need official Republic escort. I'll tell my ship and crew to get ready."`
 				accept
 
 
@@ -6245,6 +6248,7 @@ event "fw restore gienah"
 		fleet "Small Core Pirates" 500
 		fleet "Large Core Pirates" 800
 		fleet "Large Syndicate" 5000
+
 
 mission "FW Reconciliation 1B"
 	name "Travel to <planet>"
