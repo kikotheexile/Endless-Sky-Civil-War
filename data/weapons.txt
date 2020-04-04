@@ -1499,27 +1499,3 @@ outfit "Beam Talon"
 		"hull damage" 5000
 		"piercing" .5
 	description "<placeholder> prototype dedicated kill cannon"
-outfit "Prototype Beam Talon"
-	category "Secondary Weapons"
-	cost 260000
-	thumbnail "outfit/unknown"
-	"gun ports" -1
-	"vulture talon" -1
-	weapon
-		sprite "projectile/lasertalon"
-			"frame rate" 1
-		sound "ion"
-		icon "icon/ahhbirb"
-		"hit effect" "finisher impact" 2
-		"inaccuracy" 1
-		"velocity" 2000
-		"lifetime" 1
-		"reload" 650
-		"firing energy" 500
-		"firing force" 10
-		"firing heat" 7000
-		"hit force" 30
-		"shield damage" 100
-		"hull damage" 1400
-		"piercing" .5
-	description "<placeholder> prototype dedicated kill cannon"
