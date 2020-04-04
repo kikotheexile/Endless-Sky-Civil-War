@@ -85,25 +85,68 @@ person "Cap'n Pester"
 	phrase
 		phrase
 			"friendly author"
-	ship "Quarg Wardragon" "Quarg Wardragon"
-		"never disabled"
-		add attributes
-			"outfit space" 10
-		outfits
-			"Quarg Skylance" 2
-			"Quarg Anti-Missile" 2
-			
-			"Antimatter Core"
-			"Nanotech Battery"
-			"Quantum Shield Generator"
-			"Intrusion Countermeasures" 160
-			"Cargo Scanner"
-			"Outfit Scanner"
-			"Wanderer Ramscoop"
-			
-			"Medium Graviton Thruster"
-			"Medium Graviton Steering"
-			"Scram Drive"
+	ship "Vigilante #8"
+		sprite "ship/mmantae"
+		thumbnail "thumbnail/mmantae"
+	attributes
+		category "Cruiser"
+		"cost" 3740000
+		"shields" 10500
+		"hull" 10750
+		"required crew" 1
+		"bunks" 1
+		"mass" 95
+		"drag" 3.7
+		"heat dissipation" .8
+		"fuel capacity" 400
+		"cargo space" 1
+		"outfit space" 521
+		"weapon capacity" 155
+		"engine capacity" 220
+		"self destruct" .25
+		weapon
+			"blast radius" 90
+			"shield damage" 900
+			"hull damage" 450
+			"hit force" 1350
+	outfits
+		"Plasma Cannon" 2
+		"Particle Cannon" 2
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 70
+		"Quad Blaster Turret"
+		
+		"Dwarf Core"
+		"LP144a Battery Pack"
+		"D14-RN Shield Generator"
+		"Liquid Nitrogen Cooler"
+		"Security Station" 3
+		"Laser Rifle" 8
+		
+		"A250 Atomic Thruster" 2
+		"A525 Atomic Steering" 2
+		"Hyperdrive"
+		"Cargo Scanner" 2
+		"Outfit Scanner" 2
+		"Asteroid Scanner"
+		"Tactical Scanner"
+		"Surveillance Pod"
+		
+	
+	engine -33 38
+	engine 33 38
+	gun -66 -30 "Meteor Missile Launcher"
+	gun 66 -30 "Meteor Missile Launcher"
+	gun -27 -30 "Plasma Cannon"
+	gun 27 -30 "Plasma Cannon"
+	gun -20 -30 "Particle Cannon"
+	gun 20 -30 "Particle Cannon"
+	turret 0 -29 "Quad Blaster Turret"
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	explode "medium explosion" 15
+	"final explode" "final explosion medium"
+	description `Although other modified variants of the Manta are considered Destroyers rather than Cruisers by dry tonnage, the former owner of this vessel made no pretentions that this vessel was indeed built to track down and take on criminals in far larger ships than their own.`
 
 
 
@@ -111,7 +154,7 @@ person "Marauding Max"
 	government "Marauder"
 	frequency 400
 	personality
-		surveillance unconstrained harvests
+		surveillance
 	phrase
 		word
 			"Do you think you "
@@ -205,18 +248,19 @@ ship "Marauder Fury"
 			"hull damage" 180
 			"hit force" 520
 	outfits
-		"Hai Tracker Pod" 2
-		"Meteor Missile Launcher" 4
-		"Hai Tracker" 112
-		"Meteor Missile" 140
+		"Meteor Missile Launcher" 6
+		"Meteor Missile" 240
 
-		"Systems Core (Small)"
-		"Red Sun Reactor"
-		"Intrusion Countermeasures" 3
-		"Nerve Gas"
-
-		`"Biroo" Atomic Thruster`
-		`"Benga" Atomic Steering`
+		"D23-QP Shield Generator"
+		"LP036a Battery Pack"
+		"Dwarf Core"
+		"Nerve Gas" 1
+		"Surveillance Pod"
+		"Water Coolant System"
+		
+		"A250 Atomic Thruster"
+		"A375 Atomic Steering"
+		"Ionic Afterburner"
 		"Hyperdrive"
 		
 	engine -21 42 .9
@@ -226,8 +270,8 @@ ship "Marauder Fury"
 	gun 12 -33 "Meteor Missile Launcher"
 	gun -20 -25 "Meteor Missile Launcher"
 	gun 20 -25 "Meteor Missile Launcher"
-	gun -43.5 2 "Hai Tracker Pod"
-	gun 43.5 2 "Hai Tracker Pod"
+	gun -43.5 2 "Meteor Missile Launcher"
+	gun 43.5 2 "Meteor Missile Launcher"
 	explode "tiny explosion" 10
 	explode "small explosion" 20
 	"final explode" "final explosion small"
@@ -294,7 +338,6 @@ person "Captain Nate"
 	
 	ship Vanguard "Pointedstick"
 		sprite "ship/pointedstick_vanguard"
-		"never disabled"
 		attributes
 			category "Heavy Warship"
 			"cost" 7200000
@@ -525,87 +568,60 @@ person "Power of the People"
 
 ship "Modified Osprey"
 	sprite "ship/mosprey"
-	"never disabled"
 	swizzle 3
 	attributes
-		category "Heavy Warship"
+		category "Cruiser"
 		"cost" 44000000
-		"shields" 41000
-		"shield generation" 10
-		"hull" 27500
-		"hull repair rate" 10
-		"required crew" 189
-		"bunks" 240
+		"shields" 20500
+		"hull" 12500
+		"required crew" 18
+		"bunks" 24
 		"mass" 220
 		"drag" 15.1
 		"heat dissipation" .6
 		"fuel capacity" 625
-		"cargo space" 80
-		"outfit space" 2172
-		"weapon capacity" 851
-		"engine capacity" 499
-		"afterburner fuel" -.678
-		"afterburner heat" -30
-		"ramscoop" 6
+		"cargo space" 20
+		"outfit space" 625
+		"weapon capacity" 150
+		"engine capacity" 230
+		"ramscoop" 2
 		weapon
-			"blast radius" 750
-			"shield damage" 7000
-			"hull damage" 3500
-			"heat damage" 24000
-			"ion damage" 24000
-			"disruption damage" 1200
-			"hit force" 30000
+			"blast radius" 80
+			"shield damage" 800
+			"hull damage" 400
+			"hit force" 1200
 	outfits
-		"Nuclear Missile"
-		"Korath Slicer" 4
-		"Korath Detainer" 4
-		"Finisher Pod" 2
-		"Finisher Torpedo" 200
-		"Korath Disruptor" 2
-		"Heliarch Repulsor" 2
-		"Point Defense Turret" 3
-		
-		"Blue Sun Reactor" 3
-		"Red Sun Reactor"
-		"Dark Storm Shielding" 3
-		"Large Repair Module" 4
-		"Large Heat Shunt" 2
+		"Meteor Missile Launcher" 5
+		"Plasma Cannon" 2
+		"Ion Cannon" 2
+
+		"D94-YV Shield Generator"
+		"Fusion Reactor"
+		"LP288a Battery Pack"
 		"Asteroid Scanner"
 		"Large Radar Jammer"
 		"Tactical Scanner"
-		"Wanderer Ramscoop"
-		
+		"Liquid Helium Cooler"
+
+		"A525 Atomic Steering"
+		"A860 Atomic Thruster"
 		"Afterburner"
-		`"Bufaer" Atomic Thruster`
-		"Ionic Afterburner" 5
-		"Type 4 Radiant Thruster"
-		"Type 4 Radiant Steering" 4
+		"Ionic Afterburner"
 		"Hyperdrive"
-		"Jump Drive"
 		
 	engine -46 67
 	engine 46 67
 	engine -17 105.5 .0
 	engine 17 105.5 .0
-	gun 0 -108 "Nuclear Missile"
-	gun -9 -99 "Korath Slicer"
-	gun 9 -99 "Korath Slicer"
-	gun -9 -99 "Korath Slicer"
-	gun 9 -99 "Korath Slicer"
-	gun -21 -61 "Korath Detainer"
-	gun 21 -61 "Korath Detainer"
-	gun -26.5 -53 "Korath Detainer"
-	gun 26.5 -53 "Korath Detainer"
-	gun -60 17 "Finisher Pod"
-	gun 60 17 "Finisher Pod"
-	turret 0 -91 "Point Defense Turret"
-	turret -19.5 -16 "Korath Disruptor"
-	turret 19.5 -16 "Korath Disruptor"
-	turret -60 17 "Heliarch Repulsor"
-	turret 60 17 "Heliarch Repulsor"
-	turret 0 29 "Point Defense Turret"
-	turret 0 89.5 "Point Defense Turret"
-	
+	gun 0 -108 "Meteor Missile Launcher"
+	gun -9 -99 "Plasma Cannon"
+	gun 9 -99  "Plasma Cannon"
+	gun -21 -61 "Meteor Missile Launcher"
+	gun 21 -61 "Meteor Missile Launcher"
+	gun -26.5 -53 "Ion Cannon"
+	gun 26.5 -53 "Ion Cannon"
+	gun -60 17 "Meteor Missile Launcher"
+	gun 60 17 "Meteor Missile Launcher"
 	explode "medium explosion" 24
 	explode "large explosion" 16
 	explode "small explosion" 40
