@@ -403,3 +403,12 @@ government "Wanderer"
 	"friendly hail" "wanderer untranslated"
 	"hostile hail" "wanderer untranslated"
 	"hostile disabled hail" "wanderer untranslated"
+government "YeeHaw"
+	"display name" "Tarazed "
+	"attitiude toward"
+		"Pirate" -.4
+		"Cartel" -.1
+	"player reputation" 0
+	"bribe" 0
+	"hostile hail" "hostile cowboy"
+	"hostile disabled hail" "disabled hostile cowboy"
