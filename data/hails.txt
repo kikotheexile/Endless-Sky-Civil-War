@@ -3421,3 +3421,12 @@ phrase "wormhole hail"
 		"You can't talk to wormholes. Maybe you should try landing on it instead."
 		"Your words cannot travel through wormholes, but maybe your starship can."
 		"Unable to send hail: this unfathomable void is not inhabited."
+		
+#Person hails
+phrase "hostile cowboy"
+	word
+		"You've Yee'd your last Haw!"
+		"Do ya' feel lucky, punk?"
+phrase "hostile disabled cowboy"
+	word
+		"Don't sit around waiting, finish it."
