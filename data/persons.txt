@@ -635,6 +635,16 @@ person "Oversurge"
 	phrase
 		word
 			"I have the sauce, the Yee-Haw Sauce!"
+			"They always say Yee-Haw, but they never ask Haw-Yee."
+			"The truth is, the game was rigged from the start."
+			"*Cowboy noise*"
+			"I subsist entirely off of canned beans."
+			"I'm your Huckleberry."
+			"Y'ain't from round here are y'all?"
+			"Skedaddle ya little Varmint!"
+			"Nothing wrong with shooting...as long as the right people get shot."
+			"Pirates beware, I am the Law!"
+			
 		ship "Prototype Weapons Platform" "Big Iron"
 		
 ship "Prototype Weapons Platform"
