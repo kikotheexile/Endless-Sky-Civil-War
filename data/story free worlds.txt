@@ -6383,6 +6383,7 @@ mission "FW Reconciliation 2"
 		"reputation: Deep Security" >?= 1
 		log "Parliament still refuses to believe that the Syndicate could have been behind the attacks; the Syndicate has far too much power and influence in the government of the Republic. But, the people of the Deep might be more open to the defector's story."
 		event "deep sky tech available"
+		set "license: Deep Sky"
 		conversation
 			`The travel time from Cartel space gave Parlaiment enough time to call together a behind-closed-doors emergency hearing away from the public eye. This preliminary emergency hearing was scheduled to take place today.`
 			`As you came fleeing out of Syndicate space with their ships in hot pursuit, no Republic or Navy ships moved to help you or attack your pursuers. Apparently, they are not ready to strike the Syndicate until Parliament has made a decision. As you are waiting for Parliament to hear your evidence, Katya asks you quietly, "So, how are you feeling about our chances here?"`
@@ -7433,12 +7434,14 @@ mission "FWC Cebalrai 1B"
 		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
 	
 	on offer
+		event "syndicate tech available"
 		event "fwc attack cebalrai"
 		conversation
 			`You meet up with Tomek and Alondo and tell them that the defenses in the Cebalrai system did not seem particularly strong. "They must have pulled back their fleet to repel the Cartel raids in Sol." says Alondo.`
 			`	"Either that," says Tomek, "or they're wary of engaging us again now that they know we're willing to use nukes. Which I'm still not happy about, by the way. It's only a matter of time until they respond in kind. But in any case, our next move is clear: bring a fleet to Cebalrai and capture the system. <first>, you'll be in charge of that fleet. Alondo can travel with you to handle the diplomatic aftermath."`
 			`	"Before we go on," Alondo says, "you two should know that I just received word that Tarazed has decided to officially sever ties with us, they are no longer neutral and will attack us if we enter their system."`
-			`	Tomek looks rather somber before saying, "They're none of our concern right now. Let's make our way to Cebalrai."`
+			`	Tomek looks rather somber before saying, "Tarazed is no longer our concern right now. Let's make our way to Cebalrai, and try to find peace with them later."`
+			`	Befor you leave, you get a message from Freya stating that the Syndicate has opened their more advanced technology to the Free Worlds, and has set up shops on Zug and Glaze.`
 				accept
 	
 	on complete
