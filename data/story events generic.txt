@@ -927,13 +927,13 @@ event "oathkeepers founded"
 
 event "Tarazed neutrality"
 	system "Tarazed"
-		government "Neutral"
+		government "Tarazed"
 	system "Dabih"
-		government "Neutral"
+		government "Tarazed"
 	system "Albireo"
-		government "Neutral"
+		government "Tarazed"
 	system "Girtab"
-		government "Neutral"
+		government "Tarazed"
 
 
 
@@ -1187,7 +1187,7 @@ fleet "gunboat only"
 	personality
 		heroic
 	variant
-		"Gunboat (Mark II)"
+		"Narcissus (Mark II)"
 
 event "gunboats in Alnasl"
 	system "Alnasl"
@@ -1585,18 +1585,6 @@ event "fw armistice"
 		fleet "Small Republic" 2000
 		fleet "Large Republic" 3000
 		fleet "Navy Surveillance" 1600
-
-
-
-event "fw tarazed joins"
-	system "Tarazed"
-		government "Free Worlds"
-	system "Dabih"
-		government "Free Worlds"
-	system "Albireo"
-		government "Free Worlds"
-
-
 
 event "deep sky tech available"
 	outfitter "Deep Sky Basics"
@@ -2793,6 +2781,15 @@ event "fwc link restoration 3"
 
 
 event "syndicate tech available"
+	planet Zug
+		outfitter "Syndicate Basics"
+		outfitter "Syndicate Advanced"
+		shipyard "Syndicate Basics"
+	planet Glaze
+		outfitter "Syndicate Basics"
+		outfitter "Syndicate Advanced"
+		shipyard "Syndicate Basics"
+	
 	outfitter "Syndicate Basics"
 		"Ionic Afterburner"
 		"S-270 Regenerator"
