@@ -516,6 +516,8 @@ effect "heavy laser impact"
 
 outfit "Electron Beam"
 	category "Guns"
+	licenses
+		"Deep Sky"
 	cost 170000
 	thumbnail "outfit/electron beam"
 	"mass" 21
@@ -539,6 +541,8 @@ outfit "Electron Beam"
 
 outfit "Electron Turret"
 	category "Turrets"
+	licenses
+		"Deep Sky"
 	cost 720000
 	thumbnail "outfit/electron turret"
 	"mass" 54
@@ -1447,6 +1451,8 @@ effect "torpedo fire"
 
 outfit "Typhoon Torpedo"
 	plural "Typhoon Torpedoes"
+	licenses
+		"Deep Sky"
 	category "Ammunition"
 	cost 2700
 	thumbnail "outfit/typhoon"
@@ -1456,6 +1462,8 @@ outfit "Typhoon Torpedo"
 
 outfit "Typhoon Storage Tube"
 	category "Ammunition"
+	licenses
+		"Deep Sky"
 	cost 40500
 	thumbnail "outfit/typhoon storage"
 	"mass" 2.5
@@ -1466,6 +1474,8 @@ outfit "Typhoon Storage Tube"
 
 outfit "Typhoon Launcher"
 	category "Secondary Weapons"
+	licenses
+		"Deep Sky"
 	cost 260000
 	thumbnail "outfit/typhoon launcher"
 	"mass" 20
