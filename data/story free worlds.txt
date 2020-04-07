@@ -9355,9 +9355,6 @@ mission "FW Bulk Refugees [0]"
 # Free Worlds Events
 
 event "joined the free worlds"
-	government "Escort"
-		swizzle 2
-
 
 event "temporary ceasefire"
 	government "Republic"
@@ -9386,5 +9383,5 @@ event "stack core for sale"
 		outfitter "Stack Core"
 
 event "fwc solace has nukes"
-	planet Solace
+	planet Mutiny
 		outfitter "Nuke"
