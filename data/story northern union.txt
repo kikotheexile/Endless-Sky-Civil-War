@@ -891,6 +891,172 @@ mission "NU Bounty 3"
 		dialog
 			`As you land, you receive a direct message from Mouser as well as a notification of a payment hitting your account: "Great job disabling the <npc>! I have already disabled its self-destruct capabilities and informed the client that the ship is now theirs. They have already sent me the money, and I have forwarded your half, <payment>, to your account. The client is also on the Partnership committee, and will put a good word in for you."`
 
+mission "NU Marina 1"
+	name "Join the Revolution"
+	description "Stop by <destination>, pick up two passengers and some cargo and smuggle them back to Northern Union space."
+	minor
+	to offer
+		has "event: war begins"
+		random < 80
+	to fail
+		has "chosen sides"
+	source
+		government "Northern Union"
+	destination Geminus
+	on offer
+		conversation
+			`As you wander through the spaceport, you are overwhelmed by the sound of a woman speaking through a loud speaker.`
+			choice
+				`	(Ignore her.)`
+					decline
+				`	(Approach her.)`
+	
+			`	"Comrades," the voice shouts. "Will you stand idly by while your fellow man is pressed into indentured service, or worse? Would you leave them to be broken and abused by the capitalist swine in the paradise worlds? I think not."`
+			`	As you draw nearer, you see that the voice belongs to a young woman who looks about 20 years old. Her brightly colored hair standing in stark contrast to what appears to be a standard issue uniform. She is standing atop a shipping crate, shouting into what appears to be a makeshift megaphone.
+			choice
+				`	(Walk away)`
+					decline
+				`	(Stay and listen.)`
+	
+			`	You join the small crowd of onlookers while she continues her longwinded and ranting speech about the evils of capitalism, and the crimes of the wealthy and elite. Her statements are conveluted and illogical at times, but her passion is compelling.`
+			`	As she finalizes her impossible to follow speech, she puts out a call. "To anyone willing to take the fight to these swine, forward to me!" 
+			choice
+				`	(Walk away)`
+					decline
+				`	(Step forward.)`
+	
+			`	You take your step forward as what little of a crowd she summoned disperses. It seems you are alone in this.`
+			`	"Comrade Captain," she shouts. "I see that you alone have the courage to do what must be done! My name is Marina, and I need brave souls to rescue wage slaves and prisoners from the grasps of the bourgeoisie. Does your ship have room for two, and some freight?"`
+			choice
+				`	"Is this a paying job?"`
+				`	"Your passion is inspiring, tell me more."`
+					goto `more`
+	
+			`	She frowns, "A mere mercenary I see. The answer is no. You would be doing this for the good of your fellow man, if that is not payment enough then this line of work is not for you."`
+			choice
+				`	"I'll hear you out."`
+				`	"I only take paying work."`
+					decline
+	
+			label `more`
+			`	She smiles, "Okay, I need some cargo carried from <planet> to my commune on Sporehold. Our two comrades who load the cargo will also join you, and we will proceed with the next phase of the plan."`
+			choice
+				`	"Sounds easy enough."`
+					goto `details`
+				`	"This sounds like a whole bunch of risk for no pay, I'm out."`
+	
+			`	"Fair enough," she says, "Not everyone has the resolve to do what must be done out of the kindness of their own hearts. Be on your way Comrade Captian."`
+				decline
+	
+			label `details`
+			`	"Great," she says while grinning. "Meet me in the spaceport on Sporehold once you have arrived."`
+				accept
+	on accept
+		log "Agreed to help a young revolutionary transport some supplies and people to Sporehold."
+
+
+
+mission "NU Marina 1B"
+	name "Join the Revolution"
+	description "Transport the two dockworkers and their freight to <destination>."
+	landing
+	to offer
+		has "NU Marina 1: done"
+	to fail
+		has "chosen sides"
+	source Geminus
+	destination Sporehold
+	passengers 2
+	cargo "Explosives" 10
+	blocked "You have reached <origin>, but you need <capacity> in order to take on Marina's mission for her Revolution. Return here when you have the required space free."
+	on offer
+		conversation
+			`Soon after you land, two dock workers load a pallet stacked with boxes onto your ship. Many have stamps and warnings plastered over them, you catch a glimpse of one which reads "Caution: Explosive" `
+			`	One of the dockworkers takes off her hard hat and introduces herself to you as Sally, "Glad to know you, Comrade Captain. Nevermind the warnings, I assure you that the contents of those boxes are perfectly safe."`
+			`	The other dock worker, a young man, says "And if they aren't, that won't be our problem for long. Even so, it might be best if we head directly to Sporehold."`
+				accept
+	
+	on complete
+		outfit "Fragmentation Grenades" 1
+		conversation
+			`When you land on <planet>, before your engines have even had a chance to cool, Sally and her friend scurry off through the airlocks into the spaceport. You find that they left one box of fragmentation grenades behind with a piece of paper taped to the top. The paper reads "Payment" on one side, and has a set of instructions to find Marina on the backside.`
+
+mission "NU Marina 2"
+	name "Recruit an expert"
+	description "Marina has requested you travel to <destination>, to find a man she knows as Big Randy. A local demolitions expert working in the mines."
+	source Sporehold
+	destination Rand
+	passengers 1
+	to offer
+		has "FW Katya 1B: done"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`The directions to find Marina are incredibly straight forward to follow, in fact you could have found her by accident, as she is held up in the only tavern on this colony.`
+			`"I've got another friend who needs to be transported," she says. "A demolitions expert named Big Randy. He is key in our plans to accelerate our revolution throughout Syndicate space."`
+			choice
+				`	"Sure, I'd be glad to transport him."`
+				`	"Anything for the cause."`
+				`	"I don't want to work for you any longer. Goodbye."`
+					decline
+			
+			`	"Great!" she says. "Head to <destination> and land at the main spaceport. Finding a foreman shouldn't be hard, then just ask them to direct you to Big Randy. Everyone knows him."`
+				accept
+
+
+
+mission "NU Marina 2B"
+	landing
+	name "Transport Big Randy"
+	description "Return Big Randy to <destination>."
+	source Rand
+	destination Sporehold
+	clearance
+	passengers 1
+	to offer
+		has "FW Katya 2: done"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`Per Marina's instructions you ask a local forman where you can find Big Randy, without even looking up from his datapad he points you in the direction of one of the storehouses. You enter to find a very short man lifting and throwing impossibly large crates around.`
+			choice
+				`	"I'm looking for Big Randy, would that be you?"`
+					goto marina
+				`	"Big Randy, Marina sent me to come get you."`
+					goto Marina
+				`	"How on earth are you doing that?"`
+					goto dumb
+
+			label dumb
+			`	The man turns around. "This is a low gravity world, I am from a high gravity world. Things weigh next to nothing here. It's really not that complicated. By the way, I don't think we've met, I'm Big Randy."`
+				goto name
+				
+			label marina
+			`	"That's me," He sighs, "So she's roping me back into the cause? I never could say no to her."`
+				goto name
+
+			
+			label name
+			`	"Well," he says, "I guess it's time to work for the android again after all."`
+			choice
+				`	"Wait, what do you mean android?"`
+					goto surprised
+				`	"She is awfully advanced."`
+					goto unsurprised
+			label surprised
+			`	His expression softens, "A very long time ago, before the Republic existed, the same people who genetically engineered augments like the Alpha also made androids to do their bidding. As far as I am aware, she is the last of her kind, but she is not human."`
+					goto end
+		
+			label unsurprised
+			`	"Yes," he says, "It's a damn shame the Republic restricted the manufacture of advanced robotics like her. I guess it's true what they say, they really don't make them like they used to."`
+				goto end
+
+			label end
+			`	"Anyway," he says, "We really can't just stand around here doing nothing. We had best return to Sporehold. No need to dally, my supervisor won't miss me."`
+				accept
+
 # Northern Union Resources
 
 #governments
