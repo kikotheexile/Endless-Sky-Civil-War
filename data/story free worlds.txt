@@ -505,7 +505,7 @@ mission "FW Katya 1"
 	destination Glory
 	on offer
 		conversation
-			`Wandering through the spaceport, you have stopped for a moment to read the menu posted in front of a restaurant, when your thoughts are interrupted by the click of a gun being cocked right behind your head, and a woman's voice saying, "Think fast, Captain."`
+			`Wandering through the spaceport, you have stopped for a moment to read the menu posted in front of a restaurant, when your thoughts are interrupted by the click of a gun being cocked right behind your head, and a woman's voice saying, "You're under arrest, Captain."`
 			choice
 				`	(Do this karate move I saw in a video one time.)`
 					goto `karate`
@@ -517,13 +517,13 @@ mission "FW Katya 1"
 					goto `karate`
 				`	(Turn around slowly.)`
 	
-			`	You turn around and find yourself facing a woman in a Free Worlds uniform. The chevrons on her collar mark her as some sort of officer. She is grinning at you. "Beautifully done, Captain," she says. "Such restraint. Such remarkable levelheadedness. Not something I often see around here. If this thing were loaded, quite a few back country rubes in the last few months would've had their brains blown open before I could even get around to recruiting them." She lowers the gun.`
+			`	You turn around and find yourself facing a woman in a Free Worlds uniform. The chevrons on her collar mark her as some sort of officer. She is grinning at you, while her two additional guards look relieved. "Beautifully done, Captain," she says. "Such restraint. Such remarkable levelheadedness. Not something I often see around here. If this were a real arrest, quite a few back country rubes in the last few months would've had their brains blown open before I could even get around to recruiting them." She lowers the gun.`
 			choice
-				`	"You mean this was some sort of test? You're not trying to mug me?"`
+				`	"You mean this was some sort of test? You're not trying to arrest me?"`
 					goto `explanation`
 				`	(Try that karate move, just for kicks.)`
 	
-			`	You make a grab for the gun. A second later she's got your arm twisted behind your back, using just enough force to make it clear that things could get really painful if you continue to struggle. "Smart, and playful too," she says, "I like that. But, it'll be a cold day in hell before a kid like you gets the drop on me. Now, shall we talk?" She lets go of you, and you shake out your arm gingerly.`
+			`	You make a grab for the gun. A second later she's got your arm twisted behind your back, using just enough force to make it clear that things could get really painful if you continue to struggle. "Smart, and playful too," she says, "I like that. But, it'll be a cold day in hell before a merchant captain like you gets the drop on me. Now, shall we talk?" She lets go of you, leaving you to tend to your hurt arm.`
 	
 			label `explanation`
 			`	"I need a civilian for some courier work," she says. "Nothing illegal, at least nothing the Republic can pin on you. It just needs to be done by a ship that isn't flying our colors, and by a captain who isn't going to scream, 'Death to all tyrants!' and go in with guns blazing the first time your cargo gets scanned. What do you say?"`
@@ -532,10 +532,10 @@ mission "FW Katya 1"
 				`	"Okay, tell me more."`
 					goto `more`
 	
-			`	"Look, kid," she says, "when I ask you to pick sides, when I offer you a mission that's gonna burn some bridges for you, I won't be sneaky about it. I'll tell you exactly what you're signing up for. What I'm offering you now is just a chance to get to know us, and let us get to know you, with no expectations. Heck, you can even run missions for the Reps at the same time."`
+			`	"Look," she says, "when I ask you to pick sides, when I offer you a mission that's gonna burn some bridges for you, I won't be sneaky about it. I'll tell you exactly what you're signing up for. What I'm offering you now is just a chance to get to know us, and let us get to know you, with no expectations. Heck, you can even run missions for the Reps at the same time."`
 			choice
 				`	"That sounds fair. I'll hear you out."`
-				`	"Fair enough, but I don't like working with people who start conversations by pointing guns at my head. Even unloaded guns."`
+				`	"I'll pass. This started off as an arrest and turned into you asking me to do something shady. Bye."`
 					decline
 	
 			label `more`
@@ -558,7 +558,7 @@ mission "FW Katya 1"
 	
 			label `karate`
 			`	You dodge sideways and spin quickly. As you do so you hear a loud click, but the gun does not fire. With one hand you knock aside the gun. With the other you land a karate chop which, if you had studied karate, would've shattered her collarbone and left her reeling in pain. But since you have not studied karate, instead your blow bounces harmlessly off her surprisingly muscular shoulder. Her armed guards force you against a wall.`
-			`	Your assailant turns out to be wearing a decorated Free Worlds uniform and a disappointed expression. "Well aren't you a dumb reckless bastard!" she says, "I'd hoped for something better from you. First of all, if this gun were loaded, your brains would be splattered all over the sidewalk. I have no use for hotheads like you." She stalks off with her guards in tow, leaving you very confused. It would appear that you've just failed some sort of test.`
+			`	Your assailant turns out to be wearing a decorated Free Worlds uniform and a disappointed expression. "Well aren't you dumb and reckless!" she says, "I'd hoped for something better from you. First of all, if this gun were loaded, your brains would be splattered all over the sidewalk. I have no use for hotheads like you." She stalks off with her guards in tow, leaving you very confused. It would appear that you've just failed some sort of test.`
 			choice
 				`	(Let her go and be thankful you haven't been arrested.)`
 					decline
