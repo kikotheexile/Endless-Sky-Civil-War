@@ -176,7 +176,7 @@ ship "Finch"
 		"shields" 1100
 		"hull" 200
 		"landing gear" 1
-		"automation" 1
+		"automaton" 1
 		"bunks" 1
 		"mass" 40
 		"drag" .83
@@ -219,7 +219,7 @@ ship "Lance"
 		"shields" 800
 		"hull" 400
 		"landing gear" 1
-		"automation" 1
+		"automaton" 1
 		"mass" 30
 		"drag" .7
 		"heat dissipation" .8
@@ -305,7 +305,7 @@ ship "Thorn"
 		"cost" 50000
 		"shields" 800
 		"hull" 200
-		"automation" 1
+		"automaton" 1
 		"bunks" 1
 		"mass" 20
 		"drag" .8
