@@ -1122,35 +1122,29 @@ fleet "Large Republic"
 		heroic opportunistic plunders
 	variant 5
 		"Aletheia" 2
+		"Thea Drone" 4
 		"Achlys"
 		"Narcissus"
 	variant 3
-		"Nomos"
+		"Aletheia" 2
 		"Sentinel Drone" 4
 	variant 3
-		"Nomos"
-		"Sentinel Drone" 4
-		"Aletheia"
-		"Achlys"
-	variant 2
-		"Arete"
-		"Lance" 4
-		"Sentinel Drone" 6
-	variant 1
-		"Arete"
-		"Lance" 4
-		"Sentinel Drone" 6
-		"Nomos"
 		"Sentinel Drone" 4
 		"Aletheia" 2
+		"Achlys"
+	variant 1
+		"Aletheia" 5
+		"Sentinel Drone" 10
 		"Achlys" 2
 		"Narcissus" 2
 	variant 1
-		"Nomos"
-		"Sentinel Drone" 4
 		"Aletheia" 2
+		"Sentinel Drone" 4
+		"Narcissus" 2
 	variant 1
 		"Aletheia"
+		"Thea Drone" 1
+		"Sentinel Drone" 1
 		"Achlys" 2
 		"Narcissus"
 
@@ -1162,7 +1156,7 @@ fleet "Navy Surveillance"
 	personality
 		surveillance opportunistic
 	variant 10
-		"Nomos"
+		"Aletheia" 2
 		"Thea Drone" 4
 	variant 10
 		"Narcissus" 2
@@ -1356,32 +1350,27 @@ fleet "Large Oathkeeper"
 		"Achlys"
 		"Narcissus"
 	variant 3
-		"Nomos"
+		"Aletheia" 2
 		"Sentinel Drone" 4
 	variant 3
-		"Nomos"
+		"Aletheia" 2
 		"Sentinel Drone" 4
 		"Aletheia"
 		"Achlys"
-	variant 2
-		"Arete"
-		"Lance" 4
-		"Sentinel Drone" 6
 	variant 1
-		"Arete"
-		"Lance" 4
-		"Sentinel Drone" 6
-		"Nomos"
-		"Sentinel Drone" 4
-		"Aletheia" 2
+		"Aletheia" 5
+		"Sentinel Drone" 10
 		"Achlys" 2
 		"Narcissus" 2
 	variant 1
-		"Nomos"
+		"Aletheia" 2
 		"Sentinel Drone" 4
 		"Aletheia" 2
+		"Thea Drone" 4
 	variant 1
 		"Aletheia"
+		"Sentinel Drone"
+		"Thea Drone"
 		"Achlys" 2
 		"Narcissus"
 
