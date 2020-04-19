@@ -643,8 +643,16 @@ planet "Free Market"
 	attributes station north "northern pirate"
 	landscape land/space4
 	description `Free Market is interesting in that this is one of the few places where the Pirates of the Northern Union freely mingle with citizens of the Republic without much conflict. Here you can buy virtually anything.`
-	spaceport `You are hard pressed to find a station this clean, busy, and safe anywhere throughout human space. Even more shocking is the fact that this station is technically run completely by a private corporation that makes dealings with both Pirates and Citizens. `
-
+	spaceport `You would be hard pressed to find a station this clean, busy, and safe anywhere throughout human space. Even more shocking is the fact that this station is technically run completely by a member of the Northern Union council that has remained on good terms with the Republic and it's corporations.`
+	shipyard "Free Market"
+	outfitter "Free Market"
+	outfitter "Ammo"
+	security 0
+	tribute 500
+		threshold 2000
+		fleet "Small Northern Union" 15	
+	
+	
 planet Freedom
 	attributes pirate farming "north pirate"
 	landscape land/bwerner7
@@ -658,17 +666,11 @@ planet Freedom
 	shipyard "Betelgeuse Basics"
 	outfitter "Ammo"
 	outfitter "Basic Outfits"
-	"required reputation" -10
+	"required reputation" 10
 	security 0
 	tribute 500
 		threshold 2000
 		fleet "Small Northern Union" 15
-
-planet Frostmark
-	attributes hai "hai tourism"
-	landscape land/dmottl5
-	description `There are several large Hai cities near the equator on Frostmark, but much of the planet's surface is cold and uninhabited except by herds of extremely large, six-legged herbivores, and other equally large and frightening animals that prey on them.`
-	spaceport `Every Hai city has an appearance of great age and permanence, but this one, even more so. In Hai cities, transport vehicles carry freight and passengers along underground passages or elevated railways, while the pathways at ground level are reserved for foot traffic. Here, millennia of foot traffic have rounded off the corners of every metal staircase, and polished the railings as smooth as glass. The Hai locals do not seem to have trouble keeping their footing, but you wish your shoes gave you more traction.`
 
 planet Furnace
 	attributes core military moon
