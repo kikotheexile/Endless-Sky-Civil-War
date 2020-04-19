@@ -10,12 +10,12 @@
 
 news "news anywhere"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep" "Northern Union" "Cartel"
 	name
 		word
 			"News"
 	portrait
-		portrait/news
+		portrait/newsgeneric
 	message
 		word
 			"In Economic news, the influx of captured ships has shaken local economies. Ship and outfit depreciation remains at an all time high."
@@ -49,12 +49,12 @@ news "news anywhere"
 			
 news "advertisement generic"
 	location
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep" "Cartel" "Northern Union"
 	name
 		word
 			"Advertisement"
 	portrait
-		portrait/advertgeneric
+		portrait/advertisementgeneric
 	message
 		word
 			"Thirsty captians drink Blue Sun Vodka. Blue Sun Vodka, availible at your nearest spaceport bar!"
@@ -93,9 +93,9 @@ news "advertisement frag"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Frags "
+			"Frags"
 	portrait
-		outfit/"fragmentation grenades"
+		portrait/fragadvert
 	message
 		word
 			"Guns are bad and you should feel bad for using them. Fragmentation Grenades are a superior choice. Safer, cleaner, and never used in mass shootings!"
@@ -109,9 +109,9 @@ news "advertisement laser rifle"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Deep Sky"
+			"Deep Sky"
 	portrait
-		outfit/"laser rifle"
+		portrait/laseradvert
 	message
 		word
 			"If you use Fragmentation Grenades, you could end up blowing yourself up. With Laser Rifles, there's no such risk!"
@@ -125,9 +125,9 @@ news "advertisement aerie"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Lionheart"
+			"Lionheart"
 	portrait
-		thumbnail/"aerie"
+		portrait/aerie
 	message
 		word
 			"For all of your Light Carrier needs, the Lionheart Aerie!"
@@ -140,9 +140,9 @@ news "advertisement corvette"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Lionheart"
+			"Lionheart"
 	portrait
-		thumbnail/"corvette"
+		portrait/corvette
 	message
 		word
 			"The Lionheart Corvette, because sometimes speed is the only answer."
@@ -156,9 +156,9 @@ news "advertisement raven"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Lionheart"
+			"Lionheart"
 	portrait
-		thumbnail/"raven"
+		portrait/raven
 	message
 		word
 			"Lionheart Raven, because you can't be on the cutting edge if you are the edge."
@@ -171,9 +171,9 @@ news "advertisement headhunter"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Lionheart"
+			"Lionheart"
 	portrait
-		thumbnail/"headhunter"
+		portrait/headhunter
 	message
 		word
 			"Real Operators fly the Lionheart Headhunter."
@@ -187,9 +187,9 @@ news "advertisement flivver"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Lionheart"
+			"Lionheart"
 	portrait
-		thumbnail/"flivver"
+		portrait/flivver
 	message
 		word
 			"Silence is golden, solitude is grace. Lionheart Flivver."
@@ -202,9 +202,9 @@ news "advertisement dagger"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Lionheart"
+			"Lionheart"
 	portrait
-		thumbnail/"dagger"
+		portrait/dagger
 	message
 		word
 			"With a design so sharp, only one name would do. The Lionheart Dagger."
@@ -217,9 +217,9 @@ news "advertisement mule"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Lionheart"
+			"Lionheart"
 	portrait
-		thumbnail/"mule"
+		portrait/mule
 	message
 		word
 			"Book your next trip aboard a Mule city ship!"
@@ -232,9 +232,9 @@ news "advertisement bactrian"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Lionheart"
+			"Lionheart"
 	portrait
-		thumbnail/"bactrian"
+		portrait/bactrian
 	message
 		word
 			"Lionheart Bactrian, because sometimes bigger is better. Talk to your local caravan recruiter today!"
@@ -247,13 +247,13 @@ news "advertisement navy"
 		government "Republic"
 	name
 		word
-			"Sponsor: Republic Navy"
+			"Republic Navy"
 	portrait
-		thumbnail/"cruiser"
-		thumbnail/"carrier"
-		thumbnail/"frigate"
-		thumbnail/"lance"
-		thumbnail/"rainmaker"
+		portrait/cruiser
+		portrait/carrier
+		portrait/frigate
+		portrait/lance
+		portrait/rainmaker
 	message
 		word
 			"Like what you see? Sign up to serve in the Republic Navy today!"
@@ -272,9 +272,9 @@ news "advertisement star barge"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Syndicated Shipyards"
+			"Syndicated Shipyards"
 	portrait
-		thumbnail/"star barge"
+		portrait/starbarge
 	message
 		word
 			"Smart captians chose the Syndicated Shipyard's Star Barge!"
@@ -287,9 +287,9 @@ news "advertisement wasp"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Syndicated Shipyards"
+			"Syndicated Shipyards"
 	portrait
-		thumbnail/"wasp"
+		portrait/wasp
 	message
 		word
 			"In space, it's sting or be stung. The Syndicated Shipyard's Wasp."
@@ -302,9 +302,9 @@ news "advertisement freighter"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Syndicated Shipyards"
+			"Syndicated Shipyards"
 	portrait
-		thumbnail/"freighter"
+		portrait/freighter
 	message
 		word
 			"She needs no introduction, the Syndicated Shipyards Freighter."
@@ -317,9 +317,9 @@ news "advertisement protector"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Syndicated Shipyards"
+			"Syndicated Shipyards"
 	portrait
-		thumbnail/"protector"
+		portrait/protector
 	message
 		word
 			"Voted the 'ugliest ship in the sky' by Stars and Starships Magazine, the Syndicated Shipyards Protector."
@@ -332,9 +332,9 @@ news "advertisement vanguard"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Syndicated Shipyards"
+			"Syndicated Shipyards"
 	portrait
-		thumbnail/"vanguard"
+		portrait/vanguard
 	message
 		word
 			"For when you have a problem and need it to go away. The Vanguard, by Syndicated Shipyards."
@@ -347,9 +347,9 @@ news "advertisement bulk freighter"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Syndicated Shipyards"
+			"Syndicated Shipyards"
 	portrait
-		thumbnail/"bulk freighter"
+		portrait/bulkfreighter
 	message
 		word
 			"A fleet onto itself. The Bulk Freighter, brought to you by Syndicated Shipyards."
@@ -362,10 +362,10 @@ news "advertisement barb"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Syndicated Shipyards"
+			"Syndicated Shipyards"
 	portrait
-		thumbnail/"barb"
-		thumbnail/"barbp"
+		portrait/barb
+		portrait/barbp
 	message
 		word
 			"More than a fighter, the Syndicated Shipyards Barb!"
@@ -378,9 +378,9 @@ news "advertisement arrow"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Syndicated Shipyards"
+			"Syndicated Shipyards"
 	portrait
-		thumbnail/"arrow"
+		portrait/arrow
 	message
 		word
 			"As fast as its name implies. The Syndicated Shipyards Arrow!"
@@ -393,9 +393,9 @@ news "advertisement sparrow"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Tarazed"
+			"Tarazed"
 	portrait
-		thumbnail/"sparrow"
+		portrait/sparrow
 	message
 		word
 			"Live dangerously with the Tarazed Sparrow!"
@@ -408,9 +408,9 @@ news "advertisement hawk"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Tarazed"
+			"Tarazed"
 	portrait
-		thumbnail/"hawk"
+		portrait/hawk
 	message
 		word
 			"Chase down your problems in a Tarazed Hawk!"
@@ -423,9 +423,9 @@ news "advertisement blackbird"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Tarazed"
+			"Tarazed"
 	portrait
-		thumbnail/"blackbird"
+		portrait/blackbird
 	message
 		word
 			"Name a more iconic combat capable transport than the Tarazed Blackbird. We'll wait."
@@ -438,9 +438,9 @@ news "advertisement osprey"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Tarazed"
+			"Tarazed"
 	portrait
-		thumbnail/"osprey"
+		portrait/osprey
 	message
 		word
 			"They said we were crazy when we decided to study Alien ships. Maybe we are, but the Osprey proves that insanity can pay off."
@@ -454,9 +454,9 @@ news "advertisement falcon"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Tarazed"
+			"Tarazed"
 	portrait
-		thumbnail/"falcon"
+		portrait/falcon
 	message
 		word
 			"Arguably the most powerful ship on the market, the Tarazed Falcon."
@@ -469,9 +469,9 @@ news "advertisement clipper"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Southbound"
+			"Southbound"
 	portrait
-		thumbnail/"clipper"
+		portrait/clipper
 	message
 		word
 			"The best general purpose ship in its class, period. The Southbound Clipper."
@@ -484,9 +484,9 @@ news "advertisement argosy"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Southbound"
+			"Southbound"
 	portrait
-		thumbnail/"argosy"
+		portrait/argosy
 	message
 		word
 			"Starting your own fleet? The Southbound Argosy makes a great first flagship!"
@@ -499,9 +499,9 @@ news "advertisement fury"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Southbound"
+			"Southbound"
 	portrait
-		thumbnail/"fury"
+		portrait/fury
 	message
 		word
 			"Get the most bang for your buck with a Southbound Fury!"
@@ -514,14 +514,14 @@ news "advertisement hauler"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Southbound"
+			"Southbound"
 	portrait
-		thumbnail/"hauler i"
-		thumbnail/"hauler ii"
-		thumbnail/"hauler iii"
-		thumbnail/"nest"
-		thumbnail/"roost"
-		thumbnail/"skein"
+		portrait/hauleri
+		portrait/haulerii
+		portrait/hauleriii
+		portrait/nest
+		portrait/roost
+		portrait/skein
 	message
 		word
 			"Simplicity incarnate. The Hauler series, from Southbound."
@@ -534,9 +534,9 @@ news "advertisement bastion"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Southbound"
+			"Southbound"
 	portrait
-		thumbnail/"bastion"
+		portrait/bastion
 	message
 		word
 			"A warship with the space of a freighter. The Southbound Bastion."
@@ -549,9 +549,9 @@ news "advertisement quicksilver"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Megaparsec"
+			"Megaparsec"
 	portrait
-		thumbnail/"quicksilver"
+		portrait/quicksilver
 	message
 		word
 			"Deadly and Sexy, the Megaparsec Quicksilver."
@@ -564,9 +564,9 @@ news "advertisement bounder"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Megaparsec"
+			"Megaparsec"
 	portrait
-		thumbnail/"bounder"
+		portrait/bounder
 	message
 		word
 			"Starting your own taxi empire? Consider a Megaparsec Bounder!"
@@ -579,9 +579,9 @@ news "advertisement splinter"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Megaparsec"
+			"Megaparsec"
 	portrait
-		thumbnail/"splinter"
+		portrait/splinter
 	message
 		word
 			"Faster than a Corvette and twice as sexy! The Megaparsec Splinter!"
@@ -594,9 +594,9 @@ news "advertisement manta"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Megaparsec"
+			"Megaparsec"
 	portrait
-		thumbnail/"manta"
+		portrait/manta
 	message
 		word
 			"Loved by bounty hunters galaxy wide, the Megaparsec Manta!"
@@ -609,10 +609,10 @@ news "advertisement shuttle"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Betelgeuse"
+			"Betelgeuse"
 	portrait
-		thumbnail/"shuttle"
-		thumbnail/"heavy shuttle"
+		portrait/shuttle
+		portrait/heavyshuttle
 	message
 		word
 			"Sometimes you just need to get around. The Betelgeuse Shuttle will get you there."
@@ -620,29 +620,29 @@ news "advertisement shuttle"
 			"Light and small enough to park virtually anywhere! The Betelgeuse Shuttle!"
 			"Investment tip: Add a Betelgeuse Shuttle to your fleet to carry extra passengers!"
 			
-news "advertisement beserker"
+news "advertisement berserker"
 	location
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Betelgeuse"
+			"Betelgeuse"
 	portrait
-		thumbnail/"beserker"
+		portrait/berserker
 	message
 		word
-			"Ever just want to go beserk? Buy a Betelgeuse Beserker and break stuff!"
-			"The most reliable interceptor on the market, the Betelgeuse Beserker!"
-			"Mining asteroids is a breeze in a Beserker! From Betelgeuse."
-			"If you ever see a squad of Betelgeuse Beserker coming your way, run! Better yet, buy one and join them!"
+			"Ever just want to go beserk? Buy a Betelgeuse berserker and break stuff!"
+			"The most reliable interceptor on the market, the Betelgeuse berserker!"
+			"Mining asteroids is a breeze in a berserker! From Betelgeuse."
+			"If you ever see a squad of Betelgeuse berserker coming your way, run! Better yet, buy one and join them!"
 
 news "advertisement firebird"
 	location
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Betelgeuse"
+			"Betelgeuse"
 	portrait
-		thumbnail/"firebird"
+		portrait/firebird
 	message
 		word
 			"Did you know there are Betelgeuse Firebirds in the sky that have been around since the Augment wars? Get yourself a reliable classic!"
@@ -655,9 +655,9 @@ news "advertisement leviathan"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Betelgeuse"
+			"Betelgeuse"
 	portrait
-		thumbnail/"leviathan"
+		portrait/leviathan
 	message
 		word
 			"For centuries, Betelgeuse has rolled Leviathans off the assembly line. We don't plan on stopping anytime soon!"
@@ -671,9 +671,9 @@ news "advertisement behemoth"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Betelgeuse"
+			"Betelgeuse"
 	portrait
-		thumbnail/"behemoth"
+		portrait/behemoth
 	message
 		word
 			"With a freighter like this, who needs an escort? The Betelgeuse Behemoth!"
@@ -687,9 +687,9 @@ news "advertisement star queen"
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
 		word
-			"Sponsor: Betelgeuse"
+			"Betelgeuse"
 	portrait
-		thumbnail/"star queen"
+		portrait/starqueen
 	message
 		word
 			"Book your next trip aboard a Betelgeuse Star Queen!"
@@ -702,9 +702,9 @@ news "advertisement free worlds militia"
 		government "Free Worlds"
 	name
 		word
-			"Sponsor: Free Worlds"
+			"Free Worlds"
 	portrait
-		portrait/"free worlds"
+		portrait/free worlds
 	message
 		word
 			"Protect the citizens the Republic has forgotten, join the Free Worlds."
@@ -725,7 +725,7 @@ news "advertisement syndicate propaganda"
 		word
 			"Obvious Propaganda"
 	portrait
-		portrait/"syndicate"
+		portrait/syndicate
 	message
 		word
 			"Union dues are just taxation without representation!"
@@ -760,7 +760,7 @@ news "advertisement cartel"
 		word
 			"Warning"
 	portrait
-		outfit/"laser rifle"
+		portrait/laseradvert
 	message
 		word
 			"Do your business and leave."
@@ -775,7 +775,7 @@ news "advertisement northern union"
 		word
 			"Advertisement"
 	portrait
-		portrait/"advertisement"
+		portrait/advertisement
 	message
 		word
 			"Visit Muddy Green's Snack Shack!"
