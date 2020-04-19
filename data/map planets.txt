@@ -1578,8 +1578,10 @@ planet Nimbus
 
 planet "No-Where Station"
 	landscape land/sivael6
-	description `This inegmatic station is known only for how handidly and rapidly they turn people away. They allow you to dock for repairs, but you aren't permitted to leave the common room of the Spaceport.`
-	spaceport `You can only imagine what the interior of the station looks like, considering you have never seen it and aren't likely to. The common room, however, is rather plain and filled with dull and uninspiring fixtures. Although visitors are a rare few, you can still sometimes share a coffee with a stranger.`
+	description `This inegmatic station orbiting a black hole is the primary holding facility the cartel.`
+	description `	The stations docking ring is the only location where visitors are permitted to access, and the guards have been known to brutally enforce these rules.` 
+	spaceport `Rumours abound about how this facility is also used to hold Republic and Syndicate political prisoners, but both factions deny this.`
+	spaceport `		When prisoners are up for parole they are usually commanded to fight for their freedom to the death. Sometimes in singal combat, and sometimes with vessels. The survivors win their freedom and a ship.`
 	bribe 0.4
 	security 0
 
