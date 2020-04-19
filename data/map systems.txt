@@ -625,6 +625,10 @@ system Alcyone
 	fleet "Northern Union Merchants" 100
 	belt 1438
 	minables copper 5 2.95151
+	minables "engine part" 5 8.00281
+	minables "reactor part" 5 8.00281
+	minables "junk part" 5 8.00281
+	minables "weapon part" 5 8.00281
 	object
 		sprite star/m4
 		distance 45.5
@@ -796,6 +800,10 @@ system Aldhibain
 	minables iron 5 6.68827
 	minables silicon 11 5.1137
 	minables titanium 10 4.19059
+	minables "engine part" 3 8.00281
+	minables "reactor part" 8 8.00281
+	minables "junk part" 5 8.00281
+	minables "weapon part" 7 8.00281
 	object
 		sprite star/k0
 		period 10
@@ -1596,6 +1604,11 @@ system Alnitak
 	fleet "Small Republic" 2000
 	fleet "Large Republic" 4000
 	belt 1907
+	minables "engine part" 11 8.00281
+	minables "reactor part" 12 8.00281
+	minables "junk part" 10 8.00281
+	minables "weapon part" 13 8.00281
+	
 	object
 		sprite star/m0
 		distance 31.1055
@@ -7931,6 +7944,11 @@ system "GRO J1719-24"
 	trade Medical 680
 	trade Metal 390
 	trade Plastic 390
+	belt 1201
+	minables "engine part" 16 8.00281
+	minables "reactor part" 12 8.00281
+	minables "junk part" 13 8.00281
+	minables "weapon part" 11 8.00281
 	object
 		sprite star/black-hole-core-small
 		period 1
