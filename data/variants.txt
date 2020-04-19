@@ -94,78 +94,6 @@ ship "Arrow" "Arrow (Hai)"
 		"Hyperdrive"
 
 
-
-ship "Bactrian" "Bactrian (Hai Engines)"
-	outfits
-		"Sidewinder Missile Launcher" 2
-		"Sidewinder Missile" 90
-		"Torpedo Launcher" 2
-		"Torpedo" 60
-		"Heavy Laser Turret" 4
-		"Heavy Anti-Missile Turret" 2
-		"Fusion Reactor"
-		"Geode Reactor"
-		"Hai Gorge Batteries"
-		"D67-TM Shield Generator"
-		"Hai Williwaw Cooling" 3
-		"Ramscoop"
-		"Pulse Rifle" 12
-		"Outfits Expansion" 2
-		`"Bufaer" Atomic Thruster`
-		`"Bufaer" Atomic Steering`
-		"Hyperdrive"
-
-
-ship "Bactrian" "Bactrian (Hai Weapons)"
-	outfits
-		"Pulse Cannon" 2
-		"Hai Tracker Pod" 2
-		"Hai Tracker" 112
-		"Chameleon Anti-Missile" 2
-		"Pulse Turret" 2
-		"Heavy Laser Turret" 2
-		"Fusion Reactor"
-		"Pebble Core"
-		"Hai Ravine Batteries"
-		"Hai Diamond Regenerator"
-		"Hai Williwaw Cooling" 2
-		"Ramscoop"
-		"Pulse Rifle" 16
-		"Large Radar Jammer"
-		"X4700 Ion Thruster"
-		"X5200 Ion Steering"
-		"Hyperdrive"
-	gun "Pulse Cannon"
-	gun "Pulse Cannon"
-	gun "Hai Tracker Pod"
-	gun "Hai Tracker Pod"
-	turret "Chameleon Anti-Missile"
-	turret "Heavy Laser Turret"
-	turret "Pulse Turret"
-	turret "Pulse Turret"
-	turret "Chameleon Anti-Missile"
-	turret "Heavy Laser Turret"
-
-
-ship "Bactrian" "Bactrian (Hired Gun)"
-	outfits
-		"Heavy Laser" 4
-		"Heavy Laser Turret" 6
-		"Armageddon Core"
-		"LP144a Battery Pack"
-		"D94-YV Shield Generator"
-		"D41-HY Shield Generator"
-		"Liquid Nitrogen Cooler"
-		"Water Coolant System"
-		"Outfits Expansion" 2
-		"Laser Rifle" 20
-		"Large Radar Jammer"
-		"A520 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-
-
-
 ship "Barb" "Barb (Gatling)"
 	outfits
 		"Gatling Gun"
@@ -257,8 +185,8 @@ ship "Behemoth" "Behemoth (Hai)"
 
 ship "Behemoth" "Behemoth (Heavy)"
 	outfits
-		"Torpedo Launcher" 2
-		Torpedo 60
+		"Heavy Rocket Launcher" 2
+		Heavy Rocket 60
 		"Quad Blaster Turret" 2
 		"Plasma Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -732,8 +660,8 @@ ship "Nomos" "Nomos (Mark II)"
 
 ship "Elpis" "Elpis (Jump)"
 	outfits
-		"Torpedo Launcher" 4
-		"Torpedo" 120
+		"Heavy Rocket Launcher" 4
+		"Heavy Rocket" 120
 		"Plasma Turret" 3
 		"Heavy Anti-Missile Turret" 2
 		"Stack Core"
@@ -756,8 +684,8 @@ ship "Elpis" "Elpis (Jump)"
 
 ship "Falcon" "Falcon (Heavy)"
 	outfits
-		"Torpedo Launcher" 2
-		"Torpedo" 60
+		"Heavy Rocket Launcher" 2
+		"Heavy Rocket" 60
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Heavy Laser Turret" 3
@@ -770,8 +698,8 @@ ship "Falcon" "Falcon (Heavy)"
 		"Orca Plasma Thruster"
 		"A375 Atomic Steering"
 		"Hyperdrive"
-	gun "Torpedo Launcher"
-	gun "Torpedo Launcher"
+	gun "Heavy Rocket Launcher"
+	gun "Heavy Rocket Launcher"
 	gun "Meteor Missile Launcher"
 	gun "Meteor Missile Launcher"
 
@@ -1367,8 +1295,8 @@ ship "Leviathan" "Leviathan (Hai Weapons)"
 
 ship "Leviathan" "Leviathan (Heavy)"
 	outfits
-		"Torpedo Launcher" 2
-		"Torpedo" 60
+		"Heavy Rocket Launcher" 2
+		"Heavy Rocket" 60
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Heavy Laser Turret" 3
@@ -1385,8 +1313,8 @@ ship "Leviathan" "Leviathan (Heavy)"
 		"Ramscoop"
 	gun "Meteor Missile Launcher"
 	gun "Meteor Missile Launcher"
-	gun "Torpedo Launcher"
-	gun "Torpedo Launcher"
+	gun "Heavy Rocket Launcher"
+	gun "Heavy Rocket Launcher"
 	turret "Heavy Laser Turret"
 	turret "Heavy Laser Turret"
 	turret "Heavy Anti-Missile Turret"
@@ -1517,8 +1445,8 @@ ship "Modified Argosy" "Modified Argosy (Missile)"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 105
 		"Meteor Missile Box" 3
-		"Torpedo Launcher" 2
-		"Torpedo" 60
+		"Heavy Rocket Launcher" 2
+		"Heavy Rocket" 60
 		"Heavy Laser Turret"
 		"Heavy Anti-Missile Turret"
 		"S3 Thermionic"
@@ -1987,9 +1915,9 @@ ship "Vanguard" "Vanguard (Missile)"
 		"Sidewinder Missile Launcher" 4
 		"Sidewinder Missile" 295
 		"Sidewinder Missile Rack" 5
-		"Torpedo Launcher" 3
-		"Torpedo" 120
-		"Torpedo Storage Rack" 2
+		"Heavy Rocket Launcher" 3
+		"Heavy Rocket" 120
+		"Heavy Rocket Storage Rack" 2
 		"Heavy Anti-Missile Turret"
 		"Fission Reactor"
 		"Supercapacitor"
@@ -2001,9 +1929,9 @@ ship "Vanguard" "Vanguard (Missile)"
 		"X3700 Ion Thruster"
 		"X4200 Ion Steering"
 		"Hyperdrive"
-	gun "Torpedo Launcher"
-	gun "Torpedo Launcher"
-	gun "Torpedo Launcher"
+	gun "Heavy Rocket Launcher"
+	gun "Heavy Rocket Launcher"
+	gun "Heavy Rocket Launcher"
 	gun "Sidewinder Missile Launcher"
 	gun "Sidewinder Missile Launcher"
 	gun "Sidewinder Missile Launcher"
