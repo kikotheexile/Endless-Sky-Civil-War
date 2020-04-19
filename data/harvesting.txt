@@ -234,3 +234,35 @@ outfit "Uranium"
 	"mass" 1
 	"installable" -1
 	description "Uranium is best known for its use in the nuclear reactors that power large starships. Its most stable isotope U-238 is also used for ultra-strong hull plating and for armor-piercing projectiles."
+
+minable "engine part"
+	sprite "asteroid/engine part/spin"
+	hull 1000
+	payload "Tungsten" 40
+	explode "smoke" 40
+	explode "bolide" 40
+	explode "final explosion large"
+	
+minable "reactor part"
+	sprite "asteroid/reactor part/spin"
+	hull 1000
+	payload "Neodymium" 40
+	explode "smoke" 40
+	explode "bolide" 40
+	explode "final explosion large"
+	
+minable "junk part"
+	sprite "asteroid/junk part/spin"
+	hull 1000
+	payload "Silver" 40
+	explode "smoke" 40
+	explode "bolide" 40
+	explode "final explosion large"
+	
+minable "weapon part"
+	sprite "asteroid/weapon part/spin"
+	hull 1000
+	payload "Tungsten" 40
+	explode "smoke" 40
+	explode "bolide" 40
+	explode "final explosion large"
