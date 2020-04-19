@@ -2695,6 +2695,8 @@ ship "Aletheia"
 	turret 0 -37 "Anti-Missile Turret"
 	turret -12 -12 "Blaster Turret"
 	turret 12 -12 "Blaster Turret"
+	drone 0 14
+	drone 0 14
 	leak "leak" 40 50
 	leak "flame" 50 80
 	leak "big leak" 90 30
