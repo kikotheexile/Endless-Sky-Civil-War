@@ -1505,7 +1505,7 @@ system Alnasl
 
 system Alnilam
 	pos -150.119 -402.401
-	government Independent
+	government "Northern Union"
 	habitable 1715
 	link Hatysa
 	trade Clothing 264
@@ -2319,7 +2319,7 @@ system Arcturus
 
 system Arneb
 	pos -121.285 -339.734
-	government Independent
+	government "Northern Union"
 	habitable 1715
 	link Agamede
 	link Xanthe
@@ -7016,7 +7016,7 @@ system Miaplacidus
 
 system Milto
 	pos -32.3779 -347.436
-	government Independent
+	government "Northern Union"
 	habitable 425.92
 	link Heliodora
 	link Procris
@@ -7666,7 +7666,7 @@ system Muphrid
 
 system Mycenae
 	pos -53.3779 -268.436
-	government Independent
+	government "Northern Union"
 	habitable 625
 	link Aganippe
 	link Calliphana
@@ -11549,7 +11549,7 @@ system Wezen
 
 system Xanthe
 	pos -172.378 -310.436
-	government Independent
+	government "Northern Union"
 	habitable 1111.68
 	link Arneb
 	link Endios
