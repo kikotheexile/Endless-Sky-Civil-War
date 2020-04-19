@@ -1388,7 +1388,7 @@ system Alnair
 	habitable 135
 	link Persian
 	link Alderamin
-	link No-Where
+	link "GRO J1719-24"
 	trade Clothing 294
 	trade Electronics 711
 	trade Equipment 381
@@ -4706,7 +4706,7 @@ system Gienah
 	pos -176 354
 	government Cartel
 	habitable 534.375
-	link No-Where
+	link "GRO J1719-24"
 	link Persian
 	link Algenib
 	trade Clothing 320
@@ -5771,7 +5771,7 @@ system "Kaus Australis"
 	link Dabih
 	link Tais
 	link Peacock
-	link No-Where
+	link "GRO J1719-24"
 	trade Clothing 279
 	trade Electronics 717
 	trade Equipment 591
@@ -7912,7 +7912,7 @@ system Nihal
 			distance 363
 			period 23.3833
 
-system No-Where
+system "GRO J1719-24"
 	pos -242.077 362.649
 	government Cartel
 	habitable 425.92
@@ -7921,12 +7921,6 @@ system No-Where
 	link Peacock
 	link Alnair
 	link Gienah
-	asteroids "small rock" 2 8.127
-	asteroids "medium rock" 1 4.347
-	asteroids "large rock" 1 5.985
-	asteroids "small metal" 5 6.363
-	asteroids "medium metal" 6 3.15
-	asteroids "large metal" 10 8.568
 	trade Clothing 290
 	trade Electronics 740
 	trade Equipment 530
@@ -7938,12 +7932,15 @@ system No-Where
 	trade Metal 390
 	trade Plastic 390
 	object
-		sprite star/yn
-		period 10
+		sprite star/black-hole-core-small
+		period 1
+	object
+		sprite star/black-hole-small-blue
+		period 1
 	object "No-Where Station"
-		sprite planet/station3
-		distance 161.64
-		period 39.8308
+		sprite planet/stationcaravan
+		distance 250
+		period 55
 
 
 system Nocte
@@ -8255,7 +8252,7 @@ system Peacock
 	link Tais
 	link "Kaus Australis"
 	link Ascella
-	link No-Where
+	link "GRO J1719-24"
 	trade Clothing 334
 	trade Electronics 700
 	trade Equipment 633
@@ -8324,7 +8321,7 @@ system Persian
 	link Alnair
 	link Gienah
 	link Matar
-	link No-Where
+	link "GRO J1719-24"
 	trade Clothing 260
 	trade Electronics 661
 	trade Equipment 400
