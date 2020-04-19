@@ -221,8 +221,8 @@ ship "Bastion" "Bastion (Laser)"
 ship "Bastion" "Bastion (Scanner)"
 	outfits
 		"Plasma Cannon" 2
-		"Heavy Rocket Launcher" 2
-		"Heavy Rocket" 40
+		"Torpedo Launcher" 2
+		"Torpedo" 40
 		"Blaster Turret" 3
 		"S3 Thermionic"
 		"LP144a Battery Pack"
@@ -339,8 +339,8 @@ ship "Berserker" "Berserker (Afterburner)"
 
 ship "Berserker" "Berserker (Strike)"
 	outfits
-		"Heavy Rocket Launcher"
-		"Heavy Rocket" 20
+		"Torpedo Launcher"
+		"Torpedo" 20
 		"Sidewinder Missile Launcher"
 		"Sidewinder Missile" 45
 		"nGVF-CC Fuel Cell"
@@ -531,8 +531,8 @@ ship "Arete" "Arete (Mark II)"
 
 ship "Clipper" "Clipper (Heavy)"
 	outfits
-		"Heavy Rocket Launcher" 2
-		"Heavy Rocket" 40
+		"Torpedo Launcher" 2
+		"Torpedo" 30
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"RT-I Radiothermal"
@@ -1024,8 +1024,8 @@ ship "Aletheia" "Aletheia (Mark II)"
 
 ship "Fury" "Fury (Bomber)"
 	outfits
-		"Heavy Rocket Launcher"
-		"Heavy Rocket" 20
+		"Torpedo Launcher"
+		"Torpedo" 20
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"nGVF-BB Fuel Cell"
@@ -1198,8 +1198,8 @@ ship "Hauler III" "Hauler III (Hai)"
 
 ship "Hawk" "Hawk (Bomber)"
 	outfits
-		"Heavy Rocket Launcher"
-		"Heavy Rocket" 20
+		"Torpedo Launcher"
+		"Torpedo" 20
 		"Torpedo Launcher"
 		"Torpedo" 30
 		"nGVF-CC Fuel Cell"
@@ -1224,8 +1224,8 @@ ship "Hawk" "Hawk (Plasma)"
 
 ship "Hawk" "Hawk (Rocket)"
 	outfits
-		"Heavy Rocket Launcher" 2
-		"Heavy Rocket" 40
+		"Torpedo Launcher" 2
+		"Torpedo" 40
 		"RT-I Radiothermal"
 		"Supercapacitor" 2
 		"D41-HY Shield Generator"
