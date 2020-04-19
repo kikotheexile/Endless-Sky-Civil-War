@@ -3870,8 +3870,8 @@ ship "Jumper"
 ship "Polevaulter" "Marauder Bounder (Engines)"
 	sprite "ship/mboundere"
 	thumbnail "thumbnail/mboundere"
-	
-			"cost" 1250000
+		category "Gunship"
+		"cost" 1250000
 		"shields" 2500
 		"hull" 700
 		"required crew" 2
@@ -3915,7 +3915,8 @@ ship "Polevaulter" "Marauder Bounder (Engines)"
 ship "Pouncer" "Marauder Bounder (Weapons)"
 	sprite "ship/mbounderw"
 	thumbnail "thumbnail/mbounderw"
-			"cost" 1250000
+		category "Gunship"
+		"cost" 1250000
 		"shields" 2500
 		"hull" 700
 		"required crew" 2
@@ -4023,6 +4024,7 @@ ship "Peregrine" "Marauder Falcon (Engines)"
 	sprite "ship/mfalcone"
 	thumbnail "thumbnail/mfalcone"
 	attributes
+		category "Cruiser"
 		"cost" 13900000
 		"shields" 14100
 		"hull" 4100
@@ -4077,6 +4079,7 @@ ship "Harpy" "Marauder Falcon (Weapons)"
 	sprite "ship/mfalconw"
 	thumbnail "thumbnail/mfalconw"
 	attributes
+		category "Cruiser"
 		"cost" 13900000
 		"shields" 14100
 		"hull" 4100
@@ -4188,6 +4191,7 @@ ship "Huma" "Marauder Firebird (Engines)"
 	sprite "ship/mfirebirde"
 	thumbnail "thumbnail/mfirebirds"
 	attributes
+		category "Destroyer"
 		"cost" 4100000
 		"shields" 7000
 		"hull" 3000
@@ -4235,6 +4239,7 @@ ship "Fenghuang" "Marauder Firebird (Weapons)"
 	sprite "ship/mfirebirdw"
 	thumbnail "thumbnail/mfirebirdw"
 	attributes
+		category "Destroyer"
 		"cost" 4100000
 		"shields" 7000
 		"hull" 3000
@@ -4344,6 +4349,7 @@ ship "Selma" "Marauder Leviathan (Engines)"
 	sprite "ship/mleviathane"
 	thumbnail "thumbnail/mleviathane"
 	attributes
+		category "Cruiser"
 		"cost" 10800000
 		"shields" 16000
 		"hull" 5500
@@ -4391,6 +4397,7 @@ ship "Bakunawa" "Marauder Leviathan (Weapons)"
 	sprite "ship/mleviathanw"
 	thumbnail "thumbnail/mleviathanw"
 	attributes
+		category "Cruiser"
 		"cost" 10800000
 		"shields" 16000
 		"hull" 5500
@@ -4501,6 +4508,7 @@ ship "Lesser Devil" "Marauder Manta (Engines)"
 	sprite "ship/mmantae"
 	thumbnail "thumbnail/mmantae"
 	attributes
+		category "Destroyer"
 		"cost" 3740000
 		"shields" 6500
 		"hull" 1750
@@ -4553,6 +4561,7 @@ ship "Spinetail" "Marauder Manta (Weapons)"
 	sprite "ship/mmantaw"
 	thumbnail "thumbnail/mmantaw"
 	attributes
+		category "Destroyer"
 		"cost" 3740000
 		"shields" 6500
 		"hull" 1750
@@ -4658,6 +4667,7 @@ ship "Mercury" "Marauder Quicksilver (Engines)"
 	sprite "ship/mquicksilvere"
 	thumbnail "thumbnail/mquicksilvere"
 	attributes
+		category "Frigate"
 		"cost" 1200000
 		"shields" 3500
 		"hull" 900
@@ -4702,6 +4712,7 @@ ship "Phosphorus" "Marauder Quicksilver (Weapons)"
 	sprite "ship/mquicksilverw"
 	thumbnail "thumbnail/mquicksilverw"
 	attributes
+		category "Frigate"
 		"cost" 1200000
 		"shields" 3500
 		"hull" 900
@@ -4800,6 +4811,7 @@ ship "Rook" "Marauder Raven (Engines)"
 	sprite "ship/mravene"
 	thumbnail "thumbnail/mravene"
 	attributes
+		category "Frigate"
 		"cost" 2750000
 		"shields" 5200
 		"hull" 1600
@@ -4843,6 +4855,7 @@ ship "Sturnus" "Marauder Raven (Weapons)"
 	sprite "ship/mravenw"
 	thumbnail "thumbnail/mravenw"
 	attributes
+		category "Frigate"
 		"cost" 2750000
 		"shields" 5200
 		"hull" 1600
@@ -4944,6 +4957,7 @@ ship "Needle" "Marauder Splinter (Engines)"
 	sprite "ship/msplintere"
 	thumbnail "thumbnail/msplintere"
 	attributes
+		category "Destroyer"
 		"cost" 3400000
 		"shields" 5700
 		"hull" 1950
@@ -4993,6 +5007,7 @@ ship "Sting" "Marauder Splinter (Weapons)"
 	sprite "ship/msplinterw"
 	thumbnail "thumbnail/msplinterw"
 	attributes
+		category "Destroyer"
 		"cost" 3400000
 		"shields" 5700
 		"hull" 1950
