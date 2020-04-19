@@ -10851,7 +10851,7 @@ system Tortor
 		distance 188.99
 		period 48.6872
 	object "Free Market"
-		sprite planet/titan
+		sprite planet/station7
 		distance 431.43
 		period 167.927
 	object
