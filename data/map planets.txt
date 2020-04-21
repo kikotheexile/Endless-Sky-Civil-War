@@ -514,7 +514,6 @@ planet "Echo Station"
 	outfitter "Ammo"
 	bribe 0
 	security 0.9
-	government Tarazed
 
 planet "Far Monad"
 	landscape land/water0
@@ -2235,17 +2234,10 @@ planet Watcher
 planet Wayfarer
 	attributes south factory
 	landscape land/nasa1
-	description `Wayfarer was initially settled by a team of scientists and diplomats seeking to build a relationship with the Quarg worlds to the galactic southeast of here. Partly through the aid of the Quarg and partly through a desire to emulate them, it has grown into a very technologically advanced world.`
+	description `Wayfarer was initially settled by a team of scientists seeking to study the nearby wormholes, and later diplomats seeking to build a relationship with the aliens from beyond them. Partly through the aid of the aliens and partly through a desire to emulate them, it has grown into a very technologically advanced world.`
 	description `	Tarazed corporation, a maker of alien-inspired ships and outfits, is one of the largest industries on Wayfarer, and they draw raw materials from throughout this region of space.`
-	spaceport `The spaceport is clearly the artifact of an architect who was as familiar with alien architecture as with human. Instead of square angles it has many curved walls and domes. The landing pads jut out from the building at various heights. Some of the landing pads are designed with docking tubes specifically for Quarg visitors, and the ceilings are unusually high to accommodate the Quarg, several of whom are walking around and mingling with the humans here.`
-	shipyard "Basic Ships"
-	shipyard "Tarazed Basics"
-	shipyard "Tarazed Advanced"
-	shipyard "Southbound Basics"
-	outfitter "Delta V Advanced"
-	outfitter "Kraz Advanced"
+	spaceport `The spaceport is clearly the artifact of an architect who was as familiar with alien architecture as with human. Instead of square angles it has many curved walls and domes. The landing pads jut out from the building at various heights. Some of the landing pads are designed with docking tubes specifically for Quarg visitors, and the ceilings are unusually high to accommodate the Quarg and flying Wanderers, several of whom are walking around and mingling with the humans here.`
 	outfitter "Common Outfits"
-	outfitter "Ammo"
 	bribe 0.07
 	security 0.3
 	tribute 1700
