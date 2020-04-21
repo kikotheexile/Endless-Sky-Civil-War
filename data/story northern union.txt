@@ -617,7 +617,7 @@ mission "Meeting an Alpha 3"
 		"assisted northern union" ++
 		payment 100000
 		dialog
-			`As you land, you receive a direct message from Gavin's ship: "I'm sorry that we'll not be meeting in person again, <first>, but I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues: "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership committee."`
+			`As you land, you receive a direct message from Gaven's ship: "I'm sorry that we'll not be meeting in person again, <first>, but I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues: "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership committee."`
 
 mission "NU Bounty 1"
 	name "Wanted: Dead"
@@ -651,7 +651,7 @@ mission "NU Bounty 1"
 				`	"I'm in."`
 					accept
 				`	"I'm in, but I need more details."`
-					goto accept
+					goto acceptA
 				`	"Not interested."`
 					decline
 					
@@ -661,7 +661,7 @@ mission "NU Bounty 1"
 				`	"I'm in."`
 					accept
 				`	"I'm in, but I need more details."`
-					goto accept
+					goto acceptA
 				`	"Not interested."`
 					decline
 					
@@ -671,10 +671,10 @@ mission "NU Bounty 1"
 				`	"I'm in."`
 					accept
 				`	"I'm in, but I need more details."`
-					goto accept
+					goto acceptA
 				`	"Not interested."`
 					decline
-			label accept
+			label acceptA
 			`	"Fantastic!" he shouts: "The NPC is an absolutely menacing Headhunter, which is stranded in Rajak. They should be just about done with repairs by the time we arrive."`
 				accept
 	on accept
@@ -828,6 +828,7 @@ mission "NU Bounty 2B"
 	on offer
 		dialog
 			`You receive a message from Mouser: "I've got something a little dangerous for you today," he says, "that pirate who got away has been spotted flying a Firebird named the <npc> near Cardax. Are you interested in finishing him off?"`
+				accept
 	
 	npc kill
 		government "Pirate"
