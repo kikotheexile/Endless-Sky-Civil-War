@@ -132,18 +132,15 @@ system Achernar
 		sprite planet/desert3
 		distance 211.24
 		period 49.1229
-	object "Hammer Station"
-		sprite planet/placeholderstation
-		distance 530
-		period 190
 	object Foundry
 		sprite planet/forest1-b
 		distance 548
 		period 205.254
-		object
-			sprite planet/miranda-b
-			distance 130
-			period 15.4433
+		object "Hammer Station"
+			sprite planet/stationcaravan
+			distance 530
+			period 190
+
 	object
 		sprite planet/dust0
 		distance 978.21
@@ -2764,14 +2761,14 @@ system Betelgeuse
 		sprite planet/rock0-b
 		distance 535.69
 		period 150.91
-	object "Orion Station"
-		sprite planet/placeholderstation
-		distance 1050
-		period 475
 	object Prime
 		sprite planet/forest2-b
 		distance 1081.98
 		period 433.189
+		object "Orion Station"
+			sprite planet/placeholderstation
+			distance 1050
+			period 475
 	object
 		sprite planet/ocean4
 		distance 1582.62
@@ -3186,14 +3183,14 @@ system Castor
 		sprite planet/rock0
 		distance 758.695
 		period 254.287
-	object "Rampart Station"
-		sprite planet/placeholderstation
-		distance 980
-		period 365
 	object Geminus
 		sprite planet/rock18
 		distance 994.305
 		period 381.507
+		object "Rampart Station"
+			sprite planet/stationcaravan
+			distance 980
+			period 365
 	object
 		sprite planet/uranus
 		distance 1759.55
@@ -4297,10 +4294,10 @@ system "Epsilon Leonis"
 		sprite planet/earth
 		distance 1027.21
 		period 351.954
-	object "Brokkr Station"
-		sprite planet/stationcaravan
-		distance 1000
-		period 300
+		object "Brokkr Station"
+			sprite planet/stationcaravan
+			distance 1000
+			period 300
 	object
 		sprite planet/gas7
 		distance 2086.25
@@ -10644,7 +10641,7 @@ system "Tania Australis"
 
 system Tarazed
 	pos -194 448
-	government Neutral
+	government Tarazed
 	habitable 1215
 	link Albireo
 	link Dabih
