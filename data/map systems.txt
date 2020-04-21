@@ -8701,14 +8701,14 @@ system Pollux
 		sprite planet/ocean8-b
 		distance 608.85
 		period 182.858
-	object Thrall
-		sprite planet/forest6
-		distance 895.89
-		period 326.385
 	object Martini
 		sprite planet/ocean4
 		distance 1248.33
 		period 536.837
+		object "Martini Stock Exchange"
+			sprite planet/station7
+			distance 175
+			period 20
 	object
 		sprite planet/gas7-b
 		distance 4171.54
@@ -8863,10 +8863,10 @@ system Procyon
 		sprite planet/rock4
 		distance 243.06
 		period 71.0111
-	object
-		sprite planet/cloud4
-		distance 623.31
-		period 291.617
+	object Thrall
+		sprite planet/forest6
+		distance 895.89
+		period 326.385
 	object
 		sprite planet/mars
 		distance 1201.15
