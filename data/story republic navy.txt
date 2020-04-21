@@ -71,7 +71,7 @@ mission "Republic Bounty 2"
 				`	"I'm a merchant, not a hitman."`
 					goto killer
 			`	"He's aboard a ship named the <npc>. Considering your abilities it should hardly be a challenge."`
-			accept
+				accept
 			label killer
 			`	Shah replies: "Your file leads me to believe otherwise. No matter then, we will be sure to update your record."`
 			decline
@@ -230,7 +230,7 @@ mission "Navy Scouting 3"
 				`	"Sorry, I've got a vision warning me I'd die messing with alien tech."`
 					decline
 			`	"Wonderful," she replies with her radiant trademark smile: "It's a Falcon named the <npc>, last seen near Yed Prior. If it does have alien technology, we'll be the first in the Republic to see it. Isn't that exciting?`
-			accept
+				accept
 	
 	on accept
 		log "Volunteered to scan a ship in Free Worlds space that might be armed with Alien technology."
