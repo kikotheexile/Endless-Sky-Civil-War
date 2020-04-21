@@ -45,6 +45,75 @@ mission "A pirate's life!"
 		ship "Vanguard" "Dry Wolf"
 
 
+mission "A pirate's life 2, electric boogaloo!"
+	invisible
+	landing
+	source
+		government "Republic"
+	destination "Haven"
+	to offer
+		has "a pirates life"
+		has "A pirate's life!: done"
+	on offer
+		conversation
+			`You thought you were in the clear, but <npc> and two others have landed next to you! They must have heard about you killing your pursuer, and want to take a crack at turning you in.`
+				accept
+	
+	on accept
+	npc kill
+		personality nemesis
+		government "Bounty Hunter"
+		ship "Challenger" "Kelly"
+		ship "Headhunter" "Ozone"
+		ship "Headhunter" "Turbo"
+
+
+mission "A pirate's life 3, hitting the trifecta"
+	invisible
+	landing
+	source
+		government "Republic"
+	destination "Haven"
+	to offer
+		has "a pirates life"
+		has "A pirate's life 2, electric boogaloo!: done"
+	on offer
+		conversation
+			`As you leave your ship, you see <npc> land next to you; their ships has various violent markings on it. The pilot looks at you, grins, and gives you finger guns. You're not sure if they're into you for romance, or your hide, and think it's not best to find out.`
+				accept
+	
+	on accept
+	npc kill
+		personality nemesis
+		government "Bounty Hunter"
+		ship "Falcon" "Crest"
+		ship "Firebird" "Zar-Ptak"
+		ship "Firebird" "Zhar-Ptytsia"
+
+
+mission "A pirate's life 4, the Quickening"
+	invisible
+	landing
+	source
+		government "Republic"
+	destination "Haven"
+	to offer
+		has "a pirates life"
+		has "A pirate's life 3, hitting the trifecta: done"
+	on offer
+		conversation
+			`Before you even leave your ship, you get a communication from the ship next to you.`
+			`	"This is the <npc>. THERE CAN ONLY BE ONE!"`
+				accept
+	
+	on accept
+	npc kill
+		personality nemesis
+		government "Bounty Hunter"
+		ship "Pointedstick" "Highlander"
+
+
+
 mission "Intro [0]"
 	priority
 	name "Passenger to <planet>"
