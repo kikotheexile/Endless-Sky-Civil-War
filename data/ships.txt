@@ -28,6 +28,7 @@ ship "Sentinel Drone"
 		"weapon capacity" 8
 		"engine capacity" 28
 		"self destruct" .15
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 5
 			"shield damage" 50
@@ -65,6 +66,7 @@ ship "Thea Drone"
 		"weapon capacity" 0
 		"engine capacity" 28
 		"self destruct" .05
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 3
 			"shield damage" 30
@@ -138,6 +140,7 @@ ship "Dagger"
 		"outfit space" 90
 		"weapon capacity" 20
 		"engine capacity" 30
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -185,6 +188,7 @@ ship "Finch"
 		"outfit space" 110
 		"weapon capacity" 20
 		"engine capacity" 40
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -228,6 +232,7 @@ ship "Lance"
 		"weapon capacity" 20
 		"engine capacity" 30
 		"self destruct" .15
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -272,6 +277,7 @@ ship "Barb"
 		"outfit space" 85
 		"weapon capacity" 24
 		"engine capacity" 22
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -316,6 +322,7 @@ ship "Thorn"
 		"weapon capacity" 28
 		"engine capacity" 22
 		"self destruct" .15
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -355,6 +362,7 @@ ship "Boxwing"
 		"outfit space" 45
 		"engine capacity" 28
 		"cargo space" 80
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -397,6 +405,7 @@ ship "Shuttle"
 		"outfit space" 100
 		"weapon capacity" 10
 		"engine capacity" 60
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -442,6 +451,7 @@ ship "Arrow"
 		"outfit space" 180
 		"weapon capacity" 50
 		"engine capacity" 60
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 24
 			"shield damage" 240
@@ -497,6 +507,7 @@ ship "Blackbird"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 190
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -550,6 +561,7 @@ ship "Bounder"
 		"outfit space" 220
 		"weapon capacity" 50
 		"engine capacity" 110
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 30
 			"shield damage" 300
@@ -597,6 +609,7 @@ ship "Flivver"
 		"outfit space" 130
 		"weapon capacity" 25
 		"engine capacity" 45
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 16
 			"shield damage" 160
@@ -643,6 +656,7 @@ ship "Heavy Shuttle"
 		"outfit space" 120
 		"weapon capacity" 10
 		"engine capacity" 60
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 12
 			"shield damage" 120
@@ -689,6 +703,7 @@ ship "Caravel"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 125
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 16
 			"shield damage" 160
@@ -742,6 +757,7 @@ ship "Star Queen"
 		"outfit space" 360
 		"weapon capacity" 120
 		"engine capacity" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -803,6 +819,7 @@ ship "Berserker"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 30
 			"shield damage" 300
@@ -860,6 +877,7 @@ ship "Fury"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 120
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 24
 			"shield damage" 240
@@ -914,6 +932,7 @@ ship "Hawk"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 200
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 30
 			"shield damage" 300
@@ -966,6 +985,7 @@ ship "Sparrow"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 16
 			"shield damage" 160
@@ -1015,6 +1035,7 @@ ship "Wasp"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 20
 			"shield damage" 200
@@ -1073,6 +1094,7 @@ ship "Argosy"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 210
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -1137,6 +1159,7 @@ ship "Clipper"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 210
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 36
 			"shield damage" 360
@@ -1191,6 +1214,7 @@ ship "Freighter"
 		"outfit space" 250
 		"weapon capacity" 80
 		"engine capacity" 70
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 40
 			"shield damage" 400
@@ -1243,6 +1267,7 @@ ship "Star Barge"
 		"outfit space" 130
 		"weapon capacity" 20
 		"engine capacity" 40
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 16
 			"shield damage" 160
@@ -1292,6 +1317,7 @@ ship "Hauler"
 		"outfit space" 350
 		"weapon capacity" 140
 		"engine capacity" 80
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -1352,6 +1378,7 @@ ship "Hauler II"
 		"outfit space" 350
 		"weapon capacity" 140
 		"engine capacity" 80
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 80
 			"shield damage" 800
@@ -1413,6 +1440,7 @@ ship "Hauler III"
 		"outfit space" 350
 		"weapon capacity" 140
 		"engine capacity" 80
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -1471,6 +1499,7 @@ ship "Nest"
 		"outfit space" 400
 		"weapon capacity" 140
 		"engine capacity" 80
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -1532,6 +1561,7 @@ ship "Roost"
 		"outfit space" 450
 		"weapon capacity" 140
 		"engine capacity" 80
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 80
 			"shield damage" 800
@@ -1598,6 +1628,7 @@ ship "Skein"
 		"outfit space" 500
 		"weapon capacity" 140
 		"engine capacity" 80
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -1666,6 +1697,7 @@ ship "Class C Freighter"
 		"outfit space" 400
 		"weapon capacity" 140
 		"engine capacity" 85
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 200
 			"shield damage" 2000
@@ -1732,6 +1764,7 @@ ship "Behemoth"
 		"outfit space" 510
 		"weapon capacity" 280
 		"engine capacity" 90
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 140
 			"shield damage" 1400
@@ -1793,6 +1826,7 @@ ship "Bulk Freighter"
 		"outfit space" 410
 		"weapon capacity" 180
 		"engine capacity" 85
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 120
 			"shield damage" 1200
@@ -1861,6 +1895,7 @@ ship "Narcissus"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 72
 			"shield damage" 720
@@ -1921,6 +1956,7 @@ ship "Headhunter"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 44
 			"shield damage" 440
@@ -1978,6 +2014,7 @@ ship "Odyssey"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 195
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 80
 			"shield damage" 800
@@ -2045,6 +2082,7 @@ ship "Quicksilver"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 40
 			"shield damage" 400
@@ -2100,6 +2138,7 @@ ship "Achlys"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 200
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 40
 			"shield damage" 400
@@ -2162,6 +2201,7 @@ ship "Raven"
 		"cloak" .02
 		"cloaking energy" 5
 		"cloaking heat" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -2224,6 +2264,7 @@ ship "Quarg Wardragon"
 		"hull repair rate" 5
 		"hull energy" 5
 		"ramscoop" 10
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 250
 			"shield damage" 1000
@@ -2275,6 +2316,7 @@ ship "Manta"
 		"outfit space" 350
 		"weapon capacity" 140
 		"engine capacity" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 80
 			"shield damage" 800
@@ -2333,6 +2375,7 @@ ship "Osprey"
 		"outfit space" 450
 		"weapon capacity" 180
 		"engine capacity" 130
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 80
 			"shield damage" 800
@@ -2393,6 +2436,7 @@ ship "Splinter"
 		"outfit space" 400
 		"weapon capacity" 150
 		"engine capacity" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -2451,6 +2495,7 @@ ship "Aerie"
 		"outfit space" 390
 		"weapon capacity" 150
 		"engine capacity" 95
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 80
 			"shield damage" 800
@@ -2513,6 +2558,7 @@ ship "Bastion"
 		"outfit space" 470
 		"weapon capacity" 180
 		"engine capacity" 120
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 120
 			"shield damage" 1200
@@ -2578,6 +2624,7 @@ ship "Challenger"
 		"outfit space" 420
 		"weapon capacity" 150
 		"engine capacity" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 80
 			"shield damage" 800
@@ -2639,6 +2686,7 @@ ship "Firebird"
 		"outfit space" 400
 		"weapon capacity" 160
 		"engine capacity" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -2702,6 +2750,7 @@ ship "Aletheia"
 		"outfit space" 410
 		"weapon capacity" 170
 		"engine capacity" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -2776,6 +2825,7 @@ ship "Arete"
 		"outfit space" 820
 		"weapon capacity" 370
 		"engine capacity" 210
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 300
 			"shield damage" 3000
@@ -2864,6 +2914,7 @@ ship "Nomos"
 		"outfit space" 760
 		"weapon capacity" 320
 		"engine capacity" 170
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 260
 			"shield damage" 2600
@@ -2939,6 +2990,7 @@ ship "Elpis"
 		"outfit space" 790
 		"weapon capacity" 360
 		"engine capacity" 190
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 260
 			"shield damage" 2600
@@ -3017,6 +3069,7 @@ ship "Archon"
 		"hull repair rate" 100
 		"hull energy" 100
 		"ramscoop" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 200
 			"shield damage" 20000
@@ -3074,6 +3127,7 @@ ship "Archon" "Archon (Cloaked)"
 		"hull repair rate" 100
 		"hull energy" 100
 		"ramscoop" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 200
 			"shield damage" 20000
@@ -3110,6 +3164,7 @@ ship "Falcon"
 		"outfit space" 540
 		"weapon capacity" 240
 		"engine capacity" 150
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 160
 			"shield damage" 1600
@@ -3174,6 +3229,7 @@ ship "Leviathan"
 		"outfit space" 620
 		"weapon capacity" 240
 		"engine capacity" 120
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 80
 			"shield damage" 800
@@ -3235,6 +3291,7 @@ ship "Protector"
 		"outfit space" 570
 		"weapon capacity" 220
 		"engine capacity" 100
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 160
 			"shield damage" 1600
@@ -3297,6 +3354,7 @@ ship "Vanguard"
 		"outfit space" 560
 		"weapon capacity" 220
 		"engine capacity" 120
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 160
 			"shield damage" 1600
@@ -3358,6 +3416,7 @@ ship "Unnamed Prototype"
 		"outfit space" 810
 		"weapon capacity" 390
 		"engine capacity" 210
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 260
 			"shield damage" 2600
@@ -3422,6 +3481,7 @@ ship "Mule"
 		"outfit space" 450
 		"weapon capacity" 210
 		"engine capacity" 110
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -3501,6 +3561,7 @@ ship "Bactrian"
 		"outfit space" 740
 		"weapon capacity" 300
 		"engine capacity" 180
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 260
 			"shield damage" 2600
@@ -3587,6 +3648,7 @@ ship "Prototype Vulture"
 		"outfit space" 1050
 		"weapon capacity" 425
 		"engine capacity" 300
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 400
 			"shield damage" 4000
@@ -3664,6 +3726,7 @@ ship "Veles"
 		"outfit space" 1420
 		"weapon capacity" 970
 		"engine capacity" 300
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 400
 			"shield damage" 4000
@@ -3750,6 +3813,7 @@ ship "Dart"
 		"weapon capacity" 55
 		"engine capacity" 95
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 27
 			"shield damage" 265
@@ -3799,6 +3863,7 @@ ship "Bolt"
 		"weapon capacity" 55
 		"engine capacity" 115
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 27
 			"shield damage" 265
@@ -3841,6 +3906,7 @@ ship "Missile"
 		"weapon capacity" 60
 		"engine capacity" 95
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 27
 			"shield damage" 265
@@ -3888,6 +3954,7 @@ ship "Jumper"
 		"weapon capacity" 80
 		"engine capacity" 115
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 35
 			"shield damage" 350
@@ -4036,6 +4103,7 @@ ship "Merlin"
 		"weapon capacity" 265
 		"engine capacity" 165
 		"self destruct" .15
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 170
 			"shield damage" 1750
@@ -4094,6 +4162,7 @@ ship "Peregrine"
 		"weapon capacity" 265
 		"engine capacity" 220
 		"self destruct" .15
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 170
 			"shield damage" 1750
@@ -4149,6 +4218,7 @@ ship "Harpy"
 		"weapon capacity" 300
 		"engine capacity" 165
 		"self destruct" .15
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 170
 			"shield damage" 1750
@@ -4205,6 +4275,7 @@ ship "Phoenix"
 		"weapon capacity" 175
 		"engine capacity" 110
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 110
 			"shield damage" 1100
@@ -4261,6 +4332,7 @@ ship "Huma"
 		"weapon capacity" 175
 		"engine capacity" 130
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 110
 			"shield damage" 1100
@@ -4309,6 +4381,7 @@ ship "Fenghuang"
 		"weapon capacity" 210
 		"engine capacity" 110
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 110
 			"shield damage" 1100
@@ -4359,6 +4432,7 @@ ship "Lindworm"
 		"weapon capacity" 265
 		"engine capacity" 140
 		"self destruct" .15
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 90
 			"shield damage" 900
@@ -4419,6 +4493,7 @@ ship "Selma"
 		"weapon capacity" 265
 		"engine capacity" 220
 		"self destruct" .15
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 90
 			"shield damage" 900
@@ -4467,6 +4542,7 @@ ship "Bakunawa"
 		"weapon capacity" 300
 		"engine capacity" 140
 		"self destruct" .15
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 90
 			"shield damage" 900
@@ -4520,6 +4596,7 @@ ship "Zonetail"
 		"weapon capacity" 155
 		"engine capacity" 110
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 90
 			"shield damage" 900
@@ -4578,6 +4655,7 @@ ship "Lesser Devil"
 		"weapon capacity" 155
 		"engine capacity" 130
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 90
 			"shield damage" 900
@@ -4631,6 +4709,7 @@ ship "Spinetail"
 		"weapon capacity" 175
 		"engine capacity" 110
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 90
 			"shield damage" 900
@@ -4687,6 +4766,7 @@ ship "Gallium"
 		"weapon capacity" 65
 		"engine capacity" 75
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 45
 			"shield damage" 450
@@ -4737,6 +4817,7 @@ ship "Mercury"
 		"weapon capacity" 65
 		"engine capacity" 115
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 45
 			"shield damage" 450
@@ -4782,6 +4863,7 @@ ship "Phosphorus"
 		"weapon capacity" 80
 		"engine capacity" 75
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 45
 			"shield damage" 450
@@ -4827,6 +4909,7 @@ ship "Crow"
 		"weapon capacity" 115
 		"engine capacity" 110
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 65
 			"shield damage" 650
@@ -4881,6 +4964,7 @@ ship "Rook"
 		"weapon capacity" 115
 		"engine capacity" 130
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 65
 			"shield damage" 650
@@ -4925,6 +5009,7 @@ ship "Sturnus"
 		"weapon capacity" 145
 		"engine capacity" 110
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 65
 			"shield damage" 650
@@ -4973,6 +5058,7 @@ ship "Sliver"
 		"weapon capacity" 165
 		"engine capacity" 110
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -5027,6 +5113,7 @@ ship "Needle"
 		"weapon capacity" 165
 		"engine capacity" 130
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 60
 			"shield damage" 600
@@ -5077,6 +5164,7 @@ ship "Sting"
 		"weapon capacity" 180
 		"engine capacity" 110
 		"self destruct" .25
+		"atmosphere scan" 10
 		weapon
 			"blast radius" 60
 			"shield damage" 600
