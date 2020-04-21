@@ -988,7 +988,7 @@ mission "NU Marina 2"
 	destination Rand
 	passengers 1
 	to offer
-		has "FW Katya 1B: done"
+		has "NU Marina 1B: done"
 	to fail
 		has "chosen sides"
 	on offer
@@ -1015,7 +1015,7 @@ mission "NU Marina 2B"
 	clearance
 	passengers 1
 	to offer
-		has "FW Katya 2: done"
+		has "NU Marina 2: done"
 	to fail
 		has "chosen sides"
 	on offer
