@@ -23,7 +23,8 @@ mission "Sabik Fleet, plus Kornephoros"
 			has "capture of Kornephoros"
 			has "Kornephoros and Sabik fleets merge"
 	npc kill
-		personality heroic staying plunders
+		personality 
+			heroic staying plunders surveillance 
 		government "Free Worlds"
 		system Sabik
 		ship "Vanguard" "F.S. Battlespork"
@@ -46,7 +47,8 @@ mission "Sabik Fleet, no Kornephoros"
 			has "capture of Kornephoros"
 #Add to fail on this line
 	npc kill
-		personality heroic staying plunders
+		personality 
+			heroic staying plunders surveillance
 		government "Free Worlds"
 		system Sabik
 		ship "Vanguard" "F.S. Battlespork"
@@ -65,7 +67,8 @@ mission "Kornephoros Krusaders"
 	to fail
 		has "capture of Kornephoros"
 	npc kill
-		personality heroic staying plunders
+		personality 
+			heroic staying plunders surveillance
 		government "Free Worlds"
 		system Kornephoros
 		ship "Falcon" "F.S. Frisky"
@@ -88,7 +91,8 @@ mission "Earth Defense Force"
 		has "event: war begins"
 	
 	npc kill
-		personality heroic staying plunders
+		personality 
+			heroic staying plunders surveillance
 		government "Republic"
 		system Sol
 		ship "Nomos" "N.S. Sancta Terra"
@@ -110,7 +114,8 @@ mission "Pollux Defenders"
 		has "event: war begins"
 	
 	npc kill
-		personality heroic staying plunders
+		personality 
+			heroic staying plunders surveillance
 		government "Republic"
 		system Pollux
 		ship "Arete" "N.S. Athens"
@@ -130,7 +135,8 @@ mission "Castor Defenders"
 		has "event: war begins"
 	
 	npc kill
-		personality heroic staying plunders
+		personality 
+			heroic staying plunders surveillance
 		government "Republic"
 		system Castor
 		ship "Arete" "N.S. Rome"
@@ -150,7 +156,8 @@ mission "DSF"
 		has "event: war begins"
 	
 	npc kill
-		personality heroic staying plunders
+		personality 
+			heroic staying plunders surveillance
 		government "Republic"
 		system Zosma
 		ship "Bactrian" "D.S.S. Odin"
@@ -176,10 +183,11 @@ mission "Tarazed Prototypes"
 		has "event: unique fleet population"
 	
 	npc kill
-		personality heroic staying plunders
+		personality 
+			staying heroic plunders surveillance
 		government "Tarazed"
 		system Tarazed
-		ship "Vulture" "X-305 Vulture"
+		ship "Prototype Vulture" "X-305 Vulture"
 		ship "Unnamed Prototype" "X-301 Wraith"
 		ship "Unnamed Prototype" "X-301 Goose"
 		ship "Falcon" "X-279 Duckhunt"
@@ -200,8 +208,9 @@ mission "defensepactdefenders"
 		has "event: war begins"
 	
 	npc kill
-		personality heroic staying plunders
-		government "Republic"
+		personality
+			heroic staying plunders surveillance
+		government "Militia"
 		system Sabik
 		ship "Bactrian" "S.S. Shieldmaiden"
 		ship "Vanguard" "S.S. Logic"
