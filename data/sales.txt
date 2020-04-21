@@ -302,6 +302,7 @@ outfitter "Ammo"
 	"Javelin"
 	"Heavy Rocket"
 	"Gatling Gun Ammo"
+	"Plasma Pistol"
 	"Local Map"
 
 outfitter "Deep Sky Basics"
