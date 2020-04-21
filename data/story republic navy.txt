@@ -152,7 +152,6 @@ mission "Navy Scouting 1"
 		attributes "paradise"
 	destination "Chiron"
 	to offer
-		has "event: war begins"
 		not "chosen sides"
 		random < 60
 
@@ -214,6 +213,7 @@ mission "Navy Scouting 3"
 	destination "Follower"
 	to offer
 		has "Navy Scouting 2: done"
+		has "event: war begins"
 		not "chosen sides"	
 		random < 40
 	
