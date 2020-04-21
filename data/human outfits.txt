@@ -2726,7 +2726,14 @@ outfit "Interference Plating"
 	"scan interference" .5
 	description "If you're in the habit of carrying illegal cargo or outfits, this plating increases the odds that a scan of your ship will fail to detect it. The more of these you install, the better your chances of evading detection. They won't keep anyone from noticing if you're flying an unlicensed ship, however."
 
-
+outfit "Plasma Pistol"
+	category "Hand to Hand"
+	cost 500
+	thumbnail "outfit/plasmapistol"
+	"capture attack" .3
+	"capture defense" .7
+	"unplunderable" 1
+	description "Frontier Defense Company has produced this standard plasma pistol for centuries. Although its power and accuracy are severely lacking, its reliability and magazine capacity make this a perfect weapon for ship defense. As they are also dirt cheap, almost every ship you can buy comes with one for each crew bunk as part of their standard package."
 
 outfit "Laser Rifle"
 	category "Hand to Hand"
