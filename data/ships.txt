@@ -3437,7 +3437,6 @@ ship "Unnamed Prototype"
 		
 		"Orca Plasma Thruster"
 		"Orca Plasma Steering"
-		"Hyperdrive"
 	engine -14 177
 	engine 14 177
 	gun -75 57 "Torpedo Launcher"
