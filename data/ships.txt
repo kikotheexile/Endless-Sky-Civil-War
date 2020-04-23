@@ -2795,7 +2795,76 @@ ship "Aletheia"
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description "For centuries, the Frigate was the largest warship produced by the Republic Navy Yard, but now they seem quite small compared to a Cruiser or a Carrier. Armed with a variety of weapons, and with relatively good maneuverability for a ship its size, the Frigate is equally capable at fending off small fighters or bombarding larger ships."
+	description "For centuries, this destroyer was the largest warship produced by the Republic Navy Yard, but now they seem quite small compared to most Cruisers and Carriers. Armed with a variety of weapons, and with relatively good maneuverability for a ship its size, this support ship equally capable at fending off small fighters or bombarding larger ships."
+
+ship "Zephyrus"
+	sprite "ship/cutter"
+	thumbnail "thumbnail/cutter"
+	attributes
+		category "Destroyer"
+		licenses
+			Navy
+		"cost" 7500000
+		"shields" 4000
+		"hull" 2000
+		"landing gear" 1
+		"required crew" 12
+		"bunks" 24
+		"mass" 216
+		"drag" 3.2
+		"heat dissipation" .7
+		"fuel capacity" 700
+		"cargo space" 15
+		"outfit space" 425
+		"weapon capacity" 120
+		"engine capacity" 115
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 80
+		"atmosphere scan" 100
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 60
+		"Blaster Turret" 2
+		"Anti-Missile Turret"
+		
+		"NT-200 Nucleovoltaic"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		"Large Radar Jammer"
+		"Plasma Pistol" 12
+		"Surveillance Pod"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Afterburner"
+		"Scram Drive"
+		
+	engine -36 150.5
+	engine 36 150.5
+	engine 47 151
+	engine -47 151
+	gun -15 -147 "Meteor Missile Launcher"
+	gun 15 -147 "Meteor Missile Launcher"
+	turret 0 -30 "Anti-Missile Turret"
+	turret -19 -103 "Blaster Turret"
+	turret 19 -103 "Blaster Turret"
+	drone 0 25 top
+	drone 0 25 bottom
+	leak "leak" 40 50
+	leak "flame" 50 80
+	leak "big leak" 90 30
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "Riding the line between frigate and destroyer, this cutting edge vessel mixes the drone capacity of an Aletheia with the speed of a considerably smaller ship. This speed comes at the cost of hull and shield strength. Unlike other Navy designs, the Zephyrus functions best in a Cutter or Scout role and should only be used in combat roles in a pinch, and is the largest ship currently capable of cloaking."
 
 
 #Cruiser
