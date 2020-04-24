@@ -2863,6 +2863,71 @@ ship "Zephyrus"
 	"final explode" "final explosion medium"
 	description "Named for an ancient diety of speed and riding the line between frigate and destroyer, this cutting edge vessel mixes the drone capacity of an Aletheia with the speed of a considerably smaller ship. This speed comes at the cost of hull and shield strength. Unlike other Navy designs, the Zephyrus functions best in a Cutter or Scout role and should only be used in combat roles in a pinch, and is the largest ship currently capable of cloaking."
 
+ship "Astraea"
+	sprite "ship/voyager"
+	thumbnail "thumbnail/voyager"
+	attributes
+		category "Destroyer"
+		licenses
+			"Free Worlds"		
+		"cost" 9000000
+		"shields" 14100
+		"hull" 5300
+		"landing gear" 1
+		"required crew" 25
+		"bunks" 50
+		"mass" 665
+		"drag" 8.1
+		"heat dissipation" .65
+		"fuel capacity" 600
+		"cargo space" 50
+		"outfit space" 525
+		"weapon capacity" 190
+		"engine capacity" 120
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+	outfits
+		"Plasma Cannon" 2
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 120
+		"Plasma Turret" 2
+
+		"Breeder Reactor"
+		"S3 Thermionic"
+		"LP144a Battery Pack"
+		"D23-QP Shield Generator"
+		"Small Radar Jammer"
+		"Liquid Helium Cooler"
+		"Tactical Scanner"
+		"Laser Rifle" 25
+		"Plasma Pistol" 59
+		
+		"Impala Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
+
+	gun -9 -167 "Plasma Cannon"
+	gun 9 -167 "Plasma Cannon"
+	gun 38.5 -60.5 "Meteor Missile Launcher"
+	gun -38.5 -60.5 "Meteor Missile Launcher"
+	turret -34.5 -53.5 "Plasma Turret"
+	turret 34.5 -53.5 "Plasma Turret"
+	engine -25.5 161.5
+	engine 25.5 161.5
+	leak "leak" 40 50
+	leak "flame" 50 80
+	leak "big leak" 90 30
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "The Free Worlds' answer to the Zephyrus and Aletheia, this new vessel out of Southbound is intended to serve as both a scout and a mainline Destroyer for hunting down and destroying Republic support vessels."
+	description "	Named for the Greek Goddess of Justice, Innocence, and Purity, the Free Worlds are equal parts mocking Republic naming conventions and declaring their innocence for the Geminus and Castor bombings."
 
 #Cruiser
 ###############################################
