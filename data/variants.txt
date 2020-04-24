@@ -1040,6 +1040,71 @@ ship "Fury" "Fury (Miner)"
 		"X2200 Ion Steering"
 		"Hyperdrive"
 
+ship "Narcissus" "Narcissus (Reputation Destroyer)"
+	"never disabled"
+	sprite "ship/gunboat"
+	thumbnail "thumbnail/gunboat"
+	attributes
+		category "Frigate"
+		licenses
+			Navy
+		"cost" 3200000
+		"shields" 5800
+		"hull" 1400
+		"hull repair rate" .1
+		"landing gear" 1
+		"required crew" 5000
+		"bunks" 5001
+		"mass" 100
+		"drag" 3.1
+		"heat dissipation" .8
+		"fuel capacity" 600
+		"cargo space" 50
+		"outfit space" 270
+		"weapon capacity" 100
+		"engine capacity" 90
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 100
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 72
+			"shield damage" 720
+			"hull damage" 360
+			"hit force" 1080
+	outfits
+		"Heavy Laser" 2
+		"Heavy Laser Turret"
+		
+		"RT-I Radiothermal"
+		"LP144a Battery Pack"
+		"D14-RN Shield Generator"
+		"Small Radar Jammer"
+		"Cargo Scanner"
+		"Outfit Scanner"
+		"Tactical Scanner"
+		"Brig"
+		"Plasma Pistol" 7
+		
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -12 57
+	engine 12 57
+	gun -28 -28 "Heavy Laser"
+	gun 28 -28 "Heavy Laser"
+	turret 0 -8 "Heavy Laser Turret"
+	leak "leak" 50 50
+	leak "flame" 80 80
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "Named for an ancient Greek hunter, the Narcissus is the all seeing eye of the Republic Navy. Designed for engaging targets at short range, this hunter also serves as the Navy's mobile sensor platform. Scanning ships for illegal equipment or cargo, merchants often feel as if they are being looked down upon with disdain when this vessel approaches."
+	description "So as to not fall in love with its own reflection, this vessel is equipped with its own tactical cloaking unit."
+
+
 
 
 ship "Narcissus" "Narcissus (Mark II)"
