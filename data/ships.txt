@@ -440,6 +440,7 @@ ship "Arrow"
 		"cost" 1200000
 		"shields" 2000
 		"hull" 400
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 5
@@ -493,6 +494,7 @@ ship "Blackbird"
 		"cost" 2230000
 		"shields" 4400
 		"hull" 900
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 3
 		"bunks" 28
@@ -550,6 +552,7 @@ ship "Bounder"
 		"cost" 1140000
 		"shields" 2200
 		"hull" 700
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 17
@@ -598,6 +601,7 @@ ship "Flivver"
 		"cost" 180000
 		"shields" 1400
 		"hull" 200
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 3
@@ -645,6 +649,7 @@ ship "Heavy Shuttle"
 		"cost" 220000
 		"shields" 700
 		"hull" 700
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 8
@@ -689,6 +694,7 @@ ship "Caravel"
 		"cost" 850000
 		"shields" 1200
 		"hull" 400
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 2
 		"bunks" 12
@@ -746,6 +752,7 @@ ship "Star Queen"
 		"cost" 5500000
 		"shields" 4100
 		"hull" 2200
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 41
 		"bunks" 112
@@ -805,6 +812,7 @@ ship "Berserker"
 		"cost" 520000
 		"shields" 2200
 		"hull" 500
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 2
@@ -862,6 +870,7 @@ ship "Fury"
 		"cost" 490000
 		"shields" 2000
 		"hull" 400
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 3
@@ -917,6 +926,7 @@ ship "Hawk"
 		"cost" 670000
 		"shields" 2500
 		"hull" 500
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 2
 		"bunks" 4
@@ -970,6 +980,7 @@ ship "Sparrow"
 		"cost" 225000
 		"shields" 1200
 		"hull" 300
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 2
@@ -1020,6 +1031,7 @@ ship "Wasp"
 		"cost" 400000
 		"shields" 1500
 		"hull" 500
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 2
@@ -1078,6 +1090,7 @@ ship "Argosy"
 		"cost" 1960000
 		"shields" 4200
 		"hull" 2600
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 4
 		"bunks" 14
@@ -1143,6 +1156,7 @@ ship "Clipper"
 		"cost" 900000
 		"shields" 2700
 		"hull" 800
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 3
 		"bunks" 9
@@ -1201,6 +1215,7 @@ ship "Freighter"
 		"cost" 730000
 		"shields" 2000
 		"hull" 2000
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 2
 		"bunks" 7
@@ -1254,6 +1269,7 @@ ship "Star Barge"
 		"cost" 190000
 		"shields" 600
 		"hull" 1000
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 1
 		"bunks" 3
@@ -1304,6 +1320,7 @@ ship "Hauler"
 		"cost" 1430000
 		"shields" 2500
 		"hull" 3700
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 3
 		"bunks" 12
@@ -1365,6 +1382,7 @@ ship "Hauler II"
 		"cost" 2340000
 		"shields" 2900
 		"hull" 5200
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 3
 		"bunks" 12
@@ -1427,6 +1445,7 @@ ship "Hauler III"
 		"cost" 3260000
 		"shields" 3300
 		"hull" 6700
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 3
 		"bunks" 12
@@ -1486,6 +1505,7 @@ ship "Nest"
 		"cost" 2500000
 		"shields" 2500
 		"hull" 3700
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 5
 		"bunks" 14
@@ -1548,6 +1568,7 @@ ship "Roost"
 		"cost" 3000000
 		"shields" 2900
 		"hull" 5200
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 7
 		"bunks" 16
@@ -1615,6 +1636,7 @@ ship "Skein"
 		"cost" 3500000
 		"shields" 3300
 		"hull" 6700
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 7
 		"bunks" 18
@@ -1684,6 +1706,7 @@ ship "Class C Freighter"
 		"cost" 11400000
 		"shields" 13500
 		"hull" 7600
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 18
 		"bunks" 43
@@ -1751,6 +1774,7 @@ ship "Behemoth"
 		"cost" 10800000
 		"shields" 7600
 		"hull" 6300
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 12
 		"bunks" 30
@@ -1813,6 +1837,7 @@ ship "Bulk Freighter"
 		"cost" 9400000
 		"shields" 4000
 		"hull" 7600
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 6
 		"bunks" 18
@@ -1879,6 +1904,7 @@ ship "Narcissus"
 		"cost" 3200000
 		"shields" 5800
 		"hull" 1400
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 7
 		"bunks" 12
@@ -1939,6 +1965,7 @@ ship "Headhunter"
 		"cost" 1850000
 		"shields" 3800
 		"hull" 700
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 2
 		"bunks" 4
@@ -1997,6 +2024,7 @@ ship "Odyssey"
 		"cost" 1960000
 		"shields" 4800
 		"hull" 1900
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 5
 		"bunks" 12
@@ -2064,6 +2092,7 @@ ship "Quicksilver"
 		"cost" 1090000
 		"shields" 3000
 		"hull" 800
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 3
 		"bunks" 6
@@ -2120,6 +2149,7 @@ ship "Achlys"
 		"cost" 1580000
 		"shields" 3500
 		"hull" 1200
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 7
 		"bunks" 14
@@ -2182,6 +2212,7 @@ ship "Raven"
 		"cost" 2200000
 		"shields" 4700
 		"hull" 1400
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 6
 		"bunks" 13
@@ -2302,6 +2333,7 @@ ship "Manta"
 		"cost" 3400000
 		"shields" 5900
 		"hull" 1500
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 6
 		"bunks" 10
@@ -2361,6 +2393,7 @@ ship "Osprey"
 		"cost" 4400000
 		"shields" 7200
 		"hull" 1600
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 9
 		"bunks" 24
@@ -2422,6 +2455,7 @@ ship "Splinter"
 		"cost" 3100000
 		"shields" 5200
 		"hull" 1700
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 7
 		"bunks" 21
@@ -2481,6 +2515,7 @@ ship "Aerie"
 		"cost" 3500000
 		"shields" 5700
 		"hull" 1900
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 10
 		"bunks" 28
@@ -2544,6 +2579,7 @@ ship "Bastion"
 		"cost" 3560000
 		"shields" 6700
 		"hull" 4200
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 17
 		"bunks" 40
@@ -2610,6 +2646,7 @@ ship "Challenger"
 		"cost" 4400000
 		"shields" 6800
 		"hull" 800
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 8
 		"bunks" 32
@@ -2672,6 +2709,7 @@ ship "Firebird"
 		"cost" 3700000
 		"shields" 5800
 		"hull" 3400
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 7
 		"bunks" 22
@@ -2736,6 +2774,7 @@ ship "Aletheia"
 		"cost" 5200000
 		"shields" 8000
 		"hull" 2500
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 21
 		"bunks" 44
@@ -2804,6 +2843,7 @@ ship "Zephyrus"
 		"cost" 7500000
 		"shields" 4000
 		"hull" 2000
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 12
 		"bunks" 24
@@ -2873,6 +2913,7 @@ ship "Astraea"
 		"cost" 9000000
 		"shields" 14100
 		"hull" 5300
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 25
 		"bunks" 50
@@ -2945,6 +2986,7 @@ ship "Arete"
 		"cost" 15200000
 		"shields" 21400
 		"hull" 8300
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 111
 		"bunks" 184
@@ -3034,6 +3076,7 @@ ship "Nomos"
 		"cost" 11200000
 		"shields" 19600
 		"hull" 6400
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 81
 		"bunks" 136
@@ -3112,6 +3155,7 @@ ship "Elpis"
 		"cost" 11900000
 		"shields" 18100
 		"hull" 7300
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 84
 		"bunks" 147
@@ -3179,6 +3223,7 @@ ship "Falcon"
 		"cost" 10900000
 		"shields" 12800
 		"hull" 3700
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 52
 		"bunks" 75
@@ -3244,6 +3289,7 @@ ship "Leviathan"
 		"cost" 9800000
 		"shields" 14400
 		"hull" 5000
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 43
 		"bunks" 64
@@ -3306,6 +3352,7 @@ ship "Protector"
 		"cost" 5500000
 		"shields" 9500
 		"hull" 6500
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 30
 		"bunks" 69
@@ -3368,6 +3415,7 @@ ship "Aegis"
 		"cost" 5500000
 		"shields" 9500
 		"hull" 6500
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 30
 		"bunks" 69
@@ -3429,6 +3477,7 @@ ship "Vanguard"
 		"cost" 7200000
 		"shields" 9800
 		"hull" 6000
+		"hull repair rate" .1
 		"landing gear" 1
 		"required crew" 23
 		"bunks" 45
@@ -3492,6 +3541,7 @@ ship "Unnamed Prototype"
 		"cost" 14700000
 		"shields" 19400
 		"hull" 7200
+		"hull repair rate" .1
 		"required crew" 64
 		"bunks" 128
 		"mass" 740
@@ -3556,6 +3606,7 @@ ship "Mule"
 		"cost" 30000000
 		"shields" 14500
 		"hull" 5600
+		"hull repair rate" .1
 		"required crew" 45
 		"bunks" 120
 		"mass" 5400
@@ -3636,6 +3687,7 @@ ship "Bactrian"
 		"cost" 60600000
 		"shields" 17500
 		"hull" 8600
+		"hull repair rate" .1
 		"required crew" 70
 		"bunks" 245
 		"mass" 9400
@@ -3722,6 +3774,7 @@ ship "Prototype Vulture"
 		"cost" 45000000
 		"shields" 75000
 		"hull" 45000
+		"hull repair rate" .1
 		"required crew" 120
 		"bunks" 300
 		"mass" 3500
@@ -3801,6 +3854,7 @@ ship "Veles"
 		"cost" 850000000
 		"shields" 85000
 		"hull" 50000
+		"hull repair rate" .1
 		"required crew" 210
 		"bunks" 350
 		"mass" 10500
