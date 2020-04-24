@@ -277,6 +277,7 @@ government "Northern Union"
 		"Merchant" -.1
 		"Syndicate" -.01
 		"Pirate" -.01
+		"Navy Intelligence" 1
 	"bribe" .05
 	"fine" 0
 	"friendly hail" "friendly pirate"
