@@ -2766,8 +2766,8 @@ system Betelgeuse
 		distance 1081.98
 		period 433.189
 		object "Orion Station"
-			sprite planet/placeholderstation
-			distance 1050
+			sprite planet/caravanstation
+			distance 280
 			period 475
 	object
 		sprite planet/ocean4
