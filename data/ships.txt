@@ -47,7 +47,7 @@ ship "Sentinel Drone"
 	engine 9 29
 	gun 0 -29 "Beam Laser"
 	explode "tiny explosion" 15
-	description "Combat drones are pilotless attack ships used primarily by the Republic Navy. Although very weak and easy to destroy, they can be very effective in large numbers. Because drones do not need a cockpit, they can be filled entirely with equipment and solid metal, which makes their hulls stronger than other small ships."
+	description "A small, unmanned swarm vessel, the Sentinel is the Navy's go-to for police action. Their low cost and high armor and shield values make them expendable enough to be used as additional shields, while their gun port makes them potent enough to handle most lone threats."
 
 ship "Thea Drone"
 	sprite "ship/surveillance drone"
@@ -82,7 +82,7 @@ ship "Thea Drone"
 	engine -5 29
 	engine 5 29
 	explode "tiny explosion" 15
-	description "Surveillance drones are unarmed drones used by the Republic navy to scan ships and planets in a star system."
+	description "Named for the mother of the Sun in greek mythology, Thea drones are used to bring light to where there was once darkness. These unarmed drones are used by the Republic navy to scan ships and planets in a star system."
 
 ship "Earth Shaper"
 	sprite "ship/earth shaper"
@@ -240,8 +240,8 @@ ship "Lance"
 			"hit force" 180
 	outfits
 		"Energy Blaster"
-		"Sidewinder Missile Launcher"
-		"Sidewinder Missile" 45
+		"Meteor Missile Launcher"
+		"Meteor Missile" 45
 		
 		"nGVF-AA Fuel Cell"
 		"LP036a Battery Pack"
@@ -254,10 +254,10 @@ ship "Lance"
 	engine -15 30
 	engine 15 30
 	gun -14 -10 "Energy Blaster"
-	gun 14 -10 "Sidewinder Missile Launcher"
+	gun 14 -10 "Meteor Missile Launcher"
 	explode "tiny explosion" 15
 	explode "small explosion" 5
-	description "The Lance is the primary fighter used by the Republic Navy. As with all fighters, it is weak by itself but very effective as part of a larger squadron."
+	description "The Lovelace Lance is the primary unmanned fighter used by the Republic Navy. Used in concert with Sentinel drones, these heavier automations are a serious threat to even cruisers."
 
 
 ship "Barb"
@@ -301,8 +301,8 @@ ship "Barb"
 	leak "leak" 60 50
 	explode "tiny explosion" 15
 	explode "small explosion" 5
-	description `Though the Syndicate doesn't build fighter carriers, it is testing the waters with the Barb, a cheap and flexible carrier-launched craft featuring newly-developed miniaturized ion engines. The design philosophy of the Barb seems to have been "uglier than the Protector," and as you look at the cockpit nestled between the massive gun port and turret mount, you wonder where the power systems are supposed to go. Though an awkward-looking ship, it seems flexible enough to become a dangerous addition to any fleet with carriers.`
-	description	`Unlike other fighters, this ship does require additional crew to pilot and man the turret`
+	description `Though the Syndicate doesn't build fighter carriers, it is testing the waters with the Barb, a cheap and flexible carrier-launched craft featuring newly-developed miniaturized ion engines. The design philosophy of the Barb seems to have been "uglier than the Protector." Though an awkward-looking ship, it seems flexible enough to become a dangerous addition to any fleet with carriers.`
+	description	`Unlike many other fighters, this ship does require additional crew to pilot and man the turret`
 
 
 ship "Thorn"
@@ -458,8 +458,8 @@ ship "Arrow"
 			"hull damage" 120
 			"hit force" 360
 	outfits
-		"Sidewinder Missile Launcher"
-		"Sidewinder Missile" 45
+		"Meteor Missile Launcher"
+		"Meteor Missile" 45
 		"Anti-Missile Turret"
 		
 		"Dwarf Core"
@@ -475,7 +475,7 @@ ship "Arrow"
 		
 	engine -10 60
 	engine 10 60
-	gun -8 -34 "Sidewinder Missile Launcher"
+	gun -8 -34 "Meteor Missile Launcher"
 	gun 8 -34
 	turret 0 16 "Anti-Missile Turret"
 	leak "leak" 80 50
@@ -483,7 +483,7 @@ ship "Arrow"
 	explode "small explosion" 18
 	explode "medium explosion" 6
 	"final explode" "final explosion small"
-	description "The Arrow is a light transport, designed for bringing a small number of very rich passengers - Syndicate CEOs, for example - from one planet to another with speed and style. It makes up for its light armament by being able to outrun nearly every other ship in the sky."
+	description "The Arrow is a light transport, designed for bringing a small number of very rich passengers - Syndicate executives, for example - from one planet to another with speed and style. It makes up for its light armament by being able to outrun nearly every other ship in the sky."
 
 ship "Blackbird"
 	sprite "ship/blackbird"
@@ -539,8 +539,8 @@ ship "Blackbird"
 	explode "medium explosion" 18
 	explode "large explosion" 2
 	"final explode" "final explosion small"
-	description "Has cloaking."
-	description ""
+	description "Based off of an ancient mythical fighter, the Blackbird is one of the fastest and most dangerous ships for its class, capable of holding its own in a fight and outrunning its opposition."
+	description "When fighting and running wont work, the Blackbird can enable its emergency cloak to hide all of its emissions. Unfortunately, this will cause the vessel to overheat quickly."
 
 ship "Bounder"
 	sprite "ship/bounder"
@@ -635,7 +635,7 @@ ship "Flivver"
 	leak "leak" 60 50
 	explode "tiny explosion" 10
 	explode "small explosion" 10
-	description "With space for neither cargo nor passengers nor heavy weaponry, the Flivver's only selling point is speed. Flivvers are sold mostly to wealthy individuals who want to be able to travel the stars without needing to share a bunk room on a merchant transport with common people."
+	description "With space for not cargo nor passengers nor heavy weaponry, the Flivver's only selling point is speed. Flivvers are sold mostly to wealthy individuals who want to be able to travel the stars without needing to share a bunk room on a merchant transport with common people."
 
 ship "Heavy Shuttle"
 	sprite "ship/heavy shuttle"
@@ -679,7 +679,7 @@ ship "Heavy Shuttle"
 	leak "leak" 60 50
 	explode "tiny explosion" 10
 	explode "small explosion" 5
-	description "The Heavy Shuttle is an updated shuttle model from Betelgeuse Shipyards, attempting to improve on their perennial classic by offering slightly better cargo and passenger capacity, at the expense of some speed and maneuverability."
+	description "The Heavy Shuttle is an updated shuttle model from Betelgeuse Shipyards, attempting to improve on their perennial classic by offering slightly better cargo and passenger capacity, as well as a hyperdrive, at the expense of some speed and maneuverability."
 
 ship "Caravel"
 	sprite "ship/scout"
@@ -736,7 +736,7 @@ ship "Caravel"
 	leak "flame" 60 80
 	"final explode" "final explosion small"
 	description "Has cloaking."
-	description "The Lionheart Scoutship was designed back in the days when the galaxy was more sparsely populated, and ships prospecting for habitable worlds or worlds rich in resources would often travel far away from any habitable ports where they would be able to refuel. Although the galaxy has now been much more thoroughly explored, the Scout remains a popular ship for long-distance travel."
+	description "The Lionheart Caravel was designed back in the days when the galaxy was more sparsely populated, and ships prospecting for habitable worlds or worlds rich in resources would often travel far away from any habitable ports where they would be able to refuel. Although the galaxy has now been much more thoroughly explored, the Scout remains a popular ship for long-distance travel."
 
 ship "Star Queen"
 	sprite "ship/star queen"
@@ -764,8 +764,8 @@ ship "Star Queen"
 			"hull damage" 300
 			"hit force" 900
 	outfits
-		"Sidewinder Missile Launcher" 3
-		"Sidewinder Missile" 135
+		"Meteor Missile Launcher" 3
+		"Meteor Missile" 135
 		"Heavy Anti-Missile Turret" 2
 		
 		"NT-200 Nucleovoltaic"
@@ -781,9 +781,9 @@ ship "Star Queen"
 		
 	engine -18.5 115
 	engine 18.5 115
-	gun 0 -113 "Sidewinder Missile Launcher"
-	gun -24 -76 "Sidewinder Missile Launcher"
-	gun 24 -76 "Sidewinder Missile Launcher"
+	gun 0 -113 "Meteor Missile Launcher"
+	gun -24 -76 "Meteor Missile Launcher"
+	gun 24 -76 "Meteor Missile Launcher"
 	turret -21.5 2.5 "Heavy Anti-Missile Turret"
 	turret 21.5 2.5 "Heavy Anti-Missile Turret"
 	leak "leak" 50 50
@@ -850,9 +850,8 @@ ship "Berserker"
 	explode "tiny explosion" 10
 	explode "small explosion" 15
 	"final explode" "final explosion small"
-	description "Has cloaking"
 	description "Once one of the most popular Gunship-class ships, the Berserker's popularity is now waning in favor of more modern and versatile ships like the Hawk. Although limited numbers are still produced by Betelgeuse Shipyards, most Berserkers that are in service today are more than half a century old."
-
+	description "The Berserker is one of the first ships designed that could hide its emissions for a short period of time, making it all but completely invisible to the enemy. Berserker ambushes were once the bane of even the largest Caravan fleets."
 
 ship "Fury"
 	plural "Furies"
@@ -907,8 +906,8 @@ ship "Fury"
 	leak "flame" 50 80
 	explode "tiny explosion" 10
 	explode "small explosion" 20
-	description "Has cloaking."
 	description "The Fury is Southbound Shipyard's most popular design of escort ship. They have greater firepower than any other Gunship-class vessel, meaning that any pirate flying solo will think twice before attacking a convoy that is accompanied by a Fury. However, Furies are also much less maneuverable than other small ships."
+	description "The Fury is also equipped with a tactical cloak, allowing it to hide its emissions for a short period of time, allowing its shields to recover as it gets out of the line of fire."
 
 ship "Hawk"
 	sprite "ship/hawk"
@@ -959,8 +958,8 @@ ship "Hawk"
 	explode "tiny explosion" 15
 	explode "small explosion" 5
 	"final explode" "final explosion small"
-	description "Has cloaking"
 	description "The Tarazed Hawk is an Gunship-class warship often used as an escort for freighters or in a planetary militia's patrol squadron. Hawks are fast enough to chase down most smaller ships, but are capable of mounting much more powerful weapons. They are also, of course, a favorite ship of pirate captains who have earned enough money to afford one."
+	description "Considered Tarazed's version of the Berserker, the Hawk employes the same type of tactical cloaking, making it an amazing ambush predator."
 
 
 ship "Sparrow"
@@ -1010,8 +1009,8 @@ ship "Sparrow"
 	leak "flame" 60 80
 	explode "tiny explosion" 15
 	explode "small explosion" 5
-	description "Has cloaking."
 	description "	Insurance reports indicate that as many as two out of every three first-time ship buyers who choose to pilot a Sparrow lose their ship (and often, their life as well) within the first month of owning it. Pilots who have survived longer than that tend to swear by replacing the stock weapons with missile launchers."
+	description "Although not as advanced as Tarazed's other designs, the Hawk, this vessel employes the same type of tactical cloaking. Allowing a ship to hide itself from sensors for a short period of time, at the cost of rapid heat buildup and energy drain."
 
 ship "Wasp"
 	sprite "ship/wasp"
@@ -1043,8 +1042,8 @@ ship "Wasp"
 			"hit force" 300
 	outfits
 		"Energy Blaster" 2
-		"Sidewinder Missile Launcher"
-		"Sidewinder Missile" 45
+		"Meteor Missile Launcher"
+		"Meteor Missile" 45
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
@@ -1058,15 +1057,14 @@ ship "Wasp"
 		
 	engine -6 33
 	engine 6 33
-	gun 0 -38 "Sidewinder Missile Launcher"
+	gun 0 -38 "Meteor Missile Launcher"
 	gun -13 -31 "Energy Blaster"
 	gun 13 -31 "Energy Blaster"
 	leak "leak" 60 50
 	explode "tiny explosion" 20
 	explode "small explosion" 10
-	description "Has cloaking."
 	description "The Wasp is a medium-strength Gunship, designed by Syndicated Shipyards to serve as an escort for cargo vessels. Like most Syndicate ships, it is not particularly pretty, but it at least serves the purpose it was made for."
-
+	description "As cloaking is the industry standard for Gunships, Syndicated Shipyards reluctantly spent additional funds on designing this vessel to be capable of the same tactical cloaking as every other ship in its class."
 
 #Freighter (light)
 ###############################################
@@ -1133,8 +1131,8 @@ ship "Argosy"
 	explode "medium explosion" 25
 	explode "large explosion" 10
 	"final explode" "final explosion medium"
-	description "Has cloaking"
-	description "	The Argosy is also a very easy ship to upgrade with faster engines or more powerful weapons as needed, so many privately owned Argosies have very different capabilities than the stock model."
+	description "The Southbound Argosy was designed to serve as a light anti-gunship escort, and it fills that role well. Many pilots swear by its ease of configuration, cargo space, and firepower. For the same reason, many pirates also take and modify the vessel to their own nefarious ends."
+	description "Capable of cloaking, the Argosy makes a perfect ambush predator for pirate and militia crews alike."
 
 
 ship "Clipper"
@@ -1191,8 +1189,8 @@ ship "Clipper"
 	explode "small explosion" 20
 	explode "medium explosion" 10
 	"final explode" "final explosion small"
-	description "Has cloaking."
 	description "The Clipper is the smaller sister ship to the popular Southbound Shipyards Argosy. Although not able to carry as much cargo, Clippers are versatile ships that can be used as passenger transports, couriers, or even warships in a pinch, and they come with enough free space to be customized based on an individual captain's needs."
+	description "The Flexibility of the Clipper extends to its cloak, which make it a great vessel for smugglers as well."
 
 
 ship "Freighter"
@@ -1355,7 +1353,7 @@ ship "Hauler"
 	explode "medium explosion" 20
 	explode "large explosion" 5
 	"final explode" "final explosion medium"
-	description "Several centuries ago, in the early days of the Republic, the sudden increase in commerce and space travel led to high demand for cargo ships. Haulers were first created simply by bolting a cockpit and engine block onto a cargo container, and the basic design has not changed much since then."
+	description "Several centuries ago, in the early days of the Republic, the sudden increase in commerce and space travel led to high demand for cargo ships. The founders of Southbound shipyards met this challenge head on. Haulers were first created simply by bolting a cockpit and engine block onto a cargo container, and the basic design has not changed much since then."
 
 
 
@@ -1417,7 +1415,7 @@ ship "Hauler II"
 	explode "medium explosion" 30
 	explode "large explosion" 15
 	"final explode" "final explosion medium"
-	description "This is a mid-sized freighter, designed for a balance between cargo capacity and defensive capability. Centuries ago, various Hauler models made up nearly half of the merchant vessels in service, but today the design is considered somewhat outdated."
+	description "This is a mid-sized freighter, designed for a balance between cargo capacity and defensive capability. Centuries ago, various Southbound Hauler models made up nearly half of the merchant vessels in service, but today the design is considered somewhat outdated."
 
 
 
@@ -1833,8 +1831,8 @@ ship "Bulk Freighter"
 			"hull damage" 600
 			"hit force" 1800
 	outfits
-		"Sidewinder Missile Launcher" 2
-		"Sidewinder Missile" 90
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 90
 		"Laser Turret" 3
 		"Heavy Anti-Missile Turret" 2
 		
@@ -1850,8 +1848,8 @@ ship "Bulk Freighter"
 		
 	engine -22 198
 	engine 22 198
-	gun -20 -175 "Sidewinder Missile Launcher"
-	gun 20 -175 "Sidewinder Missile Launcher"
+	gun -20 -175 "Meteor Missile Launcher"
+	gun 20 -175 "Meteor Missile Launcher"
 	turret -12 -155 "Laser Turret"
 	turret 12 -155 "Heavy Anti-Missile Turret"
 	turret 0 5 "Laser Turret"
@@ -1930,9 +1928,8 @@ ship "Narcissus"
 	explode "small explosion" 20
 	explode "medium explosion" 15
 	"final explode" "final explosion small"
-	description "Has cloaking."
-	description "The Navy gunboat is designed for engaging targets at short range, and also serves as the Navy's mobile sensor platform, scanning ships for illegal equipment or cargo."
-
+	description "Named for an ancient Greek hunter, the Narcissus is the all seeing eye of the Republic Navy. Designed for engaging targets at short range, this hunter also serves as the Navy's mobile sensor platform. Scanning ships for illegal equipment or cargo, merchants often feel as if they are being looked down upon with disdain when this vessel approaches."
+	description "So as to not fall in love with its own reflection, this vessel is equipped with its own tactical cloaking unit."
 
 ship "Headhunter"
 	sprite "ship/headhunter"
@@ -1988,9 +1985,9 @@ ship "Headhunter"
 	explode "small explosion" 25
 	explode "medium explosion" 15
 	"final explode" "final explosion small"
-	description "Has cloaking"
 	description "The Headhunter is one of the newest ships designed by Lionheart: a versatile ship that can serve equally well for carrying cargo or for bounty hunting. As with many of Lionheart's designs, the hull is mostly composite fiber rather than metal, sacrificing armor strength for the sake of lighter weight and faster movement."
-
+	description "This vessel is also capable of using tactical cloaking when it finds itself being the hunted, rather than the hunter."
+	
 ship "Odyssey"
 	plural "Odysseys"
 	sprite "ship/modified argosy"
@@ -2056,9 +2053,8 @@ ship "Odyssey"
 	explode "medium explosion" 30
 	explode "large explosion" 15
 	"final explode" "final explosion medium"
-	description "Has cloaking."
 	description "The Argosy has long been a favorite ship for pirates, who have come up with many tricks for modifying them to be more suitable as warships."
-
+	description "The Odyssey maintains it's base frame's ability to cloak, making it one of the heaviest ambush predators on the market."
 
 ship "Quicksilver"
 	sprite "ship/quicksilver"
@@ -2109,8 +2105,8 @@ ship "Quicksilver"
 	explode "tiny explosion" 12
 	explode "small explosion" 16
 	"final explode" "final explosion small"
-	description "Has cloaking."
 	description "The Megaparsec Quicksilver is a warship built around a single concept: to design the smallest and fastest ship capable of carrying two particle cannons. Because of its speed and long weapons range, the Quicksilver can keep a safe distance from most targets and bombard them with particle bursts until they are destroyed."
+	description "When the Quicksilver finds it too far out of range of its intended target, it can always engage its cloak for a short time to close the distance."
 
 
 
@@ -2174,9 +2170,8 @@ ship "Achlys"
 	explode "small explosion" 20
 	explode "medium explosion" 15
 	"final explode" "final explosion small"
-	description "Has cloaking."
-	description "The Rainmaker is a missile boat built in the Republic Navy Yard. It comes equipped with four missile launchers and enough ammunition to destroy even ships many times its size. Because of their lack of maneuverability and relatively light shielding, Rainmakers serve best as long-range attack ships, and once their missile supply is spent, they are relatively useless in combat."
-
+	description "Named for the Goddess of rain, misery, shadow and sorrow, this Republic missile boat comes equipped with four missile launchers and enough ammunition to destroy even ships many times its size. Because of their lack of maneuverability and relatively light shielding, Achlys serve best as long-range attack ships, and once their missile supply is spent, they are relatively useless in combat."
+	description "Like their namesake, they can shroud themselves in myst and shadow. More specifically, they can hide their emissions from hostile ships for some short amount of time."
 
 
 ship "Raven"
@@ -2235,9 +2230,8 @@ ship "Raven"
 	explode "tiny explosion" 28
 	explode "small explosion" 40
 	"final explode" "final explosion small"
-	description "Has cloaking."
 	description "The Lionheart Raven is their most popular warship, an agile and elegant vessel that can nevertheless deal out and absorb considerable damage. Ravens are a favorite ship for bounty hunters, because they are more than a match for pirate Gunships and can be used by a skilled pilot to take down much larger ships as well."
-
+	description "The Raven is capable of using its tactical cloak to get itself out of, or into, trouble."
 
 #Destroyer
 ###############################################
@@ -2248,6 +2242,8 @@ ship "Quarg Wardragon"
 	thumbnail "thumbnail/wardragon"
 	attributes
 		category "Heavy Warship"
+		licenses
+			Navy
 		"cost" 5900000
 		"shields" 160000
 		"hull" 50000
@@ -2295,7 +2291,8 @@ ship "Quarg Wardragon"
 	explode "large explosion" 40
 	explode "huge explosion" 20
 	"final explode" "final explosion medium"
-	description "The Wardragon is used by the Quarg as a light warship."
+	description "A rare sight in human space, the Quarg's famed Wardragon is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
+	description "	Many conspiracy theorists wonder why the Quarg would abide by such regulations and laws if they are so powerful."
 
 ship "Manta"
 	sprite "ship/manta"
@@ -2502,9 +2499,9 @@ ship "Aerie"
 			"hull damage" 400
 			"hit force" 1200
 	outfits
-		"Sidewinder Missile Launcher" 2
-		"Sidewinder Missile" 136
-		"Sidewinder Missile Rack" 2
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 136
+		"Meteor Missile Rack" 2
 		"Heavy Laser Turret" 2
 		"Heavy Anti-Missile Turret"
 		
@@ -2521,8 +2518,8 @@ ship "Aerie"
 		
 	engine -10 91
 	engine 10 91
-	gun -13 -79 "Sidewinder Missile Launcher"
-	gun 13 -79 "Sidewinder Missile Launcher"
+	gun -13 -79 "Meteor Missile Launcher"
+	gun 13 -79 "Meteor Missile Launcher"
 	turret 0 0 "Heavy Anti-Missile Turret"
 	turret -17 14 "Heavy Laser Turret"
 	turret 17 14 "Heavy Laser Turret"
@@ -2632,8 +2629,8 @@ ship "Challenger"
 			"hit force" 1200
 	outfits
 		"Heavy Laser" 2
-		"Sidewinder Missile Launcher" 2
-		"Sidewinder Missile" 90
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 90
 		"Heavy Laser Turret"
 		"Anti-Missile Turret"
 		
@@ -2652,8 +2649,8 @@ ship "Challenger"
 	engine 11 118
 	gun -12 -68 "Heavy Laser"
 	gun 12 -68 "Heavy Laser"
-	gun -14 -60 "Sidewinder Missile Launcher"
-	gun 14 -60 "Sidewinder Missile Launcher"
+	gun -14 -60 "Meteor Missile Launcher"
+	gun 14 -60 "Meteor Missile Launcher"
 	turret 0 -11 "Heavy Laser Turret"
 	turret 0 74 "Anti-Missile Turret"
 	leak "leak" 40 50
@@ -2795,7 +2792,7 @@ ship "Aletheia"
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description "For centuries, this destroyer was the largest warship produced by the Republic Navy Yard, but now they seem quite small compared to most Cruisers and Carriers. Armed with a variety of weapons, and with relatively good maneuverability for a ship its size, this support ship equally capable at fending off small fighters or bombarding larger ships."
+	description "Named after the Greek goddess of Truth, for centuries this destroyer was the largest warship produced by the Republic Navy Yard. Now they seem quite small compared to most Cruisers and Carriers. Armed with a variety of weapons, and with relatively good maneuverability for a ship its size, this support ship equally capable at fending off small fighters or bombarding larger ships."
 
 ship "Zephyrus"
 	sprite "ship/cutter"
@@ -2864,7 +2861,7 @@ ship "Zephyrus"
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description "Riding the line between frigate and destroyer, this cutting edge vessel mixes the drone capacity of an Aletheia with the speed of a considerably smaller ship. This speed comes at the cost of hull and shield strength. Unlike other Navy designs, the Zephyrus functions best in a Cutter or Scout role and should only be used in combat roles in a pinch, and is the largest ship currently capable of cloaking."
+	description "Named for an ancient diety of speed and riding the line between frigate and destroyer, this cutting edge vessel mixes the drone capacity of an Aletheia with the speed of a considerably smaller ship. This speed comes at the cost of hull and shield strength. Unlike other Navy designs, the Zephyrus functions best in a Cutter or Scout role and should only be used in combat roles in a pinch, and is the largest ship currently capable of cloaking."
 
 
 #Cruiser
@@ -2958,7 +2955,7 @@ ship "Arete"
 	explode "large explosion" 40
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
-	description "The Carrier is more than just a warship: it is practically a mobile space station, with docking bays for an entire squadron of drones and fighters and enough crew to fill a small village. Although designed primarily for engaging enemies from a distance, a Carrier can also do significant damage in close combat."
+	description "A dedicated carrier named for the virtue of excellence, the Arete has enough room to fit a small village within its hull. Twenty years ago, a taskforce of Arete evacuated the colony on Hope, only needing to make two trips."
 
 
 ship "Nomos"
@@ -2991,8 +2988,8 @@ ship "Nomos"
 			"hit force" 3900
 	outfits
 		"Particle Cannon" 4
-		"Sidewinder Missile Launcher" 2
-		"Sidewinder Missile" 90
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 90
 		"Heavy Laser Turret" 2
 		"Heavy Anti-Missile Turret" 2
 		
@@ -3018,8 +3015,8 @@ ship "Nomos"
 	gun 31 -63 "Particle Cannon"
 	gun -41 -52 "Particle Cannon"
 	gun 41 -52 "Particle Cannon"
-	gun -20 -44 "Sidewinder Missile Launcher"
-	gun 20 -44 "Sidewinder Missile Launcher"
+	gun -20 -44 "Meteor Missile Launcher"
+	gun 20 -44 "Meteor Missile Launcher"
 	turret 0 -40 "Heavy Anti-Missile Turret"
 	turret -33 -19 "Heavy Laser Turret"
 	turret 33 -19 "Heavy Laser Turret"
@@ -3037,7 +3034,7 @@ ship "Nomos"
 	explode "large explosion" 40
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
-	description "The Republic Cruiser is a relatively recent design, a much larger version of the Frigate designed to be able to take on an entire pirate fleet if necessary. In addition to a wide variety of weaponry, Cruisers have space to carry four attack drones: fast, pilotless fighters that can be controlled remotely."
+	description "Named for the ancient Greek concept of law and order, the Nomos is a relatively recent design. Designed to be able to take on an entire pirate fleet if necessary, these vessels mere prescience is often enough to win or deter battles. In addition to a wide variety of weaponry, Nomos have space to carry four attack drones."
 
 
 ship "Elpis"
@@ -3045,6 +3042,8 @@ ship "Elpis"
 	thumbnail "thumbnail/dreadnought"
 	attributes
 		category "Cruiser"
+		licenses
+			"Free Worlds"		
 		"cost" 11900000
 		"shields" 18100
 		"hull" 7300
@@ -3105,114 +3104,7 @@ ship "Elpis"
 	explode "large explosion" 50
 	explode "huge explosion" 20
 	"final explode" "final explosion large"
-	description "The Dreadnought is a new warship that was designed by Southbound Shipyards in order to provide a large capital ship for the Free Worlds fleets, something capable of standing up to a Navy Cruiser or even a Carrier."
-
-
-
-ship "Archon"
-	noun "entity"
-	sprite "ship/archon"
-		"frame rate" 0.87
-	thumbnail "thumbnail/archon"
-	"never disabled"
-	attributes
-		category "Heavy Warship"
-		"cost" 1000000000
-		"shields" 4000000
-		"hull" 1000000
-		"required crew" 1
-		"bunks" 1
-		"mass" 1000
-		"drag" 27
-		"heat dissipation" 40
-		"fuel capacity" 800
-		"cargo space" 0
-		"outfit space" 800
-		"weapon capacity" 600
-		"engine capacity" 200
-		"energy capacity" 10000
-		"energy generation" 500
-		"heat generation" 17
-		"shield generation" 100
-		"shield energy" 100
-		"hull repair rate" 100
-		"hull energy" 100
-		"ramscoop" 100
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 200
-			"shield damage" 20000
-			"hull damage" 10000
-			"hit force" 30000
-	outfits
-		"Drak Antimatter Cannon"
-		"Drak Anti-Missile Field" 2
-		"Drak Draining Field"
-		"Drak Distancer" 2
-		"Drak Turret" 3
-		
-		"Medium Graviton Thruster"
-		"Medium Graviton Steering"
-		"Hyperdrive"
-		"Jump Drive"
-	
-	engine -17 92
-	engine 17 92
-	gun 0 -74 "Drak Antimatter Cannon"
-	turret 0 -10 "Drak Anti-Missile Field"
-	turret 0 -10 "Drak Anti-Missile Field"
-	turret 0 -10 "Drak Draining Field"
-	turret -40 -13 "Drak Turret"
-	turret 40 -13 "Drak Turret"
-	turret 0 81 "Drak Turret"
-	turret -55 16 "Drak Distancer"
-	turret 55 16 "Drak Distancer"
-	explode "nuke explosion" 3
-	"final explode" "final explosion large"
-	
-	
-	
-ship "Archon" "Archon (Cloaked)"
-	"never disabled"
-	attributes
-		"cost" 1000000000
-		"shields" 4000000
-		"hull" 1000000
-		"required crew" 1
-		"bunks" 1
-		"mass" 1000
-		"drag" 27
-		"heat dissipation" 40
-		"fuel capacity" 800
-		"cargo space" 0
-		"outfit space" 800
-		"weapon capacity" 600
-		"engine capacity" 200
-		"energy capacity" 10000
-		"energy generation" 500
-		"heat generation" 17
-		"shield generation" 100
-		"shield energy" 100
-		"hull repair rate" 100
-		"hull energy" 100
-		"ramscoop" 100
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 200
-			"shield damage" 20000
-			"hull damage" 10000
-			"hit force" 30000
-		"cloak" .04
-	turret "Drak Anti-Missile Field"
-	turret "Drak Anti-Missile Field"
-	turret "Drak Draining Field"
-	turret "Drak Turret"
-	turret "Drak Turret"
-	turret "Drak Turret"
-	turret "Drak Distancer"
-	turret "Drak Distancer"
-
-
+	description "Its name a clear jab at Republic naming conventions, the Elpis is named for the Greek spirit of hope. True to its name, a vessel capable of standing toe to toe with Navy Nomos and Arete is a true inspiration to the Free Worlds."
 
 ship "Falcon"
 	sprite "ship/falcon"
@@ -3367,8 +3259,8 @@ ship "Protector"
 			"hull damage" 800
 			"hit force" 2400
 	outfits
-		"Sidewinder Missile Launcher" 2
-		"Sidewinder Missile" 90
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 90
 		"Quad Blaster Turret" 4
 		"Heavy Anti-Missile Turret" 2
 		
@@ -3386,8 +3278,8 @@ ship "Protector"
 		
 	engine -11 125
 	engine 11 125
-	gun -15 -100 "Sidewinder Missile Launcher"
-	gun 15 -100 "Sidewinder Missile Launcher"
+	gun -15 -100 "Meteor Missile Launcher"
+	gun 15 -100 "Meteor Missile Launcher"
 	turret -54 -54 "Quad Blaster Turret"
 	turret 54 -54 "Quad Blaster Turret"
 	turret -73 0 "Heavy Anti-Missile Turret"
@@ -3403,6 +3295,66 @@ ship "Protector"
 	"final explode" "final explosion large"
 	description `Voted the "ugliest ship in the sky" by Stars and Starships Magazine, the Protector is a typical example of brutally efficient Syndicate engineering. It is basically nothing more than six turrets attached to a set of engines and crew's quarters, designed as a defense platform that can accompany merchant convoys.`
 
+ship "Aegis"
+	sprite "ship/protector"
+	thumbnail "thumbnail/protector"
+	attributes
+		category "Cruiser"
+		"cost" 5500000
+		"shields" 9500
+		"hull" 6500
+		"landing gear" 1
+		"required crew" 30
+		"bunks" 69
+		"mass" 600
+		"drag" 10.3
+		"heat dissipation" .6
+		"fuel capacity" 400
+		"cargo space" 100
+		"outfit space" 470
+		"weapon capacity" 50
+		"engine capacity" 134
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 160
+			"shield damage" 1600
+			"hull damage" 800
+			"hit force" 2400
+	outfits
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 90
+		
+		"Fusion Reactor"
+		"LP288a Battery Pack"
+		"D67-TM Shield Generator"
+		"Small Radar Jammer" 3
+		"Liquid Nitrogen Cooler"
+		"Laser Rifle" 5
+		"Plasma Pistol" 25
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -11 125
+	engine 11 125
+	gun -15 -100 "Meteor Missile Launcher"
+	gun 15 -100 "Meteor Missile Launcher"
+	fighter -54 -54 under
+	fighter 54 -54 under
+	fight -73 0 under
+	fighter 73 0 under
+	fighter -54 54 under
+	fighter 54 54 under
+	leak "leak" 60 50
+	leak "flame" 20 80
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion large"
+	description `The Protector was a commercial flop, too slow to properly protect a convoy, and too weak to protect itself. The Syndicate has since begun retrofitting their massive, slow vessels to instead serve as carriers for their hit Barb and Thorn fighters.`
+	description `	By trimming down the turret ports and converting the extra power to engines, the Aegis is considerably faster than its base ship, and can carry as many fighters as Southbound's Skein.`
 
 ship "Vanguard"
 	sprite "ship/vanguard"
@@ -3536,19 +3488,19 @@ ship "Mule"
 		licenses
 			Colony-Ship
 		category "Colony Ship"
-		"cost" 4580000
-		"shields" 5400
-		"hull" 4400
-		"required crew" 6
-		"bunks" 43
-		"mass" 3200
-		"drag" 5.7
-		"heat dissipation" .5
-		"fuel capacity" 600
-		"cargo space" 270
-		"outfit space" 450
-		"weapon capacity" 210
-		"engine capacity" 110
+		"cost" 30000000
+		"shields" 14500
+		"hull" 5600
+		"required crew" 45
+		"bunks" 120
+		"mass" 5400
+		"drag" 14.1
+		"heat dissipation" .4
+		"fuel capacity" 700
+		"cargo space" 230
+		"outfit space" 740
+		"weapon capacity" 300
+		"engine capacity" 180
 		"atmosphere scan" 10
 		weapon
 			"blast radius" 100
@@ -3604,7 +3556,7 @@ ship "Mule"
 	explode "small explosion" 30
 	explode "medium explosion" 20
 	"final explode" "final explosion medium"
-	description "The Mule is as much of a hodgepodge as its looks suggest. The Lionheart ship designers combined a good deal of cargo space with a decent amount of weaponry and even a fighter bay, and ended up with a ship that is mostly used as a freighter but must be classified as a warship because of its heavy armament and shields."
+	description "A smaller sister ship of the Bactrian, the Mule Colony ship is designed to function as the foundation for colonizing new planets. Since the decline of colonization, the vessel has found itself serving as a super-freighter."
 
 
 ship "Bactrian"
@@ -3616,7 +3568,7 @@ ship "Bactrian"
 		licenses
 			City-Ship
 		category "City Ship"
-		"cost" 17600000
+		"cost" 60600000
 		"shields" 17500
 		"hull" 8600
 		"required crew" 70
@@ -3856,7 +3808,8 @@ ship "Veles"
 	explode "large explosion" 70
 	explode "huge explosion" 30
 	"final explode" "final explosion large" 1
-	description "The Veles class is an incredible feat of engineering. A first of its kind true Star Cruiser, intended to single handedly crush the Northern Union. This ship signals a resurgence in Betelgeuse's research and development department, which has finally come out of its centuries-long stagnation."
+	description "The Veles class is an incredible feat of engineering. A first of its kind true Star Cruiseliner, designed to take wealthy retirees on tours of the poorer regions of space in safety and security.
+	description "	The Veles class is intended to single handedly crush the Northern Union. This ship signals a resurgence in Betelgeuse's research and development department, which has finally come out of its centuries-long stagnation."
 
 
 # "Marauders"
@@ -5262,3 +5215,110 @@ ship "Sting"
 	turret 0 -28 "Heavy Anti-Missile Turret"
 	turret 17 -28 "Quad Blaster Turret"
 	description "This Splinter has had extensive modification to its weapons space, with two new forward hard points on either side of the bridge. Large sections of the hull are covered with extra shield emitters and hull plating. Much of the stock cargo space has been converted to space for outfits, weapons, and engines; coupled with a streamlining of existing internal systems, it makes the prospect of meeting this flexible war machine in an uninhabited system seem pretty unappealing."
+
+# Drak and Quarg
+
+
+
+ship "Archon"
+	noun "entity"
+	sprite "ship/archon"
+		"frame rate" 0.87
+	thumbnail "thumbnail/archon"
+	"never disabled"
+	attributes
+		category "Heavy Warship"
+		"cost" 1000000000
+		"shields" 4000000
+		"hull" 1000000
+		"required crew" 1
+		"bunks" 1
+		"mass" 1000
+		"drag" 27
+		"heat dissipation" 40
+		"fuel capacity" 800
+		"cargo space" 0
+		"outfit space" 800
+		"weapon capacity" 600
+		"engine capacity" 200
+		"energy capacity" 10000
+		"energy generation" 500
+		"heat generation" 17
+		"shield generation" 100
+		"shield energy" 100
+		"hull repair rate" 100
+		"hull energy" 100
+		"ramscoop" 100
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 200
+			"shield damage" 20000
+			"hull damage" 10000
+			"hit force" 30000
+	outfits
+		"Drak Antimatter Cannon"
+		"Drak Anti-Missile Field" 2
+		"Drak Draining Field"
+		"Drak Distancer" 2
+		"Drak Turret" 3
+		
+		"Medium Graviton Thruster"
+		"Medium Graviton Steering"
+		"Hyperdrive"
+		"Jump Drive"
+	
+	engine -17 92
+	engine 17 92
+	gun 0 -74 "Drak Antimatter Cannon"
+	turret 0 -10 "Drak Anti-Missile Field"
+	turret 0 -10 "Drak Anti-Missile Field"
+	turret 0 -10 "Drak Draining Field"
+	turret -40 -13 "Drak Turret"
+	turret 40 -13 "Drak Turret"
+	turret 0 81 "Drak Turret"
+	turret -55 16 "Drak Distancer"
+	turret 55 16 "Drak Distancer"
+	explode "nuke explosion" 3
+	"final explode" "final explosion large"
+	
+	
+	
+ship "Archon" "Archon (Cloaked)"
+	"never disabled"
+	attributes
+		"cost" 1000000000
+		"shields" 4000000
+		"hull" 1000000
+		"required crew" 1
+		"bunks" 1
+		"mass" 1000
+		"drag" 27
+		"heat dissipation" 40
+		"fuel capacity" 800
+		"cargo space" 0
+		"outfit space" 800
+		"weapon capacity" 600
+		"engine capacity" 200
+		"energy capacity" 10000
+		"energy generation" 500
+		"heat generation" 17
+		"shield generation" 100
+		"shield energy" 100
+		"hull repair rate" 100
+		"hull energy" 100
+		"ramscoop" 100
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 200
+			"shield damage" 20000
+			"hull damage" 10000
+			"hit force" 30000
+		"cloak" .04
+	turret "Drak Anti-Missile Field"
+	turret "Drak Anti-Missile Field"
+	turret "Drak Draining Field"
+	turret "Drak Turret"
+	turret "Drak Turret"
+	turret "Drak Turret"
+	turret "Drak Distancer"
+	turret "Drak Distancer"
