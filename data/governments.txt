@@ -101,6 +101,7 @@ government "Free Worlds"
 		"Militia" .3
 		"Pirate" -.4
 		"Neutral" .1
+		"Navy Intelligence" 1
 	"bribe" .1
 	"friendly hail" "friendly free worlds"
 	"hostile hail" "hostile free worlds"
