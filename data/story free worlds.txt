@@ -475,12 +475,12 @@ mission "FW Recon 3B"
 				accept
 	
 	npc evade
-		government Republic
+		government "Navy Intelligence"
 		personality timid
 		fleet
 			names "republic capital"
 			variant
-				"Narcissus"
+				"Narcissus" "Narcissus (Reputation Destroyer)"
 	
 	on visit
 		dialog `A minute after you land, a Republic Narcissus, the <npc>, lands directly next to you. JJ does not approach you. You notice from your ship's logs that this Narcissus has been following you ever since you left <origin>; before you can hand over the information, you will need to escape its pursuit.`
