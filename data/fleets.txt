@@ -1945,6 +1945,297 @@ fleet "Large Northern Pirates"
 		"Fury (Heavy)" 2
 		"Firebird (Missile)"
 
+fleet "Small Northern Union"
+	government "Northern Union"
+	names "pirate"
+	cargo 1
+	personality
+		plunders harvests coward
+		confusion 20
+	variant 5
+		"Sparrow"
+	variant 3
+		"Fury"
+	variant 1
+		"Fury (Missile)"
+	variant 1
+		"Fury (Laser)"
+	variant 1
+	variant 1
+		"Fury (Heavy)"
+	variant 2
+		"Berserker"
+	variant 2
+		"Berserker (Afterburner)"
+	variant 2
+		"Hawk"
+	variant 1
+		"Hawk (Speedy)"
+	variant 1
+		"Sparrow"
+	variant 3
+		"Headhunter"
+	variant 2
+		"Headhunter (Particle)"
+	variant 2
+		"Headhunter (Strike)"
+	variant 2
+		"Raven (Afterburner)"
+	variant 1
+		"Raven (Heavy)"
+	variant 2
+		"Corvette"
+	variant 1
+		"Corvette (Missile)"
+	variant 1
+		"Corvette (Speedy)"
+
+fleet "Large Northern Union"
+	government "Northern Union"
+	names "pirate"
+	cargo 1
+	personality
+		plunders harvests
+	variant 2
+		"Firebird"
+	variant 5
+		"Firebird (Laser)"
+	variant 1
+		"Firebird (Missile)"
+	variant 4
+		"Firebird (Plasma)"
+	variant 1
+		"Firebird"
+		"Corvette"
+	variant 4
+		"Firebird (Plasma)"
+		"Corvette (Speedy)"
+	variant 2
+		"Firebird (Plasma)"
+		"Corvette (Missile)"
+	variant 1
+		"Firebird (Laser)"
+		"Corvette (Missile)"
+	variant 2
+		"Firebird"
+		"Fury"
+	variant 2
+		"Firebird"
+		"Berserker" 2
+	variant 1
+		"Firebird (Plasma)"
+		"Fury (Missile)"
+	variant 1
+		"Firebird (Missile)"
+	variant 3
+		"Raven (Afterburner)" 2
+	variant 1
+		"Raven (Heavy)" 2
+	variant 2
+		"Headhunter (Particle)"
+		"Headhunter (Strike)"
+	variant 1
+		"Headhunter (Particle)" 2
+		"Headhunter (Strike)"
+	variant 2
+		"Leviathan"
+		"Firebird"
+	variant 1
+		"Leviathan (Laser)"
+		"Firebird"
+	variant 3
+		"Leviathan (Laser)"
+		"Firebird (Laser)"
+	variant 2
+		"Leviathan (Heavy)"
+		"Firebird (Plasma)"
+	variant 2
+		"Leviathan (Heavy)"
+		"Firebird (Missile)"
+	variant 2
+		"Leviathan (Laser)"
+		"Firebird (Missile)"
+	variant 3
+		"Leviathan"
+	variant 2
+		"Leviathan (Laser)"
+	variant 1
+		"Leviathan (Heavy)"
+	variant 1
+		"Fury (Heavy)" 2
+		"Firebird (Missile)"
+
+fleet "Northern Union Merchants"
+	government "Merchant"
+	names "civilian"
+	cargo 4
+	personality
+		confusion 30
+		disables plunders coward appeasing
+	variant 20
+		"Freighter" 2
+		"Firebird"
+	variant 6
+		"Freighter" 2
+		"Berserker" 2
+	variant 3
+		"Freighter" 2
+		"Berserker (Afterburner)" 2
+	variant 3
+		"Freighter" 2
+	variant 10
+		"Freighter" 2
+		"Firebird (Plasma)"
+	variant 10
+		"Freighter" 2
+		"Firebird (Laser)"
+	variant 10
+		"Freighter" 2
+		"Firebird (Missile)"
+	variant 10
+		"Freighter" 3
+		"Firebird"
+	variant 2
+		"Freighter" 3
+		"Firebird (Plasma)"
+	variant 2
+		"Freighter" 3
+		"Firebird (Laser)"
+	variant 2
+		"Freighter" 3
+		"Firebird (Missile)"
+	variant 20
+		"Freighter" 2
+		"Corvette"
+	variant 10
+		"Freighter" 2
+		"Corvette (Speedy)"
+	variant 10
+		"Freighter" 2
+		"Corvette (Missile)"
+	variant 10
+		"Freighter" 3
+		"Corvette"
+	variant 3
+		"Freighter" 3
+		"Corvette (Speedy)"
+	variant 3
+		"Freighter" 3
+		"Corvette (Missile)"
+	variant 1
+		"Freighter (Hai)" 2
+		"Corvette"
+	variant 6
+		"Freighter" 4
+		"Leviathan"
+	variant 6
+		"Freighter" 4
+		"Leviathan (Heavy)"
+	variant 6
+		"Freighter" 4
+		"Leviathan (Laser)"
+	variant 1
+		"Freighter (Hai)" 4
+		"Leviathan"
+	variant 30
+		"Behemoth"
+	variant 10
+		"Behemoth (Speedy)"
+	variant 10
+		"Behemoth (Proton)"
+	variant 10
+		"Behemoth"
+	variant 10
+		"Behemoth" 2
+	variant 1
+		"Behemoth (Hai)"
+	variant 4
+		"Behemoth"
+		"Headhunter" 2
+	variant 2
+		"Behemoth"
+		"Headhunter (Particle)" 2
+	variant 4
+		"Blackbird"
+		"Sparrow" 3
+	variant 4
+		"Bulk Freighter"
+		"Headhunter" 2
+	variant 2
+		"Bulk Freighter"
+		"Headhunter (Particle)" 2
+	variant 10
+		"Bulk Freighter"
+		"Sparrow" 2
+	variant 4
+		"Bulk Freighter (Heavy)"
+		"Sparrow" 2
+	variant 2
+		"Bulk Freighter (Heavy)"
+		"Berserker" 2
+	variant 2
+		"Bulk Freighter (Heavy)"
+		"Berserker (Afterburner)" 2
+	variant 4
+		"Bulk Freighter (Blaster)"
+		"Sparrow" 2
+	variant 10
+		"Behemoth" 2
+		"Firebird" 1
+	variant 10
+		"Freighter" 4
+		"Sparrow" 2
+		"Firebird" 1
+	variant 3
+		"Freighter (Fancy)" 4
+		"Sparrow" 2
+		"Firebird (Plasma)" 1
+	variant 3
+		"Freighter (Proton)" 4
+		"Sparrow" 2
+		"Firebird (Plasma)" 1
+	variant 1
+		"Freighter (Hai)" 4
+		"Sparrow" 2
+		"Firebird" 1
+	variant 2
+		"Arrow"
+	variant 1
+		"Star Queen"
+		"Leviathan"
+	variant 1
+		"Star Queen"
+		"Headhunter (Particle)" 3
+	variant 1
+		"Star Queen"
+	variant 1
+		"Star Queen"
+		"Leviathan (Heavy)"
+	variant 1
+		"Star Queen"
+		"Leviathan (Laser)"
+	variant 1
+		"Star Queen"
+		"Firebird" 2
+	variant 2
+		"Star Queen"
+		"Firebird (Laser)" 2
+	variant 1
+		"Star Queen"
+		"Firebird (Plasma)" 2
+	variant 8
+		"Hauler III"
+		"Hauler II"
+	variant 6
+		"Hauler II"
+		"Hauler" 3
+	variant 4
+		"Hauler III" 2
+	variant 4
+		"Hauler III"
+		"Hauler II"
+		"Headhunter" 3
+
 fleet "pirate raid"
 	government "Pirate"
 	names "pirate"
