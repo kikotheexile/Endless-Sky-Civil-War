@@ -39,6 +39,130 @@ event "war begins"
 		fleet "Large Southern Merchants" 1400
 		fleet "Small Free Worlds" 600
 		fleet "Large Free Worlds" 1300
+	system Pollux
+		pos -465 4
+		government Republic
+		habitable 1080
+		link Procyon
+		link Castor
+		link Talita
+		trade Clothing 197
+		trade Electronics 747
+		trade Equipment 619
+		trade Food 475
+		trade "Heavy Metals" 977
+		trade Industrial 750
+		trade "Luxury Goods" 1438
+		trade Medical 669
+		trade Metal 346
+		trade Plastic 481
+		fleet "Small Northern Merchants" 500
+		fleet "Large Northern Merchants" 800
+		fleet "Paradise Merchants" 600
+		fleet "Small Republic" 1000
+		fleet "Large Republic" 2000
+		fleet "Caravan Large" 5000
+		fleet "Caravan Small" 700
+		belt 1161
+		object
+			sprite star/g0
+			period 10
+		object
+			sprite planet/ice4-b
+			distance 160.64
+			period 24.7816
+		object
+			sprite planet/ocean8-b
+			distance 608.85
+			period 182.858
+		object Martini
+			sprite planet/ocean4
+			distance 1248.33
+			period 536.837
+			object "Martini Stock Exchange"
+				sprite planet/station7
+				distance 175
+				period 20
+		object
+			sprite planet/gas7-b
+			distance 4171.54
+			period 3279.39
+		
+	system Castor
+		pos -452 -17
+		government Republic
+		habitable 1715
+		link Pollux
+		link Talita
+		link Menkalinan
+		trade Clothing 223
+		trade Electronics 786
+		trade Equipment 659
+		trade Food 481
+		trade "Heavy Metals" 1022
+		trade Industrial 807
+		trade "Luxury Goods" 1423
+		trade Medical 677
+		trade Metal 275
+		trade Plastic 467
+		fleet "Small Northern Merchants" 600
+		fleet "Large Northern Merchants" 800
+		fleet "Paradise Merchants" 800
+		fleet "Small Republic" 1000
+		fleet "Large Republic" 500
+		belt 1675
+		minables aluminum 1 7.59239
+		minables lead 1 12.7895
+		minables silicon 6 11.0644
+		object
+			sprite star/g5
+			distance 52.9147
+			period 17.1076
+		object
+			sprite star/k0
+			distance 72.5853
+			period 17.1076
+			offset 180
+		object
+			sprite planet/ice5-b
+			distance 455.085
+			period 118.13
+			object
+				sprite planet/dust3
+				distance 139
+				period 14.4508
+		object
+			sprite planet/rock0
+			distance 758.695
+			period 254.287
+		object Geminus
+			sprite planet/rock18
+			distance 994.305
+			period 381.507
+		object
+			sprite planet/uranus
+			distance 1759.55
+			period 898.097
+			object
+				sprite planet/desert4-b
+				distance 200
+				period 11.4109
+		object
+			sprite planet/gas8-b
+			distance 5273.71
+			period 4660.11
+			object
+				sprite planet/lava2-b
+				distance 229
+				period 17.0811
+			object
+				sprite planet/dust0
+				distance 381
+				period 36.6564
+			object
+				sprite planet/dust5-b
+				distance 517
+				period 57.9426
 	system "Spica"
 		government "Free Worlds"
 	system "Minkar"
@@ -119,14 +243,12 @@ event "war begins"
 		fleet "Small Republic" 1100
 		fleet "Large Republic" 1300
 	planet "Geminus"
-		description `Until recently, Geminus was home to the Republic Navy Yard, the largest shipyard in human space. Now, there is nothing left of the shipyard but a gaping crater in the ground, from the recent terrorist bombing.`
-		spaceport `Fortunately, the spaceport and residential areas survived the bombing, which was focused only on the Navy yard and happened early in the morning, when very few people were at work.`
+		description `Until recently, Geminus was home to the Republic Navy Yard, an orbital station capable of producing entire fleets. Now, there is nothing left of the shipyard but a gaping crater in the ground, from the recent terrorist bombing.`
+		spaceport `Fortunately, the station fell on the other side of a mountain range from the spaceport, meaning that there was very little damage to the residential district and few civilian casualties due to falling debries.`
 		spaceport `The Navy officers who are in charge here have no time for anyone who is not enlisted in the Navy and participating in the ongoing investigation.`
-		shipyard clear
-		outfitter clear
 		"required reputation" 100
 	planet "Martini"
-		description `Martini is a world of exotic beaches and perfect weather. The Republic's central bank and the galactic stock exchange were previously headquartered here, before a terrorist attack destroyed them and a large portion of the capital city as well.`
+		description `Martini is a world of exotic beaches and perfect weather. The Republic's central bank and the galactic stock exchange were previously headquartered in orbit here, before a terrorist attack destroyed it. The station landed on the capital city, destroying a large portion of it.`
 		"required reputation" 100
 		security .9
 	planet "Bourne"
