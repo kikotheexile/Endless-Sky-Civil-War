@@ -1520,7 +1520,7 @@ event "death of nguyen"
 
 event "dreadnoughts for sale"
 	shipyard "Southbound Advanced"
-		"Dreadnought"
+		"Elpis"
 
 
 
@@ -1532,12 +1532,12 @@ event "dreadnought deployment"
 		personality
 			heroic
 		add variant 4
-			"Dreadnought"
+			"Elpis"
 		add variant 2
-			"Dreadnought"
+			"Elpis"
 			"Bastion"
 		add variant 2
-			"Dreadnought"
+			"Elpis"
 			"Argosy"
 			"Fury"
 
