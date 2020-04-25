@@ -153,7 +153,7 @@ mission "Navy Scouting 1"
 	destination "Chiron"
 	to offer
 		not "chosen sides"
-		random < 60
+		random < 85
 
 	on offer
 		conversation
@@ -242,18 +242,20 @@ mission "Navy Scouting 3"
 			names "free worlds capital" 
 			variant
 				"Falcon (Heavy)"
+		system
+			near "Yed Prior" 1 2
 		conversation
 			`As soon as you scan the <npc>, its captain hails you: "Excuse me, Captain," he says, "mind telling me why you felt the need to probe my ship?"`
 			choice
 				`	"Funny that you mention probing. With how powerful that ship looks, I thought it might be alien."`
 					goto alien
-				`	"I've dreamed of having a ship so well-outfitted since I was barely big enough to see over the cockpit, and today seemed like the day to start that wish list."`
+				`	"I've dreamed of having a ship so well-outfitted since I was a kid, and today seemed like the day to start that wish list."`
 					goto equipment
 			label alien
 			`	"Alien, well maybe to someone flying a tub like yours," he says, chuckling: "No, I can assure you this is all standard human fare."`
 				goto close
 			label equipment
-			`	He looks awfully pleased with himself: "She is quite a dream. I would have never been able to afford anything like this without the Defense Pact's Thousand Eyes scouting program," he says: "She makes keeping pirates out of our territory as easy as running carpets to Longjump."`
+			`	He looks awfully pleased with himself: "She is quite a dream. I would have never been able to afford anything like this without the Defense Pact's Thousand Eyes scouting program," he says, "She makes keeping pirates out of our territory as easy as running carpets to Longjump."`
 				goto close
 			label close
 			`	You cut the commlink and breathe a sigh of relief that the conversation is over.`
