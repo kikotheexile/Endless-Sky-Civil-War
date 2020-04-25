@@ -639,9 +639,9 @@ planet Foundry
 		fleet "Large Syndicate" 18
 
 planet "Free Market"
-	attributes station north "northern pirate"
+	attributes station north "northern pirate" "northern union"
 	landscape land/space4
-	description `Free Market is interesting in that this is one of the few places where the Pirates of the Northern Union freely mingle with citizens of the Republic without much conflict. Here you can buy virtually anything.`
+	description `Free Market is interesting in that this is one of the few places where the pirates of the Northern Union freely mingle with citizens of the Republic without much conflict. Here you can buy virtually anything.`
 	spaceport `You would be hard pressed to find a station this clean, busy, and safe anywhere throughout human space. Even more shocking is the fact that this station is technically run completely by a member of the Northern Union council that has remained on good terms with the Republic and it's corporations.`
 	shipyard "Free Market"
 	outfitter "Free Market"
@@ -653,7 +653,7 @@ planet "Free Market"
 	
 	
 planet Freedom
-	attributes pirate farming "north pirate"
+	attributes pirate farming "north pirate" "northern union"
 	landscape land/bwerner7
 	description `Freedom is home to the oldest and largest anarchist colonies in human history. The original settlers arrived in the first century after the invention of the hyperdrive, coming with the goal of simply getting as far away from civilization as possible. The colony has reinvented itself countless times since then as different leaders have taken control, and in fact at present it is split into two separate towns, East Mesa and West Mesa.`
 	description `	The environment is a mix of deserts and brackish oceans, with a fair amount of native wildlife and good potential for farming. Anywhere else in human space, this planet would have become densely settled, but out here it has remained mostly empty.`
@@ -785,7 +785,6 @@ planet Greenrock
 	spaceport `You have heard enough about this port's reputation that you are not surprised to see the slave markets, heavily guarded in case any visitors happen to find themselves in possession of a conscience. Nor are you shocked by the shady establishments catering to all manner of prurient interests. This is, after all, a pirate port, and everything is for sale here.`
 	spaceport `	Everything, in fact, including the very bizarre. At the end of one dark alley you see a shop called "Mike's Mustelids," with weasels and ferrets in cages in the window. Beside them, a fully-grown wolverine glares at you from behind the bars of a large and sturdy cage.`
 	shipyard "Southern Pirates"
-	shipyard "Northern Union"
 	outfitter "Common Outfits"
 	outfitter "Ammo"
 	outfitter "Delta V Basics"
@@ -807,7 +806,7 @@ planet Harmony
 	security 0
 
 planet Haven
-	attributes pirate mining "north pirate"
+	attributes pirate mining "north pirate" "northern union"
 	landscape land/dune1
 	description `Haven was founded by highly successful "privateers" nearly two centuries ago. Since then, as rival bands of pirates have fought over it, it has changed hands fourteen times, but has never been successfully invaded by the Republic. Numerous small manufacturing shops sell outfits that cannot be bought legally, and there is even a small shipyard where customized ships are sold.`
 	description `	Much of the planet is desert, but with enough moisture to grow enough crops to feed the entire population. Strip mining has turned other parts of the planet into barren wastelands, and has polluted many of the rivers.`
@@ -851,11 +850,13 @@ planet Heartland
 		fleet "Large Republic" 4
 
 planet Heatstroke
-	attributes north "northern pirate" mining
+	attributes north "northern pirate" mining "northern union"
 	landscape land/badlands2
 	description `Orbiting just a little too close to its host stars, Heatstroke is a completely uninhabitable world. At least so it seems on the surface. The tenacity of the Anarchists of this world has lead to an expansive underground colony. The commune is completely self sufficient, but is open to trade.`
 	spaceport `The spaceport building is the only visible structure on the surface. Standing barely taller than the ever shifting sand dunes`
-
+	outfitter "Basic Outfits"
+	outfitter "Ammo"
+	
 planet Helheim
 	attributes deep mining volcanic
 	landscape land/lava1
@@ -1099,10 +1100,10 @@ planet "Leviathan Station"
 		fleet "Small Deep Security" 27
 
 planet "Liberty Station"
-	attributes station
+	attributes station 
 	landscape land/sivael3
 	description `Every door is under heavy guard and you are allowed no further into the station than the mess. The people here are equally as cold and unresponsive to any questions or greetings. The dockmaster's favorite phrase seems to be 'Fuel up and get out.'`
-	spaceport `The docking ring is the only place you have access to and is just as unwelcoming as the rest of the station. The robotic cleaners rarely make passes over it's littered and blood stained floors.`
+	spaceport `The docking ring is the only place you have access to and is just as unwelcoming as the rest of the station. The robotic cleaners rarely make passes over it's littered and blood stained floors. Occasionally you can see small glimpses of something less bland happening deeper within the station.`
 
 planet Lichen
 	attributes south farming frontier
@@ -1143,10 +1144,12 @@ planet Longjump
 		fleet "Large Militia" 9
 
 planet "Lost Cause"
-	attributes north "north pirate"
+	attributes north "north pirate" "northern union"
 	landscape land/nasa7
 	description `Lost Cause would be a perfect planet for habitation if not for the constant stream of severe storms raging across the vast majority of it's surface. From extreme hurricanes to insanely powerful thunderstorms, it isn't hard to see why this world is so sparsely populated`
 	spaceport `The spaceport is in one of the few regions of the planet where the weather is even remotedly predictable, but is still severely underprepared for the extent of the storms here. Ships sit exposed under the pelting rain and occasionally are pushed slightly by the wind. Dock Workers have perfected the art of quickly loading and unloading ships in some of the most dangerous conditions you have ever seen.`
+	outfitter "Common Outfits"
+	outfitter "Ammo"
 
 planet Luna
 	attributes "near earth" tourism factory moon
@@ -1901,8 +1904,8 @@ planet Shroud
 		threshold 7000
 		fleet "Large Republic" 14
 
-planet "Silent Turf"
-	attributes north "north pirate"
+planet "Silent Turf" 
+	attributes north "north pirate" "northern union"
 	landscape land/fog2
 	description `This planet seems to be absolutely covered in abandoned settlements and cities, but there is no indication as to why. When asked about the abandoned settlements the locals tell tales of witchcraft and zombies, but it's easy to see that they aren't being serious.`
 	spaceport `The spaceport is situated atop an extremely well fortified mountain. In the distance you can see some sort of large creatures roaming the land below. In the center of the spaceport there is a large makeshift arena where people fight to the death for fun and, occasionally, profit.`
@@ -2007,11 +2010,13 @@ planet Splashdown
 		fleet "Large Republic" 3
 
 planet Sporehold
-	attributes north "north pirate"
+	attributes north "north pirate" "northern union"
 	landscape land/water6
 	description `Life here has evolved in a divergent way from what we recognize on earth. Although basic plant and animal life as we know it still exists to some degree, the vast majority of the planet is covered with massive bioluminescent mushrooms and other forms of fungus. `
 	spaceport `The spaceport is handled more as a mining colony or space station than what you would expect out of such a beautiful planet. While landing and entering the commune you never had to set foot outside. Fresh air is still piped in from the outdoors, but through massive filters.`
-
+	outfitter "Common Outfits"
+	outfitter "Ammo"
+	
 planet Starcross
 	attributes rim farming
 	landscape land/sky1
@@ -2024,7 +2029,7 @@ planet Starcross
 		fleet "Small Militia" 22
 
 planet Stormhold
-	attributes pirate "core pirate"
+	attributes pirate "core pirate" "northern union"
 	landscape land/fog3
 	description `A cold planet, with dense, foggy atmosphere. As with many pirate outposts, Stormhold is home to an unknown number of villages and hidden outposts, each controlled by a different pirate faction. It is also said that some of the most dangerous fugitives in the galaxy live deep in the forests of this planet, escaping detection by living underground or by avoiding the use of electronic devices.`
 	spaceport `The spaceport is a large town, with a population of roughly thirty thousand. People of all races and cultures mingle freely, while keeping a wary eye open for off-worlders who may be Republic agents in disguise.`
@@ -2311,7 +2316,7 @@ planet "Wyvern Station"
 		fleet "Large Militia" 6
 
 planet Zenith
-	attributes pirate "north pirate"
+	attributes pirate "north pirate" "northern union"
 	landscape land/water4
 	description `Zenith is a cold and unpleasant world, where the fog seldom lifts and the sun is rarely seen, where much of the lowlands are flooded each day by the tide, and storms are unpredictable and fierce. It has, however, one major advantage as a place to settle: it is far enough away that the Republic makes no attempt to control it.`
 	description `	Several villages have been founded near the equator, and in addition there are an unknown number of private holdings, ranging from underground bunkers to enormous cement fortresses. Because the land is owned by no government and anyone can build a dwelling without permission or paperwork as long as they are willing to fight off any other claimants, the total population of Zenith is unknown.`
