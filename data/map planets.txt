@@ -1658,6 +1658,16 @@ planet Pearl
 	tribute 2800
 		threshold 6000
 		fleet "Large Republic" 11
+		
+planet "Omega Station"
+	attributes south station
+	landscape land/sivael9
+	description `Omega Station was once the very end point of larger Caravan fleets when the southern arm was being colonized. Now it serves as an orbital warehouse for the planet below.`
+	spaceport `There is little to see here beyond refueling tanks and thousands of shipping containers, although the food in the cafeteria is surprisingly good, and the view is stunning.`
+	"required reputation" 10
+	bribe 0.03
+	security 0.4
+	music ambient/machinery
 
 planet "Phoenix Station"
 	attributes deep station
