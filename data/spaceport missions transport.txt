@@ -1318,7 +1318,7 @@ mission "Drug Running 1"
 	minor
 	repeat
 	source
-		attributes "near earth" "dirt belt" "north"
+		attributes "northern union"
 	destination
 		attributes "paradise"
 		distance 1 100
@@ -1353,7 +1353,7 @@ mission "Drug Running 2"
 	minor
 	repeat
 	source
-		attributes "near earth" "dirt belt" "north"
+		attributes "northern union"
 	destination
 		attributes "rich"
 		distance 1 100
@@ -1383,7 +1383,7 @@ mission "Drug Running 3"
 	minor
 	repeat
 	source
-		attributes "near earth" "dirt belt" "north"
+		attributes "northern union"
 	destination
 		attributes "urban"
 		distance 1 100
@@ -1498,7 +1498,7 @@ mission "Shady passenger transport 1"
 	source
 		attributes "near earth" "core" "urban"
 	destination
-		attributes "frontier" "dirt belt" "rim" "north" "south" "pirate"
+		attributes "frontier" "northern union" "pirate"
 		distance 2 3
 	passengers 1
 	illegal 75000 `Your passenger turns out to be a small-time wanted criminal. As he is hauled off in chains, you vehemently protest that you knew nothing of his shady history. You wind up quite a bit poorer through a combination of fines and bribes (the breakdown remains somewhat unclear).`
@@ -1534,7 +1534,7 @@ mission "Shady passenger transport 2"
 	source
 		attributes "near earth" core urban
 	destination
-		attributes "frontier" "dirt belt" "rim" "north" "south" "pirate"
+		attributes "frontier" "northern union" "south" "pirate"
 		distance 3 7
 	passengers 2
 	illegal 150000 `Your passengers turn out to be wanted criminals. As they are hauled off in chains, you vehemently protest that you knew nothing of their shady histories. You wind up quite a bit poorer through a combination of fines and bribes (the breakdown remains somewhat unclear).`
@@ -1815,7 +1815,7 @@ mission "Courier 1"
 	to offer
 		random < 5
 	source
-		government "Republic" "Free Worlds" "Syndicate" "Quarg" "Neutral"
+		government "Republic" "Free Worlds" "Syndicate" "Quarg" "Neutral" "Northern Union"
 	destination
 		distance 4 10
 		government "Republic" "Free Worlds" "Syndicate" "Quarg" "Neutral"
@@ -1929,10 +1929,10 @@ mission "Courier 4"
 	to offer
 		random < 5
 	source
-		government "Republic" "Free Worlds" "Syndicate" "Quarg" "Neutral"
+		government "Northern Union"
 	destination
 		distance 7 14
-		government "Republic" "Free Worlds" "Syndicate" "Quarg" "Neutral"
+		government "Republic" "Syndicate"
 		attributes "rich"
 	on offer
 		conversation
