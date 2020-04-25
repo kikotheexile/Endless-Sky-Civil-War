@@ -3189,7 +3189,7 @@ system Castor
 		period 381.507
 		object "Rampart Station"
 			sprite planet/stationshipyard
-			distance 980
+			distance 280
 			period 365
 	object
 		sprite planet/uranus
