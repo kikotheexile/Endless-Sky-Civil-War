@@ -22,7 +22,7 @@ mission "Northern Union Escort 1"
 	minor
 	autosave
 	source
-		near Haven 1 5
+		near Arneb 1 5
 	destination Foundry
 	to offer
 		has "event: remembrance day"
@@ -283,7 +283,7 @@ mission "Meeting an Alpha 0"
 	description "This dejected looking pirate warlord asked if you could transport him to <destination>."
 	minor
 	source
-		near Haven 1 10
+		near Arneb 1 10
 	destination Haven
 	to offer
 		has "event: remembrance day"
@@ -564,25 +564,25 @@ mission "Meeting an Alpha 3"
 			`	After your routine walk around the spaceport, you wander off towards the landing pad closest to the outfitter. As you approach, you hear gunfire from various weapons.`
 			choice
 				`	(Investigate.)`
-				goto investigate
+					goto investigate
 				`	(Stay put.)`
-				goto stay
+					goto stay
 				`	(Return to your ship.)`
-				goto run
+					goto run
 			label investigate
 			`	As you approach, you hear Dylan shouting while exchanging fire with local security forces. You catch her shouting things like "Die for the Godlord, mortal scum!" while falling back.`
 			choice
 				`	(Use your fancy new sidearm, Lucky, to help her.)`
-				goto help
+					goto help
 				`	(Return to your ship.)`
-				goto run
+					goto run
 			label stay
 			`	You find cover and wait. The firefight slowly approaches you until it is eventually upon you. It's Dylan, taking on nearly the entire spaceport security team by herself.`
 			choice
 				`	(Use your fancy new sidearm, Lucky, to help her.)`
-				goto help
+					goto help
 				`	(Return to your ship.)`
-				goto run
+					goto run
 			label help
 			`	You draw Lucky and begin firing. Each squeeze of the trigger releases a satisfying and confusing amount of plasma bolts. Before long, you and Dylan have managed to completely suppress the securty forces pursuing her.`
 			`	"You idiot," Dylan shouts at you, "you aren't even wearing a mask! Lucky for you I have disabled the cameras in this area. Now put your gun away, I'm taking you hostage!"`
@@ -598,7 +598,8 @@ mission "Meeting an Alpha 3"
 
 	npc
 		government "Syndicated Security"
-		personality heroic nemesis
+		personality 
+			heroic nemesis
 		fleet
 			names "syndicate capital"
 			variant
@@ -606,7 +607,8 @@ mission "Meeting an Alpha 3"
 				"Wasp" 2
 	npc save
 		government "Gaven"
-		personality heroic escort
+		personality 
+			heroic escort
 		system "Zaurak"
 		ship "Unidentified Alpha Destroyer" "End of Time"
 
@@ -898,7 +900,6 @@ mission "NU Marina 1"
 	minor
 	to offer
 		has "event: war begins"
-		random < 80
 	to fail
 		has "chosen sides"
 	source
