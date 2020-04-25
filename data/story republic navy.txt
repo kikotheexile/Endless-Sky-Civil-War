@@ -26,7 +26,7 @@ mission "Republic Bounty 1"
 	
 	on offer
 		conversation
-			`	"You look like you're looking for work," a man says in a surprisingly cheerful tone as you leave your ship. You take a look at him and his crisp, black Republic uniform, wondering why he had called out to you: "We're in need of someone to deal with some pirates that have been causing trouble near Boral. Usually, we'd send the Navy, but today is your lucky day! So, how about it?"`
+			`	"You look like you're looking for work," a man says in a surprisingly cheerful tone as you leave your ship. Unlike the Navy's blue uniforms, his uniform crisp and black with different Republic markings on it. "We're in need of someone to deal with some pirates that have been causing trouble near Boral. Usually, we'd send the Navy, but today is your lucky day! So, how about it?"`
 			choice
 				`	"Luck has nothing to do with it. Consider it done."`
 				`	"You must have mistaken me for a bounty hunter. I'm not interested."`
@@ -63,7 +63,7 @@ mission "Republic Bounty 2"
 	
 	on offer
 		conversation
-			`Before you can decide where you want to go in the spaceport, you are flagged down by a Republic officer, a dour woman with black hair in a tight bun. "Captain <last>?" she asks. You nod, and she says: "I'm Captain Shah. Commander Kent has you listed as a privateer," she says with a quick, clipped tone: "We've been made aware that a criminal has been spotted near Alnasl. He is wanted, dead."`
+			`Before you can decide where you want to go in the spaceport, you are flagged down by a Republic officer, a dour woman with black hair in a tight bun. "Captain <last>?" she declares, "I'm Captain Shah. Commander Kent has you listed as a privateer." She continues with a quick, clipped tone, "We've been made aware that a criminal has been spotted near Alnasl. He is wanted, dead."`
 			choice
 				`	"Dead. Got it."`
 				` 	"You have an interesting way of asking."`
@@ -117,9 +117,11 @@ mission "Republic Bounty 3"
 				`	"You have my attention."`
 				`	"Sorry, I have to see a man about a magic carpet."`
 					defer
-			`	"A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, they have made it clear they will kill the hostages if approached by one of our ships. Your mission will be to disable the ship and leave it to the Republic for further actions."`
+			`	"A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, they have made it clear they will kill the hostages if approached by one of our ships, we're calling his bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If he kills the hostages, he wont be able to blame the Republic for it."`
 			choice
 				`	"Don't worry, I majored in Crisis Aversion at University."`
+				`	"I'm in."`"
+					accept
 				`	"I'm sorry, but that's definetly above my pay grade."`
 					decline
 			`	"Let's hope you were in the honors program," Captain Shah replies with a relieved smile: "The ship was last spotted in Tias. We believe you'll find it there."`
@@ -258,11 +260,11 @@ mission "Navy Scouting 3"
 			`	He looks awfully pleased with himself: "She is quite a dream. I would have never been able to afford anything like this without the Defense Pact's Thousand Eyes scouting program," he says, "She makes keeping pirates out of our territory as easy as running carpets to Longjump."`
 				goto close
 			label close
-			`	You cut the commlink and breathe a sigh of relief that the conversation is over.`
+			`	He cuts the comlink, ending a potentially awkward conversation from continuing.`
 	
 	on complete
 		"assisted republic" ++
-		dialog `You happily trade <payment> for your sensor logs when you meet back up with Captain Mulgrew: "No alien tech, I see," she says, dissapointed: "While that would have been a great find, I will admit I'm happy I don't have to engineer a defense for it. I've let my supervisors know how helpful you've been. Hopefully we can work together again soon."`
+		dialog `You trade <payment> for your sensor logs when you meet back up with Captain Mulgrew: "No alien tech, I see," she says, dissapointed, "While that would have been a great find, I will admit I'm happy I don't have to engineer a defense for it. I've let my supervisors know how helpful you've been. Hopefully we can work together again soon."`
 		payment 50000
 		log "Captain Melgrew says she has put a good word in for me with her superiors."
 
