@@ -137,7 +137,7 @@ system Achernar
 		distance 548
 		period 205.254
 		object "Hammer Station"
-			sprite planet/stationcaravan
+			sprite planet/stationshipyard
 			distance 530
 			period 190
 
@@ -2766,7 +2766,7 @@ system Betelgeuse
 		distance 1081.98
 		period 433.189
 		object "Orion Station"
-			sprite planet/caravanstation
+			sprite planet/stationshipyard
 			distance 280
 			period 475
 	object
@@ -3188,7 +3188,7 @@ system Castor
 		distance 994.305
 		period 381.507
 		object "Rampart Station"
-			sprite planet/stationcaravan
+			sprite planet/stationshipyard
 			distance 980
 			period 365
 	object
@@ -4295,7 +4295,7 @@ system "Epsilon Leonis"
 		distance 1027.21
 		period 351.954
 		object "Brokkr Station"
-			sprite planet/stationcaravan
+			sprite planet/stationshipyard
 			distance 1000
 			period 300
 	object
@@ -5058,7 +5058,7 @@ system Hadar
 		distance 2293.68
 		period 2058.52
 		object "Typhon Station"
-			sprite planet/station4
+			sprite planet/stationcaravan
 			distance 226
 			period 13.7068
 
@@ -6710,7 +6710,7 @@ system Men
 		distance 2504.61
 		period 2802.82
 		object "Smuggler's Den"
-			sprite planet/station6
+			sprite planet/stationcaravan
 			distance 302
 			period 14.0811
 
@@ -10685,7 +10685,7 @@ system Tarazed
 		distance 1221.26
 		period 489.761
 		object "Echo Station"
-			sprite planet/station2
+			sprite planet/stationshipyard
 			distance 177.193
 			period 18.9732
 			offset 31.5543
@@ -10848,7 +10848,7 @@ system Tortor
 		distance 188.99
 		period 48.6872
 	object "Free Market"
-		sprite planet/station7
+		sprite planet/stationcaravan
 		distance 431.43
 		period 167.927
 	object
