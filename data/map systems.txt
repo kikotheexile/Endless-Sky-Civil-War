@@ -4702,6 +4702,11 @@ system "Gamma Corvi"
 		sprite planet/forest1-b
 		distance 1321.68
 		period 490.466
+		object "Omega Station"
+			sprite planet/stationcaravan
+			distance 350
+			period 13.7068
+		
 	object
 		sprite planet/rhea-b
 		distance 1770.97
