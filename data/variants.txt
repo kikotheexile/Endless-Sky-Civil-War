@@ -1616,20 +1616,6 @@ ship "Nest" "Nest (Sidewinder)"
 
 
 
-ship "Osprey" "Osprey (Alien Weapons)"
-	outfits
-		"Ion Cannon" 2
-		"Pulse Cannon" 2
-		"Pulse Turret"
-		"Chameleon Anti-Missile"
-		"Boulder Reactor"
-		"Hai Fissure Batteries"
-		"Hai Corundum Regenerator"
-		"Liquid Nitrogen Cooler"
-		"Pulse Rifle" 3
-		`"Bondir" Atomic Thruster`
-		`"Bondir" Atomic Steering`
-		Hyperdrive
 
 
 ship "Osprey" "Osprey (Laser)"
