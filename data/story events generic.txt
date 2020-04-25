@@ -1065,8 +1065,28 @@ event "plasma turret available"
 	fleet "Large Free Worlds"
 		add variant 3
 			"Falcon (Plasma)"
-
-
+	planet "Omega Station"
+		description `Until recently this station had been little more than an abandoned warehouse orbiting an out-of-the-way planet. Due to the need for ships and repairs, Southbound has leased this former Caravan station to function as a shipyard.`
+		description `	Southbound has begun constructing full assembly lines to produce ships even larger than their famed Bastion, and repair vessels the size of Falcons and even Republic Carriers, some of which have been captured in recent battles and skirmishes.`
+		spaceport `A far cry from its pre-war days, the spaceport is a bustling metropolis filled with dozens of shops, including shipyards and outfitters. Every major shipyard has a dealership here to sell at least some ships, even Lionheart, which is allied with the Republic, is selling their lighter models.`
+		outfitter "Basic Outfits"
+		outfitter "Common Outfits"
+		outfitter "Ammo"
+		outfitter "Delta V Basics"
+		outfitter "Delta V Advanced"
+		outfitter "Kraz Basics"
+		outfitter "Kraz Advanced"
+		outfitter "Tarazed Systems"
+		shipyard "Basic Ships"
+		shipyard "Tarazed Basics"
+		shipyard "Tarazed Advanced"
+		shipyard "Southbound Basics"
+		shipyard "Southbound Advanced"
+		shipyard "Lionheart Basics"
+		shipyard "Advanced Southern Pirates"
+		shipyard "Advanced Core Pirates"
+		shipyard "Megaparsec Basics"
+		shipyard "Megaparsec Advanced"
 
 event "fw conservatory founded"
 	system "Yed Prior"
