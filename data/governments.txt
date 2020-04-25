@@ -50,6 +50,7 @@ government "Cartel"
 		"Korath" -.01
 		"Merchant" 1
 		"Syndicate" 1
+		"Northern Union" -2
 	"bribe" .05
 	"fine" 0	
 
@@ -268,16 +269,17 @@ government "Neutral"
 	
 government "Northern Union"
 	color .05 .35 .25
-	"player reputation" -10
+	"player reputation" -1
 	"attitude toward"
 		"Local" -1
 		"Author" -.01
 		"Hai" -.01
 		"Korath" -.01
-		"Merchant" -.1
-		"Syndicate" -.01
-		"Pirate" -.01
-		"Navy Intelligence" 1
+		"Merchant" -.01
+		"Syndicate" -1
+		"Pirate" -1
+		"Navy Intelligence" -1
+		"Cartel" -2
 	"bribe" .05
 	"fine" 0
 	"friendly hail" "friendly pirate"
