@@ -2475,6 +2475,177 @@ outfit "D14-XL Shield Generator"
 	"shield energy" 1.31
 	description "This is the most powerful D14 shield generator. Because of their large size, D14-XL shield generators are mostly used in large warships, but you can fit one in a smaller ship if you are willing to sacrifice engine power or weaponry to make space for it."
 
+outfit "Pacifist-1 Shield Generator"
+	category "Systems"
+	cost 25000
+	thumbnail "outfit/tiny shield"
+	"mass" 10
+	"outfit space" -10
+	"weapon space" -10
+	"shield generation" .4
+	"shield energy" .4
+	description "The Deep Sky Pacifist Class shield generators work by converting extra weapon space to shield production. This Extra Small variant is tailor made for fighters, interceptors, and ships that don't see regular combat."
+
+outfit "Pacifist-2 Shield Generator"
+	category "Systems"
+	cost 45000
+	thumbnail "outfit/small shield"
+	"mass" 15
+	"outfit space" -15
+	"weapon space" -15
+	"shield generation" .52
+	"shield energy" .52
+	description "Deep Sky's shield generator is more powerful than the syndicated systems D14 shield generators, and like the D14 they scale in power with their size. Version 2 is slightly more powerful shield generator than its V1 counterpart, but recharging your shields completely will still take a long time."
+
+outfit "Pacifist-3 Shield Generator"
+	category "Systems"
+	cost 70000
+	thumbnail "outfit/medium shield"
+	"mass" 25
+	"outfit space" -25
+	"weapon space" -25
+	"shield generation" .64
+	"shield energy" .64
+	description "The Deep Sky Pacifist-3 shield generator takes up as much weapon space as a capital class cannon, making your dedication to peace and non-violence commendable."
+
+outfit "Pacifist-4 Shield Generator"
+	category "Systems"
+	cost 150000
+	thumbnail "outfit/large shield"
+	"mass" 35
+	"outfit space" -35
+	"weapon space" -35
+	"shield generation" .86
+	"shield energy" .86
+	description "Although incredibly powerful for its size, the Pacifist-4 takes up more weapons space and power than some turrets. Some pilots argue you would be better served buying even a single anti-missile turret compared to this shield."
+
+outfit "Pacifist-5 Shield Generator"
+	category "Systems"
+	cost 250000
+	thumbnail "outfit/huge shield"
+	"mass" 40
+	"outfit space" -52
+	"weapon space" -52
+	"shield generation" 1.72
+	"shield energy" 1.72
+	description "This is tied for the most efficient shield generator with the Galapagos class shield generator. Unfortunately it takes up more space than two forward facing heavy cannons, so it is seldom seen outside of Caravan fleets."
+
+outfit "Spotted Turtle Shield Generator"
+	category "Systems"
+	cost 25000
+	thumbnail "outfit/tiny shield"
+	"mass" 10
+	"outfit space" -10
+	"engine space" -10
+	"shield generation" .4
+	"shield energy" .4
+	description "The Lovelace Tortoise Class shield generators work by converting extra engine space to shield production. This Extra Small variant is tailor made for fighters, interceptors, and ships that don't see regular combat."
+
+outfit "Softshell Turtle Shield Generator"
+	category "Systems"
+	cost 45000
+	thumbnail "outfit/small shield"
+	"mass" 15
+	"outfit space" -15
+	"engine space" -15
+	"shield generation" .52
+	"shield energy" .52
+	description "Lovelace's shield generator is more powerful than the syndicated systems D14 shield generators, and like the D14 they scale in power with their size. The Softshell is slightly more powerful shield generator than its Spotted counterpart, but recharging your shields completely will still take a long time."
+
+outfit "Map Turtle Shield Generator"
+	category "Systems"
+	cost 70000
+	thumbnail "outfit/medium shield"
+	"mass" 25
+	"outfit space" -25
+	"engine space" -25
+	"shield generation" .64
+	"shield energy" .64
+	description "The Lovelace Map shield generator takes up as much engine space as many full sized engine modules. True to its name, you are exchanging speed for additional protection."
+
+outfit "Snapper Shield Generator"
+	category "Systems"
+	cost 150000
+	thumbnail "outfit/large shield"
+	"mass" 35
+	"outfit space" -35
+	"engine space" -35
+	"shield generation" .86
+	"shield energy" .86
+	description "The phrase 'She may be slow but she can take a beating' is the mantra of people who use this Lovelace invention. Some pilots argue you would be better served buying a scram drive or an afterburner rather than this shield."
+
+outfit "Galapagos Shield Generator"
+	category "Systems"
+	cost 210000
+	thumbnail "outfit/huge shield"
+	"mass" 40
+	"outfit space" -52
+	"engine space" -52
+	"shield generation" 1.72
+	"shield energy" 1.72
+	description "This is tied for the most efficient shield generator with the Pacifist-5 class shield generator. Unfortunately it takes up more space than most engines, so it is seldom used by anyone but the most paranoid freighter pilots."
+
+outfit "Ember Plasma Shield Generator"
+	category "Systems"
+	cost 50000
+	thumbnail "outfit/tiny shield"
+	"mass" 15
+	"outfit space" -15
+	"shield generation" .4
+	"shield energy" .4
+	"energy consumption" .4
+	"heat generation" .4
+	description "The product of an internal competition between Delta V and Kraz, the Delta V ember class shield generator is almost as insane as its creators. Using the Syndicate's D14 class as a base, they competed to make the most powerful shield generator. This is the strongest of its size, it comes at the cost of requiring additional power just to keep the shield charged up, and creates an excess of heat."
+
+outfit "Red Flame Plasma Shield Generator"
+	category "Systems"
+	cost 80000
+	thumbnail "outfit/small shield"
+	"mass" 22
+	"outfit space" -22
+	"shield generation" .6
+	"shield energy" .6
+	"energy consumption .6
+	"heat generation" .6
+	description "Not to be one-upped by Delta V, the Kraz team created a larger but even more efficient version of the Ember class plasma shield. The Red Flame is small enough to fit onto most gunships, but its additional power and cooling requirements might not be."
+
+outfit "Yellow Flame Shield Generator"
+	category "Systems"
+	cost 100000
+	thumbnail "outfit/medium shield"
+	"mass" 30
+	"outfit space" -30
+	"shield generation" 1
+	"shield energy" 1
+	"energy consumption 1
+	"heat generation" 1
+	description "Impressed by Kraz's Red Flame, Delta V kicked up the heat with this yellow flame shield generator. Twice as powerful as the same size of D14, this shield generator is liable to protect its pilot from nearly everything, assuming it doesn't cook them alive."
+
+outfit "White Flame Shield Generator"
+	category "Systems"
+	cost 300000
+	thumbnail "outfit/large shield"
+	"mass" 45
+	"outfit space" -45
+	"shield generation" 1.6
+	"shield energy" 1.6
+	"energy consumption" 1.6
+	"heat generation" 1.6
+	description "This white hot shield generator lives up to its name. Kraz's engineers won the contest with this insane feat of engineering. Delta V just couldn't take the heat - and neither could Kraz's test pilot!"
+
+outfit "Violet Flame Shield Generator"
+	category "Systems"
+	cost 500000
+	thumbnail "outfit/huge shield"
+	"mass" 60
+	"outfit space" -60
+	"shield generation" 2.6
+	"shield energy" 2.6
+	"energy consumption" 2.6
+	"heat generation" 2.6
+	description "A joint effort between the Kraz and Delta V contestents, this is the most mobile shield generator in all of known space. Rivaling the regenerative power of some planetary and stationbound shields, the Kraz and Delta V teams just wanted to see if it could be done. Their efforts completely overloaded their local power grid, and the radiant heat started many fires. This was put into production and up for sale mostly as a gimmick and a joke, they never expected anyone to be crazy enough to actually buy one."
+
+
 outfit "S-270 Regenerator"
 	category "Systems"
 	cost 220000
