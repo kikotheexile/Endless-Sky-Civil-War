@@ -20,8 +20,6 @@ outfit "Nanotech Battery"
 	
 outfit "Small Biochemical Cell"
 	category "Power"
-	licenses
-		"Wanderer Outfits"
 	cost 230000
 	thumbnail "outfit/small biochemical"
 	"mass" 17
@@ -29,7 +27,7 @@ outfit "Small Biochemical Cell"
 	"energy generation" 1.6
 	"heat generation" 1.4
 	"energy capacity" 300
-	description "This tiny generator draws energy from the metabolic byproducts of a collection of microorganisms that have been engineered by the Wanderers specifically for this purpose."
+	description "This wanderer invention is a tiny generator draws energy from the metabolic byproducts of a collection of microorganisms. These microorganisms have been engineered by the Wanderers specifically for this purpose."
 	
 outfit "Antimatter Core"
 	category "Power"
@@ -49,6 +47,7 @@ outfit "Supercapacitor"
 	"outfit space" -2
 	"energy capacity" 150
 	description "With a powerful enough generator, many ships do not need batteries at all. The one exception is projectile weapons, which usually require a burst of energy far exceeding what the generator produces. Supercapacitors provide just enough energy storage for those weapons, without requiring you to install a bulky battery pack."
+	description "	This capacitor is deemed so essential that all power generation uses one in its base construction, meaning there is no standardized producer for these. Most, however, are outsourced to Syndicated Systems."
 
 outfit "LP036a Battery Pack"
 	category "Power"
@@ -57,7 +56,7 @@ outfit "LP036a Battery Pack"
 	"mass" 10
 	"outfit space" -10
 	"energy capacity" 1000
-	description "A ship can run without batteries if its generator's instantaneous power output is higher than the total energy consumption of its systems, but batteries make it possible to store up energy when it is not needed and thus to use a much smaller and cheaper generator."
+	description "The Syndicated Systems LP Class Batteries make it possible for a ship to store considerable amounts of power, allowing ships to make short trips around a solar system without need for an onboard generator."
 
 outfit "LP072a Battery Pack"
 	category "Power"
@@ -66,7 +65,7 @@ outfit "LP072a Battery Pack"
 	"mass" 20
 	"outfit space" -20
 	"energy capacity" 2200
-	description "This battery pack has more than twice the energy capacity of the most basic model, allowing your ship to engage in combat for longer periods of time before running out of energy. Some pilots have even been known to install these in lieu of any generator at all, trusting that they can reach their destination planet and recharge before running out of battery power, but that is a risky proposition."
+	description "This battery pack out of Syndicated Systems has more than twice the energy capacity of the most basic model, allowing your ship to engage in combat for longer periods of time before running out of energy. Some pilots have even been known to install these in lieu of any generator at all, trusting that they can reach their destination planet and recharge before running out of battery power, but that is a risky proposition."
 
 outfit "LP144a Battery Pack"
 	category "Power"
@@ -75,7 +74,7 @@ outfit "LP144a Battery Pack"
 	"mass" 40
 	"outfit space" -40
 	"energy capacity" 4800
-	description "This medium-sized battery pack is intended for ships that need to fire the occasional salvo of high-powered weaponry without running out of energy. As with all battery packs, relying on batteries is risky if combat lasts long enough for them to become depleted."
+	description "This medium-sized battery pack out of Syndicated Systems is intended for ships that need to fire the occasional salvo of high-powered weaponry without running out of energy. As with all battery packs, relying on batteries is risky if combat lasts long enough for them to become depleted."
 
 outfit "LP288a Battery Pack"
 	category "Power"
@@ -84,7 +83,7 @@ outfit "LP288a Battery Pack"
 	"mass" 80
 	"outfit space" -80
 	"energy capacity" 10400
-	description "This is a large battery pack designed for ships that may occasionally have high power needs but do not want the expense or the heat associated with a more powerful ship's generator."
+	description "This large battery pack out of Syndicated Systems is designed for ships that may occasionally have high power needs. Combined with even the smallest of generators, a ship with one of these equipped can fire a great many shots before depleting."
 
 outfit "LP576a Battery Pack"
 	category "Power"
@@ -93,7 +92,7 @@ outfit "LP576a Battery Pack"
 	"mass" 160
 	"outfit space" -160
 	"energy capacity" 23000
-	description "For most ships that require this much power, a larger generator makes more sense than a battery this size. However, battery packs have the advantage that they generate no heat, so some captains use them instead of powerful generators if they do not expect to be in combat frequently or for extended periods of time."
+	description "This battery out of Syndicated Systems is designed for only the largest ships, or ships that see combat entirely too frequently. Intended to be used along side a generator, this battery can keep your guns firing and engines thrusting for a very long time."
 
 
 outfit "KP-6 Photovoltaic Panel"
@@ -103,7 +102,7 @@ outfit "KP-6 Photovoltaic Panel"
 	"mass" 3
 	"outfit space" -3
 	"solar collection" .1
-	description "This early commercial photovoltaic system was the driving force behind humanity's first interplanetary trade network. Rugged and modular, it can be bolted to the hull of any ship and has seen even the most remote parts of human space."
+	description "This early commercial Korunak Photovoltaics system was the driving force behind humanity's first interplanetary trade network. Rugged and modular, it can be bolted to the hull of any ship and has seen even the most remote parts of human space."
 
 outfit "KP-6 Photovoltaic Array"
 	category "Power"
@@ -122,8 +121,9 @@ outfit "nGVF-AA Fuel Cell"
 	"mass" 20
 	"outfit space" -20
 	"energy generation" 1.2
+	"energy capacity" 150
 	"heat generation" 1.9
-	description "Fuel cells have been the cheapest and most common starship power sources since the dawn of the space era. This model produces only enough power for very small or slow ships."
+	description "Hydrogen fuel cells have been the cheapest and most common starship power sources since the dawn of the space era. This Syndicated Systems model produces only enough power for very small or slow ships, and glasses of pure water."
 
 outfit "nGVF-BB Fuel Cell"
 	category "Power"
@@ -132,8 +132,9 @@ outfit "nGVF-BB Fuel Cell"
 	"mass" 30
 	"outfit space" -30
 	"energy generation" 1.9
+	"energy capacity" 150
 	"heat generation" 2.9
-	description "This is a step up from the smallest fuel cells, providing enough energy to power a few small guns in addition to your engines."
+	description "This is a step up from the smallest fuel cells, providing enough energy to power a few small guns in addition to your engines. Left to its own devices for long enough, this Syndicated Shipyards outfit will fill your ships water tank."
 
 outfit "nGVF-CC Fuel Cell"
 	category "Power"
@@ -142,8 +143,9 @@ outfit "nGVF-CC Fuel Cell"
 	"mass" 40
 	"outfit space" -40
 	"energy generation" 2.6
+	"energy capacity" 150
 	"heat generation" 3.8
-	description "This is a medium-sized fuel cell, designed to be sufficient for larger civilian ships and small warships while still being more affordable than the more sophisticated generator options."
+	description "An upgrade to the nGVF-BB Fuel cell by Syndicated Systems, this is a medium-sized fuel cell should be sufficient for larger civilian ships and small warships. It will serve you well, while still being more affordable than the more sophisticated generator options."
 
 outfit "nGVF-DD Fuel Cell"
 	category "Power"
@@ -152,8 +154,9 @@ outfit "nGVF-DD Fuel Cell"
 	"mass" 60
 	"outfit space" -60
 	"energy generation" 4.1
+	"energy capacity" 150
 	"heat generation" 5.7
-	description "This is a relatively large fuel cell. Other generators are available that produce more energy and fit into a smaller space, but they are much more expensive. As a result, large civilian ships that will not be frequently in combat often come equipped with these fuel cells."
+	description "This is a relatively large fuel cell by Syndicated Systems. Other generators are available that produce more energy and fit into a smaller space, but they are much more expensive. As a result, large civilian ships that will not be frequently in combat often come equipped with these fuel cells."
 
 outfit "nGVF-EE Fuel Cell"
 	category "Power"
@@ -162,8 +165,9 @@ outfit "nGVF-EE Fuel Cell"
 	"mass" 80
 	"outfit space" -80
 	"energy generation" 5.9
+	"energy capacity" 150
 	"heat generation" 7.8
-	description "This is the largest fuel cell available, larger than some nuclear reactors but much, much more affordable. Many captains on a tight budget are willing to put up with one of these until they can raise the money for something more efficient."
+	description "This is the largest fuel cell available, larger than some nuclear reactors. Like most Syndicated Systems designs, this is much more affordable than its competition. Many captains on a tight budget are willing to put up with one of these until they can raise the money for something more efficient."
 
 
 outfit "RT-I Radiothermal"
@@ -173,8 +177,9 @@ outfit "RT-I Radiothermal"
 	"mass" 45
 	"outfit space" -45
 	"energy generation" 4.4
+	"energy capacity" 150
 	"heat generation" 18
-	description "Radiothermal generators harvest heat from radioactive isotopes and convert it into electricity. They are more powerful than fuel cells, but also produce a relatively high amount of heat."
+	description "Deep Sky radiothermal generators harvest heat from radioactive isotopes and convert it into electricity. They are more powerful than fuel cells, but also produce a relatively high amount of heat."
 
 outfit "S3 Thermionic"
 	category "Power"
@@ -183,8 +188,9 @@ outfit "S3 Thermionic"
 	"mass" 55
 	"outfit space" -55
 	"energy generation" 5.0
+	"energy capacity" 150
 	"heat generation" 12
-	description "Thermionic radioisotopic generators were designed as a cooler-running alternative to radiothermal generators."
+	description "Thermionic radioisotopic generators were designed by Deep Sky as a cooler-running alternative to radiothermal generators."
 
 outfit "NT-200 Nucleovoltaic"
 	category "Power"
@@ -193,8 +199,9 @@ outfit "NT-200 Nucleovoltaic"
 	"mass" 65
 	"outfit space" -65
 	"energy generation" 7.2
+	"energy capacity" 150
 	"heat generation" 15
-	description "Nucleovoltaic generators are a relatively recent generator technology that harvests energy from the decay of a radioisotope source and converts it directly into electricity. They are the most powerful generator that relies on nuclear decay instead of an active nuclear chain reaction."
+	description "Deep Sky nucleovoltaic generators are a relatively recent generator technology that harvests energy from the decay of a radioisotope source and converts it directly into electricity. They are the most powerful generator that relies on nuclear decay instead of an active nuclear chain reaction."
 	description "	Captains, please inform crew that this is not a grill or cooktop. While food cooked on it might be 'rad', it also violates the warranty."
 
 
@@ -205,6 +212,7 @@ outfit "Dwarf Core"
 	"mass" 36
 	"outfit space" -36
 	"energy generation" 4.8
+	"energy capacity" 150
 	"heat generation" 14
 	description "A Dwarf Core is a miniaturized nuclear reactor, small enough to be installed in any ship larger than a fighter. It was designed by Deep Sky to be paired with their power-hungry atomic engines."
 
@@ -215,8 +223,9 @@ outfit "Fission Reactor"
 	"mass" 65
 	"outfit space" -65
 	"energy generation" 9.4
+	"energy capacity" 150
 	"heat generation" 25
-	description "Fission reactors have been a mainstay of large military vessels since even before the dawn of the space era. Today's models are very safe and efficient, but some pilots still find them disconcerting."
+	description "Fission reactors have been a mainstay of large military vessels since even before the dawn of the space era. Today's Lovelace models are very safe and efficient, but some pilots still find them disconcerting."
 
 outfit "Breeder Reactor"
 	category "Power"
@@ -225,8 +234,10 @@ outfit "Breeder Reactor"
 	"mass" 80
 	"outfit space" -80
 	"energy generation" 12.8
+	"energy capacity" 150
 	"heat generation" 35
 	description "A breeder reactor is a more efficient fission reactor that captures some of the neutron radiation produced by the reactor and uses it to enrich more fuel. They are also, of course, bigger and more expensive as a result."
+	description "Kraz Cybernetics is proud of how little heat it radiates for its size."
 
 outfit "Fusion Reactor"
 	category "Power"
@@ -235,8 +246,9 @@ outfit "Fusion Reactor"
 	"mass" 100
 	"outfit space" -100
 	"energy generation" 18.2
+	"energy capacity" 150
 	"heat generation" 40
-	description "The invention of practical fusion power near the end of the twenty-first century spurred a new era of prosperity and plenty. Centuries later, the generators have been reduced in size, but are still generally only used in capital warships."
+	description "The Lovelace fusion reactor is based off of a centuries old design, only made compact. Unfortunately, its still big enough that it can only fit on some of the largest warships."
 
 outfit "Armageddon Core"
 	category "Power"
@@ -245,8 +257,9 @@ outfit "Armageddon Core"
 	"mass" 130
 	"outfit space" -130
 	"energy generation" 24.2
+	"energy capacity" 150
 	"heat generation" 70
-	description "The Armageddon Core was designed to meet the extreme power needs of the largest warships of the Republic Navy. One of these generators costs more than an entire fleet of smaller ships."
+	description "The Lovelace Armageddon Core was designed to meet the extreme power needs of the largest warships of the Republic Navy. One of these generators costs more than an entire fleet of smaller ships."
 	description "	Note: Name comes from the inventor, Arma G. Eddon, and has nothing to do with this core destroying a planet if broken. That never happened, and it won't happen again, if it ever did happen. Please stop sending letters stating that we should change the name."
 
 outfit "Stack Core"
@@ -256,8 +269,9 @@ outfit "Stack Core"
 	"mass" 140
 	"outfit space" -140
 	"energy generation" 22.9
+	"energy capacity" 150
 	"heat generation" 55
-	description "The Stack Core was created by the Free Worlds primarily as a power source for their Dreadnoughts. It is a fission reactor, and therefore less efficient than the Navy's fusion technology, but it is also significantly cheaper to produce."
+	description "The Stack Core was created by the Delta V in collaboration with Kraz Cybernetics and Southbound shipyards primarily as a power source for their Dreadnoughts. It is a fission reactor, and therefore less efficient than the Navy's fusion technology, but it is also significantly cheaper to produce."
 	description "	Remember, the only way to have a 'stacked' ship is with a Stack Core!"
 
 
