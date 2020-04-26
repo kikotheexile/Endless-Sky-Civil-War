@@ -2478,7 +2478,7 @@ outfit "D14-XL Shield Generator"
 outfit "Pacifist-1 Shield Generator"
 	category "Systems"
 	cost 25000
-	thumbnail "outfit/tiny shield"
+	thumbnail "outfit/tiny shield y"
 	"mass" 10
 	"outfit space" -10
 	"weapon space" -10
@@ -2489,7 +2489,7 @@ outfit "Pacifist-1 Shield Generator"
 outfit "Pacifist-2 Shield Generator"
 	category "Systems"
 	cost 45000
-	thumbnail "outfit/small shield"
+	thumbnail "outfit/small shield y"
 	"mass" 15
 	"outfit space" -15
 	"weapon space" -15
@@ -2500,7 +2500,7 @@ outfit "Pacifist-2 Shield Generator"
 outfit "Pacifist-3 Shield Generator"
 	category "Systems"
 	cost 70000
-	thumbnail "outfit/medium shield"
+	thumbnail "outfit/medium shield y"
 	"mass" 25
 	"outfit space" -25
 	"weapon space" -25
@@ -2511,7 +2511,7 @@ outfit "Pacifist-3 Shield Generator"
 outfit "Pacifist-4 Shield Generator"
 	category "Systems"
 	cost 150000
-	thumbnail "outfit/large shield"
+	thumbnail "outfit/large shield y"
 	"mass" 35
 	"outfit space" -35
 	"weapon space" -35
@@ -2522,7 +2522,7 @@ outfit "Pacifist-4 Shield Generator"
 outfit "Pacifist-5 Shield Generator"
 	category "Systems"
 	cost 250000
-	thumbnail "outfit/huge shield"
+	thumbnail "outfit/huge shield y"
 	"mass" 40
 	"outfit space" -52
 	"weapon space" -52
@@ -2533,7 +2533,7 @@ outfit "Pacifist-5 Shield Generator"
 outfit "Spotted Turtle Shield Generator"
 	category "Systems"
 	cost 25000
-	thumbnail "outfit/tiny shield"
+	thumbnail "outfit/tiny shield g"
 	"mass" 10
 	"outfit space" -10
 	"engine space" -10
@@ -2544,7 +2544,7 @@ outfit "Spotted Turtle Shield Generator"
 outfit "Softshell Turtle Shield Generator"
 	category "Systems"
 	cost 45000
-	thumbnail "outfit/small shield"
+	thumbnail "outfit/small shield g"
 	"mass" 15
 	"outfit space" -15
 	"engine space" -15
@@ -2555,7 +2555,7 @@ outfit "Softshell Turtle Shield Generator"
 outfit "Map Turtle Shield Generator"
 	category "Systems"
 	cost 70000
-	thumbnail "outfit/medium shield"
+	thumbnail "outfit/medium shield g"
 	"mass" 25
 	"outfit space" -25
 	"engine space" -25
@@ -2566,7 +2566,7 @@ outfit "Map Turtle Shield Generator"
 outfit "Snapper Shield Generator"
 	category "Systems"
 	cost 150000
-	thumbnail "outfit/large shield"
+	thumbnail "outfit/large shield g"
 	"mass" 35
 	"outfit space" -35
 	"engine space" -35
@@ -2577,7 +2577,7 @@ outfit "Snapper Shield Generator"
 outfit "Galapagos Shield Generator"
 	category "Systems"
 	cost 210000
-	thumbnail "outfit/huge shield"
+	thumbnail "outfit/huge shield g"
 	"mass" 40
 	"outfit space" -52
 	"engine space" -52
@@ -2588,7 +2588,7 @@ outfit "Galapagos Shield Generator"
 outfit "Ember Plasma Shield Generator"
 	category "Systems"
 	cost 50000
-	thumbnail "outfit/tiny shield"
+	thumbnail "outfit/tiny shield r"
 	"mass" 15
 	"outfit space" -15
 	"shield generation" .4
@@ -2600,7 +2600,7 @@ outfit "Ember Plasma Shield Generator"
 outfit "Red Flame Plasma Shield Generator"
 	category "Systems"
 	cost 80000
-	thumbnail "outfit/small shield"
+	thumbnail "outfit/small shield r"
 	"mass" 22
 	"outfit space" -22
 	"shield generation" .6
@@ -2612,7 +2612,7 @@ outfit "Red Flame Plasma Shield Generator"
 outfit "Yellow Flame Shield Generator"
 	category "Systems"
 	cost 100000
-	thumbnail "outfit/medium shield"
+	thumbnail "outfit/medium shield r"
 	"mass" 30
 	"outfit space" -30
 	"shield generation" 1
@@ -2624,7 +2624,7 @@ outfit "Yellow Flame Shield Generator"
 outfit "White Flame Shield Generator"
 	category "Systems"
 	cost 300000
-	thumbnail "outfit/large shield"
+	thumbnail "outfit/large shield r"
 	"mass" 45
 	"outfit space" -45
 	"shield generation" 1.6
@@ -2636,7 +2636,7 @@ outfit "White Flame Shield Generator"
 outfit "Violet Flame Shield Generator"
 	category "Systems"
 	cost 500000
-	thumbnail "outfit/huge shield"
+	thumbnail "outfit/huge shield r"
 	"mass" 60
 	"outfit space" -60
 	"shield generation" 2.6
