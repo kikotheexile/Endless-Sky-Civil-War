@@ -2425,7 +2425,7 @@ outfit "Liquid Helium Cooler"
 	description "Liquid helium is the ultimate in cooling technology. Given how much space this cooling system takes up, you may be better off just installing more efficient, low-heat components instead, but where that is not an option, this cooler can handle almost anything you throw at it."
 
 
-outfit "D14-RN Shield Generator"
+outfit "D14-XS Shield Generator"
 	category "Systems"
 	cost 20000
 	thumbnail "outfit/tiny shield"
@@ -2433,9 +2433,9 @@ outfit "D14-RN Shield Generator"
 	"outfit space" -15
 	"shield generation" .2
 	"shield energy" .2
-	description "This is the standard shield generator for fighters and interceptors, as well as for many non-combat starships. Although it is possible for a ship to have no shield generator at all, recharging its shield matrix only when landed in a hospitable spaceport, life in deep space is unpredictable enough that most pilots find shield generators to be well worth the space they take up."
+	description "The Syndicated Systems Class D14 shield generators are the cheapest shields in Human space. This Extra Small variant is tailor made for fighters, interceptors, and ships that don't see regular combat."
 
-outfit "D23-QP Shield Generator"
+outfit "D14-S Shield Generator"
 	category "Systems"
 	cost 35000
 	thumbnail "outfit/small shield"
@@ -2443,9 +2443,9 @@ outfit "D23-QP Shield Generator"
 	"outfit space" -22
 	"shield generation" .32
 	"shield energy" .32
-	description "This is a slightly more powerful shield generator than the standard model installed in most small ships. If combat lasts long enough, the increased recharge rate is enough to give you an edge, but recharging your shields completely will still take a long time."
+	description "The Syndicated Systems Class D14 shield generators scale in power with their size. This small version is slightly more powerful shield generator than its extra small counterpart, but recharging your shields completely will still take a long time."
 
-outfit "D41-HY Shield Generator"
+outfit "D14-M Shield Generator"
 	category "Systems"
 	cost 65000
 	thumbnail "outfit/medium shield"
@@ -2453,9 +2453,9 @@ outfit "D41-HY Shield Generator"
 	"outfit space" -30
 	"shield generation" .51
 	"shield energy" .51
-	description "This is a more powerful shield generator designed for ships that are likely to see frequent combat, or that have such a large shield capacity that recharging them would take a long time with a smaller generator."
+	description "This is a more powerful version of the D14 class, designed for ships that are likely to see frequent combat."
 
-outfit "D67-TM Shield Generator"
+outfit "D14-L Shield Generator"
 	category "Systems"
 	cost 120000
 	thumbnail "outfit/large shield"
@@ -2463,9 +2463,9 @@ outfit "D67-TM Shield Generator"
 	"outfit space" -45
 	"shield generation" .82
 	"shield energy" .82
-	description "This shield generator is powerful enough that in combat against some particularly weak ships, they may not even be capable of depleting your shields as fast as they recharge."
+	description "This version of the D14 shield generator is powerful enough that in combat against some particularly weak ships, they may not even be capable of depleting your shields as fast as they recharge."
 
-outfit "D94-YV Shield Generator"
+outfit "D14-XL Shield Generator"
 	category "Systems"
 	cost 200000
 	thumbnail "outfit/huge shield"
@@ -2473,7 +2473,7 @@ outfit "D94-YV Shield Generator"
 	"outfit space" -60
 	"shield generation" 1.31
 	"shield energy" 1.31
-	description "This is the most powerful shield generator available in human space. Because of their large size, D94-YV shield generators are mostly used in large warships, but you can fit one in a smaller ship if you are willing to sacrifice engine power or weaponry to make space for it."
+	description "This is the most powerful D14 shield generator. Because of their large size, D14-XL shield generators are mostly used in large warships, but you can fit one in a smaller ship if you are willing to sacrifice engine power or weaponry to make space for it."
 
 outfit "S-270 Regenerator"
 	category "Systems"
