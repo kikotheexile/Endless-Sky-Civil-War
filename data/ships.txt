@@ -153,7 +153,7 @@ ship "Dagger"
 		
 		"nGVF-AA Fuel Cell"
 		"Supercapacitor"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Small Radar Jammer"
 		"Plasma Pistol"
 		
@@ -201,7 +201,7 @@ ship "Finch"
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		
 		"Chipmunk Plasma Thruster"
 		"Chipmunk Plasma Steering"
@@ -245,7 +245,7 @@ ship "Lance"
 		
 		"nGVF-AA Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Small Radar Jammer" 2
 		
 		"X1700 Ion Thruster"
@@ -289,7 +289,7 @@ ship "Barb"
 		
 		"nGVF-AA Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Plasma Pistol"
 
 		"X1050 Ion Engines"
@@ -333,7 +333,7 @@ ship "Thorn"
 		
 		"nGVF-AA Fuel Cell"
 		Supercapacitor
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 
 		"X1050 Ion Engines"
 		
@@ -414,7 +414,7 @@ ship "Shuttle"
 	outfits
 		"nGVF-AA Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Plasma Pistol"
 		
 		"X2700 Ion Thruster"
@@ -465,7 +465,7 @@ ship "Arrow"
 		
 		"Dwarf Core"
 		"Supercapacitor"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Small Radar Jammer"
 		"Luxury Accommodations"
 		"Plasma Pistol"
@@ -521,7 +521,7 @@ ship "Blackbird"
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Small Radar Jammer"
 		"Luxury Accommodations"
 		"Plasma Pistol" 3
@@ -575,7 +575,7 @@ ship "Bounder"
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Plasma Pistol"
 		
 		"X3700 Ion Thruster"
@@ -625,7 +625,7 @@ ship "Flivver"
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Plasma Pistol"
 		
 		"A120 Atomic Thruster"
@@ -670,7 +670,7 @@ ship "Heavy Shuttle"
 	outfits
 		"nGVF-AA Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Plasma Pistol"
 		
 		"X2700 Ion Thruster"
@@ -721,7 +721,7 @@ ship "Caravel"
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Small Radar Jammer"
 		"Ramscoop"
 		"Plasma Pistol" 2
@@ -777,7 +777,7 @@ ship "Star Queen"
 		
 		"NT-200 Nucleovoltaic"
 		"LP036a Battery Pack"
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Small Radar Jammer" 3
 		"Luxury Accommodations"
 		"Plasma Pistol" 41
@@ -840,7 +840,7 @@ ship "Berserker"
 		
 		"nGVF-CC Fuel Cell"
 		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Plasma Pistol"
 		
 		"X2700 Ion Thruster"
@@ -896,7 +896,7 @@ ship "Fury"
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Small Radar Jammer" 2
 		"Plasma Pistol"
 				
@@ -952,7 +952,7 @@ ship "Hawk"
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Small Radar Jammer"
 		"Plasma Pistol" 2
 		
@@ -1006,7 +1006,7 @@ ship "Sparrow"
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Plasma Pistol"
 		
 		"Chipmunk Plasma Thruster"
@@ -1059,7 +1059,7 @@ ship "Wasp"
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Small Radar Jammer"
 		"Plasma Pistol"
 		
@@ -1120,7 +1120,7 @@ ship "Argosy"
 		
 		"RT-I Radiothermal"
 		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Plasma Pistol" 4
 		
 		"Greyhound Plasma Thruster"
@@ -1184,7 +1184,7 @@ ship "Clipper"
 		
 		"nGVF-DD Fuel Cell"
 		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Plasma Pistol" 3
 		
 		"Greyhound Plasma Thruster"
@@ -1239,7 +1239,7 @@ ship "Freighter"
 		
 		"nGVF-EE Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Plasma Pistol" 2
 		
 		"X2700 Ion Thruster"
@@ -1292,7 +1292,7 @@ ship "Star Barge"
 
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Plasma Pistol"
 		
 		"X1700 Ion Thruster"
@@ -1346,7 +1346,7 @@ ship "Hauler"
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Small Radar Jammer"
 		"Plasma Pistol" 3
 		
@@ -1408,7 +1408,7 @@ ship "Hauler II"
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Small Radar Jammer"
 		"Laser Rifle"
 		"Plasma Pistol" 2
@@ -1471,7 +1471,7 @@ ship "Hauler III"
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Small Radar Jammer"
 		"Laser Rifle" 3
 		
@@ -1531,7 +1531,7 @@ ship "Nest"
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D41-HY Shield Generator" 2
+		"D14-M Shield Generator" 2
 		"Large Radar Jammer"
 		"Laser Rifle" 2
 		"Plasma Pistol" 3
@@ -1594,7 +1594,7 @@ ship "Roost"
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D41-HY Shield Generator" 4
+		"D14-M Shield Generator" 4
 		"Large Radar Jammer"
 		"Tactical Scanner"
 		"Laser Rifle" 2
@@ -1662,7 +1662,7 @@ ship "Skein"
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D67-TM Shield Generator" 4
+		"D14-L Shield Generator" 4
 		"Large Radar Jammer"
 		"Tactical Scanner"
 		"Laser Rifle" 7
@@ -1730,7 +1730,7 @@ ship "Class C Freighter"
 		
 		"Fission Reactor"
 		"LP072a Battery Pack"
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Laser Rifle" 5
 		"Plasma Pistol" 13
 		
@@ -1798,7 +1798,7 @@ ship "Behemoth"
 		
 		"NT-200 Nucleovoltaic"
 		"LP144a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Small Radar Jammer"
 		"Laser Rifle" 3
 		"Plasma Pistol" 9
@@ -1863,7 +1863,7 @@ ship "Bulk Freighter"
 		
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Laser Rifle"
 		"Plasma Pistol" 5
 		
@@ -1931,7 +1931,7 @@ ship "Narcissus"
 		
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Small Radar Jammer"
 		"Cargo Scanner"
 		"Outfit Scanner"
@@ -1992,7 +1992,7 @@ ship "Headhunter"
 		
 		"RT-I Radiothermal"
 		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Plasma Pistol" 2
 		
 		"Greyhound Plasma Thruster"
@@ -2054,7 +2054,7 @@ ship "Odyssey"
 		
 		"NT-200 Nucleovoltaic"
 		"LP072a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Small Radar Jammer"
 		"Brig"
 		"Laser Rifle" 3
@@ -2118,7 +2118,7 @@ ship "Quicksilver"
 		
 		"RT-I Radiothermal"
 		"LP036a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Cooling Ducts"
 		"Plasma Pistol" 3
 		
@@ -2178,7 +2178,7 @@ ship "Achlys"
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Large Radar Jammer"
 		"Tactical Scanner"
 		"Plasma Pistol" 7
@@ -2240,7 +2240,7 @@ ship "Raven"
 		
 		"RT-I Radiothermal"
 		"LP072a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Laser Rifle" 2
 		"Plasma Pistol" 4
 		
@@ -2359,7 +2359,7 @@ ship "Manta"
 		
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Laser Rifle"
 		"Plasma Pistol" 5
 		
@@ -2418,7 +2418,7 @@ ship "Osprey"
 		
 		"Breeder Reactor"
 		"LP036a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Large Radar Jammer"
 		"Liquid Helium Cooler"
 		"Laser Rifle" 3
@@ -2480,7 +2480,7 @@ ship "Splinter"
 		
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Small Radar Jammer" 2
 		"Water Coolant System"
 		"Laser Rifle"
@@ -2542,7 +2542,7 @@ ship "Aerie"
 		
 		"NT-200 Nucleovoltaic"
 		"LP072a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Large Radar Jammer"
 		"Laser Rifle" 3
 		"Plasma Pistol" 7
@@ -2608,7 +2608,7 @@ ship "Bastion"
 		"S3 Thermionic"
 		"LP144a Battery Pack"
 		"nGVF-BB Fuel Cell"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Water Coolant System"
 		"Tactical Scanner"
 		"Laser Rifle" 7
@@ -2673,7 +2673,7 @@ ship "Challenger"
 		
 		"NT-200 Nucleovoltaic"
 		"LP072a Battery Pack"
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Large Radar Jammer"
 		"Laser Rifle" 3
 		"Plasma Pistol" 5
@@ -2737,7 +2737,7 @@ ship "Firebird"
 		"RT-I Radiothermal"
 		"nGVF-AA Fuel Cell"
 		"LP144a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Laser Rifle" 3
 		"Plasma Pistol" 4
 		
@@ -2801,7 +2801,7 @@ ship "Aletheia"
 		
 		"NT-200 Nucleovoltaic"
 		"LP144a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Large Radar Jammer"
 		"Laser Rifle" 5
 		"Fragmentation Grenades" 5
@@ -2872,7 +2872,7 @@ ship "Zephyrus"
 		
 		"NT-200 Nucleovoltaic"
 		"LP144a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Large Radar Jammer"
 		"Plasma Pistol" 12
 		"Surveillance Pod"
@@ -2940,7 +2940,7 @@ ship "Astraea"
 		"Breeder Reactor"
 		"S3 Thermionic"
 		"LP144a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Small Radar Jammer"
 		"Liquid Helium Cooler"
 		"Tactical Scanner"
@@ -3014,7 +3014,7 @@ ship "Arete"
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Large Radar Jammer" 2
 		"Water Coolant System"
 		"Brig"
@@ -3103,7 +3103,7 @@ ship "Nomos"
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Large Radar Jammer" 2
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 20
@@ -3182,7 +3182,7 @@ ship "Elpis"
 		"Breeder Reactor"
 		"S3 Thermionic"
 		"LP144a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Small Radar Jammer"
 		"Liquid Helium Cooler"
 		"Tactical Scanner"
@@ -3250,7 +3250,7 @@ ship "Falcon"
 		
 		"Breeder Reactor"
 		"LP144a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Large Radar Jammer"
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 12
@@ -3314,7 +3314,7 @@ ship "Leviathan"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Liquid Helium Cooler"
 		"Laser Rifle" 13
 		"Plasma Pistol" 30
@@ -3378,7 +3378,7 @@ ship "Protector"
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Small Radar Jammer" 3
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 5
@@ -3439,7 +3439,7 @@ ship "Aegis"
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Small Radar Jammer" 3
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 5
@@ -3501,7 +3501,7 @@ ship "Vanguard"
 
 		"Fusion Reactor"
 		"LP072a Battery Pack"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 3
 		"Plasma Pistol" 20
@@ -3566,7 +3566,7 @@ ship "Unnamed Prototype"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Liquid Nitrogen Cooler"
 		"Tactical Scanner" 2
 		"Plasma Pistol" 64
@@ -3627,7 +3627,7 @@ ship "Mule"
 	
 		"NT-200 Nucleovoltaic"
 		"LP072a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Small Radar Jammer" 2
 		"Ramscoop"
 		"Laser Rifle"
@@ -3709,7 +3709,7 @@ ship "Bactrian"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Large Radar Jammer"
 		"Ramscoop"
 		"Laser Rifle" 15
@@ -3795,7 +3795,7 @@ ship "Prototype Vulture"
 	outfits
 		"Blaster Turret" 14
 		
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Tactical Scanner"
 		"LP576a Battery Pack"
 		"Fusion Reactor"
@@ -3877,7 +3877,7 @@ ship "Veles"
 		"Quad Blaster Turret" 6
 		"Heavy Anti-Missile Turret" 4
 		
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Tactical Scanner"
 		"LP576a Battery Pack"
 		"Fusion Reactor"
@@ -3965,7 +3965,7 @@ ship "Dart"
 		
 		"Dwarf Core"
 		"LP072a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Cooling Ducts"
 		"Laser Rifle" 5
 		
@@ -4016,7 +4016,7 @@ ship "Bolt"
 		
 		"Dwarf Core"
 		"Supercapacitor"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Laser Rifle" 5
 		
 		"A370 Atomic Thruster"
@@ -4058,7 +4058,7 @@ ship "Missile"
 		
 		"Dwarf Core"
 		"LP036a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Water Coolant System"
 		"Laser Rifle" 5
 		
@@ -4255,7 +4255,7 @@ ship "Merlin"
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Large Radar Jammer"
 		"Liquid Helium Cooler"
 		"Outfits Expansion" 3
@@ -4315,7 +4315,7 @@ ship "Peregrine"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Large Radar Jammer"
 		"Liquid Helium Cooler"
 		"Outfits Expansion" 3
@@ -4370,7 +4370,7 @@ ship "Harpy"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D41-HY Shield Generator"
+		"D14-M Shield Generator"
 		"Large Radar Jammer"
 		"Liquid Helium Cooler"
 		"Outfits Expansion" 3
@@ -4585,7 +4585,7 @@ ship "Lindworm"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Large Radar Jammer"
 		"Liquid Helium Cooler"
 		"Outfits Expansion" 2
@@ -4645,7 +4645,7 @@ ship "Selma"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Large Radar Jammer"
 		"Liquid Helium Cooler"
 		"Liquid Nitrogen Cooler"
@@ -4694,7 +4694,7 @@ ship "Bakunawa"
 
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Large Radar Jammer"
 		"Liquid Helium Cooler"
 		"Outfits Expansion" 2
@@ -4751,7 +4751,7 @@ ship "Zonetail"
 		
 		"Dwarf Core"
 		"LP144a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Liquid Nitrogen Cooler"
 		"Security Station" 3
 		"Laser Rifle" 8
@@ -4809,7 +4809,7 @@ ship "Lesser Devil"
 		
 		"Dwarf Core"
 		"LP144a Battery Pack"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 11
 		
@@ -4866,7 +4866,7 @@ ship "Spinetail"
 		"LP072a Battery Pack"
 		"LP036a Battery Pack"
 		"Supercapacitor"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 11
 		
@@ -5211,7 +5211,7 @@ ship "Sliver"
 		
 		"Fusion Reactor"
 		"LP036a Battery Pack"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 22
 		
@@ -5266,7 +5266,7 @@ ship "Needle"
 		
 		"Fusion Reactor"
 		"LP036a Battery Pack"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Liquid Nitrogen Cooler"
 		"Water Coolant System"
 		"Security Station"
@@ -5317,7 +5317,7 @@ ship "Sting"
 		
 		"Fusion Reactor"
 		"LP036a Battery Pack"
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"Liquid Nitrogen Cooler"
 		"Security Station" 2
 		"Laser Rifle" 20
