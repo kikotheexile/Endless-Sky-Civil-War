@@ -1682,6 +1682,15 @@ void Ship::DoGeneration()
 		PauseAnimation();
 	else
 	{
+		// (Dynamic energy generation goes HERE:)
+		// Find out how much energy the ship's generators SHOULD generate
+		// This is a function of battery capacity, e.g. don't generate excess power if your batteries are full!
+		float generatorPercent = 1;
+		
+		if(attributes.Get("energy capacity") > 0)
+		{
+			generatorPercent = max(0.1, (attributes.Get("energy capacity") - energy) / attributes.Get("energy capacity"));
+		}
 		// Ramscoops work much better when close to the system center. Even if a
 		// ship has no ramscoop, it can harvest a tiny bit of fuel by flying
 		// close to the star. Carried fighters can't collect fuel or energy this way.
@@ -1691,23 +1700,23 @@ void Ship::DoGeneration()
 			fuel += currentSystem->SolarWind() * .03 * scale * (sqrt(attributes.Get("ramscoop")) + .05 * scale);
 			
 			double solarScaling = currentSystem->SolarPower() * scale;
-			energy += solarScaling * attributes.Get("solar collection");
-			heat += solarScaling * attributes.Get("solar heat");
+			energy += solarScaling * attributes.Get("solar collection") * generatorPercent;
+			heat += solarScaling * attributes.Get("solar heat") * generatorPercent;
 		}
-		
 		double coolingEfficiency = CoolingEfficiency();
-		energy += attributes.Get("energy generation") - attributes.Get("energy consumption");
+		energy += attributes.Get("energy generation") * generatorPercent - attributes.Get("energy consumption");
 		energy -= ionization;
+		
 		fuel += attributes.Get("fuel generation");
-		heat += attributes.Get("heat generation") - attributes.Get("heat consumption");
+		heat += attributes.Get("heat generation") * generatorPercent - attributes.Get("heat consumption");
 		heat -= coolingEfficiency * attributes.Get("cooling");
 		
 		// Convert fuel into energy and heat only when the required amount of fuel is available.
-		if(attributes.Get("fuel consumption") <= fuel)
+		if(attributes.Get("fuel consumption") * generatorPercent <= fuel)
 		{	
-			fuel -= attributes.Get("fuel consumption");
-			energy += attributes.Get("fuel energy");
-			heat += attributes.Get("fuel heat");
+			fuel -= attributes.Get("fuel consumption") * generatorPercent;
+			energy += attributes.Get("fuel energy") * generatorPercent;
+			heat += attributes.Get("fuel heat") * generatorPercent;
 		}
 
 		// Apply active heating before cooling.
