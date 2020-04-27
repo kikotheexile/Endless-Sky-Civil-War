@@ -2119,7 +2119,7 @@ ship "Quicksilver"
 		"RT-I Radiothermal"
 		"LP036a Battery Pack"
 		"D14-S Shield Generator"
-		"Cooling Ducts"
+		"Water Coolant System MKI"
 		"Plasma Pistol" 3
 		
 		"Greyhound Plasma Thruster"
@@ -2482,7 +2482,7 @@ ship "Splinter"
 		"LP144a Battery Pack"
 		"D14-L Shield Generator"
 		"Small Radar Jammer" 2
-		"Water Coolant System"
+		"Water Coolant System MKII"
 		"Laser Rifle"
 		"Plasma Pistol" 6
 		
@@ -2609,7 +2609,7 @@ ship "Bastion"
 		"LP144a Battery Pack"
 		"nGVF-BB Fuel Cell"
 		"D14-L Shield Generator"
-		"Water Coolant System"
+		"Water Coolant System MKII"
 		"Tactical Scanner"
 		"Laser Rifle" 7
 		"Plasma Pistol" 10
@@ -3016,7 +3016,7 @@ ship "Arete"
 		"LP288a Battery Pack"
 		"D14-XL Shield Generator"
 		"Large Radar Jammer" 2
-		"Water Coolant System"
+		"Water Coolant System MKII"
 		"Brig"
 		"Laser Rifle" 40
 		"Fragmentation Grenades" 40
@@ -3966,7 +3966,7 @@ ship "Dart"
 		"Dwarf Core"
 		"LP072a Battery Pack"
 		"D14-XS Shield Generator"
-		"Cooling Ducts"
+		"Water Coolant System MKI"
 		"Laser Rifle" 5
 		
 		"A250 Atomic Thruster"
@@ -4059,7 +4059,7 @@ ship "Missile"
 		"Dwarf Core"
 		"LP036a Battery Pack"
 		"D14-XS Shield Generator"
-		"Water Coolant System"
+		"Water Coolant System MKII"
 		"Laser Rifle" 5
 		
 		"A250 Atomic Thruster"
@@ -4108,7 +4108,7 @@ ship "Jumper"
 		"LP072a Battery Pack"
 		"S-270 Regenerator"
 		"Outfits Expansion"
-		"Water Coolant System"
+		"Water Coolant System MKII"
 		"Security Station"
 		"Laser Rifle" 18
 		
@@ -4160,7 +4160,7 @@ ship "Polevaulter"
 		"Dwarf Core"
 		"LP072a Battery Pack"
 		"S-270 Regenerator"
-		"Water Coolant System"
+		"Water Coolant System MKII"
 		"Outfits Expansion"
 		"Laser Rifle" 18
 		
@@ -4205,7 +4205,7 @@ ship "Pouncer"
 		"Dwarf Core"
 		"LP072a Battery Pack"
 		"S-270 Regenerator"
-		"Water Coolant System"
+		"Water Coolant System MKII"
 		"Outfits Expansion"
 		"Security Station"
 		"Laser Rifle" 18
@@ -5268,7 +5268,7 @@ ship "Needle"
 		"LP036a Battery Pack"
 		"D14-L Shield Generator"
 		"Liquid Nitrogen Cooler"
-		"Water Coolant System"
+		"Water Coolant System MKII"
 		"Security Station"
 		"Laser Rifle" 21
 		
