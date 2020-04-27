@@ -335,7 +335,7 @@ outfit "Anti-Missile Turret"
 		"reload" 8
 		"firing energy" 5
 		"firing heat" 3
-	description "Centuries ago, space battles were fought mostly with missiles, with the outcome dependent only on which ship had more shielding or ammunition. Lovelace Labs was originally founded to remedy that situation by developing a protective system that could shoot missiles out of the air, defending freighter convoys from pirates who could otherwise simply bombard them into submission without ever venturing within range of their guns."
+	description "Centuries ago, space battles were fought mostly with missiles with the outcome dependent only on which ship had more ammunition. Lovelace Labs was originally founded to remedy that situation by developing a protective system that could shoot missiles out of the air, defending freighter convoys from pirates who could otherwise simply bombard them into submission without ever venturing within range of their guns."
 
 effect "small anti-missile"
 	sprite "effect/small anti missile"
@@ -364,7 +364,7 @@ outfit "Heavy Anti-Missile Turret"
 		"reload" 6
 		"firing energy" 10
 		"firing heat" 5
-	description "The Heavy Anti-Missile turret has a longer range, higher power, and shorter reload time than its smaller sibling. The only way to overcome it is by firing missiles in a cluster so that while one is being targeted, the others can get through, and as a result all missile systems on the market now default to firing in clusters if multiple copies of the same launcher are installed, rather than staggering their fire as ordinary guns do."
+	description "The Heavy Lovelace Anti-Missile turret has a longer range, higher power, and shorter reload time than its smaller sibling. The only way to overcome it is by firing missiles in a cluster so that while one is being targeted, the others can get through, and as a result all missile systems on the market now default to firing in clusters if multiple copies of the same launcher are installed. This works better than staggering their fire as ordinary guns do."
 
 effect "large anti-missile"
 	sprite "effect/large anti missile"
@@ -432,7 +432,7 @@ outfit "Beam Laser"
 		"shield damage" .1
 		"hull damage" 2.3
 	description "In the early part of the space era, the settlements in the region of space known as the Deep developed in relative isolation from the rest of human space. One result of that isolation is that their weapons technology mostly uses beam weapons, instead of the energy projectile weapons that are more common elsewhere."
-	description "	While cockpits are designed to shield the pilot from laser emissions, it is still considered rude to try and point the laser in the enemy's eye."
+	description "	The Deep Sky Beam Laser was developed before the advent of energy shielding, but is now most useful as a mining laser. It is worth noting that while cockpits are designed to shield the pilot from laser emissions, it is still considered rude to try and point the laser in the enemy's eye."
 
 outfit "Laser Turret"
 	category "Turrets"
@@ -459,7 +459,7 @@ outfit "Laser Turret"
 		"firing heat" 2.4
 		"shield damage" .2
 		"hull damage" 4.6
-	description "Laser Turrets are hated by fighter pilots because it is nearly impossible to dodge them once you are within their reach. This turret carries a pair of lasers and can swivel almost instantly to fire on new targets as they approach. Laser Turrets are especially useful when mounted on slow-moving freighters to fend off packs of small pirate vessels."
+	description "Deep Sky Laser Turrets are hated by fighter pilots because it is nearly impossible to dodge them once you are within their reach. This turret carries a pair of lasers and can swivel almost instantly to fire on new targets as they approach. Laser Turrets are especially useful when mounted on slow-moving freighters to fend off packs of small pirate vessels."
 
 effect "beam laser impact"
 	sprite "effect/laser impact"
@@ -492,7 +492,7 @@ outfit "Heavy Laser"
 		"firing heat" 2.1
 		"shield damage" .7
 		"hull damage" 3.4
-	description "The Heavy Laser is an upgraded Beam Laser with a significantly longer range and higher power. It is mostly intended for larger ships, where energy and space are plentiful, but some pilots consider a single Heavy Laser to be a worthwhile alternative to a pair of Beam Lasers, because the longer range makes up for the fact that it does not quite deal twice as much damage."
+	description "The Deep Sky Heavy Laser is an upgraded Beam Laser with a significantly longer range and higher power. It is mostly intended for larger mining vessels where energy and space are plentiful, but some pilots consider a single Heavy Laser to be a worthwhile alternative to a pair of Beam Lasers, because the longer range makes up for the fact that it does not quite deal twice as much damage."
 
 outfit "Heavy Laser Turret"
 	category "Turrets"
@@ -555,7 +555,7 @@ outfit "Electron Beam"
 		"firing heat" 2.7
 		"shield damage" 2.4
 		"hull damage" 3.3
-	description "The Electron Beam is a recent development by the Deep Sky labs, a more powerful weapon with a design similar to their perennially popular laser guns."
+	description "The Electron Beam is a recent development by the Deep Sky labs, a more powerful weapon with a design similar to their perennially popular laser guns. Unlike its Beam Laser precursors, this variant is quite capable of damaging enemy shields."
 
 outfit "Electron Turret"
 	category "Turrets"
@@ -1037,7 +1037,7 @@ outfit "Plasma Turret"
 		"shield damage" 168
 		"hull damage" 30
 		"heat damage" 340
-	description "Developed by Kraz Cybernetics out of desparation, the Plasma Turret is a weapon designed to counter hostile Navy vessels who otherwise signifigantly outmatch Free Worlds vessels."
+	description "Developed by Kraz Cybernetics, the Plasma Turret is a weapon designed to counter hostile Navy vessels who otherwise signifigantly outmatch Free Worlds vessels."
 
 effect "plasma explosion"
 	sprite "effect/plasma explosion"
@@ -2383,24 +2383,23 @@ outfit "AR120 Reverse Thruster"
 
 
 #Generic Outfits
-outfit "Cooling Ducts"
-	plural "Cooling Ducts"
+outfit "Water Coolant System MKI"
 	category "Systems"
 	cost 10000
-	thumbnail "outfit/cooling ducts"
+	thumbnail "outfit/water cooling"
 	"mass" 5
 	"outfit space" -5
 	"cooling" 5
 	description "When trying to cram as many high-powered outfits as possible into a ship, occasionally you reach the point where it is sporadically overheating and shutting down. In that case, you may need to install one of these."
 
-outfit "Water Coolant System"
+outfit "Water Coolant System MKII"
 	category "Systems"
 	cost 25000
 	thumbnail "outfit/water cooling"
 	"mass" 10
 	"outfit space" -10
 	"cooling" 12
-	description "This system is a step up from ordinary cooling ducts; it circulates water in between an external radiator and your ship's hottest internal components to keep them from overheating."
+	description "This system is a step up from the MKI; it circulates water in between an external radiator and your ship's hottest internal components to keep them from overheating."
 
 outfit "Quantum Shield Generator"
 	category "Systems"
