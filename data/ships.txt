@@ -2268,63 +2268,65 @@ ship "Raven"
 ###############################################
 
 
-ship "Quarg Wardragon"
-	sprite "ship/wardragon"
-	thumbnail "thumbnail/wardragon"
+ship "Endevor"
+	sprite "ship/mstar queene"
+	thumbnail "thumbnail/mstar queene"
 	attributes
-		category "Heavy Warship"
-		licenses
-			Navy
-		"cost" 5900000
-		"shields" 160000
-		"hull" 50000
-		"required crew" 160
-		"bunks" 185
-		"mass" 360
-		"drag" 9.3
-		"heat dissipation" .5
-		"fuel capacity" 800
-		"cargo space" 50
-		"outfit space" 600
-		"weapon capacity" 200
-		"engine capacity" 120
-		"hull repair rate" 5
-		"hull energy" 5
-		"ramscoop" 10
+		category "Destroyer"
+		"cost" 4500000
+		"shields" 9800
+		"hull" 6000
+		"hull repair rate" .1
+		"landing gear" 1
+		"required crew" 22
+		"bunks" 40
+		"mass" 350
+		"drag" 5.5
+		"heat dissipation" .65
+		"fuel capacity" 500
+		"cargo space" 99
+		"outfit space" 410
+		"weapon capacity" 120
+		"engine capacity" 130
 		"atmosphere scan" 10
 		weapon
-			"blast radius" 250
-			"shield damage" 1000
-			"hull damage" 500
-			"hit force" 1500
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
 	outfits
-		"Quarg Skylance" 2
-		"Quarg Anti-Missile" 2
+		"Meteor Missile Launcher" 3
+		"Meteor Missile" 135
+		"Heavy Anti-Missile Turret" 2
 		
-		"Antimatter Core"
-		"Nanotech Battery"
-		"Quantum Shield Generator"
-		"Intrusion Countermeasures" 160
+		"NT-200 Nucleovoltaic"
+		"LP036a Battery Pack"
+		"D14-XL Shield Generator"
+		"Small Radar Jammer" 3
+		"Luxury Accommodations"
+		"Plasma Pistol" 41
 		
-		"Medium Graviton Thruster"
-		"Medium Graviton Steering"
-		"Jump Drive"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 		
-	engine -14 47
-	engine 14 47
-	turret -28 7 "Quarg Skylance"
-	turret 28 7 "Quarg Skylance"
-	turret -9 -14 "Quarg Anti-Missile"
-	turret 9 -14 "Quarg Anti-Missile"
-	explode "tiny explosion" 12
-	explode "small explosion" 16
-	explode "medium explosion" 30
-	explode "large explosion" 40
-	explode "huge explosion" 20
+	engine -18.5 115
+	engine 18.5 115
+	gun 0 -113 "Meteor Missile Launcher"
+	gun -24 -76 "Meteor Missile Launcher"
+	gun 24 -76 "Meteor Missile Launcher"
+	turret -21.5 2.5 "Heavy Anti-Missile Turret"
+	turret 21.5 2.5 "Heavy Anti-Missile Turret"
+	leak "leak" 50 50
+	leak "big leak" 80 30
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
 	"final explode" "final explosion medium"
-	description "A rare sight in human space, the Quarg's famed Wardragon is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
-	description "	Many conspiracy theorists wonder why the Quarg would abide by such regulations and laws if they are so powerful."
-
+	description "After decades of capturing and ransoming Star Queens, the shipyards on Haven came into an overabundance of otherwise useless transports. Initial attempts to rent these out as stationary luxury apartments fell flat, so it was decided to convert these into combat vessels. Unsurprisingly, its sold with the same outfits it had when captured."
+	description "	Once stripped of its luxury resources, the Star Queen proved a surprisingly sturdy and nimble hull. Although lightly armed even by frigate standards, the Endevors engine space and shield strength can almost rival a cruisers, landing it squarely in the Destroyer range." 
+	
 ship "Manta"
 	sprite "ship/manta"
 	thumbnail "thumbnail/manta"
@@ -5441,3 +5443,62 @@ ship "Archon" "Archon (Cloaked)"
 	turret "Drak Turret"
 	turret "Drak Distancer"
 	turret "Drak Distancer"
+
+
+ship "Quarg Wardragon"
+	sprite "ship/wardragon"
+	thumbnail "thumbnail/wardragon"
+	attributes
+		category "Heavy Warship"
+		licenses
+			Navy
+		"cost" 5900000
+		"shields" 160000
+		"hull" 50000
+		"required crew" 160
+		"bunks" 185
+		"mass" 360
+		"drag" 9.3
+		"heat dissipation" .5
+		"fuel capacity" 800
+		"cargo space" 50
+		"outfit space" 600
+		"weapon capacity" 200
+		"engine capacity" 120
+		"hull repair rate" 5
+		"hull energy" 5
+		"ramscoop" 10
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 250
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Quarg Skylance" 2
+		"Quarg Anti-Missile" 2
+		
+		"Antimatter Core"
+		"Nanotech Battery"
+		"Quantum Shield Generator"
+		"Intrusion Countermeasures" 160
+		
+		"Medium Graviton Thruster"
+		"Medium Graviton Steering"
+		"Jump Drive"
+		
+	engine -14 47
+	engine 14 47
+	turret -28 7 "Quarg Skylance"
+	turret 28 7 "Quarg Skylance"
+	turret -9 -14 "Quarg Anti-Missile"
+	turret 9 -14 "Quarg Anti-Missile"
+	explode "tiny explosion" 12
+	explode "small explosion" 16
+	explode "medium explosion" 30
+	explode "large explosion" 40
+	explode "huge explosion" 20
+	"final explode" "final explosion medium"
+	description "A rare sight in human space, the Quarg's famed Wardragon is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
+	description "	Many conspiracy theorists wonder why the Quarg would abide by such regulations and laws if they are so powerful."
+
