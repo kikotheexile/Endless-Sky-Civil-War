@@ -2805,7 +2805,7 @@ ship "Aletheia"
 		"Large Radar Jammer"
 		"Laser Rifle" 5
 		"Fragmentation Grenades" 5
-		"Security Station"
+		"Remote Security Station" 5
 		"Plasma Pistol" 11
 		
 		"X3700 Ion Thruster"
@@ -3021,7 +3021,7 @@ ship "Arete"
 		"Laser Rifle" 40
 		"Fragmentation Grenades" 40
 		"Knockout Gas" 14
-		"Security Station"
+		"Remote Security Station" 5
 		"Plasma Pistol" 17
 		"Tactical Scanner"
 		
@@ -3110,7 +3110,7 @@ ship "Nomos"
 		"Fragmentation Grenades" 20
 		"Knockout Gas" 9
 		"Plasma Pistol" 30
-		"Security Station"
+		"Remote Security Station" 5
 		"Tactical Scanner"
 		
 		"X4700 Ion Thruster"
