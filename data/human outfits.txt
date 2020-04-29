@@ -2948,6 +2948,19 @@ outfit "Security Station"
 	"unplunderable" 1
 	description "This is a specially designed barricade, which can be installed in the hallways of your ship as a powerful defense against anyone who boards you in an attempt to take over your ship."
 
+outfit "Remote Security Station"
+	category "Hand to Hand"
+	licenses
+		Navy
+	cost 62000
+	thumbnail "outfit/security station2"
+	"mass" 2
+	"outfit space" -2
+	"capture defense" 4.4
+	"unplunderable" 1
+	description "Unlike regular security stations, this one boasts a hardwired and unhackable remote controlled turret on the other side of its windowless barracade."
+	description "	So as to not allow criminals to mow down entire squads of navy troops from behind a near unpenetrable cover, this outfit is restricted to navy and security personel only."
+
 outfit "Knockout Gas"
 	plural "Gas Canisters"
 	category "Hand to Hand"
