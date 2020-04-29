@@ -162,16 +162,17 @@ shipyard "Syndicated Shipyards"
 	"Protector"
 	"Vanguard"
 
-shipyard "Northern Pirates"
+shipyard "Northern Union"
 	"Berserker"
 	"Dagger"
 	"Firebird"
 	"Headhunter"
 
-shipyard "Advanced Northern Pirates"
+shipyard "Northern Union Advanced"
 	"Aerie"
 	"Leviathan"
-
+	"Endevor"
+	
 shipyard "Southern Pirates"
 	"Argosy"
 	"Clipper"
