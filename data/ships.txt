@@ -89,8 +89,6 @@ ship "Earth Shaper"
 	thumbnail "thumbnail/earth shaper"
 	attributes
 		category "Light Freighter"
-		licenses
-			Wanderer
 		"cost" 500000
 		"hull" 3300
 		"automaton" 1
@@ -4000,6 +3998,9 @@ ship "Dart"
 	thumbnail "thumbnail/marrows"
 	attributes
 		category "Gunship"
+		licenses
+			Marauder
+			SoCo
 		"cost" 1320000
 		"shields" 2300
 		"hull" 500
@@ -4050,6 +4051,10 @@ ship "Bolt"
 	sprite "ship/marrowe"
 	thumbnail "thumbnail/marrowe"
 	attributes
+		category "Gunship"
+		licenses
+			Marauder
+			Hotrod
 		"cost" 1320000
 		"shields" 2300
 		"hull" 500
@@ -4093,6 +4098,10 @@ ship "Missile"
 	sprite "ship/marroww"
 	thumbnail "thumbnail/marroww"
 	attributes
+		category "Gunship"
+		licenses
+			Marauder
+			Smuggler
 		"cost" 1320000
 		"shields" 2300
 		"hull" 500
@@ -4141,6 +4150,9 @@ ship "Jumper"
 	thumbnail "thumbnail/mbounders"
 	attributes
 		category "Gunship"
+		licenses
+			Marauder
+			SoCo
 		"cost" 1250000
 		"shields" 2500
 		"hull" 700
@@ -4194,6 +4206,9 @@ ship "Polevaulter"
 	sprite "ship/mboundere"
 	thumbnail "thumbnail/mboundere"
 		category "Gunship"
+		licenses
+			Marauder
+			Smuggler
 		"cost" 1250000
 		"shields" 2500
 		"hull" 700
@@ -4239,6 +4254,9 @@ ship "Pouncer"
 	sprite "ship/mbounderw"
 	thumbnail "thumbnail/mbounderw"
 		category "Gunship"
+		licenses
+			Marauder
+			Hotrod
 		"cost" 1250000
 		"shields" 2500
 		"hull" 700
@@ -4290,6 +4308,9 @@ ship "Merlin"
 	thumbnail "thumbnail/mfalcons"
 	attributes
 		category "Cruiser"
+		licenses
+			Marauder
+			SoCo
 		"cost" 13900000
 		"shields" 14100
 		"hull" 4100
@@ -4349,6 +4370,9 @@ ship "Peregrine"
 	thumbnail "thumbnail/mfalcone"
 	attributes
 		category "Cruiser"
+		licenses
+			Marauder
+			Smuggler
 		"cost" 13900000
 		"shields" 14100
 		"hull" 4100
@@ -4405,6 +4429,9 @@ ship "Harpy"
 	thumbnail "thumbnail/mfalconw"
 	attributes
 		category "Cruiser"
+		licenses
+			Marauder
+			Hotrod
 		"cost" 13900000
 		"shields" 14100
 		"hull" 4100
@@ -4619,6 +4646,9 @@ ship "Lindworm"
 	thumbnail "thumbnail/mleviathans"
 	attributes
 		category "Cruiser"
+		licenses
+			Marauder
+			SoCo
 		"cost" 10800000
 		"shields" 16000
 		"hull" 5500
@@ -4680,6 +4710,9 @@ ship "Selma"
 	thumbnail "thumbnail/mleviathane"
 	attributes
 		category "Cruiser"
+		licenses
+			Marauder
+			Smuggler
 		"cost" 10800000
 		"shields" 16000
 		"hull" 5500
@@ -4783,6 +4816,9 @@ ship "Zonetail"
 	thumbnail "thumbnail/mmantas"
 	attributes
 		category "Destroyer"
+		licenses
+			Marauder
+			SoCo
 		"cost" 3740000
 		"shields" 6500
 		"hull" 1750
@@ -4842,6 +4878,9 @@ ship "Lesser Devil"
 	thumbnail "thumbnail/mmantae"
 	attributes
 		category "Destroyer"
+		licenses
+			Marauder
+			Hotrod
 		"cost" 3740000
 		"shields" 6500
 		"hull" 1750
@@ -4896,6 +4935,9 @@ ship "Spinetail"
 	thumbnail "thumbnail/mmantaw"
 	attributes
 		category "Destroyer"
+		licenses
+			Marauder
+			Smuggler
 		"cost" 3740000
 		"shields" 6500
 		"hull" 1750
@@ -4953,6 +4995,9 @@ ship "Gallium"
 	thumbnail "thumbnail/mquicksilvers"
 	attributes
 		category "Frigate"
+		licenses
+			Marauder
+			SoCo
 		"cost" 1200000
 		"shields" 3500
 		"hull" 900
@@ -5004,6 +5049,9 @@ ship "Mercury"
 	thumbnail "thumbnail/mquicksilvere"
 	attributes
 		category "Frigate"
+		licenses
+			Marauder
+			Smuggler
 		"cost" 1200000
 		"shields" 3500
 		"hull" 900
@@ -5096,6 +5144,9 @@ ship "Crow"
 	thumbnail "thumbnail/mravens"
 	attributes
 		category "Frigate"
+		licenses
+			Marauder
+			SoCo
 		"cost" 2750000
 		"shields" 5200
 		"hull" 1600
@@ -5151,6 +5202,9 @@ ship "Rook"
 	thumbnail "thumbnail/mravene"
 	attributes
 		category "Frigate"
+		licenses
+			Marauder
+			Smuggler
 		"cost" 2750000
 		"shields" 5200
 		"hull" 1600
@@ -5196,6 +5250,9 @@ ship "Sturnus"
 	thumbnail "thumbnail/mravenw"
 	attributes
 		category "Frigate"
+		licenses
+			Marauder
+			Hotrod
 		"cost" 2750000
 		"shields" 5200
 		"hull" 1600
@@ -5245,6 +5302,9 @@ ship "Sliver"
 	thumbnail "thumbnail/msplinters"
 	attributes
 		category "Destroyer"
+		licenses
+			Marauder
+			SoCo
 		"cost" 3400000
 		"shields" 5700
 		"hull" 1950
@@ -5300,6 +5360,9 @@ ship "Needle"
 	thumbnail "thumbnail/msplintere"
 	attributes
 		category "Destroyer"
+		licenses
+			Marauder
+			Smuggler
 		"cost" 3400000
 		"shields" 5700
 		"hull" 1950
@@ -5351,6 +5414,9 @@ ship "Sting"
 	thumbnail "thumbnail/msplinterw"
 	attributes
 		category "Destroyer"
+		licenses
+			Marauder
+			Hotrod
 		"cost" 3400000
 		"shields" 5700
 		"hull" 1950
@@ -5510,7 +5576,7 @@ ship "Quarg Wardragon"
 	attributes
 		category "Heavy Warship"
 		licenses
-			Navy
+			Quarg
 		"cost" 5900000
 		"shields" 160000
 		"hull" 50000
