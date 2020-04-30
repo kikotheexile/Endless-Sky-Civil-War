@@ -2976,21 +2976,21 @@ ship "Astraea"
 ###############################################
 
 ship "Schooner"
-    sprite "ship/moderator"
-    thumbnail "thumbnail/moderator"
-    attributes
-        category "Cruiser"
-        "cost" 10800000
-        "shields" 12000
-        "hull" 6500
+	sprite "ship/moderator"
+	thumbnail "thumbnail/moderator"
+	attributes
+		category "Cruiser"
+		"cost" 10800000
+		"shields" 12000
+		"hull" 6500
 		"hull repair rate" .1
-        "required crew" 38
-        "bunks" 65
-        "mass" 610
-        "drag" 6.6
-        "heat dissipation" .7
-        "fuel capacity" 600
-        "cargo space" 90
+		"required crew" 38
+		"bunks" 65
+		"mass" 610
+		"drag" 6.6
+		"heat dissipation" .7
+		"fuel capacity" 600
+		"cargo space" 90
 		"outfit space" 550 
 		"weapon capacity" 220
 		"engine capacity" 144
@@ -3018,6 +3018,7 @@ ship "Schooner"
 
 		"A370 Atomic Thruster"
 		"Impala Plasma Steering"
+		"Hyperdrive"
 
 	gun 26 -43 "Particle Cannon"
 	gun -26 -43 "Particle Cannon"
