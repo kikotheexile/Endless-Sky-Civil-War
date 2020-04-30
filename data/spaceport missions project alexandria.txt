@@ -29,3 +29,94 @@ mission "Vinci History"
 	on accept
 		log "Alpha Wars" "Vinci" `In the year 2454, the Alpha augments massacred much of the colony on Vinci. History is unclear as to the Alpha's motives, but the planet is reknowned for its production of ship and personal electronics.`
 		fail
+
+mission "Chiron History"
+	invisible
+	landing
+	source Chiron
+	to offer
+		random < 5
+	on offer
+		conversation
+			`You wander the spaceport as normal when something catches your eye. A statue of a man standing in front of an ancient rocket. Do you investigate?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					decline
+			`	You approach the bronze statue of a man pointing to the sky as the ancient rocket, which looks something like a Megaparsec Arrow, rests behind him.`
+			`	The inscription at the base of the statue reads: "In honor of Charls Plot, inventor of the Plot Device. The first ever faster-than-light hyperdrive that allowed humanity to explore the stars."`
+				accept
+				
+	on accept
+		log "Technology" "Hyperdrive" `In 2211, a physicist named Charles Plot discovers charged particles traveling along a "gravitational slipstream" between the Sun and Alpha Centauri. He builds a device that allows objects to travel along that slipstream. The Plot device becomes the basis of the modern hyperdrive, allowing faster-than-light travel between certain stars.`
+		fail
+
+mission "Martian History"
+	invisible
+	landing
+	source Mars
+	to offer
+		random < 5
+	on offer
+		conversation
+			`Even after setting foot on other worlds, and indeed being born and raised far away from Earth, there is something about Mars that feels alien. The low gravity and red soil lends itself to a sense of both isolation and adventure.`
+			`	Do you take the opportunity to explore your surroundings?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					decline
+			`	Wandering the spaceport and the lake, you come across an outdoor museum of sorts. Ancient, cramped living quarters.`
+			`	There are various signs and inscriptions, detailing the history of the first Martian colonies. As well as signs warning against vandalism and littering.`
+				accept
+				
+	on accept
+		log "Ancient History" "Mars" `One of the first alien worlds that humanity colonized, Mars attempted to establish its first permanent and self sufficient colony before the year 2100. Not all of the attempts succeeded, and a few terraforming attempts ended in disaster.`
+		fail
+
+mission "Lunar History"
+	invisible
+	landing
+	source Mars
+	to offer
+		random < 5
+	on offer
+		conversation
+			`While wandering the spaceport, you come across a strange scene.`
+			`	Do you take the opportunity to explore your surroundings?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					decline
+			`Incased in an atmosphere-free tube are the preserved footprints and bleach-white flag left behind by the first men to set foot here in 1969, as well as some other assorted junk and debries. Within line of sight of these preserved relics stand humanities first Lunar shipyards. The contrast is remarkable.`
+			`	A sign reads, "Please do not tap on the glass."`
+				accept
+				
+	on accept
+		log "Ancient History" "Moon Landings" `After several attempts by two rival nations, on July 20, 1969, the first successful moon landing was executed by the crew of a primative spaceship called Apollo 11. Relics of mankind's first baby-steps beyond their homeworld are still preserved here.`
+		log "Ancient History" "Lunar Colonies" `The first place humanity set foot on beyond Earth was not where the first permanent colony was founded. It took over 100 years for any permanent housing to be constructed on Earth's Moon, and even then, it was little more than a stopover for other destinations. Luna was eventually honored with being the first dedicated extraterrestrial shipyard.`
+		fail
+		
+mission "Valhalla History"
+	invisible
+	landing
+	source Mars
+	to offer
+		random < 5
+	on offer
+		conversation
+			`The spaceport is vast, with many forgotten roads and back alleys seldom explored by tourists.`
+			`	Would you like to travel off the beaten path?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					decline
+			`Normally if you chose to lose yourself in the back roads and alleys of a strange world you expect to find yourself at the tip of a knife or looking down the barrel of a gun. However, on Valhalla, even the shadiest sectors are shockingly crime free.`
+			`	Eventually you come across an outdoor plaza with a fountain in the center. You see a statue of a Quarg, a Human, and some other alien being standing in a triangle behind an altar. The human male with both arms outstretched, as if gesturing for peace and friendship, while Quarg and other alien somewhat awkwardly shake hands.`
+			`	Upon the altar rests a plaque, its inscription reads, "May the Asgard and Elves find peace and unity in helping a common friend fight a common foe."
+				accept
+				
+	on accept
+		log "Alpha Wars" "Asgard" `A sub-faction of the Quarg, the human-named Asgard are a warrior culture who defend their allies from assault, but never launch counter offensives. Their goal seems to be to prevent the extinction of friendly species in times of war.`
+		log "Alpha Wars" "Elves" `Legend has it that during the Augment Wars an unknown alien species, the "Elves," aided the humans of the Deep. By outfitting human ships with their powerful alien equipment, some believe this is how the Deep was able to drive back the Alpha threat. There is little evidence to support this legend, however many members of the Deep believe that the Elves are real, and will someday return to save mankind once again.`
+		fail
+		
