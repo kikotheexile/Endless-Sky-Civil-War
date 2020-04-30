@@ -164,14 +164,13 @@ shipyard "Syndicated Shipyards"
 
 shipyard "Northern Union"
 	"Berserker"
-	"Dagger"
 	"Firebird"
-	"Headhunter"
-
-shipyard "Northern Union Advanced"
-	"Aerie"
+	"Odyssey"	
 	"Leviathan"
+	
+shipyard "Northern Union Advanced"
 	"Endevor"
+	"Schooner"
 	
 shipyard "Southern Pirates"
 	"Argosy"
