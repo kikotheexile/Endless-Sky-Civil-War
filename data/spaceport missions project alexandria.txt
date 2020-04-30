@@ -1,0 +1,31 @@
+# Copyright (c) 2020 by Vincent Rohlf
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+mission "Vinci History"
+	invisible
+	landing
+	source Vinci
+	to offer
+		random < 5
+	on offer
+		conversation
+			`You wander the spaceport as normal, but when you attempt to return to your ship you take a wrong turn. Do you push forward to see what might be ahead of you?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					decline
+			`	You push on, further away from the spaceport. After passing various factories and local businesses, you arrive in a graveyard. There are engraved stones dating back to the very foundation of the colony.`
+			`	Nearby, there is a heavily erroded granite wall. Due to granites durability and resistance to errosion, it is still very easy to make out the inscription.`
+			`	"May these Five-Thousand Three-Hundred and Eighteen lost souls find peace the Alphas refused to give them in Two-Thousand Four-Hundred Fifty-Four." This inscription is followed with thousands of names.`
+				accept
+				
+	on accept
+		log "Alpha Wars" "Vinci" `In the year 2454, the Alpha augments massacred much of the colony on Vinci. History is unclear as to the Alpha's motives, but the planet is reknowned for its production of ship and personal electronics.`
+		fail
