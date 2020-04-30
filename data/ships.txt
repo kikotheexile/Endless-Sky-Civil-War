@@ -2975,7 +2975,65 @@ ship "Astraea"
 #Cruiser
 ###############################################
 
+ship "Schooner"
+    sprite "ship/moderator"
+    thumbnail "thumbnail/moderator"
+    attributes
+        category "Cruiser"
+        "cost" 10800000
+        "shields" 12000
+        "hull" 6500
+		"hull repair rate" .1
+        "required crew" 38
+        "bunks" 65
+        "mass" 610
+        "drag" 6.6
+        "heat dissipation" .7
+        "fuel capacity" 600
+        "cargo space" 90
+		"outfit space" 550 
+		"weapon capacity" 220
+		"engine capacity" 144
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+	outfits
+		"Particle Cannon" 2
+		"Torpedo Launcher" 2
+		"Meteor Missile Launcher" 2
+		"Modified Blaster" 2
+		"Anti-Missile Turret" 1
+		"Modified Blaster Turret" 2
+		"Torpedo" 20
+		"Meteor Missile" 120
 
+		"D14-M Shield Generator"
+		"Fission Reactor"
+		"LP072a Battery Pack"
+		"Brig" 5
+		"Interference plating" 5
+
+		"A370 Atomic Thruster"
+		"Impala Plasma Steering"
+
+	gun 26 -43 "Particle Cannon"
+	gun -26 -43 "Particle Cannon"
+	gun 26 -43 "Torpedo Launcher"
+	gun -26 -43 "Torpedo Launcher"
+	gun 14 -75 "Meteor Missile Launcher"
+	gun -14 -75 "Meteor Missile Launcher"
+	gun 14 -75 "Modified Blaster"
+	gun -14 -75 "Modified Blaster"
+	turret 14 -17 "Modified Blaster Turret"
+	turret -14 -17 "Modified Blaster Turret"
+	turret 0 89 "Anti-Missile Turret"
+	engine 22 114.5
+	engine -22 114.5
+	description "Named for an ancient vessel favored by oceanic pirates, the Schooner is a custom built raider. Its firepower and speed make it perfect for raiding large freighters, and give it an advantage when outrunning the authorites."
+	description "	Produced by the underground commune on Heatstroke in shipyards hidden under the ever shifting sands, this vessel is the largest ship made by any of the Northern Union affiliates."
 
 ship "Arete"
 	sprite "ship/carrier"
