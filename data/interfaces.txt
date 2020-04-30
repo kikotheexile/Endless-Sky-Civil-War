@@ -450,6 +450,8 @@ interface "hud"
 	string "mission target"
 		center 75 455
 		color "medium"
+	point "faction flag"
+		center 75 495
 	
 	# Other HUD elements:
 	box "escorts"
