@@ -112,7 +112,9 @@ jobs:
           install_name_tool -id "@rpath/libturbojpeg.0.dylib" /usr/local/opt/libjpeg-turbo/lib/libturbojpeg.0.dylib
           install_name_tool -id "@rpath/libSDL2-2.0.0.dylib" /usr/local/lib/libSDL2-2.0.0.dylib
       - name: Adjust version strings
-        run: ./utils/cd_update_versions.sh
+        run: |
+          chmod +x ./utils/cd_update_versions.sh
+          ./utils/cd_update_versions.sh
         shell: bash
       - name: Build Application
         run: xcodebuild -configuration "Release" -jobs $(sysctl -n hw.logicalcpu) -quiet
