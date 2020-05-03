@@ -28,6 +28,7 @@ jobs:
         pip3 install pbxproj --user
     - name: Validate XCode .pbxproj file
       run: |
+        chmod -x ./tests/check_xcode.sh
         ./tests/check_xcode.sh
     - name: Upload XCode patch
       if: failure()
