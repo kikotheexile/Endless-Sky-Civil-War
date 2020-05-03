@@ -177,7 +177,7 @@ jobs:
       if: steps.cache-artifact.outputs.cache-hit != 'true'
       run: |
         brew update
-        brew install libmad libpng jpeg-turbo sdl2
+        brew install libmad libpng jpeg-turbo pango sdl2
     - name: Compile
       if: steps.cache-artifact.outputs.cache-hit != 'true'
       run: xcodebuild -configuration "Release" -jobs $(sysctl -n hw.logicalcpu) -quiet install
