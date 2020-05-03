@@ -48,9 +48,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends libsdl2-dev libpng-dev libjpeg-turbo8-dev libopenal-dev libmad0-dev libglew-dev libgl1-mesa-dev libegl1-mesa-dev libgles2-mesa-dev libpango1.0-dev scons
       - name: Adjust version strings
-        run: ./utils/cd_update_versions.sh
+        run: |
+          chmod +x /utils/cd_update_versions.sh
+          ./utils/cd_update_versions.sh
       - name: Build AppImage
-        run: ./utils/build_appimage.sh
+        run: |
+          chmod +x /utils/build_appimage.sh
+          ./utils/build_appimage.sh
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
