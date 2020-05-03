@@ -2494,7 +2494,7 @@ outfit "Pacifist-1 Shield Generator"
 	thumbnail "outfit/tiny shield y"
 	"mass" 10
 	"outfit space" -10
-	"weapon space" -10
+	"weapon capacity" -10
 	"shield generation" .4
 	"shield energy" .4
 	description "The Deep Sky Pacifist Class shield generators work by converting extra weapon space to shield production. This Extra Small variant is tailor made for fighters, interceptors, and ships that don't see regular combat."
@@ -2505,7 +2505,7 @@ outfit "Pacifist-2 Shield Generator"
 	thumbnail "outfit/small shield y"
 	"mass" 15
 	"outfit space" -15
-	"weapon space" -15
+	"weapon capacity" -15
 	"shield generation" .52
 	"shield energy" .52
 	description "Deep Sky's shield generator is more powerful than the syndicated systems D14 shield generators, and like the D14 they scale in power with their size. Version 2 is slightly more powerful shield generator than its V1 counterpart, but recharging your shields completely will still take a long time."
@@ -2516,7 +2516,7 @@ outfit "Pacifist-3 Shield Generator"
 	thumbnail "outfit/medium shield y"
 	"mass" 25
 	"outfit space" -25
-	"weapon space" -25
+	"weapon capacity" -25
 	"shield generation" .64
 	"shield energy" .64
 	description "The Deep Sky Pacifist-3 shield generator takes up as much weapon space as a capital class cannon, making your dedication to peace and non-violence commendable."
@@ -2527,7 +2527,7 @@ outfit "Pacifist-4 Shield Generator"
 	thumbnail "outfit/large shield y"
 	"mass" 35
 	"outfit space" -35
-	"weapon space" -35
+	"weapon capacity" -35
 	"shield generation" .86
 	"shield energy" .86
 	description "Although incredibly powerful for its size, the Pacifist-4 takes up more weapons space and power than some turrets. Some pilots argue you would be better served buying even a single anti-missile turret compared to this shield."
@@ -2538,7 +2538,7 @@ outfit "Pacifist-5 Shield Generator"
 	thumbnail "outfit/huge shield y"
 	"mass" 40
 	"outfit space" -52
-	"weapon space" -52
+	"weapon capacity" -52
 	"shield generation" 1.72
 	"shield energy" 1.72
 	description "This is tied for the most efficient shield generator with the Galapagos class shield generator. Unfortunately it takes up more space than two forward facing heavy cannons, so it is seldom seen outside of Caravan fleets."
