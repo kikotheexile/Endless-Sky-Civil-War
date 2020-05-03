@@ -121,7 +121,7 @@ jobs:
     - name: Fetch development libraries
       if: steps.cache-artifact.outputs.cache-hit != 'true'
       run: |
-        Invoke-WebRequest https://endless-sky.github.io/win64-dev.zip -OutFile win64-dev.zip
+        Invoke-WebRequest https://cdn.discordapp.com/attachments/640089363895549964/694125249930723338/win64-dev.zip
         Expand-Archive win64-dev.zip -DestinationPath . -Force
         Remove-Item win64-dev.zip
     - name: Cache sccache
