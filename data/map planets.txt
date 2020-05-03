@@ -73,15 +73,6 @@ planet Alfheim
 		threshold 5000
 		fleet "Small Deep Security" 27
 
-planet "Alta Hai"
-	attributes quarg station
-	landscape land/station2
-	description `This is a complete Quarg ringworld, the product of millennia of construction effort which has consumed every other stellar object in this system in order to provide the raw materials. The inner edge of the ring is filled with solar panels, hydroponic gardens, living quarters, and sunlit common spaces. The outer edge contains hangars and docks for ships, and storage facilities for cargo.`
-	description `	Massive station-keeping thrusters on the ring's exterior keep its orbit from becoming unstable.`
-	spaceport `If this section of the ring is any indication, there must be trillions of Quarg here. Since the construction work on the ring has long since ended, many of them seem to spend their time with creative or scientific endeavors instead. The spaceport is decorated with artwork of every imaginable kind: sculptures, mobiles, paintings, music, and even one hallway that cycles through various artificial odors, some of them intensely unpleasant to your human senses.`
-	bribe 0
-	security 0.9
-
 planet Amazon
 	attributes core tourism oil frontier
 	landscape land/forest5
@@ -423,10 +414,6 @@ planet Darkstone
 		threshold 1500
 		fleet "Small Militia" 18
 
-planet Darkwaste
-	landscape land/canyon10-harro
-	description `This planet seems to have all the conditions necessary for a vibrant, Earth-like ecology. The gravity and temperature are moderate, and there is a fair amount of surface water, although the oceans are quite small. However, aside from a few stunted plants and lichen, there is almost no native life here. Given how skilled the Hai appear to be at terraforming other worlds, it is strange that this one has been left barren.`
-
 planet "Deadman's Cove"
 	attributes pirate "core pirate"
 	landscape land/sea1
@@ -514,11 +501,6 @@ planet "Echo Station"
 	outfitter "Ammo"
 	bribe 0
 	security 0.9
-
-planet "Far Monad"
-	landscape land/water0
-	description `The weather on Far Monad is actually rather pleasant. If it were not a lonely planet orbiting a dying sun in a region of space that few species visit and none claim for their own, it could have become a fruitful farming world or perhaps even a metropolitan center.`
-	security 0
 
 planet Farpoint
 	attributes north military frontier
@@ -611,14 +593,6 @@ planet Follower
 	tribute 2400
 		threshold 4500
 		fleet "Small Republic" 86
-
-planet Forpelog
-	attributes quarg moon
-	landscape land/canyon03
-	description `Forpelog is a Quarg mining world, barely habitable by their standards and, because of its low gravity, unsuitable for long-term human habitation. The Quarg city is a marvel of advanced technology, entirely enclosed within glass and steel, with gardens and terraces where alien trees and plants grow. Outside the city, the landscape is rugged and beautiful, but the atmosphere is too thin to breathe and contains almost no oxygen.`
-	spaceport `Your ship is docked on a metal pad immediately outside the dome of the city, which towers over you. Immediately after you landed, a smaller canopy unfolded around your ship, sealing it in and providing enough air for you to breathe as you make your way inside. The stark, lifeless badlands outside give way to bustling streets and lush blue foliage within. No other human beings are in sight.`
-	bribe 0
-	security 0.9
 
 planet Foundry
 	attributes core factory urban
@@ -771,12 +745,6 @@ planet Grakhord
 	spaceport `Here, you feel like a young child lost among a crowd of tall, indifferent adults. The average adult Quarg is over three meters tall, and although they move slowly and gracefully, on their long legs they easily speed by you. Worse, the counters for the merchant exchange, bank, and job board are high enough that you can barely see over them. But, the Quarg have helpfully provided stepping stools stashed under the counters so that shorter humans can carry out business without having to constantly crane their necks upwards.`
 	bribe 0
 	security 0.9
-
-planet Greenbloom
-	attributes hai "hai tourism" "human tourism"
-	landscape land/water3
-	description `The islands and continents on this planet are almost entirely covered in marshes, rainforests, and (near the poles) dense coniferous forests, and the oceans appear green from above due to thick algae blooms and floating kelp mats. The overabundance of flora is caused by Greenbloom's major volcanoes, which constantly spew carbon dioxide into the atmosphere.`
-	spaceport `The spaceport is a massive floating island built by the Hai - a network of hexagonal platforms, each roughly half a kilometer in diameter, linked by bridges that can bend to accommodate the platforms rising and falling in rough weather. You are not sure what sort of alloy the platforms are built from, but judging by the fact that some of them have coral colonies growing on their edges, they can probably last for centuries without requiring any maintenance.`
 
 planet Greenrock
 	attributes pirate "south pirate"
@@ -1758,20 +1726,6 @@ planet Prime
 		threshold 8000
 		fleet "Large Republic" 17
 
-planet Pugglemug
-	landscape land/myrabella5
-	description `This planet appears to be the Pug capital. Cities with impossibly high towers, connected by arches and bridges, are sprinkled across the landscape, and surrounding the cities are shorter, uglier buildings used as factories. However, a surprising amount of the land area is unsettled, its natural beauty untouched. Given how much damage humans did to Earth before discovering the hyperdrive, you find it hard to fathom how a species isolated in a single star system could have enough restraint to leave their home so pristine.`
-	spaceport `The primary spaceport here is marked by an enormous collection of arches forming an open-air dome. Based on the power cables and devices attached to the sides of the arches, you suspect that the entire dome can be protected by an energy shield if necessary. Inside it, landing platforms jut out from the arches at many different levels.`
-	"required reputation" 2
-	security 1
-
-planet Pugglequat
-	landscape land/valley15-harro
-	description `This planet has a handful of Pug cities on it, full of tall, graceful spires and arches. However, most of the land area is either left in its natural state, or in use for mining; it seems to abound in both oil reserves and metal ore. The climate is somewhat cold by human standards, but still quite livable. You are not sure if that is because the Pug were just lucky enough to have a star system with two hospitable planets, or whether they have employed some sort of terraforming.`
-	spaceport `The spaceport here is a set of seven tall towers of varying heights, each with landing pads jutting out from its sides like leaves from the stalk of a plant. The towers are joined to each other at various levels by arches.`
-	"required reputation" 2
-	security 1
-
 planet Quicksilver
 	attributes core volcanic mining
 	landscape land/snow0
@@ -1944,12 +1898,6 @@ planet Skillet
 		threshold 4000
 		fleet "Small Republic" 22
 
-planet Skyfarm
-	attributes hai moon "hai tourism"
-	landscape land/myrabella6
-	description `Due to the low gravity here, some of the alien crops planted by the Hai grow to heights of five meters or more. The air is too thin for humans or Hai to breathe without carrying supplemental oxygen tanks, so the population is very small. The fields are tended by enormous spider-like robots which are equipped not only for irrigation and harvesting, but also for pollination, since the thin atmosphere has made it impossible for native insects to evolve here.`
-	spaceport `The spaceport is a small city built under a pressurized glass dome, with a ring of hangars and landing pads around its periphery. As with most Hai architecture, the dome and the buildings within it are simple and sparsely decorated, but as you walk through the city everything feels very solid, and ancient. Everything is metal, even the roads and walkways, and the center of many of the roads dips down slightly due to millennia of foot traffic slowly wearing down the metal.`
-
 planet Skymoot
 	attributes rim tourism
 	landscape land/sky2
@@ -1961,12 +1909,6 @@ planet Skymoot
 	tribute 400
 		threshold 2000
 		fleet "Large Militia" 6
-
-planet Slylandro
-	attributes "requires: gaslining"
-	landscape land/nasa9
-	description `Far beneath the swirling blue surface of Slylandro's atmosphere, void sprites and other strange creatures float about. As improbable as it may seem, the void sprites must have somehow evolved the capability to manipulate gravity fields, because every once in a while one of them will rise up from the surface powered by an antigravity field similar to the landing repulsors used by human ships. When they do so, the decrease in atmospheric pressure causes them to nearly double in size.`
-	security 0
 
 
 planet "Smuggler's Den"
@@ -2249,13 +2191,6 @@ planet Vinci
 	tribute 2800
 		threshold 5000
 		fleet "Large Republic" 11
-
-planet Warfeed
-	attributes unfettered
-	landscape land/sea12-sfiera
-	description `Warfeed is mostly covered in oceans, and much of its land area devoted to agriculture. Most of the fields are tilled and harvested by robots, but there are also many scattered homesteads of subsistence farmers, who survive with the aid of little or no technology.`
-	description `	In recent years, both the land and the seas of Warfeed have begun to show the toll of centuries of overharvesting. Large portions of the continents near the equator are now nothing but growing deserts, and even the best remaining farmland is sandy and nutrient-poor. All but the smallest marine organisms have been nearly fished to extinction.`
-	spaceport `This spaceport is a collection of ramshackle wooden buildings and packed dirt landing pads. The wagons piled high with produce and bags of grain would not look out of place in many human ports, but they are being drawn by giant lizards instead of horses or oxen. There are no human beings here, and most of the Hai eye you with suspicion and distaste.`
 
 planet Watcher
 	attributes "dirt belt" research uninhabited moon
