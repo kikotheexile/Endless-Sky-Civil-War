@@ -11,9 +11,9 @@
 planet Ada
 	attributes paradise mining
 	landscape land/canyon4
-	description `Ada is the home planet of Lovelace Labs, one of the most highly respected designers of starship systems and weaponry. Ada was originally settled as a mining planet, and the mines here still produce a steady stream of metal to supply the Labs and the many other industrial companies here.`
-	description `	From above, the planet looks almost lifeless and barren. Most of the major cities on Ada are built into the walls of the canyons, where they are protected from the high winds and occasional dust storms that sweep across the surface.`
-	spaceport `The spaceport is built into the walls of a canyon which has been blasted out to create trenches that are hundreds of meters wide and deep, a network of flight lanes that are well marked out with lights and beacons. Behind the docking caves is a bustling subterranean city where bare rock and gleaming metal have been woven together in an architecture that is both functional and elegant. The lighting in the caverns varies over the course of the day to match the sunlight outside.`
+	description `Ada is the home planet of Lovelace Labs, highly respected designers of starship systems and weaponry. Ada was originally settled as a mining planet, and the mines here still produce a steady stream of metal to supply the Labs as well as other industrial companies that make a home here.`
+	description `	From above, the planet appears lifeless and barren. Cities on Ada are built into the walls of canyons, where they are protected from the winds and dust storms that sweep and scar the surface.`
+	spaceport `The canyon the spaceport is built in was blasted out to create trenches hundreds of meters wide and deep, a network of flight lanes marked well with with lights and beacons. Behind the docking caves is a bustling subterranean city where bare rock and gleaming metal have been woven together into architexture both functional and elegant. The lighting varies over the course of the day to match the sunlight outside.`
 	shipyard "Basic Ships"
 	shipyard "Betelgeuse Basics"
 	shipyard "Betelgeuse Advanced"
@@ -32,10 +32,10 @@ planet Ada
 planet Albatross
 	attributes pirate "south pirate"
 	landscape land/snow6
-	description `Albatross is a cold ocean world orbiting a small, cold sun. The first settlers on Albatross were anarchists who believed that in a society free from unnatural laws and constraints, everyone would happily and freely work for the common good. The next settlers were pirates who believed that a planet free from laws and constraints would be a great base of operations.`
-	description `	The anarchist farming communes, each operating independently but trading with outsiders to gain necessary supplies, are clustered in the barely temperate climate near the equator. The pirate bases, having a much more ready source of supplies, are located wherever there are flat landing areas close to craggy, defensible mountains.`
-	spaceport `You are glad you put on a warm coat before leaving your ship. The wind blows in strong gusts down the streets of this small spaceport town. You pass by ranchers herding cattle, a few farmers driving old, rusted-out trucks full of produce, and a couple of shady figures huddled in an alleyway negotiating what looks like a drug deal. In the center of town is a small merchant's exchange and a couple of greasy spoon diners.`
-	spaceport `	The sign over the spaceport bar reads, "No Gods, No Masters." Below it in slightly smaller writing is another sign which reads, "No Cybernetic Implants. No Badgers, Weasels, Or Polecats." You have no idea what a "polecat" is.`
+	description `Albatross is a frigid ocean world orbiting a small, cold sun. The first settlers on Albatross were anarchists who believed that given a society free from unnatural laws and constraints, everyone would work for the common good. The next settlers were pirates who believed they could take easy advantage of such a society.`
+	description `	The anarchist farming communes, each self sufficient but always open to outside trade, are clustered in the barely temperate climate near the equator. The pirate bases, having a readier surplus of supplies, are located in the craggy, defensible mountain ranges, with the flat valleys set aside as landing strips.`
+	spaceport `It's wise to put on a warm coat before leaving the ship, as the icy wind penetrates to the bone of even the heartiest visitors to this small spaceport town. You pass by ranchers herding cattle, a few farmers driving old, rusted-out trucks full of produce, and a couple of shady figures huddled in an alleyway negotiating what looks like a drug deal. In the center of town is a merchant's exchange and a greasy spoon diner.`
+	spaceport `	The sign over the spaceport bar reads, "No Gods, No Masters." Below it in smaller, differing writing is another sign which reads, "No Cybernetic Implants, Badgers, Weasels, Or Polecats."`
 	outfitter "Ammo"
 	outfitter "Common Outfits"
 	outfitter "Pirate Outfits"
@@ -48,10 +48,10 @@ planet Albatross
 planet Alexandria
 	attributes deep station tourism
 	landscape land/space7
-	description `At the height of the Alpha War, the government of the Deep constructed Alexandria as the galaxy's largest storehouse of human literature, scientific writing, and technology. It also houses a vast museum of cultural artifacts dating back to long before the start of the space age. Today the station is mostly populated by visitors looking for particularly arcane writings or information, and librarians who have devoted their lives to keeping the archives well-indexed and up to date.`
-	description `	Entire sections of the station are off limits to ordinary visitors. There are many rumors about what those restricted areas contain.`
-	spaceport `The station's cavernous visitor center is by far the quietest spaceport you have ever been in. Many people are bustling back and forth, wheeling carts of old books or carrying data pads, but they are entirely silent except for the occasional startled outburst when a scholar, walking deep in thought or immersed in reading, accidentally collides with someone.`
-	spaceport `	From here, passageways lead off into the wings of the library in a veritable labyrinth of hallways, stairs, and library stacks. A few particularly heavy doors require key cards to enter, and others have no opening controls of any sort that you can see.`
+	description `At the height of the Alpha War, The Deep constructed Alexandria as the galaxy's largest library of human literature, science, and technology. It also houses a vast museum of cultural artifacts dating long before the start of the space age. Today the station is populated by visitors looking for arcane writings or information, and librarians who have devoted their lives to keeping the archives organized and up to date.`
+	description `	Entire sections of the station are off-limits to ordinary visitors. Rumors abound as to what those restricted areas contain.`
+	spaceport `The station's cavernous visitor center is the quietest spaceport you have ever been in. Despite the multitudes of people bustling with carts of books or stacks of data pads, the only noise above a whisper you hear comes from the startled outburst of an elderly scholar, who immersed in their reading as they wandered, collided with someone.`
+	spaceport `	From here, passageways lead off into the wings of the library in a labyrinth of hallways, stairs, and library stacks. Some reinforced doors require key cards to enter, and others have no opening controls of any sort that you can see.`
 	"required reputation" 100
 	bribe 0.1
 	tribute 1000
@@ -61,9 +61,8 @@ planet Alexandria
 planet Alfheim
 	attributes deep oil factory
 	landscape land/nasa3
-	description `Alfheim is a world of wide grassy plains, deserts, a few small oceans, and scattered rainforests. Not a pleasant enough planet to support large cities, it is instead mostly a site for oil drilling and manufacturing. So far only a tiny fraction of the surface has been developed, mostly clustered around the sites where the largest oil deposits have been discovered.`
-	description `	Settlements show up as small bright points on the dark side of the planet - not from city lights, but from natural gas burnoff at the drilling stations.`
-	spaceport `The spaceport is in the middle of a field of oil derricks so vast that from above, the desert seemed to be covered in spiky grey fur. The spaceport itself is a soaring canopy, made to look like a tent, or sails on a ship. But it is built of a sturdy composite of plastic and carbon fiber, and coated in reflective plastic. Inside, hovercraft and massive sand-crawlers are bringing cargo to and from the refineries and factories scattered across the planet's surface.`
+	description `Alfheim is a world of wide grassy plains, deserts, and scattered rainforests, the continents separated by small oceans. Not pleasant enough support large cities, it is instead a site for oil drilling and manufacturing. Only a small fraction of the surface has been developed, clustered around sites where large oil deposits have been discovered. Settlements show up as bright pinpricks on the dark side of the planet - not from city lights, but from natural gas burnoff at the drilling stations.`
+	spaceport `The spaceport is in the middle of a field of oil derricks so vast that from above, the desert seemed to be covered in spiky grey fur. The spaceport itself lies beneath a tent of soaring canopy, built of a sturdy composite of plastic and carbon fiber, and coated in reflective plastic. Inside, hovercraft and massive sand-crawlers bring cargo to and from the refineries and factories scattered across the planet's surface.`
 	outfitter "Basic Outfits"
 	outfitter "Deep Sky Basics"
 	outfitter "Ammo"
@@ -76,9 +75,8 @@ planet Alfheim
 planet Amazon
 	attributes core tourism oil frontier
 	landscape land/forest5
-	description `Amazon is a lush, green, tropical world, a popular tourist destination for many who live in this region of space. The indigenous forests are dense and hardy enough that growing human crops here is a constant battle, and none of the native plants or fruits are edible. Aside from tourism, most of the planet's income is from petroleum mining.`
-	description `	The forests are home to a stunning variety of wildlife, some of it dangerous but most of it entirely indifferent to human presence. Plant life is so abundant here that even the oceans are green rather than blue, teeming with kelp and algae.`
-	spaceport `The Amazon spaceport is unique, built on top of tall pillars more than fifty meters above the ground, directly above the forest canopy. The landing pads, buildings, and catwalks between them are laid out in a random branching pattern, forming a shape that from above looks almost organic. Directly over the railings, you can see brightly colored birds circling beneath your feet.`
+	description `Amazon is a lush tropical world, a popular tourist destination for  this region of space. The indigenous forests are dense and so hardy that growing human crops are a constant battle, made problematic by the fact that none of the native plants or fruits are edible. The forests are home to a stunning variety of wildlife, some dangerous but most entirely indifferent to human presence. Plant life is so abundant here that even the oceans are brilliant green, absolutely teeming with kelp and algae.`
+	spaceport `The Amazon spaceport is unique, built on top of tall pillars more than fifty meters above the ground, directly above the forest canopy. The landing pads, buildings, and catwalks between them are laid out in a branching pattern, forming a shape that seems almost organic. Directly over the railings, you can see brightly colored birds circling beneath your feet.`
 	security 0.3
 	tribute 900
 		threshold 3500
