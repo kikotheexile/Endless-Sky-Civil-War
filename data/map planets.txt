@@ -85,9 +85,8 @@ planet Amazon
 planet Antipode
 	attributes core mining frontier
 	landscape land/snow5
-	description `Antipode is a world of creeping glaciers and year-round snow, orbiting far enough from a dim star that even when the sun breaks through the clouds, it brings little warmth. The few settlements that exist here are built near surface deposits of rare earth metals that were discovered recently, and that are mined for use in electronics and equipment throughout this sector.`
-	description `	The inhabitants of Antipode are among the best downhill skiers in the galaxy, and they have made some attempts to draw off-world tourists to the ski resorts here, but the weather is so hostile that they have had very little success.`
-	spaceport `The spaceport consists of a single enormous warehouse. The air inside is cold, but you are glad to get out of the howling wind. In one corner is a counter advertising skiing adventures, but no one is staffing it; they must be out to lunch or taking the day off. As with many of these small spaceports, it seems that the only option for food is a pub, but the smells coming from it are enticing; for once, you may have found a spaceport bar whose chef actually knows how to cook.`
+	description `Antipode is a world of creeping glaciers and year-round snow, orbiting so far from its dim star that when the sun breaks through the clouds, it brings little warmth. Settlements have recently been built near newly discovered surface deposits of rare earth metals, mined for use in electronics and equipment throughout this sector. The inhabitants of Antipode are among the best downhill skiers in the galaxy, but attempts to draw tourists to the ski resorts have been so far thwarted by the hostile weather.`
+	spaceport `The spaceport consists of a single, cavernous warehouse. The air inside is chilly, but a welcome escape from the howling wind outside. In one corner is a counter advertising skiing adventures, but no one is currently staffing it. As with many small spaceports, the only option for food is a pub, but the smells coming from it are enticing. Perhaps you've found a spaceport bar whose chef actually knows how to cook.`
 	security 0.1
 	tribute 600
 		threshold 2500
@@ -96,10 +95,8 @@ planet Antipode
 planet Arabia
 	attributes "dirt belt" oil
 	landscape land/nasa0
-	description `Arabia is an uncomfortably hot and humid world of deserts, savanna, and a few small and scattered rainforests. Large herds of bison-like animals roam the plains, providing the locals with a steady source of food. Occasional stampedes, involving tens of thousands of these animals, have been known to level entire towns here.`
-	description `	Aside from hunting, most of the industry takes the form of harvesting and refining petrochemicals to make plastics, polymers, and oils. In some parts of Arabia, the pumpjacks outnumber the people a hundred to one.`
-	spaceport `The spaceport consists mostly of a wide, open field paved in asphalt, the cheapest material available here. The pavement shimmers with heat, and is pockmarked with divots where ships' landing gear has sunk several centimeters in to the surface.`
-	spaceport `	At the center of the pavement is a small cluster of refrigerated sheds and stacks of crates carrying various goods for trade; a few armed guards patrol around them to prevent theft. A food truck is parked nearby, serving burgers and tacos to the port workers and to the crews of the few starships that are parked here at the moment.`
+	description `Arabia is sweltering world of deserts, savanna, and scattered rainforests. Large herds of bison-like animals roam the plains, providing the locals with a steady source of food. Stampedes, involving tens of thousands of these animals, have been known to level entire towns. Aside from hunting, profitable industry includes harvesting and refining petrochemicals to make plastics, polymers, and oils. In some parts of Arabia, the pumpjacks outnumber the people a hundred to one.`
+	spaceport `The spaceport consists of an open lot, paved in cheap asphalt. The pavement shimmers with heat, and is pockmarked with divots where ships' landing gear has sunk several centimeters in to the surface. At the center of the lot is a small cluster of refrigerated sheds and stacks of crates carrying various goods for trade; patrolled by armed guards. A food truck is parked nearby, serving bison burgers and tacos to the port workers and crews of the handful of starships that are currently parked here.`
 	security 0.1
 	tribute 600
 		threshold 2500
@@ -108,7 +105,7 @@ planet Arabia
 planet "Arachne Station"
 	attributes south station
 	landscape land/sivael0
-	description `Arachne Station is privately owned by Tarazed Corporation, and there are no services available here for people who are not Tarazed employees.`
+	description `Arachne Station is the property of Tarazed Corporation, and there are no services available for anyone not under their employ.`
 	"required reputation" 20
 	bribe 0.05
 	security 0.4
@@ -120,10 +117,8 @@ planet "Arachne Station"
 planet Asgard
 	attributes deep factory urban rich
 	landscape land/city13-sfiera
-	description `Asgard was one of the first worlds to be settled in the Deep. It is now home to many crowded cities, with soaring skyscrapers that are made of lightweight composite materials rather than the steel and cement so commonly used elsewhere.`
-	description `	This is also the home of Deep Sky, a manufacturing firm that produces a wide variety of expensive and useful starship equipment.`
-	spaceport `As with many of the worlds here in the Deep, walking around this spaceport feels like making a visit to the future. Everything is immaculately clean. The port is a single building reminiscent of a sand castle or termite mound: a jumble of spires, each a slightly different shape, all piled on top of each other. Docking bays open on various sides of the spires in a haphazard arrangement. It feels like this building is an organic thing, rather than the work of human hands.`
-	spaceport `	The locals hurry by, seemingly oblivious to your presence; the only people who meet your gaze are your fellow wide-eyed visitors.`
+	description `Asgard was one of the first worlds to be settled in the Deep. Now home to crowded cities, with soaring skyscrapers made of lightweight composite materials rather than the steel and cement commonly used elsewhere. Asgard is also the home of Deep Sky, a manufacturing firm that produces a wide variety of expensive and useful starship equipment.`
+	spaceport `As with many of the worlds here in the Deep, walking around this spaceport looks like a glimpse of the future, and an immaculate and clean one at that. The port is a single building reminiscent of a termite mound; a jumble of spires, each one different than the last, all stacked on top of each other, with docking bays opening on various sides. It feels like this building is an organic thing, rather than the work of human hands.    The locals hurry by, oblivious to your presence. The only people who meet your gaze are your fellow wide-eyed visitors.`
 	shipyard "Lionheart Basics"
 	shipyard "Lionheart Advanced"
 	outfitter "Deep Sky Advanced"
@@ -139,9 +134,9 @@ planet Asgard
 planet "Big Sky"
 	attributes "dirt belt" farming
 	landscape land/mountain12-sfiera
-	description `Big Sky is a warm and fertile world, teeming with indigenous life. It would be an ideal farming world if it were not for the fact that the native plants are so abundant and so well adapted to this environment that they can take over an untended field in a matter of months. Farmers typically start the growing season by slashing and burning the plants that have taken root in their fields over the winter, and even so they must be constantly vigilant for weeds throughout the summer.`
-	description `	The Big Sky government recently financed a major project to genetically engineer a goat species so ravenous that it can control the growth of local vegetation. These "ubergoats" pose so great a threat to the typical biosphere that they are export-controlled as biological weapons.`
-	spaceport `The landing pads here are being gradually consumed by the local plant life. In most places grass and ivy has crept out to cover at least a meter of the pad on all sides, and every small crack or crevice has been colonized by moss and by the roots of larger plants. In places the forest has been cleared to make roads leading to the nearby farming villages, but in most directions all you see is green. It is a beautiful sight, and oddly peaceful, but you know what a nuisance these plants are to the locals.`
+	description `Big Sky is a warm and fertile world, teeming with indigenous life. It would be an ideal farming world if not for the native plants; so abundant and so well adapted to their environment that they can take over a untended field in less than a season. Farmers start the growing season by slashing and burning the plants that have taken root in their fields over the winter, and stay constantly vigilant for signs of weeds throughout the summer and fall.`
+	description `	The Big Sky government recently financed a major project to engineer a species of goat so ravenous that it can control the growth of local vegetation. These "UberGoats" pose such a threat to other biospheres that they are export-controlled as biological weapons.`
+	spaceport `The landing pads are being gradually consumed by the local plant life. Grass and ivy has crept out to cover a meter or more of the pad on all sides, and every small crack or crevice has been colonized by moss and the roots of larger plants. Some of the forest has been cleared to make roads to the nearby farming villages, but in most directions all you see is green. It is a beautiful, peaceful sight, even if the plants are a major nuisance to the locals.`
 	security 0.1
 	tribute 600
 		threshold 3000
@@ -150,9 +145,9 @@ planet "Big Sky"
 planet Bivrost
 	attributes deep mining urban
 	landscape land/city14-sfiera
-	description `Bivrost is the one planet in the Deep where heavy metals are relatively abundant. What began as a mining colony has developed into one of the most prosperous worlds in the region. Unlike most worlds that are strip mined for uranium, the environment outside the cities is relatively unspoiled. Strict controls are placed on the emissions and waste products of the local manufacturing plants to ensure that it stays that way.`
-	spaceport `The spaceport is within sight of the capital city, Rainbridge, but far enough away that the sound of ships taking off and landing will not be too disturbing to the locals. The warehouse space here is underground, level after level of tunnels and caverns stocked with lead-lined trunks filled with uranium and plastic crates of manufactured goods. Above ground, the spaceport is entirely enclosed within a dome of glass and plastic composite.`
-	spaceport `	A video screen plays a looping advertisement from the local chamber of commerce. A prosperous-looking man is saying, "I knew there was a fortune to be made in uranium - but I was afraid my children would start glowing in the dark."`
+	description `Bivrost is the only planet in the Deep where heavy metals are abundant. What began as a mining colony has developed into one of the most prosperous worlds in the region. Unlike most worlds that are strip mined for uranium, the environment outside the cities is left unspoiled, as strict controls have been placed on the emissions and waste products of the local manufacturing plants.`
+	spaceport `The spaceport is within sight of the capital city, Rainbridge, but far enough away that the sounds of ships taking off and landing don't disturb the locals. The warehouse space here is underground, level after level of tunnels and caverns stocked with lead-lined trunks of uranium and plastic crates of manufactured goods. Above ground, the spaceport lies beneath a spectacular dome of glass and plastic composite.`
+	spaceport `	A video screen plays a looping advertisement from the local chamber of commerce. A well dressed and articulate man is saying, "I knew there was a fortune to be made in uranium - but I was afraid my children would start glowing in the dark."`
 	outfitter "Basic Outfits"
 	outfitter "Deep Sky Basics"
 	outfitter "Ammo"
