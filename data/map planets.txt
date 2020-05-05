@@ -159,10 +159,10 @@ planet Bivrost
 planet Bloodsea
 	attributes pirate
 	landscape land/beach5
-	description `Bloodsea is nearly uninhabited, except for a few pirate outposts. Its name comes from the planet's oceans, which are blood-red due to rhodophyte algae. Although the climate is temperate and there are many white sand beaches, no one comes here hoping to go swimming.`
-	description `	The pirates have no industry of their own, but instead make a living by reselling stolen cargo from raids on merchant fleets.`
-	spaceport `When you landed your ship near one of the larger outposts, no one even came out to greet you or to check your paperwork - not that anyone on a pirate world would care about such things. In the center of town is an open-air marketplace where large men armed with large guns stand guard over piles of crates, while others examine the wares that are for sale and haggle over prices.`
-	spaceport `	The local slang incorporates threats of extreme violence as a seemingly meaningless verbal tic. "Hey, I'm gonna cut off your fingers one by one until you buy a meat patty!" a vendor calls out cheerfully as you pass. "First one's free, and I'll tie a knot in your spine if you don't like it."`
+	description `Bloodsea's name comes from the planet's oceans, which appear blood-red due to rhodophyte algae. Although the climate is temperate, with several white sand beaches, no one comes here hoping to go swimming.`
+	description `	While there is only one city friendly to you, the planet is spotted with several fortresses, including floating cities, well armored with anti-aircraft guns.`
+	spaceport `Unsurprisingly, no one comes out to greet you or check your paperwork when you land. In the center of town is an open-air marketplace where large men armed with large guns stand guard over vast stacks of crates, while others examine the wares, haggling viciously over prices.`
+	spaceport `	The local slang incorporates threats of extreme violence as a meaningless verbal tic. "Hey, you look attached to your fingers, buy a noodle bowl and I'll let you keep them!" a vendor calls out cheerfully as you pass. "If you don't like it, I'll tie a free knot in your spine!`
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
 	outfitter "Pirate Outfits"
@@ -175,9 +175,9 @@ planet Bloodsea
 planet Bluestone
 	attributes core oil research frontier
 	landscape land/mountain2
-	description `The sunlight that filters through Bluestone's atmosphere is too dim and reddish for ordinary Earth plants to thrive. The native plants, mostly grasses and lichens, have adapted their own unique chlorophyll-like molecules in response.`
-	description `	Bluestone is sparsely populated. Aside from one small research village dedicated to cultivating edible hybrid crops that can grow on similar worlds, most of the industry here is focused on drilling and refining oil to make a variety of plastics.`
-	spaceport `Aside from the metal roofs on a few of the largest warehouses, the spaceport buildings are constructed largely of durable plastic resin, pre-cast into interlocking beams and panels. There is a small pub in the center of the port, with its exterior walls painted a cheerful yellow. All the other buildings are the same red-brown color of the raw plastic.`
+	description `The sunlight that filters through Bluestone's atmosphere is too dim and red for most crops to thrive. The native flora and fauna have adapted well to the dark world, relying on sound and vibration rather than sight.`
+	description `	Bluestone is sparsely populated. Aside from one research village dedicated to cultivating hybrid crops, most of the industry here is focused on drilling and refining oil to make plastics.`
+	spaceport `The spaceport buildings are constructed largely of durable plastic resin, pre-cast into interlocking beams and panels. There is a small pub in the center of the port, its exterior walls painted a cheerful yellow. All the other buildings are similarly painted in bright, happy colors.`
 	security 0.2
 	tribute 400
 		threshold 3000
@@ -186,9 +186,9 @@ planet Bluestone
 planet Bounty
 	attributes "dirt belt" farming factory
 	landscape land/hills2
-	description `All the land near Bounty's equator is desert, but closer to the poles, the weather is temperate and there is enough rain for farming. The land near the northern pole is sparsely populated, but the other hemisphere is quite well developed, with many of the inhabitants now working in factories that produce fancy watches and intricate electronic components.`
-	description `	The focus on skilled manufacturing has had a dramatic effect on both the local education system and the sports scene. One can garner great respect - and a sizable income - simply by being the best at folding tiny paper cranes by microscope.`
-	spaceport `The spaceport is not fancy, but it is serviceable: the landing pads are very level and show only minor signs of wear and tear, and the one warehouse is tiny but recently built, and its roof is in good repair. Next to it is a marketplace building, with three walls and a pitched roof, and the fourth side open for people and trucks to come and go. An enterprising cook is selling lamb kebabs from a small grill and cart in one corner of the building.`
+	description `Bounty's equator is wrapped in dry, parched desert, but closer to the poles, the weather is temperate with ample rain for farming.  While the northern pole is sparsely populated, the other hemisphere is well developed, with many of the inhabitants working in factories that produce expensive watches and intricate electronic components.`
+	description `	The focus on skilled manufacturing has made dramatic impact on both education systems and sports scenes. One can garner great respect - and a sizable income - simply by being the best at folding tiny paper cranes by microscope.`
+	spaceport `The spaceport is bland but serviceable: the landing pads are level and show only minor signs of wear and tear. The lone warehouse is small and of recent construction, beside a marketplace building with three walls and a pitched roof- the fourth side open for people and trucks to come and go. A spirited cook is selling lamb kebabs from a grill cart in one corner of the building.`
 	security 0.1
 	tribute 700
 		threshold 3000
@@ -197,10 +197,10 @@ planet Bounty
 planet Bourne
 	attributes rim factory urban
 	landscape land/city8
-	description `Bourne is a well-developed industrial world that was first settled four centuries ago. Its cities are home to some of the richest individuals in this section of the galaxy, but also home to tens of thousands of homeless people, and many others whose factory jobs are barely providing enough to make ends meet.`
-	description `	Outside the cities, the climate is somewhat dry, but the deep valleys and some coastal regions are suitable for farming. Very little of the planet remains that is untouched by human hands.`
-	spaceport `The spaceport on Bourne is a collection of granite and steel towers with platforms for ships to land. The tops of the towers are blackened by factory soot and etched by acid rain, but the granite gives them a timeless, classic look very unlike many of the ports you have visited.`
-	spaceport `	The port authorities warned you when you landed to be careful of pickpockets, so you are guarding your wallet very closely.`
+	description `Bourne is an industrial world of great income inequality. Its cities home to some of the richest individuals in this section of the galaxy, while countless thousands struggle with homelessness, and many others struggle to keep the homes they have with poor paying factory work.`
+	description `	Outside the lush cities, the climate is temperate, the deep valleys and coastal regions most suitable for farming. Very little of the planet remains that is untouched by human hands.`
+	spaceport `The spaceport on Bourne is a dingy collection of granite and steel towers with platforms for ships to land. The dull gray landscape grows darker the higher you look, so stained by factory soot.`
+	spaceport `	The port authorities warned you when you landed to be careful of pickpockets, so best to guard your wallet closely.`
 	outfitter "Common Outfits"
 	outfitter "Kraz Advanced"
 	outfitter "Delta V Basics"
@@ -213,9 +213,9 @@ planet Bourne
 planet "Buccaneer Bay"
 	attributes pirate "core pirate"
 	landscape land/beach0
-	description `Pirates who have struck it rich dream of retiring on Buccaneer Bay. It is a warm ocean planet, with many places reminiscent of the islands in the ancient Caribbean where humanity's first pirate fleets sailed.`
-	description `	Many of the inhabitants are in fact not pirates, but their descendants, and these children and grand-children of anarchist outlaws have built a system of regional government that oversees hospitals, schools, and other public services, all created without funding from the Republic or taxes paid to it. The planet even sports its own shipyard, although many of the ships built here are, not surprisingly, based on designs pirated from the Syndicate and Republic shipyards.`
-	spaceport `This is the sort of spaceport you picture in your head when you think of pirates. Half the storefronts are bars, and rum seems to be on the menu everywhere. It is almost like the stories of ancient Earth, except that the eye patches are cybernetic implants and the peg legs are motorized prosthetics. Swarthy, dangerous-looking women glance at you as you pass by, and scantily clad men crowd around the bars, which is what you seem to remember the stories said it was like on Earth, too, although there it may have been the other way around.`
+	description `Criminals not bent on going out in a blaze of glory dream of retiring to Buccaneer Bay. A warm ocean planet, with islands reminiscent of the ancient Caribbean where some of humanity's first true pirate fleets sailed.`
+	description `	Most of the inhabitants aren't pirates, but their descendants. These children of anarchist outlaws have built a system of regional government that oversees hospitals, schools, and other public services, well funded by the local cartel. The planet even sports its own shipyard, although many of the ships built here are, not surprisingly, based on designs pirated from the Syndicate and Republic shipyards.`
+	spaceport `The spaceport could pass for a pirate themed tourist trap, if not for the actual pirates. Half the storefronts are bars, and rum overflows from every cup. A cross between ancient pirate story and futuristic fantasy; the eye patches are cybernetic implants and the peg legs are motorized prosthetics. Swarthy, dangerous-looking women glance at you as you pass by, and scantily clad men crowd around the bars, a particularly tall gentleman whistles and wiggles as you pass by, tempting you to buy him a drink.`
 	shipyard "Southern Pirates"
 	shipyard "Northern Union"
 	outfitter "Syndicate Basics"
@@ -230,9 +230,9 @@ planet "Buccaneer Bay"
 planet Burthen
 	attributes core mining
 	landscape land/fields9
-	description `Burthen is only sparsely populated due to crushingly high gravity. The locals - exceptionally strong and short - take a stoic pride in this misery and the many health issues that result. The land in most regions is suitable for farming, but mining of heavy metals is the primary industry, and the source of ready wealth that ties people to this uncomfortable planet.`
-	description `	Some of the excavation vehicles used here are as large and costly as a capital starship and as noisy as a volcano. Vast scars of strip mines span across the landscape. On this planet the environment is something to be endured rather than cherished.`
-	spaceport `You could feel the oppressive force of this planet's gravity as soon as you landed. The spaceport is a small cluster of single-story buildings. More cargo seems to be handled by robotic vehicles than by actual human operators, but the few people walking past you are all much shorter than you are. You feel like a giant, clearly out of place.`
+	description `Due to the crushing gravity on this sparsely populated world, the locals - exceptionally strong and short - take a stoic pride in this misery and health issues they face. The land in most regions is suitable for farming, but mining of heavy metals is the primary industry, and the source of ready wealth is what really ties people to this uncomfortable planet.`
+	description `	The excavation vehicles used here are as large- and costly- as a capital starship and noisy as a volcano. The landscape bears vast scars from strip mining visible from space, another source of local pride. On this planet, the environment is something to be endured rather than cherished.`
+	spaceport `The oppressive force of this planet's gravity is apparent as soon as you land. The spaceport is a small cluster of single-story buildings, with cargo handled by robotic vehicles than by actual human operators. You tower over the majority of the people you see, sticking out like a ostrich in a flock of pidgeons.`
 	security 0.2
 	tribute 500
 		threshold 4000
@@ -241,10 +241,10 @@ planet Burthen
 planet Calda
 	attributes paradise tourism rich
 	landscape land/lava4
-	description `Calda is a tropical resort world, a pleasant place to unwind after a few days skiing on its sister planet, Vail. The most popular tourist destination is the hot springs, and the spa complexes that have been built up around them. Constant pesticide use has nearly eliminated insect pests. Because of the uncomfortably warm and humid summer months, the very rich view Calda more as a tourist destination than as a place to live.`
-	description `	In Calda's early days as a spa planet, a nearly silent eruption of carbon dioxide filled a resort valley and suffocated the whole population in moments. This incident has had hardly any effect on the tourism industry. Many of the regulars believe they are rich enough that no volcano would dare provoke them in such a way.`
-	spaceport `This is one of the few planets in this sector whose spaceport does not include private hangars, or at least gangway tunnels connecting to ships that land. The reason, of course, is so that visitors can experience the warm and pleasant air the moment they disembark. There is, however, a network of canvas-covered awnings branching out from the main buildings, offering shade and protection from the weather.`
-	spaceport `	Inside, the counters for hotel shuttles and rental vehicles (including hovercraft and helicopters!) are far more prominent than the amenities that interest a captain like yourself.`
+	description `Calda is a tropical resort world, a pleasant place to unwind after a few days skiing on its sister planet, Vail. The most popular tourist destination is the hot springs, with the spa complexes built around them. Because of the uncomfortably warm and humid summer months, the very rich view Calda more as a tourist destination than as a place to live.`
+	description `	In Calda's early days as a spa planet, a silent eruption of carbon dioxide filled a resort valley and suffocated the entire population in moments. However, the incident hasn't put a damper on the tourist industry. Most of the regulars refuse to believe anything like that could happen to them.`
+	spaceport `This is one of the few paradise worlds whose spaceport does not include private hangars. This is so visitors can experience the warm and pleasant air the moment they disembark. A network of canvas-covered awnings branches out from the main buildings, offering shade and protection from the sun.`
+	spaceport `	Inside, the counters for hotel shuttles and rental vehicles, including hovercraft and helicopters, are far more prominent than the regular spaceport functions.`
 	bribe 0.05
 	security 0.5
 	tribute 3300
@@ -254,9 +254,9 @@ planet Calda
 planet Canyon
 	attributes core farming frontier
 	landscape land/canyon1
-	description `Canyon is a large world, with gravity near the high end of what human beings can comfortably bear. Much of its surface is sandstone, leading scientists to believe that the planet was once home to large oceans, before some cataclysmic event, perhaps a rogue star drifting through the system, caused much of the planet's water to boil away. The few settlers who live here mostly farm the deep canyons; the mesas above are dry and almost lifeless.`
-	description `	The angular rock formations that cover most of the mesa land are identified in local mythology as the ruins of an unspeakably vast and ancient alien city. A gullible tourist can find any number of opportunities to tour these alleged sites. Off-world science has been largely skeptical of these claims.`
-	spaceport `The spaceport is a wide, flat stone field with no individual landing spots marked out; you're simply responsible for finding an unoccupied space large enough for your ship, A half kilometer away from the field is a small village with a marketplace and a pub. There are only a few starships parked here. In the village, you can recognize the locals because of their stout, muscular stature; you are taller than almost everyone here.`
+	description `Canyon is a large world, its gravity courting being too heavy to bear. Much of its surface is sandstone, leading scientists to believe that the planet was once home to large oceans before some cataclysmic event caused much of the planet's water to boil away. The settlers who live here farm the deep canyons, leaving the mesas above dry and lifeless.`
+	description `	The angular rock formations that cover most of the mesa land are identified in local mythology as the ruins of an unspeakably vast and ancient alien city. Tourists can find any number of opportunities to tour these sites, but science has been largely skeptical of these claims.`
+	spaceport `The spaceport is a wide, flat stone field with no individual landing spots marked out; you're simply responsible for finding an unoccupied space large enough for your ship, A half kilometer away from the field is a small village with a marketplace and a pub, the locals standing out with their stout, muscular stature.`
 	security 0.1
 	tribute 400
 		threshold 3000
@@ -265,7 +265,7 @@ planet Canyon
 planet "Carbuncle Station"
 	attributes north station research
 	landscape land/sivael4
-	description `Carbuncle is a tiny station owned and operated by Lovelace Labs. You assume that like most such stations, it is primarily a deuterium refinery, but aside from the docking bay the rest of the station is closed off to visitors. Given the reputation of Lovelace Labs for exotic research, there could be almost anything beyond those sealed-off bulkheads.`
+	description `Carbuncle is a tiny station owned and operated by Lovelace Labs. Like most corporate stations orbiting a gas giant, it is primarily a deuterium refinery. Aside from the docking bay the rest of the station is closed off to visitors. Given the reputation of Lovelace Labs for exotic research, there could be almost anything beyond those sealed-off bulkheads.`
 	"required reputation" 100
 	bribe 0.05
 	security 0.9
@@ -277,9 +277,9 @@ planet "Carbuncle Station"
 planet "Charon Station"
 	attributes south station
 	landscape land/sivael6
-	description `Charon Station provides hyperspace fuel for much of the southern galactic rim. It is a tiny, cramped, and aging station, with twice as many workers here as it was originally designed for. Centuries ago, before much of the Dirt Belt was settled, this was the first spot below Algorel where merchant caravan fleets from the Deep could stop over on their way to the worlds farther up the Rim.`
-	description `	The close quarters have fostered an extreme scrupulosity about personal space. It is unnerving to walk down a densely crowded hallway and fail to make eye contact with anyone.`
-	spaceport `The refinery here operates in shifts, non-stop, so there are always people coming and going in the hallways and docking bays. The cafeteria is so crowded that many workers are just standing up against the walls eating off their trays instead of trying to find a place to sit. Every few minutes, light flashes in through one of the windows from welders outside in space suits trying to keep the aging hull in perfect shape. Others drift around outside checking up on the solar panels and replacing burnt-out modules.`
+	description `A cramped and aging station with twice as many workers as it was designed for, Charon Station provides hyperspace fuel for the southern galactic rim. Centuries ago, before much of the Dirt Belt was settled, this was the first spot below Algorel where merchant caravan fleets from the Deep could stop on their way to the worlds farther up the Rim.`
+	description `	The close quarters have fostered an obsession with personal space. Some might find it unnerving to walk down a densely crowded hallway and fail to make eye contact with anyone.`
+	spaceport `The refinery operates in rotating shifts, so there are always people coming and going in the hallways and docking bays. The cafeteria is so crowded that many workers just stand up against the walls eating off their trays instead of trying to find a place to sit. Every few minutes, light flashes in through one of the windows from welders outside in space suits trying to keep the aging hull in good shape. Others drift around outside checking solar panels and replacing burnt-out modules.`
 	security 0.4
 	music ambient/machinery
 	tribute 200
@@ -289,7 +289,7 @@ planet "Charon Station"
 planet "Charybdis Station"
 	attributes core station
 	landscape land/sivael8
-	description `Charybdis Station is privately owned by the Syndicate. It is a massive deuterium refinery, with harvester drones constantly flying in and out to scoop hydrogen gas out of the upper atmosphere of the planet below. If you need to repair or refuel in this system, you will need to visit the neighboring world of Delve, instead of this station.`
+	description `Charybdis Station is privately owned by the Syndicate. It is a massive deuterium refinery, with harvester drones constantly flying in and out to scoop hydrogen gas out of the upper atmosphere of the planet below. If you need to repair or refuel in this system, you will need to visit the neighboring world of Delve instead of this station.`
 	"required reputation" 20
 	bribe 0.05
 	security 0.6
@@ -301,10 +301,9 @@ planet "Charybdis Station"
 planet Chiron
 	attributes "near earth" urban
 	landscape land/city18-iridium
-	description `Chiron is the only planet outside the solar system that was colonized by humanity prior to the discovery of the hyperdrive. It is now the second most populous planet in the Republic, with many sprawling cities and a burgeoning pollution problem.`
-	description `	Although Earth still has the most prestigious universities in the galaxy, Chiron has become the de-facto leader of the higher education industry, catering to those who value excellent teaching more highly than an illustrious name. As a result, off-world students form a noticeable fraction of the population.`
-	spaceport `There are two spaceports on Chiron. The Old Port was built back when it was first settled, and was placed in a desert region, far from where people would want to live, so that they would not be as affected by the fallout from the nuclear propulsion that was used in the first, pre-hyperspace starships.`
-	spaceport `	The New Port, on the other hand, is in the center of New Sydney, one of Chiron's largest cities. Its soaring architecture and gleaming mirrored glass is intended to make a clear statement, that Chiron is everything Earth is not: clean, modern, prosperous.`
+	description `Chiron is the only planet outside the solar system that was colonized by humanity prior to the discovery of the hyperdrive. It is now the second most populous planet in the Republic, constantly striving to surpass Earth in every way.`
+	description `	While Earth still claims the most prestigious universities in the galaxy, Chiron has become the leader of the higher education industry, catering to those who value excellent teaching more than an illustrious name. As a result, off-world students form a large percentage of the population.`
+	spaceport `The spaceport is in the center of New Sydney, one of Chiron's largest cities. Its soaring architecture and gleaming mirrored glass is intended to make a clear statement that Chiron is everything Earth is not: clean, modern, prosperous.`
 	shipyard "Basic Ships"
 	shipyard "Betelgeuse Basics"
 	shipyard "Betelgeuse Advanced"
@@ -321,10 +320,10 @@ planet Chiron
 planet Clark
 	attributes "dirt belt" forest factory
 	landscape land/valley3
-	description `Clark is a recently settled world, and most of its surface remains covered in dense forests and uninhabited mountains. Because clearing new land is so difficult, agriculture here has not grown far beyond the level of subsistence farming. But the temperate climate has drawn several million settlers, most of whom work in factories that have been planted here by off-world corporations to take advantage of the cheap labor.`
-	description `	The low cost of living and virtually zero unemployment rate make poverty and crime relatively rare occurrences. Instead there is a pioneering spirit, a startup-world attitude that anything is attainable with a bit of hard work and frugality.`
-	spaceport `The spaceport is at the heart of one of Clark's largest cities, surrounded by smokestacks and factories. There are a few hangars owned by different corporations where their cargo ships can load and unload, but you are relegated to a set of concrete landing pads farther from the main buildings. Large trucks rumble by carrying carts loaded down with cargo crates.`
-	spaceport `	In the central building, dozens of workers fill a large cafeteria with several stations serving different types of food. The mood here feels boisterous and energetic, very different from most of the Dirt Belt worlds you have visited.`
+	description `A recently settled world, most of the planet's surface remains covered in dense forests and uninhabited mountains. Due to the expense of clearing new land, agriculture here has not grown far beyond the level of subsistence farming, however, the temperate climate has drawn several million settlers. Many currently work in factories that have been planted here by off-world corporations taking advantage of the cheap labor.`
+	description `	The low cost of living and low unemployment rate make crime a rare occurrence. Instead there is a pioneering spirit, a startup-world attitude that anything is attainable with a bit of hard work and frugality.`
+	spaceport `The spaceport is at the heart of one of Clark's largest cities, surrounded by smokestacks and factories. There are hangars owned by different corporations where their cargo ships can load and unload, but you are relegated to a set of concrete landing pads farther from the main buildings. Large trucks rumble by carrying carts loaded down with cargo crates.`
+	spaceport `	In the central building, dozens of workers fill a large cafeteria with several stations serving different types of food. The mood here feels boisterous and energetic, in contrast to most of the Dirt Belt worlds you have visited.`
 	shipyard "Basic Ships"
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
