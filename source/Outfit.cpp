@@ -326,7 +326,8 @@ const map<const Sound *, int> &Outfit::SteeringFlareSounds() const
 // Get the afterburner effect, if any.
 const map<const Effect *, int> &Outfit::AfterburnerEffects() const
 {
-
+return afterburnerEffects;
+}
 
 
 // Get the sprite this outfit uses when dumped into space.
