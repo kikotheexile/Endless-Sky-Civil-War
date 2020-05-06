@@ -160,9 +160,8 @@ namespace {
 	}
 	
 	const double RADAR_SCALE = .025;
-}
-
-void DrawFlareSprites(const Ship &ship, DrawList &draw, const vector<Ship::EnginePoint> &enginePoints, const vector<pair<Body, int>> &flareSprites, uint8_t side)
+	
+	void DrawFlareSprites(const Ship &ship, DrawList &draw, const vector<Ship::EnginePoint> &enginePoints, const vector<pair<Body, int>> &flareSprites, uint8_t side)
 	{
 		for(const Ship::EnginePoint &point : enginePoints)
 		{
@@ -180,6 +179,8 @@ void DrawFlareSprites(const Ship &ship, DrawList &draw, const vector<Ship::Engin
 					}
 		}
 	}
+}
+
 
 Engine::Engine(PlayerInfo &player)
 	: player(player), ai(ships, asteroids.Minables(), flotsam),
@@ -1391,8 +1392,7 @@ void Engine::CalculateStep()
 						if(it.second > 0)
 							Audio::Play(it.first, ship->Position());
 				}
-			}
-			else if(ship->IsReversing() && !ship->ReverseEnginePoints().empty())
+				else if(ship->IsReversing() && !ship->ReverseEnginePoints().empty())
 				{
 					for(const auto &it : ship->Attributes().ReverseFlareSounds())
 						if(it.second > 0)
@@ -1404,6 +1404,7 @@ void Engine::CalculateStep()
 						if(it.second > 0)
 							Audio::Play(it.first, ship->Position());
 				}
+			}
 			else
 				showFlagship = true;
 		}
