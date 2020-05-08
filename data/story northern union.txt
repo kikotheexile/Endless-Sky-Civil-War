@@ -892,7 +892,7 @@ mission "NU Bounty 3"
 		"assisted northern union" ++
 		payment 2000000
 		dialog
-			`As you land, you receive a direct message from Mouser as well as a notification of a payment hitting your account: "Great job disabling the <npc>! I have already disabled its self-destruct capabilities and informed the client that the ship is now theirs. They have already sent me the money, and I have forwarded your half, <payment>, to your account. The client is also on the Partnership committee, and will put a good word in for you."`
+			`As you land, you receive a direct message from Mouser as well as a notification of a payment hitting your account: "Great job disabling the <npc>! I have already disabled its self-destruct capabilities and informed the client that the ship is now theirs. They have already sent me the money, and I have forwarded your half, <payment>, to your account. The client is also on the Partnership committee, and will put a good word in for you."`		
 
 mission "NU Marina 1"
 	name "Join the Revolution"
@@ -1006,8 +1006,6 @@ mission "NU Marina 2"
 			`	"Great!" she says. "Head to <destination> and land at the main spaceport. Finding a foreman shouldn't be hard, then just ask them to direct you to Big Randy. Everyone knows him."`
 				accept
 
-
-
 mission "NU Marina 2B"
 	landing
 	name "Transport Big Randy"
@@ -1027,7 +1025,7 @@ mission "NU Marina 2B"
 				`	"I'm looking for Big Randy, would that be you?"`
 					goto marina
 				`	"Big Randy, Marina sent me to come get you."`
-					goto Marina
+					goto marina
 				`	"How on earth are you doing that?"`
 					goto dumb
 
@@ -1036,29 +1034,242 @@ mission "NU Marina 2B"
 				goto name
 				
 			label marina
-			`	"That's me," He sighs, "So she's roping me back into the cause? I never could say no to her."`
-				goto name
+			`	"That's me," He sighs, "I really do hate that name. Anyway I'm guessing the robot has plans for me again? Never could say no to her. Striking out against the Syndicate really speaks to me."`
+			choice
+				`	"Wait, what do you mean robot?"`
+					goto surprised
+				`	"She is awfully advanced."`
+					goto unsurprised
 
 			
 			label name
-			`	"Well," he says, "I guess it's time to work for the android again after all."`
+			`	"Well," he says, "I guess it's time to work for the robot again."`
 			choice
-				`	"Wait, what do you mean android?"`
+				`	"Wait, what do you mean robot?"`
 					goto surprised
 				`	"She is awfully advanced."`
 					goto unsurprised
 			label surprised
-			`	His expression softens, "A very long time ago, before the Republic existed, the same people who genetically engineered augments like the Alpha also made androids to do their bidding. As far as I am aware, she is the last of her kind, but she is not human."`
+			`	His expression softens, "A very long time ago, before the Republic existed, the same people who genetically engineered augments like the Alpha also made robots like her to do their bidding. As far as I am aware, she is the last of her kind. She's not sentient, but she's programmed to pretend to be."`
 					goto end
 		
 			label unsurprised
-			`	"Yes," he says, "It's a damn shame the Republic restricted the manufacture of advanced robotics like her. I guess it's true what they say, they really don't make them like they used to."`
+			`	"Yes," he says, "It's a damn shame the Republic restricted the manufacture of advanced robotics like her. Do you have any idea how many lives we could save sending drones like her into mines? I guess it's true what they say, they really don't make them like they used to."`
 				goto end
 
 			label end
 			`	"Anyway," he says, "We really can't just stand around here doing nothing. We had best return to Sporehold. No need to dally, my supervisor won't miss me."`
 				accept
+	on complete
+		conversation
+			`As soon as you land, "Big" Randy exits your ship and excitedly rushes out of your ship without saying a word. This is presumably to find Marina. It looks like the only way to continue helping the cause is to track them both down.`
 
+mission "NU Marina 3"
+	name "Prison Break"
+	description "Transport Marina and her crew to <destination>."
+	landing
+	to offer
+		has "NU Marina 2B: done"
+	to fail
+		has "chosen sides"
+	clearance "Marina is somehow able to convince the spaceport controller you're cleared to be here, and manages to get you permission to land."
+		attributes prison
+	source Sporehold
+	destination "No-Where Station"
+	passengers 4
+	cargo "Explosives" 2
+	on offer
+		conversation
+			`As you arrive, Marina is giving a bunch of confused individuals one of her long and rambling speeches. Eventually, she climbs down from her shipping crate full of explosives and disappears onto a nearby ship. The young man from earlier takes over.`
+			`	"Sorry about that, everyone." He sighs, "My name is Jack, and I really do want to thank you for playing along here. Truth is, what we are doing is an unofficial prisoner transfer. Our job is to go to the prison, make a big scene about a prison break, get out, and get paid. The Cartel will report the loss to the syndicate, who will then use it as a way to weasel more money out of the Republic. Any questions?"`
+			`	"Yes," a young woman in the crowd speaks up, "Why is the Union helping the Syndicate scam the Republic? I thought they were the bad guys."`
+			`	"They are," Jack replies, "But this is an easy way for us to gain more ships, supplies, and volunteers for our cause. We will be arriving at about the same time as a resupply convoy, who will conveniently leave their ships unguarded. We get our prisoners out, steal the convoy, and return to the safety of the union richer for it."
+			choice
+				`	"What's with the robot?"`
+					goto robot
+				`	(Say nothing.)`
+					goto job
+			label robot
+			`	"Marina? She was designed to fight in the first round of Turf Wars, against some corporation that eventually got assimilated into the Syndicate. She was never programmed to know what to do at the end of the war, so she just kept fighting. We keep her in repair, and she proves to be a very useful tool to us. She fights her war, we get our supplies, everyone wins."`
+					goto job
+		
+			label job
+			`	"Comrades," Sally speaks up, "The workers employed by the Core Mining Cartel are considered expendable by them, thus they have not been informed of our raid. Some of them may resist, and with deadly force, and it is very possible that our temporary business partners will betray us. So be prepared for a fight. You will all be compensated for your efforts, now go."`
+			`	You have been left with a choice, to take on the job and join the fleet, or walk away. 
+			choice
+				`	(Take the job.)`
+				`	(Walk away from this job.)`
+					decline
+			`	Jack, Sally, and two others approach your ship. "Comrade Captain, a pleasure to see you again." Sally states, "We'll be riding with you, and the fleet will follow us to the prison. Take off when you're ready."
+	on complete
+		conversation
+			`When you arrive in the station, Jack and Sally open the crates marked explosives and pull some small, square packages out of them. "The shooting wont start for a little while yet," Jack says, "Meet us in the spaceport when you're ready to begin, and leave your gun on the ship."`
+
+	npc accompany save
+		personality escort timid
+		government "Northern Union"
+		ship Bounder "SG-001"
+		ship Bounder "PT-109"
+		ship Bounder "AK-074"
+		ship Bounder "AT-117"
+
+mission "NU Marina 3b"
+	name "Prison Break"
+	description "Transport Marina and her crew to <destination>."
+	landing
+	to offer
+		has "NU Marina 3: done"
+	to fail
+		has "chosen sides"
+	clearance "Sally is somehow able to convince the spaceport controller you're cleared to be here, and manages to get you permission to land."
+		attributes prison
+	source "No-Where Station
+	destination Sporehold
+	passengers 2
+	on offer
+		conversation
+			`As you step into the main lobby of the spaceport, three guards approaches you to have you turn over any weapons you might be carrying. Compliance is non optional.`
+			choice
+				`	(Let them search you for weapons.)`
+					goto gunsearch
+				`	(Return to your ship and leave.)`
+					decline
+				`	(Draw your weapon and go out in a blaze of glory!)
+			`	They expect you to give up your weapons when entering a prison? The madness! What every happened to freedom? To liberty? You'll show these underpaid prison guards who's boss, and not crumble under the heel of those who would disarm you! You may have died here this day, but in the end it was worth it!`
+				die
+			label gunsearch
+			`	The guards ensure you are disarmed, and let you pass into the main lobby. Sally approaches you, while Jack and the others begin opening the massive crates that have been brought in. "Wont be long now comrade, I suggest we find cover quickly." She says, taking you by the hand and leading you behind a support beam. She presses a button on her communicator.`
+			`	A few seconds later, you hear a loud bang, followed by weapons fire. Sally holds you in place until everything quites down, which only takes a few additional seconds.
+			`	"Hands up, everyone against the wall." You hear jack declare. Sally leads you out of cover, as someone tosses both you and her a some form of heavy rifle. The guards on the ground still appear to be breathing, but have been knocked out. The weapon is considerably heavier than a laser rifle, and appears to have been made for people with massive hands.`
+			`	"Comrade Captain, with me." Sally commands, as she opens another crate. A few people exist the crate, one of them being Randy. He finds his bearings and moves towards the blast door that leads into the interior of the station. "You all might want to cover your ears." He says, before blasting a hole in the door. Sally pulls you through as soon as the smoke clears, and asks "Where to, comrade captain?"`  
+			choice
+				`	"Left."`
+					goto d
+				`	"Right."`
+					goto e
+				`	"Straight."`
+					goto f
+				`	"I think I should just return to my ship."`
+					goto return
+			label d
+				`	"Left, towards cellblock D. Affirm." Jack says, while coming through the door behind you. "I'll take point."`
+			choice
+				`	"No, I will."`
+					goto pointd
+				`	(Follow Jack)`
+					goto jackd
+				`	"I'll return to my ship."`
+					goto return
+
+			label e
+				`	"Right, towards cellblock E. Affirm." Jack says, while coming through the door behind you. "I'll take point."`
+			choice
+				`	"No, I will."`
+					goto pointe
+				`	(Follow Jack)`
+					goto jacke
+				`	"I'll return to my ship."`
+					goto return
+
+			label f
+				`	"Straight down the middle, that will take us to cellblock F." Jack says, while coming through the door behind you. "I'll take point."`
+			choice
+				`	"No, I will."`
+					goto pointf
+				`	(Follow Jack)`
+					goto jackf
+				`	"I'll return to my ship."`
+					goto return
+
+			label pointd
+			`	Sally nods approvingly, and gestures to you to lead the way, as Randy and Marina gather their teams and lead them to other areas of the station.`
+			`	As you move through the station, it becomes very apparent that this was never designed to be a prison. The floor design is suited to an observatory or laboratory. The locking doors and their protective shields all appear to be makeshift, not unlike the custom brigs you can get installed at some outfitters.` 
+			`	You pass into cafeteria, with a faded insignia on the wall. Behind the grime, you can make out the word "Paragon," the same company that built many of the Caravan stations. The station seems oddly deserted. Everything starts going blurry, and you pass out.` 
+			choice
+				`	(Wake up!)`
+			`	You have no special resistances to the newly developed 'knock-out gas' developed by the Republic's pet military contractors at Lovelace, but thankfully its effects are temporary. You awaken alone where you fell, discarded canisters of gas litter the floor. Over the communicator you hear the signal that it's time to leave; There is little for you to do but return to your ship.
+				goto end
+
+			label jackd
+			`	Sally motions to you to follow, as Randy and Marina gather their teams and lead them to other areas of the station.`
+			`	As you move through the station, it becomes very apparent that this was never designed to be a prison. The floor design is suited to an observatory or laboratory. The locking doors and their protective shields all appear to be makeshift, not unlike the custom brigs you can get installed at some outfitters.` 
+			`	You pass into cafeteria, with a faded insignia on the wall. Behind the grime, you can make out the word "Paragon," the same company that built many of the Caravan stations. The station seems oddly deserted. You hear Jack shout "Masks!" You don't have a mask. Everything starts going blurry, and you pass out.` 
+			choice
+				`	(Wake up!)`
+			`	You have no special resistances to the newly developed 'knock-out gas' developed by the Republic's pet military contractors at Lovelace, but thankfully its effects are temporary. You awaken alone where you fell, discarded canisters of gas litter the floor. Over the communicator you hear the signal that it's time to leave; There is little for you to do but return to your ship.
+				goto end
+
+			label pointe
+			`	Sally nods approvingly, and gestures to you to lead the way, as Randy and Marina gather their teams and lead them to other areas of the station.`
+			`	As you move through the darkened station, it becomes very apparent that this was never designed to be a prison. The locking doors and their protective shields all appear to be makeshift, not unlike the custom brigs you can get installed at some outfitters.` 
+			`	The flashlights attached to your weapon lead you down a blackened hall, and eventually you pass into a common room with a staff desk. Your flashlight catches an emblem on the wall, and you can make out the word "Paragon," the same company that built many of the Caravan stations. There is no staff behind the desk.`
+			`	"Get down!" Jack shouts from behind you, as suddenly you are struck in the face by a mess of flood lights. While temporarily blinded, someone tackles you out of the way. You can hear weapons fire."
+			choice
+				`	(Get up!)`
+			`	You manage to come to your feet and stand. The firefight was short and intense, and it looks like you missed it. Sally is behind the staff desk using the controls.`
+			`	"Ah, Comrade Captain!" she shouts, as you come to your feet. "I did not mean to knock you out, but the alternative was for you to get shot. Yes, yes, save your thanks for later. It is time for you to return to your ship!"
+				goto end
+			label pointe
+			`	Sally follows your lead, as Randy and Marina gather their teams and lead them to other areas of the station.`
+			`	As you move through the darkened station, it becomes very apparent that this was never designed to be a prison. The locking doors and their protective shields all appear to be makeshift, not unlike the custom brigs you can get installed at some outfitters.` 
+			`	The flashlights attached to your weapon lead you down a blackened hall, and eventually you pass into a common room with a staff desk. Your flashlight catches an emblem on the wall, and you can make out the word "Paragon," the same company that built many of the Caravan stations. There is no staff behind the desk.`
+			`	"Get down!" Jack shouts, as suddenly a mess of flood lights brighten the room again. Sally tackles Jack out of the way, then rolls onto her back to fire at a balcony above her. You instinctually rush ahead without thinking, but by the time you get to her the firefight is over."
+			``
+			` Sally checks on Jack, "No wounds, looks like he just knocked his head. He'll come to in a minute." She moves behind the staff desk, "Cameras show no other guards. Head back to your ship, I've got this."` 
+				goto end
+
+			label pointf
+			`	"Neither of you, actually." Marina states, coming through the door. "Sally, take D, Randy, take F. Jack, Comrade Captain, you two are with me. I'm on point." Randy and Sally roll their eyes, and gather their teams.`
+				goto core
+			label jackf
+			`	"Stealing my thunder, comrade Jack? I was built for this kind of action." Marina says, taking the lead. "Sally, take D, Randy, take F. Jack, Comrade Captain, you two follow me." Randy and Sally roll their eyes, and gather their teams.`
+				goto core
+			label core
+			`	As you move through the station, it becomes very apparent that this was never designed to be a prison. The floor design is suited to an observatory or laboratory. The locking doors and their protective shields all appear to be makeshift, not unlike the custom brigs you can get installed at some outfitters.` 
+			`	You pass into a mainenance area, and Marina signals at everyone to stop and says, "Heat ahead, an ambush. Paragon soldiers are always crafty like this. Comrade Captain, with me." She motions to you. "See the orange light up ahead? I need you to shoot around that for a little bit." `
+			choice
+				`	(Shoot at the glowing orange light.)`
+					goto shoot
+				`	(Don't comply.)`
+					goto dontshoot
+			label shoot
+			gunslinger ++
+			`	You take aim at the orange light and start unleashing fire. Unlike laser rifles, this heavy rifle recoils after every shot. It takes some getting used to, but has the desired effect. The trap ahead is sprung prematurely, as the guards ahead trigger their explosives. Each of these is incredibly bright and loud, but they clearly look to be useful for putting down riots, and do not seem to be lethal.`
+			` 	After a short period of time, Marina rushes ahead, firing a few shots. "Clear!" She shouts, motioning for you and Jack to join her.`
+			`	"We really showed those bootlickers this time!" Marina cheers, "Soon every capitalist swine at Paragon will feel the force of my rage! Comrade Captain, return to your ship and ready its engines! Comrade Jack and I have it from here." 
+				goto end
+			label dontshoot
+			`	You have chosen not to fire. Perhaps it is out of fear, or lack of trust for Marina, but the reason does not matter. You hear a shot fired from behind you, and feel a burning hot sting in your back, and this is followed by the feeling of electricity running through you. The last thing you see is the floor rushing up to meet with your face as you black out from the pain.`
+			``
+			`	Some time later, you come to, your communicator harassing you. A text based message reading only, "Comrade Captain, when you awaken return to your ship." There is nothing left to do except return`
+				goto end
+			
+			label return
+			`	No one at any point prevents you from returning to your ship. No one questions you, nor begs you to stay and help, but it is clear that they notice. As you approach the docking tube to your ship, you hear weapons fire from behind you.`
+				goto end
+
+			label end
+			`	Not long after returning to your ship, you recieve notice that all of the prisoners have been freed, and that the other teams have found the docked ships. Sally rejoins you, and tells you that it's time to get back to Sporehold.`
+				launch
+	on complete
+			payment 1000000
+		conversation
+			`You manage to grab one of the first openings at port, allowing Sally to disembark. "Comrade captain, the Union appreciates your help. I have already scanned your Pilots License and passed your information onto the Partnership. You'll be receiving <payment> before you depart. See you around, comrade <first>!"`
+
+	npc accompany save
+		personality escort timid
+		government "Northern Union"
+		ship Bounder "SG-001"
+		ship Bounder "PT-109"
+		ship Bounder "AK-074"
+		ship Bounder "AT-117"
+		ship "Bulk Freighter" "ST-39A"
+		ship "Bulk Freighter" "ST-39b"
+		ship "Quicksilver" "STE-39-1"
+		ship "Quicksilver" "STE-39-2"
+		ship "Quicksilver" "STE-39-3"
+		ship "Quicksilver" "STE-39-4"
+		
 # Northern Union Resources
 
 #governments
@@ -1077,7 +1288,7 @@ government "Gaven"
 	"bribe" 0
 	"attitude toward"
 		"Syndicated Security" -.1
-	
+		"Cartel" -1
 
 #outfits
 outfit "Lucky"
