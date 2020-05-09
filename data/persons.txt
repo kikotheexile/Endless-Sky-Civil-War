@@ -648,65 +648,63 @@ person "Oversurge"
 		ship "Prototype Weapons Platform" "Big Iron"
 		
 ship "Prototype Weapons Platform"
-    sprite ship/coolvulture
-    thumbnail thumbnail/coolvulture
-    attributes
-        category Battlecruiser
-        "cost" 45000000
-        "mass" 1200
-        "bunks" 130
-        "cargo space" 98
-        "drag" 13
-        "engine capacity" 260
-        "fuel capacity" 800
-        "gun ports" 1
-        "heat dissipation" 0.8
-        "hull" 10000
-        "outfit space" 1125
-        "required crew" 120
-        "shields" 18000
-        "turret mounts" 10
-        "vulture talon" 1
-        "weapon capacity" 340
-    outfits
-        "Armageddon Core" 2
-        "A250 Atomic Thruster"
-        "A860 Atomic Thruster"
-        "LP576a Battery Pack"
-        "A525 Atomic Steering"
-        "Ionic Afterburner"
-        "Liquid Helium Cooler"
-        "Heavy Anti-Missile Turret" 4
-        "D94-YV Shield Generator"
-        "Scram Drive"
-        "Tactical Scanner"
-        "Proton Turret" 6
-        "Prototype Beam Talon"
-
-    position -905.3579 486.84932
-    engine 16.5 198.5 1
-    engine -18.5 199 1
-    engine 52 183.5 0.7
-    engine 81.5 188.5 0.5
-    engine -52 185 0.7
-    engine -81.5 188.5 0.5
-    turret 39 -7.5 "Heavy Anti-Missile Turret"
-    turret -39 -7 "Heavy Anti-Missile Turret"
-    turret 105 165 "Heavy Anti-Missile Turret"
-    turret -105 165 "Heavy Anti-Missile Turret"
-    gun 0.5 -150 "Prototype Beam Talon"
-    turret -37.5 37 "Proton Turret"
-    turret 37.5 36 "Proton Turret"
-    turret 99 107.5 "Proton Turret"
-    turret -99 107 "Proton Turret"
-    turret -38 63 "Proton Turret"
-    turret 38 63 "Proton Turret"
-    explode "small explosion" 20
-    explode "medium explosion" 80
-    explode "large explosion" 70
-    explode "huge explosion" 30
-    "final explode" "final explosion large" 1
-
+	sprite ship/coolvulture
+	thumbnail thumbnail/coolvulture
+	attributes
+		category Battlecruiser
+		"cost" 45000000
+		"mass" 1200
+		"bunks" 130
+		"cargo space" 98
+		"drag" 13
+		"engine capacity" 260
+		"fuel capacity" 800
+		"gun ports" 1
+		"heat dissipation" 0.8
+		"hull" 10000
+		"outfit space" 1125
+		"required crew" 120
+		"shields" 18000
+		"turret mounts" 10
+		"vulture talon" 1
+		"weapon capacity" 340
+	outfits
+		"Armageddon Core" 2
+		"A250 Atomic Thruster"
+		"A860 Atomic Thruster"
+		"LP576a Battery Pack"
+		"A525 Atomic Steering"
+		"Ionic Afterburner"
+		"Liquid Helium Cooler"
+		"Heavy Anti-Missile Turret" 4
+		"D94-YV Shield Generator"
+		"Scram Drive"
+		"Tactical Scanner"
+		"Proton Turret" 6
+		"Prototype Beam Talon"
+	position -905.3579 486.84932
+	engine 16.5 198.5 1
+	engine -18.5 199 1
+	engine 52 183.5 0.7
+	engine 81.5 188.5 0.5
+	engine -52 185 0.7
+	engine -81.5 188.5 0.5
+	turret 39 -7.5 "Heavy Anti-Missile Turret"
+	turret -39 -7 "Heavy Anti-Missile Turret"
+	turret 105 165 "Heavy Anti-Missile Turret"
+	turret -105 165 "Heavy Anti-Missile Turret"
+	gun 0.5 -150 "Prototype Beam Talon"
+	turret -37.5 37 "Proton Turret"
+	turret 37.5 36 "Proton Turret"
+	turret 99 107.5 "Proton Turret"
+	turret -99 107 "Proton Turret"
+	turret -38 63 "Proton Turret"
+	turret 38 63 "Proton Turret"
+	explode "small explosion" 20
+	explode "medium explosion" 80
+	explode "large explosion" 70
+	explode "huge explosion" 30
+	"final explode" "final explosion large" 1
 
 outfit "Prototype Beam Talon"
 	category "Secondary Weapons"
