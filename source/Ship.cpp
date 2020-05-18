@@ -20,6 +20,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Flotsam.h"
 #include "Font.h"
 #include "Format.h"
+#include "FormationPattern.h"
 #include "GameData.h"
 #include "Government.h"
 #include "Mask.h"
@@ -372,6 +373,8 @@ void Ship::Load(const DataNode &node)
 			description += child.Token(1);
 			description += '\n';
 		}
+		else if(key == "formation" && child.Size() >= 2)
+			formationPattern = GameData::Formations().Get(child.Token(1));
 		else if(key != "actions")
 			child.PrintTrace("Skipping unrecognized attribute:");
 	}
@@ -749,6 +752,9 @@ void Ship::Save(DataWriter &out) const
 		for(const auto &it : finalExplosions)
 			if(it.first && it.second)
 				out.Write("final explode", it.first->Name(), it.second);
+		
+		if(formationPattern)
+			out.Write("formation", formationPattern->Name());
 		
 		if(currentSystem)
 			out.Write("system", currentSystem->Name());
@@ -3188,6 +3194,28 @@ shared_ptr<Flotsam> Ship::GetTargetFlotsam() const
 
 
 
+const FormationPattern *Ship::GetFormationPattern() const
+{
+	return formationPattern;
+}
+
+
+
+int Ship::GetFormationRing() const
+{
+	return formationRing;
+}
+
+
+
+void Ship::SetFormationRing(int newRing)
+{
+	if(newRing >= 0)
+		formationRing = newRing;
+}
+
+
+
 // Set this ship's targets.
 void Ship::SetTargetShip(const shared_ptr<Ship> &ship)
 {
@@ -3247,6 +3275,13 @@ void Ship::SetParent(const shared_ptr<Ship> &ship)
 	parent = ship;
 	if(ship)
 		ship->AddEscort(*this);
+}
+
+
+
+void Ship::SetFormationPattern(const FormationPattern *formationToSet)
+{
+	formationPattern = formationToSet;
 }
 
 
