@@ -122,8 +122,18 @@ namespace {
 	void Deploy(const Ship &ship, bool includingDamaged)
 	{
 		for(const Ship::Bay &bay : ship.Bays())
-			if(bay.ship && (includingDamaged || bay.ship->Health() > .75))
+			if(bay.ship && (includingDamaged || bay.ship->Health() > .75) &&
+					(!bay.ship->IsYours() || bay.ship->IsDeploying()))
 				bay.ship->SetCommands(Command::DEPLOY);
+	}
+	
+	// Check if the ship contains a carried ship that needs to launch.
+	bool IsLaunching(const Ship &ship)
+	{
+		for(const Ship::Bay &bay : ship.Bays())
+			if(bay.ship && bay.ship->IsDeploying())
+				return true;
+		return false;
 	}
 	
 	// Determine if the ship with the given travel plan should refuel in
@@ -512,15 +522,9 @@ void AI::UpdateKeys(PlayerInfo &player, Command &activeCommands)
 	if(player.Ships().size() < 2)
 		return;
 	
-	// Only toggle the "deploy" command if one of your ships has fighter bays.
+	// Toggle the "deploy" command for the fleet or selected ships.
 	if(activeCommands.Has(Command::DEPLOY))
-		for(const auto &it : player.Ships())
-			if(it->HasBays())
-			{
-				isLaunching = !isLaunching;
-				Messages::Add(isLaunching ? "Deploying fighters." : "Recalling fighters.");
-				break;
-			}
+		IssueDeploy(player);
 	
 	// Temporary borrow the gather, hold and fight commands to control formations.
 	if(activeCommands.Has(Command::GATHER) && activeCommands.Has(Command::SHIFT))
@@ -688,7 +692,7 @@ void AI::Step(const PlayerInfo &player, Command &activeCommands)
 		double healthRemaining = it->Health();
 		bool isPresent = (it->GetSystem() == playerSystem);
 		bool isStranded = IsStranded(*it);
-		bool thisIsLaunching = (isLaunching && isPresent);
+		bool thisIsLaunching = (isPresent && IsLaunching(*it));
 		if(isStranded || it->IsDisabled())
 		{
 			// Derelicts never ask for help (only the player should repair them).
@@ -980,7 +984,7 @@ void AI::Step(const PlayerInfo &player, Command &activeCommands)
 				it->SetParent(parent);
 			}
 			// Otherwise, check if this ship wants to return to its parent (e.g. to repair).
-			else if(parentHasSpace && ShouldDock(*it, *parent, thisIsLaunching))
+			else if(parentHasSpace && ShouldDock(*it, *parent, playerSystem))
 			{
 				it->SetTargetShip(parent);
 				MoveTo(*it, command, parent->Position(), parent->Velocity(), 40., .8);
@@ -1000,7 +1004,7 @@ void AI::Step(const PlayerInfo &player, Command &activeCommands)
 			for(const weak_ptr<Ship> &ptr : it->GetEscorts())
 			{
 				shared_ptr<const Ship> escort = ptr.lock();
-				if(escort && escort->CanBeCarried() && escort->GetSystem() == it->GetSystem()
+				if(escort && escort->CanBeCarried() && !escort->IsDeploying() && escort->GetSystem() == it->GetSystem()
 						&& !escort->IsDisabled() && it->BaysFree(escort->Attributes().Category() == "Fighter"))
 				{
 					mustRecall = true;
@@ -1862,7 +1866,7 @@ bool AI::CanRefuel(const Ship &ship, const StellarObject *target)
 
 
 // Determine if a fighter meets any of the criteria for returning to its parent.
-bool AI::ShouldDock(const Ship &ship, const Ship &parent, bool playerShipsLaunch) const
+bool AI::ShouldDock(const Ship &ship, const Ship &parent, const System *playerSystem) const
 {
 	// If your parent is disabled, you should not attempt to board it.
 	// (Doing so during combat will likely lead to its destruction.)
@@ -1871,7 +1875,9 @@ bool AI::ShouldDock(const Ship &ship, const Ship &parent, bool playerShipsLaunch
 	
 	// A fighter should retreat if its parent is calling it back, or it is
 	// a player's ship and is not in the current system.
-	if(!parent.Commands().Has(Command::DEPLOY) || (ship.IsYours() && !playerShipsLaunch))
+	if(!parent.Commands().Has(Command::DEPLOY) && !ship.IsYours())
+		return true;
+	if (ship.IsYours() && (!ship.IsDeploying() || ship.GetSystem() != playerSystem))
 		return true;
 	
 	// If a fighter has repair abilities, avoid having it get stuck oscillating between
@@ -3751,7 +3757,7 @@ void AI::MovePlayer(Ship &ship, const PlayerInfo &player, Command &activeCommand
 		}
 	}
 	
-	if(ship.HasBays() && isLaunching)
+	if(ship.HasBays() && IsLaunching(ship))
 	{
 		command |= Command::DEPLOY;
 		Deploy(ship, !Preferences::Has("Damaged fighters retreat"));
@@ -3890,6 +3896,61 @@ void AI::CacheShipLists()
 			list.insert(list.end(), oit.second.begin(), oit.second.end());
 		}
 	}
+}
+
+
+
+void AI::IssueDeploy(const PlayerInfo &player)
+{
+	// Figure out what carried ships we are giving orders to
+	vector<Ship *> ships;
+	bool fullFleet = player.SelectedShips().empty();
+	if(fullFleet)
+	{
+		for(const shared_ptr<Ship> &it : player.Ships())
+			if(it.get() != player.Flagship() && !it->IsParked() && it->CanBeCarried())
+				ships.push_back(it.get());
+	}
+	else
+		for(const weak_ptr<Ship> &it : player.SelectedShips())
+		{
+			shared_ptr<Ship> ship = it.lock();
+			if(ship)
+				ships.push_back(ship.get());
+		}
+	
+	// This should never happen, but just in case:
+	if(ships.empty())
+	{
+		if(fullFleet)
+			Messages::Add("No carried ships in the fleet to deploy.");
+		else
+			Messages::Add("No carried ships selected that can be deployed.");
+		
+		return;
+	}
+	
+	int nrDeployed = 0;
+
+	for(Ship *ship : ships)
+		if(!ship->IsDeploying())
+		{
+			ship->DoDeploy(true);
+			nrDeployed++;
+		}
+	
+	if(nrDeployed > 0)
+	{
+		Messages::Add("Deployed " + to_string(nrDeployed) + " carried ships.");
+		return;
+	}
+	
+	// If we get here, then we need to recall all selected ships
+	for(Ship *ship : ships)
+		ship->DoDeploy(false);
+
+	Messages::Add("Recalled " + to_string(ships.size()) + " carried ships.");
+	return;
 }
 
 
