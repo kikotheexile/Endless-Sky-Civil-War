@@ -49,6 +49,8 @@ class Sprite;
 class StarField;
 class StartConditions;
 class System;
+class Test;
+class TestData;
 
 
 
@@ -113,6 +115,8 @@ public:
 	static const Set<Ship> &Ships();
 	static const Set<Sale<Ship>> &Shipyards();
 	static const Set<System> &Systems();
+	static const Set<Test> &Tests();
+	static const Set<TestData> &TestDataSets();
 	
 	static const Government *PlayerGovernment();
 	static Politics &GetPolitics();
@@ -151,6 +155,7 @@ private:
 	static std::map<std::string, std::shared_ptr<ImageSet>> FindImages();
 	
 	static void PrintShipTable();
+	static void PrintTestsTable();
 	static void PrintWeaponTable();
 };
 

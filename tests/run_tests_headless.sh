@@ -41,7 +41,7 @@ echo "${GLXINFO}" | grep OpenGL
 # X11VNC_PID=$!
 # echo "X11VNC PID: ${X11VNC_PID}"
 
-../endless-sky --test "empty_testcase"
+./run_tests.sh
 RETURN_VALUE=$?
 
 kill -s SIGTERM ${XSERVER_PID}

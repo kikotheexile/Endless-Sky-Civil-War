@@ -55,6 +55,8 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "StarField.h"
 #include "StartConditions.h"
 #include "System.h"
+#include "Test.h"
+#include "TestData.h"
 
 #include <algorithm>
 #include <iostream>
@@ -85,6 +87,8 @@ namespace {
 	Set<Planet> planets;
 	Set<Ship> ships;
 	Set<System> systems;
+	Set<Test> tests;
+	Set<TestData> testDataSets;
 	
 	Set<Sale<Ship>> shipSales;
 	Set<Sale<Outfit>> outfitSales;
@@ -129,6 +133,7 @@ namespace {
 bool GameData::BeginLoad(const char * const *argv)
 {
 	bool printShips = false;
+	bool printTests = false;
 	bool printWeapons = false;
 	bool debugMode = false;
 	for(const char * const *it = argv + 1; *it; ++it)
@@ -140,6 +145,8 @@ bool GameData::BeginLoad(const char * const *argv)
 				printShips = true;
 			if(arg == "-w" || arg == "--weapons")
 				printWeapons = true;
+			if(arg == "--tests")
+				printTests = true;
 			if(arg == "-d" || arg == "--debug")
 				debugMode = true;
 			continue;
@@ -211,9 +218,11 @@ bool GameData::BeginLoad(const char * const *argv)
 	
 	if(printShips)
 		PrintShipTable();
+	if(printTests)
+		PrintTestsTable();
 	if(printWeapons)
 		PrintWeaponTable();
-	return !(printShips || printWeapons);
+	return !(printShips || printWeapons || printTests);
 }
 
 
@@ -711,6 +720,20 @@ const Set<Ship> &GameData::Ships()
 
 
 
+const Set<Test> &GameData::Tests()
+{
+	return tests;
+}
+
+
+
+const Set<TestData> &GameData::TestDataSets()
+{
+	return testDataSets;
+}
+
+
+
 const Set<Sale<Ship>> &GameData::Shipyards()
 {
 	return shipSales;
@@ -984,6 +1007,10 @@ void GameData::LoadFile(const string &path, bool debugMode)
 			startConditions.Load(node);
 		else if(key == "system" && node.Size() >= 2)
 			systems.Get(node.Token(1))->Load(node, planets);
+		else if((key == "test") && node.Size() >= 2)
+			tests.Get(node.Token(1))->Load(node);
+		else if((key == "test-data") && node.Size() >= 2)
+			testDataSets.Get(node.Token(1))->Load(node, path);
 		else if(key == "trade")
 			trade.Load(node);
 		else if(key == "landing message" && node.Size() >= 2)
@@ -1058,6 +1085,22 @@ map<string, shared_ptr<ImageSet>> GameData::FindImages()
 			}
 	}
 	return images;
+}
+
+
+
+// This prints out the list of tests that are available and their status
+// (active/missing feature/known failure)..
+void GameData::PrintTestsTable()
+{
+	cout << "name" << '\t' << "status" << '\n';
+	for(auto &it : tests)
+	{
+		const Test &test = it.second;
+		cout << test.Name() << '\t';
+		cout << test.StatusText() << '\n';
+	}
+	cout.flush();
 }
 
 
