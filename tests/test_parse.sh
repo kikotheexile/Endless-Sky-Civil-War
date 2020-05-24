@@ -6,11 +6,11 @@ if [ -z "$1" ]; then
 fi
 # OS Check
 if [[ $(uname) == 'Darwin' ]]; then
-  FILEDIR="$HOME/Library/Application Support/endless-sky"
+  FILEDIR="$HOME/Library/Application Support/endless-sky-civil-war"
 elif [[ $OSTYPE == 'msys' ]] || [[ $OS == 'Windows_NT' ]] || [[ ! -z ${APPDATA:-} ]]; then
-  FILEDIR="$APPDATA/endless-sky"
+  FILEDIR="$APPDATA/endless-sky-civil-war"
 else
-  FILEDIR="$HOME/.local/share/endless-sky"
+  FILEDIR="$HOME/.local/share/endless-sky-civil-war"
 fi
 ERR_FILE="$FILEDIR/errors.txt"
 
