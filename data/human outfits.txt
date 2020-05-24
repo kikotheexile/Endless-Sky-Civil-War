@@ -2618,7 +2618,7 @@ outfit "Red Flame Plasma Shield Generator"
 	"outfit space" -22
 	"shield generation" .6
 	"shield energy" .6
-	"energy consumption .6
+	"energy consumption" .6
 	"heat generation" .6
 	description "Not to be one-upped by Delta V, the Kraz team created a larger but even more efficient version of the Ember class plasma shield. The Red Flame is small enough to fit onto most gunships, but its additional power and cooling requirements might not be."
 
@@ -2630,7 +2630,7 @@ outfit "Yellow Flame Shield Generator"
 	"outfit space" -30
 	"shield generation" 1
 	"shield energy" 1
-	"energy consumption 1
+	"energy consumption" 1
 	"heat generation" 1
 	description "Impressed by Kraz's Red Flame, Delta V kicked up the heat with this yellow flame shield generator. Twice as powerful as the same size of D14, this shield generator is liable to protect its pilot from nearly everything, assuming it doesn't cook them alive."
 

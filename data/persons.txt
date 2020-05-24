@@ -88,65 +88,65 @@ person "Cap'n Pester"
 	ship "Vigilante #8"
 		sprite "ship/mmantae"
 		thumbnail "thumbnail/mmantae"
-	attributes
-		category "Cruiser"
-		"cost" 3740000
-		"shields" 10500
-		"hull" 10750
-		"required crew" 1
-		"bunks" 1
-		"mass" 95
-		"drag" 3.7
-		"heat dissipation" .8
-		"fuel capacity" 400
-		"cargo space" 1
-		"outfit space" 521
-		"weapon capacity" 155
-		"engine capacity" 220
-		"self destruct" .25
-		weapon
-			"blast radius" 90
-			"shield damage" 900
-			"hull damage" 450
-			"hit force" 1350
-	outfits
-		"Plasma Cannon" 2
-		"Particle Cannon" 2
-		"Meteor Missile Launcher" 2
-		"Meteor Missile" 70
-		"Quad Blaster Turret"
+		attributes
+			category "Cruiser"
+			"cost" 3740000
+			"shields" 10500
+			"hull" 10750
+			"required crew" 1
+			"bunks" 1
+			"mass" 95
+			"drag" 3.7
+			"heat dissipation" .8
+			"fuel capacity" 400
+			"cargo space" 1
+			"outfit space" 521
+			"weapon capacity" 155
+			"engine capacity" 220
+			"self destruct" .25
+			weapon
+				"blast radius" 90
+				"shield damage" 900
+				"hull damage" 450
+				"hit force" 1350
+		outfits
+			"Plasma Cannon" 2
+			"Particle Cannon" 2
+			"Meteor Missile Launcher" 2
+			"Meteor Missile" 70
+			"Quad Blaster Turret"
 		
-		"Dwarf Core"
-		"LP144a Battery Pack"
-		"D14-RN Shield Generator"
-		"Liquid Nitrogen Cooler"
-		"Security Station" 3
-		"Laser Rifle" 8
+			"Dwarf Core"
+			"LP144a Battery Pack"
+			"D14-RN Shield Generator"
+			"Liquid Nitrogen Cooler"
+			"Security Station" 3
+			"Laser Rifle" 8
 		
-		"A250 Atomic Thruster" 2
-		"A525 Atomic Steering" 2
-		"Hyperdrive"
-		"Cargo Scanner" 2
-		"Outfit Scanner" 2
-		"Asteroid Scanner"
-		"Tactical Scanner"
-		"Surveillance Pod"
+			"A250 Atomic Thruster" 2
+			"A525 Atomic Steering" 2
+			"Hyperdrive"
+			"Cargo Scanner" 2
+			"Outfit Scanner" 2
+			"Asteroid Scanner"
+			"Tactical Scanner"
+			"Surveillance Pod"
 		
 	
-	engine -33 38
-	engine 33 38
-	gun -66 -30 "Meteor Missile Launcher"
-	gun 66 -30 "Meteor Missile Launcher"
-	gun -27 -30 "Plasma Cannon"
-	gun 27 -30 "Plasma Cannon"
-	gun -20 -30 "Particle Cannon"
-	gun 20 -30 "Particle Cannon"
-	turret 0 -29 "Quad Blaster Turret"
-	explode "tiny explosion" 10
-	explode "small explosion" 20
-	explode "medium explosion" 15
-	"final explode" "final explosion medium"
-	description `Although other modified variants of the Manta are considered Destroyers rather than Cruisers by dry tonnage, the former owner of this vessel made no pretentions that this vessel was indeed built to track down and take on criminals in far larger ships than their own.`
+		engine -33 38
+		engine 33 38
+		gun -66 -30 "Meteor Missile Launcher"
+		gun 66 -30 "Meteor Missile Launcher"
+		gun -27 -30 "Plasma Cannon"
+		gun 27 -30 "Plasma Cannon"
+		gun -20 -30 "Particle Cannon"
+		gun 20 -30 "Particle Cannon"
+		turret 0 -29 "Quad Blaster Turret"
+		explode "tiny explosion" 10
+		explode "small explosion" 20
+		explode "medium explosion" 15
+		"final explode" "final explosion medium"
+		description `Although other modified variants of the Manta are considered Destroyers rather than Cruisers by dry tonnage, the former owner of this vessel made no pretentions that this vessel was indeed built to track down and take on criminals in far larger ships than their own.`
 
 
 
@@ -645,7 +645,7 @@ person "Oversurge"
 			"Nothing wrong with shooting...as long as the right people get shot."
 			"Pirates beware, I am the Law!"
 			
-		ship "Prototype Weapons Platform" "Big Iron"
+	ship "Prototype Weapons Platform" "Big Iron"
 		
 ship "Prototype Weapons Platform"
 	sprite ship/coolvulture

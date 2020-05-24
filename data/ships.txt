@@ -3514,7 +3514,7 @@ ship "Aegis"
 	gun 15 -100 "Meteor Missile Launcher"
 	fighter -54 -54 under
 	fighter 54 -54 under
-	fight -73 0 under
+	fighter -73 0 under
 	fighter 73 0 under
 	fighter -54 54 under
 	fighter 54 54 under
@@ -3986,7 +3986,7 @@ ship "Veles"
 	explode "large explosion" 70
 	explode "huge explosion" 30
 	"final explode" "final explosion large" 1
-	description "The Veles class is an incredible feat of engineering. A first of its kind true Star Cruiseliner, designed to take wealthy retirees on tours of the poorer regions of space in safety and security.
+	description "The Veles class is an incredible feat of engineering. A first of its kind true Star Cruiseliner, designed to take wealthy retirees on tours of the poorer regions of space in safety and security."
 	description "	The Veles class is intended to single handedly crush the Northern Union. This ship signals a resurgence in Betelgeuse's research and development department, which has finally come out of its centuries-long stagnation."
 
 
