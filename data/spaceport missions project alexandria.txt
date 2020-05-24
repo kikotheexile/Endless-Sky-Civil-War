@@ -115,7 +115,7 @@ mission "Valhalla History"
 					decline
 			`Normally if you chose to lose yourself in the back roads and alleys of a strange world you expect to find yourself at the tip of a knife or looking down the barrel of a gun. However, on Valhalla, even the shadiest sectors are shockingly crime free.`
 			`	Eventually you come across an outdoor plaza with a fountain in the center. You see a statue of a Quarg, a Human, and some other alien being standing in a triangle behind an altar. The human male with both arms outstretched, as if gesturing for peace and friendship, while Quarg and other alien somewhat awkwardly shake hands.`
-			`	Upon the altar rests a plaque, its inscription reads, "May the Asgard and Elves find peace and unity in helping a common friend fight a common foe."
+			`	Upon the altar rests a plaque, its inscription reads, "May the Asgard and Elves find peace and unity in helping a common friend fight a common foe."`
 				accept
 				
 	on accept

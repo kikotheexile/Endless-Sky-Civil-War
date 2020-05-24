@@ -914,14 +914,14 @@ mission "NU Marina 1"
 				`	(Approach her.)`
 	
 			`	"Comrades," the voice shouts. "Will you stand idly by while your fellow man is pressed into indentured service, or worse? Would you leave them to be broken and abused by the capitalist swine in the paradise worlds? I think not."`
-			`	As you draw nearer, you see that the voice belongs to a young woman who looks about 20 years old. Her brightly colored hair standing in stark contrast to what appears to be a standard issue uniform. She is standing atop a shipping crate, shouting into what appears to be a makeshift megaphone.
+			`	As you draw nearer, you see that the voice belongs to a young woman who looks about 20 years old. Her brightly colored hair standing in stark contrast to what appears to be a standard issue uniform. She is standing atop a shipping crate, shouting into what appears to be a makeshift megaphone.`
 			choice
 				`	(Walk away)`
 					decline
 				`	(Stay and listen.)`
 	
 			`	You join the small crowd of onlookers while she continues her longwinded and ranting speech about the evils of capitalism, and the crimes of the wealthy and elite. Her statements are conveluted and illogical at times, but her passion is compelling.`
-			`	As she finalizes her impossible to follow speech, she puts out a call. "To anyone willing to take the fight to these swine, forward to me!" 
+			`	As she finalizes her impossible to follow speech, she puts out a call. "To anyone willing to take the fight to these swine, forward to me!" `
 			choice
 				`	(Walk away)`
 					decline
@@ -1083,7 +1083,7 @@ mission "NU Marina 3"
 			`As you arrive, Marina is giving a bunch of confused individuals one of her long and rambling speeches. Eventually, she climbs down from her shipping crate full of explosives and disappears onto a nearby ship. The young man from earlier takes over.`
 			`	"Sorry about that, everyone." He sighs, "My name is Jack, and I really do want to thank you for playing along here. Truth is, what we are doing is an unofficial prisoner transfer. Our job is to go to the prison, make a big scene about a prison break, get out, and get paid. The Cartel will report the loss to the syndicate, who will then use it as a way to weasel more money out of the Republic. Any questions?"`
 			`	"Yes," a young woman in the crowd speaks up, "Why is the Union helping the Syndicate scam the Republic? I thought they were the bad guys."`
-			`	"They are," Jack replies, "But this is an easy way for us to gain more ships, supplies, and volunteers for our cause. We will be arriving at about the same time as a resupply convoy, who will conveniently leave their ships unguarded. We get our prisoners out, steal the convoy, and return to the safety of the union richer for it."
+			`	"They are," Jack replies, "But this is an easy way for us to gain more ships, supplies, and volunteers for our cause. We will be arriving at about the same time as a resupply convoy, who will conveniently leave their ships unguarded. We get our prisoners out, steal the convoy, and return to the safety of the union richer for it."`
 			choice
 				`	"What's with the robot?"`
 					goto robot
@@ -1095,12 +1095,12 @@ mission "NU Marina 3"
 		
 			label job
 			`	"Comrades," Sally speaks up, "The workers employed by the Core Mining Cartel are considered expendable by them, thus they have not been informed of our raid. Some of them may resist, and with deadly force, and it is very possible that our temporary business partners will betray us. So be prepared for a fight. You will all be compensated for your efforts, now go."`
-			`	You have been left with a choice, to take on the job and join the fleet, or walk away. 
+			`	You have been left with a choice, to take on the job and join the fleet, or walk away. `
 			choice
 				`	(Take the job.)`
 				`	(Walk away from this job.)`
 					decline
-			`	Jack, Sally, and two others approach your ship. "Comrade Captain, a pleasure to see you again." Sally states, "We'll be riding with you, and the fleet will follow us to the prison. Take off when you're ready."
+			`	Jack, Sally, and two others approach your ship. "Comrade Captain, a pleasure to see you again." Sally states, "We'll be riding with you, and the fleet will follow us to the prison. Take off when you're ready."`
 	on complete
 		conversation
 			`When you arrive in the station, Jack and Sally open the crates marked explosives and pull some small, square packages out of them. "The shooting wont start for a little while yet," Jack says, "Meet us in the spaceport when you're ready to begin, and leave your gun on the ship."`
@@ -1123,7 +1123,7 @@ mission "NU Marina 3b"
 		has "chosen sides"
 	clearance "Sally is somehow able to convince the spaceport controller you're cleared to be here, and manages to get you permission to land."
 		attributes prison
-	source "No-Where Station
+	source "No-Where Station"
 	destination Sporehold
 	passengers 2
 	on offer
@@ -1134,12 +1134,12 @@ mission "NU Marina 3b"
 					goto gunsearch
 				`	(Return to your ship and leave.)`
 					decline
-				`	(Draw your weapon and go out in a blaze of glory!)
+				`	(Draw your weapon and go out in a blaze of glory!)`
 			`	They expect you to give up your weapons when entering a prison? The madness! What every happened to freedom? To liberty? You'll show these underpaid prison guards who's boss, and not crumble under the heel of those who would disarm you! You may have died here this day, but in the end it was worth it!`
 				die
 			label gunsearch
 			`	The guards ensure you are disarmed, and let you pass into the main lobby. Sally approaches you, while Jack and the others begin opening the massive crates that have been brought in. "Wont be long now comrade, I suggest we find cover quickly." She says, taking you by the hand and leading you behind a support beam. She presses a button on her communicator.`
-			`	A few seconds later, you hear a loud bang, followed by weapons fire. Sally holds you in place until everything quites down, which only takes a few additional seconds.
+			`	A few seconds later, you hear a loud bang, followed by weapons fire. Sally holds you in place until everything quites down, which only takes a few additional seconds.`
 			`	"Hands up, everyone against the wall." You hear jack declare. Sally leads you out of cover, as someone tosses both you and her a some form of heavy rifle. The guards on the ground still appear to be breathing, but have been knocked out. The weapon is considerably heavier than a laser rifle, and appears to have been made for people with massive hands.`
 			`	"Comrade Captain, with me." Sally commands, as she opens another crate. A few people exist the crate, one of them being Randy. He finds his bearings and moves towards the blast door that leads into the interior of the station. "You all might want to cover your ears." He says, before blasting a hole in the door. Sally pulls you through as soon as the smoke clears, and asks "Where to, comrade captain?"`  
 			choice
@@ -1187,7 +1187,7 @@ mission "NU Marina 3b"
 			`	You pass into cafeteria, with a faded insignia on the wall. Behind the grime, you can make out the word "Paragon," the same company that built many of the Caravan stations. The station seems oddly deserted. Everything starts going blurry, and you pass out.` 
 			choice
 				`	(Wake up!)`
-			`	You have no special resistances to the newly developed 'knock-out gas' developed by the Republic's pet military contractors at Lovelace, but thankfully its effects are temporary. You awaken alone where you fell, discarded canisters of gas litter the floor. Over the communicator you hear the signal that it's time to leave; There is little for you to do but return to your ship.
+			`	You have no special resistances to the newly developed 'knock-out gas' developed by the Republic's pet military contractors at Lovelace, but thankfully its effects are temporary. You awaken alone where you fell, discarded canisters of gas litter the floor. Over the communicator you hear the signal that it's time to leave; There is little for you to do but return to your ship.`
 				goto end
 
 			label jackd
@@ -1196,25 +1196,25 @@ mission "NU Marina 3b"
 			`	You pass into cafeteria, with a faded insignia on the wall. Behind the grime, you can make out the word "Paragon," the same company that built many of the Caravan stations. The station seems oddly deserted. You hear Jack shout "Masks!" You don't have a mask. Everything starts going blurry, and you pass out.` 
 			choice
 				`	(Wake up!)`
-			`	You have no special resistances to the newly developed 'knock-out gas' developed by the Republic's pet military contractors at Lovelace, but thankfully its effects are temporary. You awaken alone where you fell, discarded canisters of gas litter the floor. Over the communicator you hear the signal that it's time to leave; There is little for you to do but return to your ship.
+			`	You have no special resistances to the newly developed 'knock-out gas' developed by the Republic's pet military contractors at Lovelace, but thankfully its effects are temporary. You awaken alone where you fell, discarded canisters of gas litter the floor. Over the communicator you hear the signal that it's time to leave; There is little for you to do but return to your ship.`
 				goto end
 
 			label pointe
 			`	Sally nods approvingly, and gestures to you to lead the way, as Randy and Marina gather their teams and lead them to other areas of the station.`
 			`	As you move through the darkened station, it becomes very apparent that this was never designed to be a prison. The locking doors and their protective shields all appear to be makeshift, not unlike the custom brigs you can get installed at some outfitters.` 
 			`	The flashlights attached to your weapon lead you down a blackened hall, and eventually you pass into a common room with a staff desk. Your flashlight catches an emblem on the wall, and you can make out the word "Paragon," the same company that built many of the Caravan stations. There is no staff behind the desk.`
-			`	"Get down!" Jack shouts from behind you, as suddenly you are struck in the face by a mess of flood lights. While temporarily blinded, someone tackles you out of the way. You can hear weapons fire."
+			`	"Get down!" Jack shouts from behind you, as suddenly you are struck in the face by a mess of flood lights. While temporarily blinded, someone tackles you out of the way. You can hear weapons fire.`
 			choice
 				`	(Get up!)`
 			`	You manage to come to your feet and stand. The firefight was short and intense, and it looks like you missed it. Sally is behind the staff desk using the controls.`
-			`	"Ah, Comrade Captain!" she shouts, as you come to your feet. "I did not mean to knock you out, but the alternative was for you to get shot. Yes, yes, save your thanks for later. It is time for you to return to your ship!"
+			`	"Ah, Comrade Captain!" she shouts, as you come to your feet. "I did not mean to knock you out, but the alternative was for you to get shot. Yes, yes, save your thanks for later. It is time for you to return to your ship!"`
 				goto end
 			label pointe
 			`	Sally follows your lead, as Randy and Marina gather their teams and lead them to other areas of the station.`
 			`	As you move through the darkened station, it becomes very apparent that this was never designed to be a prison. The locking doors and their protective shields all appear to be makeshift, not unlike the custom brigs you can get installed at some outfitters.` 
 			`	The flashlights attached to your weapon lead you down a blackened hall, and eventually you pass into a common room with a staff desk. Your flashlight catches an emblem on the wall, and you can make out the word "Paragon," the same company that built many of the Caravan stations. There is no staff behind the desk.`
-			`	"Get down!" Jack shouts, as suddenly a mess of flood lights brighten the room again. Sally tackles Jack out of the way, then rolls onto her back to fire at a balcony above her. You instinctually rush ahead without thinking, but by the time you get to her the firefight is over."
-			``
+			`	"Get down!" Jack shouts, as suddenly a mess of flood lights brighten the room again. Sally tackles Jack out of the way, then rolls onto her back to fire at a balcony above her. You instinctually rush ahead without thinking, but by the time you get to her the firefight is over."`
+			
 			` Sally checks on Jack, "No wounds, looks like he just knocked his head. He'll come to in a minute." She moves behind the staff desk, "Cameras show no other guards. Head back to your ship, I've got this."` 
 				goto end
 
@@ -1236,7 +1236,7 @@ mission "NU Marina 3b"
 			gunslinger ++
 			`	You take aim at the orange light and start unleashing fire. Unlike laser rifles, this heavy rifle recoils after every shot. It takes some getting used to, but has the desired effect. The trap ahead is sprung prematurely, as the guards ahead trigger their explosives. Each of these is incredibly bright and loud, but they clearly look to be useful for putting down riots, and do not seem to be lethal.`
 			` 	After a short period of time, Marina rushes ahead, firing a few shots. "Clear!" She shouts, motioning for you and Jack to join her.`
-			`	"We really showed those bootlickers this time!" Marina cheers, "Soon every capitalist swine at Paragon will feel the force of my rage! Comrade Captain, return to your ship and ready its engines! Comrade Jack and I have it from here." 
+			`	"We really showed those bootlickers this time!" Marina cheers, "Soon every capitalist swine at Paragon will feel the force of my rage! Comrade Captain, return to your ship and ready its engines! Comrade Jack and I have it from here."`
 				goto end
 			label dontshoot
 			`	You have chosen not to fire. Perhaps it is out of fear, or lack of trust for Marina, but the reason does not matter. You hear a shot fired from behind you, and feel a burning hot sting in your back, and this is followed by the feeling of electricity running through you. The last thing you see is the floor rushing up to meet with your face as you black out from the pain.`

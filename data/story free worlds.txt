@@ -480,7 +480,7 @@ mission "FW Recon 3B"
 		fleet
 			names "republic capital"
 			variant
-				"Narcissus" "Narcissus (Reputation Destroyer)"
+				"Narcissus (Reputation Destroyer)"
 	
 	on visit
 		dialog `A minute after you land, a Republic Narcissus, the <npc>, lands directly next to you. JJ does not approach you. You notice from your ship's logs that this Narcissus has been following you ever since you left <origin>; before you can hand over the information, you will need to escape its pursuit.`
@@ -6014,7 +6014,7 @@ mission "FW Defend New Tibet"
 			`	He seems flustered. "Okay, they didn't tell me what the weapons were for, and I didn't ask."`
 			`	"Another lie," Raven repeats, "not a good sign if you want us to help you."`
 			`	"Fine!" He declares loudly, "I knew exactly what they were for, and I built them anyway for the thrill of the job, and the money."`
-			`	"Better." Raven states calmly.
+			`	"Better." Raven states calmly.`
 			choice
 				`	"Why would the Syndicate attack the Republic?"`
 				`	"Why did you wait so long to report this?"`
@@ -7201,7 +7201,7 @@ mission "FWC Scouting 1"
 					goto freya
 				`	"Sure, but first, can you tell me how the Wolf Pack was able to do so much damage to the Navy?"`
 			`	"As I said," says JJ, "they've gathered a surprising number of bounty hunters and others who operate on the fringes of society, and who are sympathetic to our cause."`
-			`	"And," Freya adds, "With the additional cartel and Syndicate pressure on the Republic, we just might have a path for victory."
+			`	"And," Freya adds, "With the additional cartel and Syndicate pressure on the Republic, we just might have a path for victory."`
 			label freya
 			`	"One more thing," says Freya, "while you're traveling up North, I wonder if you could help to escort a convoy from the Rand system. There's no huge rush, but they're carrying supplies we need for a new reactor core for the Elpis, so the sooner you can meet up with them, the sooner the new reactors will be available."`
 				accept
@@ -7359,7 +7359,7 @@ mission "FWC Cebalrai 1"
 			label next
 			`	Alondo hurries off to the city hall to try to meet with the governor, and Tomek explains, "All the Wolf Pack has is a handful of very fast ships armed with nukes. They jump into the system, unload the missiles at whatever targets they can find, and then hightail it out of there before the Navy has a chance to respond. This is quite a mess you all have gotten into while I was gone, by the way."`
 			choice
-				`	"I thought with the extra help from the Syndicate and Cartel, the Wolfpack would be able to get the additional ships and crews needed."
+				`	"I thought with the extra help from the Syndicate and Cartel, the Wolfpack would be able to get the additional ships and crews needed."`
 					goto cartel
 				`	"Weren't you under house arrest?"`
 					goto tomek
@@ -7367,7 +7367,7 @@ mission "FWC Cebalrai 1"
 					goto tomek
 
 			label cartel
-			`	"The Syndicate wont enter open war with the Republic just yet," Tomek states, "But they have purchased additional mercenaries to assist the wolfpack and reinforce our fleets. The Cartel themselves don't have much of a fighting force, and most of their ships are of cheap Syndicate or Megaparsec design. They are also fast, and nuclear armed." 
+			`	"The Syndicate wont enter open war with the Republic just yet," Tomek states, "But they have purchased additional mercenaries to assist the wolfpack and reinforce our fleets. The Cartel themselves don't have much of a fighting force, and most of their ships are of cheap Syndicate or Megaparsec design. They are also fast, and nuclear armed." `
 			choice
 				`	"So, what's our next step?"`
 					goto end

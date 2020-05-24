@@ -407,9 +407,10 @@ government "Wanderer"
 	"friendly hail" "wanderer untranslated"
 	"hostile hail" "wanderer untranslated"
 	"hostile disabled hail" "wanderer untranslated"
+	
 government "YeeHaw"
 	"display name" "Tarazed "
-	"attitiude toward"
+	"attitude toward"
 		"Pirate" -.4
 		"Cartel" -.1
 	"player reputation" 0
