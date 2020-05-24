@@ -40,6 +40,7 @@ namespace {
 	string images;
 	string sounds;
 	string saves;
+	string tests;
 	
 	mutex errorMutex;
 	File errorLog;
@@ -224,6 +225,13 @@ const string &Files::Sounds()
 const string &Files::Saves()
 {
 	return saves;
+}
+
+
+
+const string &Files::Tests()
+{
+	return tests;
 }
 
 

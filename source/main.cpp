@@ -31,6 +31,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Screen.h"
 #include "SpriteSet.h"
 #include "SpriteShader.h"
+#include "Test.h"
 #include "UI.h"
 
 #include <iostream>
@@ -95,6 +96,12 @@ int main(int argc, char *argv[])
 	if(!GameData::BeginLoad(argv))
 		return 0;
 	
+	if(!testToRun.empty() && !GameData::Tests().Has(testToRun))
+	{
+		cout << "Test not found." << endl;
+		return 1;
+	}
+	
 	// Load player data, including reference-checking.
 	PlayerInfo player;
 	bool checkedReferences = player.LoadRecent();
@@ -130,7 +137,8 @@ int main(int argc, char *argv[])
 	}
 	catch(const runtime_error &error)
 	{
-		GameWindow::ExitWithError(error.what());
+		bool doPopUp = testToRun.empty();
+		GameWindow::ExitWithError(error.what(), doPopUp);
 		return 1;
 	}
 	
@@ -182,6 +190,9 @@ void GameLoop(PlayerInfo &player, Conversation &conversation, string &testToRun,
 	
 	// Limit how quickly full-screen mode can be toggled.
 	int toggleTimeout = 0;
+	
+	// Data to track progress of testing if/when a test is running.
+	Test::Context testContext;
 	
 	// IsDone becomes true when the game is quit.
 	while(!menuPanels.IsDone())
@@ -255,15 +266,9 @@ void GameLoop(PlayerInfo &player, Conversation &conversation, string &testToRun,
 		// Tell all the panels to step forward, then draw them.
 		((!isPaused && menuPanels.IsEmpty()) ? gamePanels : menuPanels).StepAll();
 		
-		// Currently running the hardcoded "empty" testcase;
-		//   Wait for the game to be fully loaded and then quit.
-		//
-		// This testcase can catch issues related to startup/data-loading,
-		// and it helps to show if the CI testframework is working.
-		// This hardcoded testcase is expected to be replaced by the
-		// larger testframework that is planned for ES.
-		if(!testToRun.empty() && GameData::Progress() == 1)
-			menuPanels.Quit();
+		// All manual events done. Handle any test inputs/events if we have any.
+		if(!testToRun.empty())
+			(GameData::Tests().Get(testToRun))->Step(testContext, menuPanels, gamePanels, player);
 		
 		// Caps lock slows the frame rate in debug mode.
 		// Slowing eases in and out over a couple of frames.
@@ -325,7 +330,8 @@ void PrintHelp()
 	cerr << "    -c, --config <path>: save user's files to given directory." << endl;
 	cerr << "    -d, --debug: turn on debugging features (e.g. Caps Lock slows down instead of speeds up)." << endl;
 	cerr << "    -p, --parse-save: load the most recent saved game and inspect it for content errors" << endl;
-	cerr << "        --test <name>: run the empty testcase (any name is fine for now)" << endl;
+	cerr << "        --tests: print table of available tests, then exit." << endl;
+	cerr << "        --test <name>: run given test from resources directory" << endl;
 	cerr << endl;
 	cerr << "Report bugs to: <https://github.com/endless-sky/endless-sky/issues>" << endl;
 	cerr << "Home page: <https://endless-sky.github.io>" << endl;
