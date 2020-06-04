@@ -154,7 +154,7 @@ ship "Bastion" "Bastion (Scanner)"
 ship "Behemoth" "Behemoth (Heavy)"
 	outfits
 		"Heavy Rocket Launcher" 2
-		Heavy Rocket 60
+		"Heavy Rocket" 60
 		"Quad Blaster Turret" 2
 		"Plasma Turret" 2
 		"Heavy Anti-Missile Turret" 2
