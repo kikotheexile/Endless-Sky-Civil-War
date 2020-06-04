@@ -1220,7 +1220,7 @@ ship "Manta" "Manta (Proton)"
 
 
 
-ship "Modified Argosy" "Modified Argosy (Blaster)"
+ship "Odyssey" "Odyssey (Blaster)"
 	outfits
 		"Modified Blaster" 4
 		"Quad Blaster Turret"
@@ -1237,7 +1237,7 @@ ship "Modified Argosy" "Modified Argosy (Blaster)"
 		"Hyperdrive"
 
 
-ship "Modified Argosy" "Modified Argosy (Heavy)"
+ship "Odyssey" "Odyssey (Heavy)"
 	outfits
 		"Heavy Laser" 4
 		"Heavy Laser Turret"
@@ -1253,7 +1253,7 @@ ship "Modified Argosy" "Modified Argosy (Heavy)"
 		"Hyperdrive"
 
 
-ship "Modified Argosy" "Modified Argosy (Missile)"
+ship "Odyssey" "Odyssey (Missile)"
 	outfits
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 105
@@ -1273,7 +1273,7 @@ ship "Modified Argosy" "Modified Argosy (Missile)"
 		"Hyperdrive"
 
 
-ship "Modified Argosy" "Modified Argosy (Smuggler)"
+ship "Odyssey" "Odyssey (Smuggler)"
 	outfits
 		"Beam Laser" 4
 		"Heavy Laser Turret"
