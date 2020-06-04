@@ -519,8 +519,14 @@ Test::TestStep::TestResult Test::TestStep::Step(int stepAction, UI &menuPanels, 
 					return RESULT_FAIL;
 
 				const char* inputChar = stepInputString.c_str();
-				if(KeyInputToUI(gamePanels, inputChar))
+				if(PlayerMenuIsActive(menuPanels))
+				{
+					if(KeyInputToUI(menuPanels, inputChar))
+						return RESULT_DONE;
+				}
+				else if(KeyInputToUI(gamePanels, inputChar))
 					return RESULT_DONE;
+				
 				return RESULT_FAIL;
 			}
 			
