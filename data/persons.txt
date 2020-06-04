@@ -238,7 +238,7 @@ ship "Marauder Fury"
 		"heat dissipation" .85
 		"fuel capacity" 500
 		"cargo space" 15
-		"outfit space" 240
+		"outfit space" 254
 		"weapon capacity" 80
 		"engine capacity" 100
 		"ramscoop" 2
@@ -251,12 +251,12 @@ ship "Marauder Fury"
 		"Meteor Missile Launcher" 6
 		"Meteor Missile" 240
 
-		"D23-QP Shield Generator"
+		"D14-S Shield Generator"
 		"LP036a Battery Pack"
 		"Dwarf Core"
 		"Nerve Gas" 1
 		"Surveillance Pod"
-		"Water Coolant System"
+		"Water Coolant System MKI"
 		
 		"A250 Atomic Thruster"
 		"A375 Atomic Steering"
