@@ -581,7 +581,7 @@ ship "Modified Osprey"
 		"heat dissipation" .6
 		"fuel capacity" 625
 		"cargo space" 20
-		"outfit space" 625
+		"outfit space" 700
 		"weapon capacity" 150
 		"engine capacity" 230
 		"ramscoop" 2
@@ -595,7 +595,7 @@ ship "Modified Osprey"
 		"Plasma Cannon" 2
 		"Ion Cannon" 2
 
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Fusion Reactor"
 		"LP288a Battery Pack"
 		"Asteroid Scanner"
