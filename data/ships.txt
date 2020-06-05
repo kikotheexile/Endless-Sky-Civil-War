@@ -3012,7 +3012,7 @@ ship "Schooner"
 		"Fission Reactor"
 		"LP072a Battery Pack"
 		"Brig" 5
-		"Interference plating" 5
+		"Interference Plating" 5
 
 		"A370 Atomic Thruster"
 		"Impala Plasma Steering"
