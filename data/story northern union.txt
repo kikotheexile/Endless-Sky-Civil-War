@@ -1209,7 +1209,7 @@ mission "NU Marina 3b"
 			`	You manage to come to your feet and stand. The firefight was short and intense, and it looks like you missed it. Sally is behind the staff desk using the controls.`
 			`	"Ah, Comrade Captain!" she shouts, as you come to your feet. "I did not mean to knock you out, but the alternative was for you to get shot. Yes, yes, save your thanks for later. It is time for you to return to your ship!"`
 				goto end
-			label pointe
+			label jacke
 			`	Sally follows your lead, as Randy and Marina gather their teams and lead them to other areas of the station.`
 			`	As you move through the darkened station, it becomes very apparent that this was never designed to be a prison. The locking doors and their protective shields all appear to be makeshift, not unlike the custom brigs you can get installed at some outfitters.` 
 			`	The flashlights attached to your weapon lead you down a blackened hall, and eventually you pass into a common room with a staff desk. Your flashlight catches an emblem on the wall, and you can make out the word "Paragon," the same company that built many of the Caravan stations. There is no staff behind the desk.`
