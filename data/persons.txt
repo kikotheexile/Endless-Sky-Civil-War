@@ -118,7 +118,7 @@ person "Cap'n Pester"
 		
 			"Dwarf Core"
 			"LP144a Battery Pack"
-			"D14-RN Shield Generator"
+			"D14-XS Shield Generator"
 			"Liquid Nitrogen Cooler"
 			"Security Station" 3
 			"Laser Rifle" 8
