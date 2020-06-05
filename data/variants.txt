@@ -1459,8 +1459,36 @@ ship "Quicksilver" "Quicksilver (Scanner)"
 
 
 ship "Achlys" "Achlys (Mark II)"
+	attributes
+		category "Frigate"
+		licenses
+			Navy
+		"cost" 1580000
+		"shields" 3500
+		"hull" 1200
+		"hull repair rate" .1
+		"landing gear" 1
+		"required crew" 7
+		"bunks" 14
+		"mass" 80
+		"drag" 3.8
+		"heat dissipation" .6
+		"fuel capacity" 500
+		"cargo space" 25
+		"outfit space" 287
+		"weapon capacity" 116
+		"engine capacity" 50
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 200
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 200
+			"hit force" 600
 	outfits
-		"Sidewinder Missile Launcher" 4
+		"Ranger Missile Launcher" 4
 		"Sidewinder Missile" 180
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
@@ -1469,12 +1497,10 @@ ship "Achlys" "Achlys (Mark II)"
 		"A120 Atomic Thruster"
 		"A125 Atomic Steering"
 		"Scram Drive"
-	gun
-	gun
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 
 
 
