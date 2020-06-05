@@ -677,7 +677,7 @@ ship "Prototype Weapons Platform"
 		"Ionic Afterburner"
 		"Liquid Helium Cooler"
 		"Heavy Anti-Missile Turret" 4
-		"D94-YV Shield Generator"
+		"D14-XL Shield Generator"
 		"Scram Drive"
 		"Tactical Scanner"
 		"Proton Turret" 6
