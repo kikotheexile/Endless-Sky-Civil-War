@@ -820,7 +820,7 @@ ship "Berserker"
 		"fuel capacity" 400
 		"cargo space" 10
 		"outfit space" 200
-		"weapon capacity" 35
+		"weapon capacity" 44
 		"engine capacity" 65
 		"cloak" .02
 		"cloaking energy" 5
