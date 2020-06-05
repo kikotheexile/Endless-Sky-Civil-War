@@ -4206,6 +4206,7 @@ ship "Jumper"
 ship "Polevaulter"
 	sprite "ship/mboundere"
 	thumbnail "thumbnail/mboundere"
+	attributes
 		category "Gunship"
 		licenses
 			Marauder
