@@ -178,7 +178,7 @@ ship "Behemoth" "Behemoth (Heavy)"
 
 ship "Behemoth" "Behemoth (Proton)"
 	outfits
-		"Sidewinder Missile Launcher" 2
+		"Ranger Missile Launcher" 2
 		"Sidewinder Missile" 90
 		"Proton Turret" 4
 		"Heavy Anti-Missile Turret" 2
@@ -202,7 +202,7 @@ ship "Behemoth" "Behemoth (Proton)"
 
 ship "Behemoth" "Behemoth (Speedy)"
 	outfits
-		"Sidewinder Missile Launcher" 2
+		"Ranger Missile Launcher" 2
 		"Sidewinder Missile" 90
 		"Heavy Laser Turret" 6
 		"Breeder Reactor"
@@ -237,7 +237,7 @@ ship "Berserker" "Berserker (Strike)"
 	outfits
 		"Torpedo Launcher"
 		"Torpedo" 20
-		"Sidewinder Missile Launcher"
+		"Ranger Missile Launcher"
 		"Sidewinder Missile" 45
 		"nGVF-CC Fuel Cell"
 		"Supercapacitor"

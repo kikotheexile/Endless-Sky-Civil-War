@@ -1781,8 +1781,8 @@ ship "Behemoth"
 		"heat dissipation" .4
 		"fuel capacity" 600
 		"cargo space" 490
-		"outfit space" 510
-		"weapon capacity" 280
+		"outfit space" 540
+		"weapon capacity" 298
 		"engine capacity" 90
 		"atmosphere scan" 10
 		weapon
