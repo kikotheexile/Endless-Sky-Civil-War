@@ -456,7 +456,7 @@ ship "Lampyrid-Class Transport"
 	outfits
 		"S3 Thermionic"
 		"LP036a Battery Pack"
-		"D67-TM Shield Generator"
+		"D14-L Shield Generator"
 		"Large Radar Jammer"
 		"Ramscoop"
 	
