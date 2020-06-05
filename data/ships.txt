@@ -1512,8 +1512,8 @@ ship "Nest"
 		"heat dissipation" .67
 		"fuel capacity" 500
 		"cargo space" 40
-		"outfit space" 400
-		"weapon capacity" 140
+		"outfit space" 429
+		"weapon capacity" 168
 		"engine capacity" 80
 		"atmosphere scan" 10
 		weapon
@@ -1575,8 +1575,8 @@ ship "Roost"
 		"heat dissipation" .67
 		"fuel capacity" 600
 		"cargo space" 80
-		"outfit space" 450
-		"weapon capacity" 140
+		"outfit space" 479
+		"weapon capacity" 168
 		"engine capacity" 80
 		"atmosphere scan" 10
 		weapon
@@ -1643,8 +1643,8 @@ ship "Skein"
 		"heat dissipation" .71
 		"fuel capacity" 700
 		"cargo space" 120
-		"outfit space" 500
-		"weapon capacity" 140
+		"outfit space" 529
+		"weapon capacity" 168
 		"engine capacity" 80
 		"atmosphere scan" 10
 		weapon
@@ -2655,7 +2655,7 @@ ship "Challenger"
 		"heat dissipation" .7
 		"fuel capacity" 500
 		"cargo space" 40
-		"outfit space" 420
+		"outfit space" 425
 		"weapon capacity" 150
 		"engine capacity" 100
 		"atmosphere scan" 10
@@ -3144,8 +3144,8 @@ ship "Nomos"
 		"heat dissipation" .45
 		"fuel capacity" 600
 		"cargo space" 60
-		"outfit space" 760
-		"weapon capacity" 320
+		"outfit space" 790
+		"weapon capacity" 348
 		"engine capacity" 170
 		"atmosphere scan" 10
 		weapon
@@ -3420,8 +3420,8 @@ ship "Protector"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 50
-		"outfit space" 570
-		"weapon capacity" 220
+		"outfit space" 596
+		"weapon capacity" 250
 		"engine capacity" 100
 		"atmosphere scan" 10
 		weapon
@@ -3545,7 +3545,7 @@ ship "Vanguard"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 50
-		"outfit space" 560
+		"outfit space" 586
 		"weapon capacity" 220
 		"engine capacity" 120
 		"atmosphere scan" 10
