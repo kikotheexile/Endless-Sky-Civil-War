@@ -3359,10 +3359,10 @@ ship "Fury" "Doombat"
 	add attributes
 		"self destruct" 1
 	outfits
-		"Flamethrower" 4
+		#"Flamethrower" 4
 		"nGVF-BB Fuel Cell"
 		"Supercapacitor"
-		"D14-RN Shield Generator"
+		"D14-XS Shield Generator"
 		"Ramscoop"
 		"X2700 Ion Thruster"
 		"X2200 Ion Steering"

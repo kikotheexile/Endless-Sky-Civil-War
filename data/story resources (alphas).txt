@@ -46,19 +46,19 @@ ship "Unidentified Alpha Destroyer"
 		"Damaged N-Bomb Launcher"
 		"Alpha Repeater" 2
 		"Alpha Repeater Turret" 6
-		
+
 		"Advanced Plasma Core"
 		"Alpha Radiothermal Generator"
 		"Robotic Damage Control"
 		"Efficient Heat Sink" 3
-		
+
 		"Alpha Thruster"
 		"Alpha Steering"
 		"Hyperdrive"
-	
+
 	engine -24 132
 	engine 24 132
-	gun 0 -92 "N-Bomb Launcher"
+	gun 0 -92 #Damaged nbomb should go here, but it is not a weapon
 	gun -10 -65 "Alpha Repeater"
 	gun 10 -65 "Alpha Repeater"
 	turret -36 -45 "Alpha Repeater Turret"

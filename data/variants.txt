@@ -824,7 +824,7 @@ ship "Fury" "Fury (Bomber)"
 
 ship "Fury" "Fury (Flamethrower)"
 	outfits
-		"Flamethrower" 4
+		#"Flamethrower" 4 
 		"nGVF-BB Fuel Cell"
 		"Supercapacitor"
 		"D14-XS Shield Generator"
@@ -1688,7 +1688,6 @@ ship "Vanguard" "Vanguard (Missile)"
 		"Sidewinder Missile Rack" 5
 		"Heavy Rocket Launcher" 3
 		"Heavy Rocket" 120
-		"Heavy Rocket Storage Rack" 2
 		"Heavy Anti-Missile Turret"
 		"Fission Reactor"
 		"Supercapacitor"

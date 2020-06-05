@@ -3012,7 +3012,7 @@ ship "Schooner"
 		"Fission Reactor"
 		"LP072a Battery Pack"
 		"Brig" 5
-		"Interference plating" 5
+		"Interference Plating" 5
 
 		"A370 Atomic Thruster"
 		"Impala Plasma Steering"
@@ -3852,6 +3852,7 @@ ship "Prototype Vulture"
 			"hull damage" 200
 			"hit force" 600
 	outfits
+		"Beam Talon"
 		"Blaster Turret" 14
 		
 		"D14-XL Shield Generator"
@@ -3921,7 +3922,7 @@ ship "Veles"
 		"heat dissipation" 0.25
 		"fuel capacity" 1000
 		"cargo space" 350
-		"outfit space" 1420
+		"outfit space" 1586
 		"weapon capacity" 970
 		"engine capacity" 300
 		"atmosphere scan" 10
@@ -4205,6 +4206,7 @@ ship "Jumper"
 ship "Polevaulter"
 	sprite "ship/mboundere"
 	thumbnail "thumbnail/mboundere"
+	attributes
 		category "Gunship"
 		licenses
 			Marauder
@@ -4253,6 +4255,7 @@ ship "Polevaulter"
 ship "Pouncer"
 	sprite "ship/mbounderw"
 	thumbnail "thumbnail/mbounderw"
+	attributes
 		category "Gunship"
 		licenses
 			Marauder
