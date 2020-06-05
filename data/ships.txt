@@ -3922,7 +3922,7 @@ ship "Veles"
 		"heat dissipation" 0.25
 		"fuel capacity" 1000
 		"cargo space" 350
-		"outfit space" 1420
+		"outfit space" 1586
 		"weapon capacity" 970
 		"engine capacity" 300
 		"atmosphere scan" 10
