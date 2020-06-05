@@ -2922,7 +2922,7 @@ ship "Astraea"
 		"heat dissipation" .65
 		"fuel capacity" 600
 		"cargo space" 50
-		"outfit space" 525
+		"outfit space" 556
 		"weapon capacity" 190
 		"engine capacity" 120
 		"atmosphere scan" 10
