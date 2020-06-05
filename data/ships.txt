@@ -3054,8 +3054,8 @@ ship "Arete"
 		"heat dissipation" .45
 		"fuel capacity" 700
 		"cargo space" 100
-		"outfit space" 820
-		"weapon capacity" 370
+		"outfit space" 859
+		"weapon capacity" 384
 		"engine capacity" 210
 		"atmosphere scan" 10
 		weapon

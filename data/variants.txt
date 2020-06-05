@@ -320,7 +320,7 @@ ship "Bulk Freighter" "Bulk Freighter (Proton)"
 ship "Arete" "Arete (Jump)"
 	outfits
 		"Particle Cannon" 4
-		"Sidewinder Missile Launcher" 4
+		"Ranger Missile Launcher" 4
 		"Sidewinder Missile" 180
 		"Electron Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -342,12 +342,12 @@ ship "Arete" "Arete (Jump)"
 		"Jump Drive"
 	gun "Particle Cannon"
 	gun "Particle Cannon"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	gun "Particle Cannon"
 	gun "Particle Cannon"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	turret "Heavy Anti-Missile Turret"
 	turret "Electron Turret"
 	turret "Heavy Anti-Missile Turret"
@@ -357,7 +357,7 @@ ship "Arete" "Arete (Jump)"
 ship "Arete" "Arete (Mark II)"
 	outfits
 		"Particle Cannon" 4
-		"Sidewinder Missile Launcher" 4
+		"Ranger Missile Launcher" 4
 		"Sidewinder Missile" 180
 		"Electron Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -378,12 +378,12 @@ ship "Arete" "Arete (Mark II)"
 		"Hyperdrive"
 	gun "Particle Cannon"
 	gun "Particle Cannon"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	gun "Particle Cannon"
 	gun "Particle Cannon"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	turret "Heavy Anti-Missile Turret"
 	turret "Electron Turret"
 	turret "Heavy Anti-Missile Turret"
