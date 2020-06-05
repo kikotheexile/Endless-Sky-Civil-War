@@ -824,7 +824,7 @@ ship "Fury" "Fury (Bomber)"
 
 ship "Fury" "Fury (Flamethrower)"
 	outfits
-		"Flamethrower" 4
+		#"Flamethrower" 4 
 		"nGVF-BB Fuel Cell"
 		"Supercapacitor"
 		"D14-XS Shield Generator"
