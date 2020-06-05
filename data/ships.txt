@@ -2536,7 +2536,7 @@ ship "Aerie"
 	outfits
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 136
-		"Meteor Missile Rack" 2
+		"Meteor Missile Box" 2
 		"Heavy Laser Turret" 2
 		"Heavy Anti-Missile Turret"
 		
