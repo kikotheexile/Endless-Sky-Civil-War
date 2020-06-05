@@ -3852,6 +3852,7 @@ ship "Prototype Vulture"
 			"hull damage" 200
 			"hit force" 600
 	outfits
+		"Beam Talon"
 		"Blaster Turret" 14
 		
 		"D14-XL Shield Generator"
