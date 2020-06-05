@@ -4254,6 +4254,7 @@ ship "Polevaulter"
 ship "Pouncer"
 	sprite "ship/mbounderw"
 	thumbnail "thumbnail/mbounderw"
+	attributes
 		category "Gunship"
 		licenses
 			Marauder
