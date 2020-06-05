@@ -701,8 +701,8 @@ ship "Caravel"
 		"heat dissipation" .7
 		"fuel capacity" 800
 		"cargo space" 55
-		"outfit space" 220
-		"weapon capacity" 40
+		"outfit space" 232
+		"weapon capacity" 55
 		"engine capacity" 100
 		"cloak" .02
 		"cloaking energy" 5
