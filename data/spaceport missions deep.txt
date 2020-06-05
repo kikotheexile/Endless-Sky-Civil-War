@@ -2181,22 +2181,22 @@ mission "Deep: Scientist Rescue 2"
 
 
 
-ship "Bactrian" "Bactrian (Cosmic Devil)"
+ship "Bactrian" "Bactrian (Cosmic Devil)" #This is broken currently
 	outfits
-		"Inhibitor Cannon" 2
-		"Thrasher Turret" 4
-		"Point Defense Turret"
+		#"Inhibitor Cannon" 2
+		#"Thrasher Turret" 4
+		#"Point Defense Turret"
 		"Heavy Anti-Missile Turret"
-		"Boulder Reactor" 2
-		"Hai Ravine Batteries"
-		"Hai Chasm Batteries"
-		"Hai Diamond Regenerator"
+		#"Boulder Reactor" 2
+		#"Hai Ravine Batteries"
+		#"Hai Chasm Batteries"
+		#"Hai Diamond Regenerator"
 		"Liquid Helium Cooler"
 		"Outfits Expansion" 4
-		"Quantum Keystone"
+		#"Quantum Keystone"
 		"Ramscoop"
-		`"Bondir" Atomic Thruster`
-		`"Bufaer" Atomic Steering`
+		#`"Bondir" Atomic Thruster`
+		#`"Bufaer" Atomic Steering`
 		Hyperdrive
 
 

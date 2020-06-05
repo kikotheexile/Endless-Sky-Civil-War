@@ -154,7 +154,7 @@ ship "Bastion" "Bastion (Scanner)"
 ship "Behemoth" "Behemoth (Heavy)"
 	outfits
 		"Heavy Rocket Launcher" 2
-		Heavy Rocket 60
+		"Heavy Rocket" 60
 		"Quad Blaster Turret" 2
 		"Plasma Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -178,7 +178,7 @@ ship "Behemoth" "Behemoth (Heavy)"
 
 ship "Behemoth" "Behemoth (Proton)"
 	outfits
-		"Sidewinder Missile Launcher" 2
+		"Ranger Missile Launcher" 2
 		"Sidewinder Missile" 90
 		"Proton Turret" 4
 		"Heavy Anti-Missile Turret" 2
@@ -202,7 +202,7 @@ ship "Behemoth" "Behemoth (Proton)"
 
 ship "Behemoth" "Behemoth (Speedy)"
 	outfits
-		"Sidewinder Missile Launcher" 2
+		"Ranger Missile Launcher" 2
 		"Sidewinder Missile" 90
 		"Heavy Laser Turret" 6
 		"Breeder Reactor"
@@ -237,7 +237,7 @@ ship "Berserker" "Berserker (Strike)"
 	outfits
 		"Torpedo Launcher"
 		"Torpedo" 20
-		"Sidewinder Missile Launcher"
+		"Ranger Missile Launcher"
 		"Sidewinder Missile" 45
 		"nGVF-CC Fuel Cell"
 		"Supercapacitor"
@@ -320,7 +320,7 @@ ship "Bulk Freighter" "Bulk Freighter (Proton)"
 ship "Arete" "Arete (Jump)"
 	outfits
 		"Particle Cannon" 4
-		"Sidewinder Missile Launcher" 4
+		"Ranger Missile Launcher" 4
 		"Sidewinder Missile" 180
 		"Electron Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -342,12 +342,12 @@ ship "Arete" "Arete (Jump)"
 		"Jump Drive"
 	gun "Particle Cannon"
 	gun "Particle Cannon"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	gun "Particle Cannon"
 	gun "Particle Cannon"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	turret "Heavy Anti-Missile Turret"
 	turret "Electron Turret"
 	turret "Heavy Anti-Missile Turret"
@@ -357,7 +357,7 @@ ship "Arete" "Arete (Jump)"
 ship "Arete" "Arete (Mark II)"
 	outfits
 		"Particle Cannon" 4
-		"Sidewinder Missile Launcher" 4
+		"Ranger Missile Launcher" 4
 		"Sidewinder Missile" 180
 		"Electron Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -378,12 +378,12 @@ ship "Arete" "Arete (Mark II)"
 		"Hyperdrive"
 	gun "Particle Cannon"
 	gun "Particle Cannon"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	gun "Particle Cannon"
 	gun "Particle Cannon"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	turret "Heavy Anti-Missile Turret"
 	turret "Electron Turret"
 	turret "Heavy Anti-Missile Turret"
@@ -435,7 +435,7 @@ ship "Challenger" "Challenger (Missile)"
 	outfits
 		"Torpedo Launcher" 2
 		"Torpedo" 60
-		"Sidewinder Missile Launcher" 2
+		"Ranger Missile Launcher" 2
 		"Sidewinder Missile" 159
 		"Sidewinder Missile Rack" 3
 		"Heavy Anti-Missile Turret" 2
@@ -448,8 +448,8 @@ ship "Challenger" "Challenger (Missile)"
 		"A370 Atomic Thruster"
 		"A375 Atomic Steering"
 		"Hyperdrive"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	gun "Torpedo Launcher"
 	gun "Torpedo Launcher"
 
@@ -510,7 +510,7 @@ ship "Nomos" "Nomos (Jump)"
 	outfits
 		"Typhoon Launcher" 2
 		"Typhoon Torpedo" 60
-		"Sidewinder Missile Launcher" 4
+		"Ranger Missile Launcher" 4
 		"Sidewinder Missile" 180
 		"Electron Turret" 3
 		"Heavy Anti-Missile Turret"
@@ -529,12 +529,12 @@ ship "Nomos" "Nomos (Jump)"
 		"A520 Atomic Thruster"
 		"A525 Atomic Steering"
 		"Jump Drive"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	gun "Typhoon Launcher"
 	gun "Typhoon Launcher"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	turret "Electron Turret"
 	turret "Electron Turret"
 	turret "Electron Turret"
@@ -545,7 +545,7 @@ ship "Nomos" "Nomos (Mark II)"
 	outfits
 		"Typhoon Launcher" 2
 		"Typhoon Torpedo" 60
-		"Sidewinder Missile Launcher" 4
+		"Ranger Missile Launcher" 4
 		"Sidewinder Missile" 180
 		"Electron Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -563,10 +563,10 @@ ship "Nomos" "Nomos (Mark II)"
 		"A520 Atomic Thruster"
 		"A525 Atomic Steering"
 		"Hyperdrive"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 	gun "Typhoon Launcher"
 	gun "Typhoon Launcher"
 	turret "Heavy Anti-Missile Turret"
@@ -1220,7 +1220,7 @@ ship "Manta" "Manta (Proton)"
 
 
 
-ship "Modified Argosy" "Modified Argosy (Blaster)"
+ship "Odyssey" "Odyssey (Blaster)"
 	outfits
 		"Modified Blaster" 4
 		"Quad Blaster Turret"
@@ -1237,7 +1237,7 @@ ship "Modified Argosy" "Modified Argosy (Blaster)"
 		"Hyperdrive"
 
 
-ship "Modified Argosy" "Modified Argosy (Heavy)"
+ship "Odyssey" "Odyssey (Heavy)"
 	outfits
 		"Heavy Laser" 4
 		"Heavy Laser Turret"
@@ -1253,7 +1253,7 @@ ship "Modified Argosy" "Modified Argosy (Heavy)"
 		"Hyperdrive"
 
 
-ship "Modified Argosy" "Modified Argosy (Missile)"
+ship "Odyssey" "Odyssey (Missile)"
 	outfits
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 105
@@ -1273,7 +1273,7 @@ ship "Modified Argosy" "Modified Argosy (Missile)"
 		"Hyperdrive"
 
 
-ship "Modified Argosy" "Modified Argosy (Smuggler)"
+ship "Odyssey" "Odyssey (Smuggler)"
 	outfits
 		"Beam Laser" 4
 		"Heavy Laser Turret"
@@ -1291,7 +1291,7 @@ ship "Modified Argosy" "Modified Argosy (Smuggler)"
 
 ship "Mule" "Mule (Heavy)"
 	outfits
-		"Sidewinder Missile Launcher"
+		"Ranger Missile Launcher"
 		"Sidewinder Missile" 45
 		"Heavy Laser Turret" 3
 		"Heavy Anti-Missile Turret"
@@ -1311,7 +1311,7 @@ ship "Mule" "Mule (Heavy)"
 
 ship "Nest" "Nest (Sidewinder)"
 	outfits
-		"Sidewinder Missile Launcher" 2
+		"Ranger Missile Launcher" 2
 		"Sidewinder Missile" 90
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -1375,7 +1375,7 @@ ship "Osprey" "Osprey (Missile)"
 
 ship "Protector" "Protector (Laser)"
 	outfits
-		"Sidewinder Missile Launcher" 2
+		"Ranger Missile Launcher" 2
 		"Sidewinder Missile" 90
 		"Anti-Missile Turret" 2
 		"Heavy Laser Turret" 4
@@ -1459,8 +1459,36 @@ ship "Quicksilver" "Quicksilver (Scanner)"
 
 
 ship "Achlys" "Achlys (Mark II)"
+	attributes
+		category "Frigate"
+		licenses
+			Navy
+		"cost" 1580000
+		"shields" 3500
+		"hull" 1200
+		"hull repair rate" .1
+		"landing gear" 1
+		"required crew" 7
+		"bunks" 14
+		"mass" 80
+		"drag" 3.8
+		"heat dissipation" .6
+		"fuel capacity" 500
+		"cargo space" 25
+		"outfit space" 287
+		"weapon capacity" 116
+		"engine capacity" 50
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 200
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 200
+			"hit force" 600
 	outfits
-		"Sidewinder Missile Launcher" 4
+		"Ranger Missile Launcher" 4
 		"Sidewinder Missile" 180
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
@@ -1469,12 +1497,10 @@ ship "Achlys" "Achlys (Mark II)"
 		"A120 Atomic Thruster"
 		"A125 Atomic Steering"
 		"Scram Drive"
-	gun
-	gun
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 
 
 
@@ -1512,7 +1538,7 @@ ship "Raven" "Raven (Heavy)"
 
 ship "Roost" "Roost (Sidewinder)"
 	outfits
-		"Sidewinder Missile Launcher" 2
+		"Ranger Missile Launcher" 2
 		"Sidewinder Missile" 90
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -1531,7 +1557,7 @@ ship "Caravel" "Caravel (Speedy)"
 	outfits
 		"Meteor Missile Launcher"
 		"Meteor Missile" 30
-		"Sidewinder Missile Launcher"
+		"Ranger Missile Launcher"
 		"Sidewinder Missile" 45
 		"Anti-Missile Turret"
 		"NT-200 Nucleovoltaic"
@@ -1547,7 +1573,7 @@ ship "Caravel" "Caravel (Speedy)"
 
 ship "Skein" "Skein (Sidewinder)"
 	outfits
-		"Sidewinder Missile Launcher" 2
+		"Ranger Missile Launcher" 2
 		"Sidewinder Missile" 90
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
@@ -1657,7 +1683,7 @@ ship "Star Barge" "Star Barge (Armed)"
 
 ship "Vanguard" "Vanguard (Missile)"
 	outfits
-		"Sidewinder Missile Launcher" 4
+		"Ranger Missile Launcher" 4
 		"Sidewinder Missile" 295
 		"Sidewinder Missile Rack" 5
 		"Heavy Rocket Launcher" 3
@@ -1677,10 +1703,10 @@ ship "Vanguard" "Vanguard (Missile)"
 	gun "Heavy Rocket Launcher"
 	gun "Heavy Rocket Launcher"
 	gun "Heavy Rocket Launcher"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
-	gun "Sidewinder Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
+	gun "Ranger Missile Launcher"
 
 
 ship "Vanguard" "Vanguard (Particle)"

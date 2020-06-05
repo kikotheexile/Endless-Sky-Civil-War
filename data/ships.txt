@@ -701,8 +701,8 @@ ship "Caravel"
 		"heat dissipation" .7
 		"fuel capacity" 800
 		"cargo space" 55
-		"outfit space" 220
-		"weapon capacity" 40
+		"outfit space" 232
+		"weapon capacity" 55
 		"engine capacity" 100
 		"cloak" .02
 		"cloaking energy" 5
@@ -820,7 +820,7 @@ ship "Berserker"
 		"fuel capacity" 400
 		"cargo space" 10
 		"outfit space" 200
-		"weapon capacity" 35
+		"weapon capacity" 44
 		"engine capacity" 65
 		"cloak" .02
 		"cloaking energy" 5
@@ -1512,8 +1512,8 @@ ship "Nest"
 		"heat dissipation" .67
 		"fuel capacity" 500
 		"cargo space" 40
-		"outfit space" 400
-		"weapon capacity" 140
+		"outfit space" 429
+		"weapon capacity" 168
 		"engine capacity" 80
 		"atmosphere scan" 10
 		weapon
@@ -1575,8 +1575,8 @@ ship "Roost"
 		"heat dissipation" .67
 		"fuel capacity" 600
 		"cargo space" 80
-		"outfit space" 450
-		"weapon capacity" 140
+		"outfit space" 479
+		"weapon capacity" 168
 		"engine capacity" 80
 		"atmosphere scan" 10
 		weapon
@@ -1643,8 +1643,8 @@ ship "Skein"
 		"heat dissipation" .71
 		"fuel capacity" 700
 		"cargo space" 120
-		"outfit space" 500
-		"weapon capacity" 140
+		"outfit space" 529
+		"weapon capacity" 168
 		"engine capacity" 80
 		"atmosphere scan" 10
 		weapon
@@ -1781,8 +1781,8 @@ ship "Behemoth"
 		"heat dissipation" .4
 		"fuel capacity" 600
 		"cargo space" 490
-		"outfit space" 510
-		"weapon capacity" 280
+		"outfit space" 540
+		"weapon capacity" 298
 		"engine capacity" 90
 		"atmosphere scan" 10
 		weapon
@@ -2536,7 +2536,7 @@ ship "Aerie"
 	outfits
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 136
-		"Meteor Missile Rack" 2
+		"Meteor Missile Box" 2
 		"Heavy Laser Turret" 2
 		"Heavy Anti-Missile Turret"
 		
@@ -2655,7 +2655,7 @@ ship "Challenger"
 		"heat dissipation" .7
 		"fuel capacity" 500
 		"cargo space" 40
-		"outfit space" 420
+		"outfit space" 425
 		"weapon capacity" 150
 		"engine capacity" 100
 		"atmosphere scan" 10
@@ -2922,7 +2922,7 @@ ship "Astraea"
 		"heat dissipation" .65
 		"fuel capacity" 600
 		"cargo space" 50
-		"outfit space" 525
+		"outfit space" 556
 		"weapon capacity" 190
 		"engine capacity" 120
 		"atmosphere scan" 10
@@ -3054,8 +3054,8 @@ ship "Arete"
 		"heat dissipation" .45
 		"fuel capacity" 700
 		"cargo space" 100
-		"outfit space" 820
-		"weapon capacity" 370
+		"outfit space" 859
+		"weapon capacity" 384
 		"engine capacity" 210
 		"atmosphere scan" 10
 		weapon
@@ -3144,8 +3144,8 @@ ship "Nomos"
 		"heat dissipation" .45
 		"fuel capacity" 600
 		"cargo space" 60
-		"outfit space" 760
-		"weapon capacity" 320
+		"outfit space" 790
+		"weapon capacity" 348
 		"engine capacity" 170
 		"atmosphere scan" 10
 		weapon
@@ -3420,8 +3420,8 @@ ship "Protector"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 50
-		"outfit space" 570
-		"weapon capacity" 220
+		"outfit space" 596
+		"weapon capacity" 250
 		"engine capacity" 100
 		"atmosphere scan" 10
 		weapon
@@ -3545,7 +3545,7 @@ ship "Vanguard"
 		"heat dissipation" .6
 		"fuel capacity" 400
 		"cargo space" 50
-		"outfit space" 560
+		"outfit space" 586
 		"weapon capacity" 220
 		"engine capacity" 120
 		"atmosphere scan" 10

@@ -120,7 +120,7 @@ mission "Republic Bounty 3"
 			`	"A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, they have made it clear they will kill the hostages if approached by one of our ships, we're calling his bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If he kills the hostages, he wont be able to blame the Republic for it."`
 			choice
 				`	"Don't worry, I majored in Crisis Aversion at University."`
-				`	"I'm in."`"
+				`	"I'm in."`
 					accept
 				`	"I'm sorry, but that's definetly above my pay grade."`
 					decline
