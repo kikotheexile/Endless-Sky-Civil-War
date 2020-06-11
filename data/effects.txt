@@ -8,6 +8,9 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+effect "finisher impact"
+	#Placeholder effect for use in the beam talon
+
 effect "jump drive"
 	sprite "effect/jump drive"
 		"no repeat"
