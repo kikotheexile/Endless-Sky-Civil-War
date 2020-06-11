@@ -1518,13 +1518,13 @@ event "death of nguyen"
 
 
 
-event "dreadnoughts for sale"
+event "Elpis for sale"
 	shipyard "Southbound Advanced"
 		"Elpis"
 
 
 
-event "dreadnought deployment"
+event "Elpis deployment"
 	fleet "Large Free Worlds"
 		government "Free Worlds"
 		names "free worlds capital"
