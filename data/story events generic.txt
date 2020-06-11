@@ -13,6 +13,15 @@ event "remembrance day"
 
 
 
+
+event "defected: free worlds"
+	#Placeholder empty mission
+
+event "fw tarazed joins"
+	#Placeholder empty mission
+
+
+
 mission "remembrance day"
 	landing
 	source
