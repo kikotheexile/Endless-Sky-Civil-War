@@ -495,7 +495,7 @@ fleet "Large Northern Merchants"
 		"Freighter" 3
 		"Corvette (Missile)"
 	variant 1
-		"Freighter (Hai)" 2
+		"Freighter" 2 #(Hai)
 		"Corvette"
 	variant 6
 		"Freighter" 4
@@ -507,7 +507,7 @@ fleet "Large Northern Merchants"
 		"Freighter" 4
 		"Leviathan (Laser)"
 	variant 1
-		"Freighter (Hai)" 4
+		"Freighter" 4 #(Hai)
 		"Leviathan"
 	variant 30
 		"Behemoth"
@@ -520,7 +520,7 @@ fleet "Large Northern Merchants"
 	variant 10
 		"Behemoth" 2
 	variant 1
-		"Behemoth (Hai)"
+		"Behemoth" #(Hai)
 	variant 4
 		"Behemoth"
 		"Headhunter" 2
@@ -567,7 +567,7 @@ fleet "Large Northern Merchants"
 		"Sparrow" 2
 		"Firebird (Plasma)" 1
 	variant 1
-		"Freighter (Hai)" 4
+		"Freighter" #(Hai)
 		"Sparrow" 2
 		"Firebird" 1
 	variant 2
@@ -623,18 +623,18 @@ fleet "Small Human Merchants (Hai)"
 	variant 30
 		"Freighter"
 	variant 10
-		"Freighter (Hai)"
+		"Freighter" #(Hai)
 	variant 20
 		"Freighter"
 		"Heavy Shuttle" 4
 	variant 6
-		"Freighter (Hai)"
+		"Freighter" #(Hai)
 		"Berserker"
 	variant 3
 		"Freighter"
 		"Berserker (Afterburner)"
 	variant 5
-		"Freighter (Hai)"
+		"Freighter" #(Hai)
 		"Heavy Shuttle" 4
 	variant 10
 		"Freighter" 3
@@ -642,18 +642,18 @@ fleet "Small Human Merchants (Hai)"
 	variant 2
 		"Bounder"
 	variant 2
-		"Bounder (Hai)"
+		"Bounder" #(Hai)
 	variant 3
 		"Flivver"
 	variant 2
-		"Flivver (Hai)"
+		"Flivver" #(Hai)
 	variant 4
-		"Hauler II (Hai)"
+		"Hauler II" #(Hai)
 	variant 3
 		"Hauler"
 	variant 2
 		"Hauler II"
-		"Hauler (Hai)"
+		"Hauler" #(Hai)
 	variant 1
 		"Heavy Shuttle"
 		"Aphid"
@@ -670,25 +670,25 @@ fleet "Large Human Merchants (Hai)"
 		disables plunders coward appeasing
 	variant 20
 		"Freighter" 2
-		"Firebird (Hai Shields)"
+		"Firebird" #(Hai Shields)
 	variant 6
-		"Freighter (Hai)" 2
+		"Freighter" 2 #(Hai)
 		"Berserker" 2
 	variant 3
-		"Freighter (Hai)" 2
+		"Freighter" 2 #(Hai)
 		"Berserker (Afterburner)" 2
 	variant 10
 		"Freighter" 2
-		"Firebird (Hai Weapons)"
+		"Firebird" #(Hai Weapons)
 	variant 10
-		"Freighter (Hai)" 2
+		"Freighter" 2 #(Hai)
 		"Firebird (Missile)"
 	variant 10
-		"Freighter (Hai)" 3
+		"Freighter" 3 #(Hai)
 		"Firebird"
 	variant 2
 		"Freighter" 3
-		"Firebird (Hai Weapons)"
+		"Firebird" #(Hai Weapons)"
 	variant 2
 		"Freighter" 3
 		"Firebird (Missile)"
@@ -697,43 +697,43 @@ fleet "Large Human Merchants (Hai)"
 		"Corvette"
 	variant 10
 		"Freighter" 2
-		"Corvette (Hai)"
+		"Corvette" #(Hai)
 	variant 10
-		"Freighter (Hai)" 2
+		"Freighter" 2 #(Hai)
 		"Corvette (Missile)"
 	variant 10
 		"Freighter" 3
 		"Corvette"
 	variant 3
-		"Freighter (Hai)" 3
-		"Corvette (Hai)"
+		"Freighter" 3 #(Hai)
+		"Corvette" #(Hai)
 	variant 6
-		"Freighter (Hai)" 4
+		"Freighter" 4 #(Hai)
 		"Leviathan"
 	variant 6
 		"Freighter" 4
-		"Leviathan (Hai Weapons)"
+		"Leviathan" #(Hai Weapons)
 	variant 6
-		"Freighter (Hai)" 4
-		"Leviathan (Hai Engines)"
+		"Freighter" 4 #(Hai)
+		"Leviathan" #(Hai Engines)
 	variant 30
 		"Behemoth"
 	variant 10
-		"Behemoth (Hai)"
+		"Behemoth" #(Hai)
 	variant 10
 		"Behemoth" 2
 	variant 4
-		"Behemoth (Hai)"
-		"Headhunter (Hai)" 2
+		"Behemoth" #(Hai)
+		"Headhunter" 2 #(Hai)
 	variant 2
 		"Behemoth"
-		"Headhunter (Hai)" 2
+		"Headhunter" 2 #(Hai)
 	variant 4
-		"Bulk Freighter (Hai)"
+		"Bulk Freighter" #(Hai)
 		"Headhunter" 2
 	variant 2
-		"Bulk Freighter (Hai)"
-		"Headhunter (Hai)" 2
+		"Bulk Freighter" #(Hai)
+		"Headhunter" 2 #(Hai)
 	variant 10
 		"Bulk Freighter"
 		"Sparrow" 2
@@ -741,19 +741,19 @@ fleet "Large Human Merchants (Hai)"
 		"Bulk Freighter (Heavy)"
 		"Sparrow" 2
 	variant 2
-		"Bulk Freighter (Hai)"
+		"Bulk Freighter" #(Hai)
 		"Berserker" 2
 	variant 2
-		"Bulk Freighter (Hai)"
+		"Bulk Freighter" #(Hai)
 		"Berserker (Afterburner)" 2
 	variant 4
 		"Bulk Freighter (Blaster)"
 		"Sparrow" 2
 	variant 10
 		"Behemoth" 2
-		"Firebird (Hai Weapons)" 1
+		"Firebird" #(Hai Weapons)
 	variant 10
-		"Freighter (Hai)" 4
+		"Freighter" 4 #(Hai)
 		"Sparrow" 2
 		"Firebird" 1
 	variant 3
@@ -761,9 +761,9 @@ fleet "Large Human Merchants (Hai)"
 		"Sparrow" 2
 		"Firebird (Plasma)" 1
 	variant 2
-		"Arrow (Hai)"
+		"Arrow" #(Hai)
 	variant 1
-		"Star Queen (Hai)"
+		"Star Queen" #(Hai)
 		"Leviathan"
 	variant 1
 		"Star Queen"
@@ -772,7 +772,7 @@ fleet "Large Human Merchants (Hai)"
 		"Star Queen"
 		"Berserker (Afterburner)" 2
 	variant 1
-		"Star Queen (Hai)"
+		"Star Queen" #(Hai)
 		"Leviathan (Heavy)"
 	variant 1
 		"Star Queen"
@@ -781,30 +781,30 @@ fleet "Large Human Merchants (Hai)"
 		"Star Queen"
 		"Firebird" 2
 	variant 1
-		"Star Queen (Hai)"
+		"Star Queen" #(Hai)
 		"Firebird (Plasma)" 2
 	variant 8
 		"Hauler III"
-		"Hauler II (Hai)"
+		"Hauler II" #(Hai)
 	variant 6
 		"Hauler II"
-		"Hauler (Hai)" 3
+		"Hauler" #(Hai)
 	variant 4
 		"Hauler III" 2
 	variant 4
-		"Hauler III (Hai)"
+		"Hauler III" #(Hai)
 		"Hauler II"
-		"Headhunter (Hai)" 3
+		"Headhunter" #(Hai)
 	variant 3
 		"Aphid" 2
 		"Sparrow" 2
-		"Firebird (Plasma)" 1
+		"Firebird (Plasma)" 
 	variant 2
 		"Hauler II" 2
 		"Water Bug"
 	variant 1
 		"Water Bug" 2
-		"Firebird (Hai Weapons)" 1
+		"Firebird" #(Hai Weapons)"
 	variant 3
 		"Aphid" 3
 	variant 2
@@ -2131,7 +2131,7 @@ fleet "Northern Union Merchants"
 		"Freighter" 3
 		"Corvette (Missile)"
 	variant 1
-		"Freighter (Hai)" 2
+		"Freighter" 2 #(Hai)
 		"Corvette"
 	variant 6
 		"Freighter" 4
@@ -2143,7 +2143,7 @@ fleet "Northern Union Merchants"
 		"Freighter" 4
 		"Leviathan (Laser)"
 	variant 1
-		"Freighter (Hai)" 4
+		"Freighter" 4 #(Hai)
 		"Leviathan"
 	variant 30
 		"Behemoth"
@@ -2156,7 +2156,7 @@ fleet "Northern Union Merchants"
 	variant 10
 		"Behemoth" 2
 	variant 1
-		"Behemoth (Hai)"
+		"Behemoth" #(Hai)
 	variant 4
 		"Behemoth"
 		"Headhunter" 2
@@ -2203,7 +2203,7 @@ fleet "Northern Union Merchants"
 		"Sparrow" 2
 		"Firebird (Plasma)" 1
 	variant 1
-		"Freighter (Hai)" 4
+		"Freighter" 4 #(Hai)
 		"Sparrow" 2
 		"Firebird" 1
 	variant 2
