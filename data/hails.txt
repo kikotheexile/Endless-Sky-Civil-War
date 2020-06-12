@@ -3427,6 +3427,6 @@ phrase "hostile cowboy"
 	word
 		"You've Yee'd your last Haw!"
 		"Do ya' feel lucky, punk?"
-phrase "hostile disabled cowboy"
+phrase "disabled hostile cowboy"
 	word
 		"Don't sit around waiting, finish it."
