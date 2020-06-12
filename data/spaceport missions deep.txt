@@ -617,7 +617,7 @@ mission "Deep: Mystery Cubes 4"
 			variant
 				"Cruiser" 3
 				"Marauder Leviathan"
-				"Leviathan (Hai Engines)"
+				"Leviathan" #Originally a Hai Engines Variant
 				"Headhunter (Particle)" 3
 				"Firebird (Plasma)" 2
 				"Marauder Firebird (Weapons)" 2
@@ -1327,7 +1327,7 @@ mission "Deep: Remnant 0"
 	on visit
 		dialog `You do not have the 10 Quantum Keystones that Ivan asked you to purchase in Hai space. You should return here after obtaining them.`
 	on complete
-		outfit "Quantum Keystone" -10
+		#outfit "Quantum Keystone" -10
 		event "deep: keystone research" 14
 		payment 60000
 		log `Ran into the scientists who are investigating the anomaly in Terminus. Gave them ten Quantum Keystones from Hai space to examine.`
@@ -1382,7 +1382,7 @@ mission "Deep: Remnant 1A"
 	on offer
 		conversation "deep: remnant"
 	on accept
-		outfit "Quantum Keystone" 1
+		#outfit "Quantum Keystone" 1
 	on enter "Arculus"
 		dialog `This region of space appears to be inhabited. You should attempt to find out more about the beings living here.`
 	on enter "Nenia"
@@ -1735,8 +1735,8 @@ mission "Deep: Remnant: Inhibitor Cannon"
 		set "Deep: Remnant Research: done"
 	on visit
 		dialog `You have landed on <planet>, but you do not have an Inhibitor Cannon. Return to <planet> once you have the weapon.`
-	on complete
-		outfit "Inhibitor Cannon" -1
+	#on complete
+	#	outfit "Inhibitor Cannon" -1
 
 
 
@@ -1937,8 +1937,8 @@ mission "Deep: Scientist Rescue 0: Pirates"
 		government "Pirate"
 		personality nemesis staying
 		system Arneb
-		ship "Leviathan (Hai Engines)" "Barbas"
-		ship "Leviathan (Hai Engines)" "Barbatos"
+		ship "Leviathan" "Barbas" #Originally a Hai Engines Variant
+		ship "Leviathan" "Barbatos" #Originally a Hai Engines Variant
 
 
 
@@ -2048,10 +2048,10 @@ mission "Deep: Scientist Rescue 1: Pirates"
 		government "Pirate"
 		personality nemesis staying
 		system "Arneb"
-		ship "Firebird (Hai Shields)" "Murmur"
-		ship "Firebird (Hai Shields)" "Ronove"
-		ship "Headhunter (Hai)" "Naberius"
-		ship "Headhunter (Hai)" "Zozo"
+		ship "Firebird" "Murmur" #Originally a Hai Shields Variant
+		ship "Firebird" "Ronove"#Originally a Hai Shields Variant
+		ship "Headhunter" "Naberius"#Originally a Hai Variant
+		ship "Headhunter" "Zozo" #Originally a Hai Variant
 
 
 
@@ -2232,8 +2232,8 @@ mission "Deep: Scientist Rescue 2: More Pirates"
 	npc kill
 		government "Pirate"
 		personality staying nemesis
-		ship "Leviathan (Hai Weapons)" "Furfur"
-		ship "Leviathan (Hai Weapons)" "Pithius"
+		ship "Leviathan" "Furfur" #Originally a Hai Weapons Variant
+		ship "Leviathan" "Pithius" #Originally a Hai Weapons Variant
 
 
 

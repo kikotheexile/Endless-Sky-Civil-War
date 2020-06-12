@@ -8,6 +8,14 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+fleet "Caravan Large"
+	government Author
+	#Placeholder large caravan fleet
+
+fleet "Caravan Small"
+	government Author
+	#Placeholder small caravan fleet
+
 fleet "Small Southern Merchants"
 	government "Merchant"
 	names "civilian"
