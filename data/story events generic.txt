@@ -13,6 +13,15 @@ event "remembrance day"
 
 
 
+
+event "defected: free worlds"
+	#Placeholder empty mission
+
+event "fw tarazed joins"
+	#Placeholder empty mission
+
+
+
 mission "remembrance day"
 	landing
 	source
@@ -1518,13 +1527,13 @@ event "death of nguyen"
 
 
 
-event "dreadnoughts for sale"
+event "Elpis for sale"
 	shipyard "Southbound Advanced"
 		"Elpis"
 
 
 
-event "dreadnought deployment"
+event "Elpis deployment"
 	fleet "Large Free Worlds"
 		government "Free Worlds"
 		names "free worlds capital"

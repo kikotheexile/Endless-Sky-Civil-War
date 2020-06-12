@@ -335,70 +335,71 @@ person "Captain Nate"
 			"Did you know that you can hail a ship over and over again and you'll get a different reply each time?"
 			"Don't you have a cargo of antique grandfather clocks or something to deliver somewhere?"
 			"Need as well as greed have followed us to the stars, and the rewards of wealth still await those wise enough to recognize this deep thrumming of our common pulse."
+	ship "Vanguard (Pointedstick)" "Pointedstick"
 	
-	ship Vanguard "Pointedstick"
-		sprite "ship/pointedstick_vanguard"
-		attributes
-			category "Heavy Warship"
-			"cost" 7200000
-			"shields" 20000
-			"hull" 8000
-			"required crew" 23
-			"bunks" 45
-			"mass" 500
-			"drag" 8
-			"heat dissipation" .6
-			"fuel capacity" 400
-			"cargo space" 50
-			"outfit space" 1215
-			"weapon capacity" 450
-			"engine capacity" 330
-			weapon
-				"blast radius" 160
-				"shield damage" 1600
-				"hull damage" 800
-				"hit force" 2400
-		outfits
-			"Proton Gun" 11
-			"Heavy Rocket Launcher" 4
-			"Heavy Rocket" 400
-			"Anti-Missile Turret"
-			
-			"Armageddon Core" 2
-			"KP-6 Photovoltaic Array" 4
-			"LP072a Battery Pack"
-			"D67-TM Shield Generator" 2
-			"Liquid Helium Cooler" 2
-			
-			"A860 Atomic Thruster"
-			"A865 Atomic Steering"
-			"Ionic Afterburner"
-			"Hyperdrive"
+ship "Vanguard (Pointedstick)"
+	sprite "ship/pointedstick_vanguard"
+	attributes
+		category "Heavy Warship"
+		"cost" 7200000
+		"shields" 20000
+		"hull" 8000
+		"required crew" 23
+		"bunks" 45
+		"mass" 500
+		"drag" 8
+		"heat dissipation" .6
+		"fuel capacity" 400
+		"cargo space" 50
+		"outfit space" 1215
+		"weapon capacity" 450
+		"engine capacity" 330
+		weapon
+			"blast radius" 160
+			"shield damage" 1600
+			"hull damage" 800
+			"hit force" 2400
+	outfits
+		"Proton Gun" 11
+		"Heavy Rocket Launcher" 4
+		"Heavy Rocket" 400
+		"Anti-Missile Turret"
 		
-		engine 0 130
-		engine -31 128 .7
-		engine 31 128 .7
-		gun 0 -132 "Proton Gun"
-		gun 0 -132 "Proton Gun"
-		gun 0 -132 "Proton Gun"
-		gun -22 -122 "Proton Gun"
-		gun -22 -122 "Proton Gun"
-		gun 22 -122 "Proton Gun"
-		gun 22 -122 "Proton Gun"
-		gun -21 -45 "Proton Gun"
-		gun -21 -45 "Proton Gun"
-		gun 21 -45 "Proton Gun"
-		gun 21 -45 "Proton Gun"
-		gun -31 -45 "Heavy Rocket Launcher"
-		gun -31 -45 "Heavy Rocket Launcher"
-		gun 31 -45 "Heavy Rocket Launcher"
-		gun 31 -45 "Heavy Rocket Launcher"
-		turret 0 42 "Anti-Missile Turret"
-		explode "tiny explosion" 18
-		explode "small explosion" 36
-		explode "medium explosion" 24
-		explode "large explosion" 8
-		"final explode" "final explosion large"
+		"Armageddon Core" 2
+		"KP-6 Photovoltaic Array" 4
+		"LP072a Battery Pack"
+		"D14-L Shield Generator" 2
+		"Liquid Helium Cooler" 2
+		
+		"A860 Atomic Thruster"
+		"A865 Atomic Steering"
+		"Ionic Afterburner"
+		"Hyperdrive"
+	
+	engine 0 130
+	engine -31 128 .7
+	engine 31 128 .7
+	gun 0 -132 "Proton Gun"
+	gun 0 -132 "Proton Gun"
+	gun 0 -132 "Proton Gun"
+	gun -22 -122 "Proton Gun"
+	gun -22 -122 "Proton Gun"
+	gun 22 -122 "Proton Gun"
+	gun 22 -122 "Proton Gun"
+	gun -21 -45 "Proton Gun"
+	gun -21 -45 "Proton Gun"
+	gun 21 -45 "Proton Gun"
+	gun 21 -45 "Proton Gun"
+	gun -31 -45 "Heavy Rocket Launcher"
+	gun -31 -45 "Heavy Rocket Launcher"
+	gun 31 -45 "Heavy Rocket Launcher"
+	gun 31 -45 "Heavy Rocket Launcher"
+	turret 0 42 "Anti-Missile Turret"
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion large"
 
 
 
