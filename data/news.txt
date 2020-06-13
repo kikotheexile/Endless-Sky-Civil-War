@@ -142,7 +142,7 @@ news "advertisement Challenger"
 		word
 			"Lionheart"
 	portrait
-		portrait/Challenger
+		portrait/corvette
 	message
 		word
 			"The Lionheart Challenger, because sometimes speed is the only answer."

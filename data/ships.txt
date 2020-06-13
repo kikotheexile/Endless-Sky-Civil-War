@@ -2639,8 +2639,8 @@ ship "Bastion"
 
 
 ship "Challenger"
-	sprite "ship/Challenger"
-	thumbnail "thumbnail/Challenger"
+	sprite "ship/corvette"
+	thumbnail "thumbnail/corvette"
 	attributes
 		category "Destroyer"
 		"cost" 4400000
