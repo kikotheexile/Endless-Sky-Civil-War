@@ -135,7 +135,7 @@ news "advertisement aerie"
 			"Talk to your planetary governor about the Lionheart Aerie!"
 			"Northern Union got you down? Grab an Aerie!"
 			
-news "advertisement corvette"
+news "advertisement Challenger"
 	location
 		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Deep"
 	name
@@ -145,11 +145,11 @@ news "advertisement corvette"
 		portrait/corvette
 	message
 		word
-			"The Lionheart Corvette, because sometimes speed is the only answer."
-			"There is no speed limit in space. Lionheart Corvette."
-			"Buy a Lionheart Corvette. Turning is for losers."
-			"Outrun your feelings in the Lionheart Corvette!"
-			"It's only a midlife crisis if your wife can catch you. Outrun your problems in a Lionheart Corvette!"
+			"The Lionheart Challenger, because sometimes speed is the only answer."
+			"There is no speed limit in space. Lionheart Challenger."
+			"Buy a Lionheart Challenger. Turning is for losers."
+			"Outrun your feelings in the Lionheart Challenger!"
+			"It's only a midlife crisis if your wife can catch you. Outrun your problems in a Lionheart Challenger!"
 			
 news "advertisement raven"
 	location
@@ -584,8 +584,8 @@ news "advertisement splinter"
 		portrait/splinter
 	message
 		word
-			"Faster than a Corvette and twice as sexy! The Megaparsec Splinter!"
-			"Challenge a Corvette to a drag race and win in your new Megaparsec Splinter!"
+			"Faster than a Challenger and twice as sexy! The Megaparsec Splinter!"
+			"Challenge a Challenger to a drag race and win in your new Megaparsec Splinter!"
 			"An excellent escort, with room to haul cargo! The speedy Megaparsec Splinter!"
 			"Speed is everything, prove it in your Megaparsec Splinter!"
 			

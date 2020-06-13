@@ -168,7 +168,7 @@ mission "DSF"
 		ship "Challenger" "D.S.S. Mjolnir"
 		ship "Challenger" "D.S.S. Dainsleif"		
 		fleet
-			names "republic fighters"
+			names "republic fighter"
 			variant
 				Dagger 28
 	on complete

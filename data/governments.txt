@@ -116,8 +116,6 @@ government "Hai"
 		"Merchant" .01
 	"bribe" .02
 	"fine" 0
-	"friendly hail" "friendly hai"
-	"hostile hail" "hostile hai"
 
 government "Hai (Unfettered)"
 	color .69 .33 .82
@@ -130,14 +128,10 @@ government "Hai (Unfettered)"
 		"Kor Efret" -.01
 	"bribe" .02
 	"fine" 0
-	"friendly hail" "friendly unfettered"
-	"hostile hail" "hostile unfettered"
 
 government "Heliarch"
 	color 1 .8 .5
 	"player reputation" 1
-	"friendly hail" "friendly heliarch"
-	"hostile hail" "hostile heliarch"
 	"attitude toward"
 		"Quarg" -.01
 		"Coalition" 1
@@ -404,9 +398,6 @@ government "Wanderer"
 	color .70 .91 .12
 	"player reputation" 1
 	language "Wanderer"
-	"friendly hail" "wanderer untranslated"
-	"hostile hail" "wanderer untranslated"
-	"hostile disabled hail" "wanderer untranslated"
 	
 government "YeeHaw"
 	"display name" "Tarazed "

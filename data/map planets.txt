@@ -945,7 +945,7 @@ planet "Rampart Station"
 	description `Rampart Station is one of the few places certified to produce Navy ships, and the only place capable of producing their largest. The Nomos drone carrier and Arete dedicated carrier are almost exclusively produced here.`
 	spaceport `Lying right on the caravan trade route, Rampart Station is often full of merchants, negotiating deals with Navy workers or the stray Republic representative. It's very easy for the station to give off the feeling of being above your head.`
 	shipyard "Navy Shipyards"
-	outfitter "Common Oufits"
+	outfitter "Common Outfits"
 	outfitter "Basic Weapons"
 	outfitter "Ammo"
 	outfitter "Lovelace Advanced"
@@ -1652,7 +1652,7 @@ planet Pilot
 	attributes north research
 	landscape land/bwerner2
 	description `Pilot is used as a research and testing station for Lovelace Labs. The research buildings are not open to non-employees. From a distance it looks almost like a small war is going on, with missiles being fired from a silo toward a hilltop where an anti-missile turret is picking them off one by one.`
-	description `	Rumors say that the Sidewinder Missile engineering team and the Missile Defense team are in fierce competition with each other, and whichever team is currently losing to the other must buy them lunch every Friday.`
+	description `	Rumors say that the Ranger Missile engineering team and the Missile Defense team are in fierce competition with each other, and whichever team is currently losing to the other must buy them lunch every Friday.`
 	spaceport `The workers grudgingly refuel your ship, but it is quite clear that you are out of place here. Nearly everyone in the spaceport is wearing a lab coat or a uniform, and several groups of people halt their conversations as soon as you pass within earshot.`
 	"required reputation" 100
 	bribe 0.1

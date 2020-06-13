@@ -249,7 +249,7 @@ mission "Escort science vessel"
 		fleet
 			names "deep"
 			variant
-				"Scout"
+				"Caravel"
 			variant
 				"Bounder"
 			variant

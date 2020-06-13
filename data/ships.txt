@@ -5573,7 +5573,7 @@ ship "Archon" "Archon (Cloaked)"
 	turret "Drak Distancer"
 
 
-ship "Quarg Wardragon"
+ship "Wyvern"
 	sprite "ship/wardragon"
 	thumbnail "thumbnail/wardragon"
 	attributes
@@ -5627,6 +5627,6 @@ ship "Quarg Wardragon"
 	explode "large explosion" 40
 	explode "huge explosion" 20
 	"final explode" "final explosion medium"
-	description "A rare sight in human space, the Quarg's famed Wardragon is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
+	description "A rare sight in human space, the Quarg's famed Wyvern is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
 	description "	Many conspiracy theorists wonder why the Quarg would abide by such regulations and laws if they are so powerful."
 

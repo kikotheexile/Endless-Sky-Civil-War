@@ -3625,8 +3625,6 @@ system Deneb
 	trade Medical 641
 	trade Metal 404
 	trade Plastic 336
-	fleet "Small Pug" 400
-	fleet "Large Pug" 1000
 	belt 1890
 	minables aluminum 7 15.5891
 	minables silicon 12 13.0697
@@ -5298,8 +5296,6 @@ system "Heia Due"
 	trade Medical 675
 	trade Metal 518
 	trade Plastic 362
-	fleet "Small Hai" 600
-	fleet "Large Hai" 2000
 	fleet "Small Human Merchants (Hai)" 2000
 	fleet "Large Human Merchants (Hai)" 5000
 	belt 1079
@@ -5685,9 +5681,6 @@ system Ka'ch'chrai
 	trade Medical 542
 	trade Metal 508
 	trade Plastic 533
-	fleet "Wanderer Freight" 300
-	fleet "Wanderer Drones" 1000
-	fleet "Wanderer Defense" 1000
 	belt 1745
 	minables titanium 4 3.84667
 	object
@@ -8900,8 +8893,6 @@ system "Pug Iyik"
 	trade Medical 552
 	trade Metal 414
 	trade Plastic 409
-	fleet "Small Pug" 600
-	fleet "Large Pug" 1200
 	belt 1286
 	minables lead 7 14.3837
 	object
@@ -11333,8 +11324,6 @@ system Waypoint
 	trade Medical 745
 	trade Metal 478
 	trade Plastic 452
-	fleet "Small Hai" 1200
-	fleet "Large Hai" 2500
 	fleet "Small Human Merchants (Hai)" 18000
 	fleet "Large Human Merchants (Hai)" 28000
 	belt 1610
@@ -12062,7 +12051,6 @@ system whp1
 	trade Medical 448
 	trade Metal 513
 	trade Plastic 458
-	fleet "Wanderer Defense" 4000
 	belt 1805
 	minables titanium 12 5.39802
 	object
