@@ -110,7 +110,7 @@ mission "A pirate's life 4, the Quickening"
 	npc kill
 		personality nemesis
 		government "Bounty Hunter"
-		ship "Pointedstick" "Highlander"
+		ship "Vanguard (Pointedstick)" "Highlander"
 
 
 

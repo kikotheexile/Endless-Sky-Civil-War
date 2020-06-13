@@ -1294,41 +1294,41 @@ effect "meteor fire"
 	"random velocity" 10
 
 
-outfit "Sidewinder Missile"
+outfit "Ranger Missile"
 	category "Ammunition"
 	cost 900
-	thumbnail "outfit/sidewinder"
+	thumbnail "outfit/Ranger"
 	"mass" .2
-	"sidewinder capacity" -1
-	description "The Sidewinder Missile is ammunition for the Sidewinder Missile Launcher. You cannot install a missile without a launcher to fire it from."
+	"Ranger capacity" -1
+	description "The Ranger Missile is ammunition for the Ranger Missile Launcher. You cannot install a missile without a launcher to fire it from."
 
-outfit "Sidewinder Missile Rack"
+outfit "Ranger Missile Rack"
 	category "Ammunition"
 	cost 20000
-	thumbnail "outfit/sidewinder storage"
+	thumbnail "outfit/Ranger storage"
 	"mass" 2.4
 	"outfit space" -7
-	"sidewinder capacity" 23
-	ammo "Sidewinder Missile"
-	description "The Sidewinder Missile Rack is used to store extra ammunition for Sidewinder Missile Launchers."
+	"Ranger capacity" 23
+	ammo "Ranger Missile"
+	description "The Ranger Missile Rack is used to store extra ammunition for Ranger Missile Launchers."
 
 outfit "Ranger Missile Launcher"
 	category "Secondary Weapons"
 	cost 60000
-	thumbnail "outfit/sidewinder launcher"
+	thumbnail "outfit/Ranger launcher"
 	"mass" 5
 	"outfit space" -29
 	"weapon capacity" -29
 	"gun ports" -1
-	"sidewinder capacity" 200
+	"Ranger capacity" 200
 	weapon
-		sprite "projectile/sidewinder"
+		sprite "projectile/Ranger"
 			"no repeat"
 			"frame rate" .25
-		sound "sidewinder"
+		sound "Ranger"
 		ammo "Ranger Missile"
-		icon "icon/sidewinder"
-		"fire effect" "sidewinder fire"
+		icon "icon/Ranger"
+		"fire effect" "Ranger fire"
 		"die effect" "missile death"
 		"hit effect" "missile hit"
 		"inaccuracy" 4
@@ -1346,11 +1346,11 @@ outfit "Ranger Missile Launcher"
 		"hull damage" 45
 		"hit force" 55
 		"missile strength" 4
-	description "The Sidewinder Missile is designed by Lovelace Labs, which is ironically also the designer of the Anti-Missile Turret. Rumors say that the two engineering teams at Lovelace who make the missiles and the anti-missiles are locked in furious competition with each other: the result has been generation after generation of smarter missiles and then smarter turrets to fend them off."
-	description "	Although not as powerful or cheap as the popular Meteor missiles, Sidewinders have several advantages, including their superior maneuverability, better tracking systems, and protective casings that make them much harder for anti-missile systems to destroy."
+	description "The Ranger Missile is designed by Lovelace Labs, which is ironically also the designer of the Anti-Missile Turret. Rumors say that the two engineering teams at Lovelace who make the missiles and the anti-missiles are locked in furious competition with each other: the result has been generation after generation of smarter missiles and then smarter turrets to fend them off."
+	description "	Although not as powerful or cheap as the popular Meteor missiles, Rangers have several advantages, including their superior maneuverability, better tracking systems, and protective casings that make them much harder for anti-missile systems to destroy."
 
-effect "sidewinder fire"
-	sprite "effect/sidewinder fire"
+effect "Ranger fire"
+	sprite "effect/Ranger fire"
 		"no repeat"
 		"frame rate" 30
 	"lifetime" 9
@@ -1615,7 +1615,7 @@ outfit "N-Bomb"
 			"no repeat"
 			"frame rate" .25
 		sound "nuke"
-		ammo "Nuclear Missile"
+		ammo "N-Bomb"
 		stream
 		icon "icon/nuke"
 		"hit effect" "ion impact" 2
@@ -2691,7 +2691,7 @@ outfit "Small Radar Jammer"
 	"mass" 4
 	"outfit space" -4
 	"radar jamming" 2
-	description "This radar jammer is designed to interfere with Sidewinders and any other missiles that rely on radar for tracking their targets. Jamming will occasionally cause missiles to lose their target locks."
+	description "This radar jammer is designed to interfere with Rangers and any other missiles that rely on radar for tracking their targets. Jamming will occasionally cause missiles to lose their target locks."
 
 outfit "Large Radar Jammer"
 	category "Systems"

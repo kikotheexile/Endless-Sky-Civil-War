@@ -478,25 +478,25 @@ fleet "Large Northern Merchants"
 		"Firebird (Missile)"
 	variant 20
 		"Freighter" 2
-		"Corvette"
+		"Challenger"
 	variant 10
 		"Freighter" 2
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 	variant 10
 		"Freighter" 2
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 10
 		"Freighter" 3
-		"Corvette"
+		"Challenger"
 	variant 3
 		"Freighter" 3
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 	variant 3
 		"Freighter" 3
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 1
 		"Freighter" 2 #(Hai)
-		"Corvette"
+		"Challenger"
 	variant 6
 		"Freighter" 4
 		"Leviathan"
@@ -654,12 +654,6 @@ fleet "Small Human Merchants (Hai)"
 	variant 2
 		"Hauler II"
 		"Hauler" #(Hai)
-	variant 1
-		"Heavy Shuttle"
-		"Aphid"
-	variant 1
-		"Star Barge"
-		"Aphid"
 
 fleet "Large Human Merchants (Hai)"
 	government "Merchant"
@@ -694,19 +688,19 @@ fleet "Large Human Merchants (Hai)"
 		"Firebird (Missile)"
 	variant 20
 		"Freighter" 2
-		"Corvette"
+		"Challenger"
 	variant 10
 		"Freighter" 2
-		"Corvette" #(Hai)
+		"Challenger" #(Hai)
 	variant 10
 		"Freighter" 2 #(Hai)
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 10
 		"Freighter" 3
-		"Corvette"
+		"Challenger"
 	variant 3
 		"Freighter" 3 #(Hai)
-		"Corvette" #(Hai)
+		"Challenger" #(Hai)
 	variant 6
 		"Freighter" 4 #(Hai)
 		"Leviathan"
@@ -795,22 +789,6 @@ fleet "Large Human Merchants (Hai)"
 		"Hauler III" #(Hai)
 		"Hauler II"
 		"Headhunter" #(Hai)
-	variant 3
-		"Aphid" 2
-		"Sparrow" 2
-		"Firebird (Plasma)" 
-	variant 2
-		"Hauler II" 2
-		"Water Bug"
-	variant 1
-		"Water Bug" 2
-		"Firebird" #(Hai Weapons)"
-	variant 3
-		"Aphid" 3
-	variant 2
-		"Water Bug" 2
-	variant 1
-		"Shield Beetle"
 
 fleet "Human Miners"
 	government "Merchant"
@@ -1113,7 +1091,7 @@ fleet "Small Republic"
 		"Narcissus"
 		"Achlys"
 	variant 4
-		"Aletheia"
+		"Arete"
 	variant 3
 		"Narcissus" 2
 	variant 1
@@ -1134,19 +1112,19 @@ fleet "Large Republic"
 		"Achlys"
 		"Narcissus"
 	variant 3
-		"Aletheia" 2
+		"Arete" 2
 		"Sentinel Drone" 4
 	variant 3
-		"Aletheia" 2
+		"Arete" 2
 		"Sentinel Drone" 4
 		"Achlys"
 	variant 1
-		"Aletheia" 5
+		"Arete" 5
 		"Sentinel Drone" 10
 		"Achlys" 2
 		"Narcissus" 2
 	variant 1
-		"Aletheia" 2
+		"Arete" 2
 		"Sentinel Drone" 4
 		"Narcissus" 2
 	variant 1
@@ -1202,7 +1180,7 @@ fleet "Large Deep Merchants"
 	variant 5
 		"Aerie"
 		"Dagger" 2
-		"Corvette"
+		"Challenger"
 	variant 3
 		"Aerie"
 		"Dagger" 2
@@ -1260,11 +1238,11 @@ fleet "Small Deep Security"
 	variant 2
 		"Headhunter (Strike)"
 	variant 4
-		"Corvette"
+		"Challenger"
 	variant 2
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 	variant 2
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 
 fleet "Large Deep Security"
 	government "Deep Security"
@@ -1276,15 +1254,15 @@ fleet "Large Deep Security"
 	variant 5
 		"Aerie"
 		"Dagger" 2
-		"Corvette"
+		"Challenger"
 	variant 2
 		"Aerie"
 		"Dagger" 2
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 2
 		"Aerie"
 		"Dagger" 2
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 	variant 3
 		"Aerie"
 		"Dagger" 2
@@ -1312,19 +1290,19 @@ fleet "Large Deep Security"
 		"Aerie" 2
 		"Dagger" 4
 	variant 8
-		"Corvette"
+		"Challenger"
 		"Raven"
 	variant 4
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 		"Raven (Afterburner)"
 	variant 4
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 		"Raven (Heavy)"
 	variant 5
-		"Corvette" 2
+		"Challenger" 2
 	variant 3
-		"Corvette (Speedy)"
-		"Corvette (Missile)"
+		"Challenger (Speedy)"
+		"Challenger (Missile)"
 
 fleet "Small Oathkeeper"
 	government "Navy (Oathkeeper)"
@@ -1338,7 +1316,7 @@ fleet "Small Oathkeeper"
 		"Narcissus"
 		"Achlys"
 	variant 4
-		"Aletheia"
+		"Arete"
 	variant 3
 		"Narcissus" 2
 	variant 1
@@ -1354,24 +1332,24 @@ fleet "Large Oathkeeper"
 	personality
 		heroic opportunistic unconstrained disables plunders
 	variant 5
-		"Aletheia" 2
+		"Arete" 2
 		"Achlys"
 		"Narcissus"
 	variant 3
-		"Aletheia" 2
+		"Arete" 2
 		"Sentinel Drone" 4
 	variant 3
-		"Aletheia" 2
+		"Arete" 2
 		"Sentinel Drone" 4
 		"Zephyrus"
 		"Achlys"
 	variant 1
-		"Aletheia" 5
+		"Arete" 5
 		"Sentinel Drone" 10
 		"Achlys" 2
 		"Narcissus" 2
 	variant 1
-		"Aletheia" 2
+		"Arete" 2
 		"Sentinel Drone" 4
 		"Zephyrus" 2
 		"Thea Drone" 4
@@ -1872,11 +1850,11 @@ fleet "Small Northern Pirates"
 	variant 1
 		"Raven (Heavy)"
 	variant 2
-		"Corvette"
+		"Challenger"
 	variant 1
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 1
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 
 fleet "Large Northern Pirates"
 	government "Pirate"
@@ -1894,16 +1872,16 @@ fleet "Large Northern Pirates"
 		"Firebird (Plasma)"
 	variant 1
 		"Firebird"
-		"Corvette"
+		"Challenger"
 	variant 4
 		"Firebird (Plasma)"
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 	variant 2
 		"Firebird (Plasma)"
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 1
 		"Firebird (Laser)"
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 2
 		"Firebird"
 		"Fury"
@@ -1992,11 +1970,11 @@ fleet "Small Northern Union"
 	variant 1
 		"Raven (Heavy)"
 	variant 2
-		"Corvette"
+		"Challenger"
 	variant 1
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 1
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 
 fleet "Large Northern Union"
 	government "Northern Union"
@@ -2014,16 +1992,16 @@ fleet "Large Northern Union"
 		"Firebird (Plasma)"
 	variant 1
 		"Firebird"
-		"Corvette"
+		"Challenger"
 	variant 4
 		"Firebird (Plasma)"
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 	variant 2
 		"Firebird (Plasma)"
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 1
 		"Firebird (Laser)"
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 2
 		"Firebird"
 		"Fury"
@@ -2114,25 +2092,25 @@ fleet "Northern Union Merchants"
 		"Firebird (Missile)"
 	variant 20
 		"Freighter" 2
-		"Corvette"
+		"Challenger"
 	variant 10
 		"Freighter" 2
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 	variant 10
 		"Freighter" 2
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 10
 		"Freighter" 3
-		"Corvette"
+		"Challenger"
 	variant 3
 		"Freighter" 3
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 	variant 3
 		"Freighter" 3
-		"Corvette (Missile)"
+		"Challenger (Missile)"
 	variant 1
 		"Freighter" 2 #(Hai)
-		"Corvette"
+		"Challenger"
 	variant 6
 		"Freighter" 4
 		"Leviathan"
@@ -2329,10 +2307,10 @@ fleet "pirate raid"
 		"Firebird (Plasma)"
 	variant 3
 		"Firebird"
-		"Corvette"
+		"Challenger"
 	variant 1
 		"Firebird (Plasma)"
-		"Corvette (Speedy)"
+		"Challenger (Speedy)"
 	variant 2
 		"Firebird"
 		"Berserker" 2
@@ -2431,7 +2409,7 @@ fleet "Bounty Hunters"
 		"Aerie"
 		"Lance" 2
 	variant 1
-		"Corvette"
+		"Challenger"
 		"Fury (Missile)"
 	variant 1
 		"Osprey"
@@ -2453,9 +2431,7 @@ fleet "Quarg"
 	personality
 		forbearing opportunistic
 	variant
-		"Quarg Skylark"
-	variant
-		"Quarg Wardragon"
+		"Quarg Wyvern"
 
 fleet "Large Quarg"
 	government "Quarg"
@@ -2464,64 +2440,15 @@ fleet "Large Quarg"
 	personality
 		forbearing opportunistic
 	variant 2
-		"Quarg Skylark" 2
-		"Quarg Wardragon"
+		"Quarg Wyvern" 2
 	variant 2
-		"Quarg Wardragon" 2
-		"Quarg Skylark"
+		"Quarg Wyvern" 3
 	variant
-		"Quarg Skylark" 2
-		"Quarg Wardragon" 2
+		"Quarg Wyvern" 3
 	variant
-		"Quarg Wardragon" 3
-		"Quarg Skylark"
+		"Quarg Wyvern" 4
 	variant
-		"Quarg Skylark" 3
-		"Quarg Wardragon"
-
-fleet "Small Pug"
-	government "Pug"
-	names "pug"
-	cargo 1
-	personality
-		heroic
-	variant 1
-		"Pug Zibruka"
-	variant 2
-		"Pug Zibruka" 2
-	variant 2
-		"Pug Enfolta"
-	variant 1
-		"Pug Enfolta"
-		"Pug Zibruka"
-
-fleet "Large Pug"
-	government "Pug"
-	names "pug"
-	cargo 1
-	personality
-		heroic
-	variant 1
-		"Pug Enfolta"
-		"Pug Zibruka" 2
-	variant 1
-		"Pug Enfolta" 2
-	variant 1
-		"Pug Zibruka" 5
-	variant 2
-		"Pug Maboro"
-		"Pug Zibruka" 2
-	variant 3
-		"Pug Maboro"
-		"Pug Enfolta"
-		"Pug Zibruka"
-	variant 2
-		"Pug Maboro"
-		"Pug Enfolta" 2
-	variant 1
-		"Pug Maboro"
-		"Pug Enfolta"
-		"Pug Zibruka" 2
+		"Quarg Wyvern" 4
 
 fleet "Marauder fleet I"
 	government "Pirate"
@@ -2679,7 +2606,7 @@ fleet "Marauder fleet IV"
 		"Crow"
 		"Gallium"
 	variant 2
-		"Stinger"
+		"Sting"
 		"Crow"
 		"Gallium"
 
@@ -2722,7 +2649,7 @@ fleet "Marauder fleet V"
 		"Crow"
 		"Gallium"
 	variant 2
-		"Stinger"
+		"Sting"
 		"Crow"
 		"Gallium"
 
@@ -2765,7 +2692,7 @@ fleet "Marauder fleet VI"
 		"Crow"
 		"Gallium"
 	variant 2
-		"Stinger"
+		"Sting"
 		"Crow"
 		"Gallium"
 
@@ -2951,7 +2878,7 @@ fleet "Hired Guns"
 		"Odyssey" 2
 	variant 1
 		"Leviathan (Laser)" 2
-		"Corvette"
+		"Challenger"
 	variant 1
 		"Leviathan (Laser)"
 		"Splinter (Laser)"
@@ -2962,7 +2889,7 @@ fleet "Hired Guns"
 		"Falcon (Laser)"
 	variant 1
 		"Falcon (Laser)"
-		"Corvette"
+		"Challenger"
 	variant 1
 		"Falcon (Laser)"
 		"Splinter (Laser)"
@@ -2976,7 +2903,7 @@ fleet "Hired Guns"
 		"Vanguard (Particle)"
 	variant 1
 		"Vanguard (Particle)"
-		"Corvette"
+		"Challenger"
 	variant 1
 		"Vanguard (Particle)"
 		"Splinter (Laser)"
@@ -2985,6 +2912,6 @@ fleet "Hired Guns"
 		"Splinter (Proton)"
 	variant 1
 		"Odyssey" 2
-		"Corvette"
+		"Challenger"
 		"Splinter (Laser)"
 		"Splinter (Proton)"

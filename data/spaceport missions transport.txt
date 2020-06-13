@@ -916,19 +916,19 @@ mission "There Might Be Riots part 3B"
 		personality heroic nemesis
 		fleet
 			variant
-				"Combat Drone" 15
+				"Sentinel Drone" 15
 	npc
 		government "Team Red"
 		personality waiting heroic
 		fleet
 			variant
-				"Combat Drone" 20
+				"Sentinel Drone" 20
 	npc
 		government "Team Blue"
 		personality waiting heroic
 		fleet
 			variant
-				"Combat Drone" 35
+				"Sentinel Drone" 35
 	
 	on visit
 		dialog `You arrive on <planet>, but realize that your escort carrying the band and their supplies has not arrived yet. Better depart and wait for your escorts to enter the system.`
@@ -1257,7 +1257,7 @@ mission "Rim Archaeology 5A"
 		government Quarg
 		system "Gamma Corvi"
 		personality heroic
-		ship "Quarg Wardragon" "Gloref Esa Kurayi"
+		ship "Quarg Wyvern" "Gloref Esa Kurayi"
 	
 	on visit
 		dialog
@@ -1268,7 +1268,7 @@ mission "Rim Archaeology 5A"
 		event "rim archaeology results" 97
 		log `With the help of a Quarg ship, fought off a group of antique thieves looking to rob the archaeological site that Albert Foster dug up. Foster will need some time to study what he has found and release the results of his findings.`
 		conversation
-			`A plume of smoke is rising from the dig site. Fearing the worst, you land and find out that a missile fired by one of the pirates destroyed one of the huts where the workers were living, but fortunately no one was inside it at the time. Foster is shaken but still committed to finishing the work. "It will be months before we've excavated enough to be able to publish any findings," he says, "but Yarthis has told me that the Quarg will be stationing a Wardragon here for the remainder of the project, to prevent any further foul play." Foster gives you one last payment: four hundred thousand credits for your help driving off the pirates. "And I'll be sure to give you credit for your help when the news goes public," he says.`
+			`A plume of smoke is rising from the dig site. Fearing the worst, you land and find out that a missile fired by one of the pirates destroyed one of the huts where the workers were living, but fortunately no one was inside it at the time. Foster is shaken but still committed to finishing the work. "It will be months before we've excavated enough to be able to publish any findings," he says, "but Yarthis has told me that the Quarg will be stationing a Wyvern here for the remainder of the project, to prevent any further foul play." Foster gives you one last payment: four hundred thousand credits for your help driving off the pirates. "And I'll be sure to give you credit for your help when the news goes public," he says.`
 
 
 
@@ -1281,7 +1281,7 @@ mission "Rim Archaeology 5B"
 	npc kill
 		government Quarg
 		personality heroic staying uninterested
-		ship "Quarg Wardragon" "Gloref Esa Kurayi"
+		ship "Quarg Wyvern" "Gloref Esa Kurayi"
 
 
 

@@ -2787,7 +2787,7 @@ mission "Bounty Hunting (Small, Boarding, Entering)"
 			variant
 				"Arrow"
 			variant
-				"Scout (Speedy)"
+				"Caravel (Speedy)"
 			variant
 				"Clipper (Speedy)"
 		dialog "You blast your way onto the ship and confine the fleeing criminal to your ship's brig. Time to deliver them to <planet>."
@@ -2823,7 +2823,7 @@ mission "Bounty Hunting (Medium, Boarding, Entering)"
 		fleet
 			names "civilian"
 			variant
-				"Corvette (Speedy)"
+				"Challenger (Speedy)"
 			variant
 				"Osprey (Missile)"
 			variant
