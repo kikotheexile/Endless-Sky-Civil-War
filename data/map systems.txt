@@ -9568,7 +9568,7 @@ system Sadalsuud
 		sprite planet/jupiter
 		distance 1668.01
 		period 728.272
-		object Forpelog
+		object #Forpelog
 			sprite planet/rock17
 			distance 274
 			period 13.0929
