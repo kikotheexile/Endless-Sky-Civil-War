@@ -5753,8 +5753,8 @@ mission "FW Rand 1"
 		ship "Finch" "Bravo 9-1"
 		ship "Hawk (Rocket)" "F.S. Echo"
 		ship "Hawk" "F.S. Shadow"
-		ship "Modified Argosy (Blaster)" "W.P. Rotting Rat"
-		ship "Modified Argosy (Blaster)" "W.P. Pigs Demise"
+		ship "Odyssey (Blaster)" "W.P. Rotting Rat"
+		ship "Odyssey (Blaster)" "W.P. Pigs Demise"
 	
 	npc evade
 		government "Republic"

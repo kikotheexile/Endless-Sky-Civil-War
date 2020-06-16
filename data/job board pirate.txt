@@ -1987,7 +1987,7 @@ mission "Mercenary Job (Medium, South, Dangerous Origin)"
 			variant 1
 				"Clipper (Heavy)"
 			variant 1
-				"Modified Argosy"
+				"Odyssey"
 	on complete
 		"reputation: Pirate" += 3
 		payment 180000
@@ -2024,11 +2024,11 @@ mission "Escort Illegal Cargo (Large, South, Dangerous Path)"
 		fleet
 			names "pirate"
 			variant 2
-				"Modified Argosy"
+				"Odyssey"
 			variant 2
-				"Modified Argosy (Heavy)"
+				"Odyssey (Heavy)"
 			variant 2
-				"Modified Argosy (Blaster)"
+				"Odyssey (Blaster)"
 			variant 1
 				"Bastion"
 			variant 1

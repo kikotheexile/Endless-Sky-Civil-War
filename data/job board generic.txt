@@ -2829,7 +2829,7 @@ mission "Bounty Hunting (Medium, Boarding, Entering)"
 			variant
 				"Argosy (Missile)"
 			variant
-				"Modified Argosy (Heavy)"
+				"Odyssey (Heavy)"
 			variant
 				"Raven (Heavy)"
 		dialog "You blast your way onto the ship, subdue the fleeing criminals, and confine them to your ship's brig. Time to deliver them to <planet>."
