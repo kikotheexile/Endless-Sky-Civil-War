@@ -981,6 +981,30 @@ ship "Narcissus" "Narcissus (Mark II)"
 
 
 
+ship "Aletheia" "Aletheia (Mark II)"
+	outfits
+		"Particle Cannon" 4
+		"Anti-Missile Turret"
+		"Blaster Turret" 2
+		"NT-200 Nucleovoltaic"
+		"Dwarf Core"
+		"LP072a Battery Pack"
+		"Supercapacitor"
+		"D14-M Shield Generator"
+		"Small Radar Jammer"
+		"Water Coolant System MKI"
+		"Outfits Expansion"
+		"Laser Rifle" 8
+		"Fragmentation Grenades" 8
+		"A250 Atomic Thruster"
+		"A375 Atomic Steering"
+		"Hyperdrive"
+	turret "Anti-Missile Turret"
+	turret "Blaster Turret"
+	turret "Blaster Turret"
+
+
+
 ship "Hawk" "Hawk (Bomber)"
 	outfits
 		"Torpedo Launcher"

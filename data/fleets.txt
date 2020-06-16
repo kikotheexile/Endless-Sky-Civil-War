@@ -1542,11 +1542,11 @@ fleet "Large Southern Pirates"
 	variant 1
 		"Odyssey"
 	variant 1
-		"Modified Argosy (Heavy)"
+		"Odyssey (Heavy)"
 	variant 1
-		"Modified Argosy (Blaster)"
+		"Odyssey (Blaster)"
 	variant 1
-		"Modified Argosy (Missile)"
+		"Odyssey (Missile)"
 	variant 4
 		"Clipper"
 	variant 2
@@ -1582,16 +1582,16 @@ fleet "Large Southern Pirates"
 		"Odyssey"
 		"Sparrow" 2
 	variant 1
-		"Modified Argosy (Heavy)"
+		"Odyssey (Heavy)"
 		"Sparrow" 2
 	variant 1
-		"Modified Argosy (Blaster)"
+		"Odyssey (Blaster)"
 		"Sparrow" 2
 	variant 1
-		"Modified Argosy (Missile)" 2
+		"Odyssey (Missile)" 2
 	variant 1
 		"Fury (Heavy)" 2
-		"Modified Argosy (Missile)"
+		"Odyssey (Missile)"
 	variant 4
 		"Bastion"
 	variant 2
@@ -2238,9 +2238,9 @@ fleet "pirate raid"
 	variant 1
 		"Odyssey"
 	variant 1
-		"Modified Argosy (Heavy)"
+		"Odyssey (Heavy)"
 	variant 1
-		"Modified Argosy (Blaster)"
+		"Odyssey (Blaster)"
 	variant 2
 		"Clipper (Speedy)"
 	variant 1
@@ -2259,10 +2259,10 @@ fleet "pirate raid"
 	variant 1
 		"Argosy (Missile)"
 	variant 1
-		"Modified Argosy (Heavy)"
+		"Odyssey (Heavy)"
 		"Hawk (Speedy)" 2
 	variant 1
-		"Modified Argosy (Blaster)"
+		"Odyssey (Blaster)"
 		"Raven (Afterburner)" 2
 	variant 2
 		"Falcon"
@@ -2431,7 +2431,7 @@ fleet "Quarg"
 	personality
 		forbearing opportunistic
 	variant
-		"Quarg Wyvern"
+		"Wyvern"
 
 fleet "Large Quarg"
 	government "Quarg"
@@ -2440,15 +2440,15 @@ fleet "Large Quarg"
 	personality
 		forbearing opportunistic
 	variant 2
-		"Quarg Wyvern" 2
+		"Wyvern" 2
 	variant 2
-		"Quarg Wyvern" 3
+		"Wyvern" 3
 	variant
-		"Quarg Wyvern" 3
+		"Wyvern" 3
 	variant
-		"Quarg Wyvern" 4
+		"Wyvern" 4
 	variant
-		"Quarg Wyvern" 4
+		"Wyvern" 4
 
 fleet "Marauder fleet I"
 	government "Pirate"

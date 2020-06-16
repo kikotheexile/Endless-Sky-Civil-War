@@ -1261,7 +1261,7 @@ system Alkaid
 			sprite planet/mercury
 			distance 221
 			period 20.4066
-	object Thunder
+	object #Thunder
 		sprite planet/ocean1
 		distance 934.8
 		period 347.877
@@ -3632,7 +3632,7 @@ system Deneb
 	object
 		sprite star/g5
 		period 10
-	object Pugglemug
+	object #Pugglemug
 		sprite planet/ocean2
 		distance 317.56
 		period 90.5438
@@ -3640,7 +3640,7 @@ system Deneb
 			sprite planet/dust3
 			distance 159
 			period 16.3701
-	object Pugglequat
+	object #Pugglequat
 		sprite planet/desert3
 		distance 966.8
 		period 480.978
@@ -5319,7 +5319,7 @@ system "Heia Due"
 		sprite planet/desert3
 		distance 637.538
 		period 184.727
-	object Allhome
+	object #Allhome
 		sprite planet/forest1
 		distance 1294.54
 		period 534.495
@@ -5690,7 +5690,7 @@ system Ka'ch'chrai
 		sprite planet/europa
 		distance 191.36
 		period 51.3065
-	object "Vara K'chrai"
+	object #"Vara K'chrai"
 		sprite planet/earth
 		distance 458.36
 		period 190.198
@@ -8906,7 +8906,7 @@ system "Pug Iyik"
 			sprite planet/europa
 			distance 160
 			period 25.4415
-	object "Vara Pug"
+	object #"Vara Pug"
 		sprite planet/ocean4
 		distance 643.85
 		period 261.395
@@ -9568,7 +9568,7 @@ system Sadalsuud
 		sprite planet/jupiter
 		distance 1668.01
 		period 728.272
-		object Forpelog
+		object #Forpelog
 			sprite planet/rock17
 			distance 274
 			period 13.0929

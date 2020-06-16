@@ -727,7 +727,7 @@ mission "Deep: TMBR: Hint"
 	source
 		government "Hai"
 		attributes "human tourism"
-	destination "Greenwater"
+	destination #"Greenwater"
 	to offer
 		has "Deep: TMBR 0: active"
 		not "Deep: TMBR 1: offered"
@@ -744,7 +744,7 @@ mission "Deep: TMBR 1"
 	landing
 	name `Transport band to <planet>`
 	description `Give the band "There Might Be Riots" a ride to <destination> so that they can perform for the Deep scientists.`
-	source "Greenwater"
+	source #"Greenwater"
 	destination "Midgard"
 	blocked "You have reached <origin>, but you'll need <capacity> to continue this mission. Return here when you have the required space free."
 	cargo "musical equipment" 4

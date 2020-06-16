@@ -5753,8 +5753,8 @@ mission "FW Rand 1"
 		ship "Finch" "Bravo 9-1"
 		ship "Hawk (Rocket)" "F.S. Echo"
 		ship "Hawk" "F.S. Shadow"
-		ship "Modified Argosy (Blaster)" "W.P. Rotting Rat"
-		ship "Modified Argosy (Blaster)" "W.P. Pigs Demise"
+		ship "Odyssey (Blaster)" "W.P. Rotting Rat"
+		ship "Odyssey (Blaster)" "W.P. Pigs Demise"
 	
 	npc evade
 		government "Republic"
@@ -7479,12 +7479,12 @@ mission "FWC Cebalrai 1B"
 				"Arete (Mark II)"
 				"Lance" 4
 				"Sentinel Drone" 6
-				"Frigate (Mark II)" 2
+				"Aletheia (Mark II)" 2
 		fleet
 			names "republic capital"
 			fighters "republic fighter"
 			variant
-				"Frigate (Mark II)"
+				"Aletheia (Mark II)"
 				"Narcissus (Mark II)" 2
 		fleet
 			names "republic capital"
@@ -7717,7 +7717,7 @@ mission "FWC Checkmate 1"
 			names "republic small"
 			fighters "republic fighter"
 			variant
-				"Frigate (Mark II)"
+				"Aletheia (Mark II)"
 				"Narcissus (Mark II)" 2
 				"Achlys (Mark II)" 2
 	
@@ -7949,14 +7949,14 @@ mission "FWC Checkmate 1B"
 			fighters "republic fighter"
 			variant
 				"Arete (Mark II)"
-				"Frigate (Mark II)" 2
+				"Aletheia (Mark II)" 2
 				"Narcissus (Mark II)" 1
 		fleet
 			names "republic capital"
 			fighters "republic fighter"
 			variant
 				"Nomos (Mark II)"
-				"Frigate (Mark II)" 1
+				"Aletheia (Mark II)" 1
 				"Narcissus (Mark II)" 2
 
 
