@@ -1261,7 +1261,7 @@ system Alkaid
 			sprite planet/mercury
 			distance 221
 			period 20.4066
-	object Thunder
+	object #Thunder
 		sprite planet/ocean1
 		distance 934.8
 		period 347.877
