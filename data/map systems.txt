@@ -5319,7 +5319,7 @@ system "Heia Due"
 		sprite planet/desert3
 		distance 637.538
 		period 184.727
-	object Allhome
+	object #Allhome
 		sprite planet/forest1
 		distance 1294.54
 		period 534.495

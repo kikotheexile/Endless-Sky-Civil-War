@@ -885,7 +885,7 @@ mission "There Might Be Riots part 3B"
 	name "Transport band to <planet>"
 	description `Avoid the Navy combat drones and give the band "There Might Be Riots" a ride to <destination>.`
 	source "Pilot"
-	destination "Allhome"
+	#destination "Allhome"
 	cargo "musical equipment" 4
 	passengers 8
 	to offer
