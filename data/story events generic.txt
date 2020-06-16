@@ -2089,7 +2089,7 @@ event "pug flee"
 		object
 			sprite star/g5
 			period 10
-		object "Pugglemug"
+		object #"Pugglemug"
 			sprite planet/ocean2
 			distance 317.56
 			period 90.543791
@@ -2097,7 +2097,7 @@ event "pug flee"
 				sprite planet/dust3
 				distance 159
 				period 16.370052
-		object "Pugglequat"
+		object #"Pugglequat"
 			sprite planet/desert3
 			distance 966.8
 			period 480.9777
