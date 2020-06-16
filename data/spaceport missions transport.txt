@@ -1257,7 +1257,7 @@ mission "Rim Archaeology 5A"
 		government Quarg
 		system "Gamma Corvi"
 		personality heroic
-		ship "Quarg Wyvern" "Gloref Esa Kurayi"
+		ship "Wyvern" "Gloref Esa Kurayi"
 	
 	on visit
 		dialog
@@ -1281,7 +1281,7 @@ mission "Rim Archaeology 5B"
 	npc kill
 		government Quarg
 		personality heroic staying uninterested
-		ship "Quarg Wyvern" "Gloref Esa Kurayi"
+		ship "Wyvern" "Gloref Esa Kurayi"
 
 
 
