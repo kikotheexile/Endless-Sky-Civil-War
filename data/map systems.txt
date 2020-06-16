@@ -5690,7 +5690,7 @@ system Ka'ch'chrai
 		sprite planet/europa
 		distance 191.36
 		period 51.3065
-	object "Vara K'chrai"
+	object #"Vara K'chrai"
 		sprite planet/earth
 		distance 458.36
 		period 190.198
@@ -8906,7 +8906,7 @@ system "Pug Iyik"
 			sprite planet/europa
 			distance 160
 			period 25.4415
-	object "Vara Pug"
+	object #"Vara Pug"
 		sprite planet/ocean4
 		distance 643.85
 		period 261.395
