@@ -1155,7 +1155,7 @@ mission "Rim Archaeology 3B"
 	npc evade
 		government Independent
 		personality waiting
-		ship "Marauder Falcon (Engines)" "Oxyrhynchus"
+		ship "Peregrine" "Oxyrhynchus"
 	
 	on visit
 		dialog
@@ -1210,7 +1210,7 @@ mission "Rim Archaeology 4B"
 		government Merchant
 		personality waiting
 		system Dabih
-		ship "Marauder Arrow (Engines)" "Naukratis"
+		ship "Bolt" "Naukratis"
 	
 	on visit
 		dialog `You land on <planet>, but realize that your escort carrying Amelia and Yarthis hasn't entered the system yet. Better depart and wait for it.`
@@ -1244,13 +1244,13 @@ mission "Rim Archaeology 5A"
 	npc evade
 		government Pirate
 		personality heroic waiting
-		ship "Marauder Falcon (Weapons)" "Akhetaten"
-		ship "Marauder Splinter (Weapons)" "Itjtawy"
-		ship "Marauder Firebird (Weapons)" "Tanis"
-		ship "Marauder Leviathan (Weapons)" "Buhen"
-		ship "Marauder Manta (Weapons)" "Athribis"
-		ship "Marauder Quicksilver (Weapons)" "Philae"
-		ship "Marauder Raven (Weapons)" "Esna"
+		ship "Harpy" "Akhetaten"
+		ship "Sting" "Itjtawy"
+		ship "Fenghuang" "Tanis"
+		ship "Bakunawa" "Buhen"
+		ship "Spinetail" "Athribis"
+		ship "Phosphorus" "Philae"
+		ship "Sturnus" "Esna"
 		dialog `The last of the pirate raiders have been driven off. Time to land and check if any damage was done to the dig.`
 	
 	npc
@@ -2516,9 +2516,9 @@ mission "Terraforming 11"
 		fleet
 			names "pirate"
 			variant
-				"Marauder Quicksilver"
-				"Marauder Arrow (Weapons)"
-				"Marauder Bounder (Engines)"
+				"Phosphorus"
+				"Missile"
+				"Polevaulter"
 				"Bastion"
 
 
