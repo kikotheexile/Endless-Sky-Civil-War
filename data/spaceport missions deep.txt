@@ -616,11 +616,11 @@ mission "Deep: Mystery Cubes 4"
 			names pirate
 			variant
 				"Nomos" 3
-				"Marauder Leviathan"
+				"Bakunawa"
 				"Leviathan" #Originally a Hai Engines Variant
 				"Headhunter (Particle)" 3
 				"Firebird (Plasma)" 2
-				"Marauder Firebird (Weapons)" 2
+				"Fenghuang" 2
 	
 	on enter "Alnitak"
 		dialog `Alnitak is in chaos when you enter the system. An outnumbered defense fleet is fighting a group of pirate ships, and among the pirates your sensors identify the three stolen Cruisers.`
@@ -1060,7 +1060,7 @@ mission "Deep: Project Hawking"
 		government "Independent"
 		personality staying
 		system "Naos"
-		ship "Marauder Quicksilver (Engines)" "Gusoyn"
+		ship "Mercury" "Gusoyn"
 	
 	on visit
 		dialog `You arrive on <planet>, but realize that your escort carrying the scientists and their supplies has not arrived yet. Better depart and wait for your escorts to enter the system.`
@@ -1124,7 +1124,7 @@ mission "Deep: Project Hawking: Carbuncle"
 	npc kill
 		government "Independent"
 		personality waiting
-		ship "Marauder Splinter (Engines)" "Abaddon"
+		ship "Needle" "Abaddon"
 	on offer
 		conversation
 			`The majority of Carbuncle Station is restricted to normal visitors. The workers here will not even refuel your ship upon request. It's clear that Lovelace Labs, the owners of this station, have secrets stored within the walls of this station.`
@@ -1199,7 +1199,7 @@ mission "Deep: Project Hawking: Prime"
 	npc kill
 		government "Independent"
 		personality waiting
-		ship "Marauder Raven (Engines)" "Krampus"
+		ship "Rook" "Krampus"
 	on offer
 		conversation
 			`As you approach the massive <planet> spaceport building, Pierre directs you to park on a landing pad on the third story close to the warehouse section. "We're picking up various materials used in the creation of ships that we need samples of for testing," Pierre explains.`
@@ -1239,7 +1239,7 @@ mission "Deep: Project Hawking: Vinci"
 	npc kill
 		government "Independent"
 		personality waiting
-		ship "Marauder Manta (Engines)" "Valac"
+		ship "Lesser Devil" "Valac"
 	on offer
 		conversation
 			`"It might take a while to get a hold of the electronics we need," Pierre says after you land. "Just stick around the spaceport while we're gone."`

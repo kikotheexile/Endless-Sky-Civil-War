@@ -151,7 +151,7 @@ person "Cap'n Pester"
 
 
 person "Marauding Max"
-	government "Marauder"
+	government "Independent"
 	frequency 400
 	personality
 		surveillance
