@@ -20,9 +20,9 @@ mission "Immigrant Workers"
 		attributes "core"
 		attributes "factory" "textile"
 	on complete
-		payment
-		payment 10000
+		payment 1000
 		dialog "The young couple from <origin> pays you and thanks you profusely as they gather up their goods and depart. You wish them the best of luck in their new life on <planet>."
+		"charity" ++
 	on offer
 		conversation
 			"As you leave your ship and walk toward the cafeteria at the center of the spaceport, you notice a young couple standing near the edge of the landing area next to a cart loaded high with a jumble of boxes and furniture. Like many of the locals, they are both wearing dust masks over their mouths, and the woman is also wearing goggles."
@@ -30,7 +30,7 @@ mission "Immigrant Workers"
 				"	(Talk to them.)"
 				"	(Ignore them.)"
 					decline
-			"	The couple introduces themselves as George and Samantha. As you shake hands with them, you notice that Samantha's eyes under the goggles are rimmed in red, and she keeps coughing quietly: a dry, careful cough. George explains that they came here several years ago to take jobs in the factories, but the volcanic fumes have been giving Samantha trouble ever since they arrived. They will pay for transport for themselves and their household goods to <destination>."
+			"	The couple introduces themselves as George and Samantha. As you shake hands with them, you notice that Samantha's eyes under the goggles are rimmed in red, and she keeps coughing quietly: a dry, careful cough. George explains that they came here several years ago to take jobs in the factories, but the volcanic fumes have been giving Samantha trouble ever since they arrived. They can only afford to pay <payment> to transport themselves and their household goods to <destination>."
 			choice
 				"	(Accept.)"
 				"	(Decline.)"
@@ -103,8 +103,8 @@ mission "Pookie, Part 2"
 	on visit
 		dialog `You have reached <planet>, but your escort carrying Pookie has not arrived! Better depart and and wait for your escorts to arrive in this star sytem.`
 	on complete
-		payment 80000
-		dialog "In the past few days, Pookie has barked incessantly and thrown up several times despite being fed perfectly on schedule, and the room you've been keeping her in will likely smell like dog urine for months. You are all too happy to return her to her owner, who pays you <payment>."
+		payment 84500
+		dialog "In the past few days, Pookie has barked incessantly and thrown up several times despite being fed perfectly on schedule, and the room you've been keeping her in will likely smell like dog urine for months. You are all too happy to return her to her owner, who pays you 85,000 credits. The stench is too much to stand, however, and the spaceport charges you 500 credits to detail your ship. You walk away with <payment>."
 
 
 
@@ -271,13 +271,13 @@ mission "Expedition to Hope 1"
 	
 	on offer
 		conversation
-			`A group of scientists approaches you and asks if you would be willing to take them to the abandoned planet of Hope, and then back home from there. "The transport we'd arranged for bailed out on us at the last moment," says their leader, a middle-aged man wearing thick-rimmed glasses.`
+			`A group of scientists approaches you and asks if you would be willing to take them to the abandoned planet of Hope, and then back home from there. "We do this regularly, but this time the transport we'd arranged for bailed on us at the last moment," says their leader, a middle-aged man wearing thick-rimmed glasses.`
 			choice
 				`	"Sure, I'd be glad to help."`
 					goto yes
 				`	"What sort of research are you doing?"`
 				`	"Sorry, I don't have space for you."`
-					decline
+					defer
 			`	"You probably know about the supervolcano that forced the evacuation of Hope some decades ago," he says. "My family lived on Hope back then. We want to measure how much ash is still in the air, to see how long it will be before the glaciers recede and the planet is habitable again."`
 			choice
 				`	"That sounds like a worthy cause. I'd be glad to transport you."`
@@ -387,6 +387,8 @@ mission "Transport Workers B"
 				`	"Okay, I'll take you to <planet>."`
 					goto thanks
 				`	"Sorry, I'm not headed in that direction."`
+					decline
+				`	"Sounds like he's just trying to get rid of you, and I will not be a party to his malice. Goodbye."
 					decline
 			label thanks
 			`	"Thank you, Captain," he says, shaking your hand. You bring him aboard your ship and show him to one of the empty bunks.`
@@ -642,18 +644,20 @@ mission "Deep Archaeology 5"
 					goto illegal
 				`	"A what?"`
 					goto what
+				`	"You mean to tell me they made a black hole?"`
+					goto what
 			label illegal
 			`	"No, not illegal," says Albert. "No need to make laws against them, for the simple reason that no one knows how to make them. That's alien technology, very advanced."`
 				goto attack
 			label what
-			`	"A miniature black hole," says John. "An alien power source. Far more sophisticated than anything human beings have ever created. That is, unless someone in the Deep has found a way to reverse engineer alien technology."`
+			`	"A miniature black hole," says John. "I can only assume it's an alien power source. Far more sophisticated than anything human beings have ever created. That is, unless someone in the Deep has found a way to reverse engineer alien technology."`
 			label attack
 			`	Suddenly, a warning light flashes on your ship's radar. Three ships have taken off from the planet's surface and are headed straight towards you. "Let's get out of here," says Albert. "Head back to <planet>!"`
 				launch
 	
 	npc
 		personality heroic
-		government Deep
+		government " Deep "
 		ship "Raven (Afterburner)" "D.P.S. Wyrd"
 		ship "Raven (Afterburner)" "D.P.S. Skuld"
 		ship "Raven (Afterburner)" "D.P.S. Verthandi"
@@ -672,10 +676,10 @@ mission "Deep Archaeology 5"
 				`	"What aliens? The Quarg?"`
 					goto aliens
 			label purpose
-			`	"I'm not sure," he says. "But I first became interested in the Deep while researching the Alpha Wars. I'm sure you know the history, how humanity was nearly enslaved by psychopathic 'super' humans that we ourselves had created by dabbling in genetic engineering. At that time, the Deep made a sudden, improbable technological leap that allowed them to construct weapons and ships far more powerful than what the Alphas had, and the war against them was won."`
+			`	"I'm not sure," he says. "But I first became interested in the Deep while researching the Augment Wars. I'm sure you know the history, how humanity was nearly enslaved by psychopathic 'super' humans that we ourselves had created by dabbling in genetic engineering. At that time, the Deep made a sudden, improbable technological leap that allowed them to construct weapons and ships far more powerful than what the Alphas had, and the war against them was won."`
 				goto end
 			label aliens
-			`	"There are popular folk tales in the Deep about 'elves,'" says Albert. "Thin, pale, graceful creatures, with blue blood."`
+			`	"That's a reasonable hypothesis, considering how close they are to Quarg space. However." He trails off for a second, "However, there are popular folk tales in the Deep about 'elves.' Thin, pale, graceful creatures, with blue blood."`
 			`	John frowns. "Hemocyanic blood. Not the Quarg, then. Their lungs are odd, but their blood uses hemoglobin for oxygen transport, just like ours."`
 			label end
 			`	Albert continues, "What I think is that an unknown alien species has been involved in events in the Deep since the beginning, and is perhaps still involved there today. I think this is known to at least some of the Deep's inhabitants."`
@@ -692,9 +696,9 @@ mission "There Might Be Riots 1"
 	description `Give the band "There Might Be Riots" a ride to <destination>.`
 	minor
 	source
-		near Tarazed 5 10
+		near Tarazed 1 20
 		government "Republic" "Free Worlds" "Neutral"
-	destination "Wayfarer"
+	destination "Prime"
 	cargo "musical equipment" 4
 	passengers 8
 	to offer
@@ -702,7 +706,7 @@ mission "There Might Be Riots 1"
 	
 	on offer
 		conversation
-			`A woman in a well-tailored suit approaches you. "Captain <last>?" she asks. You nod. "My name is Becca," she says. "I'm a stage manager for a band, and the transport we had under contract bailed out on us. Any chance you could take us to <destination>? Given the circumstances, we can pay quite well."`
+			`A woman in a well-tailored suit approaches you. "Captain <last>?" she asks. You nod. "My name is Rebecca," she says. "I'm a stage manager for a band, and the transport we had under contract bailed out on us. Any chance you could take us up north to <destination>? Given the circumstances, we can pay quite well."`
 			choice
 				`	"Sure!"`
 				`	"Sorry, I'm not headed in that direction right now."`
@@ -711,7 +715,12 @@ mission "There Might Be Riots 1"
 			`	"Happens everywhere we go," says one of the musicians, calmly, as he watches a video feed of the mob on one of your monitors. He tells you that he's Ulrich, the lead singer. Then he introduces the rest of the singers and musicians.`
 			choice
 				`	"Pleased to meet you all. What's the name of your band?"`
+					goto name
+				`	"THE There Might Be Riots? I'm glad I took this job!"
+					goto end
+			label name
 			`	"Oh," Ulrich says, "we call ourselves, 'There Might Be Riots.'"`
+			label end
 			`	Eventually, the spaceport police arrive and disperse the crowd, and the band settles in for their trip to <destination>.`
 				accept
 	
@@ -719,8 +728,8 @@ mission "There Might Be Riots 1"
 		dialog `You arrive on <planet>, but realize that your escort carrying the band and their supplies has not arrived yet. Better depart and wait for your escorts to enter the system.`
 	on complete
 		payment
-		payment 100000
-		log `Dropped the famous band "There Might Be Riots" off on Wayfarer. They drew quite the crowd, and paid very well.`
+		payment 500000
+		log `Dropped the famous band "There Might Be Riots" off on Prime. They drew quite the crowd, and paid very well.`
 		conversation
 			`You drop off the band "There Might Be Riots" on <destination>. Along the way, you got to hear some of their music, which is mostly characterized by frenzied instrumentals, a very energetic brass section, and bizarre lyrics. One day while you were in transit, they nearly drove you insane by playing their catchy but nonsensical song "Henhouse In Your Soul" for four hours straight, but other than that they have been good passengers, and their stage manager gives you an incredibly generous payment of <payment>.`
 			`	"We've already got a gig lined up for tonight," says Ulrich. "Want to come? We'll give you free tickets." Given how well they just paid you, it might be worth going just to build a relationship with the band, even if not for the music itself.`
@@ -730,7 +739,7 @@ mission "There Might Be Riots 1"
 					decline
 			`	The band is even louder in concert than they were when practicing in the confines of your ship. About thirty minutes into the concert, the energy of the crowd and the surreal lyrics finally begin to soak in, and rather than seeming meaningless their music feels fraught with meaning that hovers just beyond your grasp.`
 			`	Finally the band announces that their last song will be "Sad Archie." You've never heard of it, but the fans scream in approval. It's a slow, ballad-like song about a man named Archie who lives forever and is sad because the friends he makes all grow old and die. Archie has a pet dragon, and he builds a beautiful house for the dragon, but the dragon dies young. Archie is so sad seeing the dragon's house empty and gathering dust that he rents it out to some friends, but they fight with each other and trash the place. The story makes no sense, but some of the fans are wiping away tears as the song ends.`
-			`	Becca, who is sitting next to you in the VIP section, says, "We learned years ago that we need to end every concert with a sad song. Otherwise the fans leave with way too much energy and start destroying public property."`
+			`	Rebecca, who is sitting next to you in the VIP section, says, "We learned years ago that we need to end every concert with a sad song. Otherwise the fans leave with way too much energy and start destroying public property."`
 			`	The concert ends, and you say goodbye to the band. They say they'll be in touch if they ever need a ride again.`
 
 
@@ -741,7 +750,7 @@ mission "There Might Be Riots part 2"
 	minor
 	source
 		government Syndicate
-	destination "Prime"
+	destination "Valhalla"
 	cargo "musical equipment" 4
 	passengers 8
 	to offer
@@ -794,17 +803,12 @@ mission "There Might Be Riots part 2"
 				`	"Well, I'll look forward to the next time we meet."`
 					accept
 			`	Ulrich launches into a story. "Years ago when the band was young and we had a month off in between gigs, we found an old grey merchant captain with a glass eye and asked him to transport us to one of the Paradise worlds for an extended 'drug vacation,' if you know what I mean. He said, 'Boys, why don't you leave the drugs behind, and I'll take you on a real mind-altering trip,' and a few days later we were playing a concert on this world where the people were giant squirrels. They loved our music, too. Never did find anyone who could take us back there, though."`
-			branch known
-				has "First Contact: Hai: offered"
-			`	You're tempted to laugh, but he sounds serious. "Well," you say, "if I ever find a planet of intelligent squirrels, I'll be glad to take you guys there." You help them to unload their stuff, and say goodbye for now.`
+			choice
+				`	"You met a merchant captian with a Hai gate key?"`
+				`	"Well, I'll look forward to the next time we meet."`
+					accept
+			`	Ulrich chuckles a bit, "Pretty wild, huh? Well, we've been discussing ways to smuggle ourselves back into their space. Maybe one day we will."
 				accept
-			label known
-			apply
-				set "met hai before TMBR"
-			`	"It sounds like you were visiting Hai space," you say, and you describe the aliens who live beyond the wormhole. "Yeah, that would be them," says Ulrich. "I'd love to go back there some time, but for now we have commitments closer to home." You help them to unload their stuff, and say goodbye for now.`
-				accept
-
-
 
 mission "There Might Be Riots part 3A"
 	name "Transport band to <planet>"
@@ -819,7 +823,6 @@ mission "There Might Be Riots part 3A"
 	passengers 8
 	to offer
 		has "There Might Be Riots part 2: done"
-		has "First Contact: Hai: offered"
 		random < 30
 	
 	on offer
@@ -830,8 +833,8 @@ mission "There Might Be Riots part 3A"
 				`	(Not right now.)`
 					defer
 			`	They're very happy to see you. "You always seem to have amazing timing," says Ulrich. "We were just wondering who could transport us to a... gig of sorts... up north, and then you come along. Any chance you could take us to <destination>?"`
-			`	You've heard of that planet. "The weapons testing world for Lovelace Labs?" you ask. "I'm surprised you'd be able to find a big audience there."`
-			`	"Oh, we'll have an audience, all right," he says. "We've just put out a new album called 'Songs for the End of Civilization.' A war protest album. We want to film ourselves playing a concert right in the middle of the missile testing range. Of course we'll probably end up running out of there with Republic Intelligence nipping at our heels. What do you say?"`
+			`	"The weapons testing world for Lovelace Labs." a member fo the band chimes in. "We wont find a big audience there."`
+			`	"Oh, we'll have an audience, all right," Ulrich says to his band mate, before turning to you. "We've just put out a new album called 'Songs for the End of Civilization.' A war protest album. We want to film ourselves playing a concert right in the middle of the missile testing range. Of course we'll probably end up running out of there with Republic Intelligence nipping at our heels. What do you say?"`
 			choice
 				`	"Sorry, that's further than I'm willing to go for you guys."`
 					goto no
@@ -851,16 +854,9 @@ mission "There Might Be Riots part 3A"
 					decline
 				`	"Okay, I'm intrigued. But it still sounds risky."`
 			label yes
-			branch known
-				has "met hai before TMBR"
-			`	"Great," he says. "Now, the only question is where we'll go afterwards until the fuss dies down. Say, did you ever find that planet of squirrel people? We'd love to go back there."`
-			`	"Yes," you say, "they're called the Hai. They live in a whole big region to the north."`
-				goto end
-			label known
-			`	"Great," he says. "Now, the only question is where we'll go afterwards until the fuss dies down. I was thinking it'd be a great chance for our band to reconnect with the squirrel people - what did you call them?"`
-			`	"The Hai," you say.`
-			label end
-			`	"Excellent," he says. "We go thumb our noses at the military industrial complex, then you take us to stay with the peaceful squirrel people where the government won't bother us."`
+			`	"Great," he says. "Now, the only question is where we'll go afterwards until the fuss dies down. I was thinking it'd be a great chance for our band to reconnect with the squirrel people. What were they called again, the hey or hi or something?"
+			`	"The Hai," Rebecca chimes in. "Which means going to Echo Station."
+			`	"Excellent," Ulrich says, "Let's go thumb our noses at the military industrial complex, then you take us to Echo station. We hitch a ride through the gate, and stay with the peaceful squirrel people where the government won't bother us."`
 			`	Once more, they begin loading their stuff onto your ship, while you chart a course to <destination>.`
 				accept
 	on visit
@@ -885,7 +881,7 @@ mission "There Might Be Riots part 3B"
 	name "Transport band to <planet>"
 	description `Avoid the Navy combat drones and give the band "There Might Be Riots" a ride to <destination>.`
 	source "Pilot"
-	#destination "Allhome"
+	destination "Echo Station"
 	cargo "musical equipment" 4
 	passengers 8
 	to offer
@@ -893,7 +889,7 @@ mission "There Might Be Riots part 3B"
 	
 	on offer
 		conversation
-			`You bring your ship to a gingerly landing in a section of the testing range that doesn't look too pockmarked with craters, and the band begins setting up their equipment and video cameras. "This is great," says Ulrich. "We'll be broadcasting live over the Net. It's time people started asking why the government thinks it needs all these weapons of war."`
+			`You bring your ship to a gingerly landing in a section of the testing range that doesn't look too pockmarked with craters, and the band begins setting up their equipment and video cameras. "This is great," says Ulrich. "We'll be broadcasting live over the Hypernet. It's time people started asking why the government thinks it needs all these weapons of war."`
 			`	The band plays through about a third of their set without any evidence that the locals even know you are here, which is surprising for such a tightly secured planet. Then, right in the middle of a particularly crunchy anti-war song, your long range radar picks up something: a large number of ships approaching from a hundred kilometers away.`
 			choice
 				`	"Guys, I think we should get out of here."`
@@ -916,27 +912,27 @@ mission "There Might Be Riots part 3B"
 		personality heroic nemesis
 		fleet
 			variant
-				"Sentinel Drone" 15
+				"Combat Drone" 15
 	npc
 		government "Team Red"
 		personality waiting heroic
 		fleet
 			variant
-				"Sentinel Drone" 20
+				"Combat Drone" 20
 	npc
 		government "Team Blue"
 		personality waiting heroic
 		fleet
 			variant
-				"Sentinel Drone" 35
+				"Combat Drone" 35
 	
 	on visit
 		dialog `You arrive on <planet>, but realize that your escort carrying the band and their supplies has not arrived yet. Better depart and wait for your escorts to enter the system.`
 	on complete
 		payment 500000
-		log `Brought "There Might Be Riots" to the Hai world of Allhome after escaping a swarm of combat drones that disrupted their performance on Pilot. Ulrich spoke of a cloudy star in the Rim where he heard a voice in his head after parking his ship.`
+		log `Brought "There Might Be Riots" to Echo Station after escaping a swarm of combat drones that disrupted their performance on Pilot. Ulrich spoke of a cloudy star in the Rim where he heard a voice in his head after parking his ship.`
 		conversation
-			`You drop off There Might Be Riots on Allhome. Ulrich is looking around the spaceport in wide-eyed excitement. "This is it, guys!" he says. "We're back in the land of the peaceful squirrels. Captain <last>, I don't know how to thank you, but here's a start." He hands you <payment>.`
+			`You drop off There Might Be Riots on Allhome. Ulrich is looking around the spaceport in wide-eyed excitement. "This is it, guys!" he says. "We're headed for the land of the peaceful squirrels. Captain <last>, I don't know how to thank you, but here's a start." He hands you <payment>.`
 			`	As the rest of the band begins unloading their things, Ulrich adds speaking more quietly, "And, in good minstrel fashion I will pay you not just with money, but with a story.`
 			`	"Back when the fame first became too much for me, I rented a shuttlecraft under an assumed name and went tooling around the galaxy just to get away from it all. I found some cloudy star out along the Rim, parked my ship where no one would bother me, shut down everything but life support, and just sat there meditating and enjoying the silence for two or three days.`
 			`	"Then suddenly clear as day I heard a voice say, 'Are you okay? Do you need anything?' I was so shocked that without even thinking I said, 'I'm fine. How about you?' And the voice told me he was sad. Sad, because that part of space used to be the home of another species, and now they're all dead. He said we humans built our cities on the graveyards of a great civilization and didn't even know it. And if we didn't stop fighting each other, our species would die off too.`
@@ -1004,13 +1000,14 @@ mission "Sad Archie"
 			scene "scene/eso0"
 			`You dream that you leave this star system and return to Zug, but when you land there everything is different: the cities you remember are gone, and in their place are other cities with strange architecture, populated by gargantuan dragon-like creatures.`
 			`	Time speeds up, and you watch as the dragon cities grow and spread out. You see one city buried under a massive lava flow, starships buzzing around it like a cloud of flies to carry people and goods to safety. Other cities are destroyed by war, and then abruptly the dragon-people are all gone and their cities lie vacant. Buildings crumble, and the forests reclaim the land.`
-			`	Then you wake up and find yourself back in your ship, in the Ildaria system. Weird.`
+			`	Then you wake up and find yourself back in your ship, in the Ildaria system and very dizzy.`
 	
 	on complete
-		log `Experienced a strange vision while drifting in the Ildaria system that looked like the fall of a civilization of dragon-people. The terrain on the planet of Zug looks strikingly similar to this vision.`
+		"sanity" ++
+		log `Experienced a strange vision while drifting in the Ildaria system that looked like the fall of a civilization of dragon-people. The terrain on the planet of Zug looks strikingly similar to this vision. Albert Foster, the conspiracy theorist and archeologist, might be interested in this. Last I heard, he was at his lab on Vinci.`
 		conversation
 			`On a whim, as you're landing on Zug you pull up a geological map of the planet and find that the geography you dreamt of while drifting in the Ildaria system was surprisingly close to the real thing. There's even a massive basalt outcropping right where you saw a lava flow burying a city. There's no way your ship's sensors can tell what's underneath it, though.`
-
+			`It occours to you that you know an archologist who might be interested in this. Albert Foster. He's probably still at his lab on Vinci.`
 
 
 mission "Rim Archaeology 1"
@@ -1032,20 +1029,20 @@ mission "Rim Archaeology 1"
 					defer
 			`Foster seems glad to see you. You do your best to pique his interest without saying anything that will make him think you're crazy, but he's clearly not buying it. "I'm sorry," he says, "but I'm not mounting an expedition just because you have a 'hunch.' So unless you're willing to tell me the source of your information, I'm not interested." He turns his attention back to the data pad that he was reading before you walked into his office.`
 			choice
-				`	"I'd rather not say."`
+				`	"I'd rather keep my sources secret."`
 				`	"I had this dream about dragon-people on Zug."`
 					goto dream
 				`	"I think a telepathic space alien spoke to me."`
 					goto telepath
 			`	"Then I'd rather not help you," he says, without looking up from the data pad.`
 			choice
-				`	"I had this dream about dragon-people on Zug."`
-				`	"I think a telepathic space alien spoke to me."`
+				`	"Look, I parked in Ildaria and passed out. This is where I had this dream about dragon-people on Zug."`
+				`	"So, Ulrich of TMBR told me about having visions in Ildaria, so I checked it out. I think a telepathic space alien spoke to me."`
 					goto telepath
 			label dream
 			`	"You had a dream," he says. "Sorry, no. Oneirological archaeology is notoriously unreliable." From his tone of voice, you think he's being sarcastic.`
 			choice
-				`	"I think a telepathic space alien spoke to me."`
+				`	"Ulrich of TMBR told me about having visions in Ildaria, so I checked it out. While there, I think a telepathic space alien spoke to me."`
 					goto telepath
 			label telepath
 			`	You expect him to laugh at you, but instead he's so shocked that he drops the data pad he's holding. "An Archon?" he says. "How the hell did you get tangled up with one of those?" You tell him the story, and he listens intently.`
@@ -1086,13 +1083,10 @@ mission "Rim Archaeology 2A"
 				`	"Sure."`
 					accept
 				`	"Sorry, I don't have time to help out anymore."`
-			`	He seems incredulous. "No time to participate in what could be one of the biggest discoveries of the last hundred years? You'll be well paid for your services too, if that's what's holding you back."`
+			`	He seems incredulous. "No time to participate in what could be one of the biggest discoveries of the last hundred years? A job you offered me, no less?" He sighs, "You'll be well paid for your services too, if that's what's holding you back."`
 			choice
 				`	"Okay, I'll pick up your equipment from <planet>."`
 					accept
-				`	"Sorry, I'm just not interested."`
-					decline
-
 
 
 mission "Rim Archaeology 2B"
@@ -1153,7 +1147,7 @@ mission "Rim Archaeology 3B"
 				accept
 	
 	npc evade
-		government Independent
+		government Merchant
 		personality waiting
 		ship "Peregrine" "Oxyrhynchus"
 	
@@ -1178,7 +1172,6 @@ mission "Rim Archaeology 4A"
 	on offer
 		conversation
 			`When you return to the dig, Foster's trench is already almost ten meters deep. You tell him that you saw the Oxyrhynchus on your scanners, but you were able to evade it. "Good job," he says. "Now, we need a xenobiologist who can help us make sense of what we find. A friend of mine, Amelia Lee, has been living on the Quarg ringworld for the last decade or so, and she agreed to come visit the dig, and also to see what the Quarg can tell us about this old alien civilization. Also, here's your pay for transporting the laser cutter." He hands you another three hundred thousand credits.`
-			`	You agree to pick her up, and he returns to supervising the excavation.`
 				accept
 
 
@@ -1205,13 +1198,7 @@ mission "Rim Archaeology 4B"
 			label welcome
 			`	As both of them board your ship, Amelia chats enthusiastically with you. "One ringworld can sustain a population in excess of a trillion," she says, "so the Quarg need long names in order to unambiguously identify themselves." She goes on to ask questions about the progress of the dig, using so much technical jargon that at times it almost sounds like she is speaking the Quarg language rather than your own. Clearly she is very knowledgeable about the study of alien societies, and you are surprised to learn that she was actually born in Hai space, as the granddaughter of some of the first humans who settled there.`
 				accept
-	
-	npc
-		government Merchant
-		personality waiting
-		system Dabih
-		ship "Bolt" "Naukratis"
-	
+
 	on visit
 		dialog `You land on <planet>, but realize that your escort carrying Amelia and Yarthis hasn't entered the system yet. Better depart and wait for it.`
 	on complete
@@ -1236,7 +1223,7 @@ mission "Rim Archaeology 5A"
 				`	"Of course."`
 					goto end
 				`	"My ship is not a warship."`
-			`	"Then just get up there and lead them around in circles until reinforcements arrive," he says. "I don't care how you do it, just keep whoever is up there occupied."`
+			`	"Then just get up there and lead them around in circles until reinforcements arrive," he says. "I don't care how you do it, just keep whoever is up there occupied. I doubt the Free Worlds will leave this planet undefended for long. Go!"`
 			label end
 			`	As you run for your ship, you see Yarthis pull out some sort of communication device and speak into it. Perhaps the Quarg will be joining in this fight as well...`
 				launch
@@ -1245,19 +1232,42 @@ mission "Rim Archaeology 5A"
 		government Pirate
 		personality heroic waiting
 		ship "Harpy" "Akhetaten"
-		ship "Sting" "Itjtawy"
-		ship "Fenghuang" "Tanis"
-		ship "Bakunawa" "Buhen"
-		ship "Spinetail" "Athribis"
-		ship "Phosphorus" "Philae"
-		ship "Sturnus" "Esna"
+		ship "Harpy" "Itjtawy"
+		ship "Huma" "Tanis"
+		ship "Harpy" "Buhen"
+		ship "Huma" "Athribis"
+		ship "Huma" "Philae"
+		ship "Huma" "Esna"
 		dialog `The last of the pirate raiders have been driven off. Time to land and check if any damage was done to the dig.`
-	
+
+	npc
+		government Pirate
+		personality heroic waiting
+		ship "Fury" "Raider One"
+		ship "Fury" "Raider Two"
+		ship "Fury" "Raider Three"
+		ship "Fury" "Raider Four"
+		ship "Fury" "Raider Five"
+		ship "Fury" "Raider Six"
+		ship "Fury" "Raider Seven"
+		ship "Fury" "Raider Eight"
+		ship "Fury" "Raider Nine"
+		ship "Fury" "Raider Ten"
+
+	npc
+		personality heroic escort
+		government "Free Worlds"
+		fleet "Large Free Worlds"
+	npc
+		personality heroic escort
+		government "Merchant"
+		fleet "Small Southern Pirates"
+		
 	npc
 		government Quarg
 		system "Gamma Corvi"
 		personality heroic
-		ship "Wyvern" "Gloref Esa Kurayi"
+		ship "Quarg Wardragon" "Gloref Esa Kurayi"
 	
 	on visit
 		dialog
@@ -1266,9 +1276,9 @@ mission "Rim Archaeology 5A"
 	on complete
 		payment 400000
 		event "rim archaeology results" 97
-		log `With the help of a Quarg ship, fought off a group of antique thieves looking to rob the archaeological site that Albert Foster dug up. Foster will need some time to study what he has found and release the results of his findings.`
+		log `With the help of a Free Worlds defense fleet, some Merchants, and a Quarg ship, I fought off a group of antique thieves looking to rob the archaeological site that Albert Foster dug up. Foster will need some time to study what he has found and release the results of his findings.`
 		conversation
-			`A plume of smoke is rising from the dig site. Fearing the worst, you land and find out that a missile fired by one of the pirates destroyed one of the huts where the workers were living, but fortunately no one was inside it at the time. Foster is shaken but still committed to finishing the work. "It will be months before we've excavated enough to be able to publish any findings," he says, "but Yarthis has told me that the Quarg will be stationing a Wyvern here for the remainder of the project, to prevent any further foul play." Foster gives you one last payment: four hundred thousand credits for your help driving off the pirates. "And I'll be sure to give you credit for your help when the news goes public," he says.`
+			`A plume of smoke is rising from the dig site. You land and find out that a missile fired by one of the pirates destroyed one of the huts where the workers were living, but fortunately no one was inside it at the time. Foster is shaken but still committed to finishing the work. "It will be months before we've excavated enough to be able to publish any findings," he says, "but Yarthis has told me that the Quarg will be stationing a Wardragon here for the remainder of the project, to prevent any further foul play." Foster gives you one last payment: four hundred thousand credits for your help driving off the pirates. "And I'll be sure to give you credit for your help when the news goes public," he says.`
 
 
 
@@ -1281,7 +1291,7 @@ mission "Rim Archaeology 5B"
 	npc kill
 		government Quarg
 		personality heroic staying uninterested
-		ship "Wyvern" "Gloref Esa Kurayi"
+		ship "Quarg Wardragon" "Gloref Esa Kurayi"
 
 
 
@@ -1296,7 +1306,7 @@ event "rim archaeology results"
 mission "Rim Archaeology 6"
 	landing
 	source
-		government "Republic" "Free Worlds" "Syndicate" "Independent" "Neutral"
+		government "Republic" "Free Worlds" "Syndicate" "Independent" "Neutral" "Northern Union"
 		near "Sol" 100
 		attributes spaceport
 	to offer
@@ -1309,7 +1319,13 @@ mission "Rim Archaeology 6"
 			`	The Quarg, who at other times seem quite willing to share their knowledge with human beings, are being surprisingly reticent with information about this lost civilization. Aside from telling Foster that the aliens were known as the Sheragi, their only comments have been vague warnings that if human beings persist in developing weapons of war, they will end up like the Sheragi. From this, Foster has surmised that the alien civilization was most likely destroyed by a civil war, not by natural disaster or an attack by another species.`
 			`	It may not yield any great advances in human technology, but the dig will be providing clues to the history of the galaxy for years to come, and you can be proud to have played a part in that.`
 				decline
+	on decline
+		event "rim archaeology results 2" 365
 
+event "rim archaeology results 2"
+	planet Zug
+	spaceport `The spaceport of Zug has been growing by amalgamation for centuries. At its core is the "Old Port," a set of quaint and rudimentary shops and warehouses. The landing pads for the Old Port were torn up to make room for what the locals call "The Port," a set of buildings that were constructed a century ago, with bolder architecture and more modern design. Some distance away is the "New Port," a towering structure with robotic cargo lifts and large hangars for more expensive ships. Meanwhile, plans are apparently underway for an expansion of the New Port. You can't help but wonder what the new expansion will be named.`
+	spaceport `	On the one year anniversary of the Sheragi discovery you set in motion, the increased tourism created demand for a museum. The massive building showcasing all of the archeological findings made by Albert Foster. Most importantly, however, it includes a food quart which was named after you.`
 
 
 mission "Drug Running 1"
