@@ -1297,7 +1297,7 @@ effect "meteor fire"
 outfit "Ranger Missile"
 	category "Ammunition"
 	cost 900
-	thumbnail "outfit/Ranger"
+	thumbnail "outfit/sidewinder"
 	"mass" .2
 	"Ranger capacity" -1
 	description "The Ranger Missile is ammunition for the Ranger Missile Launcher. You cannot install a missile without a launcher to fire it from."
@@ -1305,7 +1305,7 @@ outfit "Ranger Missile"
 outfit "Ranger Missile Rack"
 	category "Ammunition"
 	cost 20000
-	thumbnail "outfit/Ranger storage"
+	thumbnail "outfit/sidewinder storage"
 	"mass" 2.4
 	"outfit space" -7
 	"Ranger capacity" 23
@@ -1315,7 +1315,7 @@ outfit "Ranger Missile Rack"
 outfit "Ranger Missile Launcher"
 	category "Secondary Weapons"
 	cost 60000
-	thumbnail "outfit/Ranger launcher"
+	thumbnail "outfit/sidewinder launcher"
 	"mass" 5
 	"outfit space" -29
 	"weapon capacity" -29
@@ -2560,7 +2560,7 @@ outfit "Softshell Turtle Shield Generator"
 	thumbnail "outfit/small shield g"
 	"mass" 15
 	"outfit space" -15
-	"engine space" -15
+	"engine capacity" -15
 	"shield generation" .52
 	"shield energy" .52
 	description "Lovelace's shield generator is more powerful than the syndicated systems D14 shield generators, and like the D14 they scale in power with their size. The Softshell is slightly more powerful shield generator than its Spotted counterpart, but recharging your shields completely will still take a long time."
