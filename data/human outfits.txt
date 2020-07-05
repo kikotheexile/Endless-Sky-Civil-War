@@ -1327,7 +1327,7 @@ outfit "Ranger Missile Launcher"
 			"frame rate" .25
 		sound "Ranger"
 		ammo "Ranger Missile"
-		icon "icon/Ranger"
+		icon "icon/sidewinder"
 		"fire effect" "Ranger fire"
 		"die effect" "missile death"
 		"hit effect" "missile hit"
@@ -1350,7 +1350,7 @@ outfit "Ranger Missile Launcher"
 	description "	Although not as powerful or cheap as the popular Meteor missiles, Rangers have several advantages, including their superior maneuverability, better tracking systems, and protective casings that make them much harder for anti-missile systems to destroy."
 
 effect "Ranger fire"
-	sprite "effect/Ranger fire"
+	sprite "effect/sidewinder fire"
 		"no repeat"
 		"frame rate" 30
 	"lifetime" 9
