@@ -2549,7 +2549,7 @@ outfit "Spotted Turtle Shield Generator"
 	thumbnail "outfit/tiny shield g"
 	"mass" 10
 	"outfit space" -10
-	"engine space" -10
+	"engine capacity" -10
 	"shield generation" .4
 	"shield energy" .4
 	description "The Lovelace Tortoise Class shield generators work by converting extra engine space to shield production. This Extra Small variant is tailor made for fighters, interceptors, and ships that don't see regular combat."
@@ -2571,7 +2571,7 @@ outfit "Map Turtle Shield Generator"
 	thumbnail "outfit/medium shield g"
 	"mass" 25
 	"outfit space" -25
-	"engine space" -25
+	"engine capacity" -25
 	"shield generation" .64
 	"shield energy" .64
 	description "The Lovelace Map shield generator takes up as much engine space as many full sized engine modules. True to its name, you are exchanging speed for additional protection."
@@ -2582,7 +2582,7 @@ outfit "Snapper Shield Generator"
 	thumbnail "outfit/large shield g"
 	"mass" 35
 	"outfit space" -35
-	"engine space" -35
+	"engine capacity" -35
 	"shield generation" .86
 	"shield energy" .86
 	description "The phrase 'She may be slow but she can take a beating' is the mantra of people who use this Lovelace invention. Some pilots argue you would be better served buying a scram drive or an afterburner rather than this shield."
@@ -2593,7 +2593,7 @@ outfit "Galapagos Shield Generator"
 	thumbnail "outfit/huge shield g"
 	"mass" 40
 	"outfit space" -52
-	"engine space" -52
+	"engine capacity" -52
 	"shield generation" 1.72
 	"shield energy" 1.72
 	description "This is tied for the most efficient shield generator with the Pacifist-5 class shield generator. Unfortunately it takes up more space than most engines, so it is seldom used by anyone but the most paranoid freighter pilots."
