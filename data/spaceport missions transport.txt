@@ -388,7 +388,7 @@ mission "Transport Workers B"
 					goto thanks
 				`	"Sorry, I'm not headed in that direction."`
 					decline
-				`	"Sounds like he's just trying to get rid of you, and I will not be a party to his malice. Goodbye."
+				`	"Sounds like he's just trying to get rid of you, and I will not be a party to his malice. Goodbye."`
 					decline
 			label thanks
 			`	"Thank you, Captain," he says, shaking your hand. You bring him aboard your ship and show him to one of the empty bunks.`
@@ -716,7 +716,7 @@ mission "There Might Be Riots 1"
 			choice
 				`	"Pleased to meet you all. What's the name of your band?"`
 					goto name
-				`	"THE There Might Be Riots? I'm glad I took this job!"
+				`	"THE There Might Be Riots? I'm glad I took this job!"`
 					goto end
 			label name
 			`	"Oh," Ulrich says, "we call ourselves, 'There Might Be Riots.'"`
@@ -807,7 +807,7 @@ mission "There Might Be Riots part 2"
 				`	"You met a merchant captian with a Hai gate key?"`
 				`	"Well, I'll look forward to the next time we meet."`
 					accept
-			`	Ulrich chuckles a bit, "Pretty wild, huh? Well, we've been discussing ways to smuggle ourselves back into their space. Maybe one day we will."
+			`	Ulrich chuckles a bit, "Pretty wild, huh? Well, we've been discussing ways to smuggle ourselves back into their space. Maybe one day we will."`
 				accept
 
 mission "There Might Be Riots part 3A"
@@ -854,8 +854,8 @@ mission "There Might Be Riots part 3A"
 					decline
 				`	"Okay, I'm intrigued. But it still sounds risky."`
 			label yes
-			`	"Great," he says. "Now, the only question is where we'll go afterwards until the fuss dies down. I was thinking it'd be a great chance for our band to reconnect with the squirrel people. What were they called again, the hey or hi or something?"
-			`	"The Hai," Rebecca chimes in. "Which means going to Echo Station."
+			`	"Great," he says. "Now, the only question is where we'll go afterwards until the fuss dies down. I was thinking it'd be a great chance for our band to reconnect with the squirrel people. What were they called again, the hey or hi or something?"`
+			`	"The Hai," Rebecca chimes in. "Which means going to Echo Station."`
 			`	"Excellent," Ulrich says, "Let's go thumb our noses at the military industrial complex, then you take us to Echo station. We hitch a ride through the gate, and stay with the peaceful squirrel people where the government won't bother us."`
 			`	Once more, they begin loading their stuff onto your ship, while you chart a course to <destination>.`
 				accept
@@ -1324,8 +1324,8 @@ mission "Rim Archaeology 6"
 
 event "rim archaeology results 2"
 	planet Zug
-	spaceport `The spaceport of Zug has been growing by amalgamation for centuries. At its core is the "Old Port," a set of quaint and rudimentary shops and warehouses. The landing pads for the Old Port were torn up to make room for what the locals call "The Port," a set of buildings that were constructed a century ago, with bolder architecture and more modern design. Some distance away is the "New Port," a towering structure with robotic cargo lifts and large hangars for more expensive ships. Meanwhile, plans are apparently underway for an expansion of the New Port. You can't help but wonder what the new expansion will be named.`
-	spaceport `	On the one year anniversary of the Sheragi discovery you set in motion, the increased tourism created demand for a museum. The massive building showcasing all of the archeological findings made by Albert Foster. Most importantly, however, it includes a food quart which was named after you.`
+		spaceport `The spaceport of Zug has been growing by amalgamation for centuries. At its core is the "Old Port," a set of quaint and rudimentary shops and warehouses. The landing pads for the Old Port were torn up to make room for what the locals call "The Port," a set of buildings that were constructed a century ago, with bolder architecture and more modern design. Some distance away is the "New Port," a towering structure with robotic cargo lifts and large hangars for more expensive ships. Meanwhile, plans are apparently underway for an expansion of the New Port. You can't help but wonder what the new expansion will be named.`
+		spaceport `	On the one year anniversary of the Sheragi discovery you set in motion, the increased tourism created demand for a museum. The massive building showcasing all of the archeological findings made by Albert Foster. Most importantly, however, it includes a food court which was named after you.`
 
 
 mission "Drug Running 1"
