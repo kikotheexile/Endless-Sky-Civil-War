@@ -9,13 +9,60 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 fleet "Caravan Large"
-	government Author
-	#Placeholder large caravan fleet
+	government Caravan
+	names "deep"
+	fighters "deep fighter"
+	cargo 4
+	personality
+		disables plunders appeasing
+	variant 5
+		"Bactrian"
+		"Boxwing" 12
+		"Aerie" 2
+		"Dagger" 4
+		"Challenger" 4
+	variant 2
+		"Bactrian" 2
+		"Dagger" 24
+	variant 2
+		"Bactrian"
+		"Boxwing" 12
+		"Bactrian" 
+		"Shuttle" 12
+		"Headhunter" 6 
+	variant 1
+		"Bactrian"
+		"Shuttle" 12
+		"Mule" 4
+		"Raven" 6
+		"Challenger" 2
+		"Headhunter" 6
 
 fleet "Caravan Small"
-	government Author
-	#Placeholder small caravan fleet
-
+	government Caravan
+	names "deep"
+	fighters "deep fighter"
+	cargo 4
+	personality
+		disables plunders appeasing
+	variant 5
+		"Mule"
+		"Boxwing"6 
+		"Aerie" 2
+		"Dagger" 4
+	variant 2
+		"Mule"
+		"Headhunter" 4
+	variant 2
+		"Bactrian" 
+		"Shuttle" 12
+		"Headhunter" 2 
+	variant 1
+		"Mule" 4
+		"Raven" 2
+		"Challenger" 2
+		"Headhunter" 2
+		
 fleet "Small Southern Merchants"
 	government "Merchant"
 	names "civilian"
