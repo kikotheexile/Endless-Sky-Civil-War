@@ -534,6 +534,7 @@ outfitter "Pirate Outfits"
 	"Gatling Gun"
 	"Bullet Boxes"
 	"Brig"
+	"Gatling turret"
 
 outfitter "Tarazed Systems"
 	"Ion Cannon"
@@ -587,7 +588,7 @@ outfitter "Free Market"
 	"Brig"
 	"Local Map"
 	"Pilot's License"
-
+	"Gatling turret"
 outfitter "Stack Core"
 	"Stack Core"
 
