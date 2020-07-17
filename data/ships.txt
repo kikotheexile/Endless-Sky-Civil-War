@@ -659,6 +659,9 @@ ship "Heavy Shuttle"
 		"outfit space" 120
 		"weapon capacity" 10
 		"engine capacity" 60
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 100
 		"atmosphere scan" 10
 		weapon
 			"blast radius" 12
