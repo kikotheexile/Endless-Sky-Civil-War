@@ -681,6 +681,10 @@ Files:
  images/planet/station3bd*
  images/projectile/annihilator*
  images/projectile/ravager?beam*
+ images/outfit/gatur*
+ images/outfit/slug?thrower*
+ images/outfit/station?p1*
+ images/outfit/station?p2*
 Copyright: Becca Tommaso (tommasobecca03@gmail.com)
 License: CC-BY-SA-4.0
 
@@ -707,6 +711,25 @@ Files
 Copyright: Benjamin Jackson (gods.benyamin@outlook.com)
 License: CC-BY-SA-4.0
 Comment: Derived from works by Michael Zahniser (under the same license)
+file:
+images/land/para1*
+Copyright: Paul King
+Comment: Used with permission
+
+files:
+images/land/spook*
+images/land/pipe*
+Copyright:various
+License: public-domain
+Comment: Taken from publicdomainpictures.net, a collection of public domain pictures
+
+files:
+images/land/hangar1*
+images/land/hangar2*
+images/land/oldtech*
+Copyright:various
+License:public-domain
+Comment: Taken from catalog.archives.gov, a collection of government photos in the public domain
 
 
 Files: source/Utf8.*
