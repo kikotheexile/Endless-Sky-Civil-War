@@ -12,38 +12,6 @@ galaxy "Milky Way"
 	pos 0 0
 	sprite ui/galaxy
 
-galaxy "label core"
-	pos -136 130
-	sprite label/core
-
-galaxy "label deep"
-	pos -658 -300
-	sprite label/deep
-
-galaxy "label dirt belt"
-	pos -515 260
-	sprite "label/dirt belt"
-
-galaxy "label earth"
-	pos -420 94
-	sprite label/earth
-
-galaxy "label north"
-	pos -324 -332
-	sprite label/north
-
-galaxy "label paradise"
-	pos -345 -136
-	sprite label/paradise
-
-galaxy "label rim"
-	pos -778 265
-	sprite label/rim
-
-galaxy "label south"
-	pos -566 501
-	sprite label/south
-
 system Acamar
 	pos -284 -3
 	government Syndicate
@@ -1065,11 +1033,13 @@ system Algorel
 
 
 system Alheka
-	pos -350 -271
+	pos -385 -131
 	government Republic
 	habitable 1080
-	link Betelgeuse
-	link Canopus
+	link Alhena
+	link Kursa
+	link Phact
+	link Wazn
 	trade Clothing 181
 	trade Electronics 663
 	trade Equipment 697
@@ -1120,7 +1090,7 @@ system Alhena
 	government Republic
 	habitable 945
 	link Menkalinan
-	link Wazn
+	link Alheka
 	trade Clothing 315
 	trade Electronics 788
 	trade Equipment 654
@@ -2728,7 +2698,7 @@ system Betelgeuse
 	government Republic
 	habitable 1080
 	link Mirzam
-	link Alheka
+	link Phurad
 	link Rigel
 	trade Clothing 226
 	trade Electronics 647
@@ -2916,9 +2886,9 @@ system Canopus
 	pos -421 -225
 	government Republic
 	habitable 214.375
-	link Phurad
+	link Wazn
 	link Mirzam
-	link Alheka
+	link Phurad
 	link Phact
 	trade Clothing 237
 	trade Electronics 738
@@ -6122,7 +6092,7 @@ system Kursa
 	habitable 455
 	link Elnath
 	link Aldebaran
-	link Wazn
+	link Alheka
 	trade Clothing 253
 	trade Electronics 692
 	trade Equipment 620
@@ -8394,7 +8364,7 @@ system Phact
 	pos -375 -191
 	government Republic
 	habitable 1080.62
-	link Wazn
+	link Alheka
 	link Canopus
 	trade Clothing 258
 	trade Electronics 784
@@ -8562,12 +8532,11 @@ system Pherkad
 
 
 system Phurad
-	pos -494 -153
+	pos -350 -271
 	government Republic
 	habitable 1080
-	link Tejat
+	link Betelgeuse
 	link Canopus
-	link Wazn
 	trade Clothing 235
 	trade Electronics 795
 	trade Equipment 652
@@ -10699,7 +10668,7 @@ system Tejat
 	pos -489 -107
 	government Republic
 	habitable 1158.12
-	link Phurad
+	link Wazn
 	link Miaplacidus
 	trade Clothing 264
 	trade Electronics 721
@@ -11359,13 +11328,12 @@ system Waypoint
 
 
 system Wazn
-	pos -385 -131
+	pos -494 -153
 	government Republic
 	habitable 534.375
-	link Alhena
-	link Kursa
-	link Phact
-	link Phurad
+	link Tejat
+	link Canopus
+	link Alheka
 	trade Clothing 286
 	trade Electronics 800
 	trade Equipment 662
