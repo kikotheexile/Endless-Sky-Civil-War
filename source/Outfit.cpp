@@ -43,15 +43,28 @@ namespace {
 }
 
 const vector<string> Outfit::CATEGORIES = {
+	"Map",
+	"Engines",	
+	"Power",
+	"Defenses",
+	"Drive Systems",
+	"Cooling",
+	"Forward Guns",
 	"Guns",
 	"Turrets",
 	"Secondary Weapons",
 	"Ammunition",
-	"Systems",
-	"Power",
-	"Engines",
+	"Boarding",
 	"Hand to Hand",
-	"Special"
+	"Systems",
+	"Modifications",
+	"Special",
+	"Superweapon",
+	"Deprecated",
+	"Artifact",
+	"Cosmetic",
+	"Licenses"
+
 };
 
 
