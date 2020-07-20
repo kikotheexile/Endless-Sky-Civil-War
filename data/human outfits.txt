@@ -1815,6 +1815,48 @@ outfit "Proton Turret"
 	description "Developed by Syndicated Systems, the Proton Turret's rate of fire and hitforce makes it arguably the best anti-fighter weapon on the market."
 
 # Secondary Weapons
+outfit "Gatling turret"
+	category "Secondary Weapons"
+	cost 200000
+	thumbnail "outfit/gatur"
+	"mass" 5
+	"outfit space" -36
+	"weapon capacity" -36
+	"gatling round capacity" 12000
+	"turret mounts" -1
+	weapon
+		"hardpoint sprite" "hardpoint/proton turret"
+		sprite "projectile/tinyflare"
+		sound "explosion tiny"
+		ammo "Gatling Gun Ammo"
+		icon "icon/gat"
+		"turret turn" 3.0
+		"submunition" "gtbullet"
+		"inaccuracy" 2
+		"velocity" 16
+		"lifetime" 1
+		"reload" 3
+		"firing energy" .06
+		"firing heat" 5
+		"cluster"
+		"hit effect" "bullet impact"
+	description 'Two Gatling guns, modified for maximum damage, attached to a swivelling base. The gatling turret, occasionally used by pirates and traditional captains, is a formidible relic of the dark ages.'
+		
+		
+outfit "gtbullet"
+	weapon
+		sprite "projectile/bullet"
+			"delay" 5
+			"random start frame"
+			"frame rate" 0
+		"random velocity" 8
+		"lifetime" 20
+		"random lifetime" 5
+		"shield damage" 15
+		"hull damage" 24
+		"hit force" 4
+		"hit effect" "bullet impact"
+
 
 outfit "Meteor Missile Launcher"
 	category "Secondary Weapons"
@@ -2556,6 +2598,45 @@ outfit "Bullet Boxes"
 	ammo "Gatling Gun Ammo"
 	description "Bullet Boxes are used to store extra ammunition for Gatling Guns. In spite of the fact they are made by rebels and pirates, they still fit perfectly onto standard internal outfit brackets."
 
+outfit "Paragon Automata"
+	category "Modifications"
+	cost 80000
+	thumbnail "outfit/android"
+	"required crew" -1
+	"android charging station" -1
+	"hull repair rate" 0.1
+	"hull energy" 0.1
+	"hull heat" 0.3
+	unplunderable 1
+	description "Paragon corporation was on the cutting edge of automata technology for decades. These incredible inventions can run ship systems and help repair the hull, but require a special control node and charging stations."
+
+outfit "Paragon Automa Charging Station"
+	category "Modifications"
+	cost 50000
+	thumbnail "outfit/green screwdriver"
+	"mass" 5
+	"outfit space" -5
+	"cargo space" -15
+	"cooling inefficiency" 1
+	"heat dissipation" -.04
+	"hull energy" 0.2
+	"android charging station" 4
+	unplunderable 1
+	description "The technology is so advanced it seems almost alien, which is impressive for something created by human hands centuries ago. Some sort of advanced systems core functions to both recharge androids, and serve as their central command unit."
+	description "	This modification kit was created long before standardized outfit brackets were invented, meaning if someone wants to install it aboard a ship, it will come at the cost of both outfit and cargo space, as well as hinder their cooling."
+
+outfit "Amateur Salvage tools"
+	category "Modifications"
+	"t1 salvage" 1
+	thumbnail "outfit/unknown"
+	"capture attack" .2
+	description "Basic tools to allow one to enter places they shouldn't. Includes cutters, drills and one trusty crowbar to aid in lawbreaking. Useful for breaking into abandoned systems, warehouses, and hostile ships alike."
+	
+outfit "Expert Salvage tools"
+	category "Modifications"
+	"t2 salvage" 1
+	thumbnail "outfit/unknown"
+	description "The most advanced tools obtainable for breaking and entering. Ship mounted devices in combination with molded explosives will crack even the hardest of airlocks."
 
 # Superweapon
 outfit "N-Bomb"
@@ -2683,6 +2764,21 @@ outfit "Beam Talon"
 		"piercing" .5
 	description "The Beam Talon is a frightening weapon, an upscaled beam laser designed to cause massive damage to the surface of planets, largely ignoring planetary shields. It could, if it could maintain a stream for long enough.
 	description "Currently, it is capable of destroying most Cruisers in a matter of seconds. This comes at the cost of leaving the Vulture completely overheated and out of energy."
+
+# Artifacts
+
+outfit "Slug thrower"
+	category "Artifact"
+	"museum gun" 1
+	licenses
+		Paragon
+	cost 15000
+	thumbnail "outfit/slug thrower"
+	"capture attack" 1.4
+	"capture defense" .6
+	unplunderable 1
+	description "A dirty weapon from the Dark Ages. Unlike a traditional laser or plasma sidearm, this weapon fires a large solid projectile, sheathed in plasma. While not damaging enough to rupture a hull, it certainly does a better, albiet messier, job than a standard laser rifle."
+	
 
 # Licenses
 
