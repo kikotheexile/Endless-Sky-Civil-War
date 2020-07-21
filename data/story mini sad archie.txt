@@ -355,7 +355,7 @@ mission "There Might Be Riots part 2"
 		payment
 		payment 200000
 		conversation
-			`As before, the band pays you generously: <payment>. 
+			`As before, the band pays you generously: <payment>.`
 			choice
 				"Where will you be going next, from here?" you ask.`
 			# ask about why they didn't have their own transport
@@ -418,8 +418,8 @@ mission "There Might Be Riots part 3A"
 			choice
 				`	"Sorry, but it's still a 'no.'"`
 					decline
-				`	"Okay, I'm intrigued. But it still sounds risky."
-					label yes
+				`	"Okay, I'm intrigued. But it still sounds risky."`
+					goto yes
 			label pay
 			`	"We'll pay you with more than just money," he tells you. "Do this for us, and I'll share a story with you that very few have heard."`
 			choice
