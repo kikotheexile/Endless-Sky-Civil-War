@@ -29,7 +29,7 @@ outfit "Galactic Map"
 	cost 10000000
 	thumbnail "outfit/mapfull"
 	"map" 120
-	description "The full Galactic Map is considered over priced by virtually everyone, especially as you can map out all the systems by your self for free.
+	description "The full Galactic Map is considered over priced by virtually everyone, especially as you can map out all the systems by your self for free."
 	description "	This data chip contains complete information on the known galaxy: planets, ports, governments, trade prices, available services, etc. Having this map is considered an unnecessary luxury by some, but an invaluable resource to others."
 
 # Engines
@@ -802,7 +802,7 @@ outfit "Anti-Missile Turret"
 		"firing energy" 5
 		"firing heat" 3
 	description "Before the invention of shields, space battles were fought mostly with missiles. The outcome was largely dependent on which ship had more ammunition. Lovelace Labs was originally founded to remedy that situation by developing a protective system that could destroy missiles en route, defending freighter convoys from pirates who could otherwise simply bombard them into submission without ever venturing within range of their guns."
-	desctiption "	Unlike shields, anti-missile systems (AMS) take up weapons hardpoints and power, trading offense for defense."
+	description "	Unlike shields, anti-missile systems (AMS) take up weapons hardpoints and power, trading offense for defense."
 	
 effect "small anti-missile"
 	sprite "effect/small anti missile"
@@ -832,7 +832,7 @@ outfit "Heavy Anti-Missile Turret"
 		"firing energy" 10
 		"firing heat" 5
 	description "The Heavy Lovelace Anti-Missile turret has a longer range, higher power, and shorter reload time than its smaller sibling."
-	desctiption "	Unlike shields, anti-missile systems (AMS) take up weapons hardpoints and power, trading offense for defense."
+	description "	Unlike shields, anti-missile systems (AMS) take up weapons hardpoints and power, trading offense for defense."
 
 effect "large anti-missile"
 	sprite "effect/large anti missile"
@@ -2422,7 +2422,7 @@ outfit "Surveillance Pod"
 	"atmosphere scan" 100
 	"tactical scan power" 9
 	description "This is Navy technology, a collection of scanners designed to fit perfectly inside one of their surveillance drones."
-	description "	Although not technically a sensor modification, enterprising Pirates and Navy captains discovered that the outputs are fairly standard. Meaning, of course, that you could connect it to your own ship's systems if you want. As with all sensor modifications, installing more than one increases the scan range and speed.
+	description "	Although not technically a sensor modification, enterprising Pirates and Navy captains discovered that the outputs are fairly standard. Meaning, of course, that you could connect it to your own ship's systems if you want. As with all sensor modifications, installing more than one increases the scan range and speed."
 
 outfit "Outfits Expansion"
 	category "Modifications"
@@ -2762,7 +2762,7 @@ outfit "Beam Talon"
 		"shield damage" 10
 		"hull damage" 5000
 		"piercing" .5
-	description "The Beam Talon is a frightening weapon, an upscaled beam laser designed to cause massive damage to the surface of planets, largely ignoring planetary shields. It could, if it could maintain a stream for long enough.
+	description "The Beam Talon is a frightening weapon, an upscaled beam laser designed to cause massive damage to the surface of planets, largely ignoring planetary shields. It could, if it could maintain a stream for long enough."
 	description "Currently, it is capable of destroying most Cruisers in a matter of seconds. This comes at the cost of leaving the Vulture completely overheated and out of energy."
 
 # Artifacts
