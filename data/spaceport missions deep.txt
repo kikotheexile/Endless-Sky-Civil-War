@@ -1435,7 +1435,7 @@ mission "Deep: Scientist Rescue 2: Pirate Bactrian"
 		government "Pirate"
 		personality staying nemesis
 		system "Arneb"
-		"Dagger" 12
+		ship "Dagger" 12
 
 
 mission "Deep: Scientist Rescue 2: More Pirates"
@@ -1472,7 +1472,7 @@ mission "Deep: Scientist Rescue 3A"
 		conversation
 			`As you land near the Star Queen, you can see its passengers being escorted off. Rayna and Hannah come running off the ship over to Garrison, who must have arrived as soon as he heard the news. A medical team is examining each passenger while a Deep Security officer asks questions and jots down the responses. Sadly, you also notice a number of body bags next to the ship, likely from scientists or crew that were found dead on the ship.`
 			`	Lieutenant Paris is waiting for you outside of your ship, and hands you another <payment> when you walk up to him. "Thanks for all the help, Captain <last>. We couldn't have done it without you."`
-			`	Paris looks back to the Star Queen, and you can overhear one of the Deep Security officers listing off names. "Sarah Reevs, Nicole Faye, Pierre Joules, Laura Paris..." the list goes on for slightly over a dozen total names.
+			`	Paris looks back to the Star Queen, and you can overhear one of the Deep Security officers listing off names. "Sarah Reevs, Nicole Faye, Pierre Joules, Laura Paris..." the list goes on for slightly over a dozen total names.`
 			`	He talks to you in a rather strained voice. "I want you to return to Arneb and take out every single one of those pirates that are left. Especially the Bactrian. We try to keep Bactrians out of unworthy hands, so whenever a pirate gets one we make sure we destroy it immediately. Seeing as how we're going to be busy here for a while, you need to be the one who destroys it."`
 			choice
 				`	"I'll make sure it gets done, Lieutenant."`
@@ -1500,7 +1500,7 @@ mission "Deep: Scientist Rescue 3A"
 		government "Pirate"
 		personality staying nemesis
 		system "Arneb"
-		"Dagger" 12
+		ship "Dagger" 12
 	on visit
 		dialog "You landed on Valhalla, but you didn't kill the Bactrian! Return to Arneb and make sure that the Bactrian is destroyed and forever out of pirate hands."
 	on complete
