@@ -395,7 +395,7 @@ mission "There Might Be Riots part 3A"
 				`	(Not right now.)`
 					defer
 			`	They're very happy to see you. "You always seem to have amazing timing," says Ulrich. "We were just wondering who could transport us to a... gig of sorts... up north, and then you come along. Any chance you could take us to <destination>?"`
-			`	"The weapons testing world for Lovelace Labs." a member fo the band chimes in. "We wont find a big audience there."`
+			`	"The weapons testing world for Lovelace Labs." a member of the band chimes in. "We wont find a big audience there."`
 			`	"Oh, we'll have an audience, all right," Ulrich says to his band mate, before turning to you. "We've just put out a new album called 'Songs for the End of Civilization.' A war protest album. We want to film ourselves playing a concert right in the middle of the missile testing range. Of course we'll probably end up running out of there with Republic Intelligence nipping at our heels. What do you say?"`
 			choice
 				`	"Sorry, that's further than I'm willing to go for you guys."`
@@ -578,7 +578,7 @@ mission "Sad Archie"
 		log `Experienced a strange vision while drifting in the Ildaria system that looked like the fall of a civilization of dragon-people. The terrain on the planet of Zug looks strikingly similar to this vision. Albert Foster, the conspiracy theorist and archeologist, might be interested in this. Last I heard, he was at his lab on Vinci.`
 		conversation
 			`On a whim, as you're landing on Zug you pull up a geological map of the planet and find that the geography you dreamt of while drifting in the Ildaria system was surprisingly close to the real thing. There's even a massive basalt outcropping right where you saw a lava flow burying a city. There's no way your ship's sensors can tell what's underneath it, though.`
-			`It occours to you that you know an archologist who might be interested in this. Albert Foster. He's probably still at his lab on Vinci.`
+			`It occurs to you that you know an archologist who might be interested in this. Albert Foster. He's probably still at his lab on Vinci.`
 
 
 mission "Rim Archaeology 1"
