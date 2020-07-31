@@ -28,7 +28,7 @@ mission "Oathkeeper Intro"
 				`	"Can it wait? I'm a little busy right now."`
 					defer
 			`	"Great! I'll get everything loaded up and we can get to work."`
-					accept
+				accept
 	on accept
 		log "Met Jane Mulgrew at Farpoint, agreed to take her to Hassaleh to install sensors."
 	on visit
