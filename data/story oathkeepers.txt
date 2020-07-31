@@ -121,7 +121,8 @@ mission "Oathkeeper Scouting 2"
 					goto raids
 				`	"What, putting up sensors?"`
 					goto sensors
-			`	"Well, that is what you signed up for, isn't it? Things are definitely heating up! Well, next I want you to check out the Elnath system next to Aldebaran. Lovelace Labs tests weapons there, so it's a prime target for the raids. Well! How about it?"
+			`	"Well, that is what you signed up for, isn't it? Things are definitely heating up! Well, next I want you to check out the Elnath system next to Aldebaran. Lovelace Labs tests weapons there, so it's a prime target for the raids. Well! How about it?"`
+
 			
 			label raids
 			`	"Not quite, but at least you're prepared for the worst!" Mulgrew chuckles more. "I actually want you to install more sensors, but you definitely could end up in combat. The Northern Union has lots of small fleets for raiding as many planets as possible. This time, I'd like you to check out the Elnath system."`
