@@ -27,7 +27,7 @@ For now, the build instructions are the same as for Endless Sky.
 For full installation instructions, consult the [Build Instructions](https://github.com/endless-sky/endless-sky/wiki/BuildInstructions) wiki page.
 
 # Contributing
-Endless Sky Civil War falls under the same open-source, public-domain style of development and contributing as Endless Sky itself. Those who wish to contribute are encouraged to review the [wiki](https://github.com/endless-sky/endless-sky/wiki), and, most importantly, join our [Discord] (https://discord.gg/ND788CC)
+Endless Sky Civil War falls under the same open-source, public-domain style of development and contributing as Endless Sky itself. Those who wish to contribute are encouraged to review the [wiki](https://github.com/endless-sky/endless-sky/wiki), and, most importantly, join our [Discord](https://discord.gg/ND788CC)
 
 # Licensing
 Endless Sky and Endless Sky Civil War are both free, open source games. The [Endless Sky source code](https://github.com/endless-sky/endless-sky/) and [Endless Sky Civil War source code](https://github.com/kikotheexile/Endless-Sky-Civil-War) are available under the GPL v3 license, and all the artwork is either public domain or released under a variety of Creative Commons licenses. (To determine the copyright status of any of the artwork, consult the [copyright file](https://github.com/endless-sky/endless-sky/blob/master/copyright).)
