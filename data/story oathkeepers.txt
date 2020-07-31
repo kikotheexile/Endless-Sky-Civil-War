@@ -1,0 +1,174 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+mission "Oathkeeper Intro"
+	name `Set a relay in Hassaleh`
+	description `Captain Mulgrew and 2 of her technicians need transport with 15 tons of sensor equipment to <destination>.`
+	to offer
+		has "joined Oathkeepers"
+	source "Farpoint"
+	waypoint "Hassaleh"
+	destination "Farpoint"
+	blocked "You don't have enough bunks or cargo space to accept this mission. Come back with 3 bunks and 15 tons of cargo space."
+	cargo "sensor equipment" 5
+	passengers 3
+	on offer
+		conversation
+			`As you're passing a local restaurant, a familiar face approaches. Captain Jane Mulgrew calls over to you, "Hey, Captain <last>! It's good to see you again. I heard you became a contractor, and that's even better! We're short-handed with the war and all, so we can always use good pilots."`
+			`	"Let's get right into it, shall we? The hyperspace relay system here is in a dreadful state, and I'd like some help fixing it up, so that the Oathkeepers can keep up with the Northern Union anarchists around here. For now, I just need you to take me and my assistants to the Hassaleh system with our equipment so we can install a sensor. It is a little bit out of the way, but I'm sure you're used to that."`
+			choice
+				`	"Sure, I'll go fire up the engines."`
+				`	"Can it wait? I'm a little busy right now."`
+					defer
+			`	"Great! I'll get everything loaded up and we can get to work."`
+				accept
+	on accept
+		log "Met Jane Mulgrew at Farpoint, agreed to take her to Hassaleh to install sensors."
+	on visit
+		dialog `Mulgrew and her crew install the sensor on a large asteroid from the system's belt, and it seems to be working. Time to go back to Farpoint.`
+	on complete
+		dialog `Mulgrew says the sensor is working like a dream and thanks you, then promises to be back in the spaceport with more work later.`
+		
+mission "Oathkeeper Scouting 1"
+	name `Put surveillance equipment on Ada`
+	description `The Navy suspects the Northern Union will take advantage of the war with the Free Worlds to raid Ada. Mulgrew sent you to install bugs, just in case.`
+	to offer
+		has "Oathkeeper Intro: complete"
+	source "Farpoint"
+	destination "Ada"
+	on offer
+		conversation
+			`Mulgrew called you to meet her at a little cafe in the spaceport, and she wastes no time: "Good news, Captain! I went into a meeting recently and we have more work! The Northern Union is taking advantage of the war down south, but they're still pretty outgunned, and they know it."`
+
+			choice
+				`	"Do you think they're going to try to steal our weapons?"`
+				`	"So, are we attacking?"`
+					goto attack
+			`	"Yes, precisely, very observant!" Mulgrew grins and continues, "We believe they're going to try and overwhelm us with multiple hit-and-run attacks on our shipyards and outfitters, so we need to set up some emergency defenses. I'd like you to install some surveillance equipment on a couple of Lovelace Labs planets. Start with Ada and we can work from there."`
+
+			label attack
+			`	"We being the Navy? No, at least not yet. War does cost a lot, even up here. We've been containing the Northern Union for decades, and are currently ready to make a push. At least, not with so many gaps in our defense. Speaking of which, I'd like your help with that! Could you put some listening devices on Ada just in case the Northern Union raids them for weapons?"`
+
+			choice
+				`	"Yeah, load it up and I'll go."`
+				accept
+				`	"Soon, I've got some shopping to do first."`
+					defer
+	on complete
+		dialog `As you move to land on Ada to install the sensors, you find that several ships with Northern Union colors are already landed, and they're likely stealing from the weapons developers. It seems to be a relatively small raid... with some skill, you might be able to destroy it alone.`
+		
+##Not so sure about these missions working, the on offer for 1.1 is meant to show when you take off. Also, all fleets in this .txt are placeholder.
+mission "Oathkeeper Scouting 1.1"
+	name `Retreat from Ada`
+	description `Escape the Northern Union fleet that followed you off of Ada, and retreat to Farpoint.`
+	to offer
+		has "Oathkeeper Scouting 1: complete"
+	to fail
+		has "Oathkeeper Scouting 1.2: complete"
+	source "Ada"
+	destination "Farpoint"
+	on offer
+		dialog `Looks like some of the ships have followed you into orbit! You can fight them, or run.`
+	on complete
+		dialog `You arrive on Farpoint and contact Mulgrew, who seems disappointed that the Northern Union likely got away with the raid, but glad that you made it out okay. She thanks you and tells you to meet her in the spaceport later.`
+		"ran" ++
+		
+mission "Oathkeeper Scouting 1.2"
+	name `Defend Ada`
+	description `Destroy the raiding fleet attacking Ada and land on the planet to install the sensors for Mulgrew.`
+	to offer
+		has "Oathkeeper Scouting 1: complete"
+	to fail
+		has "Oathkeeper Scouting 1.1: complete"
+	source Ada
+	destination Ada
+	
+	npc kill
+		personality heroic staying
+		government "Northern Union"
+		system Aldebaran
+		fleet "Small Northern Union" 2
+	
+	on complete
+		dialog `You land on the defended Ada and install the sensors, then contact Mulgrew and explain what happened. She seems very impressed that you took down the entire raiding fleet, and she promises to send you a bonus of <payment> and talk to you at Farpoint about your next job.`
+		payment 30000
+		fought ++
+		
+mission "Oathkeeper Scouting 2"
+	name `Scout Elnath`
+	description `After placing the sensors on Ada, Mulgrew has asked you to scout the Elnath system for any other raiders.`
+	to offer
+		or
+			has "Oathkeeper Scouting 1.1: complete"
+			has "Oathkeeper Scouting 1.2: complete"
+	source "Farpoint"
+	destination "Pilot"
+	
+	on offer
+		conversation
+			`You meet with Mulgrew again, and she seems a bit more stressed than usual, but she still has plenty to say. "Hey, <first>! I'm sure I already said this, but I'm glad you made it out of that mess on Ada alright. Good thing too, because you'll be doing lots of that work in the foreseeable future!" Mulgrew chuckles.`
+
+			choice
+				`	"Sounds dangerous."`
+				`	"Ooh, I love repelling raids!"`
+					goto raids
+				`	"What, putting up sensors?"`
+					goto sensors
+			`	"Well, that is what you signed up for, isn't it? Things are definitely heating up! Well, next I want you to check out the Elnath system next to Aldebaran. Lovelace Labs tests weapons there, so it's a prime target for the raids. Well! How about it?"`
+
+			
+			label raids
+			`	"Not quite, but at least you're prepared for the worst!" Mulgrew chuckles more. "I actually want you to install more sensors, but you definitely could end up in combat. The Northern Union has lots of small fleets for raiding as many planets as possible. This time, I'd like you to check out the Elnath system."`
+			
+			label sensors
+			`	"Yep, that's the one! The Northern Union might still be after Lovelace Labs, so I want you to go to Pilot in Elnath this time. They make lots of cool prototypes there, wouldn't want those getting out."`
+			choice
+				`"Sorry, but can this wait? I think I forgot my keys."`
+					defer
+				`"Yeah, I think I can handle this. Be back soon!"`
+
+					accept
+				
+mission "Oathkeeper Scouting 2.1"
+	name `Report on Elnath's status`
+	description `Elnath has already been struck by the time you arrive. Retreat to Farpoint and report on the situation.`
+	to offer
+		has "Oathkeeper Scouting 2: complete"
+	to fail
+		has "Oathkeeper Scouting 2.2: complete"
+	source "Pilot"
+	destination "Farpoint"
+	on complete
+		dialog `Mulgrew is unusually grave while she listens to your report. She thanks you for your service and gives you <payment> before leaving, promising another job shortly.`
+		payment 10000
+		"ran" ++
+				
+mission "Oathkeeper Scouting 2.2"
+	name `Defend Elnath`
+	description `The Elnath system is being raided by the Northern Union. Clear the raiders from the system and land on Pilot.`
+	to offer
+		has "Oathkeeper Scouting 2: complete"
+	to fail
+		has "Oathkeeper Scouting 2.1: complete"
+	source "Pilot"
+	destination "Pilot"
+	on offer
+		dialog `It seems you're too late again, and the Northern Union has already landed. It looks like just a small wolfpack though. Perhaps you could prevent their escape?`
+	
+	npc kill
+		personality heroic staying
+		government "Northern Union"
+		system Elnath
+		fleet "Small Northern Union" 3
+	
+	on complete
+		dialog `After the battle, with the sensor installed, Mulgrew calls you and asks about the planet. She's relieved you stopped the raiders from getting away, and promises to put in a good word with her superiors after she sends you <payment>, telling you to meet her on Farpoint later.`
+		payment 30000
+		"fought" ++
