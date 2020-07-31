@@ -44,14 +44,27 @@ mission "Deep Archaeology 1"
 			choice
 				`	"Sure, if it's in the interest of science, I can do that."`
 					goto yes
+				`	"Sure, if it pays well."`
+					goto yes
 				`	"You're asking me to vandalize a historical site?"`
 			`	"I need only the tiniest of samples," he says, "maybe a splinter of wood that is already peeling off, or from a place where the wood is worn and cracked. And what we discover from that sample could be of immense importance."`
 			choice
 				`	"Sorry, that sounds a bit too shady to me."`
 					decline
+				`	"Wait a minute, can I get your name?"`
+				`	"Okay, I'm willing to do that."`
+					goto yes
+			label name
+			`	"If you don't mind, I'd prefer to stay anonymous for now. You don't have to tell me your name either if you don't want."`
+			choice
+				`	"Sorry, that sounds a bit too shady to me."`
+					decline
 				`	"Okay, I'm willing to do that."`
 			label yes
-			`	"Thank you," he says. "Trust me, this could give us some very important information. I'll need you to drop me off on Vinci first, to meet with some scientists. We can then meet up back on Vinci once you have the samples."`
+			`	"Thank you," he says. "Trust me, this could give us some very important information. I'll need you to drop me off on Vinci first, to meet with some scientists. Meet me there again once you have the samples."`
+			choice
+				
+
 				accept
 	on visit
 		dialog `You land on <planet>, but realize that your escort carrying the archaeologist hasn't entered the system yet. Better depart and wait for it.`
@@ -134,7 +147,7 @@ mission "Deep Archaeology 3"
 			`	"The second sample is infused with some sort of oil or tar," he says. "A varnish. And therefore it is from furniture or a building. A man-made artifact. The control sample has an isotopic ratio different from Earth, so unless you're playing games with me, these samples are not from Earth."`
 			`	"Go on," says the archaeologist.`
 			`	"However," says the lab tech, "again assuming the two samples are from the same planet, the second sample is between fifteen hundred and twenty-five hundred years old. Which means it predates the discovery of the hyperdrive by, at minimum, five centuries. So again I ask you, where did you get these samples?" His voice is raised.`
-			`	"Intriguing, isn't it?" says the archaeologist. "Captain <last>, if you'd like to help us get to the bottom of this, make sure you've got space for us and some equipment, and meet us in the spaceport."`
+			`	"Intriguing, isn't it?" says the archaeologist. "Captain, if you'd like to help us get to the bottom of this, make sure you've got space for us and some equipment, and meet us in the spaceport."`
 
 
 
@@ -154,7 +167,7 @@ mission "Deep Archaeology 4"
 			`You find John the lab tech in one of the spaceport bars, along with the archaeologist, who says, "I suppose I should introduce myself. Albert Foster. You may have heard of me." Indeed, you have: he made headlines about a decade ago by being driven out of Quarg space after trying unsuccessfully to collect an alloy sample from their ringworld.`
 			`	"We've purchased some equipment for gravitational field mapping," he says, "in addition to a very sensitive radar array. We're hoping to map the area around the church, see if there are signs of any ancient settlements. Are you willing to help us?"`
 			choice
-				`	"Sure, I'd love to help solve this mystery."`
+				`	"Captain <first> <last>, I'd love to help solve this mystery."`
 				`	"Sorry, I can't. I'm worried we're going to make people in the Deep angry."`
 					decline
 			`	"Excellent," says Albert. "We just need to do a flyover of <planet>, and see what our radar turns up."`
@@ -200,7 +213,7 @@ mission "Deep Archaeology 5"
 	
 	npc
 		personality heroic
-		government " Deep "
+		government Deep
 		ship "Raven (Afterburner)" "D.P.S. Wyrd"
 		ship "Raven (Afterburner)" "D.P.S. Skuld"
 		ship "Raven (Afterburner)" "D.P.S. Verthandi"
@@ -260,9 +273,12 @@ mission "There Might Be Riots 1"
 				`	"Pleased to meet you all. What's the name of your band?"`
 					goto name
 				`	"THE There Might Be Riots? I'm glad I took this job!"`
-					goto end
+					goto fan
 			label name
 			`	"Oh," Ulrich says, "we call ourselves, 'There Might Be Riots.'"`
+				goto end
+			label fan
+			`	"A fan huh?" he smiles at you, "Just don't let the others in."`
 			label end
 			`	Eventually, the spaceport police arrive and disperse the crowd, and the band settles in for their trip to <destination>.`
 				accept
@@ -305,7 +321,7 @@ mission "There Might Be Riots part 2"
 		conversation
 			`As you walk through the spaceport, you see a large crowd gathered outside a small pub, and hear the unmistakable music of There Might Be Riots from inside. The concert seems to be just winding down. Do you want to wait around and say hello to them?`
 			choice
-				`	(Okay.)`
+				`	(Sure.)`
 				`	(Not right now.)`
 					defer
 			`	"<first>!" says Ulrich, when they see you. "What luck! We're doing a concert tonight on landing pad ninety-four, part of our 'Trouble on the Tarmac Tour.' We're going to need a lift to <planet> right after the concert. Or possibly in the middle of it. Can you help us out?"`
@@ -339,7 +355,10 @@ mission "There Might Be Riots part 2"
 		payment
 		payment 200000
 		conversation
-			`As generous as before, the band pays you generously: <payment>. "Where will you be going next, from here?" you ask.`
+			`As before, the band pays you generously: <payment>.`
+			choice
+				"Where will you be going next, from here?" you ask.`
+			# ask about why they didn't have their own transport
 			`	"Who knows," says Ulrich. "Our music has taken us throughout human space, and beyond."`
 			choice
 				`	"What do you mean, 'beyond' human space?"`
@@ -347,7 +366,7 @@ mission "There Might Be Riots part 2"
 					accept
 			`	Ulrich launches into a story. "Years ago when the band was young and we had a month off in between gigs, we found an old grey merchant captain with a glass eye and asked him to transport us to one of the Paradise worlds for an extended 'drug vacation,' if you know what I mean. He said, 'Boys, why don't you leave the drugs behind, and I'll take you on a real mind-altering trip,' and a few days later we were playing a concert on this world where the people were giant squirrels. They loved our music, too. Never did find anyone who could take us back there, though."`
 			choice
-				`	"You met a merchant captian with a Hai gate key?"`
+				`	"You met aliens?"` # player used to know the Hai in this line
 				`	"Well, I'll look forward to the next time we meet."`
 					accept
 			`	Ulrich chuckles a bit, "Pretty wild, huh? Well, we've been discussing ways to smuggle ourselves back into their space. Maybe one day we will."`
@@ -376,13 +395,15 @@ mission "There Might Be Riots part 3A"
 				`	(Not right now.)`
 					defer
 			`	They're very happy to see you. "You always seem to have amazing timing," says Ulrich. "We were just wondering who could transport us to a... gig of sorts... up north, and then you come along. Any chance you could take us to <destination>?"`
-			`	"The weapons testing world for Lovelace Labs." a member fo the band chimes in. "We wont find a big audience there."`
+			`	"The weapons testing world for Lovelace Labs." a member of the band chimes in. "We wont find a big audience there."`
 			`	"Oh, we'll have an audience, all right," Ulrich says to his band mate, before turning to you. "We've just put out a new album called 'Songs for the End of Civilization.' A war protest album. We want to film ourselves playing a concert right in the middle of the missile testing range. Of course we'll probably end up running out of there with Republic Intelligence nipping at our heels. What do you say?"`
 			choice
 				`	"Sorry, that's further than I'm willing to go for you guys."`
 					goto no
 				`	"Sounds like a worthy cause. Count me in!"`
 					goto yes
+				`	"The way you guys pay? Absolutely!"`
+					goto pay
 				`	"You're going to do a concert on ground that could be littered with unexploded ordnance?"`
 			`	"Yeah. What an adventure!" he says. "Come on, it will be worth it."`
 			choice
@@ -390,12 +411,19 @@ mission "There Might Be Riots part 3A"
 					goto no
 				`	"Sounds like a worthy cause. Count me in!"`
 					goto yes
+				`	"The way you guys pay? Absolutely!"`
+					goto pay
 			label no
 			`	"Are you sure?" he asks. "We'll pay you with more than just money. Do this for us, and I'll share a story with you that very few have heard."`
 			choice
 				`	"Sorry, but it's still a 'no.'"`
 					decline
 				`	"Okay, I'm intrigued. But it still sounds risky."`
+					goto yes
+			label pay
+			`	"We'll pay you with more than just money," he tells you. "Do this for us, and I'll share a story with you that very few have heard."`
+			choice
+				`	"I'm intrigued. Let's get to it!"`
 			label yes
 			`	"Great," he says. "Now, the only question is where we'll go afterwards until the fuss dies down. I was thinking it'd be a great chance for our band to reconnect with the squirrel people. What were they called again, the hey or hi or something?"`
 			`	"The Hai," Rebecca chimes in. "Which means going to Echo Station."`
@@ -455,19 +483,19 @@ mission "There Might Be Riots part 3B"
 		personality heroic nemesis
 		fleet
 			variant
-				"Combat Drone" 15
+				"Sentinel Drone" 15
 	npc
 		government "Team Red"
 		personality waiting heroic
 		fleet
 			variant
-				"Combat Drone" 20
+				"Sentinel Drone" 20
 	npc
 		government "Team Blue"
 		personality waiting heroic
 		fleet
 			variant
-				"Combat Drone" 35
+				"Sentinel Drone" 35
 	
 	on visit
 		dialog `You arrive on <planet>, but realize that your escort carrying the band and their supplies has not arrived yet. Better depart and wait for your escorts to enter the system.`
@@ -475,7 +503,7 @@ mission "There Might Be Riots part 3B"
 		payment 500000
 		log `Brought "There Might Be Riots" to Echo Station after escaping a swarm of combat drones that disrupted their performance on Pilot. Ulrich spoke of a cloudy star in the Rim where he heard a voice in his head after parking his ship.`
 		conversation
-			`You drop off There Might Be Riots on Allhome. Ulrich is looking around the spaceport in wide-eyed excitement. "This is it, guys!" he says. "We're headed for the land of the peaceful squirrels. Captain <last>, I don't know how to thank you, but here's a start." He hands you <payment>.`
+			`You drop off There Might Be Riots on Echo Station. Ulrich is looking around the spaceport in wide-eyed excitement. "This is it, guys!" he says. "We're headed for the land of the peaceful squirrels. I'm sure we can find a ride here. Captain <last>, I don't know how to thank you, but here's a start." He hands you <payment>.`
 			`	As the rest of the band begins unloading their things, Ulrich adds speaking more quietly, "And, in good minstrel fashion I will pay you not just with money, but with a story.`
 			`	"Back when the fame first became too much for me, I rented a shuttlecraft under an assumed name and went tooling around the galaxy just to get away from it all. I found some cloudy star out along the Rim, parked my ship where no one would bother me, shut down everything but life support, and just sat there meditating and enjoying the silence for two or three days.`
 			`	"Then suddenly clear as day I heard a voice say, 'Are you okay? Do you need anything?' I was so shocked that without even thinking I said, 'I'm fine. How about you?' And the voice told me he was sad. Sad, because that part of space used to be the home of another species, and now they're all dead. He said we humans built our cities on the graveyards of a great civilization and didn't even know it. And if we didn't stop fighting each other, our species would die off too.`
@@ -485,7 +513,7 @@ mission "There Might Be Riots part 3B"
 				`	"It sounds like a good warning. I'll try to take it to heart."`
 					goto end
 			`	"It was in my head," he says, "And it was real. Very real. When it spoke I felt like the whole galaxy had just tipped sideways, or like I'd just stepped too close to the edge of a cliff and got vertigo. I've imagined some crazy things, but I tell you, this I did not imagine."`
-			`	You wish him the best of luck in Hai space, and he heads off into the spaceport with the rest of the band.`
+			`	You wish him the best of luck in his journey, and he heads off into the spaceport with the rest of the band.`
 				accept
 			label end
 			`	"Then best of luck to you," he says, and he heads off into the spaceport with the rest of the band.`
@@ -550,7 +578,7 @@ mission "Sad Archie"
 		log `Experienced a strange vision while drifting in the Ildaria system that looked like the fall of a civilization of dragon-people. The terrain on the planet of Zug looks strikingly similar to this vision. Albert Foster, the conspiracy theorist and archeologist, might be interested in this. Last I heard, he was at his lab on Vinci.`
 		conversation
 			`On a whim, as you're landing on Zug you pull up a geological map of the planet and find that the geography you dreamt of while drifting in the Ildaria system was surprisingly close to the real thing. There's even a massive basalt outcropping right where you saw a lava flow burying a city. There's no way your ship's sensors can tell what's underneath it, though.`
-			`It occours to you that you know an archologist who might be interested in this. Albert Foster. He's probably still at his lab on Vinci.`
+			`It occurs to you that you know an archologist who might be interested in this. Albert Foster. He's probably still at his lab on Vinci.`
 
 
 mission "Rim Archaeology 1"
@@ -810,7 +838,7 @@ mission "Rim Archaeology 5A"
 		government Quarg
 		system "Gamma Corvi"
 		personality heroic
-		ship "Quarg Wardragon" "Gloref Esa Kurayi"
+		ship "Wyvern" "Gloref Esa Kurayi"
 	
 	on visit
 		dialog
@@ -821,7 +849,7 @@ mission "Rim Archaeology 5A"
 		event "rim archaeology results" 97
 		log `With the help of a Free Worlds defense fleet, some Merchants, and a Quarg ship, I fought off a group of antique thieves looking to rob the archaeological site that Albert Foster dug up. Foster will need some time to study what he has found and release the results of his findings.`
 		conversation
-			`A plume of smoke is rising from the dig site. You land and find out that a missile fired by one of the pirates destroyed one of the huts where the workers were living, but fortunately no one was inside it at the time. Foster is shaken but still committed to finishing the work. "It will be months before we've excavated enough to be able to publish any findings," he says, "but Yarthis has told me that the Quarg will be stationing a Wardragon here for the remainder of the project, to prevent any further foul play." Foster gives you one last payment: four hundred thousand credits for your help driving off the pirates. "And I'll be sure to give you credit for your help when the news goes public," he says.`
+			`A plume of smoke is rising from the dig site. You land and find out that a missile fired by one of the pirates destroyed one of the huts where the workers were living, but fortunately no one was inside it at the time. Foster is shaken but still committed to finishing the work. "It will be months before we've excavated enough to be able to publish any findings," he says, "but Yarthis has told me that the Quarg will be stationing a Wyvern here for the remainder of the project, to prevent any further foul play." Foster gives you one last payment: four hundred thousand credits for your help driving off the pirates. "And I'll be sure to give you credit for your help when the news goes public," he says.`
 
 
 
@@ -834,7 +862,7 @@ mission "Rim Archaeology 5B"
 	npc kill
 		government Quarg
 		personality heroic staying uninterested
-		ship "Quarg Wardragon" "Gloref Esa Kurayi"
+		ship "Wyvern" "Gloref Esa Kurayi"
 
 
 
