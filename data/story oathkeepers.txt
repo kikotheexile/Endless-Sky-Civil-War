@@ -27,7 +27,7 @@ mission "Oathkeeper Intro"
 				`	"Sure, I'll go fire up the engines."`
 				`	"Can it wait? I'm a little busy right now."`
 					defer
-				`	"Great! I'll get everything loaded up and we can get to work."`
+			`	"Great! I'll get everything loaded up and we can get to work."`
 					accept
 	on accept
 		log "Met Jane Mulgrew at Farpoint, agreed to take her to Hassaleh to install sensors."
