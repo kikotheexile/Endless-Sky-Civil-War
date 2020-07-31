@@ -45,7 +45,8 @@ mission "Oathkeeper Scouting 1"
 	destination "Ada"
 	on offer
 		conversation
-			`Mulgrew called you to meet her at a little cafe in the spaceport, and she wastes no time: "Good news, Captain! I went into a meeting recently and we have more work! The Northern Union is taking advantage of the war down south, but they're still pretty outgunned, and they know it."
+			`Mulgrew called you to meet her at a little cafe in the spaceport, and she wastes no time: "Good news, Captain! I went into a meeting recently and we have more work! The Northern Union is taking advantage of the war down south, but they're still pretty outgunned, and they know it."`
+
 			choice
 				`	"Do you think they're going to try to steal our weapons?"`
 				`	"So, are we attacking?"`
