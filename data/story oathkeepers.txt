@@ -23,7 +23,7 @@ mission "Oathkeeper Intro"
 		conversation
 			`As you're passing a local restaurant, a familiar face approaches. Captain Jane Mulgrew calls over to you, "Hey, Captain <last>! It's good to see you again. I heard you became a contractor, and that's even better! We're short-handed with the war and all, so we can always use good pilots."`
 			`	"Let's get right into it, shall we? The hyperspace relay system here is in a dreadful state, and I'd like some help fixing it up, so that the Oathkeepers can keep up with the Northern Union anarchists around here. For now, I just need you to take me and my assistants to the Hassaleh system with our equipment so we can install a sensor. It is a little bit out of the way, but I'm sure you're used to that."`
-				choice
+			choice
 					`	"Sure, I'll go fire up the engines."`
 					`	"Can it wait? I'm a little busy right now."`
 						defer
