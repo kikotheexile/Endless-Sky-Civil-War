@@ -54,7 +54,8 @@ mission "Oathkeeper Scouting 1"
 			`	"Yes, precisely, very observant!" Mulgrew grins and continues, "We believe they're going to try and overwhelm us with multiple hit-and-run attacks on our shipyards and outfitters, so we need to set up some emergency defenses. I'd like you to install some surveillance equipment on a couple of Lovelace Labs planets. Start with Ada and we can work from there."`
 
 			label attack
-			`	"We being the Navy? No, at least not yet. War does cost a lot, even up here. We've been containing the Northern Union for decades, and are currently ready to make a push. At least, not with so many gaps in our defense. Speaking of which, I'd like your help with that! Could you put some listening devices on Ada just in case the Northern Union raids them for weapons?"
+			`	"We being the Navy? No, at least not yet. War does cost a lot, even up here. We've been containing the Northern Union for decades, and are currently ready to make a push. At least, not with so many gaps in our defense. Speaking of which, I'd like your help with that! Could you put some listening devices on Ada just in case the Northern Union raids them for weapons?"`
+
 			choice
 				`	"Yeah, load it up and I'll go."`
 				accept
