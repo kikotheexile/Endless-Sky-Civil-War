@@ -132,7 +132,8 @@ mission "Oathkeeper Scouting 2"
 			choice
 				`"Sorry, but can this wait? I think I forgot my keys."`
 					defer
-				`"Yeah, I think I can handle this. Be back soon!"
+				`"Yeah, I think I can handle this. Be back soon!"`
+
 					accept
 				
 mission "Oathkeeper Scouting 2.1"
