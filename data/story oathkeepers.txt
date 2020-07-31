@@ -26,7 +26,7 @@ mission "Oathkeeper Intro"
 			choice
 				`	"Sure, I'll go fire up the engines."`
 				`	"Can it wait? I'm a little busy right now."`
-						defer
+					defer
 				`	"Great! I'll get everything loaded up and we can get to work."`
 					accept
 	on accept
