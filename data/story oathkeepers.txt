@@ -113,7 +113,8 @@ mission "Oathkeeper Scouting 2"
 	
 	on offer
 		conversation
-			`You meet with Mulgrew again, and she seems a bit more stressed than usual, but she still has plenty to say. "Hey, <first>! I'm sure I already said this, but I'm glad you made it out of that mess on Ada alright. Good thing too, because you'll be doing lots of that work in the foreseeable future!" Mulgrew chuckles.
+			`You meet with Mulgrew again, and she seems a bit more stressed than usual, but she still has plenty to say. "Hey, <first>! I'm sure I already said this, but I'm glad you made it out of that mess on Ada alright. Good thing too, because you'll be doing lots of that work in the foreseeable future!" Mulgrew chuckles.`
+
 			choice
 				`	"Sounds dangerous."`
 				`	"Ooh, I love repelling raids!"`
