@@ -179,7 +179,6 @@ ship "Behemoth" "Behemoth (Heavy)"
 ship "Behemoth" "Behemoth (Proton)"
 	outfits
 		"Ranger Missile Launcher" 2
-		"Ranger Missile" 90
 		"Proton Turret" 4
 		"Heavy Anti-Missile Turret" 2
 		"Breeder Reactor"
@@ -203,7 +202,6 @@ ship "Behemoth" "Behemoth (Proton)"
 ship "Behemoth" "Behemoth (Speedy)"
 	outfits
 		"Ranger Missile Launcher" 2
-		"Ranger Missile" 90
 		"Heavy Laser Turret" 6
 		"Breeder Reactor"
 		"LP144a Battery Pack"
@@ -238,7 +236,6 @@ ship "Berserker" "Berserker (Strike)"
 		"Torpedo Launcher"
 		"Torpedo" 20
 		"Ranger Missile Launcher"
-		"Ranger Missile" 45
 		"nGVF-CC Fuel Cell"
 		"Supercapacitor"
 		"D14-S Shield Generator"
@@ -321,7 +318,6 @@ ship "Arete" "Arete (Jump)"
 	outfits
 		"Particle Cannon" 4
 		"Ranger Missile Launcher" 4
-		"Ranger Missile" 180
 		"Electron Turret" 2
 		"Heavy Anti-Missile Turret" 2
 		"Laser Rifle" 40
@@ -358,7 +354,6 @@ ship "Arete" "Arete (Mark II)"
 	outfits
 		"Particle Cannon" 4
 		"Ranger Missile Launcher" 4
-		"Ranger Missile" 180
 		"Electron Turret" 2
 		"Heavy Anti-Missile Turret" 2
 		"Armageddon Core"
@@ -436,8 +431,6 @@ ship "Challenger" "Challenger (Missile)"
 		"Torpedo Launcher" 2
 		"Torpedo" 60
 		"Ranger Missile Launcher" 2
-		"Ranger Missile" 159
-		"Ranger Missile Rack" 3
 		"Heavy Anti-Missile Turret" 2
 		"Fission Reactor"
 		"LP036a Battery Pack"
@@ -511,7 +504,6 @@ ship "Nomos" "Nomos (Jump)"
 		"Typhoon Launcher" 2
 		"Typhoon Torpedo" 60
 		"Ranger Missile Launcher" 4
-		"Ranger Missile" 180
 		"Electron Turret" 3
 		"Heavy Anti-Missile Turret"
 		"Laser Rifle" 20
@@ -546,7 +538,6 @@ ship "Nomos" "Nomos (Mark II)"
 		"Typhoon Launcher" 2
 		"Typhoon Torpedo" 60
 		"Ranger Missile Launcher" 4
-		"Ranger Missile" 180
 		"Electron Turret" 2
 		"Heavy Anti-Missile Turret" 2
 		"Armageddon Core"
@@ -1316,7 +1307,6 @@ ship "Odyssey" "Odyssey (Smuggler)"
 ship "Mule" "Mule (Heavy)"
 	outfits
 		"Ranger Missile Launcher"
-		"Ranger Missile" 45
 		"Heavy Laser Turret" 3
 		"Heavy Anti-Missile Turret"
 		"Fission Reactor"
@@ -1336,7 +1326,6 @@ ship "Mule" "Mule (Heavy)"
 ship "Nest" "Nest (Ranger)"
 	outfits
 		"Ranger Missile Launcher" 2
-		"Ranger Missile" 90
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
 		"S3 Thermionic"
@@ -1400,7 +1389,6 @@ ship "Osprey" "Osprey (Missile)"
 ship "Protector" "Protector (Laser)"
 	outfits
 		"Ranger Missile Launcher" 2
-		"Ranger Missile" 90
 		"Anti-Missile Turret" 2
 		"Heavy Laser Turret" 4
 		"Fusion Reactor"
@@ -1513,7 +1501,6 @@ ship "Achlys" "Achlys (Mark II)"
 			"hit force" 600
 	outfits
 		"Ranger Missile Launcher" 4
-		"Ranger Missile" 180
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
 		"D14-L Shield Generator"
@@ -1563,7 +1550,6 @@ ship "Raven" "Raven (Heavy)"
 ship "Roost" "Roost (Ranger)"
 	outfits
 		"Ranger Missile Launcher" 2
-		"Ranger Missile" 90
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
 		"LP144a Battery Pack"
@@ -1582,7 +1568,6 @@ ship "Caravel" "Caravel (Speedy)"
 		"Meteor Missile Launcher"
 		"Meteor Missile" 30
 		"Ranger Missile Launcher"
-		"Ranger Missile" 45
 		"Anti-Missile Turret"
 		"NT-200 Nucleovoltaic"
 		"Supercapacitor"
@@ -1598,7 +1583,6 @@ ship "Caravel" "Caravel (Speedy)"
 ship "Skein" "Skein (Ranger)"
 	outfits
 		"Ranger Missile Launcher" 2
-		"Ranger Missile" 90
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
 		"LP144a Battery Pack"
@@ -1708,8 +1692,6 @@ ship "Star Barge" "Star Barge (Armed)"
 ship "Vanguard" "Vanguard (Missile)"
 	outfits
 		"Ranger Missile Launcher" 4
-		"Ranger Missile" 295
-		"Ranger Missile Rack" 5
 		"Heavy Rocket Launcher" 3
 		"Heavy Rocket" 120
 		"Heavy Anti-Missile Turret"
