@@ -1904,6 +1904,7 @@ ship "Narcissus"
 		"hull" 1400
 		"hull repair rate" .1
 		"landing gear" 1
+		"ranger ports" 2
 		"required crew" 7
 		"bunks" 12
 		"mass" 100
@@ -2149,6 +2150,7 @@ ship "Achlys"
 		"hull" 1200
 		"hull repair rate" .1
 		"landing gear" 1
+		"ranger ports" 6
 		"required crew" 7
 		"bunks" 14
 		"mass" 80
@@ -2776,6 +2778,7 @@ ship "Aletheia"
 		"hull" 2500
 		"hull repair rate" .1
 		"landing gear" 1
+		"ranger ports" 4
 		"required crew" 21
 		"bunks" 44
 		"mass" 434
@@ -2845,6 +2848,7 @@ ship "Zephyrus"
 		"hull" 2000
 		"hull repair rate" .1
 		"landing gear" 1
+		"ranger ports" 2
 		"required crew" 12
 		"bunks" 24
 		"mass" 216
@@ -3047,6 +3051,7 @@ ship "Arete"
 		"hull" 8300
 		"hull repair rate" .1
 		"landing gear" 1
+		"ranger ports" 8
 		"required crew" 111
 		"bunks" 184
 		"mass" 2050
@@ -3137,6 +3142,7 @@ ship "Nomos"
 		"hull" 6400
 		"hull repair rate" .1
 		"landing gear" 1
+		"ranger ports" 6
 		"required crew" 81
 		"bunks" 136
 		"mass" 1900

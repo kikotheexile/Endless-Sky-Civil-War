@@ -901,6 +901,7 @@ ship "Narcissus" "Narcissus (Reputation Destroyer)"
 		"hull" 1400
 		"hull repair rate" .1
 		"landing gear" 1
+		"ranger ports" 2
 		"required crew" 5000
 		"bunks" 5001
 		"mass" 100
@@ -1480,6 +1481,7 @@ ship "Achlys" "Achlys (Mark II)"
 		"hull" 1200
 		"hull repair rate" .1
 		"landing gear" 1
+		"ranger ports" 4
 		"required crew" 7
 		"bunks" 14
 		"mass" 80
