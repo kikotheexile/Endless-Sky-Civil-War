@@ -178,17 +178,18 @@ ship "Behemoth" "Behemoth (Heavy)"
 
 ship "Behemoth" "Behemoth (Proton)"
 	outfits
-		"Ranger Missile Launcher" 2
+		"Meteor Missile Launcher" 2
+		"Meteor Missile 120"
 		"Proton Turret" 4
 		"Heavy Anti-Missile Turret" 2
 		"Breeder Reactor"
 		"LP144a Battery Pack"
 		"D14-XL Shield Generator"
+		"Softshell Turtle Shield Generator"
 		"Large Radar Jammer"
 		"Liquid Nitrogen Cooler"
 		"Outfits Expansion" 6
 		"A250 Atomic Thruster"
-		"A125 Atomic Steering"
 		"A375 Atomic Steering"
 		"Scram Drive"
 	turret "Proton Turret"
