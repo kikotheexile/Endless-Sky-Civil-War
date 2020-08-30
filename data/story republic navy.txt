@@ -348,3 +348,191 @@ mission "Meeting an Alpha 2b"
 		log "Turned over Warlord Peg's communicator to the Republic. They say they'll call me if they need more information."
 		set "pegs communicator: done"
 		"assisted republic" ++
+
+mission "Meeting an Alpha 2b"
+	name "Turn in Peg's communicator"
+	description "Visit <destination> and turn over the communicator to the authorities."
+	source
+		attributes "near earth" "paradise"
+		government "Republic"
+	to offer
+		has "Meeting an Alpha 1: accepted"
+	to fail
+		has "chosen sides"
+	destination Farpoint
+	on offer
+		conversation
+			`This planet is very likely to have a Republic office. Would you like to turn in the pirate communicator you found?`
+			choice
+				`	(Sure.)`
+				`	(Not right now.)`
+					defer
+			
+			`	You navigate your way through the spaceport before finally coming to a stop just outside of the Republic office. Like most Republic offices, you have to scan your ID or pilot's license upon entry. There is an officer serving as a receptionist who asks how he can help you.`
+			choice
+				`	"I found this and was hoping maybe you could return it to its rightful owner."`
+					goto found
+				`	"I had a meeting with someone I believe is an Alpha. This is his underling's communicator."`
+					goto alpha
+				`	"Nevermind, I was just looking for the bathroom."`
+					defer
+			label found
+			`	The receptionist grabs the communicator and quickly finds that it is unlocked. As he reads through it, his eyes widen: "You say you just found this, huh? Well, Captain, this communicator belongs to Peg, an infamous pirate warlord." He pauses for a moment while going through the messages, before slamming his hand on the desk: "Captain, I could kiss you! You just earned me a promotion. Information on a real, live Alpha! We have information on Gaven! Captain, we'll call you when we need more information, but for now you're free to go." He hands you <payment> and rushes you out the door.`
+				decline
+			label alpha
+			`	He rolls his eyes, clearly thinking this is some sort of prank: "Oh, an Alpha, huh? I'm sure you're being entirely honest and I won't have to arrest you for attempting to file a false report." He takes the communicator from you, and as he looks through it, his eyes widen: "Oh my, no, this is good. This is very, very good. I can hardly believe this. Look, I need to talk this over with my superiors. We have your information, and will call you if we need to bring you in for an interview. Thank you so much for bringing this to us!" He hands you <payment> and rushes you out the door.`
+				decline
+	on decline
+		payment 275000
+		log "Turned over Warlord Peg's communicator to the Republic. They say they'll call me if they need more information."
+		set "pegs communicator: done"
+		"assisted republic" ++
+		
+mission "Betray Free Worlds"
+	name "Report on Free Worlds Activities"
+	description "Visit <destination> and tell the authorities about your work with the Free Worlds."
+	source
+		government "Free Worlds"
+	to offer
+		"assisted free worlds" >= 2
+	to fail
+		has "chosen sides"
+	destination Earth
+	on offer
+		conversation
+			`Your work with the Free Worlds has given you a lot of insider information, which may be valuable to the Republic. Would you like to turn it over to them?`
+			choice
+				`	(Yes, I'll turn them in.)`
+				`	(No, I will not betray the Free Worlds.)`
+					decline
+			
+			`	The Republic offices on <destination> would be perfect for this.`
+				accept
+	on complete
+		payment 75000
+		log "Told the Republic about my work with the Free Worlds. They officer didn't seem at all impressed at the time, but they might have a job for me in the future."
+		dialog `As you are landing, you contact the Republic offices in the spaceport. After a long hold, they conduct a very breif remote interview with you. The interview consists entirely of yes or no questions, mostly about the bombings. The officer grows increasingly bored with the conversation as it goes on. She ends the interview saying, "The Republic will be in touch if they need anything else."
+		set "betray free worlds: done"
+		"assisted republic" ++
+		
+mission "RN Commitment"
+	landing
+	name "Join the Free Worlds"
+	description "If you want to join the Free Worlds, report to their headquarters on <destination>."
+	minor
+	source
+		government "Republic" "Syndicate"
+	destination "Farpoint"
+	to offer
+		"assisted republic" >= 3
+	to fail
+		has "chosen sides"
+	to complete
+		never
+	
+	on offer
+		log "Got invited to join the Republic as an official contractor. It's a valuable opportunity, but it would also be a fast way to become an enemy of the Free Worlds and Northern Union."
+		conversation
+			`Soon after you land, a courier arrives at your ship and hands you a formal looking letter. It reads:`
+			``
+			`Dear Captain <last>,`
+			`	Admiral Danforth would like to thank you for the invaluable assistance you have rendered to his fellow officers. He has sponsored you for a position as an official contractor for the Republic's logistics needs, under the command of the Humanitarian Corps. This affords you access to unique and high paying jobs.`
+			`	If you wish to accept sponsorship, please report to our base on <destination> at your earliest convenience.`
+			`	Sincerely,`
+			`				Commander Aaron Nguyen, Navy Humanitarian Corps`
+					accept
+					
+mission "rush south"
+	name "Transport Medical Supplies to New Tibet"
+	description "Transport these supplies to <planet>, and await further orders there."
+	landing
+	source Farpoint
+	destination "New Tibet"
+	cargo "high flow oxygen tanks" 10
+	to offer
+		has "RN Commitment: offered"
+		not "chosen sides"
+	on fail
+		dialog `You have failed an essential Republic mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
+	
+	on offer
+		conversation
+			`You are on Farpoint, the headquarters of Admiral Danforth and the Republic Humanitarian Corps. Do you take them up on their job offer and volunteer to officially join them?`
+			choice
+				`	(Yes.)`
+				`	(Not yet.)`
+					defer
+			
+			`	As the the entire spaceport is one massive base, it doesn't take long to find someone and inform them of your intentions. You tell a young man why you're here, and he radios to someone else. A few moments later, an officer arrives to breif you.`
+			`	"I sure hope you've come ready to work, captain," he says. "The tensions in the South may have just turned into a full blown war, and there has been a priority request for some medical equipment that has been ignored by every other base and warehouse. Looks like they're going to need some of ours."`
+			choice
+				`	"Is it common for the Navy to neglect priority requests like this?"`
+					goto neglect
+				`	"Ah, the Navy's famous efficency at work."`
+					goto neglect
+				`	"Just give me the job."`
+					goto job
+				`	"What will I be carrying?"`
+					goto oxygen
+			
+			label neglect
+			`	The officer is clearly frustrated and says, "Don't even get me started. But on the bright side, if the Navy were better organized, we wouldn't need people like you. Look, its one unit, very light weight, you wont even notice it in your cargo hold. Just get it to New Tibet as quick as you can."`
+				accept
+			
+			label job
+			`	He smiles, "You're the first thing that's gone right all day. Hey, we're loading the equipment onto your ship now, just take it to <destination> as fast as you can." He turns on his heels, and begins running to his next crisis, leaving you to do your job.`
+				accept
+			
+			label oxygen
+			`	"Need to know materials, usually." He sighs, "However, to sate your curiosity on your first job, its high flow oxygen tanks for treating sicknesses related to space combat. You're taking them to <destination>."`
+			`	Without you getting a chance to say anything, he recites a lecture that the Navy often gives to people studying for their pilots licenses.`
+			`	"It's pretty rare," he begins, "but sometimes survivors of ship decompression suffer from altitude sickness or the bends. People from high gravity world get the worst of it. So we use high flow oxygen tanks and pressure suits to help them recover." He ends the lecture here, saying "Now, I got a thousand other crisis on my plate. Get going, Captain."`
+			`	He runs back into the spaceport and begins shouting orders at someone else, leaving you to complete the job.`
+	on accept
+		set "chosen sides"
+		event "capture of Kornephoros"
+		event "start of hostilities rns"
+		event "joined the republic"
+	
+	on accept
+		log "Officially joined the Republic. They pay is supposed to be great, but I'll be making a lot of enemies."
+		
+	on complete
+		event "recapture of Kornephoros"
+		conversation 
+			`As you come in for a landing, your emergency channels light up. Much of the conversation is in code, and clearly not intended for your years. However, you do catch an officer saying "We lost Kornephoros." It might be a good idea to ask around the spaceport.`
+
+mission "RNS oathkeeper split"
+	name "Prisoners to Farpoint"
+	description "As a goodwill gesture, the Free Worlds has released their prisoners. Returning these officers to Farpoint may take you too far from the South to participate further in the war."
+	source Dancer
+	clearance
+	destination "Farpoint"
+	to offer
+		has "rush south: done"
+	to fail
+		has "rns join oathkeepers: done"
+	
+	on offer
+		conversation
+			`You disembark your ship and find a nearby officer, who agrees to unload your ship. Not long after, two Blackbirds, an Argosy, and a Falcon land nearby. Not long after, a couple of free worlds officers - one of whom looks more like a merchant captain - disembark.`
+			`	After a short conversation, the one who looks like a merchant motions to the Blackbirds, who drop their ramps. A steady stream of Navy officers begin disembarking. Some a little more worse for wear than others.`
+
+			choice
+
+				accept
+	
+	on accept
+
+	
+	npc accompany save
+		government "Republic"
+		personality timid escort
+		
+	on visit
+		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
+	
+	on complete
+		karma ++
+		set "rns opposed fw"
+		log ""
