@@ -935,13 +935,22 @@ event "start of hostilities"
 			"Republic" -.2
 	"reputation: Republic" <?= -10
 
-
+event "start of hostilities rns"
+	government "Republic"
+		"attitude toward"
+			"Free Worlds" -.2
+			"Merchant" .01
+			"Pirate" -.01
+	government "Free Worlds"
+		"attitude toward"
+			"Republic" -.2
+	"reputation: Free Worlds" <?= .1
 
 event "joined the free worlds"
-	government "Escort"
-		swizzle 2
+	"reputation: Free Worlds" <?= 10
 
-
+event "joined the republic"
+	"reputation: Republic" <?= 10
 
 event "temporary ceasefire"
 	government "Republic"
