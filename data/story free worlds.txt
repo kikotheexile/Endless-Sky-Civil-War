@@ -2074,15 +2074,15 @@ mission "Defend Sabik"
 			`	He is carrying an identity chip. "Would you like to do the honors of installing this on your ship?"`
 			choice
 				`	"Sure."`
-					#goto chip Where is the chip label?
+					goto chip
 				`	"Too late to back out now, I guess."`
-					#goto chip. Same as with above. Should it be paint?
+					goto chip
 				`	"Me being officially a just a merchant could serve us well."`
 				`	"I can't just keep flying merchant colors?"`
 			
-			`	"No," he says, "it would be dishonest, and if you were to fight alongside us you would be classified as a partisan, a criminal rather than an enemy combatant. Believe it or not, you're better off as an official prisoner of war than as a partisan, if you ever do get captured. So, time to start painting."`
+			`	"No," he says, "it would be dishonest, and if you were to fight alongside us you would be classified as a partisan, a criminal rather than an enemy combatant. Believe it or not, you're better off as an official prisoner of war than as a partisan, if you ever do get captured. So, take the chip and install it already."`
 			
-			label paint
+			label chip
 			`	You take the chip and insert it into your communicator. Your ships idenity now registers as a Free Worlds ship. Suddenly you hear a cheer from one of the other ships parked nearby; someone has seen your ship change on their scanners and is shouting, "For freedom! Another ship for freedom!" Soon several other people see you, and before long it seems like everyone in the port has picked up the cheer.`
 			`	Tomek stands by, silently, until they finish, and then says, "Let's hit the bar. I need a drink."`
 			`	An hour later you are in the bar celebrating your new employment when emergency sirens start blaring. Someone runs into the bar and says, "The Navy has entered the system. What do we do?"`
