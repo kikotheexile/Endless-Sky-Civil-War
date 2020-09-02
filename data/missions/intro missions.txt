@@ -524,7 +524,7 @@ mission "Intro [2 Interceptor]"
 			`	"Hello <first>," says James. "This is Marissa, a senior manager at the mines." She shakes your hand.`
 			`	"Here's the deal,"  Marissa begins, without so much as saying hello. "Most of the gemstones we mine here are industrial grade, not pretty enough to be worth using as anything but sandpaper grit or drill bits. But every once in a while we happen on some higher quality gems. No one in this sector has the money to spend on jewelry, so we ship them north to the paradise worlds."`
 			`	"And this is where the problem begins," James interrupts. Marissa shoots him a breif glare, then continues."
-			`	"Yes, inn the past few months every shipment we've sent has been attacked by a pirate ship. The same ship. A bastion by the name of 'Hammer of Thor.' We can't justify the expense to pay a bounty hunter to take out the pirate, so instead we're going to pay you to outrun it. I assume the <ship> is faster than a Bastion?"`
+			`	"Yes, in the past few months every shipment we've sent has been attacked by a pirate ship. The same ship. A bastion by the name of 'Hammer of Thor.' We can't justify the expense to pay a bounty hunter to take out the pirate, so instead we're going to pay you to outrun it. I assume the <ship> is faster than a Bastion?"`
 			choice
 				`	"As fast as they come. Not much could chase it down."`
 				`	"Not fast enough. I don't think I can risk taking on this mission."`
