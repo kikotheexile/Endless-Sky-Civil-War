@@ -153,7 +153,7 @@ conversation "intro"
 		`	(Continue to the intro.)`
 			goto logbook
 	label crewyou
-	`	You are a crewman aboard your own ship, with all the rights and privileges that brings. However, you are also the boss. Meaning you get treated a little differently.
+	`	You are a crewman aboard your own ship, with all the rights and privileges that brings. However, you are also the boss. Meaning you get treated a little differently.`
 	`	You will draw no salary out of your own bank account because, well, it's your bank account. You also get 1,000 ship shares. Meaning you should always get the lion's share of any profits.`
 	choice	
 		`	(Back to the Crew overview.)`
