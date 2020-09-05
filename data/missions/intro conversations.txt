@@ -45,6 +45,8 @@ conversation "intro"
 			goto work
 		`	Combat.`
 			goto combat
+		`	How crews work.`
+			goto crew
 		`	(Back to Menu.)`
 			goto menu
 		`	(Continue to the intro.)`
@@ -125,7 +127,117 @@ conversation "intro"
 		`	(Back to Menu.)`
 			goto menu
 		`	(Continue to the intro.)`
-			goto logbook	
+			goto logbook
+	label crew
+	`	Most ships will have room to hire additional crew, or will require more than one crewman to run the ship. Each Crewman not only requires their own salary, but also is given ship shares. Salaries vary based on the rank of the crewman, as do their shares. More expensive crewmen will be required with the more crew you have.`
+	`	A breakdown of the crew is as follows, in order of salary drawn:`
+	choice	
+		`	You: No salary, 1,000 ship shares.`
+			goto crewyou
+		`	Regular Crewmen: 100 credits per day, 1 ship share.`
+			goto crewreg
+		`	Pilots: 250 credits per day, 20 ship shares.`
+			goto crewpilot
+		`	Junior Officers: 500 credits per day, 10 ship shares.`
+			goto crewjo
+		`	Senior Officers: 1,000 credits per day, 50 ship shares.`
+			goto crewco
+		`	Credits per day?`
+			goto crewcredits
+		`	Ship shares?`
+			goto crewshares
+		`	(Back to Basics.)`
+			goto basics
+		`	(Back to Menu.)`
+			goto menu
+		`	(Continue to the intro.)`
+			goto logbook
+	label crewyou
+	`	You are a crewman aboard your own ship, with all the rights and privileges that brings. However, you are also the boss. Meaning you get treated a little differently.
+	`	You will draw no salary out of your own bank account because, well, it's your bank account. You also get 1,000 ship shares. Meaning you should always get the lion's share of any profits.`
+	choice	
+		`	(Back to the Crew overview.)`
+			goto crew
+		`	(Back to Basics.)`
+			goto basics
+		`	(Back to Menu.)`
+			goto menu
+		`	(Continue to the intro.)`
+			goto logbook
+	label crewreg
+	`	Ships often need different crew members to handle different duties. Be it filling in as hospitality staff for luxury accommodations, manning the guns, or providing extra ship security`
+	`	Your most common crewmen, the "Regulars," handle these jobs. They also cost the least. Drawing 100 credit salaries per day, and only taking one ship share each.`
+	`	Some, more cruel, captains have been known to throw hoards of their regulars at hostile ships in boarding operations. This is seen as distasteful, and is absolutely an abuse of your workforce. However, thanks to the Syndicate's economic influence, the Republic has yet to pass any laws restricting or regulating this, and will not require you to provide hazard pay.`
+	choice	
+		`	(Back to the Crew overview.)`
+			goto crew
+		`	(Back to Basics.)`
+			goto basics
+		`	(Back to Menu.)`
+			goto menu
+		`	(Continue to the intro.)`
+			goto logbook
+	label crewpilot
+	`	Pilots are who you rely upon most to manage other ships in your fleet. Be they high-risk fighter jockies, or the people running your heavy escorts. Their job is to fly any ships that you don't, and they get paid extra for it.`
+	`	Although Pilots take your place aboard any ship you aren't currently flying, they do not actually take on the responsibility of being a Captain, and will seldom act independently of you. They will do their best to your orders to the letter when possible.`
+	choice	
+		`	(Back to the Crew overview.)`
+			goto crew
+		`	(Back to Basics.)`
+			goto basics
+		`	(Back to Menu.)`
+			goto menu
+		`	(Continue to the intro.)`
+			goto logbook
+	label crewjo
+	`	These officers manage teams of about five regular crewmen, and you will automatically hire one for ever five crewmen you have. Their jobs are more challenging but less high risk than that of your pilots, so they draw a heavier salary, but take less ship shares.`
+	`	Junior Officers are required by both law and moral codes of conduct for every five crewmen aboard any ship. Even Pirates, who mostly run on slave labor, abide by the rules requiring officers. Although it is suspected Pirate crews abide by this largely due to improved performance.`
+		choice	
+		`	(Back to the Crew overview.)`
+			goto crew
+		`	(Back to Basics.)`
+			goto basics
+		`	(Back to Menu.)`
+			goto menu
+		`	(Continue to the intro.)`
+			goto logbook
+	label crewco
+	`	The largest ships and fleets will need Senior Officers. Experienced managers who can efficiently run large groups of crewmen and direct them.`
+	`	Senior Officers are required by both law and moral codes of conduct for every twenty crewmen aboard any ship. Even Pirates, who mostly run on slave labor, abide by the rules requiring officers. Although it is suspected Pirate crews abide by this largely due to improved performance.`
+		choice	
+		`	(Back to the Crew overview.)`
+			goto crew
+		`	(Back to Basics.)`
+			goto basics
+		`	(Back to Menu.)`
+			goto menu
+		`	(Continue to the intro.)`
+			goto logbook
+	label crewcredits
+	`	Each crew member is required by law to be paid a minimum wage based on their position. These wages are to be paid out daily, and will be automatically deducted from your account every day through the Universal Credit System.`
+	`	The Universal Credit System is managed by an alien species known as the Quarg. According to them, these same credits are accepted by every "Tier One or higher" civilization in the known universe. Although there was a lot of political resistance in the early days of the Human exploration, the UCS "Bank" has been accepted and used by every human government for centuries.`
+	`	This means that you could theoretically hire crewmen on an alien planet, and they would automatically be paid just the same as their human counterparts.`
+		choice	
+		`	(Back to the Crew overview.)`
+			goto crew
+		`	(Back to Basics.)`
+			goto basics
+		`	(Back to Menu.)`
+			goto menu
+		`	(Continue to the intro.)`
+			goto logbook
+	label crewshares
+	`	Each crew member is entitled to profit sharing for working aboard your ship, and thus holds a "share."`
+	`	As the Captain, you get 1,000 shares. Meaning you get the same amount of profit as 1,000 regular crew members would, making sure that you can continue to afford to buy new stock, outfits, and pay out crew salaries.`
+	`	Different crew members are given different shares based on the risks and responsibilities they take on. More valuable crew members, namely Pilots and Senior Officers, will get more shares of your total profits.`
+		`	(Back to the Crew overview.)`
+			goto crew
+		`	(Back to Basics.)`
+			goto basics
+		`	(Back to Menu.)`
+			goto menu
+		`	(Continue to the intro.)`
+			goto logbook
 	label planetui
 	scene "scene/Main_GUI"	
 	`	The planet UI is simply just an array of buttons, a pretty picture, and some information. The button functions are:`
