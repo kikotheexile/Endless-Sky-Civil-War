@@ -411,7 +411,7 @@ mission "Betray Free Worlds"
 	on complete
 		payment 75000
 		log "Told the Republic about my work with the Free Worlds. They officer didn't seem at all impressed at the time, but they might have a job for me in the future."
-		dialog `As you are landing, you contact the Republic offices in the spaceport. After a long hold, they conduct a very breif remote interview with you. The interview consists entirely of yes or no questions, mostly about the bombings. The officer grows increasingly bored with the conversation as it goes on. She ends the interview saying, "The Republic will be in touch if they need anything else."
+		dialog `As you are landing, you contact the Republic offices in the spaceport. After a long hold, they conduct a very breif remote interview with you. The interview consists entirely of yes or no questions, mostly about the bombings. The officer grows increasingly bored with the conversation as it goes on. She ends the interview saying, "The Republic will be in touch if they need anything else."`
 		set "betray free worlds: done"
 		"assisted republic" ++
 		

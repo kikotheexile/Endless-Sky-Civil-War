@@ -146,7 +146,7 @@ mission "Intro [0]"
 			`	Check Preferences by pressing the (ESC) key for more details.`
 		log "Flight Manual" "Crew Basics" `The crew breakdown is as follows:`
 			`	You: No salary, 1,000 ship shares.`
-			`	You are a crewman aboard your own ship, with all the rights and privileges that brings. However, you are also the boss. Meaning you get treated a little differently.
+			`	You are a crewman aboard your own ship, with all the rights and privileges that brings. However, you are also the boss. Meaning you get treated a little differently.`
 			`	You will draw no salary out of your own bank account because, well, it's your bank account. You also get 1,000 ship shares. Meaning you should always get the lion's share of any profits.`
 			``
 			`	Regular Crewmen: 100 credits per day, 1 ship share.`
@@ -171,10 +171,10 @@ mission "Intro [0]"
 			`Representation in the Republic Parliament is based on population. That means that some individual "Paradise Worlds" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.`
 		log "Factions" "Syndicate" `The Syndicate is a megacorporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.`
 			`The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.`
-		log "Factions" "Northern Union" `There is a great deal of debate over if the Northern Union are freedom fighters, terrorists, or just an alliance of anarchists and pirates. However, the one thing everyone can agree on is that Northern Union space is extremely dangerous. Their neutral planet, Haven, is the one planet in all of known space that has never successfully been invaded by the Republic."	
+		log "Factions" "Northern Union" `There is a great deal of debate over if the Northern Union are freedom fighters, terrorists, or just an alliance of anarchists and pirates. However, the one thing everyone can agree on is that Northern Union space is extremely dangerous. Their neutral planet, Haven, is the one planet in all of known space that has never successfully been invaded by the Republic."`
 		log "Factions" "Pirates" `In poorer and more remote star systems, where the Navy seldom patrols, pirate attacks on merchant ships are frequent. Pirates are also known to attack large, unguarded convoys of freighters even in more populated areas. Most pirate fleets come from lawless worlds on the outskirts of human space.`
 		log "Factions" "Merchants" `Although not an organization, Merchants are known to stick together and share information with one another. If a fellow Merchant decides to begin a life of crime and piracy, it wont be long before every Merchant in the known galaxy has heard about it and labeled them as a hostile captain. Thankfully, when wronged they will also accept bribes and spread the word about those as well. They also share stories of captains who have helped them.`
-		Log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who persue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
+		log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who persue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
 		log "Factions (Alien)" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ringworlds. Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
 			`The Quarg view species in labels. Calling themselves "Tier Three" and humanity "Tier One." They seldom use advanced technology within human space, however. Claiming that it would be "disrespectful to show humanity the true power of the Quarg."`
 		log "Factions (Alien)" "The Hai" `The Hai are large, rodent-like creatures. Many earthborn humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
@@ -551,7 +551,7 @@ mission "Intro [2 Interceptor]"
 			`You find James in the spaceport bar, talking with a woman wearing a business suit. The expression on James's face is growing increasingly concerned as she speaks. Seeing you come in, he waves to you and you join them at the table.`
 			`	"Hello <first>," says James. "This is Marissa, a senior manager at the mines." She shakes your hand.`
 			`	"Here's the deal,"  Marissa begins, without so much as saying hello. "Most of the gemstones we mine here are industrial grade, not pretty enough to be worth using as anything but sandpaper grit or drill bits. But every once in a while we happen on some higher quality gems. No one in this sector has the money to spend on jewelry, so we ship them north to the paradise worlds."`
-			`	"And this is where the problem begins," James interrupts. Marissa shoots him a breif glare, then continues."
+			`	"And this is where the problem begins," James interrupts. Marissa shoots him a breif glare, then continues."`
 			`	"Yes, in the past few months every shipment we've sent has been attacked by a pirate ship. The same ship. A bastion by the name of 'Hammer of Thor.' We can't justify the expense to pay a bounty hunter to take out the pirate, so instead we're going to pay you to outrun it. I assume the <ship> is faster than a Bastion?"`
 			choice
 				`	"As fast as they come. Not much could chase it down."`
@@ -567,7 +567,7 @@ mission "Intro [2 Interceptor]"
 			choice
 				`	"Hypothetically, how would I defeat a larger ship using something like a sparrow?"`
 					goto hypothetical
-				`	"Got it."
+				`	"Got it."`
 					accept
 			label hypothetical
 			`	"Don't make me regret telling you this," he says, "but smaller vessels like the Sparrow do have the ability to temporarily hide their emissions, although the heat build up is liable to disable the ship before you can do anything useful with it. Combine that with some short ranged torpedoes, and hypothetically, an experienced captain will have a fighting chance. Let's go."`
