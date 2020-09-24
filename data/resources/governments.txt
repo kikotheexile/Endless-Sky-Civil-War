@@ -108,6 +108,23 @@ government "Free Worlds"
 	"hostile hail" "hostile free worlds"
 	raid "pirate raid"
 
+government "Free Worlds Wolfpack"
+	color .06 .68 0
+	"player reputation" -1
+	"attitude toward"
+		"Local" 0.01
+		"Merchant" .01
+		"Militia" .01
+		"Pirate" -.04
+		"Republic" -.1
+		"Caravan" -1
+		"Deep Security" -5
+		"Deep" -1
+		"Northern Union" -2
+	"friendly hail" "friendly free worlds"
+	"hostile hail" "hostile free worlds"
+	raid "pirate raid"
+
 government "Hai"
 	color .84 .42 .81
 	"player reputation" 0
