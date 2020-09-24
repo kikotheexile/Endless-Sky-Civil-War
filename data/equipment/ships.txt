@@ -3996,6 +3996,87 @@ ship "Veles"
 	description "The Veles class is an incredible feat of engineering. A first of its kind true Star Cruiseliner, designed to take wealthy retirees on tours of the poorer regions of space in safety and security."
 	description "	The Veles class is intended to single handedly crush the Northern Union. This ship signals a resurgence in Betelgeuse's research and development department, which has finally come out of its centuries-long stagnation."
 
+ship " Veles "
+	sprite "ship/velesstarblade"
+	"never disabled"
+	attributes
+		category "Battlecruiser"
+		"cost" 850000000
+		"shields" 85000
+		"hull" 50000
+		"hull repair rate" .1
+		"required crew" 210
+		"bunks" 350
+		"mass" 10500
+		"drag" 35
+		"heat dissipation" 0.25
+		"fuel capacity" 1000
+		"cargo space" 350
+		"outfit space" 1586
+		"weapon capacity" 970
+		"engine capacity" 300
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 400
+			"shield damage" 4000
+			"hull damage" 200
+			"hit force" 600
+	outfits
+		"Meteor Missile Launcher" 2
+		"Proton Turret" 20
+		"Quad Blaster Turret" 6
+		"Heavy Anti-Missile Turret" 4
+		
+		"D14-XL Shield Generator"
+		"Tactical Scanner"
+		"LP576a Battery Pack"
+		"Fusion Reactor"
+		"Plasma Pistol" 210
+	
+		"Tyrant Plasma Steering"
+		"Tyrant Plasma Thruster"
+		
+	gun 8 -464 "Meteor Missile Launcher"
+	gun -8 -464	"Meteor Missile Launcher"
+	turret 39 -246.5 "Proton Turret"
+	turret -39 -246.5 "Proton Turret"
+	turret 44 -226.5 "Proton Turret"
+	turret -44 -226.5 "Proton Turret"
+	turret 47.5 -201.5 "Proton Turret"
+	turret -47.5 -201.5 "Proton Turret"
+	turret 50 -180.5 "Proton Turret"
+	turret -50 -180.5 "Proton Turret"
+	turret 51 -152 "Proton Turret"
+	turret -51 -152 "Proton Turret"
+	turret 52 -130.5 "Proton Turret"
+	turret -52 -130.5 "Proton Turret"
+	turret 100 -37 "Proton Turret"
+	turret -100 -37 "Proton Turret"
+	turret 101.5 -7 "Proton Turret"
+	turret -101.5 -7 "Proton Turret"
+	turret 101.5 27	"Proton Turret"
+	turret -101.5 27 "Proton Turret"
+	turret 102.5 58.5 "Proton Turret"
+	turret -102.5 58.5 "Proton Turret"
+	turret 98.5 94 "Quad Blaster Turret"
+	turret -98.5 94 "Quad Blaster Turret"
+	turret 27.5 -281.5 "Quad Blaster Turret"
+	turret -27.5 -281.5 "Quad Blaster Turret"
+	turret -20 -367 "Heavy Anti-Missile Turret"
+	turret 20 -367 "Heavy Anti-Missile Turret"
+	turret 19.5 326 "Heavy Anti-Missile Turret"
+	turret -19.5 326 "Heavy Anti-Missile Turret"
+	turret 22.5 219 "Quad Blaster Turret"
+	turret -22.5 219 "Quad Blaster Turret"
+	engine -131 483.5
+	engine 131 483.5
+	engine -89 456.5
+	engine 89 456.5
+	explode "small explosion" 20
+	explode "medium explosion" 80
+	explode "large explosion" 70
+	explode "huge explosion" 30
+	"final explode" "final explosion large" 1
 
 # "Marauders"
 # Copyright (c) 2016 by Iaz Poolar 
