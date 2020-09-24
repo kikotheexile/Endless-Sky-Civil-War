@@ -334,3 +334,172 @@ mission "Oathkeeper Escort 2"
 	on complete
 		dialog `The convoy arrives safely, and after a few hours of waiting you hear that the negotiation team was successful. An officer reports that the Deep will send supplies, on the condition that your convoy escort a caravan fleet going to Prime. They send you <payment> and inform you that you should be ready to leave with the fleet.`
 		payment 40000
+mission "Oathkeeper Escort 2.1"
+	name `Escort caravan fleet to Prime`
+	to offer
+		has "Oathkeeper Escort 2" complete
+	origin "Valhalla"
+	destination "Prime"
+	
+	on offer
+		conversation
+			`It's not hard to find the caravan fleet as a very large portion of the station is dedicated to preparing it for departure. It's a little more difficult to find superiors in the organized chaos. Eventually you make your way to the Navy officer in charge, who is addressing a couple dozen pilots. This now includes you, as well as some other merchants, and Navy pilots. "We have a big fleet here, and the caravan has its own defenses, so this should be a quick, easy escort from here to Prime. Any questions?"`
+			choice
+				`	"Uh, why do we even need escorts?"`
+				goto escorts
+				`	"When do we get to work?"`
+				goto work
+				`	Wait in silence.`
+				goto continue
+				label escorts
+				`	The officer thinks about your question for a second, then answers, "Mostly, we're going the same way. But the Deep doesn't need to know that, right?" She chuckles, and the crowd responds with a robotic laugh that could be straight from a laugh track.`
+				goto continue
+				label work
+				`	The officer rolls her eyes. "Ha ha, very funny. Doesn't look like anyone has any questions, so we'll get to it."`
+				label continue
+				`	The officer's communicator beeps, and he is clearly not happy with the news he just recieved. He curses.`
+				`	"Well the job just got harder, it seems that there are planets being raided all along our route to Prime. There are some Free Worlds ships harassing our supply lines, and Northern Union opportunists doing the same." He pauses for a moment. 
+				`	"This changes nothing. Just stick with the group, alright everyone? We'll be taking off as soon as the caravan finishes its preparations."`	
+				accept
+
+	npc
+		personality escort heroic
+		government Republic
+		ship Aletheia "R.H.C. North Carolina"
+		ship Aletheia "R.H.C. Nova Scotia"
+		ship Aletheia "R.H.C. Nuevo Leon"
+		ship Aletheia "R.H.C. Jilin"
+
+	npc
+		personality escort heroic
+		government Merchant
+		ship "Firebird (Plasma)" "B.G.S. Moltres"
+		ship "Firebird (Plasma)" "B.G.S. Pheonix"
+		ship "Firebird (Plasma)" "B.G.S. Spicy McHaggis"
+		ship "Firebird (Plasma)" "B.G.S. Habanero"
+		ship "Leviathan (Heavy)" "B.G.S. Cetus"
+		ship "Leviathan (Heavy)" "B.G.S. Basilisk"	
+		
+	npc accompany save
+		personality escort timid
+		government "Deep Security"
+		ship Bactrian "D.E.C. Tannate"
+		ship Mule "D.E.C. Sandstorm"
+		ship Mule "D.E.C. Recovery"
+	
+	npc save
+		personality heroic staying
+		government Merchant
+		ship " Veles " "StarBlade"
+		system "Betelgeuse"		
+	npc
+		personality plunders staying
+		government "Free Worlds Wolfpack"
+		fleet "Small Free Worlds" 2
+		fleet "Large Free Worlds" 2
+		system "Zosma"
+	npc
+		personality plunders staying
+		government "Free Worlds Wolfpack"
+		fleet "Small Free Worlds" 2
+		fleet "Large Free Worlds" 2
+		system "Algieba"
+	npc
+		personality plunders staying
+		government "Free Worlds Wolfpack"
+		fleet "Small Free Worlds" 2
+		fleet "Large Free Worlds" 2
+		system "Alphard"
+	npc
+		personality plunders staying
+		government "Northern Union"
+		fleet "Small Northern Union" 2
+		fleet "Large Northern Union" 2
+		system "Alphard"
+	npc
+		personality plunders staying
+		government "Northern Union"
+		fleet "Small Northern Union" 2
+		fleet "Large Northern Union" 2
+		system "Talita"
+	npc
+		personality plunders staying
+		ship Aegis "Interdictor"
+		ship "Barb (Gatling)" "Raider One"
+		ship "Barb (Gatling)" "Raider Two"
+		ship "Barb (Gatling)" "Raider Three"
+		ship "Barb (Gatling)" "Raider Four"
+		ship "Barb (Gatling)" "Raider Five"
+		ship "Barb (Gatling)" "Raider Six"
+		ship Aegis "Stalling Measures"
+		ship "Barb (Gatling)" "Rebel One"
+		ship "Barb (Gatling)" "Rebel Two"
+		ship "Barb (Gatling)" "Rebel Three"
+		ship "Barb (Gatling)" "Rebel Four"
+		ship "Barb (Gatling)" "Rebel Five"
+		ship "Barb (Gatling)" "Rebel Six"
+		ship Vanguard "Entrapment"
+		ship Vanguard "Snare"
+		system "Miaplacidus"
+	npc
+		personality plunders staying
+		government "Northern Union"
+		fleet "Small Northern Union" 2
+		fleet "Large Northern Union" 2
+		system "Canopus"
+	npc
+		personality plunders staying
+		government "Northern Union"
+		fleet "Small Northern Union" 2
+		fleet "Large Northern Union" 2
+		system "Phurad"
+	npc
+		personality plunders staying
+		government "Northern Union"
+		fleet "Small Northern Union" 2
+		fleet "Large Northern Union" 2
+		system "Mirzam"
+		
+	npc kill
+		government "Northern Union"
+		personality plunders staying target
+		system "Betelgeuse"
+		ship "Lindworm" "Nagzaid"
+		ship "Lindworm" "Vraixul"
+		ship "Lindworm" "Ziucdreno"
+		ship "Lindworm" "Steve"
+		ship "Lindworm"	"Sherman"
+		dialog `The Northern Union raid has been repelled, and it should now be safe to land the fleet on Prime.`
+
+	on fail
+		dialog `One of the repair ships you were sent to protect has been destroyed, and all hope for repairing the shipyard is now lost! You should consider reloading from your last save and giving this another shot.`
+	on visit
+		dialog "There are still Northern Union ships in orbit. Finish them off so they have no hope of reporting back to their allies!"
+	on enter "Alphard"
+		dialog
+			`Sure enough, your sensors are picking up Free Worlds ships as well as Northern Union ships. Interestingly, the weapons fire indicates that they aren't getting along.`
+			`	It might be a good idea to take advantage of the in-fighting and run before they notice you.`
+	on enter "Betelgeuse"
+		dialog
+			`Upon entering the system you are hailed by a massive ship:`
+			`	"Attention all Republic forces, this is the StarBlade. We are requesting that you do not or leave the system until the Northern Union threat has been neutralized. Just give us a second to take care of it."`
+			`	The broadcast ends before anyone gets a chance to acknowledge, but it looks like the rest of the fleet is obeying the request and wont land until the raiders have been obliterated...`
+	on complete
+		conversation
+			`Despite the ambush, with the help of the StarBlade and the escort fleet, you've managed to repel the Northern Union raid. The Navy calls for all the contractors to attend a meeting, and at the meeting it's you and roughly a dozen other contractors being addressed by a bored-looking, low-ranking Navy officer. "Alright, thanks for going on this mission on such short notice. With the StarBlade out there, this place will be perfectly safe, so take your <payment> and you can go find another job."`
+			choice
+			`	"What even is the StarBlade?"`
+			goto Veles
+			`	"Know where I could find another job?"`
+			goto job
+			`	Take your money and go find another job.`
+			goto end
+			label Veles
+			`	The officer seems surprised you don't know about it already. "Uh, the Star Blade? That huge experimental warship they've been developing here? It's kind of a big deal, I mean you saw how it smoked those Northern Union ships right? Anyway dismissed."`
+			`	Another merchant pulls you aside, "It's one of the new class of warships, the Battle Cruiser. It, and it's sister ships are the most powerful ships in the whole of human space with the exception of some prototypes. They are billed as cruise ships, but..." She trails off. "Anyway go visit the shipyard Kiosk, you'll be able to see from there.`
+			goto end
+			label job
+			`	The officer snorts. "I dunno what they have you contractors out doing right now, try poking around the spaceport until you see someone higher-ranked than me."`
+			label end
+			`	And with that, you take your money and leave.`
+			payment 90000
