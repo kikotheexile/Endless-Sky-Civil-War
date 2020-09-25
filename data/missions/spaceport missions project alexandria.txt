@@ -27,6 +27,7 @@ mission "Vinci History"
 			`	You push on, further away from the spaceport. After passing various factories and local businesses, you arrive in a graveyard. There are engraved stones dating back to the very foundation of the colony.`
 			`	Nearby, there is a heavily erroded granite wall. Due to granites durability and resistance to errosion, it is still very easy to make out the inscription.`
 			`	"May these Five-Thousand Three-Hundred and Eighteen lost souls find peace the Alphas refused to give them in Two-Thousand Four-Hundred Fifty-Four." This inscription is followed with thousands of names.`
+			`	From here, it is easy to find your way back to your ship.`
 				accept
 				
 	on accept
@@ -62,7 +63,7 @@ mission "Martian History"
 		random < 5
 	on offer
 		conversation
-			`Even after setting foot on other worlds, and indeed being born and raised far away from Earth, there is something about Mars that feels alien. The low gravity and red soil lends itself to a sense of both isolation and adventure.`
+			`Even after setting foot on other worlds, and indeed being born and raised far away from Earth yourself, there is something about Mars that feels alien. The low gravity and red soil lends itself to a sense of both isolation and adventure.`
 			`	Do you take the opportunity to explore your surroundings?`
 			choice
 				`	(Yes.)`
@@ -144,7 +145,7 @@ mission "Gemstone History"
 				accept
 				
 	on accept
-		log "Turf Wars" "Gemstone" `Gemstone is the site of the first major battle fought between two rival corporations during the Turf Wars of the 2420's, although smaller skirmishes happened throughout the dirt belt this was the first time when a full planetary invasion force was launched.`
+		log "Turf Wars" "Gemstone" `Gemstone is the site of the first major battle fought between two rival corporations during the Turf Wars of the 2420's. Although smaller skirmishes happened throughout the dirt belt, this was the first time when a full planetary invasion force was launched.`
 		log "Combat Tactics" "Planetary Invasion: Air Superiority" `Starships, being large and powerful, should make excellent vessels for air support. However, they face many challenges while in atmosphere. A major challenge is the fact that they depend upon unprotected and unshielded repulsors for lift, rather than any other form of propulsion. This makes them easy targets for aircraft and ground based planetary defenses.`
 		fail
 		
