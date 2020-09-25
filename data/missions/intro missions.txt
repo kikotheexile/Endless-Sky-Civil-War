@@ -34,10 +34,95 @@ mission "A pirate's life!"
 		has "a pirates life"
 		
 	on offer
+		log "Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
+			`Discord: https://discord.gg/ND788CC (invite: ND788CC)`
+			`Github: (To be updated once out of workfloor)`
+			`Steam: (To be update once on steam)
+			``
+		log "Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
+			`Endless Sky is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.`
+			`Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.`
+		log "Game Credits" "Endless Sky Stories:" `Endless Sky Stories Team` "Stories Concept by Kiko the Exile"
+			`Stories is based on Endless Sky, created and owned by Michael Zahniser.`
+			`The following credits only address people who worked directly on Stories. For a full list of credits, check the Copyright folder in the game files.`
+			``
+			`Lead Developer:`
+			`Kiko the Exile/Vincent Rohlf (Kiko)`
+			``
+			`Story Writers:`
+			`Kiko, philemon120(Phil), Kishi, Tessa (Moonbeam) Lorentzen, Alex "Oversurge" Bassett`
+			``
+			`Artwork:`
+			`Kat`
+			``
+			`Coding:`
+			`Lyncore, Luna, Jana, Kiko, oo13`
+			``
+			`Support Tools:`
+			`Wolfy (ESMB), M.C.O. (James/Alondo, nightly builds, the first draft of the launcher)`
+			``
+			`Additional Support:`
+			`Gabriel (aka Jeff), Lorantine,`
+		log "Logbook" "First Log Entry" "Finally scraped together enough money for a down payment on a starship. The interest on the mortgage is exorbitant."
+		log "Flight Manual" "Basic Controls" `The very first thing you need to know about the controls is the fact that they can be changed at any time. You can find them by pressing the (ESC) key and clicking Preferences.`
+			``
+			`	The default keys you will use most are:` 
+			`(ESC) to view preferences, load saves, or create new characters.`
+			`The Arrow Keys are your default navigation.`
+			`(Tab) to fire your primary weapon.`
+			`(M) to open your map.`
+			`(J) to jump to the next system.`
+			`(L) to land on your target planet, station, or moon in this system.`
+			`(T) to hail target ships, (Shift+T) to hail selected planets.`
+			``
+			`	You can find more info on your controls by visiting the preferences screen. Access that by pressing the (ESC) key and clicking Preferences.`
+		log "Flight Manual" "Finding Work" `Simply visit the 'Spaceport' on any planet, view the 'Job Board,' or make a fortune 'Trading!'`
+			`	All the main storylines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
+			`	So be careful who you chose to work for!`		
+		log "Flight Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you outrange and outrun your enemy, too!`
+			`	The main default keys you will use in combat are your arrow keys to move, (Tab) to fire your primary weapon, (W) to select your secondary weapon, and (Q) to fire your secondary weapon.`
+			`	Check Preferences by pressing the (ESC) key for more details.`
+		log "Flight Manual" "Crew Basics" `The crew breakdown is as follows:`
+			`	You: No salary, 1,000 ship shares.`
+			`	You are a crewman aboard your own ship, with all the rights and privileges that brings. However, you are also the boss. Meaning you get treated a little differently.`
+			`	You will draw no salary out of your own bank account because, well, it's your bank account. You also get 1,000 ship shares. Meaning you should always get the lion's share of any profits.`
+			``
+			`	Regular Crewmen: 100 credits per day, 1 ship share.`
+			`	Ships often need different crew members to handle different duties. Be it filling in as hospitality staff for luxury accommodations, manning the guns, or providing extra ship security`
+			`	Your most common crewmen, the "Regulars," handle these jobs. They also cost the least. Drawing 100 credit salaries per day, and only taking one ship share each.`
+			`	Some, usually cruel, captains have been known to throw hoards of their Regulars at hostile ships in boarding operations. This is seen as distasteful, and is absolutely an abuse of your workforce. However, thanks to the Syndicate's economic influence, the Republic has yet to pass any laws restricting or regulating this, and will not require you to provide hazard pay.`
+			``
+			`	Pilots: 250 credits per day, 20 ship shares.`
+			`	Pilots are who you rely upon most to manage other ships in your fleet. Be they high-risk fighter jockies, or the people running your heavy escorts. Their job is to fly any ships that you don't, and they get paid extra for it.`
+			`	Although Pilots take your place aboard any ship you aren't currently flying, they do not actually take on the responsibility of being a Captain, and will seldom act independently of you. They will do their best to your orders to the letter when possible.`
+			``
+			`	Even Pirates, who mostly run on slave labor, abide by the rules requiring officers. Although it is suspected Pirate crews abide by this largely due to improved performance.`
+			``
+			`	Junior Officers: 500 credits per day, 10 ship shares.`
+			`	These officers manage teams of about five regular crewmen, and you will automatically hire one for ever five crewmen you have. Their jobs are more challenging but less high risk than that of your pilots, so they draw a heavier salary, but take less ship shares.`
+			`	Junior Officers are required by both law and moral codes of conduct for every five crewmen aboard any ship.`
+			``
+			`	Senior Officers: 1,000 credits per day, 50 ship shares.`
+			`	The largest ships and fleets will need Senior Officers. Experienced managers who can efficiently run large groups of crewmen and direct them.`
+			`	Senior Officers are required by both law and moral codes of conduct for every twenty crewmen aboard any ship.`
+		log "Factions" "Republic" `Hundreds of years ago, the independent territories in different parts of human space agreed to join together into a single democratic government, with Earth as its capital. The rise of the Republic ushered in a long period of peace and prosperity in human history.`
+			`Representation in the Republic Parliament is based on population. That means that some individual "Paradise Worlds" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.`
+		log "Factions" "Syndicate" `The Syndicate is a megacorporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.`
+			`The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.`
+		log "Factions" "Northern Union" `There is a great deal of debate over if the Northern Union are freedom fighters, terrorists, or just an alliance of anarchists and pirates. However, the one thing everyone can agree on is that Northern Union space is extremely dangerous. Their neutral planet, Haven, is the one planet in all of known space that has never successfully been invaded by the Republic."`
+		log "Factions" "Pirates" `In poorer and more remote star systems, where the Navy seldom patrols, pirate attacks on merchant ships are frequent. Pirates are also known to attack large, unguarded convoys of freighters even in more populated areas. Most pirate fleets come from lawless worlds on the outskirts of human space.`
+		log "Factions" "Merchants" `Although not an organization, Merchants are known to stick together and share information with one another. If a fellow Merchant decides to begin a life of crime and piracy, it wont be long before every Merchant in the known galaxy has heard about it and labeled them as a hostile captain. Thankfully, when wronged they will also accept bribes and spread the word about those as well. They also share stories of captains who have helped them.`
+		log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who persue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
+		log "Factions (Alien)" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ringworlds. Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
+			`The Quarg view species in labels. Calling themselves "Tier Three" and humanity "Tier One." They seldom use advanced technology within human space, however. Claiming that it would be "disrespectful to show humanity the true power of the Quarg."`
+		log "Factions (Alien)" "The Hai" `The Hai are large, rodent-like creatures. Many earthborn humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
+			`This species seems to have a long and ancient history, and an unusual willingness to share their technology with other species. The engineers at Tarazed Corporation have taken advantage of this and has worked collaboratively with the Hai to build new and more advanced ships and weapons.`
+		log "Factions (Alien)" "The Wanderers" `Birdlike in appearence, this species has a name that is utterly unpronouncable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
+			`The Quarg seem to be revolted by the Wanderers for unknown reasons, but have disclosed that they consider the species to be "Tier Two" and that the two species are very unlikely to go to war.`
+
 		conversation
 			`The <npc> has landed next to you! With his reputation, this bounty hunter has likely been on your trail for weeks now. The Vanguard is slow and easy enough to avoid, but having a hostile Cruiser chasing you will make paying off this loan considerably more difficult.`
 				accept
-	
 	on accept
 	npc kill
 		personality nemesis
@@ -125,6 +210,35 @@ mission "Intro [0]"
 	to fail
 		has "a pirates life"
 	on offer
+		log "Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
+			`Discord: https://discord.gg/ND788CC (invite: ND788CC)`
+			`Github: (To be updated once out of workfloor)`
+			`Steam: (To be update once on steam)
+			``
+		log "Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
+			`Endless Sky is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.`
+			`Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.`
+		log "Game Credits" "Endless Sky Stories:" `Endless Sky Stories Team` "Stories Concept by Kiko the Exile"
+			`Stories is based on Endless Sky, created and owned by Michael Zahniser.`
+			`The following credits only address people who worked directly on Stories. For a full list of credits, check the Copyright folder in the game files.`
+			``
+			`Lead Developer:`
+			`Kiko the Exile/Vincent Rohlf (Kiko)`
+			``
+			`Story Writers:`
+			`Kiko, philemon120(Phil), Kishi, Tessa (Moonbeam) Lorentzen, Alex "Oversurge" Bassett`
+			``
+			`Artwork:`
+			`Kat`
+			``
+			`Coding:`
+			`Lyncore, Luna, Jana, Kiko, oo13`
+			``
+			`Support Tools:`
+			`Wolfy (ESMB), M.C.O. (James/Alondo, nightly builds, the first draft of the launcher)`
+			``
+			`Additional Support:`
+			`Gabriel (aka Jeff), Lorantine,`
 		log "Logbook" "First Log Entry" "Finally scraped together enough money for a down payment on a starship. The interest on the mortgage is exorbitant."
 		log "Flight Manual" "Basic Controls" `The very first thing you need to know about the controls is the fact that they can be changed at any time. You can find them by pressing the (ESC) key and clicking Preferences.`
 			``
