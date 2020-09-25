@@ -19,6 +19,7 @@ mission "Trust fund baby"
 	to offer
 		has "trustfund baby"
 	on offer
+		log "Logbook" "First Log Entry" "Finally got my pilots license, and I'm off that rock called New Boston. Shortly after, I got some of my inheritance to help me pay off this mortgage."	
 		conversation 
 			`	You recieve notice that some of your inheritance has been transferred to your account. This is <payment> that can go to paying down your loan or customizing your ship!`
 		payment 250000
@@ -34,15 +35,17 @@ mission "A pirate's life!"
 		has "a pirates life"
 		
 	on offer
-		log "Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
+		log "Logbook" "First Log Entry" "Finally scraped together enough money for a down payment on a starship. The interest on the mortgage is exorbitant."
+			`Apparently, I still have a large enough bounty on my head that people are coming after it. The Dry Wolf is likely to harass me for some time.`
+		log "1: Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
 			`Discord: https://discord.gg/ND788CC (invite: ND788CC)`
 			`Github: (To be updated once out of workfloor)`
 			`Steam: (To be update once on steam)
 			``
-		log "Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
+		log "1: Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
 			`Endless Sky is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.`
 			`Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.`
-		log "Game Credits" "Endless Sky Stories:" `Endless Sky Stories Team` "Stories Concept by Kiko the Exile"
+		log "2: Game Credits" "Endless Sky Stories:" `Endless Sky Stories Team` "Stories Concept by Kiko the Exile"
 			`Stories is based on Endless Sky, created and owned by Michael Zahniser.`
 			`The following credits only address people who worked directly on Stories. For a full list of credits, check the Copyright folder in the game files.`
 			``
@@ -63,8 +66,7 @@ mission "A pirate's life!"
 			``
 			`Additional Support:`
 			`Gabriel (aka Jeff), Lorantine,`
-		log "Logbook" "First Log Entry" "Finally scraped together enough money for a down payment on a starship. The interest on the mortgage is exorbitant."
-		log "Flight Manual" "Basic Controls" `The very first thing you need to know about the controls is the fact that they can be changed at any time. You can find them by pressing the (ESC) key and clicking Preferences.`
+		log "0: Manual" "Basic Controls" `The very first thing you need to know about the controls is the fact that they can be changed at any time. You can find them by pressing the (ESC) key and clicking Preferences.`
 			``
 			`	The default keys you will use most are:` 
 			`(ESC) to view preferences, load saves, or create new characters.`
@@ -76,13 +78,13 @@ mission "A pirate's life!"
 			`(T) to hail target ships, (Shift+T) to hail selected planets.`
 			``
 			`	You can find more info on your controls by visiting the preferences screen. Access that by pressing the (ESC) key and clicking Preferences.`
-		log "Flight Manual" "Finding Work" `Simply visit the 'Spaceport' on any planet, view the 'Job Board,' or make a fortune 'Trading!'`
+		log "0: Manual" "Finding Work" `Simply visit the 'Spaceport' on any planet, view the 'Job Board,' or make a fortune 'Trading!'`
 			`	All the main storylines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
 			`	So be careful who you chose to work for!`		
-		log "Flight Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you outrange and outrun your enemy, too!`
+		log "0: Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you outrange and outrun your enemy, too!`
 			`	The main default keys you will use in combat are your arrow keys to move, (Tab) to fire your primary weapon, (W) to select your secondary weapon, and (Q) to fire your secondary weapon.`
 			`	Check Preferences by pressing the (ESC) key for more details.`
-		log "Flight Manual" "Crew Basics" `The crew breakdown is as follows:`
+		log "0: Manual" "Crew Basics" `The crew breakdown is as follows:`
 			`	You: No salary, 1,000 ship shares.`
 			`	You are a crewman aboard your own ship, with all the rights and privileges that brings. However, you are also the boss. Meaning you get treated a little differently.`
 			`	You will draw no salary out of your own bank account because, well, it's your bank account. You also get 1,000 ship shares. Meaning you should always get the lion's share of any profits.`
@@ -113,11 +115,11 @@ mission "A pirate's life!"
 		log "Factions" "Pirates" `In poorer and more remote star systems, where the Navy seldom patrols, pirate attacks on merchant ships are frequent. Pirates are also known to attack large, unguarded convoys of freighters even in more populated areas. Most pirate fleets come from lawless worlds on the outskirts of human space.`
 		log "Factions" "Merchants" `Although not an organization, Merchants are known to stick together and share information with one another. If a fellow Merchant decides to begin a life of crime and piracy, it wont be long before every Merchant in the known galaxy has heard about it and labeled them as a hostile captain. Thankfully, when wronged they will also accept bribes and spread the word about those as well. They also share stories of captains who have helped them.`
 		log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who persue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
-		log "Factions (Alien)" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ringworlds. Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
+		log "Factions" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ringworlds. Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
 			`The Quarg view species in labels. Calling themselves "Tier Three" and humanity "Tier One." They seldom use advanced technology within human space, however. Claiming that it would be "disrespectful to show humanity the true power of the Quarg."`
-		log "Factions (Alien)" "The Hai" `The Hai are large, rodent-like creatures. Many earthborn humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
+		log "Factions" "The Hai" `The Hai are large, rodent-like creatures. Many earthborn humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
 			`This species seems to have a long and ancient history, and an unusual willingness to share their technology with other species. The engineers at Tarazed Corporation have taken advantage of this and has worked collaboratively with the Hai to build new and more advanced ships and weapons.`
-		log "Factions (Alien)" "The Wanderers" `Birdlike in appearence, this species has a name that is utterly unpronouncable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
+		log "Factions" "The Wanderers" `Birdlike in appearence, this species has a name that is utterly unpronouncable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
 			`The Quarg seem to be revolted by the Wanderers for unknown reasons, but have disclosed that they consider the species to be "Tier Two" and that the two species are very unlikely to go to war.`
 
 		conversation
@@ -140,6 +142,7 @@ mission "A pirate's life 2, electric boogaloo!"
 		has "a pirates life"
 		has "A pirate's life!: done"
 	on offer
+		log "Logbook" "More Bounty Hunters" "These bounty hunters just don't quit. After the Dry Wolf got blown to bits, a Challenger and Two Headhunters began chasing me."
 		conversation
 			`You thought you were in the clear, but <npc> and two others have landed next to you! They must have heard about you killing your pursuer, and want to take a crack at turning you in.`
 				accept
@@ -163,6 +166,7 @@ mission "A pirate's life 3, hitting the trifecta"
 		has "a pirates life"
 		has "A pirate's life 2, electric boogaloo!: done"
 	on offer
+		log "Logbook" "Even more bounty hunters" "Now it's a Falcon and two Firebirds. If I can separate them from each other, I can pick them off one at a time."
 		conversation
 			`As you leave your ship, you see <npc> land next to you; their ships has various violent markings on it. The pilot looks at you, grins, and gives you finger guns. You're not sure if they're into you for romance, or your hide, and think it's not best to find out.`
 				accept
@@ -186,6 +190,7 @@ mission "A pirate's life 4, the Quickening"
 		has "a pirates life"
 		has "A pirate's life 3, hitting the trifecta: done"
 	on offer
+		log "Logbook" "The Highlander" "Apparently I've attracted the attention of the Highlander himself. If I kill him, only the most desparate bounty hunters will continue chasing me."
 		conversation
 			`Before you even leave your ship, you get a communication from the ship next to you.`
 			`	"This is the <npc>. THERE CAN ONLY BE ONE!"`
@@ -210,15 +215,15 @@ mission "Intro [0]"
 	to fail
 		has "a pirates life"
 	on offer
-		log "Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
+		log "1: Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
 			`Discord: https://discord.gg/ND788CC (invite: ND788CC)`
 			`Github: (To be updated once out of workfloor)`
 			`Steam: (To be update once on steam)
 			``
-		log "Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
+		log "1: Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
 			`Endless Sky is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.`
 			`Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.`
-		log "Game Credits" "Endless Sky Stories:" `Endless Sky Stories Team` "Stories Concept by Kiko the Exile"
+		log "2: Credits" "Endless Sky Stories:" `Endless Sky Stories Team` "Stories Concept by Kiko the Exile"
 			`Stories is based on Endless Sky, created and owned by Michael Zahniser.`
 			`The following credits only address people who worked directly on Stories. For a full list of credits, check the Copyright folder in the game files.`
 			``
@@ -239,8 +244,7 @@ mission "Intro [0]"
 			``
 			`Additional Support:`
 			`Gabriel (aka Jeff), Lorantine,`
-		log "Logbook" "First Log Entry" "Finally scraped together enough money for a down payment on a starship. The interest on the mortgage is exorbitant."
-		log "Flight Manual" "Basic Controls" `The very first thing you need to know about the controls is the fact that they can be changed at any time. You can find them by pressing the (ESC) key and clicking Preferences.`
+		log "0: Manual" "Basic Controls" `The very first thing you need to know about the controls is the fact that they can be changed at any time. You can find them by pressing the (ESC) key and clicking Preferences.`
 			``
 			`	The default keys you will use most are:` 
 			`(ESC) to view preferences, load saves, or create new characters.`
@@ -252,13 +256,13 @@ mission "Intro [0]"
 			`(T) to hail target ships, (Shift+T) to hail selected planets.`
 			``
 			`	You can find more info on your controls by visiting the preferences screen. Access that by pressing the (ESC) key and clicking Preferences.`
-		log "Flight Manual" "Finding Work" `Simply visit the 'Spaceport' on any planet, view the 'Job Board,' or make a fortune 'Trading!'`
+		log "0: Manual" "Finding Work" `Simply visit the 'Spaceport' on any planet, view the 'Job Board,' or make a fortune 'Trading!'`
 			`	All the main storylines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
 			`	So be careful who you chose to work for!`		
-		log "Flight Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you outrange and outrun your enemy, too!`
+		log "0: Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you outrange and outrun your enemy, too!`
 			`	The main default keys you will use in combat are your arrow keys to move, (Tab) to fire your primary weapon, (W) to select your secondary weapon, and (Q) to fire your secondary weapon.`
 			`	Check Preferences by pressing the (ESC) key for more details.`
-		log "Flight Manual" "Crew Basics" `The crew breakdown is as follows:`
+		log "0: Manual" "Crew Basics" `The crew breakdown is as follows:`
 			`	You: No salary, 1,000 ship shares.`
 			`	You are a crewman aboard your own ship, with all the rights and privileges that brings. However, you are also the boss. Meaning you get treated a little differently.`
 			`	You will draw no salary out of your own bank account because, well, it's your bank account. You also get 1,000 ship shares. Meaning you should always get the lion's share of any profits.`
@@ -289,11 +293,11 @@ mission "Intro [0]"
 		log "Factions" "Pirates" `In poorer and more remote star systems, where the Navy seldom patrols, pirate attacks on merchant ships are frequent. Pirates are also known to attack large, unguarded convoys of freighters even in more populated areas. Most pirate fleets come from lawless worlds on the outskirts of human space.`
 		log "Factions" "Merchants" `Although not an organization, Merchants are known to stick together and share information with one another. If a fellow Merchant decides to begin a life of crime and piracy, it wont be long before every Merchant in the known galaxy has heard about it and labeled them as a hostile captain. Thankfully, when wronged they will also accept bribes and spread the word about those as well. They also share stories of captains who have helped them.`
 		log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who persue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
-		log "Factions (Alien)" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ringworlds. Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
+		log "Factions" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ringworlds. Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
 			`The Quarg view species in labels. Calling themselves "Tier Three" and humanity "Tier One." They seldom use advanced technology within human space, however. Claiming that it would be "disrespectful to show humanity the true power of the Quarg."`
-		log "Factions (Alien)" "The Hai" `The Hai are large, rodent-like creatures. Many earthborn humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
+		log "Factions" "The Hai" `The Hai are large, rodent-like creatures. Many earthborn humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
 			`This species seems to have a long and ancient history, and an unusual willingness to share their technology with other species. The engineers at Tarazed Corporation have taken advantage of this and has worked collaboratively with the Hai to build new and more advanced ships and weapons.`
-		log "Factions (Alien)" "The Wanderers" `Birdlike in appearence, this species has a name that is utterly unpronouncable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
+		log "Factions" "The Wanderers" `Birdlike in appearence, this species has a name that is utterly unpronouncable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
 			`The Quarg seem to be revolted by the Wanderers for unknown reasons, but have disclosed that they consider the species to be "Tier Two" and that the two species are very unlikely to go to war.`
 		conversation
 			`With some trepidation, you give the shipyard owner your money and take your new ship for a test drive, piloting it out of the shipyard and onto a spare landing pad by the spaceport. Then you get out and look the ship over a bit more closely. You are busy polishing out a few rust spots with a piece of steel wool when an old man in grease-stained coveralls walks up.`
