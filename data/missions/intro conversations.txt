@@ -9,13 +9,15 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 conversation "intro"
-	`	Would you like a quick briefing on the controls, interface, and how the game is played before we begin?`
+	`	Would you like a quick, text based overview of how the game works before we begin?? This will breifly cover the controls, interface, and how the game is played.`
+	`	If you select "No" don't worry. The overview will be added to your logbook (Default I, then Logbook)`
+	`	(Click an option, or press its corresponding number on your keyboard)`
 	choice
-		`	Yes.`
-			goto menu
 		`	No.`
 			goto logbook
-		`	Skip introduction.`
+		`	Yes.`
+			goto menu
+		`	(Hard Mode) Skip introduction.`
 			goto skip
 
 	label skip
