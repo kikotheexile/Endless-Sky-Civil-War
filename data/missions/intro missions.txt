@@ -59,7 +59,7 @@ mission "A pirate's life!"
 			`Kat`
 			``
 			`Coding:`
-			`Lyncore, Luna, Jana, Kiko, oo13`
+			`Luke Arndt, Luna, Jana, Kiko, oo13`
 			``
 			`Support Tools:`
 			`Wolfy (ESMB), M.C.O. (James/Alondo, nightly builds, the first draft of the launcher)`
