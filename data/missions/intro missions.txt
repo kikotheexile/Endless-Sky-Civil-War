@@ -58,7 +58,8 @@ mission "A pirate's life!"
 			`Artwork:`
 			`Kat`
 			``
-			`Coding:`
+			`Programming:`
+
 			`Luke Arndt, Luna, Jana, Kiko, oo13`
 			``
 			`Support Tools:`
