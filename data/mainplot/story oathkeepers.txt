@@ -30,10 +30,12 @@ mission "Oathkeeper Intro"
 				`	"Great! I'll get everything loaded up and we can get to work."`
 					accept
 	on accept
-		log "Met Jane Mulgrew at Farpoint, agreed to take her to Hassaleh to install sensors."
+		log "Escorted an Oathkeeper fleet north to Farpoint and met Captain Jane Mulgrew again. She asked for help setting up a sensor relay in Hassaleh nearby."
 	on visit
 		dialog `Mulgrew and her crew install the sensor on a large asteroid from the system's belt, and it seems to be working. Time to go back to Farpoint.`
 	on complete
+		log "Factions" "Oathkeepers" `The "Oathkeepers" are a regiment of Navy officers who were captured by the Free Worlds and paroled on the condition that they take no further part in fighting against the Free Worlds. They are led by William Danforth, a famous Navy admiral. Their stated mission is to protect the Paradise Worlds from the pirates who live on the anarchist worlds in the far north of human space.`
+		log "People" "William Danforth" `Danforth is a famous Navy Admiral, who is a folk hero throughout human space. This is due to his fair and honorable behavior, as well as his willingness to use his fleet to assist people in need. He has occasionally had to go against Parliament's orders to do so. He is currently in charge of the Navy regiment who call themselves the "Oathkeepers."`
 		dialog `Mulgrew says the sensor is working like a dream and thanks you, then promises to be back in the spaceport with more work later.`
 		
 mission "Oathkeeper Scouting 1"
@@ -71,6 +73,7 @@ mission "Oathkeeper Scouting 1.1"
 	on offer
 		dialog `Looks like some of the ships have followed you into orbit! You can fight them, or run.`
 	on complete
+		log "Got another sensor installation job from Mulgrew, this time in Ada, but the system was occupied by a Northern Union wolfpack. Made a tactical retreat to Farpoint."
 		dialog `You arrive on Farpoint and contact Mulgrew, who seems disappointed that the Northern Union likely got away with the raid, but glad that you made it out okay. She thanks you and tells you to meet her in the spaceport later.`
 		"ran" ++
 		
@@ -91,6 +94,7 @@ mission "Oathkeeper Scouting 1.2"
 		fleet "Small Northern Union" 2
 	
 	on complete
+		log "Got another sensor installation job from Mulgrew, this time in Ada, but the system was occupied by a Northern Union wolfpack. Managed to repel the wolfpack and impress Mulgrew."
 		dialog `You land on the defended Ada and install the sensors, then contact Mulgrew and explain what happened. She seems very impressed that you took down the entire raiding fleet, and she promises to send you a bonus of <payment> and talk to you at Farpoint about your next job.`
 		payment 30000
 		fought ++
@@ -135,6 +139,7 @@ mission "Oathkeeper Scouting 2.1"
 	source "Pilot"
 	destination "Farpoint"
 	on complete
+		log "More of the same sensor work, also from Mulgrew. Went to Elnath, and the weapons testground planet Pilot was also under attack. Reported to Mulgrew and took the money."
 		dialog `Mulgrew is unusually grave while she listens to your report. She thanks you for your service and gives you <payment> before leaving, promising another job shortly.`
 		payment 10000
 		"ran" ++
@@ -159,6 +164,7 @@ mission "Oathkeeper Scouting 2.2"
 	
 	on complete
 		dialog `After the battle, with the sensor installed, Mulgrew calls you and asks about the planet. She's relieved you stopped the raiders from getting away, and promises to put in a good word with her superiors after she sends you <payment>, telling you to meet her on Farpoint later.`
+		log "More of the same sensor work, also from Mulgrew. Went to Elnath, and the weapons testground planet Pilot was also under attack. Fought off the invaders and got a bonus."
 		payment 30000
 		"fought" ++
 		
@@ -198,6 +204,7 @@ mission "Oathkeeper Scouting 3"
 		fleet "Large Northern Union" 1
 		
 	on complete
+		log "There was a surprise raid on Farpoint, despite the advance warning systems installed nearby. Mulgrew has called an urgent meeting on Maelstrom. Perhaps there's bad news?"
 		dialog `As you land after the space battle, Mulgrew contacts you and urges you to meet with her on Maelstrom immediately.`
 		"fought" ++
 		
@@ -225,6 +232,7 @@ mission "Oathkeeper Esort Intro"
 				`	"Alright, I guess. I'll take that message then."
 				accept
 	on complete
+		log "Met an eccentric Humanitarian Corps officer named Nguyen, who offered to take the message from Mulgrew to her superiors and requested escorts for a Humanitarian Corps fleet to Prime, which lost its orbital shipyard after a Northern Union raid."
 		conversation
 			`While looking around the spaceport, you notice a stressed-looking Navy officer coming your way, and he strikes up a conversation. "Captain <last>, right?" Without waiting for an answer, he changes topic and says, "I'm Officer Nguyen. I heard Captain Mulgrew sent you with a message, is that right?"`
 			choice
@@ -485,6 +493,8 @@ mission "Oathkeeper Escort 2.1"
 			`	"Attention all Republic forces, this is the StarBlade. We are requesting that you do not or leave the system until the Northern Union threat has been neutralized. Just give us a second to take care of it."`
 			`	The broadcast ends before anyone gets a chance to acknowledge, but it looks like the rest of the fleet is obeying the request and wont land until the raiders have been obliterated...`
 	on complete
+		log "Escorted one of the massive caravan fleets from the Deep to Prime to deliver supplies for the orbital shipyard repairs. Prime was attacked again, but Betelgeuse Shipyards deployed their experimental Veles warship, the Star Blade, and with its help, the escort cleared out the raiders and landed safely. Paycheck, well earned." 
+		log "Factions" "Free Worlds Wolfpack" `The Free Worlds Wolfpack, or FWW for short, are a pirate gang with Free Worlds sympathies. Although the Free Worlds denies any connection to the FWW, they are very clearly benefiting from the actions of these pirates, and the pirates are friendly to them.`
 		conversation
 			`Despite the ambush, with the help of the StarBlade and the escort fleet, you've managed to repel the Northern Union raid. The Navy calls for all the contractors to attend a meeting, and at the meeting it's you and roughly a dozen other contractors being addressed by a bored-looking, low-ranking Navy officer. "Alright, thanks for going on this mission on such short notice. With the StarBlade out there, this place will be perfectly safe, so take your <payment> and you can go find another job."`
 			choice
