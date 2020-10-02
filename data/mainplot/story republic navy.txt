@@ -63,26 +63,64 @@ mission "Republic Bounty 2"
 	
 	on offer
 		conversation
-			`Before you can decide where you want to go in the spaceport, you are flagged down by a Republic officer, a dour woman with black hair in a tight bun. "Captain <last>?" she declares, "I'm Captain Shah. Commander Kent has you listed as a privateer." She continues with a quick, clipped tone, "We've been made aware that a criminal has been spotted near Alnasl. He is wanted, dead."`
+			`Before you can decide where you want to go in the spaceport, you are flagged down by a woman in a black pencil dress. It's only when you get near her that you notice the Republic markings on her jacket. She is a dour woman with black hair, knotted in a tight bun with classic ink-pens holding it together.` 
+			`"Captain <last>?" she declares, "I'm Captain Shah. Commander Kent has you listed as a privateer." She continues with a quick, clipped tone, "We've been made aware that a criminal has been spotted near Alnasl, aboard a ship named the <npc>. He is wanted, dead."`
 			choice
 				`	"Dead. Got it."`
 				` 	"You have an interesting way of asking."`
 					goto asking
+				`	"Nice dress. Don't Navy officers usually wear slacks or fatigues?"`
+					goto slacks
 				`	"I'm a merchant, not a hitman."`
 					goto killer
 			`	"He's aboard a ship named the <npc>. Considering your abilities it should hardly be a challenge."`
 				accept
 			label killer
-			`	Shah replies: "Your file leads me to believe otherwise. No matter then, we will be sure to update your record."`
-			decline
+			`	Shah replies: "Your file leads me to believe otherwise. No matter then, we will be sure to update your record. Good day."`
+			`	She walks away before you get the chance to change your mind.`
+				decline
+			label slacks
+			`	She tries to hide a smile, "Very perceptive." She says, "I like that, it's a very valuable trait in mercenaries. To answer your question, I'm from a different branch of government entirely. Our dress code is a bit different, and the heels are more useful in a fight than you would expect."`
+			`	She straightens her jacket to indicate she would like to get back to buisiness. "Well, are you interested in the job then?"`
+			choice
+				`	"Sure. I'll blow up the <npc> for you."`
+					accept
+				`	"I could handle the job, but how about dinner first?"
+					goto dinner
+				`	"I really don't like being a killer for hire."`
+					goto killer
+			label dinner
+			apply
+				set "shah likes you"
+			`	"Tempting," she replies, "But not tempting enough to give up my commission. I am strictly prohibited from forming personal friendships, or any other relationships that could create conflicts of interest. Especially with freelancers."`
+			`	She checks her communicator, a fancy silver bracelet modeled after ancient watches. "I am about to be late for another meeting. Will this be a yes or a no?"`
+			choice
+				`	"Yes."`
+					goto depart
+				`	"No."`
+					goto verywell
+			label depart
+				`	"Great. The information has already been transmitted to your ship's navscreen. Good day." She departs, with an added bounce to her step.`
+					accept
+				`	She sighs, "Very well, that probably is for the better. I was a little too excited to be working with you again in the future. I'll update your file. Good day."`
+					decline
 			label asking
 			`	"Would you prefer a full dissertation on the simplicity of this job?"`
 			choice
 				`	"I don't think that'll be necessary. I'll do it."`
 					accept
+				`	"Actually yes."`
+					goto smartass
 				`	"Thank you, but I'm not interested in this kind of work."`
 					decline
-					
+			label smartass
+			`	"Ah, I see you are that type of freelancer. Consider our relationship terminated. Good day."`
+			`	She walks away before you get the chance to change your mind.`
+				decline
+			label killer
+			`	Shah replies: "Your file leads me to believe otherwise. No matter then, we will be sure to update your record. Good day."`
+			`	She walks away before you get the chance to change your mind.`
+				decline
 	npc kill
 		personality heroic staying nemesis target
 		government Bounty
@@ -108,16 +146,17 @@ mission "Republic Bounty 3"
 	to offer
 		has "Republic Bounty 2: done"
 		not "chosen sides"
+		not "shah likes you"
 		random < 75
 	
 	on offer
 		conversation
-			`As you wander the spaceport, you're surprised by a hand on your shoulder. You look around to find Captain Shah, who says: "Captain <last>, the Republic has another job for you. It's different than the previous one, but I'm sure you'll be interested."`
+			`As you wander the spaceport, you're surprised by a firm hand on your shoulder. You look around to find Captain Shah, who says: "Captain <last>, the Republic has another job for you. It's different than the previous one, but I'm sure you'll be interested."`
 			choice
 				`	"You have my attention."`
 				`	"Sorry, I have to see a man about a magic carpet."`
 					defer
-			`	"A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, they have made it clear they will kill the hostages if approached by one of our ships, we're calling his bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If he kills the hostages, he wont be able to blame the Republic for it."`
+			`	"A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, they have made it clear they will kill the hostages if approached by one of our ships, we're calling her bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If she kills the hostages, she wont be able to blame the Republic for it."`
 			choice
 				`	"Don't worry, I majored in Crisis Aversion at University."`
 				`	"I'm in."`
@@ -141,6 +180,68 @@ mission "Republic Bounty 3"
 		dialog `"Everyone is home safe, thanks to you," Captain Shah informs you after you land. She takes you to a nearby restaurant as thanks: "The Republic owes you a debt of gratitude. <payment> have been transferred to your account, and I've informed my superiors of your excellent work today."`
 		log "Captain Shah has put in a good word for me to her superiors on the mission I've completed."
 
+mission "Republic Bounty 3 alt"
+	name "Republic Bounty Hunting"
+	description `Disable the <npc>, which seems to be holding merchants for ransom. Do not destroy or attempt to capture the ship. It was last spotted in the Tais system.`
+	source
+		government "Republic"
+		attributes "dirt belt"
+	to offer
+		has "Republic Bounty 2: done"
+		has "shah likes you"
+		not "chosen sides"
+		random < 75
+	
+	on offer
+		conversation
+			`As you wander the spaceport, you're surprised by a gentle hand on your shoulder. You look around to find Captain Shah, "A pleasure to see you again <first>, the Republic has another job for you!" She says excitedly, "It's admittedly a bit different than the previous one, but I'm sure you'll be interested."`
+			choice
+				`	"Go on."`
+					goto continue
+				`	"Change your mind on dinner?."`
+					goto dinner
+				`	"I really can't keep killing pirates for the Republic. It's giving me nightmares."`
+					goto nightmares
+			label dinner
+			`	"Sadly no." She responds, "It's all business. Remember that conflict of interest thing."`
+			`	She straightens her jacket fixes her badge, "A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, you aren't an ordinary contractor." She says with a wink, "The captain of the <npc> has made it clear she will kill the hostages if approached by one of our ships, we're calling her bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If she kills the hostages, she wont be able to blame the Republic for it."`
+			choice
+				`	"Don't worry, I majored in Crisis Aversion at University."`
+				`	"I'm in."`
+					accept
+				`	"I'm sorry, but that's definetly above my pay grade."`
+					goto decline
+			apply
+				set "shah really likes you"
+			`	"Let's hope you were in the honors program," Captain Shah replies with a bit of a chuckle, moving in close to you to show you her watch, "The ship was last spotted here, in Tias." She points to a system south-east of New Boston, "We believe you'll find it there. Goodbye and good luck."`
+				accept
+			label nightmares
+			`	"I understand that more than you know, but please, hear me out. If this goes well, no one will die."`
+				goto continue
+			label continue
+			`	"A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, you aren't an ordinary contractor." She pauses as if she said something wrong, then decides to move on. "The captain of the <npc> has made it clear she will kill the hostages if approached by one of our ships, we're calling her bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If she kills the hostages, she wont be able to blame the Republic for it."`
+			choice
+				`	"Don't worry, I majored in Crisis Aversion at University."`
+				`	"I'm in."`
+					accept
+				`	"I'm sorry, but that's definetly above my pay grade."`
+					goto decline
+			`	"Let's hope you were in the honors program," Captain Shah replies with a relieved smile: "The ship was last spotted in Tias. We believe you'll find it there."`
+				accept
+	npc disable
+		personality heroic staying nemesis target
+		government Bounty
+		system "Tais"
+		ship "Falcon (Heavy)" "Gediminas"
+		dialog `The <npc> has been disabled. You can claim the bounty payment by returning to <destination>.`
+	on accept
+		log "Hunted a pirate ship called the <npc>, which has captured multiple merchant captains, and disabled the ship at the Republic's request."
+		
+	on complete
+		"assisted republic" ++
+		payment 500000
+		dialog `"Everyone is home safe, thanks to you," Captain Shah informs you after you land. She takes you to a nearby restaurant as thanks: "The Republic owes you a debt of gratitude. <payment> have been transferred to your account, and I've informed my superiors of your excellent work today."`
+		log "Captain Shah has put in a good word for me to her superiors on the mission I've completed."
 		
 mission "Navy Scouting 1"
 	name "Hyperspace Relay Testing"
@@ -367,6 +468,8 @@ mission "Meeting an Alpha 2b"
 				`	(Sure.)`
 				`	(Not right now.)`
 					defer
+				`	(And betray the North? Never!)
+					decline
 			
 			`	You navigate your way through the spaceport before finally coming to a stop just outside of the Republic office. Like most Republic offices, you have to scan your ID or pilot's license upon entry. There is an officer serving as a receptionist who asks how he can help you.`
 			choice
@@ -417,8 +520,8 @@ mission "Betray Free Worlds"
 		
 mission "RN Commitment"
 	landing
-	name "Join the Free Worlds"
-	description "If you want to join the Free Worlds, report to their headquarters on <destination>."
+	name "Join the Republic Humanitarian Corps."
+	description "If you want to accept the Republic's job offer, report to their headquarters on <destination>."
 	minor
 	source
 		government "Republic" "Syndicate"
@@ -476,7 +579,7 @@ mission "rush south"
 					goto oxygen
 			
 			label neglect
-			`	The officer is clearly frustrated and says, "Don't even get me started. But on the bright side, if the Navy were better organized, we wouldn't need people like you. Look, its one unit, very light weight, you wont even notice it in your cargo hold. Just get it to New Tibet as quick as you can."`
+			`	The officer is clearly frustrated and says, "Don't even get me started. But on the bright side if the Navy were better organized, well, we wouldn't need people like you. Look, its one unit, very light weight, you wont even notice it in your cargo hold. Just get it to New Tibet as quick as you can."`
 				accept
 			
 			label job
