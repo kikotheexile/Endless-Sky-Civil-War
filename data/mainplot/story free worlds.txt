@@ -305,7 +305,10 @@ mission "FW Recon 0"
 		payment
 		dialog
 			`The militia officer thanks you for the ride and pays you <payment>. As he is leaving, he says, "If you're interested in doing more work for us, head to the spaceport bar and find my commander. I'll tell him to keep an eye out for you."`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 	
 mission "FW Recon 1"
 	name "Free Worlds Reconnaissance"
@@ -367,7 +370,11 @@ mission "FW Recon 1"
 	on complete
 		dialog `Soon after you land, the militia officer comes to your ship and pays you <payment> in exchange for your sensor logs regarding the <npc>. He says, "If you would be interested in continuing to work for us, meet me in the spaceport bar in an hour. Drinks are on me."`
 		payment 10000
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+		
 mission "FW Recon 2"
 	name "Free Worlds Reconnaissance"
 	description "Scan any ships in the <waypoints> system that are equipped like the combat-ready Nomos you scanned previously, then return to <destination>."
@@ -409,7 +416,11 @@ mission "FW Recon 2"
 	on complete
 		dialog `JJ meets you as soon as you land, and you hand over the scanner data. "Thank you again," he says. "If you're willing to take on one more recon mission, I'll be at the bar until it closes." He says, handing you a <payment> chip.`
 		payment 50000
-	
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+
 mission "FW Recon 3"
 	name "Free Worlds Reconnaissance"
 	description "Land on <destination> and collect information on the developing Navy base there."
@@ -490,7 +501,10 @@ mission "FW Recon 3B"
 		dialog `JJ meets you as soon as you land, and you pass off your information and photos to him. He pays you <payment> and says, "I'll be sure to let the Free Worlds Council know how helpful you have been."`
 		payment 80000
 		log "Gave the Free Worlds some photos and information on the Navy base on New Wales. Jean-Jacques, the militia contact, was very grateful for the help."
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "FW Katya 1"
 	name "Assist the Free Worlds"
@@ -616,7 +630,10 @@ mission "FW Katya 1B"
 			`	She adds, "The real secret cargo, which arrived several days ago via a faster ship, was their personal possessions and Lynn's lab equipment and instruments, which were loaded onto a ship supposedly bound for Hestia."`
 			`	"We had just rented a cottage there," says Henry, "saying we were downsizing. We'll lose the security deposit, of course, but it gave us an excuse to pack up and move."`
 			`	Katya says, "You might not guess it from the outfit he's wearing, but Henry is an absolute mastermind at subtlety and misdirection. He planned the whole thing." She hands you a credit chip for <payment>. "Thanks so much for your help. If you're willing to continue helping the Free Worlds, meet me in the spaceport bar in half an hour."`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 1C"
@@ -719,7 +736,10 @@ mission "FW Katya 1C"
 				decline
 	on accept
 		"reputation: Republic" = -10
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 event "FW Katya Alt 2: ready"
@@ -775,7 +795,10 @@ mission "FW Katya Alt 2"
 	on complete
 		set "FW Katya 2: done"
 
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "FW Katya 2"
 	name "Transport Mr. Eyes"
@@ -799,7 +822,10 @@ mission "FW Katya 2"
 			
 			`	"Great!" she says. "His name is Mr. Eyes, and he'll meet you on <destination>. For his safety, I'd rather not tell you anything about his work, but I assure you he's an upstanding citizen. A little unpopular with big corporations and certain corrupt local governments, though."`
 				accept
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 2B"
@@ -893,7 +919,10 @@ mission "FW Katya 2B"
 	
 	on accept
 		log `Met up with a friend of Katya's named Mr. Eyes, who calls himself a "vigilante nuclear power plant inspector." He thinks he can help hunt down the people who bombed Geminus and Martini, to prove that the Free Worlds were not behind it.`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 2C"
@@ -918,7 +947,10 @@ mission "FW Katya 2C"
 			`As soon as you land, Mr. Eyes fires up his sensors and begins collecting data. A few minutes later, Katya shows up. "Eyes!" she says. "It's great to see you again."`
 			`	"You too, Councilor," he says.`
 			`	Katya hands you a credit chip for another <payment>. "Thanks again, Captain." she says, "If you've got space for the two of us and want to be a part of seeing justice done, let's meet up in the spaceport once Eyes is done analyzing his data."`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 3"
@@ -1000,8 +1032,10 @@ mission "FW Katya 3"
 		conversation
 			`You hand over the "salvaged" equipment to Mr. Eyes and Katya. Eyes begins fiddling with it, and soon discovers how to work the atmospheric scanner. "This is really nice stuff!" he says, enthusiastically.`
 			`	Katya says, "We found a halfway decent restaurant in the spaceport village. If you want to keep working with us, meet us there this evening."`
-
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "FW Katya 4"
 	name "Katya and Mr. Eyes"
@@ -1038,7 +1072,10 @@ mission "FW Katya 4"
 			`	"I'd hate to be rich," says Katya. "So much to fear."`
 			`	You finish your meal (Katya pays the tab), and agree to take off for <planet> first thing in the morning.`
 				accept
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 5"
@@ -1107,7 +1144,10 @@ mission "FW Katya 5"
 					accept
 				`	"Sorry, but I think I'm done with helping the Free Worlds. I'd rather strike out on my own."`
 					decline
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 5B"
@@ -1175,7 +1215,10 @@ mission "FW Katya 5B"
 			label morning
 			`	At breakfast in the monastery, Mr. Eyes tells you, "I'm going to be staying here until you get back. Greenrock is no place for a man with a price on his head. But Katya will be going with you." You bring Katya and Greg back to your ship and get ready to take off.`
 				accept
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 5C"
@@ -1210,7 +1253,10 @@ mission "FW Katya 5C"
 			`	"Still," says Katya, "if there was such a program and the weapons were stolen from it, that would explain why Intelligence has not named a suspect yet. They would have to reveal the program's existence."`
 			`	Eyes shakes his head. "This isn't a productive line of investigation," he says. "If it was some local terrorists, we've got some hope of tracking them down. If it's some shadowy government organization, there's no way we can find them. So, the local terrorist angle is the only one worth pursuing."`
 			`	"Very well," says Katya. "Captain <last>, meet us in the spaceport if you're willing to continue working with us."`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 6"
@@ -1236,7 +1282,10 @@ mission "FW Katya 6"
 			
 			`	"Great!" says Katya. "We'll stop on <planet> first, then swing by Hopper and on to New Iceland. If we still haven't found anything by that point, we'll start working our way up the Rim."`
 				accept
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 6B"
@@ -1255,7 +1304,10 @@ mission "FW Katya 6B"
 			`Mr. Eyes fires up his instruments and looks at the results for a few minutes. "Nothing," he says. "Even underground testing would've thrown up a debris plume large enough to measure traces of it. But I'm picking up nothing."`
 			`	"No problem," says Katya, "let's continue to <planet>."`
 				accept
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 6C"
@@ -1273,7 +1325,10 @@ mission "FW Katya 6C"
 		conversation
 			`Again, Eyes runs his tests, and again, nothing shows up. "One more planet to go," he says. "Time to try <planet>." They are both seem to be starting to feel a bit discouraged. It is overwhelming to think of how many planets in this sector you may need to search unless you get a lucky break soon.`
 				accept
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 7"
@@ -1301,7 +1356,10 @@ mission "FW Katya 7"
 					decline
 				`	"Sorry, this isn't paying well enough for me. I should find other work."`
 					decline
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 7B"
@@ -1349,7 +1407,10 @@ mission "FW Katya 7B"
 					decline
 				`	"Sorry, 'one more world' is what you said two planets ago. I'm done with this."`
 					decline
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Katya 7C"
@@ -1394,7 +1455,10 @@ mission "FW Katya 7C"
 				`	"I appreciate the credits."`
 				`	"Wow, she really is dedicated to this work, isn't she?"`
 			`	"She's a unique woman," says Eyes. "I hope we see her again soon. Goodbye for now, <first>."`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Escort 1"
@@ -1489,7 +1553,8 @@ mission "FW Escort 1"
 	
 	on fail
 		set "fw intro escort failed"
-	
+	on decline
+		freelance ++
 	on visit
 		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
 
@@ -1557,7 +1622,8 @@ mission "FW Escort 1B"
 	
 	on fail
 		set "fw intro escort failed"
-	
+	on decline
+		freelance ++
 	on visit
 		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
 
@@ -1620,6 +1686,8 @@ mission "FW Escort 2"
 	
 	on fail
 		set "fw intro escort failed"
+	on decline
+		freelance ++
 	
 	on visit
 		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
@@ -1686,7 +1754,8 @@ mission "FW Escort 2B"
 	
 	on fail
 		set "fw intro escort failed"
-	
+	on decline
+		freelance ++
 	on visit
 		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
 
@@ -1731,7 +1800,8 @@ mission "FW Escort 3"
 	
 	on fail
 		set "fw intro escort failed"
-	
+	on decline
+		freelance ++
 	on visit
 		dialog `Tomek Voigt messages you and says, "Please escort the <npc> back here as soon as possible! Their crew is counting on you."`
 
@@ -1790,7 +1860,10 @@ mission "FW Escort Second Chance"
 			`	He shakes your hand and leaves, without ordering anything to drink. You get the feeling that he still does not think very highly of you.`
 			apply
 				"assisted free worlds" ++
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Bounty 1"
@@ -1835,7 +1908,10 @@ mission "FW Bounty 1"
 	on complete
 		payment 200000
 		dialog `The militia officer who asked you to hunt down the "Rat Pack" arrives at your ship soon after you land and thanks you profusely. "Now we won't have to worry about them bothering ships in this sector anymore." She pays you <payment> and says she'll tell other militia leaders how helpful you were.`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Bounty 2"
@@ -1869,7 +1945,10 @@ mission "FW Bounty 2"
 	on complete
 		payment 200000
 		dialog `The militia officer who asked you to hunt down the <npc> meets you in the spaceport and pays you <payment>. "Once again, thank you for assisting us," he says.`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Bounty 3"
@@ -1906,7 +1985,10 @@ mission "FW Bounty 3"
 		payment 300000
 		dialog `The militia officer who asked you to hunt down the <npc> contacts you soon after you land. "No alien weapons, eh? Too bad about that," he says, "I'll be telling the Council how helpful you were." He hands you a payment of <payment>.`
 		log "Earned a good reputation with the Free Worlds militia by taking on missions to hunt down some dangerous pirates."
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "FW Commitment"
@@ -1963,7 +2045,9 @@ mission "Rescue Katya 1"
 				`	(Yes.)`
 				`	(Not yet.)`
 					defer
-			
+				`	(Never.)`
+					decline
+
 			`	You find the Free Worlds offices and give your name to the person at the front desk. A few minutes later Tomek Voigt, who manages supplies and fleet movements for the Council, comes down the stairs to greet you. "I'm so glad you've agreed to join us, Captain <last>," he says.`
 			`	That night you are introduced to the rest of the Council, and they take you out to dinner at a very fancy restaurant. Halfway through the third course of the meal, Tomek's communicator beeps. He reaches over to turn it off, then sees the message and turns pale. A hush falls over the table. "<system> has been captured by the Navy," he announces.`
 			`	After a long silence, JJ asks, "How many casualties?"`
@@ -1998,7 +2082,8 @@ mission "Rescue Katya 1"
 		log "People" "Tomek Voigt" `Tomek is a young and ambitious militia commander. His brilliant tactical leadership and charismatic personality gained him quite a following in the Dirt Belt region even before the Free Worlds came into existence. He was asked to join the Council in part because of his popularity with the local militias throughout the region.`
 		log "People" "Freya Winters" `Freya is an engineer, specializing in surveillance equipment but with a wide range of talents. She organized the "thousand eyes" program run by the Southern Defense Pact, which was an attempt to reduce the power of the pirate fleets in the region by tracking their fleet movements. Despite her relative lack of interest in politics, she was asked to join the Free Worlds Council because of her expertise in optimizing the distribution and management of resources.`
 		log "People" "Jean-Jacques Soleau" `Known to most people simply as "JJ," Jean-Jacques grew up in the Dirt Belt and served in the Navy for years before quitting in frustration over the fact that the Navy was no longer defending his home region of space. He now serves on the Free Worlds Council, where he is tasked with coordinating actions between the local militias and shaping them into a single fighting force that can act in concert with each other.`
-
+	on decline
+		freelance +3
 
 
 mission "Rescue Katya 2"
