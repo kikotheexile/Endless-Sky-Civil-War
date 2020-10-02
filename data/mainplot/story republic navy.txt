@@ -579,7 +579,7 @@ mission "rush south"
 					goto oxygen
 			
 			label neglect
-			`	The officer is clearly frustrated and says, "Don't even get me started. But on the bright side if the Navy were better organized, well, we wouldn't need people like you. Look, its one unit, very light weight, you wont even notice it in your cargo hold. Just get it to New Tibet as quick as you can."`
+			`	The officer is clearly frustrated and says, "Don't even get me started. But on the bright side if the Navy were better organized, well, we wouldn't need people like you. No offense. Anyway look, its ten units, one ton a piece. Very light weight, you wont even notice it in your cargo hold. Just get it to New Tibet as quick as you can." He points you at your ship, where you can clearly see dock workers already loading crates.`
 				accept
 			
 			label job
@@ -603,39 +603,68 @@ mission "rush south"
 	on complete
 		event "recapture of Kornephoros"
 		conversation 
-			`As you come in for a landing, your emergency channels light up. Much of the conversation is in code, and clearly not intended for your years. However, you do catch an officer saying "We lost Kornephoros." It might be a good idea to ask around the spaceport.`
+			`As you come in for a landing, your emergency channels light up. Much of the conversation is in code, and clearly not intended for your ears. However, you do catch an officer saying "We lost Kornephoros." It might be a good idea to ask around the spaceport.`
 
-mission "RNS oathkeeper split"
-	name "Prisoners to Farpoint"
+mission "rns oathkeeper split"
+	name "Return to Farpoint and stay in the North."
 	description "As a goodwill gesture, the Free Worlds has released their prisoners. Returning these officers to Farpoint may take you too far from the South to participate further in the war."
-	source Dancer
+	source "New Tibet"
 	clearance
-	destination "Farpoint"
+	destination Farpoint
 	to offer
 		has "rush south: done"
 	to fail
-		has "rns join oathkeepers: done"
+		has "rns in the action: done"
 	
 	on offer
 		conversation
 			`You disembark your ship and find a nearby officer, who agrees to unload your ship. Not long after, two Blackbirds, an Argosy, and a Falcon land nearby. Not long after, a couple of free worlds officers - one of whom looks more like a merchant captain - disembark.`
 			`	After a short conversation, the one who looks like a merchant motions to the Blackbirds, who drop their ramps. A steady stream of Navy officers begin disembarking. Some a little more worse for wear than others.`
-
+			`	A voice comes over the intercom. "Any availible contractors please report to landing pad C1" A sign directly in front of you shows that you are already there`
+			``
+			`	After a few moments, other merchant captains gather around you. A stressed officer also arrives,`
+			`	"May I have everyone's attention please," he says, looking to the crowd you are now a part of. "The Republic is needs assistance in transporting and escorting these officers away from the front lines. This is more like an order than a request. If you do not agree to this, your ship will be impounded and crewed by navy officers. If you do agree, you will be compensated."`
+			`	He points to you, "Simply follow Contractor <last> to your destination. You lot are dismissed, Contractor <last> please stay here."`
 			choice
-
+				`	"What's my destination?"`
+				`	"How much compensation?"`
+				`	"Do I have a choice in this?"`
+				`	(Remain silent)`
+			`	"You can chose to take these soldiers all the way up to Farpoint for rehabilitation, or you can take them to the RNHC medical center on New Sahara. You will get paid <payment> either way. Your call. Now go."
 				accept
-	
 	on accept
-
 	
 	npc accompany save
 		government "Republic"
 		personality timid escort
+		ship Freighter "Happy Princess"
+		ship Freighter "Envy"
+		ship Freighter "Defiant Fourteen"
+		ship Freighter "Tree Sap"
+		ship Freighter "Rose Blossom"
+		ship Freighter "Kobayashi Maru"
 		
 	on visit
 		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
 	
 	on complete
-		karma ++
-		set "rns opposed fw"
-		log ""
+		payment 50000
+		set "rns went north"
+		log "I have made the decision to continue working in the North. It seems a lot safer than being stuck in the middle of a civil war."
+		dialog `This far from the South, it seems unlikely that you'll return to the Free Worlds conflict anytime soon. It might be a good idea go find someone work in the spaceport.`
+
+mission "rns in the action"
+	name "Go to New Sahara and remain in the South"
+	description "Rather than returning to the familiar territory of the North, stay in the south and help repair the destruction caused by the Free Worlds."
+	source "New Tibet"
+	destination "New Sahara"
+	to offer
+		has "rush south: done"
+	to fail
+		has "rns oathkeeper split: done"
+	
+	on complete
+		payment 50000
+		set "rns went south"
+		log "I have made the decision to continue working in the South. It may be dangerous, but the Navy forces down here need all the help they can get."
+		dialog `This far from the North, it seems unlikely that you'll return to Farpoint anytime soon. It might be a good idea go find someone work in the spaceport.`
