@@ -67,8 +67,10 @@ mission "Northern Union Escort 1"
 	on accept
 		log "Serving as an escort for a Northern Union scheme. It seems they are buying vessels from the Syndicate."
 	
+	on decline
+		freelance ++
 	on fail
-		set "no second chances"
+		freelance ++
 	
 	on visit
 		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
@@ -111,8 +113,10 @@ mission "Northern Union Escort 1B"
 		conversation
 			`You are met at the spaceport by the same woman from before. She thanks you and the other captains for your service, and pays you each <payment>. "This was too easy," she says, "so of course we're going to push our luck. Meet me at the nearest spaceport bar if you are interested in making some more money."`
 	
+	on decline
+		freelance ++
 	on fail
-		set "no second chances"
+		freelance ++
 	
 	on visit
 		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
@@ -149,8 +153,10 @@ mission "Northern Union Escort 2"
 		ship "Heavy Shuttle" "Fatale"
 		ship "Heavy Shuttle" "Shadow"
 
+	on decline
+		freelance ++
 	on fail
-		set "no second chances"
+		freelance ++
 	
 	on visit
 		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
@@ -213,6 +219,10 @@ mission "Northern Union Escort 2B"
 		conversation
 			`You are met at the spaceport by Ruby again. She thanks you and the other captains for your service, and pays you each <payment>. "Some of these ships look a little scratched up," she says, "that's not a good sign. I think we might have one last run in us before I need to find fresh faces. I'll start recruiting now. Come find me in the spaceport if you are interested in trying once again."`
 		"reputation: Cartel" = -1000
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "Northern Union Escort Finale"
 	landing
@@ -275,8 +285,10 @@ mission "Northern Union Escort Finale"
 		payment 800000
 		dialog `Ruby contacts you soon after you land. "Very nicely done," she says, "not many merchants are willing to do this kind of heavy lifting. Your reward of <payment> has been transferred to your account, and I also put in a good word for you with the Northern Union's partnership committee.`
 		log "People" "Ruby" `Ruby is a former Syndicated Security officer with a grudge. She is currently working to make her fortune with the Northern Union, and is on their Partnership Committee.`
-					
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "Meeting an Alpha 0"
 	name "Transport a Warlord"
@@ -319,6 +331,10 @@ mission "Meeting an Alpha 0"
 		payment
 		dialog
 			`The warlord thanks you for the ride and pays you <payment>. As he is leaving he says: "If you're interested in meeting my boss, head to a shop called "The Rusted Wheel" and find my commander. He's impossible to miss, though try not to stare."`
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "Meeting an Alpha 1"
 	name "Free Worlds Reconnaissance"
@@ -464,6 +480,10 @@ mission "Meeting an Alpha 1"
 	on complete
 		dialog `Soon after you land, a courier comes to your ship and pays you <payment> in exchange for your sensor logs regarding the <npc>. "If you would be interested in continuing to work for my Godlord, render yourself before him at the Rusted Wheel Cafe. He has a gift for you."`
 		payment 20000
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "Meeting an Alpha 2"
 	name "Corporate Espionage"
@@ -546,6 +566,10 @@ mission "Meeting an Alpha 2"
 		conversation
 			`	As you arrive in orbit above <destination>, Dylan presents you with a box. Inside it is a plasma pistol with "Lucky" scratched on the side.`
 			`	In her ever aggressive voice, Dylan says: "My master believes this gun will be of use to you on this quest. Meet me near the landing pad closest to the outfitter as soon as you make yourself inconspicuous. Now, go!"`
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "Meeting an Alpha 3"
 	name "Corporate Espionage"
@@ -620,6 +644,10 @@ mission "Meeting an Alpha 3"
 		payment 100000
 		dialog
 			`As you land, you receive a direct message from Gaven's ship: "I'm sorry that we'll not be meeting in person again, <first>, but I have important business to get to. Drop Dylan off, she already has her next assignment." You hear a chime, and Gaven continues: "I have forwarded <payment> to your account, and will put a good word in for you with the Partnership committee."`
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "NU Bounty 1"
 	name "Wanted: Dead"
@@ -692,6 +720,10 @@ mission "NU Bounty 1"
 	on complete
 		payment 20000
 		dialog `When you drop off Mouser, he tells you to stay put for a moment. He returns some time later with a rather paltry sum of <payment>, and congratulates you: "A good payment for a hard-fought battle. Look me up around the spaceport here on Haven if you are interested in more work." He pats you on the shoulder and walks away.`
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "NU Bounty 2"
 	name "Wanted: Dead or Alive"
@@ -814,7 +846,11 @@ mission "NU Bounty 2"
 			`	Mouser raises his gun and begins barking commands, and the startled captain complies: "I don't know what you did to anger the partnership, but it must have been really bad if they want you back alive." Mouser says to the captain, who resigned himself to his fate.`
 			`	Mouser and you escort the captain off of the Leviathan at gunpoint: "I'll handle it from here, captain, you can return to your ship. I'll forward your half of the money as soon as I have it, but neither of us are getting paid until I turn him in." Protesting would do you no good, so you return to your ship.`
 				decline
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+		
 mission "NU Bounty 2B"
 	landing
 	name "Wanted: Dead or Alive, Redemption"
@@ -842,7 +878,11 @@ mission "NU Bounty 2B"
 		set "captured bounty"
 		dialog
 			`You report to Mouser that you have killed the <npc> and provide sensor logs as evidence. He thanks you, but oddly enough doesn't pay you: "Always a pleasure working with you, Captain. I'll transfer your half of the money to you as soon as I am paid."`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+		
 mission "dead or alive payment"
 	invisible
 	priority
@@ -893,7 +933,11 @@ mission "NU Bounty 3"
 		payment 2000000
 		dialog
 			`As you land, you receive a direct message from Mouser as well as a notification of a payment hitting your account: "Great job disabling the <npc>! I have already disabled its self-destruct capabilities and informed the client that the ship is now theirs. They have already sent me the money, and I have forwarded your half, <payment>, to your account. The client is also on the Partnership committee, and will put a good word in for you."`		
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+		
 mission "NU Marina 1"
 	name "Join the Revolution"
 	description "Stop by <destination>, pick up two passengers and some cargo and smuggle them back to Northern Union space."
@@ -955,7 +999,10 @@ mission "NU Marina 1"
 				accept
 	on accept
 		log "Agreed to help a young revolutionary transport some supplies and people to Sporehold."
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 
 mission "NU Marina 1B"
@@ -982,7 +1029,11 @@ mission "NU Marina 1B"
 		outfit "Fragmentation Grenades" 1
 		conversation
 			`When you land on <planet>, before your engines have even had a chance to cool, Sally and her friend scurry off through the airlocks into the spaceport. You find that they left one box of fragmentation grenades behind with a piece of paper taped to the top. The paper reads "Payment" on one side, and has a set of instructions to find Marina on the backside.`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+		
 mission "NU Marina 2"
 	name "Recruit an expert"
 	description "Marina has requested you travel to <destination>, to find a man she knows as Big Randy. A local demolitions expert working in the mines."
@@ -1005,7 +1056,11 @@ mission "NU Marina 2"
 			
 			`	"Great!" she says. "Head to <destination> and land at the main spaceport. Finding a foreman shouldn't be hard, then just ask them to direct you to Big Randy. Everyone knows him."`
 				accept
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+		
 mission "NU Marina 2B"
 	landing
 	name "Transport Big Randy"
@@ -1063,7 +1118,11 @@ mission "NU Marina 2B"
 	on complete
 		conversation
 			`As soon as you land, "Big" Randy exits your ship and excitedly rushes out of your ship without saying a word. This is presumably to find Marina. It looks like the only way to continue helping the cause is to track them both down.`
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+		
 mission "NU Marina 3"
 	name "Prison Break"
 	description "Transport Marina and her crew to <destination>."
@@ -1112,7 +1171,11 @@ mission "NU Marina 3"
 		ship Bounder "PT-109"
 		ship Bounder "AK-074"
 		ship Bounder "AT-117"
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+		
 mission "NU Marina 3b"
 	name "Prison Break"
 	description "Transport Marina and her crew to <destination>."
@@ -1252,7 +1315,9 @@ mission "NU Marina 3b"
 			`	Not long after returning to your ship, you recieve notice that all of the prisoners have been freed, and that the other teams have found the docked ships. Sally rejoins you, and tells you that it's time to get back to Sporehold.`
 				launch
 	on complete
-			payment 1000000
+		"assisted northern union" ++
+		payment 1000000
+
 		conversation
 			`You manage to grab one of the first openings at port, allowing Sally to disembark. "Comrade captain, the Union appreciates your help. I have already scanned your Pilots License and passed your information onto the Partnership. You'll be receiving <payment> before you depart. See you around, comrade <first>!"`
 
@@ -1269,7 +1334,11 @@ mission "NU Marina 3b"
 		ship "Quicksilver" "STE-39-2"
 		ship "Quicksilver" "STE-39-3"
 		ship "Quicksilver" "STE-39-4"
-		
+
+	on decline
+		freelance ++
+	on fail
+		freelance ++		
 # Northern Union Resources
 
 #governments
