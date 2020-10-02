@@ -47,8 +47,10 @@ mission "Republic Bounty 1"
 	on complete
 		payment 175000
 		dialog `After you land, you greet the man who offered you the bounty, who seems surprised that you've succeeded. He shakes your hand and says: "Excellent work! I don't think I've introduced myself properly last time. I'm Commander Kent, and I'll be keeping an eye out for you, should we require your assistance in the future." When you check later, you're pleased to find that <payment> has been credited to your account.`
-
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "Republic Bounty 2"
 	name "Republic Bounty Hunting"
@@ -135,7 +137,10 @@ mission "Republic Bounty 2"
 		payment 200000
 		dialog `Captain Shah contacts you immediately after you've landed: "The Republic thanks you for your service, Captain. <payment> have been credited to your account. I'll be in touch should I have need of you again."`
 		log "People" "Kent and Shah" "Two Republic officials assigned to keep a watchful eye over the systems bordering the Free Worlds. Their uniforms do not match the standard Republic uniform of the Navy."
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "Republic Bounty 3"
 	name "Republic Bounty Hunting"
@@ -179,6 +184,10 @@ mission "Republic Bounty 3"
 		payment 250000
 		dialog `"Everyone is home safe, thanks to you," Captain Shah informs you after you land. She takes you to a nearby restaurant as thanks: "The Republic owes you a debt of gratitude. <payment> have been transferred to your account, and I've informed my superiors of your excellent work today."`
 		log "Captain Shah has put in a good word for me to her superiors on the mission I've completed."
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "Republic Bounty 3 alt"
 	name "Republic Bounty Hunting"
@@ -242,6 +251,10 @@ mission "Republic Bounty 3 alt"
 		payment 500000
 		dialog `"Everyone is home safe, thanks to you," Captain Shah informs you after you land. She takes you to a nearby restaurant as thanks: "The Republic owes you a debt of gratitude. <payment> have been transferred to your account, and I've informed my superiors of your excellent work today."`
 		log "Captain Shah has put in a good word for me to her superiors on the mission I've completed."
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 		
 mission "Navy Scouting 1"
 	name "Hyperspace Relay Testing"
@@ -307,6 +320,10 @@ mission "Navy Scouting 2"
 		dialog
 			`You transfer your sensor logs to Captain Mulgrew who thanks you for your work, as well as crediting <payment> to your account: "I'll let you know when scientific progress calls your name again," she says.`
 		log "People" "Captain Jane Melgrew" "A Navy captain charged with all manners of odd technological jobs, from diagnosing hyperspace network problems, to scouting uninhabited systems."
+	on decline
+		freelance ++
+	on fail
+		freelance ++
 
 mission "Navy Scouting 3"
 	name "Free Worlds Reconnaissance"
@@ -368,7 +385,11 @@ mission "Navy Scouting 3"
 		dialog `You trade <payment> for your sensor logs when you meet back up with Captain Mulgrew: "No alien tech, I see," she says, dissapointed, "While that would have been a great find, I will admit I'm happy I don't have to engineer a defense for it. I've let my supervisors know how helpful you've been. Hopefully we can work together again soon."`
 		payment 50000
 		log "Captain Melgrew says she has put a good word in for me with her superiors."
-
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+		
 mission "Story Direction 1"
 	name "Impress the Republic"
 	description "Visit spaceports in Northern Union and Free Worlds space and see if you can find any useful information to impress the Republic. Return to Republic space when you are sure you have something."
@@ -517,7 +538,11 @@ mission "Betray Free Worlds"
 		dialog `As you are landing, you contact the Republic offices in the spaceport. After a long hold, they conduct a very breif remote interview with you. The interview consists entirely of yes or no questions, mostly about the bombings. The officer grows increasingly bored with the conversation as it goes on. She ends the interview saying, "The Republic will be in touch if they need anything else."`
 		set "betray free worlds: done"
 		"assisted republic" ++
-		
+	on decline
+		freelance ++
+	on fail
+		freelance ++
+
 mission "RN Commitment"
 	landing
 	name "Join the Republic Humanitarian Corps."
@@ -565,6 +590,8 @@ mission "rush south"
 				`	(Yes.)`
 				`	(Not yet.)`
 					defer
+				`	(Never.)`
+					decline
 			
 			`	As the the entire spaceport is one massive base, it doesn't take long to find someone and inform them of your intentions. You tell a young man why you're here, and he radios to someone else. A few moments later, an officer arrives to breif you.`
 			`	"I sure hope you've come ready to work, captain," he says. "The tensions in the South may have just turned into a full blown war, and there has been a priority request for some medical equipment that has been ignored by every other base and warehouse. Looks like they're going to need some of ours."`
@@ -604,6 +631,8 @@ mission "rush south"
 		event "recapture of Kornephoros"
 		conversation 
 			`As you come in for a landing, your emergency channels light up. Much of the conversation is in code, and clearly not intended for your ears. However, you do catch an officer saying "We lost Kornephoros." It might be a good idea to ask around the spaceport.`
+	on decline
+		freelance +3
 
 mission "rns oathkeeper split"
 	name "Return to Farpoint and stay in the North."
