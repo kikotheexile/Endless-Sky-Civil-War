@@ -12,7 +12,8 @@ mission "Oathkeeper Intro"
 	name `Set a relay in Hassaleh`
 	description `Captain Mulgrew and two of her technicians are in need of transport, with 15 tons of sensor equipment to <destination>.`
 	to offer
-		has "joined Oathkeepers"
+		has "rns oathkeeper split:done"
+		has "rns went north"
 	source "Farpoint"
 	waypoint "Hassaleh"
 	destination "Farpoint"
