@@ -8,6 +8,8 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
+#For the missions that come before this, check "story republic navy.txt"
+
 mission "Oathkeeper Intro"
 	name `Set a relay in Hassaleh`
 	description `Captain Mulgrew and two of her technicians are in need of transport, with 15 tons of sensor equipment to <destination>.`
