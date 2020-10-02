@@ -668,3 +668,6 @@ mission "rns in the action"
 		set "rns went south"
 		log "I have made the decision to continue working in the South. It may be dangerous, but the Navy forces down here need all the help they can get."
 		dialog `This far from the North, it seems unlikely that you'll return to Farpoint anytime soon. It might be a good idea go find someone work in the spaceport.`
+
+# From here on in, this file will be handling the Republic Navy Humanitarian Corps. in the south, including their opposition to the Free Worlds and resistance against the Wolfpack.
+# If you are looking for oathkeeper content, look to "story oathkeepers.txt"
