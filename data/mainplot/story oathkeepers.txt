@@ -224,25 +224,25 @@ mission "Oathkeeper Esort Intro"
 			`	Mulgrew starts giving jobs to the contractors, but she seems to be saving you for last. Once the rest have dispersed, she approaches you and speaks in a hushed, slightly panicked voice. "Things are not going well. Considering the raids recently, we can only assume that the whole communications network has been compromised. This is a major emergency! I need you to take a message to my superiors, I'll send it to you later. It's encrypted just in case, but don't open it! It's classified."`
 				choice
 					`	"This is a bit off topic, but why are you on Maelstrom?"`
-					goto maelstrom
+						goto maelstrom
 					`	"Sounds dangerous. Let me make some last minute preparations, I'll be back."`
-					defer
+						defer
 					`	"I'm on it! Straight to Farpoint."
-					accept
+						accept
 			label maelstrom
 			`	"Well, I had to make a report on- Wait, I can't talk about that with you! Sorry, it's important. You'll just have to take my word for it."
 			choice
 				`	"Alright, I guess. I'll take that message then."
-				accept
+					accept
 	on complete
 		log "Met an eccentric Humanitarian Corps officer named Nguyen, who offered to take the message from Mulgrew to her superiors and requested escorts for a Humanitarian Corps fleet to Prime, which lost its orbital shipyard after a Northern Union raid."
 		conversation
 			`While looking around the spaceport, you notice a stressed-looking Navy officer coming your way, and he strikes up a conversation. "Captain <last>, right?" Without waiting for an answer, he changes topic and says, "I'm Officer Nguyen. I heard Captain Mulgrew sent you with a message, is that right?"`
 			choice
 				`	"Yeah, for her superiors."`
-				goto continue
+					goto continue
 				`	"Woah, could you slow down a bit? Yes, I'm Captain <last>, and I do have a letter from Captain Mulgrew, but I can barely follow all this."`
-				goto slowdown
+					goto slowdown
 		label slowdown
 		`	Nguyen chuckles. "Sorry, I might have come on a bit too strong there. It's been busy, what with the attacks and all. The Northern Union's getting bolder."`
 		label continue
@@ -261,17 +261,17 @@ mission `Oathkeeper Escort`
 			`You find Nguyen's meeting point, and he calls you over. "Alright, Captain <last>. First I have some bad news. Just recently, Prime and its orbital shipyards were attacked by the Northern Union."`
 			choice
 				`	"What? But we have defenses for that, right?"`
-				goto defenses
+					goto defenses
 				`	"Figures. How bad is it?"`
-				goto damages
+					goto damages
 				`	"Yeah, that's terrible, but what exactly does it have to do with my job?"`
-				goto job
+					goto job
 		label defenses
 		`	Nguyen gives a dramatic sigh. "We do, but it was a complete surprise. Something isn't quite right. Perhaps we'll be able to talk about that in more detail later, but for now I have something important for you to do."`
-		goto job
+			goto job
 		label damages
 		`	Nguyen raises an eyebrow, likely at your attitude toward the news. "Well, it's bad. Prime is the best source of ships this far north, so we need to get to repairing it immediately. Speaking of which..."`
-		goto job
+			goto job
 		label job
 		`	"Alright, there's a special branch of the Navy that does a lot of this kind of damage control work, the Humanitarian Corps. I need you to escort some behemoth to Prime. This is to get things back in working order as soon as possible. They'll meet with you when you're ready to take off. Got it?"`
 		choice
@@ -303,17 +303,17 @@ mission "Oathkeeper Escort 2"
 			`You meet with the negotiation team that wanted to see you, and the officer in charge speaks up, "Contractor <last>, correct? We have work to discuss with you." She speaks in a clipped voice, and almost seems to be staring through you.`
 			choice
 				`	"Yeah, I heard it was something about getting mechanics from the Deep?"`
-				goto Valhalla
+					goto Valhalla
 				`	"Yup, that's me, what's the business?"`
-				goto job
+					goto job
 				label Valhalla
 				`	"Yes. The shipyards here need repairs, and the Humanitarian Corps have mechanics and technicians, but not nearly enough parts."`
-				goto job
+					goto job
 				label job
 				`	"It's simple. You'll join an escort fleet, and bring the negotiation team to Valhalla to request assistance in the repairs on the Prime orbital shipyards, then escort the repair fleet back. Are you ready?"`
 				choice
 					`	"How big is this escort?"`
-					goto escort
+						goto escort
 					`	"Sure am, show me the fleet."`
 					accept
 				label escort
@@ -357,14 +357,14 @@ mission "Oathkeeper Escort 2.1"
 			`It's not hard to find the caravan fleet as a very large portion of the station is dedicated to preparing it for departure. It's a little more difficult to find superiors in the organized chaos. Eventually you make your way to the Navy officer in charge, who is addressing a couple dozen pilots. This now includes you, as well as some other merchants, and Navy pilots. "We have a big fleet here, and the caravan has its own defenses, so this should be a quick, easy escort from here to Prime. Any questions?"`
 			choice
 				`	"Uh, why do we even need escorts?"`
-				goto escorts
+					goto escorts
 				`	"When do we get to work?"`
-				goto work
+					goto work
 				`	Wait in silence.`
-				goto continue
+					goto continue
 				label escorts
 				`	The officer thinks about your question for a second, then answers, "Mostly, we're going the same way. But the Deep doesn't need to know that, right?" She chuckles, and the crowd responds with a robotic laugh that could be straight from a laugh track.`
-				goto continue
+					goto continue
 				label work
 				`	The officer rolls her eyes. "Ha ha, very funny. Doesn't look like anyone has any questions, so we'll get to it."`
 				label continue
@@ -502,15 +502,15 @@ mission "Oathkeeper Escort 2.1"
 			`Despite the ambush, with the help of the StarBlade and the escort fleet, you've managed to repel the Northern Union raid. The Navy calls for all the contractors to attend a meeting, and at the meeting it's you and roughly a dozen other contractors being addressed by a bored-looking, low-ranking Navy officer. "Alright, thanks for going on this mission on such short notice. With the StarBlade out there, this place will be perfectly safe, so take your <payment> and you can go find another job."`
 			choice
 			`	"What even is the StarBlade?"`
-			goto Veles
+				goto Veles
 			`	"Know where I could find another job?"`
-			goto job
+				goto job
 			`	Take your money and go find another job.`
-			goto end
+				goto end
 			label Veles
 			`	The officer seems surprised you don't know about it already. "Uh, the Star Blade? That huge experimental warship they've been developing here? It's kind of a big deal, I mean you saw how it smoked those Northern Union ships right? Anyway dismissed."`
 			`	Another merchant pulls you aside, "It's one of the new class of warships, the Battle Cruiser. It, and it's sister ships are the most powerful ships in the whole of human space with the exception of some prototypes. They are billed as cruise ships, but..." She trails off. "Anyway go visit the shipyard Kiosk, you'll be able to see from there.`
-			goto end
+				goto end
 			label job
 			`	The officer snorts. "I dunno what they have you contractors out doing right now, try poking around the spaceport until you see someone higher-ranked than me."`
 			label end
