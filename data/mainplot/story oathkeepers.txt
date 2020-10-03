@@ -501,12 +501,12 @@ mission "Oathkeeper Escort 2.1"
 		conversation
 			`Despite the ambush, with the help of the StarBlade and the escort fleet, you've managed to repel the Northern Union raid. The Navy calls for all the contractors to attend a meeting, and at the meeting it's you and roughly a dozen other contractors being addressed by a bored-looking, low-ranking Navy officer. "Alright, thanks for going on this mission on such short notice. With the StarBlade out there, this place will be perfectly safe, so take your <payment> and you can go find another job."`
 			choice
-			`	"What even is the StarBlade?"`
-				goto Veles
-			`	"Know where I could find another job?"`
-				goto job
-			`	Take your money and go find another job.`
-				goto end
+				`	"What even is the StarBlade?"`
+					goto Veles
+				`	"Know where I could find another job?"`
+					goto job
+				`	Take your money and go find another job.`
+					goto end
 			label Veles
 			`	The officer seems surprised you don't know about it already. "Uh, the Star Blade? That huge experimental warship they've been developing here? It's kind of a big deal, I mean you saw how it smoked those Northern Union ships right? Anyway dismissed."`
 			`	Another merchant pulls you aside, "It's one of the new class of warships, the Battle Cruiser. It, and it's sister ships are the most powerful ships in the whole of human space with the exception of some prototypes. They are billed as cruise ships, but..." She trails off. "Anyway go visit the shipyard Kiosk, you'll be able to see from there.`
