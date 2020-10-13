@@ -1336,7 +1336,7 @@ mission "FW Katya 7"
 	name "The Hunt Continues"
 	description "Take Katya and Eyes to <destination> to check for signs of underwater testing."
 	source "New Iceland"
-	destination Deep
+	destination "New Roanoke"
 	passengers 2
 	to offer
 		has "FW Katya 6C: done"
@@ -1346,7 +1346,7 @@ mission "FW Katya 7"
 		conversation
 			`<origin> turns out no differently than the previous two. "We need a change in strategy," says Katya. "We've been talking about something while we were in transit."`
 			`	Eyes says, "It occurred to me that underwater testing might be even easier than underground: no need to dig or find a mine shaft. And, the Navy's sensors are for atmosphere, not oceans. But I've still got my old test kits with me for seawater."`
-			`	Katya says, "So then we wondered, what sort of world would you go to if you wanted rumblings in the ocean to go unnoticed? Either an unpopulated one, or one with lots of meteorite activity. And that leads us to... Deep." She points out the system on your map. "Mild tidal surges on almost a weekly basis, due to impacts from all the asteroids in system. Perfect place to hide an undersea explosion."`
+			`	Katya says, "So then we wondered, what sort of world would you go to if you wanted rumblings in the ocean to go unnoticed? Either an unpopulated one, or one with lots of meteorite activity. And that leads us to... New Roanoke." She points out the system on your map. "Mild tidal surges on almost a weekly basis, due to impacts from all the asteroids in system. Perfect place to hide an undersea explosion."`
 			choice
 				`	"Sounds like a good possibility. Let's give it a try!"`
 					accept
@@ -1366,7 +1366,7 @@ mission "FW Katya 7B"
 	landing
 	name "The Hunt Continues"
 	description "Take Katya and Eyes to the mining moon <planet>."
-	source Deep
+	source "New Roanoke"
 	destination Clink
 	passengers 2
 	to offer
@@ -2051,7 +2051,7 @@ mission "Rescue Katya 1"
 			`	You find the Free Worlds offices and give your name to the person at the front desk. A few minutes later Tomek Voigt, who manages supplies and fleet movements for the Council, comes down the stairs to greet you. "I'm so glad you've agreed to join us, Captain <last>," he says.`
 			`	That night you are introduced to the rest of the Council, and they take you out to dinner at a very fancy restaurant. Halfway through the third course of the meal, Tomek's communicator beeps. He reaches over to turn it off, then sees the message and turns pale. A hush falls over the table. "<system> has been captured by the Navy," he announces.`
 			`	After a long silence, JJ asks, "How many casualties?"`
-			`	"None," says Tomek. "The Navy claimed that <system> was the source of the terrorist attack, and after they showed the evidence to the militia commander on Deep he surrendered and yielded control of the system to them without a fight."`
+			`	"None," says Tomek. "The Navy claimed that <system> was the source of the terrorist attack, and after they showed the evidence to the militia commander on New Roanoke he surrendered and yielded control of the system to them without a fight."`
 			choice
 				`	"Was Katya still there? We need to rescue her!"`
 					goto rescue
@@ -2295,7 +2295,7 @@ mission "Liberate Kornephoros"
 	description "Travel with the Free Worlds militia to the <system> system and drive off the Navy fleet that is occupying the system."
 	autosave
 	source Longjump
-	destination Deep
+	destination "New Roanoke"
 	clearance
 	to offer
 		has "Defend Sabik: done"
@@ -2462,7 +2462,7 @@ mission "FW Prisoner Parole"
 	name "Prisoner Parole"
 	description "Escort a fleet of transports carrying prisoners of war to <planet>. The temporary ceasefire will end on <date>."
 	deadline 7
-	source "Deep"
+	source "New Roanoke"
 	destination "New Tibet"
 	to offer
 		has "Liberate Kornephoros: done"
@@ -2494,16 +2494,16 @@ mission "FW Prisoner Parole"
 		event "start of hostilities" 8
 	
 	on complete
-		dialog `You drop off the Navy prisoners on <planet>. Now, it's time to get back to Deep with your fleet before the ceasefire ends.`
+		dialog `You drop off the Navy prisoners on <planet>. Now, it's time to get back to New Roanoke with your fleet before the ceasefire ends.`
 
 
 
 mission "FW Prisoner Parole 2"
 	landing
 	name "Prisoner Parole"
-	description "Return to Deep before the cease-fire ends."
+	description "Return to New Roanoke before the cease-fire ends."
 	source "New Tibet"
-	destination "Deep"
+	destination "New Roanoke"
 	to offer
 		has "FW Prisoner Parole: done"
 	on fail
@@ -2563,7 +2563,7 @@ mission "FW Syndicate Diplomacy 1"
 	name "Syndicate Diplomacy"
 	description "Transport Alondo Gruyere to the Syndicate headquarters on <planet>."
 	autosave
-	source "Deep"
+	source "New Roanoke"
 	destination "Hephaestus"
 	to offer
 		has "FW Prisoner Parole 2: done"
@@ -5418,7 +5418,7 @@ mission "FW Bloodsea 1.1"
 		log "The local leaders on the lawless world of Bloodsea have said that they will join the Free Worlds, and stop supporting piracy, in exchange for the equipment to build a more modern spaceport. However, they may just be trying to steal the construction materials; it might be simpler to just attack and conquer them."
 		conversation
 			`The local leaders are unwilling to meet aboard your ship, and Alondo is afraid you will be ambushed if you venture too far away from it, so eventually they agree to set up a tent on the landing pad next to yours and meet there. Outside, a storm is raging, the rain mixing with salt spray from the blood-red ocean nearby.`
-			`	As you talk, it becomes clear that the inhabitants of Bloodsea are ashamed of how destitute and undeveloped their world is. Several of them have visited the island spaceport on Deep, and after dancing around the issue for a while, they make a request: if the Free Worlds builds them a real, modern island spaceport, they will join the Free Worlds.`
+			`	As you talk, it becomes clear that the inhabitants of Bloodsea are ashamed of how destitute and undeveloped their world is. Several of them have visited the island spaceport on New Roanoke, and after dancing around the issue for a while, they make a request: if the Free Worlds builds them a real, modern island spaceport, they will join the Free Worlds.`
 			`	One of them lays out a detailed list of amenities the port must have: concrete seawalls, raised landing pads, floating docks, sturdy hangars and warehouses, and various defense systems "for when the others learn that we've decided to join you." Also, the deal is off if you show up in orbit with a fleet that "looks like an invasion fleet rather than a construction fleet."`
 			`	You thank them and return to your ship. Alondo asks, "What do you think?"`
 			choice
@@ -5445,7 +5445,7 @@ mission "FW Bloodsea 1.1A"
 	description "Stop on <planet> so that the ships you are escorting can pick up more supplies and workers, then bring them to Bloodsea to help build a new spaceport."
 	autosave
 	source Zug
-	destination Deep
+	destination "New Roanoke"
 	to offer
 		has "FW Bloodsea 1.1: done"
 	passengers 1
@@ -5475,7 +5475,7 @@ mission "FW Bloodsea 1.1B"
 	name "Supplies to <planet>"
 	description "Escort these two freighters to <destination> to help build a new spaceport. This may just be an excuse for pirates to attack you."
 	autosave
-	source Deep
+	source "New Roanoke"
 	destination Bloodsea
 	clearance
 	to offer
