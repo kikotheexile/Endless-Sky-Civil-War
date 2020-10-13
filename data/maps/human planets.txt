@@ -335,19 +335,17 @@ planet Clark
 planet Clink
 	attributes mining moon
 	landscape land/desert3
-	description `About a decade ago, a mining corporation from Zug planted a colony on Clink for harvesting some rare earth minerals that are present in this moon's crust due to its unusually high rate of asteroid impacts. The atmosphere here is too thin to breathe without a respirator, and because of the low gravity, the dust raised by the mining operations hangs perpetually in the air.`
-	description `	The miners who work here are a tight-knit group, since most of them were part of the original colonization team. They are not particularly open to outsiders, and the facilities here are so rudimentary that they do not even stock fuel for visiting ships.`
-	tribute 200
-		threshold 1500
-		fleet "Small Militia" 15
+	description `About a decade ago, a mining corporation from Zug planted a colony on Clink to harvest rare earth minerals present in the moon's crust, left behind from its high rate of asteroid impacts. The atmosphere is too thin to breathe without a respirator, and due to the low gravity, dust raised by the mining operation hangs perpetually in the air.`
+	description `	The miners who work here are a tight-knit group, many of them part of the original colonization team. The facilities here are so rudimentary and seldom visited by outsiders that they do not even stock fuel for visiting ships.`
+
 
 planet Cornucopia
 	attributes south farming research frontier
 	landscape land/fields0
-	description `Cornucopia is a mostly agrarian world, and like several of its neighbors it has been inhabited since the early days of interstellar travel, when settlers seeking to get as far as possible from old Earth and its troubles landed here. Through careful stewardship and attention to the rhythms and balances of nature, generation after generation of farmers have transformed this world into one of the most fertile in human space. The Cornucopia College of Agriculture is famous, and justly so.`
-	description `	From orbit, most of the landmass seems covered with a bizarre pixelated pattern. On approach, this resolves into a vast patchwork of fields and irrigation circles.`
-	spaceport `The spaceport on Cornucopia is a set of massive hangars in the center of a wide-open plain. Before leaving your ship you had to sign several documents regarding the use and disposal of various chemicals used in ship operations, and the department of agriculture requires that any luggage you bring on or off world be submitted to a scan for biological material.`
-	spaceport `	When you leave your hangar, you find yourself in an immense farmers' market, with hundreds of fruits and grains that you do not even know words for. The smell of this world is rich and earthy - you feel like you could almost receive all the nourishment your body needs just by breathing this air.`
+	description `Cornucopia is a agrarian world, inhabited since the early days of interstellar travel when settlers sought to distance themselves from Old Earth and her troubles. Through careful stewardship and apt attention to the rhythms and balances of nature, generations of farmers have transformed this world into one of the most fertile in human space. The Cornucopia College of Agriculture boasts of successful graduates "turning the galaxy green."`
+	description `	From orbit, the land could be likened to a large quilt with no discernable pattern . On approach, this resolves into a vast patchwork of fields and irrigation circles.`
+	spaceport `The spaceport on Cornucopia is a set of massive hangars in the center of a open plain. Before leaving your ship, you have to sign several documents regarding the use and disposal of various chemicals used in ship operations, as well as submit your luggage to a scan for biological material.`
+	spaceport `	Directly outside of the hangar, there is an immense farmers' market with hundreds of fruits and grains far beyond the regular scope of a spacer's diet. The smell of this world is rich and earthy, it's almost like one could receive all the nourishment their body needs just by breathing the air.`
 	security 0.1
 	tribute 800
 		threshold 4000
@@ -356,8 +354,9 @@ planet Cornucopia
 planet Covert
 	attributes pirate mining "core pirate"
 	landscape land/badlands2
-	description `Covert is home to a powerful mining cartel, operating outside the control of Republic law or any other external authority. It is rumored to be one of the few planets in human space where weapons-grade uranium and plutonium is mined and enriched. Any goods for sale here were most likely produced by slave labor, often by survivors of ships that have been captured by pirates. A massive pirate fleet is docked on the outskirts of the spaceport, a warning to any private pilot who might think of cheating or opposing the cartel.`
-	spaceport `From the moment you landed, you have been followed by a pair of security guards with earpieces and laser guns. The spaceport is one enormous building, with square, straight hallways and featureless walls, and nearly every door you pass is locked. Cameras at each hallway intersection pivot to watch as you approach. This is simultaneously one of the most secure spaceports you have visited, and one of the most dangerous, although if you do not do anything to provoke the animosity of the cartel, you will probably be able to leave in peace.`
+	description `Covert is the headquarters of a powerful mining cartel operating outside the control of Republic law, making it one of the few planets in human space where weapons-grade uranium and plutonium is mined. Any goods for sale here were produced by slave labor, the unlucky survivors of ships that have been captured by pirates.`
+	description `	A massive pirate fleet is docked on the outskirts of the spaceport, a warning to any private pilot who may think of cheating or opposing the cartel.`
+	spaceport `From the moment you landed, you have been followed by a pair of security guards with laser guns. Not that there is much trouble you can get up to, the entire spaceport is one building with square, straight hallways and featureless walls, with locked doors foiling every chance to explore. Cameras at each hallway intersection pivot to watch as you approach.`
 	shipyard "Southern Pirates"
 	outfitter "Ammo"
 	outfitter "Pirate Outfits"
@@ -371,9 +370,9 @@ planet Covert
 planet Crossroads
 	attributes core mining
 	landscape land/valley1
-	description `Crossroads is a thoroughly unbeautiful planet. The scrawny local vegetation has blue and purple leaves, shocking to your human eyes, and grows only reluctantly, leaving the land looking like a blighted wasteland.`
-	description `	The Syndicate's vast operation strip mining for uranium ore does nothing to improve this situation. They say that sandstorms were frequent here even before the Syndicate arrived, but the storms have gotten far worse in recent years, with some storms now reaching several kilometers high and dozens of kilometers in diameter.`
-	spaceport `The spaceport is marked out with radio beacons to allow ships to land or take off even if the air is too dusty to see the ground. The dusty air tastes metallic on your tongue. It is laced with radioactive elements, and you try your best not to breathe in too much of the dust while making your way from your ship to the low stone buildings of the port.`
+	description `Crossroads is a thoroughly ugly planet. The scrawny local vegetation with its garish blue and purple leaves grows only reluctantly, the land appearing stippled with blight.`
+	description `	The Syndicate's uranium strip mining operation has done nothing to improve this situation. While sandstorms were frequent here before the Syndicate arrived, the storms have gotten far worse in recent years, with the deadly storms now reaching several kilometers high and wide as they sweep across the scarred landscape.`
+	spaceport `The spaceport is marked out with radio beacons to allow ships to land or take off during sandstorms. The dusty air is metallic on your tongue and likely laced with radioactive elements. It would be best to wear a mask or other safe respiratory equipment while making your way from your ship to the low stone buildings of the port.`
 	outfitter "Syndicate Basics"
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
@@ -385,9 +384,9 @@ planet Crossroads
 planet Dancer
 	attributes south research
 	landscape land/nasa7
-	description `Dancer is a resource-rich world, but with unusually violent weather and strong atmospheric convection, which leads to lightning storms stronger than on any other settled human world. Straying outside on foot is unthinkable, and it is not uncommon to find a small crater blasted out by a particularly energetic strike.`
-	description `	A fair number of scientists have settled here to study the planet's weather systems, as well as others who do not mind, or who even enjoy, the wild weather. It might be possible for terraforming to moderate Dancer's atmospheric activity enough to make it a less dangerous place to live, but the cost would be prohibitive.`
-	spaceport `The spaceport town is a rather normal collection of wood and stone buildings, with large sheds for trade goods and a handful of pubs and restaurants. The only unusual thing is the fact that every single building has lightning rods mounted on its roof. The sky is perpetually cloudy here, with only occasional beams of sunlight glancing through. The clouds are moving awfully fast.`
+	description `Dancer is a resource-rich world, but unusually violent weather and strong atmospheric convection makes for lightning storms stronger than on any other settled human world. Straying outside on foot is unthinkable, and the landscape is pockmarked with craters from energetic strikes.`
+	description `	A small colony of scientists have settled here to study the planet's weather systems, joined by those who claim to enjoy the wild weather. While it is possible that terraforming would moderate Dancer's atmospheric activity enough to make it a less dangerous place to live, the cost is obscenely prohibitive.`
+	spaceport `The spaceport town is a nondescript collection of wood and stone buildings, with large sheds for trade goods and a handful of pubs and restaurants. Every single building has several lightning rods mounted on its roof. The sky is perpetually cloudy, and rare beams of sunlight glance through before being shut out again by the clouds racing across the sky.`
 	outfitter "Basic Outfits"
 	security 0.05
 	tribute 300
@@ -397,9 +396,9 @@ planet Dancer
 planet Darkstone
 	attributes south farming frontier
 	landscape land/valley8
-	description `Darkstone is a rainy, mountainous planet. The major continents are spidered with rivers and green valleys. A few enterprising settlers have built farming communities here, but the population remains low because of the threat of piracy from neighboring systems.`
-	description `	Among the farmers who choose to stay, the attitude seems to be that piracy can't last forever, but good land will always be good land. Despite some low-level cynicism and bitterness, there is surprisingly little outright anger at either the pirates themselves or any government that might have been expected to control them.`
-	spaceport `Once every few months, one pirate band or another will land here demanding tribute in the form of food. The locals respond by just keeping a big enough supply on hand to satisfy them; any sort of planetary defenses would cost far more than the price of the amount of food that an average fleet of warships can carry. But once they recognize that you are here to trade and not to steal, they greet you quite enthusiastically.`
+	description `Darkstone is a rainy, mountainous planet, spidery rivers carving across the continents and depositing rich silt in the emerald river valleys. Despite the fertile lands, few settlers have built farming communities here due the threat of piracy from neighboring systems.`
+	description `	Among the local farmers, the motto seems to be that, "Piracy is temporary, but good land is forever." Other than general cynicism, there is surprisingly little outright anger at either the pirates themselves or any government that might have been expected to control them.`
+	spaceport `Once every few months, one pirate band or another will land here demanding tribute in the form of food. The locals respond by keeping a big enough supply on hand to satisfy them; any sort of planetary defenses would cost far more than the price of the amount of food that an average fleet of warships can carry. Once you make it clear you are here to trade and not to steal, you are greeted quite enthusiastically.`
 	outfitter "Ammo"
 	security 0.1
 	tribute 200
@@ -409,9 +408,9 @@ planet Darkstone
 planet "Deadman's Cove"
 	attributes pirate "core pirate"
 	landscape land/sea1
-	description `Deadman's Cove is an ocean planet; the continents take up only a tenth of its surface area. Legends tell of massive sea creatures hiding in the deeps: serpents hundreds of meters long; colossal sea turtles; strange tentacled monsters and exotic fish.`
-	description `	One island archipelago is home to the spaceport, the only part of the planet where it is safe to land uninvited. The other islands - even some that seem from a distance to be uninhabited - are often used as staging bases for pirate fleets, who guard their secrets closely.`
-	spaceport `Your ship is on a landing pad only a few meters above the pounding surf, and you can't help worrying about what might happen if the tide rises any higher. If nothing else, the salt water is bound to corrode your hull if you stay here too long. You make your way to a bar where a cage hanging from the ceiling holds an actual parrot. After trying for a while to get it to talk to you, you realize that it is dead, stuffed and nailed to its perch.`
+	description `Deadman's Cove is an ocean planet, its continents taking up less than a tenth of the small planet's surface area. Legends tell of massive sea creatures lurking in the depths: serpents hundreds of meters long; colossal sea turtles; strange tentacled monsters and exotic fish.`
+	description `	One island archipelago is home to the spaceport, the only part of the planet where it is safe to land uninvited. The other islands, while appearing uninhabited, are often used as staging bases for pirate fleets, who guard their secrets closely.`
+	spaceport `Most ships, including your own, are on a landing pads only a few meters above the pounding surf. It's difficult not to worry about what might happen if the tide rises any higher. If nothing else, the salt water is bound to corrode your hull if you stay here too long. You make your way to a bar where a cage hanging from the ceiling holds an actual parrot. After trying for a while to get it to talk to you, you realize that it has been nailed to its perch and is, hopefully, dead.`
 	outfitter "Ammo"
 	outfitter "Pirate Outfits"
 	bribe 0.03
@@ -420,12 +419,12 @@ planet "Deadman's Cove"
 		threshold 2500
 		fleet "Small Core Pirates" 45
 
-planet Deep
+planet "New Roanoke"
 	attributes south fishing
 	landscape land/sea3
-	description `Deep is a sparsely populated world of small island archipelagos surrounded by vast expanses of empty ocean. There is not enough land for any large cities or serious industry to emerge, so most of the inhabitants live in small fishing villages. The climate is temperate and Earth-like, but the sunlight is somewhat dimmer than you are used to.`
-	description `	The fishing settlements are actually the second colonization attempt on this planet. In the early days of hyperdrive the Kingsburg Corporation sent out what was then one of the largest and most technologically advanced colonization fleets, penetrating deep into the then-unexplored southern galactic rim. After two centuries of sporadic and guarded contact, the colony fell silent, and when human expansion finally reached this area again, no trace of the original colony was found.`
-	spaceport `The spaceport is built on a large island, a now-extinct volcano with an elevation of several kilometers at its center. Most of the large-scale fishing here is done by a single company, Poseidon Industries, who also built and maintain the spaceport. Steep winding roads and sturdy cement homes and warehouses line the mountain slopes, and below you in the harbor several massive trawling vessels are moored. On the outskirts of the spaceport are the ramshackle houses and open-air marketplace used by the smaller, independent fishing families.`
+	description `New Roanoke is a sparsely populated world of island archipelagos surrounded by vast expanses of empty ocean. Lacking  enough land for large cities or serious industry to emerge, most of the inhabitants live in small fishing villages. The climate is temperate and Earth-like, but the sunlight is remarkably dim.`
+	description `	The fishing settlements are the second colonization attempt on this planet, originally known as Deep. In the early days of hyperdrive, the Kingsburg Corporation sent out one of their of the largest and most technologically advanced colonization fleets deep into the then-unexplored Southern Galactic Rim. After two centuries of sporadic contact, the colony fell silent. When human expansion finally reached this area again, little trace of the original colony was found. The planet was then rechristened New Roanoke.`
+	spaceport `The spaceport is built on a large island and far up the side of an dormant volcano. Most of the large-scale fishing here is done by a single company, Poseidon Industries, who built and maintain the spaceport. Steep winding roads and sturdy cement homes and warehouses line the mountain slopes, and below you in the harbor massive trawling vessels are moored. On the outskirts of the spaceport are the ramshackle houses and open-air marketplace used by the smaller, independent fishing families.`
 	security 0.1
 	tribute 500
 		threshold 3000
@@ -434,8 +433,8 @@ planet Deep
 planet Delve
 	attributes core mining
 	landscape land/snow1
-	description `Delve is a world of towering mountains and valleys so steep that some slopes never see the light of the sun, where snow and ice remain on the topmost peaks year-round. The Syndicate's mining operations here are among the most extensive in the region, with some shafts descending several kilometers below the surface. Some of the mines are as large as a city, and in fact many of the mining cities are under ground, built in sections of old mines that have long since run out of useful metals. With all the mines and underground cities reliant on mechanical ventilation from the surface, the miners live in constant fear of two things: cave-ins, and power failures.`
-	spaceport `The spaceport is an enormous hollow carved out of the side of a mountain, with a network of steel beams and mesh holding the rock in place. Inside the hollow, the landings are caves carved into the rock itself, again with steel beams above to protect the ships within. A tiered set of cog railways transport passengers and cargo between the landings and the large town at the base of the hollow. Beyond the hollow, the mountainside falls off into a steep cliff and a mist-filled valley below. Although the port is well-built and modern, you cannot help an irrational fear that the whole place will slide off the edge of the mountain one day.`
+	description `Delve is a world of towering mountains with valleys so steep that some slopes never see the light of the sun. The Syndicate's mining operations here are the most extensive in the region, with shafts descending dozens of kilometers below the surface. Most of the mining cities are underground, built in sections of old mines that have ran dry of useful metals. With all the mines and underground cities reliant on mechanical ventilation from the surface, the miners live in constant fear of two things: cave-ins and power failures.`
+	spaceport `The spaceport is a vast hollow carved out of the side of a mountain, with a network of steel beams and mesh holding the rock in place. Inside the hollow, the landings are caves carved into the rock, with additional steel beams above to protect the ships within. A tiered set of cog railways transport passengers and cargo between the landings and the large town at the base of the hollow. Beyond the hollow, the mountainside falls off into a steep cliff and a mist-filled valley below. Although the port is well-built and modern, many visitors carry an irrational fear that the whole place is in imminent danger of sliding off the edge of the mountain.`
 	shipyard "Basic Ships"
 	shipyard "Syndicate Basics"
 	outfitter "Syndicate Advanced"
@@ -449,9 +448,10 @@ planet Delve
 planet Dune
 	attributes rim mining
 	landscape land/dune2
-	description `Dune is a mostly desert world, which was uninhabited until very recently when geologists discovered that the bedrock under the desert is home to many rare mineral deposits and gemstones. Most of the inhabitants live deep underground to avoid the hot sunlight and frequent sandstorms. It is a dangerous life; cave-ins are common in the mines, and the sand on the surface can shift so suddenly that it is not uncommon for one of the underground villages to find its surface entrance buried, and to need to call for help from another village. But the mines operate with a joint ownership model where all the workers profit equally, so working here pays well. Many of the miners stay here only for five or ten years, while sending money back to their families off-world.`
-	spaceport `The spaceport is an enormous concrete tower rising a hundred meters above the sand, with the intention that it should be high enough to avoid being buried in even the largest of sandstorms. Each pad has landing clamps to secure your ship in case of high winds. Even so, you are a bit nervous as you leave your ship behind and board one of the cargo elevators to the complex below.`
-	spaceport `	There are no windows inside the port, but the tall ceilings and bright strips of sun-lamps keep it from feeling too claustrophobic.`
+	description `A lackluster desert world, Dune was uninhabited until very recently when geologists discovered that the bedrock under the desert is home to rare mineral deposits and gemstones. Most of the inhabitants live deep underground to avoid the hot sunlight and frequent sandstorms. It is a dangerous life; cave-ins are common in the mines, and the sand on the surface can shift so suddenly that it is not uncommon for one of the underground villages to find its surface entrance buried, requiring them to call for help from another village. An urban legend has sprang up that a great sandworm patrols the desert, calling up storms and earthquakes to scare colonizers from taking over any more of the world. Such claims have never been substantiated.`
+	description `	The mines operate with a joint ownership model, with all the workers profiting equally. It has become a popular workplace for those saving money to pay off large debts or finance expensive dreams, with a ten year work contract enough to buy a home on a lower end Paradise Planet.`
+	spaceport `The spaceport is a concrete tower rising a hundred meters above the sand, nearly high enough to avoid being buried in the largest of sandstorms. Each pad has landing clamps to secure your ship in case of high winds. It is not uncommon for first time visitors to be rather nervous as they leave their ship behind and board one of the cargo elevators to the complex below.`
+	spaceport `	There are no windows inside the port, but the tall ceilings and bright strips of sun-lamps keep it from feeling too claustrophobic.There are no windows inside the port, but the tall ceilings and bright, broad stripes of sun-lamps keep it from feeling too claustrophobic.`
 	outfitter "Ammo"
 	outfitter "Kraz Basics"
 	security 0.05
