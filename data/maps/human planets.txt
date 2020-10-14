@@ -459,19 +459,13 @@ planet Dune
 		threshold 3000
 		fleet "Small Militia" 23
 
-planet Dustmaker
-	attributes hai manufacturing "hai tourism"
-	landscape land/badlands0
-	description `The surface of this planet, when it is not obscured by dust storms, receives enough sunlight to power not only large solar farms, but solar furnaces as well, which the Hai use for manufacturing a large variety of goods. Some of the solar farms are so large that from orbit, the light reflecting off them could almost be mistaken for lakes and small oceans. However, there is almost no water on the planet's surface except near the poles.`
-	spaceport `Like most Hai architecture, the spaceport is made of bare, unpainted metal, so weathered that you would not be surprised to learn that it is tens of thousands of years old. Tall, curved walls around the outskirts of the port create a sort of labyrinth with the port building itself at the center; they are probably intended to block sandstorms while allowing gentler breezes to pass through.`
-
 planet Earth
 	attributes "near earth" urban tourism
 	landscape land/city3
-	description `The ancestral home world of humanity, Earth has a population twice that of any other inhabited planet. Sprawling cities cover large portions of its surface, many of them overcrowded and dangerous. Some people work to scrape together enough money to leave, while at the same time others, born on distant worlds, make a pilgrimage of sorts to see this planet that once cradled the entirety of the human species.`
-	description `	Earth is also the capital of the Republic. Representative government becomes complicated when one planet has a greater population than a hundred planets elsewhere. As a result, settlements of less than a million are grouped together into planetary districts that elect a single representative between them - a source of much frustration in the frontier worlds.`
-	spaceport `Earth's spaceport is a series of massive buildings; the gaps between them form narrow concrete canyons a hundred stories deep. From a distance it has the appearance of a bustling termite mound.`
-	spaceport `	Inside the towers is a warren of dim hallways and dingy shops. Hitchhikers sleep in the corners of unused docking bays under old army blankets, a few uniformed cleaners try to keep the litter and dust in check, and rich tourists from other stars cling tightly to their expensive cameras.`
+	description `Humanty's ancestral home, Earth boasts the highest population of any inhabited planet. Sprawling, overcrowded cities cover large portions of the surface with little space between. While the inhabitants work to scrape together enough money to leave, those born on distant worlds make pilgrimages to see the planet that once cradled the entirety of the human species.`
+	description `	Earth is also the capital of the Republic. Settlements of less than a million are grouped together into planetary sectors that elect a single representative between them - a source of much frustration in the frontier worlds.`
+	spaceport `Earth's spaceport is a poorly kept series of buildings; the gaps between them forming narrow concrete canyons a hundred stories deep. From a distance it has the appearance of a bustling termite mound, which several visiting poets have used as a metaphor for humanity itself.`
+	spaceport `	Inside the towers is a warren of dim hallways and dingy shops. Hitchhikers sleep in the corners of unused docking bays under old army blankets, tired uniformed cleaners try to keep the litter and dust in check, and rich tourists from other stars cling tightly to their belongings.`
 	outfitter "Common Outfits"
 	outfitter "Lovelace Basics"
 	outfitter "Syndicate Basics"
@@ -486,8 +480,8 @@ planet Earth
 planet "Echo Station"
 	attributes shipyard station
 	landscape land/earthrise
-	description `The main construction and trade platform used by Tarazed corporation. This massive shipyard can churn out hundreds of heavy warships in a year. More recently, it has been repurposed to service the new Battle Cruiser class vessels, such as Tarazed's new prototype, the Vulture. `
-	spaceport `The docking and storage rings of this station were built to accomidate Caravan fleets, which has proven very useful for all of the various visiting factions. Wanderer Freighters and Hai Transports dock and disembark to mingle with the several thousand humans crowding the internal streets of this sprawling station. The Bird-Like wanderers can often be seen taking to the air to get to specialty shops that service them. Towering Quarg wearing their trademark pressure suits try their best to not trip over humans and their squirrel-like Hai counterparts. `
+	description `The main construction and trade platform used by Tarazed Corporation. While this shipyard tirelessly churns out hundreds of heavy warships every year, recently it has been repurposed to service the new Battle Cruiser class vessels, such as Tarazed's newest prototype: The Vulture.`
+	spaceport `The docking and storage rings of this station were built to accomidate Caravan fleets, proving most useful for the myriad visiting factions. Wanderer Freighters and Hai Transports dock and disembark to mingle with the humans crowding the internal streets of the sprawling station. Bird-Like Wanderers are often spotted taking to the air to visit specialty shops. Towering Quarg wearing their trademark pressure suits do their best not to trip over humans and their squirrel-like Hai counterparts.`
 	shipyard "Tarazed Shipyards"
 	outfitter "Tarazed Systems"
 	outfitter "Ammo"
@@ -497,9 +491,8 @@ planet "Echo Station"
 planet Farpoint
 	attributes north military frontier
 	landscape land/desert4
-	description `Farpoint, on the northernmost end of human space, is a rocky desert planet home to a Republic Navy base and not much else. Farming is possible only within greenhouses, and this system is too far from the galactic center to be desirable for trade or industry.`
-	spaceport `The spaceport is the Navy base; there are no other settlements. There are a few pubs filled mostly with off-duty officers, and a quartermaster's warehouse where you can trade goods. The most striking aspect of the base, however, is how empty it is. There are enough buildings here to make it feel like a small city, but only one small corner of the port is in use; the rest of the buildings are boarded up. And there are enough landing pads and hangars to house perhaps a fifth of the entire fleet, but they are nearly all empty at the moment.`
-	spaceport `	The massive scale of the fortifications, coupled with their state of near-total disuse, puts you in mind of the fabled Maginot Line on Earth - a relic of an anticipated battle that failed to materialize according to plan.`
+	description `On the northernmost end of human space, Farpoint is a rocky desert planet home to a solitary Republic Navy base. The only notable plant life around is found within greenhouses, and due to the system's distance from the galactic center, the endless machine of capitalism has passed the planet by.`
+	spaceport `With no other settlements on the planet, the spaceport is within the military base.  There is a singular pub filled with off-duty officers, and a quartermaster's warehouse where you can trade goods. The most striking aspect of the base, however, is how empty it is. There are enough buildings here to make a small city, but only one small corner of the port is in use; the rest of the buildings are boarded up. Also notable is despite enough landing pads and hangars to house a fifth of the Republic defence fleet, a meager handful of ships are parked here.`
 	outfitter "Common Outfits"
 	outfitter "Lovelace Basics"
 	outfitter "Ammo"
@@ -513,26 +506,20 @@ planet Farpoint
 planet Farseer
 	attributes paradise tourism rich
 	landscape land/sea8
-	description `With enough money, you can buy a sunny day. Farseer is an ocean resort world, where much of the local tax revenue is spent on the terraforming equipment that moderates the weather. Real estate prices fluctuate wildly in times of political anxiety, because the idyllic climate exists only by government fiat.`
-	description `	Industry here mostly takes the form of executive offices for interplanetary banks, law firms, and software companies. Strict zoning laws limit construction of skyscrapers or factories to the continents that are in the less pleasant polar regions.`
-	spaceport `The spaceport is in one of the industrial regions near the pole; presumably the sight and sound of starships landing and taking off is too distasteful and plebeian for this world's richer inhabitants. Most of the people here are terraforming technicians or mechanics; they hurry through the streets without giving you a second glance. Next to the tin-roofed marketplace, children are playing in a concrete-paved lot; across the street are a few run-down pubs and a restaurant.`
+	description `With enough money, anyone can buy a sunny day. Farseer is a typical ocean resort world, where most of the traceable local tax revenue is spent on the terraforming equipment that moderates the weather. Real estate prices fluctuate wildly in times of political anxiety, as the idyllic climate exists only by government fiat.`
+	description `	Industry here takes the form of executive offices for interplanetary banks, law firms, and software companies. Strict zoning laws limit construction of skyscrapers or factories to the continents that are in the less profitable polar regions.`
+	spaceport `The spaceport is in one of the industrial regions near the pole; the sight and sound of starships landing and taking off too distasteful for this world's richer inhabitants. Most of the people here are terraforming technicians or mechanics; they hurry through the streets without giving you a second glance. Next to the tin-roofed marketplace, children play in a concrete-paved lot; across the street lies cheery pubs, a fudge shop, and a chain restaurant.`
 	bribe 0.05
 	security 0.6
 	tribute 3500
 		threshold 6500
 		fleet "Large Republic" 14
 
-planet Farwater
-	attributes hai medical "hai tourism"
-	landscape land/beach6
-	description `In human space, this system would probably have been left unsettled, because its sun produces too much ultraviolet radiation for animals to survive for long on its surface. But the Hai have instead turned this warm ocean world into a massive incubator for photosynthetic algae and bacteria. Each species is genetically engineered to produce one or more medical or nutritional compounds that they can make use of. Barges travel slowly through the oceans harvesting these microorganisms out of the water and separating out the chemical compounds they provide.`
-	spaceport `The spaceport appears to have been built by expanding a natural set of caves in a cliff facing the ocean. At high tide the lower caves flood, allowing barges to dock and unload the compounds they have harvested. Tunnels lead deep into the rock to rooms that have been carved out as warehouse space and living quarters. The rock remains somewhat cool, even at midday, but the air is still oppressively humid.`
-
 planet Featherweight
 	attributes north research frontier
 	landscape land/sky6
-	description `Featherweight is a small world, with lighter than normal gravity. Centuries ago, because of its remoteness, this world was the site of some illegal genetic experiments, and rumors say that the current inhabitants are the result of those experiments. Because they are so well adapted to low gravity, few of them choose to leave, and very few outsiders choose to settle here, so this world's culture remains quite insular and detached from the rest of the galaxy.`
-	spaceport `Although this is a human planet, as you walk through this spaceport you feel as if you are on an alien world. The ceilings and doorways are all a bit higher than you are used to, and the locals tower over you. Aside from a few food carts in the marketplace, there are no shops or restaurants in the spaceport, and the nearest village is several kilometers away. It is as if the entire port was designed in order to limit interactions with outsiders to the bare minimum that is necessary.`
+	description `Featherweight is small  with notably low gravity. Centuries ago, this remote planet was the site of illegal genetic experiments, and many believe the current inhabitants are the living result of those experiments. So well adapted to the conditions; few inhabitants ever choose to leave, and fewer still outsiders choose to settle here, leaving this world's culture insulated and detached from the rest of the galaxy.`
+	spaceport `To outsiders, this planet might seem alien. The ceilings and doorways are far higher than standard; the locals towering above even the lankiest visitors. Aside from basic food carts in the marketplace, there are no shops or restaurants in the spaceport, and the nearest village is several kilometers away. It seems as if the entire port was designed to limit interactions with outsiders.`
 	security 0.5
 	tribute 800
 		threshold 4500
@@ -541,9 +528,9 @@ planet Featherweight
 planet "Fenrir Station"
 	attributes deep station
 	landscape land/sivael1
-	description `Fenrir Station is a bustling refinery, and from the way the foremen looked at you when you stepped off your ship, they seem to be eager for new recruits. In addition to harvesting deuterium, this is one of the few refinery stations in human space which also collects helium-3, an isotope with some exotic uses in medical imaging and in energy research.`
-	description `	The diversity of isotopes found here is partly due to the station being a relatively new construction and benefiting from modern technology. But the gas giant which the station harvests from also has a composition unlike any other known planet. One theory is that it is on the cusp of becoming a brown dwarf star, in which case the isotopes now being stirred into the upper atmosphere by convection will eventually be depleted by fusion.`
-	spaceport `This station is composed of two rings, one containing the refinery and the other, the living quarters and cafeteria for the workers, in addition to a docking bay for visiting freighters. The workers all seem to be very busy, and few of them pay any attention to you.`
+	description `Fenrir Station is a bustling refinery, and judging by the way the foremen looks at you when you step off your ship, they seem to be eager for new recruits. In addition to harvesting deuterium, this is one of the few refinery stations in human space which collects helium-3, an isotope with exciting uses in medical imaging and in energy research.`
+	description `	The diversity of isotopes found here is partly due to the station being a relatively new construction and benefiting from modern technology. The gas giant the station harvests from has a composition unlike any other known planet. One popular theory is that it is on the cusp of becoming a brown dwarf star, in which case the isotopes now being stirred into the upper atmosphere by convection will eventually be depleted by fusion.`
+	spaceport `This station is composed of two rings, one containing the refinery and the other, the living quarters and cafeteria for the workers, in addition to a docking bay for visiting freighters. The workers bustle by, paying no mind to station visitors.`
 	bribe 0.05
 	security 0.8
 	music ambient/machinery
@@ -551,18 +538,12 @@ planet "Fenrir Station"
 		threshold 3000
 		fleet "Small Deep Security" 14
 
-planet Firelode
-	attributes unfettered
-	landscape land/mountain25-spfld
-	description `The Unfettered are operating several large strip mines here to collect uranium and plutonium to fuel the generators in their warships. Older, abandoned mining pits are scattered throughout the planet's surface. As a result of the mining activity, the groundwater here has become badly contaminated.`
-	spaceport `The spaceport is in the middle of a large city with typical Hai architecture: raw metal and chamfered corners. However, much of the city appears to have been ruined long ago, probably in a battle. The ruins have not been rebuilt, but instead it appears that most of the ruined buildings have been torn down for scrap metal. Several of the spaceport hangars are in bad repair, as well.`
-
 planet Flood
 	attributes rim tourism farming
 	landscape land/water8
-	description `The scenic fjords and rugged mountains make Flood a popular tourist destination. Nearly all the land in the planet's temperate zone is covered in mountains, making traditional agriculture difficult. The locals survive mostly by raising sheep and goats, plus a few native species, and grow fruit and vegetables in small terrace gardens tended by hand rather than by tractor. Most of the population is employed in the tourist industry, running inns for the visitors to their quaint mountainside villages, or making handcrafts for sale as gifts.`
-	spaceport `You have never seen this many shops in a single spaceport. Hand-glazed pottery, wooden furniture, dolls, sweaters, scarves, paintings - the variety is overwhelming. Crowds of tourists bustle around from shop to shop, making it very difficult for you to get through.`
-	spaceport `	The spaceport is built on a mountainside, apparently designed to look like a village, except that in place of terrace gardens are landing pads (placed haphazardly to look more natural), and the buildings are much larger than you imagine the huts up in the villages would be. The cement tiles covering the roofs have been molded and colored to look like wood shingles, and although some of the larger buildings must have steel structures underneath, they have been made to look as if they are held up only by wooden beams.`
+	description `The scenic fjords and rugged mountains make Flood a popular tourist destination. Nearly all the land in the planet's temperate zone is covered in mountains, making traditional agriculture difficult. The locals survive by raising sheep and goats in addition to native species, growing their food in small terrace gardens tended by hand rather than by tractor. Most of the population is employed in the tourist industry, running inns for visitors to their quaint mountainside villages, or making and selling handcrafts.`
+	spaceport `The spaceport is bursting at the seams with small shops. Hand-glazed pottery, wooden furniture, dolls, sweaters, scarves, paintings - the variety is overwhelming. Crowds of tourists bustle around from shop to shop, making quick travel difficult.`
+	spaceport `	Built on a mountainside, the spaceport is designed to look like a village, with landing pads taking the place of terrace gardens. The cement tiles covering the roofs have been molded and colored to look like wood shingles, and although some of the larger buildings have steel structures underneath, they have been painted to look like wooden beams.`
 	security 0.2
 	tribute 700
 		threshold 3000
@@ -571,9 +552,9 @@ planet Flood
 planet Follower
 	attributes paradise factory
 	landscape land/city10
-	description `Follower is on the edge of the Paradise Planets region of space: not really one of them yet, but aspiring to be. It is prosperous, but from manufacturing rather than law or finance or venture capitalism. A significant fraction of the local taxes collected here are being spent on terraforming, raising global temperatures and reducing seasonal fluctuations. The goods produced here always have a ready market to purchase them, so Follower's job economy is considered very stable.`
-	description `	As one of the few planets still actively engaged in terraforming, Follower has been the location of several experiments with new technology, trying to leapfrog the centuries-slow process that other worlds have gone through. Unfortunately most of these experiments have failed, sometimes spectacularly.`
-	spaceport `The spaceport is a single skyscraper, fifty floors tall and as wide as it is high, with the floors twisting around each other in a helical patterns so that on each level, the landing bays are approached from a slightly different angle. The whole structure is built of steel and gleaming glass. Inside, the soaring ceilings give you more of a sense of opulence than of comfort.`
+	description `Follower lies on the edge of the Paradise Planets region, and aspires to join their ranks. While prosperous, manufacturing is the name of the game rather than the more illustrious law, finance, or venture capitalism. The lion's share of local taxes collected here are being spent on terraforming, raising global temperatures and reducing seasonal fluctuations.`
+	description `	As one of the few planets still actively engaged in terraforming, Follower is the site of several experiments with new technology, hoping to leapfrog the centuries long process that other worlds have gone through. Most of these experiments have failed in spectacular fashion.`
+	spaceport `The spaceport is a single skyscraper of steel and gleaming glass, fifty floors tall and nearly as wide, with the floors twisting around each other in a helical patterns so that at each level, the landing bays are approached from a different angle. Inside, the soaring ceilings boast opulence, but the acoustics are uncomfortable at best and unbearable at worst.`
 	shipyard "Betelgeuse Basics"
 	shipyard "Betelgeuse Advanced"
 	shipyard "Lionheart Basics"
@@ -589,8 +570,9 @@ planet Follower
 planet Foundry
 	attributes core factory urban
 	landscape land/city1
-	description `Foundry is home to the Syndicated Shipyards, where more than half of the commercial freighters in human space are manufactured. Although much of the planet is blanketed in smog from the factories, there are also regions of pristine forests and majestic mountains. The Syndicate has a generous vacation policy on Foundry that allows workers to take as much as a month of vacation time every year, and many choose to take that time to escape from the cities and explore the wilderness. The shipyards claim that this vacation time is partly responsible for the high reliability of the ships built here, because a well-rested and relaxed worker is less likely to make the sort of mistakes that can quickly become disastrous in outer space.`
-	spaceport `The spaceport is surrounded by kilometers of hangars and factories where new ships are being assembled. The port itself is a trio of towering buildings, with a skywalk on the top floors to provide a view of the surrounding area. Larger ships land on pads on the ground surrounding the towers, while smaller ships can fly into hangars built into the sides of the towers themselves. Everything is made of gleaming metal, and each tower is slightly tapered and adorned with painted fins that make it resemble an enormous starship.`
+	description `Foundry is home to Syndicated Shipyards, manufacturing more than half of the commercial freighters in human space. Although much of the planet is blanketed in smog, there are also protected regions of pristine forests and majestic mountains.` 
+	description `	The Syndicate boasts a generous vacation policy that allows workers to take as much as a month of vacation time every year, many choosing to take that time to escape from the cities and explore the wilderness. The Syndicate like to claim that this vacation time is responsible for the high reliability of the ships built here, because a well-rested and relaxed worker is "17.3% less likely to make dangerous mistakes.`
+	spaceport `The spaceport is surrounded on all sides by hangars and factories where new ships are being assembled. The port itself is a trio of towering buildings, with a skywalk on the top floors to provide a view of the surrounding area. Larger ships land on pads on the ground surrounding the towers, while smaller ships can fly into hangars in the sides of the towers themselves. Everything is made of gleaming metal, and each tower is tapered and adorned with painted fins to make it resemble a starship.`
 	shipyard "Basic Ships"
 	shipyard "Syndicate Basics"
 	shipyard "Megaparsec Basics"
@@ -607,8 +589,8 @@ planet Foundry
 planet "Free Market"
 	attributes station north "northern pirate" "northern union"
 	landscape land/space4
-	description `Free Market is interesting in that this is one of the few places where the pirates of the Northern Union freely mingle with citizens of the Republic without much conflict. Here you can buy virtually anything.`
-	spaceport `You would be hard pressed to find a station this clean, busy, and safe anywhere throughout human space. Even more shocking is the fact that this station is technically run completely by a member of the Northern Union council that has remained on good terms with the Republic and it's corporations.`
+	description `Free Market is one of the only places where the pirates of the Northern Union freely mingle with citizens of the Republic without conflict. For the right price, there is nothing you can't purchase here.`
+	spaceport `Visitors would be hard pressed to find a station this clean, busy, and safe anywhere throughout human space. While shocking to some, to others it would make perfect sense that this station is ran by members of the Northern Union council that remain on good terms with the Republic.`
 	shipyard "Free Market"
 	outfitter "Free Market"
 	outfitter "Ammo"
@@ -621,11 +603,11 @@ planet "Free Market"
 planet Freedom
 	attributes pirate farming "north pirate" "northern union"
 	landscape land/bwerner7
-	description `Freedom is home to the oldest and largest anarchist colonies in human history. The original settlers arrived in the first century after the invention of the hyperdrive, coming with the goal of simply getting as far away from civilization as possible. The colony has reinvented itself countless times since then as different leaders have taken control, and in fact at present it is split into two separate towns, East Mesa and West Mesa.`
-	description `	The environment is a mix of deserts and brackish oceans, with a fair amount of native wildlife and good potential for farming. Anywhere else in human space, this planet would have become densely settled, but out here it has remained mostly empty.`
-	spaceport `Apparently anarchists are not opposed to commerce as long as no one is regulating it. Half of the landing pads in the spaceport are available for ships; the other half have been taken over by farmers busy selling their produce, or merchants buying from incoming ships and piling crates into large trucks.`
-	spaceport `	A sign above the entrance to the spaceport bar reads, "Fine home-brewed whiskey! Get smashed without getting taxed!" Further down the street, a sign over what appears to be a real estate office reads, "Why not settle where The Man can't reach you?"`
-	spaceport `	Inexplicably, the only advertising on the seafood restaurant across the street is an enormous banner proclaiming, "We have brown rice."`
+	description `Freedom is home to the oldest and largest anarcho-capitalist colonies in human history. The original settlers arrived in the first century after the invention of the hyperdrive, with the singular goal of simply getting as far away from civilization as possible. The colony has reinvented itself countless times since then as different leaders have taken control. At present it is split into two separate towns, East Mesa and West Mesa.`
+	description `	The environment is a mix of deserts and brackish oceans, with plenty of native wildlife and good potential for farming. Anywhere else in human space, this planet would have quickly become densely settled, but out here it has remained largely rural.`
+	spaceport `Apparently anarcho-capitalists are not opposed to commerce as long as no one is regulating it. Half of the landing pads in the spaceport are available for ships; the other half have been taken over by farmers busy selling their produce, or merchants buying from incoming ships and piling crates into large trucks.`
+	spaceport `	A sign above the entrance to the spaceport bar reads, "Fine home-brewed whiskey! Get smashed without the taxman sipping from your cup!" Further down the street, a sign over a real estate office reads, "Why not settle where The Man can't reach you?"`
+	spaceport `	Inexplicably, the only advertising on the seafood restaurant across the street is an enormous banner proclaiming, "We have brown rice!"`
 	shipyard "Basic Ships"
 	shipyard "Northern Union"
 	shipyard "Betelgeuse Basics"
@@ -1278,12 +1260,6 @@ planet Millrace
 	tribute 1400
 		threshold 4000
 		fleet "Large Syndicate" 8
-
-planet Mirrorlake
-	attributes hai moon "hai tourism"
-	landscape land/bwerner1
-	description `The Hai homeworld is orbited by a moon that is large and dense enough to have been able to hold on to its own supply of surface water, and although the atmosphere is cold, much of that water is in liquid form due to the strong tides. In a few places, granite and basalt cliffs rise out of the water, and the Hai have built a few small settlements on the moon, as well.`
-	spaceport `This spaceport appears to be a tourist destination. The architecture is different than on other Hai worlds, and much more primitive: stone and mortar instead of polished metal. However, all the buildings are in good repair: despite their ancient appearance, they must be maintained and rebuilt on a regular basis.`
 
 planet Moonshake
 	attributes core urban factory
