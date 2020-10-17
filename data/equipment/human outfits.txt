@@ -1171,78 +1171,6 @@ outfit "Liquid Helium Cooler"
 	description "Liquid helium is the ultimate in cooling technology. Given how much space this cooling system takes up, you may be better off just installing more efficient, low-heat components instead, but where that is not an option, this cooler can handle almost anything you throw at it."
 
 # Forward Guns
-outfit "Beam Laser"
-	category "Forward Guns"
-	cost 29000
-	thumbnail "outfit/laser"
-	"mass" 8
-	"outfit space" -8
-	"weapon capacity" -8
-	"gun ports" -1
-	weapon
-		sprite "projectile/laser"
-			"frame rate" 1
-		sound "laser"
-		"hit effect" "beam laser impact"
-		"inaccuracy" .5
-		"velocity" 300
-		"lifetime" 1
-		"reload" 1
-		"firing energy" .5
-		"firing heat" 1.2
-		"shield damage" .1
-		"hull damage" 2.3
-	description "In the early years of the space era, settlements in the region of space known as the Deep developed in relative isolation from the rest of human space. One result of that isolation is that their weapons technology mostly uses beam weapons, instead of the energy projectile weapons that are more common elsewhere."
-	description "	The Deep Sky Beam Laser was developed before the advent of energy shielding, but is now most useful as a mining laser. It is worth noting that while cockpits are designed to shield the pilot from laser emissions, it is still considered rude to try and point the laser in the enemy's eye."
-
-outfit "Heavy Laser"
-	category "Forward Guns"
-	cost 60000
-	thumbnail "outfit/heavy laser"
-	"mass" 15
-	"outfit space" -15
-	"weapon capacity" -15
-	"gun ports" -1
-	weapon
-		sprite "projectile/heavy laser"
-			"frame rate" 1
-		sound "heavy laser"
-		"hit effect" "heavy laser impact"
-		"inaccuracy" .4
-		"velocity" 400
-		"lifetime" 1
-		"reload" 1
-		"firing energy" 1
-		"firing heat" 2.1
-		"shield damage" .7
-		"hull damage" 3.4
-	description "The Deep Sky Heavy Laser is an upgraded Beam Laser with a significantly longer range and higher power. It is mostly intended for larger mining vessels, where energy and space are plentiful, but some pilots consider a single Heavy Laser to be a worthwhile alternative to a pair of Beam Lasers, because the longer range makes up for the fact that it does not quite deal twice as much damage."
-
-outfit "Electron Beam"
-	category "Forward Guns"
-	licenses
-		"Deep Sky"
-	cost 170000
-	thumbnail "outfit/electron beam"
-	"mass" 21
-	"outfit space" -21
-	"weapon capacity" -21
-	"gun ports" -1
-	weapon
-		sprite "projectile/electron"
-			"frame rate" 60
-		sound "electron beam"
-		"hit effect" "electron impact"
-		"inaccuracy" .3
-		"velocity" 450
-		"lifetime" 1
-		"reload" 1
-		"firing energy" 1.5
-		"firing heat" 2.7
-		"shield damage" 2.4
-		"hull damage" 3.3
-	description "The Electron Beam is a recent development by Deep Sky labs, a more powerful weapon with a design similar to their perennially popular laser guns. Unlike its Beam Laser precursors, this variant is quite capable of damaging enemy shields."
-
 outfit "Energy Blaster"
 	category "Forward Guns"
 	cost 16000
@@ -1511,7 +1439,68 @@ effect "Ranger fire"
 		"frame rate" 30
 	"lifetime" 9
 	"random velocity" 2
-	
+
+outfit "Ion Rain"
+	category "Forward Guns"
+	cost 190000
+	thumbnail "outfit/flamethrower"
+	"mass" 9
+	"outfit space" -9
+	"weapon capacity" -9
+	"gun ports" -1
+	weapon
+		sprite "effect/ion impact"
+			"frame rate" 10
+			"no repeat"
+		"hit effect" "ion rain hit"
+		sound "flamethrower"
+		"submunition" "ion burst"
+		"inaccuracy" 12
+		"velocity" 9
+		"lifetime" 4
+		"shield damage" .8
+		"reload" 5
+		"firing energy" 30
+	description "placeholder"
+
+outfit "ion burst"
+	weapon
+		sprite "effect/ionic afterburner"
+			"frame rate" 17
+			"no repeat"
+		"hit effect" "ion rain hit"
+		"submunition" "ion ring"
+		"inaccuracy" 40
+		"lifetime" 5
+		"shield damage" .8
+		"hull damage" .7
+		"heat damage" 200
+
+outfit "ion ring"
+	weapon
+		sprite "effect/emp ring"
+			"frame rate" 17
+			"no repeat"
+		"hit effect" "ion rain hit"
+		"inaccuracy" 40
+		"lifetime" 28
+		"ion damage" .25
+		"slowing damage" 10
+		"disruption damage" .9
+
+
+effect "ion rain hit"
+	sprite "effect/piercer impact"
+		"no repeat"
+		"frame rate" 15
+		"random start frame"
+	"lifetime" 28
+	"random angle" 360
+	"random frame rate" 5
+	"random spin" 3
+	"random velocity" .6
+	"velocity scale" .4
+
 # Turrets
 
 outfit "Laser Turret"
@@ -1815,6 +1804,82 @@ outfit "Proton Turret"
 	description "Developed by Syndicated Systems, the Proton Turret's rate of fire and hitforce makes it arguably the best anti-fighter weapon on the market."
 
 # Secondary Weapons
+outfit "Beam Laser"
+	category "Secondary Weapons"
+	cost 29000
+	thumbnail "outfit/laser"
+	"mass" 8
+	"outfit space" -8
+	"weapon capacity" -8
+	"gun ports" -1
+	weapon
+		sprite "projectile/laser"
+			"frame rate" 1
+		sound "laser"
+		"hit effect" "beam laser impact"
+		icon "icon/laser"		
+		"inaccuracy" .5
+		"velocity" 300
+		"lifetime" 1
+		"reload" 1
+		"firing energy" .5
+		"firing heat" 1.2
+		"shield damage" .1
+		"hull damage" 2.3
+	description "In the early years of the space era, settlements in the region of space known as the Deep developed in relative isolation from the rest of human space. One result of that isolation is that their weapons technology mostly uses beam weapons, instead of the energy projectile weapons that are more common elsewhere."
+	description "	The Deep Sky Beam Laser was developed before the advent of energy shielding, but is now most useful as a mining laser. It is worth noting that while cockpits are designed to shield the pilot from laser emissions, it is still considered rude to try and point the laser in the enemy's eye."
+
+outfit "Heavy Laser"
+	category "Secondary Weapons"
+	cost 60000
+	thumbnail "outfit/heavy laser"
+	"mass" 15
+	"outfit space" -15
+	"weapon capacity" -15
+	"gun ports" -1
+	weapon
+		sprite "projectile/heavy laser"
+			"frame rate" 1
+		sound "heavy laser"
+		"hit effect" "heavy laser impact"
+		icon "icon/heavylaser"
+		"inaccuracy" .4
+		"velocity" 400
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 1
+		"firing heat" 2.1
+		"shield damage" .7
+		"hull damage" 3.4
+	description "The Deep Sky Heavy Laser is an upgraded Beam Laser with a significantly longer range and higher power. It is mostly intended for larger mining vessels, where energy and space are plentiful, but some pilots consider a single Heavy Laser to be a worthwhile alternative to a pair of Beam Lasers, because the longer range makes up for the fact that it does not quite deal twice as much damage."
+
+outfit "Electron Beam"
+	category "Secondary Weapons"
+	licenses
+		"Deep Sky"
+	cost 170000
+	thumbnail "outfit/electron beam"
+	"mass" 21
+	"outfit space" -21
+	"weapon capacity" -21
+	"gun ports" -1
+	weapon
+		sprite "projectile/electron"
+			"frame rate" 60
+		sound "electron beam"
+		"hit effect" "electron impact"
+		icon "icon/electron"
+		"inaccuracy" .3
+		"velocity" 450
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 1.5
+		"firing heat" 2.7
+		"shield damage" 2.4
+		"hull damage" 3.3
+	description "The Electron Beam is a recent development by Deep Sky labs, a more powerful weapon with a design similar to their perennially popular laser guns. Unlike its Beam Laser precursors, this variant is quite capable of damaging enemy shields."
+
+
 outfit "Gatling turret"
 	category "Secondary Weapons"
 	cost 200000
@@ -2135,7 +2200,6 @@ outfit "gtbullet"
 		"hull damage" 24
 		"hit force" 4
 		"hit effect" "bullet impact"
-
 
 # Ammunition
 
