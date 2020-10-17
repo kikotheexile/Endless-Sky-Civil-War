@@ -1277,7 +1277,42 @@ effect "ion impact"
 	"random spin" 30
 	"random velocity" 2
 	"velocity scale" -.05
+
+outfit "Particle Cannon"
+	category "Guns"
+	cost 220000
+	thumbnail "outfit/particle cannon"
+	"mass" 30
+	"outfit space" -25
+	"weapon capacity" -25
+	"gun ports" -1
+	weapon
+		sprite "projectile/particle beam"
+		sound "particle"
+		"hit effect" "particle impact"
+		"inaccuracy" .5
+		"velocity" 30
+		"lifetime" 25
+		"reload" 20
+		"firing energy" 35
+		"firing force" 10
+		"firing heat" 120
+		"hit force" 80
+		"shield damage" 24
+		"hull damage" 45
+		"piercing" .2
+	description "Developed by Lovelace and favored by the Navy, the Particle Cannon makes up for its low shield damage with its high range and ability to knock back hostile ships."
+	description "	The stresses endured by ships on the recieving end of this cannon are too much for most hulls to bare, leading to heafty damage even while their shields are still active."
 	
+effect "particle impact"
+	sprite "effect/particle impact"
+		"no repeat"
+		"frame rate" 30
+	sound "explosion small"
+	"lifetime" 20
+	"random angle" 2
+	"random spin" 10
+	"velocity scale" -.05
 
 outfit "Plasma Cannon"
 	category "Forward Guns"
