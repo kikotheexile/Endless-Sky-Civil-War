@@ -3364,7 +3364,7 @@ mission "FW Senate 1B"
 
 
 
-mission "FW Flamethrower 1"
+mission "FW Ion Rain 1"
 	landing
 	name "Weapon Testing"
 	description "When you have time, report to <destination>, where Barmy Edward has another weapon he would like you to test."
@@ -3382,13 +3382,13 @@ mission "FW Flamethrower 1"
 
 
 
-mission "FW Flamethrower 2"
+mission "FW Ion Rain 2"
 	landing
 	name "Weapon Testing"
 	description "A test ship with new weaponry is in orbit around <planet>. Fight and disable it (but do not board or destroy it!) and then land to give Barmy Edward feedback on its performance."
 	source Rust
 	to offer
-		has "FW Flamethrower 1: done"
+		has "FW Ion Rain 1: done"
 	
 	on offer
 		conversation
@@ -3416,35 +3416,35 @@ mission "FW Flamethrower 2"
 		ship "Doombat" "Doombat"
 	
 	on complete
-		event "flamethrower available" 30
-		log "Assisted Barmy Edward with another weapon test: this time, a flamethrower weapon that works by overheating and disabling its target rather than dealing lots of damage to it. It may or may not be useful in actual combat."
+		event "Ion Rain available" 30
+		log "Assisted Barmy Edward with another weapon test: this time, a Ion Rain weapon that works by overheating and disabling its target rather than dealing lots of damage to it. It may or may not be useful in actual combat."
 		conversation
 			scene outfit/flamethrower
-			`You head to the hangar to meet up with Barmy Edward, and find him tinkering with a large gun you don't recognize. Presumably, this is the flamethrower that you were just attacked with in orbit. "It runs on hyperspace fuel, you see," he says. "So, what did you think?"`
+			`You head to the hangar to meet up with Barmy Edward, and find him tinkering with a large gun you don't recognize. Presumably, this is the spark cannon that you were just attacked with in orbit. "There are no mistakes, just happy accidents." He humms to himself, before addressing you. "So, what did you think?"`
 			choice
 				`	"It's a terrifying weapon."`
 					goto terrifying
 				`	"It looks impressive, but it didn't do very much damage."`
 					goto damage
-				`	"Your flamethrower doesn't seem to work very well."`
+				`	"Your spark cannon doesn't seem to work very well."`
 					goto bad
 			label terrifying
-			`	"Isn't it?" he says. "Mostly useful against small ships, of course, or ships that are running way too close to their thermal thresholds. But the ability to temporarily disable a ship without even dropping its shields first could be quite useful in certain tactical situations."`
+			`	"Isn't it?" he says. "Mostly useful as support and interdiction, of course. But the ability to temporarily disable a ship without even dropping its shields first could be quite useful in certain tactical situations."`
 				goto available
 			label damage
-			`	"No, doing damage isn't the point," he says. "The idea is to heat up the target to the point where it goes into emergency thermal shutdown. Basically a way to temporarily disable even a ship with full shields. Of course, big ships can absorb an awful lot of heat without changing temperature much, so I suspect it will be most useful against smaller targets."`
+			`	"No, doing damage isn't the point," he says. "The idea is to slow down the target to the point where it can't run or jump away. Basically a way to temporarily disable even a ship with full shields. Of course, big ships have turrets, so I suspect it will be most useful against smaller targets."`
 				goto available
 			label bad
-			`	"Oh." He seems somewhat dejected. "Well, if you were flying a smaller ship, you might think differently. Or if your ship didn't have adequate cooling. My idea was to target pirate ships with those illegal modified blasters that run hotter than usual."`
+			`	"Oh." He seems somewhat dejected. "Well, if you were flying a smaller ship, you might think differently. My idea was to target pirate ships that use hit and run tactics, to prevent them from escaping."`
 				goto available
 			label available
-			`	"Anyway," he continues, "I should have an initial model for sale in a month or so. I'll be interested to see what uses you or anyone else might find for them. Anyway, thanks for your help." You say goodbye and head back to your ship.`
+			`	"Anyway," he continues, "I should have an initial model for sale to Free Worlds pilots in a month or so. I'll be interested to see what uses you or anyone else might find for them. Anyway, thanks for your help." You say goodbye and head back to your ship.`
 
 ship "Fury" "Doombat"
 	add attributes
 		"self destruct" 1
 	outfits
-		#"Flamethrower" 4
+		"Ion Rain" 4
 		"nGVF-BB Fuel Cell"
 		"Supercapacitor"
 		"D14-XS Shield Generator"
@@ -4299,11 +4299,11 @@ mission "FW Southern Battle 1B"
 		ship "Elpis" "F.S. Sequoia"
 		ship "Elpis" "F.S. Sitka"
 		ship "Elpis" "F.S. Rosewood"
-		ship "Fury (Flamethrower)" "F.S. Montag"
-		ship "Fury (Flamethrower)" "F.S. Faber"
-		ship "Fury (Flamethrower)" "F.S. Beatty"
-		ship "Fury (Flamethrower)" "F.S. Mildred"
-		ship "Fury (Flamethrower)" "F.S. Clarisse"
+		ship "Fury (Ion Rain)" "F.S. Montag"
+		ship "Fury (Ion Rain)" "F.S. Faber"
+		ship "Fury (Ion Rain)" "F.S. Beatty"
+		ship "Fury (Ion Rain)" "F.S. Mildred"
+		ship "Fury (Ion Rain)" "F.S. Clarisse"
 	
 	on visit
 		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
@@ -4366,11 +4366,11 @@ mission "FW Southern Battle 2"
 		ship "Elpis" "F.S. Sequoia"
 		ship "Elpis" "F.S. Sitka"
 		ship "Elpis" "F.S. Rosewood"
-		ship "Fury (Flamethrower)" "F.S. Montag"
-		ship "Fury (Flamethrower)" "F.S. Faber"
-		ship "Fury (Flamethrower)" "F.S. Beatty"
-		ship "Fury (Flamethrower)" "F.S. Mildred"
-		ship "Fury (Flamethrower)" "F.S. Clarisse"
+		ship "Fury (Ion Rain)" "F.S. Montag"
+		ship "Fury (Ion Rain)" "F.S. Faber"
+		ship "Fury (Ion Rain)" "F.S. Beatty"
+		ship "Fury (Ion Rain)" "F.S. Mildred"
+		ship "Fury (Ion Rain)" "F.S. Clarisse"
 		ship "Behemoth (Proton)" "F.S. Javontay"
 		ship "Behemoth (Proton)" "F.S. Montavion"
 		ship "Blackbird" "F.S. Darkstar"
@@ -5507,7 +5507,7 @@ mission "FW Bloodsea 1.1B"
 			variant
 				"Raven (Afterburner)" 2
 				Hawk 2
-				"Fury (Flamethrower)" 3
+				"Fury (Ion Rain)" 2
 				Sparrow 5
 	
 	on complete
@@ -5593,7 +5593,7 @@ mission "FW Bloodsea 1.2A"
 				"Firebird (Plasma)"
 				"Raven (Afterburner)" 2
 				"Hawk (Rocket)" 2
-				"Fury (Flamethrower)" 3
+				"Fury (Ion Rain)" 2
 				Sparrow 5
 		ship "Leviathan" "Freedom"
 		ship "Manta" "Lucifer"
@@ -7540,7 +7540,7 @@ mission "FWC Cebalrai 1B"
 			variant
 				"Elpis"
 				"Bastion"
-				"Fury (Flamethrower)" 4
+				"Fury (Ion Rain)" 4
 		fleet
 			names "free worlds capital"
 			variant
@@ -7768,7 +7768,7 @@ mission "FWC Checkmate 1"
 				"Elpis"
 				"Skein"
 				"Finch" 6
-				"Fury (Flamethrower)" 4
+				"Fury (Ion Rain)" 4
 		fleet
 			names "free worlds capital"
 			variant
