@@ -3416,7 +3416,7 @@ mission "FW Ion Rain 2"
 		ship "Doombat" "Doombat"
 	
 	on complete
-		event "Ion Rain available" 30
+		event "ion rain available" 30
 		log "Assisted Barmy Edward with another weapon test: this time, a Ion Rain weapon that works by overheating and disabling its target rather than dealing lots of damage to it. It may or may not be useful in actual combat."
 		conversation
 			scene outfit/flamethrower
