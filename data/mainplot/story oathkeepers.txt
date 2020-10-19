@@ -26,12 +26,12 @@ mission "Oathkeeper Intro"
 		conversation
 			`As you're passing a local restaurant, a familiar face approaches. Captain Jane Mulgrew calls over to you, "Hey, Captain <last>! It's good to see you again. I heard you became a contractor, and that's even better! We're short-handed with the war and all, so we can always use good pilots."
 			`	"Let's get right into it, shall we? The hyperspace relay system here is in a dreadful state, and I'd like some help fixing it up, so that the Oathkeepers can keep up with the Northern Union anarchists around here. For now, I just need you to take me and my assistants to the Hassaleh system with our equipment so we can install a sensor. It is a little bit out of the way, but I'm sure you're used to that."`
-				choice
-					`	"Sure, I'll go fire up the engines."`
-					`	"Can it wait? I'm a little busy right now."`
-						defer
-				`	"Great! I'll get everything loaded up and we can get to work."`
-					accept
+			choice
+				`	"Sure, I'll go fire up the engines."`
+				`	"Can it wait? I'm a little busy right now."`
+					defer
+			`	"Great! I'll get everything loaded up and we can get to work."`
+				accept
 	on accept
 		log "Escorted an Oathkeeper fleet north to Farpoint and met Captain Jane Mulgrew again. She asked for help setting up a sensor relay in Hassaleh nearby."
 	on visit
@@ -184,14 +184,15 @@ mission "Oathkeeper Scouting 3"
 	on offer
 		conversation
 			`Not long after stepping out of your ship, a stranger in a Navy uniform flags you down. "Captain Mulgrew is in a meeting right now, but she'd like you to put up some sensors, if you'll just follow me.`
-				choice
-					`	"Ugh, more sensors? Do you guys do anything else around here?"`
-						label sensors
-					`	"Know what the meeting's about?"`
-						goto meeting
-					`	"No, I don't think I will. Maybe later."`
-						defer
-					`	"Alright, my ship's this way, let's go!"`
+			choice
+				`	"Ugh, more sensors? Do you guys do anything else around here?"`
+					label sensors
+				`	"Know what the meeting's about?"`
+					goto meeting
+				`	"No, I don't think I will. Maybe later."`
+					defer
+				`	"Alright, my ship's this way, let's go!"`
+					accept
 			label sensors
 			`	The officer snorts, "I mean, if you werent a contractor, I'm sure you could get reassigned to the frontlines."`
 			`	You're interruped by the sound of an alarm, and the officer in front of you looks around. "Wait, an invasion? Oh man, oh jeeze! You, uh, you had better go get to your ship. I'm sure they'll need all the help they can get in orbit!"`
@@ -214,7 +215,7 @@ mission "Oathkeeper Scouting 3"
 mission "Oathkeeper Esort Intro"
 	name `Deliver a message to Farpoint`
 	to offer
-		has "Oathkeeper Scouting 3" complete
+		has "Oathkeeper Scouting 3: complete"
 	source "Maelstrom"
 	destination "Farpoint"
 	
@@ -222,13 +223,13 @@ mission "Oathkeeper Esort Intro"
 		conversation
 			`You find Mulgrew's ship, and nearly ten other pilots are with her, contractors from the look of it. "Thank you for meeting me all the way out here, and for all the work you've done in developing the advance notice and communications network here! It's been essential for repelling these raids."`
 			`	Mulgrew starts giving jobs to the contractors, but she seems to be saving you for last. Once the rest have dispersed, she approaches you and speaks in a hushed, slightly panicked voice. "Things are not going well. Considering the raids recently, we can only assume that the whole communications network has been compromised. This is a major emergency! I need you to take a message to my superiors, I'll send it to you later. It's encrypted just in case, but don't open it! It's classified."`
-				choice
-					`	"This is a bit off topic, but why are you on Maelstrom?"`
-						goto maelstrom
-					`	"Sounds dangerous. Let me make some last minute preparations, I'll be back."`
-						defer
-					`	"I'm on it! Straight to Farpoint."
-						accept
+			choice
+				`	"This is a bit off topic, but why are you on Maelstrom?"`
+					goto maelstrom
+				`	"Sounds dangerous. Let me make some last minute preparations, I'll be back."`
+					defer
+				`	"I'm on it! Straight to Farpoint."
+					accept
 			label maelstrom
 			`	"Well, I had to make a report on- Wait, I can't talk about that with you! Sorry, it's important. You'll just have to take my word for it."
 			choice
@@ -252,7 +253,7 @@ mission "Oathkeeper Esort Intro"
 mission `Oathkeeper Escort`
 	name `Escort Humanitarian Corps to Betelgeuse`
 	to offer
-		has "Oathkeeper Escort Intro" completed
+		has "Oathkeeper Escort Intro: complete"
 	source "Farpoint"
 	destination "Prime"
 	
@@ -294,7 +295,7 @@ mission `Oathkeeper Escort`
 mission "Oathkeeper Escort 2"
 	name `Pick up repair teams from Valhalla`
 	to offer
-		has "Oathkeeper Escort" complete
+		has "Oathkeeper Escort: complete"
 	source "Prime"
 	destination "Valhalla"
 	
@@ -345,10 +346,11 @@ mission "Oathkeeper Escort 2"
 	on complete
 		dialog `The convoy arrives safely, and after a few hours of waiting you hear that the negotiation team was successful. An officer reports that the Deep will send supplies, on the condition that your convoy escort a caravan fleet going to Prime. They send you <payment> and inform you that you should be ready to leave with the fleet.`
 		payment 40000
+
 mission "Oathkeeper Escort 2.1"
 	name `Escort caravan fleet to Prime`
 	to offer
-		has "Oathkeeper Escort 2" complete
+		has "Oathkeeper Escort 2: complete"
 	origin "Valhalla"
 	destination "Prime"
 	
@@ -356,7 +358,7 @@ mission "Oathkeeper Escort 2.1"
 		conversation
 			`It's not hard to find the caravan fleet as a very large portion of the station is dedicated to preparing it for departure. It's a little more difficult to find superiors in the organized chaos. Eventually you make your way to the Navy officer in charge, who is addressing a couple dozen pilots. This now includes you, as well as some other merchants, and Navy pilots. "We have a big fleet here, and the caravan has its own defenses, so this should be a quick, easy escort from here to Prime. Any questions?"`
 			choice
-				`	"Uh, why do we even need escorts?"`
+				`	"Why do we even need escorts?"`
 					goto escorts
 				`	"When do we get to work?"`
 					goto work
@@ -502,12 +504,12 @@ mission "Oathkeeper Escort 2.1"
 			`Despite the ambush, with the help of the StarBlade and the escort fleet, you've managed to repel the Northern Union raid. The Navy calls for all the contractors to attend a meeting, and at the meeting it's you and roughly a dozen other contractors being addressed by a bored-looking, low-ranking Navy officer. "Alright, thanks for going on this mission on such short notice. With the StarBlade out there, this place will be perfectly safe, so take your <payment> and you can go find another job."`
 			choice
 				`	"What even is the StarBlade?"`
-					goto Veles
+					goto veles
 				`	"Know where I could find another job?"`
 					goto job
 				`	Take your money and go find another job.`
 					goto end
-			label Veles
+			label veles
 			`	The officer seems surprised you don't know about it already. "Uh, the Star Blade? That huge experimental warship they've been developing here? It's kind of a big deal, I mean you saw how it smoked those Northern Union ships right? Anyway dismissed."`
 			`	Another merchant pulls you aside, "It's one of the new class of warships, the Battle Cruiser. It, and it's sister ships are the most powerful ships in the whole of human space with the exception of some prototypes. They are billed as cruise ships, but..." She trails off. "Anyway go visit the shipyard Kiosk, you'll be able to see from there.`
 				goto end
