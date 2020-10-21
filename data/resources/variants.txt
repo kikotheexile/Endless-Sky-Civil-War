@@ -814,9 +814,9 @@ ship "Fury" "Fury (Bomber)"
 		"Hyperdrive"
 		
 
-ship "Fury" "Fury (Flamethrower)"
+ship "Fury" "Fury (Ion Rain)"
 	outfits
-		#"Flamethrower" 4 
+		"Ion Rain" 4 
 		"nGVF-BB Fuel Cell"
 		"Supercapacitor"
 		"D14-XS Shield Generator"
