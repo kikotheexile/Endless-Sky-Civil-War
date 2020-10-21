@@ -2106,12 +2106,12 @@ outfit "Typhoon Launcher"
 		"turn" 1.5
 		"homing" 4
 		"optical tracking" .9
-		"shield damage" 20
+		"shield damage" 200
 		"hull damage" 880
-		"piercing" .9
+		"piercing" .2
 		"hit force" 450
 		"missile strength" 40
-	description "Typhoon Torpedoes are an improved torpedo technology; they do considerably more damage than ordinary torpedoes. However, they are also much slower, because they are intended mostly for use against large and slow-moving capital ships."
+	description "After suffering setbacks from the Free Worlds and Northern Union, the Republic contracted out weapons development to Deep Sky. Incorporating data from battles on both fronts, the Typhoon Torpedo was born. An incredibly fast, insanely powerful torpedo designed to overwhelm smaller and slower ships."
 
 effect "typhoon fire"
 	sprite "effect/typhoon fire"
