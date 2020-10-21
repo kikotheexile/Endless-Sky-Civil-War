@@ -816,14 +816,15 @@ ship "Fury" "Fury (Bomber)"
 
 ship "Fury" "Fury (Ion Rain)"
 	outfits
-		"Ion Rain" 4 
-		"nGVF-BB Fuel Cell"
-		"Supercapacitor"
-		"D14-XS Shield Generator"
-		"Ramscoop"
-		"X2700 Ion Thruster"
-		"X2200 Ion Steering"
-		"Hyperdrive"
+		Supercapacitor
+		Hyperdrive
+		"LP036a Battery Pack"
+		"X1200 Ion Steering"
+		"X1700 Ion Thruster"
+		"Ion Rain" 2
+		"KP-6 Photovoltaic Panel" 2
+		"nGVF-AA Fuel Cell"
+		"S3 Thermionic"
 
 
 ship "Fury" "Fury (Gatling)"
