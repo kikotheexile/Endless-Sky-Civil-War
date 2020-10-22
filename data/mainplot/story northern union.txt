@@ -1339,32 +1339,3 @@ mission "NU Marina 3b"
 		freelance ++
 	on fail
 		freelance ++		
-# Northern Union Resources
-
-#governments
-government "Betelgeuse"
-	"player reputation" 1
-	"bribe" 0
-
-government "Syndicated Security"
-	"player reputation" -1000
-	"bribe" 0
-	"fine" 0
-	"hostile hail" "hostile syndicate"
-
-government "Gaven"
-	"player reputation" 1
-	"bribe" 0
-	"attitude toward"
-		"Syndicated Security" -.1
-		"Cartel" -1
-
-#outfits
-outfit "Lucky"
-	category "Hand to Hand"
-	cost 500
-	thumbnail "outfit/plasmapistol"
-	"capture attack" .9
-	"capture defense" .9
-	"unplunderable" 1
-	description "Lucky is a heavily modified plasma pistol turned scattergun, making it incredibly effective in close quarters fights and down shipboard hallways."
