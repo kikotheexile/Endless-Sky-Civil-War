@@ -432,14 +432,13 @@ mission "Story Direction 1"
 			`	The man begins to walk away, then turns back: "You know, I wasn't selected by accident. I took the initiative, and investigated the Northern Union. Did some jobs for them, built up a network of contacts, then turned them all into the Republic. They offered me this job not long after. With these new 'Free Worlds' terrorists forming to the south, I'm sure you'll find opportunities to serve our great Republic if you play along with them a bit. You can also always do what I did: check out the worlds south of Kornephoros, or north of Alcyone and east of Almaaz. Pirates and terrorists are always desperate for fresh merchant faces to do their dirty work. Find a name and turn them in."`
 				accept
 
-mission "Meeting an Alpha 2b"
+mission "Meeting an Alpha 0b"
 	name "Turn in Peg's communicator"
 	description "Visit <destination> and turn over the communicator to the authorities."
 	source
-		attributes "near earth" "paradise"
 		government "Republic"
 	to offer
-		has "Meeting an Alpha 1: accepted"
+		has "Meeting an Alpha 0: complete"
 	to fail
 		has "chosen sides"
 	destination Farpoint
@@ -450,61 +449,14 @@ mission "Meeting an Alpha 2b"
 				`	(Sure.)`
 				`	(Not right now.)`
 					defer
-			
 			`	You navigate your way through the spaceport before finally coming to a stop just outside of the Republic office. Like most Republic offices, you have to scan your ID or pilot's license upon entry. There is an officer serving as a receptionist who asks how he can help you.`
 			choice
 				`	"I found this and was hoping maybe you could return it to its rightful owner."`
 					goto found
-				`	"I had a meeting with someone I believe is an Alpha. This is his underling's communicator."`
-					goto alpha
 				`	"Nevermind, I was just looking for the bathroom."`
 					defer
 			label found
 			`	The receptionist grabs the communicator and quickly finds that it is unlocked. As he reads through it, his eyes widen: "You say you just found this, huh? Well, Captain, this communicator belongs to Peg, an infamous pirate warlord." He pauses for a moment while going through the messages, before slamming his hand on the desk: "Captain, I could kiss you! You just earned me a promotion. Information on a real, live Alpha! We have information on Gaven! Captain, we'll call you when we need more information, but for now you're free to go." He hands you <payment> and rushes you out the door.`
-				decline
-			label alpha
-			`	He rolls his eyes, clearly thinking this is some sort of prank: "Oh, an Alpha, huh? I'm sure you're being entirely honest and I won't have to arrest you for attempting to file a false report." He takes the communicator from you, and as he looks through it, his eyes widen: "Oh my, no, this is good. This is very, very good. I can hardly believe this. Look, I need to talk this over with my superiors. We have your information, and will call you if we need to bring you in for an interview. Thank you so much for bringing this to us!" He hands you <payment> and rushes you out the door.`
-				decline
-	on decline
-		payment 275000
-		log "Turned over Warlord Peg's communicator to the Republic. They say they'll call me if they need more information."
-		set "pegs communicator: done"
-		"assisted republic" ++
-
-mission "Meeting an Alpha 2b"
-	name "Turn in Peg's communicator"
-	description "Visit <destination> and turn over the communicator to the authorities."
-	source
-		attributes "near earth" "paradise"
-		government "Republic"
-	to offer
-		has "Meeting an Alpha 1: accepted"
-	to fail
-		has "chosen sides"
-	destination Farpoint
-	on offer
-		conversation
-			`This planet is very likely to have a Republic office. Would you like to turn in the pirate communicator you found?`
-			choice
-				`	(Sure.)`
-				`	(Not right now.)`
-					defer
-				`	(And betray the North? Never!)
-					decline
-			
-			`	You navigate your way through the spaceport before finally coming to a stop just outside of the Republic office. Like most Republic offices, you have to scan your ID or pilot's license upon entry. There is an officer serving as a receptionist who asks how he can help you.`
-			choice
-				`	"I found this and was hoping maybe you could return it to its rightful owner."`
-					goto found
-				`	"I had a meeting with someone I believe is an Alpha. This is his underling's communicator."`
-					goto alpha
-				`	"Nevermind, I was just looking for the bathroom."`
-					defer
-			label found
-			`	The receptionist grabs the communicator and quickly finds that it is unlocked. As he reads through it, his eyes widen: "You say you just found this, huh? Well, Captain, this communicator belongs to Peg, an infamous pirate warlord." He pauses for a moment while going through the messages, before slamming his hand on the desk: "Captain, I could kiss you! You just earned me a promotion. Information on a real, live Alpha! We have information on Gaven! Captain, we'll call you when we need more information, but for now you're free to go." He hands you <payment> and rushes you out the door.`
-				decline
-			label alpha
-			`	He rolls his eyes, clearly thinking this is some sort of prank: "Oh, an Alpha, huh? I'm sure you're being entirely honest and I won't have to arrest you for attempting to file a false report." He takes the communicator from you, and as he looks through it, his eyes widen: "Oh my, no, this is good. This is very, very good. I can hardly believe this. Look, I need to talk this over with my superiors. We have your information, and will call you if we need to bring you in for an interview. Thank you so much for bringing this to us!" He hands you <payment> and rushes you out the door.`
 				decline
 	on decline
 		payment 275000
@@ -681,6 +633,7 @@ mission "rns oathkeeper split"
 		set "rns went north"
 		log "I have made the decision to continue working in the North. It seems a lot safer than being stuck in the middle of a civil war."
 		dialog `This far from the South, it seems unlikely that you'll return to the Free Worlds conflict anytime soon. It might be a good idea go find someone work in the spaceport.`
+		event "oathkeepers founded"
 
 mission "rns in the action"
 	name "Go to New Sahara and remain in the South"
@@ -697,6 +650,7 @@ mission "rns in the action"
 		set "rns went south"
 		log "I have made the decision to continue working in the South. It may be dangerous, but the Navy forces down here need all the help they can get."
 		dialog `This far from the North, it seems unlikely that you'll return to Farpoint anytime soon. It might be a good idea go find someone work in the spaceport.`
+		event "oathkeepers founded"
 
 # From here on in, this file will be handling the Republic Navy Humanitarian Corps. in the south, including their opposition to the Free Worlds and resistance against the Wolfpack.
 # If you are looking for oathkeeper content, look to "story oathkeepers.txt"
