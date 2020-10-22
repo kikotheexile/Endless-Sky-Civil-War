@@ -11,7 +11,7 @@
 #note: Northern Union specific resources, including one-off governments and unique outfits are included here under # Northern Union Resources
 
 # Search # Northern Union to jump to break. For a specific break, include (without quotes) "Intro", "Start", "Middle", "Option 1", "Option 2",
-# "Side Plots", "War Jobs," "Resources" or search any specific keyword
+# "Side Plots", "War Jobs" or search any specific keyword
 
 
 # Northern Union Intro / Pact
@@ -109,6 +109,7 @@ mission "Northern Union Escort 1B"
 				accept
 	
 	on complete
+		"reputation: Northern Union" += 10
 		payment 400000
 		conversation
 			`You are met at the spaceport by the same woman from before. She thanks you and the other captains for your service, and pays you each <payment>. "This was too easy," she says, "so of course we're going to push our luck. Meet me at the nearest spaceport bar if you are interested in making some more money."`
@@ -218,7 +219,8 @@ mission "Northern Union Escort 2B"
 		payment 400000
 		conversation
 			`You are met at the spaceport by Ruby again. She thanks you and the other captains for your service, and pays you each <payment>. "Some of these ships look a little scratched up," she says, "that's not a good sign. I think we might have one last run in us before I need to find fresh faces. I'll start recruiting now. Come find me in the spaceport if you are interested in trying once again."`
-		"reputation: Cartel" = -1000
+		"reputation: Northern Union" += 10
+		"reputation: Cartel" -= 10
 	on decline
 		freelance ++
 	on fail
@@ -281,6 +283,9 @@ mission "Northern Union Escort Finale"
 		dialog "You have reached <planet>, but you either left part of the convoy behind, or there are still Cartel ships in orbit. Better depart to take care of that!"
 
 	on complete
+		"reputation: Northern Union" += 10
+		"reputation: Cartel" -= 10
+		"reputation: Syndicate" -=5
 		"assisted northern union" ++
 		payment 800000
 		dialog `Ruby contacts you soon after you land. "Very nicely done," she says, "not many merchants are willing to do this kind of heavy lifting. Your reward of <payment> has been transferred to your account, and I also put in a good word for you with the Northern Union's partnership committee.`
@@ -298,7 +303,7 @@ mission "Meeting an Alpha 0"
 		near Arneb 1 10
 	destination Haven
 	to offer
-		has "event: remembrance day"
+		has "event: war begins"
 	passengers 1
 	to fail
 		has "chosen sides"
@@ -480,6 +485,8 @@ mission "Meeting an Alpha 1"
 	on complete
 		dialog `Soon after you land, a courier comes to your ship and pays you <payment> in exchange for your sensor logs regarding the <npc>. "If you would be interested in continuing to work for my Godlord, render yourself before him at the Rusted Wheel Cafe. He has a gift for you."`
 		payment 20000
+		"reputation: Northern Union" += 10
+		"reputation: Republic" -= .1
 	on decline
 		freelance ++
 	on fail
@@ -563,6 +570,8 @@ mission "Meeting an Alpha 2"
 				decline
 
 	on complete
+		"reputation: Northern Union" += 10
+		"reputation: Syndicate" -= 5
 		conversation
 			`	As you arrive in orbit above <destination>, Dylan presents you with a box. Inside it is a plasma pistol with "Lucky" scratched on the side.`
 			`	In her ever aggressive voice, Dylan says: "My master believes this gun will be of use to you on this quest. Meet me near the landing pad closest to the outfitter as soon as you make yourself inconspicuous. Now, go!"`
@@ -640,6 +649,9 @@ mission "Meeting an Alpha 3"
 		dialog "You have reached <planet>, but you left Gaven's ship behind! Better depart and wait for them to arrive in this star system."
 
 	on complete
+		"reputation: Northern Union" += 10
+		"reputation: Republic" -= 2
+		"reputation: Syndicate" -= 2
 		"assisted northern union" ++
 		payment 100000
 		dialog
@@ -657,7 +669,6 @@ mission "NU Bounty 1"
 		planet Haven
 	destination Haven
 	to offer
-		"combat rating" > 150
 		random < 85
 		not "chosen sides"
 	passengers 1
@@ -718,6 +729,7 @@ mission "NU Bounty 1"
 		dialog `The <npc> has been eliminated. You can claim the bounty payment by returning to <destination>.`
 	
 	on complete
+		"reputation: Northern Union" += 10
 		payment 20000
 		dialog `When you drop off Mouser, he tells you to stay put for a moment. He returns some time later with a rather paltry sum of <payment>, and congratulates you: "A good payment for a hard-fought battle. Look me up around the spaceport here on Haven if you are interested in more work." He pats you on the shoulder and walks away.`
 	on decline
@@ -875,6 +887,7 @@ mission "NU Bounty 2B"
 		ship "Firebird" "Can Nibble"
 	
 	on complete
+		"reputation: Northern Union" += 10
 		set "captured bounty"
 		dialog
 			`You report to Mouser that you have killed the <npc> and provide sensor logs as evidence. He thanks you, but oddly enough doesn't pay you: "Always a pleasure working with you, Captain. I'll transfer your half of the money to you as soon as I am paid."`
@@ -929,6 +942,7 @@ mission "NU Bounty 3"
 		ship "Bakunawa" "Bakunawa"
 
 	on complete
+		"reputation: Northern Union" += 10
 		"assisted northern union" ++
 		payment 2000000
 		dialog
@@ -1026,6 +1040,7 @@ mission "NU Marina 1B"
 				accept
 	
 	on complete
+		"reputation: Northern Union" += 10
 		outfit "Fragmentation Grenades" 1
 		conversation
 			`When you land on <planet>, before your engines have even had a chance to cool, Sally and her friend scurry off through the airlocks into the spaceport. You find that they left one box of fragmentation grenades behind with a piece of paper taped to the top. The paper reads "Payment" on one side, and has a set of instructions to find Marina on the backside.`
@@ -1116,8 +1131,9 @@ mission "NU Marina 2B"
 			`	"Anyway," he says, "We really can't just stand around here doing nothing. We had best return to Sporehold. No need to dally, my supervisor won't miss me."`
 				accept
 	on complete
+		"reputation: Northern Union" += 10
 		conversation
-			`As soon as you land, "Big" Randy exits your ship and excitedly rushes out of your ship without saying a word. This is presumably to find Marina. It looks like the only way to continue helping the cause is to track them both down.`
+			`As soon as you land, "Big" Randy excitedly rushes out of your ship without saying a word. This is presumably to find Marina. It looks like the only way to continue helping the cause is to track them both down.`
 	on decline
 		freelance ++
 	on fail
@@ -1315,6 +1331,8 @@ mission "NU Marina 3b"
 			`	Not long after returning to your ship, you recieve notice that all of the prisoners have been freed, and that the other teams have found the docked ships. Sally rejoins you, and tells you that it's time to get back to Sporehold.`
 				launch
 	on complete
+		"reputation: Northern Union" += 10
+		"reputation: Cartel" -= 25
 		"assisted northern union" ++
 		payment 1000000
 
