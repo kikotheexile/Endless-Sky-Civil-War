@@ -622,9 +622,9 @@ planet Freedom
 planet Furnace
 	attributes core military moon
 	landscape land/bwerner4
-	description `Furnace is a nearly uninhabited world, used mostly as a waypoint for shipping and as a staging point for the Syndicate fleets that seek to keep this region of space free from pirates. The atmosphere is barely thick enough to be breathable, and none of the plants that grow here are useful for eating. However, because it is only a large moon instead of a full-sized planet, moving cargo and fleets of ships to and from its surface is fairly easy and inexpensive.`
-	description `	Conducting any business here is a nightmare of tedium. Syndicate doctrine claims that corporate structure and process produce a leaner and more effective military force without the perceived wastage of the Republic Navy. But in practice, they seem to have combined all the worst aspects of military and corporate bureaucracy.`
-	spaceport `The spaceport is mostly a military base. Uniformed crew members hurry back and forth without giving you a second glance. The food in the mess hall is standard military fare, hearty but bland and unappetizing, and there are few shops or other services catering to civilians.`
+	description `Furnace is uninhabited beyond its use as a waypoint for shipping for the Syndicate fleets that seek to keep this region of space free from pirates. The atmosphere is barely thick enough to be breathable, and none of the plants that grow here are useful for eating. Because it is a large moon instead of a full-sized planet, moving ships and cargo to and from its surface is easy and inexpensive.`
+	description `	Conducting business here is a tedius nightmare. Syndicate doctrine claims that corporate structure produces a leaner and more effective military force without the abundant waste of the Republic Navy. In practice, they seem to have combined all the worst aspects of military and corporate bureaucracy.`
+	spaceport `The spaceport is a military base. Uniformed crew members watch visitors with interest as they go about their business. The food in the mess hall is standard military fare; filling, free of major allergens, and absolutely loaded with salt. There are no shops or other services catering to civilians.`
 	outfitter "Syndicate Basics"
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
@@ -637,9 +637,9 @@ planet Furnace
 planet Geminus
 	attributes paradise factory mining
 	landscape land/mountain18-harro
-	description `Geminus, although not the most hospitable of worlds, is a young enough planet that large stores of iron, titanium, and other metals are easily accessible near the surface. For that reason, it has become one of the Republic's primary shipyards. More than half of the warships in the navy were constructed here.`
-	description `	The constant volcanic activity leaves the planet perpetually shrouded in clouds of ash and fog, so that being outside means being in a twilight haze with low visibility. Probably in compensation for this, interior spaces tend to be brightly lit and painted in bold colors.`
-	spaceport `Like everything else on Geminus, the spaceport is not terribly pretty, but is functional and efficient. Each of the wide hallways is marked out like a road, with space in the center for electric carts carrying cargo, while pedestrians are relegated to the edges.`
+	description `While Geminus is far from hospitable, large stores of iron, titanium, and other metals are easily accessible near its surface. For that reason, it has become one of the Republic's primary shipyards, with more than half of the Navy's warships proudly bearing the stamps of being created here.`
+	description `	The constant volcanic activity leaves the planet perpetually shrouded in clouds of ash and fog; it's so called "Twilight Haze" a popular landscape for aspiring artists.`
+	spaceport `In addition to its function and efficiency, the spaceport is adorned with murals and tapestries in vibrant colors, each one signed by a different visiting artist. The wide hallways are marked out like roads, with space in the center for electric carts carrying cargo, while pedestrians are relegated to the edges.`
 	spaceport `	The hub of the spaceport is a food court with a ring of shops in the center and seating on the outside, where you can look out of plate glass windows at the lava fields and caldera outside. By night, you can see the volcanic glow all around the horizon.`
 	shipyard "Basic Ships"
 	shipyard "Navy Basics"
@@ -659,9 +659,9 @@ planet Geminus
 planet Gemstone
 	attributes "dirt belt" mining
 	landscape land/lava7-sfiera
-	description `Gemstone is a hot and unpleasant world, mostly due to a smoggy atmosphere high in methane. Much of the surface is covered in rugged mountains, making travel across land very difficult. However, the powerful tectonic forces here have created rich deposits of diamonds, emeralds, and sapphires, which are mined both for use in jewelry and for certain electronic components. Mining a tectonically active world is an insane project, and earthquakes cause frequent cave-ins, but the potential of wealth draws miners here despite the high mortality rate.`
-	description `	The miners are paid on commission on the stones they find. As a result most are dirt-poor, but the miners are full of stories of some distant acquaintance who became mind-bogglingly wealthy after striking a previously untapped gemstone deposit.`
-	spaceport `The spaceport is perched on top of a peak in an older and more stable mountain range. The landing pads here are used both by starships and by the helicopters that bring cargo to and from the mines. Overhead, helicopters fly by carrying heavy loads dangling from cables. A few low cement buildings serve as warehouses, and on the far end of the port, where an explosion would do the least damage if a sudden, severe earthquake struck, large steel tanks hold deuterium for refueling ships. Asphalt roads with flimsy guard rails connect the landing pads to the warehouses.`
+	description `Gemstone is a hot and unpleasant world, its smoggy atmosphere high in methane. Most of the surface is covered in rugged mountains, making land travel tedius. However, the planet's powerful tectonic forces have created rich deposits of diamonds, emeralds, and sapphires, which are mined both for use in jewelry and electronic components. Mining a tectonically active world is a deadly project at best, with earthquakes causing constant cave-ins, but the glimmer of wealth draws miners hoping to spite the odds.`
+	description `	Miners are paid on commission, and while most are dirt-poor, everyone has stories of some distant acquaintance who became mind-bogglingly wealthy after striking a previously untapped gemstone deposit.`
+	spaceport `The spaceport is perched on top of a peak in an older and generally stable mountain range. The landing pads here are used both by starships and the helicopters that bring cargo to and from the mines. Overhead, helicopters buzz by, carrying heavy loads dangling from cables. A few low cement buildings serve as warehouses, and on the far end of the port, where an explosion would do the least damage in the event of a severe earthquake, large steel tanks hold deuterium for refueling ships. Asphalt roads with heavily reinforced guard rails connect the landing pads to the warehouses.`
 	security 0.2
 	tribute 500
 		threshold 2500
@@ -670,9 +670,9 @@ planet Gemstone
 planet Geyser
 	attributes "near earth" oil factory
 	landscape land/bwerner8
-	description `Terraforming can change many things, but it cannot fix low gravity. Geyser was settled in the very first wave of space colonization, before refueling depots were available anywhere but Earth itself, so the only systems that could maintain trade with Earth were those that were only a few jumps away. Today, most of the industry centers around oil drilling and manufacturing, and the remaining workers are those who are too poor to leave.`
-	description `	In recent years, Geyser's economy has not been able to support repairs to the centuries-old terraforming equipment, and as a result the climate has become increasingly arid, and it is difficult to grow food crops here.`
-	spaceport `This spaceport was built seven or eight centuries ago, and its once-grand architecture has now fallen into decay. A ring of hangars with arched cement ceilings surrounds a central complex of warehouse towers, whose upper stories once held food courts and luxury hotel rooms. But now, many of the hangars have collapsed, and the ones that remain have rugged plastic netting bolted to the ceilings to protect ships from falling fragments of cement. Only one of the food courts remains active, and although a few of the hotel rooms are still used, the marble fixtures and tile floors that were once so polished and clean are now chipped and cracked and worn down.`
+	description `Terraforming can work miracles, but low gravity stubbornly remains outside of its pay grade. Geyser was settled in the first wave of space colonization, before refueling depots were avaliable outside of Earth, so the only systems that could maintain trade were those within a short radius. Today, most of the industry centers around oil drilling and manufacturing.`
+	description `	In recent years, Geyser's economy has not been able to support repairs to the centuries-old terraforming equipment, causing the climate to become increasingly arid and difficult to farm.`
+	spaceport `This spaceport was built centuries ago, and its once-grand architecture has now fallen into decay. A ring of hangars with arched cement ceilings surrounds a central complex of warehouse towers, whose upper stories once held food courts and luxury hotel rooms. At present, most of the hangars have collapsed, and the ones that remain have rugged netting bolted to the ceilings to protect ships from falling fragments of cement. Only one of the food courts remains active, and although some hotel still service visitors, the marble fixtures and tile floors that once knew polish and shine bear the dull scars from centuries of abuse and neglect.`
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
 	outfitter "Syndicate Basics"
@@ -685,9 +685,9 @@ planet Geyser
 planet Glaze
 	attributes south tourism
 	landscape land/canyon8
-	description `Glaze is a varied world with everything from sunny beaches to frozen tundra, but it is perhaps best known for its sandstone canyons and deserts. This world's wildlife has never been studied in great detail. Local rumors tell about an alien species of "canyon people" who live in caves in some of the deepest canyons, leading to a constant stream of visiting xenobiologists. The scientific consensus, however, is that these sightings have only been of a reclusive ape-like species that lives in the canyons, and is not known to dig caves or show any other sign of civilization.`
-	spaceport `The spaceport is a tower of glass and steel perched on top of a mesa, overlooking the canyonlands: spires of red and pale yellow stone, with a sprinkling of trees at the lower elevations. A wide highway winds down the side of the mesa, through several tunnels, and the off to the horizon. The port itself is not terribly busy.`
-	spaceport `	You notice quite a few families with children sitting by the windows on the upper stories of the tower, watching starships landing and taking off. Many of them have brought folding chairs or blankets to sit on. That must be what passes for entertainment on this world.`
+	description `Glaze is a varied world with everything from sunny beaches to frozen tundra, but it is best known for sandstone canyons and deserts. Local rumors tell about an alien species of "canyon people" who live in deep canyon caves, tempting even the most skeptical xenobiologists to visit. The current scientific consensus is that these sightings have been of a reclusive ape-like species that lives in the canyons, however no studies or concrete evidence of said apes have been released to the public.`
+	spaceport `The spaceport is a squat tower of glass and steel perched atop a mesa overlooking the canyonlands. Spires of red and pale yellow stone adorn the landscape as far as the eye can see, with a sprinkling of trees dotting the lower elevations. A wide highway winds down the side of the mesa and through several tunnels before dissapearing into the horizon.`
+	spaceport `	Several families sit on the ground at the base of the tower, watching starships landing and taking off. Many of them have brought folding chairs or blankets to sit on, while younger children climb and run about the playground equipment, complete with the orange and blue starship slide thats common throughout the galaxy.`
 	shipyard "Basic Ships"
 	shipyard "Southbound Basics"
 	outfitter "Common Outfits"
@@ -702,10 +702,9 @@ planet Glaze
 planet Glory
 	attributes paradise medical
 	landscape land/sky8
-	description `Elsewhere in the galaxy, people speak dismissively of the "boughten sunshine" that rich terraformed worlds can afford. On Glory, even many of the lakes and hills are artificial, crafted to garden-like perfection. Fittingly, the chief industry on Glory is plastic surgery, along with other medical efforts aimed at prolonging life, funded by rich, elderly folks who have settled here.`
-	description `	Glory is also home to the Academy of Planetary Sciences, the organization at the forefront of terraforming research. The Academy takes on only a handful of apprentices each year, and guards its secrets very closely.`
-	spaceport `The starport is as perfectly sculpted as the rest of the planet, a hive-like structure with hexagonal openings of various sizes for docking bays. Gardens have been planted on the roofs and on terraces on all different levels, and a small artificial river flows from a fountain on the roof down among the terraces and out to the ground below.`
-	spaceport `	It is almost impossible to tell the age of the locals who are walking by: there is a frightening monotony of wrinkle-free, nearly identically proportioned faces. When they speak, only their lips move; their expressions remain mask-like, immobile.`
+	description `Elsewhere in the galaxy, people speak dismissively of the "Overpriced Sunshine" that rich terraformed worlds can afford. On Glory, the lakes and hills are artificial, crafted to idyllic perfection. Naturally, the chief industries on Glory are plastic surgery and medical efforts aimed at prolonging life and libido; well funded by the affluent elderly that call this planet home.`
+	description `	Glory is also home to the Academy of Planetary Sciences, the organization at the forefront of terraforming research. The Academy takes on only a select handful of apprentices each year, each tasked with guarding the expensive secrets with their lives if necessary.`
+	spaceport `The starport is as perfectly sculpted as the rest of the planet, a hive-like structure with hexagonal docking bays. Gardens have been planted on the roofs and on terraces on all different levels, and a bubbling artificial brook flows from a fountain on the roof down around the terraces before recycling back again.`
 	bribe 0.05
 	security 0.6
 	tribute 4300
@@ -715,17 +714,17 @@ planet Glory
 planet Grakhord
 	attributes quarg moon
 	landscape land/badlands6
-	description `Although human beings who do not mind living in low gravity are welcome to settle here, Grakhord is part of Quarg territory, and has been terraformed to meet their environmental needs rather than those of human beings. The full extent of the Quarg mining operations here are not known, but rumors say that they have tunnels reaching down almost halfway to the moon's core, and Quarg ships can also sometimes be seen harvesting hydrogen gas from the upper atmosphere of the gas giant that Grakhord orbits.`
-	spaceport `Here, you feel like a young child lost among a crowd of tall, indifferent adults. The average adult Quarg is over three meters tall, and although they move slowly and gracefully, on their long legs they easily speed by you. Worse, the counters for the merchant exchange, bank, and job board are high enough that you can barely see over them. But, the Quarg have helpfully provided stepping stools stashed under the counters so that shorter humans can carry out business without having to constantly crane their necks upwards.`
+	description `Although human beings comfortable living in low gravity are welcome to settle here, Grakhord is part of Quarg territory, and has been terraformed to meet their environmental needs rather than those of human beings. The full extent of the Quarg mining operations here are not known, but rumors say that they have tunnels reaching down halfway to the moon's core. Quarg ships frequently  harvest hydrogen gas from the upper atmosphere of the gas giant that Grakhord orbits.`
+	spaceport `Human visitors often feel like children lost among in crowd of tall, indifferent adults. The average adult Quarg is over three meters tall, and with their long legs they easily speed by you despite their graceful way of moving. Worse, the counters for the merchant exchange, bank, and job board are high enough that you cannot see over them. While there are slots under the counters where stepping stools are stashed, it is not uncommon for visitors to carry the same stool around with them as they traverse the spaceport, making it often difficult to get your hands on one.`
 	bribe 0
 	security 0.9
 
 planet Greenrock
 	attributes pirate "south pirate"
 	landscape land/sky0
-	description `Greenrock is the closest thing that the pirates in southern human space have to a center of government, but taking the form of large, powerful corporations rather than elected officials. When rival pirate bands seek to negotiate on neutral territory, this is where they meet. Nearly everything is for sale here: illegal weapons, ships customized for pirating, and even slaves.`
-	spaceport `You have heard enough about this port's reputation that you are not surprised to see the slave markets, heavily guarded in case any visitors happen to find themselves in possession of a conscience. Nor are you shocked by the shady establishments catering to all manner of prurient interests. This is, after all, a pirate port, and everything is for sale here.`
-	spaceport `	Everything, in fact, including the very bizarre. At the end of one dark alley you see a shop called "Mike's Mustelids," with weasels and ferrets in cages in the window. Beside them, a fully-grown wolverine glares at you from behind the bars of a large and sturdy cage.`
+	description `Greenrock is the closest thing pirates in southern human space have to a center of government, taking the form of powerful megacorporations rather than elected officials. When rival pirate bands seek to negotiate on neutral territory, this is where they meet. Nearly everything is for sale here: illegal weapons, ships customized for pirating, and unlucky humans.`
+	spaceport `The slave markets are by appointment only, heavily armored guards keeping careful watch over a small group of buildings surrounded by a tall concrete fence.  Dotted amongst cafes and weaponry parlors are establishments catering to any manner of hedonistic interests a visitor may possess.`
+	spaceport `	At the end of one dark alley is a shop called "Mike's Mustelids," with painted weasels and ferrets in cages in the window. Beside them, something akin to a wolverine glares at you from behind the bars of a large, sturdy cage.`
 	shipyard "Southern Pirates"
 	outfitter "Common Outfits"
 	outfitter "Ammo"
@@ -750,9 +749,9 @@ planet Harmony
 planet Haven
 	attributes pirate mining "north pirate" "northern union"
 	landscape land/dune1
-	description `Haven was founded by highly successful "privateers" nearly two centuries ago. Since then, as rival bands of pirates have fought over it, it has changed hands fourteen times, but has never been successfully invaded by the Republic. Numerous small manufacturing shops sell outfits that cannot be bought legally, and there is even a small shipyard where customized ships are sold.`
-	description `	Much of the planet is desert, but with enough moisture to grow enough crops to feed the entire population. Strip mining has turned other parts of the planet into barren wastelands, and has polluted many of the rivers.`
-	spaceport `The spaceport is old and dingy, with piles of litter in the gutters and graffiti on many of the alley walls. Many of the shops are closed, the windows boarded over or covered with yellowing paper. This is an independent world, and a relatively stable settlement, but the effects of its separation from the rest of the galaxy are evident. A few young people carrying large backpacks eye you with interest, perhaps trying to gauge their chances of getting you to give them a cheap lift off-planet.`
+	description `Haven was founded by highly successful privateers nearly two centuries ago. Since then it has been the battleground of rival pirate bands; changing hands countless times, but never falling to the Republic. It has become the capital of the Northern Union. Small manufacturing shops sell outfits that cannot be bought legally, and a small shipyard boasts a collection of customized ships.`
+	description `	While much of the planet is desert, enterprising farmers grow ample crops to feed the warring population. Strip mining has turned other parts of the planet into barren wastelands, polluting many of the rivers.`
+	spaceport `The spaceport hosts a jarring juxtaposition of dingy hallways and boarded over shops with thriving restaurants and brightly lit dance halls. Graffiti is common and while vulgar in places, borders on the artistic masterpiece in others. A pack of young people with large backpacks and spiked jackets eye you with interest, likely gauging their chances of getting a cheap lift off-planet.`
 	shipyard "Northern Union"
 	shipyard "Northern Union Advanced"
 	outfitter "Basic Outfits"
@@ -767,10 +766,10 @@ planet Haven
 planet Haze
 	attributes deep factory
 	landscape land/mfield2
-	description `Haze is a manufacturing world, covered in sprawling cities. It is a relatively prosperous planet, but so far the inhabitants have chosen to spend more of their terraforming budget on climate control than on pollution reduction.`
-	description `	Very few regions of this planet remain untouched by human hands, but a few of the particularly mountainous or marshy areas have been set aside as nature preserves. More than half of the indigenous life forms have gone extinct since human settlement began here four centuries ago.`
-	spaceport `The spaceport is constructed purely for efficiency and functionality. It is a long building, stretching in a straight line across more than a kilometer. Through the center, on tracks elevated at various levels, run monorail trams for carrying passengers and cargo. Along the sides of the building are docking bays alternating with storage rooms. The wide corridors are packed both with people and with robotic freight carts.`
-	spaceport `	As the planet's economy grows and the spaceport becomes too cramped, the port authority simply clears more land and extends the building, the tramways, and the docks out farther along the same line.`
+	description `Haze is a manufacturing world covered in sprawling cities.  While a relatively prosperous planet, due to a viral ad campaign the inhabitants have chosen to spend all of their terraforming budget on climate control, ignoring pollution reduction entirely.`
+	description `	While it has been too little too late for most of the planet's natural beauty, some mountainous and marshy areas have been set aside as nature preserves. More than half of the indigenous life forms have gone extinct since human settlement began here four centuries ago.`
+	spaceport `Consisting of a long building, stretching in a straight line across more than a kilometer, the spaceport is constructed purely for efficiency and functionality. Through the center on tracks elevated at various levels, run monorail trams for carrying passengers and cargo. Along the sides of the building are docking bays and storage rooms. The wide corridors are packed with people and robotic freight carts.`
+	spaceport `	As the planet's economy grows and the spaceport becomes too cramped, the port authority simply clears more land and extends the building, tramways, and docks out further along the same line.`
 	shipyard "Lionheart Basics"
 	outfitter "Basic Outfits"
 	outfitter "Deep Sky Basics"
@@ -783,8 +782,8 @@ planet Haze
 planet Heartland
 	attributes "dirt belt" farming
 	landscape land/city2
-	description `Heartland is a pleasant world, with a geography mostly consisting of low hills, plains, and oceans. The farms here produce bountiful crops, and as a result it has drawn tens of millions of settlers. Many of them now work in factories or assembly lines, in which most of the farm equipment used here and in the surrounding systems is built. Tractors from Heartland are trusted to be well-built and sturdy, and easy to repair; some are still in use that were built over a century ago.`
-	spaceport `The spaceport is a cluster of low buildings. At the center of the port is a special, taller building with glass walls on all sides. It houses the tractor showroom. The farmers visiting the showroom look about as excited as you do when touring a large and well-appointed shipyard. There are tractors with rubber wheels, spiked wheels, and tracks; with plows, combines, balers, and chaser bins; tractors barely big enough to sit on and tractors the size of a small freighter. It's somewhat overwhelming.`
+	description `Heartland is a pleasant world with flat geography. The farms here produce bountiful crops, the promise of such once drawing tens of millions of settlers. Many of them now work in factories building farm equipment. Tractors from Heartland are well-built, sturdy, and easy to repair, with century old models still in use today.`
+	spaceport `The spaceport is a disorganized cluster of low buildings. At the center of the port lies the tractor showroom, a tall building with glass on every side. There are tractors with rubber wheels, spiked wheels, and tracks; with plows, combines, balers, and chaser bins; tractors barely big enough to sit on and tractors the size of a small freighter. Were you in the farming business, this would be your candy store.`
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
 	security 0.2
@@ -795,16 +794,16 @@ planet Heartland
 planet Heatstroke
 	attributes north "northern pirate" mining "northern union"
 	landscape land/badlands2
-	description `Orbiting just a little too close to its host stars, Heatstroke is a completely uninhabitable world. At least so it seems on the surface. The tenacity of the Anarchists of this world has lead to an expansive underground colony. The commune is completely self sufficient, but is open to trade.`
-	spaceport `The spaceport building is the only visible structure on the surface. Standing barely taller than the ever shifting sand dunes`
+	description `Orbiting far too close to its host stars, Heatstroke was once a completely uninhabitable world. Currently, it hosts a tenacious group of Anarchists who have built an expansive underground colony. While the commune is completely self sufficient, it is always open to trade.`
+	spaceport `he spaceport building is the only visible structure on the surface, standing barely taller than the ever shifting sand dunes. A large freight elevator takes you down into a well lit maze made of an old but well-kept mine, with shop booths lining the walls. Art shops are common, selling all variety of prints and paintings, and a large booth taking up an entire corner near the food court sells hand made tapestries, the wall behind them a dazzling display of the artist's prowess.`
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
 	
 planet Helheim
 	attributes deep mining volcanic
 	landscape land/lava1
-	description `Helheim is not a pleasant place. Much of the surface is volcanic, pockmarked with craters and steam vents leading deep into the planet's crust. The air is slightly caustic, but breathable. However, it is also a world rich in easily accessible deposits of nickel, aluminum, and magnesium. The mining industry here has been booming for centuries, and in all of the Deep it is the one world where work is never hard to find - if you are willing to face the health risks and the lack of green and growing things.`
-	spaceport `The spaceport is also the main city in Helheim, and it is built around a series of glass domes of all different sizes. Each dome is a greenhouse housing a different sort of plant life, and in some cases animals as well: hermetically sealed parks, protected from the caustic air outside, where the locals can come when their hunger to be among living things becomes unbearable. The docking bays each have an airlock to protect the atmosphere inside the city.`
+	description `Helheim is not a pleasant place. Much of the surface is volcanic, pockmarked with craters and steam vents leading deep into the planet's crust. The air is caustic, but breathable in short doses. However, despite the complete lack of charm, the mining industry is alive and booming on this world rich in easily accessible deposits of nickel, aluminum, and magnesium. After all, what's some health risks in the face of profit to be made?`
+	spaceport `The spaceport is the main city in Helheim, built around a series of glass domes of varying sizes. Each dome is a greenhouse housing lush green plants and friendly animals: hermetically sealed parks protected from the caustic air outside, where the locals can come when their hunger to be among living things becomes unbearable.`
 	bribe 0.05
 	security 0.6
 	tribute 700
@@ -814,9 +813,9 @@ planet Helheim
 planet Hephaestus
 	attributes core factory urban
 	landscape land/city0
-	description `Hephaestus is home to Syndicated Systems, which manufactures parts used in shipyards throughout human space. Although not always the highest quality or most technologically advanced, ship outfits produced by the Syndicate are quite affordable and sufficient for any ordinary pilot's needs. The executives of many other companies have been known to make a pilgrimage of sorts to this planet, to witness firsthand how the Syndicate has made their production lines here so efficient and dependable.`
-	description `	Nearly all the inhabitants of Hephaestus live in a single metropolitan area that has spread to cover almost an eighth of the total land mass. As with many Syndicate worlds, pollution is a growing problem that they are working hard to address.`
-	spaceport `The spaceport consists of a double row of hangars of all different sizes, with shops and warehouse space in between. In many of the hangars you pass, mechanics are busy installing new parts or making repairs to old ones. The flash of arc welders and the squeal of bolt drivers and rivet guns is everywhere. Above the hangars is a tier of supply rooms with all different sorts of ship outfits on display, rows and rows of gleaming, identical parts. Robotic gantries swing overhead at frightening speeds, stocking and fetching parts. It serves as both a functional storage space and a massive advertisement for Syndicated equipment.`
+	description `Hephaestus is home to Syndicated Systems, well known for manufacturing the ship parts used throughout human space. Although not the highest in quality or technologically advanced, ship outfits produced by the Syndicate are affordable and sufficient for any ordinary pilot's needs. Executives of companies have been known to make pilgrimages to this planet, to witness firsthand how the Syndicate has made their production lines here so efficient and dependable.`
+	description `	 Nearly all the inhabitants of Hephaestus live in a single metropolitan area that has spread to cover more than an eighth of the total land mass. As with many Syndicate worlds, pollution is a rapidly growing problem that they are working hard to address.`
+	spaceport `The spaceport consists of a double row of hangars with shops and warehouse space in between. In many of the hangars you pass, mechanics are busy installing new parts or making repairs to old ones. The flash of arc welders and the squeal of bolt drivers and rivet guns is everywhere. Above the hangars is a tier of supply rooms with all different sorts of ship outfits on display, rows and rows of gleaming, identical parts. Robotic gantries swing overhead at frightening speeds, stocking and fetching parts. It serves as both a functional storage space and a massive advertisement for Syndicated equipment.`
 	shipyard "Basic Ships"
 	shipyard "Megaparsec Basics"
 	shipyard "Syndicate Basics"
@@ -834,9 +833,9 @@ planet Hephaestus
 planet Hermes
 	attributes paradise research medical
 	landscape land/myrabella3
-	description `No one is permitted to settle on Hermes without a government permit. It is a sparsely populated world, mostly used for medical research and development - including some research that, if the rumors are true, are carried out here in isolation so that if something goes wrong, entire districts can be quarantined or even "sterilized" by orbital bombardment.`
-	description `	The landscape is nondescript, mostly rolling plains and forests. The oceans are relatively small, and as a result it is a somewhat dry planet.`
-	spaceport `The spaceport is far removed from any of this world's cities. It consists of a single, ring-shaped building; the docking bays open onto the central atrium, which visiting ships fly through to reach them. Industrial strength ultraviolet lasers are mounted on turrets throughout the atrium, and fire automatically at entering and departing ships to sterilize them. Once you land, the docking bay is hermetically sealed. Based on the precautions they are taking, you find yourself wanting to spend as little time as possible breathing the air here.`
+	description `No one is permitted to settle on Hermes without a government permit. It is a sparsely populated world, used for medical research and development - including some research that is carried out in isolation so if something goes wrong entire districts can be quarantined; or sterilized by orbital bombardment.`
+	description `	The landscape is hilly and heavily forested, much of which remains unexplored. The oceans are barely large enough to be considered oceans at all, but are steadily growing as water is imported onto the planet.`
+	spaceport `The spaceport is far removed from any of this world's cities. It consists of a single, ring-shaped building, the docking bays opening into the central atrium. Industrial strength ultraviolet lasers are mounted on turrets throughout the atrium, and fire automatically at entering and departing ships to sterilize them. Once you land, the docking bay is hermetically sealed. Based on the precautions they are taking, it might be wise to complete your business and be on your way as soon as possible.`
 	outfitter "Ammo"
 	outfitter "Lovelace Advanced"
 	"required reputation" 10
@@ -849,8 +848,8 @@ planet Hermes
 planet Hestia
 	attributes paradise rich
 	landscape land/sky5
-	description `In the distant past, Hestia was a nearly lifeless ice world. It is now a sub-tropical paradise, one of the great victories from the heyday of planetary engineering back when the galactic economy had more money to spare for terraforming. Today it is mostly a retirement community for those who can afford it, although most of the population consists of young service workers in rented housing who take care of the retirees. On Hestia, the poor live in cities; the rich live in country estates. Aside from the urban centers, most of this world is covered in rolling green hills and oceans.`
-	spaceport `Hestia has two separate spaceports. The port where rich residents and their visitors arrive and depart is private, owned by a local company. Here in the public spaceport, no attempt has been made at impressive architecture: everything is spare and utilitarian, with floors of bare cement. There are a few trucks and forklifts carrying cargo, but the streets that connect the landing pads are mostly full of people on foot, walking toward the customs building.`
+	description `In the distant past, Hestia was a lifeless ice world. It is now a sub-tropical paradise, a celebrated victory from the heyday of planetary engineering back when the galactic economy had more money to spare for terraforming. Today it hosts a planetwide retirement community for those lucky enough to afford it, although most of the population consists of young service workers in rented housing who take care of the retirees. Aside from the bland urban centers full of employees, the world is rich with emerald green hills and crystal blue lakes that never leave a fisherman empty handed.`
+	spaceport `Hestia has two separate spaceports. The port frequented by the retirees and their guests is private, owned by a local company. Here in the public spaceport, no attempt has been made at impressive architecture; instead everything is spare and utilitarian, with floors of bare cement. There are trucks and forklifts carrying cargo, but the streets that connect the landing pads are full of people on foot, walking toward the customs building.`
 	outfitter "Common Outfits"
 	outfitter "Ammo"
 	outfitter "Lovelace Basics"
@@ -863,8 +862,8 @@ planet Hestia
 planet Hippocrates
 	attributes core research frontier
 	landscape land/water11-harro
-	description `Hippocrates is a sparsely settled world, home mostly to scientific research outposts. The environment here, orbiting so close to a red dwarf star, is very different from most other settled planets. The scientists estimate this star system to be over ten billion years old, enough that life here has had much more time to develop and evolve than on any planet orbiting a brighter, more short-lived star.`
-	spaceport `The spaceport is a single building, and half the landing pads are just packed dirt. This port was not designed for large volumes of cargo or of visitors. Within the building is a sun-lit atrium, with separate storefronts for the commodity exchange, the job center, and the bank. The only place you can see where you might be able to get something to eat is a bar, advertised by a sign showing an Erlenmeyer flask with a folding paper umbrella hung over the rim.`
+	description `Hippocrates is a sparsely settled world, home to scientific research outposts. The planet revolves close to its sun, a red dwarf star, estimated to be over ten billion years old. Life here has had much more time to develop and evolve than on any planet orbiting a brighter, more short-lived star.`
+	spaceport `The spaceport, obviously not designed for large volumes of cargo or visitors, is a single building, and half the landing pads are just packed dirt. Within the building is a sun-lit atrium, with separate storefronts for the commodity exchange, the job center, and the bank. The only place serving food is a bar advertised by a sign showing an Erlenmeyer flask with a folding paper umbrella hung over the rim.`
 	outfitter "Ammo"
 	security 0.1
 	tribute 800
@@ -882,8 +881,8 @@ planet Hope
 planet Hopper
 	attributes "dirt belt" mining
 	landscape land/myrabella1
-	description `Hopper is a temperate world of oceans, mountains, and plains, but with unfortunately high levels of sulfuric acid in its atmosphere. Metal and stone that are exposed to the atmosphere corrode quickly, requiring frequent maintenance. As a result, Hopper has only a few small settlements on it, and most of the industry is focused on underground mining. The oceans are populated only by a few indigenous life forms that have adapted to their high acidity; Earth fish could not be introduced successfully here.`
-	spaceport `The spaceport consists mostly of a cluster of steel-framed warehouses with tin roofs, surrounded by concrete slabs for ships to land on. Scattered among the warehouses are a few smaller wooden buildings, housing a pub, a restaurant, and a small inn. Some of the warehouses are relatively new, with metal that still gleams; others are covered in rust, and a few stand in ruins, with large holes worn through their roofs and rusted girders poking through like dead trees.`
+	description `Hopper is a temperate world of vast oceans and scattered mountain ranges cursed with an atmosphere rich in sulfuric acid. Metal and stone that are exposed to the atmosphere corrode quickly, requiring frequent maintenance. As a result, Hopper has only a few small settlements, most of the industry focused on underground mining. The oceans are populated only by indigenous life forms well adapted to high acidity; Earth fish could not be introduced successfully here.`
+	spaceport `The spaceport consists of a cluster of steel-framed warehouses with tin roofs, surrounded by concrete slabs for ships to land on. Scattered among the warehouses are smaller wooden buildings; housing an Old Earth themed pub, a restaurant, and a small inn. Some of the warehouses are relatively new, with metal that still gleams; others are covered in rust, and a few stand in ruins, with large holes worn through their roofs and rusted girders poking through like skeletal limbs.`
 	outfitter "Ammo"
 	security 0.05
 	tribute 300
@@ -2055,9 +2054,12 @@ planet Trinket
 	description `In a region of the galaxy not known for beach resorts, Trinket has become somewhat of a major tourist destination. It is not a particularly warm world, and near both poles icebergs float year round, but at the equator the weather is almost tropical and the water is warm enough for swimming. Occasionally one of the ocean currents will pick up an iceberg and carry it all the way down past the resorts before it melts completely; taking a boat out to these icebergs is a popular daytime activity here.`
 	spaceport `The spaceport is a long, two-story building of wood and stone with hundreds of stalls selling fruit and clothing and bad artwork. Many of the starships parked here have scorch marks and dents on their hulls, a sure sign of recent battle. It is likely that some of the people walking through the port are in fact pirates, posing as civilians in order to sell stolen cargo or to take a vacation incognito.`
 	outfitter "Basic Outfits"
+	outfitter "Common Outfits"
+	outfitter "Basic Weapons"
+	outfitter "Deep Sky Basics"
+	outfitter "Kraz Basics"
 	outfitter "Delta V Basics"
 	outfitter "Ammo"
-	outfitter "Pirate Outfits"
 	bribe 0.02
 	security 0.4
 	tribute 500
