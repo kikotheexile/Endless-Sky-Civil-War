@@ -20,7 +20,6 @@ mission "Republic Bounty 1"
 		attributes "dirt belt"
 	to offer
 		has "event: war begins"
-		"combat rating" > 150
 		not "chosen sides"
 		random < 65
 	
@@ -308,7 +307,8 @@ mission "Navy Scouting 2"
 	destination "Follower"
 	to offer
 		has "Navy Scouting 1: done"
-		not "chosen sides"	
+		has "event: remembrance day"
+		not "chosen sides"
 		random < 40
 
 	on offer
