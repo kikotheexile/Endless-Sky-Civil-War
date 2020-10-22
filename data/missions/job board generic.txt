@@ -66,6 +66,7 @@ mission "Escort (Tiny, Northern, Dangerous Destination)"
 	on complete
 		payment 15000
 		"reputation: Merchant" += 1
+		"reputation: Pirate" -= 1
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -127,6 +128,7 @@ mission "Escort (Tiny, Northern, Dangerous Origin)"
 				"Star Barge"
 	on complete
 		"reputation: Merchant" += 1
+		"reputation: Pirate" -= 1
 		payment 15000
 		dialog phrase "generic safe escort completion dialog"
 	on visit
@@ -176,6 +178,7 @@ mission "Escort (Small, Northern, Dangerous Destination)"
 				"Freighter"
 	on complete
 		"reputation: Merchant" += 3
+		"reputation: Pirate" -= 3
 		payment 60000
 		dialog phrase "generic safe escort completion dialog"
 	on visit
@@ -227,6 +230,7 @@ mission "Escort (Small, Northern, Dangerous Origin)"
 	on complete
 		payment 60000
 		"reputation: Merchant" += 2
+		"reputation: Pirate" -= 2
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -281,6 +285,7 @@ mission "Escort (Medium, Northern, Dangerous Destination)"
 				"Freighter"
 	on complete
 		"reputation: Merchant" += 3
+		"reputation: Pirate" -= 3
 		payment 90000
 		dialog phrase "generic safe escort completion dialog"
 	on visit
@@ -337,6 +342,7 @@ mission "Escort (Medium, Northern, Dangerous Origin)"
 	on complete
 		payment 90000
 		"reputation: Merchant" += 3
+		"reputation: Pirate" -= 3
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -383,6 +389,7 @@ mission "Escort (Large, Northern, Dangerous Destination)"
 	on complete
 		payment 120000
 		"reputation: Merchant" += 4
+		"reputation: Pirate" -= 3
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -430,6 +437,7 @@ mission "Escort (Large, Northern, Dangerous Origin)"
 	on complete
 		payment 120000
 		"reputation: Merchant" += 4
+		"reputation: Pirate" -= 4
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -478,6 +486,7 @@ mission "Escort (Extra Large, Northern, Dangerous Destination)"
 	on complete
 		payment 150000
 		"reputation: Merchant" += 4
+		"reputation: Pirate" -= 4
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -531,6 +540,7 @@ mission "Escort (Extra Large, Northern, Dangerous Origin)"
 	on complete
 		payment 150000
 		"reputation: Merchant" += 4
+		"reputation: Pirate" -= 4
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -594,6 +604,7 @@ mission "Escort (Tiny, Core, Dangerous Destination)"
 	on complete
 		payment 20000
 		"reputation: Merchant" += 1
+		"reputation: Pirate" -= 1
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -656,6 +667,7 @@ mission "Escort (Tiny, Core, Dangerous Origin)"
 	on complete
 		payment 20000
 		"reputation: Merchant" += 1
+		"reputation: Pirate" -= 1
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -705,6 +717,7 @@ mission "Escort (Small, Core, Dangerous Destination)"
 	on complete
 		payment 60000
 		"reputation: Merchant" += 2
+		"reputation: Pirate" -= 2
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -755,6 +768,7 @@ mission "Escort (Small, Core, Dangerous Origin)"
 	on complete
 		payment 60000
 		"reputation: Merchant" += 2
+		"reputation: Pirate" -= 2
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -804,6 +818,7 @@ mission "Escort (Medium, Core, Dangerous Destination)"
 	on complete
 		payment 90000
 		"reputation: Merchant" += 3
+		"reputation: Pirate" -= 3
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -861,6 +876,7 @@ mission "Escort (Medium, Core, Dangerous Origin)"
 	on complete
 		payment 90000
 		"reputation: Merchant" += 3
+		"reputation: Pirate" -= 3
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -907,6 +923,7 @@ mission "Escort (Large, Core, Dangerous Destination)"
 	on complete
 		payment 120000
 		"reputation: Merchant" += 4
+		"reputation: Pirate" -= 4
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -954,6 +971,7 @@ mission "Escort (Large, Core, Dangerous Origin)"
 	on complete
 		payment 120000
 		"reputation: Merchant" += 4
+		"reputation: Pirate" -= 4
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -1002,6 +1020,7 @@ mission "Escort (Extra Large, Core, Dangerous Destination)"
 	on complete
 		payment 150000
 		"reputation: Merchant" += 5
+		"reputation: Pirate" -= 5
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -1056,6 +1075,7 @@ mission "Escort (Extra Large, Core, Dangerous Origin)"
 	on complete
 		payment 150000
 		"reputation: Merchant" += 5
+		"reputation: Pirate" -= 5
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -1159,6 +1179,7 @@ mission "Escort (Small, Southern, Dangerous Origin or Destination)"
 	on complete
 		payment 60000
 		"reputation: Merchant" += 2
+		"reputation: Pirate" -= 2
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -1201,6 +1222,7 @@ mission "Escort (Medium, Southern, Dangerous Origin or Destination)"
 	on complete
 		payment 90000
 		"reputation: Merchant" += 3
+		"reputation: Pirate" -= 2
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -1241,6 +1263,7 @@ mission "Escort (Large, Southern, Dangerous Origin or Destination)"
 	on complete
 		payment 120000
 		"reputation: Merchant" += 4
+		"reputation: Pirate" -= 4
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -1283,6 +1306,7 @@ mission "Escort (Extra Large, Southern, Dangerous Origin or Destination)"
 	on complete
 		payment 150000
 		"reputation: Merchant" += 5
+		"reputation: Pirate" -= 5
 		dialog phrase "generic safe escort completion dialog"
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
@@ -1324,6 +1348,7 @@ mission "Southern Pirate Attack"
 	on complete
 		payment 150000
 		"reputation: Militia" += 5
+		"reputation: Pirate" -= 5
 		dialog phrase "generic pirate attack payment dialog"
 
 mission "Northern Pirate Attack"
@@ -1361,6 +1386,7 @@ mission "Northern Pirate Attack"
 	on complete
 		payment 250000
 		"reputation: Republic" += 5
+		"reputation: Pirate" -= 5
 		dialog phrase "generic pirate attack payment dialog"
 
 mission "Core Pirate Attack"
@@ -1398,84 +1424,8 @@ mission "Core Pirate Attack"
 	on complete
 		payment 200000
 		"reputation: Syndicate" += 5
+		"reputation: Pirate" -= 5
 		dialog phrase "generic pirate attack payment dialog"
-
-#mission "Raider Attack 1"
-#	name "Defend <planet>"
-#	description "Defeat an alien raid on <destination>."
-#	minor
-#	repeat
-#	to offer
-#		"combat rating" > 550
-#		random < 7
-#		has "main plot completed"
-#	source
-#		planet "Sundive"
-#		planet "Shangri-La"
-#		planet "Nimbus"
-#	npc evade
-#		government "Korath"
-#		personality target timid unconstrained uninterested harvests plunders
-#		fleet "Korath Raid" 2
-#	npc
-#		government "Syndicate"
-#		personality heroic staying vindictive
-#		fleet "Large Syndicate"
-#		fleet "Small Syndicate"
-#	on offer
-#		conversation
-#			`Suddenly you hear raised voices and shouting outside: "We a#re under attack! <planet> is under attack by alien raiders! We need every combat-worthy ship to join the defenses!" The authorities will probably pay you quite well if you assist them, but this could also be an easy way to get yourself killed.`
-#			choice
-#				`	(Stay here until the fight is over.)`
-#					decline
-#				`	(Join the defense fleet.)`
-#			`The local Syndicate defense forces are preparing to repel the alien attack. You join them, and take off together...`
-#				launch
-#	on visit
-#		dialog `You've landed on <planet>, but there are still Korath circling overhead. You should take off and help finish them off.`
-#	on complete
-#		payment 550000
-#		"reputation: Syndicate" += 5
-#		dialog `The government of <planet> pays you <payment> for helping to drive off the raiders.`
-
-#mission "Raider Attack 2"
-#	name "Defend <planet>"
-#	description "Defeat an alien raid on <destination>."
-#	minor
-#	repeat
-#	to offer
-#		"combat rating" > 750
-#		random < 5
-#		has "main plot completed"
-#	source
-#		planet "Sundive"
-#		planet "Shangri-La"
-#		planet "Nimbus"
-#	npc evade
-#		government "Korath"
-#		personality target timid unconstrained uninterested harvests plunders
-#		fleet "Korath Raid" 3
-#		
-#	npc
-#		government "Syndicate"
-#		personality heroic staying vindictive
-#		fleet "Large Syndicate" 2
-#	on offer
-#		conversation
-#			`Suddenly you hear raised voices and shouting outside: "We are under attack! <planet> is under attack by alien raiders! We need every combat-worthy ship to join the defenses!" The authorities will probably pay you quite well if you assist them, but this could also be an easy way to get yourself killed.`
-#			choice
-#				`	(Stay here until the fight is over.)`
-#					decline
-#				`	(Join the defense fleet.)`
-#			`The local Syndicate defense forces are preparing to repel the alien attack. You join them, and take off together...`
-#				launch
-#	on visit
-#		dialog `You've landed on <planet>, but there are still Korath circling overhead. You should take off and help finish them off.`
-#	on complete
-#		payment 750000
-#		"reputation: Syndicate" += 5
-#		dialog `The government of <planet> pays you <payment> for helping to drive off the raiders.`
-
 
 
 mission "Cargo [0]"
@@ -1493,6 +1443,7 @@ mission "Cargo [0]"
 		dialog phrase "generic cargo on visit"
 	on complete
 		"reputation: Merchant" += 1
+		"reputation: Republic" += 1
 		payment
 		dialog phrase "generic cargo delivery payment"
 
@@ -1533,6 +1484,7 @@ mission "Cargo [2]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"reputation: Republic" += 1
 		"reputation: Merchant" += 1
 		payment
 		dialog phrase "generic cargo delivery payment"
@@ -1555,6 +1507,7 @@ mission "Cargo [3]"
 		dialog phrase "generic cargo on visit"
 	on complete
 		"reputation: Merchant" += 1
+		"reputation: Republic" += 1
 		payment
 		payment 2000
 		dialog phrase "generic cargo delivery payment"
@@ -1577,6 +1530,7 @@ mission "Cargo [4]"
 		dialog phrase "generic cargo on visit"
 	on complete
 		"reputation: Merchant" += 1
+		"reputation: Republic" += 1
 		payment
 		payment 4000
 		dialog phrase "generic cargo delivery payment"
@@ -1598,6 +1552,7 @@ mission "Bulk Delivery [0]"
 		dialog phrase "generic cargo on visit"
 	on complete
 		"reputation: Merchant" += 2
+		"reputation: Republic" += 2
 		payment
 		dialog phrase "generic cargo delivery payment"
 
@@ -1618,6 +1573,7 @@ mission "Bulk Delivery [1]"
 		dialog phrase "generic cargo on visit"
 	on complete
 		"reputation: Merchant" += 2
+		"reputation: Republic" += 2
 		payment
 		payment 2000
 		dialog phrase "generic cargo delivery payment"
@@ -1640,6 +1596,7 @@ mission "Bulk Delivery [2]"
 		dialog phrase "generic cargo on visit"
 	on complete
 		"reputation: Merchant" += 2
+		"reputation: Republic" += 2
 		payment
 		payment 4000
 		dialog phrase "generic cargo delivery payment"
@@ -2675,6 +2632,7 @@ mission "Bounty Hunting (Small)"
 		dialog phrase "generic bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 1
+		"reputation: Pirate" -= 1
 		payment 150000
 		dialog phrase "generic bounty hunting payment dialog"
 
@@ -2713,6 +2671,7 @@ mission "Bounty Hunting (Medium)"
 		dialog phrase "generic bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 3
+		"reputation: Pirate" -= 3
 		payment 200000
 		dialog phrase "generic bounty hunting payment dialog"
 
@@ -2755,6 +2714,7 @@ mission "Bounty Hunting (Big)"
 		dialog phrase "generic bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 5
+		"reputation: Pirate" -= 5
 		payment 250000
 		dialog phrase "generic bounty hunting payment dialog"
 
@@ -2795,6 +2755,7 @@ mission "Bounty Hunting (Small, Boarding, Entering)"
 		dialog phrase "generic bounty hunting boarding on visit"
 	on complete
 		"reputation: Independent" += 1
+		"reputation: Pirate" -= 1
 		payment 175000
 		dialog "The government of <planet> gratefully pays you <payment> for apprehending the criminal."
 
@@ -2837,6 +2798,7 @@ mission "Bounty Hunting (Medium, Boarding, Entering)"
 		dialog phrase "generic bounty hunting boarding on visit"
 	on complete
 		"reputation: Independent" += 3
+		"reputation: Pirate" -= 3
 		payment 350000
 		dialog "The government of <planet> gratefully pays you <payment> for apprehending the criminal gang."
 
@@ -2866,6 +2828,7 @@ mission "Bounty Hunting (Marauder I)"
 		dialog phrase "generic fleet bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 3
+		"reputation: Pirate" -= 3
 		payment 300000
 		dialog phrase "generic fleet bounty hunting payment dialog"
 
@@ -2895,6 +2858,7 @@ mission "Bounty Hunting (Marauder II)"
 		dialog phrase "generic fleet bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 3
+		"reputation: Pirate" -= 3
 		payment 350000
 		dialog phrase "generic fleet bounty hunting payment dialog"
 
@@ -2924,6 +2888,7 @@ mission "Bounty Hunting (Marauder III)"
 		dialog phrase "generic fleet bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 4
+		"reputation: Pirate" -= 4
 		payment 400000
 		dialog phrase "generic fleet bounty hunting payment dialog"
 
@@ -2953,6 +2918,7 @@ mission "Bounty Hunting (Marauder IV)"
 		dialog phrase "generic fleet bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 4
+		"reputation: Pirate" -= 4
 		payment 425000
 		dialog phrase "generic fleet bounty hunting payment dialog"
 
@@ -2982,6 +2948,7 @@ mission "Bounty Hunting (Marauder V)"
 		dialog phrase "generic fleet bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 5
+		"reputation: Pirate" -= 5
 		payment 450000
 		dialog phrase "generic fleet bounty hunting payment dialog"
 
@@ -3012,6 +2979,7 @@ mission "Bounty Hunting (Marauder VI)"
 		dialog phrase "generic fleet bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 5
+		"reputation: Pirate" -= 5
 		payment 475000
 		dialog phrase "generic fleet bounty hunting payment dialog"
 
@@ -3037,6 +3005,7 @@ mission "Bounty Hunting (Marauder VII)"
 		dialog phrase "generic fleet bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 5
+		"reputation: Pirate" -= 5
 		payment 500000
 		dialog phrase "generic fleet bounty hunting payment dialog"
 
@@ -3062,6 +3031,7 @@ mission "Bounty Hunting (Marauder VIII)"
 		dialog phrase "generic fleet bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 5
+		"reputation: Pirate" -= 5
 		payment 550000
 		dialog phrase "generic fleet bounty hunting payment dialog"
 
@@ -3087,6 +3057,7 @@ mission "Bounty Hunting (Marauder IX)"
 		dialog phrase "generic fleet bounty hunting on visit"
 	on complete
 		"reputation: Independent" += 5
+		"reputation: Pirate" -= 5
 		payment 600000
 		dialog phrase "generic fleet bounty hunting payment dialog"
 
