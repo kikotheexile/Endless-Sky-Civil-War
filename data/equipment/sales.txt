@@ -529,6 +529,7 @@ outfitter "Pirate Outfits"
 	"Gatling Gun"
 	"Bullet Boxes"
 	"Brig"
+	"Surveillance Pod"
 
 outfitter "Tarazed Systems"
 	"Ion Cannon"
