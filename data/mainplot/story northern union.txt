@@ -22,7 +22,7 @@ mission "Northern Union Escort 1"
 	minor
 	autosave
 	source
-		near Arneb 1 5
+		attributes "northern union" north core
 	destination Foundry
 	to offer
 		has "event: remembrance day"
@@ -300,7 +300,7 @@ mission "Meeting an Alpha 0"
 	description "This dejected looking pirate warlord asked if you could transport him to <destination>."
 	minor
 	source
-		near Arneb 1 10
+		attributes "northern union" north core pirate
 	destination Haven
 	to offer
 		has "event: war begins"
@@ -310,7 +310,7 @@ mission "Meeting an Alpha 0"
 	
 	on offer
 		conversation
-			`A man in a tattered and heavily defaced Navy uniform approaches you as you walk out of your ship and asks whether you would be willing to give him a lift to <destination>. His jacket has "Warlord Peg" stitched where the name patch would normally be.`
+			`A man in a tattered and heavily defaced Navy uniform approaches you as you walk out of your ship. He asks whether you would be willing to give him a lift to <destination>. His jacket has "Warlord Peg" stitched where the name patch would normally be.`
 			choice
 				`	"Sure, I'd be glad to help!"`
 					accept
@@ -319,7 +319,7 @@ mission "Meeting an Alpha 0"
 				`	"Sorry, I'm busy with something else right now."`
 					defer
 				`	"Are you a pirate?"`
-			`	"Yes. In fact, until very recently I had my own gang," he replies.`
+			`	"I prefer the term 'Freelance Revolutionary,' but the Republic might disagree. Until very recently I had my own personal army." he replies.`
 			choice
 				`	"Find someone else to dupe."`
 					decline
@@ -334,8 +334,10 @@ mission "Meeting an Alpha 0"
 		dialog `You land on <planet>, but you realize that the warlord is on one of your escorts that hasn't entered the system yet. Better depart and wait for it to arrive.`
 	on complete
 		payment
-		dialog
+		conversation
 			`The warlord thanks you for the ride and pays you <payment>. As he is leaving he says: "If you're interested in meeting my boss, head to a shop called "The Rusted Wheel" and find my commander. He's impossible to miss, though try not to stare."`
+			`	Upon returning to your ship, you find communicator lying on the floor of your cargo bay. Upon checking its, you find out it belongs to Peg, and it's full of information that could be useful to the Republic. Maybe they'll pay you for it?`
+
 	on decline
 		freelance ++
 	on fail
@@ -359,7 +361,7 @@ mission "Meeting an Alpha 1"
 				`	(Politely wave, order a sandwich, and leave.)`
 					defer
 				`	"I really want a coffee, but the price here is outrageous."`
-			`	"Name's Pete, but everyone calls me Peg," he sighs, "come join me and whatever you want off the menu is my treat."`
+			`	"Name's Pete, but everyone calls me Peg," he sighs, "come join me and whatever you want off the menu is on me."`
 
 			choice
 				`	(Join him and place an order.)`
@@ -368,7 +370,7 @@ mission "Meeting an Alpha 1"
 			`	"Good decision, joining me. My boss will be here any minute now."` 
 			
 			`Some time passes before eventually an incredibly tall, noseless man joins you. He looks almost exactly like the description of the augments known as Alphas from centuries ago.`
-			
+			``
 			`	"Boss, I've brought you a tribute!" Peg shouts, as you feel a hard, cold object press against the side of your skull. Before you even get a chance to react, you feel something warm splattering on your cheek. You look over to see Peg dying, with some sort of metal spike sticking out of his forehead.`
 			`	"I would apologize for the mess," the towering beast drones, "but considering I just saved your life from my incompetent underling, I'll assume you've already forgiven me." He gives off a strange huffing sound that almost seems like a chuckle, and continues: "Please, stay. I sense you aren't as useless as the deflating mess next to you."`
 
@@ -401,15 +403,14 @@ mission "Meeting an Alpha 1"
 			`	"Not human." The creature makes that strange chuckling sound again, and says: "I'm a genetically modified life form, similar to human augments, but not quite. I am specifically of the species known as Alphas."`
 			`"Do you have any other questions? Before you say it, yes I am an Alpha, and I promised myself the next person to say, 'Wait, you're an Alpha?' would die slowly by my hand."`
 			choice
-				`	"Wait, you're an alpha?"`
-					goto die
 				`	"I've never met an Alpha. Tell me about your kind."`
 					goto interview
 				`	"I've heard the propaganda, but tell me your side of the story. How did you come to be?"`
 					goto interview
 				`	"Sure, what's the job?"`
 					goto work
-					
+				`	"Wait, you're an alpha?"`
+					goto die					
 			label interview
 			`	"Oh my, do you really have time for me to wax poetic about the nature of my existence?"`
 			choice
@@ -459,7 +460,6 @@ mission "Meeting an Alpha 1"
 	
 	on accept
 		log "Volunteered to scan the Star Blade, one of the largest vessels in human space."
-		dialog "Upon returning to your ship, you go and check your communicator, only to find a second communicator lying next to it. Upon checking the contents of the second one, you find out it belonged to Peg, and it's full of intel that could be useful to the Republic. Maybe they'll pay you for it?"
 		
 	npc "scan outfits"
 		government Betelgeuse
