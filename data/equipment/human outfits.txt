@@ -2264,6 +2264,7 @@ outfit "rslug"
 		"hit force" 44
 		"missile strength" 14
 		"piercing" .1
+		"slowing damage" 1
 
 outfit "Meteor Missile"
 	category "Ammunition"
