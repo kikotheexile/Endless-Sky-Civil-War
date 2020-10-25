@@ -41,55 +41,6 @@ event "war begins"
 		fleet "Large Southern Merchants" 1400
 		fleet "Small Free Worlds" 600
 		fleet "Large Free Worlds" 1300
-	system Pollux
-		pos -465 4
-		government Republic
-		habitable 1080
-		link Procyon
-		link Castor
-		link Talita
-		trade Clothing 197
-		trade Electronics 747
-		trade Equipment 619
-		trade Food 475
-		trade "Heavy Metals" 977
-		trade Industrial 750
-		trade "Luxury Goods" 1438
-		trade Medical 669
-		trade Metal 346
-		trade Plastic 481
-		fleet "Small Northern Merchants" 500
-		fleet "Large Northern Merchants" 800
-		fleet "Paradise Merchants" 600
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 2000
-		fleet "Caravan Large" 5000
-		fleet "Caravan Small" 700
-		belt 1161
-		object
-			sprite star/g0
-			period 10
-		object
-			sprite planet/ice4-b
-			distance 160.64
-			period 24.7816
-		object
-			sprite planet/ocean8-b
-			distance 608.85
-			period 182.858
-		object Martini
-			sprite planet/ocean4
-			distance 1248.33
-			period 536.837
-			object "Martini Stock Exchange"
-				sprite planet/station7
-				distance 175
-				period 20
-		object
-			sprite planet/gas7-b
-			distance 4171.54
-			period 3279.39
-		
 	system Castor
 		pos -452 -17
 		government Republic
@@ -112,59 +63,28 @@ event "war begins"
 		fleet "Paradise Merchants" 800
 		fleet "Small Republic" 1000
 		fleet "Large Republic" 500
-		belt 1675
-		minables aluminum 1 7.59239
-		minables lead 1 12.7895
-		minables silicon 6 11.0644
-		object
-			sprite star/g5
-			distance 52.9147
-			period 17.1076
-		object
-			sprite star/k0
-			distance 72.5853
-			period 17.1076
-			offset 180
-		object
-			sprite planet/ice5-b
-			distance 455.085
-			period 118.13
-			object
-				sprite planet/dust3
-				distance 139
-				period 14.4508
-		object
-			sprite planet/rock0
-			distance 758.695
-			period 254.287
-		object Geminus
-			sprite planet/rock18
-			distance 994.305
-			period 381.507
-		object
-			sprite planet/uranus
-			distance 1759.55
-			period 898.097
-			object
-				sprite planet/desert4-b
-				distance 200
-				period 11.4109
-		object
-			sprite planet/gas8-b
-			distance 5273.71
-			period 4660.11
-			object
-				sprite planet/lava2-b
-				distance 229
-				period 17.0811
-			object
-				sprite planet/dust0
-				distance 381
-				period 36.6564
-			object
-				sprite planet/dust5-b
-				distance 517
-				period 57.9426
+	system Pollux
+		pos -465 4
+		government Republic
+		habitable 1715
+		link Procyon
+		link Castor
+		link Talita
+		trade Clothing 223
+		trade Electronics 786
+		trade Equipment 659
+		trade Food 481
+		trade "Heavy Metals" 1022
+		trade Industrial 807
+		trade "Luxury Goods" 1423
+		trade Medical 677
+		trade Metal 275
+		trade Plastic 467
+		fleet "Small Northern Merchants" 600
+		fleet "Large Northern Merchants" 800
+		fleet "Paradise Merchants" 800
+		fleet "Small Republic" 1000
+		fleet "Large Republic" 500
 	system "Spica"
 		government "Free Worlds"
 	system "Minkar"
@@ -245,17 +165,24 @@ event "war begins"
 		fleet "Small Republic" 1100
 		fleet "Large Republic" 1300
 	planet "Geminus"
-		description `Until recently, Geminus was home to the Republic Navy Yard, an orbital station capable of producing entire fleets. Now, there is nothing left of the shipyard but a gaping crater in the ground, from the recent terrorist bombing.`
-		spaceport `Fortunately, the station fell on the other side of a mountain range from the spaceport, meaning that there was very little damage to the residential district and few civilian casualties due to falling debries.`
-		spaceport `The Navy officers who are in charge here have no time for anyone who is not enlisted in the Navy and participating in the ongoing investigation.`
-		"required reputation" 100
+		description `Until recently, Geminus was home to the Republic Navy Yard, an orbital station capable of producing entire fleets. After a series of terrorist attacks, the station has been completely closed off for repairs.`
+		spaceport `	The Navy officers who are in charge here have no time for anyone who is not enlisted in the Navy and participating in the ongoing investigation.`
+		"required reputation" 20
 	planet "Martini"
-		description `Martini is a world of exotic beaches and perfect weather. The Republic's central bank and the galactic stock exchange were previously headquartered in orbit here, before a terrorist attack destroyed it. The station landed on the capital city, destroying a large portion of it.`
-		"required reputation" 100
+		description `Martini is a world of exotic beaches and perfect weather. The Republic's central bank and the galactic stock exchange were previously headquartered in orbit here, before a terrorist attack damaged it and killed all onboard.`
+		"required reputation" 20
 		security .9
 	planet "Bourne"
 		description `Bourne is a well-developed industrial world that was first settled four centuries ago. Its cities are home to some of the richest individuals in this section of the galaxy, but also home to tens of thousands of homeless people, and many others whose factory jobs are barely providing enough to make ends meet.`
 		description `Bourne is also the seat of government for the newly formed Coalition of Free Worlds.`
+	planet "Prosperity Station"
+		description `Since being the target of a terrorist attack, Prosperity Station has been all but completely depopulated. Only people with high level clearance are allowed to land and trade during the nuclear scrubbing and reconstruction process.`
+		spaceport `The spaceport is earily silent, a far cry from its days as the central stock exchange for all of the Republic.`
+		"required reputation" 2000
+	planet "Rampart Station"
+		description `Since being the target of a terrorist attack, Rampart Station has been all but completely depopulated. Only people with high level clearance are allowed to land and trade during the nuclear scrubbing and reconstruction process.`
+		spaceport `The Spaceport is completely devoid of life, as only a very small number of people are even allowed to dock here.`
+		"required reputation" 2000
 
 mission "event: war begins"
 	landing
@@ -267,10 +194,13 @@ mission "event: war begins"
 	on offer
 		log "Factions" "Free Worlds" `The Free Worlds is a collection of local governments in the southern galactic arm who have declared independence from the Republic after Parliament refused to address issues they raised about trade tariffs, taxation, and representation. They may be linked to the recent terrorist attacks on the Navy Yard and the galactic stock exchange, although they deny responsibility.`
 		conversation
-			`The moment you step off your ship you realize something is very wrong. The spaceport is eerily quiet, and a large crowd of people is gathered around a video screen in the local bar.`
-			`	You ask what is happening, and someone explains. Recently, a collection of local governments in the southern galactic arm sent the Republic Parliament what amounted to an ultimatum: a refusal to pay taxes until certain reforms were made in trade tariffs, ship licensing, and election of planetary representatives. The coalition calls themselves the "Free Worlds." Parliament outright refused to consider their demands.`
-			`	Then, in the early morning, nuclear explosions on Geminus and Martini destroyed the Republic Navy Yard and the Galactic Stock Exchange, crippling the military and economic center of the Republic. The "Free Worlds" disclaim any responsibility for the attacks, despite the timing and the fact that the attacks serve their purposes very well.`
-			`	Unless the terrorists can be found or turn themselves in, civil war is imminent. It has been less than a year since you bought your ship, and already the galaxy is falling apart on you.`
+			`The spaceport carries all the hush of a funeral procession, visitors and locals alike gathered around the video screens. Usually covered by advertisements, today they're all tuned to a live news broadcast.`
+			``
+			`	The reporter's voice is cool and professional, but there's no mistaking the genuine emotion behind it.`
+			`	"Early July 4th the Galactic Stock Exchange and the Navy Shipyard orbiting Geminus and Martini were targeted by what is believed to be a terrorist organization calling themselves “The Free Worlds”, previously known as the Southern Mutual Defence Pact. This follows the Parliament super majority vote on July 3rd that refused their demands of a reform on trade tarrifs, ship licensing, and parliamentary representation."`
+			`	"Eyewitness accounts, while currently unsubstantiated, have placed Southern Mutual Defense Pact ships in the systems where the attacks occurred. Former Representative Katya Reynolds, releasing a statement earlier today, claims that this is a fabricated excuse to justify a Republic crackdown in the south and prevent their secession."`
+			`	"As cleanup following this vicious attack continues, our own Republic Navy has confirmed information that these attacks were carried out using nuclear weapons, which have long since been outlawed due to their cruelty and environmental fallout. Current estimates have put the death rate at over ten thousand civilians and Navy personnel. Our hearts and prayers go out to the families affected by these attacks."`
+			`	"On the subject, Navy Commander Joan Chavarria gave a clear message, promising all of us shocked and hurt by these attacks that justice will be served. I am also now being informed that the Navy has put out a call for assistance from all available captains, promising military grade pay for taking over non-essential logistics support tasks as the Navy diverts defense fleets to protect the galaxy from any further attacks."`
 				decline
 
 event "initial deployment 1"
