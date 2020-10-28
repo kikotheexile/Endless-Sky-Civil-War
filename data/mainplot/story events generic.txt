@@ -10,6 +10,60 @@
 
 event "remembrance day"
 	date 19 2 3014
+	system "Spica"
+		government "Southern Mutual Defense Pact"
+	system "Minkar"
+		government "Southern Mutual Defense Pact"
+	system "Acrux"
+		government "Southern Mutual Defense Pact"
+	system "Mimosa"
+		government "Southern Mutual Defense Pact"
+	system "Kraz"
+		government "Southern Mutual Defense Pact"
+	system "Izar"
+		government "Southern Mutual Defense Pact"
+	system "Zeta Centauri"
+		government "Southern Mutual Defense Pact"
+	system "Hadar"
+		government "Southern Mutual Defense Pact"
+	system "Alkaid"
+		government "Southern Mutual Defense Pact"
+	system "Zubeneschamali"
+		government "Southern Mutual Defense Pact"
+	system "Kochab"
+		government "Southern Mutual Defense Pact"
+	system "Ildaria"
+		government "Southern Mutual Defense Pact"
+	system "Zubenelgenubi"
+		government "Southern Mutual Defense Pact"
+	system "Sabik"
+		government "Southern Mutual Defense Pact"
+	system "Unukalhai"
+		government "Southern Mutual Defense Pact"
+	system "Kornephoros"
+		government "Southern Mutual Defense Pact"
+	system "Sargas"
+		government "Southern Mutual Defense Pact"
+	system "Lesath"
+		government "Southern Mutual Defense Pact"
+	system "Aldhibain"
+		government "Southern Mutual Defense Pact"
+	system "Dschubba"
+		government "Southern Mutual Defense Pact"
+	system "Atria"
+		government "Southern Mutual Defense Pact"
+	system "Alniyat"
+		government "Southern Mutual Defense Pact"
+	system "Han"
+		government "Southern Mutual Defense Pact"
+	system "Pherkad"
+		government "Southern Mutual Defense Pact"
+	system "Yed Prior"
+		government "Southern Mutual Defense Pact"
+	system "Beta Lupi"
+		government "Southern Mutual Defense Pact"
+	system "Kappa Centauri"
+		government "Southern Mutual Defense Pact"
 
 event "defected: free worlds"
 	#Placeholder empty mission
@@ -197,7 +251,7 @@ mission "event: war begins"
 			`The spaceport carries all the hush of a funeral procession, visitors and locals alike gathered around the video screens. Usually covered by advertisements, today they're all tuned to a live news broadcast.`
 			``
 			`	The reporter's voice is cool and professional, but there's no mistaking the genuine emotion behind it.`
-			`	"Early July 4th the Galactic Stock Exchange and the Navy Shipyard orbiting Geminus and Martini were targeted by what is believed to be a terrorist organization calling themselves “The Free Worlds”, previously known as the Southern Mutual Defence Pact. This follows the Parliament super majority vote on July 3rd that refused their demands of a reform on trade tarrifs, ship licensing, and parliamentary representation."`
+			`	"Early July 4th, the Galactic Stock Exchange and the Navy Shipyard orbiting Geminus and Martini were targeted by what is believed to be a terrorist organization calling themselves “The Free Worlds”, previously known as the Southern Mutual Defence Pact. This follows the Parliament super majority vote on July 3rd that refused their demands of a reform on trade tarrifs, ship licensing, and parliamentary representation."`
 			`	"Eyewitness accounts, while currently unsubstantiated, have placed Southern Mutual Defense Pact ships in the systems where the attacks occurred. Former Representative Katya Reynolds, releasing a statement earlier today, claims that this is a fabricated excuse to justify a Republic crackdown in the south and prevent their secession."`
 			`	"As cleanup following this vicious attack continues, our own Republic Navy has confirmed information that these attacks were carried out using nuclear weapons, which have long since been outlawed due to their cruelty and environmental fallout. Current estimates have put the death rate at over ten thousand civilians and Navy personnel. Our hearts and prayers go out to the families affected by these attacks."`
 			`	"On the subject, Navy Commander Joan Chavarria gave a clear message, promising all of us shocked and hurt by these attacks that justice will be served. I am also now being informed that the Navy has put out a call for assistance from all available captains, promising military grade pay for taking over non-essential logistics support tasks as the Navy diverts defense fleets to protect the galaxy from any further attacks."`
@@ -1407,14 +1461,17 @@ event "fw northern expansion"
 		government "Free Worlds"
 
 
-
+# The event will remain with the Clink name, however it will no longer be Clink as that is a very bad tactical choice. 
+# The Prison POW camp will now be on Twinstar - back behind the line a bit more, and not in the location of a major battle and chokepoint which would be contested by the Republic
 event "fw prison on Clink"
-	planet Clink
-		add description `Recently, the Free Worlds have converted Clink into a prison colony for Navy officers and support staff who were captured in the battle for the Rastaban system.`
+	planet Twinstar
+		add description `	Recently, the Free Worlds have built a Prisoner of War colony here for Navy officers and support staff who were captured in the battle for the Rastaban system.`
 
+# When the Prison closes, it is now being used to rehabilitate pirates
 event "fw prison on Clink closes"
-	planet Clink
-		description `About a decade ago, a mining corporation from Zug planted a colony on Clink for harvesting some rare earth minerals that are present in this moon's crust due to its unusually high rate of asteroid impacts. The atmosphere here is too thin to breathe without a respirator, and because of the low gravity, the dust raised by the mining operations hangs perpetually in the air.`
+	planet Twinstar
+		description `The only settlement on this small world is Twinstar Depot, a village created mostly just to service the spaceport, where food and equipment from the southern galactic arm is stored and sent out in all directions to supply the rest of human space. The gravity is far less than ideal for human development, but the atmosphere is breathable and some tourists come to the planet just for the experience of being able to run and jump in low gravity without the need for a suit or oxygen tanks.`
+		description `	The Free Worlds maintains a corrections facility here which was formerly a Prisoner of War camp. The corrections facility's main focus is the rehabilitation of captured pirates.`
 
 mission "FW Clink Prison Closes"
 	landing
@@ -1427,7 +1484,6 @@ mission "FW Clink Prison Closes"
 	on offer
 		event "fw prison on Clink closes"
 		fail
-
 
 
 event "alphas capture Poisonwood"
@@ -2742,30 +2798,3 @@ event "syndicate tech available"
 		"Ionic Afterburner"
 		"S-270 Regenerator"
 		"S-970 Regenerator"
-
-
-
-event "geminus rebuilt"
-	planet Geminus
-		description `Geminus, although not the most hospitable of worlds, is a young enough planet that large stores of iron, titanium, and other metals are easily accessible near the surface. The constant volcanic activity leaves the planet perpetually shrouded in a twilight haze of ash and fog.`
-		description `	The shattered remnants of the old Navy Yard are still left abandoned and slowly rusting away in the planet's caustic atmosphere, but the Republic has now built a new shipyard to replace the one destroyed in the bombing, and once again Geminus has become a central hub of technology and industry.`
-		spaceport `Like everything else on Geminus, the spaceport is not terribly pretty, but is functional and efficient. Each of the wide hallways is marked out like a road, with space in the center for electric carts carrying cargo, while pedestrians are relegated to the edges. Video cameras and sensors have been placed at every intersection, and access to the shipbuilding facilities is tightly controlled.`
-		spaceport `	The hub of the spaceport is a food court with a ring of shops in the center and seating on the outside, where you can look out of plate glass windows at the lava fields and caldera outside. By night, you can see the volcanic glow all around the horizon.`
-		shipyard "Basic Ships"
-		shipyard "Navy Basics"
-		shipyard "Navy Advanced"
-		shipyard "Betelgeuse Basics"
-		shipyard "Lionheart Basics"
-		outfitter "Common Outfits"
-		outfitter "Ammo North"
-		outfitter "Lovelace Advanced"
-		outfitter "Syndicate Basics"
-
-mission "Geminus Rebuilt"
-	landing
-	invisible
-	to offer
-		has "main plot completed"
-	on offer
-		event "geminus rebuilt" 90
-		fail
