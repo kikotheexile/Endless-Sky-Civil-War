@@ -35,7 +35,7 @@ mission "Pact Recon 0"
 				`	(Listen in.)`
 				`	(Ignore Them.)`
 					decline 
-			`	"Beginning to wonder if Captain life isn't all it's cracked up to be?" The captain says, noticing your blatant attempt to eavesdrop.`
+			`	"Beginning to wonder if Merchant life isn't all it's cracked up to be?" The captain says, noticing your blatant attempt to eavesdrop.`
 			choice
 				`	"I'm wondering if there's anything I can do to keep my ship from going through the ringer like that."`
 					goto ringer
@@ -2918,6 +2918,7 @@ mission "FW Hope Recon 1C"
 			`You land on Hope, place Freya's surveillance rigs in the locations she specified, and fire them up. Telemetry starts coming in, and you verify that your own ship is showing up in their scans. However, they are also picking up an unidentified heat signature on another part of Hope. Do you investigate?`
 			choice
 				`	(Of course!)`
+				`	(Yea, it could be Penguins!)
 				`	(No, sounds risky.)`
 					decline
 			
@@ -2987,7 +2988,7 @@ mission "FW Hope Recon 1D"
 				`	"You have a point."`
 					goto next
 				`	"Ok but what if there were and I missed them? I need to go back!"`
-					goto attack
+					goto penguins2
 			label next
 			`	"Good," says Freya, "because I've got a much more interesting job for you to do next. The people at Kraz Cybernetics have a new toy they want to test out, and I volunteered you to help out. They're waiting for you on Rust, in the Kraz system."`
 				decline
@@ -2999,8 +3000,11 @@ mission "FW Hope Recon 1D"
 				`	"Sorry, but I hate leaving a job unfinished. I want to destroy those sensors."`
 				`	"Okay, you've convinced me."`
 					decline
-			
 			`	"Fine," says Freya, "but report to Rust when you're done. And try not to get yourself killed." She's clearly disappointed in you.`
+				accept
+
+			label penguins2
+			`	Freya throws up her arms and yells, "You know what? Fine, whatever! Just report to Rust when you're done searching for your mythical swimming birds."`
 				accept
 	
 	npc
@@ -3012,9 +3016,11 @@ mission "FW Hope Recon 1D"
 	on complete
 		log "Destroyed some Navy sensor installations on Hope, but it will likely be only a matter of days before they replace them."
 		conversation
-			`You spend a while sweeping the planet and hoping that the Navy won't come after you. In all, you discover three more sensor installations. There is no way to be sure if you found them all, but it's time now for you to report for duty on Rust.`
-
-
+			`You arrive on Hope, what do you scan for?`
+			choice
+				`	(Sensors.)`
+				`	(Penguins!)`
+			`You set your autopilot to sweep the planet and scan for any anomalies. You discover and destroy three more sensor installations. Your sensors pick up nothing else of interest. It's now time for you to report for duty on Rust.`
 
 mission "FW Plasma Testing 1"
 	landing
@@ -4559,7 +4565,7 @@ mission "FW Southern Battle 3"
 
 mission "FW Southern Prisoners - Release"
 	name "Return Navy Prisoners"
-	description "As a goodwill gesture, return the Navy prisoners to <destination> rather than imprisoning them on Clink. Your safe passage ends on <day>."
+	description "As a goodwill gesture, return the Navy prisoners to <destination> rather than imprisoning them on Twinstar. Your safe passage ends on <day>."
 	source Dancer
 	clearance
 	destination "New Iceland"
@@ -4585,7 +4591,7 @@ mission "FW Southern Prisoners - Release"
 				`	"You lost me."`
 				`	"Oh, so I decide their fate? Neat."`
 			`	"We will be putting you in charge of the prisoner convoy," says Alondo, "and arranging a week of safe passage for you. If you think we should return the prisoners as a gesture of goodwill to improve our chances of a diplomatic end to this war, bring the convoy to <planet>."`
-			`	"But if you think we should hold on to the prisoners until we receive Katya safely back," says Freya, "bring the convoy to Clink. Understand?"`
+			`	"But if you think we should hold on to the prisoners until we receive Katya safely back," says Freya, "bring the convoy to Twinstar. Understand?"`
 			`	It's a serious choice with no clear right decision.`
 				accept
 	
@@ -4619,9 +4625,9 @@ mission "FW Southern Prisoners - Release"
 
 mission "FW Southern Prisoners - Keep"
 	name "Keep Navy Prisoners"
-	description "Rather than releasing the Navy prisoners, deliver them to the mines on Clink, to be held until Katya is returned to you."
+	description "Rather than releasing the Navy prisoners, deliver them to the prison camp on Twinstar, to be held until Katya is returned to you."
 	source Dancer
-	destination Clink
+	destination Twinstar
 	to offer
 		has "FW Southern Battle 3: done"
 	to fail
@@ -4631,7 +4637,7 @@ mission "FW Southern Prisoners - Keep"
 		karma --
 		set "fw delivered prisoners"
 		event "fw prison on Clink"
-		log "Was given the choice of what to do with the Navy prisoners from the battle for Rastaban, and decided to imprison them on Clink. Hopefully that will weaken the Navy, a little bit."
+		log "Was given the choice of what to do with the Navy prisoners from the battle for Rastaban, and decided to imprison them on Twinstar. Hopefully that will weaken the Navy, a little bit."
 
 
 
@@ -4681,8 +4687,8 @@ mission "FW Southern Prisoners - Released"
 mission "FW Southern Prisoners - Kept"
 	landing
 	name "Report to Dancer"
-	description "Report back to Freya and Alondo on Dancer that you chose to keep the prisoners on Clink."
-	source Clink
+	description "Report back to Freya and Alondo on Dancer that you chose to keep the prisoners on Twinstar."
+	source Twinstar
 	destination Dancer
 	to offer
 		has "FW Southern Prisoners - Keep: done"
@@ -4691,7 +4697,7 @@ mission "FW Southern Prisoners - Kept"
 	
 	on offer
 		conversation
-			`You drop off the prisoners at the mines of Clink, to be held until the Navy returns Katya to you. Now, it's time to meet with Freya and Alondo and decide what should be done next.`
+			`You drop off the prisoners at the prison on Twinstar, to be held until the Navy returns Katya to you. Now, it's time to meet with Freya and Alondo and decide what should be done next.`
 				accept
 
 
