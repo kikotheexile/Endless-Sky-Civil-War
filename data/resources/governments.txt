@@ -502,3 +502,7 @@ government "Test Dummy"
 	"player reputation" -1000
 	"hostile hail" "test dummy"
 	"hostile disabled hail" "disabled test dummy"
+
+# Uninhabited Space
+government "Uninhabited"
+	color 0.5 0.5 0.5
