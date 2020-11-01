@@ -24,7 +24,7 @@ mission "Oathkeeper Intro"
 	passengers 3
 	on offer
 		conversation
-			`As you're passing a local restaurant, a familiar face approaches. Captain Jane Mulgrew calls over to you, "Hey, Captain <last>! It's good to see you again. I heard you became a contractor, and that's even better! We're short-handed with the war and all, so we can always use good pilots."
+			`As you're passing a local restaurant, a familiar face approaches. Captain Jane Mulgrew calls over to you, "Hey, Captain <last>! It's good to see you again. I heard you became a contractor, and that's even better! We're short-handed with the war and all, so we can always use good pilots."`
 			`	"Let's get right into it, shall we? The hyperspace relay system here is in a dreadful state, and I'd like some help fixing it up, so that the Oathkeepers can keep up with the Northern Union anarchists around here. For now, I just need you to take me and my assistants to the Hassaleh system with our equipment so we can install a sensor. It is a little bit out of the way, but I'm sure you're used to that."`
 			choice
 				`	"Sure, I'll go fire up the engines."`
@@ -121,7 +121,7 @@ mission "Oathkeeper Scouting 2"
 					goto raids
 				`	"What, putting up sensors?"`
 					goto sensors
-			`	"Well, that is what you signed up for, isn't it? Things are definitely heating up! Well, next I want you to check out the Elnath system next to Aldebaran. Lovelace Labs tests weapons there, so it's a prime target for the raids. Well! How about it?"
+			`	"Well, that is what you signed up for, isn't it? Things are definitely heating up! Well, next I want you to check out the Elnath system next to Aldebaran. Lovelace Labs tests weapons there, so it's a prime target for the raids. Well! How about it?"`
 			
 			label raids
 			`	"Not quite, but at least you're prepared for the worst!" Mulgrew chuckles more. "I actually want you to install more sensors, but you definitely could end up in combat. The Northern Union has lots of small fleets for raiding as many planets as possible. This time, I'd like you to check out the Elnath system."`
@@ -129,7 +129,7 @@ mission "Oathkeeper Scouting 2"
 			label sensors
 			`	"Yep, that's the one! The Northern Union might still be after Lovelace Labs, so I want you to go to Pilot in Elnath this time. They make lots of cool prototypes there, wouldn't want those getting out."`
 			choice
-				`"Yeah, I think I can handle this. Be back soon!"
+				`"Yeah, I think I can handle this. Be back soon!"`
 					accept
 				
 mission "Oathkeeper Scouting 2.1"
@@ -228,12 +228,12 @@ mission "Oathkeeper Esort Intro"
 					goto maelstrom
 				`	"Sounds dangerous. Let me make some last minute preparations, I'll be back."`
 					defer
-				`	"I'm on it! Straight to Farpoint."
+				`	"I'm on it! Straight to Farpoint."`
 					accept
 			label maelstrom
-			`	"Well, I had to make a report on- Wait, I can't talk about that with you! Sorry, it's important. You'll just have to take my word for it."
+			`	"Well, I had to make a report on- Wait, I can't talk about that with you! Sorry, it's important. You'll just have to take my word for it."`
 			choice
-				`	"Alright, I guess. I'll take that message then."
+				`	"Alright, I guess. I'll take that message then."`
 					accept
 	on complete
 		log "Met an eccentric Humanitarian Corps officer named Nguyen, who offered to take the message from Mulgrew to her superiors and requested escorts for a Humanitarian Corps fleet to Prime, which lost its orbital shipyard after a Northern Union raid."
@@ -371,7 +371,7 @@ mission "Oathkeeper Escort 2.1"
 			`	The officer rolls her eyes. "Ha ha, very funny. Doesn't look like anyone has any questions, so we'll get to it."`
 			label continue
 			`	The officer's communicator beeps, and he is clearly not happy with the news he just recieved. He curses.`
-			`	"Well the job just got harder, it seems that there are planets being raided all along our route to Prime. There are some Free Worlds ships harassing our supply lines, and Northern Union opportunists doing the same." He pauses for a moment. 
+			`	"Well the job just got harder, it seems that there are planets being raided all along our route to Prime. There are some Free Worlds ships harassing our supply lines, and Northern Union opportunists doing the same." He pauses for a moment.`
 			`	"This changes nothing. Just stick with the group, alright everyone? We'll be taking off as soon as the caravan finishes its preparations."`	
 				accept
 
