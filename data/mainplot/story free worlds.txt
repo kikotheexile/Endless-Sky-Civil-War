@@ -2918,7 +2918,7 @@ mission "FW Hope Recon 1C"
 			`You land on Hope, place Freya's surveillance rigs in the locations she specified, and fire them up. Telemetry starts coming in, and you verify that your own ship is showing up in their scans. However, they are also picking up an unidentified heat signature on another part of Hope. Do you investigate?`
 			choice
 				`	(Of course!)`
-				`	(Yea, it could be Penguins!)
+				`	(Yea, it could be Penguins!)`
 				`	(No, sounds risky.)`
 					decline
 			
