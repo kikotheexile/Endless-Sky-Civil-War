@@ -19,6 +19,7 @@ ship "Sentinel Drone"
 		licenses
 			Navy
 		"cost" 83000
+		"landing gear" 1
 		"hull" 700
 		"automaton" 1
 		"mass" 20
@@ -57,6 +58,7 @@ ship "Thea Drone"
 		licenses
 			Navy
 		"cost" 50000
+		"landing gear" 1
 		"hull" 300
 		"automaton" 1
 		"mass" 15
@@ -90,6 +92,7 @@ ship "Earth Shaper"
 	attributes
 		category "Light Freighter"
 		"cost" 500000
+		"landing gear" 1
 		"hull" 3300
 		"automaton" 1
 		"mass" 30
@@ -127,6 +130,7 @@ ship "Dagger"
 	attributes
 		category "Fighter"
 		"cost" 129000
+		"landing gear" 1
 		"shields" 1000
 		"hull" 300
 		"landing gear" 1
@@ -175,6 +179,7 @@ ship "Finch"
 	attributes
 		category "Fighter"
 		"cost" 126000
+		"landing gear" 1
 		"shields" 1100
 		"hull" 200
 		"landing gear" 1
@@ -219,6 +224,7 @@ ship "Lance"
 	attributes
 		category "Fighter"
 		"cost" 93000
+		"landing gear" 1
 		"shields" 800
 		"hull" 400
 		"landing gear" 1
@@ -264,6 +270,7 @@ ship "Barb"
 	attributes
 		category "Fighter"
 		"cost" 50000
+		"landing gear" 1
 		"shields" 800
 		"hull" 200
 		"landing gear" 1
@@ -309,6 +316,7 @@ ship "Thorn"
 	attributes
 		category "Fighter"
 		"cost" 50000
+		"landing gear" 1
 		"shields" 800
 		"hull" 200
 		"automaton" 1
@@ -391,6 +399,7 @@ ship "Shuttle"
 	attributes
 		category "Fighter"
 		"cost" 180000
+		"landing gear" 1
 		"shields" 500
 		"hull" 600
 		"landing gear" 1
@@ -436,6 +445,7 @@ ship "Arrow"
 	attributes
 		category "Yacht"
 		"cost" 1200000
+		"landing gear" 1
 		"shields" 2000
 		"hull" 400
 		"hull repair rate" .1
@@ -490,6 +500,7 @@ ship "Blackbird"
 	attributes
 		category "Yacht"
 		"cost" 2230000
+		"landing gear" 1
 		"shields" 4400
 		"hull" 900
 		"hull repair rate" .1
@@ -548,6 +559,7 @@ ship "Bounder"
 	attributes
 		category "Yacht"
 		"cost" 1140000
+		"landing gear" 1
 		"shields" 2200
 		"hull" 700
 		"hull repair rate" .1
@@ -597,6 +609,7 @@ ship "Flivver"
 	attributes
 		category "Yacht"
 		"cost" 180000
+		"landing gear" 1
 		"shields" 1400
 		"hull" 200
 		"hull repair rate" .1
@@ -645,6 +658,7 @@ ship "Heavy Shuttle"
 	attributes
 		category "Yacht"
 		"cost" 220000
+		"landing gear" 1
 		"shields" 700
 		"hull" 700
 		"hull repair rate" .1
@@ -690,6 +704,7 @@ ship "Caravel"
 	attributes
 		category "Yacht"
 		"cost" 850000
+		"landing gear" 1
 		"shields" 1200
 		"hull" 400
 		"hull repair rate" .1
@@ -748,6 +763,7 @@ ship "Star Queen"
 	attributes
 		category "Yacht"
 		"cost" 5500000
+		"landing gear" 1
 		"shields" 4100
 		"hull" 2200
 		"hull repair rate" .1
@@ -808,6 +824,7 @@ ship "Berserker"
 	attributes
 		category "Gunship"
 		"cost" 520000
+		"landing gear" 1
 		"shields" 2200
 		"hull" 500
 		"hull repair rate" .1
@@ -866,6 +883,7 @@ ship "Fury"
 	attributes
 		category "Gunship"
 		"cost" 490000
+		"landing gear" 1
 		"shields" 2000
 		"hull" 400
 		"hull repair rate" .1
@@ -922,6 +940,7 @@ ship "Hawk"
 	attributes
 		category "Gunship"
 		"cost" 670000
+		"landing gear" 1
 		"shields" 2500
 		"hull" 500
 		"hull repair rate" .1
@@ -976,6 +995,7 @@ ship "Sparrow"
 	attributes
 		category "Gunship"
 		"cost" 225000
+		"landing gear" 1
 		"shields" 1200
 		"hull" 300
 		"hull repair rate" .1
@@ -1027,6 +1047,7 @@ ship "Wasp"
 	attributes
 		category "Gunship"
 		"cost" 400000
+		"landing gear" 1
 		"shields" 1500
 		"hull" 500
 		"hull repair rate" .1
@@ -1086,6 +1107,7 @@ ship "Argosy"
 	attributes
 		category "Freighter"
 		"cost" 1960000
+		"landing gear" 1
 		"shields" 4200
 		"hull" 2600
 		"hull repair rate" .1
@@ -1152,6 +1174,7 @@ ship "Clipper"
 	attributes
 		category "Freighter"
 		"cost" 900000
+		"landing gear" 1
 		"shields" 2700
 		"hull" 800
 		"hull repair rate" .1
@@ -1211,6 +1234,7 @@ ship "Freighter"
 	attributes
 		category "Freighter"
 		"cost" 730000
+		"landing gear" 1
 		"shields" 2000
 		"hull" 2000
 		"hull repair rate" .1
@@ -1265,6 +1289,7 @@ ship "Star Barge"
 	attributes
 		category "Freighter"
 		"cost" 190000
+		"landing gear" 1
 		"shields" 600
 		"hull" 1000
 		"hull repair rate" .1
@@ -1316,6 +1341,7 @@ ship "Hauler"
 	attributes
 		category "Freighter"
 		"cost" 1430000
+		"landing gear" 1
 		"shields" 2500
 		"hull" 3700
 		"hull repair rate" .1
@@ -1378,6 +1404,7 @@ ship "Hauler II"
 	attributes
 		category "Container Ship"
 		"cost" 2340000
+		"landing gear" 1
 		"shields" 2900
 		"hull" 5200
 		"hull repair rate" .1
@@ -1441,6 +1468,7 @@ ship "Hauler III"
 	attributes
 		category "Container Ship"
 		"cost" 3260000
+		"landing gear" 1
 		"shields" 3300
 		"hull" 6700
 		"hull repair rate" .1
@@ -1501,6 +1529,7 @@ ship "Nest"
 	attributes
 		category "Carrier"
 		"cost" 2500000
+		"landing gear" 1
 		"shields" 2500
 		"hull" 3700
 		"hull repair rate" .1
@@ -1564,6 +1593,7 @@ ship "Roost"
 	attributes
 		category "Carrier"
 		"cost" 3000000
+		"landing gear" 1
 		"shields" 2900
 		"hull" 5200
 		"hull repair rate" .1
@@ -1632,6 +1662,7 @@ ship "Skein"
 		licenses
 			"Militia Carrier"
 		"cost" 3500000
+		"landing gear" 1
 		"shields" 3300
 		"hull" 6700
 		"hull repair rate" .1
@@ -1702,6 +1733,7 @@ ship "Class C Freighter"
 	attributes
 		category "Carrier"
 		"cost" 11400000
+		"landing gear" 1
 		"shields" 13500
 		"hull" 7600
 		"hull repair rate" .1
@@ -1770,6 +1802,7 @@ ship "Behemoth"
 	attributes
 		category "Container Ship"
 		"cost" 10800000
+		"landing gear" 1
 		"shields" 7600
 		"hull" 6300
 		"hull repair rate" .1
@@ -1833,6 +1866,7 @@ ship "Bulk Freighter"
 	attributes
 		category "Container Ship"
 		"cost" 9400000
+		"landing gear" 1
 		"shields" 4000
 		"hull" 7600
 		"hull repair rate" .1
@@ -1900,6 +1934,7 @@ ship "Narcissus"
 		licenses
 			Navy
 		"cost" 3200000
+		"landing gear" 1
 		"shields" 5800
 		"hull" 1400
 		"hull repair rate" .1
@@ -1962,6 +1997,7 @@ ship "Headhunter"
 	attributes
 		category "Frigate"
 		"cost" 1850000
+		"landing gear" 1
 		"shields" 3800
 		"hull" 700
 		"hull repair rate" .1
@@ -2021,6 +2057,7 @@ ship "Odyssey"
 	attributes
 		category "Frigate"
 		"cost" 1960000
+		"landing gear" 1
 		"shields" 4800
 		"hull" 1900
 		"hull repair rate" .1
@@ -2089,6 +2126,7 @@ ship "Quicksilver"
 	attributes
 		category "Frigate"
 		"cost" 1090000
+		"landing gear" 1
 		"shields" 3000
 		"hull" 800
 		"hull repair rate" .1
@@ -2146,6 +2184,7 @@ ship "Achlys"
 		licenses
 			Navy
 		"cost" 1580000
+		"landing gear" 1
 		"shields" 3500
 		"hull" 1200
 		"hull repair rate" .1
@@ -2210,6 +2249,7 @@ ship "Raven"
 	attributes
 		category "Frigate"
 		"cost" 2200000
+		"landing gear" 1
 		"shields" 4700
 		"hull" 1400
 		"hull repair rate" .1
@@ -2274,6 +2314,7 @@ ship "Endevor"
 	attributes
 		category "Destroyer"
 		"cost" 4500000
+		"landing gear" 1
 		"shields" 9800
 		"hull" 6000
 		"hull repair rate" .1
@@ -2333,6 +2374,7 @@ ship "Manta"
 	attributes
 		category "Destroyer"
 		"cost" 3400000
+		"landing gear" 1
 		"shields" 5900
 		"hull" 1500
 		"hull repair rate" .1
@@ -2393,6 +2435,7 @@ ship "Osprey"
 	attributes
 		category "Destroyer"
 		"cost" 4400000
+		"landing gear" 1
 		"shields" 7200
 		"hull" 1600
 		"hull repair rate" .1
@@ -2455,6 +2498,7 @@ ship "Splinter"
 	attributes
 		category "Destroyer"
 		"cost" 3100000
+		"landing gear" 1
 		"shields" 5200
 		"hull" 1700
 		"hull repair rate" .1
@@ -2515,6 +2559,7 @@ ship "Aerie"
 	attributes
 		category "Carrier"
 		"cost" 3500000
+		"landing gear" 1
 		"shields" 5700
 		"hull" 1900
 		"hull repair rate" .1
@@ -2579,6 +2624,7 @@ ship "Bastion"
 	attributes
 		category "Destroyer"
 		"cost" 3560000
+		"landing gear" 1
 		"shields" 6700
 		"hull" 4200
 		"hull repair rate" .1
@@ -2646,6 +2692,7 @@ ship "Challenger"
 	attributes
 		category "Destroyer"
 		"cost" 4400000
+		"landing gear" 1
 		"shields" 6800
 		"hull" 800
 		"hull repair rate" .1
@@ -2709,6 +2756,7 @@ ship "Firebird"
 	attributes
 		category "Destroyer"
 		"cost" 3700000
+		"landing gear" 1
 		"shields" 5800
 		"hull" 3400
 		"hull repair rate" .1
@@ -2774,6 +2822,7 @@ ship "Aletheia"
 		licenses
 			Navy
 		"cost" 5200000
+		"landing gear" 1
 		"shields" 8000
 		"hull" 2500
 		"hull repair rate" .1
@@ -2844,6 +2893,7 @@ ship "Zephyrus"
 		licenses
 			Navy
 		"cost" 7500000
+		"landing gear" 1
 		"shields" 4000
 		"hull" 2000
 		"hull repair rate" .1
@@ -2915,6 +2965,7 @@ ship "Astraea"
 		licenses
 			"Free Worlds"		
 		"cost" 9000000
+		"landing gear" 1
 		"shields" 14100
 		"hull" 5300
 		"hull repair rate" .1
@@ -2983,6 +3034,7 @@ ship "Schooner"
 	attributes
 		category "Cruiser"
 		"cost" 10800000
+		"landing gear" 1
 		"shields" 12000
 		"hull" 6500
 		"hull repair rate" .1
@@ -3047,6 +3099,7 @@ ship "Arete"
 			Navy
 			Carrier
 		"cost" 15200000
+		"landing gear" 1
 		"shields" 21400
 		"hull" 8300
 		"hull repair rate" .1
@@ -3138,6 +3191,7 @@ ship "Nomos"
 			Navy
 			Cruiser
 		"cost" 11200000
+		"landing gear" 1
 		"shields" 19600
 		"hull" 6400
 		"hull repair rate" .1
@@ -3218,6 +3272,7 @@ ship "Elpis"
 		licenses
 			"Free Worlds"		
 		"cost" 11900000
+		"landing gear" 1
 		"shields" 18100
 		"hull" 7300
 		"hull repair rate" .1
@@ -3286,6 +3341,7 @@ ship "Falcon"
 	attributes
 		category "Cruiser"
 		"cost" 10900000
+		"landing gear" 1
 		"shields" 12800
 		"hull" 3700
 		"hull repair rate" .1
@@ -3352,6 +3408,7 @@ ship "Leviathan"
 	attributes
 		category "Cruiser"
 		"cost" 9800000
+		"landing gear" 1
 		"shields" 14400
 		"hull" 5000
 		"hull repair rate" .1
@@ -3415,6 +3472,7 @@ ship "Protector"
 	attributes
 		category "Cruiser"
 		"cost" 5500000
+		"landing gear" 1
 		"shields" 9500
 		"hull" 6500
 		"hull repair rate" .1
@@ -3478,6 +3536,7 @@ ship "Aegis"
 	attributes
 		category "Cruiser"
 		"cost" 5500000
+		"landing gear" 1
 		"shields" 9500
 		"hull" 6500
 		"hull repair rate" .1
@@ -3540,6 +3599,7 @@ ship "Vanguard"
 	attributes
 		category "Cruiser"
 		"cost" 7200000
+		"landing gear" 1
 		"shields" 9800
 		"hull" 6000
 		"hull repair rate" .1
@@ -4090,6 +4150,7 @@ ship "Dart"
 			Marauder
 			SoCo
 		"cost" 1320000
+		"landing gear" 1
 		"shields" 2300
 		"hull" 500
 		"required crew" 2
@@ -4144,6 +4205,7 @@ ship "Bolt"
 			Marauder
 			Hotrod
 		"cost" 1320000
+		"landing gear" 1
 		"shields" 2300
 		"hull" 500
 		"required crew" 2
@@ -4191,6 +4253,7 @@ ship "Missile"
 			Marauder
 			Smuggler
 		"cost" 1320000
+		"landing gear" 1
 		"shields" 2300
 		"hull" 500
 		"required crew" 2
@@ -4242,6 +4305,7 @@ ship "Jumper"
 			Marauder
 			SoCo
 		"cost" 1250000
+		"landing gear" 1
 		"shields" 2500
 		"hull" 700
 		"required crew" 2
@@ -4299,6 +4363,7 @@ ship "Polevaulter"
 			Marauder
 			Smuggler
 		"cost" 1250000
+		"landing gear" 1
 		"shields" 2500
 		"hull" 700
 		"required crew" 2
@@ -4348,6 +4413,7 @@ ship "Pouncer"
 			Marauder
 			Hotrod
 		"cost" 1250000
+		"landing gear" 1
 		"shields" 2500
 		"hull" 700
 		"required crew" 2
@@ -4402,6 +4468,7 @@ ship "Merlin"
 			Marauder
 			SoCo
 		"cost" 13900000
+		"landing gear" 1
 		"shields" 14100
 		"hull" 4100
 		"required crew" 43
@@ -4464,6 +4531,7 @@ ship "Peregrine"
 			Marauder
 			Smuggler
 		"cost" 13900000
+		"landing gear" 1
 		"shields" 14100
 		"hull" 4100
 		"required crew" 43
@@ -4523,6 +4591,7 @@ ship "Harpy"
 			Marauder
 			Hotrod
 		"cost" 13900000
+		"landing gear" 1
 		"shields" 14100
 		"hull" 4100
 		"required crew" 43
@@ -4580,6 +4649,7 @@ ship "Phoenix"
 	attributes
 		category "Destroyer"
 		"cost" 4100000
+		"landing gear" 1
 		"shields" 7000
 		"hull" 3000
 		"required crew" 10
@@ -4637,6 +4707,7 @@ ship "Huma"
 	attributes
 		category "Destroyer"
 		"cost" 4100000
+		"landing gear" 1
 		"shields" 7000
 		"hull" 3000
 		"required crew" 10
@@ -4686,6 +4757,7 @@ ship "Fenghuang"
 	attributes
 		category "Destroyer"
 		"cost" 4100000
+		"landing gear" 1
 		"shields" 7000
 		"hull" 3000
 		"required crew" 10
@@ -4740,6 +4812,7 @@ ship "Lindworm"
 			Marauder
 			SoCo
 		"cost" 10800000
+		"landing gear" 1
 		"shields" 16000
 		"hull" 5500
 		"required crew" 48
@@ -4804,6 +4877,7 @@ ship "Selma"
 			Marauder
 			Smuggler
 		"cost" 10800000
+		"landing gear" 1
 		"shields" 16000
 		"hull" 5500
 		"required crew" 48
@@ -4853,6 +4927,7 @@ ship "Bakunawa"
 	attributes
 		category "Cruiser"
 		"cost" 10800000
+		"landing gear" 1
 		"shields" 16000
 		"hull" 5500
 		"required crew" 48
@@ -4910,6 +4985,7 @@ ship "Zonetail"
 			Marauder
 			SoCo
 		"cost" 3740000
+		"landing gear" 1
 		"shields" 6500
 		"hull" 1750
 		"required crew" 7
@@ -4972,6 +5048,7 @@ ship "Lesser Devil"
 			Marauder
 			Hotrod
 		"cost" 3740000
+		"landing gear" 1
 		"shields" 6500
 		"hull" 1750
 		"required crew" 7
@@ -5029,6 +5106,7 @@ ship "Spinetail"
 			Marauder
 			Smuggler
 		"cost" 3740000
+		"landing gear" 1
 		"shields" 6500
 		"hull" 1750
 		"required crew" 7
@@ -5089,6 +5167,7 @@ ship "Gallium"
 			Marauder
 			SoCo
 		"cost" 1200000
+		"landing gear" 1
 		"shields" 3500
 		"hull" 900
 		"required crew" 4
@@ -5143,6 +5222,7 @@ ship "Mercury"
 			Marauder
 			Smuggler
 		"cost" 1200000
+		"landing gear" 1
 		"shields" 3500
 		"hull" 900
 		"required crew" 4
@@ -5189,6 +5269,7 @@ ship "Phosphorus"
 	attributes
 		category "Frigate"
 		"cost" 1200000
+		"landing gear" 1
 		"shields" 3500
 		"hull" 900
 		"required crew" 4
@@ -5238,6 +5319,7 @@ ship "Crow"
 			Marauder
 			SoCo
 		"cost" 2750000
+		"landing gear" 1
 		"shields" 5200
 		"hull" 1600
 		"required crew" 7
@@ -5296,6 +5378,7 @@ ship "Rook"
 			Marauder
 			Smuggler
 		"cost" 2750000
+		"landing gear" 1
 		"shields" 5200
 		"hull" 1600
 		"required crew" 7
@@ -5344,6 +5427,7 @@ ship "Sturnus"
 			Marauder
 			Hotrod
 		"cost" 2750000
+		"landing gear" 1
 		"shields" 5200
 		"hull" 1600
 		"required crew" 7
@@ -5396,6 +5480,7 @@ ship "Sliver"
 			Marauder
 			SoCo
 		"cost" 3400000
+		"landing gear" 1
 		"shields" 5700
 		"hull" 1950
 		"required crew" 8
@@ -5454,6 +5539,7 @@ ship "Needle"
 			Marauder
 			Smuggler
 		"cost" 3400000
+		"landing gear" 1
 		"shields" 5700
 		"hull" 1950
 		"required crew" 8
@@ -5508,6 +5594,7 @@ ship "Sting"
 			Marauder
 			Hotrod
 		"cost" 3400000
+		"landing gear" 1
 		"shields" 5700
 		"hull" 1950
 		"required crew" 8
@@ -5668,6 +5755,7 @@ ship "Wyvern"
 		licenses
 			Quarg
 		"cost" 5900000
+		"landing gear" 1
 		"shields" 160000
 		"hull" 50000
 		"required crew" 160
