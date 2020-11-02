@@ -1193,7 +1193,7 @@ planet Martini
 		threshold 8500
 		fleet "Large Republic" 22
 
-planet "Martini Stock Exchange"
+planet "Prosperity Station"
 	attributes paradise rich station
 	landscape land/space3
 	description `High above the perfect beaches and weather of Martini sits the central stock exchange and bank. Without this station, much of the Republic's economy would be completely crippled, leaving room for the Syndicate or another wealthy faction to direct the flow of money.`
