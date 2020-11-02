@@ -30,7 +30,7 @@ planet Ada
 		fleet "Large Republic" 16
 
 planet Albatross
-	attributes pirate "south pirate"
+	attributes "requires: armed" pirate "south pirate"
 	landscape land/snow6
 	description `Albatross is a frigid ocean world orbiting a small, cold sun. The first settlers on Albatross were anarchists who believed that given a society free from unnatural laws and constraints, everyone would work for the common good. The next settlers were pirates who believed they could take easy advantage of such a society.`
 	description `	The anarchist farming communes, each self sufficient but always open to outside trade, are clustered in the barely temperate climate near the equator. The pirate bases, having a readier surplus of supplies, are located in the craggy, defensible mountain ranges, with the flat valleys set aside as landing strips.`
@@ -211,7 +211,7 @@ planet Bourne
 		fleet "Large Militia" 32
 
 planet "Buccaneer Bay"
-	attributes "requires: landing gear" pirate "core pirate"
+	attributes "requires: landing gear" "requires: armed" pirate "core pirate"
 	landscape land/beach0
 	description `Criminals not bent on going out in a blaze of glory dream of retiring to Buccaneer Bay. A warm ocean planet, with islands reminiscent of the ancient Caribbean where some of humanity's first true pirate fleets sailed.`
 	description `	Most of the inhabitants aren't pirates, but their descendants. These children of anarchist outlaws have built a system of regional government that oversees hospitals, schools, and other public services, well funded by the local cartel. The planet even sports its own shipyard, although many of the ships built here are, not surprisingly, based on designs pirated from the Syndicate and Republic shipyards.`
@@ -406,7 +406,7 @@ planet Darkstone
 		fleet "Small Militia" 18
 
 planet "Deadman's Cove"
-	attributes pirate "core pirate"
+	attributes "requires: landing gear" "requires: armed" pirate "core pirate"
 	landscape land/sea1
 	description `Deadman's Cove is an ocean planet, its continents taking up less than a tenth of the small planet's surface area. Legends tell of massive sea creatures lurking in the depths: serpents hundreds of meters long; colossal sea turtles; strange tentacled monsters and exotic fish.`
 	description `	One island archipelago is home to the spaceport, the only part of the planet where it is safe to land uninvited. The other islands, while appearing uninhabited, are often used as staging bases for pirate fleets, who guard their secrets closely.`
@@ -720,7 +720,7 @@ planet Grakhord
 	security 0.9
 
 planet Greenrock
-	attributes pirate "south pirate"
+	attributes "requires: armed" pirate "south pirate"
 	landscape land/sky0
 	description `Greenrock is the closest thing pirates in southern human space have to a center of government, taking the form of powerful megacorporations rather than elected officials. When rival pirate bands seek to negotiate on neutral territory, this is where they meet. Nearly everything is for sale here: illegal weapons, ships customized for pirating, and unlucky humans.`
 	spaceport `The slave markets are by appointment only, heavily armored guards keeping careful watch over a small group of buildings surrounded by a tall concrete fence.  Dotted amongst cafes and weaponry parlors are establishments catering to any manner of hedonistic interests a visitor may possess.`
@@ -747,7 +747,7 @@ planet Harmony
 	security 0
 
 planet Haven
-	attributes "requires: landing gear" pirate mining "north pirate" "northern union"
+	attributes "requires: landing gear" "requires: armed" pirate mining "north pirate" "northern union"
 	landscape land/dune1
 	description `Haven was founded by highly successful privateers nearly two centuries ago. Since then it has been the battleground of rival pirate bands; changing hands countless times, but never falling to the Republic. It has become the capital of the Northern Union. Small manufacturing shops sell outfits that cannot be bought legally, and a small shipyard boasts a collection of customized ships.`
 	description `	While much of the planet is desert, enterprising farmers grow ample crops to feed the warring population. Strip mining has turned other parts of the planet into barren wastelands, polluting many of the rivers.`
@@ -1873,7 +1873,7 @@ planet Skymoot
 
 
 planet "Smuggler's Den"
-	attributes pirate station "south pirate"
+	attributes "requires: armed" pirate station "south pirate"
 	landscape land/loc1
 	description `Smuggler's Den was formerly known as Grendel Station, back when it was an operating refinery. But, it has since been taken over by pirates, who turned it into a haven for all manner of smugglers and privateers. The repair shops here can make a variety of legal and illegal modifications to your ship, and in the shipyard you can buy refurbished starships if you can show them a token of your worth. They demand proof that it will not trouble your conscience to think about the likely fates of their previous owners.`
 	spaceport `It is a strange but indisputable fact that pirates smell worse than ordinary human beings. In this day and age, where even the cheapest shuttlecraft at least has a sonic shower, there is no logical explanation for it, except that anarchist tendencies must somehow go hand in hand with a tendency to reject society's norms around hygiene. Here in a space station, with nothing but recycled air to breathe, the effect is overpowering.`
@@ -2221,7 +2221,7 @@ planet "Wyvern Station"
 		fleet "Large Militia" 6
 
 planet Zenith
-	attributes "requires: landing gear" pirate "north pirate" "northern union"
+	attributes "requires: landing gear" "requires: armed" pirate "north pirate" "northern union"
 	landscape land/water4
 	description `Zenith is a cold and unpleasant world, where the fog seldom lifts and the sun is rarely seen, where much of the lowlands are flooded each day by the tide, and storms are unpredictable and fierce. It has, however, one major advantage as a place to settle: it is far enough away that the Republic makes no attempt to control it.`
 	description `	Several villages have been founded near the equator, and in addition there are an unknown number of private holdings, ranging from underground bunkers to enormous cement fortresses. Because the land is owned by no government and anyone can build a dwelling without permission or paperwork as long as they are willing to fight off any other claimants, the total population of Zenith is unknown.`
