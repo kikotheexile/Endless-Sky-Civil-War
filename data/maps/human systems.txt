@@ -5928,7 +5928,7 @@ system Kornephoros
 		sprite planet/ganymede
 		distance 327.16
 		period 78.4118
-	object Deep
+	object "New Roanoke"
 		sprite planet/ocean9
 		distance 739.16
 		period 266.286
@@ -8672,10 +8672,10 @@ system Pollux
 		sprite planet/ocean4
 		distance 1248.33
 		period 536.837
-		object "Martini Stock Exchange"
-			sprite planet/station7
-			distance 175
-			period 20
+		object "Prosperity Station"
+			sprite planet/stationshipyard
+			distance 280
+			period 365
 	object
 		sprite planet/gas7-b
 		distance 4171.54
