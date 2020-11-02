@@ -2337,6 +2337,7 @@ outfit "gbullet"
 # Boarding
 outfit "Plasma Pistol"
 	category "Boarding"
+	"armed" 1
 	cost 500
 	thumbnail "outfit/plasmapistol"
 	"capture attack" .3
@@ -2346,6 +2347,7 @@ outfit "Plasma Pistol"
 
 outfit "Laser Rifle"
 	category "Boarding"
+	"armed" 1
 	cost 8000
 	thumbnail "outfit/laser rifle"
 	"capture attack" .6
@@ -2355,6 +2357,7 @@ outfit "Laser Rifle"
 
 outfit "Fragmentation Grenades"
 	plural "Fragmentation Grenades"
+	"armed" 1
 	category "Boarding"
 	cost 17000
 	thumbnail "outfit/fragmentation grenades"
@@ -2388,6 +2391,7 @@ outfit "Nerve Gas"
 
 outfit "Lucky"
 	category "Boarding"
+	"armed" 1
 	cost 500
 	thumbnail "outfit/plasmapistol"
 	"capture attack" .9
