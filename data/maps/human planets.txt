@@ -9,7 +9,7 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 planet Ada
-	attributes paradise mining
+	attributes "requires: landing gear" paradise mining
 	landscape land/canyon4
 	description `Ada is the home planet of Lovelace Labs, highly respected designers of starship systems and weaponry. Ada was originally settled as a mining planet, and the mines here still produce a steady stream of metal to supply the Labs as well as other industrial companies that make a home here.`
 	description `	From above, the planet appears lifeless and barren. Cities on Ada are built into the walls of canyons, where they are protected from the winds and dust storms that sweep and scar the surface.`
@@ -59,7 +59,7 @@ planet Alexandria
 		fleet "Large Republic" 7
 
 planet Alfheim
-	attributes deep oil factory
+	attributes "requires: landing gear" deep oil factory
 	landscape land/nasa3
 	description `Alfheim is a world of wide grassy plains, deserts, and scattered rainforests, the continents separated by small oceans. Not pleasant enough support large cities, it is instead a site for oil drilling and manufacturing. Only a small fraction of the surface has been developed, clustered around sites where large oil deposits have been discovered. Settlements show up as bright pinpricks on the dark side of the planet - not from city lights, but from natural gas burnoff at the drilling stations.`
 	spaceport `The spaceport is in the middle of a field of oil derricks so vast that from above, the desert seemed to be covered in spiky grey fur. The spaceport itself lies beneath a tent of soaring canopy, built of a sturdy composite of plastic and carbon fiber, and coated in reflective plastic. Inside, hovercraft and massive sand-crawlers bring cargo to and from the refineries and factories scattered across the planet's surface.`
@@ -83,7 +83,7 @@ planet Amazon
 		fleet "Small Syndicate" 10
 
 planet Antipode
-	attributes core mining frontier
+	attributes "requires: landing gear" core mining frontier
 	landscape land/snow5
 	description `Antipode is a world of creeping glaciers and year-round snow, orbiting so far from its dim star that when the sun breaks through the clouds, it brings little warmth. Settlements have recently been built near newly discovered surface deposits of rare earth metals, mined for use in electronics and equipment throughout this sector. The inhabitants of Antipode are among the best downhill skiers in the galaxy, but attempts to draw tourists to the ski resorts have been so far thwarted by the hostile weather.`
 	spaceport `The spaceport consists of a single, cavernous warehouse. The air inside is chilly, but a welcome escape from the howling wind outside. In one corner is a counter advertising skiing adventures, but no one is currently staffing it. As with many small spaceports, the only option for food is a pub, but the smells coming from it are enticing. Perhaps you've found a spaceport bar whose chef actually knows how to cook.`
@@ -115,7 +115,7 @@ planet "Arachne Station"
 		fleet "Large Militia" 14
 
 planet Asgard
-	attributes deep factory urban rich
+	attributes "requires: landing gear" deep factory urban rich
 	landscape land/city13-sfiera
 	description `Asgard was one of the first worlds to be settled in the Deep. Now home to crowded cities, with soaring skyscrapers made of lightweight composite materials rather than the steel and cement commonly used elsewhere. Asgard is also the home of Deep Sky, a manufacturing firm that produces a wide variety of expensive and useful starship equipment.`
 	spaceport `As with many of the worlds here in the Deep, walking around this spaceport looks like a glimpse of the future, and an immaculate and clean one at that. The port is a single building reminiscent of a termite mound; a jumble of spires, each one different than the last, all stacked on top of each other, with docking bays opening on various sides. It feels like this building is an organic thing, rather than the work of human hands.    The locals hurry by, oblivious to your presence. The only people who meet your gaze are your fellow wide-eyed visitors.`
@@ -132,7 +132,7 @@ planet Asgard
 		fleet "Large Deep Security" 39
 
 planet "Big Sky"
-	attributes "dirt belt" farming
+	attributes "requires: landing gear" "dirt belt" farming
 	landscape land/mountain12-sfiera
 	description `Big Sky is a warm and fertile world, teeming with indigenous life. It would be an ideal farming world if not for the native plants; so abundant and so well adapted to their environment that they can take over a untended field in less than a season. Farmers start the growing season by slashing and burning the plants that have taken root in their fields over the winter, and stay constantly vigilant for signs of weeds throughout the summer and fall.`
 	description `	The Big Sky government recently financed a major project to engineer a species of goat so ravenous that it can control the growth of local vegetation. These "UberGoats" pose such a threat to other biospheres that they are export-controlled as biological weapons.`
@@ -143,7 +143,7 @@ planet "Big Sky"
 		fleet "Small Militia" 50
 
 planet Bivrost
-	attributes deep mining urban
+	attributes "requires: landing gear" deep mining urban
 	landscape land/city14-sfiera
 	description `Bivrost is the only planet in the Deep where heavy metals are abundant. What began as a mining colony has developed into one of the most prosperous worlds in the region. Unlike most worlds that are strip mined for uranium, the environment outside the cities is left unspoiled, as strict controls have been placed on the emissions and waste products of the local manufacturing plants.`
 	spaceport `The spaceport is within sight of the capital city, Rainbridge, but far enough away that the sounds of ships taking off and landing don't disturb the locals. The warehouse space here is underground, level after level of tunnels and caverns stocked with lead-lined trunks of uranium and plastic crates of manufactured goods. Above ground, the spaceport lies beneath a spectacular dome of glass and plastic composite.`
@@ -173,7 +173,7 @@ planet Bloodsea
 		fleet "Small Southern Pirates" 12
 
 planet Bluestone
-	attributes core oil research frontier
+	attributes "requires: landing gear" core oil research frontier
 	landscape land/mountain2
 	description `The sunlight that filters through Bluestone's atmosphere is too dim and red for most crops to thrive. The native flora and fauna have adapted well to the dark world, relying on sound and vibration rather than sight.`
 	description `	Bluestone is sparsely populated. Aside from one research village dedicated to cultivating hybrid crops, most of the industry here is focused on drilling and refining oil to make plastics.`
@@ -195,7 +195,7 @@ planet Bounty
 		fleet "Large Militia" 11
 
 planet Bourne
-	attributes rim factory urban
+	attributes "requires: landing gear" rim factory urban
 	landscape land/city8
 	description `Bourne is an industrial world of great income inequality. Its cities home to some of the richest individuals in this section of the galaxy, while countless thousands struggle with homelessness, and many others struggle to keep the homes they have with poor paying factory work.`
 	description `	Outside the lush cities, the climate is temperate, the deep valleys and coastal regions most suitable for farming. Very little of the planet remains that is untouched by human hands.`
@@ -211,7 +211,7 @@ planet Bourne
 		fleet "Large Militia" 32
 
 planet "Buccaneer Bay"
-	attributes pirate "core pirate"
+	attributes "requires: landing gear" pirate "core pirate"
 	landscape land/beach0
 	description `Criminals not bent on going out in a blaze of glory dream of retiring to Buccaneer Bay. A warm ocean planet, with islands reminiscent of the ancient Caribbean where some of humanity's first true pirate fleets sailed.`
 	description `	Most of the inhabitants aren't pirates, but their descendants. These children of anarchist outlaws have built a system of regional government that oversees hospitals, schools, and other public services, well funded by the local cartel. The planet even sports its own shipyard, although many of the ships built here are, not surprisingly, based on designs pirated from the Syndicate and Republic shipyards.`
@@ -228,7 +228,7 @@ planet "Buccaneer Bay"
 		fleet "Large Core Pirates" 9
 
 planet Burthen
-	attributes core mining
+	attributes "requires: landing gear" core mining
 	landscape land/fields9
 	description `Due to the crushing gravity on this sparsely populated world, the locals - exceptionally strong and short - take a stoic pride in this misery and health issues they face. The land in most regions is suitable for farming, but mining of heavy metals is the primary industry, and the source of ready wealth is what really ties people to this uncomfortable planet.`
 	description `	The excavation vehicles used here are as large- and costly- as a capital starship and noisy as a volcano. The landscape bears vast scars from strip mining visible from space, another source of local pride. On this planet, the environment is something to be endured rather than cherished.`
@@ -239,7 +239,7 @@ planet Burthen
 		fleet "Small Syndicate" 7
 
 planet Calda
-	attributes paradise tourism rich
+	attributes "requires: landing gear" paradise tourism rich
 	landscape land/lava4
 	description `Calda is a tropical resort world, a pleasant place to unwind after a few days skiing on its sister planet, Vail. The most popular tourist destination is the hot springs, with the spa complexes built around them. Because of the uncomfortably warm and humid summer months, the very rich view Calda more as a tourist destination than as a place to live.`
 	description `	In Calda's early days as a spa planet, a silent eruption of carbon dioxide filled a resort valley and suffocated the entire population in moments. However, the incident hasn't put a damper on the tourist industry. Most of the regulars refuse to believe anything like that could happen to them.`
@@ -252,7 +252,7 @@ planet Calda
 		fleet "Large Republic" 13
 
 planet Canyon
-	attributes core farming frontier
+	attributes "requires: landing gear" core farming frontier
 	landscape land/canyon1
 	description `Canyon is a large world, its gravity courting being too heavy to bear. Much of its surface is sandstone, leading scientists to believe that the planet was once home to large oceans before some cataclysmic event caused much of the planet's water to boil away. The settlers who live here farm the deep canyons, leaving the mesas above dry and lifeless.`
 	description `	The angular rock formations that cover most of the mesa land are identified in local mythology as the ruins of an unspeakably vast and ancient alien city. Tourists can find any number of opportunities to tour these sites, but science has been largely skeptical of these claims.`
@@ -333,7 +333,7 @@ planet Clark
 		fleet "Small Militia" 30
 
 planet Clink
-	attributes mining moon
+	attributes "requires: landing gear" mining moon
 	landscape land/desert3
 	description `About a decade ago, a mining corporation from Zug planted a colony on Clink to harvest rare earth minerals present in the moon's crust, left behind from its high rate of asteroid impacts. The atmosphere is too thin to breathe without a respirator, and due to the low gravity, dust raised by the mining operation hangs perpetually in the air.`
 	description `	The miners who work here are a tight-knit group, many of them part of the original colonization team. The facilities here are so rudimentary and seldom visited by outsiders that they do not even stock fuel for visiting ships.`
@@ -368,7 +368,7 @@ planet Covert
 		fleet "Large Core Pirates" 16
 
 planet Crossroads
-	attributes core mining
+	attributes "requires: landing gear" core mining
 	landscape land/valley1
 	description `Crossroads is a thoroughly ugly planet. The scrawny local vegetation with its garish blue and purple leaves grows only reluctantly, the land appearing stippled with blight.`
 	description `	The Syndicate's uranium strip mining operation has done nothing to improve this situation. While sandstorms were frequent here before the Syndicate arrived, the storms have gotten far worse in recent years, with the deadly storms now reaching several kilometers high and wide as they sweep across the scarred landscape.`
@@ -382,7 +382,7 @@ planet Crossroads
 		fleet "Small Syndicate" 11
 
 planet Dancer
-	attributes south research
+	attributes "requires: landing gear" south research
 	landscape land/nasa7
 	description `Dancer is a resource-rich world, but unusually violent weather and strong atmospheric convection makes for lightning storms stronger than on any other settled human world. Straying outside on foot is unthinkable, and the landscape is pockmarked with craters from energetic strikes.`
 	description `	A small colony of scientists have settled here to study the planet's weather systems, joined by those who claim to enjoy the wild weather. While it is possible that terraforming would moderate Dancer's atmospheric activity enough to make it a less dangerous place to live, the cost is obscenely prohibitive.`
@@ -394,7 +394,7 @@ planet Dancer
 		fleet "Small Militia" 23
 
 planet Darkstone
-	attributes south farming frontier
+	attributes "requires: landing gear" south farming frontier
 	landscape land/valley8
 	description `Darkstone is a rainy, mountainous planet, spidery rivers carving across the continents and depositing rich silt in the emerald river valleys. Despite the fertile lands, few settlers have built farming communities here due the threat of piracy from neighboring systems.`
 	description `	Among the local farmers, the motto seems to be that, "Piracy is temporary, but good land is forever." Other than general cynicism, there is surprisingly little outright anger at either the pirates themselves or any government that might have been expected to control them.`
@@ -420,7 +420,7 @@ planet "Deadman's Cove"
 		fleet "Small Core Pirates" 45
 
 planet "New Roanoke"
-	attributes south fishing
+	attributes "requires: landing gear" south fishing
 	landscape land/sea3
 	description `New Roanoke is a sparsely populated world of island archipelagos surrounded by vast expanses of empty ocean. Lacking  enough land for large cities or serious industry to emerge, most of the inhabitants live in small fishing villages. The climate is temperate and Earth-like, but the sunlight is remarkably dim.`
 	description `	The fishing settlements are the second colonization attempt on this planet, originally known as Deep. In the early days of hyperdrive, the Kingsburg Corporation sent out one of their of the largest and most technologically advanced colonization fleets deep into the then-unexplored Southern Galactic Rim. After two centuries of sporadic contact, the colony fell silent. When human expansion finally reached this area again, little trace of the original colony was found. The planet was then rechristened New Roanoke.`
@@ -431,7 +431,7 @@ planet "New Roanoke"
 		fleet "Small Militia" 37
 
 planet Delve
-	attributes core mining
+	attributes "requires: landing gear" core mining
 	landscape land/snow1
 	description `Delve is a world of towering mountains with valleys so steep that some slopes never see the light of the sun. The Syndicate's mining operations here are the most extensive in the region, with shafts descending dozens of kilometers below the surface. Most of the mining cities are underground, built in sections of old mines that have ran dry of useful metals. With all the mines and underground cities reliant on mechanical ventilation from the surface, the miners live in constant fear of two things: cave-ins and power failures.`
 	spaceport `The spaceport is a vast hollow carved out of the side of a mountain, with a network of steel beams and mesh holding the rock in place. Inside the hollow, the landings are caves carved into the rock, with additional steel beams above to protect the ships within. A tiered set of cog railways transport passengers and cargo between the landings and the large town at the base of the hollow. Beyond the hollow, the mountainside falls off into a steep cliff and a mist-filled valley below. Although the port is well-built and modern, many visitors carry an irrational fear that the whole place is in imminent danger of sliding off the edge of the mountain.`
@@ -446,7 +446,7 @@ planet Delve
 		fleet "Large Syndicate" 9
 
 planet Dune
-	attributes rim mining
+	attributes "requires: landing gear" rim mining
 	landscape land/dune2
 	description `A lackluster desert world, Dune was uninhabited until very recently when geologists discovered that the bedrock under the desert is home to rare mineral deposits and gemstones. Most of the inhabitants live deep underground to avoid the hot sunlight and frequent sandstorms. It is a dangerous life; cave-ins are common in the mines, and the sand on the surface can shift so suddenly that it is not uncommon for one of the underground villages to find its surface entrance buried, requiring them to call for help from another village. An urban legend has sprang up that a great sandworm patrols the desert, calling up storms and earthquakes to scare colonizers from taking over any more of the world. Such claims have never been substantiated.`
 	description `	The mines operate with a joint ownership model, with all the workers profiting equally. It has become a popular workplace for those saving money to pay off large debts or finance expensive dreams, with a ten year work contract enough to buy a home on a lower end Paradise Planet.`
@@ -460,7 +460,7 @@ planet Dune
 		fleet "Small Militia" 23
 
 planet Earth
-	attributes "near earth" urban tourism
+	attributes "requires: landing gear" "near earth" urban tourism
 	landscape land/city3
 	description `Humanty's ancestral home, Earth boasts the highest population of any inhabited planet. Sprawling, overcrowded cities cover large portions of the surface with little space between. While the inhabitants work to scrape together enough money to leave, those born on distant worlds make pilgrimages to see the planet that once cradled the entirety of the human species.`
 	description `	Earth is also the capital of the Republic. Settlements of less than a million are grouped together into planetary sectors that elect a single representative between them - a source of much frustration in the frontier worlds.`
@@ -539,7 +539,7 @@ planet "Fenrir Station"
 		fleet "Small Deep Security" 14
 
 planet Flood
-	attributes rim tourism farming
+	attributes "requires: landing gear" rim tourism farming
 	landscape land/water8
 	description `The scenic fjords and rugged mountains make Flood a popular tourist destination. Nearly all the land in the planet's temperate zone is covered in mountains, making traditional agriculture difficult. The locals survive by raising sheep and goats in addition to native species, growing their food in small terrace gardens tended by hand rather than by tractor. Most of the population is employed in the tourist industry, running inns for visitors to their quaint mountainside villages, or making and selling handcrafts.`
 	spaceport `The spaceport is bursting at the seams with small shops. Hand-glazed pottery, wooden furniture, dolls, sweaters, scarves, paintings - the variety is overwhelming. Crowds of tourists bustle around from shop to shop, making quick travel difficult.`
@@ -550,7 +550,7 @@ planet Flood
 		fleet "Large Militia" 11
 
 planet Follower
-	attributes paradise factory
+	attributes "requires: landing gear" paradise factory
 	landscape land/city10
 	description `Follower lies on the edge of the Paradise Planets region, and aspires to join their ranks. While prosperous, manufacturing is the name of the game rather than the more illustrious law, finance, or venture capitalism. The lion's share of local taxes collected here are being spent on terraforming, raising global temperatures and reducing seasonal fluctuations.`
 	description `	As one of the few planets still actively engaged in terraforming, Follower is the site of several experiments with new technology, hoping to leapfrog the centuries long process that other worlds have gone through. Most of these experiments have failed in spectacular fashion.`
@@ -568,7 +568,7 @@ planet Follower
 		fleet "Small Republic" 86
 
 planet Foundry
-	attributes core factory urban
+	attributes "requires: landing gear" core factory urban
 	landscape land/city1
 	description `Foundry is home to Syndicated Shipyards, manufacturing more than half of the commercial freighters in human space. Although much of the planet is blanketed in smog, there are also protected regions of pristine forests and majestic mountains.` 
 	description `	The Syndicate boasts a generous vacation policy that allows workers to take as much as a month of vacation time every year, many choosing to take that time to escape from the cities and explore the wilderness. The Syndicate like to claim that this vacation time is responsible for the high reliability of the ships built here, because a well-rested and relaxed worker is "17.3% less likely to make dangerous mistakes.`
@@ -635,7 +635,7 @@ planet Furnace
 		fleet "Large Syndicate" 7
 
 planet Geminus
-	attributes paradise factory mining
+	attributes "requires: landing gear" paradise factory mining
 	landscape land/mountain18-harro
 	description `While Geminus is far from hospitable, large stores of iron, titanium, and other metals are easily accessible near its surface. For that reason, it has become one of the Republic's primary shipyards, with more than half of the Navy's warships proudly bearing the stamps of being created here.`
 	description `	The constant volcanic activity leaves the planet perpetually shrouded in clouds of ash and fog; it's so called "Twilight Haze" a popular landscape for aspiring artists.`
@@ -657,7 +657,7 @@ planet Geminus
 		fleet "Large Republic" 18
 
 planet Gemstone
-	attributes "dirt belt" mining
+	attributes "requires: landing gear" "dirt belt" mining
 	landscape land/lava7-sfiera
 	description `Gemstone is a hot and unpleasant world, its smoggy atmosphere high in methane. Most of the surface is covered in rugged mountains, making land travel tedius. However, the planet's powerful tectonic forces have created rich deposits of diamonds, emeralds, and sapphires, which are mined both for use in jewelry and electronic components. Mining a tectonically active world is a deadly project at best, with earthquakes causing constant cave-ins, but the glimmer of wealth draws miners hoping to spite the odds.`
 	description `	Miners are paid on commission, and while most are dirt-poor, everyone has stories of some distant acquaintance who became mind-bogglingly wealthy after striking a previously untapped gemstone deposit.`
@@ -683,7 +683,7 @@ planet Geyser
 		fleet "Large Militia" 20
 
 planet Glaze
-	attributes south tourism
+	attributes "requires: landing gear" south tourism
 	landscape land/canyon8
 	description `Glaze is a varied world with everything from sunny beaches to frozen tundra, but it is best known for sandstone canyons and deserts. Local rumors tell about an alien species of "canyon people" who live in deep canyon caves, tempting even the most skeptical xenobiologists to visit. The current scientific consensus is that these sightings have been of a reclusive ape-like species that lives in the canyons, however no studies or concrete evidence of said apes have been released to the public.`
 	spaceport `The spaceport is a squat tower of glass and steel perched atop a mesa overlooking the canyonlands. Spires of red and pale yellow stone adorn the landscape as far as the eye can see, with a sprinkling of trees dotting the lower elevations. A wide highway winds down the side of the mesa and through several tunnels before dissapearing into the horizon.`
@@ -700,7 +700,7 @@ planet Glaze
 		fleet "Large Militia" 25
 
 planet Glory
-	attributes paradise medical
+	attributes "requires: landing gear" paradise medical
 	landscape land/sky8
 	description `Elsewhere in the galaxy, people speak dismissively of the "Overpriced Sunshine" that rich terraformed worlds can afford. On Glory, the lakes and hills are artificial, crafted to idyllic perfection. Naturally, the chief industries on Glory are plastic surgery and medical efforts aimed at prolonging life and libido; well funded by the affluent elderly that call this planet home.`
 	description `	Glory is also home to the Academy of Planetary Sciences, the organization at the forefront of terraforming research. The Academy takes on only a select handful of apprentices each year, each tasked with guarding the expensive secrets with their lives if necessary.`
@@ -739,7 +739,7 @@ planet Greenrock
 		fleet "Large Northern Union" 13
 
 planet Harmony
-	attributes south farming religious frontier
+	attributes "requires: landing gear" south farming religious frontier
 	landscape land/mountain4
 	description `The first settlers who came to Harmony were an Amish community seeking a place where they could live a quiet life and do work with their own hands instead of relying on machines and computers. Their community grew to millions of people, who now live side by side with other, more modern settlers. There are still regions of the planet where motorized vehicles are prohibited, but in other places trucks and horse-drawn buggies share the same roads.`
 	spaceport `The spaceport is on the outskirts of one of the larger cities, with a few medium-sized skyscrapers and many tall smokestacks for factories and oil refineries. The starship hangars here are shaped like oversized barns, and close to the hangars, grain is stored in silos. The spaceport police are on horseback.`
@@ -747,7 +747,7 @@ planet Harmony
 	security 0
 
 planet Haven
-	attributes pirate mining "north pirate" "northern union"
+	attributes "requires: landing gear" pirate mining "north pirate" "northern union"
 	landscape land/dune1
 	description `Haven was founded by highly successful privateers nearly two centuries ago. Since then it has been the battleground of rival pirate bands; changing hands countless times, but never falling to the Republic. It has become the capital of the Northern Union. Small manufacturing shops sell outfits that cannot be bought legally, and a small shipyard boasts a collection of customized ships.`
 	description `	While much of the planet is desert, enterprising farmers grow ample crops to feed the warring population. Strip mining has turned other parts of the planet into barren wastelands, polluting many of the rivers.`
@@ -764,7 +764,7 @@ planet Haven
 		fleet "Small Northern Union" 21
 
 planet Haze
-	attributes deep factory
+	attributes "requires: landing gear" deep factory
 	landscape land/mfield2
 	description `Haze is a manufacturing world covered in sprawling cities.  While a relatively prosperous planet, due to a viral ad campaign the inhabitants have chosen to spend all of their terraforming budget on climate control, ignoring pollution reduction entirely.`
 	description `	While it has been too little too late for most of the planet's natural beauty, some mountainous and marshy areas have been set aside as nature preserves. More than half of the indigenous life forms have gone extinct since human settlement began here four centuries ago.`
@@ -780,7 +780,7 @@ planet Haze
 		fleet "Large Deep Security" 26
 
 planet Heartland
-	attributes "dirt belt" farming
+	attributes "requires: landing gear" "dirt belt" farming
 	landscape land/city2
 	description `Heartland is a pleasant world with flat geography. The farms here produce bountiful crops, the promise of such once drawing tens of millions of settlers. Many of them now work in factories building farm equipment. Tractors from Heartland are well-built, sturdy, and easy to repair, with century old models still in use today.`
 	spaceport `The spaceport is a disorganized cluster of low buildings. At the center of the port lies the tractor showroom, a tall building with glass on every side. There are tractors with rubber wheels, spiked wheels, and tracks; with plows, combines, balers, and chaser bins; tractors barely big enough to sit on and tractors the size of a small freighter. Were you in the farming business, this would be your candy store.`
@@ -792,15 +792,15 @@ planet Heartland
 		fleet "Large Republic" 4
 
 planet Heatstroke
-	attributes north "northern pirate" mining "northern union"
+	attributes "requires: landing gear" north "northern pirate" mining "northern union"
 	landscape land/badlands2
 	description `Orbiting far too close to its host stars, Heatstroke was once a completely uninhabitable world. Currently, it hosts a tenacious group of Anarchists who have built an expansive underground colony. While the commune is completely self sufficient, it is always open to trade.`
-	spaceport `he spaceport building is the only visible structure on the surface, standing barely taller than the ever shifting sand dunes. A large freight elevator takes you down into a well lit maze made of an old but well-kept mine, with shop booths lining the walls. Art shops are common, selling all variety of prints and paintings, and a large booth taking up an entire corner near the food court sells hand made tapestries, the wall behind them a dazzling display of the artist's prowess.`
+	spaceport `The spaceport building is the only visible structure on the surface, standing barely taller than the ever shifting sand dunes. A large freight elevator takes you down into a well lit maze made of an old but well-kept mine, with shop booths lining the walls. Art shops are common, selling all variety of prints and paintings, and a large booth taking up an entire corner near the food court sells hand made tapestries, the wall behind them a dazzling display of the artist's prowess.`
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
 	
 planet Helheim
-	attributes deep mining volcanic
+	attributes "requires: landing gear" deep mining volcanic
 	landscape land/lava1
 	description `Helheim is not a pleasant place. Much of the surface is volcanic, pockmarked with craters and steam vents leading deep into the planet's crust. The air is caustic, but breathable in short doses. However, despite the complete lack of charm, the mining industry is alive and booming on this world rich in easily accessible deposits of nickel, aluminum, and magnesium. After all, what's some health risks in the face of profit to be made?`
 	spaceport `The spaceport is the main city in Helheim, built around a series of glass domes of varying sizes. Each dome is a greenhouse housing lush green plants and friendly animals: hermetically sealed parks protected from the caustic air outside, where the locals can come when their hunger to be among living things becomes unbearable.`
@@ -811,7 +811,7 @@ planet Helheim
 		fleet "Small Deep Security" 15
 
 planet Hephaestus
-	attributes core factory urban
+	attributes "requires: landing gear" core factory urban
 	landscape land/city0
 	description `Hephaestus is home to Syndicated Systems, well known for manufacturing the ship parts used throughout human space. Although not the highest in quality or technologically advanced, ship outfits produced by the Syndicate are affordable and sufficient for any ordinary pilot's needs. Executives of companies have been known to make pilgrimages to this planet, to witness firsthand how the Syndicate has made their production lines here so efficient and dependable.`
 	description `	 Nearly all the inhabitants of Hephaestus live in a single metropolitan area that has spread to cover more than an eighth of the total land mass. As with many Syndicate worlds, pollution is a rapidly growing problem that they are working hard to address.`
@@ -831,7 +831,7 @@ planet Hephaestus
 		fleet "Large Syndicate" 20
 
 planet Hermes
-	attributes paradise research medical
+	attributes "requires: landing gear" paradise research medical
 	landscape land/myrabella3
 	description `No one is permitted to settle on Hermes without a government permit. It is a sparsely populated world, used for medical research and development - including some research that is carried out in isolation so if something goes wrong entire districts can be quarantined; or sterilized by orbital bombardment.`
 	description `	The landscape is hilly and heavily forested, much of which remains unexplored. The oceans are barely large enough to be considered oceans at all, but are steadily growing as water is imported onto the planet.`
@@ -846,7 +846,7 @@ planet Hermes
 		fleet "Large Republic" 6
 
 planet Hestia
-	attributes paradise rich
+	attributes "requires: landing gear" paradise rich
 	landscape land/sky5
 	description `In the distant past, Hestia was a lifeless ice world. It is now a sub-tropical paradise, a celebrated victory from the heyday of planetary engineering back when the galactic economy had more money to spare for terraforming. Today it hosts a planetwide retirement community for those lucky enough to afford it, although most of the population consists of young service workers in rented housing who take care of the retirees. Aside from the bland urban centers full of employees, the world is rich with emerald green hills and crystal blue lakes that never leave a fisherman empty handed.`
 	spaceport `Hestia has two separate spaceports. The port frequented by the retirees and their guests is private, owned by a local company. Here in the public spaceport, no attempt has been made at impressive architecture; instead everything is spare and utilitarian, with floors of bare cement. There are trucks and forklifts carrying cargo, but the streets that connect the landing pads are full of people on foot, walking toward the customs building.`
@@ -860,7 +860,7 @@ planet Hestia
 		fleet "Large Republic" 18
 
 planet Hippocrates
-	attributes core research frontier
+	attributes "requires: landing gear" core research frontier
 	landscape land/water11-harro
 	description `Hippocrates is a sparsely settled world, home to scientific research outposts. The planet revolves close to its sun, a red dwarf star, estimated to be over ten billion years old. Life here has had much more time to develop and evolve than on any planet orbiting a brighter, more short-lived star.`
 	spaceport `The spaceport, obviously not designed for large volumes of cargo or visitors, is a single building, and half the landing pads are just packed dirt. Within the building is a sun-lit atrium, with separate storefronts for the commodity exchange, the job center, and the bank. The only place serving food is a bar advertised by a sign showing an Erlenmeyer flask with a folding paper umbrella hung over the rim.`
@@ -879,7 +879,7 @@ planet Hope
 	security 0
 
 planet Hopper
-	attributes "dirt belt" mining
+	attributes "requires: landing gear" "dirt belt" mining
 	landscape land/myrabella1
 	description `Hopper is a temperate world of vast oceans and scattered mountain ranges cursed with an atmosphere rich in sulfuric acid. Metal and stone that are exposed to the atmosphere corrode quickly, requiring frequent maintenance. As a result, Hopper has only a few small settlements, most of the industry focused on underground mining. The oceans are populated only by indigenous life forms well adapted to high acidity; Earth fish could not be introduced successfully here.`
 	spaceport `The spaceport consists of a cluster of steel-framed warehouses with tin roofs, surrounded by concrete slabs for ships to land on. Scattered among the warehouses are smaller wooden buildings; housing an Old Earth themed pub, a restaurant, and a small inn. Some of the warehouses are relatively new, with metal that still gleams; others are covered in rust, and a few stand in ruins, with large holes worn through their roofs and rusted girders poking through like skeletal limbs.`
@@ -985,7 +985,7 @@ planet "Hydra Station"
 		fleet "Small Militia" 8
 
 planet Icefall
-	attributes core farming oil frontier
+	attributes "requires: landing gear" core farming oil frontier
 	landscape land/dmottl3
 	description `Icefall is far from its sun, but with an axial tilt of roughly 38 degrees. This means that the climate is cold, but the year is also long, and each hemisphere has a short summer - barely enough to fit a terrestrial growing season. There are only a few major towns, and no major metropolitan centers. Most of the inhabitants make a living as farmers, although near the equator there is also some oil drilling industry. Icefall's oceans are filled with constantly shifting pack ice and icebergs, making them nearly unnavigable.`
 	description `	The most distinctive feature of the local ecology is the vast flocks of gooselike migratory birds, which raise two broods a year: one in each hemisphere's summer. The farm workers migrate in similar fashion, and many landowners have farms in both hemispheres.`
@@ -996,7 +996,7 @@ planet Icefall
 		fleet "Small Syndicate" 8
 
 planet Ingot
-	attributes "dirt belt" volcanic mining moon
+	attributes "requires: landing gear" "dirt belt" volcanic mining moon
 	landscape land/mountain8
 	description `Ingot is a volcanic moon, totally unsuitable for life but rich in metal. The miners who work here must spend all their time inside pressurized buildings. Because Ingot has almost no atmosphere to slow them down, meteorites are a constant danger to the colonists. The shells of the buildings have multiple layers, designed to be self-sealing in any but the largest of impacts. Most of the mining is done remotely by robotic vehicles, but someone still needs to be present to control them and to make repairs when something goes wrong.`
 	spaceport `In this spaceport, ships dock inside a hangar whose ceiling protects them from meteorite impacts. The hangar is not pressurized, so there are also landing tubes that connect to each of the visiting ships. Many of the people inside are carrying emergency oxygen masks in case a sudden impact ruptures the building.`
@@ -1051,7 +1051,7 @@ planet "Liberty Station"
 	outfitter "Ammo"
 
 planet Lichen
-	attributes south farming frontier
+	attributes "requires: landing gear" south farming frontier
 	landscape land/fields3
 	description `Lichen is a rainy world of marshes, fields, and streams. More than half the rice consumed in this administrative district is grown on Lichen, because of its near-optimal climate. However, because of the constant rain and overcast weather, few people aside from farmers have settled here.`
 	description `	Planetary government, or indeed any government above the village level, is virtually nonexistent. Most farms are small and family-owned, negotiating sales directly with off-world corporations who then arrange for transportation of the produce.`
@@ -1064,7 +1064,7 @@ planet Lichen
 		fleet "Large Militia" 8
 
 planet Lodestone
-	attributes core volcanic mining
+	attributes "requires: landing gear" core volcanic mining
 	landscape land/lava5
 	description `Lodestone is a young, volcanically active world. The atmosphere is often filled with choking dust or sulfur dioxide, and new eruptions can occur with hardly any warning. Building any sort of structure here is an exercise in futility.`
 	description `	The only reason Lodestone is inhabited is because of the planet's unusually rich reserves of heavy metals and other rare minerals.`
@@ -1075,7 +1075,7 @@ planet Lodestone
 		fleet "Small Syndicate" 6
 
 planet Longjump
-	attributes rim tourism factory
+	attributes "requires: landing gear" rim tourism factory
 	landscape land/city9
 	description `Longjump is a mostly industrial world, with lower than normal gravity that makes it relatively easy to operate and transport heavy equipment. Hang-gliding is also a popular sport here, although for safety reasons it is prohibited anywhere near the spaceport.`
 	description `	Longjump was the first planet discovered in the region of space known today as the Rim. Every year in the month of August, the Rim celebrates Han Sizer month, a whole month of activities commemorating the first explorer of the region. Wealthier citizens of the Rim celebrate by visiting as many Rim worlds as they can in the month, paralleling Han Sizer's month-long exploration of the region.`
@@ -1117,7 +1117,7 @@ planet Luna
 		fleet "Large Republic" 10
 
 planet Maelstrom
-	attributes north mining frontier
+	attributes "requires: landing gear" north mining frontier
 	landscape land/mountain21-harro
 	description `Maelstrom is a stormy, geologically young world with towering mountains and frequent earthquakes. Most of the large cities are near the center of the planet's main continent, where the iron beds from an ancient ocean are exposed. Maelstrom is one of the chief exporters of iron, copper, gold, titanium, and other metals to Ada, where Lovelace Labs and the associated industries have a continuous need for raw materials.`
 	description `	Extreme rock climbing is a hugely popular sport among the mining workers here, who have a tendency to be young, male, and reckless. The mountains are dramatic enough to even attract off-world climbers as tourists, though more than once a favorite climbing face has been sloughed off its mountain in an earthquake.`
@@ -1131,7 +1131,7 @@ planet Maelstrom
 		fleet "Large Republic" 11
 
 planet Mainsail
-	attributes paradise rich
+	attributes "requires: landing gear" paradise rich
 	landscape land/beach7-sfiera
 	description `Mainsail is a water world: although there are some settlements on dry land, the largest cities are floating, artificial islands, which travel between hemispheres over the course of the year pursuing the most ideal weather. Other, smaller islands are privately owned by single families or corporations. Mainsail is a prohibitively expensive place to live.`
 	description `	Centuries ago Mainsail was home to pirates of the old-fashioned variety, fleets of motor boats or even old-fashioned sailing vessels that would launch raids against the city-ships.`
@@ -1183,7 +1183,7 @@ planet Mars
 		fleet "Small Republic" 64
 
 planet Martini
-	attributes paradise rich
+	attributes "requires: landing gear" paradise rich
 	landscape land/myrabella4
 	description `Martini is a world of exotic beaches and perfect weather. The Republic's central bank and the galactic stock exchange are headquartered here, and so much money flows through this world's economy every day that the cost of utterly controlling its weather and climate is only a drop in the bucket. Not surprisingly, real estate prices here are astronomical; a small condo in one of Martini's main cities costs more than a capital starship.`
 	spaceport `The spaceport is a set of four skyscrapers joined by bridges and platforms at various levels. Hangars are built directly into the towers themselves, with deflector shield generators set up to ensure that ships do not crash, intentionally or otherwise, while approaching the towers to dock. Inside, all the floors and walls are gleaming granite, with teams of workers constantly polishing everything to ensure that not even so much as a fingerprint smudge is visible.`
@@ -1205,7 +1205,7 @@ planet "Prosperity Station"
 		fleet "Large Republic" 22
 
 planet Memory
-	attributes deep research factory medical
+	attributes "requires: landing gear" deep research factory medical
 	landscape land/badlands9-harro
 	description `Memory is a dry world, but with enough local plants to maintain a breathable atmosphere. Some of the indigenous forms of cactus-like, drought-resistant plants grow dozens of meters high. Most of the animals that have evolved here are nocturnal.`
 	description `	This planet was first settled only a few centuries ago, and the population is still relatively low, but they have developed a diverse set of industries including manufacturing and medical research.`
@@ -1247,7 +1247,7 @@ planet Midgard
 		fleet "Large Deep Security" 30
 
 planet Millrace
-	attributes "near earth" factory urban
+	attributes "requires: landing gear" "near earth" factory urban
 	landscape land/mfield1
 	description `Millrace is an overpopulated world, full of factories and manufacturing plants. It is one of several planets in this region of space where people trying to escape from the crowded squalor and polluted cities of Earth come looking for work. Most of the goods manufactured here end up being used by the Syndicate for constructing starships or driving industry on other worlds.`
 	description `	The Syndicate is a fair employer: living conditions here may be squalid, but most workers are earning a living wage and some are able to save up for a new life on a more pleasant planet. The Syndicate trusts there will never be a shortage of new immigrants to replace them.`
@@ -1261,7 +1261,7 @@ planet Millrace
 		fleet "Large Syndicate" 8
 
 planet Moonshake
-	attributes core urban factory
+	attributes "requires: landing gear" core urban factory
 	landscape land/city7
 	description `Moonshake is a planet of overpopulated cities side by side with dense wilderness. A few centuries ago it became a local center of industrial production when the Syndicate began building factories here. Since then, immigrants looking for steady work have been pouring in, doubling the planet's population every few decades. It is now a regional center for the production of everything from textiles to molded plastic parts to reactor-grade plutonium.`
 	description `	It is characteristic of the Syndicate that the wilderness is entirely ignored, both scientifically and agriculturally, until it is plowed under to make way for expanding industry. Nowhere else in the galaxy is the local fauna so plentiful and yet so poorly characterized.`
@@ -1288,7 +1288,7 @@ planet "Muninn Station"
 		fleet "Small Deep Security" 25
 
 planet Muspel
-	attributes deep mining factory
+	attributes "requires: landing gear" deep mining factory
 	landscape land/canyon9
 	description `Muspel is a hot world of deserts, canyons, and warm-water oceans. It is mostly a mining and manufacturing planet, and as a result there are few lifelong inhabitants; most of the people here are migrant workers who are just trying to save up enough money to settle down somewhere more hospitable.`
 	description `	Some tourists also come here, to walk through the sandstone canyons where the wind and rain has carved the rock into tall pillars and spires. A few particularly beautiful canyons are protected against strip mining by local law.`
@@ -1305,18 +1305,12 @@ planet Mutiny
 	description `Centuries ago, Mutiny was used as a sort of prison world for a powerful band of pirates, a place where rivals could be marooned or held for ransom, rather than killing them outright. It is a cold, dark planet, and food is scarce, but over time several villages developed in the more hospitable regions. No longer prisoners, the inhabitants who remain do so because they prefer a simple life beyond the reach of any government, on a planet that will never be stolen from them because it carries nothing of value.`
 	security 0
 
-planet Nasqueron
-	attributes "requires: gaslining"
-	landscape land/nasa8
-	description `Beneath Nasqueron's cloudy surface is a complex and thriving ecosystem of gas-dwelling organisms, from the massive void sprites all the way down to bacteria that inhabit tiny water droplets suspended in the air. Although the void sprites mostly feed on these organisms, it appears that in order to grow into their adult form or to give birth to young, they also need rare minerals that they can only find by feeding on asteroids, far beyond the planet's atmosphere.`
-	security 0
-
 planet "New Argentina"
 	attributes "dirt belt" farming
 	landscape land/fields1
 	description `New Argentina is a world that is ideal for ranching but suitable for little else. Ranchers live as individual families or small communities surrounded by hectares of grazing land for cattle. As a result, the population is still quite low here, and the locals live isolated lives, with most families living many kilometers away from the nearest school or hospital or even from their nearest neighbor.`
 	description `	Cattle handlers here do their work on horseback, because they believe modern vehicles are more likely to spook the animals.`
-	spaceport `The spaceport is on the outskirts of one of New Argentina's largest towns... which has a population of barely ten thousand people. Many of the dock workers are teenagers or barely past their teens, children of ranchers who are not drawn to the solitary sort of life that their parents enjoy. Aside from the church and the hospital, the largest building in town is "The Grange," a function hall with a sign out front advertising square dances and line dances three nights a week.`
+	spaceport `The spaceport is on the outskirts of one of New Argentina's largest towns which has a population of barely ten thousand people. Many of the dock workers are teenagers or barely past their teens, children of ranchers who are not drawn to the solitary sort of life that their parents enjoy. Aside from the church and the hospital, the largest building in town is "The Grange," a function hall with a sign out front advertising square dances and line dances three nights a week.`
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
 	security 0.05
@@ -1325,7 +1319,7 @@ planet "New Argentina"
 		fleet "Large Republic" 4
 
 planet "New Austria"
-	attributes "dirt belt" mining
+	attributes "requires: landing gear" "dirt belt" mining
 	landscape land/valley9
 	description `New Austria is a rugged mountain world, full of snow-capped peaks and valleys so deep and so steep that they rarely see sunlight. The few settlements that have been built here were developed for mining sapphires and rubies; the sapphires found in New Austria range from blue to yellow to black to clear in color, and are used both for industrial abrasives and for jewelry. For centuries the locals have been trying to find a deposit of diamonds, which would sell for much higher prices than sapphires, and local folklore revolves around the prosperity that would come to this world if diamonds were ever discovered.`
 	spaceport `The spaceport is nothing but a couple of landing pads built on the outskirts of one of the larger mining villages, high up on a mountain ridge to allow easy access for starships. A few roads lead down from there to the village, where you can trade for local goods or get food from the miners' cafeteria. By the time you have walked to the center of the town, several people have already tried to sell you large "diamonds" that you strongly suspect are just clear sapphires.`
@@ -1335,9 +1329,9 @@ planet "New Austria"
 		fleet "Large Militia" 5
 
 planet "New Boston"
-	attributes "dirt belt" textiles farming
+	attributes "requires: landing gear" "dirt belt" textiles farming
 	landscape land/water2
-	description `New Boston is a completely unremarkable world... except, of course, for the fact that you happen to have been born here. Most of the land is wet and marshy, and the coastal regions are prone to flooding. Some food crops are grown here, but most of the farmers instead plant flax and jute, which grow well in wet soil and are used to make linen and burlap cloth. The textile mills are hot and poorly ventilated, but they offer higher and more reliable income than farming.`
+	description `New Boston is a completely unremarkable world... except, of course, for the fact that you happen to have started your journey here. Most of the land is wet and marshy, and the coastal regions are prone to flooding. Some food crops are grown here, but most of the farmers instead plant flax and jute, which grow well in wet soil and are used to make linen and burlap cloth. The textile mills are hot and poorly ventilated, but they offer higher and more reliable income than farming.`
 	spaceport `Some day New Boston may be a prosperous enough planet to afford a better spaceport, but not yet. Many of the concrete landing pads have sunk into the muddy soil over the years since they were poured, and are now tilted and uneven. The market where ship captains buy and sell cargo is a large tent rather than a permanent building, but it is sturdy enough to keep off the rain, and high enough for loads to be brought in and out by trucks and the occasional hovercraft. And, some enterprising local mechanics have set up not only a repair shop and outfitter, but also a shipyard with several small, refurbished ships for sale.`
 	shipyard "Basic Ships"
 	outfitter "Basic Outfits"
@@ -1348,7 +1342,7 @@ planet "New Boston"
 		fleet "Small Militia" 23
 
 planet "New Britain"
-	attributes "dirt belt" farming factory urban
+	attributes "requires: landing gear" "dirt belt" farming factory urban
 	landscape land/city6
 	description `New Britain is one of the few worlds in the Dirt Belt region of the galaxy that is relatively prosperous and has a large population. Although the gravity here is slightly low, it is otherwise a nearly ideal Earth-like world, rich enough in natural resources that all the raw materials for the local industry can come from on-planet.`
 	description `	Among the native life forms, the most striking are the many species of large and colorful birds, most of which have learned to give the cities and the spaceport a wide berth.`
@@ -1365,7 +1359,7 @@ planet "New Britain"
 		fleet "Large Militia" 20
 
 planet "New China"
-	attributes "near earth" urban
+	attributes "requires: landing gear" "near earth" urban
 	landscape land/city12
 	description `In the very early days of hyperspace travel, most settlers chose to put down roots within a few jumps of Earth, because until more fuel depots were built, colonies farther out would seldom be visited by cargo ships. As a result, a lot of effort was put into terraforming and developing worlds that would have been passed over by most colonists today. New China is one such world, and it is now overpopulated, and poor enough that maintaining the terraforming equipment and climate requires almost a third of the planetary government's tax income.`
 	spaceport `The "new port" here was built several centuries ago, when the grand but impractical spaceport built by the original settlers had deteriorated to the point where it was no longer usable. This port is much simpler by comparison: just a ring of landing pads of various sizes around a large central building with ten levels of warehouse space accessible by freight elevator.`
@@ -1405,7 +1399,7 @@ planet "New Holland"
 		fleet "Large Militia" 11
 
 planet "New Iceland"
-	attributes "dirt belt" oil mining volcanic
+	attributes "requires: landing gear" "dirt belt" oil mining volcanic
 	landscape land/valley0
 	description `New Iceland is a perpetually hazy volcanic world, with a slightly caustic atmosphere but enough reserves of metal and petrochemicals to draw a large number of settlers. Some of those settlers also make a living as farmers, and a few well-developed factory towns produce goods for export to other worlds.`
 	description `	Many of the inhabitants wear dust masks to avoid letting the particulate matter from the volcanoes accumulate in their lungs.`
@@ -1417,7 +1411,7 @@ planet "New Iceland"
 		fleet "Small Militia" 24
 
 planet "New India"
-	attributes "dirt belt" farming textiles frontier
+	attributes "requires: landing gear" "dirt belt" farming textiles frontier
 	landscape land/forest0
 	description `New India was first settled less than a century ago, and the settlers are still struggling to establish themselves. It is a hospitable climate, but the amount of labor needed to clear forests and to plow rocky fields has meant that the towns here can only grow very slowly. The farms grow both food crops and cotton, and very recently they have begun manufacturing their own textiles instead of just shipping the raw cotton off-world for processing.`
 	spaceport `New India's spaceport is a ring of low wooden buildings around a wide landing area paved with concrete slabs. Around the perimeter carts of trade goods are driven, some being pulled by tractors and others, by horses or oxen. You even think you see a few carts being pulled by water buffalo.`
@@ -1462,7 +1456,7 @@ planet "New Sahara"
 		fleet "Small Militia" 30
 
 planet "New Switzerland"
-	attributes "near earth" tourism mining
+	attributes "requires: landing gear" "near earth" tourism mining
 	landscape land/mountain5
 	description `New Switzerland is a world where tectonic activity has left deeply folded and fractured mountains across much of the planet's surface. In many places, the topsoil is too thin and rocky to support farming, but many people have settled here anyway, drawn to the beauty of the mountains. A few ski resorts operate in the mountains, and in recent years a gemstone mining industry has begun to develop as well.`
 	spaceport `The spaceport is in a valley, surrounded by mountains so high that their tops are often lost in the clouds. From the port town, tourists can ride a cog railway to the tops of several of the tallest mountains nearby. Most of the buildings in town are wood framed, and some are old fashioned half-timber buildings with whitewashed plaster packed in between the beams. It is not a technologically advanced world, but it is a very beautiful place.`
@@ -1472,7 +1466,7 @@ planet "New Switzerland"
 		fleet "Small Republic" 11
 
 planet "New Tibet"
-	attributes "dirt belt" religious factory
+	attributes "requires: landing gear" "dirt belt" religious factory
 	landscape land/mountain0
 	description `New Tibet is a world of jagged mountains and deeply shadowed valleys. Although it has been inhabited for centuries, in many places the terrain is so rugged that roads cannot be built, leaving several of the smaller towns almost completely isolated. Taking advantage of this isolation, several orders of Buddhist monks have built monasteries here.`
 	description `	In the lowlands, large farms support sprawling cities full of factories, a striking contrast to the simplicity and isolation of the mountain villages.`
@@ -1480,7 +1474,7 @@ planet "New Tibet"
 	security 0.1
 
 planet "New Wales"
-	attributes "dirt belt" mining
+	attributes "requires: landing gear" "dirt belt" mining
 	landscape land/mountain7
 	description `New Wales is home to a few mining outposts which extract and refine rare earth minerals and heavy metals. It is dangerous work: the mines are deep underground and prone to noxious gases and cave-ins, and the refineries work with molten radioactive materials and caustic chemicals. Due to the somewhat dim light of the star Algorel, and the cloudiness of the atmosphere, this is not a good world for farming, and the population remains quite small.`
 	spaceport `The warehouses at the spaceport are kept under continuous guard due to the high value of the refined metals they contain. There are several missile silos and laser turrets as well; New Wales has survived several pirate attacks in the last decade. Within the spaceport cafeteria, however, the locals are quite friendly and excited to connect with visitors and hear news of the outside world. The cafeteria is cooking lamb stew, and the smell of it pervades the whole building.`
@@ -1502,7 +1496,7 @@ planet "New Washington"
 		fleet "Large Militia" 3
 
 planet Nifel
-	attributes deep research medical
+	attributes "requires: landing gear" deep research medical
 	landscape land/mountain3
 	description `Nifel is a cold world, with summers too short to grow most crops, and very little indigenous wildlife aside from thick-furred mammals, and some migratory birds that travel from one hemisphere to the other every year.`
 	description `	Four centuries ago, when much of human space had been in travel quarantine for a decade to block the spread of the Rigellian Plague, it was here that researchers discovered a cryophilic bacterium growing in the permafrost that could be used to combat and eventually eliminate the plague. Some research labs and manufacturing plants still remain in operation here.`
@@ -1517,7 +1511,7 @@ planet Nifel
 		fleet "Large Deep Security" 16
 
 planet Nimbus
-	attributes core fishing medical
+	attributes "requires: landing gear" core fishing medical
 	landscape land/fog6
 	description `Nimbus is a stormy ocean world, where a rain shower can descend on you almost without warning, only to be replaced with equal suddenness by bright sunshine. It draws mostly the sort of people who can weather such changes with placid, unperturbed calm; tourist guidebooks often rank Nimbus near the top in their lists of "friendliest natives."`
 	description `	All the industry on Nimbus is driven by the sea. Fish are plentiful, and the oceans here also contain some unique microorganisms that are harvested to extract useful medical compounds.`
@@ -1541,7 +1535,7 @@ planet "No-Where Station"
 
 
 planet Norn
-	attributes deep fishing moon
+	attributes "requires: landing gear" deep fishing moon
 	landscape land/beach4
 	description `Norn is a water world, with low gravity but an atmosphere dense enough to breathe easily. Large mats of seaweed and algae form natural rafts that drift around with the ocean currents, and a few intrepid settlers have colonized them, people who prefer a life of relative solitude and are willing to trust their fates to wherever the winds might take them. Others have settled the few, low islands, which are prone to frequent flooding. Fish are common here, including a few species of flying fish which travel in large packs and are a considerable nuisance for the land-dwellers.`
 	spaceport `The spaceport is on one of the larger islands, a network of small buildings connected by bridges and raised up on enormous stilts about fifty meters high. Cargo winches are used to load and unload cargo from the boats that dock below. Starships dock in individual hangars, to protect them from the wind. The whole complex sways slightly, almost imperceptibly, as if it were a large boat at sea. The walkways all have tall railings, but you still find yourself afraid to venture too near the edge or to look down at the island and the sea below. The locals, however, walk swiftly and gracefully, with no sign of fear.`
@@ -1556,7 +1550,7 @@ planet Norn
 		fleet "Small Deep Security" 12
 
 planet Oasis
-	attributes rim farming textiles
+	attributes "requires: landing gear" rim farming textiles
 	landscape land/dune4
 	description `Although much of Oasis is desert, a few tropical regions exist that are more suited to human habitation. The settlements are small, and rely mostly on agriculture, ranching, and textiles to produce goods that can be sold off-world. For those who are drawn to simple frontier living, it is a paradise, where you can earn a living just by working with your hands, and where the only mode of transportation anyone needs is a horse.`
 	description `	Many outsiders, of course, view the Oasis lifestyle as backward and primitive.`
@@ -1590,7 +1584,7 @@ planet Oblivion
 		fleet "Large Militia" 8
 
 planet Pearl
-	attributes paradise tourism
+	attributes "requires: landing gear" paradise tourism
 	landscape land/forest3
 	description `Pearl is an idyllic, forested world, mostly set aside as a wildlife sanctuary for imported exotic species. Each of the islands and continents houses animals and plants from a different planet's biosphere. Terraforming stations and satellites maintain the atmospheric gas levels in order to keep each island at the proper temperature and rainfall level.`
 	description `	Some of the islands are open for tourists and safari tours, and even for hunting. Others are owned by private companies and used for medical research. People with training in veterinary medicine are always in high demand here.`
@@ -1637,7 +1631,7 @@ planet Pilot
 		fleet "Small Republic" 21
 
 planet Placer
-	attributes core mining frontier
+	attributes "requires: landing gear" core mining frontier
 	landscape land/mfield5
 	description `Placer is uninhabited aside from one small mining outpost; the atmosphere contains uncomfortable levels of ammonia and sulfur dioxide, and although brief exposure is not considered a health threat, those who live here must wear breathing gear when they leave their pressurized homes and mine shafts. Several scientific experiments over the last few centuries have sought to introduce microorganisms that would break down the harmful chemicals and transform the atmosphere to make it safer for human beings to breathe, but none have been successful.`
 	spaceport `The port consists of a large atmospheric dome, with landing pads and airlocks around the periphery. Although brief exposure to the air is not considered harmful, you find yourself holding your breath as you run from your ship to the airlock. Inside the dome, hanging gardens and open park land create a much more hospitable place, but the spaceport is nearly deserted, aside from one small pub that seems to be full of mine workers whose shift has just ended.`
@@ -1676,7 +1670,7 @@ planet Poseidos
 		fleet "Large Militia" 6
 
 planet Prime
-	attributes north urban factory
+	attributes "requires: landing gear" north urban factory
 	landscape land/city11
 	description `Prime is a very Earth-like ocean world, with a population of over a billion people. It is home to Betelgeuse Shipyards, and much of the industry on the planet is related to ship-building in one way or another, like refining and working metal, or developing exotic new hull and framing materials. Although some mining is done in more remote regions of the planet, Prime is reliant on shipments of metal and other goods to feed its industries.`
 	spaceport `The spaceport is a long, multi-story building designed to look like a carrier starship, but much larger. It is built mostly of steel and glass, with the sturdy beams and girders that support the building visible on the inside, giving it the look of a ship still in construction, whose interior has not yet been fully fitted out. In nearby hangars, final assembly is being done on ships, some of which have been completed and are now for sale.`
@@ -1694,7 +1688,7 @@ planet Prime
 		fleet "Large Republic" 17
 
 planet Quicksilver
-	attributes core volcanic mining
+	attributes "requires: landing gear" core volcanic mining
 	landscape land/snow0
 	description `Quicksilver is a world of highly variable, violent weather: hurricanes, hail, and earth-shaking thunderstorms. Under the planet's crust, it is equally turbulent and unpredictable, leading to frequent earthquakes and volcanic activity.`
 	description `	Although Quicksilver has vast mineral resources, the tectonic activity makes underground mining far too dangerous. However, a few enterprising settlers work in surface mining and mountaintop removal. The results are ugly, but this is a far too inhospitable world for anyone to care what it looks like.`
@@ -1727,7 +1721,7 @@ planet Relic
 		fleet "Small Republic" 25
 
 planet Reunion
-	attributes "near earth" urban factory
+	attributes "requires: landing gear" "near earth" urban factory
 	landscape land/mfield4
 	description `Reunion is one of the most Earth-like planets found by the early settlers, all the way down to its moon and tides. It has grown into a mostly urban world, which supplies manufactured goods of all sorts to the neighboring systems.`
 	description `	Local politics are unusually lively for a Republic world, to the point where a seat in the local legislature is often more hotly contested than one in the Republic Parliament. Topics of debate include trade and taxation, of course, but also seemingly fringe issues like biodiversity regulations for city green space. It may be that a world with no terraforming needs is focusing instead on tweaking society itself.`
@@ -1744,7 +1738,7 @@ planet Reunion
 		fleet "Large Syndicate" 17
 
 planet Rust
-	attributes rim farming factory
+	attributes "requires: landing gear" rim farming factory
 	landscape land/fields8
 	description `Rust is smaller than Earth, but very similar in climate. Much of its surface is suitable for agriculture, with wide open grasslands and dense forests. There are very few mountains, since the planet has low levels of tectonic activity.`
 	description `	The chief industry on Rust, however, are the factories and labs for Kraz Cybernetics, a maker of robots, computers, and advanced weapons systems. The planet's population is not large, but the schools are among the best in the region, and many of the inhabitants - even those who live on the farms - hold at least one advanced degree.`
@@ -1763,7 +1757,7 @@ planet Rust
 		fleet "Large Militia" 18
 
 planet Serpens
-	attributes north medical research
+	attributes "requires: landing gear" north medical research
 	landscape land/desert5
 	description `Serpens is a sparsely populated world of ancient canyonlands and barren deserts. There were no permanent settlements here until a century ago when visiting biologists discovered an indigenous snake whose venom is useful as a painkiller and heart medication. That led to a few small laboratories being set up in the desert, and to the eventual discovery of other useful compounds that can be extracted from the local flora and fauna.`
 	spaceport `The spaceport's landing pads are just a set of flat cleared areas on top of a mesa, surrounding a jumble of small adobe buildings. Inside the spaceport, scientists in lab coats rub shoulders with "snake wranglers" who ride in and out on horseback, dressed in denim and wearing oversized straw hats. The whole place smells of antiseptic and manure.`
@@ -1790,7 +1784,7 @@ planet Shangri-La
 		fleet "Large Syndicate" 7
 
 planet Shiver
-	attributes "near earth"
+	attributes "requires: landing gear" "near earth"
 	landscape land/snow8
 	description `Shiver is a dead and frozen world. The only settlement is a small refueling station that services cargo fleets on their way to Earth. Precipitation is rare here, but sometimes the wind whips up snow and ice from the surface into something akin to a desert sandstorm, and even on days when the wind dies down the air sparkles with tiny, floating ice crystals. Most people who come here for work only stay for a few months or half a year, just long enough for the sense of adventure to die away.`
 	spaceport `The spaceport is protected from the wind and blowing snow by a perimeter wall about fifty meters tall. Aside from running the fueling station, one of the few jobs for the workers here is to operate the bulldozers that push away the snowdrifts and keep the station from being buried beneath them. Although the air is breathable, ships that land here connect directly to docking tubes, to protect their crews from the icy air.`
@@ -1801,7 +1795,7 @@ planet Shiver
 		fleet "Small Republic" 10
 
 planet Shorebreak
-	attributes rim research medical
+	attributes "requires: landing gear" rim research medical
 	landscape land/beach1
 	description `Shorebreak is an ocean world which is home to a stunning profusion of alien life, some of which is not too dissimilar from life on Earth. The first settlement, centuries ago, was built as a marine biology laboratory, and from there the planet gradually grew into a regional center for bioengineering, where local life forms are tested for possible use in human medicine.`
 	description `	Outside the laboratories, much of the planet's land mass remains in its natural state, but the planet is currently struggling with a large increase in immigration.`
@@ -1814,7 +1808,7 @@ planet Shorebreak
 		fleet "Large Militia" 8
 
 planet Shroud
-	attributes north rich textiles frontier
+	attributes "requires: landing gear" north rich textiles frontier
 	landscape land/mountain1
 	description `Shroud is a world of castles in the clouds and slums in the valleys below. High on the mountain peaks, above the clouds, the planet's few elites live in splendid mansions. Below them, the people work mostly in textiles: farming cotton, raising sheep, working at looms and sewing machines in dimly lit factories.`
 	description `	The level of intrigue and dalliance between the bored gentry could easily compete with the most lurid and unrealistic of Victorian fiction.`
@@ -1830,7 +1824,7 @@ planet Shroud
 		fleet "Large Republic" 14
 
 planet "Silent Turf" 
-	attributes north "north pirate" "northern union"
+	attributes "requires: landing gear" north "north pirate" "northern union"
 	landscape land/fog2
 	description `This planet seems to be absolutely covered in abandoned settlements and cities, but there is no indication as to why. When asked about the abandoned settlements the locals tell tales of witchcraft and zombies, but it's easy to see that they aren't being serious.`
 	spaceport `The spaceport is situated atop an extremely well fortified mountain. In the distance you can see some sort of large creatures roaming the land below. In the center of the spaceport there is a large makeshift arena where people fight to the death for fun and, occasionally, profit.`
@@ -1846,7 +1840,7 @@ planet Silver
 		fleet "Small Republic" 25
 
 planet Sinter
-	attributes "dirt belt" mining
+	attributes "requires: landing gear" "dirt belt" mining
 	landscape land/nasa2
 	description `Sinter is a world where life never developed; the atmosphere is unbreathable, but warm enough and dense enough that people can survive here in pressurized homes or outside when wearing oxygen tanks. The only industry here is mining, which is mostly done with remotely controlled robots, so the population of the entire planet is only a few thousand people.`
 	spaceport `The spaceport is built next to a large smelter where ore is processed into metal ingots. Even on a planet as inhospitable as this one, the cost of extracting metal from ore is still cheaper than the cost of shipping the ore off-world for processing. A long enclosed terminal building extends out from the smelter, with docking tubes and landing pads every few hundred meters for connecting to visiting ships. Small robotic trolleys carry cargo crates back and forth; only a handful of people are walking around here, and most of them are probably off-worlders.`
@@ -1856,7 +1850,7 @@ planet Sinter
 		fleet "Small Militia" 28
 
 planet Skillet
-	attributes north mining farming frontier
+	attributes "requires: landing gear" north mining farming frontier
 	landscape land/canyon3
 	description `Skillet is a sparsely populated planet whose red hills and canyonlands are strip mined for placer deposits of iron ore and precious metals, mostly to supply the needs of the shipyards in Betelgeuse. This world is also used for ranching, and even for growing corn in a few less arid regions. The weather is usually quite mild, although hot and dry; the only reasons so few people have settled here are because it is so remote, and because the mining and farming industries need far fewer human workers than machines.`
 	spaceport `The spaceport mostly consists of a row of adobe warehouses, with tin roofs polished to mirror brightness to reflect the heat of the sun. Around the warehouses is a ring of concrete landing pads. Forklift trucks carrying pallets of iron and steel ingots weave their way in between men and women on horseback and others on foot. The air is hot, but too dry to feel oppressive.`
@@ -1913,7 +1907,7 @@ planet Solace
 		fleet "Large Militia" 15
 
 planet Splashdown
-	attributes north farming
+	attributes "requires: landing gear" north farming
 	landscape land/water5
 	description `Splashdown is an aging world where plate tectonics have long since died down and the weather has worn the surface down into lowlands, marshes, and shallow seas. Most of the land area is not suitable for growing anything but rice, and only a few settlements have been built here. Most visitors find this world boring, but the locals say they find beauty in the big sky and the subtle colors of the grasslands.`
 	spaceport `The spaceport is in the "highlands," a wide plateau only a few hundred meters above sea level. In all directions, the horizon is an almost perfectly flat line, varied only slightly by low hills and copses of trees. The port itself consists of some grain silos and warehouses, an open air marketplace, and a barbecue restaurant with outdoor seating. The buildings are all single-story, wood-framed construction.`
@@ -1923,7 +1917,7 @@ planet Splashdown
 		fleet "Large Republic" 3
 
 planet Sporehold
-	attributes north "north pirate" "northern union"
+	attributes "requires: landing gear" north "north pirate" "northern union"
 	landscape land/water6
 	description `Life here has evolved in a divergent way from what we recognize on earth. Although basic plant and animal life as we know it still exists to some degree, the vast majority of the planet is covered with massive bioluminescent mushrooms and other forms of fungus. `
 	spaceport `The spaceport is handled more as a mining colony or space station than what you would expect out of such a beautiful planet. While landing and entering the commune you never had to set foot outside. Fresh air is still piped in from the outdoors, but through massive filters.`
@@ -1931,7 +1925,7 @@ planet Sporehold
 	outfitter "Ammo"
 	
 planet Starcross
-	attributes rim farming
+	attributes "requires: landing gear" rim farming
 	landscape land/sky1
 	description `Starcross is a stormy, ocean-dappled planet that was not settled until the planets farther out on this arm of the galaxy grew prosperous enough to create a need for a stop-over point for cargo. Structures must be built strong and on high enough ground to avoid the frequent floods. A few enterprising settlers have taken up farming of some native plants that are edible for humans, including one plant similar to cranberries that has come to be considered a rare delicacy by many.`
 	spaceport `The spaceport is rudimentary: just a couple of landing pads, each with thick cement walls around it to protect your ship from being buffeted by any storms that strike. The central building is a squat, windowless cement fortress. Inside, however, it is completely different: the ceilings are high, with sun-lamps that provide some sense of warmth and cheer, and native wood paneling or stucco on most of the walls to soften them.`
@@ -1942,7 +1936,7 @@ planet Starcross
 		fleet "Small Militia" 22
 
 planet Stormhold
-	attributes pirate "core pirate" "northern union"
+	attributes "requires: landing gear" pirate "core pirate" "northern union"
 	landscape land/fog3
 	description `A cold planet, with dense, foggy atmosphere. As with many pirate outposts, Stormhold is home to an unknown number of villages and hidden outposts, each controlled by a different pirate faction. It is also said that some of the most dangerous fugitives in the galaxy live deep in the forests of this planet, escaping detection by living underground or by avoiding the use of electronic devices.`
 	spaceport `The spaceport is a large town, with a population of roughly thirty thousand. People of all races and cultures mingle freely, while keeping a wary eye open for off-worlders who may be Republic agents in disguise.`
@@ -1968,7 +1962,7 @@ planet Sundive
 		fleet "Small Syndicate" 4
 
 planet Sundrinker
-	attributes south farming frontier
+	attributes "requires: landing gear" south farming frontier
 	landscape land/desert6
 	description `Most of this world is barren deserts and oceans; for whatever reason almost no life evolved here. The only human settlement is a small town in one of the few hilly regions, and the locals survive by ranching and farming. It is the sort of world that is ideal for people who enjoy being alone, because it has almost no appeal for anyone else. In addition to the oppressively hot weather, flash floods are quite frequent.`
 	spaceport `There are only two concrete landing platforms in the spaceport, and that is plenty for the amount of traffic they receive. A wide cleared-off field of dirt is available beyond that in case an unusual number of ships ever need to land. The two platforms and the spaceport buildings are all built near to the tops of the hills, out of the way of the flood waters. This is both the spaceport and the only town on Sundrinker. A single road winds between a few buildings; one seems to be a saloon, and another, a general store.`
@@ -2014,7 +2008,7 @@ planet Thrall
 		fleet "Large Republic" 8
 
 planet Thule
-	attributes pirate "south pirate"
+	attributes "requires: landing gear" pirate "south pirate"
 	landscape land/dmottl2
 	description `Thule is a mountainous world with a population of nearly a billion, settled in the early days of space exploration. When the colony was first established, the Earth government did not yet have the strength to control any system but its own, and when the Republic was formed, Thule did not join, and has repulsed all efforts to force them to do so. It is well-known that the planet sponsors pirate fleets which bring it cheap materials to bolster its economy, but the planet is so far from the center of Republic space that fighting a war here would be prohibitively expensive, and so they remain unopposed.`
 	spaceport `The inhabitants of Thule are notoriously suspicious of strangers. They all seem to immediately recognize you as an off-worlder, perhaps by your clothing or your accent. The food sold in the shops is like nothing you have seen elsewhere, and the natives' accents are so strong that they almost seem to be speaking a different language. You feel as if you are visiting an alien world; centuries of separation has created a culture here that is very different from your own.`
@@ -2030,7 +2024,7 @@ planet Thule
 		fleet "Large Southern Pirates" 16
 
 planet Tinker
-	attributes "near earth" factory mining
+	attributes "requires: landing gear" "near earth" factory mining
 	landscape land/mfield0
 	description `Tinker is a highly industrialized world, exporting electronics both to the Syndicate and to Earth. The electronic goods manufactured here span the gamut from wires and capacitors to sophisticated microchips, and because many of the jobs here require skilled labor, it is a relatively prosperous planet.`
 	description `	Outside the cities, large areas of this world have been set aside for mining and for refineries and smelters, ensuring that the industries here have all the raw materials they need, plus extra to sell.`
@@ -2049,7 +2043,7 @@ planet Tinker
 		fleet "Large Syndicate" 7
 
 planet Trinket
-	attributes south tourism
+	attributes "requires: landing gear" south tourism
 	landscape land/beach3
 	description `In a region of the galaxy not known for beach resorts, Trinket has become somewhat of a major tourist destination. It is not a particularly warm world, and near both poles icebergs float year round, but at the equator the weather is almost tropical and the water is warm enough for swimming. Occasionally one of the ocean currents will pick up an iceberg and carry it all the way down past the resorts before it melts completely; taking a boat out to these icebergs is a popular daytime activity here.`
 	spaceport `The spaceport is a long, two-story building of wood and stone with hundreds of stalls selling fruit and clothing and bad artwork. Many of the starships parked here have scorch marks and dents on their hulls, a sure sign of recent battle. It is likely that some of the people walking through the port are in fact pirates, posing as civilians in order to sell stolen cargo or to take a vacation incognito.`
@@ -2080,7 +2074,7 @@ planet "Triton Station"
 		fleet "Small Republic" 24
 
 planet Trove
-	attributes core mining
+	attributes "requires: landing gear" core mining
 	landscape land/badlands3
 	description `Trove is a tiny world, too small to have a breathable atmosphere. It is home to an experimental "jack mining" operation that has split its surface open in order to gain access to the metal-rich core. Most of the work here is done by machines, but a few people live inside an airtight complex in order to supervise the work and to sell ore and metal to visiting ships.`
 	spaceport `Within the mining complex, you find a small cafeteria with an uninspiring menu, and windows overlooking offices where dozens of people are staring at flickering video screens. Because of the low gravity, everyone moves languidly, as if in a dream. It is nearly silent.`
@@ -2090,7 +2084,7 @@ planet Trove
 		fleet "Small Syndicate" 5
 
 planet Tundra
-	attributes "dirt belt" oil textiles
+	attributes "requires: landing gear" "dirt belt" oil textiles
 	landscape land/dmottl1
 	description `Millions of years ago, this was a warm world, perhaps even tropical. But some cataclysmic event, perhaps a meteor strike or a massive volcanic eruption, altered the planet's atmosphere enough to turn it into the nearly lifeless, frozen planet it is today.`
 	description `	The first settlers came here to drill for the oil trapped deep under the surface, a relic of Tundra's former, more lively days. Instead of refining the oil into plastic, which sells relatively cheap in this region, they have developed an industry in synthetic fabrics and clothing.`
@@ -2123,7 +2117,7 @@ planet "Typhon Station"
 		fleet "Large Militia" 8
 
 planet Vail
-	attributes paradise tourism farming
+	attributes "requires: landing gear" paradise tourism farming
 	landscape land/snow4
 	description `Vail is an entire world that is maintained as a ski resort for rich clients from the nearby planets. A combination of terraforming and snow making ensures that whichever hemisphere is in winter always has ideal skiing conditions, while farming and other small industries supply the tourists and the large staffs that cater to them. The slopes here include tracks for all the latest dangerous and expensive extreme winter sports, like hoverboarding and wingsuit cliff skiing.`
 	spaceport `The spaceport is near the equator where the weather will be most amenable for landing ships, but with airplane shuttles and a few high speed rail lines leading to the various resort towns. As a result, the air is full of a confusing mixture of deep space ships and atmospheric vehicles, and runways are available in addition to the vertical take-off pads that starships use. In order to come anywhere near the port, you are required to surrender control of your ship to the port's autopilot computer; there is no other way that collisions could be avoided.`
@@ -2134,7 +2128,7 @@ planet Vail
 		fleet "Large Republic" 11
 
 planet Valhalla
-	attributes deep farming fishing urban factory
+	attributes "requires: landing gear" deep farming fishing urban factory
 	landscape land/mfield3
 	description `Valhalla was the first world to be settled in this region of space, which is known as the Deep. It is rich in natural resources, but all its vast farms and fisheries are insufficient to feed its population of nearly five billion.`
 	description `	The shipyards of Lionheart Industries are located here. Centuries ago, warships built here turned the tide of the Alpha War, and today the ships designed and built in the Deep continue to be some of the most technologically advanced ships in human space - and the most expensive.`
@@ -2153,7 +2147,7 @@ planet Valhalla
 		fleet "Large Deep Security" 35
 
 planet Vinci
-	attributes paradise factory
+	attributes "requires: landing gear" paradise factory
 	landscape land/nasa5
 	description `Many centuries ago, some of the first settlers on Vinci included a small group of electrical engineers who formed a revolutionary new company for designing computers and microchips. Today, Vinci is the foremost manufacturer of CPUs in all of human space, and their processors are found in everything from navigational computers to video phones to intelligent toasters. Because this world is home to so many cleanroom fabrication plants, pollution is very tightly controlled.`
 	spaceport `The spaceport is so full of high-fidelity holographic displays that you have trouble at times telling where the virtual reality ends and the physical reality begins; what looks like a paper poster on the wall will suddenly change to a different picture every minute, and the department store mannequins follow you with their eyes. You feel like you are trapped in someone's drug-assisted vision of the future.`
@@ -2163,13 +2157,13 @@ planet Vinci
 		fleet "Large Republic" 11
 
 planet Watcher
-	attributes "dirt belt" research uninhabited moon
+	attributes "requires: landing gear" "dirt belt" research uninhabited moon
 	landscape land/hills4
 	description `Watcher is a small moon, the only world in this system that sustains any indigenous life. Because of the low gravity, humans have not yet built a permanent settlement here, but it is occasionally visited by biologists interested in studying low-gravity life forms. There are forests here where the trees grow over two hundred meters tall.`
 	security 0
 
 planet Wayfarer
-	attributes south factory
+	attributes "requires: landing gear" south factory
 	landscape land/nasa1
 	description `Wayfarer was initially settled by a team of scientists seeking to study the nearby wormholes, and later diplomats seeking to build a relationship with the aliens from beyond them. Partly through the aid of the aliens and partly through a desire to emulate them, it has grown into a very technologically advanced world.`
 	description `	Tarazed corporation, a maker of alien-inspired ships and outfits, is one of the largest industries on Wayfarer, and they draw raw materials from throughout this region of space.`
@@ -2182,7 +2176,7 @@ planet Wayfarer
 		fleet "Large Militia" 26
 
 planet Windblain
-	attributes deep oil textiles
+	attributes "requires: landing gear" deep oil textiles
 	landscape land/bwerner0
 	description `Nearly three quarters of the surface of Windblain is ocean. Most of the industry here centers around petrochemicals: deep sea oil drilling, refining, and manufacture of plastic composites and synthetic fabrics for clothing. There are a few large cities on the continents, but also plenty of wilderness spaces as yet untouched by human activity.`
 	description `	The local climate and economy are neither good enough to attract immigration, nor bad enough to drive people to leave. There seems to be almost no interest in the affairs of the wider galaxy.`
@@ -2196,7 +2190,7 @@ planet Windblain
 		fleet "Small Deep Security" 18
 
 planet Winter
-	attributes south factory frontier
+	attributes "requires: landing gear" south factory frontier
 	landscape land/snow3
 	description `The dense clouds in Winter's atmosphere block out much of the sunlight, creating a frigid landscape below. The planet was not settled until about a century ago, when a group of investors from Pherkad decided to build a manufacturing center here, rather than trying to find more land on the already overcrowded planet of Solace. Claiming that the industrial emissions of carbon dioxide and other greenhouse gases would eventually warm the planet and turn it into a tropical paradise, they were able to draw enough settlers to keep the factories going.`
 	description `	The temperatures have risen measurably since the arrival of the human colonists, but without more intentional efforts it may be another century before the planet warms enough to be truly comfortable to live on.`
@@ -2227,7 +2221,7 @@ planet "Wyvern Station"
 		fleet "Large Militia" 6
 
 planet Zenith
-	attributes pirate "north pirate" "northern union"
+	attributes "requires: landing gear" pirate "north pirate" "northern union"
 	landscape land/water4
 	description `Zenith is a cold and unpleasant world, where the fog seldom lifts and the sun is rarely seen, where much of the lowlands are flooded each day by the tide, and storms are unpredictable and fierce. It has, however, one major advantage as a place to settle: it is far enough away that the Republic makes no attempt to control it.`
 	description `	Several villages have been founded near the equator, and in addition there are an unknown number of private holdings, ranging from underground bunkers to enormous cement fortresses. Because the land is owned by no government and anyone can build a dwelling without permission or paperwork as long as they are willing to fight off any other claimants, the total population of Zenith is unknown.`
@@ -2240,7 +2234,7 @@ planet Zenith
 		fleet "Small Northern Union" 13
 
 planet Zug
-	attributes rim farming factory
+	attributes "requires: landing gear" rim farming factory
 	landscape land/city4
 	description `Zug is a pleasant world of rolling hills, fertile fields, and a few small oceans. Hundreds of millions of people live here, with more immigrants arriving every day, almost faster than the construction industry can keep up with them. In addition to the larger cities, many people live in smaller farming villages, making this one of the few worlds in the region that is truly self-sufficient both in industry and in agriculture.`
 	description `	The largest industry on Zug is Southbound Shipyards, which focuses on designing well-defended merchant ships to survive the pirates that are so common here.`
