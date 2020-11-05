@@ -2308,7 +2308,7 @@ ship "Raven"
 ###############################################
 
 
-ship "Endevor"
+ship "Endeavor"
 	sprite "ship/mstar queene"
 	thumbnail "thumbnail/mstar queene"
 	attributes
@@ -2366,7 +2366,7 @@ ship "Endevor"
 	explode "large explosion" 10
 	"final explode" "final explosion medium"
 	description "After decades of capturing and ransoming Star Queens, the shipyards on Haven came into an overabundance of otherwise useless transports. Initial attempts to rent these out as stationary luxury apartments fell flat, so it was decided to convert these into combat vessels. Unsurprisingly, its sold with the same outfits it had when captured."
-	description "	Once stripped of its luxury resources, the Star Queen proved a surprisingly sturdy and nimble hull. Although lightly armed even by frigate standards, the Endevors engine space and shield strength can almost rival a cruisers, landing it squarely in the Destroyer range." 
+	description "	Once stripped of its luxury resources, the Star Queen proved a surprisingly sturdy and nimble hull. Although lightly armed even by frigate standards, the Endeavors engine space and shield strength can almost rival a cruisers, landing it squarely in the Destroyer range." 
 	
 ship "Manta"
 	sprite "ship/manta"
@@ -5805,3 +5805,258 @@ ship "Wyvern"
 	description "A rare sight in human space, the Quarg's famed Wyvern is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
 	description "	Many conspiracy theorists wonder why the Quarg would abide by such regulations and laws if they are so powerful."
 
+# Post Civil War Human Ships availible before Invasion
+# These will be "lessons learned from the conflict," and advances in shipbuilding technology spurred on by the civil war
+
+shipyard "Basic Ships"
+	"Combat Clipper"
+	"Narcissus MKIII"
+	"Unionworks Headhunter"
+	"Schooner Refit"
+	
+
+ship "Combat Clipper"
+	sprite "ship/clipper"
+	thumbnail "thumbnail/clipper"
+	attributes
+		category "Frigate"
+		licenses
+			"Free Worlds"
+		"cost" 2000000
+		"landing gear" 1
+		"shields" 8000
+		"hull" 800
+		"hull repair rate" .2
+		"landing gear" 1
+		"required crew" 3
+		"bunks" 4
+		"mass" 150
+		"drag" 2.7
+		"heat dissipation" .8
+		"fuel capacity" 500
+		"cargo space" 10
+		"outfit space" 320
+		"weapon capacity" 120
+		"engine capacity" 140
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 60
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 36
+			"shield damage" 360
+			"hull damage" 180
+			"hit force" 540
+	outfits
+		"Beam Laser" 2
+		"Javelin Pod" 2
+		"Javelin" 400
+		
+		"nGVF-DD Fuel Cell"
+		"LP072a Battery Pack"
+		"D14-S Shield Generator"
+		"Plasma Pistol" 3
+		
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
+		
+	engine -22 47
+	engine 22 47
+	gun -21.5 -18 "Javelin Pod"
+	gun 21.5 -18 "Javelin Pod"
+	gun -11 -8.5 "Beam Laser"
+	gun 11 -8.5 "Beam Laser"
+	leak "leak" 60 50
+	leak "flame" 50 80
+	explode "tiny explosion" 15
+	explode "small explosion" 20
+	explode "medium explosion" 10
+	"final explode" "final explosion small"
+	description "Southbound mass produced this revision of the Clipper to address some of the growing pains felt by the Free Worlds. This blazing fast patrol craft can be refit to fill any role the Free Worlds needs."
+	description "The already versitile Clipper benefits from overcharged shields, more efficient damage control, more efficient cloaking, and sacrifices almost its entire cargo bay to fit advanced, specialized equipment."	
+
+ship "Narcissus MKIII"
+	sprite "ship/gunboat"
+	thumbnail "thumbnail/gunboat"
+	attributes
+		category "Frigate"
+		licenses
+			Navy
+		"cost" 4200000
+		"landing gear" 1
+		"shields" 9800
+		"hull" 1400
+		"hull repair rate" .2
+		"landing gear" 1
+		"ranger ports" 2
+		"required crew" 7
+		"bunks" 12
+		"mass" 80
+		"drag" 2.1
+		"heat dissipation" .8
+		"fuel capacity" 600
+		"cargo space" 10
+		"outfit space" 310
+		"weapon capacity" 140
+		"engine capacity" 130
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 50
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 72
+			"shield damage" 720
+			"hull damage" 360
+			"hit force" 1080
+	outfits
+		"Heavy Laser" 2
+		"Heavy Laser Turret"
+		
+		"RT-I Radiothermal"
+		"LP144a Battery Pack"
+		"D14-XS Shield Generator"
+		"Small Radar Jammer"
+		"Cargo Scanner"
+		"Outfit Scanner"
+		"Tactical Scanner"
+		"Brig"
+		"Plasma Pistol" 7
+		
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -12 57
+	engine 12 57
+	gun -28 -28 "Heavy Laser"
+	gun 28 -28 "Heavy Laser"
+	turret 0 -8 "Heavy Laser Turret"
+	leak "leak" 50 50
+	leak "flame" 80 80
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "The Betelgeuse revision of the Narcissus really hit the mark with the Republic in the late days of the Civil War as a faster, lighter support ship capable of punching above its weight class."
+	description "The upgrade goes well beyond improvements to its shields alone. The MKIII now has a considerably more efficient cloak, lighter components, and has traded out its cargo hold for more weapons or engine space."
+	
+ship "Unionworks Headhunter"
+	sprite "ship/headhunter"
+	thumbnail "thumbnail/headhunter"
+	attributes
+		category "Frigate"
+		"cost" 1850000
+		"landing gear" 1
+		"shields" 8800
+		"hull" 700
+		"hull repair rate" .2
+		"landing gear" 1
+		"required crew" 2
+		"bunks" 4
+		"mass" 80
+		"drag" 1.6
+		"heat dissipation" .8
+		"fuel capacity" 600
+		"cargo space" 10
+		"outfit space" 290
+		"weapon capacity" 100
+		"engine capacity" 120
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 50
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 44
+			"shield damage" 440
+			"hull damage" 220
+			"hit force" 660
+	outfits
+		"Heavy Laser" 2
+		"Heavy Anti-Missile Turret"
+		
+		"RT-I Radiothermal"
+		"LP072a Battery Pack"
+		"D14-S Shield Generator"
+		"Plasma Pistol" 2
+		
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
+	
+	engine -16 47
+	engine 16 47
+	gun -17.5 -17
+	gun 17.5 -17
+	gun -12 -25.5 "Heavy Laser"
+	gun 12 -25.5 "Heavy Laser"
+	turret 0 9 "Heavy Anti-Missile Turret"
+	leak "leak" 60 50
+	leak "flame" 80 80
+	explode "tiny explosion" 20
+	explode "small explosion" 25
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "After the plans of the Headhunter were stolen by the Northern Union, they set about trying to make the vessel fit their needs even better. Mostly, of course, by sacrificing its cargo space."
+	description "The Unionworks Headhunter boasts incredibly powerful shields for its weight class, as well extremely efficient cloaking, and enough space to fit massive engines or weapons on its frame."
+
+ship "Schooner Refit"
+	sprite "ship/moderator"
+	thumbnail "thumbnail/moderator"
+	attributes
+		category "Cruiser"
+		"cost" 10800000
+		"landing gear" 1
+		"shields" 19000
+		"hull" 7500
+		"hull repair rate" .3
+		"required crew" 38
+		"bunks" 65
+		"mass" 610
+		"drag" 6.6
+		"heat dissipation" .7
+		"fuel capacity" 600
+		"cargo space" 10
+		"outfit space" 630 
+		"weapon capacity" 300
+		"engine capacity" 224
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+	outfits
+		"Particle Cannon" 2
+		"Torpedo Launcher" 2
+		"Meteor Missile Launcher" 2
+		"Modified Blaster" 2
+		"Anti-Missile Turret" 1
+		"Modified Blaster Turret" 2
+		"Torpedo" 20
+		"Meteor Missile" 120
+
+		"D14-M Shield Generator"
+		"Fission Reactor"
+		"LP072a Battery Pack"
+		"Brig" 5
+		"Interference Plating" 5
+
+		"A370 Atomic Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
+
+	gun 26 -43 "Particle Cannon"
+	gun -26 -43 "Particle Cannon"
+	gun 26 -43 "Torpedo Launcher"
+	gun -26 -43 "Torpedo Launcher"
+	gun 14 -75 "Meteor Missile Launcher"
+	gun -14 -75 "Meteor Missile Launcher"
+	gun 14 -75 "Modified Blaster"
+	gun -14 -75 "Modified Blaster"
+	turret 14 -17 "Modified Blaster Turret"
+	turret -14 -17 "Modified Blaster Turret"
+	turret 0 89 "Anti-Missile Turret"
+	engine 22 114.5
+	engine -22 114.5
+	description "As if the Schooner wasn't frightening enough, Unionworks set about improving it further. Boasting Shields nearly on par with the Navy's Nomos and more armor, this refit can not only dish out a lot of damage and also take it. Other governments both envy and fear this ship."
