@@ -967,6 +967,7 @@ planet Humanika
 	landscape land/beach2
 	description `The gravity is too strong on this planet for the Quarg to inhabit it, so they have welcomed human settlers instead. Many people who want freedom from the dangers of human space and the endless instability of human government have settled here. Although the regions near the equator are far too warm to be comfortable, the climate closer to the poles is almost ideal; the only reason Humanika is not as densely populated as some of the worlds farther to the galactic north is the distrust with which most humans view the Quarg.`
 	spaceport `The spaceport is a towering steel structure, built by the Quarg, with docks for their pilot-less cargo drones in addition to the platforms for human ships. The hallways inside have disconcerting proportions, somewhat narrow but with very tall ceilings. In addition to the human inhabitants, there are a few tall, almost fragile-looking robots with digitigrade limbs and narrow torsos patterned after the anatomy of a Quarg. Most of the robots stand still in the corners, like statues, but a few are moving around and interacting with people, apparently as remote control proxies for Quarg in orbit. It is a clear reminder of who owns this planet.`
+	shipyard "Quarg"
 	outfitter "Ammo"
 	bribe 0.05
 	security 0.9
@@ -1024,6 +1025,7 @@ planet Lagrange
 	landscape land/station5
 	description `The Quarg built this station centuries ago, before they began construction on the ringworld. From the dark side of the station, the ring is visible as a thin bright filament stretching out to either side of the system's sun. The ring itself is closed to human visitors, but tour shuttles depart from here on a regular basis, giving human tourists a closer view of this engineering feat that is so far beyond anything human beings have ever attempted to build.`
 	spaceport `In the docking section are flexible, oddly organic-looking tubes that snaked out to connect to your ship as it approached. Walking through the tube and into the station was a somewhat disconcerting experience. Inside, crowds of human tourists gawk at the tall, thin Quarg, who for the most part seem unfazed by the attention. The station is perfectly clean; every surface shines.`
+	shipyard "Quarg"
 	bribe 0
 	security 0.9
 
