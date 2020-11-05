@@ -23,6 +23,8 @@ shipyard "Tarazed Advanced"
 	"Falcon"
 
 shipyard "Tarazed Shipyards"
+	"Earth Shaper"
+	"Millipede"
 	"Sparrow"
 	"Hawk"
 	"Blackbird"
@@ -166,7 +168,7 @@ shipyard "Northern Union"
 	"Leviathan"
 	
 shipyard "Northern Union Advanced"
-	"Endevor"
+	"Endeavor"
 	"Schooner"
 	
 shipyard "Southern Pirates"
@@ -221,6 +223,9 @@ shipyard "Free Market"
 	"Leviathan"
 	"Protector"
 
+shipyard "Quarg"
+	"Wyvern"
+	"Chimera"
 
 outfitter "Basic Outfits"
 	"Energy Blaster"
