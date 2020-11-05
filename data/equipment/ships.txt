@@ -86,41 +86,6 @@ ship "Thea Drone"
 	explode "tiny explosion" 15
 	description "Named for the mother of the Sun in greek mythology, Thea drones are used to bring light to where there was once darkness. These unarmed drones are used by the Republic navy to scan ships and planets in a star system."
 
-ship "Earth Shaper"
-	sprite "ship/earth shaper"
-	thumbnail "thumbnail/earth shaper"
-	attributes
-		category "Light Freighter"
-		"cost" 500000
-		"landing gear" 1
-		"hull" 3300
-		"automaton" 1
-		"mass" 30
-		"drag" .9
-		"heat dissipation" .9
-		"fuel capacity" 300
-		"cargo space" 27
-		"outfit space" 59
-		"engine capacity" 26
-		"atmosphere scan" 100
-		weapon
-			"blast radius" 10
-			"shield damage" 100
-			"hull damage" 150
-			"hit force" 250
-	outfits
-		"Small Biochemical Cell"
-		
-		"Type 1 Radiant Thruster"
-		"Type 1 Radiant Steering"
-		"Hyperdrive"
-		
-	engine -9 30
-	engine 9 30
-	explode "tiny explosion" 20
-	explode "small explosion" 10
-	description "The Earth Shaper is a robotic drone that the Wanderers use for mining, exploring, surveying, and terraforming."
-
 #Fighters
 ###############################################
 
@@ -438,6 +403,53 @@ ship "Shuttle"
 
 #Yachts
 ###############################################
+ship "Millipede"
+	sprite "ship/hai centipede"
+	thumbnail "thumbnail/hai centipede"
+	attributes
+		category "Yacht"
+		"cost" 12500000
+		"shields" 6600
+		"hull" 2400
+		"required crew" 40
+		"bunks" 131
+		"mass" 187
+		"drag" 3.9
+		"heat dissipation" .75
+		"fuel capacity" 600
+		"cargo space" 35
+		"outfit space" 375
+		"weapon capacity" 78
+		"engine capacity" 88
+		weapon
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
+	outfits
+		"NT-200 Nucleovoltaic"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Scram Drive"
+		
+	engine -15 113
+	engine 15 113
+	gun -11 -113 
+	gun 11 -113 
+	turret 0 -19 "Bullfrog Anti-Missile"
+	leak "leak" 60 50
+	leak "flame" 40 40
+	leak "big leak" 10 10
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
+	"final explode" "final explosion medium"
+	description `One half of a joint venture between the Hai and Humans to produce hybrid transports, the Tarazed Millipede is one of the most advanced yachts for sale in human space. It's Hai inspired hull also makes it a formidable combat ship in spite of its classification.`
+
 
 ship "Arrow"
 	sprite "ship/arrow"
@@ -1100,6 +1112,42 @@ ship "Wasp"
 #Freighter (light)
 ###############################################
 
+ship "Mason"
+	sprite "ship/earth shaper"
+	thumbnail "thumbnail/earth shaper"
+	attributes
+		category "Freighter"
+		"cost" 500000
+		"hull" 3300
+		"mass" 30
+		"required crew" 1
+		"bunks" 1
+		"drag" .9
+		"heat dissipation" .9
+		"fuel capacity" 300
+		"cargo space" 60
+		"outfit space" 59
+		"engine capacity" 26
+		"atmosphere scan" 100
+		weapon
+			"blast radius" 10
+			"shield damage" 100
+			"hull damage" 150
+			"hit force" 250
+	outfits
+		"Small Biochemical Cell"
+		
+		"Type 1 Radiant Thruster"
+		"Type 1 Radiant Steering"
+		"Hyperdrive"
+		
+	engine -9 30
+	engine 9 30
+	explode "tiny explosion" 20
+	explode "small explosion" 10
+	description "The mason is a modified Earth Shaper drone, specifically made for sale on Human markets. It's cramped interior and lack of living space betray its original design."
+
+
 ship "Argosy"
 	plural "Argosies"
 	sprite "ship/argosy"
@@ -1726,6 +1774,51 @@ ship "Skein"
 
 #Freighter (medium-heavy)
 ###############################################
+
+ship "Wyvern"
+	sprite "ship/skylark"
+	thumbnail "thumbnail/skylark"
+	attributes
+		category "Container Ship"
+		"cost" 20000000
+		"shields" 10000
+		"hull" 7000
+		"required crew" 12
+		"bunks" 21
+		"mass" 460
+		"drag" 12.3
+		"heat dissipation" .7
+		"fuel capacity" 1000
+		"cargo space" 200
+		"outfit space" 120
+		"engine capacity" 120
+		"hull repair rate" .15
+		"hull energy" .15
+		"energy generation" 4.8
+		"energy capacity" 2200
+		"shield generation" .82
+		"shield energy" .82
+		"ramscoop" 1
+		weapon
+			"blast radius" 250
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"A370 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Hyperdrive"
+		
+	engine -15 117
+	engine 15 117
+	explode "tiny explosion" 12
+	explode "small explosion" 16
+	explode "medium explosion" 30
+	explode "large explosion" 40
+	explode "huge explosion" 20
+	"final explode" "final explosion medium"
+	description "Although its true name is completely unpronouncable by humans, the Wyvern has come to be known as the Quarg's favored packmule."
+	description "	As Quarg and Human technology is largely incompatible, this overpriced vessel has little-to-no room for additional outfits, and can fit no weapons. This makes ownership of such a vessel more of a status symbol than anything else."
 
 ship "Class C Freighter"
 	sprite "ship/bulk freighter"
@@ -5747,7 +5840,7 @@ ship "Archon" "Archon (Cloaked)"
 	turret "Drak Distancer"
 
 
-ship "Wyvern"
+ship "Chimera"
 	sprite "ship/wardragon"
 	thumbnail "thumbnail/wardragon"
 	attributes
@@ -5802,7 +5895,7 @@ ship "Wyvern"
 	explode "large explosion" 40
 	explode "huge explosion" 20
 	"final explode" "final explosion medium"
-	description "A rare sight in human space, the Quarg's famed Wyvern is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
+	description "The Quarg's famed "Qa'kiil," better known by humans as the Chimera, is a rare sight in human space. This ship is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
 	description "	Many conspiracy theorists wonder why the Quarg would abide by such regulations and laws if they are so powerful."
 
 # Post Civil War Human Ships availible before Invasion
