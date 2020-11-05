@@ -23,7 +23,7 @@ shipyard "Tarazed Advanced"
 	"Falcon"
 
 shipyard "Tarazed Shipyards"
-	"Earth Shaper"
+	"Mason"
 	"Millipede"
 	"Sparrow"
 	"Hawk"
