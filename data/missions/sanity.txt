@@ -12,8 +12,8 @@ mission "combat rating sanity 1"
 	landing
 	invisible
 	source
-		near Sol 5000
-	destination Foundry
+		near Sol 1 5000
+	destination Earth
 	to offer
 		"combat rating" > 600
 	on offer
@@ -24,8 +24,8 @@ mission "combat rating sanity 2"
 	landing
 	invisible
 	source
-		near Sol 5000
-	destination Foundry
+		near Sol 1 5000
+	destination Earth
 	to offer
 		"combat rating" > 8000
 	on offer
@@ -36,8 +36,8 @@ mission "combat rating sanity 3"
 	landing
 	invisible
 	source
-		near Sol 5000
-	destination Foundry
+		near Sol 1 5000
+	destination Earth
 	to offer
 		"combat rating" > 80000
 	
@@ -49,8 +49,8 @@ mission "losing my grip 1"
 	landing
 	invisible
 	source
-		near Sol 5000
-	destination Foundry
+		near Sol 1 5000
+	destination Earth
 	to offer
 		"sanity" >= 5
 	on offer
@@ -60,8 +60,8 @@ mission "losing my grip 2"
 	landing
 	invisible
 	source
-		near Sol 5000
-	destination Foundry
+		near Sol 1 5000
+	destination Earth
 	to offer
 		"sanity" >= 7
 	on offer
@@ -71,8 +71,8 @@ mission "losing my grip 3"
 	landing
 	invisible
 	source
-		near Sol 5000
-	destination Foundry
+		near Sol 1 5000
+	destination Earth
 	to offer
 		"sanity" >= 8
 	on offer
@@ -82,8 +82,8 @@ mission "losing my grip final"
 	landing
 	invisible
 	source
-		near Sol 5000
-	destination Foundry
+		near Sol 1 5000
+	destination Earth
 	to offer
 		"sanity" >= 10
 	on offer
