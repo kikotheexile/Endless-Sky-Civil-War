@@ -1576,6 +1576,8 @@ ship "Nest"
 	thumbnail "thumbnail/nest"
 	attributes
 		category "Carrier"
+		licenses
+			"Free Worlds"
 		"cost" 2500000
 		"landing gear" 1
 		"shields" 2500
@@ -1640,6 +1642,8 @@ ship "Roost"
 	thumbnail "thumbnail/roost"
 	attributes
 		category "Carrier"
+		licenses
+			"Free Worlds"	
 		"cost" 3000000
 		"landing gear" 1
 		"shields" 2900
@@ -1708,7 +1712,7 @@ ship "Skein"
 	attributes
 		category "Carrier"
 		licenses
-			"Militia Carrier"
+			"Free Worlds"	
 		"cost" 3500000
 		"landing gear" 1
 		"shields" 3300
@@ -3753,8 +3757,6 @@ ship "Unnamed Prototype"
 	"never disabled"
 	thumbnail "thumbnail/kestrel"
 	attributes
-		licenses
-			Not-For-Sale
 		category "Cruiser"
 		"cost" 14700000
 		"shields" 19400
@@ -3819,7 +3821,7 @@ ship "Mule"
 		"random start frame"
 	attributes
 		licenses
-			Colony-Ship
+			City-Ship
 		category "Colony Ship"
 		"cost" 30000000
 		"shields" 14500
@@ -3986,9 +3988,6 @@ ship "Prototype Vulture"
 	"never disabled"
 	attributes
 		category "Battlecruiser"
-		licenses
-			"Battlecruiser"
-			"Tarazed"
 		"cost" 45000000
 		"shields" 75000
 		"hull" 45000
@@ -4067,9 +4066,6 @@ ship "Veles"
 	"never disabled"
 	attributes
 		category "Battlecruiser"
-		licenses
-			"Battlecruiser"
-			"Betelgeuse"
 		"cost" 850000000
 		"shields" 85000
 		"hull" 50000
@@ -4240,7 +4236,6 @@ ship "Dart"
 	attributes
 		category "Gunship"
 		licenses
-			Marauder
 			SoCo
 		"cost" 1320000
 		"landing gear" 1
@@ -4295,7 +4290,6 @@ ship "Bolt"
 	attributes
 		category "Gunship"
 		licenses
-			Marauder
 			Hotrod
 		"cost" 1320000
 		"landing gear" 1
@@ -4343,7 +4337,6 @@ ship "Missile"
 	attributes
 		category "Gunship"
 		licenses
-			Marauder
 			Smuggler
 		"cost" 1320000
 		"landing gear" 1
@@ -4395,7 +4388,6 @@ ship "Jumper"
 	attributes
 		category "Gunship"
 		licenses
-			Marauder
 			SoCo
 		"cost" 1250000
 		"landing gear" 1
@@ -4453,7 +4445,6 @@ ship "Polevaulter"
 	attributes
 		category "Gunship"
 		licenses
-			Marauder
 			Smuggler
 		"cost" 1250000
 		"landing gear" 1
@@ -4503,7 +4494,6 @@ ship "Pouncer"
 	attributes
 		category "Gunship"
 		licenses
-			Marauder
 			Hotrod
 		"cost" 1250000
 		"landing gear" 1
@@ -4558,7 +4548,6 @@ ship "Merlin"
 	attributes
 		category "Cruiser"
 		licenses
-			Marauder
 			SoCo
 		"cost" 13900000
 		"landing gear" 1
@@ -4621,7 +4610,6 @@ ship "Peregrine"
 	attributes
 		category "Cruiser"
 		licenses
-			Marauder
 			Smuggler
 		"cost" 13900000
 		"landing gear" 1
@@ -4681,7 +4669,6 @@ ship "Harpy"
 	attributes
 		category "Cruiser"
 		licenses
-			Marauder
 			Hotrod
 		"cost" 13900000
 		"landing gear" 1
@@ -4902,7 +4889,6 @@ ship "Lindworm"
 	attributes
 		category "Cruiser"
 		licenses
-			Marauder
 			SoCo
 		"cost" 10800000
 		"landing gear" 1
@@ -4967,7 +4953,6 @@ ship "Selma"
 	attributes
 		category "Cruiser"
 		licenses
-			Marauder
 			Smuggler
 		"cost" 10800000
 		"landing gear" 1
@@ -5075,7 +5060,6 @@ ship "Zonetail"
 	attributes
 		category "Destroyer"
 		licenses
-			Marauder
 			SoCo
 		"cost" 3740000
 		"landing gear" 1
@@ -5138,7 +5122,6 @@ ship "Lesser Devil"
 	attributes
 		category "Destroyer"
 		licenses
-			Marauder
 			Hotrod
 		"cost" 3740000
 		"landing gear" 1
@@ -5196,7 +5179,6 @@ ship "Spinetail"
 	attributes
 		category "Destroyer"
 		licenses
-			Marauder
 			Smuggler
 		"cost" 3740000
 		"landing gear" 1
@@ -5257,7 +5239,6 @@ ship "Gallium"
 	attributes
 		category "Frigate"
 		licenses
-			Marauder
 			SoCo
 		"cost" 1200000
 		"landing gear" 1
@@ -5312,7 +5293,6 @@ ship "Mercury"
 	attributes
 		category "Frigate"
 		licenses
-			Marauder
 			Smuggler
 		"cost" 1200000
 		"landing gear" 1
@@ -5409,7 +5389,6 @@ ship "Crow"
 	attributes
 		category "Frigate"
 		licenses
-			Marauder
 			SoCo
 		"cost" 2750000
 		"landing gear" 1
@@ -5468,7 +5447,6 @@ ship "Rook"
 	attributes
 		category "Frigate"
 		licenses
-			Marauder
 			Smuggler
 		"cost" 2750000
 		"landing gear" 1
@@ -5517,7 +5495,6 @@ ship "Sturnus"
 	attributes
 		category "Frigate"
 		licenses
-			Marauder
 			Hotrod
 		"cost" 2750000
 		"landing gear" 1
@@ -5570,7 +5547,6 @@ ship "Sliver"
 	attributes
 		category "Destroyer"
 		licenses
-			Marauder
 			SoCo
 		"cost" 3400000
 		"landing gear" 1
@@ -5629,7 +5605,6 @@ ship "Needle"
 	attributes
 		category "Destroyer"
 		licenses
-			Marauder
 			Smuggler
 		"cost" 3400000
 		"landing gear" 1
@@ -5684,7 +5659,6 @@ ship "Sting"
 	attributes
 		category "Destroyer"
 		licenses
-			Marauder
 			Hotrod
 		"cost" 3400000
 		"landing gear" 1
@@ -5844,7 +5818,7 @@ ship "Chimera"
 	sprite "ship/wardragon"
 	thumbnail "thumbnail/wardragon"
 	attributes
-		category "Heavy Warship"
+		category "Destroyer"
 		licenses
 			Quarg
 		"cost" 5900000
@@ -5895,7 +5869,7 @@ ship "Chimera"
 	explode "large explosion" 40
 	explode "huge explosion" 20
 	"final explode" "final explosion medium"
-	description "The Quarg's famed "Qa'kiil," better known by humans as the Chimera, is a rare sight in human space. This ship is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
+	description "The Quarg's famed 'Qa'kiil,' better known by humans as the Chimera, is a rare sight in human space. This ship is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
 	description "	Many conspiracy theorists wonder why the Quarg would abide by such regulations and laws if they are so powerful."
 
 # Post Civil War Human Ships availible before Invasion
