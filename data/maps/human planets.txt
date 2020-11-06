@@ -1048,7 +1048,7 @@ planet "Liberty Station"
 	landscape land/sivael3
 	description `Every door is under heavy guard and you are allowed no further into the station than the mess. The people here are equally as cold and unresponsive to any questions or greetings. The dockmaster's favorite phrase seems to be 'Fuel up and get out.'`
 	spaceport `The docking ring is the only place you have access to and is just as unwelcoming as the rest of the station. The robotic cleaners rarely make passes over it's littered and blood stained floors. Occasionally you can see small glimpses of something less bland happening deeper within the station.`
-	spaceport `	Curiously, there is a kiosk labeled "Northern Hotrods," which allows you to view heavily modified ships. You can't seem to buy them without two special tokens.`
+	spaceport `	Curiously, there is a kiosk labeled "Northern Hotrods," which allows you to view heavily modified ships. You can't seem to buy them without a special token.`
 	shipyard "Northern Hotrods"
 	outfitter "Ammo"
 
@@ -1999,7 +1999,7 @@ planet Thrall
 	description `Thrall has a warm, moderate climate and a geography of mostly gently rolling hills. Most of the industry here takes the form of agriculture, especially growing cotton. There are also three major cities where the cotton is spun into thread and woven into textiles for export off world. It is one of the few places in the galaxy where cotton is picked by hand, because labor here is cheaper than the cost of buying and maintaining machinery.`
 	description `	The locals are prevented from seeking more lucrative employment elsewhere partly by the crushingly low wages, which make the cost of space transport prohibitively high for most, and partly by the educational system, which is among the worst in the galaxy.`
 	spaceport `The spaceport consists of a vast asphalt-paved field for landing ships, and some wooden buildings a few stories tall. Most of the materials for export are stored in sheds or stacked under plastic tarps, with a few police officers clustered around them to make sure no ship picks up cargo that has not been paid for. Inside the buildings, two restaurants with different names serve an identical selection of fried foods.`
-	spaceport `	Oddly enough, in the heart of Republic space, there is a hidden shipyard that requires two special tokens to access. However, you can view the ships on an unassuming kiosk in the spaceport. Local police and militia forces regularly patrol the area, but intentionally ignore the kiosk.`
+	spaceport `	Oddly enough, in the heart of Republic space, there is a hidden shipyard that requires a special token to access. However, you can view the ships on an unassuming kiosk in the spaceport. Local police and militia forces regularly patrol the area, but intentionally ignore the kiosk.`
 	shipyard "Smugglers Choice"
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
