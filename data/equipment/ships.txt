@@ -4236,7 +4236,7 @@ ship "Dart"
 	attributes
 		category "Gunship"
 		licenses
-			SoCo
+			Southern-Customs
 		"cost" 1320000
 		"landing gear" 1
 		"shields" 2300
@@ -4388,7 +4388,7 @@ ship "Jumper"
 	attributes
 		category "Gunship"
 		licenses
-			SoCo
+			Southern-Customs
 		"cost" 1250000
 		"landing gear" 1
 		"shields" 2500
@@ -4548,7 +4548,7 @@ ship "Merlin"
 	attributes
 		category "Cruiser"
 		licenses
-			SoCo
+			Southern-Customs
 		"cost" 13900000
 		"landing gear" 1
 		"shields" 14100
@@ -4889,7 +4889,7 @@ ship "Lindworm"
 	attributes
 		category "Cruiser"
 		licenses
-			SoCo
+			Southern-Customs
 		"cost" 10800000
 		"landing gear" 1
 		"shields" 16000
@@ -5060,7 +5060,7 @@ ship "Zonetail"
 	attributes
 		category "Destroyer"
 		licenses
-			SoCo
+			Southern-Customs
 		"cost" 3740000
 		"landing gear" 1
 		"shields" 6500
@@ -5239,7 +5239,7 @@ ship "Gallium"
 	attributes
 		category "Frigate"
 		licenses
-			SoCo
+			Southern-Customs
 		"cost" 1200000
 		"landing gear" 1
 		"shields" 3500
@@ -5389,7 +5389,7 @@ ship "Crow"
 	attributes
 		category "Frigate"
 		licenses
-			SoCo
+			Southern-Customs
 		"cost" 2750000
 		"landing gear" 1
 		"shields" 5200
@@ -5547,7 +5547,7 @@ ship "Sliver"
 	attributes
 		category "Destroyer"
 		licenses
-			SoCo
+			Southern-Customs
 		"cost" 3400000
 		"landing gear" 1
 		"shields" 5700
