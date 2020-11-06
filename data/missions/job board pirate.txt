@@ -27,6 +27,7 @@ mission "Cargo Smuggling [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Pirate" += 1
 		"reputation: Merchant" -= 1
 		payment 4000 200
@@ -52,6 +53,7 @@ mission "Cargo Smuggling [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Merchant" -= 1
 		"reputation: Pirate" += 1
 		payment 4000 200
@@ -77,6 +79,7 @@ mission "Cargo Smuggling [2]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Merchant" -= 2
 		"reputation: Pirate" += 2
 		payment 5000 200
@@ -102,6 +105,7 @@ mission "Cargo Smuggling [3]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Merchant" -= 3
 		"reputation: Pirate" += 3
 		payment 6000 200
@@ -129,6 +133,7 @@ mission "Drug Running [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Merchant" -= 1
 		"reputation: Pirate" += 1
 		payment 5000 250
@@ -154,6 +159,7 @@ mission "Drug Running [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Merchant" -= 2
 		"reputation: Pirate" += 2
 		payment 5000 250
@@ -179,6 +185,7 @@ mission "Drug Running [2]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Merchant" -= 3
 		"reputation: Pirate" += 3
 		payment 7000 250
@@ -204,6 +211,7 @@ mission "Drug Running [3]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Pirate" += 4
 		"reputation: Merchant" -= 4
 		payment 9000 250
@@ -231,6 +239,7 @@ mission "Bulk Cargo Smuggling [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Pirate" += 3
 		"reputation: Merchant" -= 3
 		payment 7000 200
@@ -256,6 +265,7 @@ mission "Bulk Cargo Smuggling [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Pirate" += 4
 		"reputation: Merchant" -= 4
 		payment 10000 200
@@ -281,6 +291,7 @@ mission "Bulk Cargo Smuggling [2]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Pirate" += 5
 		"reputation: Merchant" -= 5
 		payment 15000 200
@@ -308,6 +319,7 @@ mission "Bulk Drug Running [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Pirate" += 3
 		"reputation: Merchant" -= 3
 		payment 10000 250
@@ -333,6 +345,7 @@ mission "Bulk Drug Running [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Pirate" += 3
 		"reputation: Merchant" -= 3
 		payment 15000 250
@@ -358,6 +371,7 @@ mission "Bulk Drug Running [2]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		"reputation: Pirate" += 4
 		"reputation: Merchant" -= 4
 		payment 20000 250
@@ -415,6 +429,7 @@ mission "Stealth Cargo Smuggling (North) [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		payment 50000 300
 		"reputation: Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
@@ -492,6 +507,7 @@ mission "Stealth Cargo Smuggling (North) [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		payment 75000 300
 		"reputation: Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
@@ -545,6 +561,7 @@ mission "Stealth Cargo Smuggling (Core) [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		payment 50000 300
 		"reputation: Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
@@ -624,6 +641,7 @@ mission "Stealth Cargo Smuggling (Core) [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		payment 75000 300
 		"reputation: Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
@@ -678,8 +696,9 @@ mission "Stealth Cargo Smuggling (South) [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		payment 50000 300
-		"reputation: Pirate" += 5
+		"reputation: Southern Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
 
 mission "Stealth Cargo Smuggling (South) [1]"
@@ -758,8 +777,9 @@ mission "Stealth Cargo Smuggling (South) [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		payment 75000 300
-		"reputation: Pirate" += 5
+		"reputation: Southern Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
 
 
@@ -814,6 +834,7 @@ mission "Stealth Drug Running (North) [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		payment 75000 375
 		"reputation: Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
@@ -891,6 +912,7 @@ mission "Stealth Drug Running (North) [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		payment 100000 375
 		"reputation: Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
@@ -944,6 +966,7 @@ mission "Stealth Drug Running (Core) [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		payment 75000 375
 		"reputation: Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
@@ -958,6 +981,7 @@ mission "Stealth Drug Running (Core) [1]"
 	illegal 250000 `After being given a very hefty fine, the illegal cargo is confiscated from your hold. The pirates won't be happy to hear about this.`
 	stealth
 	to offer
+		"smuggler" ++
 		random < 15
 		"reputation: Pirate" > 0
 		"combat rating" > 1100
@@ -1037,6 +1061,7 @@ mission "Stealth Drug Running (South) [0]"
 	illegal 175000 `After being given a very hefty fine, the illegal cargo is confiscated from your hold. The pirates won't be happy to hear about this.`
 	stealth
 	to offer
+		"smuggler" ++
 		random < 30
 		"reputation: Pirate" > 0
 		"combat rating" > 1100
@@ -1077,8 +1102,9 @@ mission "Stealth Drug Running (South) [0]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		smuggler ++
 		payment 75000 375
-		"reputation: Pirate" += 5
+		"reputation: Southern Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
 
 mission "Stealth Drug Running (South) [1]"
@@ -1157,8 +1183,9 @@ mission "Stealth Drug Running (South) [1]"
 	on visit
 		dialog phrase "generic cargo on visit"
 	on complete
+		"smuggler" ++
 		payment 100000 375
-		"reputation: Pirate" += 5
+		"reputation: Southern Pirate" += 5
 		dialog "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship and you collect your payment of <payment>."
 
 
@@ -1184,7 +1211,7 @@ mission "Wanted Passenger [0]"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
-	
+		"smuggler" ++
 		payment 30000 300
 		dialog "Your <passengers> insists that you land on the edge of the spaceport to avoid being seen. After you land, they pay you <payment> before quickly grabbing their things and leaving your ship."
 
@@ -1233,6 +1260,7 @@ mission "Wanted Passengers [2]"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"smuggler" ++
 		payment 20000 300
 		dialog "Your <passengers> insist that you land on the edge of the spaceport to avoid being seen. After you land, they pay you <payment> before quickly grabbing their things and leaving your ship."
 
@@ -1257,6 +1285,7 @@ mission "Wanted Passengers [3]"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"smuggler" ++
 		payment 20000 300
 		dialog "Your <passengers> insist that you land on the edge of the spaceport to avoid being seen. After you land, they pay you <payment> before quickly grabbing their things and leaving your ship."
 
@@ -1343,6 +1372,7 @@ mission "Highly Wanted Passenger (North)"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"smuggler" ++
 		payment 200000 1000
 		"reputation: Pirate" += 5
 		dialog "You land outside of the main city to avoid any chances of your passenger being seen. They grab their things and make their way off of your ship after paying you <payment>."
@@ -1430,6 +1460,7 @@ mission "Highly Wanted Passenger (Core)"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"smuggler" ++
 		payment 200000 1000
 		"reputation: Pirate" += 5
 		dialog "You land outside of the main city to avoid any chances of your passenger being seen. They grab their things and make their way off of your ship after paying you <payment>."
@@ -1518,8 +1549,9 @@ mission "Highly Wanted Passenger (South)"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"smuggler" ++
 		payment 200000 1000
-		"reputation: Pirate" += 5
+		"reputation: Southern Pirate" += 5
 		dialog "You land outside of the main city to avoid any chances of your passenger being seen. They grab their things and make their way off of your ship after paying you <payment>."
 
 
@@ -1545,6 +1577,7 @@ mission "Slave Transport [0]"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"reputation: Northern Union" -=10
 		"reputation: Pirate" += 5
 		payment 75000 400
 		dialog "After landing on <planet>, the pirates move the <bunks> slaves from your ship and pay you <payment>."
@@ -1570,6 +1603,7 @@ mission "Slave Transport [1]"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"reputation: Northern Union" -=10
 		"reputation: Pirate" += 5
 		payment 75000 400
 		dialog "After landing on <planet>, the pirates move the <bunks> slaves from your ship and pay you <payment>."
@@ -1595,6 +1629,7 @@ mission "Slave Transport [2]"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"reputation: Northern Union" -=10
 		"reputation: Pirate" += 5
 		payment 75000 400
 		dialog "After landing on <planet>, the pirates move the <bunks> slaves from your ship and pay you <payment>."
@@ -1622,6 +1657,7 @@ mission "Bulk Slave Transport [0]"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"reputation: Northern Union" -=10
 		"reputation: Pirate" += 5
 		payment 100000 400
 		dialog "After landing on <planet>, the pirates move the <bunks> slaves from your ship and pay you <payment>."
@@ -1647,6 +1683,7 @@ mission "Bulk Slave Transport [1]"
 	on visit
 		dialog phrase "generic passenger on visit"
 	on complete
+		"reputation: Northern Union" -=10
 		"reputation: Pirate" += 5
 		payment 100000 400
 		dialog "After landing on <planet>, the pirates move the <bunks> slaves from your ship and pay you <payment>."
@@ -1989,7 +2026,7 @@ mission "Mercenary Job (Medium, South, Dangerous Origin)"
 			variant 1
 				"Odyssey"
 	on complete
-		"reputation: Pirate" += 3
+		"reputation: Southern Pirate" += 3
 		payment 180000
 		dialog phrase "generic safe escort completion dialog"
 	on visit
@@ -2036,7 +2073,7 @@ mission "Escort Illegal Cargo (Large, South, Dangerous Path)"
 			variant 1
 				"Bastion (Heavy)"
 	on complete
-		"reputation: Pirate" += 5
+		"reputation: Southern Pirate" += 5
 		payment 240000
 		dialog phrase "generic safe escort completion dialog"
 	on visit
@@ -2092,6 +2129,7 @@ mission "Escort Stolen Vessel (Extra Large, South, Dangerous Path)"
 	on complete
 		payment 375000
 		dialog phrase "generic safe escort completion dialog"
+		"reputation: Southern Pirate" ++
 	on visit
 		dialog phrase "generic arrived-without-npc dialog"
 
@@ -2235,7 +2273,7 @@ mission "Eliminating Law Enforcement (South, Large)"
 		dialog "The fleet has been eliminated. You can claim the bounty payment by returning to <destination>."
 	on complete
 		payment 400000
-		"reputation: Pirate" += 10
+		"reputation: Southern Pirate" += 10
 		dialog "The pirates of <planet> gratefully pay you <payment> for eliminating the militia fleet."
 
 
@@ -2349,6 +2387,7 @@ mission "Eliminating Competition (South, Small)"
 		fleet "Small Southern Pirates" 4
 		dialog "The fleet has been eliminated. You can claim the bounty payment by returning to <destination>."
 	on complete
+		"reputation: Southern Pirate" ++
 		payment 500000
 		dialog "The pirates of <planet> gratefully pay you <payment> for eliminating the rival gang."
 
@@ -2622,7 +2661,7 @@ mission "Southern Pirate Defense"
 	on offer
 		conversation "southern pirate defense"
 	on complete
-		"reputation: Pirate" += 5
+		"reputation: Southern Pirate" += 15
 		payment 200000
 		dialog `Many locals of <planet> thank you and collectively pay you <payment> for helping to drive off the militia forces.`
 
@@ -2650,7 +2689,7 @@ mission "Southern Pirate Defense [Unpaid]"
 	on offer
 		conversation "southern pirate defense"
 	on complete
-		"reputation: Pirate" += 10
+		"reputation: Southern Pirate" += 30
 		dialog `Many locals of <planet> thank you for helping to drive off the militia forces.`
 
 conversation "southern pirate defense"
