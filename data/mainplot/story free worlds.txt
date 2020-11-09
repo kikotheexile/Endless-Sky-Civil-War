@@ -3033,8 +3033,6 @@ mission "FW Plasma Testing 1"
 	on fail
 		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
 
-
-
 mission "FW Plasma Testing 1B"
 	landing
 	name "Weapons Testing"
@@ -3062,10 +3060,9 @@ mission "FW Plasma Testing 1B"
 		dialog "You have reached <planet>, but your mission is not complete - either the Red Nile is not destroyed, or you have left the Walloping Window-Blind behind."
 	
 	on offer
-		log "People" "Edward Tivrusky" `Barmy Edward is the Chief Offensive Engineer at Kraz Cybernetics, known for his inventive and sometimes impractical weapon designs. Supposedly, his engineers gave him the "Barmy" sobriquet after an incident where an experimental epoxy cannon he was working on exploded and glued him to the ceiling.`
+		log "People" "Edward Tivrusky" `"Barmy Ed" is the Chief Offensive Engineer at Kraz Cybernetics, known for his inventive and sometimes impractical weapon designs. Supposedly, his engineers gave him the "Barmy" sobriquet after an incident where an experimental epoxy cannon he was working on exploded and glued him to the ceiling.`
 		conversation
-			scene "scene/loc5"
-			`You are met in the spaceport by a junior engineer from Kraz Cybernetics, who leads you to their facility and introduces you to his boss, who is known as "Barmy Edward." Edward is wearing a set of thick welding glasses and smoking a cigarette. "Pleased to meet you," he says, extending a hand that is encased in a heavy leather glove.`
+			`You are met in the spaceport by a junior engineer from Kraz Cybernetics, who leads you to their facility and introduces you to his boss, who is known as "Barmy Ed." Edward is wearing a set of thick welding glasses and smoking a cigarette. "Pleased to meet you," he says, extending a hand that is encased in a heavy leather glove.`
 			choice
 				`	"Pleased to meet you, too, sir."`
 					goto sir
@@ -3075,11 +3072,11 @@ mission "FW Plasma Testing 1B"
 					goto same
 			
 			label sir
-			`	"Don't call me 'sir,'" he says. "I'm not wearing a suit."`
+			`	"Sir?,'" he says, patting himself over. "I'm not wearing a suit, you must not be talking to me."`
 				goto explain
 			
 			label same
-			`	"I've heard good things about your work," he says. "Assisting the Free Worlds and all. Not that I'm big on politics, but I do like blowing things up."`
+			`	"Anyway. You know something? I've heard interesting things about your work," he says, pointing and waving his finger at you. "What with your assisting the Free Worlds and all. Now, I may not be big on politics, but I do like blowing things up."`
 			choice
 				`	"Politics is the best excuse to blow things up."`
 				`	"Me too."`
@@ -3090,7 +3087,7 @@ mission "FW Plasma Testing 1B"
 			scene "outfit/plasma turret"
 			`	In front of you is a turret. It is almost absurdly large: a pair of plasma cannons mounted on a massive rotating base. "Sixty tons," says Barmy Edward. "Draws more power than... well, than anything else, practically. Runs a little hot, too."`
 			choice
-				`	"It's so... big!"`
+				`	"It's so big!"`
 					goto big
 				`	"That is a work of art. If it had eyes, I bet they'd follow me."`
 					goto big
@@ -3108,13 +3105,12 @@ mission "FW Plasma Testing 1B"
 				goto plan
 			
 			label ugly
-			`	"If you're looking for pretty," he says, "go buy one of those wussy guns that Lovelace Labs churn out. We don't do pretty here."`
+			`	"If you're looking for pretty," he says, "go buy one of those lame guns that Lovelace Labs churn out. We don't do pretty here."`
 				goto plan
 			
 			label plan
-			`	"So, where do I come in?" you ask.`
-			`	"Well, the Council says no testing against the Navy yet. No point in provoking a fight just to try out an untested weapon. So I asked them what other target they could suggest, and they mentioned this pirate ship by the name of Red Nile, that's been haunting the <waypoints> system, sniping on merchants that take a wrong turn and end up there."`
-			`	With a grand gesture, he indicates an aging Tarazed Falcon parked in the far corner of the hangar. It's a little rusty, and the paint is flaking, but a Falcon is an impressive ship under any circumstances. "We packed four of our prototypes into our department's very own test ship, the Walloping Window-Blind. We can't let you fly her, of course," he says, "on account of she's dearer to us than our own children. So the plan is, the Window-Blind will accompany you to <waypoints>, and you fight the pirates together, taking careful note of how the guns perform. Sound like fun?`
+			`	"Now, where was I... Oh yes, what you're here about." The Council says no testing against the Navy yet, sadly. So I asked them what other target they could suggest, and they mentioned this pirate ship by the name of Red Nile. Apparently its been haunting the <waypoints> system, sniping on merchants that take a wrong turn and end up there."`
+			`	With a grand gesture, he indicates an aging Tarazed Falcon parked in the far corner of the hangar. "We packed the only four of our prototypes onto that beast, the Walloping Window-Blind. We can't let you fly her, of course," he says, "on account of she's dearer to us than our own children. So the plan is I'll be flying the Window-Blind to <waypoints>, and we'll fight the pirates together. You'll take careful note of how the guns perform, and we'll have a meeting once we get back here. Sound like fun?`
 			choice
 				`	"You bet!"`
 					accept
@@ -3122,37 +3118,42 @@ mission "FW Plasma Testing 1B"
 					accept
 				`	"What sort of ship is the Red Nile?"`
 			
-			`	"One of those antiques from Betelgeuse," he says. "Shouldn't give you any bother. Meet us back here when you're done."`
+			`	"One of those antiques from Betelgeuse," he says. "Shouldn't give us any bother. Meet us back here when we're done."`
 				accept
 	
 	on complete
 		payment 200000
 		event "plasma turret available" 50
-		log "Assisted a Kraz Cybernetics engineer known as Barmy Edward with a test of a new and extremely powerful plasma cannon turret."
+		log `Assisted a Kraz Cybernetics engineer known as "Barmy Ed" with a test of a new and extremely powerful plasma cannon turret.`
 		conversation
-			scene "scene/loc7"
-			`When you enter the hangar, the Window-Blind has just returned, and a team of engineers are looking it over. Barmy Edward puts down his work to come over and debrief you. "How did the turrets perform?" he asks.`
+			`When you enter the hangar, the Window-Blind has just returned, and a team of engineers are looking it over. Edward disembarks and asks, "They felt good on our end, but we can only see from one angle. Which is why we brought you. Well, other than if our ship broke down. Anyway, how did the turrets perform?"`
 			choice
 				`	"Very impressive. I want a few of those on my own ship."`
 					goto impressive
 				`	"Well, I was a bit worried about the ship overheating, but otherwise they work well."`
 					goto overheat
-			
+				`	"They aren't something I would use."
+					goto bad
 			label impressive
-			`	"Yes," he said, "the team sent me some videos of the battle. First-rate carnage. I was very pleased. Any weak spots you noticed?"`
+			`	"Yes," he said, "First-rate carnage. I was very pleased. Any weak spots you noticed?"`
 				goto improve
 			
 			label overheat
-			`	"Yes, it will require a lot of cooling," he says. "Any other weak spots?"`
+			`	"Yes, it did require a lot of cooling," he says. "Any other weak spots?"`
 				goto improve
-			
+
+			label bad
+			`	He shrugs. "Well, no one's perfect. I hope you don't feel too bad about that. Anything you would suggest to make it better, oh great engineer?" 
+
 			label improve
 			choice
 				`	"It seems like the only way to fit a gun this big into most ships is by leaving half the hardpoints empty. It's a bit impractical."`
 					goto hardpoints
 				`	"It worked well against a large ship, but I wonder how well the turrets could track fighters."`
 					goto fighters
-			
+				`	"It depends too much on raw damage output, and is liable to cause its platform to overheat before it kills the enemy ship."`
+					goto damage
+
 			label hardpoints
 			`	"It's true," he says, "most ships are designed expecting to be equipped with a larger number of smaller guns. But we think this might open up some interesting new directions in ship design."`
 				goto next
@@ -3161,8 +3162,25 @@ mission "FW Plasma Testing 1B"
 			`	"I guess we'll need to test it to find out," he says, "but our main goal was to have a weapon that could do serious damage to a Nomos. Right now the Navy's heaviest ships have ours severely outgunned."`
 				goto next
 			
+			label damage
+			`	He considers your statement for a second, "I think you have a point there, but these weapons don't exist in a vacuum. Well, actually they do, but you know what I mean. There are other guns out there that our customers can use in conjunction with this new turret. We just need to..."
+			`	Edward trails off for a moment, thinking hard on ways to improve the design. "I think I just found my muse. If I can find a way to disrupt enemy shields and maybe their engines, the turret will impart more damage and more heat!" He pulls out his communicator and types something into his notepad.`
 			label next
-			`	"I recieved word on your next assignment" he says, "you'll be leading a supply convoy to the front. You can meet up with them in the spaceport. Oh, and this is to thank you for your help." He hands you <payment>. "To help you pay for your first plasma turret once we've got them on the market," he says. "They should be ready in a month or two. I'll send you a message when they're available."`
+			`	"Oh, by the way! I recieved word on your next assignment" he says, "you'll be leading a supply convoy. You can meet up with them in the spaceport. Oh, and this is to thank you for your help." He hands you <payment>. "To help you pay for your first plasma turret once we've got them on the market," he says. "They should be ready in a month or two. I'll send you a message when they're available."`
+
+
+ship "Fury" "Doombat"
+	add attributes
+		"self destruct" 1
+	outfits
+		"Ion Rain" 4
+		"nGVF-BB Fuel Cell"
+		"Supercapacitor"
+		"D14-XS Shield Generator"
+		"Ramscoop"
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
 
 
 mission "plasma turret available"
@@ -3173,16 +3191,314 @@ mission "plasma turret available"
 		has "event: plasma turret available"
 	on offer
 		conversation
-			`When you land, a message pops up on your communicator from Barmy Edward. A photograph is enclosed as well. The message reads:`
+			`When you land, a message pops up on your communicator from "Barmy Ed." A photograph is enclosed as well. The message reads:`
 			scene "outfit/plasma turret"
-			`	Rejoice, Captain! The next time you are on Rust, you will be able to purchase plasma turrets for your very own.`
+			`	Rejoice, Captain! The next time you are on Rust, you will be able to purchase plasma turrets of your very own.`
 			`				Regards,`
-			`						B. Edward Tivrusky`
+			`						Edward Tivrusky`
 			`						Chief Offensive Engineer`
 			`						Kraz Cybernetics`
 				decline
 
+mission "Omega Station"
+	name "Visit Omega Station!"
+	landing
+	source
+		random < 40
+		government "Free Worlds"
+	destination "Omega Station"
+	to offer
+		has "event: plasma turret available"
+	on offer
+		conversation
+			`Your communicator alerts you of a new message, it reads:`
+			``
+			`	"Southbound is pleased to announce our new factory and showroom over Bourne is now fully operational!"`
+			`	"We have taken over Omega Station and packed it to bursting with ships and outfits found no where else in Free Worlds space."`
+			`	"Shop from our selection of amazing Southbound Shipyards vessels, but don't stop there! Compare our quality to that of our competitors!"`
+			`	"Outfit your new ships with gear from Delta V, Kraz Cybernetics, and many other producers!"`
+			`	"Not a captain, but looking for a vacation? Enjoy orbital views of our capital world while dining at one of our many resturaunts..."`
+			``
+			`	The Advertisement continues from there for no less than a dozen more pages.`
+				accept
 
+
+
+mission "Southbound Testing 1"
+	name "Arena Qualifiers."
+	autosave
+	landing
+	description "Disable the Clippers but do not destroy them."
+	deadline 3
+	source "Omega Station"
+	to offer
+		has "Omega Station: done"
+		not "FW Diplomacy 1: done"
+	
+	on offer
+		conversation
+			`While wandering the spaceport, you find signs mentioning something called "Omega Station Tournament." Do you want to check it out?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					defer
+			`	You head into a vast, domed room absolutely packed with screens and betting offices. Everything is closed and there are few people hanging out in here. There is a woman sitting behind a folding table, with a paper sign that reads "signups."`
+			`	"Greetings, Captain! Are you here to sign up for the tournament?" The woman asks. "We have immediate qualifying rounds, and the tournament will begin once we get enough qualified individuals.`
+			choice
+				`	"What tournament?"`
+					goto tournament
+				`	"That's why I'm here."`
+					goto signup
+				`	"Can I get a bit more information on this?"`
+					goto tournament
+				`	"No, I was just checking the place out."`
+					decline
+			label tournament
+			`	She begins as if she's rehearsed this script too many times:`
+			`	"Southbound Shipyards is looking for new talent to help test out modifications to our existing ship lines, as well as the development of new vessels for military applications. Due to the lack of regulations currently imposed by the Free Worlds, the company has decided it would be best to hold a tournament to find qualified test pilots."`
+			`	"But if that wasn't enough for you, the tournament bracket pays out per fight won, not just to the top winners. All fighters who disable their opponents ship and/or fleet will be given a prize."
+				goto signup
+
+			label signup
+			`	"If you are truly interested, we do have a vast amount of legal paperwork to do, and of course, you'll need a rundown on the rules. Which are:"`
+			`	"The fights are on a time limit of 2 days. If you leave the system for any reason and do not finish the fight, you will be disqualified, and a large bounty will be placed on you."`
+			`	"Killing opponents, or destroying their ships, is strictly prohibited. If you do this, you will be disqualified, and a large bounty will be placed on you."`
+			`	"Boarding and looting opponents ships is strictly prohibited and will be considered piracy, with the exception of unmanned fighters and drones. If you do this, you will be disqualified, and a large bounty will be placed on you."`
+			choice
+				`	"Wait a second, bounty?"`
+					goto bounty
+				`	"No rules about fleet size or outfits?"`
+					goto outfits
+				`	"When do I start?"`
+					goto paperwork
+				`	"Woah, bounties? No thank you. I'm out."`
+					decline
+			label bounty
+			`	"Yes, a sizable bounty will be placed on you. You will be wanted dead, and will be hunted by some of the greatest bounty hunters in the galaxy if you break any of our rules."`
+			choice
+				`	"Any other rules I should know about?"`
+					goto outfits
+				`	"Lets get this show on the road."`
+					goto paperwork
+				`	"Yea, I'm not about to get murdered because my finger slipped mid-fight. Goodbye."`
+					decline
+			label outfits
+			`	"It is recommended that you plan around weapons that will disable, not destroy. Missiles are ill advised, as are large fleets. You don't want an already disabled vessel to get caught in the cross fire or be destroyed by accident." she says, tapping the signup sheet right over the word 'Bounty.' "Otherwise you are welcome to use any outfits you see fit, and use any amount of ships you can afford. You can even bring captured Navy ships if you want."`
+			choice
+				`	"Lets get this show on the road."`
+					goto paperwork
+				`	"This seems like a bit much. Goodbye."`
+					decline
+			label paperwork
+				`	The filing paperwork process is long and arduous. Some of the documents require actual physical sheets to be printed and signed, where as others takes your thumbprint as an electronic signature.`
+				`	The mountain of legal wavers and other paperwork slowly but surely gets worked through, and by the end of it you have recieved a complete physical scan, blood tests, and every inch of your ship has been combed over.`
+				`	Your opponent fleet has already launched - a small squadron of unmanned Clippers. It's time to prove you can not only take them down, but also not blow them up.`
+					launch
+
+	npc save disable
+		personality disables staying heroic
+		government "Test Dummy"
+		ship "Drone Clipper" "Drone 1"
+		ship "Drone Clipper" "Drone 2"
+		ship "Drone Clipper" "Drone 3"
+	
+	on complete
+		payment 50000
+		log "Qualified for a strange tournament being hosted by Southbound Shipyards. The pay is great, and this might set me up for more jobs in the future."
+		conversation
+			`You signal to dock, and are directed to a private hangar. When you disembark, you are greeted by a number of people. Some brush past you and begin checking over your ship, while others perform quick medical scans on you. One says "Congratulations, captain last. You qualified. Meet us in the spaceport when you are ready for your first true match."`
+			`Your bank account shows that you had <payment> transferred to you directly from Southbound Holdings Corporation.`
+
+mission "Southbound Testing 2"
+	name "Arena round one."
+	landing
+	description "Disable the <npc> but do not destroy it."
+	deadline 3
+	source "Omega Station"
+	to offer
+		has "Southbound Testing 1: done"
+		not "FW Diplomacy 1: done"
+	on offer
+		conversation
+			`Are you ready to begin the tournament?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					defer
+			`	You enter the arena dome again, and find it considerably more packed with people than the last time you were here. Betting has opened up, but as a competitor, you are forbidden from placing bets.`
+			`	You get the chance to study the stats of some of your competitors. Your first opponent will be a stock Falcon named the <npc>. It looks like your opponent only just recently purchased it, and hasn't put any money into upgrades yet.`
+				launch
+
+	npc save disable
+		personality disables staying heroic
+		government "Test Dummy"
+		ship "Tournament Falcon" "Glory Theif"
+	
+	on complete
+		payment 150000
+		conversation
+			`	You signal to dock, and are directed to a private hangar. When you disembark, given the same treatment. Your ship is scanned, as are you. Before long, you are called back to the spaceport.`
+			`	Your bank account shows that you had <payment> transferred to you directly from Southbound Holdings Corporation.`
+	on fail
+		set "hunted"
+		dialog
+			`	Per your contract with Southbound involving the tournament, you are now wanted. Dead. Expect mercenaries and bounty hunters to harass you for a while.`
+			`	(If you want to retry the tournament, you can reload from an earlier save or your autosave)`
+
+
+mission "Southbound Testing 3"
+	name "Arena round two."
+	landing
+	description "Disable the F.S. Alexa, but do not destroy it."
+	deadline 3
+	source "Omega Station"
+	to offer
+		has "Southbound Testing 2: done"
+		not "FW Diplomacy 1: done"
+	on offer
+		conversation
+			`Are you ready for the next round in the tournament?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					defer
+			`	You once again get the chance to study the stats of some of your competitors. Your next opponent will be Free Worlds Militia captain flying an Aerie. This should be considerably easier than your last fight.`
+				launch
+
+	npc save disable
+		personality disables staying heroic
+		government "Test Dummy"
+		ship "Tournament Aerie" "F.S. Alexa"
+
+	npc
+		personality disables staying heroic
+		government "Test Dummy"
+		ship "Finch" "Gnat 1"
+		ship "Lance" "Gnat 2"
+	
+	on complete
+		payment 350000
+		conversation
+			`	You signal to dock, and are directed to a private hangar. When you disembark, given the same treatment as the last two times. Your ship is scanned, as are you. Before long, you are called back to the spaceport.`
+			`	Your bank account shows that you had <payment> transferred to you directly from Southbound Holdings Corporation.`
+	on fail
+		set "hunted"
+		dialog
+			`	Per your contract with Southbound involving the tournament, you are now wanted. Dead. Expect mercenaries and bounty hunters to harass you for a while.`
+			`	(If you want to retry the tournament, you can reload from an earlier save or your autosave)`
+
+mission "Southbound Testing 4"
+	name "Arena Semi-finals, Wildcard!"
+	landing
+	description "Disable the Western Spy but do not destroy it."
+	deadline 3
+	source "Omega Station"
+	to offer
+		has "Southbound Testing 3: done"
+		not "FW Diplomacy 1: done"
+	on offer
+		conversation
+			`Are you ready for the next round in the tournament?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					defer
+			`	This time it's a bit different, a surprise wildcard round. You'll be fighting a completely unknown opponent that isnt listed in the tournament roster. You are given no information on who you will be fighting, what they will be using, or how many.`
+				launch
+
+	npc save disable
+		personality disables staying heroic
+		government "Test Dummy"
+		ship "Tournament Bulk Freighter" "Western Spy"
+
+	npc
+		personality disables staying heroic
+		government "Test Dummy"
+		ship "Sentinel Drone" "Red 1"
+		ship "Sentinel Drone" "Red 2"
+		ship "Sentinel Drone" "Red 3"
+		ship "Sentinel Drone" "Red 4"
+		ship "Sentinel Drone" "Red 5"
+		ship "Sentinel Drone" "Red 6"
+		ship "Sentinel Drone" "Red 7"
+		ship "Sentinel Drone" "Red 8"
+		ship "Sentinel Drone" "Red 9"
+		ship "Sentinel Drone" "Red 10"
+		ship "Sentinel Drone" "Red 11"
+		ship "Sentinel Drone" "Red 12"
+		
+	on complete
+		payment 750000
+		conversation
+			`	You signal to dock, and are directed to a private hangar. When you disembark, given the same treatment as the last two times. Your ship is scanned, as are you. Before long, you are called back to the spaceport.`
+			`	Your bank account shows that you had <payment> transferred to you directly from Southbound Holdings Corporation. This is a considerably greater sum than previous victories.`
+	on fail
+		set "hunted"
+		dialog
+			`	Per your contract with Southbound involving the tournament, you are now wanted. Dead. Expect mercenaries and bounty hunters to harass you for a while.`
+			`	(If you want to retry the tournament, you can reload from an earlier save or your autosave)`
+
+mission "Southbound Testing 5"
+	name "Arena Finals."
+	landing
+	description "Disable the two splinters but do not destroy them."
+	deadline 3
+	source "Omega Station"
+	to offer
+		has "Southbound Testing 4: done"
+		not "FW Diplomacy 1: done"
+	on offer
+		conversation
+			`Are you ready for the next round in the tournament?`
+			choice
+				`	(Yes.)`
+				`	(No.)`
+					defer
+			`	After the surprise fight of last round, a bit of information on your opponents is welcome. This time it looks like two fast, light destroyers. A pair of splinters, armed with light but rapid fire projectile weapons.`
+				launch
+
+	npc save disable
+		personality disables staying heroic
+		government "Test Dummy"
+		ship "Tournament Splinter" "Righty Tighty"
+		ship "Tournament Splinter" "Lefty Loosy"
+		
+	on complete
+		set "season one champion" 
+		payment 1000000
+		conversation
+			`	You signal to dock, and are directed to a private hangar. When you disembark, you are quickly checked over, before being rushed to a podium. You are handed a trophy, and your photo is taken. This confusing process certainly lacks the pomp that most award ceremonies have.`
+			`	Before long, you are dropped off back by your ship. One of the various people who has handled you during this time informed you that you'll be expected back in the spaceport shortly.`
+			`	Your bank account shows that you had <payment> transferred to you directly from Southbound Holdings Corporation.`
+	on fail
+		set "hunted"
+		dialog
+			`	Per your contract with Southbound involving the tournament, you are now wanted. Dead. Expect mercenaries and bounty hunters to harass you for a while.`
+			`	(If you want to retry the tournament, you can reload from an earlier save or your autosave)`
+
+ship "Clipper" "Drone Clipper"
+	add attributes
+		"self destruct" 1
+		"automata"
+		"required crew" 0
+	outfits
+		"Modified Blaster" 4
+
+ship "Falcon" "Tournament Falcon"
+	add attributes
+		"self destruct" 1
+
+ship "Aerie" "Tournament Aerie"
+	add attributes
+		"self destruct" 1
+
+ship "Class C Freighter" "Tournament Bulk Freighter"
+	add attributes
+		"self destruct 1
+
+ship "Splinter" "Tournament Splinter"
+	add attributes
+		"self destruct 1
 
 mission "FW Supply Convoy 1"
 	name "Escort Supply Convoy"
@@ -3423,98 +3739,6 @@ mission "FW Senate 1B"
 				`	"Sounds like that could be a great public relations move for convincing more worlds to join us."`
 				
 			`	"Indeed," he says. "Anyway, I'm off to a meeting, but meet me later in the spaceport if you've got room for some passengers."`
-
-
-
-mission "FW Ion Rain 1"
-	landing
-	name "Weapon Testing"
-	description "When you have time, report to <destination>, where Barmy Edward has another weapon he would like you to test."
-	source
-		near Kraz 1 100
-	destination Rust
-	to offer
-		has "event: plasma turret available"
-		random < 15
-	
-	on offer
-		conversation
-			`A message arrives for you soon after you land. It's from Barmy Edward, the weapons engineer at Kraz Cybernetics. He writes: "Hello again, Captain! I've been working on a new weapon, and for some reason no one else wants to help out with the testing. If you're interested in getting your hands on some hot new technology, drop by Rust and come visit our factory."`
-				accept
-
-
-
-mission "FW Ion Rain 2"
-	landing
-	name "Weapon Testing"
-	description "A test ship with new weaponry is in orbit around <planet>. Fight and disable it (but do not board or destroy it!) and then land to give Barmy Edward feedback on its performance."
-	source Rust
-	to offer
-		has "FW Ion Rain 1: done"
-	
-	on offer
-		conversation
-			`You received a message recently from Barmy Edward, asking you to stop by the Kraz Cybernetics facility to help test a new weapon. Do you want to visit them now?`
-			choice
-				`	(Yes.)`
-				`	(No.)`
-					defer
-			scene scene/loc5
-			`	You give your name to the receptionist, and she directs you to the hangar where the weapons group does their design and prototyping. Barmy Edward shakes your hand warmly and says, "Here's the deal. We've got a new weapon, something a little out of the ordinary. We're hoping it will be useful against the pirates, in particular."`
-			`	He is clearly very excited and continues, "I won't share the details, because I want you to get the full effect of the surprise. But, there's a ship in orbit, the Doombat, that has been fitted with a few of these new weapons. Your job will be to fight it and disable it, then tell us what you think of its weapons."`
-			`	He shakes a finger in your face and says, "Now mind you, we just want you to disable the Doombat, not destroy it. We bought it from a scrapyard, so it's barely spaceworthy, but all the same I want to be able to keep using it for future tests. Understood?"`
-			choice
-				`	"Okay, I promise not to destroy it or steal it."`
-				`	"Are you expecting a pinky promise? I'll do my best."`
-				`	"I'll try not to blow up your precious fury or steal your crazy technology."`
-				`	"Sorry, this sounds a bit too risky. I'd rather not be involved in this sort of testing."`
-					decline
-			`	"Great," he says, with a gleeful expression on his face. He's clearly looking forward to hearing what you think of his latest invention.`
-				accept
-	
-	npc save disable
-		personality disables staying heroic
-		government "Test Dummy"
-		ship "Doombat" "Doombat"
-	
-	on complete
-		event "ion rain available" 30
-		log "Assisted Barmy Edward with another weapon test: this time, a Ion Rain weapon that works by overheating and disabling its target rather than dealing lots of damage to it. It may or may not be useful in actual combat."
-		conversation
-			scene outfit/flamethrower
-			`You head to the hangar to meet up with Barmy Edward, and find him tinkering with a large gun you don't recognize. Presumably, this is the spark cannon that you were just attacked with in orbit. "There are no mistakes, just happy accidents." He humms to himself, before addressing you. "So, what did you think?"`
-			choice
-				`	"It's a terrifying weapon."`
-					goto terrifying
-				`	"It looks impressive, but it didn't do very much damage."`
-					goto damage
-				`	"Your spark cannon doesn't seem to work very well."`
-					goto bad
-			label terrifying
-			`	"Isn't it?" he says. "Mostly useful as support and interdiction, of course. But the ability to temporarily disable a ship without even dropping its shields first could be quite useful in certain tactical situations."`
-				goto available
-			label damage
-			`	"No, doing damage isn't the point," he says. "The idea is to slow down the target to the point where it can't run or jump away. Basically a way to temporarily disable even a ship with full shields. Of course, big ships have turrets, so I suspect it will be most useful against smaller targets."`
-				goto available
-			label bad
-			`	"Oh." He seems somewhat dejected. "Well, if you were flying a smaller ship, you might think differently. My idea was to target pirate ships that use hit and run tactics, to prevent them from escaping."`
-				goto available
-			label available
-			`	"Anyway," he continues, "I should have an initial model for sale to Free Worlds pilots in a month or so. I'll be interested to see what uses you or anyone else might find for them. Anyway, thanks for your help." You say goodbye and head back to your ship.`
-
-ship "Fury" "Doombat"
-	add attributes
-		"self destruct" 1
-	outfits
-		"Ion Rain" 4
-		"nGVF-BB Fuel Cell"
-		"Supercapacitor"
-		"D14-XS Shield Generator"
-		"Ramscoop"
-		"X2700 Ion Thruster"
-		"X2200 Ion Steering"
-		"Hyperdrive"
-
 
 
 mission "FW Pirates 2"
@@ -8149,555 +8373,8 @@ mission "ESCW FW Check End"
 		log "As we prepared to invade Sol, the hyperspace routes to Republic space were cut. We assume the Republic did this themselves to protect their assets."
 		dialog `You have reached one of the endings of Endless Sky Civil War, but the story is not yet over. Our first planned (free) expansion "Invasion" will be out relatively soon. Until then, feel free to experiment with the different endings. Side with different factions, make different choices.`
 
-# Free Worlds Side Plots (Minor)
+# Free Worlds Side Plots
 
-mission "FW Conservatory 1"
-	name "Take Ijs to Winter"
-	description "Transport Mr. Eyes and the Andersons to <destination>, where he will be helping to set up a public university."
-	source Bourne
-	destination Winter
-	passengers 3
-	to offer
-		has "FW Senate 1B: done"
-		not "fw conservatory founded"
-		not "fw bloodsea done"
-	blocked "You meet up with Ijs in the spaceport, but he tells you that you will need three bunks for him and some friends. Return here once you have space available."
-	
-	on offer
-		conversation
-			branch "not met andersons"
-				not "FW Katya 1: done"
-			
-			label "met andersons"
-			`When you meet Ijs in the spaceport, he has Lynn and Henry Anderson with him, the friends of Katya who you transported from Glory months ago. Ijs is beaming - his meeting must have gone really well. "Guess what, Captain?" he says. "We've got a location for the Conservatory! The government of Winter has offered a community center for our use."`
-				goto continue
-			
-			label "not met andersons"
-			`When you meet Ijs in the spaceport, he has a man and a woman with him which he introduces as Lynn and Henry Anderson. Ijs is beaming - his meeting must have gone really well. "Guess what, Captain?" he says. "We've got a location for the Conservatory! The government of Winter has offered a community center for our use."`
-				goto continue
-			
-			label continue
-			`	"A somewhat run-down community center," adds Henry.`
-			`	Ijs laughs. "True. Anyway, we were hoping you could give us a lift over there, and maybe help out with securing some equipment, too."`
-			choice
-				`	"Sure, I'd definitely like to help make this a reality!"`
-					accept
-				`	"Sorry, I've got more important business to attend to."`
-			`	Ijs seems really dejected. "Are you sure?" he asks. "This could make a big difference for the Free Worlds, as much as any military victory."`
-			choice
-				`	"Okay, I'll help you."`
-					accept
-				`	"Sorry, I'm just not interested."`
-					decline
-	
-	on complete
-		payment 50000
-		dialog `Ijs thanks you for the lift and gives you a credit chip for <payment>. He says, "Next we need to pick up some equipment from Tarazed Corporation. Meet me in the spaceport if you're willing to help out as an escort."`
-
-
-
-mission "FW Conservatory 2"
-	name "Escort to Wayfarer"
-	description "Escort this Free Worlds convoy to Wayfarer, to trade for terraforming equipment provided by Tarazed and the Syndicate."
-	source Winter
-	destination Wayfarer
-	to offer
-		has "FW Conservatory 1: done"
-		not "fw bloodsea done"
-	
-	on offer
-		conversation
-			`In the spaceport, it does not take long to locate Ijs; he is supervising a crew that is loading trade goods onto several Free Worlds ships. "Glad to see you, <first>," he says. "These three ships need to get to Tarazed and back without being destroyed by pirates... or by the Republic. Think you can tag along and protect them?"`
-			choice
-				`	"Sure thing!"`
-					accept
-				`	"I've got another pressing mission. Can I come back and do this later?"`
-			`	"Sure," he says. "But the longer we wait, the longer it will be until the Conservatory is up and running, so come back soon."`
-				defer
-	
-	npc accompany save
-		government Merchant
-		personality escort timid
-		ship "Argosy" "F.M.S. Daybreak"
-		ship "Argosy" "F.M.S. Monsoon"
-		ship "Argosy" "F.M.S. Summer"
-	
-	on visit
-		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
-	
-	npc
-		government Pirate
-		personality plunders
-		system Tarazed
-		fleet "Small Southern Pirates"
-		fleet "Large Southern Pirates"
-
-
-
-mission "FW Conservatory 2B"
-	landing
-	name "Escort to Winter"
-	description "Escort this Free Worlds convoy of terraforming equipment back to Winter."
-	source Wayfarer
-	destination Winter
-	to offer
-		has "FW Conservatory 2: done"
-		not "fw bloodsea done"
-	
-	on offer
-		conversation
-			`Your three escorts land safely on Tarazed. Their cargo is quickly offloaded and exchanged for the terraforming equipment that the Conservatory needs.`
-				accept
-	
-	npc accompany save
-		government Merchant
-		personality escort timid
-		ship "Argosy" "F.M.S. Daybreak"
-		ship "Argosy" "F.M.S. Monsoon"
-		ship "Argosy" "F.M.S. Summer"
-	
-	on visit
-		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
-	
-	npc
-		government Pirate
-		personality plunders
-		system "Yed Prior"
-		fleet "Small Southern Pirates" 2
-		fleet "Large Southern Pirates" 2
-	
-	npc
-		government Pirate
-		personality plunders
-		system "Pherkad"
-		fleet "Small Southern Pirates" 2
-		fleet "Large Southern Pirates" 2
-	
-	on complete
-		payment 300000
-		conversation
-			`Ijs meets your convoy as it lands, and checks off each item on a clipboard as it is unloaded. Lynn is with him, looking over the various machines to make sure they are all in working order. "I hope you didn't have any trouble," says Ijs, as he hands you your payment of <payment>.`
-			choice
-				`	"No, none at all."`
-				`	"A few pirates, nothing I couldn't handle."`
-				`	"Actually, we were lucky to make it back alive."`
-					goto lucky
-			`	"Glad to hear it," he says.`
-				goto next
-			label lucky
-			`	"That's too bad," he says. "This war must be making the Dirt Belt even more unstable than usual. Hopefully we'll be able to do something about that soon."`
-			label next
-			`	"Is there anything else you need me to do?" you ask.`
-			`	"Not at the moment," he says. "I'll send you a message when we do. Thanks for your help, and if you hear any more news about Katya, please let me know."`
-		event "fw conservatory founded" 30
-		log "Helped to transport some items for building a public university and terraforming research center on Winter. Ijs Springborn will be one of the professors."
-
-
-
-mission "FW Wolf Pack 1"
-	name "Ramscoop Technology"
-	description "Travel to <planet> in the Deep, where Free Worlds sympathizers will share details of a new ramscoop technology. (You may have to bribe planets along the way to get permission to refuel.)"
-	source
-		government "Free Worlds"
-	destination "Memory"
-	clearance
-	minor
-	to offer
-		has "event: catalytic ramscoop available"
-		random < 30
-		not "event: fw armistice"
-	to fail
-		has "event: fw armistice"
-	
-	on offer
-		conversation
-			`When you stop by the spaceport bar, a militia officer who you don't recognize gestures for you to join him. "Captain <last>!" he says. "I'd be honored if you'd let me buy you a drink."`
-			choice
-				`	"Thank you!"`
-					goto drink
-				`	"Sorry, I don't drink."`
-			`	"Then what are you doing in a bar?" he asks. "Never mind, don't answer that. I assume you're here looking for valuable work to do, and if that's the case, I could really use your help."`
-				goto mission
-			label drink
-			`	He buys you a drink, and you sit down at his table. After making small talk for a few minutes, he says, "By the way, I could really use your help with a mission for the Free Worlds."`
-			label mission
-			`	"Okay," you say, "tell me more."`
-			`	He says, "You probably know that we have a network of Free Worlds sympathizers throughout much of Republic space. One of our contacts recently sent us word of a new technology that is for sale in the Deep, which could be very useful to us. But they have no way to ship it to us, so I need someone who can travel up to the Deep and retrieve it."`
-			choice
-				`	"Will your contacts also provide me with planets to refuel on along the way?"`
-				`	"The Deep is farther away than my fuel tanks can take me."`
-			`	"You'll have to bribe some Dirt Belt worlds into letting you land, to get there," he says. "Or, you could wait for the next time there's a ceasefire. But here's the great part: if this works, you won't need to pay any bribes on the way back, because the new technology we're after is a super-efficient ramscoop. What do you say?"`
-			choice
-				`	"Okay, I'll give it a try."`
-					accept
-				`	"Sorry, this sounds way too risky to me."`
-					decline
-
-
-
-mission "FW Wolf Pack 1B"
-	landing
-	name "Ramscoop Technology"
-	description "Return to Free space with the plans for a new, more efficient ramscoop, and deliver them to Delta V Corporation on <destination>."
-	destination "Solace"
-	to offer
-		has "FW Wolf Pack 1: done"
-		not "event: fw armistice"
-	to fail
-		has "event: fw armistice"
-	cargo "Ramscoop Data Card" 0
-	
-	on offer
-		conversation
-			`You land your ship by night in a private hangar that you assume is owned by one of the elite families on <origin>. Your contact is wearing a black mask over his face. That seems unnecessary to you, but perhaps he is just really enjoying the thrill of being involved in something illegal. He hands you a data card and says, "This contains all the information you will need to build your own catalytic ramscoop. And before you leave, you may also visit our private outfitter and purchase one of your own, if you wish."`
-			choice
-				`	"Thank you."`
-					goto leave
-				`	"May I ask who you are and why you sympathize with us?"`
-			`	"You can call me... Agent Falco. As to my true identity, naturally you will understand that I cannot divulge it."`
-			`	"Of course," you say.`
-			label leave
-			`	"I wish you the best of luck in your struggle against the evil plutocrats," he says. "May we yet live to see the day when all people live in prosperity and freedom. Farewell, brave insurgent." It is an overly dramatic speech, and sounds like he's been rehearsing it for a while. You respond with what you hope is a properly elegant salute, and he leaves.`
-				accept
-	
-	on complete
-		payment 250000
-		dialog
-			`You deliver the data card with the details of the catalytic ramscoop to the contact you were given in Delta V corporation. "Excellent," she says. "We have been trying to duplicate their work for months, but this will make it much easier." She hands you a credit chip worth <payment>, and says, "We'll contact you when we've begun mass producing the new ramscoops. I hope they will be useful in the conflict ahead."`
-		event "fw gets catalytic ramscoop" 24
-		log "Helped the Free Worlds gain access to new ramscoop technology that has been developed in the Deep. This should make it significantly easier to travel long distances through unfriendly systems."
-
-
-
-mission "FW Wolf Pack 2"
-	landing
-	name `"Wolf Pack" Recruiting`
-	description `A group identifying themselves as the "Free Worlds Wolf Pack" has asked you to visit them on <planet> if you want to aid their work against the Republic.`
-	source
-		government "Free Worlds"
-	destination "Solace"
-	to offer
-		has "FW Wolf Pack 1B: done"
-		has "event: fw gets catalytic ramscoop"
-		not "event: fw armistice"
-	to fail
-		has "event: fw armistice"
-	
-	on offer
-		conversation
-			`Soon after you land on <origin>, you receive an anonymous message. It reads:`
-			``
-			`Dear Captain <last>,`
-			`	Thanks to your assistance, the Delta V engineers have succeeded in duplicating Deep Sky's new ramscoop technology. The ramscoop is one piece in a larger plan we have to shift the tide of this war in favor of the Free Worlds, and to bring about an end to the conflict more quickly. If you are interested in hearing more, please visit <planet>, and our representatives will contact you promptly.`
-			`	Sincerely,`
-			`		The Free Worlds Wolf Pack`
-			``
-			`You have never heard of this organization before, but you know that "wolf pack" is pirate slang for a temporary alliance formed for the sake of taking on a target larger than any one band of pirates could handle alone.`
-				accept
-
-
-
-mission "FW Wolf Pack 2A"
-	landing
-	name "Attack Food Convoy"
-	description "Destroy three Republic freighters in the <waypoints> system that are carrying food, then report back to <planet> for payment."
-	source "Solace"
-	waypoint "Sarin"
-	to offer
-		has "FW Wolf Pack 2: done"
-		not "event: fw armistice"
-	to fail
-		has "event: fw armistice"
-	
-	on offer
-		conversation
-			`Soon after you land, two men in militia uniforms approach your ship, and tell you they represent the "Wolf Pack." They introduce themselves as Rex and Fido; you're pretty sure those are not their real names.`
-			`	Once you are in a private room inside your ship, Rex, who is the younger one, says, "With ramscoop technology, our ships will be able to venture deep into the Dirt Belt. Now, Captain, why do you think the Republic is so determined to hold on to the Dirt Belt, even if it means fighting bloody battles? It's clear that the tax revenue isn't worth it."`
-			choice
-				`	"Maybe it's just the principle of not ceding territory without a fight."`
-				`	"Maybe they want the resources that the Dirt Belt produces?"`
-					goto resources
-				`	"Maybe to keep a buffer in between our territory and the worlds that really matter to them, like Earth and the Paradise Planets?"`
-			`	"That might be part of it," says Rex, "but there is a larger reason."`
-				goto map
-			label resources
-			`	"Precisely," says Rex, "and one resource in particular is more important to them than all the rest combined."`
-			label map
-			`	The man named Fido, who is older and has a thick beard, spreads out a map on the table. You recognize it as a chart of food prices throughout human space. "Food," says Rex. "The Dirt Belt is the breadbasket of the galaxy. And the Republic is full of teeming, overpopulated worlds that could never hope to feed themselves. If we cut off the supply of food, the Republic will be forced to make peace with us."`
-			`	Fido says, "We are proposing a concentrated effort to destroy the freighter convoys that bring food to the richest, most densely populated Republic worlds. When their citizens find themselves lacking basic supplies, they will demand an end to the war."`
-			choice
-				`	"I'd be glad to join you. That does sound like a much quicker solution than our current policies that the Senate and the Council support."`
-					goto join
-				`	"You're trying to starve the Republic into submission? Won't that just add more brutality to a war that has already been far too bloody?"`
-			`	"In the short run, perhaps," says Rex. "But think how many lives will be saved - how many bloody battles will be averted - by forcing them to end this war quickly rather than dragging it out across years of time."`
-			choice
-				`	"I don't buy your argument. If we use such reprehensible tactics to build our new society, the society we build will be as corrupt as the old one."`
-				`	"Okay, you've convinced me. What do you want me to do?"`
-					goto join
-			`	"Very well," says Rex. "Sorry for wasting your time." They leave.`
-				decline
-			label join
-			`	"First, you should buy a ramscoop here, if you haven't got one already," says Rex. "Then, your first target is a convoy of three freighters that will be departing from Big Sky in the Sarin system shortly. There may be escorts, but only the freighters themselves need to be destroyed."`
-				accept
-	
-	npc kill
-		government "Republic"
-		system "Sarin"
-		personality timid staying target
-		ship "Freighter" "Horn of Plenty"
-		ship "Freighter" "Autumn Twilight"
-		ship "Freighter" "Bounty Harvest"
-		dialog "You have destroyed all the target freighters. Time to report back to the Wolf Pack on Solace."
-	
-	npc
-		government "Republic"
-		system "Sarin"
-		personality heroic staying
-		ship "Narcissus (Mark II)" "R.N.S. Atherstone"
-		ship "Narcissus (Mark II)" "R.N.S. Tyndale"
-	
-	on complete
-		event "wolf pack 3 ready" 10
-		karma --
-		payment 200000
-		dialog
-			`Rex, one of the "Wolf Pack" men you spoke with earlier, meets you in the spaceport and hands you a credit chip for <payment>. "Good work," he says. "We'll contact you when we have another target selected."`
-		log "Destroyed a convoy of Republic freighters that was carrying food from the Dirt Belt. The Paradise Worlds cannot grow all the food that they need to feed their populations, so cutting off the flow of supplies from the Dirt Belt will put pressure on them to make peace with the Free Worlds."
-
-
-
-event "wolf pack 3 ready"
-
-event "wolf pack gacrux start"
-	system "Gacrux"
-		fleet "Small Southern Merchants" 2000
-		fleet "Large Southern Merchants" 5000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 4000
-		fleet "Small Republic" 8000
-
-event "wolf pack gacrux end"
-	system "Gacrux"
-		fleet "Small Southern Merchants" 2000
-		fleet "Large Southern Merchants" 5000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 4000
-		fleet "Small Republic" 2000
-		fleet "Large Republic" 3000
-		fleet "Navy Surveillance" 1600
-
-
-
-mission "FW Wolf Pack 3"
-	landing
-	name "Attack Food Convoy"
-	description "Destroy two Republic bulk freighters in the Gacrux system that are carrying food, then report back to <planet> for payment."
-	source
-		government "Free Worlds"
-	destination "Solace"
-	waypoint "Gacrux"
-	to offer
-		has "FW Wolf Pack 2A: done"
-		has "event: wolf pack 3 ready"
-		not "event: fw armistice"
-	to fail
-		has "event: fw armistice"
-	
-	on offer
-		dialog
-			`You receive another message from the Wolf Pack: "Great work with those freighters, Captain! We've got another target for you, if you're interested: a pair of bulk freighters, which you ought to be able to intercept in the Gacrux system. It's an uninhabited system, so you shouldn't have much interference from the Navy. As before, you only need to destroy the freighters, not any other ships you encounter."`
-			`	Every one of these missions you complete will create more animosity between the Republic and the Free Worlds. But on the other hand, they may be right that it's the fastest way to bring this war to a close.`
-	
-	on accept
-		event "wolf pack gacrux start"
-	on fail
-		event "wolf pack gacrux end"
-
-	npc kill
-		government "Republic"
-		system "Gacrux"
-		personality timid staying target
-		ship "Bulk Freighter" "Dew of the Morning"
-		ship "Bulk Freighter" "Heaven's Blessing"
-		dialog "The food convoy has been destroyed. You can now return to Solace."
-	
-	npc
-		government "Republic"
-		system "Gacrux"
-		personality heroic staying
-		ship "Protector (Laser)" "R.N.S. Bulwark"
-		ship "Protector" "R.N.S. Citadel"
-		ship "Protector" "R.N.S. Rampart"
-	
-	on complete
-		event "wolf pack gacrux end"
-		event "wolf pack 4 ready" 20
-		karma --
-		payment 300000
-		dialog
-			`Once again, Rex from the Wolf Pack meets you soon after your ship lands. This time, he pays you <payment>. "I hope they didn't give you any trouble," he says. "We'll be in touch when there's another target to strike."`
-		log "Destroyed an even larger Republic food convoy. They are probably beginning to feel the pressure now, because they have clearly started to divert warships from the front to defend these convoys."
-
-
-
-event "wolf pack 4 ready"
-
-event "wolf pack mizar start"
-	system "Mizar"
-		fleet "Small Southern Merchants" 1400
-		fleet "Large Southern Merchants" 4500
-		fleet "Small Republic" 5000
-		fleet "Small Southern Pirates" 9000
-
-event "wolf pack mizar end"
-	system "Mizar"
-		fleet "Small Southern Merchants" 1400
-		fleet "Large Southern Merchants" 4500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1400
-		fleet "Small Southern Pirates" 9000
-		fleet "Navy Surveillance" 2000
-
-
-
-mission "FW Wolf Pack 4"
-	landing
-	name "Attack Food Convoy"
-	description "Destroy a Republic Bactrian freighter in the <waypoints> system that is carrying food, then report back to <planet> for payment."
-	source
-		government "Free Worlds"
-	destination "Solace"
-	waypoint "Mizar"
-	to offer
-		has "FW Wolf Pack 3: done"
-		has "event: wolf pack 4 ready"
-		not "event: fw armistice"
-	to fail
-		has "event: fw armistice"
-	
-	on offer
-		dialog
-			`You receive another message from the Wolf Pack: "Hello Captain. If nothing else, we've certainly succeeded in getting some of the Navy's ships diverted from the front, to serve as escorts! Your next target, if you're willing to help us again, will be a bit tougher: a Bactrian freighter, probably with Navy escorts. The freighter is passing through the <waypoints> system. Interested?`
-	
-	on accept
-		event "wolf pack mizar start"
-	on fail
-		event "wolf pack mizar end"
-
-	npc kill
-		government "Republic"
-		system "Mizar"
-		personality timid staying target
-		ship "Bactrian" "Golden Fleece"
-		dialog "You have eliminated the Bactrian that was carrying food to the Republic. Time to report back to the Wolf Pack and receive your reward."
-	
-	npc
-		government "Republic"
-		system "Mizar"
-		personality heroic staying
-		fleet
-			names "republic capital"
-			fighters "republic fighter"
-			cargo 0
-			variant
-				"Arete"
-				"Lance" 4
-				"Sentinel Drone" 6
-	
-	on complete
-		event "wolf pack mizar end"
-		karma --
-		payment 400000
-		dialog
-			`Rex meets up with you and thanks you for your continued service to the Free Worlds. "If we had a dozen captains as brave as you are," he says, "the war would be over tomorrow." He hands you <payment>, and walks away. You still don't know his real name or who the leaders of the Wolf Pack are, but you are glad to have been able to do something extra to assist the war effort.`
-		log "Destroyed a third food convoy. These attacks seem to have succeeded in forcing the Navy to assign capital ships to defend their supply convoys."
-
-
-
-mission "FW Stack Core 1"
-	name "Escort convoy from Rand"
-	description "Freya asked you to stop by Rand if you are able, to help escort a freighter convoy carrying vital supplies for building some exciting new equipment."
-	landing
-	destination "Rand"
-	to offer
-		has "FW Reconciliation Break: offered"
-	
-	on offer
-		conversation
-			`You receive a short, encoded message from Freya: "Hi there, Captain! If you happen to be passing by <planet> any time soon, would you mind swinging by there to help escort a freighter convoy? We're working on the development of some exciting new equipment, and the convoy is carrying the supplies we need to complete the project."`
-				accept
-
-
-
-mission "FWC Stack Core 1"
-	name "Escort convoy from Rand"
-	description "Freya asked you to stop by Rand if you are able, to help escort a freighter convoy carrying vital supplies for building some exciting new equipment."
-	landing
-	destination "Rand"
-	to offer
-		has "FW Liberate Delta Sagittarii: done"
-	
-	on complete
-		set "FW Stack Core 1: done"
-
-
-
-mission "FW Stack Core 1B"
-	landing
-	name "Escort convoy from Rand"
-	description "Freya asked you to escort this convoy carrying vital supplies for building some exciting new equipment, to <destination>."
-	source "Rand"
-	destination "Solace"
-	to offer
-		has "FW Stack Core 1: done"
-	
-	on offer
-		conversation
-			`Following Freya's instructions, you land on <origin> and tell the spaceport quartermaster that you've been assigned to escort a convoy to <planet>. "Ah yes," he says, "the last of their cargo was just made ready yesterday." He leads you to a cluster of landing pads where three Bulk Freighters are parked. "The pirates have not been much trouble lately," he says, "but the cargo is important enough that they wanted an escort anyway." He leaves before you have a chance to ask any questions about what the freighters are carrying.`
-				accept
-	
-	npc accompany save
-		government "Free Worlds"
-		personality escort disables
-		fleet
-			names "civilian"
-			cargo 3
-			variant
-				"Bulk Freighter" 3
-	
-	on visit
-		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
-	
-	npc
-		government "Republic"
-		system "Menkent"
-		personality surveillance
-		fleet
-			names "republic capital"
-			cargo 0
-			variant
-				"Narcissus" 2
-	
-	on complete
-		event "stack core for sale" 25
-		payment 200000
-		dialog `You have escorted the convoy safely to its destination. The workers begin unloading some very heavy crates, and one of the freighter captains hands you <payment> and thanks you for your protection.`
-		log "The Free Worlds will soon have a new reactor core of their own design available for sale. It probably will not be as advanced as Navy technology, however."
-
-
-
-mission "FW Stack Core 1C"
-	landing
-	minor
-	source
-		near "Pherkad" 100
-	to offer
-		has "event: stack core for sale"
-	
-	on offer
-		conversation
-			`You receive a message from Freya: "Hello again, Captain! Thanks for your help escorting the materials to Solace. Ever since we developed the Elpis people have been talking about how badly we need a generator that can meet their energy needs, and that's what Delta V Corporation has been working on. So, take a look next time you're on Solace or one of our other major manufacturing centers. Sorry for the mystery surrounding the cargo, but we didn't exactly want to advertise that a huge shipment of fissionable material was headed for Free Worlds space."`
-				decline
 
 # Free Worlds War Jobs
 
@@ -9500,6 +9177,603 @@ mission "FW Bulk Refugees [0]"
 		dialog phrase "free worlds thanked refugee transport"
 
 # Free Worlds Events
+
+mission "FW Conservatory 1"
+	name "Take Ijs to Winter"
+	description "Transport Mr. Eyes and the Andersons to <destination>, where he will be helping to set up a public university."
+	source Bourne
+	destination Winter
+	passengers 3
+	to offer
+		has "FW Senate 1B: done"
+		not "fw conservatory founded"
+		not "fw bloodsea done"
+	blocked "You meet up with Ijs in the spaceport, but he tells you that you will need three bunks for him and some friends. Return here once you have space available."
+	
+	on offer
+		conversation
+			branch "not met andersons"
+				not "FW Katya 1: done"
+			
+			label "met andersons"
+			`When you meet Ijs in the spaceport, he has Lynn and Henry Anderson with him, the friends of Katya who you transported from Glory months ago. Ijs is beaming - his meeting must have gone really well. "Guess what, Captain?" he says. "We've got a location for the Conservatory! The government of Winter has offered a community center for our use."`
+				goto continue
+			
+			label "not met andersons"
+			`When you meet Ijs in the spaceport, he has a man and a woman with him which he introduces as Lynn and Henry Anderson. Ijs is beaming - his meeting must have gone really well. "Guess what, Captain?" he says. "We've got a location for the Conservatory! The government of Winter has offered a community center for our use."`
+				goto continue
+			
+			label continue
+			`	"A somewhat run-down community center," adds Henry.`
+			`	Ijs laughs. "True. Anyway, we were hoping you could give us a lift over there, and maybe help out with securing some equipment, too."`
+			choice
+				`	"Sure, I'd definitely like to help make this a reality!"`
+					accept
+				`	"Sorry, I've got more important business to attend to."`
+			`	Ijs seems really dejected. "Are you sure?" he asks. "This could make a big difference for the Free Worlds, as much as any military victory."`
+			choice
+				`	"Okay, I'll help you."`
+					accept
+				`	"Sorry, I'm just not interested."`
+					decline
+	
+	on complete
+		payment 50000
+		dialog `Ijs thanks you for the lift and gives you a credit chip for <payment>. He says, "Next we need to pick up some equipment from Tarazed Corporation. Meet me in the spaceport if you're willing to help out as an escort."`
+
+
+
+mission "FW Conservatory 2"
+	name "Escort to Wayfarer"
+	description "Escort this Free Worlds convoy to Wayfarer, to trade for terraforming equipment provided by Tarazed and the Syndicate."
+	source Winter
+	destination Wayfarer
+	to offer
+		has "FW Conservatory 1: done"
+		not "fw bloodsea done"
+	
+	on offer
+		conversation
+			`In the spaceport, it does not take long to locate Ijs; he is supervising a crew that is loading trade goods onto several Free Worlds ships. "Glad to see you, <first>," he says. "These three ships need to get to Tarazed and back without being destroyed by pirates... or by the Republic. Think you can tag along and protect them?"`
+			choice
+				`	"Sure thing!"`
+					accept
+				`	"I've got another pressing mission. Can I come back and do this later?"`
+			`	"Sure," he says. "But the longer we wait, the longer it will be until the Conservatory is up and running, so come back soon."`
+				defer
+	
+	npc accompany save
+		government Merchant
+		personality escort timid
+		ship "Argosy" "F.M.S. Daybreak"
+		ship "Argosy" "F.M.S. Monsoon"
+		ship "Argosy" "F.M.S. Summer"
+	
+	on visit
+		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
+	
+	npc
+		government Pirate
+		personality plunders
+		system Tarazed
+		fleet "Small Southern Pirates"
+		fleet "Large Southern Pirates"
+
+
+
+mission "FW Conservatory 2B"
+	landing
+	name "Escort to Winter"
+	description "Escort this Free Worlds convoy of terraforming equipment back to Winter."
+	source Wayfarer
+	destination Winter
+	to offer
+		has "FW Conservatory 2: done"
+		not "fw bloodsea done"
+	
+	on offer
+		conversation
+			`Your three escorts land safely on Tarazed. Their cargo is quickly offloaded and exchanged for the terraforming equipment that the Conservatory needs.`
+				accept
+	
+	npc accompany save
+		government Merchant
+		personality escort timid
+		ship "Argosy" "F.M.S. Daybreak"
+		ship "Argosy" "F.M.S. Monsoon"
+		ship "Argosy" "F.M.S. Summer"
+	
+	on visit
+		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
+	
+	npc
+		government Pirate
+		personality plunders
+		system "Yed Prior"
+		fleet "Small Southern Pirates" 2
+		fleet "Large Southern Pirates" 2
+	
+	npc
+		government Pirate
+		personality plunders
+		system "Pherkad"
+		fleet "Small Southern Pirates" 2
+		fleet "Large Southern Pirates" 2
+	
+	on complete
+		payment 300000
+		conversation
+			`Ijs meets your convoy as it lands, and checks off each item on a clipboard as it is unloaded. Lynn is with him, looking over the various machines to make sure they are all in working order. "I hope you didn't have any trouble," says Ijs, as he hands you your payment of <payment>.`
+			choice
+				`	"No, none at all."`
+				`	"A few pirates, nothing I couldn't handle."`
+				`	"Actually, we were lucky to make it back alive."`
+					goto lucky
+			`	"Glad to hear it," he says.`
+				goto next
+			label lucky
+			`	"That's too bad," he says. "This war must be making the Dirt Belt even more unstable than usual. Hopefully we'll be able to do something about that soon."`
+			label next
+			`	"Is there anything else you need me to do?" you ask.`
+			`	"Not at the moment," he says. "I'll send you a message when we do. Thanks for your help, and if you hear any more news about Katya, please let me know."`
+		event "fw conservatory founded" 30
+		log "Helped to transport some items for building a public university and terraforming research center on Winter. Ijs Springborn will be one of the professors."
+
+
+
+mission "FW Wolf Pack 1"
+	name "Ramscoop Technology"
+	description "Travel to <planet> in the Deep, where Free Worlds sympathizers will share details of a new ramscoop technology. (You may have to bribe planets along the way to get permission to refuel.)"
+	source
+		government "Free Worlds"
+	destination "Memory"
+	clearance
+	minor
+	to offer
+		has "event: catalytic ramscoop available"
+		random < 30
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		conversation
+			`When you stop by the spaceport bar, a militia officer who you don't recognize gestures for you to join him. "Captain <last>!" he says. "I'd be honored if you'd let me buy you a drink."`
+			choice
+				`	"Thank you!"`
+					goto drink
+				`	"Sorry, I don't drink."`
+			`	"Then what are you doing in a bar?" he asks. "Never mind, don't answer that. I assume you're here looking for valuable work to do, and if that's the case, I could really use your help."`
+				goto mission
+			label drink
+			`	He buys you a drink, and you sit down at his table. After making small talk for a few minutes, he says, "By the way, I could really use your help with a mission for the Free Worlds."`
+			label mission
+			`	"Okay," you say, "tell me more."`
+			`	He says, "You probably know that we have a network of Free Worlds sympathizers throughout much of Republic space. One of our contacts recently sent us word of a new technology that is for sale in the Deep, which could be very useful to us. But they have no way to ship it to us, so I need someone who can travel up to the Deep and retrieve it."`
+			choice
+				`	"Will your contacts also provide me with planets to refuel on along the way?"`
+				`	"The Deep is farther away than my fuel tanks can take me."`
+			`	"You'll have to bribe some Dirt Belt worlds into letting you land, to get there," he says. "Or, you could wait for the next time there's a ceasefire. But here's the great part: if this works, you won't need to pay any bribes on the way back, because the new technology we're after is a super-efficient ramscoop. What do you say?"`
+			choice
+				`	"Okay, I'll give it a try."`
+					accept
+				`	"Sorry, this sounds way too risky to me."`
+					decline
+
+
+
+mission "FW Wolf Pack 1B"
+	landing
+	name "Ramscoop Technology"
+	description "Return to Free space with the plans for a new, more efficient ramscoop, and deliver them to Delta V Corporation on <destination>."
+	destination "Solace"
+	to offer
+		has "FW Wolf Pack 1: done"
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	cargo "Ramscoop Data Card" 0
+	
+	on offer
+		conversation
+			`You land your ship by night in a private hangar that you assume is owned by one of the elite families on <origin>. Your contact is wearing a black mask over his face. That seems unnecessary to you, but perhaps he is just really enjoying the thrill of being involved in something illegal. He hands you a data card and says, "This contains all the information you will need to build your own catalytic ramscoop. And before you leave, you may also visit our private outfitter and purchase one of your own, if you wish."`
+			choice
+				`	"Thank you."`
+					goto leave
+				`	"May I ask who you are and why you sympathize with us?"`
+			`	"You can call me... Agent Falco. As to my true identity, naturally you will understand that I cannot divulge it."`
+			`	"Of course," you say.`
+			label leave
+			`	"I wish you the best of luck in your struggle against the evil plutocrats," he says. "May we yet live to see the day when all people live in prosperity and freedom. Farewell, brave insurgent." It is an overly dramatic speech, and sounds like he's been rehearsing it for a while. You respond with what you hope is a properly elegant salute, and he leaves.`
+				accept
+	
+	on complete
+		payment 250000
+		dialog
+			`You deliver the data card with the details of the catalytic ramscoop to the contact you were given in Delta V corporation. "Excellent," she says. "We have been trying to duplicate their work for months, but this will make it much easier." She hands you a credit chip worth <payment>, and says, "We'll contact you when we've begun mass producing the new ramscoops. I hope they will be useful in the conflict ahead."`
+		event "fw gets catalytic ramscoop" 24
+		log "Helped the Free Worlds gain access to new ramscoop technology that has been developed in the Deep. This should make it significantly easier to travel long distances through unfriendly systems."
+
+
+
+mission "FW Wolf Pack 2"
+	landing
+	name `"Wolf Pack" Recruiting`
+	description `A group identifying themselves as the "Free Worlds Wolf Pack" has asked you to visit them on <planet> if you want to aid their work against the Republic.`
+	source
+		government "Free Worlds"
+	destination "Solace"
+	to offer
+		has "FW Wolf Pack 1B: done"
+		has "event: fw gets catalytic ramscoop"
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		conversation
+			`Soon after you land on <origin>, you receive an anonymous message. It reads:`
+			``
+			`Dear Captain <last>,`
+			`	Thanks to your assistance, the Delta V engineers have succeeded in duplicating Deep Sky's new ramscoop technology. The ramscoop is one piece in a larger plan we have to shift the tide of this war in favor of the Free Worlds, and to bring about an end to the conflict more quickly. If you are interested in hearing more, please visit <planet>, and our representatives will contact you promptly.`
+			`	Sincerely,`
+			`		The Free Worlds Wolf Pack`
+			``
+			`You have never heard of this organization before, but you know that "wolf pack" is pirate slang for a temporary alliance formed for the sake of taking on a target larger than any one band of pirates could handle alone.`
+				accept
+
+
+
+mission "FW Wolf Pack 2A"
+	landing
+	name "Attack Food Convoy"
+	description "Destroy three Republic freighters in the <waypoints> system that are carrying food, then report back to <planet> for payment."
+	source "Solace"
+	waypoint "Sarin"
+	to offer
+		has "FW Wolf Pack 2: done"
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		conversation
+			`Soon after you land, two men in militia uniforms approach your ship, and tell you they represent the "Wolf Pack." They introduce themselves as Rex and Fido; you're pretty sure those are not their real names.`
+			`	Once you are in a private room inside your ship, Rex, who is the younger one, says, "With ramscoop technology, our ships will be able to venture deep into the Dirt Belt. Now, Captain, why do you think the Republic is so determined to hold on to the Dirt Belt, even if it means fighting bloody battles? It's clear that the tax revenue isn't worth it."`
+			choice
+				`	"My best guess is the precident it will set for secession."`
+				`	"Well the Dirt Belt produces food, right? They don't want to be starved out."`
+					goto resources
+				`	"Maybe to keep a buffer in between our territory and the worlds that really matter to them, like Earth and the Paradise Planets?"`
+			`	"That might be part of it," says Rex, "but there is a larger reason."`
+				goto map
+			label resources
+			`	"Exactly," says Rex, "Food for the war effort matters."`
+			label map
+			`	The man named Fido, who is older and has a thick beard, spreads out a map on the table. You recognize it as a chart of food prices throughout human space. "Food," says Rex. "The Republic is full of teeming, overpopulated worlds that could never hope to feed themselves. If we cut off the supply of food, the Republic will be forced to make peace with us."`
+			`	Fido says, "We are proposing a concentrated effort to destroy the freighter convoys that bring food to the richest, most densely populated Republic worlds. When their citizens find themselves lacking basic supplies, they will demand an end to the war."`
+			choice
+				`	"I'd be glad to join you. That does sound like a much quicker solution than our current policies that the Senate and the Council support."`
+					goto join
+				`	"You're trying to starve the Republic into submission? Won't that just add more brutality to a war that has already been far too bloody?"`
+			`	"In the short run, perhaps," says Rex. "But think how many lives will be saved by forcing them to end this war quickly rather than dragging it out across years of time."`
+			`	"And with the pressure off the Free Worlds Militia forces, imagine the new technologies they could develop." Fido adds. "Kraz and Delta V could get the supplies they need for new weapons and power generators. Southbound could more easily source ship components for refits, and that secret project we keep hearing rumors of."
+			choice
+				`	"I don't buy your argument. If we use such reprehensible tactics to build our new society, the society we build will be as corrupt as the old one."`
+				`	"What do you mean by new technologies?"
+					goto secrets
+				`	"Okay, you've convinced me. What do you want me to do?"`
+					goto join
+			`	"Very well," says Rex. "Sorry for wasting your time." They leave.`
+				decline
+			label secrets
+			`	Fido answers, "We've heard rumors of Kraz and Southbound working on ships capable of going toe to toe with the biggest Republic ships. 'Project Dreadnaught' I think it was called."
+			`	"If we can put more pressure on the Republic and take pressure off our comrades here in the south, I expect we might see the fruits of that labor soon."
+			choice
+				`	"Even so, I don't like the idea of starving people into submission. We can win this war the right way."`
+				`	"Okay, you've convinced me. What do you want me to do?"`
+					goto join
+			`	"Right way? This is war!" Fido shouts, before Rex grabs him by the arm, calming him down.`
+			`	"Very well," Rex says. "Sorry for wasting your time." They leave.`
+				decline
+			label join
+			`	"First, you should buy a ramscoop here, if you haven't got one already," says Rex. "Then, your first target is a convoy of three freighters that will be departing from Big Sky in the Sarin system shortly. There may be escorts, but only the freighters themselves need to be destroyed."`
+				accept
+	
+	npc kill
+		government "Republic"
+		system "Sarin"
+		personality timid staying target
+		ship "Freighter" "Horn of Plenty"
+		ship "Freighter" "Autumn Twilight"
+		ship "Freighter" "Bounty Harvest"
+		dialog "You have destroyed all the target freighters. Time to report back to the Wolf Pack on Solace."
+	
+	npc
+		government "Republic"
+		system "Sarin"
+		personality heroic staying
+		ship "Narcissus (Mark II)" "R.N.S. Atherstone"
+		ship "Narcissus (Mark II)" "R.N.S. Tyndale"
+	
+	on complete
+		event "wolf pack 3 ready" 10
+		karma --
+		payment 200000
+		dialog
+			`Rex, one of the "Wolf Pack" men you spoke with earlier, meets you in the spaceport and hands you a credit chip for <payment>. "Good work," he says. "We'll contact you when we have another target selected."`
+		log "Destroyed a convoy of Republic freighters that was carrying food from the Dirt Belt. The Paradise Worlds cannot grow all the food that they need to feed their populations, so cutting off the flow of supplies from the Dirt Belt will put pressure on them to make peace with the Free Worlds."
+
+
+
+event "wolf pack 3 ready"
+
+event "wolf pack gacrux start"
+	system "Gacrux"
+		fleet "Small Southern Merchants" 2000
+		fleet "Large Southern Merchants" 5000
+		fleet "Small Southern Pirates" 2000
+		fleet "Large Southern Pirates" 4000
+		fleet "Small Republic" 8000
+
+event "wolf pack gacrux end"
+	system "Gacrux"
+		fleet "Small Southern Merchants" 2000
+		fleet "Large Southern Merchants" 5000
+		fleet "Small Southern Pirates" 2000
+		fleet "Large Southern Pirates" 4000
+		fleet "Small Republic" 2000
+		fleet "Large Republic" 3000
+		fleet "Navy Surveillance" 1600
+
+
+
+mission "FW Wolf Pack 3"
+	landing
+	name "Attack Food Convoy"
+	description "Destroy two Republic bulk freighters in the Gacrux system that are carrying food, then report back to <planet> for payment."
+	source
+		government "Free Worlds"
+	destination "Solace"
+	waypoint "Gacrux"
+	to offer
+		has "FW Wolf Pack 2A: done"
+		has "event: wolf pack 3 ready"
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		dialog
+			`You receive another message from the Wolf Pack: "Great work with those freighters, Captain! We've got another target for you, if you're interested: a pair of bulk freighters, which you ought to be able to intercept in the Gacrux system. It's an uninhabited system, so you shouldn't have much interference from the Navy. As before, you only need to destroy the freighters, not any other ships you encounter."`
+	
+	on accept
+		event "wolf pack gacrux start"
+	on fail
+		event "wolf pack gacrux end"
+
+	npc kill
+		government "Republic"
+		system "Gacrux"
+		personality timid staying target
+		ship "Bulk Freighter" "Dew of the Morning"
+		ship "Bulk Freighter" "Heaven's Blessing"
+		dialog "The food convoy has been destroyed. You can now return to Solace."
+	
+	npc
+		government "Republic"
+		system "Gacrux"
+		personality heroic staying
+		ship "Protector (Laser)" "R.N.S. Bulwark"
+		ship "Protector" "R.N.S. Citadel"
+		ship "Protector" "R.N.S. Rampart"
+	
+	on complete
+		event "wolf pack gacrux end"
+		event "wolf pack 4 ready" 20
+		karma --
+		payment 300000
+		dialog
+			`Once again, Rex from the Wolf Pack meets you soon after your ship lands. This time, he pays you <payment>. "I hope they didn't give you any trouble," he says. "We'll be in touch when there's another target to strike."`
+		log "Destroyed an even larger Republic food convoy. They are probably beginning to feel the pressure now, because they have clearly started to divert warships from the front to defend these convoys."
+
+
+
+event "wolf pack 4 ready"
+
+event "wolf pack mizar start"
+	system "Mizar"
+		fleet "Small Southern Merchants" 1400
+		fleet "Large Southern Merchants" 4500
+		fleet "Small Republic" 5000
+		fleet "Small Southern Pirates" 9000
+
+event "wolf pack mizar end"
+	system "Mizar"
+		fleet "Small Southern Merchants" 1400
+		fleet "Large Southern Merchants" 4500
+		fleet "Small Republic" 1000
+		fleet "Large Republic" 1400
+		fleet "Small Southern Pirates" 9000
+		fleet "Navy Surveillance" 2000
+
+
+
+mission "FW Wolf Pack 4"
+	landing
+	name "Attack Food Convoy"
+	description "Destroy a Republic Bactrian freighter in the <waypoints> system that is carrying food, then report back to <planet> for payment."
+	source
+		government "Free Worlds"
+	destination "Solace"
+	waypoint "Mizar"
+	to offer
+		has "FW Wolf Pack 3: done"
+		has "event: wolf pack 4 ready"
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		dialog
+			`You receive another message from the Wolf Pack: "Hello Captain. If nothing else, we've certainly succeeded in getting some of the Navy's ships diverted from the front, to serve as escorts! Your next target, if you're willing to help us again, will be a bit tougher: a Bactrian freighter, probably with Navy escorts. The freighter is passing through the <waypoints> system. Interested?`
+	
+	on accept
+		event "wolf pack mizar start"
+	on fail
+		event "wolf pack mizar end"
+
+	npc kill
+		government "Republic"
+		system "Mizar"
+		personality timid staying target
+		ship "Bactrian" "Golden Fleece"
+		dialog "You have eliminated the Bactrian that was carrying food to the Republic. Time to report back to the Wolf Pack and receive your reward."
+	
+	npc
+		government "Republic"
+		system "Mizar"
+		personality heroic staying
+		fleet
+			names "republic capital"
+			fighters "republic fighter"
+			cargo 0
+			variant
+				"Arete"
+				"Lance" 4
+				"Sentinel Drone" 6
+	
+	on complete
+		event "wolf pack mizar end"
+		karma --
+		payment 400000
+		dialog
+			`Rex meets up with you and thanks you for your continued service to the Free Worlds. "If we had a dozen captains as brave as you are," he says, "the war would be over tomorrow." He hands you <payment>, and walks away. You still don't know his real name or who the leaders of the Wolf Pack are, but you are glad to have been able to do something extra to assist the war effort.`
+		log "Destroyed a third food convoy. These attacks seem to have succeeded in forcing the Navy to assign capital ships to defend their supply convoys."
+
+mission "Electron Beam 1"
+	landing
+	name "Electron Beam"
+	description ""
+	source
+		government "Free Worlds"
+	destination "Kraz"
+	to offer
+		has "FW Wolf Pack 4: done"
+	to fail
+		has "FW Northern 1: done"
+	on offer
+		log "It looks like the Navy has begun using some more powerful beam weapons and torpedoes. Tasked with plundering one of the electron beam weapons so Barmy can get a closer look at it."
+		event "gunboats in Alnasl"
+		dialog
+			`You receive mass message from Kraz Cybernetics: "To all Free Worlds Wolfpack Captains; Chief Offensive Engineer Barmy Edward has put out a bounty on the new Deep Sky Electron Beam. The first five people who can bring us a sample to strip down and test will each be awarded one million credits."`
+
+	npc
+		government "Republic"
+		system "Alnasl"
+		personality heroic opportunistic staying
+		fleet
+			names "republic small"
+			variant
+				"Gunboat (Mark II)"
+	to complete
+		not "FW Southern Recon 1B (Turret): done"
+	to fail
+		has "FW Southern Recon 1B (Turret): done"
+	on complete
+		payment 1000000
+		fail "FW Southern Recon 1B (Turret)"
+		outfit "Electron Beam" -1
+		dialog `You hand off the Electron Beam to the Kraz science team, who inform you that <payment> will hit your account by the end of the day.`
+
+
+
+mission "FW Southern Recon 1B (Turret)"
+	landing
+	invisible
+	source
+		government "Free Worlds"
+	destination Trinket
+	to offer
+		has "FW Southern Recon 1: done"
+	to complete
+		not "FW Southern Recon 1B: done"
+	to fail
+		has "FW Southern Recon 1B: done"
+	on complete
+		payment 1000000
+		fail "FW Southern Recon 1B"
+		outfit "Electron Turret" -1
+		dialog `You hand off the Electron Turret to the Kraz science team, who inform you that <payment> will hit your account by the end of the day.`
+
+mission "FW Stack Core 1"
+	name "Escort convoy from Rand"
+	description "Freya asked you to stop by Rand if you are able, to help escort a freighter convoy carrying vital supplies for building some exciting new equipment."
+	landing
+	destination "Rand"
+	to offer
+		has "FW Wolf Pack 4: Done"
+	
+	on offer
+		conversation
+			`You receive a short, encoded message from Freya: "Hi there, Captain! If you happen to be passing by <planet> any time soon, would you mind swinging by there to help escort a freighter convoy? We're working on the development of some exciting new equipment, and the convoy is carrying the supplies we need to complete the project."`
+				accept
+
+
+mission "FW Stack Core 1B"
+	landing
+	name "Escort convoy from Rand"
+	description "Freya asked you to escort this convoy carrying vital supplies for building some exciting new equipment, to <destination>."
+	source "Rand"
+	destination "Solace"
+	to offer
+		has "FW Stack Core 1: done"
+	
+	on offer
+		conversation
+			`Following Freya's instructions, you land on <origin> and tell the spaceport quartermaster that you've been assigned to escort a convoy to <planet>. "Ah yes," he says, "the last of their cargo was just made ready yesterday." He leads you to a cluster of landing pads where three Bulk Freighters are parked. "The pirates have not been much trouble lately," he says, "but the cargo is important enough that they wanted an escort anyway." He leaves before you have a chance to ask any questions about what the freighters are carrying.`
+				accept
+	
+	npc accompany save
+		government "Free Worlds"
+		personality escort disables
+		fleet
+			names "civilian"
+			cargo 3
+			variant
+				"Bulk Freighter" 3
+	
+	on visit
+		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
+	
+	npc
+		government "Republic"
+		system "Menkent"
+		personality surveillance
+		fleet
+			names "republic capital"
+			cargo 0
+			variant
+				"Narcissus" 2
+	
+	on complete
+		event "stack core for sale" 25
+		payment 200000
+		dialog `You have escorted the convoy safely to its destination. The workers begin unloading some very heavy crates, and one of the freighter captains hands you <payment> and thanks you for your protection.`
+
+mission "FW Stack Core 1C"
+	landing
+	minor
+	source
+		near "Pherkad" 100
+	to offer
+		has "event: stack core for sale"
+	
+	on offer
+		conversation
+			`You receive a message from Freya: "Hello again, Captain! Thanks for your help escorting the materials to Solace. Ever since we started Project Dreadnaught people have been talking about how badly we need a generator that can meet their energy needs, and that's what Delta V Corporation has been working on. So, take a look next time you're on Solace or one of our other major manufacturing centers. Sorry for the mystery surrounding the cargo, but we didn't exactly want to advertise that a huge shipment of fissionable material was headed for Free Worlds space."`
+				decline
+
 
 event "joined the free worlds"
 
