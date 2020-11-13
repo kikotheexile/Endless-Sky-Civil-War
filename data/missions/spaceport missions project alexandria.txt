@@ -80,7 +80,7 @@ mission "Martian History"
 mission "Lunar History"
 	invisible
 	landing
-	source Mars
+	source Luna
 	to offer
 		random < 5
 	on offer
