@@ -2682,7 +2682,7 @@ outfit "Typhoon Storage Tube"
 	description "The Typhoon Storage Tube is an internal modification used to store extra ammunition for Typhoon Launchers."
 
 outfit "Heavy Rocket Rack"
-	category "Ammunition"
+	category "Modifications"
 	cost 20000
 	thumbnail "outfit/rocket storage"
 	"mass" 2
