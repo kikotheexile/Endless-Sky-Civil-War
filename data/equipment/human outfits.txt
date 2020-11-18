@@ -1122,7 +1122,7 @@ outfit "Hyperdrive"
 	description "	This mysterious box sits quietly at the heart of your ship, thinking its own inscrutable thoughts. They say that fewer than a dozen human beings alive today understand the inner workings of the hyperdrive. Then again, they say a lot of things."
 
 outfit "Scram Drive"
-	category "Systems"
+	category "Drive Systems"
 	cost 90000
 	thumbnail "outfit/scram drive"
 	"mass" 30
@@ -1279,7 +1279,7 @@ effect "ion impact"
 	"velocity scale" -.05
 
 outfit "Particle Cannon"
-	category "Guns"
+	category "Forward Guns"
 	cost 220000
 	thumbnail "outfit/particle cannon"
 	"mass" 30
