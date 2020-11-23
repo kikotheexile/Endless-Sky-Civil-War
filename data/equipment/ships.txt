@@ -1032,7 +1032,7 @@ ship "Sparrow"
 			"hull damage" 80
 			"hit force" 240
 	outfits
-		"Beam Laser" 2
+		"Energy Blaster" 2
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
@@ -1045,8 +1045,8 @@ ship "Sparrow"
 		
 	engine -5 35
 	engine 5 35
-	gun -7 -10
-	gun 7 -10
+	gun -7 -10 "Energy Blaster"
+	gun 7 -10 "Energy Blaster"
 	leak "flame" 60 80
 	explode "tiny explosion" 15
 	explode "small explosion" 5
