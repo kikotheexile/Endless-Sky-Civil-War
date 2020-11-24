@@ -1915,7 +1915,7 @@ outfit "Electron Beam"
 	description "The Electron Beam is a recent development by Deep Sky labs, a more powerful weapon with a design similar to their perennially popular laser guns. Unlike its Beam Laser precursors, this variant is quite capable of damaging enemy shields."
 
 
-outfit "Gatling turret"
+outfit "Gatling Turret"
 	category "Secondary Weapons"
 	cost 200000
 	thumbnail "outfit/gatur"
@@ -1940,8 +1940,7 @@ outfit "Gatling turret"
 		"firing heat" 5
 		"cluster"
 		"hit effect" "bullet impact"
-	description 'Two Gatling guns, modified for maximum damage, attached to a swivelling base. The gatling turret, occasionally used by pirates and traditional captains, is a formidible relic of the dark ages.'
-		
+	description "Two Gatling guns, modified for maximum damage, attached to a swivelling base. The gatling turret, occasionally used by pirates and traditional captains, is a formidible relic of the dark ages."
 		
 outfit "gtbullet"
 	weapon
