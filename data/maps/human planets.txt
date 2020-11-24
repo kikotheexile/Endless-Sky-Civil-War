@@ -1049,7 +1049,6 @@ planet "Liberty Station"
 	description `Every door is under heavy guard and you are allowed no further into the station than the mess. The people here are equally as cold and unresponsive to any questions or greetings. The dockmaster's favorite phrase seems to be 'Fuel up and get out.'`
 	spaceport `The docking ring is the only place you have access to and is just as unwelcoming as the rest of the station. The robotic cleaners rarely make passes over it's littered and blood stained floors. Occasionally you can see small glimpses of something less bland happening deeper within the station.`
 	spaceport `	Curiously, there is a kiosk labeled "Northern Hotrods," which allows you to view heavily modified ships. You can't seem to buy them without a special token.`
-	shipyard "Northern Hotrods"
 	outfitter "Ammo"
 
 planet Lichen
@@ -1879,7 +1878,6 @@ planet "Smuggler's Den"
 	landscape land/loc1
 	description `Smuggler's Den was formerly known as Grendel Station, back when it was an operating refinery. But, it has since been taken over by pirates, who turned it into a haven for all manner of smugglers and privateers. The repair shops here can make a variety of legal and illegal modifications to your ship, and in the shipyard you can buy refurbished starships if you can show them a token of your worth. They demand proof that it will not trouble your conscience to think about the likely fates of their previous owners.`
 	spaceport `It is a strange but indisputable fact that pirates smell worse than ordinary human beings. In this day and age, where even the cheapest shuttlecraft at least has a sonic shower, there is no logical explanation for it, except that anarchist tendencies must somehow go hand in hand with a tendency to reject society's norms around hygiene. Here in a space station, with nothing but recycled air to breathe, the effect is overpowering.`
-	shipyard "Southern Customs"
 	outfitter "Delta V Advanced"
 	outfitter "Kraz Advanced"
 	outfitter "Common Outfits"
@@ -2000,7 +1998,6 @@ planet Thrall
 	description `	The locals are prevented from seeking more lucrative employment elsewhere partly by the crushingly low wages, which make the cost of space transport prohibitively high for most, and partly by the educational system, which is among the worst in the galaxy.`
 	spaceport `The spaceport consists of a vast asphalt-paved field for landing ships, and some wooden buildings a few stories tall. Most of the materials for export are stored in sheds or stacked under plastic tarps, with a few police officers clustered around them to make sure no ship picks up cargo that has not been paid for. Inside the buildings, two restaurants with different names serve an identical selection of fried foods.`
 	spaceport `	Oddly enough, in the heart of Republic space, there is a hidden shipyard that requires a special token to access. However, you can view the ships on an unassuming kiosk in the spaceport. Local police and militia forces regularly patrol the area, but intentionally ignore the kiosk.`
-	shipyard "Smugglers Choice"
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
 	bribe 0.04
