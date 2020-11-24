@@ -1043,8 +1043,10 @@ mission "FW Katya 3"
 					goto options
 				`	"Got it."`
 					accept
+			label options
 			`	"Well," Katya says, "If you want to risk getting blown out of the sky by Pirates, I'm sure you could find some Republic slavage on pirate worlds."`
 			`	"Sure, but it's risky and will cost you." Ijs adds, "You might have some luck finding some abandoned drones in some nearby systems. I don't really care where the drone guts come from, as long as I can use them. Good luck, <first>."`
+				accept
 	on accept
 		log "Katya's plan for hunting down the nuclear terrorists involves stealing the sensor equipment from a Navy Thea Drone. Supposedly taking equipment from a drone counts as a salvage operation as long as none of its owners are present, due to a legal loophole in an old act of Parliament."
 
@@ -2138,7 +2140,7 @@ mission "Rescue Katya 1"
 		log "People" "Freya Winters" `Freya is an engineer, specializing in surveillance equipment but with a wide range of talents. She organized the "thousand eyes" program run by the Southern Defense Pact, which was an attempt to reduce the power of the pirate fleets in the region by tracking their fleet movements. Despite her relative lack of interest in politics, she was asked to join the Free Worlds Council because of her expertise in optimizing the distribution and management of resources.`
 		log "People" "Jean-Jacques Soleau" `Known to most people simply as "JJ," Jean-Jacques grew up in the Dirt Belt and served in the Navy for years before quitting in frustration over the fact that the Navy was no longer defending his home region of space. He now serves on the Free Worlds Council, where he is tasked with coordinating actions between the local militias and shaping them into a single fighting force that can act in concert with each other.`
 	on decline
-		freelance +3
+		freelance += 3
 
 
 mission "Rescue Katya 2"
@@ -3132,7 +3134,7 @@ mission "FW Plasma Testing 1B"
 					goto impressive
 				`	"Well, I was a bit worried about the ship overheating, but otherwise they work well."`
 					goto overheat
-				`	"They aren't something I would use."
+				`	"They aren't something I would use."`
 					goto bad
 			label impressive
 			`	"Yes," he said, "First-rate carnage. I was very pleased. Any weak spots you noticed?"`
@@ -3143,7 +3145,7 @@ mission "FW Plasma Testing 1B"
 				goto improve
 
 			label bad
-			`	He shrugs. "Well, no one's perfect. I hope you don't feel too bad about that. Anything you would suggest to make it better, oh great engineer?" 
+			`	He shrugs. "Well, no one's perfect. I hope you don't feel too bad about that. Anything you would suggest to make it better, oh great engineer?"`
 
 			label improve
 			choice
@@ -3163,7 +3165,7 @@ mission "FW Plasma Testing 1B"
 				goto next
 			
 			label damage
-			`	He considers your statement for a second, "I think you have a point there, but these weapons don't exist in a vacuum. Well, actually they do, but you know what I mean. There are other guns out there that our customers can use in conjunction with this new turret. We just need to..."
+			`	He considers your statement for a second, "I think you have a point there, but these weapons don't exist in a vacuum. Well, actually they do, but you know what I mean. There are other guns out there that our customers can use in conjunction with this new turret. We just need to..."`
 			`	Edward trails off for a moment, thinking hard on ways to improve the design. "I think I just found my muse. If I can find a way to disrupt enemy shields and maybe their engines, the turret will impart more damage and more heat!" He pulls out his communicator and types something into his notepad.`
 			label next
 			`	"Oh, by the way! I recieved word on your next assignment" he says, "you'll be leading a supply convoy. You can meet up with them in the spaceport. Oh, and this is to thank you for your help." He hands you <payment>. "To help you pay for your first plasma turret once we've got them on the market," he says. "They should be ready in a month or two. I'll send you a message when they're available."`
@@ -3204,10 +3206,10 @@ mission "Omega Station"
 	name "Visit Omega Station!"
 	landing
 	source
-		random < 40
 		government "Free Worlds"
 	destination "Omega Station"
 	to offer
+		random < 40
 		has "event: plasma turret available"
 	on offer
 		conversation
@@ -3256,7 +3258,7 @@ mission "Southbound Testing 1"
 			label tournament
 			`	She begins as if she's rehearsed this script too many times:`
 			`	"Southbound Shipyards is looking for new talent to help test out modifications to our existing ship lines, as well as the development of new vessels for military applications. Due to the lack of regulations currently imposed by the Free Worlds, the company has decided it would be best to hold a tournament to find qualified test pilots."`
-			`	"But if that wasn't enough for you, the tournament bracket pays out per fight won, not just to the top winners. All fighters who disable their opponents ship and/or fleet will be given a prize."
+			`	"But if that wasn't enough for you, the tournament bracket pays out per fight won, not just to the top winners. All fighters who disable their opponents ship and/or fleet will be given a prize."`
 				goto signup
 
 			label signup
@@ -3479,7 +3481,7 @@ mission "Southbound Testing 5"
 ship "Clipper" "Drone Clipper"
 	add attributes
 		"self destruct" 1
-		"automata"
+		"automaton"
 		"required crew" 0
 	outfits
 		"Modified Blaster" 4
@@ -3494,11 +3496,11 @@ ship "Aerie" "Tournament Aerie"
 
 ship "Class C Freighter" "Tournament Bulk Freighter"
 	add attributes
-		"self destruct 1
+		"self destruct" 1
 
 ship "Splinter" "Tournament Splinter"
 	add attributes
-		"self destruct 1
+		"self destruct" 1
 
 mission "FW Supply Convoy 1"
 	name "Escort Supply Convoy"
@@ -9457,18 +9459,18 @@ mission "FW Wolf Pack 2A"
 					goto join
 				`	"You're trying to starve the Republic into submission? Won't that just add more brutality to a war that has already been far too bloody?"`
 			`	"In the short run, perhaps," says Rex. "But think how many lives will be saved by forcing them to end this war quickly rather than dragging it out across years of time."`
-			`	"And with the pressure off the Free Worlds Militia forces, imagine the new technologies they could develop." Fido adds. "Kraz and Delta V could get the supplies they need for new weapons and power generators. Southbound could more easily source ship components for refits, and that secret project we keep hearing rumors of."
+			`	"And with the pressure off the Free Worlds Militia forces, imagine the new technologies they could develop." Fido adds. "Kraz and Delta V could get the supplies they need for new weapons and power generators. Southbound could more easily source ship components for refits, and that secret project we keep hearing rumors of."`
 			choice
 				`	"I don't buy your argument. If we use such reprehensible tactics to build our new society, the society we build will be as corrupt as the old one."`
-				`	"What do you mean by new technologies?"
+				`	"What do you mean by new technologies?"`
 					goto secrets
 				`	"Okay, you've convinced me. What do you want me to do?"`
 					goto join
 			`	"Very well," says Rex. "Sorry for wasting your time." They leave.`
 				decline
 			label secrets
-			`	Fido answers, "We've heard rumors of Kraz and Southbound working on ships capable of going toe to toe with the biggest Republic ships. 'Project Dreadnaught' I think it was called."
-			`	"If we can put more pressure on the Republic and take pressure off our comrades here in the south, I expect we might see the fruits of that labor soon."
+			`	Fido answers, "We've heard rumors of Kraz and Southbound working on ships capable of going toe to toe with the biggest Republic ships. 'Project Dreadnaught' I think it was called."`
+			`	"If we can put more pressure on the Republic and take pressure off our comrades here in the south, I expect we might see the fruits of that labor soon."`
 			choice
 				`	"Even so, I don't like the idea of starving people into submission. We can win this war the right way."`
 				`	"Okay, you've convinced me. What do you want me to do?"`
