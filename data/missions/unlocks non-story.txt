@@ -8,25 +8,37 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-mission "SoCo License"
-	invisible
-	landing
-	to offer
-		"combat rating" > 2000
-	on offer
-		dialog `A stranger approaches you as you disembark and hands you a strange coin. There is a large 'S' etched into its face. On the reverse it says, "For great warriors only. Come visit Southern Customs! Smuggler's Den. Men System."`
-		set "license: Southern-Customs"
-		fail
-		
 mission "Hotrod License"
 	invisible
 	landing
 	to offer
-		random < 5
+		has "trustfund baby"
+		random > 95
 	on offer
+		event "hotrod token"
 		dialog `Jackpot! Today must be your lucky day, as you just found a strange and rare token on the ground. Upon inspecting it, you find that the back of it is engraved. The engraving reads: "Northern Hotrods. Liberty Station. Milto System."`
 		set "license: Hotrod"
 		fail
+
+event "hotrod token"
+	planet "Liberty Station"
+		shipyard "Northern Hotrods"
+
+mission "SoCo License"
+	invisible
+	landing
+	to offer
+		has "a pirates life"
+		"combat rating" > 2000
+	on offer
+		event "soco token"
+		dialog `A stranger approaches you as you disembark and hands you a strange coin. There is a large 'S' etched into its face. On the reverse it says, "For great warriors only. Come visit Southern Customs! Smuggler's Den. Men System."`
+		set "license: Southern-Customs"
+		fail
+
+event "soco token"
+	planet "Smuggler's Den"
+		shipyard "Southern Customs"
 
 mission "Smuggler License"
 	invisible
@@ -34,6 +46,11 @@ mission "Smuggler License"
 	to offer
 		smuggler >= 10
 	on offer
+		event "smuggler token"
 		dialog `As you go to exit your ship, you find a token taped onto your airlock pannel. Upon inspecting it, you find that the back of the coin is engraved. The engraving reads: "Smugglers Choice. Thrall." The cryptic message seems to be directing you towards the Procyon system.`
 		set "license: Smuggler"
 		fail
+		
+event "smuggler token"
+	planet Thrall
+		shipyard "Smugglers Choice"
