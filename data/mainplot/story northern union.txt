@@ -285,7 +285,7 @@ mission "Northern Union Escort Finale"
 	on complete
 		"reputation: Northern Union" += 10
 		"reputation: Cartel" -= 10
-		"reputation: Syndicate" -=5
+		"reputation: Syndicate" -= 5
 		"assisted northern union" ++
 		payment 800000
 		dialog `Ruby contacts you soon after you land. "Very nicely done," she says, "not many merchants are willing to do this kind of heavy lifting. Your reward of <payment> has been transferred to your account, and I also put in a good word for you with the Northern Union's partnership committee.`
