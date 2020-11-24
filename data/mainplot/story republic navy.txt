@@ -13,7 +13,8 @@
 
 mission "Republic Bounty 1"
 	name "Republic Bounty Hunting"
-	description `Hunt down the Black Fang, a pirate ship that's been assaulting miners in the Boral system.`
+	description `Hunt down the Black Fang, a pirate ship that's been ambushing ships in the Boral system. The Boral system is one of a string of uninhabited systems that separates the Southern Arm from the Dirt Belt.`
+
 	minor
 	source
 		government "Republic"
