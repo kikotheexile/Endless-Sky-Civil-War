@@ -485,6 +485,14 @@ planet "Echo Station"
 	shipyard "Tarazed Shipyards"
 	outfitter "Tarazed Systems"
 	outfitter "Ammo"
+	outfitter "Basic Outfits"
+	outfitter "Common Outfits"
+	outfitter "Basic Weapons"
+	outfitter "Delta V Basics"
+	outfitter "Delta V Advanced"
+	outfitter "Syndicate Basics"
+	outfitter "Kraz Basics"
+	outfitter "Kraz Advanced"
 	bribe 0
 	security 0.9
 
@@ -898,7 +906,15 @@ planet "Brokkr Station"
 	outfitter "Common Outfits"
 	outfitter "Basic Weapons"
 	outfitter "Ammo"
+	outfitter "Deep Sky Basics"
 	outfitter "Deep Sky Advanced"
+	outfitter "Basic Outfits"
+	outfitter "Common Outfits"
+	outfitter "Basic Weapons"
+	outfitter "Delta V Basics"
+	outfitter "Syndicate Basics"
+	outfitter "Kraz Basics"
+	outfitter "Kraz Advanced"
 	bribe 0.1
 	security 0.9
 	music ambient/machinery
@@ -939,12 +955,21 @@ planet "Orion Station"
 	landscape land/sivael2
 	description `Orion Station is crowded with merchant ships making sales, usually metals and components to support the strong ship-building operation here. Betelgeuse is relatively out of the way, but its shipyards are still well-known across the galaxy, and among captains, so are the trade opportunities.`
 	spaceport `The spaceport is incredibly busy, with merchants and the Navy and Betelgeuse employees all scrambling around with some goal in mind.`
+	shipyard "Navy Basics"
+	shipyard "Navy Advanced"
 	shipyard "Betelgeuse Shipyards"
 	outfitter "Common Outfits"
 	outfitter "Basic Weapons"
 	outfitter "Ammo"
 	outfitter "Syndicate Basics"
 	outfitter "Lovelace Basics"
+	outfitter "Basic Outfits"
+	outfitter "Common Outfits"
+	outfitter "Basic Weapons"
+	outfitter "Delta V Basics"
+	outfitter "Syndicate Basics"
+	outfitter "Kraz Basics"
+	outfitter "Kraz Advanced"
 	bribe 0.1
 	security 0.9
 	music ambient/machinery
@@ -1674,9 +1699,8 @@ planet Prime
 	attributes "requires: landing gear" north urban factory
 	landscape land/city11
 	description `Prime is a very Earth-like ocean world, with a population of over a billion people. It is home to Betelgeuse Shipyards, and much of the industry on the planet is related to ship-building in one way or another, like refining and working metal, or developing exotic new hull and framing materials. Although some mining is done in more remote regions of the planet, Prime is reliant on shipments of metal and other goods to feed its industries.`
-	spaceport `The spaceport is a long, multi-story building designed to look like a carrier starship, but much larger. It is built mostly of steel and glass, with the sturdy beams and girders that support the building visible on the inside, giving it the look of a ship still in construction, whose interior has not yet been fully fitted out. In nearby hangars, final assembly is being done on ships, some of which have been completed and are now for sale.`
+	spaceport `The spaceport is a long, multi-story building designed to look like a carrier starship, but much larger. It is built mostly of steel and glass, with the sturdy beams and girders that support the building visible on the inside, giving it the look of a ship still in construction, whose interior has not yet been fully fitted out.`
 	shipyard "Betelgeuse Basics"
-	shipyard "Navy Basics"
 	shipyard "Megaparsec Basics"
 	outfitter "Common Outfits"
 	outfitter "Ammo"
@@ -2133,11 +2157,9 @@ planet Valhalla
 	description `	The shipyards of Lionheart Industries are located here. Centuries ago, warships built here turned the tide of the Alpha War, and today the ships designed and built in the Deep continue to be some of the most technologically advanced ships in human space - and the most expensive.`
 	spaceport `Surrounding the spaceport is a metropolis of skyscrapers and factories that spreads all the way to the horizon in every direction. The spaceport itself is an imposing building, composed of three towers rising over a hundred stories into the air and connected at various levels by bridges. The docking bays are on the higher levels, with warehouse space lower down and loading platforms for trucks at ground level. Massive cargo elevators run up and down in the center of each building, and the hallways are all wide enough to allow small robotic carts and forklifts in addition to foot traffic.`
 	shipyard "Basic Ships"
-	shipyard "Lionheart Basics"
-	shipyard "Lionheart Advanced"
-	shipyard "Betelgeuse Basics"
 	outfitter "Common Outfits"
 	outfitter "Ammo"
+	outfitter "Deep Sky Basics"
 	outfitter "Deep Sky Advanced"
 	bribe 0.08
 	security 0.8
