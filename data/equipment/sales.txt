@@ -121,6 +121,7 @@ shipyard "Navy Basics"
 
 shipyard "Navy Advanced"
 	"Aletheia"
+	"Zephyrus"
 
 shipyard "Navy Shipyards"
 	"Nomos"
