@@ -199,6 +199,18 @@ shipyard "Luxury Ships"
 	"Star Queen"
 	"Flivver"
 
+shipyard "Exotics"
+	"Flivver"
+	"Headhunter"
+	"Challenger"
+	"Splinter"
+	"Wyvern"
+	"Falcon"
+	"Blackbird"
+	"Star Queen"
+	"Arrow"
+	"Osprey"
+
 shipyard "Quarg T1H"
 	"Wyvern"
 	
