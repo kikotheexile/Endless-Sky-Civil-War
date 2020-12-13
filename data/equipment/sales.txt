@@ -132,6 +132,7 @@ shipyard "Navy Shipyards"
 	"Sentinel Drone"
 	"Thea Drone"
 	"Aletheia"
+	"Zephyrus"
 
 shipyard "Megaparsec Basics"
 	"Quicksilver"
