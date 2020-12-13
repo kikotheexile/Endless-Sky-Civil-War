@@ -2307,10 +2307,7 @@ ship "Achlys"
 			"hull damage" 200
 			"hit force" 600
 	outfits
-		"Energy Blaster" 2
-		"Meteor Missile Launcher" 4
-		"Meteor Missile" 180
-		"Meteor Missile Box" 4
+		"Ranger Missile Launcher" 6
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
@@ -5873,14 +5870,8 @@ ship "Chimera"
 	description "	Many conspiracy theorists wonder why the Quarg would abide by such regulations and laws if they are so powerful."
 
 # Post Civil War Human Ships availible before Invasion
-# These will be "lessons learned from the conflict," and advances in shipbuilding technology spurred on by the civil war
-
-shipyard "Basic Ships"
-	"Combat Clipper"
-	"Narcissus MKIII"
-	"Unionworks Headhunter"
-	"Schooner Refit"
-	
+# These will be "lessons learned from the conflict," and advances
+# in shipbuilding technology spurred on by the civil war
 
 ship "Combat Clipper"
 	sprite "ship/clipper"
