@@ -28,7 +28,7 @@ outfit "Galactic Map"
 	category "Map"
 	cost 10000000
 	thumbnail "outfit/mapfull"
-	"map" 120
+	"map" 300
 	description "The full Galactic Map is considered over priced by virtually everyone, especially as you can map out all the systems by your self for free."
 	description "	This data chip contains complete information on the known galaxy: planets, ports, governments, trade prices, available services, etc. Having this map is considered an unnecessary luxury by some, but an invaluable resource to others."
 
