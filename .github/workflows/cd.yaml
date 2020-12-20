@@ -135,13 +135,12 @@ jobs:
       - cd_ubuntu_x86_64
       - cd_appimage_x86_64
       - cd_windows_win64
-      - cd_macos_x86_64
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       OUTPUT_UBUNTU: endless-sky-x86_64-continuous.tar.gz
       OUTPUT_APPIMAGE: endless-sky-x86_64-continuous.AppImage
       OUTPUT_WINDOWS: EndlessSky-win64-continuous.zip
-      OUTPUT_MACOS: EndlessSky-macOS10.15-continuous.zip
+#      OUTPUT_MACOS: EndlessSky-macOS10.15-continuous.zip
     steps:
       - uses: actions/checkout@v2
       - name: Install github-release
@@ -212,16 +211,15 @@ jobs:
             --replace \
             --name ${{ env.OUTPUT_WINDOWS }} \
             --file ${{ env.OUTPUT_WINDOWS }}
-      - name: Download ${{ env.OUTPUT_MACOS }}
-        uses: actions/download-artifact@v1
-        with:
-          name: ${{ env.OUTPUT_MACOS }}
-          path: ${{ github.workspace }}
-      - name: Add ${{ env.OUTPUT_MACOS }} to release tag
-        run: |
-          github-release upload \
-            --tag continuous \
-            --replace \
-            --name ${{ env.OUTPUT_MACOS }} \
-            --file ${{ env.OUTPUT_MACOS }}
-    
+#      - name: Download ${{ env.OUTPUT_MACOS }}
+#        uses: actions/download-artifact@v1
+#        with:
+#          name: ${{ env.OUTPUT_MACOS }}
+#          path: ${{ github.workspace }}
+#      - name: Add ${{ env.OUTPUT_MACOS }} to release tag
+#        run: |
+#          github-release upload \
+#            --tag continuous \
+#            --replace \
+#            --name ${{ env.OUTPUT_MACOS }} \
+#            --file ${{ env.OUTPUT_MACOS }}   
