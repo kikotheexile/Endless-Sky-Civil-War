@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OUTPUT: endless-sky-x86_64-continuous.tar.gz
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
@@ -42,6 +43,7 @@ jobs:
     env:
       ARCH: x86_64
       OUTPUT: endless-sky-x86_64-continuous.AppImage
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
@@ -69,6 +71,7 @@ jobs:
       DIR_MINGW64: C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32
       DIR_ESLIB: .\dev64
       OUTPUT: EndlessSky-win64-continuous.zip
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     steps:
       - uses: actions/checkout@v2
       - name: Fetch development libraries
@@ -99,6 +102,7 @@ jobs:
     runs-on: macos-latest
     env:
       OUTPUT: EndlessSky-macOS10.15-continuous.zip
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
@@ -141,6 +145,7 @@ jobs:
       OUTPUT_APPIMAGE: endless-sky-x86_64-continuous.AppImage
       OUTPUT_WINDOWS: EndlessSky-win64-continuous.zip
 #      OUTPUT_MACOS: EndlessSky-macOS10.15-continuous.zip
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
     steps:
       - uses: actions/checkout@v2
       - name: Install github-release
