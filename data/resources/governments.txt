@@ -478,6 +478,7 @@ government "Alien (Hostile)"
 
 #Always Hostile
 government "Alpha"
+	color .78 0 .50
 	"crew attack" 1.4
 	"crew defense" 2.2
 	"player reputation" -1000
