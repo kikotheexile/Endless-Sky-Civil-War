@@ -3834,7 +3834,7 @@ system Durax
 			sprite planet/lava2
 			distance 215
 			period 15.5389
-		object "Paragon 8"
+		object "Paragon 16"
 			sprite planet/station1kd
 			distance 357
 			period 33.2479
@@ -4545,10 +4545,10 @@ system "Gamma Cassiopeiae"
 			sprite planet/ganymede
 			distance 303
 			period 12.7598
-		object
-			sprite planet/io-b
-			distance 425
-			period 21.1965
+		object "Paragon 1"
+			sprite planet/station7
+			distance 357
+			period 33.2479
 
 
 system "Gamma Corvi"
@@ -5422,10 +5422,10 @@ system Ipsing
 			sprite planet/desert4
 			distance 409
 			period 20.6969
-		object
-			sprite planet/mercury-b
-			distance 516
-			period 29.3288
+		object "Paragon 4"
+			sprite planet/station6
+			distance 357
+			period 33.2479
 		object
 			sprite planet/ganymede
 			distance 667
@@ -6412,7 +6412,10 @@ system Mebsuta
 			sprite planet/rock3
 			distance 300
 			period 25.612
-
+		object "Paragon 12"
+			sprite planet/station5
+			distance 357
+			period 33.2479
 
 system Men
 	pos -888 361
@@ -8709,10 +8712,10 @@ system Rajak
 			sprite planet/dust3
 			distance 215
 			period 15.5389
-		object
-			sprite planet/ice7-b
-			distance 374
-			period 35.6508
+		object "Paragon 13"
+			sprite planet/station 2
+			distance 357
+			period 33.2479
 
 
 system Rasalhague
