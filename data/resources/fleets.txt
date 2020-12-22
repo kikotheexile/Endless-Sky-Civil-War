@@ -1436,46 +1436,7 @@ fleet "Southern Pirates 3"
 # Navy Pre-War
 # The Navy has effectively unlimited resources and an active shipyard
 
-fleet "Navy Pre-War"
-	government "Republic Navy"
-	names "republic capital"
-	fighters "republic fighter"
-	cargo 0
-	formation "Vee"
-	personality
-		disables plunders heroic
-	variant 2
-		"Arete"
-		"Lance" 4
-		"Thea Drone" 6
-	variant 2
-		"Arete"
-		"Lance" 4
-		"Thea Drone" 6
-		"Nomos"
-		"Thea Drone" 4
-		"Nomos"
-		"Thea Drone" 4
-	variant 10
-		"Narcissus" 5
-	variant 10
-		"Aletheia" 5
-	variant 10
-		"Zephyrus" 1
-		"Thea Drone" 2
-		"Zephyrus" 1
-		"Thea Drone" 2
-		"Zephyrus" 1
-		"Thea Drone" 2
-	variant 1
-		"Achlys" 5
-
-# After the Geminus bombings, remove Arete and Nomos from
-# random fleets, they are being held back. They are now using
-# Syndicate, Lionheart, and Betelgeuse ships.
-# Additional note: This fleet WILL be modified by events
-
-fleet "Navy war"
+fleet "Navy"
 	government "Republic Navy"
 	names "republic capital"
 	fighters "republic fighter"
@@ -1496,21 +1457,6 @@ fleet "Navy war"
 		"Thea Drone" 2
 	variant 1
 		"Achlys" 5
-	variant 10
-		"Vanguard (Particle)"
-		"Protector (Hydragyrum Proton)" 2
-		"Narcissus" 2
-	variant 10
-		"Leviathan" 1
-		"Firebird" 2
-		"Narcissus" 4
-	variant 10
-		"Aerie (AMS)" 1
-		"Lance" 2
-		"Aerie (AMS)" 1
-		"Lance" 2
-		"Aerie (AMS)" 1
-		"Lance" 2
 
 # Navy Surveilance do not use strictly combat ships
 # These fleets have no formation, because they are single-ships
