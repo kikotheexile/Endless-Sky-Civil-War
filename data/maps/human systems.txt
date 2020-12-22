@@ -32,7 +32,7 @@ system Acamar
 	trade Plastic 483
 	fleet "Northstar Shipping 1" 3000
 	fleet "Syndicated Transport 1" 2000
-	fleet "Navy Pre-War" 3600
+	fleet "Navy" 3600
 	fleet "Syndicate 1" 3200
 	belt 1013
 	minables iron 9 3.05965
@@ -454,7 +454,7 @@ system Albaldah
 	trade Medical 801
 	trade Metal 266
 	trade Plastic 343
-	fleet "Navy Pre-War" 600
+	fleet "Navy" 600
 	fleet "Southern Logistics 1" 1000
 	fleet "Southern Pirates 1" 800
 	fleet "Freelance Pirate 1" 1200
@@ -521,7 +521,7 @@ system Albireo
 	trade Medical 844
 	trade Metal 237
 	trade Plastic 387
-	fleet "Navy Pre-War" 800
+	fleet "Navy" 800
 	fleet "Southern Logistics 1" 1200
 	fleet "Southern Pirates 1" 1000
 	fleet "Freelance Pirate 1" 1400
@@ -642,7 +642,7 @@ system Aldebaran
 	fleet "Northstar Shipping 1" 600
 	fleet "Freelance Merchant 1" 600
 	fleet "Lionheart Shipping" 1000
-	fleet "Navy Pre-War" 800
+	fleet "Navy" 800
 	belt 1296
 	object
 		sprite star/g5
@@ -850,7 +850,7 @@ system Algieba
 	trade Medical 621
 	trade Metal 251
 	trade Plastic 476
-	fleet "Navy Pre-War" 1400
+	fleet "Navy" 1400
 	fleet "Northstar Shipping 1" 400
 	fleet "Freelance Merchant 1" 600
 	belt 1070
@@ -975,10 +975,10 @@ system Algorel
 	trade Medical 758
 	trade Metal 490
 	trade Plastic 427
-	fleet "Navy Pre-War" 600
+	fleet "Navy" 600
 	fleet "Southern Logistics 1" 900
 	fleet "Militia" 2000
-	fleet "Navy Pre-War" 3000
+	fleet "Navy" 3000
 	fleet "Southern Pirates 1" 1600
 	fleet "Freelance Pirate 1" 5000
 	belt 1993
@@ -1035,7 +1035,7 @@ system Alheka
 	trade Plastic 477
 	fleet "Northstar Shipping 1" 1000
 	fleet "Freelance Merchant 1" 3000
-	fleet "Navy Pre-War" 1200
+	fleet "Navy" 1200
 	fleet "Northern Union" 2000
 	fleet "Freelance Miners" 3000
 	belt 1380
@@ -1084,7 +1084,7 @@ system Alhena
 	trade Plastic 415
 	fleet "Northstar Shipping 1" 500
 	fleet "Freelance Merchant 1" 700
-	fleet "Navy Pre-War" 900
+	fleet "Navy" 900
 	belt 1078
 	minables iron 2 8.5773
 	minables lead 1 14.4573
@@ -1146,7 +1146,7 @@ system Alioth
 	trade Medical 791
 	trade Metal 537
 	trade Plastic 458
-	fleet "Navy Pre-War" 400
+	fleet "Navy" 400
 	fleet "Southern Logistics 1" 600
 	fleet "Militia" 900
 	fleet "Southern Pirates 1" 1200
@@ -1259,7 +1259,7 @@ system Almaaz
 	trade Plastic 308
 	fleet "Northstar Shipping 1" 500
 	fleet "Northern Union" 600
-	fleet "Navy Pre-War" 7000
+	fleet "Navy" 7000
 	belt 1873
 	minables iron 7 7.81811
 	minables silicon 6 9.57028
@@ -1417,7 +1417,7 @@ system Alnasl
 	trade Medical 740
 	trade Metal 460
 	trade Plastic 459
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 2000
 	fleet "Militia" 3000
 	fleet "Southern Pirates 1" 4000
@@ -1472,7 +1472,7 @@ system Alnilam
 	trade Plastic 334
 	fleet "Northstar Shipping 1" 500
 	fleet "Northern Union" 700
-	fleet "Navy Pre-War" 10000
+	fleet "Navy" 10000
 	belt 1099
 	minables aluminum 13 2.6002
 	minables iron 4 2.28631
@@ -1545,7 +1545,7 @@ system Alnitak
 	trade Plastic 452
 	fleet "Northstar Shipping 1" 3000
 	fleet "Northern Union" 5000
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	belt 1907
 	minables "engine part" 11 8.00281
 	minables "reactor part" 12 8.00281
@@ -1662,7 +1662,7 @@ system "Alpha Arae"
 	trade Medical 723
 	trade Metal 395
 	trade Plastic 314
-	fleet "Navy Pre-War" 1800
+	fleet "Navy" 1800
 	fleet "Southern Logistics 1" 6000
 	fleet "Militia" 4000
 	fleet "Southern Pirates 1" 4000
@@ -1725,7 +1725,7 @@ system "Alpha Centauri"
 	trade Plastic 253
 	fleet "Northstar Shipping 1" 800
 	fleet "Freelance Merchant 1" 1000
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Caravan" 700
 	belt 1116
 	minables copper 1 5.07974
@@ -1834,7 +1834,7 @@ system Alphard
 	fleet "Northstar Shipping 1" 500
 	fleet "Freelance Merchant 1" 900
 	fleet "Lionheart Shipping" 2000
-	fleet "Navy Pre-War" 2400
+	fleet "Navy" 2400
 	fleet "Freelance Miners" 2000
 	fleet "Caravan" 5000
 	belt 1101
@@ -1889,7 +1889,7 @@ system Alphecca
 	trade Medical 816
 	trade Metal 543
 	trade Plastic 498
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Southern Logistics 1" 3500
 	fleet "Southern Pirates 1" 3000
 	fleet "Militia" 5000
@@ -2003,7 +2003,7 @@ system Altair
 	fleet "Northstar Shipping 1" 600
 	fleet "Northstar Shipping 1" 1000
 	fleet "Freelance Merchant 1" 3000
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Syndicate 1" 9000
 	fleet "Caravan" 5500
 	belt 1830
@@ -2220,7 +2220,7 @@ system Arcturus
 	trade Medical 684
 	trade Metal 416
 	trade Plastic 461
-	fleet "Navy Pre-War" 700
+	fleet "Navy" 700
 	fleet "Southern Logistics 1" 3000
 	fleet "Militia" 10000
 	fleet "Freelance Miners" 5000
@@ -2328,7 +2328,7 @@ system Ascella
 	trade Medical 827
 	trade Metal 450
 	trade Plastic 295
-	fleet "Navy Pre-War" 600
+	fleet "Navy" 600
 	fleet "Southern Logistics 1" 1000
 	fleet "Militia" 4000
 	fleet "Southern Pirates 1" 3000
@@ -2667,7 +2667,7 @@ system Betelgeuse
 	trade Metal 384
 	trade Plastic 470
 	fleet "Northstar Shipping 1" 2000
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Northern Union" 4000
 	fleet "Freelance Miners" 3000
 	belt 1641
@@ -2734,7 +2734,7 @@ system Boral
 	trade Medical 893
 	trade Metal 511
 	trade Plastic 535
-	fleet "Navy Pre-War" 3000
+	fleet "Navy" 3000
 	fleet "Southern Pirates 1" 1500
 	fleet "Militia" 10000
 	fleet "Freelance Miners" 2000
@@ -2855,7 +2855,7 @@ system Canopus
 	trade Plastic 485
 	fleet "Northstar Shipping 1" 900
 	fleet "Freelance Merchant 1" 700
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	belt 1530
 	object
 		sprite star/m0
@@ -2898,7 +2898,7 @@ system Capella
 	fleet "Northstar Shipping 1" 500
 	fleet "Freelance Merchant 1" 800
 	fleet "Lionheart Shipping" 700
-	fleet "Navy Pre-War" 800
+	fleet "Navy" 800
 	fleet "Freelance Miners" 2000
 	belt 1722
 	minables iron 40 2.63132
@@ -3020,7 +3020,7 @@ system Cardax
 	fleet "Freelance Merchant 1" 3000
 	fleet "Northern Union" 3000
 	fleet "Cartel" 3000
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	belt 1228
 	minables aluminum 4 8.53341
 	minables lead 1 7.70182
@@ -3075,7 +3075,7 @@ system Castor
 	fleet "Northstar Shipping 1" 600
 	fleet "Freelance Merchant 1" 800
 	fleet "Lionheart Shipping" 800
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	belt 1675
 	minables aluminum 1 7.59239
 	minables lead 1 12.7895
@@ -3154,7 +3154,7 @@ system Cebalrai
 	trade Medical 692
 	trade Metal 514
 	trade Plastic 351
-	fleet "Navy Pre-War" 600
+	fleet "Navy" 600
 	fleet "Southern Logistics 1" 2000
 	fleet "Militia" 4000
 	fleet "Southern Pirates 1" 4000
@@ -3208,10 +3208,10 @@ system "Cor Caroli"
 	trade Medical 806
 	trade Metal 517
 	trade Plastic 485
-	fleet "Navy Pre-War" 700
+	fleet "Navy" 700
 	fleet "Southern Logistics 1" 1300
 	fleet "Southern Pirates 1" 2000
-	fleet "Navy Pre-War" 10000
+	fleet "Navy" 10000
 	fleet "Militia" 7000
 	fleet "Freelance Miners" 3000
 	belt 1474
@@ -3261,7 +3261,7 @@ system Dabih
 	trade Medical 898
 	trade Metal 264
 	trade Plastic 312
-	fleet "Navy Pre-War" 500
+	fleet "Navy" 500
 	fleet "Southern Logistics 1" 800
 	fleet "Caravan" 4000
 	fleet "Militia" 6000
@@ -3433,7 +3433,7 @@ system "Delta Sagittarii"
 	trade Medical 794
 	trade Metal 366
 	trade Plastic 369
-	fleet "Navy Pre-War" 900
+	fleet "Navy" 900
 	fleet "Southern Logistics 1" 3000
 	fleet "Southern Pirates 1" 3000
 	fleet "Militia" 7000
@@ -3492,11 +3492,11 @@ system "Delta Velorum"
 	trade Medical 717
 	trade Metal 547
 	trade Plastic 481
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 3000
 	fleet "Southern Pirates 1" 2000
 	fleet "Freelance Pirate 1" 5000
-	fleet "Navy Pre-War" 12000
+	fleet "Navy" 12000
 	fleet "Freelance Miners" 2000
 	belt 1221
 	minables lead 7 4.67725
@@ -3593,7 +3593,7 @@ system Denebola
 	trade Plastic 253
 	fleet "Northstar Shipping 1" 800
 	fleet "Freelance Merchant 1" 2000
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	belt 1050
 	minables copper 3 8.29669
 	minables lead 3 11.4823
@@ -3872,7 +3872,7 @@ system Eber
 	trade Medical 811
 	trade Metal 413
 	trade Plastic 408
-	fleet "Navy Pre-War" 1600
+	fleet "Navy" 1600
 	fleet "Southern Logistics 1" 2500
 	fleet "Militia" 4000
 	fleet "Southern Pirates 1" 2000
@@ -3934,7 +3934,7 @@ system Elnath
 	fleet "Northstar Shipping 1" 4000
 	fleet "Freelance Merchant 1" 9000
 	fleet "Lionheart Shipping" 8000
-	fleet "Navy Pre-War" 7000
+	fleet "Navy" 7000
 	fleet "Northern Union" 18000
 	belt 1462
 	minables iron 2 7.79782
@@ -3988,7 +3988,7 @@ system Eltanin
 	trade Medical 859
 	trade Metal 284
 	trade Plastic 335
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 3000
 	fleet "Southern Pirates 1" 4000
 	belt 1859
@@ -4236,7 +4236,7 @@ system Eteron
 	trade Plastic 380
 	fleet "Northstar Shipping 1" 1000
 	fleet "Freelance Merchant 1" 1500
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Northern Union" 1000
 	fleet "Freelance Miners" 2000
 	belt 1479
@@ -4294,7 +4294,7 @@ system Fala
 	trade Plastic 441
 	fleet "Northstar Shipping 1" 1600
 	fleet "Freelance Merchant 1" 3000
-	fleet "Navy Pre-War" 4000
+	fleet "Navy" 4000
 	fleet "Northern Union" 4000
 	fleet "Freelance Miners" 2000
 	belt 1264
@@ -4346,7 +4346,7 @@ system Fingol
 	trade Metal 416
 	trade Plastic 321
 	fleet "Northstar Shipping 1" 1200
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Northern Union" 2000
 	fleet "Freelance Miners" 3000
 	belt 1976
@@ -4453,11 +4453,11 @@ system Gacrux
 	trade Medical 848
 	trade Metal 542
 	trade Plastic 491
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Southern Logistics 1" 5000
 	fleet "Southern Pirates 1" 1000
 	fleet "Freelance Pirate 1" 3000
-	fleet "Navy Pre-War" 15000
+	fleet "Navy" 15000
 	belt 1188
 	minables silicon 29 3.91092
 	object
@@ -4689,7 +4689,7 @@ system Girtab
 	trade Medical 716
 	trade Metal 366
 	trade Plastic 301
-	fleet "Navy Pre-War" 700
+	fleet "Navy" 700
 	fleet "Southern Logistics 1" 1700
 	fleet "Southern Pirates 1" 2000
 	fleet "Freelance Pirate 1" 3000
@@ -4862,7 +4862,7 @@ system Graffias
 	trade Medical 824
 	trade Metal 404
 	trade Plastic 426
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 4000
 	fleet "Southern Pirates 1" 5000
 	fleet "Freelance Miners" 2000
@@ -5133,7 +5133,7 @@ system Hatysa
 	trade Plastic 330
 	fleet "Northstar Shipping 1" 600
 	fleet "Northern Union" 1000
-	fleet "Navy Pre-War" 15000
+	fleet "Navy" 15000
 	belt 1163
 	minables copper 27 2.2074
 	minables iron 4 2.54657
@@ -5236,7 +5236,7 @@ system Hintar
 	trade Medical 744
 	trade Metal 575
 	trade Plastic 421
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Militia" 5000
 	fleet "Southern Pirates 1" 2000
 	belt 1725
@@ -5291,7 +5291,7 @@ system Holeb
 	trade Medical 692
 	trade Metal 496
 	trade Plastic 437
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 3000
 	fleet "Southern Pirates 1" 5000
 	fleet "Militia" 5000
@@ -5382,7 +5382,7 @@ system Ipsing
 	trade Medical 697
 	trade Metal 388
 	trade Plastic 416
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Southern Pirates 1" 3000
 	belt 1107
 	object
@@ -5564,7 +5564,7 @@ system "Kaus Australis"
 	trade Medical 849
 	trade Metal 270
 	trade Plastic 366
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Southern Logistics 1" 3000
 	fleet "Caravan" 10000
 	fleet "Southern Pirates 1" 4000
@@ -5609,7 +5609,7 @@ system "Kaus Borealis"
 	trade Medical 741
 	trade Metal 435
 	trade Plastic 350
-	fleet "Navy Pre-War" 600
+	fleet "Navy" 600
 	fleet "Southern Logistics 1" 3000
 	fleet "Militia" 8000
 	fleet "Southern Pirates 1" 5000
@@ -5837,7 +5837,7 @@ system Kugel
 	trade Metal 335
 	trade Plastic 421
 	fleet "Syndicated Transport 1" 4000
-	fleet "Navy Pre-War" 6000
+	fleet "Navy" 6000
 	fleet "Syndicate 1" 8000
 	fleet "Freelance Pirate 1" 4000
 	fleet "Cartel" 4000
@@ -5906,7 +5906,7 @@ system Kursa
 	fleet "Freelance Merchant 1" 3000
 	fleet "Lionheart Shipping" 3000
 	fleet "Northern Union" 8000
-	fleet "Navy Pre-War" 5000
+	fleet "Navy" 5000
 	belt 1624
 	object
 		sprite star/k5
@@ -6012,7 +6012,7 @@ system Limen
 	trade Medical 802
 	trade Metal 497
 	trade Plastic 378
-	fleet "Navy Pre-War" 4000
+	fleet "Navy" 4000
 	fleet "Southern Pirates 1" 1000
 	fleet "Freelance Pirate 1" 2000
 	fleet "Freelance Miners" 1000
@@ -6062,7 +6062,7 @@ system Lolami
 	trade Metal 439
 	trade Plastic 316
 	fleet "Northstar Shipping 1" 2000
-	fleet "Navy Pre-War" 5000
+	fleet "Navy" 5000
 	fleet "Northern Union" 4000
 	fleet "Freelance Miners" 3000
 	belt 1072
@@ -6119,7 +6119,7 @@ system Lurata
 	trade Medical 815
 	trade Metal 327
 	trade Plastic 358
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 3000
 	fleet "Militia" 9000
 	fleet "Freelance Pirate 1" 4000
@@ -6363,7 +6363,7 @@ system Mebsuta
 	fleet "Northstar Shipping 1" 3000
 	fleet "Freelance Merchant 1" 5000
 	fleet "Northern Union" 8000
-	fleet "Navy Pre-War" 12000
+	fleet "Navy" 12000
 	belt 1740
 	minables iron 2 5.38543
 	minables titanium 1 4.59937
@@ -6491,7 +6491,7 @@ system Menkalinan
 	trade Plastic 472
 	fleet "Northstar Shipping 1" 500
 	fleet "Freelance Merchant 1" 800
-	fleet "Navy Pre-War" 700
+	fleet "Navy" 700
 	belt 1424
 	minables lead 8 5.07694
 	minables neodymium 8 4.05165
@@ -6604,9 +6604,9 @@ system Menkent
 	trade Medical 553
 	trade Metal 444
 	trade Plastic 412
-	fleet "Navy Pre-War" 500
+	fleet "Navy" 500
 	fleet "Southern Logistics 1" 1500
-	fleet "Navy Pre-War" 3000
+	fleet "Navy" 3000
 	fleet "Freelance Miners" 2000
 	belt 1728
 	minables aluminum 4 1.98441
@@ -6669,7 +6669,7 @@ system Merak
 	trade Medical 547
 	trade Metal 457
 	trade Plastic 291
-	fleet "Navy Pre-War" 600
+	fleet "Navy" 600
 	fleet "Northstar Shipping 1" 800
 	fleet "Southern Logistics 1" 2000
 	fleet "Freelance Merchant 1" 1500
@@ -6728,7 +6728,7 @@ system Miaplacidus
 	fleet "Northstar Shipping 1" 600
 	fleet "Freelance Merchant 1" 900
 	fleet "Lionheart Shipping" 900
-	fleet "Navy Pre-War" 1500
+	fleet "Navy" 1500
 	belt 1236
 	minables iron 19 4.58238
 	object
@@ -6947,7 +6947,7 @@ system Mintaka
 	trade Metal 432
 	trade Plastic 370
 	fleet "Northern Union" 2000
-	fleet "Navy Pre-War" 5000
+	fleet "Navy" 5000
 	fleet "Northstar Shipping 1" 4000
 	fleet "Freelance Miners" 2000
 	belt 1753
@@ -7114,7 +7114,7 @@ system Mirzam
 	trade Plastic 463
 	fleet "Northstar Shipping 1" 2000
 	fleet "Freelance Merchant 1" 2000
-	fleet "Navy Pre-War" 3000
+	fleet "Navy" 3000
 	fleet "Freelance Pirate 1" 5000
 	fleet "Northern Union" 8000
 	belt 1025
@@ -7168,7 +7168,7 @@ system Mizar
 	trade Medical 715
 	trade Metal 442
 	trade Plastic 486
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 3500
 	fleet "Southern Pirates 1" 6000
 	belt 1876
@@ -7279,11 +7279,11 @@ system Mora
 	trade Medical 731
 	trade Metal 445
 	trade Plastic 428
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Southern Logistics 1" 4000
 	fleet "Southern Pirates 1" 2000
 	fleet "Freelance Pirate 1" 3000
-	fleet "Navy Pre-War" 20000
+	fleet "Navy" 20000
 	fleet "Freelance Miners" 2000
 	belt 1176
 	minables iron 25 1.82412
@@ -7334,7 +7334,7 @@ system Muhlifain
 	trade Medical 825
 	trade Metal 525
 	trade Plastic 441
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 3500
 	fleet "Southern Pirates 1" 6000
 	belt 1265
@@ -7379,10 +7379,10 @@ system Muphrid
 	trade Medical 510
 	trade Metal 478
 	trade Plastic 455
-	fleet "Navy Pre-War" 800
+	fleet "Navy" 800
 	fleet "Southern Logistics 1" 3500
 	fleet "Southern Pirates 1" 6000
-	fleet "Navy Pre-War" 5000
+	fleet "Navy" 5000
 	belt 1759
 	minables tungsten 3 4.9859
 	object
@@ -7555,7 +7555,7 @@ system Naper
 	trade Medical 781
 	trade Metal 414
 	trade Plastic 326
-	fleet "Navy Pre-War" 1500
+	fleet "Navy" 1500
 	fleet "Militia" 5000
 	fleet "Southern Pirates 1" 1000
 	fleet "Freelance Miners" 3000
@@ -7617,7 +7617,7 @@ system Nihal
 	fleet "Freelance Merchant 1" 1200
 	fleet "Lionheart Shipping" 1800
 	fleet "Northern Union" 5000
-	fleet "Navy Pre-War" 4000
+	fleet "Navy" 4000
 	fleet "Freelance Miners" 2000
 	belt 1329
 	minables silicon 58 4.73471
@@ -7712,7 +7712,7 @@ system Nocte
 	trade Metal 285
 	trade Plastic 363
 	fleet "Northstar Shipping 1" 1500
-	fleet "Navy Pre-War" 3000
+	fleet "Navy" 3000
 	fleet "Northern Union" 2500
 	fleet "Freelance Miners" 1600
 	belt 1304
@@ -7773,7 +7773,7 @@ system Nunki
 	trade Plastic 321
 	fleet "Southern Pirates 1" 1200
 	fleet "Freelance Pirate 1" 2000
-	fleet "Navy Pre-War" 1600
+	fleet "Navy" 1600
 	fleet "Militia" 2000
 	belt 1930
 	minables iron 8 3.70445
@@ -7952,7 +7952,7 @@ system Orvala
 	trade Medical 721
 	trade Metal 475
 	trade Plastic 327
-	fleet "Navy Pre-War" 3000
+	fleet "Navy" 3000
 	fleet "Southern Pirates 1" 1000
 	fleet "Freelance Pirate 1" 3000
 	belt 1431
@@ -8015,7 +8015,7 @@ system Peacock
 	trade Medical 804
 	trade Metal 338
 	trade Plastic 312
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Southern Logistics 1" 5000
 	fleet "Militia" 8000
 	fleet "Southern Pirates 1" 4000
@@ -8147,7 +8147,7 @@ system Phact
 	trade Plastic 460
 	fleet "Northstar Shipping 1" 2000
 	fleet "Freelance Merchant 1" 2000
-	fleet "Navy Pre-War" 4000
+	fleet "Navy" 4000
 	fleet "Northern Union" 5000
 	fleet "Freelance Miners" 5000
 	belt 1704
@@ -8211,9 +8211,9 @@ system Phecda
 	trade Plastic 326
 	fleet "Northstar Shipping 1" 700
 	fleet "Freelance Merchant 1" 1000
-	fleet "Navy Pre-War" 700
+	fleet "Navy" 700
 	fleet "Southern Logistics 1" 1000
-	fleet "Navy Pre-War" 5000
+	fleet "Navy" 5000
 	fleet "Freelance Miners" 2000
 	belt 1375
 	minables lead 41 5.68365
@@ -8314,7 +8314,7 @@ system Phurad
 	trade Plastic 476
 	fleet "Northstar Shipping 1" 800
 	fleet "Freelance Merchant 1" 1500
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Northern Union" 9000
 	belt 1881
 	minables aluminum 22 18.9577
@@ -8415,7 +8415,7 @@ system Pollux
 	fleet "Northstar Shipping 1" 500
 	fleet "Freelance Merchant 1" 800
 	fleet "Lionheart Shipping" 600
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Caravan" 5000
 	belt 1161
 	object
@@ -8461,9 +8461,9 @@ system Porrima
 	trade Plastic 381
 	fleet "Northstar Shipping 1" 2000
 	fleet "Freelance Merchant 1" 6000
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 3000
-	fleet "Navy Pre-War" 8000
+	fleet "Navy" 8000
 	fleet "Southern Pirates 1" 6000
 	belt 1636
 	minables aluminum 4 6.34101
@@ -8576,7 +8576,7 @@ system Procyon
 	fleet "Northstar Shipping 1" 700
 	fleet "Freelance Merchant 1" 1200
 	fleet "Lionheart Shipping" 900
-	fleet "Navy Pre-War" 1500
+	fleet "Navy" 1500
 	fleet "Caravan" 5000
 	belt 1763
 	minables iron 1 5.11549
@@ -8733,7 +8733,7 @@ system Rasalhague
 	trade Medical 782
 	trade Metal 516
 	trade Plastic 332
-	fleet "Navy Pre-War" 1500
+	fleet "Navy" 1500
 	fleet "Southern Logistics 1" 2000
 	fleet "Southern Pirates 1" 4000
 	fleet "Freelance Pirate 1" 8000
@@ -8789,7 +8789,7 @@ system Rastaban
 	trade Medical 728
 	trade Metal 412
 	trade Plastic 314
-	fleet "Navy Pre-War" 800
+	fleet "Navy" 800
 	fleet "Southern Logistics 1" 1600
 	fleet "Southern Pirates 1" 3000
 	fleet "Freelance Pirate 1" 5000
@@ -8901,10 +8901,10 @@ system Regulus
 	trade Medical 537
 	trade Metal 406
 	trade Plastic 318
-	fleet "Navy Pre-War" 6000
+	fleet "Navy" 6000
 	fleet "Southern Pirates 1" 2000
 	fleet "Freelance Pirate 1" 8000
-	fleet "Navy Pre-War" 10000
+	fleet "Navy" 10000
 	fleet "Freelance Miners" 3000
 	belt 1605
 	minables copper 8 4.57124
@@ -8970,7 +8970,7 @@ system Rigel
 	trade Plastic 472
 	fleet "Northstar Shipping 1" 2000
 	fleet "Freelance Merchant 1" 4000
-	fleet "Navy Pre-War" 3000
+	fleet "Navy" 3000
 	fleet "Northern Union" 5000
 	fleet "Freelance Miners" 2000
 	belt 1782
@@ -9100,7 +9100,7 @@ system Rutilicus
 	trade Medical 590
 	trade Metal 468
 	trade Plastic 415
-	fleet "Navy Pre-War" 600
+	fleet "Navy" 600
 	fleet "Southern Logistics 1" 2000
 	fleet "Militia" 6000
 	fleet "Freelance Miners" 3000
@@ -9316,7 +9316,7 @@ system Sadr
 	trade Medical 856
 	trade Metal 208
 	trade Plastic 458
-	fleet "Navy Pre-War" 4000
+	fleet "Navy" 4000
 	fleet "Southern Pirates 1" 5000
 	fleet "Freelance Pirate 1" 9000
 	fleet "Freelance Miners" 2000
@@ -9389,7 +9389,7 @@ system Saiph
 	fleet "Northstar Shipping 1" 1200
 	fleet "Freelance Merchant 1" 2000
 	fleet "Northern Union" 3000
-	fleet "Navy Pre-War" 4000
+	fleet "Navy" 4000
 	belt 1690
 	object
 		sprite star/k5
@@ -9479,7 +9479,7 @@ system Sarin
 	trade Medical 824
 	trade Metal 531
 	trade Plastic 349
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 3000
 	fleet "Southern Pirates 1" 2000
 	fleet "Freelance Pirate 1" 6000
@@ -9648,7 +9648,7 @@ system Seginus
 	trade Medical 776
 	trade Metal 532
 	trade Plastic 503
-	fleet "Navy Pre-War" 900
+	fleet "Navy" 900
 	fleet "Southern Logistics 1" 2000
 	fleet "Militia" 3000
 	fleet "Southern Pirates 1" 5000
@@ -9827,7 +9827,7 @@ system Sirius
 	fleet "Northstar Shipping 1" 500
 	fleet "Freelance Merchant 1" 700
 	fleet "Lionheart Shipping" 800
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Caravan" 5000
 	belt 1407
 	minables aluminum 2 14.6138
@@ -9887,7 +9887,7 @@ system Sol
 	fleet "Northstar Shipping 1" 300
 	fleet "Freelance Merchant 1" 500
 	fleet "Lionheart Shipping" 800
-	fleet "Navy Pre-War" 600
+	fleet "Navy" 600
 	fleet "Syndicated Transport 1" 1000
 	fleet "Northstar Shipping 1" 2000
 	fleet "Caravan" 5000
@@ -9957,7 +9957,7 @@ system Sospi
 	fleet "Northstar Shipping 1" 1500
 	fleet "Freelance Merchant 1" 3000
 	fleet "Northern Union" 2000
-	fleet "Navy Pre-War" 5000
+	fleet "Navy" 5000
 	fleet "Freelance Miners" 5000
 	belt 1715
 	minables neodymium 1 4.20171
@@ -10123,7 +10123,7 @@ system Sumar
 	trade Plastic 408
 	fleet "Northstar Shipping 1" 2000
 	fleet "Northern Union" 6000
-	fleet "Navy Pre-War" 30000
+	fleet "Navy" 30000
 	belt 1778
 	object
 		sprite star/f0
@@ -10180,7 +10180,7 @@ system Tais
 	trade Medical 856
 	trade Metal 362
 	trade Plastic 339
-	fleet "Navy Pre-War" 1500
+	fleet "Navy" 1500
 	fleet "Southern Logistics 1" 4000
 	fleet "Militia" 9000
 	fleet "Caravan" 15000
@@ -10235,7 +10235,7 @@ system Talita
 	fleet "Northstar Shipping 1" 600
 	fleet "Freelance Merchant 1" 900
 	fleet "Lionheart Shipping" 800
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Freelance Miners" 3000
 	fleet "Caravan" 5000
 	belt 1403
@@ -10294,7 +10294,7 @@ system "Tania Australis"
 	trade Plastic 390
 	fleet "Northstar Shipping 1" 1000
 	fleet "Freelance Merchant 1" 2000
-	fleet "Navy Pre-War" 3000
+	fleet "Navy" 3000
 	fleet "Northern Union" 9000
 	belt 1738
 	minables aluminum 5 7.2906
@@ -10360,7 +10360,7 @@ system Tarazed
 	trade Medical 891
 	trade Metal 276
 	trade Plastic 315
-	fleet "Navy Pre-War" 500
+	fleet "Navy" 500
 	fleet "Southern Logistics 1" 1200
 	fleet "Caravan" 10000
 	fleet "Freelance Pirate 1" 8000
@@ -10420,7 +10420,7 @@ system Tejat
 	fleet "Northstar Shipping 1" 700
 	fleet "Freelance Merchant 1" 1500
 	fleet "Lionheart Shipping" 1200
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	belt 1447
 	minables aluminum 2 6.59341
 	minables iron 9 6.73101
@@ -10532,7 +10532,7 @@ system Tortor
 	trade Metal 493
 	trade Plastic 431
 	fleet "Northern Union" 1000
-	fleet "Navy Pre-War" 6000
+	fleet "Navy" 6000
 	fleet "Northstar Shipping 1" 200
 	belt 1243
 	minables iron 9 4.67607
@@ -10595,7 +10595,7 @@ system Turais
 	trade Medical 781
 	trade Metal 559
 	trade Plastic 473
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	fleet "Southern Logistics 1" 6000
 	fleet "Southern Pirates 1" 3000
 	fleet "Freelance Pirate 1" 7000
@@ -10691,7 +10691,7 @@ system Umbral
 	trade Medical 921
 	trade Metal 334
 	trade Plastic 366
-	fleet "Navy Pre-War" 4000
+	fleet "Navy" 4000
 	fleet "Freelance Pirate 1" 6000
 	belt 1345
 	minables copper 1 7.12297
@@ -10870,7 +10870,7 @@ system Vega
 	trade Plastic 315
 	fleet "Northstar Shipping 1" 800
 	fleet "Freelance Merchant 1" 3000
-	fleet "Navy Pre-War" 1600
+	fleet "Navy" 1600
 	fleet "Freelance Miners" 5000
 	belt 1744
 	minables copper 8 8.28628
@@ -10925,7 +10925,7 @@ system Vindemiatrix
 	trade Medical 824
 	trade Metal 535
 	trade Plastic 408
-	fleet "Navy Pre-War" 600
+	fleet "Navy" 600
 	fleet "Southern Logistics 1" 3000
 	fleet "Southern Pirates 1" 2000
 	fleet "Freelance Pirate 1" 4000
@@ -10974,7 +10974,7 @@ system Volax
 	fleet "Northstar Shipping 1" 1500
 	fleet "Freelance Merchant 1" 3000
 	fleet "Northern Union" 3000
-	fleet "Navy Pre-War" 5000
+	fleet "Navy" 5000
 	belt 1424
 	object
 		sprite star/f5
@@ -11024,7 +11024,7 @@ system Wazn
 	fleet "Northstar Shipping 1" 700
 	fleet "Freelance Merchant 1" 1500
 	fleet "Lionheart Shipping" 1800
-	fleet "Navy Pre-War" 2000
+	fleet "Navy" 2000
 	belt 1414
 	minables iron 2 4.91227
 	minables silicon 4 2.82661
@@ -11081,7 +11081,7 @@ system Wei
 	trade Medical 731
 	trade Metal 516
 	trade Plastic 486
-	fleet "Navy Pre-War" 600
+	fleet "Navy" 600
 	fleet "Southern Logistics 1" 2000
 	fleet "Southern Pirates 1" 4000
 	fleet "Militia" 3000
@@ -11382,7 +11382,7 @@ system "Zeta Aquilae"
 	trade Medical 790
 	trade Metal 510
 	trade Plastic 361
-	fleet "Navy Pre-War" 1000
+	fleet "Navy" 1000
 	fleet "Southern Logistics 1" 3000
 	fleet "Southern Pirates 1" 2000
 	fleet "Freelance Pirate 1" 5000
@@ -11509,7 +11509,7 @@ system Zosma
 	fleet "Lionheart Shipping" 4000
 	fleet "Deep Security 1" 2000
 	fleet "Caravan" 8000
-	fleet "Navy Pre-War" 4000
+	fleet "Navy" 4000
 	fleet "Northern Union" 9000
 	belt 1436
 	minables iron 4 5.44731
