@@ -246,485 +246,485 @@ event "normal fleets"
 			"Vanguard (Ion)"
 
 	fleet "Northstar Shipping"
-		variant 15
+		add variant 15
 			"Freighter" 3
 			"Vanguard (Particle)"
-		variant 3
+		add variant 3
 			"Star Barge" 9
 			"Protector (Laser)"
-		variant 4
+		add variant 4
 			"Heavy Shuttle (Armed)" 7
 			"Beserker (Missile)" 4
-		variant 6
+		add variant 6
 			"Star Queen" 3
 			"Beserker (Missile)" 6
-		variant 5
+		add variant 5
 			"Star Queen" 3
 			"Endeavor" 4
-		variant 1
+		add variant 1
 			"Bounder" 5
 			"Beserker (Missile)" 4
-		variant 2
+		add variant 2
 			"Mason (Exotic)" 3
 			"Firebird (Plasma)"
-		variant 1
+		add variant 1
 			"Mason" 3
 			"Firebird (Plasma)"
-		variant 8
+		add variant 8
 			"Bulk Freighter"
 			"Arrow" 2
 			"Leviathan (Brawler)" 2
-		variant 6
+		add variant 6
 			"Challenger (Missile)" 4
 			"Challenger (AMS) 3
 
 	fleet "Syndicated Transport 2"
-		variant 15
+		add variant 15
 			"Star Barge (Armed)" 7
-		variant 4
+		add variant 4
 			"Freighter (Proton)" 7
-		variant 6
+		add variant 6
 			"Bulk Freighter (Proton)"
 			"Freighter (Proton)" 3
 			"Star Barge (Armed)" 3
-		variant 5
+		add variant 5
 			"Bounder (Luxury)" 7
 
 	fleet "Southern Logistics"
-		variant 15
+		add variant 15
 			"Hauler (Brawler)" 3
 			"Falcon (Plasma)" 2
-		variant 4
+		add variant 4
 			"Hauler (Prepared)" 3
 			"Falcon (Plasma)" 2
-		variant 6
+		add variant 6
 			"Clipper (Speed)" 3
 			"Osprey (Ion)" 2
 			"Blackbird (Luxury Proton)" 2
-		variant 15
+		add variant 15
 			"Freighter" 3
 			"Hauler (prepared)" 2
 			"Falcon (Generalist)" 2
-		variant 4
+		add variant 4
 			"Hauler II (Bus)"
 			"Hauler II (Cargo)"
 			"Hauler II (AMS)"
 			"Blackbird (Luxury Proton)" 2
-		variant 6
+		add variant 6
 			"Hauler III (Brawler)"
 			"Hauler II (AMS)" 2
 			"Hawk (Plasma)" 2
 			"Hawk (Ion)" 2
-		variant 15
+		add variant 15
 			"Hauler III (Cargo)" 7
 			"Hawk (Plasma)" 2
 			"Hawk (Ion)" 2
-		variant 4
+		add variant 4
 			"Argosy (Plasmablaster)" 5
-		variant 6
+		add variant 6
 			"Argosy (Proton)" 3
 			"Clipper (Heavy)" 2
-		variant 5
+		add variant 5
 			"Bastion (Heavy)" 3
 			"Hauler III (Brawler)" 2
 			"Hauler III (AMS)" 2
 
 	fleet "Freelance Pirates"
-		variant 5
+		add variant 5
 			"Heavy Shuttle"
-		variant 8
+		add variant 8
 			"Sparrow"
-		variant 4
+		add variant 4
 			"Star Barge"
-		variant 10
+		add variant 10
 			"Hawk"
-		variant 3
+		add variant 3
 			"Blackbird"
-		variant 6
+		add variant 6
 			"Osprey"
-		variant 8
+		add variant 8
 			"Falcon"
-		variant 10
+		add variant 10
 			"Clipper"
-		variant 18
+		add variant 18
 			"Fury"
-		variant 8
+		add variant 8
 			"Argosy"
-		variant 9
+		add variant 9
 			"Hauler"
-		variant 10
+		add variant 10
 			"Hauler II"
-		variant 6
+		add variant 6
 			"Hauler III"
-		variant 12
+		add variant 12
 			"Bastion"
-		variant 13
+		add variant 13
 			"Flivver"
-		variant 16
+		add variant 16
 			"Headhunter"
-		variant 10
+		add variant 10
 			"Raven"
-		variant 11
+		add variant 11
 			"Aerie"
 			"Lance" 2
-		variant 9
+		add variant 9
 			"Challenger"
-		variant 19
+		add variant 19
 			"Berserker"
-		variant 15
+		add variant 15
 			"Firebird"
-		variant 12
+		add variant 12
 			"Leviathan"
-		variant 12
+		add variant 12
 			"Behemoth"
-		variant 4
+		add variant 4
 			"Star Queen"
-		variant 15
+		add variant 15
 			"Quicksilver"
-		variant 20
+		add variant 20
 			"Bounder"
-		variant 10
+		add variant 10
 			"Splinter"
-		variant 10
+		add variant 10
 			"Manta"
-		variant 15
+		add variant 15
 			"Wasp"
-		variant 13
+		add variant 13
 			"Freighter"
-		variant 16
+		add variant 16
 			"Bulk Freighter"
-		variant 4
+		add variant 4
 			"Protector"
-		variant 6
+		add variant 6
 			"Vanguard"
-		variant 7
+		add variant 7
 			"Odyssey"
-		variant 4
+		add variant 4
 			"Endeavor"
-		variant 2
+		add variant 2
 			"Wyvern"
-		variant 14
+		add variant 14
 			"Sparrow (Missile)"
-		variant 16
+		add variant 16
 			"Sparrow (Gatling)"
-		variant 5
+		add variant 5
 			"Sparrow (Patrol)"
-		variant 10
+		add variant 10
 			"Hawk (Plasma)"
-		variant 10
+		add variant 10
 			"Hawk (Ion)"
-		variant 10
+		add variant 10
 			"Hawk (Bomber)"
-		variant 12
+		add variant 12
 			"Blackbird (Luxury Proton)"
-		variant 15
+		add variant 15
 			"Blackbird (AMS)"
-		variant 10
+		add variant 10
 			"Osprey (Particle)"
-		variant 9
+		add variant 9
 			"Osprey (Ion)"
-		variant 8
+		add variant 8
 			"Osprey (Missile)"
-		variant 6
+		add variant 6
 			"Falcon (Generalist)"
-		variant 6
+		add variant 6
 			"Falcon (Plasma)"
-		variant 2
+		add variant 2
 			"Millipede (Defended)"
-		variant 5
+		add variant 5
 			"Millipede (Missileboat)"
-		variant 12
+		add variant 12
 			"Clipper (Ion)"
-		variant 10
+		add variant 10
 			"Clipper (Missile)"
-		variant 10
+		add variant 10
 			"Fury (Missile)"
-		variant 10
+		add variant 10
 			"Argosy (Missile)"
-		variant 10
+		add variant 10
 			"Argosy (Plasmablaster)"
-		variant 10
+		add variant 10
 			"Argosy (Torpedo)"
-		variant 16
+		add variant 16
 			"Argosy (Proton)"
-		variant 8
+		add variant 8
 			"Hauler (Brawler)"
-		variant 8
+		add variant 8
 			"Hauler (Prepared)"
-		variant 8
+		add variant 8
 			"Hauler (Missileboat)"
-		variant 9
+		add variant 9
 			"Hauler II (Missile)"
-		variant 15
+		add variant 15
 			"Hauler II (AMS)"
-		variant 5
+		add variant 5
 			"Hauler III (Infinite Missile)"
-		variant 12
+		add variant 12
 			"Hauler III (AMS)"
-		variant 10
+		add variant 10
 			"Hauler III (Bralwer)"
-		variant 10
+		add variant 10
 			"Bastion (EWS)"
-		variant 10
+		add variant 10
 			"Bastion (Particle)"
-		variant 8
+		add variant 8
 			"Bastion (Heavy)"
-		variant 6
+		add variant 6
 			"Caravel (Plasma)"
-		variant 6
+		add variant 6
 			"Caravel (Proton)"
-		variant 5
+		add variant 5
 			"Caravel (Ion)"
-		variant 8
+		add variant 8
 			"Caravel (Missile)"
-		variant 12
+		add variant 12
 			"Flivver (Ion)"
-		variant 14
+		add variant 14
 			"Headhunter (Proton)"
-		variant 12
+		add variant 12
 			"Headhunter (Ion)"
-		variant 14
+		add variant 14
 			"Headhunter (Missile)"
-		variant 12
+		add variant 12
 			"Headhunter (Particle)"
-		variant 3
+		add variant 3
 			"Headhunter (Strike)"
-		variant 12
+		add variant 12
 			"Raven (Heavy)"
-		variant 10
+		add variant 10
 			"Raven (Missile)"
-		variant 10
+		add variant 10
 			"Aerie (Offensive)" 
 			"Dagger" 2
-		variant 10
+		add variant 10
 			"Aerie (Ion)"
 			"Dagger" 2
-		variant 10
+		add variant 10
 			"Aerie (Missile)"
 			"Dagger" 2
-		variant 10
+		add variant 10
 			"Challenger (Missile)"
-		variant 13
+		add variant 13
 			"Beserker (Missile)"
-		variant 12
+		add variant 12
 			"Berserker (Afterburner)"
-		variant 8
+		add variant 8
 			"Firebird (Aggressive)"
-		variant 12
+		add variant 12
 			"Firebird (Ion)"
-		variant 14
+		add variant 14
 			"Firebird (Missile)"
-		variant 12
+		add variant 12
 			"Firebird (Plasma)"
-		variant 12
+		add variant 12
 			"Leviathan (Brawler)"
-		variant 16
+		add variant 16
 			"Behemoth (Speedy)"
-		variant 15
+		add variant 15
 			"Quicksilver (Particle)"
-		variant 8
+		add variant 8
 			"Quicksilver (Mark II)"
-		variant 12
+		add variant 12
 			"Quicksilver (Proton)"
-		variant 14
+		add variant 14
 			"Bounder (Blaster)"		
-		variant 6
+		add variant 6
 			"Splinter (Plasma)"
-		variant 3
+		add variant 3
 			"Splinter (Mark II)"
-		variant 8
+		add variant 8
 			"Splinter (Proton)"
-		variant 2
+		add variant 2
 			"Manta (Mark II)"
-		variant 9
+		add variant 9
 			"Manta (Proton)"
-		variant 6
+		add variant 6
 			"Wasp (Gatling)"
-		variant 16
+		add variant 16
 			"Wasp (Javelin)"
-		variant 12
+		add variant 12
 			"Wasp (Meteor)"
-		variant 4
+		add variant 4
 			"Wasp (Plasma)"
-		variant 2
+		add variant 2
 			"Wasp (Proton)"
-		variant 15
+		add variant 15
 			"Freighter (Proton)"
-		variant 3
+		add variant 3
 			"Bulk Freighter (Blaster)"
-		variant 15
+		add variant 15
 			"Bulk Freighter (Proton)"
-		variant 9
+		add variant 9
 			"Protector (jvaler Proton)"
-		variant 9
+		add variant 9
 			"Protector (Hydragyrum Proton)"
-		variant 9
+		add variant 9
 			"Vanguard (Particle)"
-		variant 3
+		add variant 3
 			"Vanguard (Plasma)"
-		variant 2
+		add variant 2
 			"Vanguard (Ion)"
 
 	fleet "Southern Pirates"
-		variant 5
+		add variant 5
 			"Osprey (Particle)"
 			"Osprey (Ion)" 
 			"Osprey (Missile)" 2
-		variant 5
+		add variant 5
 			"Osprey (Missile)"
 			"Falcon (Generalist)"
 			"Clipper (Ion)" 2
 			"Clipper (Plasma)" 2
-		variant 5
+		add variant 5
 			"Fury (Missile)" 4
 			"Clipper (Missile)" 5
-		variant 5
+		add variant 5
 			"Odyssey (Heavy)"
 			"Odyssey (Hotrod)" 3
 			"Osprey (Missile)" 2
 
 	fleet "Syndicate"
-		variant 3
+		add variant 3
 			"Vanguard (Bomber)"
-		variant 3
+		add variant 3
 			"Vanguard (Ion)"
-		variant 1
+		add variant 1
 			"Vanguard (Plasma)"
 			"Quicksilver" 2
-		variant 1
+		add variant 1
 			"Vanguard (Particle)" 2
-		variant 1
+		add variant 1
 			"Protector"
-		variant 1
+		add variant 1
 			"Vanguard"
-		variant 1
+		add variant 1
 			"Protector (Laser)"
-		variant 1
+		add variant 1
 			"Protector (Hydragyrum Proton)"
-		variant 1
+		add variant 1
 			"Protector"
 			"Quicksilver" 2
-		variant 1
+		add variant 1
 			"Protector (Laser)"
 			"Quicksilver (Proton)" 2
-		variant 1
+		add variant 1
 			"Protector (Proton)"
 			"Quicksilver (Proton)" 2
-		variant 1
+		add variant 1
 			"Vanguard (Particle)"
 			"Quicksilver" 2
-		variant 1
+		add variant 1
 			"Vanguard"
 			"Quicksilver (Proton)" 2
-		variant 1
+		add variant 1
 			"Vanguard (Plasma)"
 			"Quicksilver (Proton)" 2
 
 	fleet "Deep Security"
-		variant 4
+		add variant 4
 			"Aerie"
 			"Dagger" 2
-		variant 3
+		add variant 3
 			"Raven"
-		variant 1
+		add variant 1
 			"Raven (Heavy)"
-		variant 1
+		add variant 1
 			"Raven (Afterburner)"
-		variant 3
+		add variant 3
 			"Headhunter"
-		variant 2
+		add variant 2
 			"Headhunter (Particle)"
-		variant 2
+		add variant 2
 			"Headhunter (Strike)"
-		variant 4
+		add variant 4
 			"Challenger"
-		variant 2
+		add variant 2
 			"Challenger (Speedy)"
-		variant 2
+		add variant 2
 			"Challenger (Missile)"
 
 
 event "hard fleets"
-		variant 5
+		add variant 5
 			"Falcon (Rocket)"
 			"Osprey (Rocket)" 2
 			"Hauler (Moneymaker)" 2
-		variant 5
+		add variant 5
 			"Bulk Freighter (Heavy)" 3
 			"Falcon (Rocket)" 2
 			"Fury (Heavy Rocket)" 4
-		variant 5
+		add variant 5
 			"Hauler II (Rocket)"
 			"Hauler III (Infinite Missile)" 2
 			"Hauler II (Cargo)" 2
 			"Protector (jvaler Proton)"
 			"Protector (Hydragyrum Proton)"
-		variant 5
+		add variant 5
 			"Headhunter (Heavy Rocket)" 5
 			"Hauler III (Bus)" 2
 			"Hauler III (Cargo)" 2
-		variant 5
+		add variant 5
 			"Raven (Rocket)" 5
 			"Freighter (Secret Cargo)" 4
-		variant 5
+		add variant 5
 			"Leviathan (Heavy)"
 			"Behemoth (Heavy)" 2
 			"Vanguard (Ion)" 2
 			"Bulk Freighter (Proton)" 2
-		variant 5
+		add variant 5
 			"Sparrow (Torpedo)" 3
 			"Sparrow (Gatling)" 2
 			"Sparrow (Missile)" 2
 			"Blackbird (Cargo)" 2
-		variant 5
+		add variant 5
 			"Clipper (Torpedo)" 3
 			"Clipper (Heavy)" 2
 			"Challenger (Cargo)" 2
-		variant 5
+		add variant 5
 			"Fury (Torpedo)" 5
 			"Blackbird (Cargo)" 2
-		variant 5
+		add variant 5
 			"Argosy (Torpedo)" 1
 			"Argosy (Plasmablaster)"2
 			"Argosy (Transport)" 2
-		variant 5
+		add variant 5
 			"Leviathan (Heavy)"
 			"Bastion (Scanner)" 2
-		variant 10
+		add variant 10
 			"Caravel (Torpedo)"
-		variant 5
+		add variant 5
 			"Osprey (Missile)"
 			"Osprey (Rocket)" 2
-		variant 10
+		add variant 10
 			"Raven (Torpedo)"
-		variant 5
+		add variant 5
 			"Beserker (Torpedo)" 5
-		variant 5
+		add variant 5
 			"Firebird (Bomber)"
 			"Raven (Torpedo) 4
-		variant 5
+		add variant 5
 			"Firebird (Missile)" 3
-		variant 10
+		add variant 10
 			"Vanguard (Bomber)"
-		variant 5
+		add variant 5
 			"Vanguard (Bomber)" 3
-		variant 1
+		add variant 1
 			"Odyssey (Ambush Predator)"
-		variant 5
+		add variant 5
 			"Bastion (Tank)"
 			"Bastion (Heavy)" 2
 			"Bastion" 2
-		variant 5
+		add variant 5
 			"Falcon (Tank)"
 			"Falcon (Plasma)" 2
 			"Bulk Freighter (Heavy)" 2
-		variant 5
+		add variant 5
 			"Millipede (Tank)"
 			"Millipede (Missileboat)" 2
 			"Vanguard (Ion)"
 			"Vanguard (Plasma)"
 			"Hauler (Moneymaker)" 2
-		variant 5
+		add variant 5
 			"Millipede (Tank)"
 			"Bastion (Tank) 2
 			"Falcon (Tank) 2
@@ -734,45 +734,45 @@ event "hard fleets"
 			"Argosy (Transport)" 2
 			
 	fleet "Northstar Shipping"
-		variant 15
+		add variant 15
 			"Vanguard (Particle)"
 			"Wasp (Javelin)" 5
-		variant 15
+		add variant 15
 			"Wasp (Meteor)" 8
-		variant 15
+		add variant 15
 			"Leviathan (Mixed Damage)"
 			"Leviathan (Heavy)" 3
-		variant 15
+		add variant 15
 			"Leviathan (Laser)"
 			"Beserker (Ion)" 5
-		variant 15
+		add variant 15
 			"Behemoth (Heavy)" 2
 			"Behemoth Proton" 2
-		variant 15
+		add variant 15
 			"Firebird (Aggressive)" 5
-		variant 15
+		add variant 15
 			"Vanguard (Particle)"
 			"Firebird (Ion)" 2
-		variant 15
+		add variant 15
 			"Protector (jvaler Proton)" 3
 			"Protector (Hydragyrum Proton)" 3
-		variant 15
+		add variant 15
 			"Vanguard (Ion)"
 			"Vanguard (Plasma)"
 			"Vanguard (Particle)"
 			"Vanguard"
-		variant 15
+		add variant 15
 			"Schooner" 3
 
 	fleet "Syndicated Transport"
 			"Star Barge (Armed)" 7
 			"Protector (jvaler Proton)" 2
 			"Protector (Hydragyrum Proton)" 2
-		variant 4
+		add variant 4
 			"Freighter (Proton)" 7
 			"Protector (jvaler Proton)" 2
 			"Protector (Hydragyrum Proton)" 2
-		variant 5
+		add variant 5
 			"Bulk Freighter (Proton)"
 			"Freighter (Proton)" 3
 			"Star Barge (Armed)" 3
@@ -780,110 +780,110 @@ event "hard fleets"
 			"Protector (Hydragyrum Proton)" 2
 
 	fleet "Southern Logistics"
-		variant 15
+		add variant 15
 			"Behemoth (Speedy)" 3
 			"Leviathan (Brawler)" 2
-		variant 4
+		add variant 4
 			"Freighter (Fancy)" 3
 			"Falcon (Rocket)" 2
-		variant 6
+		add variant 6
 			"Millipede (Defended)" 3
 			"Clipper (Heavy)" 2
 			"Blackbird (Luxury Proton)" 2
-		variant 15
+		add variant 15
 			"Freighter" 3
 			"Leviathan (Brawler)" 2
 			"Falcon (Generalist)" 2
-		variant 4
+		add variant 4
 			"Hauler II (Bus)"
 			"Hauler II (Cargo)"
 			"Hauler II (AMS)"
 			"Leviathan (Brawler)" 2
-		variant 6
+		add variant 6
 			"Behemoth (Proton)" 
 			"Hauler III (Infinite Missile)" 6
 
 	fleet "Freelance Pirate"
-		variant 5
+		add variant 5
 			"Falcon (Rocket)"
 			"Osprey (Rocket)" 2
 			"Hauler (Moneymaker)" 2
-		variant 5
+		add variant 5
 			"Bulk Freighter (Heavy)" 3
 			"Falcon (Rocket)" 2
 			"Fury (Heavy Rocket)" 4
-		variant 5
+		add variant 5
 			"Hauler II (Rocket)"
 			"Hauler III (Infinite Missile)" 2
 			"Hauler II (Cargo)" 2
 			"Protector (jvaler Proton)"
 			"Protector (Hydragyrum Proton)"
-		variant 5
+		add variant 5
 			"Headhunter (Heavy Rocket)" 5
 			"Hauler III (Bus)" 2
 			"Hauler III (Cargo)" 2
-		variant 5
+		add variant 5
 			"Raven (Rocket)" 5
 			"Freighter (Secret Cargo)" 4
-		variant 5
+		add variant 5
 			"Leviathan (Heavy)"
 			"Behemoth (Heavy)" 2
 			"Vanguard (Ion)" 2
 			"Bulk Freighter (Proton)" 2
-		variant 5
+		add variant 5
 			"Sparrow (Torpedo)" 3
 			"Sparrow (Gatling)" 2
 			"Sparrow (Missile)" 2
 			"Blackbird (Cargo)" 2
-		variant 5
+		add variant 5
 			"Clipper (Torpedo)" 3
 			"Clipper (Heavy)" 2
 			"Challenger (Cargo)" 2
-		variant 5
+		add variant 5
 			"Fury (Torpedo)" 5
 			"Blackbird (Cargo)" 2
-		variant 5
+		add variant 5
 			"Argosy (Torpedo)" 1
 			"Argosy (Plasmablaster)"2
 			"Argosy (Transport)" 2
-		variant 5
+		add variant 5
 			"Leviathan (Heavy)"
 			"Bastion (Scanner)" 2
-		variant 10
+		add variant 10
 			"Caravel (Torpedo)"
-		variant 5
+		add variant 5
 			"Osprey (Missile)"
 			"Osprey (Rocket)" 2
-		variant 10
+		add variant 10
 			"Raven (Torpedo)"
-		variant 5
+		add variant 5
 			"Beserker (Torpedo)" 5
-		variant 5
+		add variant 5
 			"Firebird (Bomber)"
 			"Raven (Torpedo) 4
-		variant 5
+		add variant 5
 			"Firebird (Missile)" 3
-		variant 10
+		add variant 10
 			"Vanguard (Bomber)"
-		variant 5
+		add variant 5
 			"Vanguard (Bomber)" 3
-		variant 1
+		add variant 1
 			"Odyssey (Ambush Predator)"
-		variant 5
+		add variant 5
 			"Bastion (Tank)"
 			"Bastion (Heavy)" 2
 			"Bastion" 2
-		variant 5
+		add variant 5
 			"Falcon (Tank)"
 			"Falcon (Plasma)" 2
 			"Bulk Freighter (Heavy)" 2
-		variant 5
+		add variant 5
 			"Millipede (Tank)"
 			"Millipede (Missileboat)" 2
 			"Vanguard (Ion)"
 			"Vanguard (Plasma)"
 			"Hauler (Moneymaker)" 2
-		variant 5
+		add variant 5
 			"Millipede (Tank)"
 			"Bastion (Tank) 2
 			"Falcon (Tank) 2
@@ -893,146 +893,146 @@ event "hard fleets"
 			"Argosy (Transport)" 2
 
 	fleet "Southern Pirates"
-		variant 5
+		add variant 5
 			"Falcon (Plasma)"
 			"Falcon (Rocket)" 2
-		variant 5
+		add variant 5
 			"Falcon (Tank)"
 			"Falcon" 2
-		variant 5
+		add variant 5
 			"Fury (Missile)" 8
 			"Clipper (Missile)" 10
 
 	fleet "Syndicate"
-		variant 5
+		add variant 5
 			"Vanguard (Ion)"
 			"Vanguard (Particle)" 2
 			"Vanguard (Bomber)" 2
-		variant 5
+		add variant 5
 			"Vanguard (Ion)" 3
 			"Vanguard (Particle)" 2
-		variant 3
+		add variant 3
 			"Vanguard (Ion)" 
 			"Vanguard (Plasma)" 2
-		variant 10
+		add variant 10
 			"Vanguard (Particle)" 1
 			"Vanguard" 2
-		variant 4
+		add variant 4
 			"Class C Freighter"
 			"Sentinel Drone" 12
-		variant 1
+		add variant 1
 			"Class C Freighter"
 			"Sentinel Drone" 12
 			"Class C Freighter"
 			"Sentinel Drone" 12
 			"Class C Freighter"
 			"Sentinel Drone" 12
-		variant 8
+		add variant 8
 			"Vanguard (Ion)"
 			"Manta (Proton)" 2
 			"Manta (Mark II)" 2
-		variant 15
+		add variant 15
 			"Protector (Hydragyrum Proton)"
 			"Protector (jvaler Proton)" 2
-		variant 12
+		add variant 12
 			"Wasp (Gatling)" 9
-		variant 12
+		add variant 12
 			"Wasp (Gatling)"
 			"Wasp (Javelin)" 2
 			"Wasp (Plasma)" 2
 			"Wasp (Proton)" 2
 			"Wasp (Meteor)" 2
-		variant 18
+		add variant 18
 			"Manta (Proton)"
 			"Quicksilver (Proton)" 4
-		variant 20
+		add variant 20
 			"Vanguard (Particle)"
 			"Quicksilver" 2
-		variant 4
+		add variant 4
 			"Bulk Freighter (Proton)"
 			"Protector (jvaler Proton)" 2
 			"Manta (Proton)" 2
 			"Splinter (Plasma)" 2
-		variant 3
+		add variant 3
 			"Vanguard (Ion)"
 			"Quicksilver (Proton)" 2
 			"Splinter (Plasma)" 2
 
 	fleet "Deep Security"
-		variant 5
+		add variant 5
 			"Aerie"
 			"Dagger" 2
 			"Challenger"
-		variant 2
+		add variant 2
 			"Aerie"
 			"Dagger" 2
 			"Challenger (Missile)"
-		variant 2
+		add variant 2
 			"Aerie"
 			"Dagger" 2
 			"Challenger (Speedy)"
-		variant 3
+		add variant 3
 			"Aerie"
 			"Dagger" 2
 			"Raven"
-		variant 1
+		add variant 1
 			"Aerie"
 			"Dagger" 2
 			"Raven (Heavy)"
-		variant 1
+		add variant 1
 			"Aerie"
 			"Dagger" 2
 			"Raven (Afterburner)"
-		variant 4
+		add variant 4
 			"Raven" 2
-		variant 2
+		add variant 2
 			"Raven (Heavy)" 2
-		variant 3
+		add variant 3
 			"Headhunter" 2
-		variant 2
+		add variant 2
 			"Headhunter (Particle)" 2
-		variant 2
+		add variant 2
 			"Headhunter (Particle)"
 			"Headhunter (Strike)"
-		variant 3
+		add variant 3
 			"Aerie" 2
 			"Dagger" 4
-		variant 8
+		add variant 8
 			"Challenger"
 			"Raven"
-		variant 4
+		add variant 4
 			"Challenger (Speedy)"
 			"Raven (Afterburner)"
-		variant 4
+		add variant 4
 			"Challenger (Missile)"
 			"Raven (Heavy)"
-		variant 5
+		add variant 5
 			"Challenger" 2
-		variant 3
+		add variant 3
 			"Challenger (Speedy)"
 			"Challenger (Missile)"
-		variant 10
+		add variant 10
 			"Narcissus" 5
-		variant 10
+		add variant 10
 			"Aletheia" 5
-		variant 10
+		add variant 10
 			"Zephyrus" 1
 			"Thea Drone" 2
 			"Zephyrus" 1
 			"Thea Drone" 2
 			"Zephyrus" 1
 			"Thea Drone" 2
-		variant 1
+		add variant 1
 			"Achlys" 5
-		variant 10
+		add variant 10
 			"Vanguard (Particle)"
 			"Protector (Hydragyrum Proton)" 2
 			"Narcissus" 2
-		variant 10
+		add variant 10
 			"Leviathan" 1
 			"Firebird" 2
 			"Narcissus" 4
-		variant 10
+		add variant 10
 			"Aerie (AMS)" 1
 			"Lance" 2
 			"Aerie (AMS)" 1
