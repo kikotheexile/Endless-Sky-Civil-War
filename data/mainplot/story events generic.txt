@@ -10,66 +10,182 @@
 
 event "remembrance day"
 	date 19 2 3014
+	system "Gamma Corvi"
+		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1500
+		fleet "SMDP" 1000
+		fleet "Southern Pirates 1" 10000
+		fleet "Freelance Miners" 5000
 	system "Spica"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 16000
+		fleet "Southern Logistics 1" 3000
+		fleet "SMDP" 2000
+		fleet "Southern Pirates 1" 6000
+		fleet "Freelance Pirate 1" 10000
 	system "Minkar"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 9000
+		fleet "Southern Logistics 1" 3000
+		fleet "SMDP" 1500
+		fleet "Freelance Pirate 1" 12000
 	system "Acrux"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 6000
+		fleet "Southern Logistics 1" 1000
+		fleet "SMDP" 800
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2400
+		fleet "Freelance Miners" 5000
 	system "Mimosa"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 5000
+		fleet "SMDP" 2500
+		fleet "Freelance Pirate 1" 8000
 	system "Kraz"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 2000
+		fleet "SMDP" 800
 	system "Izar"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1800
+		fleet "SMDP" 800
 	system "Zeta Centauri"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 2000
+		fleet "SMDP" 1500
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
 	system "Hadar"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1000
+		fleet "SMDP" 800
+		fleet "Southern Pirates 1" 4000
+		fleet "Freelance Pirate 1" 9000
 	system "Alkaid"
 		government "Southern Mutual Defense Pact"
+		fleet "SMDP" 800
+		fleet "Southern Logistics 1" 5000
+		fleet "Southern Pirates 1" 2400
+		fleet "Freelance Pirate 1" 5000
+		fleet "Freelance Miners" 3000
 	system "Zubeneschamali"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1500
+		fleet "SMDP" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
+		fleet "Freelance Miners" 2000
 	system "Kochab"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 2000
+		fleet "SMDP" 3000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 	system "Ildaria"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 2000
+		fleet "SMDP" 3000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 	system "Zubenelgenubi"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1500
+		fleet "SMDP" 2000
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
 	system "Sabik"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 900
+		fleet "SMDP" 1200
 	system "Unukalhai"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 4000
+		fleet "Southern Pirates 1" 3000
+		fleet "SMDP" 4000
+		fleet "Freelance Miners" 3000
 	system "Kornephoros"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 6000
+		fleet "Southern Logistics 1" 1200
+		fleet "Southern Pirates 1" 3000
+		fleet "SMDP" 2000
+		fleet "Freelance Miners" 3000
 	system "Sargas"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 7000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "SMDP" 4000
 	system "Lesath"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 2000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "SMDP" 5000
 	system "Aldhibain"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 600
+		fleet "SMDP" 600
+		fleet "Southern Pirates 1" 800
+		fleet "Freelance Pirate 1" 2000
+		fleet "Freelance Miners" 3000
 	system "Dschubba"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "SMDP" 3000
+		fleet "Freelance Miners" 2000
 	system "Atria"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
+		fleet "SMDP" 8000
+		fleet "Freelance Miners" 2000
 	system "Alniyat"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 700
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "SMDP" 800
 	system "Han"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 5000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 5000
+		fleet "SMDP" 4000
 	system "Pherkad"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1000
+		fleet "SMDP" 700
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
 	system "Yed Prior"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1600
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
+		fleet "SMDP" 3000
+		fleet "Freelance Miners" 1600
 	system "Beta Lupi"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Pirates 1" 1500
+		fleet "Freelance Pirate 1" 2500
+		fleet "SMDP" 2000
+		fleet "Freelance Miners" 3000
 	system "Kappa Centauri"
 		government "Southern Mutual Defense Pact"
-
-event "defected: free worlds"
-	#Placeholder empty mission
-
-event "fw tarazed joins"
-	#Placeholder empty mission
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "SMDP" 2000
 
 mission "remembrance day"
 	landing
@@ -91,10 +207,10 @@ event "war begins"
 	date 4 7 3014
 	system "Gamma Corvi"
 		government "Free Worlds"
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 1400
-		fleet "Small Free Worlds" 600
-		fleet "Large Free Worlds" 1300
+		fleet "Southern Logistics 1" 1500
+		fleet "Free Worlds" 1000
+		fleet "Southern Pirates 1" 10000
+		fleet "Freelance Miners" 5000
 	system Castor
 		pos -452 -17
 		government Republic
@@ -112,11 +228,10 @@ event "war begins"
 		trade Medical 677
 		trade Metal 275
 		trade Plastic 467
-		fleet "Small Northern Merchants" 600
-		fleet "Large Northern Merchants" 800
-		fleet "Paradise Merchants" 800
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 500
+		fleet "Northstar Shipping 1" 600
+		fleet "Freelance Merchant 1" 800
+		fleet "Lionheart Shipping" 800
+		fleet "Navy war" 1000
 	system Pollux
 		pos -465 4
 		government Republic
@@ -134,90 +249,224 @@ event "war begins"
 		trade Medical 677
 		trade Metal 275
 		trade Plastic 467
-		fleet "Small Northern Merchants" 600
-		fleet "Large Northern Merchants" 800
-		fleet "Paradise Merchants" 800
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 500
+		fleet "Northstar Shipping 1" 500
+		fleet "Freelance Merchant 1" 800
+		fleet "Lionheart Shipping" 600
+		fleet "Navy war" 1000
+		fleet "Caravan" 5000
 	system "Spica"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 16000
+		fleet "Southern Logistics 1" 3000
+		fleet "Free Worlds" 2000
+		fleet "Southern Pirates 1" 6000
+		fleet "Freelance Pirate 1" 10000
 	system "Minkar"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 9000
+		fleet "Southern Logistics 1" 3000
+		fleet "Free Worlds" 1500
+		fleet "Freelance Pirate 1" 12000
 	system "Acrux"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 6000
+		fleet "Southern Logistics 1" 1000
+		fleet "Free Worlds" 800
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2400
+		fleet "Freelance Miners" 5000
 	system "Mimosa"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 16000
+		fleet "Southern Logistics 1" 5000
+		fleet "Free Worlds" 2500
+		fleet "Freelance Pirate 1" 8000
 	system "Kraz"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 2000
+		fleet "Free Worlds" 800
 	system "Izar"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 7000
+		fleet "Southern Logistics 1" 1800
+		fleet "Free Worlds" 800
 	system "Zeta Centauri"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 8000
+		fleet "Southern Logistics 1" 2000
+		fleet "Free Worlds" 1500
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
 	system "Hadar"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 1000
+		fleet "Free Worlds" 800
+		fleet "Southern Pirates 1" 4000
+		fleet "Freelance Pirate 1" 9000
 	system "Alkaid"
 		government "Free Worlds"
+		fleet "Free Worlds" 800
+		fleet "Navy Surveillance" 16000
+		fleet "Southern Logistics 1" 5000
+		fleet "Southern Pirates 1" 2400
+		fleet "Freelance Pirate 1" 5000
+		fleet "Freelance Miners" 3000
 	system "Zubeneschamali"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 5000
+		fleet "Southern Logistics 1" 1500
+		fleet "Free Worlds" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
+		fleet "Freelance Miners" 2000
 	system "Kochab"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 2000
+		fleet "Free Worlds" 3000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 	system "Ildaria"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 2000
+		fleet "Free Worlds" 3000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 	system "Zubenelgenubi"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 5000
+		fleet "Southern Logistics 1" 1500
+		fleet "Free Worlds" 2000
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
 	system "Sabik"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 900
+		fleet "Free Worlds" 1200
 	system "Unukalhai"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 4000
+		fleet "Southern Pirates 1" 3000
+		fleet "Free Worlds" 4000
+		fleet "Freelance Miners" 3000
 	system "Kornephoros"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 6000
+		fleet "Southern Logistics 1" 1200
+		fleet "Southern Pirates 1" 3000
+		fleet "Free Worlds" 2000
+		fleet "Freelance Miners" 3000
 	system "Sargas"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 7000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "Free Worlds" 4000
 	system "Lesath"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 2000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "Free Worlds" 5000
 	system "Aldhibain"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 600
+		fleet "Free Worlds" 600
+		fleet "Southern Pirates 1" 800
+		fleet "Freelance Pirate 1" 2000
+		fleet "Freelance Miners" 3000
 	system "Dschubba"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "Free Worlds" 3000
+		fleet "Freelance Miners" 2000
 	system "Atria"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
+		fleet "Free Worlds" 8000
+		fleet "Freelance Miners" 2000
 	system "Alniyat"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 5000
+		fleet "Southern Logistics 1" 700
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "Free Worlds" 800
 	system "Han"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 5000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 5000
+		fleet "Free Worlds" 4000
 	system "Pherkad"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 5000
+		fleet "Southern Logistics 1" 1000
+		fleet "Free Worlds" 700
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
 	system "Yed Prior"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 8000
+		fleet "Southern Logistics 1" 1600
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
+		fleet "Free Worlds" 3000
+		fleet "Freelance Miners" 1600
 	system "Beta Lupi"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Pirates 1" 1500
+		fleet "Freelance Pirate 1" 2500
+		fleet "Free Worlds" 2000
+		fleet "Freelance Miners" 3000
 	system "Kappa Centauri"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 1000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Free Worlds" 2000
 	system "Castor"
-		fleet "Small Northern Merchants" 800
-		fleet "Large Northern Merchants" 1100
-		fleet "Small Republic" 800
-		fleet "Large Republic" 400
+		fleet "Northstar Shipping 1" 600
+		fleet "Freelance Merchant 1" 800
+		fleet "Lionheart Shipping" 800
+		fleet "Caravan" 3000
+		fleet "Navy war" 1000
 	system "Pollux"
-		fleet "Small Northern Merchants" 700
-		fleet "Large Northern Merchants" 1100
-		fleet "Small Republic" 700
-		fleet "Large Republic" 900
+		fleet "Northstar Shipping 1" 500
+		fleet "Freelance Merchant 1" 800
+		fleet "Lionheart Shipping" 600
+		fleet "Navy war" 1000
+		fleet "Caravan" 3000
 	system Vega
-		fleet "Small Northern Merchants" 1000
-		fleet "Large Northern Merchants" 4000
-		fleet "Small Republic" 900
-		fleet "Large Republic" 1000
+		fleet "Northstar Shipping 1" 800
+		fleet "Freelance Merchant 1" 3000
+		fleet "Navy war" 1600
+		fleet "Freelance Miners" 5000
 	system Denebola
-		fleet "Small Northern Merchants" 1000
-		fleet "Large Northern Merchants" 3000
-		fleet "Small Republic" 700
-		fleet "Large Republic" 900
+		fleet "Northstar Shipping 1" 800
+		fleet "Freelance Merchant 1" 2000
+		fleet "Navy war" 1000
 	system Merak
-		fleet "Small Northern Merchants" 1500
-		fleet "Large Northern Merchants" 4000
-		fleet "Small Republic" 1100
-		fleet "Large Republic" 1300
+		fleet "Navy war" 600
+		fleet "Northstar Shipping 1" 800
+		fleet "Southern Logistics 1" 2000
+		fleet "Freelance Merchant 1" 1500
 	planet "Geminus"
 		description `Until recently, Geminus was home to the Republic Navy Yard, an orbital station capable of producing entire fleets. After a series of terrorist attacks, the station has been completely closed off for repairs.`
 		spaceport `	The Navy officers who are in charge here have no time for anyone who is not enlisted in the Navy and participating in the ongoing investigation.`
@@ -241,7 +490,7 @@ event "war begins"
 mission "event: war begins"
 	landing
 	source
-		government "Republic" "Syndicate" "Free Worlds"
+		government "Republic" "Syndicate" "Free Worlds" "Cartel" "Northern Union"
 		attributes "spaceport"
 	to offer
 		has "event: war begins"
