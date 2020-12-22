@@ -716,10 +716,10 @@ planet Glaze
 planet Glory
 	attributes "requires: landing gear" paradise medical
 	landscape land/sky8
-	description `Elsewhere in the galaxy, people speak dismissively of the "Overpriced Sunshine" that rich terraformed worlds can afford. On Glory, the lakes and hills are artificial, crafted to idyllic perfection. Naturally, the chief industries on Glory are plastic surgery and medical efforts aimed at prolonging life and libido; well funded by the affluent elderly that call this planet home.`
-	description `	Glory is also home to the Academy of Planetary Sciences, the organization at the forefront of terraforming research. The Academy takes on only a select handful of apprentices each year, each tasked with guarding the expensive secrets with their lives if necessary.`
-	spaceport `The starport is as perfectly sculpted as the rest of the planet, a hive-like structure with hexagonal docking bays. Gardens have been planted on the roofs and on terraces on all different levels, and a bubbling artificial brook flows from a fountain on the roof down around the terraces before recycling back again.`
-	bribe 0.05
+	description `Glory; where nothing is as nature intended. Residents and idyllic hillsides both have been sculpted to perfection by the terraforming and plastic surgery industries that have blossomed here.`
+	description `    Glory is the proud home of the Academy of Planetary Sciences; the forefront of terraforming research. The Academy takes on only a select handful of students each year, each tasked with guarding the academy's secrets with their lives.`	
+	spaceport `The starport is as perfectly sculpted as the rest of the planet, a buzzing hive with hexagonal docking bays. Gardens have been planted on the roofs and on terraces on all different levels, and a bubbling artificial brook flows from a fountain on the roof down around the terraces before recycling back again.` 
+    spaceport `    While one might expect the plastic surgery addicted locals to wear perfect youthful masks, recently fashion has taken a turn for the exotic. Large piercings, long and pointed elvish ears, feathers, scaled faces, and forked tongues are all on display at the food court, some quietly having brunch but others jubilantly playing games at the arcade.`
 	security 0.6
 	tribute 4300
 		threshold 7500
@@ -906,8 +906,8 @@ planet Hopper
 planet "Brokkr Station"
 	attributes deep factory station
 	landscape land/sivael2
-	description `Brokkr Station is where Lionheart produces the biggest and best of its lineup, ships so massive they require special landing clearance. All kinds of people gather here, but almost everyone you see looks like they have money, work to do, or both.`
-	spaceport `Brokkr is the starting point for Deep caravans, large trading fleets built around the almost larger colony ships produced here. These caravans can be seen all around the galaxy, trading at all kinds of destinations. This station can house several full caravans, dwarfing most stations.`
+	description `Brokkr Station is where Lionheart produces the biggest and best of its lineup, ships so massive they require special landing clearance. People of all kinds gather here, everyone looking like they have money, work to do, or both.`
+	spaceport `The largest station in the galaxy, Brokkr is the starting point for Deep caravans; massive trading fleets built around the colony ships produced here. These caravans are found all around the galaxy, trading wherever there are people to trade with.`
 	shipyard "Lionheart Shipyards"
 	outfitter "Tarazed Systems"
 	outfitter "Ammo"
@@ -935,8 +935,8 @@ planet "Brokkr Station"
 planet "Hammer Station"
 	attributes core factory station
 	landscape land/sivael2
-	description `Although it is the heart of Syndicated Shipyard's sales department, Hammer Station runs like a factory first and a warehouse second. Even as merchants disembark to purchase new vessels, Syndicated ships are buzzing around mechanically. The only things that aren't all business are the protests, and those don't last long.`
-	spaceport `The spaceport is a collection of ports, some very large, others very small, and many in between, with drones in place to offload cargo and drivers waiting nearby to offload people. It runs like clockwork, with their forcasting screens even accounting for human error and hardware failures.`
+	description `The heart of Syndicated Shipyard's sales department, Hammer Station runs like a factory first and a warehouse second. Merchants disembark to purchase new vessels, while Syndicated ships buzz around mechanically, and the sound of heavy machinery fills the air at all hours. The only thing that isn't according to plan are the protests, and those always fall back in line quickly.`
+	spaceport `The spaceport has ports for ships of every size, with drones offloading cargo and pilots waiting beside forecasting screens, methodically accounting for both human error and hardware failures. "Protest Imminent" reads one such screen."`
 	shipyard "Syndicated Shipyards"
 	outfitter "Tarazed Systems"
 	outfitter "Ammo"
@@ -961,8 +961,8 @@ planet "Hammer Station"
 planet "Rampart Station"
 	attributes paradise station factory
 	landscape land/sivael2
-	description `Rampart Station is one of the few places certified to produce Navy ships, and the only place capable of producing their largest. The Nomos drone carrier and Arete dedicated carrier are almost exclusively produced here.`
-	spaceport `Lying right on the caravan trade route, Rampart Station is often full of merchants, negotiating deals with Navy workers or the stray Republic representative. It's very easy for the station to give off the feeling of being above your head.`
+	description `Rampart Station is one of precious few places certified to produce Navy ships, boasting sole power to produce the Navy's massive carriers; the Nomos drone carrier and Arete dedicated carrier are exclusively produced here.`
+	spaceport `Lying right on the caravan trade route, Rampart Station is full of merchants, negotiating deals with Navy workers or the stray Republic representative. It would be very easy for one to feel in over their head here, with the constant production noise and chatter of negotiation.`
 	shipyard "Navy Shipyards"
 	outfitter "Tarazed Systems"
 	outfitter "Ammo"
@@ -987,8 +987,8 @@ planet "Rampart Station"
 planet "Orion Station"
 	attributes north station factory
 	landscape land/sivael2
-	description `Orion Station is crowded with merchant ships making sales, usually metals and components to support the strong ship-building operation here. Betelgeuse is relatively out of the way, but its shipyards are still well-known across the galaxy, and among captains, so are the trade opportunities.`
-	spaceport `The spaceport is incredibly busy, with merchants and the Navy and Betelgeuse employees all scrambling around with some goal in mind.`
+	description `Orion Station is crowded with merchant ships dropping off large orders of metals and components to feed the shipyard here, relentlessly churning out Betelgeuse ships. While the Betelgeuse system itself is far out of the way, its shipyards are well-known across the galaxy. Many a merchant captain has built their fortune trading exclusively with Orion station.`
+	spaceport `The spaceport here thrives on chaos. Merchants, Navy, and Betelgeuse employees are all rushing to their destinations like ants pouring from a mound.`
 	shipyard "Navy Basics"
 	shipyard "Navy Advanced"
 	shipyard "Betelgeuse Shipyards"
@@ -1015,8 +1015,8 @@ planet "Orion Station"
 planet "Huginn Station"
 	attributes deep station
 	landscape land/sivael2
-	description `Huginn and Muninn stations, together, are the gateway to the Deep, the region of space north of here. The Deep was the first large region of space to have a democratic government, predating the Republic by nearly two centuries.`
-	description `	Huginn Station is a prison station where convicted pirates must work at harvesting and refining deuterium to atone for their crimes against humanity. There are no services available for you here and the security guards, surprised by your visit and wondering at your motives, watch you closely.`
+	description `Huginn and Muninn stations are the gateway to the Deep, the region of space north of here. The Deep was the first confederation of planets to have a democratic government, predating the Republic by nearly two centuries.`
+	description `    Huginn Station is a prison station where convicted pirates work at harvesting and refining deuterium in atonement for their crimes. There are no services available for you here, and security guards equipped with full arsenals watch you with interest.`
 	"required reputation" 20
 	bribe 0.1
 	security 0.9
@@ -1028,8 +1028,8 @@ planet "Huginn Station"
 planet Humanika
 	attributes south farming
 	landscape land/beach2
-	description `The gravity is too strong on this planet for the Quarg to inhabit it, so they have welcomed human settlers instead. Many people who want freedom from the dangers of human space and the endless instability of human government have settled here. Although the regions near the equator are far too warm to be comfortable, the climate closer to the poles is almost ideal; the only reason Humanika is not as densely populated as some of the worlds farther to the galactic north is the distrust with which most humans view the Quarg.`
-	spaceport `The spaceport is a towering steel structure, built by the Quarg, with docks for their pilot-less cargo drones in addition to the platforms for human ships. The hallways inside have disconcerting proportions, somewhat narrow but with very tall ceilings. In addition to the human inhabitants, there are a few tall, almost fragile-looking robots with digitigrade limbs and narrow torsos patterned after the anatomy of a Quarg. Most of the robots stand still in the corners, like statues, but a few are moving around and interacting with people, apparently as remote control proxies for Quarg in orbit. It is a clear reminder of who owns this planet.`
+	description ` Humanika is a haven for those desiring freedom from the endless instability of human government, living instead under the jurisdiction of the Quarg, who opened the planet for human settlers due to the gravity being too heavy for their own. Although the region near the equator is far too hot for human comfort, the climate closer to the poles is nearly ideal. The only reason Humanika is not as densely populated as worlds farther to the galactic north is the distrust with which most humans view the Quarg.`
+	spaceport `The spaceport is a towering steel structure of Quarg design, with docks for pilot-less cargo drones in addition to platforms for human ships. The hallways inside have inhuman proportions, with tall ceilings and cramped narrow hallways. In addition to the human inhabitants, there are tall fragile-looking robots with digitigrade limbs and narrow torsos patterned after the Quarg. Most of these robots stand silent vigil in corners, but a few move around and interact with people, remotely controlled proxies for Quarg in orbit above. It is a clear reminder of who owns this planet.`
 	shipyard "Quarg"
 	outfitter "Ammo"
 	bribe 0.05
@@ -1041,7 +1041,8 @@ planet Humanika
 planet "Hydra Station"
 	attributes "dirt belt" station
 	landscape land/sivael5
-	description `This station is so run down that most of the workers carry oxygen masks in case a meteorite punctures the hull, and a few of them are even dressed in full space suits. The deuterium refinery here is barely operating, the number of workers is minimal, and nearly half of them seem to be busy just welding patches onto the hull to hold the station together. At the moment there are no repair or refueling services available here.`
+	description `This station is run down to the point that workers carry oxygen masks or work in full space suits in case of a meteorite puncturing the hull. The deuterium refinery here operates sluggishly and below regular capacity on a skeleton crew of workers.` 
+	description `	The majority of the workers are busy welding patches onto the hull to hold the station together. At the moment there are no repair or refueling services available here.`
 	security 0.3
 	music ambient/machinery
 	tribute 100
@@ -1051,9 +1052,9 @@ planet "Hydra Station"
 planet Icefall
 	attributes "requires: landing gear" core farming oil frontier
 	landscape land/dmottl3
-	description `Icefall is far from its sun, but with an axial tilt of roughly 38 degrees. This means that the climate is cold, but the year is also long, and each hemisphere has a short summer - barely enough to fit a terrestrial growing season. There are only a few major towns, and no major metropolitan centers. Most of the inhabitants make a living as farmers, although near the equator there is also some oil drilling industry. Icefall's oceans are filled with constantly shifting pack ice and icebergs, making them nearly unnavigable.`
-	description `	The most distinctive feature of the local ecology is the vast flocks of gooselike migratory birds, which raise two broods a year: one in each hemisphere's summer. The farm workers migrate in similar fashion, and many landowners have farms in both hemispheres.`
-	spaceport `The spaceport is located near the equator, in this world's industrial zone. Along the horizon are fields of pumpjacks and oil derricks. The port consists of rows of hangars, plus two large square towers that house the marketplace and storage space for cargo. A constant howling wind sweeps in between the buildings, but thankfully they are well constructed out of sturdy cement.`
+	description `Icefall orbits far from its sun with an axial tilt of roughly 38 degrees. This means that the climate is frigid and the years long, with each hemisphere clinging to a short summer - fitting a single terrestrial growing season with no room to spare. There are few major towns, and no major metropolitan centers. Most of the inhabitants work as farmers or in the oil drilling operations near the equator. Icefall's oceans are filled with unstable pack ice and icebergs, rendering them unnavigable.` 
+	description `    The most distinctive feature of the local ecology is the vast flocks of gooselike migratory birds, cleverly raising two broods a year: one in each hemisphere's summer. Farm workers migrate in similar fashion, and most landowners have farms in both hemispheres.`
+	spaceport `The spaceport is near the equator in a dedicated industrial zone. Along the horizon are fields of pumpjacks and oil derricks. The port consists of rows of hangars, and two square towers that house the marketplace and storage space for cargo. A constant howling wind sweeps in between the buildings, unable to rattle the sturdy cement construction.`
 	security 0.2
 	tribute 700
 		threshold 3000
@@ -1062,9 +1063,9 @@ planet Icefall
 planet Ingot
 	attributes "requires: landing gear" "dirt belt" volcanic mining moon
 	landscape land/mountain8
-	description `Ingot is a volcanic moon, totally unsuitable for life but rich in metal. The miners who work here must spend all their time inside pressurized buildings. Because Ingot has almost no atmosphere to slow them down, meteorites are a constant danger to the colonists. The shells of the buildings have multiple layers, designed to be self-sealing in any but the largest of impacts. Most of the mining is done remotely by robotic vehicles, but someone still needs to be present to control them and to make repairs when something goes wrong.`
-	spaceport `In this spaceport, ships dock inside a hangar whose ceiling protects them from meteorite impacts. The hangar is not pressurized, so there are also landing tubes that connect to each of the visiting ships. Many of the people inside are carrying emergency oxygen masks in case a sudden impact ruptures the building.`
-	spaceport `	In addition to being the spaceport, this complex is also the repair and control center for the mining robots. There are a handful of buildings elsewhere on Ingot, but not many. You cannot imagine spending so much time with so little space or change of scenery.`
+	description `Ingot is a volcanic moon, unsuitable for life but rich in metal. Most of the mining is done remotely by robotic vehicles, requiring a team of workers to control and repair them.'
+	description `	Workers spend all their time inside pressurized buildings due both to planets inhospitable climate and danger of meteorites, as Ingot's low gravity does little to slow the space bullets down. The shells of the buildings have multiple layers, designed to be self-reparing in all but the largest impacts.` 
+	spaceport `Ships dock inside a sturdy hangar, the ceiling protecting them from meteorite impacts. As the hangar is not pressurized, landing tubes connect to visiting ships. The spaceport shares the building with the repair and control center for the mining robots, given the practicality of the operation's design, with few sturdy buildings connected by tubes and underground tunnels.`
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
 	security 0.1
