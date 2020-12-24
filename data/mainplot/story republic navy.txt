@@ -33,8 +33,7 @@ mission "Republic Bounty 1"
 					decline
 			`	"Much obliged," he says, "it's a ship called the <npc>. It's a tricky little devil, so don't let it take you off guard."`
 				accept
-	on accept
-		log "Hunted a pirate ship called the <npc>, which had been plundering ships near Boral."
+
 	
 	npc kill
 		personality heroic staying nemesis target
@@ -45,6 +44,7 @@ mission "Republic Bounty 1"
 		dialog `The <npc> has been eliminated. You can claim the bounty payment by returning to <destination>.`
 	
 	on complete
+		log "Hunted a pirate ship called the <npc>, which had been plundering ships near Boral."
 		payment 175000
 		dialog `After you land, you greet the man who offered you the bounty, who seems surprised that you've succeeded. He shakes your hand and says: "Excellent work! I don't think I've introduced myself properly last time. I'm Commander Kent, and I'll be keeping an eye out for you, should we require your assistance in the future." When you check later, you're pleased to find that <payment> has been credited to your account.`
 	on decline
@@ -65,8 +65,8 @@ mission "Republic Bounty 2"
 	
 	on offer
 		conversation
-			`Before you can decide where you want to go in the spaceport, you are flagged down by a woman in a black pencil dress. It's only when you get near her that you notice the Republic markings on her jacket. She is a dour woman with black hair, knotted in a tight bun with classic ink-pens holding it together.` 
-			`"Captain <last>?" she declares, "I'm Captain Shah. Commander Kent has you listed as a privateer." She continues with a quick, clipped tone, "We've been made aware that a criminal has been spotted near Alnasl, aboard a ship named the <npc>. He is wanted, dead."`
+			`Before you can decide where you want to go in the spaceport, you are flagged down by a woman in a black pencil dress. It's only when you get near her that you notice the Republic markings on her jacket. She is a dour woman with black hair knotted in a tight bun, with classic ink-pens holding it together.` 
+			`"Captain <last>." she declares, "I'm Captain Shah. Commander Kent has you listed as a privateer." She continues with a quick, clipped tone, "We've been made aware that a criminal has been spotted near Alnasl, aboard a ship named the <npc>. He is wanted, dead."`
 			choice
 				`	"Dead. Got it."`
 				` 	"You have an interesting way of asking."`
@@ -77,10 +77,6 @@ mission "Republic Bounty 2"
 					goto killer
 			`	"He's aboard a ship named the <npc>. Considering your abilities it should hardly be a challenge."`
 				accept
-			label killer
-			`	Shah replies: "Your file leads me to believe otherwise. No matter then, we will be sure to update your record. Good day."`
-			`	She walks away before you get the chance to change your mind.`
-				decline
 			label slacks
 			`	She tries to hide a smile, "Very perceptive." She says, "I like that, it's a very valuable trait in mercenaries. To answer your question, I'm from a different branch of government entirely. Our dress code is a bit different, and the heels are more useful in a fight than you would expect."`
 			`	She straightens her jacket to indicate she would like to get back to buisiness. "Well, are you interested in the job then?"`
@@ -131,10 +127,9 @@ mission "Republic Bounty 2"
 			near "Alnasl" 1 2
 		ship "Bastion (Tank)" "Exploderizer 2"
 		dialog `The <npc> has been eliminated. You can claim the bounty payment by returning to <destination>.`
-	on accept
-		log "Hunted a pirate ship called the <npc>, which was wanted by the Republic."
 		
 	on complete
+		log "Hunted a pirate ship called the <npc>, which was wanted by the Republic."
 		payment 200000
 		dialog `Captain Shah contacts you immediately after you've landed: "The Republic thanks you for your service, Captain. <payment> have been credited to your account. I'll be in touch should I have need of you again."`
 		log "People" "Kent and Shah" "Two Republic officials assigned to keep a watchful eye over the systems bordering the Free Worlds. Their uniforms do not match the standard Republic uniform of the Navy."
@@ -176,11 +171,10 @@ mission "Republic Bounty 3"
 		system "Tais"
 		ship "Falcon" "Megaexplodermurderizer"
 		dialog `The <npc> has been disabled. You can claim the bounty payment by returning to <destination>.`
-	on accept
-		log "Hunted a pirate ship called the <npc>, which has captured multiple merchant captains, and disabled the ship at the Republic's request."
-		
+
 	on complete
 		"assisted republic" ++
+		log "Hunted a pirate ship called the <npc>, which has captured multiple merchant captains, and disabled the ship at the Republic's request."
 		payment 250000
 		dialog `"Everyone is home safe, thanks to you," Captain Shah informs you after you land. She takes you to a nearby restaurant as thanks: "The Republic owes you a debt of gratitude. <payment> have been transferred to your account, and I've informed my superiors of your excellent work today."`
 		log "Captain Shah has put in a good word for me to her superiors on the mission I've completed."
@@ -242,10 +236,9 @@ mission "Republic Bounty 3 alt"
 		system "Tais"
 		ship "Hauler (Brawler)" "The Brawler Hauler"
 		dialog `The <npc> has been disabled. You can claim the bounty payment by returning to <destination>.`
-	on accept
-		log "Hunted a pirate ship called the <npc>, which has captured multiple merchant captains, and disabled the ship at the Republic's request."
 		
 	on complete
+		log "Hunted a pirate ship called the <npc>, which has captured multiple merchant captains, and disabled the ship at the Republic's request."
 		"assisted republic" ++
 		payment 500000
 		dialog `"Everyone is home safe, thanks to you," Captain Shah informs you after you land. She takes you to a nearby restaurant as thanks: "The Republic owes you a debt of gratitude. <payment> have been transferred to your account, and I've informed my superiors of your excellent work today."`
@@ -367,7 +360,7 @@ mission "Navy Scouting 3"
 			choice
 				`	"Funny that you mention probing. With how powerful that ship looks, I thought it might be alien."`
 					goto alien
-				`	"I've dreamed of having a ship so well-outfitted since I was a kid, and today seemed like the day to start that wish list."`
+				`	"I've dreamed of owning a ship so well-outfitted for years; I was just checking what went into the creation of such a beauty."`
 					goto equipment
 			label alien
 			`	"Alien, well maybe to someone flying a tub like yours," he says, chuckling: "No, I can assure you this is all standard human fare."`
@@ -418,16 +411,17 @@ mission "Story Direction 1"
 				`	"What's with the flag?"`
 					goto flag
 			label compliment
-			`	He smiles wide, clearly proud of his ship: "She sure is. You know, it seems amazing to believe that only last year I was flying a Star Barge. The Republic really does pay its full-time contractors well."`
+			`	He smiles wide, clearly proud of his ship:  "She sure is. You know, only this time last year I was flying a Star Barge of all things! Republic Contracting pays better than freight, thats for sure."`
 				goto contractor
 			label insult
-			`	He winces for a moment: "Your words hurt, but ring true. Soon I will be able to afford something even better. The Republic really does pay its full-time contractors well."`
+			`	He winces for a moment: "You don't pull punches, do ya? You're not wrong, though. I could have better. And I will, soon enough; The Republic pays the big bucks for full-time Contractors."`
 				goto contractor
 			label flag
-			`	"It's a custom paint job," he states plainly: "I am very proud of the fact I have been chosen to be a full-time Republic contractor. The pay is amazing, and I'm serving my nation.`
+			`	"It's a custom paint job," he states plainly. "I am proud of my service to the Republic. Not least of all because it pays well."`
 				goto contractor
 			label contractor
-			`	The man begins to walk away, then turns back: "You know, I wasn't selected by accident. I took the initiative, and investigated the Northern Union. Did some jobs for them, built up a network of contacts, then turned them all into the Republic. They offered me this job not long after. With these new 'Free Worlds' terrorists forming to the south, I'm sure you'll find opportunities to serve our great Republic if you play along with them a bit. You can also always do what I did: check out the worlds south of Kornephoros, or north of Alcyone and east of Almaaz. Pirates and terrorists are always desperate for fresh merchant faces to do their dirty work. Find a name and turn them in."`
+			`	"You know, I didn't get this job through luck. I took a bit of initiative, did some odd jobs for the Northern Union, little bit of snooping around, you know? Got some names, got some contacts; turned 'em all in to the Republic. Not long after I got the call, and got this gig."` 
+			`	"You could probably get the same, if you're willing to stick your neck out a little. Especially with these 'Free Worlds' terrorists kickin' up a fuss. Go play along with them for a bit, find out where their leaders are, and cash 'em in to the Republic. I suppose you could do what I did, too, and go for a little 'tour of duty' in the Northern Union. Whatever floats your boat, friend."`
 				accept
 
 mission "Meeting an Alpha 0b"
@@ -485,7 +479,7 @@ mission "Betray Free Worlds"
 	on complete
 		payment 75000
 		log "Told the Republic about my work with the Free Worlds. They officer didn't seem at all impressed at the time, but they might have a job for me in the future."
-		dialog `As you are landing, you contact the Republic offices in the spaceport. After a long hold, they conduct a very breif remote interview with you. The interview consists entirely of yes or no questions, mostly about the bombings. The officer grows increasingly bored with the conversation as it goes on. She ends the interview saying, "The Republic will be in touch if they need anything else."`
+		dialog `As you are landing, you contact the Republic offices in the spaceport. After a long hold, they conduct a very brief remote interview with you. The interview consists entirely of yes or no questions, mostly about the bombings. The officer grows increasingly bored with the conversation as it goes on. She ends the interview saying, "The Republic will be in touch if they need anything else."`
 		set "betray free worlds: done"
 		"assisted republic" ++
 	on decline
@@ -514,8 +508,8 @@ mission "RN Commitment"
 			`Soon after you land, a courier arrives at your ship and hands you a formal looking letter. It reads:`
 			``
 			`Dear Captain <last>,`
-			`	Admiral Danforth would like to thank you for the invaluable assistance you have rendered to his fellow officers. He has sponsored you for a position as an official contractor for the Republic's logistics needs, under the command of the Humanitarian Corps. This affords you access to unique and high paying jobs.`
-			`	If you wish to accept sponsorship, please report to our base on <destination> at your earliest convenience.`
+			`	Admiral Danforth would like to thank you for the invaluable assistance you have rendered to The Republic. He has sponsored you for a position as an official contractor for the Republic's logistical needs, under the command of the Humanitarian Corps. Needless to say, this will pay significantly more than you are used to.`
+			`	Please report to our base on <destination> to discuss the details, at your earliest convenience.`
 			`	Sincerely,`
 			`				Commander Aaron Nguyen, Navy Humanitarian Corps`
 					accept
@@ -602,7 +596,8 @@ mission "rns oathkeeper split"
 			`	A voice comes over the intercom. "Any availible contractors please report to landing pad C1" A sign directly in front of you shows that you are already there`
 			``
 			`	After a few moments, other merchant captains gather around you. A stressed officer also arrives,`
-			`	"May I have everyone's attention please," he says, looking to the crowd you are now a part of. "The Republic is needs assistance in transporting and escorting these officers away from the front lines. This is more like an order than a request. If you do not agree to this, your ship will be impounded and crewed by navy officers. If you do agree, you will be compensated."`
+			`	"May I have everyone's attention please?" He says, looking to the crowd you find yourself a part of. "The Republic requires assistance in transporting these officers away from the front lines. Willing assistance will be compensated."`
+			`	He gives each of you a hard glare. "Don't make me commandeer one of you."`
 			`	He points to you, "Simply follow Contractor <last> to your destination. You lot are dismissed, Contractor <last> please stay here."`
 			choice
 				`	"What's my destination?"`
@@ -661,7 +656,8 @@ mission "RNHC Intro"
 	destination Hope
 	on offer
 		conversation
-			`While you're look around the spaceport and in-construction Humanitarian Corps. Depot, you stumble across Commander Kent, who gave you a bounty-hunting job before you signed on as a privateer. "Oh, are you Captain <last>? I guess you made it on as a Contractor! Congratulations!" He offers you a handshake.`
+			`While looking around the spaceport and the partially-constructed Humanitarian Corps Depot, you stumble across Commander Kent, who is currently overseeing the construction. He notices your approach.`
+			`"Captain <last>, is that you? Official Contractor now, I see? You've come a long way since that first bounty-hunting job I gave you! Congratulations!" He offers you a handshake.`
 			choice
 				`	Don't shake his hand.`
 					goto rude
@@ -815,14 +811,14 @@ mission "RNHC Deep Diplomacy"
 				goto job
 			label job
 			`	"I have a perfect job for you, and it's very simple. Safe too!"
-			`	"With the war escalating, we need to bring a unified front against the Free Worlds threat. The Syndicate and Tarazed have stonewalled us, chosing the path of neutralicy so they can keep their profits up. Any questions?"`
+			`	"With the war heating up, we need to ensure the Republic can present a unified front. However, The Syndicate and Tarazed are refusing to play ball, so we must reach out to The Deep. Any questions?"`
 			choice
 				`	"Sounds bad."`
-				`	"Yea I have questions."`
+				`	"Yeah, I have questions."`
 				`	"Do I have a choice in this?"`
-				`	"Wait, Tarazed and the Syndicate are chosing to be Neutral?"`
-				`	"I Thought Tarazed was part of the Republic."`
-				`	"Doesn't the Syndicate have a lot of power in the Republics parlaiment? How are they able to chose neutralicy?"`
+				`	"Wait, Tarazed and the Syndicate are choosing to be Neutral?"`
+				`	"I thought Tarazed was part of the Republic."`
+				`	"Doesn't the Syndicate have a lot of power in the Republic's Parlaiment? How are they able to chose neutralicy?"`
 				`	"What's the rush?"`
 				`	<Say nothing.>`
 			`	"Great," he says, "No questions then. Anyway To ensure the supplies from the Deep's caravan fleets keep coming in, I'd like you to go take some diplomats from Earth to Valhalla to strike a bargain. What do you say?"`
@@ -852,7 +848,7 @@ mission "RNHC Deep Diplomacy 2"
 		dialog "The diplomats climb into your ship with their small cargo hold worth of luggage and almost immediately begin complaining about the quality of the lodgings. It will be a long flight indeed."
 	
 	on complete
-		dialog "The entire time you're in the planet's atmosphere, heading for one of Valhalla's huge tower spaceports, the diplomats are huddled up mumbling to each other. Anytime you try to say something, they brush you off: "It's fine", "Work stuff", and so on. They quickly leave after you show up and ask you to be ready to pick them up in the spaceport and leave in the morning."
+		dialog "The entire time you're in the planet's atmosphere, heading for one of Valhalla's huge tower spaceports, the diplomats are huddled up mumbling to each other. Anytime you try to say something, they brush you off: "It's fine", "Work stuff", and so on. They quickly leave after you dock, and ask for you to be ready to pick them up in the morning; 9am local, sharp."
 
 
 mission "RNHC Deep Diplomacy 3"
@@ -924,7 +920,7 @@ mission "RNHC Weapons Shipment Shah"
 		
 	on offer
 		conversation
-			`As you are wandering the base, Shah quickly approaches you. "Captain! I was looking for someone who's actually worth the credits we pay. I've got a job that needs none, and no one to do it. Can you pick up some weapons from Ada and bring them here?"`
+			`As you are wandering the base, Shah quickly approaches you. "Captain! I was looking for someone who's actually worth the credits we pay. I've got a job that needs done, and no one to do it. Can you pick up some weapons from Ada and bring them here?"`
 			choice
 				`	"Sure I can."`
 					goto great
@@ -987,7 +983,8 @@ mission "RNHC Weapons Shipment 2"
 	
 	on complete
 		conversation
-			`After unloading the weapons from your ship, you look for Shah to report, and you find her arguing with a Humanitarian Corps officer. The officer shouts, "You can't just tag in a non-violent contractor to do your dirty work when it's convenient for you!" and storms off. Shah sighs and then looks to you. "Oh, all done? Great."`
+			`"While the weapons are unloaded from your ship, you look for Shah to report. You track her down from the sound of her raised voice pitched against another, and find her engaged in a heated argument with a RNHC Officer. "Does non-violent mean anything to you? You can't just tag in a RNHC Contractor to do your dirty work!" He bellows, storming off.`
+			`	Shah lets out a slow breath, closing her eyes for a moment. When she opens them, she spots you, giving you a half-smile. "Oh, back so soon? Great."`
 			choice
 				`	"Is that gonna be a problem?"`
 					goto problem
@@ -996,7 +993,7 @@ mission "RNHC Weapons Shipment 2"
 				`	"Feel free to give me more work."`
 					goto np
 			label problem
-			`	Shah smiles. "No, I don't think so. You just keep doing good work, Captain." She gives you <payment> and leaves.`
+			`	Shah smiles. "Just Aaron being Aaron. You just keep doing good work, Captain." She gives you <payment> and leaves.`
 			label np
 			`	"See, you're not bothered by this. Some people." Shah smiles. "Good work today, I'll see you around." She gives you <payment> and leaves.`
 		payment 80000
@@ -1025,7 +1022,7 @@ mission "RNHC Food Transport"
 			label suspicious
 			`	"There's nothing to worry about, it's just some perfectly innocent cargo hauling."`
 			label job
-			`	Kent is a little fidgety today. It's unlike him. "The thing is, food shipments to the Paradise Worlds have been getting attacked recently, and we need to get food through. I'd like you to take some and quickly bring it to Hestia."`
+			`	Kent is nervously fidgiting with his communicator, "The thing is, food shipments to the Paradise Worlds have been getting attacked recently, and we need to get food through. I'd like you to take some and quickly bring it to Hestia."`
 			choice
 				`	"First Shah, now you. Does Humanitarian Corps mean anything?"`
 				`	"Uh, I'm still in the Humanitarian Corps."`
@@ -1042,10 +1039,16 @@ mission "RNHC Food Transport"
 					goto bonus
 			label scout
 			`	"I mean you can always quit, and give up the juicy Republic contracts. I don't think you'll be doing that over a little harmeless running of food to those in need, though. Godspeed <last>."`
+			`	He walks away.`
 				accept
+				goto makessense
 			`	"I was hoping you would see it my way. Best of luck to you out there, <last>."`
+			`	He walks away.`
 				accept
-			`	"Your checks have always been signed.
+				goto bonus
+			`	"Your checks have always been signed. That will only change if you stop working for us. Have fun out there, <last>."`
+			`	He walks away.`
+				accept
 	npc
 		personality plunders staying
 		government "Free Worlds Wolfpack"
