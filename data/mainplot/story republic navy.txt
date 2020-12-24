@@ -818,7 +818,7 @@ mission "RNHC Deep Diplomacy"
 				`	"Do I have a choice in this?"`
 				`	"Wait, Tarazed and the Syndicate are choosing to be Neutral?"`
 				`	"I thought Tarazed was part of the Republic."`
-				`	"Doesn't the Syndicate have a lot of power in the Republic's Parlaiment? How are they able to chose neutralicy?"`
+				`	"Doesn't the Syndicate have a lot of power in the Republic's Parliament? How are they able to chose neutralicy?"`
 				`	"What's the rush?"`
 				`	<Say nothing.>`
 			`	"Great," he says, "No questions then. Anyway To ensure the supplies from the Deep's caravan fleets keep coming in, I'd like you to go take some diplomats from Earth to Valhalla to strike a bargain. What do you say?"`
