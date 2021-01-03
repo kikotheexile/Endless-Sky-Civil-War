@@ -74,7 +74,7 @@ mission "Deep Mystery Cube [0]"
 		personality nemesis disables waiting plunders
 		system
 			distance 6 9
-		fleet "Bounty Hunters"
+		fleet "Freelance Pirate" 3
 
 
 mission "Deep Mystery Cube [1]"
@@ -105,7 +105,7 @@ mission "Deep Mystery Cube [1]"
 		personality nemesis disables waiting plunders
 		system
 			distance 6 9
-		fleet "Bounty Hunters"
+		fleet "Freelance Pirate" 3
 
 
 mission "Deep Mystery Cube [2]"
@@ -136,7 +136,7 @@ mission "Deep Mystery Cube [2]"
 		personality nemesis disables waiting plunders
 		system
 			distance 6 9
-		fleet "Bounty Hunters"
+		fleet "Freelance Pirate" 3
 
 
 mission "Deep Mystery Cube [3]"
@@ -167,7 +167,7 @@ mission "Deep Mystery Cube [3]"
 		personality nemesis disables waiting plunders
 		system
 			distance 6 9
-		fleet "Bounty Hunters"
+		fleet "Freelance Pirate" 3
 
 
 mission "Mystery retrieval"
@@ -197,7 +197,7 @@ mission "Mystery retrieval"
 		personality nemesis disables waiting plunders
 		system
 			distance 10 17
-		fleet "Bounty Hunters"
+		fleet "Freelance Pirate" 3
 
 
 mission "Transport scientists"
@@ -241,7 +241,7 @@ mission "Escort science vessel"
 		personality nemesis waiting plunders
 		system
 			distance 2 3
-		fleet "pirate raid"
+		fleet "Freelance Pirate" 2
 	
 	npc accompany save
 		government "Merchant"
