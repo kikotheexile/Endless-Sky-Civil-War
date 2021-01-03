@@ -217,25 +217,25 @@ mission "Food Convoy [0]"
 		distance 2 8
 		attributes "near earth" "paradise"
 	npc
-		government "Freelance Pirate"
+		government "Freelance Pirates"
 		personality nemesis harvests plunders
 			confusion 20
 		system destination
 		fleet "Southern Pirates"
 	npc
-		government "Freelance Pirate"
+		government "Freelance Pirates"
 		personality nemesis harvests plunders
 			confusion 20
 		system destination
 		fleet "Southern Pirates"
 	npc
-		government "Freelance Pirate"
+		government "Freelance Pirates"
 		personality nemesis entering harvests plunders
 			confusion 20
 		system destination
 		fleet "Southern Pirates"
 	npc
-		government "Freelance Pirate"
+		government "Freelance Pirates"
 		personality nemesis staying harvests plunders
 			confusion 20
 		system destination
@@ -271,17 +271,17 @@ mission "Food Convoy [1]"
 		distance 3 9
 		attributes "near earth" "paradise"
 	npc
-		government "Freelance Pirate"
+		government "Freelance Pirates"
 		personality nemesis harvests plunders
 		system destination
 		fleet "Southern Pirates"
 	npc
-		government "Freelance Pirate"
+		government "Freelance Pirates"
 		personality nemesis entering harvests plunders
 		system destination
 		fleet "Southern Pirates"
 	npc
-		government "Freelance Pirate"
+		government "Freelance Pirates"
 		personality nemesis staying harvests plunders
 		system destination
 		fleet "Southern Pirates"
@@ -317,18 +317,18 @@ mission "Food Convoy [2]"
 		distance 4 10
 		attributes "near earth" "paradise"
 	npc
-		government "Freelance Pirate"
+		government "Freelance Pirates"
 		personality nemesis harvests plunders
 		system destination
 		fleet "Southern Pirates"
 		fleet "Northern Union"
 	npc
-		government "Freelance Pirate"
+		government "Freelance Pirates"
 		personality nemesis entering harvests plunders
 		system destination
 		fleet "Northern Union"
 	npc
-		government "Freelance Pirate"
+		government "Freelance Pirates"
 		personality nemesis staying harvests plunders
 		system destination
 		fleet "Southern Pirates"
