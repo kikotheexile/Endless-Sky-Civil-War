@@ -106,7 +106,7 @@ government "Tarazed"
 	"attitude toward"
 		"Wanderer" 2
 		"Hai" 2
-		""Lionheart Shipping"" 2
+		"Lionheart Shipping" 2
 		"Local" 1
 		"Freelance Merchants" .3
 		"Freelance Pirates" -.4
@@ -340,7 +340,7 @@ government "Deep"
 		"Freelance Merchants" .5
 		"Northern Union" -.01
 		"Freelance Pirates" -.2
-		""Lionheart Shipping"" 1
+		"Lionheart Shipping" 1
 		"Deep Security" 1
 
 government "Deep Security"
@@ -350,7 +350,7 @@ government "Deep Security"
 		"Freelance Merchants" .5
 		"Northern Union" -.01
 		"Freelance Pirates" -.2
-		""Lionheart Shipping"" 5
+		"Lionheart Shipping" 5
 	"friendly hail" "friendly deep"
 	"hostile hail" "hostile deep"
 
@@ -397,7 +397,7 @@ government "Free Worlds Wolfpack"
 		"Militia" .01
 		"Freelance Pirates" -.04
 		"Republic" -.1
-		""Lionheart Shipping"" -1
+		"Lionheart Shipping" -1
 		"Deep Security" -5
 		"Deep" -1
 		"Northern Union" -2
