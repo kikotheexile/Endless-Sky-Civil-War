@@ -108,6 +108,8 @@ mission "Kestrel Testing"
 					goto wraith
 				`	"The Grey Goose."`
 					goto goose
+				`	"The Kestrel."`
+					goto kestrel
 			
 			label wraith
 			`	"Not a bad name, I suppose," he says, "but at Tarazed we usually name our ships after animals. Any other ideas?"`
