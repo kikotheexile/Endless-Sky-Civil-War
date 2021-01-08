@@ -356,6 +356,7 @@ outfitter "Deep Sky Advanced"
 	"Pacifist-3 Shield Generator"
 	"Pacifist-4 Shield Generator"
 	"Pacifist-5 Shield Generator"
+	"City-Ship License"
 
 outfitter "Lovelace Basics"
 	"Anti-Missile Turret"
