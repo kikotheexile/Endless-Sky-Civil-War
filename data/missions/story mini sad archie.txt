@@ -28,16 +28,27 @@ mission "Deep Archaeology 1"
 				`	"Is this something illegal?"`
 				`	"Sure, let's return to my ship and talk there."`
 					goto ship
+				`	"No."`
+					decline
 			`	"Not illegal," he says, "but it could help to uncover a secret with enormous ramifications. A secret that certain people do not want known."`
-			`	"Okay," you say, "let's return to my ship, and I'll hear you out."`
+			choice
+				`	"Sure, let's return to my ship and talk there."`
+					goto ship
+				`	"No."`
+					decline
 			label ship
-			`	You lead him back to your ship. "I'm an archaeologist," he explains, "studying the early history of the space era. And in particular, a set of persistent folk tales about contact with alien species. Many of these tales have to do with the region of the galaxy we call the Deep. I need someone to travel to Midgard and retrieve some samples from an ancient site there."`
+			`	"I'm an archaeologist," he explains, "studying the early history of the space era. And in particular, a set of persistent folk tales about contact with alien species. Many of these tales have to do with the region of the galaxy we call the Deep. I need someone to travel to Midgard and retrieve some samples from an ancient site there."`
 			choice
 				`	"Why can't you travel there yourself?"`
 				`	"What sort of samples? Will this get me in trouble?"`
 					goto samples
 			`	"Well, let's just say I've made myself somewhat unpopular in the Deep," he says. "Asking too many questions. If I were seen walking around on Midgard, they would probably ask me to leave immediately."`
-			`	You say, "And, is the work you're asking me to do going to make me equally unpopular?"`
+			choice
+				`	"And, is the work you're asking me to do going to make me equally unpopular?"`
+					goto samples
+				`	"I really don't like where this is going. I'm out."`
+			`	"Your loss." He says, before he leaves your ship.`
+				decline 
 			label samples
 			`	"Not if you are circumspect," he says. "I need two samples from a certain village. One is simple: wood from a living or recently deceased tree. Any tree will do."`
 			`	He pauses for a minute, then continues. "The other is more... sensitive. There is a historical site on Midgard, an ancient church. Not something they publish in the official tourist guides, mind you. I need a small sample of the wood that the church is built with. A small splinter would suffice."`
@@ -50,21 +61,20 @@ mission "Deep Archaeology 1"
 			`	"I need only the tiniest of samples," he says, "maybe a splinter of wood that is already peeling off, or from a place where the wood is worn and cracked. And what we discover from that sample could be of immense importance."`
 			choice
 				`	"Sorry, that sounds a bit too shady to me."`
-					decline
 				`	"Wait a minute, can I get your name?"`
 				`	"Okay, I'm willing to do that."`
 					goto yes
+			`	"That really is too bad," He says, walking towards the exit of your ship. "You're really missing out."
+				decline 
 			label name
 			`	"If you don't mind, I'd prefer to stay anonymous for now. You don't have to tell me your name either if you don't want."`
 			choice
 				`	"Sorry, that sounds a bit too shady to me."`
-					decline
 				`	"Okay, I'm willing to do that."`
+					goto yes
+			`	"Thank you for at least hearing me out," He says, as he heads for the exit. "Sorry for wasting your time."
 			label yes
 			`	"Thank you," he says. "Trust me, this could give us some very important information. I'll need you to drop me off on Vinci first, to meet with some scientists. Meet me there again once you have the samples."`
-			choice
-				
-
 				accept
 	on visit
 		dialog `You land on <planet>, but realize that your escort carrying the archaeologist hasn't entered the system yet. Better depart and wait for it.`
@@ -85,8 +95,6 @@ mission "Deep Archaeology 2"
 			`You drop off the archaeologist (who still has not told you his name) on <origin>. "Remember," he says, "I only need a tiny splinter. Just make sure it really is from the building and not anything more recent."`
 				accept
 
-
-
 mission "Deep Archaeology 3"
 	landing
 	name "Deep Archaeology"
@@ -106,7 +114,7 @@ mission "Deep Archaeology 3"
 				`	(Take a sample from the outside.)`
 				`	(Give up on this mission and leave, before I get into trouble.)`
 					decline
-			`	You walk around the outside of the building until you find one corner where the wood has been recently scuffed, and a few hairs of it are hanging loose. You carefully pick the splinters off and put them in the second envelope. Then, you return to your ship. Although you see no one following you, you can't shake the feeling that you are being watched.`
+			`	You walk around the outside of the building until you find one corner where the wood has been recently scuffed, and a few hairs of it are hanging loose.`
 				accept
 			label inside
 			`	This church must still be used for services: candles are lit up front, and a man in a white surplice is playing the organ. A few people sit in the pews with their heads bowed. Trying to be as unobtrusive as possible, you join them, and look around at the ornately carved pillars and wood panels. The air in here smells of incense and musty wood.`
@@ -114,26 +122,9 @@ mission "Deep Archaeology 3"
 				`	(Take a sample.)`
 				`	(Give up on this mission, and leave.)`
 					decline
-			`	Pretending to pray, you kneel on the ground, take your pocket knife, and shave the tiniest sliver off the bottom corner of the pew in front of you. It leaves a small white scar in the dark weathered wood of the pew. You pocket the sample, wait a few more minutes, and then leave and walk back to the spaceport. Although you see no one following you, you cannot shake the feeling that you are being watched.`
+			`	You kneel on the ground, take your pocket knife, and shave the tiniest sliver off the bottom corner of the pew in front of you. It leaves a small white scar in the dark weathered wood of the pew. You pocket the sample, wait a few more minutes, and then leave and walk back to the spaceport.`
 				accept
-	
-	npc
-		personality waiting
-		government "Deep Security"
-		ship "Raven (Afterburner)" "D.P.S. Wyrd"
-	
-	npc
-		personality waiting
-		system Aspidiske
-		government "Deep Security"
-		ship "Raven (Afterburner)" "D.P.S. Skuld"
-	
-	npc
-		personality waiting
-		system Gomeisa
-		government "Deep Security"
-		ship "Raven (Afterburner)" "D.P.S. Verthandi"
-	
+
 	on complete
 		payment 200000
 		log `Agreed to take a piece of wood from a church on Midgard for an archaeologist. Carbon dating suggests that the church was built many centuries before the discovery of the hyperdrive.`
@@ -202,6 +193,8 @@ mission "Deep Archaeology 5"
 					goto what
 				`	"You mean to tell me they made a black hole?"`
 					goto what
+				`	"So do I get any bonus pay, maybe credits in your next paper?"`
+					goto attack
 			label illegal
 			`	"No, not illegal," says Albert. "No need to make laws against them, for the simple reason that no one knows how to make them. That's alien technology, very advanced."`
 				goto attack
@@ -213,9 +206,9 @@ mission "Deep Archaeology 5"
 	
 	npc
 		personality heroic
-		government Deep
-		ship "Raven (Afterburner)" "D.P.S. Wyrd"
-		ship "Raven (Afterburner)" "D.P.S. Skuld"
+		government "Bounty Hunter"
+		ship "Raven (Heavy)" "D.P.S. Wyrd"
+		ship "Raven (Missile)" "D.P.S. Skuld"
 		ship "Raven (Afterburner)" "D.P.S. Verthandi"
 	
 	on visit
@@ -224,26 +217,34 @@ mission "Deep Archaeology 5"
 		payment 300000
 		log `Returned to Midgard with Albert Foster, the archaeologist, to map the area around the church. The instruments discovered what looked like an artificial singularity. Got chased away by Deep ships before being able to look closer.`
 		conversation
-			`You breathe a sigh of relief as you land safely in the spaceport on <planet>. "Okay, what was that all about?" you ask.`
+			`John breathes a sigh of relief as you land safely in the spaceport on <planet>. "Okay, what was that all about?" he asks.`
 			`	"I honestly don't know," says Albert. "I can tell you what I suspect, though. The history books don't actually say when the Deep was first settled. The first documented expedition to the Deep was in the 24th century, and they found several human colonies already established in the region, claiming to date back to the very dawn of space flight. But I think the first settlers were brought there long before that. Brought there on alien ships."`
 			choice
 				`	"For what purpose?"`
 					goto purpose
 				`	"What aliens? The Quarg?"`
 					goto aliens
+				`	<Say Nothing.>`
+					goto nothing
 			label purpose
 			`	"I'm not sure," he says. "But I first became interested in the Deep while researching the Augment Wars. I'm sure you know the history, how humanity was nearly enslaved by psychopathic 'super' humans that we ourselves had created by dabbling in genetic engineering. At that time, the Deep made a sudden, improbable technological leap that allowed them to construct weapons and ships far more powerful than what the Alphas had, and the war against them was won."`
 				goto end
 			label aliens
 			`	"That's a reasonable hypothesis, considering how close they are to Quarg space. However." He trails off for a second, "However, there are popular folk tales in the Deep about 'elves.' Thin, pale, graceful creatures, with blue blood."`
 			`	John frowns. "Hemocyanic blood. Not the Quarg, then. Their lungs are odd, but their blood uses hemoglobin for oxygen transport, just like ours."`
+				goto end
+			label nothing
+			`	"No, not your theories, albert." John says "Deep Security doesn't hire bounty hunters to sit on their planets and chase away ships! They specifically targeted Captain <last>'s ship."`
 			label end
 			`	Albert continues, "What I think is that an unknown alien species has been involved in events in the Deep since the beginning, and is perhaps still involved there today. I think this is known to at least some of the Deep's inhabitants."`
 			choice
 				`	"So, what do we do now?"`
+					goto finish
 				`	"How can we find out more information?"`
-			`	"Well," he says, "unfortunately, Captain, they're going to be watching you. I'll have to seek out someone else for the next stages of my research. But I will keep you notified if I discover anything further."`
-			`	It is an unsatisfactory conclusion to your work, with so many questions unanswered. But to make up for that, Albert gives you <payment> as payment for your services. "You will hear from me again," he promises.`
+					goto finish
+			label finish
+			`	"Well," he says, "unfortunately, Captain, they're watching you, and they aren't likely to stop for some time. I'll have to seek out someone else for the next stages of my research."`
+			`	It is an unsatisfactory conclusion to your work, with so many questions unanswered. But to make up for that, Albert gives you <payment> as payment for your services, before you part ways.`
 
 
 
@@ -357,8 +358,9 @@ mission "There Might Be Riots part 2"
 		conversation
 			`As before, the band pays you generously: <payment>.`
 			choice
-				"Where will you be going next, from here?" you ask.`
-			# ask about why they didn't have their own transport
+				`"Where will you be going next, from here?" you ask.`
+				`"Something's been bugging me, why don't you have your own transport?"`
+					goto transport
 			`	"Who knows," says Ulrich. "Our music has taken us throughout human space, and beyond."`
 			choice
 				`	"What do you mean, 'beyond' human space?"`
@@ -366,12 +368,15 @@ mission "There Might Be Riots part 2"
 					accept
 			`	Ulrich launches into a story. "Years ago when the band was young and we had a month off in between gigs, we found an old grey merchant captain with a glass eye and asked him to transport us to one of the Paradise worlds for an extended 'drug vacation,' if you know what I mean. He said, 'Boys, why don't you leave the drugs behind, and I'll take you on a real mind-altering trip,' and a few days later we were playing a concert on this world where the people were giant squirrels. They loved our music, too. Never did find anyone who could take us back there, though."`
 			choice
-				`	"You met aliens?"` # player used to know the Hai in this line
+				`	"You met aliens?"`
 				`	"Well, I'll look forward to the next time we meet."`
 					accept
 			`	Ulrich chuckles a bit, "Pretty wild, huh? Well, we've been discussing ways to smuggle ourselves back into their space. Maybe one day we will."`
 				accept
-
+			label transport
+				`	The drummer, who usually silent, speaks up: "It's better to contract this sort of thing out so we don't get taken hostage. Besides, you've seen how wild our fans get. We never get our rental deposits back."`
+				`	Rebecca and Ulrich both chuckle. "Good times." Rebecca says, before they depart.`
+	
 mission "There Might Be Riots part 3A"
 	name "Transport band to <planet>"
 	description `Give the band "There Might Be Riots" a ride to <destination>.`
@@ -428,7 +433,7 @@ mission "There Might Be Riots part 3A"
 			`	"Great," he says. "Now, the only question is where we'll go afterwards until the fuss dies down. I was thinking it'd be a great chance for our band to reconnect with the squirrel people. What were they called again, the hey or hi or something?"`
 			`	"The Hai," Rebecca chimes in. "Which means going to Echo Station."`
 			`	"Excellent," Ulrich says, "Let's go thumb our noses at the military industrial complex, then you take us to Echo station. We hitch a ride through the gate, and stay with the peaceful squirrel people where the government won't bother us."`
-			`	Once more, they begin loading their stuff onto your ship, while you chart a course to <destination>.`
+			`	Once more, they begin loading their stuff onto your ship, it's time to head to <destination>.`
 				accept
 	on visit
 		dialog `You arrive on <planet>, but realize that your escort carrying the band and their supplies has not arrived yet. Better depart and wait for your escorts to enter the system.`
@@ -509,17 +514,20 @@ mission "There Might Be Riots part 3B"
 			`	"Then suddenly clear as day I heard a voice say, 'Are you okay? Do you need anything?' I was so shocked that without even thinking I said, 'I'm fine. How about you?' And the voice told me he was sad. Sad, because that part of space used to be the home of another species, and now they're all dead. He said we humans built our cities on the graveyards of a great civilization and didn't even know it. And if we didn't stop fighting each other, our species would die off too.`
 			`	"That's when the band started to speak out against war."`
 			choice
+				`	"Wait, what system was this?"`
+					goto system
 				`	"Do you think the voice was real, or just in your head?"`
 				`	"It sounds like a good warning. I'll try to take it to heart."`
 					goto end
 			`	"It was in my head," he says, "And it was real. Very real. When it spoke I felt like the whole galaxy had just tipped sideways, or like I'd just stepped too close to the edge of a cliff and got vertigo. I've imagined some crazy things, but I tell you, this I did not imagine."`
-			`	You wish him the best of luck in his journey, and he heads off into the spaceport with the rest of the band.`
+			`	The two of you exchange your goodbyes, as heads off into the spaceport with the rest of the band.`
 				accept
 			label end
 			`	"Then best of luck to you," he says, and he heads off into the spaceport with the rest of the band.`
 				accept
-
-
+			label system
+			`	"I'm not entirely sure. It was some really cloudy star, off in some deadend system, somewhere on the Southern Rim. I think it started with an I."`
+			`	He pauses for a moment, "Nothing, wish I could tell you more <first> but I really need to meet up with the rest of the band. Goodbye, and good luck."`
 
 ship "Timer Ship"
 	attributes
@@ -598,27 +606,41 @@ mission "Rim Archaeology 1"
 				`	(Of course!)`
 				`	(Not right now.)`
 					defer
-			`Foster seems glad to see you. You do your best to pique his interest without saying anything that will make him think you're crazy, but he's clearly not buying it. "I'm sorry," he says, "but I'm not mounting an expedition just because you have a 'hunch.' So unless you're willing to tell me the source of your information, I'm not interested." He turns his attention back to the data pad that he was reading before you walked into his office.`
+			`Foster seems glad to see you. "<first>! Such a pleasure to see you around, but I've got to ask, what brings you by?"`
 			choice
-				`	"I'd rather keep my sources secret."`
 				`	"I had this dream about dragon-people on Zug."`
 					goto dream
 				`	"I think a telepathic space alien spoke to me."`
-					goto telepath
-			`	"Then I'd rather not help you," he says, without looking up from the data pad.`
+					goto boldclaim	
+				`	"I'd rather keep my sources secret on this, but I believe you might find some ruins on Zug."`
+			`	"If you'd rather not share your sources, then I'd rather not help you," he says, without looking up from the data pad. "You know I've made some enemies, and not to sound paranoid but I really don't like being set up."`
 			choice
+				`	"You know what? Nevermind."`
+					goto decline
 				`	"Look, I parked in Ildaria and passed out. This is where I had this dream about dragon-people on Zug."`
-				`	"So, Ulrich of TMBR told me about having visions in Ildaria, so I checked it out. I think a telepathic space alien spoke to me."`
+					goto dream
+				`	"So, Ulrich of the band 'There Might Be Riots' told me about having visions in Ildaria, so I checked it out. I think a telepathic space alien spoke to me."`
+					goto telepath
+			label boldclaim
+			`	He nearly drops his datapad, but calms himself. "That is a really bold claim," he says, "And most people would laugh you out of the room. Is there more to this story?"`
+			choice
+				`	"You know what? Nevermind."`
+					goto decline
+				`	"So, Ulrich of the band 'There Might Be Riots' told me about having visions in Ildaria, so I checked it out. I think a telepathic space alien spoke to me."`
 					goto telepath
 			label dream
-			`	"You had a dream," he says. "Sorry, no. Oneirological archaeology is notoriously unreliable." From his tone of voice, you think he's being sarcastic.`
+			`	"You had a dream," he says. "Sorry, no. Oneirological archaeology is notoriously unreliable." His tone is sarcastic, but he softens. "Look, is there anything else you can tell me?"`
 			choice
-				`	"Ulrich of TMBR told me about having visions in Ildaria, so I checked it out. While there, I think a telepathic space alien spoke to me."`
+				`	"Ulrich of the band 'There Might Be Riots' told me about having visions in Ildaria, so I checked it out. While there, I think a telepathic space alien spoke to me."`
 					goto telepath
+			label decline
+				`	He takes a sip of his coffee while waving you out the door, you return to your ship.`
+					decline
 			label telepath
-			`	You expect him to laugh at you, but instead he's so shocked that he drops the data pad he's holding. "An Archon?" he says. "How the hell did you get tangled up with one of those?" You tell him the story, and he listens intently.`
-			`	"It's feasible," he says. "We've heard rumors from the Quarg that an alien civilization used to exist in the Rim, a hundred thousand years ago. No signs of it, of course - any artifacts they left behind have been destroyed by the elements, or perhaps intentionally removed. But if a city were encased in lava, that could preserve signs of it even over such a long time frame."`
-			`	Foster makes a few phone calls to cancel his upcoming plans, and then shows up at your ship with a large collection of geological surveying tools. "Let's go check it out," he says.`
+			`	"Sounds like an Archon." he declares. "How the hell did you manage to get tangled up with one of those?"`
+			`	He considers your story about how a famous rock star told you about having these same visions first for a moment.`
+			`	"You know what? Crazy as it sounds, it's actually feasible," he says. "We've heard rumors from the Quarg that an alien civilization used to exist in the Rim, a hundred thousand years ago. No signs of it, of course - any artifacts they left behind have been destroyed by the elements, or perhaps intentionally removed. But if a city were encased in lava, that could preserve signs of it even over such a long time frame."`
+			`	Foster makes a few calls to defer or cancel his upcoming plans, and then shows up at your ship with a large collection of geological surveying tools. "Let's go check it out," he says.`
 				accept
 	
 	on visit
@@ -633,9 +655,8 @@ mission "Rim Archaeology 1"
 					goto scan
 			`	"Air pockets," he says, "some of them filled in with ground water. Nothing out of the ordinary."`
 			label scan
-			`	When the scan reaches about thirty meters below the surface, suddenly the view changes...`
-			scene "scene/geoscan"
-			`	"Great burning suns!" says Foster. "There is something down there! Roads in a triangular grid. That ain't no human city." You both stare at the monitor for a minute, then Foster says, "I'm going to need to pull some permits. Meet me in the spaceport in an hour if you're willing to help pick up some of the other stuff we'll need."`
+			`	When the scan reaches about thirty meters below the surface, suddenly the view changes into weird triangular and hexagonal patterns.`
+			`	"Great burning suns!" Foster shouts. "There is something down there! Roads in a triangular grid. That ain't no human city." You both stare at the monitor for a minute, then Foster says, "I'm going to need to pull some permits. Meet me in the spaceport in an hour if you're willing to help pick up some of the other stuff we'll need."`
 
 
 
@@ -653,10 +674,7 @@ mission "Rim Archaeology 2A"
 			choice
 				`	"Sure."`
 					accept
-				`	"Sorry, I don't have time to help out anymore."`
-			`	He seems incredulous. "No time to participate in what could be one of the biggest discoveries of the last hundred years? A job you offered me, no less?" He sighs, "You'll be well paid for your services too, if that's what's holding you back."`
-			choice
-				`	"Okay, I'll pick up your equipment from <planet>."`
+				`	"This is our joint discovery, of course I'll do it."`
 					accept
 
 
@@ -673,7 +691,7 @@ mission "Rim Archaeology 2B"
 	
 	on offer
 		conversation
-			`When you arrive on <origin>, the excavation machines requested by Albert Foster are already waiting for you at the spaceport. They are some of the largest terrestrial vehicles you have ever seen: a truck with enormous toothed grinding wheels for cutting through stone, and a front-end loader for carrying the loose stone away. You are barely able to fit them through the entrance of your cargo bay.`
+			`When you arrive on <origin>, the excavation machines requested by Albert Foster are already waiting for you at the spaceport. They are some of the largest terrestrial vehicles you have ever seen: a truck with enormous toothed grinding wheels for cutting through stone, and a front-end loader for carrying the loose stone away. Even deconstructed, they barely able to fit through the entrance of your cargo bay.`
 				accept
 	
 	on visit
@@ -695,9 +713,11 @@ mission "Rim Archaeology 3A"
 	on offer
 		conversation
 			`You drop off the excavation machines at the dig site on Zug, and receive your payment of three hundred thousand credits. Foster has already marked out lines of where he wants to dig and has completed a much more detailed geological scan. "We'll be starting with a narrow trench," he tells you, "and expanding out from there. It'll need to be wide enough to include a ramp for the vehicles, of course, so we'll still need to move a lot of rock. And when we get within the last five meters or so, I'm worried that the vibration from the grinders may be too destructive. So, I need some laser excavation equipment from <planet>, next."`
-			`	You agree to fetch the equipment, and he begins directing the work crews to get the digging started.`
+		choice
+			`	"On it."`
 				accept
-
+			`	"Just don't forget that my name goes in the history books, too!"`
+				accept
 
 
 mission "Rim Archaeology 3B"
@@ -720,7 +740,7 @@ mission "Rim Archaeology 3B"
 	npc evade
 		government Merchant
 		personality waiting
-		ship "Peregrine" "Oxyrhynchus"
+		ship "Falcon" "Oxyrhynchus"
 	
 	on visit
 		dialog
@@ -767,7 +787,8 @@ mission "Rim Archaeology 4B"
 				`	"Do we really need to get the Quarg involved directly in this?"`
 			`	To your human eyes, unused to reading their expressions, the Quarg almost always seem grim and serious. But Yarthis seems particularly grave as it says, "You are digging in a graveyard, Captain. Someone must be present to see that the dead are given their due respect."`
 			label welcome
-			`	As both of them board your ship, Amelia chats enthusiastically with you. "One ringworld can sustain a population in excess of a trillion," she says, "so the Quarg need long names in order to unambiguously identify themselves." She goes on to ask questions about the progress of the dig, using so much technical jargon that at times it almost sounds like she is speaking the Quarg language rather than your own. Clearly she is very knowledgeable about the study of alien societies, and you are surprised to learn that she was actually born in Hai space, as the granddaughter of some of the first humans who settled there.`
+			`	As both of them board your ship, Amelia chats enthusiastically with you. "One ringworld can sustain a population in excess of a trillion," she says, "so the Quarg need long names in order to unambiguously identify themselves." She goes on to ask questions about the progress of the dig, using so much technical jargon that at times it almost sounds like she is speaking the Quarg language rather than your own. Clearly she is very knowledgeable about the study of alien societies.` 
+			`	"You know I was actually born in Hai space, as the granddaughter of some of the first humans who settled there." She says to you, completely out of context, before continuing her technobabble.`
 				accept
 
 	on visit
@@ -800,7 +821,7 @@ mission "Rim Archaeology 5A"
 				launch
 	
 	npc evade
-		government Pirate
+		government "Southern Pirates"
 		personality heroic waiting
 		ship "Harpy" "Akhetaten"
 		ship "Harpy" "Itjtawy"
@@ -812,7 +833,7 @@ mission "Rim Archaeology 5A"
 		dialog `The last of the pirate raiders have been driven off. Time to land and check if any damage was done to the dig.`
 
 	npc
-		government Pirate
+		government "Southern Pirates"
 		personality heroic waiting
 		ship "Fury" "Raider One"
 		ship "Fury" "Raider Two"
@@ -847,7 +868,6 @@ mission "Rim Archaeology 5A"
 	on complete
 		payment 400000
 		event "rim archaeology results" 97
-		log `With the help of a Free Worlds defense fleet, some Merchants, and a Quarg ship, I fought off a group of antique thieves looking to rob the archaeological site that Albert Foster dug up. Foster will need some time to study what he has found and release the results of his findings.`
 		conversation
 			`A plume of smoke is rising from the dig site. You land and find out that a missile fired by one of the pirates destroyed one of the huts where the workers were living, but fortunately no one was inside it at the time. Foster is shaken but still committed to finishing the work. "It will be months before we've excavated enough to be able to publish any findings," he says, "but Yarthis has told me that the Quarg will be stationing a Wyvern here for the remainder of the project, to prevent any further foul play." Foster gives you one last payment: four hundred thousand credits for your help driving off the pirates. "And I'll be sure to give you credit for your help when the news goes public," he says.`
 
