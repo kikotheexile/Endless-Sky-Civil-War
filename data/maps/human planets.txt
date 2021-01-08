@@ -1076,8 +1076,9 @@ planet Ingot
 planet "Kraken Station"
 	attributes "near earth" station
 	landscape land/sivael7
-	description `Kraken Station is seven centuries old; it was the first space station built outside of the Sol system. The station has been modified and repaired so often since that time that in all likelihood not a single deck panel or bulkhead that was part of the original station remains. Four centuries ago it was nearly destroyed by an asteroid impact, but other than that it has been a working deuterium refinery for its entire lifetime.`
-	spaceport `The main ring of the station consists of three different levels, with living quarters, repair shops, a few small cafeterias, and even a barber. The lower levels also house some of the refinery equipment, but much of the harvesting is done automatically by robotic drones. For a station that is so old, everything feels surprisingly sturdy; the bolts and beams that make up the station are much thicker than they probably need to be.`
+	description `The first human station built beyond the Sol system, Kraken Station is nearly seven centuries old. The station has been modified and repaired so often that not a single deck panel or bulkhead that was part of the original station remains. Four centuries ago it survived a massive asteroid impact, remaining a tireless deuterium refinery when far younger stations have failed.`
+	spaceport `The main ring of the station consists of three different levels; each complete with living quarters, repair shops, and small scattered cafeterias. Hairdressers and nail salons also find plenty of clientele here, making this only station where one can get a proper pedicure.`
+	spaceport `	The lower levels house some refinery equipment, but the lion's share of the harvesting is done automatically with the newest line of refining drones. Even though it shows its age in places, the station is very sturdy; the bolts and beams that hold the station together are much thicker than they need to be.`
 	security 0.3
 	music ambient/machinery
 	tribute 500
@@ -1087,8 +1088,8 @@ planet "Kraken Station"
 planet Lagrange
 	attributes quarg tourism station
 	landscape land/station5
-	description `The Quarg built this station centuries ago, before they began construction on the ringworld. From the dark side of the station, the ring is visible as a thin bright filament stretching out to either side of the system's sun. The ring itself is closed to human visitors, but tour shuttles depart from here on a regular basis, giving human tourists a closer view of this engineering feat that is so far beyond anything human beings have ever attempted to build.`
-	spaceport `In the docking section are flexible, oddly organic-looking tubes that snaked out to connect to your ship as it approached. Walking through the tube and into the station was a somewhat disconcerting experience. Inside, crowds of human tourists gawk at the tall, thin Quarg, who for the most part seem unfazed by the attention. The station is perfectly clean; every surface shines.`
+	description `The Quarg built this station centuries ago, before beginning construction on the ringworld. From the dark side of the station, the ring is visible as a bright filament stretching out across the sun. The ring itself is closed to human visitors, but tour shuttles depart from here on a regular basis, giving tourists a closer view of this engineering feat far beyond human imagination.`
+	spaceport `In the docking section are flexible semi-organic tubes that snake out to connect to your ship as you approach. Walking through the tube and into the the station is a strange experience, but is easy enough to maneuver. Inside, crowds of human tourists gawk at the Quarg, with their towering but exceptionally thin frames, as though stretched with a taffy puller. Notably, the station is impeccably clean; every surface freshly scrubbed and polished.`
 	shipyard "Quarg"
 	bribe 0
 	security 0.9
@@ -1096,9 +1097,9 @@ planet Lagrange
 planet "Leviathan Station"
 	attributes deep station
 	landscape land/sivael3
-	description `Leviathan Station is the Deep's most productive deuterium harvesting station. Built nearly four hundred years ago, the station was one of the first to fuel the massive cargo caravans sent out from the Deep back when this was one of the only regions of the galaxy with a prosperous economy and a democratic government. Today it remains under government control, because the citizens of the Deep are wary of any private corporation controlling the industry that makes interstellar travel possible.`
-	spaceport `This is a refinery, not a tourist destination. You were allowed to dock here, and the massive cafeteria used by the local workers is available to you if you want to eat, but beyond that no one seems particularly interested in entertaining you or interacting with you.`
-	spaceport `	On the other hand, you get some small satisfaction from knowing that you refueled your ship with deuterium that just yesterday was most likely still floating around in the upper cloud banks of the gas giant below.`
+	description `Leviathan Station is The Deep's most productive deuterium harvesting station. Built nearly four hundred years ago, the station was the first to fuel the massive cargo caravans unique to this region. To this day it remains under government control, as The Deep is reasonably wary of private corporations controlling the industries that make interstellar travel possible.`
+	spaceport `This is a refinery, not a tourist destination. While you are allowed to dock here as well as make use of the same cafeteria used by the local workers, no one seems interested in entertaining you or interacting with you.` 
+	spaceport `Seeing this impressive station, one might get a feeling of satisfaction from knowing they just refueled their ship with deuterium that just yesterday was floating around the upper cloud banks of the gas giant below.`
 	"required reputation" 10
 	bribe 0.08
 	security 0.9
@@ -1110,18 +1111,17 @@ planet "Leviathan Station"
 planet "Liberty Station"
 	attributes station 
 	landscape land/sivael3
-	description `Every door is under heavy guard and you are allowed no further into the station than the mess. The people here are equally as cold and unresponsive to any questions or greetings. The dockmaster's favorite phrase seems to be 'Fuel up and get out.'`
-	spaceport `The docking ring is the only place you have access to and is just as unwelcoming as the rest of the station. The robotic cleaners rarely make passes over it's littered and blood stained floors. Occasionally you can see small glimpses of something less bland happening deeper within the station.`
-	spaceport `	Curiously, there is a kiosk labeled "Northern Hotrods," which allows you to view heavily modified ships. You can't seem to buy them without a special token.`
+	description `Every door is under heavy guard; allowing you no further than into the cold and grey mess hall. The people here are equally as frigid and unresponsive to questions and greetings. The dockmaster commands the area, reminding visitors to 'Fuel up and get out.'`
+	spaceport `The docking ring is just as unwelcoming as the rest of the station. The robotic cleaners rarely make passes here, and some might be concerned about the blood stains on the floor. More than once you catch a glimpse of interesting happenings deeper within the station.`
 	outfitter "Ammo"
 
 planet Lichen
 	attributes "requires: landing gear" south farming frontier
 	landscape land/fields3
-	description `Lichen is a rainy world of marshes, fields, and streams. More than half the rice consumed in this administrative district is grown on Lichen, because of its near-optimal climate. However, because of the constant rain and overcast weather, few people aside from farmers have settled here.`
-	description `	Planetary government, or indeed any government above the village level, is virtually nonexistent. Most farms are small and family-owned, negotiating sales directly with off-world corporations who then arrange for transportation of the produce.`
-	spaceport `The spaceport is built on a small mountain, one of the rare places where enough bedrock rises above the soil to provide a firm foundation for large buildings and a flood-free location. The warehouses and market are built of concrete, but the smaller buildings on the outskirts of the port are wood framed. Moss is growing everywhere, and in places the wood is stippled with mold. But the people are friendly enough, unhurried and peaceful.`
-	spaceport `	A noodle soup restaurant near the center of the port town seems to be the gathering place of choice. Whatever they're cooking inside, it smells delicious.`
+	description `Lichen, as the name suggests, is a rainy world of marshes and bogs. More than half the rice consumed in this district is grown on Lichen, with it's optimal climate and rich soil. Due to the endless rain and overcast weather, few people aside from farmers and starry-eyed poets have settled here.`
+	description `	Planetary government, or any government above the village level for that matter, is nonexistent. Farms are small and family-owned, negotiating sales directly with off-world corporations who arrange transportation for the produce.`
+	spaceport `The spaceport is built on a small mountain, a rare place where enough bedrock rises above the soil to provide a firm foundation for large buildings; promising a virtually flood free location. The warehouses and market are built of concrete, but the smaller buildings on the outskirts of the port have wooden frames, stippled with mold. Moss populates the area more than people, and those to be found are as gentle as the moss; slow and peaceful in their actions and interactions.'
+	spaceport `    A noodle restaurant near the center of the port town is the popular place to gather. The mist around it thick with spice, nearly a broth in it's own right.`
 	outfitter "Ammo"
 	security 0.05
 	tribute 500
@@ -1131,9 +1131,9 @@ planet Lichen
 planet Lodestone
 	attributes "requires: landing gear" core volcanic mining
 	landscape land/lava5
-	description `Lodestone is a young, volcanically active world. The atmosphere is often filled with choking dust or sulfur dioxide, and new eruptions can occur with hardly any warning. Building any sort of structure here is an exercise in futility.`
-	description `	The only reason Lodestone is inhabited is because of the planet's unusually rich reserves of heavy metals and other rare minerals.`
-	spaceport `This port is known as "Fourth Port." The previous three ports are partly or completely buried under lava flows. The present port is built on a raised platform a hundred meters above the ground. The steel stilts supporting the platform are intended to keep the port from being buried by any encroaching lava flow. However, given that some explosive eruptions here have been known to launch lava nearly a kilometer into the air, sooner or later Fourth Port will need to be replaced by a fifth.`
+	description `Lodestone offers little save mining operations and volcanic eruptions. The atmosphere is thick with dust and sulfur dioxide, and the native flora is known for their short growth periods before maturity, blasting seed pods high into the air in hope they fall into good conditions."`
+	description `    Like most planets of this unstable and inhospitable nature, Lodestone's rich reserves of heavy metals drew in investors like flies to corpses.`
+	spaceport `This port is known as "Fourth Port" - the prior three falling to expected fates. At present, the port is built on a raised platform a hundred meters above the ground, with steel stilts intended to keep the port from being buried by a lava flow. Given that some explosive eruptions here have been known to launch lava kilometers into the air, plans for Fifth Port have already been drawn."
 	security 0.05
 	tribute 500
 		threshold 3000
@@ -1142,9 +1142,9 @@ planet Lodestone
 planet Longjump
 	attributes "requires: landing gear" rim tourism factory
 	landscape land/city9
-	description `Longjump is a mostly industrial world, with lower than normal gravity that makes it relatively easy to operate and transport heavy equipment. Hang-gliding is also a popular sport here, although for safety reasons it is prohibited anywhere near the spaceport.`
-	description `	Longjump was the first planet discovered in the region of space known today as the Rim. Every year in the month of August, the Rim celebrates Han Sizer month, a whole month of activities commemorating the first explorer of the region. Wealthier citizens of the Rim celebrate by visiting as many Rim worlds as they can in the month, paralleling Han Sizer's month-long exploration of the region.`
-	spaceport `You can recognize the natives immediately because they are almost all taller than you, a result of growing up in a low-gravity environment. The spaceport consists of four large towers, connected by bridges, with openings for hangars in the sides. The upper stories are for landing ships; business takes place down below, at street level.`
+	description `Longjump is an industrial world, notable in that its low gravity makes it easy to operate and transport heavy equipment. Hang-gliding is a popular pastime here, spawning several competitive sports played by glider. Team alliances run deep here, to the point visitors are advised against participating in the subject.`
+	description `    Longjump was the first planet settled in The Rim. In August, The Rim celebrates Han Sizer, an entire month of activities commemorating the first explorer of the region. Wealthier citizens celebrate by following Han Sizer's route through the region, with long stops to appreciate what each planet has to offer.`
+	spaceport `The spaceport consists of four towers connected by a tangled web of bridges, the natives notable not only for their height but how they navigate the port with ease. Many an unlucky captain have lost deals from inability to find their meeting place."
 	outfitter "Basic Outfits"
 	outfitter "Delta V Basics"
 	outfitter "Ammo"
@@ -1156,17 +1156,17 @@ planet Longjump
 planet "Lost Cause"
 	attributes north "north pirate" "northern union"
 	landscape land/nasa7
-	description `Lost Cause would be a perfect planet for habitation if not for the constant stream of severe storms raging across the vast majority of it's surface. From extreme hurricanes to insanely powerful thunderstorms, it isn't hard to see why this world is so sparsely populated`
-	spaceport `The spaceport is in one of the few regions of the planet where the weather is even remotedly predictable, but is still severely underprepared for the extent of the storms here. Ships sit exposed under the pelting rain and occasionally are pushed slightly by the wind. Dock Workers have perfected the art of quickly loading and unloading ships in some of the most dangerous conditions you have ever seen.`
+	description `Lost Cause would be a perfect planet for habitation if not for the unstable atmosphere sending powerful lightning storms and hurricanes tearing across the surface. Despite endless attempts to terraform the planet into submission, Lost Cause remains a maelstrom of broken investment dreams and property damage.`
+	spaceport `The spaceport is in a region of the planet where the weather is predictable, as well as far inland to avoid the hurricanes wracking the cost. Ships sit exposed under the pelting rain, with lighter vessels quickly tied down upon landing to avoid being pushed by the wind. Dock workers have perfected the art of quickly loading and unloading ships in conditions that would leave a seasoned foreman absolutely shaken anywhere else.`
 	outfitter "Common Outfits"
 	outfitter "Ammo"
 
 planet Luna
 	attributes "near earth" tourism factory moon
 	landscape land/earthrise
-	description `In the early days of space travel, back when engines were still so inefficient that escaping from a planet's gravity was costly and difficult, an enormous shipyard was built on the Moon where asteroids, harvested from the asteroid belt, were mined for raw materials for ships.`
-	description `	The facility is still in operation, although it is now overshadowed by the far more advanced shipbuilding centers like Geminus in the Castor system.`
-	spaceport `The spaceport is rudimentary, and the main pressurized dome of the facility is probably at least half a millennium old. So many metal foil patches have been cemented to its outer wall to stop slow air leaks that in places they entirely cover the surface. Everything is so ancient and ramshackle that it feels almost like you have stepped back in time to the early days of human space flight. Perhaps that's what the tourists come here to experience.`
+	description `In the early days of space travel, when engines were so inefficient that escaping from a planet's gravity was dangerous and costly, an ambitiously large shipyard was built on the Moon. While originally nearby asteroids were harvested and mined for building materials; today shipments are delivered from all corners of the galaxy.`
+	spaceport `The spaceport is rudimentary, the main pressurized dome of the facility half a millennium old. With the sheer quantity of metal patches applied to the walls over the years, one might think it would be more effective to just renovate the entire building. In fact, everything here is old and far surpassing worn out, the entire facility a relic of the early days of space flight.`
+	spaceport `	While there has been talk of decommissioning the shipyard and converting it to a museum, no concrete plans have been announced.
 	shipyard "Basic Ships"
 	shipyard "Navy Basics"
 	shipyard "Betelgeuse Basics"
@@ -1184,9 +1184,9 @@ planet Luna
 planet Maelstrom
 	attributes "requires: landing gear" north mining frontier
 	landscape land/mountain21-harro
-	description `Maelstrom is a stormy, geologically young world with towering mountains and frequent earthquakes. Most of the large cities are near the center of the planet's main continent, where the iron beds from an ancient ocean are exposed. Maelstrom is one of the chief exporters of iron, copper, gold, titanium, and other metals to Ada, where Lovelace Labs and the associated industries have a continuous need for raw materials.`
-	description `	Extreme rock climbing is a hugely popular sport among the mining workers here, who have a tendency to be young, male, and reckless. The mountains are dramatic enough to even attract off-world climbers as tourists, though more than once a favorite climbing face has been sloughed off its mountain in an earthquake.`
-	spaceport `The spaceport is a single massive complex of buildings, with hangars large enough for even a bulk freighter or a Navy flagship. A railroad runs through several of the nearby mining towns and straight into the spaceport building itself, allowing ore and processed metal to be loaded directly from the mine cars into the waiting freighters.`
+	description `Maelstrom is a atmospherically fickle, geologically young world complete with towering mountains and frequent earthquakes. Most of the population lives in large cities near the center of the planet's main continent, where the iron beds from an ancient ocean are exposed. Maelstrom is the chief exporter of common metals to Lovelace Labs on Ada.`
+	description `    Extreme rock climbing is a popular sport among the mine workers here, with their tendency to be young and reckless with little to lose. The mountains are dramatic enough to attract off-world climbers as tourists, with each trip promising a new challenge, as consistant earthquakes and mudslides reshape the mountainsides.`
+	spaceport `The spaceport is a single complex, with hangars large enough for bulk freighters or Navy flagships. A railroad runs through nearby mining towns and straight into the spaceport building itself, allowing ore and processed metal to be loaded directly from the mine cars into the waiting freighters.`
 	outfitter "Lovelace Basics"
 	outfitter "Common Outfits"
 	outfitter "Ammo"
