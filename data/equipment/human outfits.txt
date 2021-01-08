@@ -3332,6 +3332,7 @@ outfit "Free Worlds License"
 
 outfit "City-Ship License"
 	category "Licenses"
+	cost 30000000
 	thumbnail "outfit/city-ship license"
 	description "Due to their rarity and development of more specialized ships, this license is seen as a relic of a bygone era when City-Ships would be used for raiding, capturing ships, and other military purposes.  Currently, the license allows you to purchase and pilot the Lionheart Mule and Bactrian, as well as any other City-Ship that they might produce."
 
