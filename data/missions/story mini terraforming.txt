@@ -17,14 +17,17 @@ mission "Terraforming 1"
 	passengers 2
 	
 	to offer
-		or
-			has "main plot completed"
-			and
-				not "event: pug invasion"
-				not "event: fwc pug invasion"
+		random < 20
+
 	on offer
 		conversation
-			`You stop in to the spaceport bar for a drink. The bar seems to be frequented mostly by the managers of the mining corporation; you suspect the workers don't earn enough to visit a bar very frequently. In one corner, two of the managers are having a very animated discussion. When they see you, they say, "Hello there, Captain! Interested in taking us on a business trip?"`
+			`	While wandering the spaceport you come across a fancy bar, at least by dirt belt standards.` 
+			`	Bars aren't just a place to grab a drink in the dirt belt, they can be important town centers, so it's always worth the effort to check them out.`
+			choice
+				`	<Enter the bar.>`
+				`	<Don't enter the bar.>`
+					defer
+			`The bar seems to be frequented mostly by the managers of the mining corporation; the workers don't earn enough to visit a bar very frequently. In one corner, two of the managers are having a very animated discussion. When they see you, they say, "Hello there, Captain! Interested in taking us on a business trip?"`
 			choice
 				`	"What sort of trip?"`
 				`	"Sorry, I'm just in here for the drinks."`
@@ -54,8 +57,8 @@ mission "Terraforming 2"
 	on offer
 		log `Brought Eric and Alaric to Glory, two managers of a mining corporation on Rand hoping to terraform the planet. Terraforming Rand would be immensely expensive, but a girl named Amy has a theory that may make the process cheap.`
 		conversation
-			`You drop off the two managers from Rand, whose names are Eric and Alaric, at the Academy. While you wait for their meeting to end, you look around the lobby. The students have apparently just had some sort of science symposium, and poster boards are on display all along the walls. One of them catches your eye: the title is "Affordable Terraforming through Equilibrium Mapping."`
-			`	The basic concept of the poster seems to be that instead of altering the climate of a planet through brute force, it ought to instead be feasible to use a properly timed nudge in the right direction to cause the climate to shift toward a new equilibrium point that supports greater biological complexity. This student seems to think that planets naturally "want" to grow more complex and support more life, but that they sometimes get "stuck" in less optimum states.`
+			`You drop off the two managers from Rand, whose names are Eric and Alaric, at the Academy. There is little else to do while you wait except look around the lobby. The students have apparently just had some sort of science symposium, and poster boards are on display all along the walls. One of them catches your eye: the title is "Affordable Terraforming through Equilibrium Mapping."`
+			`	The basic concept of the poster seems to be that instead of altering the climate of a planet through brute force, it ought to instead be feasible to use a properly timed nudge in the right direction. "To cause the climate to shift toward a new equilibrium point that supports greater biological complexity." The poster says. This student seems to think that planets naturally "want" to grow more complex and support more life, but that they sometimes get "stuck" in less optimum states.`
 			`	It's an intriguing idea. On the other hand, at the bottom of the paper, the professor has written, "Very poor scholarship. Do not anthropomorphize planets."`
 			`	Just then, Eric and Alaric return, looking disappointed.`
 			choice
@@ -64,7 +67,6 @@ mission "Terraforming 2"
 			choice
 				`	"Have a look at this poster. Maybe this student would help us. We could bill it as a sort of internship for her."`
 				`	"Indeed. They gave this student a failing grade just for suggesting it could be done more cheaply."`
-			
 			`	They look at the poster. "Sounds almost too good to be true," says Alaric. "Hang on, I'll look her up in the campus directory." A few minutes later, he is on the phone with the student who made the poster. Her name is Amy. It turns out she is about to flunk out anyway, and is more than willing to travel back to Rand with you when offered a tiny fraction of what the consultant would have received.`
 			`	An hour later, you meet up with Amy, and arrange for her to join you on your ship before it takes off. Eric and Alaric are very excited, but you are a bit worried about the wisdom of entrusting their planet's future to someone so young and inexperienced.`
 				accept
@@ -122,6 +124,10 @@ mission "Terraforming 3"
 					goto rotate
 				`	"Are you suggesting melting the ice caps somehow?"`
 					goto melting
+				`	"Just tell me what to shoot at, or what to haul."`
+					goto idc
+				`	"This is all way over my head, and I really don't care."`
+					goto idc
 			label rotate
 			`	"Of course not," she says. "But what we can do is introduce a sudden variation in the planet's climate that will allow water to be distributed more evenly across the surface again."`
 				goto danger
@@ -130,9 +136,16 @@ mission "Terraforming 3"
 				goto danger
 			label danger
 			`	"This is where Amy's plan gets a bit scary," says Alaric.`
+				goto idc
+			label idc
 			`	"I'm proposing crashing a medium-sized asteroid into the ice cap," she says. "If we pick the right asteroid, we can control the amount of dust that is created. The result will be a sudden influx of variability, that may allow the planet to revert to a wetter, more biodiverse state."`
 			choice
+				`	"I always wanted to land on an asteroid."`
+				`	"I'm not going to get arrested over this, goodbye."`
+					decline
 				`	"That is a stupid idea, and I want nothing to do with it."`
+					decline
+				`	"No. Not me. Find someone else."`
 					decline
 				`	"Well, if you think it will work, I'm willing to try it!"`
 			`	"Great!" says Amy. "I'll mark the asteroid on your radar. You just need to board it, install a small ion thruster, and return here."`
@@ -166,8 +179,12 @@ mission "Terraforming 4"
 	on offer
 		conversation
 			`By the time you meet up with Eric, Alaric, and Amy, the cloud cover already seems to have visibly increased. Amy is very enthusiastic. "Atmospheric water vapor is on the rise," she says. "The impact vaporized enough ice to form a small ocean. I wouldn't be surprised if we get a rainstorm here in a day or two."`
-			`	"What's next?" you ask.`
-			`	She says, "I'd like to travel with you to <planet>, and collect some seeds and cuttings from plants that can handle a cooler world with dimmer light, since that's what we'll have here until the dust settles down. I'd say we'll need about ten tons of cargo space."`
+			choice
+				`	"Another job well done."`
+				`	"Wait, wont that flood the mines?"`
+				`	"I expect it doesn't end here."`
+				`	"What's next?"`
+			`	"Well," she begins, "It's a little late to stop now. So, I'd like to travel with you to <planet>, and collect some seeds and cuttings from plants that can handle a cooler world with dimmer light, since that's what we'll have here until the dust settles down. I'd say we'll need about ten tons of cargo space."`
 			choice
 				`	"I'd be glad to take you there."`
 					accept
@@ -203,7 +220,7 @@ mission "Terraforming 5"
 				`	"Sounds good to me."`
 					accept
 				`	"What happens if the plants are too invasive, and choke out all the local wildlife?"`
-			`	"Well," she says, "in order to keep the climate on <planet> dynamic, they're going to need regular asteroid impacts every few decades. If these plants are too invasive, they can just wait an extra decade or so in between impacts and let the desert creep back in and kill off the invasive plants."`
+			`	"What local wildlife? <planet> barely has any flora or fauna in it's current state." she says, "Besides, in order to keep the climate on <planet> dynamic, they're going to need regular asteroid impacts every few decades. If these plants are too invasive, they can just wait an extra decade or so in between impacts and let the desert creep back in and kill off the invasive plants."`
 			choice
 				`	"Okay, I guess that would work."`
 					accept
@@ -218,7 +235,7 @@ mission "Terraforming 5"
 		event "terraforming timer" 4 8
 		log `Amy's theory to terraform Rand seems to have worked. Precipitation around the planet has greatly increased with the introduction of new water into the water cycle.`
 		conversation
-			`When you get back to <planet>, Amy has you fly in a random path a few kilometers above the surface while she periodically dumps loads of seeds and plant material out the airlock. In the process, you fly through several rainstorms. This world's climate has indeed been altered. But you can't help wonder how a few tons of seed spread out over the entire surface of a planet is really going to help anything.`
+			`When you get back to <planet>, Amy has you fly in a path a few kilometers above the surface while she periodically dumps loads of seeds and plant material out the airlock. In the process, you fly through several rainstorms. This world's climate has indeed been altered. But you can't help wonder how a few tons of seed spread out over the entire surface of a planet is really going to help anything.`
 			`	Then you meet up with Eric and Alaric. Eric is elated. "We just got a massive rainstorm here!" he says. "We haven't had that much precipitation in a decade!"`
 			`	Alaric is less enthusiastic. "Flash floods washed out the road through the canyon," he says, "and very nearly flooded one of the mines, too."`
 			`	Amy says, "It will take a year or two for things to begin to settle down. Then we can figure out what our next steps should be."`
@@ -247,34 +264,40 @@ mission "Terraforming 6"
 	deadline 2
 	to offer
 		has "event: terraforming timer"
-		or
-			has "main plot completed"
-			and
-				not "event: pug invasion"
-				not "event: fwc pug invasion"
-	
 	on offer
 		conversation
-			`When you land on <origin> and exit your ship, you are stopped by a Navy officer with a group of guards. "Captain <last>. You are wanted for..." The officer pauses and looks down at the tablet in his hand. "The 'unlawful use of an asteroid.' You are to travel to <destination> immediately for questioning."`
+			`When you land on <origin> and exit your ship, you are stopped by a Navy Captain with a group of guards. "Captain <last>. You are wanted for..." The officer pauses and looks down at the tablet in his hand. "The 'unlawful use of an asteroid.' We are here to travel to <destination> with you immediately for questioning."`
 			choice
-				`	"Understood, officer."`
+				`	"Understood."`
 					accept
 				`	"I'm wanted for what?"`
 				`	(Run away.)`
 					flee
 			
-			`	"The unlawful use of an asteroid, Captain. I'm not entirely sure what that means, but I've been told to send you to <planet> by <day>. Your compliance would be much appreciated."`
+			`	"The unlawful use of an asteroid, Captain. It's considered a war crime, and thus my battle group has been dispatched to escort you and your fleet to <planet> by <day>. Your compliance would be much appreciated."`
 			choice
 				`	"Alright. Hopefully I can get an answer as to what this is about."`
 					accept
 				`	(Run away.)`
 					flee
-			
+
+	npc evade
+		personality heroic accompany save
+		government Republic
+		fleet
+			fighters "republic fighter"
+			variant
+				"Nomos (Heavy)" "R.N.S. Law"
+				"Sentinel Drone" 4					
+				"Nomos (Heavy)" "R.N.S. Order"
+				"Sentinel Drone" 4	
+				"Narcissus" 6
+					
 	on decline
 		"reputation: Republic" <?= -10
 	on fail
 		"reputation: Republic" <?= -10
-		dialog `You receive a message from the Republic itself. "Captain <last>. You have not arrived on Earth for your trial on the 'unlawful use of an asteroid' in the time provided to you and therefore are now a criminal of the Republic."`
+		dialog `You recieve a priority bounty posting. "Captain <last> has not arrived on Earth for their trial on the 'unlawful use of an asteroid' in the time provided. Therefore they are now a war criminal, wanted by Republic." Broadcasts such as this are completely unheard of. You must have really messed up.`
 	on complete
 		log `Had to travel to Earth to answer for crashing an asteroid into Rand. Luckily, thanks to Alaric and Eric's lawyer, the case was dropped.`
 		conversation
@@ -283,12 +306,12 @@ mission "Terraforming 6"
 				`	"What are we going to do?"`
 					goto lawyer
 				`	"Do you know what we're doing here?"`
-			
 			`	"Apparently someone had a problem with us terraforming Rand," Amy says, looking rather disappointed.`
-			
 			label lawyer
 			`	"Don't worry," Alaric says. "Our lawyer is on his way right now. We'll all be out of here by the end of the day."`
-			`	Alaric's optimism turns out to be justified, as the lawyer quickly finds that there are no actual laws on the books that define lawful or unlawful uses of an asteroid. Since no one was hurt by the asteroid impact and data that Amy had been collecting shows that Rand's climate has changed for the better so far, the case is quickly dropped and you are escorted back to your ship.`
+			`	Alaric's optimism turns out to be justified, as the lawyer quickly finds that there are no actual laws on the books that define the lawful or unlawful uses of an asteroid.` 
+			`	In fact, the law only explicitly covers the weaponization of asterioids, not their use in scientific study.`
+			`	Since no one was hurt by the asteroid impact, and data Amy had been collecting shows that Rand's climate has changed for the better so far, the case is dismissed within the day.`
 			`	Before you are able to leave, Amy stops you. "Could you meet me in the spaceport bar, Captain? I have some good news to share with you."`
 
 
@@ -312,9 +335,7 @@ mission "Terraforming 7"
 				`	"Nice to meet you too."`
 					goto next
 				`	"I take it you're interested in Amy's ideas."`
-			
 			`	"Absolutely. It's an extraordinary concept, and no offense to you Amy, but it's spectacular that someone of such little experience would imagine such a method of terraforming."`
-			
 			label next
 			`	Amy continues. "Nolan wants to help pursue research of my terraforming techniques. Would you be able to give us a lift to <destination>? I'll pay you <payment>."`
 			choice
@@ -364,8 +385,8 @@ mission "Terraforming 9"
 	
 	on offer
 		conversation
-			`The spaceport is crowded with ships and people when you land. Amy's publication must have stirred up quite the commotion among terraforming scientists.`
-			`	Spaceport security clears a path to your ship for Amy, Nolan, and four people you do not recognize. You notice that a few among the crowd of people are jeering and holding signs, one reading "Don't asteroid my planet!" and a half-eaten sandwich gets thrown in Amy's path as she approaches.`
+			`The spaceport is crowded with ships and people when you land. Amy's publication must have stirred up quite the commotion among terraforming scientists. Spaceport security clears a path to your ship for Amy, Nolan, and four people you do not recognize.` 
+			`	A few among the crowd of people are jeering and holding signs, one reading "Don't asteroid my planet!" and a half-eaten sandwich gets thrown in Amy's path as she approaches.`
 			`	"Not everyone is as happy with the prospect of affordable terraforming as we are," Amy says to you as she boards your ship along with suitcases full of scientific supplies. "But that's no reason to stop, now is it?"`
 			`	Amy introduces you to the four others that she brought on board. Two of them are terraforming experts who helped Amy and Nolan with their research. The other two are representatives: one sent by the Republic Parliament in order to oversee the project, and another from Tundra.`
 			`	"Once you're ready, Captain, please bring us to <destination>. Tundra was a tropical world millions of years ago, but became cold after a cataclysmic event of some sort. There's a good chance that we may be able to nudge the planet back toward a warmer climate if we do this right."`
@@ -407,14 +428,9 @@ mission "Terraforming 10"
 			`	One of the other scientists responds, "What we plan to do is encourage the eruption of this volcano by making the crust above the volcano thinner. When the pressure of the magma is able to overcome the pressure of the crust, an eruption will occur."`
 			`	"How exactly do you plan to do that?" the Tundra representative responds. "And what will happen to the people who live near that area?"`
 			`	Nolan answers, "The people who live near the volcano will need to evacuate the area with all their belongings. The Republic should provide any assistance needed for the evacuation. As for how we will cause the volcano to erupt, we need something energetic enough to crack the planet's crust in the location of the volcano, releasing the pressure that the magma is causing to spark an eruption. That's where we bring in another asteroi-"`
-			`	"No, no, no!" the Republic representative exclaims, cutting Nolan off mid-sentence. "The Republic will not gain a reputation for crashing asteroids into its own planets. The consequences of such an action could be disastrous should it go wrong! And in what way will this warm the planet when the resulting volcanic winter could last decades and only result in an even colder climate? Are you not even old enough to remember how a supereruption on Hope caused the evacuation of the entire planet? If the people of Tundra are this desperate to terraform their planet then normal techniques should be employed, none of this 'equilibrium mapping' nonsense."`
-			`	"Sir," Amy speaks up with a stern tone of voice, "we have already been authorized by the Republic to undergo this terraforming experiment, so unless you have half a teraton of cheap explosives, we're going to need to use an asteroid. The volcanic winter can be easily avoided by having a fleet of freighters sweep the volcanic ash out of the atmosphere, meaning we'll get the benefits of the greenhouse gases without the detriments of volcanic ash reflecting Cebalrai's heat back into space. No one knew the volcano on Hope was going to erupt, but we can prepare for this eruption and take steps to mitigate the problems." Amy looks the representative straight in the eyes and smirks. "We're scientists, we have this handled."`
+			`	"No, no, no!" the Republic representative exclaims, cutting Nolan off mid-sentence. "The Republic will not gain a reputation for crashing asteroids into planets! We're three jumps from Sol, for Pete's sake, not to mention that the consequences of such an action could be disastrous should it go wrong! After all, in what way will this warm the planet when the resulting volcanic winter could last decades and only result in an even colder climate, like Hope! Hell are you even old enough to remember how a supereruption on Hope went? If the people of Tundra are this desperate to terraform their planet then normal techniques should be employed, none of this 'equilibrium mapping' nonsense."`
+			`	"Sir," Amy speaks up with a stern tone of voice, "we have already been authorized by the Republic to undergo this terraforming experiment, so unless you have half a teraton of cheap explosives, we're going to need to use an asteroid. The volcanic winter can be easily avoided by having some freighters and aircraft sweep the volcanic ash out of the atmosphere, meaning we'll get the benefits of the greenhouse gases without the detriments of volcanic ash reflecting Cebalrai's heat back into space. Correct me if I'm wrong, but no one knew the volcano on Hope was going to erupt, so it couldn't have been planned for. We, however, can prepare for this eruption and take steps to mitigate the problems."`
 			`	The representative falls silent. After a moment of thinking, he says "Captain, I need you to take me to Parliament. I may be able to authorize the use of explosives that should suffice, but it may not be as cheap as Ms. Amy is hoping. We're not about to turn asteroids into our single solution for everything."`
-			choice
-				`	"I'll get my ship ready to launch."`
-				`	"Sorry, I have other things I could be doing."`
-					decline
-			
 			`	The representative leaves the bar. "We'll wait here," Amy says to you. "I'll speak with the Tundra government about evacuating the area around where the impact site will be so that we can start when you get back."`
 				accept
 	on visit
@@ -434,28 +450,8 @@ mission "Terraforming 11"
 	
 	on offer
 		conversation
-			`"Wait here," the Republic representative says curtly. Several hours later, he returns, not looking very happy. "What a waste of time. Parliament has declined my request. I don't much agree with this, but you will need to crash an asteroid into Tundra if you wish to achieve your goal." Before you ready for launch, you send a message to Amy and Nolan telling them that an asteroid will be used after all. You don't receive an immediate response.`
+			`"Wait here," the Republic representative says curtly. Several hours later, he returns, not looking very happy. "What a waste of time. Parliament has declined my request. I don't much agree with this, but you will need to crash an asteroid into Tundra if you wish to achieve your goal. I'll send Amy and Nolan my concession message, they'll be ready for you when we get back."`
 				accept
-	
-	on enter "Cebalrai"
-		dialog
-			`Your ship is targeted by pirate fleets when you enter the system. Before you engage, you receive a message from Amy.`
-			`"Captain, these pirate ships have been occupying the system for days. You must take them out if we are to safely crash an asteroid into Tundra."`
-	on visit
-		dialog `You return to <planet>, but not all of the pirates have been fought off. They don't look like they're leaving any time soon either. Better depart and finish them off for good.`
-	npc evade
-		government "Pirate"
-		personality nemesis staying target
-		system "Cebalrai"
-		fleet
-			names "pirate"
-			variant
-				"Phosphorus"
-				"Missile"
-				"Polevaulter"
-				"Bastion"
-
-
 
 mission "Terraforming 12"
 	landing
@@ -468,9 +464,7 @@ mission "Terraforming 12"
 		has "Terraforming 11: done"
 	
 	on offer
-		payment 300000
 		conversation
-			`The pirates that occupied the system did not make an effort to land on Tundra, but they did harass any merchant ships that passed through the system. The government of Tundra pays you <payment> for ridding the system of the pirates, a pleasantly unexpected reward.`
 			`	You gather with the scientists in the spaceport bar. The Tundra native informs you that all residents close enough to the volcano to be in danger have been evacuated. "All we need to do now is find the right asteroid," Amy says, and after only a short time of searching, she finds the perfect candidate. "Just like last time, Captain."`
 			`	 Spaceport workers load a small thruster and the equipment you will need to mount it on the asteroid into your ship.`
 				accept
@@ -486,17 +480,15 @@ mission "Terraforming 12"
 		payment 200000
 		event "terraforming timer 2" 730 912
 		event "terraforming Tundra"
-		log `Fought off a fleet of pirates preventing the terraforming of Tundra, then maneuvered an asteroid into Tundra to trigger the eruption of a supervolcano. Tundra's global temperatures will initially drop, but the increased volume of greenhouse gases in the atmosphere will eventually improve Tundra's climate.`
 		conversation
 			`A plume of debris has formed in a mushroom cloud shape above where the asteroid hit. The scientists are viewing their instruments in anticipation for what happens next.`
 			`	Almost an hour after the impact, the ground begins to shake slightly, even though the volcano is located hundreds of kilometers away. "This might be it!" Nolan exclaims as he closely watches a seismometer receiving readings from near the impact site. Suddenly the seismometer spikes, and another plume, much larger than the asteroid impact, rises from the impact site. Half an hour later, the low sound of the massive eruption can be heard in the spaceport, triggering another burst of cheers from the scientists. "It actually worked!" one of them yells out.`
 			`	You fly the scientists over top of the volcano, allowing them to take readings of the air and surface. "Greenhouse gas levels are off the charts!" Amy exclaims. "Once these gases disperse across the planet's atmosphere, they should begin warming the entire planet."`
-			`	The heat has formed a huge circle of melted snow around the volcano, revealing the green color of trees and the dull grays and browns of rock. Closer to the center of the eruption you spot dozens of lava flows emanating from the center of the impact crater.`
+			`	The heat has formed a huge circle of melted snow around the volcano, revealingthe dull grays and browns of rock. Closer to the center of the eruption you spot dozens of lava flows emanating from the center of the impact crater.`
 			choice
 				`	"What do we do now?"`
 					goto what
 				`	"It looks beautiful from up here."`
-			
 			`	"Yes it does, Captain," the Republic representative says. "Yes it does."`
 				goto end
 			
