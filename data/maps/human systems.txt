@@ -15,6 +15,7 @@ galaxy "Milky Way"
 system Acamar
 	pos -284 -3
 	government Syndicate
+	music ambient/humangeneric
 	habitable 1080
 	link Diphda
 	link Aldebaran
@@ -69,6 +70,7 @@ system Acamar
 system Achernar
 	pos -93 154
 	government Syndicate
+	music ambient/humangeneric
 	habitable 625
 	link "Al Dhanab"
 	link Alpheratz
@@ -105,7 +107,7 @@ system Achernar
 		period 205.254
 		object "Hammer Station"
 			sprite planet/stationshipyard
-			distance 530
+			distance 330
 			period 190
 
 	object
@@ -137,6 +139,7 @@ system Achernar
 system Acrux
 	pos -808 192
 	government Republic
+	music ambient/humangeneric
 	habitable 590.625
 	link Minkar
 	link "Zeta Centauri"
@@ -209,6 +212,7 @@ system Acrux
 system Adhara
 	pos -669 -200
 	government Deep
+	music ambient/humangeneric
 	habitable 670
 	link "Epsilon Leonis"
 	link Gomeisa
@@ -268,6 +272,7 @@ system Adhara
 system Agamede
 	pos -92.3779 -354.436
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 5360
 	link Arneb
 	link Milto
@@ -324,6 +329,7 @@ system Agamede
 system Aganippe
 	pos -105.378 -243.436
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 486.68
 	link Calliphana
 	link Mycenae
@@ -378,6 +384,7 @@ system Aganippe
 system "Al Dhanab"
 	pos -177 207
 	government Syndicate
+	music ambient/humangeneric
 	habitable 1080
 	link Scheat
 	link Mirach
@@ -439,6 +446,7 @@ system "Al Dhanab"
 system Albaldah
 	pos -350 484
 	government Republic
+	music ambient/humangeneric
 	habitable 534.375
 	link Albireo
 	link Girtab
@@ -506,6 +514,7 @@ system Albaldah
 system Albireo
 	pos -270 503
 	government Republic
+	music ambient/humangeneric
 	habitable 760
 	link Tarazed
 	link Albaldah
@@ -557,6 +566,7 @@ system Albireo
 system Alcyone
 	pos -80 -144
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 270
 	link Zaurak
 	link Oblate
@@ -624,6 +634,7 @@ system Alcyone
 system Aldebaran
 	pos -356 -26
 	government Republic
+	music ambient/humangeneric
 	habitable 625
 	link Capella
 	link Acamar
@@ -668,6 +679,7 @@ system Aldebaran
 system Alderamin
 	pos -272 258
 	government Syndicate
+	music ambient/humangeneric
 	habitable 1705
 	link Alnair
 	link "Delta Capricorni"
@@ -725,6 +737,7 @@ system Alderamin
 system Aldhibain
 	pos -659 451
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Kornephoros
 	link Sabik
@@ -780,6 +793,7 @@ system Aldhibain
 system Algenib
 	pos -124.469 344.734
 	government Cartel
+	music ambient/humangeneric
 	habitable 455.625
 	link Gienah
 	trade Clothing 357
@@ -836,6 +850,7 @@ system Algenib
 system Algieba
 	pos -691 -52
 	government Republic
+	music ambient/humangeneric
 	habitable 2695
 	link "Tania Australis"
 	link Alphard
@@ -900,6 +915,7 @@ system Algieba
 system Algol
 	pos -210 17
 	government Syndicate
+	music ambient/humangeneric
 	habitable 534.375
 	link Ruchbah
 	trade Clothing 219
@@ -960,6 +976,7 @@ system Algol
 system Algorel
 	pos -631 145
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link "Cor Caroli"
 	link Turais
@@ -1018,6 +1035,7 @@ system Algorel
 system Alheka
 	pos -385 -131
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Alhena
 	link Kursa
@@ -1069,6 +1087,7 @@ system Alheka
 system Alhena
 	pos -430 -80
 	government Republic
+	music ambient/humangeneric
 	habitable 945
 	link Menkalinan
 	link Alheka
@@ -1131,6 +1150,7 @@ system Alhena
 system Alioth
 	pos -620 315
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Wei
 	link Vindemiatrix
@@ -1181,6 +1201,7 @@ system Alioth
 system Alkaid
 	pos -825 318
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Hadar
 	trade Clothing 329
@@ -1243,6 +1264,7 @@ system Alkaid
 system Almaaz
 	pos -220.604 -368.924
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 1080
 	link Hatysa
 	link Tortor
@@ -1284,6 +1306,7 @@ system Almaaz
 system Almach
 	pos -7 232
 	government Cartel
+	music ambient/humangeneric
 	habitable 320
 	link Schedar
 	trade Clothing 364
@@ -1339,6 +1362,7 @@ system Almach
 system Alnair
 	pos -272 314
 	government Syndicate
+	music ambient/humangeneric
 	habitable 135
 	link Persian
 	link Alderamin
@@ -1402,6 +1426,7 @@ system Alnair
 system Alnasl
 	pos -553 380
 	government Republic
+	music ambient/humangeneric
 	habitable 640
 	link Seginus
 	link Wei
@@ -1458,6 +1483,7 @@ system Alnasl
 system Alnilam
 	pos -150.119 -402.401
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 1715
 	link Hatysa
 	trade Clothing 264
@@ -1529,6 +1555,7 @@ system Alnilam
 system Alnitak
 	pos -331 -412
 	government Republic
+	music ambient/humangeneric
 	habitable 349.375
 	link Rigel
 	link Mintaka
@@ -1582,6 +1609,7 @@ system Alnitak
 system Alniyat
 	pos -691 501
 	government Republic
+	music ambient/humangeneric
 	habitable 534.375
 	link Pherkad
 	link Graffias
@@ -1647,6 +1675,7 @@ system Alniyat
 system "Alpha Arae"
 	pos -481 394
 	government Republic
+	music ambient/humangeneric
 	habitable 945
 	link "Delta Sagittarii"
 	link Rastaban
@@ -1711,6 +1740,7 @@ system "Alpha Arae"
 system "Alpha Centauri"
 	pos -429 125
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link Sol
 	trade Clothing 262
@@ -1768,6 +1798,7 @@ system "Alpha Centauri"
 system "Alpha Hydri"
 	pos -97 98
 	government Syndicate
+	music ambient/humangeneric
 	habitable 1400
 	link Ruchbah
 	trade Clothing 352
@@ -1816,6 +1847,7 @@ system "Alpha Hydri"
 system Alphard
 	pos -588 -47
 	government Republic
+	music ambient/humangeneric
 	habitable 1080.62
 	link Algieba
 	link Zosma
@@ -1875,6 +1907,7 @@ system Alphard
 system Alphecca
 	pos -546 308
 	government Republic
+	music ambient/humangeneric
 	habitable 1400
 	link Alioth
 	link Seginus
@@ -1924,6 +1957,7 @@ system Alphecca
 system Alpheratz
 	pos -176 125
 	government Syndicate
+	music ambient/humangeneric
 	habitable 1080.62
 	link "Al Dhanab"
 	link Ruchbah
@@ -1984,6 +2018,7 @@ system Alpheratz
 system Altair
 	pos -357 161
 	government Republic
+	music ambient/humangeneric
 	habitable 945
 	link Vega
 	link Sol
@@ -2045,6 +2080,7 @@ system Altair
 system Aludra
 	pos -606 -374
 	government Deep
+	music ambient/humangeneric
 	habitable 455.625
 	link Naos
 	trade Clothing 227
@@ -2103,6 +2139,7 @@ system Aludra
 system Ankaa
 	pos -230 100
 	government Syndicate
+	music ambient/humangeneric
 	habitable 625
 	link Markab
 	link Diphda
@@ -2152,6 +2189,7 @@ system Ankaa
 system Antares
 	pos -711 541
 	government Pirate
+	music ambient/humangeneric
 	habitable 455.625
 	link Alniyat
 	trade Clothing 242
@@ -2206,6 +2244,7 @@ system Antares
 system Arcturus
 	pos -589 226
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link Mizar
 	link Rutilicus
@@ -2264,6 +2303,7 @@ system Arcturus
 system Arneb
 	pos -121.285 -339.734
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 1715
 	link Agamede
 	link Xanthe
@@ -2312,6 +2352,7 @@ system Arneb
 system Ascella
 	pos -376 328
 	government Republic
+	music ambient/humangeneric
 	habitable 640
 	link Peacock
 	link "Zeta Aquilae"
@@ -2371,6 +2412,7 @@ system Ascella
 system Aspidiske
 	pos -690 -282
 	government Deep
+	music ambient/humangeneric
 	habitable 135
 	link Avior
 	link Regor
@@ -2426,6 +2468,7 @@ system Aspidiske
 system Atria
 	pos -551 532
 	government Republic
+	music ambient/humangeneric
 	habitable 214.375
 	link Han
 	link Lesath
@@ -2485,6 +2528,7 @@ system Atria
 system Avior
 	pos -658 -317
 	government Deep
+	music ambient/humangeneric
 	habitable 1215
 	link Aspidiske
 	link Naos
@@ -2549,6 +2593,7 @@ system Avior
 system Bellatrix
 	pos -225 -82
 	government Syndicate
+	music ambient/humangeneric
 	habitable 670
 	link Menkar
 	link Mirfak
@@ -2602,6 +2647,7 @@ system Bellatrix
 system "Beta Lupi"
 	pos -851 417
 	government Republic
+	music ambient/humangeneric
 	habitable 625
 	link Pherkad
 	link "Kappa Centauri"
@@ -2652,6 +2698,7 @@ system "Beta Lupi"
 system Betelgeuse
 	pos -384 -322
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Mirzam
 	link Phurad
@@ -2722,6 +2769,7 @@ system Betelgeuse
 system Boral
 	pos -502 331
 	government Republic
+	music ambient/humangeneric
 	habitable 214.375
 	link Alphecca
 	trade Clothing 251
@@ -2781,6 +2829,7 @@ system Boral
 system Calliphana
 	pos -81.3779 -183.436
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 3645
 	link Aganippe
 	link Mycenae
@@ -2838,6 +2887,7 @@ system Calliphana
 system Canopus
 	pos -421 -225
 	government Republic
+	music ambient/humangeneric
 	habitable 214.375
 	link Wazn
 	link Mirzam
@@ -2881,6 +2931,7 @@ system Canopus
 system Capella
 	pos -378 -13
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Procyon
 	link Aldebaran
@@ -2944,6 +2995,7 @@ system Capella
 system Caph
 	pos -295 77
 	government Syndicate
+	music ambient/humangeneric
 	habitable 670
 	link Sol
 	link Diphda
@@ -3002,6 +3054,7 @@ system Caph
 system Cardax
 	pos -211 -215
 	government Republic
+	music ambient/humangeneric
 	habitable 1705
 	link Moktar
 	link Volax
@@ -3058,6 +3111,7 @@ system Cardax
 system Castor
 	pos -452 -17
 	government Republic
+	music ambient/humangeneric
 	habitable 1715
 	link Pollux
 	link Talita
@@ -3138,6 +3192,7 @@ system Castor
 system Cebalrai
 	pos -461 282
 	government Republic
+	music ambient/humangeneric
 	habitable 625
 	link Rutilicus
 	link "Kaus Borealis"
@@ -3193,6 +3248,7 @@ system Cebalrai
 system "Cor Caroli"
 	pos -682 201
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Vindemiatrix
 	link Gacrux
@@ -3246,6 +3302,7 @@ system "Cor Caroli"
 system Dabih
 	pos -253 427
 	government Republic
+	music ambient/humangeneric
 	habitable 670
 	link Tarazed
 	link Eltanin
@@ -3301,6 +3358,7 @@ system Dabih
 system Danoa
 	pos -108.061 445.563
 	government Hai
+	music ambient/haigeneric
 	habitable 135
 	link Tarazed
 	trade Clothing 301
@@ -3360,6 +3418,7 @@ system Danoa
 system "Delta Capricorni"
 	pos -285 202
 	government Syndicate
+	music ambient/humangeneric
 	habitable 839.375
 	link Alderamin
 	link Altair
@@ -3418,6 +3477,7 @@ system "Delta Capricorni"
 system "Delta Sagittarii"
 	pos -414 416
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link Rastaban
 	link "Alpha Arae"
@@ -3478,6 +3538,7 @@ system "Delta Sagittarii"
 system "Delta Velorum"
 	pos -740 90
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Turais
 	link Fala
@@ -3530,6 +3591,7 @@ system "Delta Velorum"
 system Deneb
 	pos -348 225
 	government Pug
+	music ambient/puggeneric
 	habitable 625
 	trade Clothing 314
 	trade Electronics 777
@@ -3577,6 +3639,7 @@ system Deneb
 system Denebola
 	pos -478 70
 	government Republic
+	music ambient/humangeneric
 	habitable 534.375
 	link Sol
 	link Merak
@@ -3636,6 +3699,7 @@ system Denebola
 system Diphda
 	pos -262 61
 	government Syndicate
+	music ambient/humangeneric
 	habitable 590.625
 	link Ankaa
 	link Caph
@@ -3687,6 +3751,7 @@ system Diphda
 system Dschubba
 	pos -598 501
 	government Republic
+	music ambient/humangeneric
 	habitable 398.125
 	link Atria
 	link Lesath
@@ -3753,6 +3818,7 @@ system Dschubba
 system Dubhe
 	pos -580 -117
 	government Republic
+	music ambient/humangeneric
 	habitable 349.375
 	link Zosma
 	trade Clothing 386
@@ -3802,6 +3868,7 @@ system Dubhe
 system Durax
 	pos -59 -90
 	government Pirate
+	music ambient/humangeneric
 	habitable 1080
 	link Alcyone
 	trade Clothing 381
@@ -3834,7 +3901,8 @@ system Durax
 			sprite planet/lava2
 			distance 215
 			period 15.5389
-		object "Paragon 16"
+# "Paragon 16"
+		object
 			sprite planet/station1kd
 			distance 357
 			period 33.2479
@@ -3859,6 +3927,7 @@ system Durax
 system Eber
 	pos -532 406
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link Alnasl
 	link "Alpha Arae"
@@ -3916,6 +3985,7 @@ system Eber
 system Elnath
 	pos -288 -77
 	government Republic
+	music ambient/humangeneric
 	habitable 1715
 	link Acamar
 	link Aldebaran
@@ -3974,6 +4044,7 @@ system Elnath
 system Eltanin
 	pos -328 433
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Dabih
 	link "Delta Sagittarii"
@@ -4027,6 +4098,7 @@ system Eltanin
 system Endios
 	pos -130.378 -286.436
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 425.92
 	link Arneb
 	link Aganippe
@@ -4068,6 +4140,7 @@ system Endios
 system Enif
 	pos -734.571 -430.815
 	government Quarg
+	music ambient/quarggeneric
 	habitable 700
 	link Sadalmelik
 	trade Clothing 361
@@ -4150,6 +4223,7 @@ system Enif
 system "Epsilon Leonis"
 	pos -619 -229
 	government Deep
+	music ambient/humangeneric
 	habitable 1400
 	link Gomeisa
 	link Aspidiske
@@ -4198,7 +4272,7 @@ system "Epsilon Leonis"
 		period 351.954
 		object "Brokkr Station"
 			sprite planet/stationshipyard
-			distance 1000
+			distance 230
 			period 300
 	object
 		sprite planet/gas7
@@ -4221,6 +4295,7 @@ system "Epsilon Leonis"
 system Eteron
 	pos -330 33
 	government Republic
+	music ambient/humangeneric
 	habitable 135
 	link Sirius
 	link Caph
@@ -4279,6 +4354,7 @@ system Eteron
 system Fala
 	pos -690 64
 	government Republic
+	music ambient/humangeneric
 	habitable 625
 	link "Tania Australis"
 	link "Delta Velorum"
@@ -4333,6 +4409,7 @@ system Fala
 system Fingol
 	pos -482 113
 	government Republic
+	music ambient/humangeneric
 	habitable 135
 	link Denebola
 	trade Clothing 346
@@ -4384,6 +4461,7 @@ system Fingol
 system Fomalhaut
 	pos -314 124
 	government Syndicate
+	music ambient/humangeneric
 	habitable 455.625
 	link Altair
 	link Markab
@@ -4439,6 +4517,7 @@ system Fomalhaut
 system Gacrux
 	pos -713 184
 	government Republic
+	music ambient/humangeneric
 	habitable 534.375
 	link "Cor Caroli"
 	link Muhlifain
@@ -4502,6 +4581,7 @@ system Gacrux
 system "Gamma Cassiopeiae"
 	pos -116 293
 	government Syndicate
+	music ambient/humangeneric
 	habitable 455.625
 	link Mirach
 	trade Clothing 252
@@ -4545,7 +4625,8 @@ system "Gamma Cassiopeiae"
 			sprite planet/ganymede
 			distance 303
 			period 12.7598
-		object "Paragon 1"
+# "Paragon 1"
+		object
 			sprite planet/station7
 			distance 357
 			period 33.2479
@@ -4554,6 +4635,7 @@ system "Gamma Cassiopeiae"
 system "Gamma Corvi"
 	pos -906 64
 	government Republic
+	music ambient/humangeneric
 	habitable 1535.62
 	link Spica
 	trade Clothing 203
@@ -4616,6 +4698,7 @@ system "Gamma Corvi"
 system Gienah
 	pos -176 354
 	government Cartel
+	music ambient/humangeneric
 	habitable 534.375
 	link "GRO J1719-24"
 	link Persian
@@ -4675,6 +4758,7 @@ system Gienah
 system Girtab
 	pos -430 481
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Lesath
 	link Rastaban
@@ -4736,6 +4820,7 @@ system Girtab
 system Gomeisa
 	pos -600 -161
 	government Deep
+	music ambient/humangeneric
 	habitable 911.25
 	link Zosma
 	link "Epsilon Leonis"
@@ -4800,6 +4885,7 @@ system Gomeisa
 system Gorvi
 	pos -250 -483
 	government Republic
+	music ambient/humangeneric
 	habitable 670
 	link Tortor
 	link Mintaka
@@ -4850,6 +4936,7 @@ system Gorvi
 system Graffias
 	pos -784 517
 	government Republic
+	music ambient/humangeneric
 	habitable 911.25
 	link Alniyat
 	trade Clothing 314
@@ -4908,6 +4995,7 @@ system Graffias
 system Hadar
 	pos -788 283
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link "Zeta Centauri"
 	link Izar
@@ -4961,6 +5049,7 @@ system Hadar
 system Hamal
 	pos -129 24
 	government Syndicate
+	music ambient/humangeneric
 	habitable 1080
 	link Ruchbah
 	trade Clothing 359
@@ -5010,6 +5099,7 @@ system Hamal
 system Han
 	pos -610 561
 	government Republic
+	music ambient/humangeneric
 	habitable 1080.62
 	link Alniyat
 	link Atria
@@ -5066,6 +5156,7 @@ system Han
 system Hassaleh
 	pos -291 -287
 	government Republic
+	music ambient/humangeneric
 	habitable 670
 	link Rigel
 	link Sumar
@@ -5117,6 +5208,7 @@ system Hassaleh
 system Hatysa
 	pos -161.273 -362.754
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 533.75
 	link Arneb
 	link Alnilam
@@ -5171,6 +5263,7 @@ system Hatysa
 system Heliodora
 	pos -74.3779 -311.436
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 1215
 	link Mycenae
 	link Milto
@@ -5224,6 +5317,7 @@ system Heliodora
 system Hintar
 	pos -422 311
 	government Republic
+	music ambient/humangeneric
 	habitable 625
 	link Cebalrai
 	trade Clothing 261
@@ -5277,6 +5371,7 @@ system Hintar
 system Holeb
 	pos -590 287
 	government Republic
+	music ambient/humangeneric
 	habitable 1715
 	link Alioth
 	link Rutilicus
@@ -5324,6 +5419,7 @@ system Holeb
 system Ildaria
 	pos -702 317
 	government Republic
+	music ambient/humangeneric
 	habitable 625
 	link Zubeneschamali
 	link Kochab
@@ -5370,6 +5466,7 @@ system Ildaria
 system Ipsing
 	pos -549 160
 	government Republic
+	music ambient/humangeneric
 	habitable 1400
 	link Mizar
 	trade Clothing 231
@@ -5422,7 +5519,8 @@ system Ipsing
 			sprite planet/desert4
 			distance 409
 			period 20.6969
-		object "Paragon 4"
+# "Paragon 4"
+		object 
 			sprite planet/station6
 			distance 357
 			period 33.2479
@@ -5435,6 +5533,7 @@ system Ipsing
 system Izar
 	pos -784 231
 	government Republic
+	music ambient/humangeneric
 	habitable 1294.38
 	link Acrux
 	link Hadar
@@ -5490,6 +5589,7 @@ system Izar
 system "Kappa Centauri"
 	pos -867 480
 	government Republic
+	music ambient/humangeneric
 	habitable 1215
 	link Pherkad
 	link "Beta Lupi"
@@ -5549,6 +5649,7 @@ system "Kappa Centauri"
 system "Kaus Australis"
 	pos -284 395
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link Dabih
 	link Tais
@@ -5595,6 +5696,7 @@ system "Kaus Australis"
 system "Kaus Borealis"
 	pos -456 350
 	government Republic
+	music ambient/humangeneric
 	habitable 590.625
 	link Cebalrai
 	link "Alpha Arae"
@@ -5652,6 +5754,7 @@ system "Kaus Borealis"
 system Kochab
 	pos -731 279
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link Zubeneschamali
 	link Ildaria
@@ -5693,6 +5796,7 @@ system Kochab
 system Kornephoros
 	pos -612 424
 	government Republic
+	music ambient/humangeneric
 	habitable 911.25
 	link Sabik
 	link Aldhibain
@@ -5766,6 +5870,7 @@ system Kornephoros
 system Kraz
 	pos -876 204
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Mimosa
 	trade Clothing 256
@@ -5824,6 +5929,7 @@ system Kraz
 system Kugel
 	pos -230 -26
 	government Syndicate
+	music ambient/humangeneric
 	habitable 625
 	link Acamar
 	trade Clothing 219
@@ -5888,6 +5994,7 @@ system Kugel
 system Kursa
 	pos -366 -105
 	government Republic
+	music ambient/humangeneric
 	habitable 455
 	link Elnath
 	link Aldebaran
@@ -5938,6 +6045,7 @@ system Kursa
 system Lesath
 	pos -516 485
 	government Republic
+	music ambient/humangeneric
 	habitable 1715
 	link Atria
 	link Shaula
@@ -5998,6 +6106,7 @@ system Lesath
 system Limen
 	pos -791.99 -12.2491
 	government Republic
+	music ambient/humangeneric
 	habitable 1715
 	link Orbona
 	link Terminus
@@ -6049,6 +6158,7 @@ system Limen
 system Lolami
 	pos -628 -10
 	government Republic
+	music ambient/humangeneric
 	habitable 1215
 	link "Tania Australis"
 	trade Clothing 318
@@ -6106,6 +6216,7 @@ system Lolami
 system Lurata
 	pos -279 463
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Dabih
 	link Albireo
@@ -6162,6 +6273,7 @@ system Lurata
 system Markab
 	pos -241 168
 	government Syndicate
+	music ambient/humangeneric
 	habitable 625
 	link "Delta Capricorni"
 	link Scheat
@@ -6236,6 +6348,7 @@ system Markab
 system Markeb
 	pos -602 -305
 	government Deep
+	music ambient/humangeneric
 	habitable 455.625
 	link Avior
 	trade Clothing 308
@@ -6293,6 +6406,7 @@ system Markeb
 system Matar
 	pos -218 272
 	government Syndicate
+	music ambient/humangeneric
 	habitable 455.625
 	link Persian
 	link Scheat
@@ -6348,6 +6462,7 @@ system Matar
 system Mebsuta
 	pos -482 -394
 	government Republic
+	music ambient/humangeneric
 	habitable 670
 	link Mirzam
 	trade Clothing 369
@@ -6412,7 +6527,8 @@ system Mebsuta
 			sprite planet/rock3
 			distance 300
 			period 25.612
-		object "Paragon 12"
+# "Paragon 12"
+		object 
 			sprite planet/station5
 			distance 357
 			period 33.2479
@@ -6420,6 +6536,7 @@ system Mebsuta
 system Men
 	pos -888 361
 	government Pirate
+	music ambient/humangeneric
 	habitable 320
 	link "Beta Lupi"
 	trade Clothing 299
@@ -6478,6 +6595,7 @@ system Men
 system Menkalinan
 	pos -400 -61
 	government Republic
+	music ambient/humangeneric
 	habitable 3430
 	link Capella
 	link Castor
@@ -6537,6 +6655,7 @@ system Menkalinan
 system Menkar
 	pos -183 -52
 	government Syndicate
+	music ambient/humangeneric
 	habitable 455.625
 	link Zaurak
 	link Mirfak
@@ -6592,6 +6711,7 @@ system Menkar
 system Menkent
 	pos -495 218
 	government Republic
+	music ambient/humangeneric
 	habitable 2340
 	link Vega
 	link Rutilicus
@@ -6657,6 +6777,7 @@ system Menkent
 system Merak
 	pos -553 60
 	government Republic
+	music ambient/humangeneric
 	habitable 1080.62
 	link Phecda
 	link Porrima
@@ -6714,6 +6835,7 @@ system Merak
 system Miaplacidus
 	pos -524 -69
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Tejat
 	link Alphard
@@ -6782,6 +6904,7 @@ system Miaplacidus
 system Milto
 	pos -32.3779 -347.436
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 425.92
 	link Heliodora
 	link Procris
@@ -6817,9 +6940,9 @@ system Milto
 		offset 203.792
 		object "Liberty Station"
 			sprite planet/station4
-			distance 309.494
-			period 20.4159
-			offset 279.743
+			distance 309
+			period 20
+			offset 279
 	object
 		sprite planet/miranda
 		distance 1449.78
@@ -6834,6 +6957,7 @@ system Milto
 system Mimosa
 	pos -895 168
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link Minkar
 	link Kraz
@@ -6877,6 +7001,7 @@ system Mimosa
 system Minkar
 	pos -823 138
 	government Republic
+	music ambient/humangeneric
 	habitable 670
 	link Acrux
 	link Spica
@@ -6935,6 +7060,7 @@ system Minkar
 system Mintaka
 	pos -304 -462
 	government Republic
+	music ambient/humangeneric
 	habitable 775.625
 	link Alnitak
 	link Tortor
@@ -6991,6 +7117,7 @@ system Mintaka
 system Mirach
 	pos -166 250
 	government Syndicate
+	music ambient/humangeneric
 	habitable 292.5
 	link "Al Dhanab"
 	link Scheat
@@ -7052,6 +7179,7 @@ system Mirach
 system Mirfak
 	pos -187 -128
 	government Syndicate
+	music ambient/humangeneric
 	habitable 320
 	link Menkar
 	link Bellatrix
@@ -7101,6 +7229,7 @@ system Mirfak
 system Mirzam
 	pos -498 -301
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Canopus
 	link Betelgeuse
@@ -7156,6 +7285,7 @@ system Mirzam
 system Mizar
 	pos -579 184
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Arcturus
 	link "Cor Caroli"
@@ -7207,6 +7337,7 @@ system Mizar
 system Moktar
 	pos -169 -170
 	government Syndicate
+	music ambient/humangeneric
 	habitable 455
 	link Oblate
 	link Cardax
@@ -7268,6 +7399,7 @@ system Moktar
 system Mora
 	pos -755 23
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link "Delta Velorum"
 	link "Tania Australis"
@@ -7324,6 +7456,7 @@ system Mora
 system Muhlifain
 	pos -702 242
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Vindemiatrix
 	link Gacrux
@@ -7369,6 +7502,7 @@ system Muhlifain
 system Muphrid
 	pos -495 152
 	government Republic
+	music ambient/humangeneric
 	habitable 839.375
 	link Menkent
 	link Porrima
@@ -7422,6 +7556,7 @@ system Muphrid
 system Mycenae
 	pos -53.3779 -268.436
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 625
 	link Aganippe
 	link Calliphana
@@ -7477,6 +7612,7 @@ system Mycenae
 system Naos
 	pos -653 -396
 	government Deep
+	music ambient/humangeneric
 	habitable 625
 	link Regor
 	link Wezen
@@ -7546,6 +7682,7 @@ system Naos
 system Naper
 	pos -416 369
 	government Republic
+	music ambient/humangeneric
 	habitable 1715
 	link Ascella
 	trade Clothing 370
@@ -7602,6 +7739,7 @@ system Naper
 system Nihal
 	pos -262 -121
 	government Republic
+	music ambient/humangeneric
 	habitable 534.375
 	link Elnath
 	link Volax
@@ -7666,6 +7804,7 @@ system Nihal
 system "GRO J1719-24"
 	pos -242.077 362.649
 	government Cartel
+	music ambient/humangeneric
 	habitable 425.92
 	link Persian
 	link "Kaus Australis"
@@ -7702,6 +7841,7 @@ system "GRO J1719-24"
 system Nocte
 	pos -467 172
 	government Republic
+	music ambient/humangeneric
 	habitable 135
 	link Vega
 	trade Clothing 311
@@ -7762,6 +7902,7 @@ system Nocte
 system Nunki
 	pos -393 537
 	government Pirate
+	music ambient/humangeneric
 	habitable 214.375
 	link Albaldah
 	trade Clothing 259
@@ -7826,6 +7967,7 @@ system Nunki
 system Oblate
 	pos -124 -119
 	government Pirate
+	music ambient/humangeneric
 	habitable 12000
 	link Alcyone
 	link Moktar
@@ -7878,6 +8020,7 @@ system Oblate
 system Orbona
 	pos -735.99 -97.2491
 	government Republic
+	music ambient/humangeneric
 	habitable 2859.44
 	link Limen
 	trade Clothing 345
@@ -7943,6 +8086,7 @@ system Orbona
 system Orvala
 	pos -334 303
 	government Republic
+	music ambient/humangeneric
 	habitable 533.75
 	link "Zeta Aquilae"
 	trade Clothing 342
@@ -8003,6 +8147,7 @@ system Orvala
 system Peacock
 	pos -307 350
 	government Republic
+	music ambient/humangeneric
 	habitable 214.375
 	link Tais
 	link "Kaus Australis"
@@ -8072,6 +8217,7 @@ system Peacock
 system Persian
 	pos -203 331
 	government Syndicate
+	music ambient/humangeneric
 	habitable 2170.62
 	link Alnair
 	link Gienah
@@ -8135,6 +8281,7 @@ system Persian
 system Phact
 	pos -375 -191
 	government Republic
+	music ambient/humangeneric
 	habitable 1080.62
 	link Alheka
 	link Canopus
@@ -8198,6 +8345,7 @@ system Phact
 system Phecda
 	pos -607 88
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link Algorel
 	link "Tania Australis"
@@ -8249,6 +8397,7 @@ system Phecda
 system Pherkad
 	pos -798 451
 	government Republic
+	music ambient/humangeneric
 	habitable 135
 	link "Beta Lupi"
 	link "Kappa Centauri"
@@ -8301,6 +8450,7 @@ system Pherkad
 system Phurad
 	pos -350 -271
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Betelgeuse
 	link Canopus
@@ -8353,6 +8503,7 @@ system Phurad
 system Polaris
 	pos -35 126
 	government Syndicate
+	music ambient/humangeneric
 	habitable 320
 	link Achernar
 	trade Clothing 280
@@ -8400,6 +8551,7 @@ system Polaris
 system Pollux
 	pos -465 4
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Procyon
 	link Castor
@@ -8448,6 +8600,7 @@ system Pollux
 system Porrima
 	pos -556 123
 	government Republic
+	music ambient/humangeneric
 	habitable 760
 	link Muphrid
 	link Merak
@@ -8509,6 +8662,7 @@ system Porrima
 system Procris
 	pos -17.3779 -325.436
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 233.28
 	link Heliodora
 	link Milto
@@ -8561,6 +8715,7 @@ system Procris
 system Procyon
 	pos -411 23
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Sirius
 	link Pollux
@@ -8611,6 +8766,7 @@ system Procyon
 system "Pug Iyik"
 	pos 153.707 520.226
 	government Pug
+	music ambient/puggeneric
 	habitable 625
 	trade Clothing 274
 	trade Electronics 700
@@ -8660,6 +8816,7 @@ system "Pug Iyik"
 system Rajak
 	pos -270 -236
 	government Republic
+	music ambient/humangeneric
 	habitable 78.125
 	link Sumar
 	link Hassaleh
@@ -8712,7 +8869,8 @@ system Rajak
 			sprite planet/dust3
 			distance 215
 			period 15.5389
-		object "Paragon 13"
+# "Paragon 13"
+		object 
 			sprite planet/station 2
 			distance 357
 			period 33.2479
@@ -8721,6 +8879,7 @@ system Rajak
 system Rasalhague
 	pos -413 246
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link "Zeta Aquilae"
 	link Cebalrai
@@ -8776,6 +8935,7 @@ system Rasalhague
 system Rastaban
 	pos -463 446
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Girtab
 	link Lesath
@@ -8831,6 +8991,7 @@ system Rastaban
 system Regor
 	pos -702 -335
 	government Deep
+	music ambient/humangeneric
 	habitable 455.625
 	link Aspidiske
 	link Naos
@@ -8891,6 +9052,7 @@ system Regor
 system Regulus
 	pos -544 25
 	government Republic
+	music ambient/humangeneric
 	habitable 8640
 	link Merak
 	trade Clothing 249
@@ -8955,6 +9117,7 @@ system Regulus
 system Rigel
 	pos -324 -363
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Saiph
 	link Alnitak
@@ -9023,6 +9186,7 @@ system Rigel
 system Ruchbah
 	pos -174 69
 	government Syndicate
+	music ambient/humangeneric
 	habitable 2560
 	link Ankaa
 	link Alpheratz
@@ -9062,7 +9226,8 @@ system Ruchbah
 		sprite planet/ice7
 		distance 612.86
 		period 119.945
-	object "Paragon 7"
+"Paragon 7"
+	object 
 		sprite planet/station7
 		distance 942.55
 		period 228.769
@@ -9087,6 +9252,7 @@ system Ruchbah
 system Rutilicus
 	pos -535 273
 	government Republic
+	music ambient/humangeneric
 	habitable 625
 	link Arcturus
 	link Cebalrai
@@ -9150,6 +9316,7 @@ system Rutilicus
 system Sabik
 	pos -675 379
 	government Republic
+	music ambient/humangeneric
 	habitable 625
 	link Unukalhai
 	link Zubenelgenubi
@@ -9194,6 +9361,7 @@ system Sabik
 system Sadalmelik
 	pos -721.565 -456.598
 	government Quarg
+	music ambient/quarggeneric
 	habitable 1715
 	link Sadalsuud
 	link Enif
@@ -9246,6 +9414,7 @@ system Sadalmelik
 system Sadalsuud
 	pos -677.474 -460.551
 	government Quarg
+	music ambient/quarggeneric
 	habitable 1400
 	link Sadalmelik
 	link Wezen
@@ -9306,6 +9475,7 @@ system Sadalsuud
 system Sadr
 	pos -287 543
 	government Republic
+	music ambient/humangeneric
 	habitable 3859.38
 	link Albireo
 	trade Clothing 231
@@ -9375,6 +9545,7 @@ system "Sagittarius A*"
 system Saiph
 	pos -375 -390
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link Rigel
 	link Alnitak
@@ -9421,6 +9592,7 @@ system Saiph
 system Sargas
 	pos -542 445
 	government Republic
+	music ambient/humangeneric
 	habitable 911.25
 	link Kornephoros
 	link Lesath
@@ -9469,6 +9641,7 @@ system Sargas
 system Sarin
 	pos -670 293
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Vindemiatrix
 	trade Clothing 305
@@ -9509,7 +9682,8 @@ system Sarin
 			sprite planet/rock0
 			distance 142
 			period 17.6303
-	object "Paragon 5"
+# "Paragon 5"
+	object
 		sprite planet/station2
 		distance 3371.1
 		period 2382.35
@@ -9521,6 +9695,7 @@ system Sarin
 system Scheat
 	pos -205 233
 	government Syndicate
+	music ambient/humangeneric
 	habitable 625
 	link Markab
 	link "Delta Capricorni"
@@ -9575,6 +9750,7 @@ system Scheat
 system Schedar
 	pos -93 229
 	government Syndicate
+	music ambient/humangeneric
 	habitable 1080
 	link Mirach
 	link Achernar
@@ -9636,6 +9812,7 @@ system Schedar
 system Seginus
 	pos -557 356
 	government Republic
+	music ambient/humangeneric
 	habitable 135
 	link Alnasl
 	link Wei
@@ -9698,6 +9875,7 @@ system Seginus
 system Shaula
 	pos -460 527
 	government Pirate
+	music ambient/humangeneric
 	habitable 625
 	link Lesath
 	trade Clothing 232
@@ -9756,6 +9934,7 @@ system Shaula
 system Sheratan
 	pos -40 45
 	government Syndicate
+	music ambient/humangeneric
 	habitable 2035
 	link Ruchbah
 	link Zaurak
@@ -9812,6 +9991,7 @@ system Sheratan
 system Sirius
 	pos -378 44
 	government Republic
+	music ambient/humangeneric
 	habitable 1800
 	link Sol
 	link Procyon
@@ -9869,6 +10049,7 @@ system Sirius
 system Sol
 	pos -400 100
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Vega
 	link "Alpha Centauri"
@@ -9943,6 +10124,7 @@ system Sol
 system Sospi
 	pos -317 -161
 	government Republic
+	music ambient/humangeneric
 	habitable 1715
 	link Volax
 	link Nihal
@@ -10001,6 +10183,7 @@ system Sospi
 system Spica
 	pos -906 120
 	government Republic
+	music ambient/humangeneric
 	habitable 625
 	link Minkar
 	link "Gamma Corvi"
@@ -10054,6 +10237,7 @@ system Spica
 system Suhail
 	pos -774 -338
 	government Deep
+	music ambient/humangeneric
 	habitable 1715
 	link Regor
 	trade Clothing 234
@@ -10108,6 +10292,7 @@ system Suhail
 system Sumar
 	pos -236 -273
 	government Republic
+	music ambient/humangeneric
 	habitable 2560
 	link Cardax
 	link Hassaleh
@@ -10167,6 +10352,7 @@ system Sumar
 system Tais
 	pos -346 381
 	government Republic
+	music ambient/humangeneric
 	habitable 3645
 	link "Delta Sagittarii"
 	link "Kaus Australis"
@@ -10219,6 +10405,7 @@ system Tais
 system Talita
 	pos -519 -26
 	government Republic
+	music ambient/humangeneric
 	habitable 1705
 	link Miaplacidus
 	link Alphard
@@ -10278,6 +10465,7 @@ system Talita
 system "Tania Australis"
 	pos -671 7
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Phecda
 	link Algieba
@@ -10346,6 +10534,7 @@ system "Tania Australis"
 system Tarazed
 	pos -194 448
 	government Tarazed
+	music ambient/humangeneric
 	habitable 1215
 	link Albireo
 	link Dabih
@@ -10406,6 +10595,7 @@ system Tarazed
 system Tejat
 	pos -489 -107
 	government Republic
+	music ambient/humangeneric
 	habitable 1158.12
 	link Wazn
 	link Miaplacidus
@@ -10477,6 +10667,7 @@ system Tejat
 system Terminus
 	pos -727.99 -23.2491
 	government Republic
+	music ambient/humangeneric
 	habitable 425.92
 	link Limen
 	trade Clothing 323
@@ -10519,6 +10710,7 @@ system Terminus
 system Tortor
 	pos -255 -424
 	government Neutral
+	music ambient/humangeneric
 	habitable 455.625
 	link Gorvi
 	link Mintaka
@@ -10583,6 +10775,7 @@ system Tortor
 system Turais
 	pos -691 134
 	government Republic
+	music ambient/humangeneric
 	habitable 320
 	link Gacrux
 	link "Delta Velorum"
@@ -10634,6 +10827,7 @@ system Turais
 system "Ultima Thule"
 	pos -137.603 498.473
 	government Wanderer
+	music ambient/wanderergeneric
 	habitable 2560
 	link Tarazed
 	trade Clothing 378
@@ -10681,6 +10875,7 @@ system "Ultima Thule"
 system Umbral
 	pos -164 406
 	government Republic
+	music ambient/humangeneric
 	habitable 670
 	link Tarazed
 	trade Clothing 365
@@ -10753,6 +10948,7 @@ system Umbral
 system Unagi
 	pos -230.996 -322.479
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 320
 	link Sumar
 	link Almaaz
@@ -10803,6 +10999,7 @@ system Unagi
 system Unukalhai
 	pos -710 405
 	government Republic
+	music ambient/humangeneric
 	habitable 625
 	link Zubenelgenubi
 	link Sabik
@@ -10855,6 +11052,7 @@ system Unukalhai
 system Vega
 	pos -402 182
 	government Republic
+	music ambient/humangeneric
 	habitable 1400
 	link Altair
 	link Sol
@@ -10912,6 +11110,7 @@ system Vega
 system Vindemiatrix
 	pos -635 257
 	government Republic
+	music ambient/humangeneric
 	habitable 1080
 	link Alioth
 	link Muhlifain
@@ -10959,6 +11158,7 @@ system Vindemiatrix
 system Volax
 	pos -256 -179
 	government Republic
+	music ambient/humangeneric
 	habitable 1715
 	link Cardax
 	link Nihal
@@ -11009,6 +11209,7 @@ system Volax
 system Wazn
 	pos -494 -153
 	government Republic
+	music ambient/humangeneric
 	habitable 534.375
 	link Tejat
 	link Canopus
@@ -11068,6 +11269,7 @@ system Wazn
 system Wei
 	pos -598 369
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Seginus
 	link Alnasl
@@ -11124,6 +11326,7 @@ system Wei
 system Wezen
 	pos -664 -433
 	government Deep
+	music ambient/humangeneric
 	habitable 2880
 	link Naos
 	link Sadalsuud
@@ -11200,6 +11403,7 @@ system Wezen
 system Xanthe
 	pos -172.378 -310.436
 	government "Northern Union"
+	music ambient/humangeneric
 	habitable 1111.68
 	link Arneb
 	link Endios
@@ -11271,6 +11475,7 @@ system Xanthe
 system "Yed Prior"
 	pos -810 374
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Pherkad
 	trade Clothing 283
@@ -11320,6 +11525,7 @@ system "Yed Prior"
 system Zaurak
 	pos -109 -34
 	government Syndicate
+	music ambient/humangeneric
 	habitable 625
 	link Sheratan
 	link Alcyone
@@ -11370,6 +11576,7 @@ system Zaurak
 system "Zeta Aquilae"
 	pos -369 276
 	government Republic
+	music ambient/humangeneric
 	habitable 1400
 	link Ascella
 	link Rasalhague
@@ -11440,6 +11647,7 @@ system "Zeta Aquilae"
 system "Zeta Centauri"
 	pos -835 257
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Acrux
 	link Hadar
@@ -11491,6 +11699,7 @@ system "Zeta Centauri"
 system Zosma
 	pos -640 -123
 	government Republic
+	music ambient/humangeneric
 	habitable 455.625
 	link Algieba
 	link Dubhe
@@ -11547,6 +11756,7 @@ system Zosma
 system Zubenelgenubi
 	pos -710 353
 	government Republic
+	music ambient/humangeneric
 	habitable 945
 	link Zubeneschamali
 	link Unukalhai
@@ -11606,6 +11816,7 @@ system Zubenelgenubi
 system Zubeneschamali
 	pos -759 338
 	government Republic
+	music ambient/humangeneric
 	habitable 1250
 	link Hadar
 	link Zubenelgenubi
