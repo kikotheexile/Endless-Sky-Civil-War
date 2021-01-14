@@ -9,9 +9,9 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 conversation "intro"
-	`	Would you like a quick, text based overview of how the game works before we begin?? This will breifly cover the controls, interface, and how the game is played.`
-	`	If you select "No" don't worry. The overview will be added to your logbook (Default I, then Logbook)`
-	`	(Click an option, or press its corresponding number on your keyboard)`
+	`	Would you like a quick, text based overview of how the game works before we begin?? This will briefly cover the controls, interface, and how the game is played.`
+	`	If you select "No" don't worry. The overview will be added to your logbook.(Default I, then Logbook.)`
+	`	(Click an option, or press its corresponding number on your keyboard.)`
 	choice
 		`	No.`
 			goto logbook
@@ -19,7 +19,6 @@ conversation "intro"
 			goto menu
 		`	(Hard Mode) Skip introduction.`
 			goto skip
-
 	label skip
 	`	The introduction has been skipped, the tutorial rejected, and the "hard" start selected. Please name your character.`
 	name
@@ -109,7 +108,7 @@ conversation "intro"
 	label work
 	scene "scene/Top-Left_Job_Board_GUI"
 	`	Finding work is easy in Endless Sky. Simply visit the 'Spaceport' on any planet, view the 'Job Board,' or make a fortune 'Trading!'`
-	`	All the main storylines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
+	`	All the main story lines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
 	`	So be careful who you chose to work for!`
 	choice
 		`	(Back to Basics.)`
@@ -120,7 +119,7 @@ conversation "intro"
 			goto logbook	
 	label combat
 	scene "scene/combat_GUI"	
-	`	Combat in Endless Sky is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you outrange and outrun your enemy, too!`
+	`	Combat in Endless Sky is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you out-range and outrun your enemy, too!`
 	`	The main default keys you will use in combat are your arrow keys to move, (Tab) to fire your primary weapon, (W) to select your secondary weapon, and (Q) to fire your secondary weapon.`
 	`	Check Preferences by pressing the (ESC) key for more details.`
 	choice
@@ -180,7 +179,7 @@ conversation "intro"
 		`	(Continue to the intro.)`
 			goto logbook
 	label crewpilot
-	`	Pilots are who you rely upon most to manage other ships in your fleet. Be they high-risk fighter jockies, or the people running your heavy escorts. Their job is to fly any ships that you don't, and they get paid extra for it.`
+	`	Pilots are who you rely upon most to manage other ships in your fleet. Be they high-risk fighter jockeys, or the people running your heavy escorts. Their job is to fly any ships that you don't, and they get paid extra for it.`
 	`	Although Pilots take your place aboard any ship you aren't currently flying, they do not actually take on the responsibility of being a Captain, and will seldom act independently of you. They will do their best to your orders to the letter when possible.`
 	choice	
 		`	(Back to the Crew overview.)`
@@ -247,7 +246,7 @@ conversation "intro"
 	`	Trading will take you to the planet's commodities board.`
 	`	Job Board will take you to a screen where you can select various types of work.`
 	`	Bank will allow you to pay off any fines or loans you have, assuming you can afford to. You can also request a new loan here, if your credit rating is good enough.`
-	`	Spaceport is your main go-to for story content. This is where you will find a lot of good work, story missions, mini arcs, and other surprises. Clicking this will also bring up your news pannel.`
+	`	Spaceport is your main go-to for story content. This is where you will find a lot of good work, story missions, mini arcs, and other surprises. Clicking this will also bring up your news panel`
 	`	Shipyard will allow you to buy and sell ships.`
 	`	Outfitter will allow you to buy, sell, and equip outfits.`
 	`	Hire Crew will allow you to take on additional crew to board and capture hostile ships. You can only fit as many as you have bunks for, however.`
@@ -263,8 +262,8 @@ conversation "intro"
 	scene "scene/Outfitter_GUI_Left"	
 	`	The Shipyard and Outfitters operate largely on the same principle with slight differences.` 
 	`	In the Shipyard, you can buy, sell, and rearrange your ships. The left-hand side of the screen shows ships that are for sale. Select one to view its stats or purchase it. The right hand side of the screen will do the same thing for ships you own, allowing you to compare between the two.`
-	`	Mouseover any stat listed in the shipyard in order to see a tooltip, which will brief you on what those numbers mean.`
-	`	In the Outfitter, you will be able to view different equipment for your ship. Each piece of equipment requires a different amount of resources, however, so you will have to manage your outfit, engine, and weapons space accordingly. For this reason, the same view provided in the shipyard is availible on the right hand side of the screen. This will update your ship's stats in real time with any changes you make.`
+	`	Mouse-over any stat listed in the shipyard in order to see a tool-tip, which will brief you on what those numbers mean.`
+	`	In the Outfitter, you will be able to view different equipment for your ship. Each piece of equipment requires a different amount of resources, however, so you will have to manage your outfit, engine, and weapons space accordingly. For this reason, the same view provided in the shipyard is available on the right hand side of the screen. This will update your ship's stats in real time with any changes you make.`
 	choice
 		`	(Back to Sensor Screen.)`
 			goto ui
@@ -277,10 +276,10 @@ conversation "intro"
 	`	This is what you will be looking at most.`
 	`	The top left corner of your screen is usually blank, but will sometimes show warnings and alerts. Next to the top left is a huge circle, this is your long range scanner. To the right of the long range scanner is your current destination.`
 	`	Under the long range scanner is your current target. If you have tactical scanners equipped, this may also provide information on the condition of hostile ships.`
-	`	The lower left hand corner of your screen shows your fleet (if any) as well as their status, beside that will be your incomming hails and transaction history.`
+	`	The lower left hand corner of your screen shows your fleet (if any) as well as their status, beside that will be your incoming hails and transaction history.`
 	`	The upper right is your current flagship's status. Where you are, what the date is, how many credits are in your account. Beneath that is your shields condition (blue circle) and hull condition (orange circle).`
 	`	The right hand side of your screen shows three bars. From left to right they are your Fuel Gauge, Energy, and Heat.`
-	`	About fuel: it is replinished for free any time you land on a planet with a spaceport. Regardless of faction.`
+	`	About fuel: it is replenished for free any time you land on a planet with a spaceport. Regardless of faction.`
 	choice
 		`	(Back to Sensor Screen.)`
 			goto ui
