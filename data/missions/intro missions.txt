@@ -24,7 +24,7 @@ mission "Trust fund baby"
 			`Apparently, I still have a large enough bounty on my head that people are coming after it. The Dry Wolf is likely to harass me for some time.`
 		log "1: Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
 			`Discord: https://discord.gg/ND788CC (invite: ND788CC)`
-			`Github: (To be updated once out of workfloor)`
+			`GitHub: (To be updated once out of work-floor)`
 			`Steam: (To be update once on steam)
 			``
 		log "1: Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
@@ -65,9 +65,9 @@ mission "Trust fund baby"
 			``
 			`	You can find more info on your controls by visiting the preferences screen. Access that by pressing the (ESC) key and clicking Preferences.`
 		log "0: Manual" "Finding Work" `Simply visit the 'Spaceport' on any planet, view the 'Job Board,' or make a fortune 'Trading!'`
-			`	All the main storylines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
+			`	All the main story lines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
 			`	So be careful who you chose to work for!`		
-		log "0: Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you outrange and outrun your enemy, too!`
+		log "0: Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you out-range and outrun your enemy, too!`
 			`	The main default keys you will use in combat are your arrow keys to move, (Tab) to fire your primary weapon, (W) to select your secondary weapon, and (Q) to fire your secondary weapon.`
 			`	Check Preferences by pressing the (ESC) key for more details.`
 		log "0: Manual" "Crew Basics" `The crew breakdown is as follows:`
@@ -81,7 +81,7 @@ mission "Trust fund baby"
 			`	Some, usually cruel, captains have been known to throw hoards of their Regulars at hostile ships in boarding operations. This is seen as distasteful, and is absolutely an abuse of your workforce. However, thanks to the Syndicate's economic influence, the Republic has yet to pass any laws restricting or regulating this, and will not require you to provide hazard pay.`
 			``
 			`	Pilots: 250 credits per day, 20 ship shares.`
-			`	Pilots are who you rely upon most to manage other ships in your fleet. Be they high-risk fighter jockies, or the people running your heavy escorts. Their job is to fly any ships that you don't, and they get paid extra for it.`
+			`	Pilots are who you rely upon most to manage other ships in your fleet. Be they high-risk fighter jockeys, or the people running your heavy escorts. Their job is to fly any ships that you don't, and they get paid extra for it.`
 			`	Although Pilots take your place aboard any ship you aren't currently flying, they do not actually take on the responsibility of being a Captain, and will seldom act independently of you. They will do their best to your orders to the letter when possible.`
 			``
 			`	Even Pirates, who mostly run on slave labor, abide by the rules requiring officers. Although it is suspected Pirate crews abide by this largely due to improved performance.`
@@ -95,21 +95,21 @@ mission "Trust fund baby"
 			`	Senior Officers are required by both law and moral codes of conduct for every twenty crewmen aboard any ship.`
 		log "Factions" "Republic" `Hundreds of years ago, the independent territories in different parts of human space agreed to join together into a single democratic government, with Earth as its capital. The rise of the Republic ushered in a long period of peace and prosperity in human history.`
 			`Representation in the Republic Parliament is based on population. That means that some individual "Paradise Worlds" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.`
-		log "Factions" "Syndicate" `The Syndicate is a megacorporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.`
+		log "Factions" "Syndicate" `The Syndicate is a mega-corporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.`
 			`The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.`
 		log "Factions" "Northern Union" `There is a great deal of debate over if the Northern Union are freedom fighters, terrorists, or just an alliance of anarchists and pirates. However, the one thing everyone can agree on is that Northern Union space is extremely dangerous. Their neutral planet, Haven, is the one planet in all of known space that has never successfully been invaded by the Republic."`
 		log "Factions" "Pirates" `In poorer and more remote star systems, where the Navy seldom patrols, pirate attacks on merchant ships are frequent. Pirates are also known to attack large, unguarded convoys of freighters even in more populated areas. Most pirate fleets come from lawless worlds on the outskirts of human space.`
 		log "Factions" "Merchants" `Although not an organization, Merchants are known to stick together and share information with one another. If a fellow Merchant decides to begin a life of crime and piracy, it wont be long before every Merchant in the known galaxy has heard about it and labeled them as a hostile captain. Thankfully, when wronged they will also accept bribes and spread the word about those as well. They also share stories of captains who have helped them.`
-		log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who persue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
-		log "Factions" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ringworlds. Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
+		log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who pursue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
+		log "Factions" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ring-worlds Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
 			`The Quarg view species in labels. Calling themselves "Tier Three" and humanity "Tier One." They seldom use advanced technology within human space, however. Claiming that it would be "disrespectful to show humanity the true power of the Quarg."`
-		log "Factions" "The Hai" `The Hai are large, rodent-like creatures. Many earthborn humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
+		log "Factions" "The Hai" `The Hai are large, rodent-like creatures. Many earth-born humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
 			`This species seems to have a long and ancient history, and an unusual willingness to share their technology with other species. The engineers at Tarazed Corporation have taken advantage of this and has worked collaboratively with the Hai to build new and more advanced ships and weapons.`
-		log "Factions" "The Wanderers" `Birdlike in appearence, this species has a name that is utterly unpronouncable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
+		log "Factions" "The Wanderers" `Birdlike in appearance, this species has a name that is utterly unpronounceable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
 			`The Quarg seem to be revolted by the Wanderers for unknown reasons, but have disclosed that they consider the species to be "Tier Two" and that the two species are very unlikely to go to war.`
 
 		conversation 
-			`	You recieve notice that some of your inheritance has been transferred to your account. This is <payment> that can go to paying down your loan or customizing your ship!`
+			`	You receive notice that some of your inheritance has been transferred to your account. This is <payment> that can go to paying down your loan or customizing your ship!`
 		payment 250000
 			accept
 
@@ -129,7 +129,7 @@ mission "Perfectly Vanilla"
 			`Apparently, I still have a large enough bounty on my head that people are coming after it. The Dry Wolf is likely to harass me for some time.`
 		log "1: Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
 			`Discord: https://discord.gg/ND788CC (invite: ND788CC)`
-			`Github: (To be updated once out of workfloor)`
+			`GitHub: (To be updated once out of work-floor)`
 			`Steam: (To be update once on steam)
 			``
 		log "1: Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
@@ -170,9 +170,9 @@ mission "Perfectly Vanilla"
 			``
 			`	You can find more info on your controls by visiting the preferences screen. Access that by pressing the (ESC) key and clicking Preferences.`
 		log "0: Manual" "Finding Work" `Simply visit the 'Spaceport' on any planet, view the 'Job Board,' or make a fortune 'Trading!'`
-			`	All the main storylines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
+			`	All the main story lines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
 			`	So be careful who you chose to work for!`		
-		log "0: Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you outrange and outrun your enemy, too!`
+		log "0: Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you out-range and outrun your enemy, too!`
 			`	The main default keys you will use in combat are your arrow keys to move, (Tab) to fire your primary weapon, (W) to select your secondary weapon, and (Q) to fire your secondary weapon.`
 			`	Check Preferences by pressing the (ESC) key for more details.`
 		log "0: Manual" "Crew Basics" `The crew breakdown is as follows:`
@@ -186,7 +186,7 @@ mission "Perfectly Vanilla"
 			`	Some, usually cruel, captains have been known to throw hoards of their Regulars at hostile ships in boarding operations. This is seen as distasteful, and is absolutely an abuse of your workforce. However, thanks to the Syndicate's economic influence, the Republic has yet to pass any laws restricting or regulating this, and will not require you to provide hazard pay.`
 			``
 			`	Pilots: 250 credits per day, 20 ship shares.`
-			`	Pilots are who you rely upon most to manage other ships in your fleet. Be they high-risk fighter jockies, or the people running your heavy escorts. Their job is to fly any ships that you don't, and they get paid extra for it.`
+			`	Pilots are who you rely upon most to manage other ships in your fleet. Be they high-risk fighter jockeys, or the people running your heavy escorts. Their job is to fly any ships that you don't, and they get paid extra for it.`
 			`	Although Pilots take your place aboard any ship you aren't currently flying, they do not actually take on the responsibility of being a Captain, and will seldom act independently of you. They will do their best to your orders to the letter when possible.`
 			``
 			`	Even Pirates, who mostly run on slave labor, abide by the rules requiring officers. Although it is suspected Pirate crews abide by this largely due to improved performance.`
@@ -200,17 +200,17 @@ mission "Perfectly Vanilla"
 			`	Senior Officers are required by both law and moral codes of conduct for every twenty crewmen aboard any ship.`
 		log "Factions" "Republic" `Hundreds of years ago, the independent territories in different parts of human space agreed to join together into a single democratic government, with Earth as its capital. The rise of the Republic ushered in a long period of peace and prosperity in human history.`
 			`Representation in the Republic Parliament is based on population. That means that some individual "Paradise Worlds" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.`
-		log "Factions" "Syndicate" `The Syndicate is a megacorporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.`
+		log "Factions" "Syndicate" `The Syndicate is a mega-corporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.`
 			`The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.`
 		log "Factions" "Northern Union" `There is a great deal of debate over if the Northern Union are freedom fighters, terrorists, or just an alliance of anarchists and pirates. However, the one thing everyone can agree on is that Northern Union space is extremely dangerous. Their neutral planet, Haven, is the one planet in all of known space that has never successfully been invaded by the Republic."`
 		log "Factions" "Pirates" `In poorer and more remote star systems, where the Navy seldom patrols, pirate attacks on merchant ships are frequent. Pirates are also known to attack large, unguarded convoys of freighters even in more populated areas. Most pirate fleets come from lawless worlds on the outskirts of human space.`
 		log "Factions" "Merchants" `Although not an organization, Merchants are known to stick together and share information with one another. If a fellow Merchant decides to begin a life of crime and piracy, it wont be long before every Merchant in the known galaxy has heard about it and labeled them as a hostile captain. Thankfully, when wronged they will also accept bribes and spread the word about those as well. They also share stories of captains who have helped them.`
-		log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who persue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
-		log "Factions" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ringworlds. Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
+		log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who pursue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
+		log "Factions" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ring-worlds Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
 			`The Quarg view species in labels. Calling themselves "Tier Three" and humanity "Tier One." They seldom use advanced technology within human space, however. Claiming that it would be "disrespectful to show humanity the true power of the Quarg."`
-		log "Factions" "The Hai" `The Hai are large, rodent-like creatures. Many earthborn humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
+		log "Factions" "The Hai" `The Hai are large, rodent-like creatures. Many earth-born humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
 			`This species seems to have a long and ancient history, and an unusual willingness to share their technology with other species. The engineers at Tarazed Corporation have taken advantage of this and has worked collaboratively with the Hai to build new and more advanced ships and weapons.`
-		log "Factions" "The Wanderers" `Birdlike in appearence, this species has a name that is utterly unpronouncable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
+		log "Factions" "The Wanderers" `Birdlike in appearance, this species has a name that is utterly unpronounceable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
 			`The Quarg seem to be revolted by the Wanderers for unknown reasons, but have disclosed that they consider the species to be "Tier Two" and that the two species are very unlikely to go to war.`
 
 
@@ -230,7 +230,7 @@ mission "A pirate's life!"
 			`Apparently, I still have a large enough bounty on my head that people are coming after it. The Dry Wolf is likely to harass me for some time.`
 		log "1: Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
 			`Discord: https://discord.gg/ND788CC (invite: ND788CC)`
-			`Github: (To be updated once out of workfloor)`
+			`GitHub: (To be updated once out of work-floor)`
 			`Steam: (To be update once on steam)
 			``
 		log "1: Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
@@ -271,9 +271,9 @@ mission "A pirate's life!"
 			``
 			`	You can find more info on your controls by visiting the preferences screen. Access that by pressing the (ESC) key and clicking Preferences.`
 		log "0: Manual" "Finding Work" `Simply visit the 'Spaceport' on any planet, view the 'Job Board,' or make a fortune 'Trading!'`
-			`	All the main storylines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
+			`	All the main story lines will be found in the 'Spaceport' on various planets, but many have a random chance to offer. However, not all 'Spaceport' missions will be part of a larger story chain, and some spaceport missions may have negative impacts on your finances or reputation.`
 			`	So be careful who you chose to work for!`		
-		log "0: Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you outrange and outrun your enemy, too!`
+		log "0: Manual" "Space Combat Basics" `Combat is rather straight forward, but does include some advanced tactics if you are willing to explore the capabilities of your ships and outfits. Finding ways to ignore enemy shields, overheat their vessels, or drain their batteries can prove even more effective than buying the biggest ship you can and slugging it out. Most secondary weapons, such as missiles, can help you out-range and outrun your enemy, too!`
 			`	The main default keys you will use in combat are your arrow keys to move, (Tab) to fire your primary weapon, (W) to select your secondary weapon, and (Q) to fire your secondary weapon.`
 			`	Check Preferences by pressing the (ESC) key for more details.`
 		log "0: Manual" "Crew Basics" `The crew breakdown is as follows:`
@@ -287,7 +287,7 @@ mission "A pirate's life!"
 			`	Some, usually cruel, captains have been known to throw hoards of their Regulars at hostile ships in boarding operations. This is seen as distasteful, and is absolutely an abuse of your workforce. However, thanks to the Syndicate's economic influence, the Republic has yet to pass any laws restricting or regulating this, and will not require you to provide hazard pay.`
 			``
 			`	Pilots: 250 credits per day, 20 ship shares.`
-			`	Pilots are who you rely upon most to manage other ships in your fleet. Be they high-risk fighter jockies, or the people running your heavy escorts. Their job is to fly any ships that you don't, and they get paid extra for it.`
+			`	Pilots are who you rely upon most to manage other ships in your fleet. Be they high-risk fighter jockeys, or the people running your heavy escorts. Their job is to fly any ships that you don't, and they get paid extra for it.`
 			`	Although Pilots take your place aboard any ship you aren't currently flying, they do not actually take on the responsibility of being a Captain, and will seldom act independently of you. They will do their best to your orders to the letter when possible.`
 			``
 			`	Even Pirates, who mostly run on slave labor, abide by the rules requiring officers. Although it is suspected Pirate crews abide by this largely due to improved performance.`
@@ -301,17 +301,17 @@ mission "A pirate's life!"
 			`	Senior Officers are required by both law and moral codes of conduct for every twenty crewmen aboard any ship.`
 		log "Factions" "Republic" `Hundreds of years ago, the independent territories in different parts of human space agreed to join together into a single democratic government, with Earth as its capital. The rise of the Republic ushered in a long period of peace and prosperity in human history.`
 			`Representation in the Republic Parliament is based on population. That means that some individual "Paradise Worlds" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.`
-		log "Factions" "Syndicate" `The Syndicate is a megacorporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.`
+		log "Factions" "Syndicate" `The Syndicate is a mega-corporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.`
 			`The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.`
 		log "Factions" "Northern Union" `There is a great deal of debate over if the Northern Union are freedom fighters, terrorists, or just an alliance of anarchists and pirates. However, the one thing everyone can agree on is that Northern Union space is extremely dangerous. Their neutral planet, Haven, is the one planet in all of known space that has never successfully been invaded by the Republic."`
 		log "Factions" "Pirates" `In poorer and more remote star systems, where the Navy seldom patrols, pirate attacks on merchant ships are frequent. Pirates are also known to attack large, unguarded convoys of freighters even in more populated areas. Most pirate fleets come from lawless worlds on the outskirts of human space.`
 		log "Factions" "Merchants" `Although not an organization, Merchants are known to stick together and share information with one another. If a fellow Merchant decides to begin a life of crime and piracy, it wont be long before every Merchant in the known galaxy has heard about it and labeled them as a hostile captain. Thankfully, when wronged they will also accept bribes and spread the word about those as well. They also share stories of captains who have helped them.`
-		log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who persue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
-		log "Factions" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ringworlds. Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
+		log "Factions" "Bounties and Bounty Hunters" `People who are on the run from the law, and the people who pursue them. People with bounties on their heads are known to bribe merchants into ignoring them, and when pushed to extremes they will even keep hostages to prevent the Republic Navy from interfering. Bounty Hunters often do the same, in order to prevent individuals and governments from getting between them and their quarry.`
+		log "Factions" "The Quarg" `The single most powerful species in the known galaxy, the Quarg live largely on massive ring-worlds Tall and elegant, they are most famous for running the Universal Credit System, claiming that every species living across more than one world will accept Quarg currency.`
 			`The Quarg view species in labels. Calling themselves "Tier Three" and humanity "Tier One." They seldom use advanced technology within human space, however. Claiming that it would be "disrespectful to show humanity the true power of the Quarg."`
-		log "Factions" "The Hai" `The Hai are large, rodent-like creatures. Many earthborn humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
+		log "Factions" "The Hai" `The Hai are large, rodent-like creatures. Many earth-born humans have described them as "giant squirrels." They appear to be a largely peaceful species who live on the other side of a wormhole from Human space. The Quarg classify them as a "Tier One and a Half" species.`
 			`This species seems to have a long and ancient history, and an unusual willingness to share their technology with other species. The engineers at Tarazed Corporation have taken advantage of this and has worked collaboratively with the Hai to build new and more advanced ships and weapons.`
-		log "Factions" "The Wanderers" `Birdlike in appearence, this species has a name that is utterly unpronouncable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
+		log "Factions" "The Wanderers" `Birdlike in appearance, this species has a name that is utterly unpronounceable to any human. Their myths and history indicate that they traveled to the Milky Way to heal planets destroyed by war and carelessness. In honor of this, they have become known by humans as "Wanderers."`
 			`The Quarg seem to be revolted by the Wanderers for unknown reasons, but have disclosed that they consider the species to be "Tier Two" and that the two species are very unlikely to go to war.`
 
 		conversation
@@ -382,7 +382,7 @@ mission "A pirate's life 4, the Quickening"
 		has "a pirates life"
 		has "A pirate's life 3, hitting the trifecta: done"
 	on offer
-		log "Logbook" "The Highlander" "Apparently I've attracted the attention of the Highlander himself. If I kill him, only the most desparate bounty hunters will continue chasing me."
+		log "Logbook" "The Highlander" "Apparently I've attracted the attention of the Highlander himself. If I kill him, only the most desperate bounty hunters will continue chasing me."
 		conversation
 			`Before you even leave your ship, you get a communication from the ship next to you.`
 			`	"This is the <npc>. THERE CAN ONLY BE ONE!"`
@@ -498,8 +498,8 @@ mission "Intro [1 Transport]"
 	
 	on offer
 		conversation
-			`You begin strolling through the cold spaceport, stopping to purchase some cold weather cloathing to better handle climates like this. As you are walking out of the store in your new coat, James finds you. He has an entire family in tow: a young couple, an elderly woman, and four children who range in age from probably about three or four up to twelve or thirteen.`
-			`	"Captain <last>!" he says. "Wonderful to see you again. I was just talking to this family. They've been having trouble finding a single ship that can give them all passage, but I told them that your shuttlecraft has plenty of bunks, at least if the kids double up. They can pay you <payment> to take them to <planet>, which is just a few jumps away from Earth, and is a planet well worth visiting in its own right. What do you say?"`
+			`You begin strolling through the cold spaceport, stopping to purchase some cold weather clothing to better handle climates like this. As you are walking out of the store in your new coat, James finds you. He has an entire family in tow: a young couple, an elderly woman, and four children who range in age from probably about three or four up to twelve or thirteen.`
+			`	"Captain <last>!" he says. "Wonderful to see you again. I was just talking to this family. They've been having trouble finding a single ship that can give them all passage, but I told them that your shuttle has plenty of bunks, at least if the kids double up. They can pay you <payment> to take them to <planet>, which is just a few jumps away from Earth, and is a planet well worth visiting in its own right. What do you say?"`
 			choice
 				`	"Sure, welcome aboard!"`
 				`	"Sorry, I think I'd rather go off in my own direction from here."`
@@ -543,7 +543,7 @@ mission "Intro [2 Transport]"
 	on complete
 		payment 15000
 		conversation
-			`As you made the final landing descent to the surface of Earth, Chuck and Sarah were staring out the window in rapt attention, pointing out landmarks on the planet's surface. James joins in by telling you all about some of the history of the cities you are flying over. Carl, meanwhile, has spent the entire journey playing a video game on his communicator, and only glances out the window when the ship shakes from turbulence. As they all grab their luggage and step off your ship to explore humanity's homeworld, he is still immersed in the game.`
+			`As you made the final landing descent to the surface of Earth, Chuck and Sarah were staring out the window in rapt attention, pointing out landmarks on the planet's surface. James joins in by telling you all about some of the history of the cities you are flying over. Carl, meanwhile, has spent the entire journey playing a video game on his communicator, and only glances out the window when the ship shakes from turbulence. As they all grab their luggage and step off your ship to explore humanity's home world, he is still immersed in the game.`
 			`	As you collect your payment, James pulls the parents aside and says, "Watch out for pickpockets, okay? And take it from an experienced captain, you do not want to be out after dark here. Play it safe, and have a great time."`
 			`	After they leave, James shakes his head ruefully. "It'll probably be a decade before that kid is old enough to realize what he's missing out on. Waste of money, doing a trip like this with a teenage boy. They should've gone to Skymoot and seen the dragons instead; I'm sure that would interest him a lot more than historical museums and ancient cities." Then, he picks up his luggage and adds, "Same deal as before. If you want to keep traveling together, meet me in the spaceport."`
 			`	This time he simply wanders into a nearby tavern, not bothering to talk to any of the strangers in the spaceport. He seems exhausted and agitated. Perhaps it is time to take him to his destination.`
@@ -551,7 +551,8 @@ mission "Intro [2 Transport]"
 			`	(It's never a bad idea to check the "Spaceport" for new missions or to continue existing chains!)`
 
 
-mission "Intro [3 Transport]"
+mission
+ "Intro [3 Transport]"
 	priority
 	name "Bring James to <planet>"
 	description "Bring James to <destination>, where he has a spot reserved in a retirement home."
@@ -565,7 +566,7 @@ mission "Intro [3 Transport]"
 	on offer
 		conversation
 			`The spaceport on <origin> is so big and crowded that it takes a long time to find James. The sheer number of people here is almost overwhelming. Homeless men wrapped in old army blankets beg money from well-dressed businessmen. Soldiers in Navy uniforms walk by in groups of ten or twenty, all marching in unison. Starship captains haggle with merchants over trade goods and jobs. Flashes of light come from various landing bays as welders make repairs.`
-			`	When you find James, he's standing by a window with a beer in his hand. He is looking out at the city with a depressed expression, watching the starships taking off and landing in a continuous stream. "This is it," he says, "where our race began. The world that all the tourists want to visit, and that no one wants to live on. The place I was born, and the homeworld that never felt like home. Over Ten billion people, more industry and exports than any other place in the galaxy. But underneath it all, poverty of a completely different sort from what you've got in the Dirt Belt. All of this is built on a foundation of broken men, and if I never see the horrors of this planet again it will be too soon."`
+			`	When you find James, he's standing by a window with a beer in his hand. He is looking out at the city with a depressed expression, watching the starships taking off and landing in a continuous stream. "This is it," he says, "where our race began. The world that all the tourists want to visit, and that no one wants to live on. The place I was born, and the home world that never felt like home. Over Ten billion people, more industry and exports than any other place in the galaxy. But underneath it all, poverty of a completely different sort from what you've got in the Dirt Belt. All of this is built on a foundation of broken men, and if I never see the horrors of this planet again it will be too soon."`
 			`	After taking one last glance out the window, he says, "Are you willing to take me on one last trip? I need to get to <destination>, and of course I'll pay you quite well to take me there and away from, well, here."`
 			choice
 				`	"Of course."`
@@ -777,7 +778,7 @@ mission "Intro [2 Interceptor]"
 			`You find James in the spaceport bar, talking with a woman wearing a business suit. The expression on James's face is growing increasingly concerned as she speaks. Seeing you come in, he waves to you and you join them at the table.`
 			`	"Hello <first>," says James. "This is Marissa, a senior manager at the mines." She shakes your hand.`
 			`	"Here's the deal,"  Marissa begins, without so much as saying hello. "Most of the gemstones we mine here are industrial grade, not pretty enough to be worth using as anything but sandpaper grit or drill bits. But every once in a while we happen on some higher quality gems. No one in this sector has the money to spend on jewelry, so we ship them north to the paradise worlds."`
-			`	"And this is where the problem begins," James interrupts. Marissa shoots him a breif glare, then continues."`
+			`	"And this is where the problem begins," James interrupts. Marissa shoots him a brief glare, then continues."`
 			`	"Yes, in the past few months every shipment we've sent has been attacked by a pirate ship. The same ship. A bastion by the name of 'Hammer of Thor.' We can't justify the expense to pay a bounty hunter to take out the pirate, so instead we're going to pay you to outrun it. I assume the <ship> is faster than a Bastion?"`
 			choice
 				`	"As fast as they come. Not much could chase it down."`
