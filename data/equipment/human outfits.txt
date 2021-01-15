@@ -3636,3 +3636,101 @@ outfit "Cloaking Device"
 	"cloaking fuel" .2
 	unplunderable 1
 	description "You're sure the cloaking device is here somewhere, but you can't see it."
+
+# Ammunition
+
+outfit "Railgun Slug"
+	category "Ammunition"
+	cost 60
+	thumbnail "outfit/railslug"
+	"mass" 0.02
+	"railgun slug capacity" -1
+	description "These railgun slugs incorporate energy-discharging capacitors that deal a small amount of hull damage even when the target's shields are functioning, and they can punch crippling holes in the hull of a ship whose shields are down."
+
+
+outfit "rslug"
+	weapon
+		"acceleration" .022
+		"drag" .001
+		"lifetime" 99
+		sprite "projectile/rail slug"
+			"frame rate" 30
+		"live effect" "rail sparks" 5
+		"hit effect" "bullet impact"
+		"shield damage" 65
+		"hull damage" 95
+		"homing" 1
+		"optical tracking" .4
+		"turn" .3
+		"hit force" 44
+		"missile strength" 14
+		"piercing" .1
+		"slowing damage" 1
+
+outfit "Meteor Missile"
+	category "Ammunition"
+	cost 500
+	thumbnail "outfit/meteor"
+	"mass" .2
+	"meteor capacity" -1
+	description "A Meteor Missile serves as ammunition for the Meteor Missile Launcher. Each missile launcher has the capacity for 60 missiles; you cannot install missiles if you have not first purchased a launcher to store them in."
+
+outfit "Javelin"
+	category "Ammunition"
+	cost 50
+	thumbnail "outfit/javelin"
+	"mass" .04
+	"javelin capacity" -1
+	description "A Javelin missile is ammunition for the Javelin Pod; without a Pod to store them in you cannot purchase or use Javelins. Each pod stores up to 400 Javelins."
+
+outfit "Torpedo"
+	plural "Torpedoes"
+	category "Ammunition"
+	cost 1400
+	thumbnail "outfit/torpedo"
+	"mass" .4
+	"torpedo capacity" -1
+	description "Torpedoes are ammunition for the Torpedo Launcher. Each Torpedo Launcher can hold 10 of them. You cannot install torpedoes unless you have also installed a launcher to fire them from."
+
+outfit "Typhoon Torpedo"
+	plural "Typhoon Torpedoes"
+	licenses
+		Navy
+	category "Ammunition"
+	cost 2700
+	thumbnail "outfit/typhoon"
+	"mass" .5
+	"typhoon capacity" -1
+	description "Typhoon Torpedoes are ammunition for the Typhoon Launcher. Each launcher can hold 15 of them. You cannot install Typhoon Torpedoes unless you have also installed a launcher to fire them from."
+
+outfit "Heavy Rocket"
+	category "Ammunition"
+	cost 2000
+	thumbnail "outfit/rocket"
+	"mass" .5
+	"rocket capacity" -1
+	description "Heavy Rockets are ammunition for the Heavy Rocket Launcher. You cannot install one unless you have first installed a launcher to fire it from. Each launcher holds up to 40 rockets."
+
+outfit "Gatling Gun Ammo"
+	plural "Gatling Gun Ammo"
+	category "Ammunition"
+	cost 4
+	thumbnail "outfit/bullet"
+	"mass" .002
+	"gatling round capacity" -1
+	description "This simple cartridge is the ammunition for the Gatling Gun, with a projectile of depleted nuclear fuel or an illuminated tracer round. Since this ammunition is primarily manufactured on pirate worlds by slave children in poor working conditions, muzzle velocity can vary by up to 30%, and tracer distribution is seldom uniform."
+
+
+outfit "gbullet"
+	weapon
+		sprite "projectile/bullet"
+			"delay" 5
+			"random start frame"
+			"frame rate" 0
+		"random velocity" 8
+		"lifetime" 20
+		"random lifetime" 5
+		"shield damage" 3
+		"hull damage" 6
+		"hit force" 2
+		"hit effect" "bullet impact"
