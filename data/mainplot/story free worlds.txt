@@ -77,7 +77,7 @@ mission "Pact Recon 0"
 		log "Volunteered to help the Southern Mutual Defense Pact keep tabs on pirate activity in their region of space. Pirate attacks seem to be getting worse because the Navy doesn't bother to patrol down here anymore."
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		payment 25000
 		dialog
 			`A different female militia officer approaches you when you land on <planet>, and gives you <payment> in exchange for your scanner logs of the southern systems. "I'm Freya Winters," she says. "I'll be in touch when we've got a new assignment for you."`
@@ -104,7 +104,7 @@ mission "Pact Recon 1"
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		payment 35000
 		dialog
 			`You transfer your sensor logs to Officer Winters. She thanks you for your work, and pays you <payment>. She says, "I'll let you know when we need your services again."`
@@ -131,7 +131,7 @@ mission "Pact Recon 2"
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		payment 60000
 		dialog
 			`Freya Winters meets up with you in person soon after you land. "I hope that was as fun as it sounded." she says, as she hands you a credit chip for <payment>. "You've been a fantastic help to this project, I'll be sure to contact you next time we need a scout."`
@@ -159,15 +159,15 @@ mission "Pact Recon 3"
 			`You receive another message from Freya Winters. "I've got something a little dangerous for you today." she says, "We've heard rumors of a pirate fleet forming in one of the seldom-visited systems in the Dirt Belt, and we need someone to go observe them that we're sure will actually make it back. Are you interested?"`
 	
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality staying plunders disables
 		system "Naper"
-		fleet "Small Southern Pirates" 3
-		fleet "Large Northern Pirates"
+		fleet "Freelance Pirates" 3
+		fleet "Southern Pirates"
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		"assisted free worlds" ++
 		payment 80000
 		dialog
@@ -228,7 +228,7 @@ mission "Pact Questioning"
 			`	"I've done a little work for them here and there." You admit.`
 				goto easy
 			label easy
-			`	"Tell me," he says, "was there someone who you reported to every time, or was it someone different every time?" As he is speaking, you again search him over for any indentifiers on his uniform. The Navy personnel you have encountered in the past have a name badge on their lapel and rank insignia on their collar, but his uniform is entirely blank, save the eye on his lapel that has been staring you down the entire conversation.`
+			`	"Tell me," he says, "was there someone who you reported to every time, or was it someone different every time?" As he is speaking, you again search him over for any identifiers on his uniform. The Navy personnel you have encountered in the past have a name badge on their lapel and rank insignia on their collar, but his uniform is entirely blank, save the eye on his lapel that has been staring you down the entire conversation.`
 			choice
 				`	"I don't really pay attention to names, just my bank account."`
 					goto account
@@ -244,14 +244,14 @@ mission "Pact Questioning"
 			label wish
 			`	"No matter then. Can you tell me what nature of work you were performing?"`
 			choice
-				`	"Nothing worthy of this sort of interoggation, just some pirate recon."`
+				`	"Nothing worthy of this sort of interrogation, just some pirate recon."`
 					goto recon
 				`	"Oh all the usual ways of undermining the republic, but mostly pirate recon."`
 					goto recon
 			label freya
 			`	"Ah yes, Miss Winters," he says. "A very capable woman, though she's more skilled as an engineer than as a leader. Can you tell me what sort of work you were performing for her?"`
 			choice
-				`	"Nothing worthy of this sort of interoggation, just some pirate recon."`
+				`	"Nothing worthy of this sort of interrogation, just some pirate recon."`
 					goto recon
 				`	"Oh all the usual ways of undermining the republic, but mostly pirate recon."`
 					goto recon
@@ -311,7 +311,7 @@ mission "FW Recon 0"
 		dialog `You land on <planet>, but you realize that the militia officer is on one of your escorts that hasn't entered the system yet. Better depart and wait for it to arrive.`
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		payment
 		dialog
 			`The militia officer thanks you for the ride and pays you <payment>. As he is leaving, he says, "If you're interested in doing more work for us, head to the spaceport bar and find my commander. I'll tell him to keep an eye out for you."`
@@ -353,7 +353,7 @@ mission "FW Recon 1"
 		log "Volunteered to do some recon work for the Free Worlds. Hopefully there's nothing illegal involved."
 	
 	npc "scan outfits"
-		government Republic
+		government "Navy" 
 		personality staying uninterested
 		fleet
 			names "republic capital"
@@ -368,18 +368,18 @@ mission "FW Recon 1"
 				`	"Some guy in the spaceport bet me a drink that I couldn't scan your ship and be back by happy hour."`
 					goto dude
 			label engines
-			`	"Beautiful, aren't they?" he says. "Atomic engines, the very latest in propulsion technology from Deep Sky. They're so smooth and responsive, I feel like I'm piloting a shuttlecraft again."`
+			`	"Beautiful, aren't they?" he says. "Atomic engines, the very latest in propulsion technology from Deep Sky. They're so smooth and responsive, I feel like I'm piloting a shuttle again."`
 			`	He pauses, then adds, "They pay me a thousand credits every time I say that."`
 				goto close
 			label dude
 			`	"Maybe catch me after happy hour and I'll give you a proper tour." He winks, and its tempting to take him up on that.`
 				goto close
 			label close
-			`	You cut the commlink, relieved that it was that easy.`
+			`	You cut the comm-link, relieved that it was that easy.`
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		dialog `Soon after you land, the militia officer comes to your ship and pays you <payment> in exchange for your sensor logs regarding the <npc>. He says, "If you are interested in continuing to work for us, meet me in the spaceport bar in an hour. Drinks are on me."`
 		payment 10000
 	on decline
@@ -415,7 +415,7 @@ mission "FW Recon 2"
 					decline
 	
 	npc "scan outfits"
-		government "Republic"
+		government "Navy"
 		personality staying uninterested
 		system "Menkent"
 		fleet
@@ -427,7 +427,7 @@ mission "FW Recon 2"
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		dialog `JJ meets you as soon as you land, and you hand over the scanner data. "Thank you again," he says. "If you're willing to take on one more recon mission, I'll be at the bar until it closes." He says, handing you a <payment> chip.`
 		payment 50000
 	on decline
@@ -512,7 +512,7 @@ mission "FW Recon 3B"
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		"assisted free worlds" ++
 		dialog `JJ meets you as soon as you land, and you pass off your information and photos to him. He pays you <payment> and says, "I'll be sure to let the Free Worlds Council know how helpful you have been."`
 		payment 80000
@@ -628,7 +628,7 @@ mission "FW Katya 1B"
 	on offer
 		conversation
 			`Soon after you land, a middle-aged tourist couple approach you and ask if you'd be willing to take them to Skymoot, "to see the dragons. Katerina recommended you." You tell them you would be glad to.`
-			`	The man, who is wearing floral print shorts and carrying an absurdly large holorecorder, introduces himself as Marty. "And this is my wife, Sarah," he adds. "Would you mind taking a picture of us?" They pose in front of your ship. "Better take two pictures in case she blinks," says Marty. As you help them bring their oversized suitcases on board, you can't help wondering why Katya would be friends with such a quintessential pair of rich, uncultured buffoons.`
+			`	The man, who is wearing floral print shorts and carrying an absurdly large holorecorder, introduces himself as Marty. "And this is my wife, Sarah," he adds. "Would you mind taking a picture of us?" They pose in front of your ship. "Better take two pictures in case she blinks," says Marty. As you help them bring their over sized suitcases on board, you can't help wondering why Katya would be friends with such a quintessential pair of rich, uncultured buffoons.`
 			`	Much later that night, as planned, three shadowy figures load a set of unmarked crates into your cargo bay. Katya assured you that the contents are harmless, just intended to distract the Republic security officers, but you can't help feeling like you're getting involved in something shady.`
 				accept
 	
@@ -638,7 +638,7 @@ mission "FW Katya 1B"
 			`When you land on <planet>, before your engines have even had a chance to cool, Katya comes aboard your ship. When she sees your passengers, she breaks into a wide grin. "Lynn!" she says, running up and hugging the woman who introduced herself as "Sarah." Then she turns to "Marty" and says, "And Henry! So good to see you both. Captain <last>, allow me to introduce you to Professor Lynn Anderson, one of the galaxy's premier planetary scientists, and her husband Henry, a former Navy intelligence officer."`
 			choice
 				`	"Pleased to meet you both. Why the deception?"`
-				`	"Wait a minute... were they the secret cargo?"`
+				`	"Wait a minute, were they the secret cargo?"`
 				`	"I already figured that out."`
 				`	"Yea that's nice but what's this about?"`
 			
@@ -665,8 +665,8 @@ mission "FW Katya 1C"
 	
 	npc kill
 		personality nemesis
-		government "Republic"
-		fleet "Small Republic" 2
+		government "Navy"
+		fleet "Navy" 2
 	
 	on offer
 		conversation
@@ -697,7 +697,7 @@ mission "FW Katya 1C"
 					goto medical
 				`	"Just some secret illegal things."`
 					goto illegal
-				`	"Thirty three and a half used whoopie cushions, in teal."`
+				`	"Thirty three and a half used whoopee cushions, in teal."`
 					goto illegal
 				`	"I've never seen those crates before in my life. I don't know where they came from."`
 					goto denial
@@ -740,7 +740,7 @@ mission "FW Katya 1C"
 				decline
 				
 			label karen
-			`	"Are you really going to ask to speak to my supervisor? I thought I was free of that when I quit cashiering to join the Navy." He sighs briefly, "Let's just part ways, captian." He and his guards walk off your ship.`
+			`	"Are you really going to ask to speak to my supervisor? I thought I was free of that when I quit cashiering to join the Navy." He sighs briefly, "Let's just part ways, captain" He and his guards walk off your ship.`
 				decline
 
 			label angry
@@ -752,6 +752,7 @@ mission "FW Katya 1C"
 				decline
 	on accept
 		"reputation: Republic" = -10
+		"reputation: Navy" = -10
 	on decline
 		freelance ++
 	on fail
@@ -803,9 +804,9 @@ mission "FW Katya Alt 2"
 					accept
 				`	"No thank you, I will no longer be doing business with the Free Worlds."`
 					decline
-				`	"Ok the free worlds is starting to sound like a bad spy movie. I'm out."`
+				`	"Okay, the free worlds is starting to sound like a bad spy movie. I'm out."`
 					decline
-				`	(Do a mock karate stance and steriotypical shout, flail your arms in a chopping manner, then walk away.)`
+				`	(Do a mock karate stance and stereotypical shout, flail your arms in a chopping manner, then walk away.)`
 					decline
 	
 	on complete
@@ -853,9 +854,9 @@ mission "FW Katya 2B"
 	clearance
 	passengers 1
 	npc
-		government Pirate
+		government "Freelance Pirates"
 		personality nemesis plunders waiting
-		fleet "Small Core Pirates" 2
+		fleet "Cartel" 2
 	to offer
 		has "FW Katya 2: done"
 	to fail
@@ -898,11 +899,11 @@ mission "FW Katya 2B"
 			`	He looks genuinely shocked. "You didn't know? That woman is a legend. Did two terms representing the Dirt Belt. Defender of small worlds and the common people. In some circles her work has made her almost as unpopular as me. But she got tired of working for reform and decided to create her own government instead."`
 			choice	
 				`	"And what do you do for work?"`
-				`	"Ok so Katya's important, what does that make you?"`
-				`	"Ok so why does she need you?"`
+				`	"Okay, so Katya's important, what does that make you?"`
+				`	"Okay, so why does she need you?"`
 			`	"I'm a vigilante nuclear power plant inspector," he says, nonchalantly.`
 			choice
-				`	"Um... what?"`
+				`	"Uh, what?"`
 				`	"How does that even work?"`
 				`	"Is that even legal?"`
 				`	"Does it pay?"`
@@ -985,7 +986,7 @@ mission "FW Katya 3"
 			`	Eyes glances at her, sees her expression, and says, "No, Councilor, don't even think of it. That's a horrible idea."`
 			`	"No," she says, "it's brilliant. Captain <last>, are you familiar with the Dereliction and Salvage Act of 2976?"`
 			choice
-				`	"Uh... yes?"`
+				`	"Uh, yes?"`
 					goto yes
 				`	"Of course. I read parliamentary proceedings every night when I'm trying to fall asleep."`
 					goto yes
@@ -1001,7 +1002,7 @@ mission "FW Katya 3"
 				goto response
 			
 			label no
-			`	"Well," she says, "it started when the Syndicate began experimenting with fully automated mining facilities on uninhabitable planets. Pirates started raiding the mines to steal equipment, and the Syndicate claimed that these installations were 'colonies' and it was the Navy's job to defend them. The Act was Parliament's response, stating that taking goods from a human being is piracy, but if the owner or some living representative of theirs is not present in system, taking those goods is a legal salvage operation. The point was to keep the Navy from being obligated to defend every equipment cache or abandoned station in the galaxy. But by the same law, those Navy Thea Drones become abandoned goods the moment their motherships leave the system."`
+			`	"Well," she says, "it started when the Syndicate began experimenting with fully automated mining facilities on uninhabitable planets. Pirates started raiding the mines to steal equipment, and the Syndicate claimed that these installations were 'colonies' and it was the Navy's job to defend them. The Act was Parliament's response, stating that taking goods from a human being is piracy, but if the owner or some living representative of theirs is not present in system, taking those goods is a legal salvage operation. The point was to keep the Navy from being obligated to defend every equipment cache or abandoned station in the galaxy. But by the same law, those Navy Thea Drones become abandoned goods the moment their carriers leave the system."`
 				goto response
 			
 			label what
@@ -1044,7 +1045,7 @@ mission "FW Katya 3"
 				`	"Got it."`
 					accept
 			label options
-			`	"Well," Katya says, "If you want to risk getting blown out of the sky by Pirates, I'm sure you could find some Republic slavage on pirate worlds."`
+			`	"Well," Katya says, "If you want to risk getting blown out of the sky by Pirates, I'm sure you could find some Republic salvage on pirate worlds."`
 			`	"Sure, but it's risky and will cost you." Ijs adds, "You might have some luck finding some abandoned drones in some nearby systems. I don't really care where the drone guts come from, as long as I can use them. Good luck, <first>."`
 				accept
 	on accept
@@ -1088,11 +1089,11 @@ mission "FW Katya 4"
 	to fail
 		has "chosen sides"
 	on offer
-		log "People" "Katya Reynolds" `Katya grew up on Hope, a Dirt Belt world that is no longer inhabited because of a supervolcano eruption that triggered a new ice age. Despite her distrust of the Republic she has high regard for the Navy because they were the ones, acting without clearance from Parliament, who helped the settlers on Hope to evacuate safely.`
+		log "People" "Katya Reynolds" `Katya grew up on Hope, a Dirt Belt world that is no longer inhabited because of a super-volcano eruption that triggered a new ice age. Despite her distrust of the Republic she has high regard for the Navy because they were the ones, acting without clearance from Parliament, who helped the settlers on Hope to evacuate safely.`
 		conversation
 			`You join Katya and Mr. Eyes in the restaurant, and order your meals. They are both in high spirits. While you are waiting for the food to arrive, Mr. Eyes raises his glass of wine and says, "A toast, to Captain <last> and our marvelous new toy. May it bring us good information and swift justice."`
 			`	"We're thinking that while we're in the area, we should stop on <planet> next," says Katya, "and then work our way toward the Rim."`
-			`	Your meals arrive. The food is excellent, and you spend a relaxed evening sharing stories of your childhoods. Katya turns out to be a Dirt Belt native like yourself, from a planet named Hope. "No longer settled," she explains. "Supervolcano. It was a cold planet to start out with, and the eruption sent it into an ice age that could last for millennia. My home town is under thirty meters of glacier by now."`
+			`	Your meals arrive. The food is excellent, and you spend a relaxed evening sharing stories of your childhoods. Katya turns out to be a Dirt Belt native like yourself, from a planet named Hope. "No longer settled," she explains. "Super-volcano It was a cold planet to start out with, and the eruption sent it into an ice age that could last for millennia. My home town is under thirty meters of glacier by now."`
 			choice
 				`	"Was anyone killed?"`
 				`	"How did you escape?"`
@@ -1203,7 +1204,7 @@ mission "FW Katya 5B"
 		has "chosen sides"
 	on offer
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" += 1000
+		"reputation: Southern Pirates" += 1000
 		log "Factions" "Pirates" `Pirate ships are often crewed by children, the equivalent of street gangs or child soldiers. Many lawless worlds are so poor that joining a pirate gang is one of the only attractive options for earning a living.`
 		conversation
 			`Katya and Eyes lead you to the monastery. As you are approaching, you meet a monk who is wearing a long black robe and kneeling in a small vegetable garden, pulling weeds. When he looks up and sees you, he leaps to his feet and runs over. "Katya! And Ijs! Welcome back!" Then he turns to you. "I'm David," he says.`
@@ -1288,7 +1289,7 @@ mission "FW Katya 5C"
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 1000
+		"reputation: Southern Pirates" -= 1000
 		payment 100000
 		conversation
 			`When you land on <planet>, as Brother Greg is gathering his luggage, Katya hands you another credit chip for <payment>. "Thanks for risking your life with the pirates," she says. "You've got real guts."`
@@ -1389,7 +1390,7 @@ mission "FW Katya 7"
 		conversation
 			`<origin> turns out no differently than the previous two. "We need a change in strategy," says Katya. "We've been talking about something while we were in transit."`
 			`	Eyes says, "It occurred to me that underwater testing might be even easier than underground: no need to dig or find a mine shaft. And, the Navy's sensors are for atmosphere, not oceans. But I've still got my old test kits with me for seawater."`
-			`	Katya says, "So then we wondered, what sort of world would you go to if you wanted rumblings in the ocean to go unnoticed? Either an unpopulated one, or one with lots of meteorite activity. And that leads us to... New Roanoke." She points out the system on your map. "Mild tidal surges on almost a weekly basis, due to impacts from all the asteroids in system. Perfect place to hide an undersea explosion."`
+			`	Katya says, "So then we wondered, what sort of world would you go to if you wanted rumblings in the ocean to go unnoticed? Either an unpopulated one, or one with lots of meteorite activity. And that leads us to New Roanoke." She points out the system on your map. "Mild tidal surges on almost a weekly basis, due to impacts from all the asteroids in system. Perfect place to hide an undersea explosion."`
 			choice
 				`	"Sounds like a good possibility. Let's give it a try!"`
 					accept
@@ -1439,7 +1440,7 @@ mission "FW Katya 7B"
 				goto last
 			
 			label last
-			`	"One more try," she says. "One last world, and then we give up. I want you to take me... there." She points at the moon, hanging just above the horizon.`
+			`	"One more try," she says. "One last world, and then we give up. I want you to take me there." She points at the moon, hanging just above the horizon.`
 			`	Eyes says, "Mining world. Dusty atmosphere. Frequent meteorite impacts. You could set off a nuke on the far side of that world and the miners would probably sleep right through it."`
 			choice
 				`	"Okay, I'll take you to this one last world, and then we're done."`
@@ -1470,7 +1471,7 @@ mission "FW Katya 7C"
 	on offer
 		log "Found evidence of n-bomb testing on Clink, a mining moon on the edge of Free Worlds territory. It's strange that the perpetrators left such clear evidence behind; the Navy's drones will certainly have discovered it before we did. Katya stayed behind to try to infiltrate the mining compound and collect more information."
 		conversation
-			`You land some distance from the mining settlement, and Mr. Eyes goes into the airlock in a pressure suit, cycling it to bring in some of the moon's thin atmosphere for him to test. "Firing up my instruments now," he says through the commlink. There is a long pause, and then he starts spouting a long string of creative profanity. Katya runs over to the airlock window to see what is happening.`
+			`You land some distance from the mining settlement, and Mr. Eyes goes into the airlock in a pressure suit, cycling it to bring in some of the moon's thin atmosphere for him to test. "Firing up my instruments now," he says through the comm-link There is a long pause, and then he starts spouting a long string of creative profanity. Katya runs over to the airlock window to see what is happening.`
 			`	Finally, Eyes calms down enough to say, "It's a match! Not only has there been a recent test here, but the signature matches the one we took on Geminus. This is it."`
 			`	He cycles the airlock and comes back inside. "Let's fly around and see if we can find the site," he says. After a few hours of flying low over the surface and scanning for radiation signatures, you find a spot that looks like all the other meteorite craters but is full of radiation. Katya and Eyes look at the images of the surface almost in disbelief.`
 			`	"Based on the isotopic decay rates, this explosion happened in mid-June," says Eyes. "Just before the attacks happened."`
@@ -1531,12 +1532,12 @@ mission "FW Escort 1"
 	
 	npc accompany save
 		personality escort timid
-		government Merchant
-		ship Freighter "F.S. Raleigh"
-		ship Freighter "F.S. Scott"
-		ship Freighter "F.S. Hudson"
-		ship Freighter "F.S. Drake"
-		ship Freighter "F.S. Magellan"
+		government "Southern Logistics"
+		ship "Freighter (Pacifist)" "F.S. Raleigh"
+		ship "Freighter (Fancy)" "F.S. Scott"
+		ship "Freighter (Proton)" "F.S. Hudson"
+		ship "Hauler (Prepared)" "F.S. Drake"
+		ship "Hauler II (AMS)" "F.S. Magellan"
 		ship Freighter "F.S. Franklin"
 	npc
 		personality heroic escort
@@ -1545,27 +1546,31 @@ mission "FW Escort 1"
 			cargo 0
 			names "free worlds small"
 			variant
-				"Hawk" 2
-				"Sparrow" 5
+				"Osprey (Ion)"
+	npc
+		personality heroic escort
+		government "Free Worlds"
+		formation "Vee"
+		fleet
+			cargo 0
+			names "free worlds small"
+			variant
+				"Sparrow (Gatling)" 3
+				"Sparrow (Torpedo)" 2
 	npc
 		personality plunders entering
-		government Pirate
-		fleet "Large Southern Pirates"
+		government "Southern Pirates"
+		fleet "Southern Pirates"
 	npc
 		personality plunders staying
-		government Pirate
-		fleet "Large Southern Pirates"
+		government "Southern Pirates"
+		fleet "Southern Pirates"
 		system "Alpha Arae"
 	npc
 		personality plunders staying
-		government Pirate
-		fleet "Large Southern Pirates"
+		government "Southern Pirates"
+		fleet "Southern Pirates"
 		system "Lesath"
-	npc
-		personality plunders waiting
-		government Pirate
-		fleet "Large Southern Pirates" 2
-		system "Tarazed"
 	
 	on offer
 		conversation
@@ -1573,7 +1578,7 @@ mission "FW Escort 1"
 			choice
 				`	"Sure, I'd be glad to assist."`
 					goto accept
-				`	"You're chosing my ship for convoy escort?"`
+				`	"You're choosing my ship for convoy escort?"`
 					goto ship
 				`	"Sorry, I'm busy with another mission at this moment."`
 					defer
@@ -1617,12 +1622,12 @@ mission "FW Escort 1B"
 	
 	npc accompany save
 		personality escort timid
-		government Merchant
-		ship Freighter "F.S. Raleigh"
-		ship Freighter "F.S. Scott"
-		ship Freighter "F.S. Hudson"
-		ship Freighter "F.S. Drake"
-		ship Freighter "F.S. Magellan"
+		government "Southern Logistics"
+		ship "Freighter (Pacifist)" "F.S. Raleigh"
+		ship "Freighter (Fancy)" "F.S. Scott"
+		ship "Freighter (Proton)" "F.S. Hudson"
+		ship "Hauler (Prepared)" "F.S. Drake"
+		ship "Hauler II (AMS)" "F.S. Magellan"
 		ship Freighter "F.S. Franklin"
 	npc
 		personality heroic escort
@@ -1631,36 +1636,37 @@ mission "FW Escort 1B"
 			cargo 0
 			names "free worlds small"
 			variant
-				"Hawk" 1
-				"Sparrow" 3
+				"Behemoth (Speedy)"
+				"Quicksilver (Proton)"
+				"Headhunter (Hotrod)"
 	npc
 		personality plunders entering
-		government Pirate
-		fleet "Large Southern Pirates"
+		government "Southern Pirates"
+		fleet "Southern Pirates"
 	npc
 		personality plunders staying
-		government Pirate
-		fleet "Large Southern Pirates"
+		government "Southern Pirates"
+		fleet "Southern Pirates"
 		system "Alpha Arae"
 	npc
 		personality plunders staying
-		government Pirate
-		fleet "Large Southern Pirates"
+		government "Southern Pirates"
+		fleet "Southern Pirates"
 		system "Lesath"
 	npc
 		personality plunders waiting
-		government Pirate
-		fleet "Large Southern Pirates" 2
+		government "Southern Pirates"
+		fleet "Southern Pirates" 2
 		system "Sabik"
 	
 	on offer
 		conversation
-			`Your convoy of freighters reaches <origin> intact, despite numerous encounters with pirates. The merchant captains sell their trade goods and stock up with weapons and ship outfits that will be used to build new ships for the Free Worlds. Of course, now that you are carrying such valuable cargo, the pirate attacks are likely to get even worse...`
+			`Your convoy of freighters reaches <origin> intact, despite numerous encounters with pirates. The merchant captains sell their trade goods and stock up with weapons and ship outfits that will be used to build new ships for the Free Worlds. Of course, now that you are carrying such valuable cargo, the pirate attacks are likely to get even worse. Meanwhile, a fresh escort pilots prepare to depart with you...`
 				accept
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		payment 400000
 		conversation
 			`You are met at the spaceport by Tomek Voigt, one of the members of the Free Worlds Council. He thanks you and the other escort captains for your service, and pays you each <payment>. "The convoy is heading out again immediately," he says, "so meet me in the spaceport if you are willing to volunteer for escort duty again."`
@@ -1687,12 +1693,12 @@ mission "FW Escort 2"
 	
 	npc accompany save
 		personality escort timid
-		government Merchant
-		ship Freighter "F.S. Raleigh"
-		ship Freighter "F.S. Scott"
-		ship Freighter "F.S. Hudson"
-		ship Freighter "F.S. Drake"
-		ship Freighter "F.S. Magellan"
+		government "Southern Logistics"
+		ship "Freighter (Pacifist)" "F.S. Raleigh"
+		ship "Freighter (Fancy)" "F.S. Scott"
+		ship "Freighter (Proton)" "F.S. Hudson"
+		ship "Hauler (Prepared)" "F.S. Drake"
+		ship "Hauler II (AMS)" "F.S. Magellan"
 		ship Freighter "F.S. Franklin"
 	npc
 		personality heroic escort
@@ -1701,26 +1707,28 @@ mission "FW Escort 2"
 			cargo 0
 			names "free worlds small"
 			variant
-				"Sparrow" 3
+				"Aerie (Offensive)"
+				"Dagger" 2
+				"Beserker (Torpedo)" 4
 	npc
 		personality plunders staying
-		government Pirate
-		fleet "Large Southern Pirates"
+		government "Southern Pirates"
+		fleet "Southern Pirates"
 		system "Alpha Arae"
 	npc
 		personality plunders staying
-		government Pirate
-		fleet "Large Southern Pirates"
+		government "Southern Pirates"
+		fleet "Southern Pirates"
 		system "Lesath"
 	npc
 		personality plunders waiting
-		government Pirate
-		fleet "Large Southern Pirates" 3
+		government "Southern Pirates"
+		fleet "Southern Pirates" 3
 		system "Tarazed"
 	
 	on offer
 		conversation
-			`A few of the escort pilots, yourself included, have stuck around for another mission. Tomek meets you in the spaceport and says, "Same deal as before, and same payment. Plus, please believe that all of you are known to the Council, and your bravery will not be forgotten. We can't afford to lose any of these freighters. Who's willing to help escort them?"`
+			`A batch escort pilots, yourself included, have assembled for another mission. Tomek meets you in the spaceport and says, "Same deal as before, and same payment. Plus, please believe that all of you are known to the Council, and your bravery will not be forgotten. We can't afford to lose any of these freighters. Who's willing to help escort them?"`
 			choice
 				`	(Volunteer.)`
 				`	(Go find some other work to do.)`
@@ -1753,12 +1761,12 @@ mission "FW Escort 2B"
 	
 	npc accompany save
 		personality escort timid
-		government Merchant
-		ship Freighter "F.S. Raleigh"
-		ship Freighter "F.S. Scott"
-		ship Freighter "F.S. Hudson"
-		ship Freighter "F.S. Drake"
-		ship Freighter "F.S. Magellan"
+		government "Southern Logistics"
+		ship "Freighter (Pacifist)" "F.S. Raleigh"
+		ship "Freighter (Fancy)" "F.S. Scott"
+		ship "Freighter (Proton)" "F.S. Hudson"
+		ship "Hauler (Prepared)" "F.S. Drake"
+		ship "Hauler II (AMS)" "F.S. Magellan"
 		ship Freighter "F.S. Franklin"
 	npc
 		personality heroic escort
@@ -1767,34 +1775,35 @@ mission "FW Escort 2B"
 			cargo 0
 			names "free worlds small"
 			variant
-				"Sparrow" 2
+				"Firebird (Missile)"
+				"Firebird (Plasma)"
 	npc
 		personality plunders staying
-		government Pirate
-		fleet "Large Southern Pirates" 2
-		fleet "Small Southern Pirates" 2
+		government "Southern Pirates"
+		fleet "Southern Pirates" 2
+		fleet "Freelance Pirates" 2
 		system "Alpha Arae"
 	npc
 		personality plunders staying
-		government Pirate
-		fleet "Large Southern Pirates" 2
-		fleet "Small Southern Pirates" 2
+		government "Southern Pirates"
+		fleet "Southern Pirates" 2
+		fleet "Freelance Pirates" 2
 		system "Lesath"
 	npc
 		personality plunders waiting
-		government Pirate
-		fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates" 2
+		government "Southern Pirates"
+		fleet "Southern Pirates"
+		fleet "Freelance Pirates" 2
 		system "Sabik"
 	
 	on offer
 		conversation
-			`Once again, the convoy stocks up on weapons and outfits and begins preparing for the return journey. You can't help worrying that the longer these convoys keep running, the more pirates will discover their route and begin setting ambushes for them.`
+			`Once again, the convoy stocks up on weapons and outfits and begins preparing for the return journey. It's obvious that the longer these convoys keep running, the more pirates will discover their route and begin setting ambushes for them.`
 				accept
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		payment 400000
 		conversation
 			`Again, Tomek Voigt meets you at the spaceport, thanks you all for your courage and dedication, and pays you <payment>. Then, he pulls you aside and says, "Captain <last>, if you're interested in helping us further, please meet me in the spaceport bar."`
@@ -1823,7 +1832,7 @@ mission "FW Escort 3"
 		system "Lesath"
 		personality escort derelict timid
 		government "Merchant"
-		ship "Freighter" "F.S. Shackleton"
+		ship "Bulk Freighter (Proton)" "F.S. Shackleton"
 	
 	on offer
 		conversation
@@ -1840,7 +1849,7 @@ mission "FW Escort 3"
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		payment 200000
 		dialog
 			`	Voigt is immensely relieved to see the <npc> returned safely home. "You have done us a great service today, Captain," he says, as he hands you credit chips for <payment>. "I'll be sure to let the Council know how helpful you have been."`
@@ -1884,7 +1893,7 @@ mission "FW Escort Second Chance"
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		conversation
 			`You contact Tomek and ask if he would be willing to meet with you. After a long pause, he says, "Okay. Meet me at the cantina in fifteen minutes." You wait for about twenty minutes before he finally shows up and says, without preamble, "Now, what do you have to say for yourself?"`
 			choice
@@ -1948,17 +1957,17 @@ mission "FW Bounty 1"
 		government Bounty
 		system
 			near Seginus 1 2
-		ship "Hawk (Rocket)" "Cluny"
+		ship "Hawk (Plasma)" "Cluny"
 		ship "Hawk (Speedy)" "Ferret"
 		ship "Berserker (Afterburner)" "Weasel"
 		ship "Wasp (Proton)" "Vixen"
 		ship "Fury (Laser)" "Stoat"
-		ship "Sparrow" "Rat"
+		ship "Sparrow (Patrol)" "Rat"
 		dialog `The "Rat Pack" has been eliminated. You can claim the bounty payment by returning to <destination>.`
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		payment 200000
 		dialog `The militia officer who asked you to hunt down the "Rat Pack" arrives at your ship soon after you land and thanks you profusely. "Now we won't have to worry about them bothering ships in this sector anymore." She pays you <payment> and says she'll tell other militia leaders how helpful you were.`
 	on decline
@@ -1997,7 +2006,7 @@ mission "FW Bounty 2"
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		payment 200000
 		dialog `The militia officer who asked you to hunt down the <npc> meets you in the spaceport and pays you <payment>. "Once again, thank you for assisting us," he says.`
 	on decline
@@ -2032,12 +2041,12 @@ mission "FW Bounty 3"
 		personality heroic staying nemesis target
 		government Bounty
 		system "Shaula"
-		ship "Osprey (Missile)" "Silverhawk"
+		ship "Osprey (Ion)" "Silverhawk"
 		dialog phrase "generic hunted bounty eliminated dialog"
 	
 	on complete
 		"reputation: Free Worlds" += 10
-		"reputation: Pirate" -= 10
+		"reputation: Southern Pirates" -= 10
 		"assisted free worlds" ++
 		payment 300000
 		dialog `The militia officer who asked you to hunt down the <npc> contacts you soon after you land. "No alien weapons, eh? Too bad about that," he says, "I'll be telling the Council how helpful you were." He hands you a payment of <payment>.`
@@ -2070,7 +2079,7 @@ mission "FW Commitment"
 			`Soon after you land, a courier arrives at your ship and hands you a formal looking letter. It reads:`
 			``
 			`Dear Captain <last>,`
-			`	The Free Worlds Council would like to thank you for the invaluable assistance you have rendered to us recently. We are prepared to offer you a position as an officer in our militia, remaining in command of your own ship. Your starting salary will be 300 credits per diem. If you want to join us, please report to our headquarters on Bourne at your earliest convenience.`
+			`	The Free Worlds Council would like to thank you for the invaluable assistance you have rendered to us recently. We are prepared to offer you a position as an officer in our militia, remaining in command of your own ship. Your starting salary will be 300 credits per day. If you want to join us, please report to our headquarters on Bourne at your earliest convenience.`
 			`	Sincerely,`
 			`				Tomek Voigt`
 			`				Jean-Jacques Soleau`
@@ -2116,7 +2125,7 @@ mission "Rescue Katya 1"
 					goto rescue
 				`	"We can't allow them to do that. We should gather our fleets and attack."`
 					goto attack
-				`	"That's a key chokepoint. We must counterattack or risk being cut off!"`
+				`	"That's a key choke-point We must counterattack or risk being cut off!"`
 					goto attack
 			
 			label rescue
@@ -2197,7 +2206,105 @@ mission "Rescue Katya 2"
 	on accept
 		log "The Navy has invaded Kornephoros, while Katya was still undercover on Clink. No sign of where she is. She may have been taken as a prisoner."
 
-
+# One thing I always hated was how your escorts from Sabik don't participate in the battle for Kornephoros. 
+# So there is zero incentive to preserve them. This change should fix that issue
+mission "Battle of Kornephoros Escorts"
+	landing
+	invisible
+	source Longjump
+	to offer
+		has "Rescue Katya 2: done"
+	to fail
+		has "Liberate Kornephoros: done"
+	
+	npc kill
+		government "Free Worlds"
+		personality escort heroic disables
+		fleet
+			formation "Vee"
+			names "free worlds capital"
+			variant
+				"Falcon (Generalist)"
+				"Hawk (Plasma)" 2
+		fleet
+			formation "Vee"
+			names "free worlds small"
+			variant
+				"Hawk (Bomber)" 3
+		fleet
+			formation "Vee"
+			names "free worlds small"
+			variant
+				"Hawk (Speedy)" 3
+				"Fury (Heavy Rocket)" 2
+				"Fury (Missile)" 2
+		fleet
+			formation "Vee"
+			names "free worlds small"
+			variant
+				"Hauler (Brawler)" 2
+				"Star Barge (Armed)" 2
+				"Behemoth (Heavy)"
+	npc kill
+		personality heroic escort disables
+		government "Free Worlds"
+		system "Zubenelgenubi"
+		fleet
+			names "free worlds capital"
+			variant
+				"Vanguard (Ion)"
+				"Headhunter (Heavy Rocket)" 2
+				"Raven (Heavy)" 3
+				"Sparrow" 5
+	npc kill
+		personality heroic escort disables
+		government "Free Worlds"
+		system "Zubeneschamali"
+		fleet
+			names "free worlds capital"
+			variant
+				"Bastion (Tank)" 2
+				"Argosy (Proton)" 4
+				"Flivver (Ion)" 6
+		fleet
+			names "free worlds capital"
+			variant
+				"Quicksilver (Proton)" 2
+				"Blackbird (AMS)" 4
+	npc kill
+		personality heroic escort disables
+		government "Free Worlds"
+		system "Unukalhai"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Tank)"
+				"Falcon (Plasma)" 2
+	npc kill
+		personality heroic escort disables
+		government "Free Worlds"
+		fleet
+			names "free worlds small"
+			variant
+				"Hauler (Brawler)" 2
+				"Hauler III (Infinite Missile)"
+				"Freighter (Proton)" 2
+				
+	npc kill
+		personality heroic escort disables
+		government "Free Worlds"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon"
+				"Osprey" 2
+			variant
+				"Bastion"
+				"Argosy (Missile)" 2
+			variant
+				"Argosy (Blaster)"
+				"Hawk" 2
+				"Hawk (Rocket)" 1
 
 mission "Defend Sabik"
 	landing
@@ -2225,7 +2332,7 @@ mission "Defend Sabik"
 			`	"No," he says, "it would be dishonest, and if you were to fight alongside us you would be classified as a partisan, a criminal rather than an enemy combatant. Believe it or not, you're better off as an official prisoner of war than as a partisan, if you ever do get captured. So, take the chip and install it already."`
 			
 			label chip
-			`	You take the chip and insert it into your communicator. Your ships idenity now registers as a Free Worlds ship. Suddenly you hear a cheer from one of the other ships parked nearby; someone has seen your ship change on their scanners and is shouting, "For freedom! Another ship for freedom!" Soon several other people see you, and before long it seems like everyone in the port has picked up the cheer.`
+			`	You take the chip and insert it into your communicator. Your ships identity now registers as a Free Worlds ship. Suddenly you hear a cheer from one of the other ships parked nearby; someone has seen your ship change on their scanners and is shouting, "For freedom! Another ship for freedom!" Soon several other people see you, and before long it seems like everyone in the port has picked up the cheer.`
 			`	Tomek stands by, silently, until they finish, and then says, "Let's hit the bar. I need a drink."`
 			`	An hour later you are in the bar celebrating your new employment when emergency sirens start blaring. Someone runs into the bar and says, "The Navy has entered the system. What do we do?"`
 			`	Tomek says, "We can't let them take this system, or they'll have us completely bottled up. This is where it begins. We need to fight. Get to your ships, quickly! But if you can, disable their ships instead of destroying them. These are Navy ships after all, and most of them don't want war any more than we do." You hurry to join all the other ships taking off to defend the system.`
@@ -2266,74 +2373,6 @@ mission "Defend Sabik"
 				"Aletheia" 2
 				"Narcissus" 3
 				"Achlys" 3
-	
-	npc
-		personality heroic disables
-		government "Free Worlds"
-		fleet
-			names "free worlds capital"
-			variant
-				"Falcon"
-				"Hawk" 2
-		fleet
-			names "free worlds small"
-			variant
-				"Hawk"
-				"Sparrow" 2
-		fleet
-			names "free worlds small"
-			variant
-				"Hawk"
-				"Fury" 2
-		fleet
-			names "free worlds small"
-			variant
-				"Hauler" 2
-				"Star Barge" 2
-				"Behemoth"
-	npc
-		personality heroic disables
-		government "Free Worlds"
-		system "Zubenelgenubi"
-		fleet
-			names "free worlds capital"
-			variant
-				"Vanguard"
-				"Headhunter" 2
-				"Hawk" 3
-				"Sparrow" 5
-	npc
-		personality heroic disables
-		government "Free Worlds"
-		system "Zubeneschamali"
-		fleet
-			names "free worlds capital"
-			variant
-				"Bastion" 2
-				"Argosy" 4
-				"Fury" 6
-		fleet
-			names "free worlds capital"
-			variant
-				"Bastion" 2
-				"Argosy" 4
-	npc
-		personality heroic disables
-		government "Free Worlds"
-		system "Unukalhai"
-		fleet
-			names "free worlds capital"
-			variant
-				"Falcon" 2
-	npc
-		personality heroic waiting disables
-		government "Free Worlds"
-		fleet
-			names "free worlds small"
-			variant
-				"Hawk" 2
-				"Sparrow" 1
-				"Freighter" 2
 	on complete
 		"reputation: Free Worlds" += 20
 		dialog `The Navy has been driven off, but at a great cost. You should probably visit the spaceport and see if Tomek is there, or someone else who can tell you what to do next.`
@@ -2383,21 +2422,6 @@ mission "Liberate Kornephoros"
 				accept
 		event "prepare for battle of Kornephoros"
 	
-	npc
-		personality heroic disables
-		government "Free Worlds"
-		fleet
-			names "free worlds capital"
-			variant
-				"Falcon"
-				"Osprey" 2
-			variant
-				"Bastion"
-				"Argosy (Missile)" 2
-			variant
-				"Argosy (Blaster)"
-				"Hawk" 2
-				"Hawk (Rocket)" 1
 	npc
 		personality heroic disables
 		government "Free Worlds"
@@ -2530,9 +2554,9 @@ mission "FW Prisoner Parole"
 	npc accompany save
 		government "Free Worlds"
 		personality timid escort
-		ship "Falcon (Heavy)" "F.S. Starry Warrior"
-		ship "Blackbird" "Flight of Fancy"
-		ship "Blackbird" "Southern Luxury"
+		ship "Falcon (Generalist)" "F.S. Starry Warrior"
+		ship "Blackbird (Bus)" "Flight of Fancy"
+		ship "Blackbird (Bus)" "Southern Luxury"
 	
 	on visit
 		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
@@ -2548,6 +2572,7 @@ mission "FW Prisoner Parole"
 			`	"If you can, return here without engaging them. No point in losing more lives."`
 				accept
 		"reputation: Republic" = 1
+		"reputation: Navy" = 1
 		event "temporary ceasefire"
 		event "start of hostilities" 8
 	
@@ -2570,9 +2595,9 @@ mission "FW Prisoner Parole 2"
 	npc accompany save
 		government "Free Worlds"
 		personality timid escort
-		ship "Falcon (Heavy)" "F.S. Starry Warrior"
-		ship "Blackbird" "Flight of Fancy"
-		ship "Blackbird" "Southern Luxury"
+		ship "Falcon (Generalist)" "F.S. Starry Warrior"
+		ship "Blackbird (Bus)" "Flight of Fancy"
+		ship "Blackbird (Bus)" "Southern Luxury"
 	
 	on visit
 		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
@@ -2596,6 +2621,7 @@ mission "FW Prisoner Parole 2"
 			label next
 			`	"The Navy has had two crushing defeats," he says. "They will be hesitant to attack again until their numbers are much stronger. That gives us some time for diplomacy, to strengthen our position and look for allies, or at least for sympathizers. Which is where you come in. I'm going to ask you to carry a diplomatic mission to the Syndicate. Meet us in the spaceport when you are ready."`
 		"reputation: Republic" <?= -1000
+		"reputation: Navy" <?= -1000
 		event "oathkeepers founded" 50
 
 
@@ -2638,7 +2664,7 @@ mission "FW Syndicate Diplomacy 1"
 			choice
 				`	"Do you think they will fight on our side?"`
 					goto fight
-				`	"Wait, isn't the Syndicate an evil megacorporation?"`
+				`	"Wait, isn't the Syndicate an evil mega-corporation?"`
 					goto evil
 				`	"How do I get there?"`
 					goto time
@@ -2694,7 +2720,7 @@ mission "FW Syndicate Diplomacy 1B"
 		personality heroic
 		government Republic
 		system Sol
-		fleet "Small Republic" 3
+		fleet "Navy" 3
 	
 	on offer
 		log "Visited the Syndicate and worked out a deal where they promised to stay neutral. They are expecting to profit from selling weapons to both sides in this war. Also discovered that Katya is in the Republic's custody and is accused of terrorist activity."
@@ -2715,12 +2741,12 @@ mission "FW Syndicate Diplomacy 1B"
 			
 			label alondo
 			`	Alondo has turned very pale, but finally he says, "They have not announced this publicly."`
-			`	"No," says the man, "they have only shared it with certain... trusted friends of the Republic."`
+			`	"No," says the man, "they have only shared it with certain, well, trusted friends of the Republic."`
 			`	Alondo says, "They haven't announced anything because they know she was innocent. She was hunting the terrorists, not helping them."`
 				goto ijs
 			
 			label ijs
-			`	"That may be true," says the man. "I am willing to believe you were hunting the terrorists, because I am aware through my own sources that the Free Worlds secured the services of a certain Ijs Springborn, whose skills would be well suited to such a hunt. And who might not be alive today if you had not given him a reason to leave this sector of space, where he is... universally despised. Regardless, we cannot sell weapons to enemies of the Republic."`
+			`	"That may be true," says the man. "I am willing to believe you were hunting the terrorists, because I am aware through my own sources that the Free Worlds secured the services of a certain Ijs Springborn, whose skills would be well suited to such a hunt. And who might not be alive today if you had not given him a reason to leave this sector of space, where he is universally despised. Regardless, we cannot sell weapons to enemies of the Republic."`
 			`	"Piracy is on the rise in the Dirt Belt," says Alondo. "And I know you have customers there. Such as the Tarazed Corporation. If we can count you among our friends, we could ensure that your convoys reach Tarazed unmolested."`
 			`	"And you would no doubt immediately purchase said weapons from Tarazed," says the man.`
 			`	An older man sitting next to him says, "Of course, such weapons would end up being bought at a significant price markup." He is grinning.`
@@ -2760,7 +2786,7 @@ mission "FW Syndicate Diplomacy 1C"
 		personality heroic
 		government Republic
 		system Rutilicus
-		fleet "Small Republic" 3
+		fleet "Navy" 3
 	
 	on offer
 		conversation
@@ -2791,7 +2817,7 @@ mission "FW Syndicate Diplomacy 1D"
 		log "Tried to convince Poisonwood, a world adjacent to Free Worlds territory, to switch sides. But, they are fiercely loyal to the Republic because the Navy freed them from being dominated by Alpha warlords decades ago."
 		conversation
 			`As you are landing on Poisonwood, Alondo explains, "Three decades ago, this was a slave colony. The Navy was responsible for liberating them, and they still feel a deep debt to the Republic as a result. But even if they do not join us, we can maybe establish more friendly relations with them."`
-			`	Soon after you land, the governor of Poisonwood sends an aide to escort you to her office. The governor is a woman probably in her late fifties, and as you are speaking the sunlight occasionally catches her face or arms at exactly the right angle to show the faint, criss-crossing lines of very old scars. She must be one of the slaves who was freed by the Navy.`
+			`	Soon after you land, the governor of Poisonwood sends an aide to escort you to her office. The governor is a woman probably in her late fifties, and as you are speaking the sunlight occasionally catches her face or arms at exactly the right angle to show the faint, crisscrossing lines of very old scars. She must be one of the slaves who was freed by the Navy.`
 			`	As soon as you are seated, she says, "Now, I don't want to give you false hope. We will not be joining the Free Worlds."`
 			`	"Understood," says Alondo. "We've come primarily to assure you that the Free Worlds will never attempt to take control of a planet that has not willingly chosen to join us. But without our support, your world is isolated and vulnerable."`
 			`	"Indeed," she says, grimacing. They talk for a while, but it is clear she does not think her people would ever support even a treaty of neutrality with the "rebellion." Finally, she changes the subject. "Captain <last>," she says, "what do you believe is the greatest threat that humanity faces today?"`
@@ -2825,7 +2851,7 @@ mission "FW Syndicate Diplomacy 1D"
 				goto threat
 			
 			label aliens
-			`	She laughs. "You must watch far too many videos. The most powerful species in this galaxy are also the most peace-loving. Trust me, I should know. Here on the edge of human space, we receive... visitors, on occasion. They do not interfere in human events, but they came seeking information on a threat that concerns us both."`
+			`	She laughs. "You must watch far too many videos. The most powerful species in this galaxy are also the most peace-loving. Trust me, I should know. Here on the edge of human space. We might receive certain visitors, on occasion. They do not interfere in human events, but they come seeking information on a threat that concerns us both."`
 				goto threat
 			
 			label threat
@@ -2838,7 +2864,7 @@ mission "FW Syndicate Diplomacy 1D"
 			choice
 				`	"What was the Disappearance?"`
 			
-			`	"I was a teenage slave working in the factories at the time," she says. "Exactly the wrong age, as it turned out. One day the overseers informed us that all the eighteen-year-olds had to have mandatory 'health checkups' that day. I won't describe what the 'checkup' involved, but it was bewildering and unpleasant. And nearly all of us disappeared, that day. Most never returned from the 'checkups.' Only a few of us were left behind. "`
+			`	"I was a teenage slave working in the factories at the time," she says. "Exactly the wrong age, as it turned out. One day the overseers informed us that all the young adults had to have mandatory 'health checkups' that day. I won't describe what the 'checkup' involved, but it was bewildering and unpleasant. And nearly all of us disappeared, that day. Most never returned from the 'checkups.' Only a few of us were left behind. "`
 			`	Alondo seems very disturbed by the story. "Forced into piracy, or something worse?" he says.`
 			`	"That's what we assumed," she says, "but there were dozens of people like me who were not taken. They began to fall ill afterwards, and most died agonizing deaths. Anyway, somehow news of that event got off-world and not long after, the Navy came in massive numbers, destroyed the Alpha fleets and liberated our planet. In the process, they tried to invade an underground facility up in the mountains, which is where they thought the rest of us were being kept. But the facility was rigged to self-destruct, and they never found out what had been going on inside the facility. No one inside it survived."`
 			choice
@@ -2985,11 +3011,11 @@ mission "FW Hope Recon 1D"
 			label penguins
 			`	Freya groans. "What is it with people thinking there will be penguins on Hope?"`
 			choice
-				`	"You know the ice and, well, nevermind."`
+				`	"You know the ice and, well, never mind."`
 					goto next
 				`	"You have a point."`
 					goto next
-				`	"Ok but what if there were and I missed them? I need to go back!"`
+				`	"Okay, but what if there were and I missed them? I need to go back!"`
 					goto penguins2
 			label next
 			`	"Good," says Freya, "because I've got a much more interesting job for you to do next. The people at Kraz Cybernetics have a new toy they want to test out, and I volunteered you to help out. They're waiting for you on Rust, in the Kraz system."`
@@ -3013,7 +3039,7 @@ mission "FW Hope Recon 1D"
 		system Wei
 		personality staying
 		government Republic
-		fleet "Large Republic"
+		fleet "Navy"
 	
 	on complete
 		log "Destroyed some Navy sensor installations on Hope, but it will likely be only a matter of days before they replace them."
@@ -3050,9 +3076,9 @@ mission "FW Plasma Testing 1B"
 	npc accompany save
 		government "Free Worlds"
 		personality heroic escort
-		ship "Falcon (Plasma)" "Walloping Window-Blind"
+		ship "Falcon (Pturret)" "Walloping Window-Blind"
 	npc kill
-		government "Pirate"
+		government "Southern Pirates"
 		personality plunders staying target
 		system "Ildaria"
 		ship "Leviathan (Heavy)" "Red Nile"
@@ -3149,7 +3175,7 @@ mission "FW Plasma Testing 1B"
 
 			label improve
 			choice
-				`	"It seems like the only way to fit a gun this big into most ships is by leaving half the hardpoints empty. It's a bit impractical."`
+				`	"It seems like the only way to fit a gun this big into most ships is by leaving half the hard points empty. It's a bit impractical."`
 					goto hardpoints
 				`	"It worked well against a large ship, but I wonder how well the turrets could track fighters."`
 					goto fighters
@@ -3168,7 +3194,7 @@ mission "FW Plasma Testing 1B"
 			`	He considers your statement for a second, "I think you have a point there, but these weapons don't exist in a vacuum. Well, actually they do, but you know what I mean. There are other guns out there that our customers can use in conjunction with this new turret. We just need to..."`
 			`	Edward trails off for a moment, thinking hard on ways to improve the design. "I think I just found my muse. If I can find a way to disrupt enemy shields and maybe their engines, the turret will impart more damage and more heat!" He pulls out his communicator and types something into his notepad.`
 			label next
-			`	"Oh, by the way! I recieved word on your next assignment" he says, "you'll be leading a supply convoy. You can meet up with them in the spaceport. Oh, and this is to thank you for your help." He hands you <payment>. "To help you pay for your first plasma turret once we've got them on the market," he says. "They should be ready in a month or two. I'll send you a message when they're available."`
+			`	"Oh, by the way! I received word on your next assignment" he says, "you'll be leading a supply convoy. You can meet up with them in the spaceport. Oh, and this is to thank you for your help." He hands you <payment>. "To help you pay for your first plasma turret once we've got them on the market," he says. "They should be ready in a month or two. I'll send you a message when they're available."`
 
 
 ship "Fury" "Doombat"
@@ -3219,7 +3245,7 @@ mission "Omega Station"
 			`	"We have taken over Omega Station and packed it to bursting with ships and outfits found no where else in Free Worlds space."`
 			`	"Shop from our selection of amazing Southbound Shipyards vessels, but don't stop there! Compare our quality to that of our competitors!"`
 			`	"Outfit your new ships with gear from Delta V, Kraz Cybernetics, and many other producers!"`
-			`	"Not a captain, but looking for a vacation? Enjoy orbital views of our capital world while dining at one of our many resturaunts..."`
+			`	"Not a captain, but looking for a vacation? Enjoy orbital views of our capital world while dining at one of our many restaurants.."`
 			``
 			`	The Advertisement continues from there for no less than a dozen more pages.`
 				accept
@@ -3244,7 +3270,7 @@ mission "Southbound Testing 1"
 				`	(Yes.)`
 				`	(No.)`
 					defer
-			`	You head into a vast, domed room absolutely packed with screens and betting offices. Everything is closed and there are few people hanging out in here. There is a woman sitting behind a folding table, with a paper sign that reads "signups."`
+			`	You head into a vast, domed room absolutely packed with screens and betting offices. Everything is closed and there are few people hanging out in here. There is a woman sitting behind a folding table, with a paper sign that reads "sign ups."`
 			`	"Greetings, Captain! Are you here to sign up for the tournament?" The woman asks. "We have immediate qualifying rounds, and the tournament will begin once we get enough qualified individuals.`
 			choice
 				`	"What tournament?"`
@@ -3293,7 +3319,7 @@ mission "Southbound Testing 1"
 					decline
 			label paperwork
 				`	The filing paperwork process is long and arduous. Some of the documents require actual physical sheets to be printed and signed, where as others takes your thumbprint as an electronic signature.`
-				`	The mountain of legal wavers and other paperwork slowly but surely gets worked through, and by the end of it you have recieved a complete physical scan, blood tests, and every inch of your ship has been combed over.`
+				`	The mountain of legal wavers and other paperwork slowly but surely gets worked through, and by the end of it you have received a complete physical scan, blood tests, and every inch of your ship has been combed over.`
 				`	Your opponent fleet has already launched - a small squadron of unmanned Clippers. It's time to prove you can not only take them down, but also not blow them up.`
 					launch
 
@@ -3334,7 +3360,7 @@ mission "Southbound Testing 2"
 	npc save disable
 		personality disables staying heroic
 		government "Test Dummy"
-		ship "Tournament Falcon" "Glory Theif"
+		ship "Tournament Falcon" "Glory Thief"
 	
 	on complete
 		payment 150000
@@ -3405,7 +3431,7 @@ mission "Southbound Testing 4"
 				`	(Yes.)`
 				`	(No.)`
 					defer
-			`	This time it's a bit different, a surprise wildcard round. You'll be fighting a completely unknown opponent that isnt listed in the tournament roster. You are given no information on who you will be fighting, what they will be using, or how many.`
+			`	This time it's a bit different, a surprise wildcard round. You'll be fighting a completely unknown opponent that isn't listed in the tournament roster. You are given no information on who you will be fighting, what they will be using, or how many.`
 				launch
 
 	npc save disable
@@ -3515,7 +3541,7 @@ mission "FW Supply Convoy 1"
 	
 	on offer
 		conversation
-			`In the spaceport, you meet up with a woman wearing a militia uniform and carrying a clipboard. "Are you Captain <last>?" she asks. You nod. "We have a large shipment of weapons and equipment that needs to go to the militia base on <planet>. Your job is to make sure none of these ships get... lost in transit." She points to a large landing pad where you count ten Star Barges lined up next to each other.`
+			`In the spaceport, you meet up with a woman wearing a militia uniform and carrying a clipboard. "Are you Captain <last>?" she asks. You nod. "We have a large shipment of weapons and equipment that needs to go to the militia base on <planet>. Your job is to make sure none of these ships get, uh, 'lost' in transit." She points to a large landing pad where you count ten Star Barges lined up next to each other.`
 			choice
 				`	"Isn't it risky to transport valuable cargo in such flimsy and vulnerable ships?"`
 					goto risky
@@ -3552,10 +3578,10 @@ mission "FW Supply Convoy 1"
 		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
 	
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality plunders staying
 		system "Sabik"
-		fleet "Small Southern Pirates" 2
+		fleet "Freelance Pirates" 2
 	
 	on complete
 		dialog
@@ -3708,7 +3734,7 @@ mission "FW Senate 1B"
 				`	"Nothing."`
 				`	"The fact you aren't qualified to do either."`
 				`	"I have no idea."`
-				`	"Ummm... they both involve momentous decisions that have serious consequences?"`
+				`	"Uh, they both involve momentous decisions that have serious consequences?"`
 				`	"They both require someone skilled and decisive to be in command?"`
 				`	"You seem to have me confused with someone interested in arguing with you."`
 				`	"You're going to say the same thing no matter what I say, aren't you? Pre-planned speeches and all."`
@@ -3772,7 +3798,7 @@ mission "FW Pirates 2"
 				`	"It seems like some people are a little bit hostile toward the Council."`
 					goto council
 			label pirates
-			`	"Not yet. This is why we wanted to get as much done as possible while we were still under a relatively agile leadership structure. Getting two dozen politicians to agree on any course of action is... difficult. What did your reconnaissance turn up?"`
+			`	"Not yet. This is why we wanted to get as much done as possible while we were still under a relatively agile leadership structure. Getting two dozen politicians to agree on any course of action is difficult. What did your reconnaissance turn up?"`
 				goto recon
 			label council
 			`	"You mean Arianna? Don't worry, she's one of those people who by reflex opposes any idea that comes from someone other than her. Most people appreciate what the Council has done, and in fact before you even arrived the Senate voted to give us a continued advisory role, under the Senate's supervision."`
@@ -3812,8 +3838,7 @@ mission "FW Pirates 2"
 	npc
 		personality heroic escort
 		government "Free Worlds"
-		fleet "Small Free Worlds" 2
-		fleet "Large Free Worlds"
+		fleet "Free Worlds" 3
 	
 	on complete
 		dialog "Your patrol fleet is still busy finding landing spots, but your work is done. Time to head to the spaceport bar and see if Tomek is there."
@@ -3863,18 +3888,16 @@ mission "FW Pirates 3.1"
 		personality heroic staying
 		government "Free Worlds"
 		system Antares
-		fleet "Small Free Worlds"
-		fleet "Large Free Worlds" 2
+		fleet "Free Worlds" 3
 	
 	npc kill
 		personality plunders staying
-		government "Pirate"
+		government "Southern Pirates"
 		system Antares
-		fleet "Small Southern Pirates" 2
-		fleet "Small Northern Pirates"
-		fleet "Large Southern Pirates" 2
-		fleet "Large Core Pirates"
-		fleet "Large Northern Pirates"
+		fleet "Freelance Pirates" 2
+		fleet "Southern Pirates" 2
+		fleet "Cartel"
+		fleet "Northern Union"
 	
 	on offer
 		conversation
@@ -3890,7 +3913,7 @@ mission "FW Pirates 3.1"
 			choice
 				`	"That's good news! I think the Senate made the right choice."`
 					goto agree
-				`	"Ok, the senate has spoken."`
+				`	"Okay, the senate has spoken."`
 					goto agree
 				`	"That doesn't make any sense. If we leave those pirate worlds alone, they'll stab us in the back some time in the future."`
 					goto disagree
@@ -3989,19 +4012,16 @@ mission "FW Pirates 3.2A"
 	npc
 		personality heroic escort
 		government "Free Worlds"
-		fleet "Small Free Worlds" 3
-		fleet "Large Free Worlds" 3
+		fleet "Free Worlds" 6
 	
 	npc kill
 		personality plunders staying
-		government "Pirate"
+		government "Southern Pirates"
 		system Shaula
-		fleet "Small Southern Pirates" 3
-		fleet "Large Southern Pirates" 3
-		fleet "Small Core Pirates" 2
-		fleet "Large Core Pirates" 3
-		fleet "Small Northern Pirates"
-		fleet "Large Northern Pirates" 4
+		fleet "Freelance Pirates" 2
+		fleet "Southern Pirates" 4
+		fleet "Cartel" 2
+		fleet "Northern Union" 2
 	
 	on complete
 		event "fw suppressed Greenrock"
@@ -4065,12 +4085,12 @@ mission "FW Pirates 4"
 	
 	npc evade
 		personality plunders
-		government Pirate
+		government "Southern Pirates"
 		ship "Leviathan" "Dire Rain"
 	
 	npc evade
 		personality plunders entering
-		government Pirate
+		government "Southern Pirates"
 		ship "Leviathan (Heavy)" "Red Dawn"
 		ship "Leviathan (Laser)" "Bleak Omen"
 	
@@ -4078,23 +4098,21 @@ mission "FW Pirates 4"
 		personality heroic
 		government "Free Worlds"
 		system Pherkad
-		fleet "Small Free Worlds"
-		fleet "Large Free Worlds"
+		fleet "Free Worlds" 2
 	
 	npc
 		personality heroic
 		government "Free Worlds"
 		system Alniyat
-		fleet "Small Free Worlds" 2
-		fleet "Large Free Worlds" 4
+		fleet "Free Worlds" 6
 	
 	npc
 		personality heroic
 		government "Free Worlds"
 		system Sabik
 		ship "Falcon (Plasma)" "F.S. White Oak"
-		ship "Falcon (Plasma)" "F.S. Larch"
-		ship "Falcon (Plasma)" "F.S. Ironwood"
+		ship "Falcon (Pturret)" "F.S. Larch"
+		ship "Falcon (Pturret)" "F.S. Ironwood"
 	
 	on offer
 		conversation
@@ -4116,7 +4134,7 @@ mission "FW Pirates 4"
 
 event "battle for Thule"
 	system Men
-		fleet "Small Southern Pirates" 10000
+		fleet "Freelance Pirates" 10000
 
 
 
@@ -4301,7 +4319,7 @@ mission "FW Refinery 1"
 				`	"So we're just going to let Tomek stay under arrest?"`
 			`	"Yes," says Freya, firmly. "Don't be a fool, <first>. We're trying to create a new sort of democracy here, and we can't do that by flaunting its rules."`
 			label repairs
-			`	"Well, thanks to the captian here, the Men system is no longer engaged in piracy," says JJ. "And that means the folks on Smuggler's Den are in need of new work. That station used to be a deuterium refinery. With a little work, it can be one, again."`
+			`	"Well, thanks to the captain here, the Men system is no longer engaged in piracy," says JJ. "And that means the folks on Smuggler's Den are in need of new work. That station used to be a deuterium refinery. With a little work, it can be one, again."`
 			`	"A working refinery could bring more income to that system than piracy ever did," says Freya. "Only problem is, the replacement parts are rare, and hard to come by. The Syndicate agreed to sell us the parts, but only if we meet them halfway, on Tundra. That's in the Cebalrai system. Just one jump away from one of the major new Navy bases."`
 			choice
 				`	"We're going to take a supply convoy through Republic space?"`
@@ -4674,7 +4692,7 @@ mission "FW Southern Battle 2"
 		fleet
 			names "free worlds capital"
 			variant
-				"Falcon (Plasma)"
+				"Falcon (Pturret)"
 				"Osprey (Missile)" 2
 		fleet
 			names "free worlds capital"
@@ -4688,7 +4706,7 @@ mission "FW Southern Battle 2"
 		fleet
 			names "free worlds capital"
 			variant
-				"Bastion" 2
+				"Bastion (Tank)" 2
 		fleet
 			names "free worlds capital"
 			fighters "free worlds fighters"
@@ -4703,7 +4721,7 @@ mission "FW Southern Battle 2"
 	npc evade
 		system Rastaban
 		personality heroic uninterested staying
-		government "Republic"
+		government "Navy"
 		fleet 2
 			names "republic capital"
 			fighters "republic fighter"
@@ -4769,20 +4787,20 @@ mission "FW Southern Battle 3"
 				accept
 	
 	npc
-		government "Republic"
+		government "Navy"
 		personality fleeing uninterested
 		system "Delta Sagittarii"
-		fleet "Large Republic" 2
+		fleet "Navy" 2
 	npc
-		government "Republic"
+		government "Navy"
 		personality fleeing uninterested
 		system "Girtab"
-		fleet "Large Republic" 2
+		fleet "Navy" 2
 	npc
-		government "Republic"
+		government "Navy"
 		personality fleeing uninterested
 		system "Albaldah"
-		fleet "Large Republic" 2
+		fleet "Navy" 2
 	
 	on complete
 		dialog `You've finished patrolling the nearby systems. Now you can meet up with Freya in the spaceport, and hopefully she will have good news about Katya.`
@@ -4828,16 +4846,16 @@ mission "FW Southern Prisoners - Release"
 	npc accompany save
 		government "Escort"
 		personality timid escort
-		ship "Blackbird" "F.S. Charity"
-		ship "Blackbird" "F.S. Good Hope"
-		ship "Blackbird" "F.S. Stoutheart"
-		ship "Blackbird" "F.S. Nightingale"
-		ship "Blackbird" "F.S. Turtledove"
+		ship "Blackbird (Bus)" "F.S. Charity"
+		ship "Blackbird (Bus)" "F.S. Good Hope"
+		ship "Blackbird (Bus)" "F.S. Stoutheart"
+		ship "Blackbird (Bus)" "F.S. Nightingale"
+		ship "Blackbird (Bus)" "F.S. Turtledove"
 	npc
 		government Republic
 		personality staying uninterested
 		system "Kaus Borealis"
-		fleet "Large Republic" 4
+		fleet "Navy" 4
 	
 	on visit
 		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
@@ -4894,16 +4912,16 @@ mission "FW Southern Prisoners - Released"
 	npc accompany save
 		government "Escort"
 		personality timid escort
-		ship "Blackbird" "F.S. Charity"
-		ship "Blackbird" "F.S. Good Hope"
-		ship "Blackbird" "F.S. Stoutheart"
-		ship "Blackbird" "F.S. Nightingale"
-		ship "Blackbird" "F.S. Turtledove"
+		ship "Blackbird (Bus)" "F.S. Charity"
+		ship "Blackbird (Bus)" "F.S. Good Hope"
+		ship "Blackbird (Bus)" "F.S. Stoutheart"
+		ship "Blackbird (Bus)" "F.S. Nightingale"
+		ship "Blackbird (Bus)" "F.S. Turtledove"
 	npc
 		government Republic
 		personality staying uninterested
 		system "Kaus Borealis"
-		fleet "Large Republic" 4
+		fleet "Navy" 4
 	
 	on visit
 		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
@@ -4996,22 +5014,22 @@ mission "FW Northern 1"
 	npc
 		government "Free Worlds"
 		personality heroic escort
-		fleet "Large Free Worlds" 3
+		fleet "Free Worlds" 3
 	npc
-		government "Republic"
+		government "Navy"
 		personality fleeing uninterested
 		system "Wei"
-		fleet "Large Republic" 2
+		fleet "Navy" 2
 	npc
-		government "Republic"
+		government "Navy"
 		personality fleeing uninterested
 		system "Seginus"
-		fleet "Large Republic" 2
+		fleet "Navy" 2
 	npc
-		government "Republic"
+		government "Navy"
 		personality fleeing uninterested
 		system "Alphecca"
-		fleet "Large Republic" 2
+		fleet "Navy" 2
 	
 	on complete
 		event "fw northern expansion"
@@ -5190,7 +5208,7 @@ mission "FW Northern 3"
 				`	"I'd be honored. Thank you."`
 				`	"That's pretty awesome. I'm in."`
 				`	"I get to be my own boss? Make my own hours? Thank you!"`
-			`	She grins. "Don't mention it. You've been with us since the beginning, and we've all come to trust what you have to say. I wish we could throw you a big dinner or something to celebrate, but... well, we're all busy with the war right now. But Alondo and JJ both said to tell you they're glad to have you on board. And you'll get a salary increase, of course. Which you ought to celebrate by buying us both a few drinks in the spaceport bar before you leave. Okay?"`
+			`	She grins. "Don't mention it. You've been with us since the beginning, and we've all come to trust what you have to say. I wish we could throw you a big dinner or something to celebrate, but well, we're all busy with the war right now. But Alondo and JJ both said to tell you they're glad to have you on board. And you'll get a salary increase, of course. Which you ought to celebrate by buying us both a few drinks in the spaceport bar before you leave. Okay?"`
 			choice
 				`	"Okay, I'll meet you back at the spaceport in a few hours."`
 				`	"Be my own boss and get paid more? First rounds on me!"`
@@ -5291,7 +5309,7 @@ mission "FW Northern 4.1A"
 	
 	npc accompany save
 		personality escort timid
-		government Merchant
+		government "Southern Logistics"
 		fleet
 			names "civilian"
 			cargo 4
@@ -5332,7 +5350,7 @@ mission "FW Northern 4.2A"
 	
 	npc accompany save
 		personality escort timid
-		government Merchant
+		government "Southern Logistics"
 		fleet
 			names "civilian"
 			cargo 4
@@ -5406,7 +5424,7 @@ mission "FW Alphas 1.1"
 		ship "Falcon (Plasma)" "F.S. Alder"
 		ship "Falcon" "F.S. Starry Warrior"
 	npc kill
-		government "Pirate"
+		government "Southern Pirates"
 		personality heroic staying target
 		system Graffias
 		ship "Leviathan (Heavy)" "Dread Lord"
@@ -5525,7 +5543,7 @@ mission "FW Alphas 1.2"
 		ship "Falcon (Plasma)" "F.S. Alder"
 		ship "Falcon" "F.S. Starry Warrior"
 	npc kill
-		government "Pirate"
+		government "Southern Pirates"
 		personality heroic staying target
 		system Graffias
 		ship "Leviathan (Heavy)" "Dread Lord"
@@ -5611,7 +5629,7 @@ mission "FW lost Giftbringer"
 	
 	on offer
 		conversation
-			`Soon after landing on <origin>, you receive an encoded message from Admiral Danforth, the leader of the Oathkeepers. "Captain <last>," he says, "I would like to thank you once again for allowing us to assist you on Poisonwood. Unfortunately, I have bad news that may concern you. We have lost contact with the Giftbringer, the Carrier that joined us to secure Poisonwood. We can only assume it was destroyed by the survivng Alphas it was chasing down. With deepest regards - Danforth."`
+			`Soon after landing on <origin>, you receive an encoded message from Admiral Danforth, the leader of the Oathkeepers. "Captain <last>," he says, "I would like to thank you once again for allowing us to assist you on Poisonwood. Unfortunately, I have bad news that may concern you. We have lost contact with the Giftbringer, the Carrier that joined us to secure Poisonwood. We can only assume it was destroyed by the surviving Alphas it was chasing down. With deepest regards - Danforth."`
 				decline
 
 
@@ -5748,7 +5766,7 @@ mission "FW Bloodsea 1.1A"
 				accept
 	
 	npc accompany save
-		government Merchant
+		government "Southern Logistics"
 		personality escort heroic
 		ship "Behemoth (Heavy)" "F.S. Bungles"
 		ship "Behemoth (Heavy)" "F.S. Humble"
@@ -5778,7 +5796,7 @@ mission "FW Bloodsea 1.1B"
 				accept
 	
 	npc accompany save
-		government Merchant
+		government "Southern Logistics"
 		personality escort heroic
 		ship "Behemoth (Heavy)" "F.S. Bungles"
 		ship "Behemoth (Heavy)" "F.S. Humble"
@@ -5787,7 +5805,7 @@ mission "FW Bloodsea 1.1B"
 		dialog "You have reached <planet>, but you left the freighters behind! Better depart and wait for them to arrive in this star system."
 	
 	npc
-		government Pirate
+		government "Southern Pirates"
 		personality plunders staying disables
 		system Antares
 		fleet
@@ -5873,7 +5891,7 @@ mission "FW Bloodsea 1.2A"
 	
 	npc evade
 		personality heroic staying
-		government "Pirate"
+		government "Southern Pirates"
 		system "Antares"
 		fleet
 			names pirate
@@ -5965,7 +5983,7 @@ mission "FW Albatross 1"
 			`	"Yes," she says. "Yes, it is. That's cults for you, though. Now, let's go meet up with JJ."`
 				accept
 			label trouble
-			`	Freya laughs "Oh no, I can see it now. The two of you spraypainting the word 'Vandalism' on the front of some government building. I think it's best if we keep you two separated. Now, let's go."`
+			`	Freya laughs "Oh no, I can see it now. The two of you spray-painting the word 'Vandalism' on the front of some government building. I think it's best if we keep you two separated. Now, let's go."`
 				accept
 			label metoo
 			`	"Shouldn't be," she says, "I think they mostly use it as an excuse to control people who they already think are troublemakers. They are anarchists after all, their power comes from a lack of centralization. Now, do you mind?" She motions towards your ship.`
@@ -5994,9 +6012,9 @@ mission "FW Albatross 2"
 	
 	npc
 		system Nunki
-		government Pirate
+		government "Southern Pirates"
 		personality staying disables plunders
-		fleet "Small Southern Pirates" 2
+		fleet "Freelance Pirates" 2
 
 
 
@@ -6035,15 +6053,15 @@ mission "FW Albatross 2A"
 	npc kill
 		personality staying plunders disables heroic nemesis target
 		system Orvala
-		government Pirate
-		ship "Bastion (Heavy)" "Dread"
+		government "Southern Pirates"
+		ship "Bastion (Tank)" "Dread"
 		dialog "You have destroyed Ryk Bartlett's ship. Hopefully now the elders on Albatross will be more inclined to bargain with the Free Worlds."
 	
 	npc
 		personality staying plunders disables
 		system Orvala
-		government Pirate
-		fleet "Small Southern Pirates" 3
+		government "Southern Pirates"
+		fleet "Freelance Pirates" 3
 
 
 
@@ -6130,7 +6148,7 @@ mission "FW Rand 1"
 		ship "Odyssey (Blaster)" "W.P. Pigs Demise"
 	
 	npc evade
-		government "Republic"
+		government "Navy"
 		system "Zeta Aquilae"
 		personality staying heroic
 		fleet 2
@@ -6209,40 +6227,40 @@ event "battle of alioth"
 	system Rutilicus
 		fleet "Small Southern Merchants" 600
 		fleet "Large Southern Merchants" 2000
-		fleet "Small Southern Pirates" 8000
+		fleet "Freelance Pirates" 8000
 		fleet "Small Republic" 1000
 	system Cebalrai
 		fleet "Small Southern Merchants" 600
 		fleet "Large Southern Merchants" 2000
-		fleet "Small Southern Pirates" 4000
+		fleet "Freelance Pirates" 4000
 		fleet "Small Republic" 1000
 	system Alioth
 		fleet "Small Southern Merchants" 400
 		fleet "Large Northern Merchants" 600
-		fleet "Small Southern Pirates" 1200
-		fleet "Large Southern Pirates" 2400
+		fleet "Freelance Pirates" 1200
+		fleet "Southern Pirates" 2400
 		fleet "Small Republic" 3000
 			
 event "end battle of alioth"
 	system Rutilicus
 		fleet "Small Southern Merchants" 600
 		fleet "Large Southern Merchants" 2000
-		fleet "Small Southern Pirates" 8000
+		fleet "Freelance Pirates" 8000
 		fleet "Small Republic" 1000
 		fleet "Large Republic" 2000
 		fleet "Navy Surveillance" 1600
 	system Cebalrai
 		fleet "Small Southern Merchants" 600
 		fleet "Large Southern Merchants" 2000
-		fleet "Small Southern Pirates" 4000
+		fleet "Freelance Pirates" 4000
 		fleet "Small Republic" 1000
 		fleet "Large Republic" 2000
 		fleet "Navy Surveillance" 1600
 	system Alioth
 		fleet "Small Southern Merchants" 400
 		fleet "Large Northern Merchants" 600
-		fleet "Small Southern Pirates" 1200
-		fleet "Large Southern Pirates" 2400
+		fleet "Freelance Pirates" 1200
+		fleet "Southern Pirates" 2400
 		fleet "Small Republic" 3000
 		fleet "Large Republic" 4000
 		fleet "Navy Surveillance" 1600
@@ -6347,6 +6365,7 @@ mission "FW Defend New Tibet"
 	
 	on complete
 		"reputation: Republic" = 1
+		"reputation: Navy" = 1
 		event "fw armistice"
 		event "end battle of alioth"
 		conversation
@@ -6478,7 +6497,7 @@ mission "FW Liberate Delta Sagittarii"
 	npc evade
 		personality staying heroic
 		system "Delta Sagittarii"
-		government "Republic"
+		government "Navy"
 		fleet
 			names "republic capital"
 			fighters "republic fighter"
@@ -6498,7 +6517,7 @@ mission "FW Liberate Delta Sagittarii"
 	npc
 		personality staying derelict
 		system "Delta Sagittarii"
-		government "Republic"
+		government "Navy"
 		fleet
 			names "republic capital"
 			fighters "republic fighter"
@@ -6516,17 +6535,17 @@ mission "FW Liberate Delta Sagittarii"
 		personality staying heroic
 		system "Rastaban"
 		government "Free Worlds"
-		fleet "Large Free Worlds" 4
+		fleet "Free Worlds" 4
 	npc
 		personality staying derelict
 		system "Rastaban"
-		government "Republic"
-		fleet "Large Republic" 2
+		government "Navy"
+		fleet "Navy" 2
 	npc
 		personality staying heroic
 		system "Rastaban"
-		government "Republic"
-		fleet "Large Republic" 2
+		government "Navy"
+		fleet "Navy" 2
 
 # Free Worlds Reconciliation (Branch 1/2)
 
@@ -6710,23 +6729,23 @@ mission "FW Reconciliation 1C"
 	npc
 		personality heroic nemesis waiting
 		government Syndicate
-		fleet "Small Syndicate"
+		fleet "Syndicate"
 	
 	npc
 		personality heroic nemesis entering
 		government Syndicate
-		fleet "Small Syndicate"
+		fleet "Syndicate"
 	
 	npc
 		personality heroic nemesis waiting
 		government Syndicate
-		fleet "Large Syndicate"
+		fleet "Syndicate"
 		system Markab
 	
 	npc
 		personality heroic nemesis waiting
 		government Syndicate
-		fleet "Large Syndicate"
+		fleet "Syndicate"
 		system Alnair
 
 
@@ -6758,7 +6777,7 @@ mission "FW Reconciliation 2"
 		event "deep sky tech available"
 		set "license: Navy"
 		conversation
-			`The travel time from Cartel space gave Parlaiment enough time to call together a behind-closed-doors emergency hearing away from the public eye. This preliminary emergency hearing was scheduled to take place today.`
+			`The travel time from Cartel space gave Parliament enough time to call together a behind-closed-doors emergency hearing away from the public eye. This preliminary emergency hearing was scheduled to take place today.`
 			`As you came fleeing out of Syndicate space with their ships in hot pursuit, no Republic or Navy ships moved to help you or attack your pursuers. Apparently, they are not ready to strike the Syndicate until Parliament has made a decision. As you are waiting for Parliament to hear your evidence, Katya asks you quietly, "So, how are you feeling about our chances here?"`
 			choice
 				`	"I think our evidence is undeniable. There's no way we could fail to convince them."`
@@ -6767,7 +6786,7 @@ mission "FW Reconciliation 2"
 					goto pessimism
 			
 			label optimism
-			`	As Sawyer presents his story and his evidence, corroborated by the additional data collected by Ijs and by Raven's team, the mood of the room darkens. After initial testamonies, the members of Parliament begin questioning Sawyer. Nearly all their questions sound more like an attack on him than an attempt to learn more about the Syndicate's involvement in the terrorist attacks.`
+			`	As Sawyer presents his story and his evidence, corroborated by the additional data collected by Ijs and by Raven's team, the mood of the room darkens. After initial testimonies, the members of Parliament begin questioning Sawyer. Nearly all their questions sound more like an attack on him than an attempt to learn more about the Syndicate's involvement in the terrorist attacks.`
 				goto why
 			
 			label pessimism
@@ -6948,7 +6967,7 @@ mission "FW Defend Farpoint"
 				"Narcissus (Mark II)" 2
 	
 	npc disable
-		government Pirate
+		government "Southern Pirates"
 		system Mintaka
 		personality heroic
 		fleet
@@ -7053,7 +7072,7 @@ mission "FW Reconciliation Break"
 		log "Dropped off a team of Republic diplomats on Bourne. It seems like for now, the ceasefire is holding, and public opinion is slowly turning to favor the Free Worlds rather than the Syndicate. But the Syndicate leaders must still be brought to justice. The Council will be in touch when they are ready to help launch an attack on the Syndicate."
 		conversation
 			`From the way Alondo's eyes light up when he sees Katya, you can tell that all he wants to do right now is to get caught up with her and celebrate her freedom. But he plays the part of a good diplomat, escorting the Republic ambassadors to their new quarters. Along the way he makes pleasant small talk with them, complimenting their style and sophistication. Knowing him as well as you do, you can tell he is saving up his more scathing comments about them until they are out of earshot.`
-			`	The moment they are dealt with he gives Katya a hug and says, "Katya! So good to have you back with us. The Council has five members once more. I assume you've been told about Tomek's... departure, and <first>'s promotion?" She nods.`
+			`	The moment they are dealt with he gives Katya a hug and says, "Katya! So good to have you back with us. The Council has five members once more. I assume you've been told about Tomek's departure, and <first>'s promotion?" She nods.`
 			`	Alondo says, "Unfortunately, we don't have any ambassadors of our own picked out yet. The Senate insists on selecting them, and you wouldn't believe how slowly Senate deliberations move. They've interviewed half a dozen candidates so far, and found none to their liking. It pains me to say this, but we may have succeeded in creating a bureaucracy every bit as inefficient as the one we rebelled against."`
 			choice
 				`	"No problem. The important thing is, we're at peace, so their decisions can take as long as they need to."`
@@ -7134,7 +7153,7 @@ mission "FW Embassy 1C"
 		dialog "You have reached <planet>, but you left the ambassadors behind! Better depart and wait for them to arrive in this star system."
 	
 	npc
-		government Pirate
+		government "Southern Pirates"
 		system Wei
 		personality heroic nemesis
 		fleet
@@ -7143,7 +7162,7 @@ mission "FW Embassy 1C"
 				"Raven (Afterburner)" 6
 	
 	npc
-		government Pirate
+		government "Southern Pirates"
 		system Hintar
 		personality heroic nemesis
 		fleet
@@ -7158,7 +7177,7 @@ mission "FW Embassy 1C"
 				"Firebird" 2
 	
 	npc
-		government Pirate
+		government "Southern Pirates"
 		system Markab
 		personality heroic nemesis
 		fleet
@@ -7524,7 +7543,7 @@ mission "FW Pug 2"
 				goto communications
 			
 			label republic
-			`	"They're in a panic," says Katya. "Earth is on the very boundary of the area that was cut off, and that means at any moment, they could choose to cut off humanity's homeworld from the rest of human space. And we don't even know if it is possible to restore the links once they have been cut."`
+			`	"They're in a panic," says Katya. "Earth is on the very boundary of the area that was cut off, and that means at any moment, they could choose to cut off humanity's home world from the rest of human space. And we don't even know if it is possible to restore the links once they have been cut."`
 				goto communications
 			
 			label communications
@@ -7582,8 +7601,8 @@ mission "FWC Scouting 1"
 	npc
 		personality staying heroic
 		system "Kaus Borealis"
-		government "Republic"
-		fleet "Large Republic" 5
+		government "Navy"
+		fleet "Navy" 5
 
 
 
@@ -7603,7 +7622,7 @@ mission "FWC Attack Kaus Borealis"
 	on offer
 		event "fwc attack kaus borealis"
 		conversation
-			`When you return to New Portland, a sizeable Free Worlds fleet is already parked on the landing pads surrounding the spaceport. JJ explains to you, "When the Navy struck and cut our territory in half, a lot of these ships were cut off from their chain of command and just went and sheltered wherever they could. So it took a bit of doing to gather them all together. And now what we need is another stirring victory, or they'll begin to scatter again."`
+			`When you return to New Portland, a sizable Free Worlds fleet is already parked on the landing pads surrounding the spaceport. JJ explains to you, "When the Navy struck and cut our territory in half, a lot of these ships were cut off from their chain of command and just went and sheltered wherever they could. So it took a bit of doing to gather them all together. And now what we need is another stirring victory, or they'll begin to scatter again."`
 			choice
 				`	"Are you saying we risk having members of our militia desert?"`
 					goto desert
@@ -7665,7 +7684,7 @@ mission "FWC Attack Kaus Borealis"
 	npc evade
 		personality staying heroic
 		system "Kaus Borealis"
-		government "Republic"
+		government "Navy"
 		fleet 2
 			names "republic capital"
 			fighters "republic fighter"
@@ -7683,7 +7702,7 @@ mission "FWC Attack Kaus Borealis"
 	npc
 		personality staying derelict
 		system "Kaus Borealis"
-		government "Republic"
+		government "Navy"
 		fleet
 			names "republic capital"
 			fighters "republic fighter"
@@ -7780,7 +7799,7 @@ mission "FWC Cebalrai 1"
 	npc
 		personality staying heroic
 		system "Cebalrai"
-		government "Republic"
+		government "Navy"
 		fleet
 			names "republic capital"
 			fighters "republic fighter"
@@ -7814,7 +7833,7 @@ mission "FWC Cebalrai 1B"
 			`	"Either that," says Tomek, "or they're wary of engaging us again now that they know we're willing to use nukes. Which I'm still not happy about, by the way. It's only a matter of time until they respond in kind. But in any case, our next move is clear: bring a fleet to Cebalrai and capture the system. <first>, you'll be in charge of that fleet. Alondo can travel with you to handle the diplomatic aftermath."`
 			`	"Before we go on," Alondo says, "you two should know that I just received word that Tarazed has decided to officially sever ties with us, they are no longer neutral and will attack us if we enter their system."`
 			`	Tomek looks rather somber before saying, "Tarazed is no longer our concern right now. Let's make our way to Cebalrai, and try to find peace with them later."`
-			`	Befor you leave, you get a message from Freya stating that the Syndicate has opened their more advanced technology to the Free Worlds, and has set up shops on Zug and Glaze.`
+			`	Before you leave, you get a message from Freya stating that the Syndicate has opened their more advanced technology to the Free Worlds, and has set up shops on Zug and Glaze.`
 				accept
 	
 	on complete
@@ -7844,7 +7863,7 @@ mission "FWC Cebalrai 1B"
 	npc evade
 		personality staying heroic
 		system "Cebalrai"
-		government "Republic"
+		government "Navy"
 		fleet
 			names "republic capital"
 			fighters "republic fighter"
@@ -7930,7 +7949,7 @@ mission "FWC Diplomacy 1B"
 			`	Alondo sighs. "Yes, but the Senate thought if we brought anything bigger, it might look like an attack fleet rather than an escort. And of course, it's not carrying nukes, because if the Navy picked those up on their sensors, they'd blast us out of the sky long before we could land on Earth. Anyway, let's get going and hope for the best."`
 				accept
 			label nukes
-			`	"No, no, of course not," sys Alondo. "If the Navy picked those up on their sensors, they'd blast us out of the sky long before we could land on Earth. Anyway, let's get going and hope for the best."`
+			`	"No, no, of course not," says Alondo. "If the Navy picked those up on their sensors, they'd blast us out of the sky long before we could land on Earth. Anyway, let's get going and hope for the best."`
 				accept
 	
 	npc accompany save
@@ -7987,7 +8006,7 @@ mission "FWC Diplomacy 1C"
 	npc
 		personality staying heroic
 		system "Vega"
-		government "Republic"
+		government "Navy"
 		fleet 2
 			names "republic capital"
 			fighters "republic fighter"
@@ -8005,7 +8024,7 @@ mission "FWC Diplomacy 1C"
 	npc
 		personality staying heroic
 		system "Denebola"
-		government "Republic"
+		government "Navy"
 		fleet 2
 			names "republic capital"
 			fighters "republic fighter"
@@ -8085,7 +8104,7 @@ mission "FWC Checkmate 1"
 	
 	npc evade
 		personality staying heroic
-		government "Republic"
+		government "Navy"
 		fleet 3
 			names "republic small"
 			fighters "republic fighter"
@@ -8096,7 +8115,7 @@ mission "FWC Checkmate 1"
 	
 	npc evade
 		personality heroic
-		government "Republic"
+		government "Navy"
 		system Menkent
 		fleet
 			names "republic capital"
@@ -8114,7 +8133,7 @@ mission "FWC Checkmate 1"
 	
 	npc evade
 		personality heroic
-		government "Republic"
+		government "Navy"
 		system Sol
 		fleet
 			names "republic capital"
@@ -8132,7 +8151,7 @@ mission "FWC Checkmate 1"
 	
 	npc evade
 		personality heroic
-		government "Republic"
+		government "Navy"
 		system Pollux
 		fleet 2
 			names "republic capital"
@@ -8202,7 +8221,7 @@ mission "FWC Checkmate 1"
 		"salary: Free Worlds" = 6000
 		conversation
 			`Tomek and Alondo meet you when you land. Tomek says, "Good work aiding in the defense. Now we need to move before the Navy has time to regroup. And the Senate has decided that you will be in charge of the fleet that makes our counterattack."`
-			`	Alondo says, "They have also approved a salary increase for you, to six thousand credits per diem. I know that's probably still not enough, but we are running a bit low on cash."`
+			`	Alondo says, "They have also approved a salary increase for you, to six thousand credits per day. I know that's probably still not enough, but we are running a bit low on cash."`
 			`	"One other thing," says Tomek. "I don't know how you'll feel about this, but I received word from Solace that they have nukes for sale if you want any. I'd advise against it, but it's up to you. Also, since you will be the flagship of our assault, you should make any improvements you feel are necessary to your ship. Then meet us back here, in the spaceport. Of course, if you're ready to go immediately that's fine, too."`
 
 
@@ -8250,7 +8269,7 @@ mission "FWC Checkmate 1B"
 		dialog `You have failed an essential Free Worlds mission. If you want to complete the story line, revert to the autosave or another earlier snapshot of the game.`
 	
 	on offer
-		event "fwc attack menkent"
+		event "fwc attack Menkent"
 		conversation
 			`You meet up with Tomek in the spaceport. He is talking with the captain of one of a group of four Clippers that have landed next to each other some distance away from the rest of the Free Worlds fleet. The Clippers appear to have unusually large engines and afterburners, and in place of guns they are each carrying four missiles. Tomek sees you approaching and says, "And here's Captain <last>. Captain, are you ready to lead the attack?"`
 			choice
@@ -8297,7 +8316,7 @@ mission "FWC Checkmate 1B"
 	
 	npc evade
 		personality heroic staying
-		government "Republic"
+		government "Navy"
 		system Menkent
 		fleet 2
 			names "republic capital"
@@ -8315,7 +8334,7 @@ mission "FWC Checkmate 1B"
 	
 	npc
 		personality derelict
-		government "Republic"
+		government "Navy"
 		system Menkent
 		fleet
 			names "republic capital"
@@ -8361,7 +8380,7 @@ mission "FWC Checkmate 1C"
 	
 	on complete
 		set "ESCW FW Check End"
-		log "The Free Worlds have captured the Vega system, only one hyperjump away from Earth. Nuclear-armed Wolf Pack ships will be arriving shortly to spearhead the assault, but the Navy fleet defending Earth will be massive. Casualties on both sides are likely to be extremely high."
+		log "The Free Worlds have captured the Vega system, only one jump away from Earth. Nuclear-armed Wolf Pack ships will be arriving shortly to spearhead the assault, but the Navy fleet defending Earth will be massive. Casualties on both sides are likely to be extremely high."
 		conversation
 			`The Vega system is eerily deserted. You suspect that the Navy must have pulled back all available ships to defend Earth, rather than trying to fight you here. You try not to think about how massive the fleet there must be, and how slim your chances are of destroying it.`
 			`	Katya says, "Well, this is it, the final assault. Meet me in the spaceport when..." Her communicator goes off, and her eyes widen. "No, this doesn't seem possible. We have been completely cut off from Republic space! It will take us some time to work around this matter, but in the mean time there is nothing for our battle fleets to do. Councilor <last>, please go see about upgrading your ship, the rest of our fleet will remain here in case they reconnect the hyperlinks."`
@@ -8484,21 +8503,21 @@ mission "FW Convoy Defense [0]"
 		attributes shipyard
 		distance 2 6
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality nemesis staying harvests plunders
 		system destination
-		fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates"
+		fleet "Southern Pirates"
+		fleet "Freelance Pirates"
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality nemesis harvests plunders
 		system destination
-		fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates"
+		fleet "Southern Pirates"
+		fleet "Freelance Pirates"
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality nemesis harvests plunders
-		fleet "Large Southern Pirates"
+		fleet "Southern Pirates"
 	npc accompany save
 		government "Merchant"
 		personality escort timid
@@ -8546,21 +8565,21 @@ mission "FW Convoy Defense [1]"
 		attributes shipyard
 		distance 2 6
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality nemesis staying harvests plunders
 		system destination
-		fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates"
+		fleet "Southern Pirates"
+		fleet "Freelance Pirates"
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality nemesis harvests plunders
 		system destination
-		fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates"
+		fleet "Southern Pirates"
+		fleet "Freelance Pirates"
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality nemesis harvests plunders
-		fleet "Large Southern Pirates"
+		fleet "Southern Pirates"
 	npc accompany save
 		government "Merchant"
 		personality escort timid
@@ -8608,21 +8627,21 @@ mission "FW Convoy Defense [2]"
 		attributes shipyard
 		distance 2 6
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality nemesis staying harvests plunders
 		system destination
-		fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates"
+		fleet "Southern Pirates"
+		fleet "Freelance Pirates"
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality nemesis harvests plunders
 		system destination
-		fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates"
+		fleet "Southern Pirates"
+		fleet "Freelance Pirates"
 	npc
-		government "Pirate"
+		government "Southern Pirates"
 		personality nemesis harvests plunders
-		fleet "Large Southern Pirates"
+		fleet "Southern Pirates"
 	npc accompany save
 		government "Merchant"
 		personality escort timid
@@ -8657,7 +8676,7 @@ mission "FW Reinforcements [0]"
 	job
 	repeat
 	name `Reinforcements to <planet>`
-	description `These <bunks> Free Worlds soldiers require immediate transport to <destination> by <date> in order to reinforce the frontlines. Payment is <payment>.`
+	description `These <bunks> Free Worlds soldiers require immediate transport to <destination> by <date> in order to reinforce the front lines. Payment is <payment>.`
 	deadline 2 1
 	passengers 5 5 .2
 	to offer
@@ -8684,7 +8703,7 @@ mission "FW Reinforcements [1]"
 	job
 	repeat
 	name `Reinforcements to <planet>`
-	description `These <bunks> Free Worlds soldiers require immediate transport to <destination> by <date> in order to reinforce the frontlines. Payment is <payment>.`
+	description `These <bunks> Free Worlds soldiers require immediate transport to <destination> by <date> in order to reinforce the front lines. Payment is <payment>.`
 	deadline 2 1
 	passengers 5 5 .2
 	to offer
@@ -8847,7 +8866,7 @@ mission "FW Frontline Resupply [0]"
 	job
 	repeat
 	name `Resupply <planet>`
-	description `The frontlines of the war are in need of a resupply. Immediately deliver <cargo> to <destination> by <date>. Payment is <payment>.`
+	description `The front lines of the war are in need of a resupply. Immediately deliver <cargo> to <destination> by <date>. Payment is <payment>.`
 	deadline 2 1
 	cargo "food" 5 2 .1
 	to offer
@@ -8874,7 +8893,7 @@ mission "FW Frontline Resupply [1]"
 	job
 	repeat
 	name `Resupply <planet>`
-	description `The frontlines of the war are in need of a resupply. Immediately deliver <cargo> to <destination> by <date>. Payment is <payment>.`
+	description `The front lines of the war are in need of a resupply. Immediately deliver <cargo> to <destination> by <date>. Payment is <payment>.`
 	deadline 2 1
 	cargo "medical" 5 2 .1
 	to offer
@@ -8901,7 +8920,7 @@ mission "FW Frontline Resupply [2]"
 	job
 	repeat
 	name `Resupply <planet>`
-	description `The frontlines of the war are in need of a resupply. Immediately deliver <cargo> to <destination> by <date>. Payment is <payment>.`
+	description `The front lines of the war are in need of a resupply. Immediately deliver <cargo> to <destination> by <date>. Payment is <payment>.`
 	deadline 2 1
 	cargo "heavy metals" 5 2 .1
 	to offer
@@ -8928,7 +8947,7 @@ mission "FW Bulk Frontline Resupply [0]"
 	job
 	repeat
 	name `Resupply <planet>`
-	description `The frontlines of the war are in need of a resupply. Immediately deliver <cargo> to <destination> by <date>. Payment is <payment>.`
+	description `The front lines of the war are in need of a resupply. Immediately deliver <cargo> to <destination> by <date>. Payment is <payment>.`
 	deadline 2 1
 	cargo "food" 25 2 .95
 	to offer
@@ -8955,7 +8974,7 @@ mission "FW Bulk Frontline Resupply [1]"
 	job
 	repeat
 	name `Resupply <planet>`
-	description `The frontlines of the war are in need of a resupply. Immediately deliver <cargo> to <destination> by <date>. Payment is <payment>.`
+	description `The front lines of the war are in need of a resupply. Immediately deliver <cargo> to <destination> by <date>. Payment is <payment>.`
 	deadline 2 1
 	cargo "medical" 25 2 .95
 	to offer
@@ -9068,13 +9087,13 @@ mission "FW Care Package from Republic [1]"
 
 phrase "free worlds thanked refugee transport"
 	word
-		`Your passengers thank you graciously for taking them away from the dangerous frontlines of the war. You wish them the best of luck on <planet>, and collect your payment of <payment>.`
+		`Your passengers thank you graciously for taking them away from the dangerous front lines of the war. You wish them the best of luck on <planet>, and collect your payment of <payment>.`
 
 mission "FW Refugees [0]"
 	job
 	repeat
 	name `Refugees to <planet>`
-	description `These <bunks> passengers would like to escape the frontlines of the war and immediately settle on <destination> by <date>. Payment is <payment>.`
+	description `These <bunks> passengers would like to escape the front lines of the war and immediately settle on <destination> by <date>. Payment is <payment>.`
 	deadline 2 1
 	passengers 2 10 .9
 	to offer
@@ -9101,7 +9120,7 @@ mission "FW Refugees [1]"
 	job
 	repeat
 	name `Refugees to <planet>`
-	description `These <bunks> passengers would like to escape the frontlines of the war and immediately settle on <destination> by <date>. Payment is <payment>.`
+	description `These <bunks> passengers would like to escape the front lines of the war and immediately settle on <destination> by <date>. Payment is <payment>.`
 	deadline 2 1
 	passengers 2 10 .9
 	to offer
@@ -9128,7 +9147,7 @@ mission "FW Refugees [2]"
 	job
 	repeat
 	name `Refugees to <planet>`
-	description `These <bunks> passengers would like to escape the frontlines of the war and immediately settle on <destination> by <date>. Payment is <payment>.`
+	description `These <bunks> passengers would like to escape the front lines of the war and immediately settle on <destination> by <date>. Payment is <payment>.`
 	deadline 2 1
 	passengers 2 10 .9
 	to offer
@@ -9155,7 +9174,7 @@ mission "FW Bulk Refugees [0]"
 	job
 	repeat
 	name `Refugees to <planet>`
-	description `These <bunks> passengers would like to escape the frontlines of the war and immediately settle on <destination> by <date>. Payment is <payment>.`
+	description `These <bunks> passengers would like to escape the front lines of the war and immediately settle on <destination> by <date>. Payment is <payment>.`
 	deadline 2 1
 	passengers 5 5 .5
 	to offer
@@ -9236,7 +9255,7 @@ mission "FW Conservatory 2"
 	
 	on offer
 		conversation
-			`In the spaceport, it does not take long to locate Ijs; he is supervising a crew that is loading trade goods onto several Free Worlds ships. "Glad to see you, <first>," he says. "These three ships need to get to Tarazed and back without being destroyed by pirates... or by the Republic. Think you can tag along and protect them?"`
+			`In the spaceport, it does not take long to locate Ijs; he is supervising a crew that is loading trade goods onto several Free Worlds ships. "Glad to see you, <first>," he says. "These three ships need to get to Tarazed and back without being destroyed by pirates or by the Republic. Think you can tag along and protect them?"`
 			choice
 				`	"Sure thing!"`
 					accept
@@ -9245,7 +9264,7 @@ mission "FW Conservatory 2"
 				defer
 	
 	npc accompany save
-		government Merchant
+		government "Southern Logistics"
 		personality escort timid
 		ship "Argosy" "F.M.S. Daybreak"
 		ship "Argosy" "F.M.S. Monsoon"
@@ -9255,11 +9274,11 @@ mission "FW Conservatory 2"
 		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
 	
 	npc
-		government Pirate
+		government "Southern Pirates"
 		personality plunders
 		system Tarazed
-		fleet "Small Southern Pirates"
-		fleet "Large Southern Pirates"
+		fleet "Freelance Pirates"
+		fleet "Southern Pirates"
 
 
 
@@ -9279,7 +9298,7 @@ mission "FW Conservatory 2B"
 				accept
 	
 	npc accompany save
-		government Merchant
+		government "Southern Logistics"
 		personality escort timid
 		ship "Argosy" "F.M.S. Daybreak"
 		ship "Argosy" "F.M.S. Monsoon"
@@ -9289,18 +9308,18 @@ mission "FW Conservatory 2B"
 		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
 	
 	npc
-		government Pirate
+		government "Southern Pirates"
 		personality plunders
 		system "Yed Prior"
-		fleet "Small Southern Pirates" 2
-		fleet "Large Southern Pirates" 2
+		fleet "Freelance Pirates" 2
+		fleet "Southern Pirates" 2
 	
 	npc
-		government Pirate
+		government "Southern Pirates"
 		personality plunders
 		system "Pherkad"
-		fleet "Small Southern Pirates" 2
-		fleet "Large Southern Pirates" 2
+		fleet "Freelance Pirates" 2
+		fleet "Southern Pirates" 2
 	
 	on complete
 		payment 300000
@@ -9378,15 +9397,15 @@ mission "FW Wolf Pack 1B"
 	
 	on offer
 		conversation
-			`You land your ship by night in a private hangar that you assume is owned by one of the elite families on <origin>. Your contact is wearing a black mask over his face. That seems unnecessary to you, but perhaps he is just really enjoying the thrill of being involved in something illegal. He hands you a data card and says, "This contains all the information you will need to build your own catalytic ramscoop. And before you leave, you may also visit our private outfitter and purchase one of your own, if you wish."`
+			`You land your ship by night in a private hangar that you assume is owned by one of the elite families on <origin>. Your contact is wearing a black mask over his face. That seems unnecessary, but perhaps he is just really enjoying the thrill of being involved in something illegal.` 
+			`	He hands you a data card and says, "This contains all the information you will need to build your own catalytic ramscoop. And before you leave, you may also visit our private outfitter and purchase one of your own, if you wish."`
 			choice
 				`	"Thank you."`
 					goto leave
 				`	"May I ask who you are and why you sympathize with us?"`
-			`	"You can call me... Agent Falco. As to my true identity, naturally you will understand that I cannot divulge it."`
-			`	"Of course," you say.`
+			`	"You can call me..." He takes a long dramatic pause, "Agent Falco. As to my true identity, naturally you will understand that I cannot divulge it."`
 			label leave
-			`	"I wish you the best of luck in your struggle against the evil plutocrats," he says. "May we yet live to see the day when all people live in prosperity and freedom. Farewell, brave insurgent." It is an overly dramatic speech, and sounds like he's been rehearsing it for a while. You respond with what you hope is a properly elegant salute, and he leaves.`
+			`	"I wish you the best of luck in your struggle against the evil plutocrats," he says. "May we yet live to see the day when all people live in prosperity and freedom. Farewell, brave insurgent." It is an overly dramatic speech, and sounds like he's been rehearsing it for a while. With all the stage presence of a great actor, he dramatically disappears down a nearby hallway.`
 				accept
 	
 	on complete
@@ -9443,7 +9462,7 @@ mission "FW Wolf Pack 2A"
 			`Soon after you land, two men in militia uniforms approach your ship, and tell you they represent the "Wolf Pack." They introduce themselves as Rex and Fido; you're pretty sure those are not their real names.`
 			`	Once you are in a private room inside your ship, Rex, who is the younger one, says, "With ramscoop technology, our ships will be able to venture deep into the Dirt Belt. Now, Captain, why do you think the Republic is so determined to hold on to the Dirt Belt, even if it means fighting bloody battles? It's clear that the tax revenue isn't worth it."`
 			choice
-				`	"My best guess is the precident it will set for secession."`
+				`	"My best guess is the precedent it will set for secession."`
 				`	"Well the Dirt Belt produces food, right? They don't want to be starved out."`
 					goto resources
 				`	"Maybe to keep a buffer in between our territory and the worlds that really matter to them, like Earth and the Paradise Planets?"`
@@ -9469,7 +9488,7 @@ mission "FW Wolf Pack 2A"
 			`	"Very well," says Rex. "Sorry for wasting your time." They leave.`
 				decline
 			label secrets
-			`	Fido answers, "We've heard rumors of Kraz and Southbound working on ships capable of going toe to toe with the biggest Republic ships. 'Project Dreadnaught' I think it was called."`
+			`	Fido answers, "We've heard rumors of Kraz and Southbound working on ships capable of going toe to toe with the biggest Republic ships. 'Project Dreadnought' I think it was called."`
 			`	"If we can put more pressure on the Republic and take pressure off our comrades here in the south, I expect we might see the fruits of that labor soon."`
 			choice
 				`	"Even so, I don't like the idea of starving people into submission. We can win this war the right way."`
@@ -9483,7 +9502,7 @@ mission "FW Wolf Pack 2A"
 				accept
 	
 	npc kill
-		government "Republic"
+		government "Republic Navy Humanitarian Corps"
 		system "Sarin"
 		personality timid staying target
 		ship "Freighter" "Horn of Plenty"
@@ -9492,7 +9511,7 @@ mission "FW Wolf Pack 2A"
 		dialog "You have destroyed all the target freighters. Time to report back to the Wolf Pack on Solace."
 	
 	npc
-		government "Republic"
+		government "Republic Navy Humanitarian Corps"
 		system "Sarin"
 		personality heroic staying
 		ship "Narcissus (Mark II)" "R.N.S. Atherstone"
@@ -9514,16 +9533,16 @@ event "wolf pack gacrux start"
 	system "Gacrux"
 		fleet "Small Southern Merchants" 2000
 		fleet "Large Southern Merchants" 5000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 4000
+		fleet "Freelance Pirates" 2000
+		fleet "Southern Pirates" 4000
 		fleet "Small Republic" 8000
 
 event "wolf pack gacrux end"
 	system "Gacrux"
 		fleet "Small Southern Merchants" 2000
 		fleet "Large Southern Merchants" 5000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 4000
+		fleet "Freelance Pirates" 2000
+		fleet "Southern Pirates" 4000
 		fleet "Small Republic" 2000
 		fleet "Large Republic" 3000
 		fleet "Navy Surveillance" 1600
@@ -9555,7 +9574,7 @@ mission "FW Wolf Pack 3"
 		event "wolf pack gacrux end"
 
 	npc kill
-		government "Republic"
+		government "Republic Navy Humanitarian Corps"
 		system "Gacrux"
 		personality timid staying target
 		ship "Bulk Freighter" "Dew of the Morning"
@@ -9588,7 +9607,7 @@ event "wolf pack mizar start"
 		fleet "Small Southern Merchants" 1400
 		fleet "Large Southern Merchants" 4500
 		fleet "Small Republic" 5000
-		fleet "Small Southern Pirates" 9000
+		fleet "Freelance Pirates" 9000
 
 event "wolf pack mizar end"
 	system "Mizar"
@@ -9596,7 +9615,7 @@ event "wolf pack mizar end"
 		fleet "Large Southern Merchants" 4500
 		fleet "Small Republic" 1000
 		fleet "Large Republic" 1400
-		fleet "Small Southern Pirates" 9000
+		fleet "Freelance Pirates" 9000
 		fleet "Navy Surveillance" 2000
 
 
@@ -9626,7 +9645,7 @@ mission "FW Wolf Pack 4"
 		event "wolf pack mizar end"
 
 	npc kill
-		government "Republic"
+		government "Republic Navy Humanitarian Corps"
 		system "Mizar"
 		personality timid staying target
 		ship "Bactrian" "Golden Fleece"
@@ -9671,7 +9690,7 @@ mission "Electron Beam 1"
 			`You receive mass message from Kraz Cybernetics: "To all Free Worlds Wolfpack Captains; Chief Offensive Engineer Barmy Edward has put out a bounty on the new Deep Sky Electron Beam. The first five people who can bring us a sample to strip down and test will each be awarded one million credits."`
 
 	npc
-		government "Republic"
+		government "Navy"
 		system "Alnasl"
 		personality heroic opportunistic staying
 		fleet
@@ -9749,7 +9768,7 @@ mission "FW Stack Core 1B"
 		dialog "You have reached <planet>, but you left part of your convoy behind! Better depart and wait for them to arrive in this star system."
 	
 	npc
-		government "Republic"
+		government "Navy"
 		system "Menkent"
 		personality surveillance
 		fleet
@@ -9773,7 +9792,7 @@ mission "FW Stack Core 1C"
 	
 	on offer
 		conversation
-			`You receive a message from Freya: "Hello again, Captain! Thanks for your help escorting the materials to Solace. Ever since we started Project Dreadnaught people have been talking about how badly we need a generator that can meet their energy needs, and that's what Delta V Corporation has been working on. So, take a look next time you're on Solace or one of our other major manufacturing centers. Sorry for the mystery surrounding the cargo, but we didn't exactly want to advertise that a huge shipment of fissionable material was headed for Free Worlds space."`
+			`You receive a message from Freya: "Hello again, Captain! Thanks for your help escorting the materials to Solace. Ever since we started Project Dreadnought people have been talking about how badly we need a generator that can meet their energy needs, and that's what Delta V Corporation has been working on. So, take a look next time you're on Solace or one of our other major manufacturing centers. Sorry for the mystery surrounding the cargo, but we didn't exactly want to advertise that a huge shipment of fissionable material was headed for Free Worlds space."`
 				decline
 
 
@@ -9783,9 +9802,13 @@ event "temporary ceasefire"
 	government "Republic"
 		"attitude toward"
 			"Free Worlds" 0
+	government "Navy"
+		"attitude toward"
+			"Free Worlds" 0
 	government "Free Worlds"
 		"attitude toward"
 			"Republic" 0
+			"Navy" 0
 			
 event "fw gets catalytic ramscoop"
 	outfitter "Delta V Advanced"
