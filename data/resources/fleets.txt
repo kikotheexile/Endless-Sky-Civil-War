@@ -215,7 +215,7 @@ fleet "Syndicated Transport"
 # They just use southbound freighters
 # These guys are fighters from the start
 
-fleet "Southern Logistics 1"
+fleet "Southern Logistics"
 	government "Southern Logistics"
 	names "civilian"
 	formation "Vee"
@@ -321,8 +321,8 @@ fleet "Betelgeuse Veles"
 # Freelance Pirates, the easy difficulty behave as opportunistic
 # Merchants, who will appease, run, and actually try to survive
 
-fleet "Freelance Pirate"
-	government "Freelance Pirate"
+fleet "Freelance Pirates"
+	government "Freelance Pirates"
 	names "pirate"
 	formation "Vee"
 	cargo 4
@@ -460,7 +460,7 @@ fleet "Freelance Pirate"
 # Easy use small ships and wolfpacks
 
 fleet "Southern Pirates"
-	government "Southern Pirate"
+	government "Southern Pirates"
 	names "pirate"
 	formation "Vee"
 	cargo 4
@@ -501,11 +501,11 @@ fleet "Navy"
 		"Aletheia" 5
 	variant 10
 		"Zephyrus" 1
-		"Thea Drone" 2
+		"Sentinel Drone" 2
 		"Zephyrus" 1
-		"Thea Drone" 2
+		"Sentinel Drone" 2
 		"Zephyrus" 1
-		"Thea Drone" 2
+		"Sentinel Drone" 2
 	variant 1
 		"Achlys" 5
 
