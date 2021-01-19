@@ -389,6 +389,21 @@ ship "Falcon" "Falcon (Plasma)"
 		"Laser Rifle" 12
 		"Plasma Pistol" 40
 
+ship "Falcon" "Falcon (Pturret)"
+	outfits
+		"Large Radar Jammer"
+		Hyperdrive
+		"Impala Plasma Thruster"
+		"Impala Plasma Steering"
+		"Breeder Reactor"
+		"LP144a Battery Pack"
+		"Plasma Turret"
+		"Water Coolant System MKII"
+		"Liquid Nitrogen Cooler"
+		"White Flame Shield Generator"
+		"Laser Rifle" 12
+		"Plasma Pistol" 40
+
 ship "Falcon" "Falcon (Tank)"
 	outfits
 		"Large Radar Jammer"
