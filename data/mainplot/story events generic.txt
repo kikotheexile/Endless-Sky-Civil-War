@@ -10,66 +10,182 @@
 
 event "remembrance day"
 	date 19 2 3014
+	system "Gamma Corvi"
+		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1500
+		fleet "SMDP" 1000
+		fleet "Southern Pirates 1" 10000
+		fleet "Freelance Miners" 5000
 	system "Spica"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 16000
+		fleet "Southern Logistics 1" 3000
+		fleet "SMDP" 2000
+		fleet "Southern Pirates 1" 6000
+		fleet "Freelance Pirate 1" 10000
 	system "Minkar"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 9000
+		fleet "Southern Logistics 1" 3000
+		fleet "SMDP" 1500
+		fleet "Freelance Pirate 1" 12000
 	system "Acrux"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 6000
+		fleet "Southern Logistics 1" 1000
+		fleet "SMDP" 800
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2400
+		fleet "Freelance Miners" 5000
 	system "Mimosa"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 5000
+		fleet "SMDP" 2500
+		fleet "Freelance Pirate 1" 8000
 	system "Kraz"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 2000
+		fleet "SMDP" 800
 	system "Izar"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1800
+		fleet "SMDP" 800
 	system "Zeta Centauri"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 2000
+		fleet "SMDP" 1500
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
 	system "Hadar"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1000
+		fleet "SMDP" 800
+		fleet "Southern Pirates 1" 4000
+		fleet "Freelance Pirate 1" 9000
 	system "Alkaid"
 		government "Southern Mutual Defense Pact"
+		fleet "SMDP" 800
+		fleet "Southern Logistics 1" 5000
+		fleet "Southern Pirates 1" 2400
+		fleet "Freelance Pirate 1" 5000
+		fleet "Freelance Miners" 3000
 	system "Zubeneschamali"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1500
+		fleet "SMDP" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
+		fleet "Freelance Miners" 2000
 	system "Kochab"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 2000
+		fleet "SMDP" 3000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 	system "Ildaria"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 2000
+		fleet "SMDP" 3000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 	system "Zubenelgenubi"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1500
+		fleet "SMDP" 2000
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
 	system "Sabik"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 900
+		fleet "SMDP" 1200
 	system "Unukalhai"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 4000
+		fleet "Southern Pirates 1" 3000
+		fleet "SMDP" 4000
+		fleet "Freelance Miners" 3000
 	system "Kornephoros"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 6000
+		fleet "Southern Logistics 1" 1200
+		fleet "Southern Pirates 1" 3000
+		fleet "SMDP" 2000
+		fleet "Freelance Miners" 3000
 	system "Sargas"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 7000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "SMDP" 4000
 	system "Lesath"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 2000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "SMDP" 5000
 	system "Aldhibain"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 600
+		fleet "SMDP" 600
+		fleet "Southern Pirates 1" 800
+		fleet "Freelance Pirate 1" 2000
+		fleet "Freelance Miners" 3000
 	system "Dschubba"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "SMDP" 3000
+		fleet "Freelance Miners" 2000
 	system "Atria"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
+		fleet "SMDP" 8000
+		fleet "Freelance Miners" 2000
 	system "Alniyat"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 700
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "SMDP" 800
 	system "Han"
 		government "Southern Mutual Defense Pact"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 5000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 5000
+		fleet "SMDP" 4000
 	system "Pherkad"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1000
+		fleet "SMDP" 700
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
 	system "Yed Prior"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Logistics 1" 1600
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
+		fleet "SMDP" 3000
+		fleet "Freelance Miners" 1600
 	system "Beta Lupi"
 		government "Southern Mutual Defense Pact"
+		fleet "Southern Pirates 1" 1500
+		fleet "Freelance Pirate 1" 2500
+		fleet "SMDP" 2000
+		fleet "Freelance Miners" 3000
 	system "Kappa Centauri"
 		government "Southern Mutual Defense Pact"
-
-event "defected: free worlds"
-	#Placeholder empty mission
-
-event "fw tarazed joins"
-	#Placeholder empty mission
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "SMDP" 2000
 
 mission "remembrance day"
 	landing
@@ -91,10 +207,10 @@ event "war begins"
 	date 4 7 3014
 	system "Gamma Corvi"
 		government "Free Worlds"
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 1400
-		fleet "Small Free Worlds" 600
-		fleet "Large Free Worlds" 1300
+		fleet "Southern Logistics 1" 1500
+		fleet "Free Worlds" 1000
+		fleet "Southern Pirates 1" 10000
+		fleet "Freelance Miners" 5000
 	system Castor
 		pos -452 -17
 		government Republic
@@ -112,11 +228,10 @@ event "war begins"
 		trade Medical 677
 		trade Metal 275
 		trade Plastic 467
-		fleet "Small Northern Merchants" 600
-		fleet "Large Northern Merchants" 800
-		fleet "Paradise Merchants" 800
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 500
+		fleet "Northstar Shipping 1" 600
+		fleet "Freelance Merchant 1" 800
+		fleet "Lionheart Shipping" 800
+		fleet "Navy" 1000
 	system Pollux
 		pos -465 4
 		government Republic
@@ -134,90 +249,224 @@ event "war begins"
 		trade Medical 677
 		trade Metal 275
 		trade Plastic 467
-		fleet "Small Northern Merchants" 600
-		fleet "Large Northern Merchants" 800
-		fleet "Paradise Merchants" 800
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 500
+		fleet "Northstar Shipping 1" 500
+		fleet "Freelance Merchant 1" 800
+		fleet "Lionheart Shipping" 600
+		fleet "Navy" 1000
+		fleet "Caravan" 5000
 	system "Spica"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 16000
+		fleet "Southern Logistics 1" 3000
+		fleet "Free Worlds" 2000
+		fleet "Southern Pirates 1" 6000
+		fleet "Freelance Pirate 1" 10000
 	system "Minkar"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 9000
+		fleet "Southern Logistics 1" 3000
+		fleet "Free Worlds" 1500
+		fleet "Freelance Pirate 1" 12000
 	system "Acrux"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 6000
+		fleet "Southern Logistics 1" 1000
+		fleet "Free Worlds" 800
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2400
+		fleet "Freelance Miners" 5000
 	system "Mimosa"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 16000
+		fleet "Southern Logistics 1" 5000
+		fleet "Free Worlds" 2500
+		fleet "Freelance Pirate 1" 8000
 	system "Kraz"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 2000
+		fleet "Free Worlds" 800
 	system "Izar"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 7000
+		fleet "Southern Logistics 1" 1800
+		fleet "Free Worlds" 800
 	system "Zeta Centauri"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 8000
+		fleet "Southern Logistics 1" 2000
+		fleet "Free Worlds" 1500
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
 	system "Hadar"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 1000
+		fleet "Free Worlds" 800
+		fleet "Southern Pirates 1" 4000
+		fleet "Freelance Pirate 1" 9000
 	system "Alkaid"
 		government "Free Worlds"
+		fleet "Free Worlds" 800
+		fleet "Navy Surveillance" 16000
+		fleet "Southern Logistics 1" 5000
+		fleet "Southern Pirates 1" 2400
+		fleet "Freelance Pirate 1" 5000
+		fleet "Freelance Miners" 3000
 	system "Zubeneschamali"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 5000
+		fleet "Southern Logistics 1" 1500
+		fleet "Free Worlds" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
+		fleet "Freelance Miners" 2000
 	system "Kochab"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 2000
+		fleet "Free Worlds" 3000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 	system "Ildaria"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 2000
+		fleet "Free Worlds" 3000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 	system "Zubenelgenubi"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 5000
+		fleet "Southern Logistics 1" 1500
+		fleet "Free Worlds" 2000
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
 	system "Sabik"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 900
+		fleet "Free Worlds" 1200
 	system "Unukalhai"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 4000
+		fleet "Southern Pirates 1" 3000
+		fleet "Free Worlds" 4000
+		fleet "Freelance Miners" 3000
 	system "Kornephoros"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 6000
+		fleet "Southern Logistics 1" 1200
+		fleet "Southern Pirates 1" 3000
+		fleet "Free Worlds" 2000
+		fleet "Freelance Miners" 3000
 	system "Sargas"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 7000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "Free Worlds" 4000
 	system "Lesath"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 2000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "Free Worlds" 5000
 	system "Aldhibain"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 600
+		fleet "Free Worlds" 600
+		fleet "Southern Pirates 1" 800
+		fleet "Freelance Pirate 1" 2000
+		fleet "Freelance Miners" 3000
 	system "Dschubba"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "Free Worlds" 3000
+		fleet "Freelance Miners" 2000
 	system "Atria"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
+		fleet "Free Worlds" 8000
+		fleet "Freelance Miners" 2000
 	system "Alniyat"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 5000
+		fleet "Southern Logistics 1" 700
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "Free Worlds" 800
 	system "Han"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Logistics 1" 5000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 5000
+		fleet "Free Worlds" 4000
 	system "Pherkad"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 5000
+		fleet "Southern Logistics 1" 1000
+		fleet "Free Worlds" 700
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
 	system "Yed Prior"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 8000
+		fleet "Southern Logistics 1" 1600
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
+		fleet "Free Worlds" 3000
+		fleet "Freelance Miners" 1600
 	system "Beta Lupi"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 10000
+		fleet "Southern Pirates 1" 1500
+		fleet "Freelance Pirate 1" 2500
+		fleet "Free Worlds" 2000
+		fleet "Freelance Miners" 3000
 	system "Kappa Centauri"
 		government "Free Worlds"
+		fleet "Navy Surveillance" 1000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Free Worlds" 2000
 	system "Castor"
-		fleet "Small Northern Merchants" 800
-		fleet "Large Northern Merchants" 1100
-		fleet "Small Republic" 800
-		fleet "Large Republic" 400
+		fleet "Northstar Shipping 1" 600
+		fleet "Freelance Merchant 1" 800
+		fleet "Lionheart Shipping" 800
+		fleet "Caravan" 3000
+		fleet "Navy" 1000
 	system "Pollux"
-		fleet "Small Northern Merchants" 700
-		fleet "Large Northern Merchants" 1100
-		fleet "Small Republic" 700
-		fleet "Large Republic" 900
+		fleet "Northstar Shipping 1" 500
+		fleet "Freelance Merchant 1" 800
+		fleet "Lionheart Shipping" 600
+		fleet "Navy" 1000
+		fleet "Caravan" 3000
 	system Vega
-		fleet "Small Northern Merchants" 1000
-		fleet "Large Northern Merchants" 4000
-		fleet "Small Republic" 900
-		fleet "Large Republic" 1000
+		fleet "Northstar Shipping 1" 800
+		fleet "Freelance Merchant 1" 3000
+		fleet "Navy" 1600
+		fleet "Freelance Miners" 5000
 	system Denebola
-		fleet "Small Northern Merchants" 1000
-		fleet "Large Northern Merchants" 3000
-		fleet "Small Republic" 700
-		fleet "Large Republic" 900
+		fleet "Northstar Shipping 1" 800
+		fleet "Freelance Merchant 1" 2000
+		fleet "Navy" 1000
 	system Merak
-		fleet "Small Northern Merchants" 1500
-		fleet "Large Northern Merchants" 4000
-		fleet "Small Republic" 1100
-		fleet "Large Republic" 1300
+		fleet "Navy" 600
+		fleet "Northstar Shipping 1" 800
+		fleet "Southern Logistics 1" 2000
+		fleet "Freelance Merchant 1" 1500
 	planet "Geminus"
 		description `Until recently, Geminus was home to the Republic Navy Yard, an orbital station capable of producing entire fleets. After a series of terrorist attacks, the station has been completely closed off for repairs.`
 		spaceport `	The Navy officers who are in charge here have no time for anyone who is not enlisted in the Navy and participating in the ongoing investigation.`
@@ -237,11 +486,31 @@ event "war begins"
 		description `Since being the target of a terrorist attack, Rampart Station has been all but completely depopulated. Only people with high level clearance are allowed to land and trade during the nuclear scrubbing and reconstruction process.`
 		spaceport `The Spaceport is completely devoid of life, as only a very small number of people are even allowed to dock here.`
 		"required reputation" 2000
+		
+# Modify the Navy fleet so that it is now holding back resources (by using other shipyards vessels)
+
+	fleet "Navy"
+		add variant 10
+			"Vanguard (Particle)"
+			"Protector (Hydragyrum Proton)" 2
+			"Narcissus" 2
+		add variant 10
+			"Leviathan" 1
+			"Firebird" 2
+			"Narcissus" 4
+		add variant 10
+			"Aerie (AMS)" 1
+			"Lance" 2
+			"Aerie (AMS)" 1
+			"Lance" 2
+			"Aerie (AMS)" 1
+			"Lance" 2
+
 
 mission "event: war begins"
 	landing
 	source
-		government "Republic" "Syndicate" "Free Worlds"
+		government "Republic" "Syndicate" "Free Worlds" "Cartel" "Northern Union"
 		attributes "spaceport"
 	to offer
 		has "event: war begins"
@@ -259,382 +528,45 @@ mission "event: war begins"
 
 event "initial deployment 1"
 	date 24 7 3014
-	system "Spica"
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 1700
-		fleet "Small Free Worlds" 800
-		fleet "Large Free Worlds" 1500
-	system "Minkar"
-		fleet "Small Southern Merchants" 700
-		fleet "Large Southern Merchants" 1500
-		fleet "Small Free Worlds" 700
-		fleet "Large Free Worlds" 1200
-	system "Mimosa"
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 2300
-		fleet "Small Free Worlds" 1200
-		fleet "Large Free Worlds" 1900
-	system "Kraz"
-		fleet "Small Southern Merchants" 900
-		fleet "Large Southern Merchants" 1600
-		fleet "Small Free Worlds" 700
-		fleet "Large Free Worlds" 900
-	system "Acrux"
-		fleet "Small Southern Merchants" 500
-		fleet "Large Southern Merchants" 800
-		fleet "Small Free Worlds" 700
-		fleet "Large Free Worlds" 1100
-		fleet "Human Miners" 5000
-	
-	system "Tania Australis"
-		fleet "Small Northern Merchants" 1400
-		fleet "Large Northern Merchants" 2900
-		fleet "Small Republic" 600
-		fleet "Large Republic" 400
-		fleet "Navy Surveillance" 2000
-	planet "Ingot"
-		description `Ingot is a volcanic moon, totally unsuitable for life but rich in metal. The miners who work here must spend all their time inside pressurized buildings. Because Ingot has almost no atmosphere to slow them down, meteorites are a constant danger to the colonists. The shells of the buildings have multiple layers, designed to be self-sealing in any but the largest of impacts. Most of the mining is done remotely by robotic vehicles, but someone still needs to be present to control them and to make repairs when something goes wrong.`
-		description `Ingot is also now home to a burgeoning Navy base, although since the planet is so unlivable most of the troops are just living in ships in orbit.`
-	system "Fala"
-		fleet "Small Northern Merchants" 1900
-		fleet "Large Northern Merchants" 3500
-		fleet "Small Republic" 600
-		fleet "Large Republic" 400
-		fleet "Small Northern Pirates" 4000
-		fleet "Large Northern Pirates" 8000
-		fleet "Navy Surveillance" 2000
 	system "Phecda"
-		fleet "Small Northern Merchants" 900
-		fleet "Small Southern Merchants" 1100
-		fleet "Small Republic" 900
-		fleet "Large Republic" 1100
-		fleet "Navy Surveillance" 2000
+		fleet "Northstar Shipping 1" 700
+		fleet "Freelance Merchant 1" 300
+		fleet "Navy" 500
+		fleet "Freelance Miners" 2000
+	planet "New Sahara"
+		description `New Sahara is mostly desert and savanna, with very little precipitation. A century ago, some entrepreneurs settled here and built a factory complex that is entirely powered by wind and solar energy, because there are so few cloudy days here and the wind and sunshine are so reliable. The factory is mostly autonomous, with only a few thousand people living here to perform maintenance or to grow crops in irrigated fields.`
+		description `	This world is also now home to a burgeoning Humanitarian Corps. Depot, creating an influx of traffic the likes of which the locals have never seen.`
 	system "Algorel"
-		fleet "Small Southern Merchants" 800
-		fleet "Large Southern Merchants" 1200
-		fleet "Small Republic" 700
-		fleet "Large Republic" 500
-		fleet "Small Southern Pirates" 2500
-		fleet "Large Southern Pirates" 8000
-		fleet "Navy Surveillance" 2000
+		fleet "Navy" 600
+		fleet "Southern Logistics 1" 900
+		fleet "Freelance Merchant" 2000
+		fleet "Navy Surveillance" 3000
+		fleet "Caravan" 6000
 	planet "New Wales"
 		description `New Wales is home to a few mining outposts which extract and refine rare earth minerals and heavy metals. It is dangerous work: the mines are deep underground and prone to noxious gases and cave-ins, and the refineries work with molten radioactive materials and caustic chemicals. Due to the somewhat dim light of the star Algorel, and the cloudiness of the atmosphere, this is not a good world for farming, and the population remains quite small.`
 		description `The Republic Navy has planted a base on New Wales: so far, just a densely packed cluster of prefabricated barracks and infirmary buildings on the outskirts of one of the mining colonies.`
-	system "Porrima"
-		fleet "Small Southern Merchants" 1400
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Republic" 1200
-		fleet "Large Republic" 1800
-		fleet "Small Southern Pirates" 9000
-		fleet "Navy Surveillance" 2000
-	system "Ipsing"
-		fleet "Small Southern Merchants" 2800
-		fleet "Large Southern Merchants" 7000
-		fleet "Small Republic" 2500
-		fleet "Large Republic" 4000
-		fleet "Small Southern Pirates" 5000
-		fleet "Navy Surveillance" 2000
-	system "Mizar"
-		fleet "Small Southern Merchants" 1400
-		fleet "Large Southern Merchants" 4500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1400
-		fleet "Small Southern Pirates" 9000
-		fleet "Navy Surveillance" 2000
-	system "Muphrid"
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 4800
-		fleet "Small Republic" 1100
-		fleet "Large Republic" 1900
-		fleet "Small Southern Pirates" 9000
-		fleet "Navy Surveillance" 2000
-	system "Menkent"
-		fleet "Small Southern Merchants" 700
-		fleet "Large Southern Merchants" 1900
-		fleet "Small Republic" 500
-		fleet "Large Republic" 600
-		fleet "Navy Surveillance" 2000
-		fleet "Human Miners" 2000
-	planet "New Austria"
-		description `New Austria is a rugged mountain world, full of snow-capped peaks and valleys so deep and so steep that they rarely see sunlight. The few settlements that have been built here were developed for mining sapphires and rubies; the sapphires found in New Austria range from blue to yellow to black to clear in color, and are used both for industrial abrasives and for jewelry.`
-		description `The Navy has recently requisitioned one of the abandoned mining towns and begun refurbishing it for a secure military base, with the mining tunnels used as deep underground bunkers.`
-
-event "initial deployment 2"
-	date 14 8 3014
-	planet "Martini"
-		"required reputation" 10
-	system "Izar"
-		fleet "Small Southern Merchants" 500
-		fleet "Large Southern Merchants" 1500
-		fleet "Small Free Worlds" 700
-		fleet "Large Free Worlds" 1000
-	system "Zeta Centauri"
-		fleet "Small Southern Merchants" 700
-		fleet "Large Southern Merchants" 1700
-		fleet "Small Free Worlds" 1200
-		fleet "Large Free Worlds" 2000
-		fleet "Small Southern Pirates" 6000
-		fleet "Large Southern Pirates" 9000
-	system "Hadar"
-		fleet "Small Southern Merchants" 400
-		fleet "Large Southern Merchants" 600
-		fleet "Small Free Worlds" 600
-		fleet "Large Free Worlds" 1100
-	system "Alkaid"
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Free Worlds" 6000
-		fleet "Large Free Worlds" 10000
-		fleet "Small Southern Pirates" 4000
-		fleet "Large Southern Pirates" 8000
-	system "Zubeneschamali"
-		fleet "Small Southern Merchants" 500
-		fleet "Large Southern Merchants" 1000
-		fleet "Small Free Worlds" 1400
-		fleet "Large Free Worlds" 2400
-		fleet "Small Southern Pirates" 4000
-		fleet "Large Southern Pirates" 5000
-	system "Kochab"
-		fleet "Small Southern Merchants" 1800
-		fleet "Large Southern Merchants" 5000
-		fleet "Small Southern Pirates" 6000
-		fleet "Small Free Worlds" 5000
-	system "Ildaria"
-		fleet "Small Southern Merchants" 900
-		fleet "Large Southern Merchants" 1800
-		fleet "Small Free Worlds" 2200
-		fleet "Large Free Worlds" 3600
-		fleet "Small Southern Pirates" 4000
-		fleet "Large Southern Pirates" 7000
-	
-	system "Mora"
-		fleet "Small Southern Merchants" 2800
-		fleet "Large Southern Merchants" 5000
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 4000
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 2000
-		fleet "Navy Surveillance" 1600
-	system "Delta Velorum"
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 3000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 5000
-		fleet "Small Republic" 1600
-		fleet "Large Republic" 2400
-		fleet "Navy Surveillance" 1600
-	system "Turais"
-		fleet "Small Southern Merchants" 2000
-		fleet "Large Southern Merchants" 6000
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 7000
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Navy Surveillance" 1600
-	system "Gacrux"
-		fleet "Small Southern Merchants" 2000
-		fleet "Large Southern Merchants" 5000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 4000
-		fleet "Small Republic" 2000
-		fleet "Large Republic" 3000
-		fleet "Navy Surveillance" 1600
-	system "Cor Caroli"
-		fleet "Small Southern Merchants" 700
-		fleet "Large Southern Merchants" 1300
-		fleet "Small Southern Pirates" 2000
-		fleet "Small Republic" 1200
-		fleet "Large Republic" 1800
-		fleet "Navy Surveillance" 1600
-	system "Muhlifain"
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 3500
-		fleet "Small Southern Pirates" 6000
-		fleet "Small Republic" 3000
-		fleet "Large Republic" 4000
-		fleet "Navy Surveillance" 1600
-	system "Vindemiatrix"
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 3000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 4000
-		fleet "Small Republic" 2000
-		fleet "Large Republic" 3000
-		fleet "Navy Surveillance" 1600
-	system "Sarin"
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 3000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 6000
-		fleet "Small Republic" 8000
-		fleet "Large Republic" 15000
-		fleet "Navy Surveillance" 1600
-	system "Alioth"
-		fleet "Small Southern Merchants" 400
-		fleet "Large Northern Merchants" 600
-		fleet "Small Southern Pirates" 1200
-		fleet "Large Southern Pirates" 2400
-		fleet "Small Republic" 3000
-		fleet "Large Republic" 4000
-		fleet "Navy Surveillance" 1600
-	system "Holeb"
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 3000
-		fleet "Small Southern Pirates" 5000
-		fleet "Small Republic" 2000
-		fleet "Large Republic" 3000
-		fleet "Navy Surveillance" 1600
-	system "Arcturus"
-		fleet "Small Southern Merchants" 700
-		fleet "Large Southern Merchants" 3000
-		fleet "Small Southern Pirates" 4000
-		fleet "Small Republic" 2000
-		fleet "Large Republic" 3000
-		fleet "Navy Surveillance" 1600
-	system "Rutilicus"
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 2000
-		fleet "Small Southern Pirates" 8000
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 2000
-		fleet "Navy Surveillance" 1600
-	system "Alphecca"
-		fleet "Small Southern Merchants" 2000
-		fleet "Large Northern Merchants" 3500
-		fleet "Small Southern Pirates" 3000
-		fleet "Small Republic" 3000
-		fleet "Large Republic" 4000
-		fleet "Navy Surveillance" 1600
-	system "Boral"
-		fleet "Small Southern Merchants" 3000
-		fleet "Large Northern Merchants" 8000
-		fleet "Small Southern Pirates" 1500
-		fleet "Small Republic" 7000
-		fleet "Large Republic" 12000
-		fleet "Navy Surveillance" 1600
-	system "Cebalrai"
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 2000
-		fleet "Small Southern Pirates" 4000
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 2000
-		fleet "Navy Surveillance" 1600
-	system "Rasalhague"
-		fleet "Small Southern Merchants" 1500
-		fleet "Large Southern Merchants" 2000
-		fleet "Small Southern Pirates" 4000
-		fleet "Large Southern Pirates" 8000
-		fleet "Small Republic" 3000
-		fleet "Large Republic" 4000
-		fleet "Navy Surveillance" 1600
-
-event "initial deployment 3"
-	date 29 8 3014
-	system "Zubenelgenubi"
-		fleet "Small Southern Merchants" 500
-		fleet "Large Southern Merchants" 900
-		fleet "Small Free Worlds" 800
-		fleet "Large Free Worlds" 1000
-		fleet "Small Southern Pirates" 5000
-		fleet "Large Southern Pirates" 8000
-	system "Unukalhai"
-		fleet "Small Southern Merchants" 900
-		fleet "Large Southern Merchants" 3000
-		fleet "Small Southern Pirates" 3000
-		fleet "Small Free Worlds" 3000
-		fleet "Large Free Worlds" 6000
-	system "Sabik"
-		fleet "Small Southern Merchants" 400
-		fleet "Large Southern Merchants" 600
-		fleet "Small Free Worlds" 1000
-		fleet "Large Free Worlds" 1600
-	system "Aldhibain"
-		fleet "Small Southern Merchants" 400
-		fleet "Large Southern Merchants" 500
-		fleet "Small Free Worlds" 600
-		fleet "Large Free Worlds" 700
-		fleet "Small Southern Pirates" 1400
-		fleet "Large Southern Pirates" 3000
-	system "Kornephoros"
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 700
-		fleet "Small Southern Pirates" 5000
-		fleet "Small Free Worlds" 1000
-		fleet "Large Free Worlds" 2000
-		fleet "Human Miners" 3000
-	
-	system "Wei"
-		fleet "Small Southern Merchants" 800
-		fleet "Large Southern Merchants" 2500
-		fleet "Small Southern Pirates" 6000
-		fleet "Small Republic" 800
-		fleet "Large Republic" 700
-		fleet "Navy Surveillance" 1200
-	system "Seginus"
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 2700
-		fleet "Small Southern Pirates" 8000
-		fleet "Small Republic" 1200
-		fleet "Large Republic" 1400
-		fleet "Navy Surveillance" 1200
-	system "Alnasl"
-		fleet "Small Southern Merchants" 1300
-		fleet "Large Southern Merchants" 2500
-		fleet "Small Southern Pirates" 6000
-		fleet "Small Republic" 900
-		fleet "Large Republic" 1100
-		fleet "Navy Surveillance" 1200
-	system "Eber"
-		fleet "Small Southern Merchants" 1900
-		fleet "Large Southern Merchants" 2900
-		fleet "Small Southern Pirates" 3000
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1500
-		fleet "Navy Surveillance" 1200
-	system "Alpha Arae"
-		fleet "Small Southern Merchants" 2100
-		fleet "Large Southern Merchants" 8000
-		fleet "Small Southern Pirates" 6000
-		fleet "Large Southern Pirates" 13000
-		fleet "Small Republic" 900
-		fleet "Large Republic" 800
-		fleet "Navy Surveillance" 1200
-	system "Kaus Borealis"
-		fleet "Small Southern Merchants" 900
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Southern Pirates" 8000
-		fleet "Small Republic" 1100
-		fleet "Large Republic" 800
-		fleet "Navy Surveillance" 1200
-
-mission "Southern Carriers Trigger"
-	landing
-	invisible
-	to offer
-		has "event: initial deployment 3"
-	on offer
-		event "southern carriers 1" 90
-		event "southern carriers 2" 180
-		event "southern carriers 3" 270
-		event "southern carriers 4" 360
-		fail
-
-event "southern carriers 1"
 	shipyard "Syndicate Basics"
 		"Barb"
+	shipyard "Syndicate Advanced"
+		"Aegis"
+	shipyard "Syndicated Shipyards"
+		"Aegis"
 	shipyard "Southbound Basics"
 		"Finch"
 	shipyard "Southbound Advanced"
 		"Nest"
 	outfitter "Syndicate Advanced"
 		"X1050 Ion Engines"
-	fleet "Small Free Worlds"
+	fleet "Free Worlds"
 		fighters "free worlds fighters"
 		add variant 1
 			"Nest"
 			"Finch" 2
 
-event "southern carriers 2"
+event "initial deployment 2"
+	date 14 8 3014
+	planet "Martini"
+		"required reputation" 10
 	shipyard "Basic Ships"
 		"Dagger"
 		"Boxwing"
@@ -648,8 +580,7 @@ event "southern carriers 2"
 		"Skein"
 	outfitter "Syndicate Basics"
 		"X1050 Ion Engines"
-	fleet "Large Southern Merchants"
-		fighters "free worlds fighter"
+	fleet "Southern Logistics 1"
 		add variant 15
 			"Hauler III"
 			"Nest"
@@ -668,25 +599,18 @@ event "southern carriers 2"
 			"Finch" 6
 			"Boxwing" 6
 
-	fleet "Small Independent"
-		fighters "free worlds fighter"
-		add variant 1
-			"Nest"
-			"Barb" 2
-		add variant 1
-			"Nest"
-			"Barb"
-			"Boxwing"
-
-event "southern carriers 3"
-	shipyard "Tarazed Basics"
-		"Finch"
-		"Barb"
+event "initial deployment 3"
+	date 29 8 3014
 	shipyard "Tarazed Advanced"
 		"Nest"
 		"Roost"
 		"Skein"
-	fleet "Large Free Worlds"
+	shipyard "Tarazed Shipyards"
+		"Nest"
+		"Roost"
+		"Skein"
+		"Aegis"
+	fleet "Free Worlds"
 		fighters "free worlds fighters"
 		add variant 2
 			"Roost"
@@ -703,7 +627,7 @@ event "southern carriers 3"
 			"Finch" 8
 			"Boxwing" 4
 
-	fleet "Small Southern Pirates"
+	fleet "Southern Pirates 1"
 		add variant 1
 			"Nest"
 			"Barb" 2
@@ -711,216 +635,75 @@ event "southern carriers 3"
 			"Nest"
 			"Barb (Gatling)" 2
 
-event "southern carriers 4"
-	fleet "Large Northern Merchants"
-		fighters "free worlds fighter"
-		add variant 2
-			"Hauler III"
-			"Hauler II"
-			"Roost (Sidewinder)"
-			"Dagger" 2
-			"Lance" 2
-		add variant 2
-			"Hauler III"
-			"Hauler II"
-			"Roost (Sidewinder)"
-			"Lance (Gatling)" 2
-			"Lance" 2
-		add variant 2
-			"Roost" 3
-			"Dagger" 4
-			"Lance" 4
-			"Boxwing" 4
-		add variant 2
-			"Roost" 3
-			"Lance (Gatling)" 4
-			"Lance" 4
-			"Boxwing" 4
-
-	fleet "Large Southern Pirates"
-		add variant 1
-			"Roost"
-			"Barb" 4
-		add variant 1
-			"Roost"
-			"Barb (Gatling)" 4
-
-	fleet "Large Independent"
-		fighters "free worlds fighter"
-		add variant 2
-			"Roost"
-			"Barb" 4
-		add variant 2
-			"Roost"
-			"Barb" 2
-			"Boxwing" 2
-
-	fleet "Small Northern Pirates"
-		add variant 1
-			"Nest"
-			"Lance" 2
-
-	fleet "Large Northern Pirates"
-		add variant 1
-			"Roost"
-			"Lance" 4
-		add variant 1
-			"Roost"
-			"Lance (Gatling)" 4
-
-event "initial deployment 4"
-	date 17 9 3014
-	planet "Geminus"
-		"required reputation" 10
-	system "Sargas"
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 2500
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 5000
-		fleet "Small Free Worlds" 1000
-		fleet "Large Free Worlds" 1500
-		fleet "Navy Surveillance" 800
-	system "Dschubba"
-		fleet "Small Southern Merchants" 800
-		fleet "Large Southern Merchants" 2600
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 6000
-		fleet "Small Free Worlds" 2000
-		fleet "Large Free Worlds" 3000
-		fleet "Navy Surveillance" 800
-	system "Lesath"
-		fleet "Small Southern Merchants" 800
-		fleet "Large Southern Merchants" 1600
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 7000
-		fleet "Small Free Worlds" 800
-		fleet "Large Free Worlds" 1100
-		fleet "Navy Surveillance" 800
-	system "Atria"
-		fleet "Small Southern Merchants" 700
-		fleet "Large Southern Merchants" 2600
-		fleet "Small Southern Pirates" 5000
-		fleet "Large Southern Pirates" 8000
-		fleet "Small Free Worlds" 1000
-		fleet "Large Free Worlds" 2100
-	system "Alniyat"
-		fleet "Small Southern Merchants" 500
-		fleet "Large Southern Merchants" 600
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 4000
-		fleet "Small Free Worlds" 1500
-		fleet "Large Free Worlds" 4000
-	system "Han"
-		fleet "Small Southern Merchants" 800
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 9000
-		fleet "Small Free Worlds" 3000
-		fleet "Large Free Worlds" 8000
-	system "Pherkad"
-		fleet "Small Southern Merchants" 500
-		fleet "Large Southern Merchants" 700
-		fleet "Small Free Worlds" 900
-		fleet "Large Free Worlds" 1700
-		fleet "Small Southern Pirates" 1000
-		fleet "Large Southern Pirates" 1900
-	system "Beta Lupi"
-		fleet "Small Southern Merchants" 800
-		fleet "Small Southern Pirates" 1100
-		fleet "Large Southern Pirates" 1600
-		fleet "Small Free Worlds" 4000
-		fleet "Large Free Worlds" 8000
-	system "Yed Prior"
-		fleet "Small Northern Merchants" 800
-		fleet "Large Northern Merchants" 1100
-		fleet "Small Southern Pirates" 1000
-		fleet "Large Southern Pirates" 2000
-		fleet "Small Free Worlds" 5000
-		fleet "Large Free Worlds" 8000
-	system "Kappa Centauri"
-		fleet "Small Southern Merchants" 900
-		fleet "Large Southern Merchants" 2700
-		fleet "Small Southern Pirates" 1600
-		fleet "Large Southern Pirates" 2000
-		fleet "Small Free Worlds" 3000
-		fleet "Large Free Worlds" 5000
-	
-	system "Rastaban"
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 1900
-		fleet "Small Southern Pirates" 4000
-		fleet "Large Southern Pirates" 8000
-		fleet "Small Republic" 900
-		fleet "Large Republic" 700
-		fleet "Navy Surveillance" 1200
-	system "Sabik"
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 800
-		fleet "Small Free Worlds" 800
-		fleet "Large Free Worlds" 1200
-		fleet "Navy Surveillance" 800
-	system "Aldhibain"
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 800
-		fleet "Small Free Worlds" 600
-		fleet "Large Free Worlds" 600
-		fleet "Small Southern Pirates" 1400
-		fleet "Large Southern Pirates" 3000
-		fleet "Navy Surveillance" 800
-	system "Kornephoros"
-		fleet "Small Southern Merchants" 800
-		fleet "Large Southern Merchants" 1000
-		fleet "Small Southern Pirates" 5000
-		fleet "Small Free Worlds" 900
-		fleet "Large Free Worlds" 1700
-		fleet "Navy Surveillance" 800
-		fleet "Human Miners" 3000
-
-
 
 event "capture of Kornephoros"
 	system "Kornephoros"
 		government "Republic"
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 1400
-		fleet "Small Republic" 300
-		fleet "Large Republic" 500
-		fleet "Navy Surveillance" 800
-	system "Sabik"
-		fleet "Small Southern Merchants" 800
-		fleet "Large Southern Merchants" 1000
-		fleet "Small Free Worlds" 400
-		fleet "Large Free Worlds" 600
+		fleet "Navy" 600
 	planet "Clink"
 		description `The mining outpost is swarming with Navy guards; they seem to have turned this moon into a temporary base of operations. The mine has been shut down, and no one is being allowed in or out of the mining outpost. It is not clear whether the miners are prisoners, or merely under a very tight watch.`
 		security 1
-	planet "Deep"
-		spaceport `The spaceport is built on a large island, a now-extinct volcano with an elevation of several kilometers at its center. Most of the large-scale fishing here is done by a single company, Poseidon Industries, who also built and maintain the spaceport. Steep winding roads and sturdy cement homes and warehouses line the mountain slopes, and below you in the harbor several massive trawling vessels are moored. On the outskirts of the spaceport are the ramshackle houses and open-air marketplace used by the smaller, independent fishing families.`
+	planet "New Roanoke"
+		spaceport `The spaceport is built on a large island and far up the side of an dormant volcano. Most of the large-scale fishing here is done by a single company, Poseidon Industries, who built and maintain the spaceport. Steep winding roads and sturdy cement homes and warehouses line the mountain slopes, and below you in the harbor massive trawling vessels are moored. On the outskirts of the spaceport are the ramshackle houses and open-air marketplace used by the smaller, independent fishing families.`
 		spaceport `	There are hundreds of Navy officers patrolling this small spaceport, looking for any signs of local resistance.`
 		security 1
 
 
 
 event "start of hostilities"
-	government "Republic"
-		"attitude toward"
-			"Free Worlds" -.2
-			"Merchant" .01
-			"Pirate" -.01
-	government "Free Worlds"
-		"attitude toward"
-			"Republic" -.2
+government "Republic Navy"
+	"attitude toward"
+		"Local" 1
+		"Alpha" -.3
+		"Freelance Merchants" .25
+		"Militia" .1
+		"Freelance Pirates" -.3
+		"Republic Navy Humanitarian Corps" 1
+		"Republic" 1
+		"Navy Intelligence" 1
+		"Navy (Oathkeeper)" 1
+		"Neutral" .1
+		"Northern Union" -.3
+		"Free Worlds" -.2
+
+government "Free Worlds"
+	color .06 .68 0
+	"player reputation" 1
+	"attitude toward"
+		"Local" 2
+		"Freelance Merchants" .3
+		"Militia" .3
+		"Freelance Pirates" -.4
+		"Neutral" .1
+		"Navy Intelligence" 1
+		"Republic Navy" -.2
 	"reputation: Republic" <?= -10
 
 event "start of hostilities rns"
-	government "Republic"
-		"attitude toward"
-			"Free Worlds" -.2
-			"Merchant" .01
-			"Pirate" -.01
-	government "Free Worlds"
-		"attitude toward"
-			"Republic" -.2
+government "Republic Navy"
+	"attitude toward"
+		"Local" 1
+		"Alpha" -.3
+		"Freelance Merchants" .25
+		"Militia" .1
+		"Freelance Pirates" -.3
+		"Republic Navy Humanitarian Corps" 1
+		"Republic" 1
+		"Navy Intelligence" 1
+		"Navy (Oathkeeper)" 1
+		"Neutral" .1
+		"Northern Union" -.3
+		"Free Worlds" -.2
+
+government "Free Worlds"
+	"attitude toward"
+		"Local" 2
+		"Freelance Merchants" .3
+		"Militia" .3
+		"Freelance Pirates" -.4
+		"Neutral" .1
+		"Navy Intelligence" 1
+		"Republic Navy" -.2
 	"reputation: Free Worlds" <?= .1
 
 event "joined the free worlds"
@@ -941,104 +724,88 @@ event "temporary ceasefire"
 
 event "recapture of Kornephoros"
 	system "Aldhibain"
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 800
-		fleet "Small Free Worlds" 600
-		fleet "Large Free Worlds" 600
+		fleet "Southern Logistics 1" 600
+		fleet "Free Worlds" 600
+		fleet "Southern Pirates 1" 800
+		fleet "Freelance Pirate 1" 2000
+		fleet "Freelance Miners" 3000
 	system "Kornephoros"
 		government "Free Worlds"
-		fleet "Small Southern Merchants" 800
-		fleet "Large Southern Merchants" 1000
-		fleet "Small Free Worlds" 900
-		fleet "Large Free Worlds" 1700
-		fleet "Human Miners" 3000
+		fleet "Southern Logistics 1" 1200
+		fleet "Southern Pirates 1" 3000
+		fleet "Free Worlds" 2000
+		fleet "Freelance Miners" 3000
 	planet "Clink"
-		description `About a decade ago, a mining corporation from Zug planted a colony on Clink for harvesting some rare earth minerals that are present in this moon's crust due to its unusually high rate of asteroid impacts. The atmosphere here is too thin to breathe without a respirator, and because of the low gravity, the dust raised by the mining operations hangs perpetually in the air.`
-		description `The miners who work here are a tight-knit group, since most of them were part of the original colonization team. They are not particularly open to outsiders, and the facilities here are so rudimentary that they do not even stock fuel for visiting ships.`
+		description `About a decade ago, a mining corporation from Zug planted a colony on Clink to harvest rare earth minerals present in the moon's crust, left behind from its high rate of asteroid impacts. The atmosphere is too thin to breathe without a respirator, and due to the low gravity, dust raised by the mining operation hangs perpetually in the air.`
+		description `	The miners who work here are a tight-knit group, many of them part of the original colonization team. The facilities here are so rudimentary and seldom visited by outsiders that they do not even stock fuel for visiting ships.`
 		security .5
-	planet "Deep"
-		spaceport `The spaceport is built on a large island, a now-extinct volcano with an elevation of several kilometers at its center. Most of the large-scale fishing here is done by a single company, Poseidon Industries, who also built and maintain the spaceport. Steep winding roads and sturdy cement homes and warehouses line the mountain slopes, and below you in the harbor several massive trawling vessels are moored. On the outskirts of the spaceport are the ramshackle houses and open-air marketplace used by the smaller, independent fishing families.`
+	planet "New Roanoke"
+		spaceport `The spaceport is built on a large island and far up the side of an dormant volcano. Most of the large-scale fishing here is done by a single company, Poseidon Industries, who built and maintain the spaceport. Steep winding roads and sturdy cement homes and warehouses line the mountain slopes, and below you in the harbor massive trawling vessels are moored. On the outskirts of the spaceport are the ramshackle houses and open-air marketplace used by the smaller, independent fishing families.`
 		security .5
-
-	fleet "Small Republic"
-		add variant 10
-			"Protector"
-
-
 
 event "oathkeepers founded"
 	system Canopus
-		fleet "Small Northern Merchants" 900
-		fleet "Large Northern Merchants" 700
-		fleet "Small Oathkeeper" 1000
-		fleet "Large Oathkeeper" 2000
+		fleet "Northstar Shipping 1" 900
+		fleet "Freelance Merchant 1" 700
+		fleet "Navy Oathkeeper" 1000
 	system Alheka
-		fleet "Small Northern Merchants" 1000
-		fleet "Large Northern Merchants" 3000
-		fleet "Small Oathkeeper" 1200
-		fleet "Large Oathkeeper" 4000
-		fleet "Small Northern Pirates" 2000
-		fleet "Large Northern Pirates" 2000
+		fleet "Northstar Shipping 1" 1000
+		fleet "Freelance Merchant 1" 3000
+		fleet "Navy Oathkeeper" 1200
+		fleet "Northern Union" 2000
+		fleet "Freelance Miners" 3000
 	system Mirzam
-		fleet "Small Northern Merchants" 2000
-		fleet "Large Northern Merchants" 2000
-		fleet "Small Oathkeeper" 3000
-		fleet "Large Oathkeeper" 4000
-		fleet "Small Northern Pirates" 5000
-		fleet "Large Northern Pirates" 8000
+		fleet "Northstar Shipping 1" 2000
+		fleet "Freelance Merchant 1" 2000
+		fleet "Navy Oathkeeper" 3000
+		fleet "Freelance Pirate 1" 5000
+		fleet "Northern Union" 8000
 	system Mebsuta
-		fleet "Small Northern Merchants" 3000
-		fleet "Large Northern Merchants" 5000
-		fleet "Small Northern Pirates" 4000
-		fleet "Large Northern Pirates" 8000
-		fleet "Small Oathkeeper" 12000
+		fleet "Northstar Shipping 1" 3000
+		fleet "Freelance Merchant 1" 5000
+		fleet "Northern Union" 8000
+		fleet "Navy Oathkeeper" 12000
 	system Betelgeuse
-		fleet "Small Northern Merchants" 2000
-		fleet "Large Northern Merchants" 800
-		fleet "Small Oathkeeper" 1000
-		fleet "Large Oathkeeper" 2000
-		fleet "Large Northern Pirates" 4000
+		fleet "Northstar Shipping 1" 2000
+		fleet "Navy Oathkeeper" 2000
+		fleet "Northern Union" 4000
+		fleet "Freelance Miners" 3000
+		fleet "Caravan" 5000
 	system Rigel
-		fleet "Small Northern Merchants" 2000
-		fleet "Large Northern Merchants" 4000
-		fleet "Small Oathkeeper" 1000
-		fleet "Large Oathkeeper" 2000
-		fleet "Small Northern Pirates" 3000
-		fleet "Large Northern Pirates" 5000
+		fleet "Northstar Shipping 1" 2000
+		fleet "Freelance Merchant 1" 4000
+		fleet "Navy Oathkeeper" 3000
+		fleet "Northern Union" 5000
+		fleet "Freelance Miners" 2000
 	system Alnitak
-		fleet "Small Northern Pirates" 3000
-		fleet "Large Northern Pirates" 5000
-		fleet "Small Oathkeeper" 500
-		fleet "Large Oathkeeper" 1000
+		fleet "Northstar Shipping 1" 3000
+		fleet "Northern Union" 5000
+		fleet "Navy Oathkeeper" 2000
 	system Saiph
-		fleet "Small Northern Merchants" 1200
-		fleet "Large Northern Merchants" 2000
-		fleet "Small Northern Pirates" 2000
-		fleet "Large Northern Pirates" 3000
-		fleet "Small Oathkeeper" 1000
-		fleet "Large Oathkeeper" 2000
+		fleet "Northstar Shipping 1" 1200
+		fleet "Freelance Merchant 1" 2000
+		fleet "Northern Union" 3000
+		fleet "Navy Oathkeeper" 7000
 	system Mintaka
-		fleet "Small Northern Pirates" 2000
-		fleet "Large Northern Pirates" 2000
-		fleet "Large Oathkeeper" 2000
-		fleet "Small Northern Merchants" 4000
+		fleet "Northern Union" 2000
+		fleet "Navy Oathkeeper" 5000
+		fleet "Northstar Shipping 1" 4000
+		fleet "Freelance Miners" 2000
 	system Almaaz
-		fleet "Small Northern Pirates" 500
-		fleet "Large Northern Pirates" 600
-		fleet "Large Oathkeeper" 4000
+		fleet "Northstar Shipping 1" 500
+		fleet "Northern Union" 600
+		fleet "Navy Oathkeeper" 7000
 	system Gorvi
-		fleet "Small Northern Pirates" 1000
-		fleet "Large Northern Pirates" 1000
-		fleet "Large Oathkeeper" 4000
-		fleet "Small Northern Merchants" 8000
+		fleet "Northern Union" 1000
+		fleet "Northstar Shipping 1" 8000
+		fleet "Navy Oathkeeper" 7000
 	system Tortor
-		fleet "Small Northern Pirates" 1000
-		fleet "Large Northern Pirates" 1000
-		fleet "Large Oathkeeper" 6000
-		fleet "Small Northern Merchants" 6000
+		fleet "Northern Union" 1000
+		fleet "Navy Oathkeeper" 6000
+		fleet "Northstar Shipping 1" 200
 	planet Farpoint
-		description `Farpoint, on the northernmost end of human space, is a rocky desert planet home to a Republic Navy base and not much else. Farming is possible only within greenhouses, and this system is too far from the galactic center to be desirable for trade or industry.`
-		description `	Lately the Navy base on Farpoint is growing, because it has become the new home of the Navy Oathkeepers, a small branch of the Navy that has sworn to stay uninvolved in the conflict with the Free Worlds.`
+		description `On the northernmost end of human space, Farpoint is a rocky desert planet home to a solitary Republic Navy base. The only notable plant life around is found within greenhouses, and due to the system's distance from the galactic center, the endless machine of capitalism has passed the planet by.`
+		description `	Lately the Navy base on Farpoint is growing because it has become the new home of the Navy Oathkeepers.`
 
 
 
@@ -1057,9 +824,9 @@ event "Tarazed neutrality"
 event "plasma turret available"
 	outfitter "Kraz Advanced"
 		"Plasma Turret"
-	fleet "Large Free Worlds"
+	fleet "Free Worlds"
 		add variant 3
-			"Falcon (Plasma)"
+			"Falcon (Plasma)" 3
 	planet "Omega Station"
 		description `Until recently this station had been little more than an abandoned warehouse orbiting an out-of-the-way planet. Due to the need for ships and repairs, Southbound has leased this former Caravan station to function as a shipyard.`
 		description `	Southbound has begun constructing full assembly lines to produce ships even larger than their famed Bastion, and repair vessels the size of Falcons and even Republic Carriers, some of which have been captured in recent battles and skirmishes.`
@@ -1084,14 +851,6 @@ event "plasma turret available"
 		shipyard "Megaparsec Advanced"
 
 event "fw conservatory founded"
-	system "Yed Prior"
-		fleet "Small Northern Merchants" 500
-		fleet "Large Northern Merchants" 800
-		fleet "Small Southern Pirates" 1200
-		fleet "Large Southern Pirates" 2400
-		fleet "Small Free Worlds" 1000
-		fleet "Large Free Worlds" 1500
-		fleet "Human Miners" 1600
 	planet Winter
 		description `The dense clouds in Winter's atmosphere block out much of the sunlight, creating a frigid landscape below. The planet was not settled until about a century ago, when a group of investors from Pherkad decided to build a manufacturing center here, rather than trying to find more land on the already overcrowded planet of Solace. Claiming that the industrial emissions of carbon dioxide and other greenhouse gases would eventually warm the planet and turn it into a tropical paradise, they were able to draw enough settlers to keep the factories going.`
 		description `	Winter is home to the Free Worlds Conservatory, a new university that is focused on making terraforming technology and expertise available at a reasonable price, as well as on ecological protection and renewal.`
@@ -1102,62 +861,49 @@ event "fw conservatory founded"
 event "Thule becomes independent"
 	system Men
 		government "Independent"
-		fleet "Small Independent" 400
-		fleet "Large Independent" 600
-		fleet "Small Southern Merchants" 2000
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Southern Pirates" 2500
-		fleet "Large Southern Pirates" 5000
-		fleet "Large Free Worlds" 1500
+		fleet "Southern Independent" 400
+		fleet "Southern Logistics 1" 600
+		fleet "Free Worlds" 2000
 	planet Thule
 		description `Thule is a mountainous world with a population of nearly a billion, settled in the early days of space exploration. When the colony was first established, the Earth government did not yet have the strength to control any system but its own, and when the Republic was formed, Thule did not join, and has repulsed all efforts to force them to do so.`
 		description `	Until recently, Thule was a well-known den of pirate activity, but the major tribal authorities have now forsworn piracy in the interest of keeping the Free Worlds from further meddling in their affairs. However, it is likely that all manner of illegal activity is still going on in secret here.`
 	planet "Smuggler's Den"
 		description `Smuggler's Den was formerly known as Grendel Station, back when it was an operating refinery. After that, it was taken over by pirates, and became a haven for all manner of smugglers and privateers. Now, at least in theory it is an independent station, no longer allied with the pirates. In practice, you suspect a fair amount of piracy still goes on here.`
 		description `The repair shops here can make a variety of legal and illegal modifications to your ship, and in the shipyard you can buy refurbished starships... if it does not trouble your conscience to think about the likely fates of their previous owners.`
-		spaceport `It is a strange but indisputable fact that anarchists smell worse than ordinary human beings. In this day and age, where even the cheapest shuttlecraft at least has a sonic shower, there is no logical explanation for it, except that anarchist tendencies must somehow go hand in hand with a tendency to reject society's norms around hygiene. Here in a space station, with nothing but recycled air to breathe, the effect is overpowering.`
-
-
 
 event "fw suppressed Bloodsea"
 	system Antares
 		government "Free Worlds"
-		fleet "Small Free Worlds" 800
+		fleet "Free Worlds" 800
 		fleet "Large Free Worlds" 1600
-		fleet "Small Southern Pirates" 4000
-		fleet "Large Southern Pirates" 8000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 
 
 
 event "fw abandoned Bloodsea"
 	system Antares
 		government "Pirate"
-		fleet "Small Southern Pirates" 1000
-		fleet "Large Southern Pirates" 2000
-		fleet "Large Militia" 5000
+		fleet "Southern Pirates 1" 500
+		fleet "Freelance Pirate 1" 1000
 
 
 
 event "fw suppressed Greenrock"
 	system Shaula
 		government "Free Worlds"
-		fleet "Small Free Worlds" 500
-		fleet "Large Free Worlds" 800
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 5000
+		fleet "Free Worlds" 800
+		fleet "Large Free Worlds" 1600
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 
 
 
 event "fw abandoned Greenrock"
 	system Shaula
 		government "Pirate"
-		fleet "Small Southern Pirates" 500
-		fleet "Large Southern Pirates" 800
-		fleet "Small Core Pirates" 4000
-		fleet "Large Core Pirates" 7000
-		fleet "Small Northern Pirates" 5000
-		fleet "Large Northern Pirates" 9000
-		fleet "Large Militia" 9000
+		fleet "Southern Pirates 1" 500
+		fleet "Freelance Pirate 1" 1000
 
 
 
@@ -1169,28 +915,16 @@ event "ion rain available"
 
 event "navy occupying the south"
 	system "Rastaban"
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 2400
-		fleet "Small Republic" 500
-		fleet "Large Republic" 700
+		fleet "Navy" 800
+		fleet "Freelance Pirate 1" 5000
 	system Girtab
-		fleet "Small Southern Merchants" 900
-		fleet "Large Southern Merchants" 2000
-		fleet "Small Republic" 500
-		fleet "Large Republic" 700
+		fleet "Navy" 700
+		fleet "Freelance Pirate 1" 3000
 	system Albaldah
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 1200
-		fleet "Small Republic" 500
-		fleet "Large Republic" 700
+		fleet "Navy" 600
+		fleet "Freelance Pirate 1" 1200
 	system "Delta Sagittarii"
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Republic" 500
-		fleet "Large Republic" 700
-		fleet "Human Miners" 3000
-
-
+		fleet "Navy" 900
 
 event "catalytic ramscoop available"
 	outfitter "Deep Sky Basics"
@@ -1215,7 +949,7 @@ event "fw safe passage ends"
 
 
 event "navy using mark ii ships"
-	fleet "Small Republic"
+	fleet "Navy"
 		add variant 12
 			"Rainmaker (Mark II)" 2
 		add variant 12
@@ -1229,10 +963,6 @@ event "navy using mark ii ships"
 			"Rainmaker (Mark II)" 3
 		add variant 12
 			"Gunboat (Mark II)"
-		remove variant
-			"Protector"
-	
-	fleet "Large Republic"
 		add variant 12
 			"Frigate (Mark II)" 2
 			"Rainmaker (Mark II)"
@@ -1267,7 +997,7 @@ event "navy using mark ii ships"
 			"Rainmaker (Mark II)" 2
 			"Gunboat (Mark II)"
 
-	fleet "Small Oathkeeper"
+	fleet "Navy Oathkeeper"
 		add variant 12
 			"Rainmaker (Mark II)" 2
 		add variant 12
@@ -1281,8 +1011,6 @@ event "navy using mark ii ships"
 			"Rainmaker (Mark II)" 3
 		add variant 12
 			"Gunboat (Mark II)"
-
-	fleet "Large Oathkeeper"
 		add variant 12
 			"Frigate (Mark II)" 2
 			"Rainmaker (Mark II)"
@@ -1328,125 +1056,79 @@ fleet "gunboat only"
 
 event "gunboats in Alnasl"
 	system "Alnasl"
-		fleet "Small Southern Merchants" 1300
-		fleet "Large Southern Merchants" 2500
 		fleet "gunboat only" 2400
-	system "Wei"
-		remove fleet "Large Republic"
 
 event "normal in Alnasl"
 	system "Alnasl"
-		fleet "Small Southern Merchants" 1300
-		fleet "Large Southern Merchants" 2500
-		fleet "Small Southern Pirates" 6000
-		fleet "Small Republic" 900
-		fleet "Large Republic" 1100
-		fleet "Navy Surveillance" 1200
-	system "Wei"
-		add fleet "Large Republic" 700
-
+		fleet "Navy" 1000
+		fleet "Southern Logistics 1" 2000
+		fleet "Militia" 3000
+		fleet "Southern Pirates 1" 4000
 
 
 event "fw southern expansion"
 	system Lesath
-		fleet "Small Southern Merchants" 800
-		fleet "Large Southern Merchants" 1600
-		fleet "Small Free Worlds" 800
-		fleet "Large Free Worlds" 1100
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 5000
-		fleet "Navy Surveillance" 4000
+		fleet "Southern Logistics 1" 2000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "Free Worlds" 5000
 	system Sargas
-		fleet "Small Southern Merchants" 600
-		fleet "Large Southern Merchants" 2500
-		fleet "Small Free Worlds" 1000
-		fleet "Large Free Worlds" 1500
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 7000
-		fleet "Navy Surveillance" 5000
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 4000
+		fleet "Free Worlds" 4000
 	system "Rastaban"
 		government "Free Worlds"
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 2400
-		fleet "Small Free Worlds" 500
-		fleet "Large Free Worlds" 700
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 7000
-		fleet "Navy Surveillance" 2000
+		fleet "Free Worlds" 800
+		fleet "Southern Logistics 1" 1600
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Pirate 1" 5000
 	system Girtab
 		government "Free Worlds"
-		fleet "Small Southern Merchants" 900
-		fleet "Large Southern Merchants" 2000
-		fleet "Small Free Worlds" 1000
-		fleet "Large Free Worlds" 1700
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 7000
-		fleet "Navy Surveillance" 5000
+		fleet "Free Worlds" 700
+		fleet "Southern Logistics 1" 1700
+		fleet "Southern Pirates 1" 2000
+		fleet "Freelance Pirate 1" 3000
 	system Albaldah
 		government "Free Worlds"
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 1200
-		fleet "Small Free Worlds" 900
-		fleet "Large Free Worlds" 1900
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 7000
-		fleet "Navy Surveillance" 5000
+		fleet "Free Worlds" 600
+		fleet "Southern Logistics 1" 1000
+		fleet "Southern Pirates 1" 800
+		fleet "Freelance Pirate 1" 1200
+		fleet "Freelance Miners" 3000
 	system "Delta Sagittarii"
 		government "Free Worlds"
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Free Worlds" 600
-		fleet "Large Free Worlds" 900
-		fleet "Small Southern Pirates" 3000
-		fleet "Large Southern Pirates" 7000
-		fleet "Navy Surveillance" 3000
+		fleet "Free Worlds" 900
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 3000
+		fleet "Freelance Miners" 3000
 	system "Kaus Borealis"
-		fleet "Small Southern Merchants" 900
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Republic" 400
-		fleet "Large Republic" 500
-	planet "New Iceland"
-		description `New Iceland is a perpetually hazy volcanic world, with a slightly caustic atmosphere but enough reserves of metal and petrochemicals to draw a large number of settlers. Some of those settlers also make a living as farmers, and a few well-developed factory towns produce goods for export to other worlds.`
-		description `	In the wake of their defeat in the south, the Navy has begun to set up a massive new base here on New Iceland, in order to allow them to continue to have a strong presence in this sector.`
-
-
+		fleet "Free Worlds" 600
+		fleet "Southern Logistics 1" 3000
+		fleet "Southern Pirates 1" 5000
 
 event "fw occupying the north"
 	system Alioth
-		fleet "Small Southern Merchants" 400
-		fleet "Large Northern Merchants" 600
-		fleet "Small Free Worlds" 500
-		fleet "Large Free Worlds" 800
-		fleet "Small Republic" 5000
-		fleet "Large Republic" 6000
-		fleet "Navy Surveillance" 4000
+		fleet "Free Worlds" 400
+		fleet "Southern Logistics 1" 600
+		fleet "Southern Pirates 1" 1200
+		fleet "Freelance Pirate 1" 2400
 	system Alphecca
-		fleet "Small Southern Merchants" 2000
-		fleet "Large Northern Merchants" 3500
-		fleet "Small Free Worlds" 1200
-		fleet "Large Free Worlds" 2000
-		fleet "Navy Surveillance" 6000
+		fleet "Free Worlds" 1500
+		fleet "Southern Logistics 1" 3500
+		fleet "Southern Pirates 1" 3000
 	system Boral
-		fleet "Small Southern Merchants" 3000
-		fleet "Large Northern Merchants" 8000
-		fleet "Small Free Worlds" 1500
-		fleet "Large Free Worlds" 3800
+		fleet "Free Worlds" 3000
+		fleet "Southern Pirates 1" 1500
+		fleet "Freelance Miners" 2000
 	system Seginus
-		fleet "Small Southern Merchants" 1200
-		fleet "Large Southern Merchants" 2700
-		fleet "Small Free Worlds" 700
-		fleet "Large Free Worlds" 1100
-		fleet "Small Republic" 5000
-		fleet "Large Republic" 6000
-		fleet "Navy Surveillance" 4000
+		fleet "Free Worlds" 900
+		fleet "Southern Logistics 1" 2000
+		fleet "Southern Pirates 1" 5000
 	system Wei
-		fleet "Small Southern Merchants" 800
-		fleet "Large Southern Merchants" 2500
-		fleet "Small Free Worlds" 800
-		fleet "Large Free Worlds" 1000
-		fleet "Navy Surveillance" 4000
-
-
+		fleet "Free Worlds" 600
+		fleet "Southern Logistics 1" 2000
+		fleet "Southern Pirates 1" 4000
 
 event "fw northern expansion"
 	system Alioth
@@ -1488,32 +1170,25 @@ mission "FW Clink Prison Closes"
 
 event "alphas capture Poisonwood"
 	system Graffias
-		government "Pirate"
-		fleet "Small Free Worlds" 10000
+		government "Alpha"
 
 event "liberation of Poisonwood"
 	system Graffias
 		government "Neutral"
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Southern Pirates" 6000
-		fleet "Small Free Worlds" 700
-		fleet "Small Free Worlds" 1200
-		fleet "Human Miners" 2000
+		fleet "Free Worlds" 1000
+		fleet "Southern Logistics 1" 4000
+		fleet "Southern Pirates 1" 5000
+		fleet "Freelance Miners" 2000
 
 event "Poisonwood reverts to Republic"
 	system Graffias
 		government "Republic"
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Southern Pirates" 4000
-		fleet "Small Free Worlds" 1500
-		fleet "Small Free Worlds" 2600
-		fleet "Human Miners" 2000
+		fleet "Navy" 1000
+		fleet "Southern Logistics 1" 4000
+		fleet "Southern Pirates 1" 5000
+		fleet "Freelance Miners" 2000
 
 event "death of nguyen"
-
-
 
 event "Elpis for sale"
 	shipyard "Southbound Advanced"
@@ -1522,43 +1197,31 @@ event "Elpis for sale"
 
 
 event "Elpis deployment"
-	fleet "Large Free Worlds"
-		government "Free Worlds"
-		names "free worlds capital"
-		cargo 1
-		personality
-			heroic
+	fleet "Free Worlds"
 		add variant 4
-			"Elpis"
+			"Astraea"
 		add variant 2
-			"Elpis"
-			"Bastion"
+			"Astraea" 3
 		add variant 2
-			"Elpis"
-			"Argosy"
-			"Fury"
+			"Astraea"
+			"Fury" 6
 
 
 
 event "bloodsea joins free worlds"
 	planet Bloodsea
-		description `Bloodsea is nearly uninhabited, except for a few small outposts. Its name comes from the planet's oceans, which are blood-red due to rhodophyte algae. Although the climate is temperate and there are many white sand beaches, no one comes here hoping to go swimming.`
-		description `	Until recently, this was a pirate world, but as the Free Worlds continued to expand they saw the writing on the wall and decided to become a civilized world. The Free Worlds is building a new spaceport here, but that will take months, and in the meantime the old spaceport is still in use.`
+		description `Bloodsea's name comes from the planet's oceans, which appear blood-red due to rhodophyte algae. Although the climate is temperate, with several white sand beaches, no one comes here hoping to go swimming.`
+		description `	Even though the planet has officially joined the Free Worlds, the planet is still spotted with several pirate fortresses, including floating cities, well armored with anti-aircraft guns.`
 	system Antares
 		government "Free Worlds"
-		fleet "Small Southern Merchants" 700
-		fleet "Large Southern Merchants" 1400
-		fleet "Small Free Worlds" 500
-		fleet "Large Free Worlds" 3000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 5000
-
+		fleet "Free Worlds" 1000
+		fleet "Southern Logistics 1" 2000
+		fleet "Southern Pirates 1" 1000
+		fleet "Freelance Pirate 1" 2000
 
 
 event "bloodsea spaceport completed"
 	planet Bloodsea
-		description `Bloodsea is nearly uninhabited, except for a few small outposts. Its name comes from the planet's oceans, which are blood-red due to rhodophyte algae. Although the climate is temperate and there are many white sand beaches, no one comes here hoping to go swimming.`
-		description `	Recently, with the help of the Free Worlds, a new spaceport was completed here. Bloodsea was formerly a pirate world, but the new spaceport has given it an air of respectability, and already a small number of settlers and curious tourists have begun flowing in.`
 		spaceport `The new spaceport is impressively well designed, with seawalls and landing pads of crisp, newly-set concrete, still unmarked by weather or mildew. It is also several times larger than necessary for the number of people and ships that are here, and aside from a lively market, it feels strangely empty.`
 		spaceport `	Some things remain unchanged from back in the pirate days. The local slang incorporates threats of extreme violence as a seemingly meaningless verbal tic. "Hey, I'm gonna cut off your fingers one by one until you buy a meat patty!" a vendor calls out cheerfully as you pass. "First one's free, and I'll tie a knot in your spine if you don't like it."`
 
@@ -1573,33 +1236,23 @@ event "battle for bloodsea"
 event "bloodsea independent"
 	system Antares
 		government "Independent"
-		fleet "Small Independent" 800
-		fleet "Large Independent" 1500
-		fleet "Small Southern Merchants" 2000
-		fleet "Large Southern Merchants" 2000
-		fleet "Small Southern Pirates" 1600
-		fleet "Large Southern Pirates" 3000
-		fleet "Small Free Worlds" 800
-		fleet "Large Free Worlds" 1500
+		fleet "Free Worlds" 1000
+		fleet "Southern Logistics 1" 2000
+		fleet "Southern Independent" 1000
+		fleet "Freelance Pirate 1" 2000
 	planet Bloodsea
-		description `Bloodsea is nearly uninhabited, except for a few small outposts. Its name comes from the planet's oceans, which are blood-red due to rhodophyte algae. Although the climate is temperate and there are many white sand beaches, no one comes here hoping to go swimming.`
-		description `	Until recently, this was a pirate world, but they are now officially "independent," forswearing support for piracy and other criminal activity as a result of being dominated by the Free Worlds militia. You get the feeling that most of the locals are not too fond of the Free Worlds, however.`
+		description `Bloodsea's name comes from the planet's oceans, which appear blood-red due to rhodophyte algae. Although the climate is temperate, with several white sand beaches, no one comes here hoping to go swimming.`
+		description `	Until recently, this was a pirate world, but they are now officially "independent," forswearing support for piracy and other criminal activity as a result of being dominated by the Free Worlds militia. It is very clear that most of the population is unhappy with the new arrangement.`
 
 
 
 event "albatross joins free worlds"
-	planet Albatross
-		description `Albatross is a cold ocean world orbiting a small, cold sun. The first settlers on Albatross were anarchists who believed that in a society free from unnatural laws and constraints, everyone would happily and freely work for the common good. The next settlers were pirates who believed that a planet free from laws and constraints would be a great base of operations.`
-		description `	Recently, the Free Worlds has liberated Albatross from their pirate oppressors, but many of the locals remain skeptical, seeing the Free Worlds as little different from the other protection rackets that have held sway over them.`
 	system Nunki
 		government "Free Worlds"
-		fleet "Small Southern Merchants" 700
-		fleet "Large Southern Merchants" 1400
-		fleet "Small Free Worlds" 500
-		fleet "Large Free Worlds" 3000
-		fleet "Small Southern Pirates" 2000
-		fleet "Large Southern Pirates" 5000
-
+		fleet "Free Worlds" 1000
+		fleet "Southern Logistics 1" 2000
+		fleet "Southern Independent" 1000
+		fleet "Freelance Pirate 1" 2000
 
 
 event "fw expanded and cut"
@@ -1615,38 +1268,15 @@ event "fw expanded and cut"
 		government "Free Worlds"
 	system "Delta Sagittarii"
 		government "Republic"
-		fleet "Small Southern Merchants" 2000
-		fleet "Large Southern Merchants" 6000
-		fleet "Small Republic" 500
-		fleet "Large Republic" 700
-		fleet "Large Free Worlds" 3000
+		fleet "Navy" 900
 	system "Rastaban"
 		government "Republic"
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 4000
-		fleet "Small Republic" 700
-		fleet "Large Republic" 900
-		fleet "Large Free Worlds" 2000
+		fleet "Navy" 800
+		fleet "Freelance Pirate 1" 5000
 	system "Girtab"
 		government "Republic"
-		fleet "Small Southern Merchants" 1000
-		fleet "Large Southern Merchants" 3000
-		fleet "Small Republic" 900
-		fleet "Large Republic" 1200
-		fleet "Large Free Worlds" 1800
-	system "Lesath"
-		fleet "Small Southern Merchants" 6000
-		fleet "Large Southern Merchants" 9000
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1000
-		fleet "Large Free Worlds" 800
-	system "Alpha Arae"
-		fleet "Small Southern Merchants" 5000
-		fleet "Large Southern Merchants" 6000
-		fleet "Small Republic" 800
-		fleet "Large Republic" 1000
-		fleet "Large Free Worlds" 3000
-
+		fleet "Navy" 800
+		fleet "Freelance Pirate 1" 5000
 
 
 event "fw at war with Syndicate"

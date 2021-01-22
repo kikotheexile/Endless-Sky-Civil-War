@@ -406,7 +406,7 @@ mission "Pleasure cruise security"
 		attributes "paradise"
 		distance 1 6
 	npc accompany save
-		government "Merchant"
+		government "Freelance Merchant"
 		personality escort timid
 		fleet
 			names "civilian"

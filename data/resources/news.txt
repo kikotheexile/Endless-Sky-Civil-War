@@ -444,7 +444,7 @@ news "advertisement osprey"
 	message
 		word
 			"They said we were crazy when we decided to study Alien ships. Maybe we are, but the Osprey proves that insanity can pay off."
-			"Beautiful, powerful, fast. All these thingsand more describe the Osprey."
+			"Beautiful, powerful, fast. All these things and more describe the Osprey."
 			"The Tarazed Osprey. Come on, just look at it!"
 			"Travel in style with the Tarazed Osprey."
 			

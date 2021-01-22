@@ -261,54 +261,54 @@ void OutfitInfoDisplay::UpdateAttributes(const Outfit &outfit)
 	attributeLabels.emplace_back("range:");
 	attributeValues.emplace_back(Format::Number(outfit.Range()));
 	attributesHeight += 20;
-	
-	static const vector<string> VALUE_NAMES = {
-		"shield damage",
-		"hull damage",
-		"fuel damage",
-		"heat damage",
-		"ion damage",
-		"slowing damage",
-		"disruption damage",
-		"firing energy",
-		"firing heat",
-		"firing fuel"
-	};
-	
-	vector<double> values = {
-		outfit.ShieldDamage(),
-		outfit.HullDamage(),
-		outfit.FuelDamage(),
-		outfit.HeatDamage(),
-		outfit.IonDamage() * 100.,
-		outfit.SlowingDamage() * 100.,
-		outfit.DisruptionDamage() * 100.,
-		outfit.FiringEnergy(),
-		outfit.FiringHeat(),
-		outfit.FiringFuel()
-	};
-	
-	// Add any per-second values to the table.
-	double reload = outfit.Reload();
-	if(reload)
-	{
-		static const string PER_SECOND = " / second:";
-		for(unsigned i = 0; i < values.size(); ++i)
-			if(values[i])
-			{
-				attributeLabels.emplace_back(VALUE_NAMES[i] + PER_SECOND);
-				attributeValues.emplace_back(Format::Number(60. * values[i] / reload));
-				attributesHeight += 20;
-			}
-	}
-	
-	bool isContinuous = (reload <= 1);
-	attributeLabels.emplace_back("shots / second:");
-	if(isContinuous)
-		attributeValues.emplace_back("continuous");
-	else
-		attributeValues.emplace_back(Format::Number(60. / reload));
-	attributesHeight += 20;
+	// Comment out code which reports damage per shot/DPS in outfitter	
+//	static const vector<string> VALUE_NAMES = {
+//		"shield damage",
+//		"hull damage",
+//		"fuel damage",
+//		"heat damage",
+//		"ion damage",
+//		"slowing damage",
+//		"disruption damage",
+//		"firing energy",
+//		"firing heat",
+//		"firing fuel"
+//	};
+//	
+//	vector<double> values = {
+//		outfit.ShieldDamage(),
+//		outfit.HullDamage(),
+//		outfit.FuelDamage(),
+//		outfit.HeatDamage(),
+//		outfit.IonDamage() * 100.,
+//		outfit.SlowingDamage() * 100.,
+//		outfit.DisruptionDamage() * 100.,
+//		outfit.FiringEnergy(),
+//		outfit.FiringHeat(),
+//		outfit.FiringFuel()
+//	};
+//	
+//	// Add any per-second values to the table.
+//	double reload = outfit.Reload();
+//	if(reload)
+//	{
+//		static const string PER_SECOND = " / second:";
+//		for(unsigned i = 0; i < values.size(); ++i)
+//			if(values[i])
+//			{
+//				attributeLabels.emplace_back(VALUE_NAMES[i] + PER_SECOND);
+//				attributeValues.emplace_back(Format::Number(60. * values[i] / reload));
+//				attributesHeight += 20;
+//			}
+//	}
+//	
+//	bool isContinuous = (reload <= 1);
+//	attributeLabels.emplace_back("shots / second:");
+//	if(isContinuous)
+//		attributeValues.emplace_back("continuous");
+//	else
+//		attributeValues.emplace_back(Format::Number(60. / reload));
+//	attributesHeight += 20;
 	
 	double turretTurn = outfit.TurretTurn() * 60.;
 	if(turretTurn)
@@ -361,17 +361,18 @@ void OutfitInfoDisplay::UpdateAttributes(const Outfit &outfit)
 	
 	// Add per-shot values to the table. If the weapon fires continuously,
 	// the values have already been added.
-	if(!isContinuous)
-	{
-		static const string PER_SHOT = " / shot:";
-		for(unsigned i = 0; i < VALUE_NAMES.size(); ++i)
-			if(values[i])
-			{
-				attributeLabels.emplace_back(VALUE_NAMES[i] + PER_SHOT);
-				attributeValues.emplace_back(Format::Number(values[i]));
-				attributesHeight += 20;
-			}
-	}
+	// Comment out code which adds the per shot/DPS info into outfitter
+//	if(!isContinuous)
+//	{
+//		static const string PER_SHOT = " / shot:";
+//		for(unsigned i = 0; i < VALUE_NAMES.size(); ++i)
+//			if(values[i])
+//			{
+//				attributeLabels.emplace_back(VALUE_NAMES[i] + PER_SHOT);
+//				attributeValues.emplace_back(Format::Number(values[i]));
+//				attributesHeight += 20;
+//			}
+//	}
 	
 	static const vector<string> OTHER_NAMES = {
 		"inaccuracy:",

@@ -152,8 +152,6 @@ mission "Syndicate target practice [0]"
 		government Syndicate
 	to offer
 		random < 20
-		"combat rating" > 5
-		"combat rating" < 50
 		"destroyed Syndicate target ship" < 3
 	npc save disable "scan cargo"
 		government "Test Dummy"
@@ -186,8 +184,6 @@ mission "Syndicate target practice [1]"
 		government Syndicate
 	to offer
 		random < 20
-		"combat rating" > 50
-		"combat rating" < 200
 		"destroyed Syndicate target ship" < 3
 	npc save disable "scan cargo"
 		government "Test Dummy"
@@ -220,8 +216,6 @@ mission "Syndicate target practice [2]"
 		government Syndicate
 	to offer
 		random < 20
-		"combat rating" > 150
-		"combat rating" < 1000
 		"destroyed Syndicate target ship" < 3
 	npc save disable "scan cargo"
 		government "Test Dummy"
@@ -254,7 +248,6 @@ mission "Syndicate target practice [3]"
 		government Syndicate
 	to offer
 		random < 20
-		"combat rating" > 1000
 		"destroyed Syndicate target ship" < 3
 	npc save disable "scan cargo"
 		government "Test Dummy"

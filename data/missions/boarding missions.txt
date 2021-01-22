@@ -19,8 +19,8 @@ mission "Assisting Merchant (Small)"
 	to offer
 		random < 20
 	source
-		government "Merchant"
-		category "Interceptor" "Light Warship" "Transport" "Light Freighter"
+		government "Freelance Merchants" "Northstar Shipping" "Syndicated Transport" "Southern Logistics"
+		category "Gunship" "Freighter" "Yacht" "Frigate"
 		not attributes "automaton"
 	on offer
 		payment 10000
@@ -36,8 +36,8 @@ mission "Assisting Merchant (Medium)"
 	to offer
 		random < 15
 	source
-		government "Merchant"
-		category "Medium Warship" "Heavy Freighter"
+		government "Freelance Merchants" "Northstar Shipping" "Syndicated Transport" "Southern Logistics"
+		category "Destroyer" "Container Ship"
 		not attributes "automaton"
 	on offer
 		payment 20000
@@ -51,8 +51,8 @@ mission "Assisting Merchant (Large)"
 	to offer
 		random < 10
 	source
-		government "Merchant"
-		category "Heavy Warship"
+		government "Freelance Merchants" "Northstar Shipping" "Syndicated Transport" "Southern Logistics"
+		category "Cruiser"
 		not attributes "automaton"
 	on offer
 		payment 30000
@@ -69,11 +69,11 @@ mission "Dangerous Journey"
 	to offer
 		random < 10
 	source
-		government "Merchant"
-		category "Light Freighter" "Heavy Freighter"
+		government "Freelance Merchants" "Northstar Shipping" "Syndicated Transport" "Southern Logistics"
+		category "Freighter" "Container Ship"
 		not attributes "automaton"
 	destination
-		government "Republic" "Syndicate" "Free Worlds"
+		government "Republic" "Syndicate" "Free Worlds" "Northern Union"
 		attributes "frontier"
 		distance 2 3
 	cargo random 5 2 .1
@@ -91,150 +91,6 @@ mission "Dangerous Journey"
 		dialog `You drop off your cargo of <commodity>, explain how the original merchant who took the job quit and handed off the cargo to you, and collect your payment of <payment>.`
 
 
-
-conversation "assisting law enforcement"
-	`The captain of the <origin> thanks you for repairing them, but informs you that the pirates that disabled them are only a smaller part of a fleet attacking <destination>.`
-	`	The authorities of <planet> will probably pay you quite well if you assist them, but this could also be an easy way to get yourself killed.`
-	choice
-		`	(Don't join the fight.)`
-			decline
-		`	(Join the defense fleet.)`
-			accept
-
-mission "Assisting Free Worlds"
-	assisting
-	repeat
-	minor
-	name "Defend <planet>"
-	description "Defeat a pirate raid on <destination>."
-	to offer
-		"combat rating" > 100
-		random < 5
-	source
-		government "Free Worlds"
-		not category "Fighter" "Drone"
-		not attributes "automaton"
-	destination
-		government "Free Worlds"
-		distance 2 4
-	on offer
-		conversation "assisting law enforcement"
-	npc kill
-		government "Pirate"
-		personality heroic staying target harvests plunders
-		system destination
-		fleet "Large Southern Pirates" 2
-		fleet "Small Southern Pirates"
-	npc
-		government "Free Worlds"
-		personality heroic staying
-		system destination
-		fleet "Large Free Worlds"
-	on complete
-		payment 150000
-		dialog phrase "generic pirate attack payment dialog"
-
-mission "Assisting Republic"
-	assisting
-	repeat
-	minor
-	name "Defend <planet>"
-	description "Defeat a pirate raid on <destination>."
-	to offer
-		"combat rating" > 100
-		random < 5
-	source
-		government "Republic"
-		not category "Fighter" "Drone"
-		not attributes "automaton"
-	destination
-		government "Republic"
-		distance 2 4
-	on offer
-		conversation "assisting law enforcement"
-	npc kill
-		government "Pirate"
-		personality heroic staying target harvests plunders
-		system destination
-		fleet "Large Northern Pirates" 2
-		fleet "Small Northern Pirates"
-	npc
-		government "Republic"
-		personality heroic staying
-		system destination
-		fleet "Small Republic" 2
-	on complete
-		payment 150000
-		dialog phrase "generic pirate attack payment dialog"
-
-mission "Assisting Deep Security"
-	assisting
-	repeat
-	minor
-	name "Defend <planet>"
-	description "Defeat a pirate raid on <destination>."
-	to offer
-		"combat rating" > 100
-		random < 5
-	source
-		government "Deep Security"
-		not category "Fighter" "Drone"
-		not attributes "automaton"
-	destination
-		attributes "deep"
-		distance 2 4
-	on offer
-		conversation "assisting law enforcement"
-	npc kill
-		government "Pirate"
-		personality heroic staying target harvests plunders
-		system destination
-		fleet "Large Northern Pirates" 2
-		fleet "Small Northern Pirates"
-	npc
-		government "Deep Security"
-		personality heroic staying
-		system destination
-		fleet "Large Deep Security"
-	on complete
-		payment 150000
-		dialog phrase "generic pirate attack payment dialog"
-
-mission "Assisting Syndicate"
-	assisting
-	repeat
-	minor
-	name "Defend <planet>"
-	description "Defeat a pirate raid on <destination>."
-	to offer
-		"combat rating" > 100
-		random < 5
-	source
-		government "Syndicate"
-		not category "Fighter" "Drone"
-		not attributes "automaton"
-	destination
-		government "Syndicate"
-		distance 2 4
-	on offer
-		conversation "assisting law enforcement"
-	npc kill
-		government "Pirate"
-		personality heroic staying target harvests plunders
-		system destination
-		fleet "Large Core Pirates" 2
-		fleet "Small Core Pirates"
-	npc
-		government "Syndicate"
-		personality heroic staying
-		system destination
-		fleet "Large Syndicate"
-	on complete
-		payment 150000
-		dialog phrase "generic pirate attack payment dialog"
-
-
-
 conversation "boarding pirate"
 	`You make short-range scans of the <origin>'s outfits and cargo. Among the cargo, you find a crate full of credit chips worth <payment>. You drag the crate onto your ship before considering your next move.`
 		decline
@@ -246,8 +102,8 @@ mission "Boarding Pirate (Small)"
 	to offer
 		random < 7
 	source
-		government "Pirate"
-		category "Interceptor" "Light Warship" "Transport" "Light Freighter"
+		government "Freelance Pirates"
+		category "Gunship" "Freighter" "Yacht" "Frigate"
 	on offer
 		payment 50000
 		conversation "boarding pirate"
@@ -260,8 +116,8 @@ mission "Boarding Pirate (Medium)"
 	to offer
 		random < 5
 	source
-		government "Pirate"
-		category "Medium Warship" "Heavy Freighter"
+		government "Freelance Pirates"
+		category "Destroyer" "Container Ship"
 	on offer
 		payment 100000
 		conversation "boarding pirate"
@@ -274,39 +130,12 @@ mission "Boarding Pirate (Large)"
 	to offer
 		random < 3
 	source
-		government "Pirate"
-		category "Heavy Warship"
+		government "Freelance Pirates"
+		category "Cruiser"
 	on offer
 		payment 150000
 		conversation "boarding pirate"
 	destination "Earth"
-
-
-
-mission "Pirate Ambush"
-	invisible
-	boarding
-	repeat
-	minor
-	deadline 1
-	to offer
-		"combat rating" > 100
-		random < 5
-	source
-		government "Pirate"
-		category "Interceptor" "Light Warship" "Transport" "Light Freighter"
-		not attributes "automaton"
-	on offer
-		conversation
-			`You board the <origin>, but find no crew aboard. When you reach the cockpit of the ship, you look out into space to see an escape pod floating away. The <origin> is emitting a distress signal to nearby pirates, and a self destruct sequence has been activated! You run back to your ship and get ready to fight.`
-				launch
-	destination "Earth"
-	npc kill
-		government "Pirate"
-		personality nemesis harvests plunders entering
-		fleet "pirate raid" 2
-
-
 
 mission "Pirate Mutiny"
 	boarding
@@ -316,10 +145,10 @@ mission "Pirate Mutiny"
 		random < 10
 	source
 		government "Pirate"
-		category "Medium Warship" "Heavy Warship"
+		category "Destroyer" "Cruiser"
 		not attributes "automaton"
 	destination
-		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent" "Northern Union"
 		distance 2 4
 	passengers 10 20
 	on offer

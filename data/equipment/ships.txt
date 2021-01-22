@@ -19,6 +19,7 @@ ship "Sentinel Drone"
 		licenses
 			Navy
 		"cost" 83000
+		"landing gear" 1
 		"hull" 700
 		"automaton" 1
 		"mass" 20
@@ -57,6 +58,7 @@ ship "Thea Drone"
 		licenses
 			Navy
 		"cost" 50000
+		"landing gear" 1
 		"hull" 300
 		"automaton" 1
 		"mass" 15
@@ -84,40 +86,6 @@ ship "Thea Drone"
 	explode "tiny explosion" 15
 	description "Named for the mother of the Sun in greek mythology, Thea drones are used to bring light to where there was once darkness. These unarmed drones are used by the Republic navy to scan ships and planets in a star system."
 
-ship "Earth Shaper"
-	sprite "ship/earth shaper"
-	thumbnail "thumbnail/earth shaper"
-	attributes
-		category "Light Freighter"
-		"cost" 500000
-		"hull" 3300
-		"automaton" 1
-		"mass" 30
-		"drag" .9
-		"heat dissipation" .9
-		"fuel capacity" 300
-		"cargo space" 27
-		"outfit space" 59
-		"engine capacity" 26
-		"atmosphere scan" 100
-		weapon
-			"blast radius" 10
-			"shield damage" 100
-			"hull damage" 150
-			"hit force" 250
-	outfits
-		"Small Biochemical Cell"
-		
-		"Type 1 Radiant Thruster"
-		"Type 1 Radiant Steering"
-		"Hyperdrive"
-		
-	engine -9 30
-	engine 9 30
-	explode "tiny explosion" 20
-	explode "small explosion" 10
-	description "The Earth Shaper is a robotic drone that the Wanderers use for mining, exploring, surveying, and terraforming."
-
 #Fighters
 ###############################################
 
@@ -127,6 +95,7 @@ ship "Dagger"
 	attributes
 		category "Fighter"
 		"cost" 129000
+		"landing gear" 1
 		"shields" 1000
 		"hull" 300
 		"landing gear" 1
@@ -175,6 +144,7 @@ ship "Finch"
 	attributes
 		category "Fighter"
 		"cost" 126000
+		"landing gear" 1
 		"shields" 1100
 		"hull" 200
 		"landing gear" 1
@@ -219,6 +189,7 @@ ship "Lance"
 	attributes
 		category "Fighter"
 		"cost" 93000
+		"landing gear" 1
 		"shields" 800
 		"hull" 400
 		"landing gear" 1
@@ -264,6 +235,7 @@ ship "Barb"
 	attributes
 		category "Fighter"
 		"cost" 50000
+		"landing gear" 1
 		"shields" 800
 		"hull" 200
 		"landing gear" 1
@@ -309,6 +281,7 @@ ship "Thorn"
 	attributes
 		category "Fighter"
 		"cost" 50000
+		"landing gear" 1
 		"shields" 800
 		"hull" 200
 		"automaton" 1
@@ -391,6 +364,7 @@ ship "Shuttle"
 	attributes
 		category "Fighter"
 		"cost" 180000
+		"landing gear" 1
 		"shields" 500
 		"hull" 600
 		"landing gear" 1
@@ -429,6 +403,53 @@ ship "Shuttle"
 
 #Yachts
 ###############################################
+ship "Millipede"
+	sprite "ship/hai centipede"
+	thumbnail "thumbnail/hai centipede"
+	attributes
+		category "Yacht"
+		"cost" 12500000
+		"shields" 6600
+		"hull" 2400
+		"required crew" 40
+		"bunks" 131
+		"mass" 187
+		"drag" 3.9
+		"heat dissipation" .75
+		"fuel capacity" 600
+		"cargo space" 35
+		"outfit space" 375
+		"weapon capacity" 78
+		"engine capacity" 88
+		weapon
+			"blast radius" 60
+			"shield damage" 600
+			"hull damage" 300
+			"hit force" 900
+	outfits
+		"NT-200 Nucleovoltaic"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Scram Drive"
+		
+	engine -15 113
+	engine 15 113
+	gun -11 -113 
+	gun 11 -113 
+	turret 0 -19 "Bullfrog Anti-Missile"
+	leak "leak" 60 50
+	leak "flame" 40 40
+	leak "big leak" 10 10
+	explode "tiny explosion" 10
+	explode "small explosion" 25
+	explode "medium explosion" 25
+	explode "large explosion" 10
+	"final explode" "final explosion medium"
+	description `One half of a joint venture between the Hai and Humans to produce hybrid transports, the Tarazed Millipede is one of the most advanced yachts for sale in human space. It's Hai inspired hull also makes it a formidable combat ship in spite of its classification.`
+
 
 ship "Arrow"
 	sprite "ship/arrow"
@@ -436,6 +457,7 @@ ship "Arrow"
 	attributes
 		category "Yacht"
 		"cost" 1200000
+		"landing gear" 1
 		"shields" 2000
 		"hull" 400
 		"hull repair rate" .1
@@ -490,6 +512,7 @@ ship "Blackbird"
 	attributes
 		category "Yacht"
 		"cost" 2230000
+		"landing gear" 1
 		"shields" 4400
 		"hull" 900
 		"hull repair rate" .1
@@ -548,6 +571,7 @@ ship "Bounder"
 	attributes
 		category "Yacht"
 		"cost" 1140000
+		"landing gear" 1
 		"shields" 2200
 		"hull" 700
 		"hull repair rate" .1
@@ -597,6 +621,7 @@ ship "Flivver"
 	attributes
 		category "Yacht"
 		"cost" 180000
+		"landing gear" 1
 		"shields" 1400
 		"hull" 200
 		"hull repair rate" .1
@@ -645,6 +670,7 @@ ship "Heavy Shuttle"
 	attributes
 		category "Yacht"
 		"cost" 220000
+		"landing gear" 1
 		"shields" 700
 		"hull" 700
 		"hull repair rate" .1
@@ -690,6 +716,7 @@ ship "Caravel"
 	attributes
 		category "Yacht"
 		"cost" 850000
+		"landing gear" 1
 		"shields" 1200
 		"hull" 400
 		"hull repair rate" .1
@@ -748,6 +775,7 @@ ship "Star Queen"
 	attributes
 		category "Yacht"
 		"cost" 5500000
+		"landing gear" 1
 		"shields" 4100
 		"hull" 2200
 		"hull repair rate" .1
@@ -808,6 +836,7 @@ ship "Berserker"
 	attributes
 		category "Gunship"
 		"cost" 520000
+		"landing gear" 1
 		"shields" 2200
 		"hull" 500
 		"hull repair rate" .1
@@ -866,6 +895,7 @@ ship "Fury"
 	attributes
 		category "Gunship"
 		"cost" 490000
+		"landing gear" 1
 		"shields" 2000
 		"hull" 400
 		"hull repair rate" .1
@@ -922,6 +952,7 @@ ship "Hawk"
 	attributes
 		category "Gunship"
 		"cost" 670000
+		"landing gear" 1
 		"shields" 2500
 		"hull" 500
 		"hull repair rate" .1
@@ -976,6 +1007,7 @@ ship "Sparrow"
 	attributes
 		category "Gunship"
 		"cost" 225000
+		"landing gear" 1
 		"shields" 1200
 		"hull" 300
 		"hull repair rate" .1
@@ -1000,7 +1032,7 @@ ship "Sparrow"
 			"hull damage" 80
 			"hit force" 240
 	outfits
-		"Beam Laser" 2
+		"Energy Blaster" 2
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
@@ -1013,8 +1045,8 @@ ship "Sparrow"
 		
 	engine -5 35
 	engine 5 35
-	gun -7 -10
-	gun 7 -10
+	gun -7 -10 "Energy Blaster"
+	gun 7 -10 "Energy Blaster"
 	leak "flame" 60 80
 	explode "tiny explosion" 15
 	explode "small explosion" 5
@@ -1027,6 +1059,7 @@ ship "Wasp"
 	attributes
 		category "Gunship"
 		"cost" 400000
+		"landing gear" 1
 		"shields" 1500
 		"hull" 500
 		"hull repair rate" .1
@@ -1079,6 +1112,42 @@ ship "Wasp"
 #Freighter (light)
 ###############################################
 
+ship "Mason"
+	sprite "ship/earth shaper"
+	thumbnail "thumbnail/earth shaper"
+	attributes
+		category "Freighter"
+		"cost" 500000
+		"hull" 3300
+		"mass" 30
+		"required crew" 1
+		"bunks" 1
+		"drag" .9
+		"heat dissipation" .9
+		"fuel capacity" 300
+		"cargo space" 60
+		"outfit space" 59
+		"engine capacity" 26
+		"atmosphere scan" 100
+		weapon
+			"blast radius" 10
+			"shield damage" 100
+			"hull damage" 150
+			"hit force" 250
+	outfits
+		"Small Biochemical Cell"
+		
+		"Type 1 Radiant Thruster"
+		"Type 1 Radiant Steering"
+		"Hyperdrive"
+		
+	engine -9 30
+	engine 9 30
+	explode "tiny explosion" 20
+	explode "small explosion" 10
+	description "The mason is a modified Earth Shaper drone, specifically made for sale on Human markets. It's cramped interior and lack of living space betray its original design."
+
+
 ship "Argosy"
 	plural "Argosies"
 	sprite "ship/argosy"
@@ -1086,6 +1155,7 @@ ship "Argosy"
 	attributes
 		category "Freighter"
 		"cost" 1960000
+		"landing gear" 1
 		"shields" 4200
 		"hull" 2600
 		"hull repair rate" .1
@@ -1152,6 +1222,7 @@ ship "Clipper"
 	attributes
 		category "Freighter"
 		"cost" 900000
+		"landing gear" 1
 		"shields" 2700
 		"hull" 800
 		"hull repair rate" .1
@@ -1211,6 +1282,7 @@ ship "Freighter"
 	attributes
 		category "Freighter"
 		"cost" 730000
+		"landing gear" 1
 		"shields" 2000
 		"hull" 2000
 		"hull repair rate" .1
@@ -1265,6 +1337,7 @@ ship "Star Barge"
 	attributes
 		category "Freighter"
 		"cost" 190000
+		"landing gear" 1
 		"shields" 600
 		"hull" 1000
 		"hull repair rate" .1
@@ -1316,6 +1389,7 @@ ship "Hauler"
 	attributes
 		category "Freighter"
 		"cost" 1430000
+		"landing gear" 1
 		"shields" 2500
 		"hull" 3700
 		"hull repair rate" .1
@@ -1378,6 +1452,7 @@ ship "Hauler II"
 	attributes
 		category "Container Ship"
 		"cost" 2340000
+		"landing gear" 1
 		"shields" 2900
 		"hull" 5200
 		"hull repair rate" .1
@@ -1441,6 +1516,7 @@ ship "Hauler III"
 	attributes
 		category "Container Ship"
 		"cost" 3260000
+		"landing gear" 1
 		"shields" 3300
 		"hull" 6700
 		"hull repair rate" .1
@@ -1500,7 +1576,10 @@ ship "Nest"
 	thumbnail "thumbnail/nest"
 	attributes
 		category "Carrier"
+		licenses
+			"Free Worlds"
 		"cost" 2500000
+		"landing gear" 1
 		"shields" 2500
 		"hull" 3700
 		"hull repair rate" .1
@@ -1563,7 +1642,10 @@ ship "Roost"
 	thumbnail "thumbnail/roost"
 	attributes
 		category "Carrier"
+		licenses
+			"Free Worlds"	
 		"cost" 3000000
+		"landing gear" 1
 		"shields" 2900
 		"hull" 5200
 		"hull repair rate" .1
@@ -1630,8 +1712,9 @@ ship "Skein"
 	attributes
 		category "Carrier"
 		licenses
-			"Militia Carrier"
+			"Free Worlds"	
 		"cost" 3500000
+		"landing gear" 1
 		"shields" 3300
 		"hull" 6700
 		"hull repair rate" .1
@@ -1696,12 +1779,58 @@ ship "Skein"
 #Freighter (medium-heavy)
 ###############################################
 
+ship "Wyvern"
+	sprite "ship/skylark"
+	thumbnail "thumbnail/skylark"
+	attributes
+		category "Container Ship"
+		"cost" 20000000
+		"shields" 10000
+		"hull" 7000
+		"required crew" 12
+		"bunks" 21
+		"mass" 460
+		"drag" 12.3
+		"heat dissipation" .7
+		"fuel capacity" 1000
+		"cargo space" 200
+		"outfit space" 120
+		"engine capacity" 120
+		"hull repair rate" .15
+		"hull energy" .15
+		"energy generation" 4.8
+		"energy capacity" 2200
+		"shield generation" .82
+		"shield energy" .82
+		"ramscoop" 1
+		weapon
+			"blast radius" 250
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"A370 Atomic Thruster"
+		"A525 Atomic Steering"
+		"Hyperdrive"
+		
+	engine -15 117
+	engine 15 117
+	explode "tiny explosion" 12
+	explode "small explosion" 16
+	explode "medium explosion" 30
+	explode "large explosion" 40
+	explode "huge explosion" 20
+	"final explode" "final explosion medium"
+	description "Although its true name is completely unpronouncable by humans, the Wyvern has come to be known as the Quarg's favored packmule."
+	description "	As Quarg and Human technology is largely incompatible, this overpriced vessel has little-to-no room for additional outfits, and can fit no weapons. This makes ownership of such a vessel more of a status symbol than anything else."
+
 ship "Class C Freighter"
 	sprite "ship/bulk freighter"
 	thumbnail "thumbnail/bulk freighter"
 	attributes
 		category "Carrier"
 		"cost" 11400000
+		"landing gear" 1
 		"shields" 13500
 		"hull" 7600
 		"hull repair rate" .1
@@ -1770,6 +1899,7 @@ ship "Behemoth"
 	attributes
 		category "Container Ship"
 		"cost" 10800000
+		"landing gear" 1
 		"shields" 7600
 		"hull" 6300
 		"hull repair rate" .1
@@ -1833,6 +1963,7 @@ ship "Bulk Freighter"
 	attributes
 		category "Container Ship"
 		"cost" 9400000
+		"landing gear" 1
 		"shields" 4000
 		"hull" 7600
 		"hull repair rate" .1
@@ -1900,6 +2031,7 @@ ship "Narcissus"
 		licenses
 			Navy
 		"cost" 3200000
+		"landing gear" 1
 		"shields" 5800
 		"hull" 1400
 		"hull repair rate" .1
@@ -1962,6 +2094,7 @@ ship "Headhunter"
 	attributes
 		category "Frigate"
 		"cost" 1850000
+		"landing gear" 1
 		"shields" 3800
 		"hull" 700
 		"hull repair rate" .1
@@ -2021,6 +2154,7 @@ ship "Odyssey"
 	attributes
 		category "Frigate"
 		"cost" 1960000
+		"landing gear" 1
 		"shields" 4800
 		"hull" 1900
 		"hull repair rate" .1
@@ -2089,6 +2223,7 @@ ship "Quicksilver"
 	attributes
 		category "Frigate"
 		"cost" 1090000
+		"landing gear" 1
 		"shields" 3000
 		"hull" 800
 		"hull repair rate" .1
@@ -2146,6 +2281,7 @@ ship "Achlys"
 		licenses
 			Navy
 		"cost" 1580000
+		"landing gear" 1
 		"shields" 3500
 		"hull" 1200
 		"hull repair rate" .1
@@ -2171,10 +2307,7 @@ ship "Achlys"
 			"hull damage" 200
 			"hit force" 600
 	outfits
-		"Energy Blaster" 2
-		"Meteor Missile Launcher" 4
-		"Meteor Missile" 180
-		"Meteor Missile Box" 4
+		"Ranger Missile Launcher" 6
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
@@ -2210,6 +2343,7 @@ ship "Raven"
 	attributes
 		category "Frigate"
 		"cost" 2200000
+		"landing gear" 1
 		"shields" 4700
 		"hull" 1400
 		"hull repair rate" .1
@@ -2268,12 +2402,13 @@ ship "Raven"
 ###############################################
 
 
-ship "Endevor"
+ship "Endeavor"
 	sprite "ship/mstar queene"
 	thumbnail "thumbnail/mstar queene"
 	attributes
 		category "Destroyer"
 		"cost" 4500000
+		"landing gear" 1
 		"shields" 9800
 		"hull" 6000
 		"hull repair rate" .1
@@ -2325,7 +2460,7 @@ ship "Endevor"
 	explode "large explosion" 10
 	"final explode" "final explosion medium"
 	description "After decades of capturing and ransoming Star Queens, the shipyards on Haven came into an overabundance of otherwise useless transports. Initial attempts to rent these out as stationary luxury apartments fell flat, so it was decided to convert these into combat vessels. Unsurprisingly, its sold with the same outfits it had when captured."
-	description "	Once stripped of its luxury resources, the Star Queen proved a surprisingly sturdy and nimble hull. Although lightly armed even by frigate standards, the Endevors engine space and shield strength can almost rival a cruisers, landing it squarely in the Destroyer range." 
+	description "	Once stripped of its luxury resources, the Star Queen proved a surprisingly sturdy and nimble hull. Although lightly armed even by frigate standards, the Endeavors engine space and shield strength can almost rival a cruisers, landing it squarely in the Destroyer range." 
 	
 ship "Manta"
 	sprite "ship/manta"
@@ -2333,6 +2468,7 @@ ship "Manta"
 	attributes
 		category "Destroyer"
 		"cost" 3400000
+		"landing gear" 1
 		"shields" 5900
 		"hull" 1500
 		"hull repair rate" .1
@@ -2393,6 +2529,7 @@ ship "Osprey"
 	attributes
 		category "Destroyer"
 		"cost" 4400000
+		"landing gear" 1
 		"shields" 7200
 		"hull" 1600
 		"hull repair rate" .1
@@ -2455,6 +2592,7 @@ ship "Splinter"
 	attributes
 		category "Destroyer"
 		"cost" 3100000
+		"landing gear" 1
 		"shields" 5200
 		"hull" 1700
 		"hull repair rate" .1
@@ -2515,6 +2653,7 @@ ship "Aerie"
 	attributes
 		category "Carrier"
 		"cost" 3500000
+		"landing gear" 1
 		"shields" 5700
 		"hull" 1900
 		"hull repair rate" .1
@@ -2579,6 +2718,7 @@ ship "Bastion"
 	attributes
 		category "Destroyer"
 		"cost" 3560000
+		"landing gear" 1
 		"shields" 6700
 		"hull" 4200
 		"hull repair rate" .1
@@ -2646,6 +2786,7 @@ ship "Challenger"
 	attributes
 		category "Destroyer"
 		"cost" 4400000
+		"landing gear" 1
 		"shields" 6800
 		"hull" 800
 		"hull repair rate" .1
@@ -2709,6 +2850,7 @@ ship "Firebird"
 	attributes
 		category "Destroyer"
 		"cost" 3700000
+		"landing gear" 1
 		"shields" 5800
 		"hull" 3400
 		"hull repair rate" .1
@@ -2774,6 +2916,7 @@ ship "Aletheia"
 		licenses
 			Navy
 		"cost" 5200000
+		"landing gear" 1
 		"shields" 8000
 		"hull" 2500
 		"hull repair rate" .1
@@ -2844,6 +2987,7 @@ ship "Zephyrus"
 		licenses
 			Navy
 		"cost" 7500000
+		"landing gear" 1
 		"shields" 4000
 		"hull" 2000
 		"hull repair rate" .1
@@ -2915,6 +3059,7 @@ ship "Astraea"
 		licenses
 			"Free Worlds"		
 		"cost" 9000000
+		"landing gear" 1
 		"shields" 14100
 		"hull" 5300
 		"hull repair rate" .1
@@ -2983,6 +3128,7 @@ ship "Schooner"
 	attributes
 		category "Cruiser"
 		"cost" 10800000
+		"landing gear" 1
 		"shields" 12000
 		"hull" 6500
 		"hull repair rate" .1
@@ -3047,6 +3193,7 @@ ship "Arete"
 			Navy
 			Carrier
 		"cost" 15200000
+		"landing gear" 1
 		"shields" 21400
 		"hull" 8300
 		"hull repair rate" .1
@@ -3138,6 +3285,7 @@ ship "Nomos"
 			Navy
 			Cruiser
 		"cost" 11200000
+		"landing gear" 1
 		"shields" 19600
 		"hull" 6400
 		"hull repair rate" .1
@@ -3218,6 +3366,7 @@ ship "Elpis"
 		licenses
 			"Free Worlds"		
 		"cost" 11900000
+		"landing gear" 1
 		"shields" 18100
 		"hull" 7300
 		"hull repair rate" .1
@@ -3286,6 +3435,7 @@ ship "Falcon"
 	attributes
 		category "Cruiser"
 		"cost" 10900000
+		"landing gear" 1
 		"shields" 12800
 		"hull" 3700
 		"hull repair rate" .1
@@ -3352,6 +3502,7 @@ ship "Leviathan"
 	attributes
 		category "Cruiser"
 		"cost" 9800000
+		"landing gear" 1
 		"shields" 14400
 		"hull" 5000
 		"hull repair rate" .1
@@ -3415,6 +3566,7 @@ ship "Protector"
 	attributes
 		category "Cruiser"
 		"cost" 5500000
+		"landing gear" 1
 		"shields" 9500
 		"hull" 6500
 		"hull repair rate" .1
@@ -3478,6 +3630,7 @@ ship "Aegis"
 	attributes
 		category "Cruiser"
 		"cost" 5500000
+		"landing gear" 1
 		"shields" 9500
 		"hull" 6500
 		"hull repair rate" .1
@@ -3540,6 +3693,7 @@ ship "Vanguard"
 	attributes
 		category "Cruiser"
 		"cost" 7200000
+		"landing gear" 1
 		"shields" 9800
 		"hull" 6000
 		"hull repair rate" .1
@@ -3600,8 +3754,6 @@ ship "Unnamed Prototype"
 	"never disabled"
 	thumbnail "thumbnail/kestrel"
 	attributes
-		licenses
-			Not-For-Sale
 		category "Cruiser"
 		"cost" 14700000
 		"shields" 19400
@@ -3666,7 +3818,7 @@ ship "Mule"
 		"random start frame"
 	attributes
 		licenses
-			Colony-Ship
+			City-Ship
 		category "Colony Ship"
 		"cost" 30000000
 		"shields" 14500
@@ -3833,9 +3985,6 @@ ship "Prototype Vulture"
 	"never disabled"
 	attributes
 		category "Battlecruiser"
-		licenses
-			"Battlecruiser"
-			"Tarazed"
 		"cost" 45000000
 		"shields" 75000
 		"hull" 45000
@@ -3914,9 +4063,6 @@ ship "Veles"
 	"never disabled"
 	attributes
 		category "Battlecruiser"
-		licenses
-			"Battlecruiser"
-			"Betelgeuse"
 		"cost" 850000000
 		"shields" 85000
 		"hull" 50000
@@ -4078,774 +4224,6 @@ ship " Veles "
 	explode "huge explosion" 30
 	"final explode" "final explosion large" 1
 
-# "Marauders"
-# Copyright (c) 2016 by Iaz Poolar 
-
-ship "Dart"
-	sprite "ship/marrows"
-	thumbnail "thumbnail/marrows"
-	attributes
-		category "Gunship"
-		licenses
-			Marauder
-			SoCo
-		"cost" 1320000
-		"shields" 2300
-		"hull" 500
-		"required crew" 2
-		"bunks" 5
-		"mass" 145
-		"drag" 2.0
-		"heat dissipation" .85
-		"fuel capacity" 600
-		"cargo space" 5
-		"outfit space" 210
-		"weapon capacity" 55
-		"engine capacity" 95
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 27
-			"shield damage" 265
-			"hull damage" 135
-			"hit force" 400
-	outfits
-		"Heavy Laser" 2
-		"Quad Blaster Turret"
-		
-		"Dwarf Core"
-		"LP072a Battery Pack"
-		"D14-XS Shield Generator"
-		"Water Coolant System MKI"
-		"Laser Rifle" 5
-		
-		"A250 Atomic Thruster"
-		"A255 Atomic Steering"
-		"Hyperdrive"
-		
-	engine -8 57
-	engine 8 57
-	gun -6 -36 "Heavy Laser"
-	gun 6 -36 "Heavy Laser"
-	turret 0 15 "Quad Blaster Turret"
-	explode "tiny explosion" 12
-	explode "small explosion" 18
-	explode "medium explosion" 6
-	"final explode" "final explosion small"
-	description "This Arrow has had numerous modifications to its hull and internal systems to make more room for outfits - mostly with combat in mind. More shields, weapons, engines, outfit space, and a turret mount nearly push this ship into classification as a frigate, and definitely make it one of the heaviest gunships you're likely to find."
-
-
-ship "Bolt"
-	sprite "ship/marrowe"
-	thumbnail "thumbnail/marrowe"
-	attributes
-		category "Gunship"
-		licenses
-			Marauder
-			Hotrod
-		"cost" 1320000
-		"shields" 2300
-		"hull" 500
-		"required crew" 2
-		"bunks" 5
-		"mass" 145
-		"drag" 2.0
-		"heat dissipation" .85
-		"fuel capacity" 600
-		"cargo space" 5
-		"outfit space" 210
-		"weapon capacity" 55
-		"engine capacity" 115
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 27
-			"shield damage" 265
-			"hull damage" 135
-			"hit force" 400
-
-	outfits
-		"Heavy Laser" 2
-		"Anti-Missile Turret"
-		
-		"Dwarf Core"
-		"Supercapacitor"
-		"D14-XS Shield Generator"
-		"Laser Rifle" 5
-		
-		"A370 Atomic Thruster"
-		"A375 Atomic Steering"
-		"Hyperdrive"
-		
-	engine -10 57
-	engine 10 57
-	description "With a third engine mount, this Arrow seems more like an oversized missile than a ship. The beefed-up engines, a little extra outfit capacity, extra shield emitters, and thicker hull plating make this vessel a very competent gunship."
-
-
-ship "Missile"
-	sprite "ship/marroww"
-	thumbnail "thumbnail/marroww"
-	attributes
-		category "Gunship"
-		licenses
-			Marauder
-			Smuggler
-		"cost" 1320000
-		"shields" 2300
-		"hull" 500
-		"required crew" 2
-		"bunks" 5
-		"mass" 145
-		"drag" 2.0
-		"heat dissipation" .85
-		"fuel capacity" 600
-		"cargo space" 5
-		"outfit space" 210
-		"weapon capacity" 60
-		"engine capacity" 95
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 27
-			"shield damage" 265
-			"hull damage" 135
-			"hit force" 400
-	outfits
-		"Energy Blaster" 4
-		"Heavy Laser Turret"
-		
-		"Dwarf Core"
-		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
-		"Water Coolant System MKII"
-		"Laser Rifle" 5
-		
-		"A250 Atomic Thruster"
-		"A255 Atomic Steering"
-		"Hyperdrive"
-		
-	gun -6 -36 "Energy Blaster"
-	gun 6 -36 "Energy Blaster"
-	gun -7 -34 "Energy Blaster"
-	gun 7 -34 "Energy Blaster"
-	turret 0 15 "Heavy Laser Turret"
-	description "The weapons systems on this Arrow have been enhanced to the point of competing with Lionheart's Headhunter, although it can still outrun all but the fastest ships, if things get a little too hairy."
-
-
-
-ship "Jumper"
-	sprite "ship/mbounders"
-	thumbnail "thumbnail/mbounders"
-	attributes
-		category "Gunship"
-		licenses
-			Marauder
-			SoCo
-		"cost" 1250000
-		"shields" 2500
-		"hull" 700
-		"required crew" 2
-		"bunks" 18
-		"mass" 145
-		"drag" 3.7
-		"heat dissipation" .8
-		"fuel capacity" 900
-		"cargo space" 20
-		"outfit space" 240
-		"weapon capacity" 80
-		"engine capacity" 115
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 35
-			"shield damage" 350
-			"hull damage" 175
-			"hit force" 500
-	outfits
-		"Particle Cannon"
-		"Quad Blaster Turret" 2
-
-		"Dwarf Core"
-		"LP072a Battery Pack"
-		"S-270 Regenerator"
-		"Outfits Expansion"
-		"Water Coolant System MKII"
-		"Security Station"
-		"Laser Rifle" 18
-		
-		"A250 Atomic Thruster"
-		"A255 Atomic Steering"
-		"Afterburner"
-		"Hyperdrive"
-		
-	engine -12 44
-	engine 12 44
-	gun 0 -85 "Particle Cannon"
-	turret -38 7 "Quad Blaster Turret"
-	turret 38 7 "Quad Blaster Turret"
-	explode "tiny explosion" 10
-	explode "small explosion" 20
-	explode "medium explosion" 15
-	"final explode" "final explosion small"
-	description "This Megaparsec Bounder has been modified from a courier-scout into a heavy escort gunship - currently the largest in the class. A little extra outfit space, reinforced turret mounts, a new gun port in front of the pilot, and additional shield emitters grant this former transport both fearsome speed and armament."
-
-
-ship "Polevaulter"
-	sprite "ship/mboundere"
-	thumbnail "thumbnail/mboundere"
-	attributes
-		category "Gunship"
-		licenses
-			Marauder
-			Smuggler
-		"cost" 1250000
-		"shields" 2500
-		"hull" 700
-		"required crew" 2
-		"bunks" 18
-		"mass" 145
-		"drag" 3.7
-		"heat dissipation" .8
-		"fuel capacity" 900
-		"cargo space" 20
-		"outfit space" 240
-		"weapon capacity" 80
-		"engine capacity" 130
-		"self destruct" .25
-		weapon
-			"blast radius" 35
-			"shield damage" 350
-			"hull damage" 175
-			"hit force" 500
-		
-	outfits
-		"Heavy Laser"
-		"Quad Blaster Turret" 2
-		
-		"Dwarf Core"
-		"LP072a Battery Pack"
-		"S-270 Regenerator"
-		"Water Coolant System MKII"
-		"Outfits Expansion"
-		"Laser Rifle" 18
-		
-		"A370 Atomic Thruster"
-		"A375 Atomic Steering"
-		"Hyperdrive"
-		
-	engine -12 58 .7
-	engine 0 51
-	engine 12 58 .7
-	description "The previous owner of this Bounder has modified an already fast courier-scout into an even faster heavy escort gunship with some truly enormous engines, giving it incredible maneuverability for its size."
-
-
-ship "Pouncer"
-	sprite "ship/mbounderw"
-	thumbnail "thumbnail/mbounderw"
-	attributes
-		category "Gunship"
-		licenses
-			Marauder
-			Hotrod
-		"cost" 1250000
-		"shields" 2500
-		"hull" 700
-		"required crew" 2
-		"bunks" 18
-		"mass" 145
-		"drag" 3.7
-		"heat dissipation" .8
-		"fuel capacity" 900
-		"cargo space" 20
-		"outfit space" 240
-		"weapon capacity" 100
-		"engine capacity" 115
-		"self destruct" .25
-		weapon
-			"blast radius" 35
-			"shield damage" 350
-			"hull damage" 175
-			"hit force" 500
-		
-	outfits
-		"Modified Blaster" 2
-		"Heavy Laser Turret" 2
-		
-		"Dwarf Core"
-		"LP072a Battery Pack"
-		"S-270 Regenerator"
-		"Water Coolant System MKII"
-		"Outfits Expansion"
-		"Security Station"
-		"Laser Rifle" 18
-		
-		"A250 Atomic Thruster"
-		"A255 Atomic Steering"
-		"Hyperdrive"
-		
-	engine -15 44
-	engine 15 44
-	gun -7 -77 "Modified Blaster"
-	gun 7 -77 "Modified Blaster"
-	turret -37 4 "Heavy Laser Turret"
-	turret 37 4 "Heavy Laser Turret"
-	description "Simultaneously the deadliest and most graceful gunship in the galaxy, this former Bounder courier-scout has been equipped with incredibly powerful weapons for a ship of its size."
-
-
-
-ship "Merlin"
-	sprite "ship/mfalcons"
-	thumbnail "thumbnail/mfalcons"
-	attributes
-		category "Cruiser"
-		licenses
-			Marauder
-			SoCo
-		"cost" 13900000
-		"shields" 14100
-		"hull" 4100
-		"required crew" 43
-		"bunks" 80
-		"mass" 560
-		"drag" 6.7
-		"heat dissipation" .8
-		"fuel capacity" 600
-		"cargo space" 60
-		"outfit space" 580
-		"weapon capacity" 265
-		"engine capacity" 165
-		"self destruct" .15
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 170
-			"shield damage" 1750
-			"hull damage" 900
-			"hit force" 2750
-	outfits
-		"Plasma Cannon" 4
-		"Modified Blaster Turret" 4
-		
-		"Fusion Reactor"
-		"LP288a Battery Pack"
-		"D14-L Shield Generator"
-		"Large Radar Jammer"
-		"Liquid Helium Cooler"
-		"Outfits Expansion" 3
-		"Laser Rifle" 80
-		
-		"A520 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-
-	engine -16 143
-	engine 16 143
-	gun -16 -89 "Plasma Cannon"
-	gun 16 -89 "Plasma Cannon"
-	gun -16 -89 "Plasma Cannon"
-	gun 16 -89 "Plasma Cannon"
-	turret -16 -25 "Modified Blaster Turret"
-	turret 16 -25 "Modified Blaster Turret"
-	turret -57 32.5 "Modified Blaster Turret"
-	turret 57 32.5 "Modified Blaster Turret"
-	explode "tiny explosion" 40
-	explode "small explosion" 55
-	explode "medium explosion" 60
-	explode "large explosion" 40
-	"final explode" "final explosion large"
-	description "This Tarazed Falcon has been heavily modified by some very dedicated craftsmen. The hull is riddled with extra shield emitters and expanded equipment bays, adding bulk and definitely voiding the warranty."
-
-
-ship "Peregrine"
-	sprite "ship/mfalcone"
-	thumbnail "thumbnail/mfalcone"
-	attributes
-		category "Cruiser"
-		licenses
-			Marauder
-			Smuggler
-		"cost" 13900000
-		"shields" 14100
-		"hull" 4100
-		"required crew" 43
-		"bunks" 80
-		"mass" 560
-		"drag" 6.7
-		"heat dissipation" .8
-		"fuel capacity" 600
-		"cargo space" 60
-		"outfit space" 580
-		"weapon capacity" 265
-		"engine capacity" 220
-		"self destruct" .15
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 170
-			"shield damage" 1750
-			"hull damage" 900
-			"hit force" 2750
-	outfits
-		"Electron Beam" 4
-		"Blaster Turret" 2
-		"Modified Blaster Turret" 2
-		
-		"Fusion Reactor"
-		"LP144a Battery Pack"
-		"D14-M Shield Generator"
-		"Large Radar Jammer"
-		"Liquid Helium Cooler"
-		"Outfits Expansion" 3
-		"Laser Rifle" 80
-		
-		"A860 Atomic Thruster"
-		"A865 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -21 138 .7
-	engine 0 144
-	engine 21 138 .7
-	gun -16 -88 "Electron Beam"
-	gun 16 -88 "Electron Beam"
-	gun -16 -88 "Electron Beam"
-	gun 16 -88 "Electron Beam"
-	turret -16 -24 "Modified Blaster Turret"
-	turret 16 -24 "Modified Blaster Turret"
-	turret -57 32.5 "Blaster Turret"
-	turret 57 32.5 "Blaster Turret"
-	description "Whoever modified this Falcon clearly valued speed above all else. Major sections of the hull have been reconfigured to accommodate the largest possible engines. If hot-rodding across the galaxy in a 1000-ton warship that handles like a Flivver is your dream, look no further."
-
-
-ship "Harpy"
-	sprite "ship/mfalconw"
-	thumbnail "thumbnail/mfalconw"
-	attributes
-		category "Cruiser"
-		licenses
-			Marauder
-			Hotrod
-		"cost" 13900000
-		"shields" 14100
-		"hull" 4100
-		"required crew" 43
-		"bunks" 80
-		"mass" 560
-		"drag" 6.7
-		"heat dissipation" .8
-		"fuel capacity" 600
-		"cargo space" 60
-		"outfit space" 580
-		"weapon capacity" 300
-		"engine capacity" 165
-		"self destruct" .15
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 170
-			"shield damage" 1750
-			"hull damage" 900
-			"hit force" 2750	
-	outfits
-		"Plasma Cannon" 6
-		"Quad Blaster Turret" 4
-		
-		"Fusion Reactor"
-		"LP144a Battery Pack"
-		"D14-M Shield Generator"
-		"Large Radar Jammer"
-		"Liquid Helium Cooler"
-		"Outfits Expansion" 3
-		"Laser Rifle" 80
-		
-		"A370 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -16 142
-	engine 16 142
-	gun -18.5 -88 "Plasma Cannon"
-	gun 18.5 -88 "Plasma Cannon"
-	gun -18.5 -88 "Plasma Cannon"
-	gun 18.5 -88 "Plasma Cannon"
-	gun -21.5 -77 "Plasma Cannon"
-	gun 21.5 -77 "Plasma Cannon"
-	turret -16 -25 "Quad Blaster Turret"
-	turret 16 -25 "Quad Blaster Turret"
-	turret -57 32.5 "Quad Blaster Turret"
-	turret 57 32.5 "Quad Blaster Turret"
-	description "Whoever modified this Falcon clearly believed that firepower was everything. Two additional gun ports have been integrated into the hull, and the ship's interior space has been reconfigured to accommodate nearly any set of weapons you can imagine."
-
-
-
-ship "Phoenix"
-	sprite "ship/mfirebirds"
-	thumbnail "thumbnail/mfirebirds"
-	attributes
-		category "Destroyer"
-		"cost" 4100000
-		"shields" 7000
-		"hull" 3000
-		"required crew" 10
-		"bunks" 25
-		"mass" 350
-		"drag" 4.5
-		"heat dissipation" .6
-		"fuel capacity" 400
-		"cargo space" 20
-		"outfit space" 450
-		"weapon capacity" 175
-		"engine capacity" 110
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 110
-			"shield damage" 1100
-			"hull damage" 550
-			"hit force" 1650
-	outfits
-		"Plasma Cannon" 4
-		"Heavy Laser Turret"
-		"Heavy Anti-Missile Turret"
-		
-		"Fusion Reactor"
-		"Supercapacitor"
-		"S-970 Regenerator"
-		"Liquid Helium Cooler"
-		"Outfits Expansion"
-		"Laser Rifle" 25
-		
-		"A250 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -31.5 68
-	engine 31.5 68
-	gun -28 -34 "Plasma Cannon"
-	gun 28 -34 "Plasma Cannon"
-	gun -39 -19 "Plasma Cannon"
-	gun 39 -19 "Plasma Cannon"
-	turret 0 -44 "Heavy Anti-Missile Turret"
-	turret 0 -2.5 "Heavy Laser Turret"
-	explode "tiny explosion" 18
-	explode "small explosion" 36
-	explode "medium explosion" 24
-	explode "large explosion" 8
-	"final explode" "final explosion medium"
-	description "By the looks of the modification that have taken place, you suspect that this ship contains no original parts. With extra shield emitters, hull plating, and outfit space, this half-millennium-old design is finding new life with its heavy modification."
-
-
-ship "Huma"
-	sprite "ship/mfirebirde"
-	thumbnail "thumbnail/mfirebirds"
-	attributes
-		category "Destroyer"
-		"cost" 4100000
-		"shields" 7000
-		"hull" 3000
-		"required crew" 10
-		"bunks" 25
-		"mass" 350
-		"drag" 4.5
-		"heat dissipation" .6
-		"fuel capacity" 400
-		"cargo space" 20
-		"outfit space" 450
-		"weapon capacity" 175
-		"engine capacity" 130
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 110
-			"shield damage" 1100
-			"hull damage" 550
-			"hit force" 1650
-	outfits
-		"Plasma Cannon" 4
-		"Quad Blaster Turret"
-		"Anti-Missile Turret"
-		
-		"Fusion Reactor"
-		"LP036a Battery Pack"
-		"Supercapacitor"
-		"S-970 Regenerator"
-		"Liquid Helium Cooler"
-		"Outfits Expansion"
-		"Security Station"
-		"Laser Rifle" 24
-		
-		"A370 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-
-	engine -31.5 75.5
-	engine 31.5 75.5
-	engine 0 78
-	description "One of the biggest complaints about Betelgeuse's venerable classic from younger pilots is that it's heavy and slow. A previous owner of this ship also believed so, and has fitted another engine port, in addition to setting aside more space for outfits and giving the old ship some new hull plating and shield emitters."
-
-
-ship "Fenghuang"
-	sprite "ship/mfirebirdw"
-	thumbnail "thumbnail/mfirebirdw"
-	attributes
-		category "Destroyer"
-		"cost" 4100000
-		"shields" 7000
-		"hull" 3000
-		"required crew" 10
-		"bunks" 25
-		"mass" 350
-		"drag" 4.5
-		"heat dissipation" .6
-		"fuel capacity" 400
-		"cargo space" 20
-		"outfit space" 450
-		"weapon capacity" 210
-		"engine capacity" 110
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 110
-			"shield damage" 1100
-			"hull damage" 550
-			"hit force" 1650	
-	outfits
-		"Particle Cannon" 4
-		"Quad Blaster Turret" 2
-		
-		"Fusion Reactor"
-		"Supercapacitor"
-		"S-970 Regenerator"
-		"Liquid Helium Cooler"
-		"Outfits Expansion"
-		"Security Station"
-		"Laser Rifle" 24
-		
-		"A250 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-	
-	gun -27.5 -33.5 "Particle Cannon"
-	gun 27.5 -33.5 "Particle Cannon"
-	gun -38.5 -18.5 "Particle Cannon"
-	gun 38.5 -18.5 "Particle Cannon"
-	turret 0 -44 "Quad Blaster Turret"
-	turret 0 -2.5 "Quad Blaster Turret"
-	description "The Firebird is known to have one of the heaviest armaments possible for a warship of its size, and this modified version makes it even heavier. With more outfit space, giant gun ports, extra hull plating, and more shield emitters, this blast from the past will make its targets history."
-
-
-
-ship "Lindworm"
-	sprite "ship/mleviathans"
-	thumbnail "thumbnail/mleviathans"
-	attributes
-		category "Cruiser"
-		licenses
-			Marauder
-			SoCo
-		"cost" 10800000
-		"shields" 16000
-		"hull" 5500
-		"required crew" 48
-		"bunks" 69
-		"mass" 640
-		"drag" 7.6
-		"heat dissipation" .5
-		"fuel capacity" 500
-		"cargo space" 40
-		"outfit space" 680
-		"weapon capacity" 265
-		"engine capacity" 140
-		"self destruct" .15
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 90
-			"shield damage" 900
-			"hull damage" 450
-			"hit force" 1500
-	outfits
-		"Particle Cannon" 4
-		"Quad Blaster Turret" 2
-		"Heavy Laser Turret" 2
-		
-		"Fusion Reactor"
-		"LP144a Battery Pack"
-		"D14-XL Shield Generator"
-		"Large Radar Jammer"
-		"Liquid Helium Cooler"
-		"Outfits Expansion" 2
-		"Laser Rifle" 69
-		
-		"A370 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Ionic Afterburner"
-		"Hyperdrive"
-	
-	engine -23 126.5
-	engine 23 126.5
-	gun -39.5 -33 "Particle Cannon"
-	gun 39.5 -33 "Particle Cannon"
-	gun -51 -21 "Particle Cannon"
-	gun 51 -21 "Particle Cannon"
-	turret -14.5 -11.5 "Quad Blaster Turret"
-	turret 14.5 -11.5 "Quad Blaster Turret"
-	turret -26 11.5 "Heavy Laser Turret"
-	turret 26 11.5 "Heavy Laser Turret"
-	explode "tiny explosion" 18
-	explode "small explosion" 36
-	explode "medium explosion" 24
-	explode "large explosion" 8
-	"final explode" "final explosion large"
-	description "The Betelgeuse Shipyards Leviathan has been in service for a long time, and captains have had some very interesting ideas about how to modify them for optimum performance. This one has had the hull surface completely stripped and replaced, with the new layout containing more shield projectors per square meter."
-
-
-ship "Selma"
-	sprite "ship/mleviathane"
-	thumbnail "thumbnail/mleviathane"
-	attributes
-		category "Cruiser"
-		licenses
-			Marauder
-			Smuggler
-		"cost" 10800000
-		"shields" 16000
-		"hull" 5500
-		"required crew" 48
-		"bunks" 69
-		"mass" 640
-		"drag" 7.6
-		"heat dissipation" .5
-		"fuel capacity" 500
-		"cargo space" 40
-		"outfit space" 680
-		"weapon capacity" 265
-		"engine capacity" 220
-		"self destruct" .15
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 90
-			"shield damage" 900
-			"hull damage" 450
-			"hit force" 1500
-	outfits
-		"Electron Beam" 4
-		"Quad Blaster Turret" 4
-		
-		"Fusion Reactor"
-		"LP144a Battery Pack"
-		"D14-XL Shield Generator"
-		"Large Radar Jammer"
-		"Liquid Helium Cooler"
-		"Liquid Nitrogen Cooler"
-		"Outfits Expansion" 2
-		"Laser Rifle" 69
-		
-		"A860 Atomic Thruster"
-		"A865 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -41 118.5 0.6
-	engine 41 118.5 0.6
-	engine -21 126.5 0.8
-	engine 21 126.5 0.8
-	description "As if the Leviathan wasn't a terrifying enough ship already, this one has been heavily modified with special attention paid to the engine capacity, enabling it to bring its guns to bear even faster."
-
 
 ship "Bakunawa"
 	sprite "ship/mleviathanw"
@@ -4853,6 +4231,7 @@ ship "Bakunawa"
 	attributes
 		category "Cruiser"
 		"cost" 10800000
+		"landing gear" 1
 		"shields" 16000
 		"hull" 5500
 		"required crew" 48
@@ -4898,659 +4277,6 @@ ship "Bakunawa"
 	turret -26 11.5 "Heavy Laser Turret"
 	turret 26 11.5 "Heavy Laser Turret"
 	description "This Leviathan once belonged to an infamous pirate captain whose name has been lost to the ages. It's had so much custom work done to it that can hardly even be considered the same ship. The weapons capacity, in particular, has been massively increased."
-
-
-
-ship "Zonetail"
-	sprite "ship/mmantas"
-	thumbnail "thumbnail/mmantas"
-	attributes
-		category "Destroyer"
-		licenses
-			Marauder
-			SoCo
-		"cost" 3740000
-		"shields" 6500
-		"hull" 1750
-		"required crew" 7
-		"bunks" 11
-		"mass" 195
-		"drag" 4.7
-		"heat dissipation" .8
-		"fuel capacity" 400
-		"cargo space" 10
-		"outfit space" 390
-		"weapon capacity" 155
-		"engine capacity" 110
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 90
-			"shield damage" 900
-			"hull damage" 450
-			"hit force" 1350
-	outfits
-		"Plasma Cannon" 2
-		"Particle Cannon" 2
-		"Meteor Missile Launcher" 2
-		"Meteor Missile" 70
-		"Quad Blaster Turret"
-		
-		"Dwarf Core"
-		"LP144a Battery Pack"
-		"D14-XS Shield Generator"
-		"Liquid Nitrogen Cooler"
-		"Security Station" 3
-		"Laser Rifle" 8
-		
-		"A250 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -33 38
-	engine 33 38
-	gun -66 -30 "Meteor Missile Launcher"
-	gun 66 -30 "Meteor Missile Launcher"
-	gun -27 -30 "Plasma Cannon"
-	gun 27 -30 "Plasma Cannon"
-	gun -20 -30 "Particle Cannon"
-	gun 20 -30 "Particle Cannon"
-	turret 0 -29 "Quad Blaster Turret"
-	explode "tiny explosion" 10
-	explode "small explosion" 20
-	explode "medium explosion" 15
-	"final explode" "final explosion medium"
-	description `After the Syndicate released their Vanguard cruiser, the Manta fell somewhat out of favor due to its lack of ability to mount any anti-missile turrets. This Manta rectified that, added some extra armor plating and shield emitters, and rearranged some of the internals to yield a little more outfit space. Dry tonnage alone keeps it from being classified as a cruiser.`
-
-
-ship "Lesser Devil"
-	sprite "ship/mmantae"
-	thumbnail "thumbnail/mmantae"
-	attributes
-		category "Destroyer"
-		licenses
-			Marauder
-			Hotrod
-		"cost" 3740000
-		"shields" 6500
-		"hull" 1750
-		"required crew" 7
-		"bunks" 11
-		"mass" 195
-		"drag" 4.7
-		"heat dissipation" .8
-		"fuel capacity" 400
-		"cargo space" 10
-		"outfit space" 390
-		"weapon capacity" 155
-		"engine capacity" 130
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 90
-			"shield damage" 900
-			"hull damage" 450
-			"hit force" 1350
-	outfits
-		"Plasma Cannon" 4
-		"Meteor Missile Launcher" 2
-		"Meteor Missile" 70
-		"Quad Blaster Turret"
-		
-		"Dwarf Core"
-		"LP144a Battery Pack"
-		"D14-XS Shield Generator"
-		"Liquid Nitrogen Cooler"
-		"Laser Rifle" 11
-		
-		"A370 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -33.5 38
-	engine 0 76
-	engine 33.5 38
-	gun "Meteor Missile Launcher"
-	gun "Meteor Missile Launcher"
-	gun "Plasma Cannon"
-	gun "Plasma Cannon"
-	gun "Plasma Cannon"
-	gun "Plasma Cannon"
-	turret "Quad Blaster Turret"
-	description `A previous owner of this Manta has gone to great lengths to make sure they could bring all six gun ports to bear in a hurry, and chase down smaller warships. Style was not lost on that captain, and a forked tail yielded a little more space for shield projectors in an area that would have been destabilized by engine exhaust. If its dry tonnage were any higher, it would be classified as a cruiser.`
-
-
-ship "Spinetail"
-	sprite "ship/mmantaw"
-	thumbnail "thumbnail/mmantaw"
-	attributes
-		category "Destroyer"
-		licenses
-			Marauder
-			Smuggler
-		"cost" 3740000
-		"shields" 6500
-		"hull" 1750
-		"required crew" 7
-		"bunks" 11
-		"mass" 195
-		"drag" 4.7
-		"heat dissipation" .8
-		"fuel capacity" 400
-		"cargo space" 10
-		"outfit space" 390
-		"weapon capacity" 175
-		"engine capacity" 110
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 90
-			"shield damage" 900
-			"hull damage" 450
-			"hit force" 1350
-	outfits
-		"Particle Cannon" 2
-		"Proton Gun" 2
-		"Meteor Missile Launcher" 2
-		"Meteor Missile" 70
-		"Heavy Anti-Missile Turret"
-		
-		"Fission Reactor"
-		"LP072a Battery Pack"
-		"LP036a Battery Pack"
-		"Supercapacitor"
-		"D14-XS Shield Generator"
-		"Liquid Nitrogen Cooler"
-		"Laser Rifle" 11
-		
-		"A250 Atomic Thruster"
-		"A375 Atomic Steering"
-		"Hyperdrive"
-		
-	engine -33.5 38
-	engine 33.5 38
-	gun -66 -34 "Meteor Missile Launcher"
-	gun 66 -34 "Meteor Missile Launcher"
-	gun -27 -35 "Proton Gun"
-	gun 27 -35 "Proton Gun"
-	gun -20 -35 "Particle Cannon"
-	gun 20 -35 "Particle Cannon"
-	turret 0 -29 "Heavy Anti-Missile Turret"
-	description `This Manta has undergone extensive modification, featuring extra gun ports, hull plating, and shield emitters. Whoever modified it seems to have forgotten to include dedicated space for the power systems, as they're crammed in and around everything else like an afterthought. If its dry tonnage were any higher, it would be classified as a cruiser.`
-
-
-
-ship "Gallium"
-	sprite "ship/mquicksilvers"
-	thumbnail "thumbnail/mquicksilvers"
-	attributes
-		category "Frigate"
-		licenses
-			Marauder
-			SoCo
-		"cost" 1200000
-		"shields" 3500
-		"hull" 900
-		"required crew" 4
-		"bunks" 7
-		"mass" 140
-		"drag" 2.7
-		"heat dissipation" .8
-		"fuel capacity" 400
-		"cargo space" 5
-		"outfit space" 265
-		"weapon capacity" 65
-		"engine capacity" 75
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 45
-			"shield damage" 450
-			"hull damage" 225
-			"hit force" 650
-	outfits
-		"Heavy Laser" 2
-		"Heavy Anti-Missile Turret"
-		
-		"Fission Reactor"
-		"LP036a Battery Pack"
-		"S-270 Regenerator"
-		"Liquid Nitrogen Cooler"
-		"Security Station" 3
-		"Laser Rifle"
-		
-		"A250 Atomic Thruster"
-		"A375 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -16 52
-	engine 16 52
-	gun -7 -39 "Heavy Laser"
-	gun 7 -39 "Heavy Laser"
-	turret 0 15 "Heavy Anti-Missile Turret"
-	explode "tiny explosion" 12
-	explode "small explosion" 16
-	"final explode" "final explosion small"
-	description "This Megaparsec Quicksilver is a bit of a hotrod, being a little faster, with extra shield projectors, hull plating, and an extra bunk. This aftermarket model also features a turret mount, perhaps in an answer to Lionheart's Headhunter. The shop that built this ship is sure to see more customers."
-
-
-ship "Mercury"
-	sprite "ship/mquicksilvere"
-	thumbnail "thumbnail/mquicksilvere"
-	attributes
-		category "Frigate"
-		licenses
-			Marauder
-			Smuggler
-		"cost" 1200000
-		"shields" 3500
-		"hull" 900
-		"required crew" 4
-		"bunks" 7
-		"mass" 140
-		"drag" 2.7
-		"heat dissipation" .8
-		"fuel capacity" 400
-		"cargo space" 5
-		"outfit space" 265
-		"weapon capacity" 65
-		"engine capacity" 115
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 45
-			"shield damage" 450
-			"hull damage" 225
-			"hit force" 650	
-	outfits
-		"Pulse Cannon" 2
-		"Anti-Missile Turret"
-		
-		"Fission Reactor"
-		"S-270 Regenerator"
-		"LP036a Battery Pack"
-		"Liquid Nitrogen Cooler"
-		"Security Station" 2
-		"Laser Rifle" 5
-		
-		"A370 Atomic Thruster"
-		"A375 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -16 52
-	engine 0 52
-	engine 16 52
-	description "This Quicksilver has even more space available for engine use - and even another thruster port! It's also got a few extra shield projectors, more hull plating, and another bunk. This aftermarket model also features a turret mount, perhaps in response to Lionheart's Headhunter. Whoever modified this ship wanted to chase their prey down with vicious speed."
-
-
-ship "Phosphorus"
-	sprite "ship/mquicksilverw"
-	thumbnail "thumbnail/mquicksilverw"
-	attributes
-		category "Frigate"
-		"cost" 1200000
-		"shields" 3500
-		"hull" 900
-		"required crew" 4
-		"bunks" 7
-		"mass" 140
-		"drag" 2.7
-		"heat dissipation" .8
-		"fuel capacity" 400
-		"cargo space" 5
-		"outfit space" 265
-		"weapon capacity" 80
-		"engine capacity" 75
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 45
-			"shield damage" 450
-			"hull damage" 225
-			"hit force" 650	
-	outfits
-		"Heavy Laser" 2
-		"Heavy Laser Turret"
-		
-		"Fission Reactor"
-		"LP036a Battery Pack"
-		"S-270 Regenerator"
-		"Liquid Nitrogen Cooler"
-		"Security Station" 4
-		"Laser Rifle"
-		
-		"A250 Atomic Thruster"
-		"A255 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -17 54
-	engine 17 54
-	description "This Quicksilver has even bigger gun ports. It's also got a few extra shield emitters, more hull plating, and an extra bunk. Outfitted right, this aftermarket model could be even faster than a stock model, bringing a couple of extra cannons and a turret to a fight in more menacing mimicry of Lionheart's Headhunter."
-
-
-
-ship "Crow"
-	sprite "ship/mravens"
-	thumbnail "thumbnail/mravens"
-	attributes
-		category "Frigate"
-		licenses
-			Marauder
-			SoCo
-		"cost" 2750000
-		"shields" 5200
-		"hull" 1600
-		"required crew" 7
-		"bunks" 14
-		"mass" 145
-		"drag" 3.7
-		"heat dissipation" .8
-		"fuel capacity" 500
-		"cargo space" 20
-		"outfit space" 310
-		"weapon capacity" 115
-		"engine capacity" 110
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 65
-			"shield damage" 650
-			"hull damage" 350
-			"hit force" 1000
-	outfits
-		"Heavy Laser" 4
-		"Heavy Laser Turret"
-		
-		"Breeder Reactor"
-		"Supercapacitor" 3
-		"S-270 Regenerator"
-		"Liquid Nitrogen Cooler"
-		"Outfits Expansion"
-		
-		"A250 Atomic Thruster"
-		"A375 Atomic Steering"
-		"Afterburner"
-		"Hyperdrive"
-	
-	engine -12 45
-	engine 12 45
-	gun -10 -33 "Heavy Laser"
-	gun 10 -33 "Heavy Laser"
-	gun -16 -28 "Heavy Laser"
-	gun 16 -28 "Heavy Laser"
-	turret 0 -19 "Heavy Laser Turret"
-	explode "medium explosion" 24
-	explode "large explosion" 16
-	explode "tiny explosion" 28
-	explode "small explosion" 40
-	"final explode" "final explosion small"
-	description "Whoever modified this Raven has given more heft to an agile and elegant vessel. They've added a turret and some apparently-flimsy bulkheads over extra shield emitters and outfit space. If it weren't for the wings, the central hull would barely be recognizeable as Lionheart's original under the patchwork that you expect has made an already deadly warship even more so."
-
-
-ship "Rook"
-	sprite "ship/mravene"
-	thumbnail "thumbnail/mravene"
-	attributes
-		category "Frigate"
-		licenses
-			Marauder
-			Smuggler
-		"cost" 2750000
-		"shields" 5200
-		"hull" 1600
-		"required crew" 7
-		"bunks" 14
-		"mass" 145
-		"drag" 3.7
-		"heat dissipation" .8
-		"fuel capacity" 500
-		"cargo space" 20
-		"outfit space" 310
-		"weapon capacity" 115
-		"engine capacity" 130
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 65
-			"shield damage" 650
-			"hull damage" 350
-			"hit force" 1000
-	outfits
-		"Heavy Laser" 4
-		"Heavy Laser Turret"
-		
-		"Breeder Reactor"
-		"Supercapacitor"
-		"S-270 Regenerator"
-		"Liquid Nitrogen Cooler"
-		"Outfits Expansion"
-		
-		"A370 Atomic Thruster"
-		"A375 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -12 45 .7
-	engine 0 43
-	engine 12 45 .7
-	description "Lionheart's elegant Raven has gained popularity with pirates because of its agility. This one appears to have been modified for even more of the latter at the expense of the former, and the central hull can only be recognized as a Raven because of the wings. A third engine bay, more outfit space, additional shield emitters, and a turret make this already deadly warship appear even more frightening."
-
-
-ship "Sturnus"
-	sprite "ship/mravenw"
-	thumbnail "thumbnail/mravenw"
-	attributes
-		category "Frigate"
-		licenses
-			Marauder
-			Hotrod
-		"cost" 2750000
-		"shields" 5200
-		"hull" 1600
-		"required crew" 7
-		"bunks" 14
-		"mass" 145
-		"drag" 3.7
-		"heat dissipation" .8
-		"fuel capacity" 500
-		"cargo space" 20
-		"outfit space" 310
-		"weapon capacity" 145
-		"engine capacity" 110
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 65
-			"shield damage" 650
-			"hull damage" 350
-			"hit force" 1000
-	outfits
-		"Plasma Cannon" 2
-		"Pulse Cannon" 2
-		"Heavy Laser Turret"
-		
-		"Breeder Reactor"
-		"Supercapacitor" 2
-		"S-270 Regenerator"
-		"Liquid Nitrogen Cooler"
-		"Outfits Expansion"
-		
-		"A250 Atomic Thruster"
-		"A375 Atomic Steering"
-		"Hyperdrive"
-	
-	gun -11 -33 "Plasma Cannon"
-	gun 11 -33 "Plasma Cannon"
-	gun -17 -28 "Pulse Cannon"
-	gun 17 -28 "Pulse Cannon"
-	turret 0 -19 "Heavy Laser Turret"
-	description "A former owner of this ship apparently didn't like the lithe Raven, and has added so much more to it - more weapons, more shields, and more outfit capacity - that the central hull can only be recognized because of the wings. Besides adding a turret, this ship has enormous gun ports, making you wonder how much more deadly you could possibly make a warship this small."
-
-
-
-ship "Sliver"
-	sprite "ship/msplinters"
-	thumbnail "thumbnail/msplinters"
-	attributes
-		category "Destroyer"
-		licenses
-			Marauder
-			SoCo
-		"cost" 3400000
-		"shields" 5700
-		"hull" 1950
-		"required crew" 8
-		"bunks" 22
-		"mass" 275
-		"drag" 4.0
-		"heat dissipation" .7
-		"fuel capacity" 600
-		"cargo space" 40
-		"outfit space" 450
-		"weapon capacity" 165
-		"engine capacity" 110
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 60
-			"shield damage" 600
-			"hull damage" 300
-			"hit force" 900
-	outfits
-		"Plasma Cannon" 2
-		"Heavy Laser Turret" 2
-		"Heavy Anti-Missile Turret"
-		
-		"Fusion Reactor"
-		"LP036a Battery Pack"
-		"D14-L Shield Generator"
-		"Liquid Nitrogen Cooler"
-		"Laser Rifle" 22
-		
-		"A250 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -14 112
-	engine 14 112
-	gun -15 -82 "Plasma Cannon"
-	gun 15 -82 "Plasma Cannon"
-	turret -17 -28 "Heavy Laser Turret"
-	turret 0 -28 "Heavy Anti-Missile Turret"
-	turret 17 -28 "Heavy Laser Turret"
-	explode "tiny explosion" 18
-	explode "small explosion" 36
-	explode "medium explosion" 24
-	explode "large explosion" 8
-	"final explode" "final explosion medium"
-	description "The Splinter is the largest warship produced by Megaparsec. Apparently someone wanted a bit more out of it, and has covered large sections of the hull with extra shield emitters and hull plating. Much of the stock cargo space has been converted to outfit, weapons, and engines space; coupled with a streamlining of existing internal systems, it makes this warship an agile and flexible war machine."
-
-
-ship "Needle"
-	sprite "ship/msplintere"
-	thumbnail "thumbnail/msplintere"
-	attributes
-		category "Destroyer"
-		licenses
-			Marauder
-			Smuggler
-		"cost" 3400000
-		"shields" 5700
-		"hull" 1950
-		"required crew" 8
-		"bunks" 22
-		"mass" 275
-		"drag" 4.0
-		"heat dissipation" .7
-		"fuel capacity" 600
-		"cargo space" 40
-		"outfit space" 450
-		"weapon capacity" 165
-		"engine capacity" 130
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 60
-			"shield damage" 600
-			"hull damage" 300
-			"hit force" 900
-	outfits
-		"Plasma Cannon" 2
-		"Quad Blaster Turret" 2
-		"Heavy Anti-Missile Turret"
-		
-		"Fusion Reactor"
-		"LP036a Battery Pack"
-		"D14-L Shield Generator"
-		"Liquid Nitrogen Cooler"
-		"Water Coolant System MKII"
-		"Security Station"
-		"Laser Rifle" 21
-		
-		"A370 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-	
-	engine -15 114 .7
-	engine 0 118
-	engine 15 114 .7
-	turret "Quad Blaster Turret"
-	turret "Heavy Anti-Missile Turret"
-	turret "Quad Blaster Turret"
-	description "You're not likely to find a sub-kiloton warship faster or more deadly than this one. Large sections of the hull have been covered with extra hull plating and shield emitters. Much of the cargo space has been converted to outfit space, a great deal of which is at the rear of the ship, which features a new engine port."
-
-
-ship "Sting"
-	sprite "ship/msplinterw"
-	thumbnail "thumbnail/msplinterw"
-	attributes
-		category "Destroyer"
-		licenses
-			Marauder
-			Hotrod
-		"cost" 3400000
-		"shields" 5700
-		"hull" 1950
-		"required crew" 8
-		"bunks" 22
-		"mass" 275
-		"drag" 4.0
-		"heat dissipation" .7
-		"fuel capacity" 600
-		"cargo space" 40
-		"outfit space" 450
-		"weapon capacity" 180
-		"engine capacity" 110
-		"self destruct" .25
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 60
-			"shield damage" 600
-			"hull damage" 300
-			"hit force" 900
-	outfits
-		"Plasma Cannon" 4
-		"Quad Blaster Turret" 2
-		"Heavy Anti-Missile Turret"
-		
-		"Fusion Reactor"
-		"LP036a Battery Pack"
-		"D14-S Shield Generator"
-		"Liquid Nitrogen Cooler"
-		"Security Station" 2
-		"Laser Rifle" 20
-		
-		"A250 Atomic Thruster"
-		"A525 Atomic Steering"
-		"Hyperdrive"
-	
-	gun -7.5 -98 "Plasma Cannon"
-	gun 7.5 -98 "Plasma Cannon"
-	gun -15 -82 "Plasma Cannon"
-	gun 15 -82 "Plasma Cannon"
-	turret -17 -28 "Quad Blaster Turret"
-	turret 0 -28 "Heavy Anti-Missile Turret"
-	turret 17 -28 "Quad Blaster Turret"
-	description "This Splinter has had extensive modification to its weapons space, with two new forward hard points on either side of the bridge. Large sections of the hull are covered with extra shield emitters and hull plating. Much of the stock cargo space has been converted to space for outfits, weapons, and engines; coupled with a streamlining of existing internal systems, it makes the prospect of meeting this flexible war machine in an uninhabited system seem pretty unappealing."
 
 # Drak and Quarg
 
@@ -5660,14 +4386,15 @@ ship "Archon" "Archon (Cloaked)"
 	turret "Drak Distancer"
 
 
-ship "Wyvern"
+ship "Chimera"
 	sprite "ship/wardragon"
 	thumbnail "thumbnail/wardragon"
 	attributes
-		category "Heavy Warship"
+		category "Destroyer"
 		licenses
 			Quarg
 		"cost" 5900000
+		"landing gear" 1
 		"shields" 160000
 		"hull" 50000
 		"required crew" 160
@@ -5714,6 +4441,255 @@ ship "Wyvern"
 	explode "large explosion" 40
 	explode "huge explosion" 20
 	"final explode" "final explosion medium"
-	description "A rare sight in human space, the Quarg's famed Wyvern is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
+	description "The Quarg's famed 'Qa'kiil,' better known by humans as the Chimera, is a rare sight in human space. This ship is capable of taking on entire fleets of Human ships single handedly. Because of this, the Quarg are required to get permission from the Republic before sending one of these vessels anywhere in human space."
 	description "	Many conspiracy theorists wonder why the Quarg would abide by such regulations and laws if they are so powerful."
 
+# Post Civil War Human Ships availible before Invasion
+# These will be "lessons learned from the conflict," and advances
+# in shipbuilding technology spurred on by the civil war
+
+ship "Combat Clipper"
+	sprite "ship/clipper"
+	thumbnail "thumbnail/clipper"
+	attributes
+		category "Frigate"
+		licenses
+			"Free Worlds"
+		"cost" 2000000
+		"landing gear" 1
+		"shields" 8000
+		"hull" 800
+		"hull repair rate" .2
+		"landing gear" 1
+		"required crew" 3
+		"bunks" 4
+		"mass" 150
+		"drag" 2.7
+		"heat dissipation" .8
+		"fuel capacity" 500
+		"cargo space" 10
+		"outfit space" 320
+		"weapon capacity" 120
+		"engine capacity" 140
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 60
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 36
+			"shield damage" 360
+			"hull damage" 180
+			"hit force" 540
+	outfits
+		"Beam Laser" 2
+		"Javelin Pod" 2
+		"Javelin" 400
+		
+		"nGVF-DD Fuel Cell"
+		"LP072a Battery Pack"
+		"D14-S Shield Generator"
+		"Plasma Pistol" 3
+		
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
+		
+	engine -22 47
+	engine 22 47
+	gun -21.5 -18 "Javelin Pod"
+	gun 21.5 -18 "Javelin Pod"
+	gun -11 -8.5 "Beam Laser"
+	gun 11 -8.5 "Beam Laser"
+	leak "leak" 60 50
+	leak "flame" 50 80
+	explode "tiny explosion" 15
+	explode "small explosion" 20
+	explode "medium explosion" 10
+	"final explode" "final explosion small"
+	description "Southbound mass produced this revision of the Clipper to address some of the growing pains felt by the Free Worlds. This blazing fast patrol craft can be refit to fill any role the Free Worlds needs."
+	description "The already versitile Clipper benefits from overcharged shields, more efficient damage control, more efficient cloaking, and sacrifices almost its entire cargo bay to fit advanced, specialized equipment."	
+
+ship "Narcissus MKIII"
+	sprite "ship/gunboat"
+	thumbnail "thumbnail/gunboat"
+	attributes
+		category "Frigate"
+		licenses
+			Navy
+		"cost" 4200000
+		"landing gear" 1
+		"shields" 9800
+		"hull" 1400
+		"hull repair rate" .2
+		"landing gear" 1
+		"ranger ports" 2
+		"required crew" 7
+		"bunks" 12
+		"mass" 80
+		"drag" 2.1
+		"heat dissipation" .8
+		"fuel capacity" 600
+		"cargo space" 10
+		"outfit space" 310
+		"weapon capacity" 140
+		"engine capacity" 130
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 50
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 72
+			"shield damage" 720
+			"hull damage" 360
+			"hit force" 1080
+	outfits
+		"Heavy Laser" 2
+		"Heavy Laser Turret"
+		
+		"RT-I Radiothermal"
+		"LP144a Battery Pack"
+		"D14-XS Shield Generator"
+		"Small Radar Jammer"
+		"Cargo Scanner"
+		"Outfit Scanner"
+		"Tactical Scanner"
+		"Brig"
+		"Plasma Pistol" 7
+		
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -12 57
+	engine 12 57
+	gun -28 -28 "Heavy Laser"
+	gun 28 -28 "Heavy Laser"
+	turret 0 -8 "Heavy Laser Turret"
+	leak "leak" 50 50
+	leak "flame" 80 80
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "The Betelgeuse revision of the Narcissus really hit the mark with the Republic in the late days of the Civil War as a faster, lighter support ship capable of punching above its weight class."
+	description "The upgrade goes well beyond improvements to its shields alone. The MKIII now has a considerably more efficient cloak, lighter components, and has traded out its cargo hold for more weapons or engine space."
+	
+ship "Unionworks Headhunter"
+	sprite "ship/headhunter"
+	thumbnail "thumbnail/headhunter"
+	attributes
+		category "Frigate"
+		"cost" 1850000
+		"landing gear" 1
+		"shields" 8800
+		"hull" 700
+		"hull repair rate" .2
+		"landing gear" 1
+		"required crew" 2
+		"bunks" 4
+		"mass" 80
+		"drag" 1.6
+		"heat dissipation" .8
+		"fuel capacity" 600
+		"cargo space" 10
+		"outfit space" 290
+		"weapon capacity" 100
+		"engine capacity" 120
+		"cloak" .02
+		"cloaking energy" 5
+		"cloaking heat" 50
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 44
+			"shield damage" 440
+			"hull damage" 220
+			"hit force" 660
+	outfits
+		"Heavy Laser" 2
+		"Heavy Anti-Missile Turret"
+		
+		"RT-I Radiothermal"
+		"LP072a Battery Pack"
+		"D14-S Shield Generator"
+		"Plasma Pistol" 2
+		
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
+	
+	engine -16 47
+	engine 16 47
+	gun -17.5 -17
+	gun 17.5 -17
+	gun -12 -25.5 "Heavy Laser"
+	gun 12 -25.5 "Heavy Laser"
+	turret 0 9 "Heavy Anti-Missile Turret"
+	leak "leak" 60 50
+	leak "flame" 80 80
+	explode "tiny explosion" 20
+	explode "small explosion" 25
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "After the plans of the Headhunter were stolen by the Northern Union, they set about trying to make the vessel fit their needs even better. Mostly, of course, by sacrificing its cargo space."
+	description "The Unionworks Headhunter boasts incredibly powerful shields for its weight class, as well extremely efficient cloaking, and enough space to fit massive engines or weapons on its frame."
+
+ship "Schooner Refit"
+	sprite "ship/moderator"
+	thumbnail "thumbnail/moderator"
+	attributes
+		category "Cruiser"
+		"cost" 10800000
+		"landing gear" 1
+		"shields" 19000
+		"hull" 7500
+		"hull repair rate" .3
+		"required crew" 38
+		"bunks" 65
+		"mass" 610
+		"drag" 6.6
+		"heat dissipation" .7
+		"fuel capacity" 600
+		"cargo space" 10
+		"outfit space" 630 
+		"weapon capacity" 300
+		"engine capacity" 224
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+	outfits
+		"Particle Cannon" 2
+		"Torpedo Launcher" 2
+		"Meteor Missile Launcher" 2
+		"Modified Blaster" 2
+		"Anti-Missile Turret" 1
+		"Modified Blaster Turret" 2
+		"Torpedo" 20
+		"Meteor Missile" 120
+
+		"D14-M Shield Generator"
+		"Fission Reactor"
+		"LP072a Battery Pack"
+		"Brig" 5
+		"Interference Plating" 5
+
+		"A370 Atomic Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
+
+	gun 26 -43 "Particle Cannon"
+	gun -26 -43 "Particle Cannon"
+	gun 26 -43 "Torpedo Launcher"
+	gun -26 -43 "Torpedo Launcher"
+	gun 14 -75 "Meteor Missile Launcher"
+	gun -14 -75 "Meteor Missile Launcher"
+	gun 14 -75 "Modified Blaster"
+	gun -14 -75 "Modified Blaster"
+	turret 14 -17 "Modified Blaster Turret"
+	turret -14 -17 "Modified Blaster Turret"
+	turret 0 89 "Anti-Missile Turret"
+	engine 22 114.5
+	engine -22 114.5
+	description "As if the Schooner wasn't frightening enough, Unionworks set about improving it further. Boasting Shields nearly on par with the Navy's Nomos and more armor, this refit can not only dish out a lot of damage and also take it. Other governments both envy and fear this ship."

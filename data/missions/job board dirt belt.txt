@@ -217,29 +217,29 @@ mission "Food Convoy [0]"
 		distance 2 8
 		attributes "near earth" "paradise"
 	npc
-		government "Pirate"
+		government "Freelance Pirates"
 		personality nemesis harvests plunders
 			confusion 20
 		system destination
-		fleet "Small Northern Pirates"
+		fleet "Southern Pirates"
 	npc
-		government "Pirate"
+		government "Freelance Pirates"
 		personality nemesis harvests plunders
 			confusion 20
 		system destination
-		fleet "Small Northern Pirates"
+		fleet "Southern Pirates"
 	npc
-		government "Pirate"
+		government "Freelance Pirates"
 		personality nemesis entering harvests plunders
 			confusion 20
 		system destination
-		fleet "Small Northern Pirates"
+		fleet "Southern Pirates"
 	npc
-		government "Pirate"
+		government "Freelance Pirates"
 		personality nemesis staying harvests plunders
 			confusion 20
 		system destination
-		fleet "Small Northern Pirates" 2
+		fleet "Southern Pirates" 2
 	
 	npc accompany save
 		government "Merchant"
@@ -271,20 +271,20 @@ mission "Food Convoy [1]"
 		distance 3 9
 		attributes "near earth" "paradise"
 	npc
-		government "Pirate"
+		government "Freelance Pirates"
 		personality nemesis harvests plunders
 		system destination
-		fleet "Large Northern Pirates"
+		fleet "Southern Pirates"
 	npc
-		government "Pirate"
+		government "Freelance Pirates"
 		personality nemesis entering harvests plunders
 		system destination
-		fleet "Small Northern Pirates"
+		fleet "Southern Pirates"
 	npc
-		government "Pirate"
+		government "Freelance Pirates"
 		personality nemesis staying harvests plunders
 		system destination
-		fleet "Large Northern Pirates"
+		fleet "Southern Pirates"
 	
 	npc accompany save
 		government "Merchant"
@@ -317,22 +317,22 @@ mission "Food Convoy [2]"
 		distance 4 10
 		attributes "near earth" "paradise"
 	npc
-		government "Pirate"
+		government "Freelance Pirates"
 		personality nemesis harvests plunders
 		system destination
-		fleet "Small Northern Pirates"
-		fleet "Large Northern Pirates"
+		fleet "Southern Pirates"
+		fleet "Northern Union"
 	npc
-		government "Pirate"
+		government "Freelance Pirates"
 		personality nemesis entering harvests plunders
 		system destination
-		fleet "Large Northern Pirates"
+		fleet "Northern Union"
 	npc
-		government "Pirate"
+		government "Freelance Pirates"
 		personality nemesis staying harvests plunders
 		system destination
-		fleet "Small Northern Pirates"
-		fleet "Large Northern Pirates"
+		fleet "Southern Pirates"
+		fleet "Northern Union"
 	
 	npc accompany save
 		government "Merchant"
