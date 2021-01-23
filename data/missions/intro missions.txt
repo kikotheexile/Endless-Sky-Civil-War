@@ -552,7 +552,7 @@ mission "Intro [2 Transport]"
 
 
 mission
- "Intro [3 Transport]"
+"Intro [3 Transport]"
 	priority
 	name "Bring James to <planet>"
 	description "Bring James to <destination>, where he has a spot reserved in a retirement home."
