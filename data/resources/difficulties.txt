@@ -276,7 +276,7 @@ event "normal fleets"
 			"Leviathan (Brawler)" 2
 		add variant 6
 			"Challenger (Missile)" 4
-			"Challenger (AMS) 3
+			"Challenger (AMS)" 3
 
 	fleet "Syndicated Transport 2"
 		add variant 15
@@ -701,7 +701,7 @@ event "hard fleets"
 			"Beserker (Torpedo)" 5
 		add variant 5
 			"Firebird (Bomber)"
-			"Raven (Torpedo) 4"
+			"Raven (Torpedo)" 4
 		add variant 5
 			"Firebird (Missile)" 3
 		add variant 10
@@ -860,7 +860,7 @@ event "hard fleets"
 			"Beserker (Torpedo)" 5
 		add variant 5
 			"Firebird (Bomber)"
-			"Raven (Torpedo) 4
+			"Raven (Torpedo) 4"
 		add variant 5
 			"Firebird (Missile)" 3
 		add variant 10
