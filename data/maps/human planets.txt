@@ -719,7 +719,7 @@ planet Glory
 	description `Glory; where nothing is as nature intended. Residents and idyllic hillsides both have been sculpted to perfection by the terraforming and plastic surgery industries that have blossomed here.`
 	description `    Glory is the proud home of the Academy of Planetary Sciences; the forefront of terraforming research. The Academy takes on only a select handful of students each year, each tasked with guarding the academy's secrets with their lives.`	
 	spaceport `The starport is as perfectly sculpted as the rest of the planet, a buzzing hive with hexagonal docking bays. Gardens have been planted on the roofs and on terraces on all different levels, and a bubbling artificial brook flows from a fountain on the roof down around the terraces before recycling back again.` 
-    spaceport `    While one might expect the plastic surgery addicted locals to wear perfect youthful masks, recently fashion has taken a turn for the exotic. Large piercings, long and pointed elvish ears, feathers, scaled faces, and forked tongues are all on display at the food court, some quietly having brunch but others jubilantly playing games at the arcade.`
+	spaceport `    While one might expect the plastic surgery addicted locals to wear perfect youthful masks, recently fashion has taken a turn for the exotic. Large piercings, long and pointed elvish ears, feathers, scaled faces, and forked tongues are all on display at the food court, some quietly having brunch but others jubilantly playing games at the arcade.`
 	security 0.6
 	tribute 4300
 		threshold 7500
@@ -1063,7 +1063,7 @@ planet Icefall
 planet Ingot
 	attributes "requires: landing gear" "dirt belt" volcanic mining moon
 	landscape land/mountain8
-	description `Ingot is a volcanic moon, unsuitable for life but rich in metal. Most of the mining is done remotely by robotic vehicles, requiring a team of workers to control and repair them.'
+	description `Ingot is a volcanic moon, unsuitable for life but rich in metal. Most of the mining is done remotely by robotic vehicles, requiring a team of workers to control and repair them.`
 	description `	Workers spend all their time inside pressurized buildings due both to planets inhospitable climate and danger of meteorites, as Ingot's low gravity does little to slow the space bullets down. The shells of the buildings have multiple layers, designed to be self-reparing in all but the largest impacts.` 
 	spaceport `Ships dock inside a sturdy hangar, the ceiling protecting them from meteorite impacts. As the hangar is not pressurized, landing tubes connect to visiting ships. The spaceport shares the building with the repair and control center for the mining robots, given the practicality of the operation's design, with few sturdy buildings connected by tubes and underground tunnels.`
 	outfitter "Basic Outfits"
@@ -1120,7 +1120,7 @@ planet Lichen
 	landscape land/fields3
 	description `Lichen, as the name suggests, is a rainy world of marshes and bogs. More than half the rice consumed in this district is grown on Lichen, with it's optimal climate and rich soil. Due to the endless rain and overcast weather, few people aside from farmers and starry-eyed poets have settled here.`
 	description `	Planetary government, or any government above the village level for that matter, is nonexistent. Farms are small and family-owned, negotiating sales directly with off-world corporations who arrange transportation for the produce.`
-	spaceport `The spaceport is built on a small mountain, a rare place where enough bedrock rises above the soil to provide a firm foundation for large buildings; promising a virtually flood free location. The warehouses and market are built of concrete, but the smaller buildings on the outskirts of the port have wooden frames, stippled with mold. Moss populates the area more than people, and those to be found are as gentle as the moss; slow and peaceful in their actions and interactions.'
+	spaceport `The spaceport is built on a small mountain, a rare place where enough bedrock rises above the soil to provide a firm foundation for large buildings; promising a virtually flood free location. The warehouses and market are built of concrete, but the smaller buildings on the outskirts of the port have wooden frames, stippled with mold. Moss populates the area more than people, and those to be found are as gentle as the moss; slow and peaceful in their actions and interactions.`
 	spaceport `    A noodle restaurant near the center of the port town is the popular place to gather. The mist around it thick with spice, nearly a broth in it's own right.`
 	outfitter "Ammo"
 	security 0.05
@@ -1133,7 +1133,7 @@ planet Lodestone
 	landscape land/lava5
 	description `Lodestone offers little save mining operations and volcanic eruptions. The atmosphere is thick with dust and sulfur dioxide, and the native flora is known for their short growth periods before maturity, blasting seed pods high into the air in hope they fall into good conditions."`
 	description `    Like most planets of this unstable and inhospitable nature, Lodestone's rich reserves of heavy metals drew in investors like flies to corpses.`
-	spaceport `This port is known as "Fourth Port" - the prior three falling to expected fates. At present, the port is built on a raised platform a hundred meters above the ground, with steel stilts intended to keep the port from being buried by a lava flow. Given that some explosive eruptions here have been known to launch lava kilometers into the air, plans for Fifth Port have already been drawn."
+	spaceport `This port is known as "Fourth Port" - the prior three falling to expected fates. At present, the port is built on a raised platform a hundred meters above the ground, with steel stilts intended to keep the port from being buried by a lava flow. Given that some explosive eruptions here have been known to launch lava kilometers into the air, plans for Fifth Port have already been drawn.`
 	security 0.05
 	tribute 500
 		threshold 3000
@@ -1144,7 +1144,7 @@ planet Longjump
 	landscape land/city9
 	description `Longjump is an industrial world, notable in that its low gravity makes it easy to operate and transport heavy equipment. Hang-gliding is a popular pastime here, spawning several competitive sports played by glider. Team alliances run deep here, to the point visitors are advised against participating in the subject.`
 	description `    Longjump was the first planet settled in The Rim. In August, The Rim celebrates Han Sizer, an entire month of activities commemorating the first explorer of the region. Wealthier citizens celebrate by following Han Sizer's route through the region, with long stops to appreciate what each planet has to offer.`
-	spaceport `The spaceport consists of four towers connected by a tangled web of bridges, the natives notable not only for their height but how they navigate the port with ease. Many an unlucky captain have lost deals from inability to find their meeting place."
+	spaceport `The spaceport consists of four towers connected by a tangled web of bridges, the natives notable not only for their height but how they navigate the port with ease. Many an unlucky captain have lost deals from inability to find their meeting place.`
 	outfitter "Basic Outfits"
 	outfitter "Delta V Basics"
 	outfitter "Ammo"
@@ -1166,7 +1166,7 @@ planet Luna
 	landscape land/earthrise
 	description `In the early days of space travel, when engines were so inefficient that escaping from a planet's gravity was dangerous and costly, an ambitiously large shipyard was built on the Moon. While originally nearby asteroids were harvested and mined for building materials; today shipments are delivered from all corners of the galaxy.`
 	spaceport `The spaceport is rudimentary, the main pressurized dome of the facility half a millennium old. With the sheer quantity of metal patches applied to the walls over the years, one might think it would be more effective to just renovate the entire building. In fact, everything here is old and far surpassing worn out, the entire facility a relic of the early days of space flight.`
-	spaceport `	While there has been talk of decommissioning the shipyard and converting it to a museum, no concrete plans have been announced.
+	spaceport `	While there has been talk of decommissioning the shipyard and converting it to a museum, no concrete plans have been announced.`
 	shipyard "Basic Ships"
 	shipyard "Navy Basics"
 	shipyard "Betelgeuse Basics"
