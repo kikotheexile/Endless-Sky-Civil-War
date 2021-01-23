@@ -83,7 +83,7 @@ mission "Republic Bounty 2"
 			choice
 				`	"Sure. I'll blow up the <npc> for you."`
 					accept
-				`	"I could handle the job, but how about dinner first?"
+				`	"I could handle the job, but how about dinner first?"`
 					goto dinner
 				`	"I really don't like being a killer for hire."`
 					goto killer
@@ -604,7 +604,7 @@ mission "rns oathkeeper split"
 				`	"How much compensation?"`
 				`	"Do I have a choice in this?"`
 				`	(Remain silent)`
-			`	"You can chose to take these soldiers all the way up to Farpoint for rehabilitation, or you can take them to the RNHC medical center on New Sahara. You will get paid <payment> either way. Your call. Now go."
+			`	"You can chose to take these soldiers all the way up to Farpoint for rehabilitation, or you can take them to the RNHC medical center on New Sahara. You will get paid <payment> either way. Your call. Now go."`
 				accept
 	on accept
 	
@@ -755,7 +755,7 @@ mission "RNHC Relief Shah"
 				`	"I'm in."`
 					accept
 				`	"Conspiracy theorists?"`
-			`	"Yea, Poisonwood is pretty out there on the rim so a lot of alien conspiracy theorists visit the location. Perfect cover for some of our surveillance teams. Anyway, I think I just spotted the next contractor I need to pester. Good luck!"
+			`	"Yea, Poisonwood is pretty out there on the rim so a lot of alien conspiracy theorists visit the location. Perfect cover for some of our surveillance teams. Anyway, I think I just spotted the next contractor I need to pester. Good luck!"`
 	on complete
 		dialog "The residents of Poisonwood are happy to let you land and accept your supplies. A few shady-looking people approach you and ask to meet in the spaceport bar to share some information essential to the Republic."
 		set "RNHC Relief: done"
@@ -773,7 +773,7 @@ mission "RNHC Relief 2"
 	
 	on offer
 		conversation
-			`You meet with the strangers in the spaceport bar, where one of them pushes up his sunglasses and says, "Oh, Captain! I'm so glad to see you! Were you followed?" He looks around like he's about to tell a big secret before continuing, "Please, you have to help us. We've been doing some reseach in this area of space, you see, and we suspect that aliens are going to invade!"
+			`You meet with the strangers in the spaceport bar, where one of them pushes up his sunglasses and says, "Oh, Captain! I'm so glad to see you! Were you followed?" He looks around like he's about to tell a big secret before continuing, "Please, you have to help us. We've been doing some reseach in this area of space, you see, and we suspect that aliens are going to invade!"`
 			choice
 				`	"What kind of aliens?"`
 				`	"Likely story."`
@@ -810,7 +810,7 @@ mission "RNHC Deep Diplomacy"
 			`	"Ha! No, but if you keep up the good work, it might be soon."`
 				goto job
 			label job
-			`	"I have a perfect job for you, and it's very simple. Safe too!"
+			`	"I have a perfect job for you, and it's very simple. Safe too!"`
 			`	"With the war heating up, we need to ensure the Republic can present a unified front. However, The Syndicate and Tarazed are refusing to play ball, so we must reach out to The Deep. Any questions?"`
 			choice
 				`	"Sounds bad."`
@@ -894,7 +894,7 @@ mission "RNHC Deep Diplomacy 4"
 	on complete
 		payment 100000
 		conversation
-			`You report your success to Kent, and he chuckles. "Enjoy your little vacation?"	
+			`You report your success to Kent, and he chuckles. "Enjoy your little vacation?"`	
 			choice
 				`	"Yes, those diplomats are a joy to talk with."`
 				`	"As long as you pay me."`

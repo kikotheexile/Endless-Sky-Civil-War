@@ -701,7 +701,7 @@ event "hard fleets"
 			"Beserker (Torpedo)" 5
 		add variant 5
 			"Firebird (Bomber)"
-			"Raven (Torpedo) 4
+			"Raven (Torpedo) 4"
 		add variant 5
 			"Firebird (Missile)" 3
 		add variant 10
@@ -726,8 +726,8 @@ event "hard fleets"
 			"Hauler (Moneymaker)" 2
 		add variant 5
 			"Millipede (Tank)"
-			"Bastion (Tank) 2
-			"Falcon (Tank) 2
+			"Bastion (Tank)" 2
+			"Falcon (Tank)" 2
 			"Clipper (Torpedo)" 2
 			"Clipper (Ion)"
 			"Clipper (Plasma)"
@@ -885,8 +885,8 @@ event "hard fleets"
 			"Hauler (Moneymaker)" 2
 		add variant 5
 			"Millipede (Tank)"
-			"Bastion (Tank) 2
-			"Falcon (Tank) 2
+			"Bastion (Tank)" 2
+			"Falcon (Tank)" 2
 			"Clipper (Torpedo)" 2
 			"Clipper (Ion)"
 			"Clipper (Plasma)"
