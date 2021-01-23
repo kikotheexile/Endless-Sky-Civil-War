@@ -860,7 +860,7 @@ event "hard fleets"
 			"Beserker (Torpedo)" 5
 		add variant 5
 			"Firebird (Bomber)"
-			"Raven (Torpedo) 4"
+			"Raven (Torpedo)" 4
 		add variant 5
 			"Firebird (Missile)" 3
 		add variant 10
