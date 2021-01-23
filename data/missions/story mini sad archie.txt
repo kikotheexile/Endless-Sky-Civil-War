@@ -64,7 +64,7 @@ mission "Deep Archaeology 1"
 				`	"Wait a minute, can I get your name?"`
 				`	"Okay, I'm willing to do that."`
 					goto yes
-			`	"That really is too bad," He says, walking towards the exit of your ship. "You're really missing out."
+			`	"That really is too bad," He says, walking towards the exit of your ship. "You're really missing out."`
 				decline 
 			label name
 			`	"If you don't mind, I'd prefer to stay anonymous for now. You don't have to tell me your name either if you don't want."`
@@ -72,7 +72,7 @@ mission "Deep Archaeology 1"
 				`	"Sorry, that sounds a bit too shady to me."`
 				`	"Okay, I'm willing to do that."`
 					goto yes
-			`	"Thank you for at least hearing me out," He says, as he heads for the exit. "Sorry for wasting your time."
+			`	"Thank you for at least hearing me out," He says, as he heads for the exit. "Sorry for wasting your time."`
 			label yes
 			`	"Thank you," he says. "Trust me, this could give us some very important information. I'll need you to drop me off on Vinci first, to meet with some scientists. Meet me there again once you have the samples."`
 				accept
