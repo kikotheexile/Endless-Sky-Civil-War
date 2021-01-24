@@ -25,7 +25,7 @@ mission "Trust fund baby"
 		log "1: Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
 			`Discord: https://discord.gg/ND788CC (invite: ND788CC)`
 			`GitHub: (To be updated once out of work-floor)`
-			`Steam: (To be update once on steam)
+			`Steam: (To be update once on steam)`
 			``
 		log "1: Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
 			`Endless Sky is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.`
@@ -130,7 +130,7 @@ mission "Perfectly Vanilla"
 		log "1: Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
 			`Discord: https://discord.gg/ND788CC (invite: ND788CC)`
 			`GitHub: (To be updated once out of work-floor)`
-			`Steam: (To be update once on steam)
+			`Steam: (To be update once on steam)`
 			``
 		log "1: Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
 			`Endless Sky is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.`
@@ -231,7 +231,7 @@ mission "A pirate's life!"
 		log "1: Support" "Contact Links" `To help contribute, report bugs, or find support, type the following information into the browser of your choice.`
 			`Discord: https://discord.gg/ND788CC (invite: ND788CC)`
 			`GitHub: (To be updated once out of work-floor)`
-			`Steam: (To be update once on steam)
+			`Steam: (To be update once on steam)`
 			``
 		log "1: Support" "Copyright/License" `Copyright (c) 2014 by Michael Zahniser`
 			`Endless Sky is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.`
