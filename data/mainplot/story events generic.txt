@@ -6,7 +6,7 @@
 #
 # Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 event "remembrance day"
 	date 19 2 3014
@@ -677,7 +677,7 @@ government "Free Worlds"
 		"Neutral" .1
 		"Navy Intelligence" 1
 		"Republic Navy" -.2
-	"reputation: Republic" <?= -10
+		"Republic" -1
 
 event "start of hostilities rns"
 government "Republic Navy"
@@ -704,7 +704,7 @@ government "Free Worlds"
 		"Neutral" .1
 		"Navy Intelligence" 1
 		"Republic Navy" -.2
-	"reputation: Free Worlds" <?= .1
+		"Republic" -.1
 
 event "joined the free worlds"
 	"reputation: Free Worlds" <?= 10
