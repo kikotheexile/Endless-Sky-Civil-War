@@ -783,7 +783,7 @@ outfit "Stack Core"
 
 # Defenses
 
-outfit "Anti-Missile Turret"
+outfit "AMS-1 Guardian"
 	category "Defenses"
 	cost 60000
 	thumbnail "outfit/anti-missile"
@@ -813,7 +813,7 @@ effect "small anti-missile"
 	"velocity scale" 1
 
 
-outfit "Heavy Anti-Missile Turret"
+outfit "AMS-2 Preserver"
 	category "Defenses"
 	cost 150000
 	thumbnail "outfit/heavy anti-missile"
@@ -843,7 +843,7 @@ effect "large anti-missile"
 	"velocity scale" 1
 
 
-outfit "D14-XS Shield Generator"
+outfit "D14-1"
 	category "Defenses"
 	cost 20000
 	thumbnail "outfit/tiny shield"
@@ -853,7 +853,7 @@ outfit "D14-XS Shield Generator"
 	"shield energy" .2
 	description "The Syndicated Systems Class D14 shield generators are the cheapest shields in Human space. This Extra Small variant is tailor made for fighters, interceptors, and ships that don't see regular combat."
 
-outfit "D14-S Shield Generator"
+outfit "D14-2"
 	category "Defenses"
 	cost 35000
 	thumbnail "outfit/small shield"
@@ -863,7 +863,7 @@ outfit "D14-S Shield Generator"
 	"shield energy" .32
 	description "The Syndicated Systems Class D14 shield generators scale in power with their size. This small version is slightly more powerful shield generator than its extra small counterpart, but recharging your shields completely will still take a long time."
 
-outfit "D14-M Shield Generator"
+outfit "D14-3"
 	category "Defenses"
 	cost 65000
 	thumbnail "outfit/medium shield"
@@ -873,7 +873,7 @@ outfit "D14-M Shield Generator"
 	"shield energy" .51
 	description "This is a more powerful version of the D14 class, designed for ships that are likely to see frequent combat."
 
-outfit "D14-L Shield Generator"
+outfit "D14-4"
 	category "Defenses"
 	cost 120000
 	thumbnail "outfit/large shield"
@@ -881,9 +881,9 @@ outfit "D14-L Shield Generator"
 	"outfit space" -45
 	"shield generation" .82
 	"shield energy" .82
-	description "This version of the D14 shield generator is powerful enough that in combat against some particularly weak ships, they may not even be capable of depleting your shields as fast as they recharge."
+	description "This version of the D14 shield generator is powerful enough that, in combat against some particularly weak ships, they may not even be capable of depleting your shields as fast as they recharge."
 
-outfit "D14-XL Shield Generator"
+outfit "D14-5"
 	category "Defenses"
 	cost 200000
 	thumbnail "outfit/huge shield"
@@ -893,7 +893,7 @@ outfit "D14-XL Shield Generator"
 	"shield energy" 1.31
 	description "This is the most powerful D14 shield generator. Because of their large size, D14-XL shield generators are mostly used in large warships, but you can fit one in a smaller ship if you are willing to sacrifice engine power or weaponry to make space for it."
 
-outfit "Pacifist-1 Shield Generator"
+outfit "Pacifist-1"
 	category "Defenses"
 	cost 25000
 	thumbnail "outfit/tiny shield y"
@@ -904,7 +904,7 @@ outfit "Pacifist-1 Shield Generator"
 	"shield energy" .4
 	description "The Deep Sky Pacifist Class shield generators work by converting extra weapon space to shield production. This Extra Small variant is tailor made for fighters, interceptors, and ships that don't see regular combat."
 
-outfit "Pacifist-2 Shield Generator"
+outfit "Pacifist-2"
 	category "Defenses"
 	cost 45000
 	thumbnail "outfit/small shield y"
@@ -915,7 +915,7 @@ outfit "Pacifist-2 Shield Generator"
 	"shield energy" .52
 	description "Deep Sky's shield generator is more powerful than the syndicated systems D14 shield generators, and like the D14 they scale in power with their size. Version 2 is slightly more powerful shield generator than its V1 counterpart, but recharging your shields completely will still take a long time."
 
-outfit "Pacifist-3 Shield Generator"
+outfit "Pacifist-3"
 	category "Defenses"
 	cost 70000
 	thumbnail "outfit/medium shield y"
@@ -926,7 +926,7 @@ outfit "Pacifist-3 Shield Generator"
 	"shield energy" .64
 	description "The Deep Sky Pacifist-3 shield generator takes up as much weapon space as a capital class cannon, making your dedication to peace and non-violence commendable."
 
-outfit "Pacifist-4 Shield Generator"
+outfit "Pacifist-4"
 	category "Defenses"
 	cost 150000
 	thumbnail "outfit/large shield y"
@@ -937,7 +937,7 @@ outfit "Pacifist-4 Shield Generator"
 	"shield energy" .86
 	description "Although incredibly powerful for its size, the Pacifist-4 takes up more weapons space and power than some turrets. Some pilots argue you would be better served buying even a single anti-missile turret compared to this shield."
 
-outfit "Pacifist-5 Shield Generator"
+outfit "Pacifist-5"
 	category "Defenses"
 	cost 250000
 	thumbnail "outfit/huge shield y"
@@ -948,7 +948,7 @@ outfit "Pacifist-5 Shield Generator"
 	"shield energy" 1.72
 	description "This is tied for the most efficient shield generator with the Galapagos class shield generator. Unfortunately it takes up more space than two forward facing heavy cannons, so it is seldom seen outside of Caravan fleets."
 
-outfit "Spotted Turtle Shield Generator"
+outfit "T-1 Spotted Turtle"
 	category "Defenses"
 	cost 25000
 	thumbnail "outfit/tiny shield g"
@@ -959,7 +959,7 @@ outfit "Spotted Turtle Shield Generator"
 	"shield energy" .4
 	description "The Lovelace Tortoise Class shield generators work by converting extra engine space to shield production. This Extra Small variant is tailor made for fighters, interceptors, and ships that don't see regular combat."
 
-outfit "Softshell Turtle Shield Generator"
+outfit "T-2 Softshell Turtle"
 	category "Defenses"
 	cost 45000
 	thumbnail "outfit/small shield g"
@@ -970,7 +970,7 @@ outfit "Softshell Turtle Shield Generator"
 	"shield energy" .52
 	description "Lovelace's shield generator is more powerful than the syndicated systems D14 shield generators, and like the D14 they scale in power with their size. The Softshell is slightly more powerful shield generator than its Spotted counterpart, but recharging your shields completely will still take a long time."
 
-outfit "Map Turtle Shield Generator"
+outfit "T-3 Map Turtle"
 	category "Defenses"
 	cost 70000
 	thumbnail "outfit/medium shield g"
@@ -981,7 +981,7 @@ outfit "Map Turtle Shield Generator"
 	"shield energy" .64
 	description "The Lovelace Map shield generator takes up as much engine space as many full sized engine modules. True to its name, you are exchanging speed for additional protection."
 
-outfit "Snapper Shield Generator"
+outfit "T-4 Snapper Shield"
 	category "Defenses"
 	cost 150000
 	thumbnail "outfit/large shield g"
@@ -992,7 +992,7 @@ outfit "Snapper Shield Generator"
 	"shield energy" .86
 	description "The phrase 'She may be slow but she can take a beating' is the mantra of people who use this Lovelace invention. Some pilots argue you would be better served buying a scram drive or an afterburner rather than this shield."
 
-outfit "Galapagos Shield Generator"
+outfit "T-5 Galapagos Tortoise"
 	category "Defenses"
 	cost 210000
 	thumbnail "outfit/huge shield g"
@@ -1003,7 +1003,7 @@ outfit "Galapagos Shield Generator"
 	"shield energy" 1.72
 	description "This is tied for the most efficient shield generator with the Pacifist-5 class shield generator. Unfortunately it takes up more space than most engines, so it is seldom used by anyone but the most paranoid freighter pilots."
 
-outfit "Ember Plasma Shield Generator"
+outfit "Plasma-1 Ember D5"
 	category "Defenses"
 	cost 50000
 	thumbnail "outfit/tiny shield r"
@@ -1015,7 +1015,7 @@ outfit "Ember Plasma Shield Generator"
 	"heat generation" .4
 	description "The product of an internal competition between Delta V and Kraz, the Delta V ember class shield generator is almost as insane as its creators. Using the Syndicate's D14 class as a base, they competed to make the most powerful shield generator. This is the strongest of its size, it comes at the cost of requiring additional power just to keep the shield charged up, and creates an excess of heat."
 
-outfit "Red Flame Plasma Shield Generator"
+outfit "Plasma-2 Red Flame KC"
 	category "Defenses"
 	cost 80000
 	thumbnail "outfit/small shield r"
@@ -1027,7 +1027,7 @@ outfit "Red Flame Plasma Shield Generator"
 	"heat generation" .6
 	description "Not to be one-upped by Delta V, the Kraz team created a larger but even more efficient version of the Ember class plasma shield. The Red Flame is small enough to fit onto most gunships, but its additional power and cooling requirements might not be."
 
-outfit "Yellow Flame Shield Generator"
+outfit "Plasma-3 Yellow Flame D5"
 	category "Defenses"
 	cost 100000
 	thumbnail "outfit/medium shield r"
@@ -1039,7 +1039,7 @@ outfit "Yellow Flame Shield Generator"
 	"heat generation" 1
 	description "Impressed by Kraz's Red Flame, Delta V kicked up the heat with this yellow flame shield generator. Twice as powerful as the same size of D14, this shield generator is liable to protect its pilot from nearly everything, assuming it doesn't cook them alive."
 
-outfit "White Flame Shield Generator"
+outfit "Plasma-4 White Flame KC"
 	category "Defenses"
 	cost 300000
 	thumbnail "outfit/large shield r"
@@ -1051,7 +1051,7 @@ outfit "White Flame Shield Generator"
 	"heat generation" 1.6
 	description "This white hot shield generator lives up to its name. Kraz's engineers won the contest with this insane feat of engineering. Delta V just couldn't take the heat - and neither could Kraz's test pilot!"
 
-outfit "Violet Flame Shield Generator"
+outfit "Plasma-5 Violet Flame D&K"
 	category "Defenses"
 	cost 500000
 	thumbnail "outfit/huge shield r"
@@ -1089,7 +1089,7 @@ outfit "S-970 Regenerator"
 	description "The S-970 Shield Regenerator is an advanced type of shield recharging technology. Unfortunately, its power needs are rather high, and the shifts it makes in your shield configuration also result in some feedback that causes heat to build up in the regenerator, even when your shields are at full strength."
 
 
-outfit "Small Radar Jammer"
+outfit "RD-1 Static"
 	category "Defenses"
 	cost 24000
 	thumbnail "outfit/small radar jammer"
@@ -1098,7 +1098,7 @@ outfit "Small Radar Jammer"
 	"radar jamming" 2
 	description "This radar jammer is designed to interfere with Rangers and any other missiles that rely on radar for tracking their targets. Jamming will occasionally cause missiles to lose their target locks."
 
-outfit "Large Radar Jammer"
+outfit "RD-2 Noise"
 	category "Defenses"
 	cost 138000
 	thumbnail "outfit/large radar jammer"
