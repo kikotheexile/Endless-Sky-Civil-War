@@ -120,8 +120,8 @@ ship "Dagger"
 		
 		"nGVF-AA Fuel Cell"
 		"Supercapacitor"
-		"D14-XS Shield Generator"
-		"Small Radar Jammer"
+		"D14-1"
+		"RD-1 Static"
 		"Plasma Pistol"
 		
 		"X1700 Ion Thruster"
@@ -169,7 +169,7 @@ ship "Finch"
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
+		"D14-1"
 		
 		"Chipmunk Plasma Thruster"
 		"Chipmunk Plasma Steering"
@@ -214,8 +214,8 @@ ship "Lance"
 		
 		"nGVF-AA Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
-		"Small Radar Jammer" 2
+		"D14-1"
+		"RD-1 Static" 2
 		
 		"X1700 Ion Thruster"
 		"X1200 Ion Steering"
@@ -259,7 +259,7 @@ ship "Barb"
 		
 		"nGVF-AA Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
+		"D14-1"
 		"Plasma Pistol"
 
 		"X1050 Ion Engines"
@@ -304,7 +304,7 @@ ship "Thorn"
 		
 		"nGVF-AA Fuel Cell"
 		Supercapacitor
-		"D14-XS Shield Generator"
+		"D14-1"
 
 		"X1050 Ion Engines"
 		
@@ -386,7 +386,7 @@ ship "Shuttle"
 	outfits
 		"nGVF-AA Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
+		"D14-1"
 		"Plasma Pistol"
 		
 		"X2700 Ion Thruster"
@@ -481,12 +481,12 @@ ship "Arrow"
 	outfits
 		"Meteor Missile Launcher"
 		"Meteor Missile" 45
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"Dwarf Core"
 		"Supercapacitor"
-		"D14-XS Shield Generator"
-		"Small Radar Jammer"
+		"D14-1"
+		"RD-1 Static"
 		"Luxury Accommodations"
 		"Plasma Pistol"
 		
@@ -498,7 +498,7 @@ ship "Arrow"
 	engine 10 60
 	gun -8 -34 "Meteor Missile Launcher"
 	gun 8 -34
-	turret 0 16 "Anti-Missile Turret"
+	turret 0 16 "AMS-1 Guardian"
 	leak "leak" 80 50
 	explode "tiny explosion" 12
 	explode "small explosion" 18
@@ -538,12 +538,12 @@ ship "Blackbird"
 			"hit force" 900
 	outfits
 		"Heavy Laser Turret"
-		"Heavy Anti-Missile Turret"
+		"AMS-2 Preserver"
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
-		"Small Radar Jammer"
+		"D14-2"
+		"RD-1 Static"
 		"Luxury Accommodations"
 		"Plasma Pistol" 3
 		
@@ -554,7 +554,7 @@ ship "Blackbird"
 	engine -40 55
 	engine 40 55
 	turret -18 0 "Heavy Laser Turret"
-	turret 18 0 "Heavy Anti-Missile Turret"
+	turret 18 0 "AMS-2 Preserver"
 	leak "leak" 50 50
 	leak "flame" 70 80
 	explode "tiny explosion" 15
@@ -593,11 +593,11 @@ ship "Bounder"
 			"hull damage" 150
 			"hit force" 450
 	outfits
-		"Anti-Missile Turret" 2
+		"AMS-1 Guardian" 2
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
+		"D14-1"
 		"Plasma Pistol"
 		
 		"X3700 Ion Thruster"
@@ -606,8 +606,8 @@ ship "Bounder"
 		
 	engine -12 44
 	engine 12 44
-	turret -37 4 "Anti-Missile Turret"
-	turret 37 4 "Anti-Missile Turret"
+	turret -37 4 "AMS-1 Guardian"
+	turret 37 4 "AMS-1 Guardian"
 	leak "leak" 60 50
 	explode "tiny explosion" 10
 	explode "small explosion" 20
@@ -648,7 +648,7 @@ ship "Flivver"
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
+		"D14-1"
 		"Plasma Pistol"
 		
 		"A120 Atomic Thruster"
@@ -694,7 +694,7 @@ ship "Heavy Shuttle"
 	outfits
 		"nGVF-AA Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
+		"D14-1"
 		"Plasma Pistol"
 		
 		"X2700 Ion Thruster"
@@ -742,12 +742,12 @@ ship "Caravel"
 			"hit force" 240
 	outfits
 		"Energy Blaster" 2
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
-		"Small Radar Jammer"
+		"D14-1"
+		"RD-1 Static"
 		"Ramscoop"
 		"Plasma Pistol" 2
 		
@@ -759,7 +759,7 @@ ship "Caravel"
 	engine 8 46
 	gun -20 -7 "Energy Blaster"
 	gun 20 -7 "Energy Blaster"
-	turret 0 -7 "Anti-Missile Turret"
+	turret 0 -7 "AMS-1 Guardian"
 	explode "tiny explosion" 10
 	explode "small explosion" 20
 	explode "medium explosion" 15
@@ -799,12 +799,12 @@ ship "Star Queen"
 	outfits
 		"Meteor Missile Launcher" 3
 		"Meteor Missile" 135
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"NT-200 Nucleovoltaic"
 		"LP036a Battery Pack"
-		"D14-XL Shield Generator"
-		"Small Radar Jammer" 3
+		"D14-5"
+		"RD-1 Static" 3
 		"Luxury Accommodations"
 		"Plasma Pistol" 41
 		
@@ -817,8 +817,8 @@ ship "Star Queen"
 	gun 0 -113 "Meteor Missile Launcher"
 	gun -24 -76 "Meteor Missile Launcher"
 	gun 24 -76 "Meteor Missile Launcher"
-	turret -21.5 2.5 "Heavy Anti-Missile Turret"
-	turret 21.5 2.5 "Heavy Anti-Missile Turret"
+	turret -21.5 2.5 "AMS-2 Preserver"
+	turret 21.5 2.5 "AMS-2 Preserver"
 	leak "leak" 50 50
 	leak "big leak" 80 30
 	explode "tiny explosion" 10
@@ -867,7 +867,7 @@ ship "Berserker"
 		
 		"nGVF-CC Fuel Cell"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
+		"D14-2"
 		"Plasma Pistol"
 		
 		"X2700 Ion Thruster"
@@ -924,8 +924,8 @@ ship "Fury"
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
-		"Small Radar Jammer" 2
+		"D14-1"
+		"RD-1 Static" 2
 		"Plasma Pistol"
 				
 		"X2700 Ion Thruster"
@@ -981,8 +981,8 @@ ship "Hawk"
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-S Shield Generator"
-		"Small Radar Jammer"
+		"D14-2"
+		"RD-1 Static"
 		"Plasma Pistol" 2
 		
 		"Greyhound Plasma Thruster"
@@ -1036,7 +1036,7 @@ ship "Sparrow"
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
+		"D14-1"
 		"Plasma Pistol"
 		
 		"Chipmunk Plasma Thruster"
@@ -1090,8 +1090,8 @@ ship "Wasp"
 		
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
-		"Small Radar Jammer"
+		"D14-1"
+		"RD-1 Static"
 		"Plasma Pistol"
 		
 		"X2700 Ion Thruster"
@@ -1184,11 +1184,11 @@ ship "Argosy"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Blaster Turret"
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"RT-I Radiothermal"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
+		"D14-2"
 		"Plasma Pistol" 4
 		
 		"Greyhound Plasma Thruster"
@@ -1204,7 +1204,7 @@ ship "Argosy"
 	gun 22 -37 "Energy Blaster"
 	gun 22 -37 "Meteor Missile Launcher"
 	turret 0 -12.5 "Blaster Turret"
-	turret 0 9.5 "Anti-Missile Turret"
+	turret 0 9.5 "AMS-1 Guardian"
 	leak "leak" 60 50
 	leak "flame" 60 80
 	explode "tiny explosion" 10
@@ -1253,7 +1253,7 @@ ship "Clipper"
 		
 		"nGVF-DD Fuel Cell"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
+		"D14-2"
 		"Plasma Pistol" 3
 		
 		"Greyhound Plasma Thruster"
@@ -1305,11 +1305,11 @@ ship "Freighter"
 			"hit force" 600
 	outfits
 		"Blaster Turret" 2
-		"Heavy Anti-Missile Turret"
+		"AMS-2 Preserver"
 		
 		"nGVF-EE Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
+		"D14-1"
 		"Plasma Pistol" 2
 		
 		"X2700 Ion Thruster"
@@ -1319,7 +1319,7 @@ ship "Freighter"
 	engine -9 97
 	engine 9 97
 	turret 0 -52 "Blaster Turret"
-	turret 0 6 "Heavy Anti-Missile Turret"
+	turret 0 6 "AMS-2 Preserver"
 	turret 0 65 "Blaster Turret"
 	leak "leak" 60 50
 	leak "flame" 50 80
@@ -1359,11 +1359,11 @@ ship "Star Barge"
 			"hull damage" 80
 			"hit force" 240
 	outfits
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 
 		"nGVF-BB Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
+		"D14-1"
 		"Plasma Pistol"
 		
 		"X1700 Ion Thruster"
@@ -1372,7 +1372,7 @@ ship "Star Barge"
 		
 	engine -9 38
 	engine 9 38
-	turret 0 -8 "Anti-Missile Turret"
+	turret 0 -8 "AMS-1 Guardian"
 	leak "leak" 60 50
 	explode "tiny explosion" 10
 	explode "small explosion" 10
@@ -1414,12 +1414,12 @@ ship "Hauler"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Quad Blaster Turret" 2
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
-		"Small Radar Jammer"
+		"D14-2"
+		"RD-1 Static"
 		"Plasma Pistol" 3
 		
 		"Greyhound Plasma Thruster"
@@ -1431,8 +1431,8 @@ ship "Hauler"
 	gun -14.5 -92.5
 	gun 14.5 -92.5
 	turret -21.5 -48 "Quad Blaster Turret"
-	turret 21.5 -48 "Heavy Anti-Missile Turret"
-	turret -18.5 78.5 "Heavy Anti-Missile Turret"
+	turret 21.5 -48 "AMS-2 Preserver"
+	turret -18.5 78.5 "AMS-2 Preserver"
 	turret 18.5 78.5 "Quad Blaster Turret"
 	leak "leak" 60 50
 	leak "flame" 50 80
@@ -1477,12 +1477,12 @@ ship "Hauler II"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Quad Blaster Turret" 2
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
-		"Small Radar Jammer"
+		"D14-2"
+		"RD-1 Static"
 		"Laser Rifle"
 		"Plasma Pistol" 2
 		
@@ -1495,8 +1495,8 @@ ship "Hauler II"
 	gun -14.5 -129.5
 	gun 14.5 -129.5
 	turret -21.5 -84.5 "Quad Blaster Turret"
-	turret 21.5 -84.5 "Heavy Anti-Missile Turret"
-	turret -18.5 115.5 "Heavy Anti-Missile Turret"
+	turret 21.5 -84.5 "AMS-2 Preserver"
+	turret -18.5 115.5 "AMS-2 Preserver"
 	turret 18.5 115.5 "Quad Blaster Turret"
 	leak "leak" 60 50
 	leak "flame" 40 80
@@ -1541,12 +1541,12 @@ ship "Hauler III"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Quad Blaster Turret" 2
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
-		"Small Radar Jammer"
+		"D14-2"
+		"RD-1 Static"
 		"Laser Rifle" 3
 		
 		"Greyhound Plasma Thruster"
@@ -1558,8 +1558,8 @@ ship "Hauler III"
 	gun -14.5 -166.5
 	gun 14.5 -166.5
 	turret -21.5 -122 "Quad Blaster Turret"
-	turret 21.5 -122 "Heavy Anti-Missile Turret"
-	turret -18.5 152.5 "Heavy Anti-Missile Turret"
+	turret 21.5 -122 "AMS-2 Preserver"
+	turret -18.5 152.5 "AMS-2 Preserver"
 	turret 18.5 152.5 "Quad Blaster Turret"
 	leak "leak" 50 50
 	leak "flame" 40 80
@@ -1604,12 +1604,12 @@ ship "Nest"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Quad Blaster Turret" 2
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D14-M Shield Generator" 2
-		"Large Radar Jammer"
+		"D14-3" 2
+		"RD-2 Noise"
 		"Laser Rifle" 2
 		"Plasma Pistol" 3
 		
@@ -1622,8 +1622,8 @@ ship "Nest"
 	gun -14.5 -92.5
 	gun 14.5 -92.5
 	turret -21.5 -48 "Quad Blaster Turret"
-	turret 21.5 -48 "Heavy Anti-Missile Turret"
-	turret -18.5 78.5 "Heavy Anti-Missile Turret"
+	turret 21.5 -48 "AMS-2 Preserver"
+	turret -18.5 78.5 "AMS-2 Preserver"
 	turret 18.5 78.5 "Quad Blaster Turret"
 	fighter -47 12 under
 	fighter 47 12 under
@@ -1670,12 +1670,12 @@ ship "Roost"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Quad Blaster Turret" 2
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D14-M Shield Generator" 4
-		"Large Radar Jammer"
+		"D14-3" 4
+		"RD-2 Noise"
 		"Tactical Scanner"
 		"Laser Rifle" 2
 		"Plasma Pistol" 5
@@ -1689,8 +1689,8 @@ ship "Roost"
 	gun -14.5 -129.5
 	gun 14.5 -129.5
 	turret -21.5 -84.5 "Quad Blaster Turret"
-	turret 21.5 -84.5 "Heavy Anti-Missile Turret"
-	turret -18.5 115.5 "Heavy Anti-Missile Turret"
+	turret 21.5 -84.5 "AMS-2 Preserver"
+	turret -18.5 115.5 "AMS-2 Preserver"
 	turret 18.5 115.5 "Quad Blaster Turret"
 	fighter -47 -24 under
 	fighter 47 -24 under
@@ -1739,12 +1739,12 @@ ship "Skein"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Quad Blaster Turret" 2
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"S3 Thermionic"
 		"LP072a Battery Pack"
-		"D14-L Shield Generator" 4
-		"Large Radar Jammer"
+		"D14-4" 4
+		"RD-2 Noise"
 		"Tactical Scanner"
 		"Laser Rifle" 7
 		
@@ -1757,8 +1757,8 @@ ship "Skein"
 	gun -14.5 -166.5
 	gun 14.5 -166.5
 	turret -21.5 -122 "Quad Blaster Turret"
-	turret 21.5 -122 "Heavy Anti-Missile Turret"
-	turret -18.5 152.5 "Heavy Anti-Missile Turret"
+	turret 21.5 -122 "AMS-2 Preserver"
+	turret -18.5 152.5 "AMS-2 Preserver"
 	turret 18.5 152.5 "Quad Blaster Turret"
 	fighter -47 -61 under
 	fighter 47 -61 under
@@ -1853,11 +1853,11 @@ ship "Class C Freighter"
 			"hit force" 3000
 	outfits
 		"Heavy Laser Turret" 2
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"Fission Reactor"
 		"LP072a Battery Pack"
-		"D14-XL Shield Generator"
+		"D14-5"
 		"Laser Rifle" 5
 		"Plasma Pistol" 13
 		
@@ -1868,9 +1868,9 @@ ship "Class C Freighter"
 	engine -22 198
 	engine 22 198
 	turret -12 -155 "Heavy Laser Turret"
-	turret 12 -155 "Heavy Anti-Missile Turret"
+	turret 12 -155 "AMS-2 Preserver"
 	turret 30 175 "Heavy Laser Turret"
-	turret -30 175 "Heavy Anti-Missile Turret"
+	turret -30 175 "AMS-2 Preserver"
 	drone -66 -115 left
 	drone -66 -65 left
 	drone -66 -15 left
@@ -1922,12 +1922,12 @@ ship "Behemoth"
 			"hit force" 2100
 	outfits
 		"Heavy Laser Turret" 4
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"NT-200 Nucleovoltaic"
 		"LP144a Battery Pack"
-		"D14-M Shield Generator"
-		"Small Radar Jammer"
+		"D14-3"
+		"RD-1 Static"
 		"Laser Rifle" 3
 		"Plasma Pistol" 9
 		
@@ -1942,10 +1942,10 @@ ship "Behemoth"
 	gun -47.5 -57.5
 	gun 47.5 -57.5
 	turret -31 -50 "Heavy Laser Turret"	
-	turret 31 -50 "Heavy Anti-Missile Turret"	
+	turret 31 -50 "AMS-2 Preserver"	
 	turret -47.5 33.5 "Heavy Laser Turret"
 	turret 47.5 33.5 "Heavy Laser Turret"
-	turret -22 66.5 "Heavy Anti-Missile Turret"
+	turret -22 66.5 "AMS-2 Preserver"
 	turret 22 66.5 "Heavy Laser Turret"
 	leak "leak" 30 50
 	leak "flame" 30 80
@@ -1988,11 +1988,11 @@ ship "Bulk Freighter"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 90
 		"Laser Turret" 3
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
-		"D14-S Shield Generator"
+		"D14-2"
 		"Laser Rifle"
 		"Plasma Pistol" 5
 		
@@ -2005,9 +2005,9 @@ ship "Bulk Freighter"
 	gun -20 -175 "Meteor Missile Launcher"
 	gun 20 -175 "Meteor Missile Launcher"
 	turret -12 -155 "Laser Turret"
-	turret 12 -155 "Heavy Anti-Missile Turret"
+	turret 12 -155 "AMS-2 Preserver"
 	turret 0 5 "Laser Turret"
-	turret -30 175 "Heavy Anti-Missile Turret"
+	turret -30 175 "AMS-2 Preserver"
 	turret 30 175 "Laser Turret"
 	leak "leak" 40 50
 	leak "flame" 30 80
@@ -2062,8 +2062,8 @@ ship "Narcissus"
 		
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
-		"D14-XS Shield Generator"
-		"Small Radar Jammer"
+		"D14-1"
+		"RD-1 Static"
 		"Cargo Scanner"
 		"Outfit Scanner"
 		"Tactical Scanner"
@@ -2120,11 +2120,11 @@ ship "Headhunter"
 			"hit force" 660
 	outfits
 		"Heavy Laser" 2
-		"Heavy Anti-Missile Turret"
+		"AMS-2 Preserver"
 		
 		"RT-I Radiothermal"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
+		"D14-2"
 		"Plasma Pistol" 2
 		
 		"Greyhound Plasma Thruster"
@@ -2137,7 +2137,7 @@ ship "Headhunter"
 	gun 17.5 -17
 	gun -12 -25.5 "Heavy Laser"
 	gun 12 -25.5 "Heavy Laser"
-	turret 0 9 "Heavy Anti-Missile Turret"
+	turret 0 9 "AMS-2 Preserver"
 	leak "leak" 60 50
 	leak "flame" 80 80
 	explode "tiny explosion" 20
@@ -2183,12 +2183,12 @@ ship "Odyssey"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Heavy Laser Turret"
-		"Heavy Anti-Missile Turret"
+		"AMS-2 Preserver"
 		
 		"NT-200 Nucleovoltaic"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
-		"Small Radar Jammer"
+		"D14-2"
+		"RD-1 Static"
 		"Brig"
 		"Laser Rifle" 3
 		"Plasma Pistol"2
@@ -2205,7 +2205,7 @@ ship "Odyssey"
 	gun 22.5 -37 "Heavy Laser"
 	gun -22 -37 "Meteor Missile Launcher"
 	gun 22.5 -37 "Meteor Missile Launcher"
-	turret 0 -12.5 "Heavy Anti-Missile Turret"
+	turret 0 -12.5 "AMS-2 Preserver"
 	turret 0 9.5 "Heavy Laser Turret"
 	leak "leak" 70 50
 	leak "flame" 30 80
@@ -2252,7 +2252,7 @@ ship "Quicksilver"
 		
 		"RT-I Radiothermal"
 		"LP036a Battery Pack"
-		"D14-S Shield Generator"
+		"D14-2"
 		"Water Coolant System MKI"
 		"Plasma Pistol" 3
 		
@@ -2311,8 +2311,8 @@ ship "Achlys"
 		
 		"nGVF-CC Fuel Cell"
 		"LP036a Battery Pack"
-		"D14-XS Shield Generator"
-		"Large Radar Jammer"
+		"D14-1"
+		"RD-2 Noise"
 		"Tactical Scanner"
 		"Plasma Pistol" 7
 		
@@ -2374,7 +2374,7 @@ ship "Raven"
 		
 		"RT-I Radiothermal"
 		"LP072a Battery Pack"
-		"D14-M Shield Generator"
+		"D14-3"
 		"Laser Rifle" 2
 		"Plasma Pistol" 4
 		
@@ -2432,12 +2432,12 @@ ship "Endeavor"
 	outfits
 		"Meteor Missile Launcher" 3
 		"Meteor Missile" 135
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"NT-200 Nucleovoltaic"
 		"LP036a Battery Pack"
-		"D14-XL Shield Generator"
-		"Small Radar Jammer" 3
+		"D14-5"
+		"RD-1 Static" 3
 		"Luxury Accommodations"
 		"Plasma Pistol" 41
 		
@@ -2450,8 +2450,8 @@ ship "Endeavor"
 	gun 0 -113 "Meteor Missile Launcher"
 	gun -24 -76 "Meteor Missile Launcher"
 	gun 24 -76 "Meteor Missile Launcher"
-	turret -21.5 2.5 "Heavy Anti-Missile Turret"
-	turret 21.5 2.5 "Heavy Anti-Missile Turret"
+	turret -21.5 2.5 "AMS-2 Preserver"
+	turret 21.5 2.5 "AMS-2 Preserver"
 	leak "leak" 50 50
 	leak "big leak" 80 30
 	explode "tiny explosion" 10
@@ -2497,7 +2497,7 @@ ship "Manta"
 		
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
-		"D14-XS Shield Generator"
+		"D14-1"
 		"Laser Rifle"
 		"Plasma Pistol" 5
 		
@@ -2553,12 +2553,12 @@ ship "Osprey"
 	outfits
 		"Plasma Cannon" 4
 		"Quad Blaster Turret"
-		"Heavy Anti-Missile Turret"
+		"AMS-2 Preserver"
 		
 		"Breeder Reactor"
 		"LP036a Battery Pack"
-		"D14-M Shield Generator"
-		"Large Radar Jammer"
+		"D14-3"
+		"RD-2 Noise"
 		"Liquid Helium Cooler"
 		"Laser Rifle" 3
 		"Plasma Pistol" 6
@@ -2574,7 +2574,7 @@ ship "Osprey"
 	gun -26 -53 "Plasma Cannon"
 	gun 26 -53 "Plasma Cannon"
 	turret -16 -16 "Quad Blaster Turret"
-	turret 16 -16 "Heavy Anti-Missile Turret"
+	turret 16 -16 "AMS-2 Preserver"
 	leak "leak" 40 50
 	leak "flame" 80 80
 	leak "big leak" 80 30
@@ -2616,12 +2616,12 @@ ship "Splinter"
 	outfits
 		"Proton Gun" 2
 		"Blaster Turret" 2
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
-		"D14-L Shield Generator"
-		"Small Radar Jammer" 2
+		"D14-4"
+		"RD-1 Static" 2
 		"Water Coolant System MKII"
 		"Laser Rifle"
 		"Plasma Pistol" 6
@@ -2635,7 +2635,7 @@ ship "Splinter"
 	gun -15 -80 "Proton Gun"
 	gun 15 -80 "Proton Gun"
 	turret -17 -28 "Blaster Turret"
-	turret 0 -28 "Anti-Missile Turret"
+	turret 0 -28 "AMS-1 Guardian"
 	turret 17 -28 "Blaster Turret"
 	leak "leak" 60 50
 	leak "flame" 40 80
@@ -2679,12 +2679,12 @@ ship "Aerie"
 		"Meteor Missile" 136
 		"Meteor Missile Box" 2
 		"Heavy Laser Turret" 2
-		"Heavy Anti-Missile Turret"
+		"AMS-2 Preserver"
 		
 		"NT-200 Nucleovoltaic"
 		"LP072a Battery Pack"
-		"D14-M Shield Generator"
-		"Large Radar Jammer"
+		"D14-3"
+		"RD-2 Noise"
 		"Laser Rifle" 3
 		"Plasma Pistol" 7
 		
@@ -2696,7 +2696,7 @@ ship "Aerie"
 	engine 10 91
 	gun -13 -79 "Meteor Missile Launcher"
 	gun 13 -79 "Meteor Missile Launcher"
-	turret 0 0 "Heavy Anti-Missile Turret"
+	turret 0 0 "AMS-2 Preserver"
 	turret -17 14 "Heavy Laser Turret"
 	turret 17 14 "Heavy Laser Turret"
 	fighter -42 -2
@@ -2745,12 +2745,12 @@ ship "Bastion"
 		"Heavy Rocket" 60
 		"Heavy Rocket Rack" 2
 		"Blaster Turret" 2
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"S3 Thermionic"
 		"LP144a Battery Pack"
 		"nGVF-BB Fuel Cell"
-		"D14-L Shield Generator"
+		"D14-4"
 		"Water Coolant System MKII"
 		"Tactical Scanner"
 		"Laser Rifle" 7
@@ -2768,7 +2768,7 @@ ship "Bastion"
 	gun -52.5 -0.5 "Plasma Cannon"
 	turret 35.5 29.5 "Blaster Turret"
 	turret -35.5 29.5 "Blaster Turret"
-	turret 0 0.5 "Anti-Missile Turret"
+	turret 0 0.5 "AMS-1 Guardian"
 	leak "leak" 40 50
 	leak "flame" 40 80
 	leak "big leak" 70 30
@@ -2812,12 +2812,12 @@ ship "Challenger"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 90
 		"Heavy Laser Turret"
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"NT-200 Nucleovoltaic"
 		"LP072a Battery Pack"
-		"D14-XL Shield Generator"
-		"Large Radar Jammer"
+		"D14-5"
+		"RD-2 Noise"
 		"Laser Rifle" 3
 		"Plasma Pistol" 5
 		
@@ -2832,7 +2832,7 @@ ship "Challenger"
 	gun -14 -60 "Meteor Missile Launcher"
 	gun 14 -60 "Meteor Missile Launcher"
 	turret 0 -11 "Heavy Laser Turret"
-	turret 0 74 "Anti-Missile Turret"
+	turret 0 74 "AMS-1 Guardian"
 	leak "leak" 40 50
 	leak "flame" 50 80
 	leak "big leak" 90 30
@@ -2876,12 +2876,12 @@ ship "Firebird"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Quad Blaster Turret"
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"RT-I Radiothermal"
 		"nGVF-AA Fuel Cell"
 		"LP144a Battery Pack"
-		"D14-M Shield Generator"
+		"D14-3"
 		"Laser Rifle" 3
 		"Plasma Pistol" 4
 		
@@ -2895,7 +2895,7 @@ ship "Firebird"
 	gun 27 -28 "Particle Cannon"
 	gun -38 -13 "Meteor Missile Launcher"
 	gun 38 -13 "Meteor Missile Launcher"
-	turret 0 -38 "Anti-Missile Turret"	
+	turret 0 -38 "AMS-1 Guardian"	
 	turret 0 3 "Quad Blaster Turret"
 	leak "leak" 50 50
 	leak "flame" 30 80
@@ -2943,12 +2943,12 @@ ship "Aletheia"
 		"Torpedo Launcher" 2
 		"Torpedo" 60
 		"Blaster Turret" 2
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"NT-200 Nucleovoltaic"
 		"LP144a Battery Pack"
-		"D14-M Shield Generator"
-		"Large Radar Jammer"
+		"D14-3"
+		"RD-2 Noise"
 		"Laser Rifle" 5
 		"Fragmentation Grenades" 5
 		"Remote Security Station" 5
@@ -2964,7 +2964,7 @@ ship "Aletheia"
 	gun 10 -83 "Particle Cannon"
 	gun -10 -83 "Torpedo Launcher"
 	gun 10 -83 "Torpedo Launcher"
-	turret 0 -37 "Anti-Missile Turret"
+	turret 0 -37 "AMS-1 Guardian"
 	turret -12 -12 "Blaster Turret"
 	turret 12 -12 "Blaster Turret"
 	drone 0 14
@@ -3016,12 +3016,12 @@ ship "Zephyrus"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 60
 		"Blaster Turret" 2
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"NT-200 Nucleovoltaic"
 		"LP144a Battery Pack"
-		"D14-M Shield Generator"
-		"Large Radar Jammer"
+		"D14-3"
+		"RD-2 Noise"
 		"Plasma Pistol" 12
 		"Surveillance Pod"
 		
@@ -3036,7 +3036,7 @@ ship "Zephyrus"
 	engine -47 151
 	gun -15 -147 "Meteor Missile Launcher"
 	gun 15 -147 "Meteor Missile Launcher"
-	turret 0 -30 "Anti-Missile Turret"
+	turret 0 -30 "AMS-1 Guardian"
 	turret -19 -103 "Blaster Turret"
 	turret 19 -103 "Blaster Turret"
 	drone 0 25 top
@@ -3089,8 +3089,8 @@ ship "Astraea"
 		"Breeder Reactor"
 		"S3 Thermionic"
 		"LP144a Battery Pack"
-		"D14-S Shield Generator"
-		"Small Radar Jammer"
+		"D14-2"
+		"RD-1 Static"
 		"Liquid Helium Cooler"
 		"Tactical Scanner"
 		"Laser Rifle" 25
@@ -3153,12 +3153,12 @@ ship "Schooner"
 		"Torpedo Launcher" 2
 		"Meteor Missile Launcher" 2
 		"Modified Blaster" 2
-		"Anti-Missile Turret" 1
+		"AMS-1 Guardian" 1
 		"Modified Blaster Turret" 2
 		"Torpedo" 20
 		"Meteor Missile" 120
 
-		"D14-M Shield Generator"
+		"D14-3"
 		"Fission Reactor"
 		"LP072a Battery Pack"
 		"Brig" 5
@@ -3178,7 +3178,7 @@ ship "Schooner"
 	gun -14 -75 "Modified Blaster"
 	turret 14 -17 "Modified Blaster Turret"
 	turret -14 -17 "Modified Blaster Turret"
-	turret 0 89 "Anti-Missile Turret"
+	turret 0 89 "AMS-1 Guardian"
 	engine 22 114.5
 	engine -22 114.5
 	description "Named for an ancient vessel favored by oceanic pirates, the Schooner is a custom built raider. Its firepower and speed make it perfect for raiding large freighters, and give it an advantage when outrunning the authorites."
@@ -3221,12 +3221,12 @@ ship "Arete"
 		"Meteor Missile" 150
 		"Meteor Missile Box" 2
 		"Heavy Laser Turret" 2
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
-		"D14-XL Shield Generator"
-		"Large Radar Jammer" 2
+		"D14-5"
+		"RD-2 Noise" 2
 		"Water Coolant System MKII"
 		"Brig"
 		"Laser Rifle" 40
@@ -3250,9 +3250,9 @@ ship "Arete"
 	gun 25 -166 "Particle Cannon"
 	gun -25 -166 "Meteor Missile Launcher"
 	gun 25 -166 "Meteor Missile Launcher"
-	turret 0 -114 "Heavy Anti-Missile Turret"
+	turret 0 -114 "AMS-2 Preserver"
 	turret 0 15 "Heavy Laser Turret"
-	turret 0 103 "Heavy Anti-Missile Turret"
+	turret 0 103 "AMS-2 Preserver"
 	turret 0 157 "Heavy Laser Turret"
 	fighter -37 -65
 	fighter 37 -65
@@ -3312,12 +3312,12 @@ ship "Nomos"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 90
 		"Heavy Laser Turret" 2
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
-		"D14-L Shield Generator"
-		"Large Radar Jammer" 2
+		"D14-4"
+		"RD-2 Noise" 2
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 20
 		"Fragmentation Grenades" 20
@@ -3338,10 +3338,10 @@ ship "Nomos"
 	gun 41 -52 "Particle Cannon"
 	gun -20 -44 "Meteor Missile Launcher"
 	gun 20 -44 "Meteor Missile Launcher"
-	turret 0 -40 "Heavy Anti-Missile Turret"
+	turret 0 -40 "AMS-2 Preserver"
 	turret -33 -19 "Heavy Laser Turret"
 	turret 33 -19 "Heavy Laser Turret"
-	turret 0 0 "Heavy Anti-Missile Turret"
+	turret 0 0 "AMS-2 Preserver"
 	drone -25 18
 	drone 25 18
 	drone -25 49
@@ -3391,13 +3391,13 @@ ship "Elpis"
 		"Torpedo Launcher" 4
 		"Torpedo" 120
 		"Plasma Turret" 3
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"Breeder Reactor"
 		"S3 Thermionic"
 		"LP144a Battery Pack"
-		"D14-M Shield Generator"
-		"Small Radar Jammer"
+		"D14-3"
+		"RD-1 Static"
 		"Liquid Helium Cooler"
 		"Tactical Scanner"
 		"Laser Rifle" 25
@@ -3414,8 +3414,8 @@ ship "Elpis"
 	gun -18.5 -173.5 "Torpedo Launcher"
 	gun 18.5 -173.5 "Torpedo Launcher"
 	turret 0 -99.5 "Plasma Turret"
-	turret -39 -63.5 "Heavy Anti-Missile Turret"
-	turret 39 -63.5 "Heavy Anti-Missile Turret"
+	turret -39 -63.5 "AMS-2 Preserver"
+	turret 39 -63.5 "AMS-2 Preserver"
 	turret -39 107.5 "Plasma Turret"
 	turret 39 107.5 "Plasma Turret"
 	leak "leak" 40 50
@@ -3461,12 +3461,12 @@ ship "Falcon"
 		"Torpedo Launcher" 2
 		"Torpedo" 60
 		"Quad Blaster Turret" 3
-		"Heavy Anti-Missile Turret"
+		"AMS-2 Preserver"
 		
 		"Breeder Reactor"
 		"LP144a Battery Pack"
-		"D14-M Shield Generator"
-		"Large Radar Jammer"
+		"D14-3"
+		"RD-2 Noise"
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 12
 		"Plasma Pistol" 40
@@ -3481,7 +3481,7 @@ ship "Falcon"
 	gun 17 -88 "Plasma Cannon"
 	gun -17 -88 "Torpedo Launcher"
 	gun 17 -88 "Torpedo Launcher"
-	turret -16 -24 "Heavy Anti-Missile Turret"
+	turret -16 -24 "AMS-2 Preserver"
 	turret 16 -24 "Quad Blaster Turret"
 	turret -57 40 "Quad Blaster Turret"
 	turret 57 40 "Quad Blaster Turret"
@@ -3526,11 +3526,11 @@ ship "Leviathan"
 	outfits
 		"Particle Cannon" 4
 		"Quad Blaster Turret" 3
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D14-L Shield Generator"
+		"D14-4"
 		"Liquid Helium Cooler"
 		"Laser Rifle" 13
 		"Plasma Pistol" 30
@@ -3548,7 +3548,7 @@ ship "Leviathan"
 	turret -14 -10 "Quad Blaster Turret"
 	turret 14 -10 "Quad Blaster Turret"
 	turret -25.5 12.5 "Quad Blaster Turret"
-	turret 25.5 12.5 "Anti-Missile Turret"
+	turret 25.5 12.5 "AMS-1 Guardian"
 	leak "leak" 50 50
 	leak "flame" 30 80
 	leak "big leak" 60 30
@@ -3591,12 +3591,12 @@ ship "Protector"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 90
 		"Quad Blaster Turret" 4
-		"Heavy Anti-Missile Turret" 2
+		"AMS-2 Preserver" 2
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
-		"D14-L Shield Generator"
-		"Small Radar Jammer" 3
+		"D14-4"
+		"RD-1 Static" 3
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 5
 		"Plasma Pistol" 25
@@ -3611,8 +3611,8 @@ ship "Protector"
 	gun 15 -100 "Meteor Missile Launcher"
 	turret -54 -54 "Quad Blaster Turret"
 	turret 54 -54 "Quad Blaster Turret"
-	turret -73 0 "Heavy Anti-Missile Turret"
-	turret 73 0 "Heavy Anti-Missile Turret"
+	turret -73 0 "AMS-2 Preserver"
+	turret 73 0 "AMS-2 Preserver"
 	turret -54 54 "Quad Blaster Turret"
 	turret 54 54 "Quad Blaster Turret"
 	leak "leak" 60 50
@@ -3657,8 +3657,8 @@ ship "Aegis"
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
-		"D14-L Shield Generator"
-		"Small Radar Jammer" 3
+		"D14-4"
+		"RD-1 Static" 3
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 5
 		"Plasma Pistol" 25
@@ -3716,11 +3716,11 @@ ship "Vanguard"
 			"hit force" 2400
 	outfits
 		"Proton Gun" 7
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 
 		"Fusion Reactor"
 		"LP072a Battery Pack"
-		"D14-L Shield Generator"
+		"D14-4"
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 3
 		"Plasma Pistol" 20
@@ -3738,7 +3738,7 @@ ship "Vanguard"
 	gun 21 -45 "Proton Gun"
 	gun -31 -45 "Proton Gun"
 	gun 31 -45 "Proton Gun"
-	turret 0 42 "Anti-Missile Turret"
+	turret 0 42 "AMS-1 Guardian"
 	leak "leak" 60 50
 	leak "flame" 30 80
 	explode "tiny explosion" 18
@@ -3783,7 +3783,7 @@ ship "Unnamed Prototype"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D14-XL Shield Generator"
+		"D14-5"
 		"Liquid Nitrogen Cooler"
 		"Tactical Scanner" 2
 		"Plasma Pistol" 64
@@ -3844,8 +3844,8 @@ ship "Mule"
 	
 		"NT-200 Nucleovoltaic"
 		"LP072a Battery Pack"
-		"D14-M Shield Generator"
-		"Small Radar Jammer" 2
+		"D14-3"
+		"RD-1 Static" 2
 		"Ramscoop"
 		"Laser Rifle"
 		"Plasma Pistol" 5
@@ -3926,8 +3926,8 @@ ship "Bactrian"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D14-XL Shield Generator"
-		"Large Radar Jammer"
+		"D14-5"
+		"RD-2 Noise"
 		"Ramscoop"
 		"Laser Rifle" 15
 		"Plasma Pistol" 55
@@ -4010,7 +4010,7 @@ ship "Prototype Vulture"
 		"Beam Talon"
 		"Blaster Turret" 14
 		
-		"D14-XL Shield Generator"
+		"D14-5"
 		"Tactical Scanner"
 		"LP576a Battery Pack"
 		"Fusion Reactor"
@@ -4087,9 +4087,9 @@ ship "Veles"
 		"Meteor Missile Launcher" 2
 		"Proton Turret" 20
 		"Quad Blaster Turret" 6
-		"Heavy Anti-Missile Turret" 4
+		"AMS-2 Preserver" 4
 		
-		"D14-XL Shield Generator"
+		"D14-5"
 		"Tactical Scanner"
 		"LP576a Battery Pack"
 		"Fusion Reactor"
@@ -4124,10 +4124,10 @@ ship "Veles"
 	turret -98.5 94 "Quad Blaster Turret"
 	turret 27.5 -281.5 "Quad Blaster Turret"
 	turret -27.5 -281.5 "Quad Blaster Turret"
-	turret -20 -367 "Heavy Anti-Missile Turret"
-	turret 20 -367 "Heavy Anti-Missile Turret"
-	turret 19.5 326 "Heavy Anti-Missile Turret"
-	turret -19.5 326 "Heavy Anti-Missile Turret"
+	turret -20 -367 "AMS-2 Preserver"
+	turret 20 -367 "AMS-2 Preserver"
+	turret 19.5 326 "AMS-2 Preserver"
+	turret -19.5 326 "AMS-2 Preserver"
 	turret 22.5 219 "Quad Blaster Turret"
 	turret -22.5 219 "Quad Blaster Turret"
 	engine -131 483.5
@@ -4171,9 +4171,9 @@ ship " Veles "
 		"Meteor Missile Launcher" 2
 		"Proton Turret" 20
 		"Quad Blaster Turret" 6
-		"Heavy Anti-Missile Turret" 4
+		"AMS-2 Preserver" 4
 		
-		"D14-XL Shield Generator"
+		"D14-5"
 		"Tactical Scanner"
 		"LP576a Battery Pack"
 		"Fusion Reactor"
@@ -4208,10 +4208,10 @@ ship " Veles "
 	turret -98.5 94 "Quad Blaster Turret"
 	turret 27.5 -281.5 "Quad Blaster Turret"
 	turret -27.5 -281.5 "Quad Blaster Turret"
-	turret -20 -367 "Heavy Anti-Missile Turret"
-	turret 20 -367 "Heavy Anti-Missile Turret"
-	turret 19.5 326 "Heavy Anti-Missile Turret"
-	turret -19.5 326 "Heavy Anti-Missile Turret"
+	turret -20 -367 "AMS-2 Preserver"
+	turret 20 -367 "AMS-2 Preserver"
+	turret 19.5 326 "AMS-2 Preserver"
+	turret -19.5 326 "AMS-2 Preserver"
 	turret 22.5 219 "Quad Blaster Turret"
 	turret -22.5 219 "Quad Blaster Turret"
 	engine -131 483.5
@@ -4257,8 +4257,8 @@ ship "Bakunawa"
 
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D14-XL Shield Generator"
-		"Large Radar Jammer"
+		"D14-5"
+		"RD-2 Noise"
 		"Liquid Helium Cooler"
 		"Outfits Expansion" 2
 		"Laser Rifle" 69
@@ -4487,7 +4487,7 @@ ship "Combat Clipper"
 		
 		"nGVF-DD Fuel Cell"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
+		"D14-2"
 		"Plasma Pistol" 3
 		
 		"Greyhound Plasma Thruster"
@@ -4548,8 +4548,8 @@ ship "Narcissus MKIII"
 		
 		"RT-I Radiothermal"
 		"LP144a Battery Pack"
-		"D14-XS Shield Generator"
-		"Small Radar Jammer"
+		"D14-1"
+		"RD-1 Static"
 		"Cargo Scanner"
 		"Outfit Scanner"
 		"Tactical Scanner"
@@ -4606,11 +4606,11 @@ ship "Unionworks Headhunter"
 			"hit force" 660
 	outfits
 		"Heavy Laser" 2
-		"Heavy Anti-Missile Turret"
+		"AMS-2 Preserver"
 		
 		"RT-I Radiothermal"
 		"LP072a Battery Pack"
-		"D14-S Shield Generator"
+		"D14-2"
 		"Plasma Pistol" 2
 		
 		"Greyhound Plasma Thruster"
@@ -4623,7 +4623,7 @@ ship "Unionworks Headhunter"
 	gun 17.5 -17
 	gun -12 -25.5 "Heavy Laser"
 	gun 12 -25.5 "Heavy Laser"
-	turret 0 9 "Heavy Anti-Missile Turret"
+	turret 0 9 "AMS-2 Preserver"
 	leak "leak" 60 50
 	leak "flame" 80 80
 	explode "tiny explosion" 20
@@ -4664,12 +4664,12 @@ ship "Schooner Refit"
 		"Torpedo Launcher" 2
 		"Meteor Missile Launcher" 2
 		"Modified Blaster" 2
-		"Anti-Missile Turret" 1
+		"AMS-1 Guardian" 1
 		"Modified Blaster Turret" 2
 		"Torpedo" 20
 		"Meteor Missile" 120
 
-		"D14-M Shield Generator"
+		"D14-3"
 		"Fission Reactor"
 		"LP072a Battery Pack"
 		"Brig" 5
@@ -4689,7 +4689,7 @@ ship "Schooner Refit"
 	gun -14 -75 "Modified Blaster"
 	turret 14 -17 "Modified Blaster Turret"
 	turret -14 -17 "Modified Blaster Turret"
-	turret 0 89 "Anti-Missile Turret"
+	turret 0 89 "AMS-1 Guardian"
 	engine 22 114.5
 	engine -22 114.5
 	description "As if the Schooner wasn't frightening enough, Unionworks set about improving it further. Boasting Shields nearly on par with the Navy's Nomos and more armor, this refit can not only dish out a lot of damage and also take it. Other governments both envy and fear this ship."
