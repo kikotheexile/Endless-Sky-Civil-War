@@ -6,7 +6,7 @@
 #
 # Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 # Search # Free Worlds to jump to break. For a specific break, include (without quotes) "Intro", "Start", "Middle", "Reconciliation", "Checkmate",
 # "Side Plots", "War Jobs" or search any specific keyword
@@ -51,7 +51,7 @@ mission "Pact Recon 0"
 					goto initiative	
 
 			label ringer
-			`	"Funny you should ask." The militia officer says. "Have you  considered volunteering for the Southern Mutual Defense Pact?"`
+			`	"Funny you should ask." The militia officer says. "Have you considered volunteering for the Southern Mutual Defense Pact?"`
 			choice
 				`	"Maybe if I knew what it was."`
 					goto smdp
@@ -3507,7 +3507,7 @@ mission "Southbound Testing 5"
 ship "Clipper" "Drone Clipper"
 	add attributes
 		"self destruct" 1
-		"automaton"
+		"automaton" 1
 		"required crew" 0
 	outfits
 		"Modified Blaster" 4
@@ -5555,7 +5555,7 @@ mission "FW Alphas 1.2"
 		government "Alpha"
 		personality staying derelict
 		ship "Unidentified Alpha Destroyer" "Ghazzu"
-		ship "Unidentified Alpha Destroyer"  "Reaver"
+		ship "Unidentified Alpha Destroyer" "Reaver"
 		ship "Leviathan" "Majestic Wrath"
 	
 	on visit
