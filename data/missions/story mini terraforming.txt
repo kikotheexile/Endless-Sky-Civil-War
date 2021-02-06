@@ -281,18 +281,26 @@ mission "Terraforming 6"
 				`	(Run away.)`
 					flee
 
-	npc evade
-		personality heroic accompany save
+	npc accompany save
+		personality heroic 
 		government Republic
-		fleet
-			fighters "republic fighter"
-			variant
-				"Nomos (Heavy)" "R.N.S. Law"
-				"Sentinel Drone" 4					
-				"Nomos (Heavy)" "R.N.S. Order"
-				"Sentinel Drone" 4	
-				"Narcissus" 6
-					
+		ship "Nomos (Heavy)" "R.N.S. Law"
+		ship "Sentinel Drone" "Law 1"
+		ship "Sentinel Drone" "Law 2"
+		ship "Sentinel Drone" "Law 3"
+		ship "Sentinel Drone" "Law 4"
+		ship "Nomos (Heavy)" "R.N.S. Order"
+		ship "Sentinel Drone" "Order 1"
+		ship "Sentinel Drone" "Order 2"
+		ship "Sentinel Drone" "Order 3"
+		ship "Sentinel Drone" "Order 4"
+		ship "Narcissus" "Enforcer 1"
+		ship "Narcissus" "Enforcer 2"
+		ship "Narcissus" "Enforcer 3"
+		ship "Narcissus" "Enforcer 4"
+		ship "Narcissus" "Enforcer 5"
+		ship "Narcissus" "Enforcer 6"
+	
 	on decline
 		"reputation: Republic" <?= -10
 	on fail
