@@ -22,7 +22,6 @@ planet Ada
 	outfitter "Lovelace Advanced"
 	outfitter "Common Outfits"
 	outfitter "Ammo"
-	"required reputation" 2
 	bribe 0.1
 	security 0.9
 	tribute 4200
@@ -39,7 +38,6 @@ planet Albatross
 	outfitter "Ammo"
 	outfitter "Common Outfits"
 	outfitter "Pirate Outfits"
-	"required reputation" -20
 	security 0
 	tribute 400
 		threshold 2500
@@ -52,7 +50,6 @@ planet Alexandria
 	description `	Entire sections of the station are off-limits to ordinary visitors. Rumors abound as to what those restricted areas contain.`
 	spaceport `The station's cavernous visitor center is the quietest spaceport you have ever been in. Despite the multitudes of people bustling with carts of books or stacks of data pads, the only noise above a whisper you hear comes from the startled outburst of an elderly scholar, who immersed in their reading as they wandered, collided with someone.`
 	spaceport `	From here, passageways lead off into the wings of the library in a labyrinth of hallways, stairs, and library stacks. Some reinforced doors require key cards to enter, and others have no opening controls of any sort that you can see.`
-	"required reputation" 100
 	bribe 0.1
 	tribute 1000
 		threshold 8000
@@ -106,7 +103,6 @@ planet "Arachne Station"
 	attributes south station
 	landscape land/sivael0
 	description `Arachne Station is the property of Tarazed Corporation, and there are no services available for anyone not under their employ.`
-	"required reputation" 20
 	bribe 0.05
 	security 0.4
 	music ambient/machinery
@@ -166,7 +162,6 @@ planet Bloodsea
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
 	outfitter "Pirate Outfits"
-	"required reputation" -10
 	security 0
 	tribute 200
 		threshold 1500
@@ -266,7 +261,6 @@ planet "Carbuncle Station"
 	attributes north station research
 	landscape land/sivael4
 	description `Carbuncle is a tiny station owned and operated by Lovelace Labs. Like most corporate stations orbiting a gas giant, it is primarily a deuterium refinery. Aside from the docking bay the rest of the station is closed off to visitors. Given the reputation of Lovelace Labs for exotic research, there could be almost anything beyond those sealed-off bulkheads.`
-	"required reputation" 100
 	bribe 0.05
 	security 0.9
 	music ambient/machinery
@@ -290,7 +284,6 @@ planet "Charybdis Station"
 	attributes core station
 	landscape land/sivael8
 	description `Charybdis Station is privately owned by the Syndicate. It is a massive deuterium refinery, with harvester drones constantly flying in and out to scoop hydrogen gas out of the upper atmosphere of the planet below. If you need to repair or refuel in this system, you will need to visit the neighboring world of Delve instead of this station.`
-	"required reputation" 20
 	bribe 0.05
 	security 0.6
 	music ambient/machinery
@@ -360,7 +353,6 @@ planet Covert
 	shipyard "Southern Pirates"
 	outfitter "Ammo"
 	outfitter "Pirate Outfits"
-	"required reputation" 10
 	bribe 0.1
 	security 0
 	tribute 1300
@@ -470,7 +462,6 @@ planet Earth
 	outfitter "Lovelace Basics"
 	outfitter "Syndicate Basics"
 	outfitter "Ammo"
-	"required reputation" 2
 	bribe 0.03
 	security 0.3
 	tribute 10000
@@ -510,7 +501,6 @@ planet Farpoint
 	outfitter "Common Outfits"
 	outfitter "Lovelace Basics"
 	outfitter "Ammo"
-	"required reputation" 2
 	bribe 0.08
 	security 0.8
 	tribute 900
@@ -627,7 +617,6 @@ planet Freedom
 	shipyard "Betelgeuse Basics"
 	outfitter "Ammo"
 	outfitter "Basic Outfits"
-	"required reputation" 10
 	security 0
 	tribute 500
 		threshold 2000
@@ -852,7 +841,6 @@ planet Hermes
 	spaceport `The spaceport is far removed from any of this world's cities. It consists of a single, ring-shaped building, the docking bays opening into the central atrium. Industrial strength ultraviolet lasers are mounted on turrets throughout the atrium, and fire automatically at entering and departing ships to sterilize them. Once you land, the docking bay is hermetically sealed. Based on the precautions they are taking, it might be wise to complete your business and be on your way as soon as possible.`
 	outfitter "Ammo"
 	outfitter "Lovelace Advanced"
-	"required reputation" 10
 	bribe 0.1
 	security 0.9
 	tribute 1400
@@ -889,7 +877,6 @@ planet Hope
 	landscape land/snow9
 	description `In the year 2994, Hope was a somewhat cold but otherwise hospitable planet, home to a burgeoning population of almost two million people. But that year, a supervolcano eruption ejected so much dust into the upper atmosphere that a new ice age set in and the planet became unlivable. As the temperatures steadily dropped, nearly half the Republic Navy was mobilized to evacuate settlers from Hope and transport them to nearby colonies. The evacuation effort took six months.`
 	description `	The abandoned villages and towns are now buried deep beneath the snow, and occasional treasure hunters come here to explore them and find items of value that were left behind.`
-	"required reputation" -1000
 	security 0
 
 planet Hopper
@@ -1017,7 +1004,6 @@ planet "Huginn Station"
 	landscape land/sivael2
 	description `Huginn and Muninn stations are the gateway to the Deep, the region of space north of here. The Deep was the first confederation of planets to have a democratic government, predating the Republic by nearly two centuries.`
 	description `    Huginn Station is a prison station where convicted pirates work at harvesting and refining deuterium in atonement for their crimes. There are no services available for you here, and security guards equipped with full arsenals watch you with interest.`
-	"required reputation" 20
 	bribe 0.1
 	security 0.9
 	music ambient/machinery
@@ -1100,7 +1086,6 @@ planet "Leviathan Station"
 	description `Leviathan Station is The Deep's most productive deuterium harvesting station. Built nearly four hundred years ago, the station was the first to fuel the massive cargo caravans unique to this region. To this day it remains under government control, as The Deep is reasonably wary of private corporations controlling the industries that make interstellar travel possible.`
 	spaceport `This is a refinery, not a tourist destination. While you are allowed to dock here as well as make use of the same cafeteria used by the local workers, no one seems interested in entertaining you or interacting with you.` 
 	spaceport `Seeing this impressive station, one might get a feeling of satisfaction from knowing they just refueled their ship with deuterium that just yesterday was floating around the upper cloud banks of the gas giant below.`
-	"required reputation" 10
 	bribe 0.08
 	security 0.9
 	music ambient/machinery
@@ -1361,7 +1346,6 @@ planet "Muninn Station"
 	landscape land/sivael6
 	description `Muninn Station, along with its brother station Huginn, serves as the gateway to the region of space known as the Deep. They both harvest and refine deuterium for use as rocket fuel, and in addition Muninn Station is used as a military base for the local defense fleets.`
 	spaceport `Most of the station is closed off to you, but you are told that if you want you may visit the large military mess hall, where hundreds of Navy members and local militia sit and eat or watch the news videos. You would normally expect a military mess hall to be a noisy, rowdy place, but this one is almost eerily silent, with a few quiet conversations going on in the corners but otherwise no noise except the video screens.`
-	"required reputation" 10
 	bribe 0.05
 	security 0.8
 	music ambient/machinery
@@ -1646,7 +1630,6 @@ planet "Oberon Station"
 	attributes core station
 	landscape land/sivael9
 	description `Oberon Station is a deuterium refinery owned and operated by the Syndicate, and aside from a few docking bays for visiting ships to use in an emergency, the rest of the station is sealed off to non-employees.`
-	"required reputation" 10
 	bribe 0.03
 	security 0.4
 	music ambient/machinery
@@ -1682,7 +1665,6 @@ planet "Omega Station"
 	landscape land/sivael9
 	description `Omega Station was once the very end point of larger Caravan fleets when the southern arm was being colonized. Now it serves as an orbital warehouse for the planet below.`
 	spaceport `There is little to see here beyond refueling tanks and thousands of shipping containers, although the food in the cafeteria is surprisingly good, and the view is stunning.`
-	"required reputation" 10
 	bribe 0.03
 	security 0.4
 	music ambient/machinery
@@ -1691,7 +1673,6 @@ planet "Phoenix Station"
 	attributes deep station
 	landscape land/sivael4
 	description `As with all refineries in the Deep, Phoenix Station is government-owned. You cannot imagine who would want to live here; despite reflective hull plating and active cooling systems, the station is uncomfortably hot. Nearly all the work is done by robots and computers, with only a skeleton crew of people supervising. Every time the station's orbit brings it through the planet's shadow, the temperature drops briefly and the entire station creaks ominously as it cools.`
-	"required reputation" 10
 	bribe 0.07
 	security 0.7
 	music ambient/machinery
@@ -1705,7 +1686,6 @@ planet Pilot
 	description `Pilot is used as a research and testing station for Lovelace Labs. The research buildings are not open to non-employees. From a distance it looks almost like a small war is going on, with missiles being fired from a silo toward a hilltop where an anti-missile turret is picking them off one by one.`
 	description `	Rumors say that the Ranger Missile engineering team and the Missile Defense team are in fierce competition with each other, and whichever team is currently losing to the other must buy them lunch every Friday.`
 	spaceport `The workers grudgingly refuel your ship, but it is quite clear that you are out of place here. Nearly everyone in the spaceport is wearing a lab coat or a uniform, and several groups of people halt their conversations as soon as you pass within earshot.`
-	"required reputation" 100
 	bribe 0.1
 	security 0.9
 	tribute 600
@@ -1730,7 +1710,6 @@ planet Poisonwood
 	spaceport `The starport is a hodgepodge of small metal structures, built from the remains of Navy and pirate ships that fought for control of this world. The locals are unusually courteous and proud to welcome you to their planet.`
 	spaceport `	The tavern in the center of the port is named The Parting Glass. The walls are covered with photographs from after the war: liberated slaves boarding Navy ships to leave this planet that had brought them so much pain; Navy officers leaving their ships to retire on this world that they liberated; friends gone away, and friends left behind. It is a strange feeling to sit here so deeply immersed in signs of a history that you had no part in.`
 	outfitter "Ammo"
-	"required reputation" 2
 	bribe 0.04
 	security 0.5
 	tribute 300
@@ -1761,7 +1740,6 @@ planet Prime
 	outfitter "Common Outfits"
 	outfitter "Ammo"
 	outfitter "Lovelace Basics"
-	"required reputation" 2
 	bribe 0.05
 	security 0.6
 	tribute 4400
@@ -1857,7 +1835,6 @@ planet Shangri-La
 	outfitter "Syndicate Advanced"
 	outfitter "Common Outfits"
 	outfitter "Ammo"
-	"required reputation" 5
 	bribe 0.07
 	security 0.7
 	tribute 1200
@@ -1881,7 +1858,6 @@ planet Shorebreak
 	description `Shorebreak is an ocean world which is home to a stunning profusion of alien life, some of which is not too dissimilar from life on Earth. The first settlement, centuries ago, was built as a marine biology laboratory, and from there the planet gradually grew into a regional center for bioengineering, where local life forms are tested for possible use in human medicine.`
 	description `	Outside the laboratories, much of the planet's land mass remains in its natural state, but the planet is currently struggling with a large increase in immigration.`
 	spaceport `The spaceport on Shorebreak is built on its own separate island, perhaps as a way to keep any contamination isolated from the main continents. The hangar where you were directed to land your ship was hermetically sealed before you were allowed to land, and the customs officer informs you that any cargo you wish to trade must first be screened for "rats, mice, invasive insects, or wild pigs."`
-	"required reputation" 2
 	bribe 0.06
 	security 0.3
 	tribute 500
@@ -2144,7 +2120,6 @@ planet "Triton Station"
 	landscape land/sivael0
 	description `Triton Station serves both as a refinery for hyperspace fuel, and as a garrison for ships of the Republic Navy. Patrol ships are constantly landing here and then taking off to scour the surrounding systems for pirates. Since pirates are scarce in this part of space, it seems like a very tedious job.`
 	spaceport `The mess hall is empty except for one table where some Navy officers are playing a card game. They are sitting right under a ventilation duct, and the cards keep blowing off the table; the station's low simulated gravity is not enough to hold them there.`
-	"required reputation" 10
 	bribe 0.08
 	security 0.8
 	music ambient/machinery
