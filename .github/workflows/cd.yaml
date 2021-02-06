@@ -31,7 +31,7 @@ jobs:
       - name: Build Application
         run: scons -j $(nproc)
       - name: Package Application
-        run: tar -czf ${{ env.OUTPUT }} sounds images/ data/ fonts/ license.txt keys.txt icon.png endless-sky credits.txt copyright.txt changelog
+        run: tar -czf ${{ env.OUTPUT }} sounds images/ data/ fonts/ legal/ keys.txt icon.png endless-sky credits.txt changelog
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
@@ -91,7 +91,7 @@ jobs:
           COPY C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\lib\libstdc++-6.dll .
           COPY C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\x86_64-w64-mingw32\lib\libwinpthread-1.dll .
       - name: Package Application
-        run: 7z a ${{ env.OUTPUT }} .\sounds\ .\images\ .\data\ .\fonts\ *.dll license.txt keys.txt icon.png EndlessSky.exe credits.txt copyright changelog
+        run: 7z a ${{ env.OUTPUT }} .\sounds\ .\images\ .\data\ .\fonts\ .\legal\ *.dll keys.txt icon.png EndlessSky.exe credits.txt changelog
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
