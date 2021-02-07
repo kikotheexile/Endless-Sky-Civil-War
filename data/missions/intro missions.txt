@@ -407,7 +407,7 @@ mission "Intro [0]"
 	to fail
 		has "a pirates life"
 	on offer
-	conversation
+		conversation
 			`With some trepidation, you give the shipyard owner your money and take your new ship for a test drive, piloting it out of the shipyard and onto a spare landing pad by the spaceport. Then you get out and look the ship over a bit more closely. You are busy polishing out a few rust spots with a piece of steel wool when an old man in grease-stained coveralls walks up.`
 			`	"Nothing quite like buying your very first starship," he says.`
 			choice
@@ -551,8 +551,7 @@ mission "Intro [2 Transport]"
 			`	(It's never a bad idea to check the "Spaceport" for new missions or to continue existing chains!)`
 
 
-mission
-"Intro [3 Transport]"
+mission "Intro [3 Transport]"
 	priority
 	name "Bring James to <planet>"
 	description "Bring James to <destination>, where he has a spot reserved in a retirement home."
