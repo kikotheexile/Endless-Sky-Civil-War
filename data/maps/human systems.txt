@@ -9226,7 +9226,7 @@ system Ruchbah
 		sprite planet/ice7
 		distance 612.86
 		period 119.945
-"Paragon 7"
+# "Paragon 7"
 	object 
 		sprite planet/station7
 		distance 942.55
