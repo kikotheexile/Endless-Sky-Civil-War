@@ -1550,13 +1550,11 @@ mission "FW Escort 1"
 	npc
 		personality heroic escort
 		government "Free Worlds"
-		formation "Vee"
-		fleet
-			cargo 0
-			names "free worlds small"
-			variant
-				"Sparrow (Gatling)" 3
-				"Sparrow (Torpedo)" 2
+		ship "Sparrow (Gatling)" "F.W.W. Rip"
+		ship "Sparrow (Gatling)" "F.W.W. Tear"
+		ship "Sparrow (Gatling)" "F.W.W. Maul"
+		ship "Sparrow (Torpedo)" "F.W.W. Insidious"
+		ship "Sparrow (Torpedo)" "F.W.W. Surreptitious"
 	npc
 		personality plunders entering
 		government "Southern Pirates"
