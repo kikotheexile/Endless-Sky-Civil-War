@@ -186,7 +186,7 @@ mission "Oathkeeper Scouting 3"
 			`Not long after stepping out of your ship, a stranger in a Navy uniform flags you down. "Captain Mulgrew is in a meeting right now, but she'd like you to put up some sensors, if you'll just follow me.`
 			choice
 				`	"Ugh, more sensors? Do you guys do anything else around here?"`
-					label sensors
+					goto sensors
 				`	"Know what the meeting's about?"`
 					goto meeting
 				`	"No, I don't think I will. Maybe later."`
@@ -289,7 +289,8 @@ mission `Oathkeeper Escort`
 		ship "Behemoth (Speedy)" "Kandosii's Legacy"
 	
 	on complete
-		conversation `As the Behemoths begin unloading their repair teams and construction equipment, a Humanitarian Corps officer takes the time to thank you and pays you <payment>. He mentions that Betelguese is preparing a team of negotiators to head to Valhalla and request help, and that they are expecting you elsewhere in the spaceport.`
+		conversation 
+			`As the Behemoths begin unloading their repair teams and construction equipment, a Humanitarian Corps officer takes the time to thank you and pays you <payment>. He mentions that Betelguese is preparing a team of negotiators to head to Valhalla and request help, and that they are expecting you elsewhere in the spaceport.`
 		payment 40000
 		
 mission "Oathkeeper Escort 2"
