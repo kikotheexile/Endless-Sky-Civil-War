@@ -713,11 +713,11 @@ mission "Rim Archaeology 3A"
 	on offer
 		conversation
 			`You drop off the excavation machines at the dig site on Zug, and receive your payment of three hundred thousand credits. Foster has already marked out lines of where he wants to dig and has completed a much more detailed geological scan. "We'll be starting with a narrow trench," he tells you, "and expanding out from there. It'll need to be wide enough to include a ramp for the vehicles, of course, so we'll still need to move a lot of rock. And when we get within the last five meters or so, I'm worried that the vibration from the grinders may be too destructive. So, I need some laser excavation equipment from <planet>, next."`
-		choice
-			`	"On it."`
-				accept
-			`	"Just don't forget that my name goes in the history books, too!"`
-				accept
+			choice
+				`	"On it."`
+					accept
+				`	"Just don't forget that my name goes in the history books, too!"`
+					accept
 
 
 mission "Rim Archaeology 3B"
