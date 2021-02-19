@@ -26,7 +26,7 @@ planet Ada
 	security 0.9
 	tribute 4200
 		threshold 8000
-		fleet "Large Republic" 16
+		fleet "Local Navy" 16
 
 planet Albatross
 	attributes "requires: armed" pirate "south pirate"
@@ -41,7 +41,7 @@ planet Albatross
 	security 0
 	tribute 400
 		threshold 2500
-		fleet "Small Southern Pirates" 20
+		fleet "Southern Pirates" 20
 
 planet Alexandria
 	attributes deep station tourism
@@ -53,7 +53,7 @@ planet Alexandria
 	bribe 0.1
 	tribute 1000
 		threshold 8000
-		fleet "Large Republic" 7
+		fleet "Local Navy" 7
 
 planet Alfheim
 	attributes "requires: landing gear" deep oil factory
@@ -67,7 +67,7 @@ planet Alfheim
 	security 0.7
 	tribute 1200
 		threshold 5000
-		fleet "Small Deep Security" 27
+		fleet "Local Deep" 27
 
 planet Amazon
 	attributes core tourism oil frontier
@@ -77,7 +77,7 @@ planet Amazon
 	security 0.3
 	tribute 900
 		threshold 3500
-		fleet "Small Syndicate" 10
+		fleet "Local Syndicate" 10
 
 planet Antipode
 	attributes "requires: landing gear" core mining frontier
@@ -87,7 +87,7 @@ planet Antipode
 	security 0.1
 	tribute 600
 		threshold 2500
-		fleet "Small Syndicate" 7
+		fleet "Local Syndicate" 7
 
 planet Arabia
 	attributes "dirt belt" oil
@@ -97,7 +97,7 @@ planet Arabia
 	security 0.1
 	tribute 600
 		threshold 2500
-		fleet "Small Militia" 45
+		fleet "Local Militia" 45
 
 planet "Arachne Station"
 	attributes south station
@@ -108,7 +108,7 @@ planet "Arachne Station"
 	music ambient/machinery
 	tribute 900
 		threshold 3000
-		fleet "Large Militia" 14
+		fleet "Local Militia" 14
 
 planet Asgard
 	attributes "requires: landing gear" deep factory urban rich
@@ -125,7 +125,7 @@ planet Asgard
 	security 0.7
 	tribute 4000
 		threshold 7000
-		fleet "Large Deep Security" 39
+		fleet "Local Deep" 39
 
 planet "Big Sky"
 	attributes "requires: landing gear" "dirt belt" farming
@@ -136,7 +136,7 @@ planet "Big Sky"
 	security 0.1
 	tribute 600
 		threshold 3000
-		fleet "Small Militia" 50
+		fleet "Local Militia" 50
 
 planet Bivrost
 	attributes "requires: landing gear" deep mining urban
@@ -150,7 +150,7 @@ planet Bivrost
 	security 0.8
 	tribute 3600
 		threshold 7000
-		fleet "Large Deep Security" 35
+		fleet "Local Deep" 35
 
 planet Bloodsea
 	attributes pirate
@@ -165,7 +165,7 @@ planet Bloodsea
 	security 0
 	tribute 200
 		threshold 1500
-		fleet "Small Southern Pirates" 12
+		fleet "Southern Pirates" 12
 
 planet Bluestone
 	attributes "requires: landing gear" core oil research frontier
@@ -176,7 +176,7 @@ planet Bluestone
 	security 0.2
 	tribute 400
 		threshold 3000
-		fleet "Small Syndicate" 6
+		fleet "Local Syndicate" 6
 
 planet Bounty
 	attributes "dirt belt" farming factory
@@ -187,7 +187,7 @@ planet Bounty
 	security 0.1
 	tribute 700
 		threshold 3000
-		fleet "Large Militia" 11
+		fleet "Local Militia" 11
 
 planet Bourne
 	attributes "requires: landing gear" rim factory urban
@@ -203,7 +203,7 @@ planet Bourne
 	security 0.4
 	tribute 2200
 		threshold 4500
-		fleet "Large Militia" 32
+		fleet "Local Militia" 32
 
 planet "Buccaneer Bay"
 	attributes "requires: landing gear" "requires: armed" pirate "core pirate"
@@ -231,7 +231,7 @@ planet Burthen
 	security 0.2
 	tribute 500
 		threshold 4000
-		fleet "Small Syndicate" 7
+		fleet "Local Syndicate" 7
 
 planet Calda
 	attributes "requires: landing gear" paradise tourism rich
@@ -244,7 +244,7 @@ planet Calda
 	security 0.5
 	tribute 3300
 		threshold 5500
-		fleet "Large Republic" 13
+		fleet "Local Navy" 13
 
 planet Canyon
 	attributes "requires: landing gear" core farming frontier
@@ -255,7 +255,7 @@ planet Canyon
 	security 0.1
 	tribute 400
 		threshold 3000
-		fleet "Small Syndicate" 5
+		fleet "Local Syndicate" 5
 
 planet "Carbuncle Station"
 	attributes north station research
@@ -266,7 +266,7 @@ planet "Carbuncle Station"
 	music ambient/machinery
 	tribute 2700
 		threshold 5500
-		fleet "Large Republic" 10
+		fleet "Local Navy" 10
 
 planet "Charon Station"
 	attributes south station
@@ -278,7 +278,7 @@ planet "Charon Station"
 	music ambient/machinery
 	tribute 200
 		threshold 1500
-		fleet "Small Militia" 15
+		fleet "Local Militia" 15
 
 planet "Charybdis Station"
 	attributes core station
@@ -289,7 +289,7 @@ planet "Charybdis Station"
 	music ambient/machinery
 	tribute 300
 		threshold 2500
-		fleet "Small Syndicate" 4
+		fleet "Local Syndicate" 4
 
 planet Chiron
 	attributes "near earth" urban
@@ -308,7 +308,7 @@ planet Chiron
 	security 0.3
 	tribute 4400
 		threshold 7500
-		fleet "Large Republic" 17
+		fleet "Local Navy" 17
 
 planet Clark
 	attributes "dirt belt" forest factory
@@ -323,7 +323,7 @@ planet Clark
 	security 0.1
 	tribute 400
 		threshold 2500
-		fleet "Small Militia" 30
+		fleet "Local Militia" 30
 
 planet Clink
 	attributes "requires: landing gear" mining moon
@@ -342,7 +342,7 @@ planet Cornucopia
 	security 0.1
 	tribute 800
 		threshold 4000
-		fleet "Large Militia" 12
+		fleet "Local Militia" 12
 
 planet Covert
 	attributes pirate mining "core pirate"
@@ -371,7 +371,7 @@ planet Crossroads
 	security 0.2
 	tribute 1100
 		threshold 3500
-		fleet "Small Syndicate" 11
+		fleet "Local Syndicate" 11
 
 planet Dancer
 	attributes "requires: landing gear" south research
@@ -383,7 +383,7 @@ planet Dancer
 	security 0.05
 	tribute 300
 		threshold 2000
-		fleet "Small Militia" 23
+		fleet "Local Militia" 23
 
 planet Darkstone
 	attributes "requires: landing gear" south farming frontier
@@ -395,7 +395,7 @@ planet Darkstone
 	security 0.1
 	tribute 200
 		threshold 1500
-		fleet "Small Militia" 18
+		fleet "Local Militia" 18
 
 planet "Deadman's Cove"
 	attributes "requires: landing gear" "requires: armed" pirate "core pirate"
@@ -420,7 +420,7 @@ planet "New Roanoke"
 	security 0.1
 	tribute 500
 		threshold 3000
-		fleet "Small Militia" 37
+		fleet "Local Militia" 37
 
 planet Delve
 	attributes "requires: landing gear" core mining
@@ -435,7 +435,7 @@ planet Delve
 	security 0.2
 	tribute 1600
 		threshold 4500
-		fleet "Large Syndicate" 9
+		fleet "Local Syndicate" 9
 
 planet Dune
 	attributes "requires: landing gear" rim mining
@@ -449,7 +449,7 @@ planet Dune
 	security 0.05
 	tribute 300
 		threshold 3000
-		fleet "Small Militia" 23
+		fleet "Local Militia" 23
 
 planet Earth
 	attributes "requires: landing gear" "near earth" urban tourism
@@ -466,7 +466,7 @@ planet Earth
 	security 0.3
 	tribute 10000
 		threshold 20000
-		fleet "Large Republic" 50
+		fleet "Local Navy" 50
 
 planet "Echo Station"
 	attributes shipyard station
@@ -505,7 +505,7 @@ planet Farpoint
 	security 0.8
 	tribute 900
 		threshold 5500
-		fleet "Large Republic" 6
+		fleet "Local Navy" 6
 
 planet Farseer
 	attributes paradise tourism rich
@@ -517,7 +517,7 @@ planet Farseer
 	security 0.6
 	tribute 3500
 		threshold 6500
-		fleet "Large Republic" 14
+		fleet "Local Navy" 14
 
 planet Featherweight
 	attributes north research frontier
@@ -527,7 +527,7 @@ planet Featherweight
 	security 0.5
 	tribute 800
 		threshold 4500
-		fleet "Small Republic" 30
+		fleet "Local Navy" 15
 
 planet "Fenrir Station"
 	attributes deep station
@@ -540,7 +540,7 @@ planet "Fenrir Station"
 	music ambient/machinery
 	tribute 600
 		threshold 3000
-		fleet "Small Deep Security" 14
+		fleet "Local Deep" 14
 
 planet Flood
 	attributes "requires: landing gear" rim tourism farming
@@ -551,7 +551,7 @@ planet Flood
 	security 0.2
 	tribute 700
 		threshold 3000
-		fleet "Large Militia" 11
+		fleet "Local Militia" 11
 
 planet Follower
 	attributes "requires: landing gear" paradise factory
@@ -569,7 +569,7 @@ planet Follower
 	security 0.4
 	tribute 2400
 		threshold 4500
-		fleet "Small Republic" 86
+		fleet "Local Navy" 16
 
 planet Foundry
 	attributes "requires: landing gear" core factory urban
@@ -588,7 +588,7 @@ planet Foundry
 	security 0.5
 	tribute 2900
 		threshold 5500
-		fleet "Large Syndicate" 18
+		fleet "Local Syndicate" 18
 
 planet "Free Market"
 	attributes station north "northern pirate" "northern union"
@@ -635,7 +635,7 @@ planet Furnace
 	security 0.1
 	tribute 1200
 		threshold 3500
-		fleet "Large Syndicate" 7
+		fleet "Local Syndicate" 7
 
 planet Geminus
 	attributes "requires: landing gear" paradise factory mining
@@ -657,7 +657,7 @@ planet Geminus
 	security 0.9
 	tribute 4800
 		threshold 7500
-		fleet "Large Republic" 18
+		fleet "Local Navy" 18
 
 planet Gemstone
 	attributes "requires: landing gear" "dirt belt" mining
@@ -668,7 +668,7 @@ planet Gemstone
 	security 0.2
 	tribute 500
 		threshold 2500
-		fleet "Large Militia" 8
+		fleet "Local Militia" 8
 
 planet Geyser
 	attributes "near earth" oil factory
@@ -683,7 +683,7 @@ planet Geyser
 	security 0.3
 	tribute 1300
 		threshold 3500
-		fleet "Large Militia" 20
+		fleet "Local Militia" 20
 
 planet Glaze
 	attributes "requires: landing gear" south tourism
@@ -700,7 +700,7 @@ planet Glaze
 	security 0.2
 	tribute 1700
 		threshold 3500
-		fleet "Large Militia" 25
+		fleet "Local Militia" 25
 
 planet Glory
 	attributes "requires: landing gear" paradise medical
@@ -712,7 +712,7 @@ planet Glory
 	security 0.6
 	tribute 4300
 		threshold 7500
-		fleet "Large Republic" 16
+		fleet "Local Navy" 16
 
 planet Grakhord
 	attributes quarg moon
@@ -780,7 +780,7 @@ planet Haze
 	security 0.6
 	tribute 2600
 		threshold 5500
-		fleet "Large Deep Security" 26
+		fleet "Local Deep" 26
 
 planet Heartland
 	attributes "requires: landing gear" "dirt belt" farming
@@ -792,7 +792,7 @@ planet Heartland
 	security 0.2
 	tribute 900
 		threshold 3500
-		fleet "Large Republic" 4
+		fleet "Local Navy" 4
 
 planet Heatstroke
 	attributes "requires: landing gear" north "northern pirate" mining "northern union"
@@ -811,7 +811,7 @@ planet Helheim
 	security 0.6
 	tribute 700
 		threshold 3000
-		fleet "Small Deep Security" 15
+		fleet "Local Deep" 15
 
 planet Hephaestus
 	attributes "requires: landing gear" core factory urban
@@ -831,7 +831,7 @@ planet Hephaestus
 	security 0.7
 	tribute 3400
 		threshold 6500
-		fleet "Large Syndicate" 20
+		fleet "Local Syndicate" 20
 
 planet Hermes
 	attributes "requires: landing gear" paradise research medical
@@ -845,7 +845,7 @@ planet Hermes
 	security 0.9
 	tribute 1400
 		threshold 3500
-		fleet "Large Republic" 6
+		fleet "Local Navy" 6
 
 planet Hestia
 	attributes "requires: landing gear" paradise rich
@@ -859,7 +859,7 @@ planet Hestia
 	security 0.5
 	tribute 4900
 		threshold 8500
-		fleet "Large Republic" 18
+		fleet "Local Navy" 18
 
 planet Hippocrates
 	attributes "requires: landing gear" core research frontier
@@ -870,7 +870,7 @@ planet Hippocrates
 	security 0.1
 	tribute 800
 		threshold 2500
-		fleet "Small Syndicate" 9
+		fleet "Local Syndicate" 9
 
 planet Hope
 	attributes uninhabited
@@ -888,7 +888,7 @@ planet Hopper
 	security 0.05
 	tribute 300
 		threshold 2000
-		fleet "Large Militia" 5
+		fleet "Local Militia" 5
 
 planet "Brokkr Station"
 	attributes deep factory station
@@ -917,7 +917,7 @@ planet "Brokkr Station"
 	music ambient/machinery
 	tribute 2000
 		threshold 6000
-		fleet "Large Deep Security" 19
+		fleet "Local Deep" 19
 		
 planet "Hammer Station"
 	attributes core factory station
@@ -998,6 +998,10 @@ planet "Orion Station"
 	bribe 0.1
 	security 0.9
 	music ambient/machinery
+	tribute 1800
+		threshold 5500
+		fleet "Betelgeuse Veles" 2
+		fleet "Local Deep" 18
 
 planet "Huginn Station"
 	attributes deep station
@@ -1009,7 +1013,7 @@ planet "Huginn Station"
 	music ambient/machinery
 	tribute 1800
 		threshold 5500
-		fleet "Large Deep Security" 18
+		fleet "Local Deep" 18
 
 planet Humanika
 	attributes south farming
@@ -1033,7 +1037,7 @@ planet "Hydra Station"
 	music ambient/machinery
 	tribute 100
 		threshold 3500
-		fleet "Small Militia" 8
+		fleet "Local Militia" 8
 
 planet Icefall
 	attributes "requires: landing gear" core farming oil frontier
@@ -1044,7 +1048,7 @@ planet Icefall
 	security 0.2
 	tribute 700
 		threshold 3000
-		fleet "Small Syndicate" 8
+		fleet "Local Syndicate" 8
 
 planet Ingot
 	attributes "requires: landing gear" "dirt belt" volcanic mining moon
@@ -1057,7 +1061,7 @@ planet Ingot
 	security 0.1
 	tribute 200
 		threshold 1500
-		fleet "Small Militia" 15
+		fleet "Local Militia" 15
 
 planet "Kraken Station"
 	attributes "near earth" station
@@ -1069,7 +1073,7 @@ planet "Kraken Station"
 	music ambient/machinery
 	tribute 500
 		threshold 3500
-		fleet "Small Syndicate" 7
+		fleet "Local Syndicate" 7
 
 planet Lagrange
 	attributes quarg tourism station
@@ -1091,7 +1095,7 @@ planet "Leviathan Station"
 	music ambient/machinery
 	tribute 1200
 		threshold 3500
-		fleet "Small Deep Security" 27
+		fleet "Local Deep" 27
 
 planet "Liberty Station"
 	attributes station 
@@ -1111,7 +1115,7 @@ planet Lichen
 	security 0.05
 	tribute 500
 		threshold 3000
-		fleet "Large Militia" 8
+		fleet "Local Militia" 8
 
 planet Lodestone
 	attributes "requires: landing gear" core volcanic mining
@@ -1122,7 +1126,7 @@ planet Lodestone
 	security 0.05
 	tribute 500
 		threshold 3000
-		fleet "Small Syndicate" 6
+		fleet "Local Syndicate" 6
 
 planet Longjump
 	attributes "requires: landing gear" rim tourism factory
@@ -1136,7 +1140,7 @@ planet Longjump
 	security 0.1
 	tribute 600
 		threshold 3000
-		fleet "Large Militia" 9
+		fleet "Local Militia" 9
 
 planet "Lost Cause"
 	attributes north "north pirate" "northern union"
@@ -1164,7 +1168,7 @@ planet Luna
 	security 0.2
 	tribute 2500
 		threshold 7500
-		fleet "Large Republic" 10
+		fleet "Local Navy" 10
 
 planet Maelstrom
 	attributes "requires: landing gear" north mining frontier
@@ -1178,7 +1182,7 @@ planet Maelstrom
 	security 0.5
 	tribute 2700
 		threshold 5500
-		fleet "Large Republic" 11
+		fleet "Local Navy" 11
 
 planet Mainsail
 	attributes "requires: landing gear" paradise rich
@@ -1195,12 +1199,12 @@ planet Mainsail
 	security 0.5
 	tribute 1600
 		threshold 3500
-		fleet "Small Republic" 57
+		fleet "Local Navy" 17
 
 planet Maker
 	attributes core factory mining
 	landscape land/bwerner3
-	Description `Maker is advertised as a haven for those stifled by the miserable conditions on Earth. The Syndicate offers free transportation and housing to anyone willing to sign a five years contract to the mines or factories on Maker. The reality of this haven is rather unpleasant; young men and women packed into small dormitories, with those most desperate for income taking dangerous jobs in the mines. For many, the real draw to sign on is the promise that five to ten years of work will earn them enough to set up a homestead on a frontier world.`
+	description `Maker is advertised as a haven for those stifled by the miserable conditions on Earth. The Syndicate offers free transportation and housing to anyone willing to sign a five years contract to the mines or factories on Maker. The reality of this haven is rather unpleasant; young men and women packed into small dormitories, with those most desperate for income taking dangerous jobs in the mines. For many, the real draw to sign on is the promise that five to ten years of work will earn them enough to set up a homestead on a frontier world.`
 	spaceport `The spaceport on Maker is setup more for worker intake than taking business from off-world. In one sector, a steady stream of passengers, young and carrying little more than the clothes on their backs disembark from Syndicate ships. They are efficiently funneled straight to a labor and immigration center, from which they will be assigned to different factories. Meanwhile, a smaller stream of older workers flows in from another sector; people who have finished their terms of service and are boarding ships for other worlds.` 
 	spaceport `    In the small commercial sector of the port, rumbling cargo trucks own the streets, with pedestrians encouraged to use the skybridges above.`
 	outfitter "Basic Outfits"
@@ -1209,7 +1213,7 @@ planet Maker
 	security 0.4
 	tribute 1700
 		threshold 4500
-		fleet "Large Syndicate" 10
+		fleet "Local Syndicate" 10
 
 planet Mani
 	attributes deep moon
@@ -1220,7 +1224,7 @@ planet Mani
 	security 0.6
 	tribute 500
 		threshold 3000
-		fleet "Small Deep Security" 11
+		fleet "Local Deep" 11
 
 planet Mars
 	attributes "near earth" tourism farming
@@ -1230,7 +1234,7 @@ planet Mars
 	security 0.2
 	tribute 1800
 		threshold 4500
-		fleet "Small Republic" 64
+		fleet "Local Navy" 14
 
 planet Martini
 	attributes "requires: landing gear" paradise rich
@@ -1241,7 +1245,7 @@ planet Martini
 	security 0.5
 	tribute 5600
 		threshold 8500
-		fleet "Large Republic" 22
+		fleet "Local Navy" 22
 
 planet "Prosperity Station"
 	attributes paradise rich station
@@ -1269,7 +1273,7 @@ planet "Prosperity Station"
 	security 0.5
 	tribute 5600
 		threshold 8500
-		fleet "Large Republic" 22
+		fleet "Local Navy" 22
 
 planet Memory
 	attributes "requires: landing gear" deep research factory medical
@@ -1282,7 +1286,7 @@ planet Memory
 	security 0.8
 	tribute 700
 		threshold 4000
-		fleet "Small Deep Security" 16
+		fleet "Local Deep" 16
 
 planet Mere
 	attributes rim fishing
@@ -1292,7 +1296,7 @@ planet Mere
 	security 0.1
 	tribute 900
 		threshold 3000
-		fleet "Large Militia" 14
+		fleet "Local Militia" 14
 
 planet Midgard
 	attributes deep urban factory mining
@@ -1309,7 +1313,7 @@ planet Midgard
 	security 0.8
 	tribute 3000
 		threshold 6000
-		fleet "Large Deep Security" 30
+		fleet "Local Deep" 30
 
 planet Millrace
 	attributes "requires: landing gear" "near earth" factory urban
@@ -1323,7 +1327,7 @@ planet Millrace
 	security 0.2
 	tribute 1400
 		threshold 4000
-		fleet "Large Syndicate" 8
+		fleet "Local Syndicate" 8
 
 planet Moonshake
 	attributes "requires: landing gear" core urban factory
@@ -1336,7 +1340,7 @@ planet Moonshake
 	security 0.2
 	tribute 1200
 		threshold 3500
-		fleet "Large Syndicate" 7
+		fleet "Local Syndicate" 7
 
 planet "Muninn Station"
 	attributes deep station military
@@ -1348,7 +1352,7 @@ planet "Muninn Station"
 	music ambient/machinery
 	tribute 1100
 		threshold 5500
-		fleet "Small Deep Security" 25
+		fleet "Local Deep" 25
 
 planet Muspel
 	attributes "requires: landing gear" deep mining factory
@@ -1360,7 +1364,7 @@ planet Muspel
 	security 0.6
 	tribute 600
 		threshold 3000
-		fleet "Small Deep Security" 14
+		fleet "Local Deep" 14
 
 planet Mutiny
 	attributes pirate
@@ -1379,7 +1383,7 @@ planet "New Argentina"
 	security 0.05
 	tribute 1000
 		threshold 3500
-		fleet "Large Republic" 4
+		fleet "Local Navy" 4
 
 planet "New Austria"
 	attributes "requires: landing gear" "dirt belt" mining
@@ -1389,7 +1393,7 @@ planet "New Austria"
 	security 0.05
 	tribute 500
 		threshold 3000
-		fleet "Large Militia" 5
+		fleet "Local Militia" 5
 
 planet "New Boston"
 	attributes "requires: landing gear" "dirt belt" textiles farming
@@ -1402,7 +1406,7 @@ planet "New Boston"
 	security 0.05
 	tribute 300
 		threshold 2500
-		fleet "Small Militia" 23
+		fleet "Local Militia" 23
 
 planet "New Britain"
 	attributes "requires: landing gear" "dirt belt" farming factory urban
@@ -1419,7 +1423,7 @@ planet "New Britain"
 	security 0.2
 	tribute 1300
 		threshold 4500
-		fleet "Large Militia" 20
+		fleet "Local Militia" 20
 
 planet "New China"
 	attributes "requires: landing gear" "near earth" urban
@@ -1434,7 +1438,7 @@ planet "New China"
 	security 0.1
 	tribute 1400
 		threshold 4000
-		fleet "Small Republic" 50
+		fleet "Local Navy" 20
 
 planet "New Greenland"
 	attributes "dirt belt" textiles
@@ -1445,7 +1449,7 @@ planet "New Greenland"
 	security 0.05
 	tribute 200
 		threshold 2000
-		fleet "Small Militia" 15
+		fleet "Local Militia" 15
 
 planet "New Holland"
 	attributes "dirt belt" farming
@@ -1459,7 +1463,7 @@ planet "New Holland"
 	security 0.1
 	tribute 700
 		threshold 3000
-		fleet "Large Militia" 11
+		fleet "Local Militia" 11
 
 planet "New Iceland"
 	attributes "requires: landing gear" "dirt belt" oil mining volcanic
@@ -1471,7 +1475,7 @@ planet "New Iceland"
 	security 0.05
 	tribute 300
 		threshold 2000
-		fleet "Small Militia" 24
+		fleet "Local Militia" 24
 
 planet "New India"
 	attributes "requires: landing gear" "dirt belt" farming textiles frontier
@@ -1483,7 +1487,7 @@ planet "New India"
 	security 0.05
 	tribute 200
 		threshold 2000
-		fleet "Small Militia" 16
+		fleet "Local Militia" 16
 
 planet "New Kansas"
 	attributes "dirt belt" textiles
@@ -1495,7 +1499,7 @@ planet "New Kansas"
 	security 0.05
 	tribute 300
 		threshold 2500
-		fleet "Small Militia" 22
+		fleet "Local Militia" 22
 
 planet "New Portland"
 	attributes "dirt belt" farming
@@ -1506,7 +1510,7 @@ planet "New Portland"
 	security 0.05
 	tribute 200
 		threshold 2000
-		fleet "Small Militia" 12
+		fleet "Local Militia" 12
 
 planet "New Sahara"
 	attributes "dirt belt" factory
@@ -1516,7 +1520,7 @@ planet "New Sahara"
 	security 0.05
 	tribute 400
 		threshold 3000
-		fleet "Small Militia" 30
+		fleet "Local Militia" 30
 
 planet "New Switzerland"
 	attributes "requires: landing gear" "near earth" tourism mining
@@ -1526,7 +1530,7 @@ planet "New Switzerland"
 	security 0.1
 	tribute 300
 		threshold 2000
-		fleet "Small Republic" 11
+		fleet "Local Navy" 11
 
 planet "New Tibet"
 	attributes "requires: landing gear" "dirt belt" religious factory
@@ -1546,7 +1550,7 @@ planet "New Wales"
 	security 0.2
 	tribute 400
 		threshold 3000
-		fleet "Large Militia" 6
+		fleet "Local Militia" 6
 
 planet "New Washington"
 	attributes "dirt belt" mining oil
@@ -1556,7 +1560,7 @@ planet "New Washington"
 	security 0.05
 	tribute 200
 		threshold 2000
-		fleet "Large Militia" 3
+		fleet "Local Militia" 3
 
 planet Nifel
 	attributes "requires: landing gear" deep research medical
@@ -1571,7 +1575,7 @@ planet Nifel
 	security 0.7
 	tribute 1500
 		threshold 4000
-		fleet "Large Deep Security" 16
+		fleet "Local Deep" 16
 
 planet Nimbus
 	attributes "requires: landing gear" core fishing medical
@@ -1585,7 +1589,7 @@ planet Nimbus
 	security 0.3
 	tribute 300
 		threshold 2500
-		fleet "Small Syndicate" 4
+		fleet "Local Syndicate" 4
 
 planet "No-Where Station"
 	landscape land/sivael6
@@ -1610,7 +1614,7 @@ planet Norn
 	security 0.6
 	tribute 500
 		threshold 3000
-		fleet "Small Deep Security" 12
+		fleet "Local Deep" 12
 
 planet Oasis
 	attributes "requires: landing gear" rim farming textiles
@@ -1621,7 +1625,7 @@ planet Oasis
 	security 0.05
 	tribute 300
 		threshold 2000
-		fleet "Large Militia" 5
+		fleet "Local Militia" 5
 
 planet "Oberon Station"
 	attributes core station
@@ -1632,7 +1636,7 @@ planet "Oberon Station"
 	music ambient/machinery
 	tribute 400
 		threshold 2000
-		fleet "Small Syndicate" 5
+		fleet "Local Syndicate" 5
 
 planet Oblivion
 	attributes "dirt belt" oil mining
@@ -1643,7 +1647,7 @@ planet Oblivion
 	security 0.05
 	tribute 500
 		threshold 3000
-		fleet "Large Militia" 8
+		fleet "Local Militia" 8
 
 planet Pearl
 	attributes "requires: landing gear" paradise tourism
@@ -1655,7 +1659,7 @@ planet Pearl
 	security 0.7
 	tribute 2800
 		threshold 6000
-		fleet "Large Republic" 11
+		fleet "Local Navy" 11
 		
 planet "Omega Station"
 	attributes south station
@@ -1675,7 +1679,7 @@ planet "Phoenix Station"
 	music ambient/machinery
 	tribute 500
 		threshold 2000
-		fleet "Large Deep Security" 5
+		fleet "Local Deep" 5
 
 planet Pilot
 	attributes north research
@@ -1687,7 +1691,7 @@ planet Pilot
 	security 0.9
 	tribute 600
 		threshold 2000
-		fleet "Small Republic" 21
+		fleet "Local Navy" 21
 
 planet Placer
 	attributes "requires: landing gear" core mining frontier
@@ -1697,7 +1701,7 @@ planet Placer
 	security 0.2
 	tribute 300
 		threshold 2000
-		fleet "Small Syndicate" 4
+		fleet "Local Syndicate" 4
 
 planet Poisonwood
 	attributes south factory farming frontier
@@ -1711,7 +1715,7 @@ planet Poisonwood
 	security 0.5
 	tribute 300
 		threshold 2000
-		fleet "Large Militia" 7
+		fleet "Local Militia" 7
 
 planet Poseidos
 	attributes rim fishing
@@ -1725,7 +1729,7 @@ planet Poseidos
 	security 0.1
 	tribute 400
 		threshold 3000
-		fleet "Large Militia" 6
+		fleet "Local Militia" 6
 
 planet Prime
 	attributes "requires: landing gear" north urban factory
@@ -1741,7 +1745,7 @@ planet Prime
 	security 0.6
 	tribute 4400
 		threshold 8000
-		fleet "Large Republic" 17
+		fleet "Local Navy" 17
 
 planet Quicksilver
 	attributes "requires: landing gear" core volcanic mining
@@ -1753,7 +1757,7 @@ planet Quicksilver
 	security 0.2
 	tribute 400
 		threshold 2500
-		fleet "Small Syndicate" 5
+		fleet "Local Syndicate" 5
 
 planet Rand
 	attributes "dirt belt" mining
@@ -1763,7 +1767,7 @@ planet Rand
 	security 0.05
 	tribute 500
 		threshold 3000
-		fleet "Large Militia" 8
+		fleet "Local Militia" 8
 
 planet Relic
 	attributes "near earth"
@@ -1774,7 +1778,7 @@ planet Relic
 	security 0.2
 	tribute 700
 		threshold 3000
-		fleet "Small Republic" 25
+		fleet "Local Navy" 25
 
 planet Reunion
 	attributes "requires: landing gear" "near earth" urban factory
@@ -1791,7 +1795,7 @@ planet Reunion
 	security 0.3
 	tribute 2900
 		threshold 5000
-		fleet "Large Syndicate" 17
+		fleet "Local Syndicate" 17
 
 planet Rust
 	attributes "requires: landing gear" rim farming factory
@@ -1810,7 +1814,7 @@ planet Rust
 	security 0.5
 	tribute 1200
 		threshold 5000
-		fleet "Large Militia" 18
+		fleet "Local Militia" 18
 
 planet Serpens
 	attributes "requires: landing gear" north medical research
@@ -1820,7 +1824,7 @@ planet Serpens
 	security 0.05
 	tribute 900
 		threshold 3000
-		fleet "Large Republic" 3
+		fleet "Local Navy" 3
 
 planet Shangri-La
 	attributes core rich urban frontier
@@ -1836,7 +1840,7 @@ planet Shangri-La
 	security 0.7
 	tribute 1200
 		threshold 4000
-		fleet "Large Syndicate" 7
+		fleet "Local Syndicate" 7
 
 planet Shiver
 	attributes "requires: landing gear" "near earth"
@@ -1847,7 +1851,7 @@ planet Shiver
 	security 0.1
 	tribute 300
 		threshold 2000
-		fleet "Small Republic" 10
+		fleet "Local Navy" 10
 
 planet Shorebreak
 	attributes "requires: landing gear" rim research medical
@@ -1859,7 +1863,7 @@ planet Shorebreak
 	security 0.3
 	tribute 500
 		threshold 3000
-		fleet "Large Militia" 8
+		fleet "Local Militia" 8
 
 planet Shroud
 	attributes "requires: landing gear" north rich textiles frontier
@@ -1875,7 +1879,7 @@ planet Shroud
 	security 0.8
 	tribute 3800
 		threshold 7000
-		fleet "Large Republic" 14
+		fleet "Local Navy" 14
 
 planet "Silent Turf" 
 	attributes "requires: landing gear" north "north pirate" "northern union"
@@ -1891,7 +1895,7 @@ planet Silver
 	security 0.1
 	tribute 700
 		threshold 4000
-		fleet "Small Republic" 25
+		fleet "Local Navy" 25
 
 planet Sinter
 	attributes "requires: landing gear" "dirt belt" mining
@@ -1901,7 +1905,7 @@ planet Sinter
 	security 0.05
 	tribute 400
 		threshold 3000
-		fleet "Small Militia" 28
+		fleet "Local Militia" 28
 
 planet Skillet
 	attributes "requires: landing gear" north mining farming frontier
@@ -1911,7 +1915,7 @@ planet Skillet
 	security 0.3
 	tribute 600
 		threshold 4000
-		fleet "Small Republic" 22
+		fleet "Local Navy" 22
 
 planet Skymoot
 	attributes rim tourism
@@ -1923,7 +1927,7 @@ planet Skymoot
 	security 0.1
 	tribute 400
 		threshold 2000
-		fleet "Large Militia" 6
+		fleet "Local Militia" 6
 
 
 planet "Smuggler's Den"
@@ -1940,7 +1944,7 @@ planet "Smuggler's Den"
 	security 0
 	tribute 400
 		threshold 2000
-		fleet "Small Southern Pirates" 21
+		fleet "Southern Pirates" 21
 
 planet Solace
 	attributes south urban factory frontier
@@ -1957,7 +1961,7 @@ planet Solace
 	security 0.5
 	tribute 1000
 		threshold 4000
-		fleet "Large Militia" 15
+		fleet "Local Militia" 15
 
 planet Splashdown
 	attributes "requires: landing gear" north farming
@@ -1967,7 +1971,7 @@ planet Splashdown
 	security 0.2
 	tribute 600
 		threshold 3000
-		fleet "Large Republic" 3
+		fleet "Local Navy" 3
 
 planet Sporehold
 	attributes "requires: landing gear" north "north pirate" "northern union"
@@ -1986,7 +1990,7 @@ planet Starcross
 	security 0.05
 	tribute 300
 		threshold 2500
-		fleet "Small Militia" 22
+		fleet "Local Militia" 22
 
 planet Stormhold
 	attributes "requires: landing gear" pirate "core pirate" "northern union"
@@ -2012,7 +2016,7 @@ planet Sundive
 	security 0.3
 	tribute 300
 		threshold 2000
-		fleet "Small Syndicate" 4
+		fleet "Local Syndicate" 4
 
 planet Sundrinker
 	attributes "requires: landing gear" south farming frontier
@@ -2022,7 +2026,7 @@ planet Sundrinker
 	security 0.1
 	tribute 200
 		threshold 2000
-		fleet "Small Militia" 15
+		fleet "Local Militia" 15
 
 planet Sunracer
 	attributes core urban factory farming fishing frontier
@@ -2042,7 +2046,7 @@ planet Sunracer
 	security 0.7
 	tribute 1700
 		threshold 5000
-		fleet "Large Syndicate" 10
+		fleet "Local Syndicate" 10
 
 planet Thrall
 	attributes paradise textiles
@@ -2057,7 +2061,7 @@ planet Thrall
 	security 0.5
 	tribute 2000
 		threshold 5000
-		fleet "Large Republic" 8
+		fleet "Local Navy" 8
 
 planet Thule
 	attributes "requires: landing gear" pirate "south pirate"
@@ -2073,7 +2077,7 @@ planet Thule
 	security 0.6
 	tribute 900
 		threshold 2500
-		fleet "Large Southern Pirates" 16
+		fleet "Southern Pirates" 16
 
 planet Tinker
 	attributes "requires: landing gear" "near earth" factory mining
@@ -2092,7 +2096,7 @@ planet Tinker
 	security 0.4
 	tribute 1100
 		threshold 4000
-		fleet "Large Syndicate" 7
+		fleet "Local Syndicate" 7
 
 planet Trinket
 	attributes "requires: landing gear" south tourism
@@ -2110,7 +2114,7 @@ planet Trinket
 	security 0.4
 	tribute 500
 		threshold 2500
-		fleet "Small Militia" 36
+		fleet "Local Militia" 36
 
 planet "Triton Station"
 	attributes north station military
@@ -2122,7 +2126,7 @@ planet "Triton Station"
 	music ambient/machinery
 	tribute 600
 		threshold 4000
-		fleet "Small Republic" 24
+		fleet "Local Navy" 24
 
 planet Trove
 	attributes "requires: landing gear" core mining
@@ -2132,7 +2136,7 @@ planet Trove
 	security 0.05
 	tribute 400
 		threshold 2500
-		fleet "Small Syndicate" 5
+		fleet "Local Syndicate" 5
 
 planet Tundra
 	attributes "requires: landing gear" "dirt belt" oil textiles
@@ -2144,7 +2148,7 @@ planet Tundra
 	security 0.1
 	tribute 400
 		threshold 3000
-		fleet "Large Militia" 6
+		fleet "Local Militia" 6
 
 planet Twinstar
 	attributes south tourism frontier moon
@@ -2155,7 +2159,7 @@ planet Twinstar
 	security 0.2
 	tribute 200
 		threshold 2000
-		fleet "Small Militia" 15
+		fleet "Local Militia" 15
 
 planet "Typhon Station"
 	attributes rim station
@@ -2165,7 +2169,7 @@ planet "Typhon Station"
 	music ambient/machinery
 	tribute 500
 		threshold 2000
-		fleet "Large Militia" 8
+		fleet "Local Militia" 8
 
 planet Vail
 	attributes "requires: landing gear" paradise tourism farming
@@ -2176,7 +2180,7 @@ planet Vail
 	security 0.6
 	tribute 2900
 		threshold 5000
-		fleet "Large Republic" 11
+		fleet "Local Navy" 11
 
 planet Valhalla
 	attributes "requires: landing gear" deep farming fishing urban factory
@@ -2193,7 +2197,7 @@ planet Valhalla
 	security 0.8
 	tribute 3600
 		threshold 7000
-		fleet "Large Deep Security" 35
+		fleet "Local Deep" 35
 
 planet Vinci
 	attributes "requires: landing gear" paradise factory
@@ -2203,7 +2207,7 @@ planet Vinci
 	security 0.6
 	tribute 2800
 		threshold 5000
-		fleet "Large Republic" 11
+		fleet "Local Navy" 11
 
 planet Watcher
 	attributes "requires: landing gear" "dirt belt" research uninhabited moon
@@ -2222,7 +2226,7 @@ planet Wayfarer
 	security 0.3
 	tribute 1700
 		threshold 5000
-		fleet "Large Militia" 26
+		fleet "Local Militia" 26
 
 planet Windblain
 	attributes "requires: landing gear" deep oil textiles
@@ -2236,7 +2240,7 @@ planet Windblain
 	security 0.6
 	tribute 800
 		threshold 3500
-		fleet "Small Deep Security" 18
+		fleet "Local Deep" 18
 
 planet Winter
 	attributes "requires: landing gear" south factory frontier
@@ -2248,7 +2252,7 @@ planet Winter
 	security 0.1
 	tribute 300
 		threshold 2500
-		fleet "Large Militia" 5
+		fleet "Local Militia" 5
 
 planet "Wormhole Alpha"
 	attributes "requires: Hai Key"
@@ -2267,7 +2271,7 @@ planet "Wyvern Station"
 	music ambient/machinery
 	tribute 400
 		threshold 3500
-		fleet "Large Militia" 6
+		fleet "Local Militia" 6
 
 planet Zenith
 	attributes "requires: landing gear" "requires: armed" pirate "north pirate" "northern union"
@@ -2299,4 +2303,4 @@ planet Zug
 	security 0.5
 	tribute 1200
 		threshold 3000
-		fleet "Large Militia" 18
+		fleet "Local Militia" 18
