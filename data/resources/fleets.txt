@@ -1723,3 +1723,341 @@ fleet "Betelgeuse Raid"
 		"Beserker (Ion)" 3
 		"Beserker (Laser)" 3
 		"Berserker (Afterburner)" 3
+
+# Local Fleets
+
+fleet "Local Navy"
+	government "Local"
+	names "civilian"
+	formation "Line (center)"
+	cargo 4
+	personality
+		heoric unconstrained
+	variant 15
+		"Leviathan (Heavy)" 5
+		"Nomos (Heavy)" 5
+	variant 4
+		"Nomos (Heavy)" 5
+		"Narcissus (Ion)" 3
+		"Firebird (Plasma)" 2
+	variant 6
+		"Achlys" 3
+		"Beserker (Torpedo)" 4
+		
+fleet "Local Deep"
+	government "Local"
+	names "deep"
+	fighters "deep fighter"
+	cargo 0
+	personality
+		heroic disables plunders
+	variant 4
+		"Aerie"
+		"Dagger" 2
+	variant 2
+		"Raven" 3
+	variant 1
+		"Zephyrus" 4
+		"Raven (Heavy)" 6
+	variant 3
+		"Headhunter" 2
+	variant 1
+		"Headhunter (Strike)" 2
+	variant 3
+		"Flivver" 5
+	variant 2
+		"Flivver (Racing)" 5
+	variant 5
+		"Aerie"
+		"Dagger" 2
+		"Challenger"
+	variant 3
+		"Aerie"
+		"Dagger" 2
+		"Raven"
+	variant 3
+		"Headhunter" 2
+	variant 3
+		"Aerie" 2
+		"Dagger" 4
+	variant 2
+		"Raven"
+		"Aerie"
+		"Dagger" 2
+	variant 2
+		"Raven (Heavy)"
+		"Aerie"
+		"Dagger" 2
+	variant 1
+		"Star Queen"
+		"Raven" 2
+	variant 1
+		"Star Queen"
+		"Raven (Heavy)" 2
+	variant 1
+		"Star Queen"
+		"Headhunter" 2
+	variant 1
+		"Star Queen"
+		"Headhunter (Particle)"
+		"Headhunter (Strike)"
+	variant 1
+		"Star Queen"
+		"Raven (Afterburner)" 2
+	variant 15
+		"Leviathan (Heavy)" 5
+		"Nomos (Heavy)" 5
+	variant 4
+		"Nomos (Heavy)" 5
+		"Narcissus (Ion)" 3
+		"Firebird (Plasma)" 2
+	variant 6
+		"Achlys" 3
+		"Beserker (Torpedo)" 4
+		
+fleet "Local Syndicate"
+	government "Local"
+	names "syndicate small"
+	cargo 1
+	formation "Vee"
+	personality
+		opportunistic disables plunders
+	variant 3
+		"Quicksilver" 3
+	variant 3
+		"Quicksilver (Proton)" 3
+	variant 1
+		"Splinter"
+		"Quicksilver" 2
+	variant 1
+		"Splinter (Laser)"
+	variant 1
+		"Splinter (Proton)"
+		"Quicksilver (Proton)" 2
+	variant 1
+		"Manta"
+	variant 1
+		"Manta (Proton)"
+	variant 3
+		"Splinter"
+		"Quicksilver" 3
+	variant 2
+		"Splinter (Laser)"
+	variant 2
+		"Splinter (Proton)"
+		"Quicksilver" 3
+	variant 1
+		"Splinter" 2
+	variant 1
+		"Splinter"
+		"Splinter (Laser)"
+	variant 1
+		"Splinter"
+		"Splinter (Proton)"
+	variant 1
+		"Splinter" 3
+	variant 1
+		"Splinter"
+		"Splinter (Laser)" 2
+	variant 1
+		"Splinter"
+		"Splinter (Proton)" 2
+	variant 2
+		"Manta" 2
+	variant 1
+		"Manta (Proton)" 2
+	variant 3
+		"Manta"
+		"Quicksilver" 2
+	variant 1
+		"Manta (Proton)"
+		"Quicksilver" 2
+	variant 2
+		"Quicksilver" 5
+	variant 1
+		"Quicksilver (Proton)" 5
+		
+fleet "Local Militia"
+	government "Local"
+	names "civilian"
+	formation "Vee"
+	personality
+		disables plunders heroic
+	variant 10
+		"Hawk" 3
+	variant 6
+		"Osprey" 3
+	variant 8
+		"Falcon"
+	variant 10
+		"Clipper" 5
+	variant 18
+		"Fury" 5
+	variant 8
+		"Argosy" 5
+	variant 12
+		"Bastion" 3
+	variant 13
+		"Flivver" 5
+	variant 16
+		"Headhunter" 5
+	variant 10
+		"Raven" 2
+	variant 11
+		"Aerie"
+		"Finch" 2
+	variant 9
+		"Challenger" 3
+	variant 19
+		"Berserker" 5
+	variant 15
+		"Firebird" 3
+	variant 12
+		"Leviathan" 3
+	variant 12
+		"Behemoth" 5
+	variant 15
+		"Wasp"
+	variant 13
+		"Freighter"
+	variant 16
+		"Bulk Freighter"
+	variant 4
+		"Protector"
+	variant 6
+		"Vanguard"
+		"Sparrow (Missile)" 4
+	variant 5
+		"Sparrow (Patrol)"
+	variant 10
+		"Hawk (Plasma)"
+	variant 10
+		"Hawk (Ion)"
+	variant 10
+		"Hawk (Bomber)"
+	variant 12
+		"Blackbird (Luxury Proton)"
+	variant 15
+		"Blackbird (AMS)"
+	variant 10
+		"Osprey (Particle)"
+	variant 9
+		"Osprey (Ion)"
+	variant 8
+		"Osprey (Missile)"
+	variant 6
+		"Falcon (Generalist)"
+	variant 6
+		"Falcon (Plasma)"
+	variant 2
+		"Millipede (Defended)"
+	variant 5
+		"Millipede (Missileboat)"
+	variant 12
+		"Clipper (Ion)"
+	variant 10
+		"Clipper (Missile)"
+	variant 10
+		"Fury (Missile)"
+	variant 10
+		"Argosy (Missile)"
+	variant 10
+		"Argosy (Plasmablaster)"
+	variant 10
+		"Argosy (Torpedo)"
+	variant 16
+		"Argosy (Proton)"
+	variant 8
+		"Hauler (Brawler)"
+	variant 8
+		"Hauler (Prepared)"
+	variant 8
+		"Hauler (Missileboat)"
+	variant 9
+		"Hauler II (Missile)"
+	variant 15
+		"Hauler II (AMS)"
+	variant 5
+		"Hauler III (Infinite Missile)"
+	variant 12
+		"Hauler III (AMS)"
+	variant 10
+		"Hauler III (Bralwer)"
+	variant 10
+		"Bastion (EWS)"
+	variant 10
+		"Bastion (Particle)"
+	variant 8
+		"Bastion (Heavy)"
+	variant 6
+		"Caravel (Plasma)"
+	variant 6
+		"Caravel (Proton)"
+	variant 5
+		"Caravel (Ion)"
+	variant 8
+		"Caravel (Missile)"
+	variant 12
+		"Flivver (Ion)"
+	variant 14
+		"Headhunter (Proton)"
+	variant 12
+		"Headhunter (Ion)"
+	variant 14
+		"Headhunter (Missile)"
+	variant 12
+		"Headhunter (Particle)"
+	variant 3
+		"Headhunter (Strike)"
+	variant 12
+		"Raven (Heavy)"
+	variant 10
+		"Raven (Missile)"
+	variant 10
+		"Aerie (Offensive)" 
+		"Dagger" 2
+	variant 10
+		"Aerie (Ion)"
+		"Dagger" 2
+	variant 10
+		"Aerie (Missile)"
+		"Dagger" 2
+	variant 10
+		"Challenger (Missile)" 3
+	variant 13
+		"Beserker (Missile)" 3
+	variant 12
+		"Berserker (Afterburner)" 3
+	variant 8
+		"Firebird (Aggressive)" 3
+	variant 12
+		"Firebird (Ion)"
+		"Firebird (Missile)" 2
+	variant 12
+		"Firebird (Plasma)" 3
+	variant 12
+		"Leviathan (Brawler)"
+	variant 15
+		"Quicksilver (Particle)"
+		"Quicksilver (Proton)" 2
+	variant 14
+		"Bounder (Blaster)"		
+	variant 6
+		"Splinter (Plasma)"
+	variant 9
+		"Manta (Proton)"
+		"Wasp (Gatling)"
+		"Wasp (Javelin)"
+		"Wasp (Meteor)"
+		"Wasp (Plasma)"
+		"Wasp (Proton)"
+		"Freighter (Proton)" 3
+		"Bulk Freighter (Blaster)"
+		"Bulk Freighter (Proton)"
+	variant 9
+		"Protector (jvaler Proton)"
+		"Protector (Hydragyrum Proton)" 2
+	variant 9
+		"Vanguard (Particle)" 2
+		"Vanguard (Plasma)" 2
+		"Vanguard (Ion)" 2
