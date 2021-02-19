@@ -1218,7 +1218,7 @@ ship "Mason"
 		"hull" 3300
 		"mass" 30
 		"required crew" 1
-		"bunks" 1
+		"bunks" 2
 		"drag" .9
 		"heat dissipation" .9
 		"fuel capacity" 300
@@ -1242,7 +1242,7 @@ ship "Mason"
 	engine 9 30
 	explode "tiny explosion" 20
 	explode "small explosion" 10
-	description "The mason is a modified Earth Shaper drone, specifically made for sale on Human markets. It's cramped interior and lack of living space betray its original design."
+	description "The mason is a modified Earth Shaper drone, specifically made for sale on Human markets. It's cramped interior and complete lack of living space betrays its original design."
 
 
 ship "Argosy"
