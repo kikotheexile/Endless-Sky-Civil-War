@@ -1183,9 +1183,9 @@ planet Maelstrom
 planet Mainsail
 	attributes "requires: landing gear" paradise rich
 	landscape land/beach7-sfiera
-	description `Mainsail is a water world: although there are some settlements on dry land, the largest cities are floating, artificial islands, which travel between hemispheres over the course of the year pursuing the most ideal weather. Other, smaller islands are privately owned by single families or corporations. Mainsail is a prohibitively expensive place to live.`
-	description `	Centuries ago Mainsail was home to pirates of the old-fashioned variety, fleets of motor boats or even old-fashioned sailing vessels that would launch raids against the city-ships.`
-	spaceport `The spaceport is on its own city-ship floating some distance away from the others, so that the locals need not deal with the noise and uncouth manners of spacefarers. Surrounding the port is a ring of docks where barges are moored; on platforms farther "inland," starships land. Few goods are produced here; most of the people rich enough to live on Mainsail are connected with interplanetary corporations whose physical business takes place elsewhere.`
+	description `Mainsail is a water world dotted with islands both natural and artificial; the latter prone to chasing summer weather across hemispheres. A prohibitively expensive place to live, entire islands tend to be owned by single families or corporations.`
+	description `	Centuries ago Mainsail was home to old fashioned pirates. Their fleets of motor boats and sailing vessels complete with gunpowder cannons would launch raids against the wealthy city-ships.`
+	spaceport `The spaceport takes up a small, rocky natural island, given wide berth by the floating islands to prevent not only damage from the sharp rocky cliffs to the island's north, but to protect their inhabitants from the uncouth nature of merchant captains and their crews. A tall, grand lighthouse shines upon the port, surrounded on one side by a ring of docks where barges are moored, with platforms for starships to land taking up half of the island's real estate. The port buzzes with activity day and night, with starships dropping off shipments and silver helicopters emblazened with a lighthouse crest flying supplies out to the city ships waiting in the distance.`
 	shipyard "Basic Ships"
 	shipyard "Betelgeuse Basics"
 	outfitter "Basic Outfits"
@@ -1200,9 +1200,9 @@ planet Mainsail
 planet Maker
 	attributes core factory mining
 	landscape land/bwerner3
-	description `When families or young adults on Earth find themselves stifled by the crowded conditions on humanity's home world, Maker is where many of them end up. The Syndicate offers free transportation and housing in exchange for anyone willing to sign a five years contract to the mines or factories on Maker. The living conditions are often unpleasant, with young men and women packed into dormitories, and with those who are most in need of income taking dangerous jobs in the mines. Five or ten years of work will earn you enough to set up a homestead on any of the frontier worlds, and to many, those years are worth it.`
-	spaceport `The spaceport on Maker is enormous, but laid out very efficiently. In one sector, a steady stream of passengers, most of them young and dressed somewhat shabbily, are disembarking. They are funneled straight to a labor and immigration center, from which they will be assigned to different factories. Meanwhile, a smaller stream of older, tired-looking but better dressed workers flows in the other direction; people who have finished their terms of service and are boarding ships for other worlds.`
-	spaceport `	In the commercial sector of the port, robotic cargo trucks rumble through the streets at frightening speeds, while pedestrians walk from building to building along skyways several stories up.`
+	Description `Maker is advertised as a haven for those stifled by the miserable conditions on Earth. The Syndicate offers free transportation and housing to anyone willing to sign a five years contract to the mines or factories on Maker. The reality of this haven is rather unpleasant; young men and women packed into small dormitories, with those most desperate for income taking dangerous jobs in the mines. For many, the real draw to sign on is the promise that five to ten years of work will earn them enough to set up a homestead on a frontier world.`
+	spaceport `The spaceport on Maker is setup more for worker intake than taking business from off-world. In one sector, a steady stream of passengers, young and carrying little more than the clothes on their backs disembark from Syndicate ships. They are efficiently funneled straight to a labor and immigration center, from which they will be assigned to different factories. Meanwhile, a smaller stream of older workers flows in from another sector; people who have finished their terms of service and are boarding ships for other worlds.` 
+	spaceport `    In the small commercial sector of the port, rumbling cargo trucks own the streets, with pedestrians encouraged to use the skybridges above.`
 	outfitter "Basic Outfits"
 	outfitter "Syndicate Basics"
 	outfitter "Ammo"
@@ -1214,8 +1214,8 @@ planet Maker
 planet Mani
 	attributes deep moon
 	landscape land/nasa6
-	description `Mani is a small moon, with an atmosphere thick enough to keep your blood from boiling off but too thin to breathe without assistance. It is used only as a cargo depot and a spot for refueling and repairs. The native plant life mostly consists of pale-colored lichens and a few species of grass. The only animals are insects.`
-	spaceport `The spaceport is shaped like a wheel with no rim: a series of spokes jutting out from a central hub, where each spoke is a docking tunnel that can connect to any ship that lands beside it. Inside are about a dozen people and a couple hundred robots. The people and robots alike seem uninterested in any interactions with you. It is a strange sort of aloofness that you have heard is common to all the worlds in the Deep.`
+	description `Mani is a small moon; empty save for a cargo depot, with gravity heavy enough for commercial use but atmosphere too thin to breathe without assistance. The native plant life consists of pale lichens, stubby berry bushes, and some hardy species of grass. Tiny biting insects as well as several breed of rodents have taken over the green spaces of the planet, from escaped lab experiments and general shipboard vermin carried to the planet by visiting ships.`
+	spaceport `The spaceport is shaped like a wheel with no rim: a series of docking tunnel spokes jutting out from a central hub. Inside are about a dozen people and a couple hundred robots go about their business, disinterested in your prescense, their cold aloofness common to worlds in The Deep.`
 	outfitter "Ammo"
 	security 0.6
 	tribute 500
@@ -1225,8 +1225,8 @@ planet Mani
 planet Mars
 	attributes "near earth" tourism farming
 	landscape land/desert0
-	description `Mars was humanity's first attempt at terraforming. Although it remains a dry, cold desert, the air is now breathable without an oxygen tank, and there are sections of the planet where a fair number of plants can grow. Because far more hospitable planets are available to those with enough money to pay for interstellar travel, the farms and ranches of Mars are run mostly by poorer Earth families who want to escape the pollution and congestion, along with some young adults who do farm work to help finance their once-in-a-lifetime opportunity to stand on another world.`
-	spaceport `The spaceport on Mars is situated next to the northern Polar Basin, one of the few places where, post-terraforming, a natural lake exists. Here, far more trees grow than elsewhere on the planet, and in the few warm months when the lake is not frozen, Mars almost looks like a friendly place.`
+	description `Mars was humanity's first attempt at terraforming. While barely a success by modern standards, the air is breathable without an oxygen tank, and there are vast sections of the planet where crops can be cultivated. With the cheap land and proximity to Earth promising easy travel, there is never a deficit of settlers willing to take on the challenges of farming the red planet's fine soil.`
+	spaceport `The spaceport sits next to the northern Polar Basin, one of the few places where, post-terraforming, a natural lake exists. Here more trees grow than anywhere else on the planet, and in the warm months when the lake isn't frozen, Mars looks like a friendly place to call home.`
 	security 0.2
 	tribute 1800
 		threshold 4500
@@ -1235,8 +1235,8 @@ planet Mars
 planet Martini
 	attributes "requires: landing gear" paradise rich
 	landscape land/myrabella4
-	description `Martini is a world of exotic beaches and perfect weather. The Republic's central bank and the galactic stock exchange are headquartered here, and so much money flows through this world's economy every day that the cost of utterly controlling its weather and climate is only a drop in the bucket. Not surprisingly, real estate prices here are astronomical; a small condo in one of Martini's main cities costs more than a capital starship.`
-	spaceport `The spaceport is a set of four skyscrapers joined by bridges and platforms at various levels. Hangars are built directly into the towers themselves, with deflector shield generators set up to ensure that ships do not crash, intentionally or otherwise, while approaching the towers to dock. Inside, all the floors and walls are gleaming granite, with teams of workers constantly polishing everything to ensure that not even so much as a fingerprint smudge is visible.`
+	description `Martini is a world of exotic beaches, the violet sands and deep blue oceans drawing tourists from across the galaxy. The Republic covers the cost of keeping the climate perfectly temperate, with their central bank headquartered on-planet and the galactic stock exchange orbiting above. Not surprisingly, real estate prices here are astronomical; a small condo in one of Martini's main cities worth more than an Arete, the large carrier fielded by the Republic Navy.`
+	spaceport `The spaceport is a set of four skyscrapers joined by bridges and platforms at various levels. Hangars are built directly into the towers themselves, with deflector shield generators set up to ensure smooth landings. Inside, all the floors and walls are gleaming marble, each sector  marked with different sworls of color mixed in the brilliant white. Every night, hundreds of small circular cleaning bots are released to keep the port pristine. Frequent visitors to the station adore the so-called "bubble bots", and many have been decorated with animal ears and glittering designs.`
 	bribe 0.1
 	security 0.5
 	tribute 5600
@@ -1246,8 +1246,8 @@ planet Martini
 planet "Prosperity Station"
 	attributes paradise rich station
 	landscape land/space3
-	description `High above the perfect beaches and weather of Martini sits the central stock exchange and bank. Without this station, much of the Republic's economy would be completely crippled, leaving room for the Syndicate or another wealthy faction to direct the flow of money.`
-	spaceport `The outer rings of the station are a giant mall where you can purchase just about any kind of luxury item, or have an overpriced meal with a view of Martini below.`
+	description `High above the perfect beaches of Martini sits the central stock exchange and bank. Without this station, much of the Republic's economy would be completely crippled, leaving room for rival factions, such as the Syndicate, to take over the galactic economy.` 
+	spaceport `The outer rings of the station host a mall bursting with luxury items and overpriced restaurants overlooking Martini below. It's not uncommon to see college students from nearby systems out shopping here while on a field trip to one of the museums and galleries hosted in the middle rings.`
 	shipyard "Exotics"
 	outfitter "Tarazed Systems"
 	outfitter "Ammo"
@@ -1287,9 +1287,8 @@ planet Memory
 planet Mere
 	attributes rim fishing
 	landscape land/sea7
-	description `Mere is a world almost entirely covered by oceans. The locals live most of their lives on enormous ships, almost like floating cities, which travel around collecting fish and seaweed for food or harvesting pearls from the shallows to be sold off-world. The city-ships must do their best to avoid certain latitudes where hurricanes are most common, and even so storms are a continuous threat to anyone who lives here. Weather conditions are tracked constantly by a network of satellites.`
-	spaceport `The spaceport is on the largest island on the planet. The marketplace is a large, open plaza down by the docks, where the captains of whichever city-ships are moored here at the moment can sell their goods directly to customers. Behind the plaza are large warehouses. If a storm approaches, the goods can quickly be moved inside, while the ships launch out into the deep sea where they have a better chance of weathering the storm without being smashed against the rocks.`
-	spaceport `	The entire port is filled with the almost overpowering smell of fish. You have heard that this is the best place in the galaxy for good, cheap sushi, but the smell is doing nothing for your appetite.`
+	description `Mere is an aquatic world, made habitable by the creation of hundreds of "floating islands" - great city ships that commonly travel around collecting fish and seaweed for food, or harvesting pearls from the shallows to be sold off-world. Weather conditions are tracked constantly by a network of satellites, keeping the city ships safe from hurricanes and other tropical storms.`
+	spaceport `The spaceport is on the largest natural island on the planet. The marketplace is a large, open paxa beside the docks, where the city-ship captains sell their goods directly to customers. Notably, the port here is said to have the best fish restaurants in the sector, and the tempting aromas of fry batter wafts by on every breeze.`
 	security 0.1
 	tribute 900
 		threshold 3000
@@ -1298,9 +1297,8 @@ planet Mere
 planet Midgard
 	attributes deep urban factory mining
 	landscape land/city5
-	description `Midgard is a world with as much geographic diversity as Earth itself: mountains, tundra, desert, oceans, marshes, plains. It was the second world in the Deep to be settled, seven centuries ago. It is now home to dozens of major metropolitan areas and a population of over four billion. Although a select few live outside the cities and work in farming or ranching, the vast majority of people here have jobs in manufacturing.`
-	description `	Food, fashion, and entertainment here all strike you as out of pace with broader galactic culture. The deep independent history of the planet makes it less likely to simply follow the latest Earth trends as the more recent colonies do.`
-	spaceport `The spaceport is located in the center of the city of New Reykjavik, a bustling metropolis which is also Midgard's center of government. The port was built five hundred years ago, and its architecture is much more conservative than other ports in the Deep: instead of domes and rounded, wavy surfaces, it is a collection of tall, square granite towers, connected by bridges at various levels. Most of the hotels and restaurants are in a central tower, slightly higher than the others. There is no central marketplace; instead, you can just buy or sell cargo from a computer terminal and a robotic forklift will arrive at your docking bay to carry it.`
+	description `The second planet in The Deep to be settled, Midgard is a world with as much geographic diversity as Earth itself. Unlike many other worlds in the galaxy, Midgard tends to go against the grain of popular trends, making it well regarded as capital of fashion and art.`
+	spaceport `The spaceport is located in the center of the city of New Reykjavik, a bustling metropolis home to Midgard's center of government. The port was built five hundred years ago, with architecture less conservative than other ports in the Deep: instead of domes and rounded, wavy surfaces, a great castle remiscant of medieval Earth stands, now dwarfed by skyscrapers but still imposing in its own right. Signs inside advertise hotel stays fit for a king, and restaurants with live jester shows.  Real horse drawn carriages carry cargo away from merchant ships, having been conveniently sold from computer terminals in each docking bay.`
 	shipyard "Basic Ships"
 	shipyard "Lionheart Basics"
 	shipyard "Lionheart Advanced"
@@ -1316,9 +1314,9 @@ planet Midgard
 planet Millrace
 	attributes "requires: landing gear" "near earth" factory urban
 	landscape land/mfield1
-	description `Millrace is an overpopulated world, full of factories and manufacturing plants. It is one of several planets in this region of space where people trying to escape from the crowded squalor and polluted cities of Earth come looking for work. Most of the goods manufactured here end up being used by the Syndicate for constructing starships or driving industry on other worlds.`
-	description `	The Syndicate is a fair employer: living conditions here may be squalid, but most workers are earning a living wage and some are able to save up for a new life on a more pleasant planet. The Syndicate trusts there will never be a shortage of new immigrants to replace them.`
-	spaceport `The spaceport is ugly. As the population of Millrace has grown, the spaceport has been expanded to support the increase immigration; you can recognize the different sections because in the newer ones, the bare cement walls are lighter and have accumulated less soot and grime. Most of the restaurants are of the greasy spoon variety.`
+	description `To combat the overpopulation problem faced by Millrace and similar worlds that have become a haven for people fleeing the miserable conditions on earth, Millrace instituted a strict immigration policy still in place to this day, accepting settlers of great skill and little means into the workforce, turning the planet into the manufacturing and innovation powerhouse it is today.`
+	description `    The Syndicate is a fair employer: living conditions for new recruits may be squalid, but given a few years to prove their worth, anyone can find themselves living in luxury. Due to this, yearly immigration applications number in the billions, and the staff chosen to approve applicants is closely monitored to prevent bribery and corruption.`
+	spaceport `The spaceport is irredeemably ugly. A "new age" interior decorator was hired to renovate some decades ago, and the urine yellow walls and fuzzy polka dotted furniture persists to this day.`
 	outfitter "Basic Outfits"
 	outfitter "Syndicate Basics"
 	outfitter "Ammo"
@@ -1330,9 +1328,8 @@ planet Millrace
 planet Moonshake
 	attributes "requires: landing gear" core urban factory
 	landscape land/city7
-	description `Moonshake is a planet of overpopulated cities side by side with dense wilderness. A few centuries ago it became a local center of industrial production when the Syndicate began building factories here. Since then, immigrants looking for steady work have been pouring in, doubling the planet's population every few decades. It is now a regional center for the production of everything from textiles to molded plastic parts to reactor-grade plutonium.`
-	description `	It is characteristic of the Syndicate that the wilderness is entirely ignored, both scientifically and agriculturally, until it is plowed under to make way for expanding industry. Nowhere else in the galaxy is the local fauna so plentiful and yet so poorly characterized.`
-	spaceport `The smog is so thick here that you could barely see the landing pad until you were only half a kilometer above it. At street level, the smog is less evident, but the air leaves a faint metallic taste in your mouth. The spaceport, like the rest of this city, is overcrowded, with people walking along the narrow streets and trying to thread their way in between large cargo trucks loaded with crates. You see signs for restaurants of every variety imaginable, but most of them look dirty and dimly lit.`
+	description `A planet of overpopulated cities jutting out of dense, hostile wilderness, Moonshake is a world where the unexpected takes root. A few centuries ago it became a local center of industrial production when the Syndicate began building factories here. However, further development was ground to a halt within a century, as native flora and fauna expected to die off as industry flourished instead blossomed and thrived in strange and dangerous ways. Today, work continues within the cities built when the the planet was first industrialized, surrounded by thick walls to keep out the encroaching wilderness and wild, mutated creatures that live within.`
+	spaceport `The strange green smog is so thick here that the landing pad is invisible to ships until they are half a kilometer above it. Visibility is clearer at street level, but it's not uncommon for newcommers to report a persistent metallic taste in their mouths. The spaceport, like the rest of this city, is overcrowded, with people threading their way in between large cargo trucks loaded with crates with little regard for their own safety. Restaurants and stores of all sorts line the streets, each sign brighter and more eye-catching catching than the last, all of it blending into a formless sea of neon.`
 	outfitter "Common Outfits"
 	outfitter "Syndicate Basics"
 	outfitter "Ammo"
@@ -1344,8 +1341,8 @@ planet Moonshake
 planet "Muninn Station"
 	attributes deep station military
 	landscape land/sivael6
-	description `Muninn Station, along with its brother station Huginn, serves as the gateway to the region of space known as the Deep. They both harvest and refine deuterium for use as rocket fuel, and in addition Muninn Station is used as a military base for the local defense fleets.`
-	spaceport `Most of the station is closed off to you, but you are told that if you want you may visit the large military mess hall, where hundreds of Navy members and local militia sit and eat or watch the news videos. You would normally expect a military mess hall to be a noisy, rowdy place, but this one is almost eerily silent, with a few quiet conversations going on in the corners but otherwise no noise except the video screens.`
+	description `The gateway to The Deep, Muninn and it's twin Huginn station harvest deuterium for rocket fuel, keeping travelers to the area well supplied. Notably, Muninn moonlights as a military base for local defense fleets, critical for keeping the region safe.`
+	spaceport `Like other stations of it's kind, any area of interest is closed off to you, but the mess hall is large and inviting, and the soup of the day surpasses even upscale cafe offerings. No matter how crowded the room gets, the noise level never surpasses that of the video screens playing new stations from nearby planets, with a rogue screen in the corner broadcasting a Hang Glider Polo game on Longjump.`
 	bribe 0.05
 	security 0.8
 	music ambient/machinery
@@ -1356,9 +1353,9 @@ planet "Muninn Station"
 planet Muspel
 	attributes "requires: landing gear" deep mining factory
 	landscape land/canyon9
-	description `Muspel is a hot world of deserts, canyons, and warm-water oceans. It is mostly a mining and manufacturing planet, and as a result there are few lifelong inhabitants; most of the people here are migrant workers who are just trying to save up enough money to settle down somewhere more hospitable.`
-	description `	Some tourists also come here, to walk through the sandstone canyons where the wind and rain has carved the rock into tall pillars and spires. A few particularly beautiful canyons are protected against strip mining by local law.`
-	spaceport `The spaceport here is rudimentary: a collection of concrete landing pads clustered around a single large building. The building is designed with layers of color and rounded spires that mimic the canyonlands. From a distance, it would be indistinguishable from the natural rock outcroppings if it were not for the glitter of sunlight off the windows. Inside, people move at a slower and calmer pace than you have seen elsewhere in the Deep.`
+	description  `Not even a an orbit distant from Muspel's bright burning sun and vast freshwater oceans could save it from becoming a desert planet. Deep canyons cut across the flat lands, and the oceans blossomimg red and violet from fast growing flora, many of them popular staples in native cuisine.`
+	description ` Despite the heat and cities full of sunburned skin, the Sandstone Caverns are a popular tourist attraction, arriving by the ship load in the cooler seasons to meander through the tracts where the wind and rain have carved the rock into tall pillars and spires. As a rule, these  canyons are protected against strip mining by local law.`
+	spaceport `The merchant spaceport here is rudimentary: a collection of concrete landing pads clustered around a single large building, with layers of color and rounded spires mimicking the canyonlands making it nearly indistinguishable save for the glitter of sunlight on the windows. Inside the people move with quiet grace, flowing around each other in waves, with nary a soul lost from their destination. A traveler forgetting their place would certaintly feel the radiant peace reminding them that they are in The Deep.`
 	bribe 0.03
 	security 0.6
 	tribute 600
@@ -1368,15 +1365,15 @@ planet Muspel
 planet Mutiny
 	attributes pirate
 	landscape land/badlands8
-	description `Centuries ago, Mutiny was used as a sort of prison world for a powerful band of pirates, a place where rivals could be marooned or held for ransom, rather than killing them outright. It is a cold, dark planet, and food is scarce, but over time several villages developed in the more hospitable regions. No longer prisoners, the inhabitants who remain do so because they prefer a simple life beyond the reach of any government, on a planet that will never be stolen from them because it carries nothing of value.`
+	description `Centuries ago, Mutiny was a prison world for a powerful band of pirates, a popular place to maroon or ransom rivals rather than killing them outright. Life was not expected to blossom on this small, dark planet with cold rainy seasons and little native flora safe for human consumption; but small and hardy villages developed in the hospitable regions. No longer prisoners, the inhabitants who remain do so because they prefer a simple life beyond any government's reach, their home a planet that can never be stolen from them- as it holds no value for any that would otherwise exploit it.` 
 	security 0
 
 planet "New Argentina"
 	attributes "dirt belt" farming
 	landscape land/fields1
-	description `New Argentina is a world that is ideal for ranching but suitable for little else. Ranchers live as individual families or small communities surrounded by hectares of grazing land for cattle. As a result, the population is still quite low here, and the locals live isolated lives, with most families living many kilometers away from the nearest school or hospital or even from their nearest neighbor.`
-	description `	Cattle handlers here do their work on horseback, because they believe modern vehicles are more likely to spook the animals.`
-	spaceport `The spaceport is on the outskirts of one of New Argentina's largest towns which has a population of barely ten thousand people. Many of the dock workers are teenagers or barely past their teens, children of ranchers who are not drawn to the solitary sort of life that their parents enjoy. Aside from the church and the hospital, the largest building in town is "The Grange," a function hall with a sign out front advertising square dances and line dances three nights a week.`
+	description `A warm planet with wide, flat grasslands, New Argentina is a ranching haven. Ranches owned by small communities or large families thrive surrounded by hectares of grazing land for cattle; meat and dairy varieties growing fat and happy on a mix of native and imported grass varieties. The population remains comfortably low, and living kilometers away from the nearest school, hospital or even neighbor is the norm.`
+	description `    Cattle handlers here prefer to do their work on horseback, and modern vehicles beyond tractors are unheard of beyond the spaceport.`
+	spaceport `The spaceport lies on the outskirts of New Argentina's largest town; boasting a population of five thousand people. Many of the dock workers are teens and young adults, children of ranchers looking to escape their solitary upbringing. Aside from the churches and the hospital, the largest building in town is "The Grange," a function hall with a sign advertising square dances three nights a week.`
 	outfitter "Basic Outfits"
 	outfitter "Ammo"
 	security 0.05
@@ -1387,8 +1384,8 @@ planet "New Argentina"
 planet "New Austria"
 	attributes "requires: landing gear" "dirt belt" mining
 	landscape land/valley9
-	description `New Austria is a rugged mountain world, full of snow-capped peaks and valleys so deep and so steep that they rarely see sunlight. The few settlements that have been built here were developed for mining sapphires and rubies; the sapphires found in New Austria range from blue to yellow to black to clear in color, and are used both for industrial abrasives and for jewelry. For centuries the locals have been trying to find a deposit of diamonds, which would sell for much higher prices than sapphires, and local folklore revolves around the prosperity that would come to this world if diamonds were ever discovered.`
-	spaceport `The spaceport is nothing but a couple of landing pads built on the outskirts of one of the larger mining villages, high up on a mountain ridge to allow easy access for starships. A few roads lead down from there to the village, where you can trade for local goods or get food from the miners' cafeteria. By the time you have walked to the center of the town, several people have already tried to sell you large "diamonds" that you strongly suspect are just clear sapphires.`
+	description `New Austria is a rugged mountain world, full of snow-capped peaks and valleys so deep that they rarely see sunlight. The few settlements that have been built here were developed for mining sapphires and rubies; the sapphires found in New Austria range from blue to yellow to black to clear in color- popular for use in both industrial abrasives and jewelry. Despite the abundance of other jewels, local folklore revolves around the prosperity that would come to the world if diamonds were ever discovered. In recent years, modern remixes of folk songs about diamond hunting have bled into the universe's pop culture.`
+	spaceport `The landing pads are painted to look like jewels, easily spotted from kilometers away as you bring your ship in for a landing on the mountain ridge, high above a large mining village. The roads down from the village are dotted with vintage "Burma Shave" style signs with fun facts about the area and the mining industry. The town has just as much charm, with a "Diamond in the Rough" cafe selling all variety of pastry, and family owned jewelry stores on every corner, making a comfortable profit on visitors to the "Shining Jewel Mine Tour."`
 	security 0.05
 	tribute 500
 		threshold 3000
