@@ -615,55 +615,6 @@ ship "Bounder"
 	"final explode" "final explosion small"
 	description "The Megaparsec Bounder is a scout ship and courier, designed not for battle but for carrying passengers and small amounts of cargo across large distances quickly."
 
-ship "Flivver"
-	sprite "ship/flivver"
-	thumbnail "thumbnail/flivver"
-	attributes
-		category "Yacht"
-		"cost" 180000
-		"landing gear" 1
-		"shields" 1400
-		"hull" 200
-		"hull repair rate" .1
-		"landing gear" 1
-		"required crew" 1
-		"bunks" 3
-		"mass" 20
-		"drag" 1.0
-		"heat dissipation" .9
-		"fuel capacity" 500
-		"cargo space" 5
-		"outfit space" 130
-		"weapon capacity" 25
-		"engine capacity" 45
-		"atmosphere scan" 10
-		weapon
-			"blast radius" 16
-			"shield damage" 160
-			"hull damage" 80
-			"hit force" 240
-	outfits
-		"Meteor Missile Launcher" 2
-		"Meteor Missile" 60
-		
-		"nGVF-BB Fuel Cell"
-		"LP036a Battery Pack"
-		"D14-1"
-		"Plasma Pistol"
-		
-		"A120 Atomic Thruster"
-		"X1200 Ion Steering"
-		"Hyperdrive"
-		
-	engine -16 27
-	engine 16 27
-	gun -6 -31
-	gun 6 -31
-	leak "leak" 60 50
-	explode "tiny explosion" 10
-	explode "small explosion" 10
-	description "With space for not cargo nor passengers nor heavy weaponry, the Flivver's only selling point is speed. Flivvers are sold mostly to wealthy individuals who want to be able to travel the stars without needing to share a bunk room on a merchant transport with common people."
-
 ship "Heavy Shuttle"
 	sprite "ship/heavy shuttle"
 	thumbnail "thumbnail/heavy shuttle"
@@ -708,7 +659,55 @@ ship "Heavy Shuttle"
 	leak "leak" 60 50
 	explode "tiny explosion" 10
 	explode "small explosion" 5
-	description "The Heavy Shuttle is an updated shuttle model from Betelgeuse Shipyards, attempting to improve on their perennial classic by offering slightly better cargo and passenger capacity, as well as a hyperdrive, at the expense of some speed and maneuverability."
+	description "Blurring the line between a Yacht and Freighter, the Heavy Shuttle is an updated model from Betelgeuse Shipyards. Attempting to improve on their perennial classic Fighter by offering slightly better cargo and passenger capacity, as well as a hyperdrive, at the expense of some speed and maneuverability."
+
+ship "Dropship"
+	sprite "ship/dropship"
+	thumbnail "thumbnail/dropship"
+	attributes
+		category "Yacht"
+		"cost" 230000
+		"landing gear" 1
+		"shields" 500
+		"hull" 1000
+		"hull repair rate" .1
+		"landing gear" 1
+		"required crew" 1
+		"bunks" 8
+		"mass" 110
+		"drag" 2.1
+		"heat dissipation" .8
+		"fuel capacity" 500
+		"cargo space" 15
+		"outfit space" 140
+		"weapon capacity" 20
+		"engine capacity" 80
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 12
+			"shield damage" 120
+			"hull damage" 60
+			"hit force" 180
+	outfits
+		"Energy Blaster"
+		
+		"nGVF-AA Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-1"
+		"Plasma Pistol"
+		
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	gun -3.5 -51.5
+	gun 3.5 -51.5
+	engine -21.5 52
+	engine 21.5 52
+	leak "leak" 60 50
+	explode "tiny explosion" 10
+	explode "small explosion" 5
+	description "In sharp contrast with its Betelgeuse competitor, this Navy Shipyards Dropship instead blurs the line between being a Yacht and a Gunship. It's robust design is heavily favored by Republic Marine forces, as well as aspiring bounty hunters."
 
 ship "Caravel"
 	sprite "ship/scout"
@@ -887,6 +886,104 @@ ship "Berserker"
 	"final explode" "final explosion small"
 	description "Once one of the most popular Gunship-class ships, the Berserker's popularity is now waning in favor of more modern and versatile ships like the Hawk. Although limited numbers are still produced by Betelgeuse Shipyards, most Berserkers that are in service today are more than half a century old."
 	description "The Berserker is one of the first ships designed that could hide its emissions for a short period of time, making it all but completely invisible to the enemy. Berserker ambushes were once the bane of even the largest Caravan fleets."
+
+ship "Scutter"
+	sprite "ship/scutter"
+	thumbnail "thumbnail/flivver"
+	attributes
+		category "Gunship"
+		"cost" 200000
+		"landing gear" 1
+		"shields" 400
+		"hull" 500
+		"hull repair rate" .1
+		"landing gear" 1
+		"required crew" 1
+		"bunks" 1
+		"mass" 20
+		"drag" 1.0
+		"heat dissipation" .9
+		"fuel capacity" 150
+		"cargo space" 1
+		"outfit space" 130
+		"weapon capacity" 120
+		"engine capacity" 120
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 16
+			"shield damage" 160
+			"hull damage" 80
+			"hit force" 240
+	outfits
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 60
+		
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-1"
+		"Plasma Pistol"
+		
+		"A120 Atomic Thruster"
+		"X1200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -16 27
+	engine 16 27
+	gun -6 -31
+	gun 6 -31
+	leak "leak" 60 50
+	explode "tiny explosion" 10
+	explode "small explosion" 10
+	description "A strange revision of the Lionheart Flivver, the Union Shipyard's Scutter has the unique property of being able to dedicate itself to any role. Almost all of its internal hardpoints have been replaced with universal power ports, allowing it to equip weapons or engines far outside of its weight class."
+
+
+ship "Flivver"
+	sprite "ship/flivver"
+	thumbnail "thumbnail/flivver"
+	attributes
+		category "Gunship"
+		"cost" 180000
+		"landing gear" 1
+		"shields" 1400
+		"hull" 200
+		"hull repair rate" .1
+		"landing gear" 1
+		"required crew" 1
+		"bunks" 3
+		"mass" 15
+		"drag" .8
+		"heat dissipation" .9
+		"fuel capacity" 500
+		"cargo space" 5
+		"outfit space" 130
+		"weapon capacity" 25
+		"engine capacity" 45
+		"atmosphere scan" 10
+		weapon
+			"blast radius" 16
+			"shield damage" 160
+			"hull damage" 80
+			"hit force" 240
+	outfits
+		"Energy Blaster" 2
+		
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-1"
+		"Plasma Pistol"
+		
+		"A120 Atomic Thruster"
+		"X1200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -16 27
+	engine 16 27
+	gun -6 -31
+	gun 6 -31
+	leak "leak" 60 50
+	explode "tiny explosion" 10
+	explode "small explosion" 10
+	description "With space for not cargo nor passengers nor heavy weaponry, the Flivver's only selling point is speed. Flivvers are sold mostly to wealthy individuals who want to be able to travel the stars without needing to share a bunk room on a merchant transport with common people."
 
 ship "Fury"
 	plural "Furies"
