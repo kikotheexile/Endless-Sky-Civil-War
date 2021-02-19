@@ -1357,3 +1357,402 @@ mission "NU Marina 3b"
 		freelance ++
 	on fail
 		freelance ++		
+
+# Northern Union Story Start
+
+mission "Join NU"
+	landing
+	name "Join the Northern Union"
+	description "The Northern Union has offered to make you a Junior Associate. To take them up on that, meet the Partnership Committee on <destination>."
+	to offer
+		has "assisted northern union" > 3
+	to fail
+		has "chosen sides"
+	destination Haven
+	
+	on offer
+		conversation
+			`	Your communicator beeps, and when you check it, there's a hand-made brochure file. Upon opening it, you are greeted with a picture of Ruby in a ridiculous outfit, including a multicolored top hat. It reads:`
+			`	"The NUPC of the Northern Union wants YOU!"`
+			`	"Enjoy assaulting authorities, but wish it paid more? Want to overthrow the current regime, but need backup? Look no further than the Northern Union! All takers get a complimentary salary and the Partnership Committee's undying neutrality!"`
+			``
+			`	"P.S. Captain <last>, we owe you a drink for all that you've done for us."`
+			``
+			`	The brochure includes pictures of prominent Republic politicians and Syndicate executives with ridiculous mustaches drawn on. Near the bottom is an address to a bar on Haven.`
+	
+mission "NU Raiding 1"
+	landing
+	infiltrating
+	name "Raid on Ada"
+	description "Raid on Ada"
+	to offer
+		has "Join NU: offered"
+		not "chosen sides"
+	source Haven
+	destination Ada
+	
+	on offer
+		conversation
+			`Haven is where the Northern Union's Parternship Committee meets, and they've asked you to join them. Do you?`
+			choice
+				`	Yes.`
+				`	No.`
+				defer
+			`	The address in the recruitment letter leads you to a rowdy bar in the spaceport. The bouncer takes your picture at the door and holds you in place while he checks his communicator. "VIP room is straight to the left past the entry way." He says.`
+			`	Upon entering the VIP room, you are greeted with a somewhat official-looking boardroom, with a number of people sitting around a table, looking over a galactic map. A number of armed guards, some uniformed, are standing around the edges of the room, each guarding a different exit.`
+			`	"<first>! Wanna have a drink with us?" Mouser waves you over.`
+			choice
+				`	"Sure."`
+				`	"Oh, that's alright, I don't drink."`
+			`	One of the guards grabs you by the arm and leads you over to the table. Gavin leers at you. "So glad for you to join us. Was my cult really that appealing to you after all?"`
+			`	You prepare to respond, but a man bursts through one of the doors. "I'm Thomas Rose, the famous businessman!" He shouts.`
+			`	Sally looks up from her drink and says, "Oh great, who invited the capitalist pig?"`
+			`	The meeting grows more and more chaotic, with different people all trying to introduce themselves to you, and different shouting matches happening all at the same time.`
+			choice
+				`	<Try to find a quiet place to sit.>`
+					goto sit
+				`	<Leave, no job is worth this.>`
+					goto leave
+					
+			label sit
+			`	The room vibrates with so many different discussions and arguments that it is impossible not to get overwhelmed. Finally, the sound of a plasma pistol firing interrupts the constant, tangential and petty arguments.`
+			`	"Well, now that you've all come and I have your attention," Ruby grins, looking around the room with pistol in hand, "what say you we get down to business? Our agenda, of course, starts with welcoming our good friend <last>, and setting them on their way."`
+			choice
+				`	"What's the job?"`
+					goto job
+				`	<Say nothing.>`
+					goto job
+				`	"Actually, I don't want to work for the union. Bye."`
+					goto leave
+				`	"Don't I get to be on the committee?"`
+			`	"Oh no, you may have been most useful to the union, but for all we know you are a Republic spy." Mr. Rose states.`
+				goto job
+			label job
+			`	"The job is simple." Ruby declares, "Just head to Ada and steal whatever you can. This is a loyalty test, and oh my does loyalty pay well."`
+			choice
+				`	"I'm in."`
+					goto accept
+				`	"I'm no thief. Bye."
+					goto leave
+				`	"Do I at least get a briefing?"`
+					goto briefing
+			label briefing
+			`	"No." Ruby states, plainly.`
+			choice
+				`	"I'll do it."`
+					goto accept
+				`	"No briefing, no deal. Bye."`
+					goto leave
+				`	"It turns out I really don't want to work for you after all. Have a fantastic day."`
+					goto leave
+			label leave
+			`	No one attempts to stop you on your way out the door. In fact, as soon as you step outside of the meeting room, a guard makes it a point to escort you back to your ship. "For your own protection," she says.`
+				decline
+			label accept
+			`	"No questions asked, I like that." Ruby says. "Just head to Ada and look around the spaceport for anything you can lift. Prototype weapons, armor, even food. Good luck, <last>."`
+			`	Ruby motions to a guard, who escorts you back to your ship.`
+				accept
+	on accept
+		set "chosen sides"
+		
+	on complete
+		conversation
+		`	You have arrived on Ada, now it's time to search the spaceport for anything you can use.`
+		
+mission "NU Raiding 2"
+	name "Deliver loot to Haven"
+	description "Deliver the stolen weapons from Ada to the Northern Union on Haven."
+	to offer
+		has "NU Raiding 1: complete"
+	source Ada
+	destination Haven
+	on offer
+		conversation
+			`As you came in for a landing, it was hard not to notice that a severe storm was about to strike the spaceport. You were one of the last ships allowed to land or depart. This will improve your chances of successful theft, but will gravely hamper any escape attempts if things go wrong.`
+			choice
+				`	<Check around for options.>`
+					goto perceptive
+				`	<Talk to local merchant captains about their cargo.>`
+					goto conartist
+				`	<Look for an unguarded armory.>`
+					goto stealth
+			label perceptive
+			"perceptive" ++
+			`	As they are staples of any spaceport, it doesn't take a veteran pirate or spy to see all the unguarded crates laying around. Dumped cargo, captured contraband, and other assorted freight is stacked up, just waiting to be inventoried... or looted. If you stole from this, no one would ever even know it was gone.`
+			choice
+				`	<Begin loading cargo at random.>`
+					goto random
+				`	<Load only the boxes which are useful or valuable.>`
+					goto valuable
+			label conartist
+			"con-artist" ++
+			`	Some merchant captains never heard the ancient adage 'loose lips sink ships' and it shows. It requires shockingly little probing to get these so-called 'space truckers' to boast or complain about their current cargo holds.`
+			choice
+				`	<Loot ships with cheap cargo.>`
+					goto random
+				`	<Loot ships with expensive cargo.>`
+					goto valuable
+			label stealth
+			"stealthy" ++
+			`	This planet is owned by Lovelace Labs, so it seems reasonable to assume that their guards would get access to new and interesting weapons first. You begin looking around for guard posts, armories, anywhere there might be unique weapons.` 
+			`	Before long, you discover a couple of guard posts, complete with unattended standard-issue weapons, as well as an unfortified armory.`
+			`	Of course, you were never given specific targets. You were only told you needed to steal "something" to prove your loyalty.` 
+			choice
+				`	<Standard issue weapons will do.>`
+					goto random
+				`	<Into the armory!>`
+					goto armory
+			label armory
+			`	You attempt to find a path into the armory. Unfortunately, it seems the door has an alarm. This may not be as easy a task as you thought.`
+			choice
+				`	<Nevermind, back to the standard issue weapons.>`
+					goto random
+				`	<Find an alternate route into the armory.>`
+					goto vent
+				`	<Through the front door!>`
+					goto caught
+			label vent
+			apply
+				set "ada: weapons"
+			`	Checking around the armory door, you notice robotic cleaners entering and exiting through small ventilation units. With a little effort, you manage to catch one of these droids, and move it into range of the vent. The droid remotely opens the vent and you wedge it into the small door, allowing you to slip inside, if only barely.`
+			`	Sure enough, you are rewarded by the sight of unlocked storage units, gun racks, scanners, and the like. Some of the weapons located here are marked with strange 'X' patterns, and appear completely unique.`
+			`	Obviously, this is exactly what you were looking for. You are fortunate enough to find a couple of duffel bags and load them up before pushing them out the vent you entered through. You are able to escape - and release your captive cleaning droid - before anyone notices you.`
+				goto finale1
+			label random
+			apply
+				set "ada: cheap"
+			`	You load up some obviously low quality goods, but it's not like the Union will ever know the difference, and this will prove your loyalty to them.`
+				goto finale1
+			label valuable
+			apply
+				set "ada: valuable"
+			`	You load up some really nice quality goods. Surely this will more than prove your loyalty to the Union.`
+				goto finale1
+			label caught
+			`	This planet may be under the banner of the Republic, but apparently no one ever informed the auto-turret system, which quickly identifies you and cuts you down. Perhaps a frontal assault was not your best option.`
+				die
+			label finale
+			`	You finish returning the loot to your ship. The storm is still ongoing, leaving you trapped at the scene of the crime with little to do beyond continue your exploration of the spaceport.`
+			choice
+				`	<Take a nap.>`
+					goto nap
+				`	<Grab dinner.>`
+					goto dinner
+				`	<Search for more loot!>`
+					goto loot
+			label nap
+			`	You head for your bunk and rest. When you awaken, the storm has passed and you are free to leave.`
+				accept
+			label dinner
+			`	You head for a local establishment and enjoy a meal. No one seems wise to your criminal ways. When you finish your meal, the storm has passed and you are free to leave.`
+				accept
+			label loot
+			`	Security has more than doubled since your earlier looting, including several security droids. Even the simplest of petty theft is sure to get noticed. After all, robotic eyes don't blink.`
+			`	Before long, the storm passes, and you are free to leave.`
+				accept
+	on complete
+		dialog "While the spaceport's dock workers unload your cargo, Ruby turns up. "This is some nice stuff. We've got a long, profitable relationship ahead of us." Ruby grins and pays you <payment>. "Very nice stuff indeed. Wander the spaceport a bit, we'll be in touch soon."
+		payment 60000
+
+mission "NU Raiding 3a"
+	name "Plunder the <npc>"
+	description "According to Marina, the <npc> has untold riches in its cargo hold."
+	to offer
+		has "NU Raiding 2: complete"
+		has "ada: cheap"
+	source Haven
+	destination Sporehold
+	
+	on offer
+		conversation
+			`You wander the spaceport as usual, as Marina and her handlers approach you. "Comrade Captain! We've been raiding the capitalist bootlickers to the south for some time now, very good for the commune's storehouse. We've gotten word from one of our merchants about a more heavily guarded convoy stalled in one of their systems, surely transporting hoarded goods stolen from the workers! If you could intercept them, liberate anything important off the convoy's freighters, and drop it off at my commune on Sporehold, you'd be doing this union a great service."`
+			choice
+				`	"Yeah, I can do that."`
+					accept
+				`	"Wait, why are we raiding the Syndicate?"`
+			`	Marina looks confused. "Syndicate? Is that what you refer to those pigs as?" Her keeper, Sally, steps in. "Comrade Captain, we do not care what they are called. If they will not redistribute their wealth, we must!" This clearly relieves Marina.`
+			choice
+				`	"You're right, we must bring the tyrants down!"`
+				`	"Right. I'll go take care of that convoy now."`
+				`	"I serve our glorious union."`
+				`	"How could I say no to that face?"`
+				`	"I have no choice, do I?"`
+			`	Sally pulls you aside, "Comrade Captain, I will not decieve you. This is very clearly a trap. However, you will be expected to follow through on this anyway. The freighter is a derelict, and is expected to be undefended in the Cardax system. Good luck."`
+				accept
+	npc assist
+		system "Cardax"
+		government "Derelict"
+		personality derelict target pacifist mute
+		ship "Star Barge" "Wild Goose"
+		dialog `This Star Barge has intentionally been stripped of anything useful, but its hold has some small amount of loot. The boxes, lightweight enough to be carried by you alone, are all marked with different warning sings, some being explosive, others radioactive or biohazardous. You carefully load them into your ship's hold.`
+	
+	on complete
+		set "nu cardax barge"
+		payment 100000
+		conversation
+			`Marina's workers give the boxes a slightly concerned look at first, but they unload them when Sally shows up. "Marina said you'd be turning up, I see you found... something."`
+			choice
+				`	"It looks dangerous."`
+				`	"I won't let any human rights groups know about this if you pay me."`
+					goto payment
+			`	"Oh, what clue could have told you that, comrade detective?" Sally snickers. "Strange that the pigs left those for us, however. Weird tribute indeed."`
+			label payment
+			`	"Well, thanks for bringing it to us, and taking out that convoy. Here you go." Sally pays you <payment> as the dock workers finish up. "Meet me in the spaceport in a little bit, we have another job for you."`
+
+mission "NU Raiding 3b"
+	name "Plunder the <npc>"
+	description "According to Ruby, the <npc> has untold riches in its cargo hold."
+	to offer
+		has "NU Raiding 2: complete"
+		has "ada: valuable"
+	source Haven
+	destination Sporehold
+	
+	on offer
+		conversation
+			`You wander the spaceport as usual, and Ruby approaches you. "Captain! I have more easy money for you!"`
+			choice
+				`	"I'm in."`
+					goto accept
+				`	"What's the catch?"`
+			`	"Only that this is very clearly a trap and liable to get you killed."`
+			label accept
+			`	"Anyway, it's just a job that needs doing, and it pays exceptionally well. Just loot the cargo of an undefended derelict freighter in the Cardax system. Take its loot to Sporehold for Sally and Marina to analyze. Good luck."`
+				accept
+	npc assist
+		system "Cardax"
+		government "Derelict"
+		personality derelict target pacifist mute
+		ship "Star Barge" "Wild Goose"
+		dialog `This Star Barge has intentionally been stripped of anything useful, but its hold has some small amount of loot. The boxes, lightweight enough to be carried by you alone, are all marked with different warning sings, some being explosive, others radioactive or biohazardous. You carefully load them into your ship's hold.`
+	
+	on complete
+		set "nu cardax barge"
+		conversation
+			`Marina's workers give the boxes a slightly concerned look at first, but they unload them when Sally shows up. "Marina said you'd be turning up, I see you found... something."`
+			choice
+				`	"It looks dangerous."`
+				`	"I won't let any human rights groups know about this if you pay me."`
+					goto payment
+			`	"Oh, what clue could have told you that, comrade detective?" Sally snickers. "Strange that the pigs left those for us, however. Weird tribute indeed."`
+			label payment
+			`	"Well, thanks for bringing it to us, and taking out that convoy. Here you go, a hundred thousand credits for this job and four more for the valuables from your previous." Sally pays you <payment> as the dock workers finish up. "Meet me in the spaceport in a little bit, we have another job for you."`
+		payment 500000
+
+mission "NU Raiding 3c"
+	name "Plunder the <npc>"
+	description "According to Mr. Rose, the <npc> has untold riches in its cargo hold."
+	to offer
+		has "NU Raiding 2: complete"
+		has "ada: weapons"
+	source Haven
+	destination Sporehold
+	
+	on offer
+		conversation
+			`You wander the spaceport as usual, and Mr. Rose approaches you. "Captain, we can't keep meeting like this, the others will talk." He chuckles. "I have a job for you, oh yes. And it pays rather well.`
+			choice
+				`	"I'm in."`
+					goto accept
+				`	"What's the catch?"`
+			`	"Oh have some faith in me, Captain. There is no catch here."`
+			label accept
+			`	Mr. Rose's assistant steps in, "Just loot the primary cargo hold of the <npc> in the Cardax system, then take it to Marina for disposal. You will get your payment upon delivery." The assistant pauses, "Mr. Rose and I are about to be late for an appointment. Good luck, Captain."`
+				accept
+	npc assist
+		system "Cardax"
+		government "Derelict"
+		personality derelict target pacifist mute
+		ship "Star Barge" "Wild Goose"
+		dialog `This Star Barge has intentionally been stripped of anything useful, but its hold has some small amount of loot. The boxes, lightweight enough to be carried by you alone, are all marked with different warning sings, some being explosive, others radioactive or biohazardous. You carefully load them into your ship's hold.`
+	
+	on complete
+		set "nu cardax barge"
+		conversation
+			`Marina's workers give the boxes a slightly concerned look at first, but they unload them when Sally shows up. "Marina said you'd be turning up, I see you found... something."`
+			choice
+				`	"It looks dangerous."`
+				`	"I won't let any human rights groups know about this if you pay me."`
+					goto payment
+			`	"Oh, what clue could have told you that, comrade detective?" Sally snickers. "Strange that the pigs left those for us, however. Weird tribute indeed."`
+			label payment
+			`	"Well, thanks for bringing it to us, and taking out that convoy. Here you go, a hundred thousand credits for this job and a million extra from that pig Rose." Sally pays you <payment> as the dock workers finish up. "I would advise you to not get too close to him, no matter how well he pays. But please, do meet me in the spaceport in a little bit, we have another job for you."`
+		payment 1100000
+		
+mission "NU Raiding 4"
+	name "Defeat the defense force in Elnath"
+	description "Sally has asked you to defeat part of the regional defense force in Elnath to open the way for raiding."
+	to offer
+		has "nu cardax barge"
+	source Sporehold
+	destination Sporehold
+	
+	on offer
+		conversation
+			`You meet with Sally after you finish putting your ship in order. "Ah, comrade Captain. Perfect timing. Have you heard about the war brewing in the south?"`
+			choice
+				`	"You mean the stuff with the Free Worlds?"`
+					goto job
+				`	"Doesn't ring a bell."`
+			`	Sally raises an eyebrow. "That's surprising, it's been all over the news. Well, there was a bombing on the Republic stock market some time ago, and they're at the Free Worlds' throat over it."`
+			label job
+			`	Sally grins. "That war is important because it means most of the Navy fleets are in the south. So we're going to redistribute the Paradise Planets' wealth to their workers. So, comrade, how about clearing out some of the region's defenses in Elnath to get things rolling?"`
+			choice
+				`	"Anything for the cause!"`
+					accept
+				`	"I guess I can find space in my schedule."`
+					accept
+
+	npc kill
+		government Republic
+		personality waiting heroic
+		ship "Achlys" "R.N.S. Avenger"
+		ship "Narcissus" "R.N.S. Paladin"
+		ship "Quicksilver" "R.N.P. Nemesis"
+		dialog `The Navy couldn't spare many ships for this area after all. Now you just need to report in to Sally.`
+
+	on complete
+		dialog "You give your report, and Sally seems excited about this. "The fleet was that small? Perfect. Thanks, comrade Captain. I've got to go scramble the ships, so try asking someone on Haven about your next job." She hands you <payment> and heads in the direction of the landing pads."
+		payment 100000
+		
+mission "NU Station Raid 1"
+	name "Attack Orion Station"
+	description "The Northern Union has gathered a fleet, you included, to raid the Navy shipyards at Orion Station."
+	source Haven
+	destination "Orion Station"
+	to offer
+		has "NU Raiding 4: complete"
+	
+	on offer
+		conversation
+			`After Sally left you hanging, you've ended up back on Haven. You find Ruby flagging down captains again, and she flags you down as well. "<first>! So nice to see you! Now, I know you're a fan of easy money, but how about some slightly harder money, just for me?" She bats her eyelashes at you.`
+			choice
+				`	"Aw, I can't say no to that face."`
+				`	"Money's money, what you got?"`
+			`	"Oh, you're such a doll. So, we've been having a pretty good time in the Paradise Worlds area recently, but the Republic has finally caught onto us. Their Oathkeepers are out in swarms now, and we need to hit them where it hurts."`
+			choice
+				`	"The shipyards?"`
+				goto yes
+				`	"Earth?"`
+				goto no
+			label yes
+			`	"Yes! Exactly! We have a winner! They have lots of soldiers, but they still need ships for them to fly."`
+			goto job
+			label no
+			`	Ruby laughs. "Good one! That was a joke, right?"`
+			label job
+			`	Ruby grins and rubs her hands together. "Now, all these captains I'm calling up are lining up for a raid on Orion Station. The Navy has Betelgeuse Industries handle most of their ship production right now, so if we take out that orbital shipyard, we can throw the whole Navy off. There's going to be lots of angry warships in the way, of course, but I'm sure you can handle that, right?"`
+			choice
+				`	"Sure I can! Have a drink waiting for me."`
+				accept
+				`	"I better get a bonus for this."`
+				accept
+
+
+	on enter "Betelgeuse"
+		dialog `One of the first things you notice as you come out of hyperspace is the massive blip on your radar. According to the other raiders on communications, that's one of Betelgeuse's new Veles-class battlecruisers, and it's surrounded by a defense fleet of both Betelgeuse Industries and Navy Oathkeeper ships. This will be a difficult battle.`
+		
+	
+	npc kill
+		[I didn't have it in me to actually put the fleets in, but I put the dialog when you kill the enemies in the lower line]
+		dialog `It was indeed a difficult battle, but the last of the defense fleet has been shot down. All that's left now is to land and raid Orion Station along with what's left of the raiding fleet.`
