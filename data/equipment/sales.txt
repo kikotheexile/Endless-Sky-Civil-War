@@ -12,22 +12,18 @@ shipyard "Basic Ships"
 	"Heavy Shuttle"
 	"Sparrow"
 	"Star Barge"
-
+	"Flivver"
+	"Mason"
+	"Dropship"
+	
 shipyard "Tarazed Basics"
+	"Mason"
 	"Sparrow"
 	"Hawk"
 	"Blackbird"
 
 shipyard "Tarazed Advanced"
-	"Osprey"
-	"Falcon"
-
-shipyard "Tarazed Shipyards"
-	"Mason"
 	"Millipede"
-	"Sparrow"
-	"Hawk"
-	"Blackbird"
 	"Osprey"
 	"Falcon"
 
@@ -36,12 +32,12 @@ shipyard "Southbound Basics"
 	"Fury"
 	"Argosy"
 	"Hauler"
-
-shipyard "Southbound Advanced"
 	"Hauler II"
 	"Hauler III"
+
+shipyard "Southbound Advanced"
 	"Bastion"
-	
+
 shipyard "Lionheart Basics"
 	"Caravel"
 	"Dagger"
@@ -133,11 +129,21 @@ shipyard "Syndicated Shipyards"
 	"Protector"
 	"Vanguard"
 
+
+shipyard "Syndicated Shipyards"
+	"Star Barge"
+	"Wasp"
+	"Freighter"
+	"Bulk Freighter"
+	"Protector"
+	"Vanguard"
+
 shipyard "Northern Union"
 	"Berserker"
 	"Firebird"
 	"Odyssey"	
 	"Leviathan"
+	"Scutter"
 	
 shipyard "Northern Union Advanced"
 	"Endeavor"
@@ -148,6 +154,7 @@ shipyard "Southern Pirates"
 	"Clipper"
 	"Fury"
 	"Hawk"
+	"Scutter"
 
 shipyard "Advanced Southern Pirates"
 	"Falcon"
@@ -184,8 +191,6 @@ shipyard "Exotics"
 	"Arrow"
 	"Osprey"
 
-shipyard "Quarg T1H"
-	"Wyvern"
 	
 shipyard "Free Market"
 	"Heavy Shuttle"
