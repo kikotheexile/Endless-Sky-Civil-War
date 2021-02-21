@@ -25,6 +25,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "GameData.h"
 #include "Government.h"
 #include "Interface.h"
+#include "LineShader.h"
 #include "MapPanel.h"
 #include "Mask.h"
 #include "Messages.h"
@@ -894,6 +895,15 @@ void Engine::Draw() const
 			RingShader::Draw(pos, radius, 1.5f, it.inner, color[3 + it.type], dashes, it.angle);
 		if(it.disabled > 0.)
 			RingShader::Draw(pos, radius, 1.5f, it.disabled, color[6 + it.type], dashes, it.angle);
+		if(interface->HasPoint("faction flag") && it.type)
+		{
+			Point center = it.position * zoom;
+
+			const Sprite *mark[1] = {SpriteSet::Get("flags/"+info.GetString("target government").first)};
+			LineShader::Draw(center + Point(radius, 0), center + Point(2 * radius, 0), 0.8f * zoom, Color(8));
+			for(int i = 0; i < 2; ++i)
+				SpriteShader::Draw(mark[i], center + Point(3 * radius, 0), radius / 30, targetSwizzle);
+		}
 	}
 	
 	// Draw the flagship highlight, if any.
@@ -976,7 +986,7 @@ void Engine::Draw() const
 	{
 		Point center = interface->GetPoint("faction flag");
 
-		const Sprite *mark[1] = {SpriteSet::Get("ui/"+info.GetString("target government").first)};
+		const Sprite *mark[1] = {SpriteSet::Get("flags/"+info.GetString("target government").first)};
 		for(int i = 0; i < 2; ++i)
 			SpriteShader::Draw(mark[i], center + Point(0, 0), 1., targetSwizzle);
 	}
