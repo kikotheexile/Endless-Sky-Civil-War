@@ -986,7 +986,7 @@ void Engine::Draw() const
 	{
 		Point center = interface->GetPoint("faction flag");
 
-		const Sprite *mark[1] = {SpriteSet::Get("ui/"+info.GetString("target government").first)};
+		const Sprite *mark[1] = {SpriteSet::Get("flags/"+info.GetString("target government").first)};
 		for(int i = 0; i < 2; ++i)
 			SpriteShader::Draw(mark[i], center + Point(0, 0), 1., targetSwizzle);
 	}
