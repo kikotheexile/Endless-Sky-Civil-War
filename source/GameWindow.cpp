@@ -95,7 +95,7 @@ bool GameWindow::Init()
 		flags |= SDL_WINDOW_MAXIMIZED;
 	
 	// The main window spawns visibly at this point.
-	mainWindow = SDL_CreateWindow("Endless Sky", SDL_WINDOWPOS_UNDEFINED, 
+	mainWindow = SDL_CreateWindow("Endless Sky Stories", SDL_WINDOWPOS_UNDEFINED, 
 		SDL_WINDOWPOS_UNDEFINED, windowWidth, windowHeight, flags);
 		
 	if(!mainWindow){
@@ -151,7 +151,7 @@ bool GameWindow::Init()
 	if(*glVersion < '3')
 	{
 		ostringstream out;
-		out << "Endless Sky requires OpenGL version 3.0 or higher." << endl;
+		out << "Endless Sky Stories requires OpenGL version 3.0 or higher." << endl;
 		out << "Your OpenGL version is " << glVersion << ", GLSL version " << glslVersion << "." << endl;
 		out << "Please update your graphics drivers.";
 		ExitWithError(out.str());
@@ -352,7 +352,7 @@ void GameWindow::ExitWithError(const string& message, bool doPopUp)
 	SDL_MessageBoxData box;
 	box.flags = SDL_MESSAGEBOX_ERROR;
 	box.window = nullptr;
-	box.title = "Endless Sky: Error";
+	box.title = "Endless Sky Stories: Error";
 	box.message = message.c_str();
 	box.colorScheme = nullptr;
 	
