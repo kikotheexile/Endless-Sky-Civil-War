@@ -36,8 +36,8 @@ system Acamar
 	fleet "Navy" 3600
 	fleet "Syndicate" 3200
 	belt 1013
-	minables iron 9 3.05965
-	minables titanium 1 3.40286
+	minables iron 9 1.5
+	minables titanium 1 1.5
 	object
 		sprite star/g0
 		period 10
@@ -91,9 +91,9 @@ system Achernar
 	fleet "Syndicated Transport" 300
 	fleet "Freelance Miners" 3000
 	belt 1963
-	minables copper 4 3.93672
-	minables iron 4 2.64095
-	minables titanium 6 2.83119
+	minables copper 4 1.5
+	minables iron 4 2.1.5
+	minables titanium 6 1.5
 	object
 		sprite star/g5
 		period 10
@@ -160,8 +160,8 @@ system Acrux
 	fleet "Freelance Pirate" 2400
 	fleet "Freelance Miners" 5000
 	belt 1407
-	minables lead 34 5.87828
-	minables titanium 6 9.19767
+	minables lead 34 1.5
+	minables titanium 6 1.5
 	object
 		sprite star/k0
 		distance 17.9429
@@ -233,7 +233,7 @@ system Adhara
 	fleet "Caravan" 900
 	fleet "Northern Union" 2000
 	belt 1014
-	minables silver 1 10.3117
+	minables silver 1 1.5
 	object
 		sprite star/k0
 		distance 33.5961
@@ -407,9 +407,9 @@ system "Al Dhanab"
 	fleet "Freelance Pirate" 3000
 	fleet "Freelance Miners" 2000
 	belt 1432
-	minables iron 32 3.202
-	minables silicon 56 3.98107
-	minables tungsten 37 3.66333
+	minables iron 32 1.5
+	minables silicon 56 1.5
+	minables tungsten 37 1.5
 	object
 		sprite star/g0
 		period 10
@@ -469,9 +469,9 @@ system Albaldah
 	fleet "Militia" 1400
 	fleet "Freelance Miners" 3000
 	belt 1622
-	minables iron 20 4.32166
-	minables lead 28 5.26814
-	minables titanium 21 7.37733
+	minables iron 20 1.5
+	minables lead 28 1.5
+	minables titanium 21 1.5
 	object
 		sprite star/k5
 		distance 42.7246
@@ -587,11 +587,11 @@ system Alcyone
 	fleet "Northern Union" 400
 	fleet "Northstar Shipping" 100
 	belt 1438
-	minables copper 5 2.95151
-	minables "engine part" 5 8.00281
-	minables "reactor part" 5 8.00281
-	minables "junk part" 5 8.00281
-	minables "weapon part" 5 8.00281
+	minables copper 5 1.5
+	minables "engine part" 5 1.5
+	minables "reactor part" 5 1.5
+	minables "junk part" 5 1.5
+	minables "weapon part" 5 1.5
 	object
 		sprite star/m4
 		distance 45.5
@@ -759,13 +759,13 @@ system Aldhibain
 	fleet "Freelance Pirate" 2000
 	fleet "Freelance Miners" 3000
 	belt 1840
-	minables iron 5 6.68827
-	minables silicon 11 5.1137
-	minables titanium 10 4.19059
-	minables "engine part" 3 8.00281
-	minables "reactor part" 8 8.00281
-	minables "junk part" 5 8.00281
-	minables "weapon part" 7 8.00281
+	minables iron 5 1.5
+	minables silicon 11 1.5
+	minables titanium 10 1.5
+	minables "engine part" 3 1.5
+	minables "reactor part" 8 1.5
+	minables "junk part" 5 1.5
+	minables "weapon part" 1.5
 	object
 		sprite star/k0
 		period 10
@@ -869,9 +869,9 @@ system Algieba
 	fleet "Northstar Shipping" 400
 	fleet "Freelance Merchant" 600
 	belt 1070
-	minables lead 5 6.42007
-	minables silicon 4 10.379
-	minables titanium 2 8.83592
+	minables lead 5 1.5
+	minables silicon 4 1.5
+	minables titanium 2 1.5
 	object
 		sprite star/f0
 		distance 5.86085
@@ -1057,8 +1057,8 @@ system Alheka
 	fleet "Northern Union" 2000
 	fleet "Freelance Miners" 3000
 	belt 1380
-	minables lead 16 13.7996
-	minables tungsten 10 13.3676
+	minables lead 16 1.5
+	minables tungsten 10 1.5
 	object
 		sprite star/g0
 		period 10
@@ -1105,9 +1105,9 @@ system Alhena
 	fleet "Freelance Merchant" 700
 	fleet "Navy" 900
 	belt 1078
-	minables iron 2 8.5773
-	minables lead 1 14.4573
-	minables uranium 2 7.51131
+	minables iron 2 1.5
+	minables lead 1 1.5
+	minables uranium 2 1.5
 	object
 		sprite star/g5
 		distance 32.1693
@@ -1172,7 +1172,7 @@ system Alioth
 	fleet "Southern Pirates" 1200
 	fleet "Freelance Pirate" 2400
 	belt 1889
-	minables copper 1 4.44449
+	minables copper 1 1.5
 	object
 		sprite star/k0
 		period 10
@@ -1219,7 +1219,7 @@ system Alkaid
 	fleet "Freelance Pirate" 5000
 	fleet "Freelance Miners" 3000
 	belt 1142
-	minables neodymium 3 4.36212
+	minables neodymium 3 1.5
 	object
 		sprite star/g0
 		period 10
@@ -1283,9 +1283,9 @@ system Almaaz
 	fleet "Northern Union" 600
 	fleet "Navy" 7000
 	belt 1873
-	minables iron 7 7.81811
-	minables silicon 6 9.57028
-	minables silver 4 6.29355
+	minables iron 7 1.5
+	minables silicon 6 1.5
+	minables silver 4 1.5
 	object
 		sprite star/g0
 		period 10
@@ -1323,9 +1323,9 @@ system Almach
 	fleet "Freelance Pirate" 1400
 	fleet "Syndicated Transport" 6000
 	belt 1914
-	minables iron 2 2.87775
-	minables lead 2 3.17637
-	minables silicon 30 2.47255
+	minables iron 2 1.5
+	minables lead 2 1.5
+	minables silicon 30 1.5
 	object
 		sprite star/k5
 		period 10
@@ -1383,9 +1383,9 @@ system Alnair
 	fleet "Syndicate" 4000
 	fleet "Freelance Miners" 2000
 	belt 1969
-	minables aluminum 11 8.95654
-	minables lead 74 6.44632
-	minables platinum 6 9.6188
+	minables aluminum 11 1.5
+	minables lead 74 1.5
+	minables platinum 6 1.5
 	object
 		sprite star/m4
 		period 10
@@ -1447,8 +1447,8 @@ system Alnasl
 	fleet "Militia" 3000
 	fleet "Southern Pirates" 4000
 	belt 1412
-	minables aluminum 4 3.53834
-	minables iron 2 4.61991
+	minables aluminum 4 1.5
+	minables iron 2 1.5
 	object
 		sprite star/k5
 		distance 41.5
@@ -1500,9 +1500,9 @@ system Alnilam
 	fleet "Northern Union" 700
 	fleet "Navy" 10000
 	belt 1099
-	minables aluminum 13 2.6002
-	minables iron 4 2.28631
-	minables silicon 15 2.97138
+	minables aluminum 13 1.5
+	minables iron 4 1.5
+	minables silicon 15 1.5
 	object
 		sprite star/f5
 		period 10
@@ -1574,10 +1574,10 @@ system Alnitak
 	fleet "Northern Union" 5000
 	fleet "Navy" 2000
 	belt 1907
-	minables "engine part" 11 8.00281
-	minables "reactor part" 12 8.00281
-	minables "junk part" 10 8.00281
-	minables "weapon part" 13 8.00281
+	minables "engine part" 11 1.5
+	minables "reactor part" 12 1.5
+	minables "junk part" 10 1.5
+	minables "weapon part" 13 1.5
 	
 	object
 		sprite star/m0
@@ -1632,7 +1632,7 @@ system Alniyat
 	fleet "Freelance Pirate" 4000
 	fleet "Militia" 800
 	belt 1760
-	minables aluminum 1 8.00281
+	minables aluminum 1 1.5
 	object
 		sprite star/k5
 		distance 41.9222
@@ -1697,7 +1697,7 @@ system "Alpha Arae"
 	fleet "Southern Pirates" 4000
 	fleet "Freelance Pirate" 9000
 	belt 1405
-	minables silicon 10 3.80746
+	minables silicon 10 1.5
 	object
 		sprite star/g5
 		distance 31.1534
@@ -1758,8 +1758,8 @@ system "Alpha Centauri"
 	fleet "Navy" 2000
 	fleet "Caravan" 700
 	belt 1116
-	minables copper 1 5.07974
-	minables lead 4 6.13217
+	minables copper 1 1.5
+	minables lead 4 1.5
 	object
 		sprite star/k5
 		distance 26.7033
@@ -1870,9 +1870,9 @@ system Alphard
 	fleet "Freelance Miners" 2000
 	fleet "Caravan" 5000
 	belt 1101
-	minables aluminum 22 15.8087
-	minables lead 16 18.6376
-	minables titanium 14 15.6458
+	minables aluminum 22 1.5
+	minables lead 16 1.5
+	minables titanium 14 1.5
 	object
 		sprite star/g5
 		distance 41.5307
@@ -1978,8 +1978,8 @@ system Alpheratz
 	fleet "Cartel" 1200
 	fleet "Freelance Pirate" 3000
 	belt 1645
-	minables lead 2 6.58617
-	minables silicon 5 5.83737
+	minables lead 2 1.5
+	minables silicon 5 1.5
 	object
 		sprite star/g5
 		distance 48.2767
@@ -2100,9 +2100,9 @@ system Aludra
 	fleet "Freelance Merchant" 1200
 	fleet "Freelance Miners" 5000
 	belt 1511
-	minables copper 2 3.7707
-	minables neodymium 2 5.17388
-	minables silicon 2 4.70507
+	minables copper 2 1.5
+	minables neodymium 2 1.5
+	minables silicon 2 1.5
 	object
 		sprite star/k0
 		period 10
@@ -2159,8 +2159,8 @@ system Ankaa
 	fleet "Syndicate" 900
 	fleet "Freelance Pirate" 4000
 	belt 1003
-	minables aluminum 1 3.23798
-	minables silicon 1 3.14899
+	minables aluminum 1 1.5
+	minables silicon 1 1.5
 	object
 		sprite star/g5
 		period 10
@@ -2205,9 +2205,9 @@ system Antares
 	fleet "Southern Pirates" 1000
 	fleet "Freelance Pirate" 2000
 	belt 1778
-	minables iron 1 5.1176
-	minables lead 8 3.07041
-	minables silicon 8 4.38126
+	minables iron 1 1.5
+	minables lead 8 1.5
+	minables silicon 8 1.5
 	object
 		sprite star/k0
 		period 10
@@ -2264,9 +2264,9 @@ system Arcturus
 	fleet "Militia" 10000
 	fleet "Freelance Miners" 5000
 	belt 1422
-	minables copper 2 3.64174
-	minables lead 5 4.19488
-	minables silicon 3 2.62083
+	minables copper 2 1.5
+	minables lead 5 1.5
+	minables silicon 3 1.5
 	object
 		sprite star/k5
 		period 10
@@ -2375,9 +2375,9 @@ system Ascella
 	fleet "Southern Pirates" 3000
 	fleet "Freelance Miners" 1600
 	belt 1971
-	minables silicon 33 1.74588
-	minables titanium 34 2.91332
-	minables uranium 23 2.68467
+	minables silicon 33 1.5
+	minables titanium 34 1.5
+	minables uranium 23 1.5
 	object
 		sprite star/k5
 		distance 43.5
@@ -2489,9 +2489,9 @@ system Atria
 	fleet "Militia" 8000
 	fleet "Freelance Miners" 2000
 	belt 1340
-	minables aluminum 11 5.63475
-	minables iron 17 5.95487
-	minables silicon 16 4.85513
+	minables aluminum 11 1.5
+	minables iron 17 1.5
+	minables silicon 16 1.5
 	object
 		sprite star/m0
 		period 10
@@ -2548,9 +2548,9 @@ system Avior
 	fleet "Deep Security" 2800
 	fleet "Lionheart Shipping" 1500
 	belt 1097
-	minables neodymium 1 10.1458
-	minables titanium 1 9.74859
-	minables tungsten 1 10.6785
+	minables neodymium 1 1.5
+	minables titanium 1 1.5
+	minables tungsten 1 1.5
 	object
 		sprite star/g0
 		distance 11
@@ -2612,7 +2612,7 @@ system Bellatrix
 	fleet "Syndicate" 1000
 	fleet "Cartel" 3000
 	belt 1564
-	minables silicon 16 8.64459
+	minables silicon 16 1.5
 	object
 		sprite star/k0
 		distance 34.556
@@ -2667,9 +2667,9 @@ system "Beta Lupi"
 	fleet "Militia" 2000
 	fleet "Freelance Miners" 3000
 	belt 1261
-	minables gold 4 3.65247
-	minables lead 39 3.41114
-	minables silicon 4 3.54232
+	minables gold 4 1.5
+	minables lead 39 1.5
+	minables silicon 4 1.5
 	object
 		sprite star/g5
 		period 10
@@ -2718,9 +2718,9 @@ system Betelgeuse
 	fleet "Northern Union" 4000
 	fleet "Freelance Miners" 3000
 	belt 1641
-	minables lead 43 6.0536
-	minables silicon 25 4.05481
-	minables silver 4 3.65891
+	minables lead 43 1.5
+	minables silicon 25 1.5
+	minables silver 4 1.5
 	object
 		sprite star/g0
 		period 10
@@ -2787,8 +2787,8 @@ system Boral
 	fleet "Militia" 10000
 	fleet "Freelance Miners" 2000
 	belt 1867
-	minables aluminum 6 4.01149
-	minables titanium 30 6.89282
+	minables aluminum 6 1.5
+	minables titanium 30 1.5
 	object
 		sprite star/m0
 		period 10
@@ -2952,9 +2952,9 @@ system Capella
 	fleet "Navy" 800
 	fleet "Freelance Miners" 2000
 	belt 1722
-	minables iron 40 2.63132
-	minables lead 23 2.64595
-	minables silver 4 3.04495
+	minables iron 40 1.5
+	minables lead 23 1.5
+	minables silver 4 1.5
 	object
 		sprite star/k0
 		period 10
@@ -3015,9 +3015,9 @@ system Caph
 	fleet "Syndicate" 1600
 	fleet "Freelance Miners" 2000
 	belt 1173
-	minables lead 21 7.55696
-	minables tungsten 63 6.62784
-	minables uranium 6 7.47177
+	minables lead 21 1.5
+	minables tungsten 63 1.5
+	minables uranium 6 1.5
 	object
 		sprite star/g0
 		period 10
@@ -3075,8 +3075,8 @@ system Cardax
 	fleet "Cartel" 3000
 	fleet "Navy" 2000
 	belt 1228
-	minables aluminum 4 8.53341
-	minables lead 1 7.70182
+	minables aluminum 4 1.5
+	minables lead 1 1.5
 	object
 		sprite star/g0
 		distance 45.4545
@@ -3131,9 +3131,9 @@ system Castor
 	fleet "Lionheart Shipping" 800
 	fleet "Navy" 1000
 	belt 1675
-	minables aluminum 1 7.59239
-	minables lead 1 12.7895
-	minables silicon 6 11.0644
+	minables aluminum 1 1.5
+	minables lead 1 1.5
+	minables silicon 6 1.5
 	object
 		sprite star/g5
 		distance 52.9147
@@ -3214,8 +3214,8 @@ system Cebalrai
 	fleet "Militia" 4000
 	fleet "Southern Pirates" 4000
 	belt 1955
-	minables gold 1 3.87594
-	minables silicon 10 5.51354
+	minables gold 1 1.5
+	minables silicon 10 1.5
 	object
 		sprite star/g5
 		period 10
@@ -3271,9 +3271,9 @@ system "Cor Caroli"
 	fleet "Militia" 7000
 	fleet "Freelance Miners" 3000
 	belt 1474
-	minables aluminum 2 2.98979
-	minables platinum 2 3.79511
-	minables uranium 4 2.87365
+	minables aluminum 2 1.5
+	minables platinum 2 1.5
+	minables uranium 4 1.5
 	object
 		sprite star/g0
 		period 10
@@ -3375,9 +3375,9 @@ system Danoa
 	fleet "Northern Union" 16000
 	fleet "Freelance Miners" 1600
 	belt 1689
-	minables copper 47 2.85289
-	minables silicon 20 2.3468
-	minables titanium 3 3.894
+	minables copper 47 1.5
+	minables silicon 20 1.5
+	minables titanium 3 1.5
 	object
 		sprite star/m4
 		period 10
@@ -3441,8 +3441,8 @@ system "Delta Capricorni"
 	fleet "Freelance Miners" 3000
 	fleet "Caravan" 5500
 	belt 1329
-	minables iron 34 12.4373
-	minables neodymium 16 13.4172
+	minables iron 34 1.5
+	minables neodymium 16 1.5
 	object
 		sprite star/g5
 		distance 29.7539
@@ -3499,9 +3499,9 @@ system "Delta Sagittarii"
 	fleet "Militia" 7000
 	fleet "Freelance Miners" 3000
 	belt 1414
-	minables aluminum 32 4.42482
-	minables iron 9 4.88567
-	minables silicon 1 4.38847
+	minables aluminum 32 1.5
+	minables iron 9 1.5
+	minables silicon 1 1.5
 	object
 		sprite star/k5
 		period 10
@@ -3560,9 +3560,9 @@ system "Delta Velorum"
 	fleet "Navy" 12000
 	fleet "Freelance Miners" 2000
 	belt 1221
-	minables lead 7 4.67725
-	minables neodymium 17 5.3117
-	minables silver 8 8.15115
+	minables lead 7 1.5
+	minables neodymium 17 1.5
+	minables silver 8 1.5
 	object
 		sprite star/g0
 		period 10
@@ -3604,9 +3604,9 @@ system Deneb
 	trade Metal 404
 	trade Plastic 336
 	belt 1890
-	minables aluminum 7 15.5891
-	minables silicon 12 13.0697
-	minables titanium 51 14.5121
+	minables aluminum 7 1.5
+	minables silicon 12 1.5
+	minables titanium 51 1.5
 	object
 		sprite star/g5
 		period 10
@@ -3658,9 +3658,9 @@ system Denebola
 	fleet "Freelance Merchant" 2000
 	fleet "Navy" 1000
 	belt 1050
-	minables copper 3 8.29669
-	minables lead 3 11.4823
-	minables silicon 3 7.30806
+	minables copper 3 1.5
+	minables lead 3 1.5
+	minables silicon 3 1.5
 	object
 		sprite star/k5
 		distance 41.5211
@@ -3718,9 +3718,9 @@ system Diphda
 	fleet "Northstar Shipping" 600
 	fleet "Syndicate" 3000
 	belt 1559
-	minables aluminum 2 10.8416
-	minables copper 9 10.6942
-	minables uranium 4 6.68388
+	minables aluminum 2 1.5
+	minables copper 9 1.5
+	minables uranium 4 1.5
 	object
 		sprite star/k0
 		distance 20.9143
@@ -3773,9 +3773,9 @@ system Dschubba
 	fleet "Militia" 3000
 	fleet "Freelance Miners" 2000
 	belt 1429
-	minables aluminum 37 3.17333
-	minables iron 34 4.26089
-	minables silicon 59 3.44288
+	minables aluminum 37 1.5
+	minables iron 34 1.5
+	minables silicon 59 1.5
 	object
 		sprite star/k5
 		distance 18.9364
@@ -3837,7 +3837,7 @@ system Dubhe
 	fleet "Lionheart Shipping" 3000
 	fleet "Northern Union" 8000
 	belt 1120
-	minables silicon 14 3.5667
+	minables silicon 14 1.5
 	object
 		sprite star/m0
 		distance 42.6977
@@ -3885,7 +3885,7 @@ system Durax
 	fleet "Freelance Pirate" 900
 	fleet "Syndicated Transport" 2500
 	belt 1287
-	minables lead 9 12.9774
+	minables lead 9 1.5
 	object
 		sprite star/g0-old
 		period 10
@@ -3946,9 +3946,9 @@ system Eber
 	fleet "Militia" 4000
 	fleet "Southern Pirates" 2000
 	belt 1199
-	minables aluminum 1 3.67652
-	minables platinum 2 3.43245
-	minables uranium 4 2.53236
+	minables aluminum 1 1.5
+	minables platinum 2 1.5
+	minables uranium 4 1.5
 	object
 		sprite star/k5-old
 		period 10
@@ -4007,7 +4007,7 @@ system Elnath
 	fleet "Navy" 7000
 	fleet "Northern Union" 18000
 	belt 1462
-	minables iron 2 7.79782
+	minables iron 2 1.5
 	object
 		sprite star/f5
 		period 10
@@ -4063,9 +4063,9 @@ system Eltanin
 	fleet "Southern Logistics" 3000
 	fleet "Southern Pirates" 4000
 	belt 1859
-	minables iron 7 3.63992
-	minables silicon 1 5.00673
-	minables titanium 1 4.77008
+	minables iron 7 1.5
+	minables silicon 1 1.5
+	minables titanium 1 1.5
 	object
 		sprite star/k0
 		period 10
@@ -4158,9 +4158,9 @@ system Enif
 	fleet "Deep Security" 2800
 	fleet "Lionheart Shipping" 1500
 	belt 1974
-	minables neodymium 10 15.6333
-	minables silicon 2 10.2511
-	minables silver 1 13.4158
+	minables neodymium 10 1.5
+	minables silicon 2 1.5
+	minables silver 1 1.5
 	object
 		sprite star/g5
 		period 10
@@ -4244,7 +4244,7 @@ system "Epsilon Leonis"
 	fleet "Lionheart Shipping" 1600
 	fleet "Caravan" 8000
 	belt 1527
-	minables lead 15 3.56384
+	minables lead 15 1.5
 	object
 		sprite star/g0
 		distance 25.8286
@@ -4315,9 +4315,9 @@ system Eteron
 	fleet "Northern Union" 1000
 	fleet "Freelance Miners" 2000
 	belt 1479
-	minables aluminum 29 8.87071
-	minables copper 27 6.83551
-	minables iron 27 5.29693
+	minables aluminum 29 1.5
+	minables copper 27 1.5
+	minables iron 27 1.5
 	object
 		sprite star/m4
 		period 10
@@ -4374,9 +4374,9 @@ system Fala
 	fleet "Northern Union" 4000
 	fleet "Freelance Miners" 2000
 	belt 1264
-	minables copper 9 3.84288
-	minables lead 7 2.60722
-	minables titanium 22 3.57674
+	minables copper 9 1.5
+	minables lead 7 1.5
+	minables titanium 22 1.5
 	object
 		sprite star/g5-old
 		period 10
@@ -4427,8 +4427,8 @@ system Fingol
 	fleet "Northern Union" 2000
 	fleet "Freelance Miners" 3000
 	belt 1976
-	minables iron 6 5.99599
-	minables tungsten 9 6.24826
+	minables iron 6 1.5
+	minables tungsten 9 1.5
 	object
 		sprite star/m4
 		period 10
@@ -4479,8 +4479,8 @@ system Fomalhaut
 	fleet "Northstar Shipping" 1200
 	fleet "Syndicate" 5000
 	belt 1854
-	minables aluminum 2 7.99634
-	minables titanium 2 8.50151
+	minables aluminum 2 1.5
+	minables titanium 2 1.5
 	object
 		sprite star/k0
 		period 10
@@ -4538,7 +4538,7 @@ system Gacrux
 	fleet "Freelance Pirate" 3000
 	fleet "Navy" 15000
 	belt 1188
-	minables silicon 29 3.91092
+	minables silicon 29 1.5
 	object
 		sprite star/k5
 		distance 32.6953
@@ -4599,9 +4599,9 @@ system "Gamma Cassiopeiae"
 	fleet "Syndicated Transport" 5000
 	fleet "Freelance Miners" 2000
 	belt 1779
-	minables aluminum 2 6.56317
-	minables titanium 28 4.09147
-	minables tungsten 6 7.59246
+	minables aluminum 2 1.5
+	minables titanium 28 1.5
+	minables tungsten 6 1.5
 	object
 		sprite star/k0-old
 		period 10
@@ -4653,8 +4653,8 @@ system "Gamma Corvi"
 	fleet "Southern Pirates" 10000
 	fleet "Freelance Miners" 5000
 	belt 1556
-	minables lead 49 2.14521
-	minables neodymium 1 2.38531
+	minables lead 49 1.5
+	minables neodymium 1 1.5
 	object
 		sprite star/g0
 		distance 39.0165
@@ -4717,9 +4717,9 @@ system Gienah
 	fleet "Freelance Pirate" 800
 	fleet "Syndicated Transport" 5000
 	belt 1939
-	minables aluminum 1 1.81803
-	minables copper 12 1.48149
-	minables silver 59 2.13643
+	minables aluminum 1 1.5
+	minables copper 12 1.5
+	minables silver 59 1.5
 	object
 		sprite star/k5-old
 		distance 31.893
@@ -4778,8 +4778,8 @@ system Girtab
 	fleet "Southern Pirates" 2000
 	fleet "Freelance Pirate" 3000
 	belt 1387
-	minables copper 2 6.75977
-	minables silicon 2 6.67254
+	minables copper 2 1.5
+	minables silicon 2 1.5
 	object
 		sprite star/g0
 		period 10
@@ -4841,8 +4841,8 @@ system Gomeisa
 	fleet "Lionheart Shipping" 3000
 	fleet "Caravan" 7000
 	belt 1616
-	minables copper 1 7.47319
-	minables silicon 10 6.41048
+	minables copper 1 1.5
+	minables silicon 10 1.5
 	object
 		sprite star/k0
 		distance 55.5
@@ -4902,8 +4902,8 @@ system Gorvi
 	fleet "Northern Union" 1000
 	fleet "Northstar Shipping" 8000
 	belt 1345
-	minables iron 7 2.21226
-	minables lead 9 2.73021
+	minables iron 7 1.5
+	minables lead 9 1.5
 	object
 		sprite star/wr
 		period 100
@@ -4954,9 +4954,9 @@ system Graffias
 	fleet "Southern Pirates" 5000
 	fleet "Freelance Miners" 2000
 	belt 1977
-	minables aluminum 21 3.11152
-	minables iron 26 3.72119
-	minables lead 8 3.20431
+	minables aluminum 21 1.5
+	minables iron 26 1.5
+	minables lead 8 1.5
 	object
 		sprite star/k0
 		distance 59.5
@@ -5016,7 +5016,7 @@ system Hadar
 	fleet "Southern Pirates" 4000
 	fleet "Freelance Pirate" 9000
 	belt 1520
-	minables tungsten 4 7.5751
+	minables tungsten 4 1.5
 	object
 		sprite star/k0
 		period 10
@@ -5068,9 +5068,9 @@ system Hamal
 	fleet "Freelance Pirate" 8000
 	fleet "Syndicate" 4000
 	belt 1241
-	minables neodymium 2 5.99356
-	minables silicon 2 6.40469
-	minables tungsten 2 4.76706
+	minables neodymium 2 1.5
+	minables silicon 2 1.5
+	minables tungsten 2 1.5
 	object
 		sprite star/g0
 		period 10
@@ -5175,9 +5175,9 @@ system Hassaleh
 	fleet "Northern Union" 20000
 	fleet "Freelance Miners" 2000
 	belt 1924
-	minables copper 23 7.2985
-	minables gold 10 4.45585
-	minables silicon 21 7.82544
+	minables copper 23 1.5
+	minables gold 10 1.5
+	minables silicon 21 1.5
 	object
 		sprite star/k0
 		distance 36.1558
@@ -5227,9 +5227,9 @@ system Hatysa
 	fleet "Northern Union" 1000
 	fleet "Navy" 15000
 	belt 1163
-	minables copper 27 2.2074
-	minables iron 4 2.54657
-	minables neodymium 9 2.45903
+	minables copper 27 1.5
+	minables iron 4 1.5
+	minables neodymium 9 1.5
 	object
 		sprite star/k0
 		distance 13.6124
@@ -5334,7 +5334,7 @@ system Hintar
 	fleet "Militia" 5000
 	fleet "Southern Pirates" 2000
 	belt 1725
-	minables tungsten 10 3.44444
+	minables tungsten 10 1.5
 	object
 		sprite star/g5
 		period 10
@@ -5550,8 +5550,8 @@ system Izar
 	fleet "Southern Logistics" 1800
 	fleet "Militia" 800
 	belt 1449
-	minables gold 2 5.24464
-	minables lead 12 6.26729
+	minables gold 2 1.5
+	minables lead 12 1.5
 	object
 		sprite star/g0
 		distance 15.6511
@@ -5671,7 +5671,7 @@ system "Kaus Australis"
 	fleet "Southern Pirates" 4000
 	fleet "Freelance Pirate" 8000
 	belt 1281
-	minables silicon 9 6.69667
+	minables silicon 9 1.5
 	object
 		sprite star/k5
 		period 10
@@ -5817,9 +5817,9 @@ system Kornephoros
 	fleet "Militia" 2000
 	fleet "Freelance Miners" 3000
 	belt 1168
-	minables lead 48 18.1544
-	minables silicon 24 15.5119
-	minables silver 13 18.7077
+	minables lead 48 1.5
+	minables silicon 24 1.5
+	minables silver 13 1.5
 	object
 		sprite star/k0
 		distance 57.5
@@ -5886,9 +5886,9 @@ system Kraz
 	fleet "Southern Logistics" 2000
 	fleet "Militia" 800
 	belt 1056
-	minables lead 1 5.88229
-	minables silicon 3 7.06939
-	minables tungsten 4 9.05696
+	minables lead 1 1.5
+	minables silicon 3 1.5
+	minables tungsten 4 1.5
 	object
 		sprite star/g0
 		period 10
@@ -5948,8 +5948,8 @@ system Kugel
 	fleet "Freelance Pirate" 4000
 	fleet "Cartel" 4000
 	belt 1051
-	minables aluminum 10 5.68513
-	minables copper 5 3.58384
+	minables aluminum 10 1.5
+	minables copper 5 1.5
 	object
 		sprite star/g5
 		period 10
@@ -6068,8 +6068,8 @@ system Lesath
 	fleet "Freelance Pirate" 4000
 	fleet "Militia" 5000
 	belt 1865
-	minables silicon 3 10.2616
-	minables titanium 2 10.8766
+	minables silicon 3 1.5
+	minables titanium 2 1.5
 	object
 		sprite star/f5
 		period 10
@@ -6176,8 +6176,8 @@ system Lolami
 	fleet "Northern Union" 4000
 	fleet "Freelance Miners" 3000
 	belt 1072
-	minables silicon 40 3.12005
-	minables titanium 17 3.27761
+	minables silicon 40 1.5
+	minables titanium 17 1.5
 	object
 		sprite star/g0
 		distance 11
@@ -6235,8 +6235,8 @@ system Lurata
 	fleet "Militia" 9000
 	fleet "Freelance Pirate" 4000
 	belt 1151
-	minables aluminum 2 11.6169
-	minables lead 3 8.61211
+	minables aluminum 2 1.5
+	minables lead 3 1.5
 	object
 		sprite star/k0
 		period 10
@@ -6294,8 +6294,8 @@ system Markab
 	fleet "Syndicate" 600
 	fleet "Freelance Miners" 3000
 	belt 1411
-	minables copper 15 5.00264
-	minables iron 8 8.07455
+	minables copper 15 1.5
+	minables iron 8 1.5
 	object
 		sprite star/g5
 		period 10
@@ -6368,8 +6368,8 @@ system Markeb
 	fleet "Caravan" 4000
 	fleet "Northern Union" 5000
 	belt 1556
-	minables silicon 11 7.8218
-	minables tungsten 5 4.20964
+	minables silicon 11 1.5
+	minables tungsten 5 1.5
 	object
 		sprite star/k0
 		period 10
@@ -6480,8 +6480,8 @@ system Mebsuta
 	fleet "Northern Union" 8000
 	fleet "Navy" 12000
 	belt 1740
-	minables iron 2 5.38543
-	minables titanium 1 4.59937
+	minables iron 2 1.5
+	minables titanium 1 1.5
 	object
 		sprite star/k0
 		distance 37.1157
@@ -6553,8 +6553,8 @@ system Men
 	fleet "Freelance Pirate" 600
 	fleet "Militia" 2000
 	belt 1531
-	minables lead 9 4.54626
-	minables silver 10 5.20399
+	minables lead 9 1.5
+	minables silver 10 1.5
 	object
 		sprite star/k5-old
 		period 10
@@ -6614,9 +6614,9 @@ system Menkalinan
 	fleet "Freelance Merchant" 800
 	fleet "Navy" 700
 	belt 1424
-	minables lead 8 5.07694
-	minables neodymium 8 4.05165
-	minables silicon 8 3.41901
+	minables lead 8 1.5
+	minables neodymium 8 1.5
+	minables silicon 8 1.5
 	object
 		sprite star/f5-old
 		distance 58.5
@@ -6676,9 +6676,9 @@ system Menkar
 	fleet "Freelance Pirate" 4000
 	fleet "Freelance Miners" 2000
 	belt 1634
-	minables iron 59 10.091
-	minables silver 11 6.40238
-	minables titanium 5 8.21502
+	minables iron 59 1.5
+	minables silver 11 1.5
+	minables titanium 5 1.5
 	object
 		sprite star/k0
 		period 10
@@ -6732,9 +6732,9 @@ system Menkent
 	fleet "Navy" 3000
 	fleet "Freelance Miners" 2000
 	belt 1728
-	minables aluminum 4 1.98441
-	minables copper 4 2.84453
-	minables tungsten 31 2.94008
+	minables aluminum 4 1.5
+	minables copper 4 1.5
+	minables tungsten 31 1.5
 	object
 		sprite star/f5
 		distance 27.7778
@@ -6798,9 +6798,9 @@ system Merak
 	fleet "Southern Logistics" 2000
 	fleet "Freelance Merchant" 1500
 	belt 1769
-	minables copper 2 7.54582
-	minables lead 13 9.10563
-	minables tungsten 5 8.57967
+	minables copper 2 1.5
+	minables lead 13 1.5
+	minables tungsten 5 1.5
 	object
 		sprite star/g5
 		distance 40.2658
@@ -6855,7 +6855,7 @@ system Miaplacidus
 	fleet "Lionheart Shipping" 900
 	fleet "Navy" 1500
 	belt 1236
-	minables iron 19 4.58238
+	minables iron 19 1.5
 	object
 		sprite star/k0
 		period 10
@@ -6975,8 +6975,8 @@ system Mimosa
 	fleet "Militia" 2500
 	fleet "Freelance Pirate" 8000
 	belt 1484
-	minables aluminum 1 4.72132
-	minables neodymium 1 5.33208
+	minables aluminum 1 1.5
+	minables neodymium 1 1.5
 	object
 		sprite star/k5
 		period 10
@@ -7020,8 +7020,8 @@ system Minkar
 	fleet "Militia" 1500
 	fleet "Freelance Pirate" 12000
 	belt 1354
-	minables aluminum 2 13.3436
-	minables iron 4 12.6942
+	minables aluminum 2 1.5
+	minables iron 4 1.5
 	object
 		sprite star/k0-old
 		distance 33.5961
@@ -7080,9 +7080,9 @@ system Mintaka
 	fleet "Northstar Shipping" 4000
 	fleet "Freelance Miners" 2000
 	belt 1753
-	minables aluminum 11 9.8728
-	minables titanium 3 11.7992
-	minables uranium 9 6.96883
+	minables aluminum 11 1.5
+	minables titanium 3 1.5
+	minables uranium 9 1.5
 	object
 		sprite star/k0
 		distance 34.4496
@@ -7139,8 +7139,8 @@ system Mirach
 	fleet "Syndicate" 3000
 	fleet "Freelance Miners" 3000
 	belt 1980
-	minables lead 2 4.94454
-	minables titanium 21 4.54986
+	minables lead 2 1.5
+	minables titanium 21 1.5
 	object
 		sprite star/m0
 		distance 21.1004
@@ -7198,9 +7198,9 @@ system Mirfak
 	fleet "Northstar Shipping" 700
 	fleet "Syndicate" 1000
 	belt 1887
-	minables copper 1 7.03874
-	minables iron 3 4.97412
-	minables titanium 4 8.24243
+	minables copper 1 1.5
+	minables iron 3 1.5
+	minables titanium 4 1.5
 	object
 		sprite star/k5
 		period 10
@@ -7250,9 +7250,9 @@ system Mirzam
 	fleet "Freelance Pirate" 5000
 	fleet "Northern Union" 8000
 	belt 1025
-	minables iron 6 4.2336
-	minables silicon 24 7.53697
-	minables tungsten 2 5.97339
+	minables iron 6 1.5
+	minables silicon 24 1.5
+	minables tungsten 2 1.5
 	object
 		sprite star/g0
 		period 10
@@ -7358,9 +7358,9 @@ system Moktar
 	fleet "Cartel" 2000
 	fleet "Northern Union" 3000
 	belt 1888
-	minables aluminum 4 7.32905
-	minables lead 2 12.5577
-	minables silicon 2 12.0685
+	minables aluminum 4 1.5
+	minables lead 2 1.5
+	minables silicon 2 1.5
 	object
 		sprite star/k5
 		distance 29.0769
@@ -7421,9 +7421,9 @@ system Mora
 	fleet "Navy" 20000
 	fleet "Freelance Miners" 2000
 	belt 1176
-	minables iron 25 1.82412
-	minables silicon 11 1.71081
-	minables tungsten 10 2.90508
+	minables iron 25 1.5
+	minables silicon 11 1.5
+	minables tungsten 10 1.5
 	object
 		sprite star/k5
 		period 10
@@ -7521,7 +7521,7 @@ system Muphrid
 	fleet "Southern Pirates" 6000
 	fleet "Navy" 5000
 	belt 1759
-	minables tungsten 3 4.9859
+	minables tungsten 3 1.5
 	object
 		sprite star/g5-old
 		distance 21.8366
@@ -7635,9 +7635,9 @@ system Naos
 	fleet "Caravan" 2800
 	fleet "Freelance Miners" 2000
 	belt 1045
-	minables copper 21 5.05288
-	minables silicon 12 6.77871
-	minables titanium 35 4.05452
+	minables copper 21 1.5
+	minables silicon 12 1.5
+	minables titanium 35 1.5
 	object
 		sprite star/g5
 		period 10
@@ -7700,9 +7700,9 @@ system Naper
 	fleet "Southern Pirates" 1000
 	fleet "Freelance Miners" 3000
 	belt 1445
-	minables aluminum 23 3.46095
-	minables lead 1 2.32582
-	minables titanium 17 3.86804
+	minables aluminum 23 1.5
+	minables lead 1 1.5
+	minables titanium 17 1.5
 	object
 		sprite star/f5
 		period 10
@@ -7761,8 +7761,8 @@ system Nihal
 	fleet "Navy" 4000
 	fleet "Freelance Miners" 2000
 	belt 1329
-	minables silicon 58 4.73471
-	minables titanium 41 4.21739
+	minables silicon 58 1.5
+	minables titanium 41 1.5
 	object
 		sprite star/k5
 		distance 43.1257
@@ -7822,10 +7822,10 @@ system "GRO J1719-24"
 	trade Metal 390
 	trade Plastic 390
 	belt 1201
-	minables "engine part" 16 8.00281
-	minables "reactor part" 12 8.00281
-	minables "junk part" 13 8.00281
-	minables "weapon part" 11 8.00281
+	minables "engine part" 16 1.5
+	minables "reactor part" 12 1.5
+	minables "junk part" 13 1.5
+	minables "weapon part" 11 1.5
 	object
 		sprite star/black-hole-core-small
 		period 1
@@ -7859,9 +7859,9 @@ system Nocte
 	fleet "Northern Union" 2500
 	fleet "Freelance Miners" 1600
 	belt 1304
-	minables copper 46 2.98163
-	minables iron 18 3.78094
-	minables titanium 4 2.67322
+	minables copper 46 1.5
+	minables iron 18 1.5
+	minables titanium 4 1.5
 	object
 		sprite star/m4
 		period 10
@@ -7920,9 +7920,9 @@ system Nunki
 	fleet "Navy" 1600
 	fleet "Militia" 2000
 	belt 1930
-	minables iron 8 3.70445
-	minables titanium 7 3.31242
-	minables tungsten 23 3.33817
+	minables iron 8 1.5
+	minables titanium 7 1.5
+	minables tungsten 23 1.5
 	object
 		sprite star/m0
 		period 10
@@ -7985,9 +7985,9 @@ system Oblate
 	fleet "Freelance Pirate" 1000
 	fleet "Syndicated Transport" 3000
 	belt 1704
-	minables iron 4 3.88695
-	minables lead 1 3.86035
-	minables silicon 3 2.34276
+	minables iron 4 1.5
+	minables lead 1 1.5
+	minables silicon 3 1.5
 	object
 		sprite star/giant
 		period 10
@@ -8037,9 +8037,9 @@ system Orbona
 	fleet "Freelance Pirate" 3200
 	fleet "Freelance Miners" 1500
 	belt 1507
-	minables platinum 19 4.40315
-	minables tungsten 36 5.42935
-	minables gold 28 4.7943
+	minables platinum 19 1.5
+	minables tungsten 36 1.5
+	minables gold 28 1.5
 	object
 		sprite star/giant
 		distance 20.2539
@@ -8103,8 +8103,8 @@ system Orvala
 	fleet "Southern Pirates" 1000
 	fleet "Freelance Pirate" 3000
 	belt 1431
-	minables copper 4 2.00322
-	minables lead 13 1.96636
+	minables copper 4 1.5
+	minables lead 13 1.5
 	object
 		sprite star/k0
 		distance 14.9297
@@ -8170,9 +8170,9 @@ system Peacock
 	fleet "Freelance Pirate" 10000
 	fleet "Freelance Miners" 3000
 	belt 1870
-	minables lead 37 6.75228
-	minables silicon 17 6.12779
-	minables silver 3 6.88108
+	minables lead 37 1.5
+	minables silicon 17 1.5
+	minables silver 3 1.5
 	object
 		sprite star/m0
 		period 10
@@ -8239,9 +8239,9 @@ system Persian
 	fleet "Freelance Pirate" 2000
 	fleet "Freelance Miners" 3000
 	belt 1308
-	minables lead 6 12.3487
-	minables silicon 6 8.05034
-	minables tungsten 16 11.086
+	minables lead 6 1.5
+	minables silicon 6 1.5
+	minables tungsten 16 1.5
 	object
 		sprite star/f5-old
 		distance 27.8124
@@ -8301,8 +8301,8 @@ system Phact
 	fleet "Northern Union" 5000
 	fleet "Freelance Miners" 5000
 	belt 1704
-	minables silicon 6 3.177
-	minables titanium 15 2.18441
+	minables silicon 6 1.5
+	minables titanium 15 1.5
 	object
 		sprite star/g5
 		distance 47.0119
@@ -8366,9 +8366,9 @@ system Phecda
 	fleet "Southern Logistics" 1000
 	fleet "Freelance Miners" 2000
 	belt 1375
-	minables lead 41 5.68365
-	minables silicon 72 4.34737
-	minables titanium 39 5.28035
+	minables lead 41 1.5
+	minables silicon 72 1.5
+	minables titanium 39 1.5
 	object
 		sprite star/k5
 		period 10
@@ -8469,8 +8469,8 @@ system Phurad
 	fleet "Navy" 2000
 	fleet "Northern Union" 9000
 	belt 1881
-	minables aluminum 22 18.9577
-	minables lead 26 15.0139
+	minables aluminum 22 1.5
+	minables lead 26 1.5
 	object
 		sprite star/g0
 		period 10
@@ -8521,8 +8521,8 @@ system Polaris
 	fleet "Syndicate" 1000
 	fleet "Cartel" 1500
 	belt 1906
-	minables copper 1 6.73947
-	minables tungsten 1 5.76943
+	minables copper 1 1.5
+	minables tungsten 1 1.5
 	object
 		sprite star/k5
 		period 10
@@ -8621,9 +8621,9 @@ system Porrima
 	fleet "Navy" 8000
 	fleet "Southern Pirates" 6000
 	belt 1636
-	minables aluminum 4 6.34101
-	minables titanium 5 4.95139
-	minables tungsten 5 4.48244
+	minables aluminum 4 1.5
+	minables titanium 5 1.5
+	minables tungsten 5 1.5
 	object
 		sprite star/g5
 		distance 21.1382
@@ -8736,8 +8736,8 @@ system Procyon
 	fleet "Navy" 1500
 	fleet "Caravan" 5000
 	belt 1763
-	minables iron 1 5.11549
-	minables silicon 84 4.13794
+	minables iron 1 1.5
+	minables silicon 84 1.5
 	object
 		sprite star/k0
 		period 10
@@ -8779,7 +8779,7 @@ system "Pug Iyik"
 	trade Metal 414
 	trade Plastic 409
 	belt 1286
-	minables lead 7 14.3837
+	minables lead 7 1.5
 	object
 		sprite star/g5
 		period 10
@@ -8833,7 +8833,7 @@ system Rajak
 	fleet "Northstar Shipping" 4000
 	fleet "Northern Union" 10000
 	belt 1410
-	minables silicon 5 4.86566
+	minables silicon 5 1.5
 	object
 		sprite star/m8
 		period 10
@@ -8900,9 +8900,9 @@ system Rasalhague
 	fleet "Freelance Pirate" 8000
 	fleet "Caravan" 6000
 	belt 1282
-	minables aluminum 7 4.62949
-	minables iron 5 2.98954
-	minables silicon 10 3.19852
+	minables aluminum 7 1.5
+	minables iron 5 1.5
+	minables silicon 10 1.5
 	object
 		sprite star/k0
 		period 10
@@ -8956,9 +8956,9 @@ system Rastaban
 	fleet "Southern Pirates" 3000
 	fleet "Freelance Pirate" 5000
 	belt 1041
-	minables copper 8 9.86407
-	minables lead 8 12.0926
-	minables titanium 1 8.61575
+	minables copper 8 1.5
+	minables lead 8 1.5
+	minables titanium 1 1.5
 	object
 		sprite star/g0
 		period 10
@@ -9071,8 +9071,8 @@ system Regulus
 	fleet "Navy" 10000
 	fleet "Freelance Miners" 3000
 	belt 1605
-	minables copper 8 4.57124
-	minables lead 36 4.94873
+	minables copper 8 1.5
+	minables lead 36 1.5
 	object
 		sprite star/b5
 		period 10
@@ -9139,9 +9139,9 @@ system Rigel
 	fleet "Northern Union" 5000
 	fleet "Freelance Miners" 2000
 	belt 1782
-	minables copper 6 10.5446
-	minables neodymium 17 11.7377
-	minables tungsten 5 13.3277
+	minables copper 6 1.5
+	minables neodymium 17 1.5
+	minables tungsten 5 1.5
 	object
 		sprite star/g0
 		period 10
@@ -9210,7 +9210,7 @@ system Ruchbah
 	fleet "Cartel" 2000
 	fleet "Freelance Pirate" 3000
 	belt 1598
-	minables tungsten 3 6.27433
+	minables tungsten 3 1.5
 	object
 		sprite star/f0
 		period 10
@@ -9273,9 +9273,9 @@ system Rutilicus
 	fleet "Militia" 6000
 	fleet "Freelance Miners" 3000
 	belt 1771
-	minables copper 7 2.11726
-	minables lead 14 2.22127
-	minables titanium 9 1.47159
+	minables copper 7 1.5
+	minables lead 14 1.5
+	minables titanium 9 1.5
 	object
 		sprite star/g5
 		period 10
@@ -9335,8 +9335,8 @@ system Sabik
 	fleet "Southern Logistics" 900
 	fleet "Militia" 1200
 	belt 1609
-	minables aluminum 4 9.1736
-	minables iron 2 7.04854
+	minables aluminum 4 1.5
+	minables iron 2 1.5
 	object
 		sprite star/g5
 		period 10
@@ -9380,8 +9380,8 @@ system Sadalmelik
 	fleet "Deep Security" 2800
 	fleet "Lionheart Shipping" 1500
 	belt 1273
-	minables iron 19 3.67645
-	minables tungsten 3 4.93502
+	minables iron 19 1.5
+	minables tungsten 3 1.5
 	object
 		sprite star/f5
 		period 10
@@ -9493,9 +9493,9 @@ system Sadr
 	fleet "Freelance Pirate" 9000
 	fleet "Freelance Miners" 2000
 	belt 1388
-	minables aluminum 38 4.53472
-	minables iron 10 3.98726
-	minables titanium 23 7.41082
+	minables aluminum 38 1.5
+	minables iron 10 1.5
+	minables titanium 23 1.5
 	object
 		sprite star/a5
 		distance 5.86016
@@ -9771,7 +9771,7 @@ system Schedar
 	fleet "Cartel" 2000
 	fleet "Freelance Pirate" 3000
 	belt 1903
-	minables lead 2 2.57011
+	minables lead 2 1.5
 	object
 		sprite star/g0
 		period 10
@@ -9832,9 +9832,9 @@ system Seginus
 	fleet "Militia" 3000
 	fleet "Southern Pirates" 5000
 	belt 1906
-	minables lead 2 10.5813
-	minables silver 4 6.19901
-	minables titanium 2 6.63633
+	minables lead 2 1.5
+	minables silver 4 1.5
+	minables titanium 2 1.5
 	object
 		sprite star/m4
 		period 10
@@ -9892,8 +9892,8 @@ system Shaula
 	fleet "Freelance Pirate" 7000
 	fleet "Militia" 9000
 	belt 1814
-	minables platinum 9 4.50188
-	minables silver 18 4.95626
+	minables platinum 9 1.5
+	minables silver 18 1.5
 	object
 		sprite star/g5
 		period 10
@@ -10012,9 +10012,9 @@ system Sirius
 	fleet "Navy" 1000
 	fleet "Caravan" 5000
 	belt 1407
-	minables aluminum 2 14.6138
-	minables copper 2 9.02906
-	minables iron 2 10.911
+	minables aluminum 2 1.5
+	minables copper 2 1.5
+	minables iron 2 1.5
 	object
 		sprite star/f5
 		distance 3.94301
@@ -10075,7 +10075,7 @@ system Sol
 	fleet "Northstar Shipping" 2000
 	fleet "Caravan" 5000
 	belt 1529
-	minables iron 8 4.64499
+	minables iron 8 1.5
 	object
 		sprite star/g0
 		period 25.38
@@ -10144,9 +10144,9 @@ system Sospi
 	fleet "Navy" 5000
 	fleet "Freelance Miners" 5000
 	belt 1715
-	minables neodymium 1 4.20171
-	minables titanium 3 3.46551
-	minables uranium 5 3.96983
+	minables neodymium 1 1.5
+	minables titanium 3 1.5
+	minables uranium 5 1.5
 	object
 		sprite star/wr
 		period 100
@@ -10202,9 +10202,9 @@ system Spica
 	fleet "Southern Pirates" 6000
 	fleet "Freelance Pirate" 10000
 	belt 1940
-	minables lead 3 2.02632
-	minables silicon 9 1.95466
-	minables titanium 1 1.97538
+	minables lead 3 1.5
+	minables silicon 9 1.5
+	minables titanium 1 1.5
 	object
 		sprite star/g5
 		period 10
@@ -10257,9 +10257,9 @@ system Suhail
 	fleet "Caravan" 7000
 	fleet "Northern Union" 9000
 	belt 1715
-	minables iron 4 6.56789
-	minables silicon 2 8.63888
-	minables silver 2 4.52128
+	minables iron 4 1.5
+	minables silicon 2 1.5
+	minables silver 2 1.5
 	object
 		sprite star/f5
 		period 10
@@ -10375,8 +10375,8 @@ system Tais
 	fleet "Southern Pirates" 3000
 	fleet "Freelance Pirate" 7000
 	belt 1379
-	minables iron 2 10.9885
-	minables tungsten 2 9.2358
+	minables iron 2 1.5
+	minables tungsten 2 1.5
 	object
 		sprite star/a5
 		period 10
@@ -10428,9 +10428,9 @@ system Talita
 	fleet "Freelance Miners" 3000
 	fleet "Caravan" 5000
 	belt 1403
-	minables copper 7 3.2624
-	minables iron 4 2.47306
-	minables silicon 6 3.70162
+	minables copper 7 1.5
+	minables iron 4 1.5
+	minables silicon 6 1.5
 	object
 		sprite star/g0
 		distance 42.8886
@@ -10487,9 +10487,9 @@ system "Tania Australis"
 	fleet "Navy" 3000
 	fleet "Northern Union" 9000
 	belt 1738
-	minables aluminum 5 7.2906
-	minables silicon 3 8.93934
-	minables uranium 2 5.86496
+	minables aluminum 5 1.5
+	minables silicon 3 1.5
+	minables uranium 2 1.5
 	object
 		sprite star/g0-old
 		period 10
@@ -10614,9 +10614,9 @@ system Tejat
 	fleet "Lionheart Shipping" 1200
 	fleet "Navy" 2000
 	belt 1447
-	minables aluminum 2 6.59341
-	minables iron 9 6.73101
-	minables tungsten 3 7.11041
+	minables aluminum 2 1.5
+	minables iron 9 1.5
+	minables tungsten 3 1.5
 	object
 		sprite star/g0
 		distance 7.1843
@@ -10683,9 +10683,9 @@ system Terminus
 	fleet "Southern Pirates" 2000
 	fleet "Freelance Pirate" 5000
 	belt 1221
-	minables lead 9 5.03787
-	minables titanium 17 5.69095
-	minables tungsten 4 5.80964
+	minables lead 9 1.5
+	minables titanium 17 1.5
+	minables tungsten 4 1.5
 	object
 		sprite star/k5-old
 		period 10
@@ -10729,9 +10729,9 @@ system Tortor
 	fleet "Navy" 6000
 	fleet "Northstar Shipping" 200
 	belt 1243
-	minables iron 9 4.67607
-	minables lead 1 4.79499
-	minables silicon 1 3.75422
+	minables iron 9 1.5
+	minables lead 1 1.5
+	minables silicon 1 1.5
 	object
 		sprite star/k0
 		period 10
@@ -10796,9 +10796,9 @@ system Turais
 	fleet "Freelance Pirate" 7000
 	fleet "Freelance Miners" 2000
 	belt 1471
-	minables lead 10 6.91427
-	minables silver 12 7.75611
-	minables titanium 13 8.10341
+	minables lead 10 1.5
+	minables silver 12 1.5
+	minables titanium 13 1.5
 	object
 		sprite star/k5
 		period 10
@@ -10841,8 +10841,8 @@ system "Ultima Thule"
 	trade Metal 417
 	trade Plastic 360
 	belt 1635
-	minables iron 16 6.44991
-	minables neodymium 5 4.94979
+	minables iron 16 1.5
+	minables neodymium 5 1.5
 	object
 		sprite star/f0
 		period 10
@@ -10891,9 +10891,9 @@ system Umbral
 	fleet "Navy" 4000
 	fleet "Freelance Pirate" 6000
 	belt 1345
-	minables copper 1 7.12297
-	minables lead 5 8.07356
-	minables neodymium 1 10.103
+	minables copper 1 1.5
+	minables lead 5 1.5
+	minables neodymium 1 1.5
 	object
 		sprite star/k0-old
 		distance 31.3563
@@ -10965,8 +10965,8 @@ system Unagi
 	fleet "Northstar Shipping" 1500
 	fleet "Northern Union" 3000
 	belt 1960
-	minables gold 4 5.8391
-	minables tungsten 1 3.91882
+	minables gold 4 1.5
+	minables tungsten 1 1.5
 	object
 		sprite star/k5
 		period 10
@@ -11018,8 +11018,8 @@ system Unukalhai
 	fleet "Militia" 4000
 	fleet "Freelance Miners" 3000
 	belt 1968
-	minables neodymium 19 5.48915
-	minables silicon 70 6.48089
+	minables neodymium 19 1.5
+	minables silicon 70 1.5
 	object
 		sprite star/g5
 		period 10
@@ -11073,9 +11073,9 @@ system Vega
 	fleet "Navy" 1600
 	fleet "Freelance Miners" 5000
 	belt 1744
-	minables copper 8 8.28628
-	minables lead 4 7.71321
-	minables titanium 4 10.0815
+	minables copper 8 1.5
+	minables lead 4 1.5
+	minables titanium 4 1.5
 	object
 		sprite star/g0
 		distance 23.3143
@@ -11131,9 +11131,9 @@ system Vindemiatrix
 	fleet "Southern Pirates" 2000
 	fleet "Freelance Pirate" 4000
 	belt 1957
-	minables aluminum 13 5.95585
-	minables iron 2 7.3644
-	minables lead 3 7.31755
+	minables aluminum 13 1.5
+	minables iron 2 1.5
+	minables lead 3 1.5
 	object
 		sprite star/g0
 		period 10
@@ -11229,8 +11229,8 @@ system Wazn
 	fleet "Lionheart Shipping" 1800
 	fleet "Navy" 2000
 	belt 1414
-	minables iron 2 4.91227
-	minables silicon 4 2.82661
+	minables iron 2 1.5
+	minables silicon 4 1.5
 	object
 		sprite star/k5
 		distance 45.5327
@@ -11347,8 +11347,8 @@ system Wezen
 	fleet "Caravan" 5000
 	fleet "Northern Union" 8000
 	belt 1913
-	minables silicon 2 3.02054
-	minables titanium 19 2.21947
+	minables silicon 2 1.5
+	minables titanium 19 1.5
 	object
 		sprite star/f0
 		distance 11.8889
@@ -11494,9 +11494,9 @@ system "Yed Prior"
 	fleet "Militia" 3000
 	fleet "Freelance Miners" 1600
 	belt 1837
-	minables silver 8 4.49935
-	minables titanium 20 4.2915
-	minables tungsten 8 5.10857
+	minables silver 8 1.5
+	minables titanium 20 1.5
+	minables tungsten 8 1.5
 	object
 		sprite star/k0
 		period 10
@@ -11547,7 +11547,7 @@ system Zaurak
 	fleet "Freelance Pirate" 4000
 	fleet "Freelance Miners" 2000
 	belt 1130
-	minables iron 61 3.64072
+	minables iron 61 1.5
 	object
 		sprite star/g5
 		period 10
@@ -11596,7 +11596,7 @@ system "Zeta Aquilae"
 	fleet "Southern Pirates" 2000
 	fleet "Freelance Pirate" 5000
 	belt 1829
-	minables uranium 3 10.6251
+	minables uranium 3 1.5
 	object
 		sprite star/g0
 		distance 22.6286
@@ -11666,7 +11666,7 @@ system "Zeta Centauri"
 	fleet "Southern Pirates" 3000
 	fleet "Freelance Pirate" 5000
 	belt 1488
-	minables silicon 1 0.817645
+	minables silicon 1 1.5
 	object
 		sprite star/k0
 		period 10
@@ -11723,7 +11723,7 @@ system Zosma
 	fleet "Navy" 4000
 	fleet "Northern Union" 9000
 	belt 1436
-	minables iron 4 5.44731
+	minables iron 4 1.5
 	object
 		sprite star/k0
 		period 10
@@ -11776,8 +11776,8 @@ system Zubenelgenubi
 	fleet "Southern Pirates" 3000
 	fleet "Freelance Pirate" 5000
 	belt 1475
-	minables gold 1 9.77852
-	minables iron 3 10.6772
+	minables gold 1 1.5
+	minables iron 3 1.5
 	object
 		sprite star/g5
 		distance 32.8466
@@ -11838,9 +11838,9 @@ system Zubeneschamali
 	fleet "Freelance Pirate" 3000
 	fleet "Freelance Miners" 2000
 	belt 1543
-	minables neodymium 25 3.69745
-	minables silicon 28 4.05728
-	minables titanium 31 4.30615
+	minables neodymium 25 1.5
+	minables silicon 28 1.5
+	minables titanium 31 1.5
 	object
 		sprite star/g5
 		distance 62
