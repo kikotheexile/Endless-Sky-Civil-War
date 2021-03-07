@@ -4,8 +4,8 @@
 # This script automatically re-applies some modifications from ES Stories that need to be done on every merge from ES master.
 ES_MASTER=$1
 TMP_FILE="./see.txt"
-FILENAME_PATTERN_GREP="[./a-zA-Z0-9 ]+"
-FILENAME_PATTERN_SED="[./a-zA-Z0-9 ]\+"
+FILENAME_PATTERN_GREP="[-./a-zA-Z0-9 ]+"
+FILENAME_PATTERN_SED="[-./a-zA-Z0-9 ]\+"
 
 if [ "$1" == "" ]
 then
@@ -37,7 +37,6 @@ done
 
 echo ""
 echo "Resolve images and sounds using ours"
-echo "^CONFLICT (content): Merge conflict in ${FILENAME_PATTERN_GREP}.png$"
 cat "${TMP_FILE}" |\
 	grep -E \
 		-e "^CONFLICT \(content\): Merge conflict in ${FILENAME_PATTERN_GREP}.png$" |\
