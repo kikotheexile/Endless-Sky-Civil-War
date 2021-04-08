@@ -4599,7 +4599,7 @@ mission "FW Southern Battle 1B"
 	
 	npc accompany save
 		government "Free Worlds"
-		personality timid escort
+		personality timid disables escort
 		ship "Elpis" "F.S. Sequoia"
 		ship "Elpis" "F.S. Sitka"
 		ship "Elpis" "F.S. Rosewood"
