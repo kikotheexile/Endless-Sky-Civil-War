@@ -267,19 +267,20 @@ mission `Oathkeeper Escort`
 					goto damages
 				`	"Yeah, that's terrible, but what exactly does it have to do with my job?"`
 					goto job
-		label defenses
-		`	Nguyen gives a dramatic sigh. "We do, but it was a complete surprise. Something isn't quite right. Perhaps we'll be able to talk about that in more detail later, but for now I have something important for you to do."`
-			goto job
-		label damages
-		`	Nguyen raises an eyebrow, likely at your attitude toward the news. "Well, it's bad. Prime is the best source of ships this far north, so we need to get to repairing it immediately. Speaking of which..."`
-			goto job
-		label job
-		`	"Alright, there's a special branch of the Navy that does a lot of this kind of damage control work, the Humanitarian Corps. I need you to escort some behemoth to Prime. This is to get things back in working order as soon as possible. They'll meet with you when you're ready to take off. Got it?"`
-		choice
-			`	"Sure, it's something new."`
-			`	"Anything I can do to help."`
-			`	"As long as it pays."`
-		`	"I feel like I should mention something before you go," Nguyen adds, "It's not like we have just a huge stockpile of parts to repair shipyards and spacestations up here. So you'll be escorting some volunteers carrying what little we have, then heading to Valhalla to solicit help from the Deep. Good luck."`
+			label defenses
+			`	Nguyen gives a dramatic sigh. "We do, but it was a complete surprise. Something isn't quite right. Perhaps we'll be able to talk about that in more detail later, but for now I have something important for you to do."`
+				goto job
+			label damages
+			`	Nguyen raises an eyebrow, likely at your attitude toward the news. "Well, it's bad. Prime is the best source of ships this far north, so we need to get to repairing it immediately. Speaking of which..."`
+				goto job
+			label job
+			`	"Alright, there's a special branch of the Navy that does a lot of this kind of damage control work, the Humanitarian Corps. I need you to escort some behemoth to Prime. This is to get things back in working order as soon as possible. They'll meet with you when you're ready to take off. Got it?"`
+			choice
+				`	"Sure, it's something new."`
+				`	"Anything I can do to help."`
+				`	"As long as it pays."`
+			`	"I feel like I should mention something before you go," Nguyen adds, "It's not like we have just a huge stockpile of parts to repair shipyards and spacestations up here. So you'll be escorting some volunteers carrying what little we have, then heading to Valhalla to solicit help from the Deep. Good luck."`
+				accept
 	
 	npc accompany save
 		government "Merchant"
@@ -308,17 +309,17 @@ mission "Oathkeeper Escort 2"
 					goto Valhalla
 				`	"Yup, that's me, what's the business?"`
 					goto job
-				label Valhalla
-				`	"Yes. The shipyards here need repairs, and the Humanitarian Corps have mechanics and technicians, but not nearly enough parts."`
-					goto job
-				label job
-				`	"It's simple. You'll join an escort fleet, and bring the negotiation team to Valhalla to request assistance in the repairs on the Prime orbital shipyards, then escort the repair fleet back. Are you ready?"`
-				choice
-					`	"How big is this escort?"`
-						goto escort
-					`	"Sure am, show me the fleet."`
+			label Valhalla
+			`	"Yes. The shipyards here need repairs, and the Humanitarian Corps have mechanics and technicians, but not nearly enough parts."`
+				goto job
+			label job
+			`	"It's simple. You'll join an escort fleet, and bring the negotiation team to Valhalla to request assistance in the repairs on the Prime orbital shipyards, then escort the repair fleet back. Are you ready?"`
+			choice
+				`	"How big is this escort?"`
+					goto escort
+				`	"Sure am, show me the fleet."`
 					accept
-				label escort
+			label escort
 				`	"I believe it was a couple Navy destroyer-class ships, and Betelgeuse has donated some of their older model warships to the cause as well. It should be simple, really. Just watch for Northern Union raids."`
 				choice
 					`	"Alright then, I'll get ready."`
