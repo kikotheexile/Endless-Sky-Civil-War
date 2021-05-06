@@ -68,9 +68,9 @@ mission "Oathkeeper Scouting 1.1"
 	name `Retreat from Ada`
 	description `Escape the Northern Union fleet that followed you off of Ada, and retreat to Farpoint.`
 	to offer
-		has "Oathkeeper Scouting 1: complete"
+		has "Oathkeeper Scouting 1: done"
 	to fail
-		has "Oathkeeper Scouting 1.2: complete"
+		has "Oathkeeper Scouting 1.2: done"
 	source "Ada"
 	destination "Farpoint"
 	on offer
@@ -84,9 +84,9 @@ mission "Oathkeeper Scouting 1.2"
 	name `Defend Ada`
 	description `Destroy the raiding fleet attacking Ada and land on the planet to install the sensors for Mulgrew.`
 	to offer
-		has "Oathkeeper Scouting 1: complete"
+		has "Oathkeeper Scouting 1: done"
 	to fail
-		has "Oathkeeper Scouting 1.1: complete"
+		has "Oathkeeper Scouting 1.1: done"
 	source Ada
 	destination Ada
 	
@@ -107,8 +107,8 @@ mission "Oathkeeper Scouting 2"
 	description `After placing the sensors on Ada, Mulgrew has asked you to scout the Elnath system for any other raiders.`
 	to offer
 		or
-			has "Oathkeeper Scouting 1.1: complete"
-			has "Oathkeeper Scouting 1.2: complete"
+			has "Oathkeeper Scouting 1.1: done"
+			has "Oathkeeper Scouting 1.2: done"
 	source "Farpoint"
 	destination "Pilot"
 	
@@ -136,9 +136,9 @@ mission "Oathkeeper Scouting 2.1"
 	name `Report on Elnath's status`
 	description `Elnath has already been struck by the time you arrive. Retreat to Farpoint and report on the situation.`
 	to offer
-		has "Oathkeeper Scouting 2: complete"
+		has "Oathkeeper Scouting 2: done"
 	to fail
-		has "Oathkeeper Scouting 2.2: complete"
+		has "Oathkeeper Scouting 2.2: done"
 	source "Pilot"
 	destination "Farpoint"
 	on complete
@@ -151,9 +151,9 @@ mission "Oathkeeper Scouting 2.2"
 	name `Defend Elnath`
 	description `The Elnath system is being raided by the Northern Union. Clear the raiders from the system and land on Pilot.`
 	to offer
-		has "Oathkeeper Scouting 2: complete"
+		has "Oathkeeper Scouting 2: done"
 	to fail
-		has "Oathkeeper Scouting 2.1: complete"
+		has "Oathkeeper Scouting 2.1: done"
 	source "Pilot"
 	destination "Pilot"
 	on offer
@@ -176,8 +176,8 @@ mission "Oathkeeper Scouting 3"
 	description `Alnitak has been raided by the Northern Union! Clear them out.`
 	to offer
 		or
-			has "Oathkeeper Scouting 2.1: complete"
-			has "Oathkeeper Scouting 2.2: complete"
+			has "Oathkeeper Scouting 2.1: done"
+			has "Oathkeeper Scouting 2.2: done"
 	source "Farpoint"
 	destination "Farpoint"
 	
@@ -215,7 +215,7 @@ mission "Oathkeeper Scouting 3"
 mission "Oathkeeper Esort Intro"
 	name `Deliver a message to Farpoint`
 	to offer
-		has "Oathkeeper Scouting 3: complete"
+		has "Oathkeeper Scouting 3: done"
 	source "Maelstrom"
 	destination "Farpoint"
 	
@@ -253,7 +253,7 @@ mission "Oathkeeper Esort Intro"
 mission `Oathkeeper Escort`
 	name `Escort Humanitarian Corps to Betelgeuse`
 	to offer
-		has "Oathkeeper Escort Intro: complete"
+		has "Oathkeeper Escort Intro: done"
 	source "Farpoint"
 	destination "Prime"
 	
@@ -296,7 +296,7 @@ mission `Oathkeeper Escort`
 mission "Oathkeeper Escort 2"
 	name `Pick up repair teams from Valhalla`
 	to offer
-		has "Oathkeeper Escort: complete"
+		has "Oathkeeper Escort: done"
 	source "Prime"
 	destination "Valhalla"
 	
@@ -351,7 +351,7 @@ mission "Oathkeeper Escort 2"
 mission "Oathkeeper Escort 2.1"
 	name `Escort caravan fleet to Prime`
 	to offer
-		has "Oathkeeper Escort 2: complete"
+		has "Oathkeeper Escort 2: done"
 	origin "Valhalla"
 	destination "Prime"
 	
