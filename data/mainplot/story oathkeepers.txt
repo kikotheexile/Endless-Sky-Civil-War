@@ -45,7 +45,7 @@ mission "Oathkeeper Scouting 1"
 	name `Put surveillance equipment on Ada`
 	description `The Navy suspects the Northern Union will take advantage of the war with the Free Worlds to raid Ada. Mulgrew sent you to install bugs just in case.`
 	to offer
-		has "Oathkeeper Intro: complete"
+		has "Oathkeeper Intro: done"
 	source "Farpoint"
 	destination "Ada"
 	on offer
@@ -60,7 +60,7 @@ mission "Oathkeeper Scouting 1"
 			`	"We being the Navy? No, at least not yet. War does cost a lot, even up here. We've been containing the Northern Union for decades, and are currently unready to make a push. At least, not with so many gaps in our defense. Speaking of which, I'd like your help with that! Could you put some listening devices on Ada just in case the Northern Union raids them for weapons?"`
 			choice
 				`	"Yeah, load it up and I'll go."`
-				accept
+					accept
 	on complete
 		dialog `As you move to land on Ada to install the sensors, you find that several ships with Northern Union signals are already landed, and they're likely stealing from the weapons developers. It seems to be a relatively small raid, so with some skill you might be able to destroy it alone.`
 		
