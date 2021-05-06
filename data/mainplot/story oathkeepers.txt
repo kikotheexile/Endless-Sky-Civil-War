@@ -212,7 +212,7 @@ mission "Oathkeeper Scouting 3"
 		dialog `As you land after the space battle, Mulgrew contacts you and urges you to meet with her on Maelstrom immediately.`
 		"fought" ++
 		
-mission "Oathkeeper Esort Intro"
+mission "Oathkeeper Escort Intro"
 	name `Deliver a message to Farpoint`
 	to offer
 		has "Oathkeeper Scouting 3: done"
