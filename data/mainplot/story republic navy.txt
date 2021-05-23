@@ -26,9 +26,13 @@ mission "Republic Bounty 1"
 	on offer
 		conversation
 			`	"You look like you're looking for work," a man says in a surprisingly cheerful tone as you leave your ship. Unlike the Navy's blue uniforms, his uniform crisp and black with different Republic markings on it.` 
-			`	"We're in need of someone to deal with some pirates that have been causing trouble near Boral. Usually, we'd send the Navy, but today is your lucky day! So, how about it?"`
+			`	"We're in need of someone to deal with some pirates that have been causing trouble near Boral. Usually, we'd send the Navy, but today is your lucky day! We're offering you <payment> to do it instead. So, how about it?"`
 			choice
 				`	"Luck has nothing to do with it. Consider it done."`
+				`	"A job's a job, I'll kill this pirate for you."`
+				`	"I do like the amount of consecutive zeroes, I'm in."`
+				`	"I don't kill for money, goodbye."`
+					decline
 				`	"You must have mistaken me for a bounty hunter. I'm not interested."`
 					decline
 			`	"Much obliged," he says, "it's a ship called the <npc>. It's a tricky little devil, so don't let it take you off guard."`
@@ -156,9 +160,9 @@ mission "Republic Bounty 3"
 				`	"You have my attention."`
 				`	"Sorry, I have to see a man about a magic carpet."`
 					defer
-			`	"A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, they have made it clear they will kill the hostages if approached by one of our ships, we're calling her bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If she kills the hostages, she wont be able to blame the Republic for it."`
+			`	"A ship called the..." she trails off for a second, with a confused look on her face. "The... <npc>? Anyway this ship has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, they have made it clear they will kill the hostages if approached by one of our ships, we're calling her bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If she kills the hostages, she wont be able to blame the Republic for it."`
 			choice
-				`	"Don't worry, I majored in Crisis Aversion at University."`
+				`	"Don't worry, I majored in Crisis Aversion."`
 				`	"I'm in."`
 					accept
 				`	"I'm sorry, but that's definetly above my pay grade."`
@@ -206,9 +210,9 @@ mission "Republic Bounty 3 alt"
 					goto nightmares
 			label dinner
 			`	"Sadly no." She responds, "It's all business. Remember that conflict of interest thing."`
-			`	She straightens her jacket fixes her badge, "A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, you aren't an ordinary contractor." She says with a wink, "The captain of the <npc> has made it clear she will kill the hostages if approached by one of our ships, we're calling her bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If she kills the hostages, she wont be able to blame the Republic for it."`
+			`	She straightens her jacket fixes her badge, "A ship called <npc> has captured a number of wealthy merchants, and is demanding an unreasonable ransom. While this should not be a job for an ordinary contractor, you aren't an ordinary contractor." She says with a wink, "The captain of <npc> has made it clear she will kill the hostages if approached by one of our ships, we're calling her bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If she kills the hostages, she wont be able to blame the Republic for it."`
 			choice
-				`	"Don't worry, I majored in Crisis Aversion at University."`
+				`	"Don't worry, I majored in Crisis Aversion."`
 				`	"I'm in."`
 					accept
 				`	"I'm sorry, but that's definetly above my pay grade."`
@@ -221,7 +225,7 @@ mission "Republic Bounty 3 alt"
 			`	"I understand that more than you know, but please, hear me out. If this goes well, no one will die."`
 				goto continue
 			label continue
-			`	"A ship called the <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, you aren't an ordinary contractor." She pauses as if she said something wrong, then decides to move on. "The captain of the <npc> has made it clear she will kill the hostages if approached by one of our ships, we're calling her bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If she kills the hostages, she wont be able to blame the Republic for it."`
+			`	"A ship called <npc> has captured a number of wealthy merchants, and is demanding a ludicrous ransom. While this should not be a job for an ordinary contractor, you aren't an ordinary contractor." She pauses as if she said something wrong, then decides to move on. "The captain of <npc> has made it clear she will kill the hostages if approached by one of our ships, we're calling her bluff indirectly. Your mission will be to disable the ship and leave it to the Republic for further actions. If she kills the hostages, she wont be able to blame the Republic for it."`
 			choice
 				`	"Don't worry, I majored in Crisis Aversion at University."`
 				`	"I'm in."`
@@ -235,10 +239,10 @@ mission "Republic Bounty 3 alt"
 		government Bounty
 		system "Tais"
 		ship "Hauler (Brawler)" "The Brawler Hauler"
-		dialog `The <npc> has been disabled. You can claim the bounty payment by returning to <destination>.`
+		dialog `<npc> has been disabled. You can claim the bounty payment by returning to <destination>.`
 		
 	on complete
-		log "Hunted a pirate ship called the <npc>, which has captured multiple merchant captains, and disabled the ship at the Republic's request."
+		log "Hunted a pirate ship called <npc>, which has captured multiple merchant captains, and disabled the ship at the Republic's request."
 		"assisted republic" ++
 		payment 500000
 		dialog `"Everyone is home safe, thanks to you," Captain Shah informs you after you land. She takes you to a nearby restaurant as thanks: "The Republic owes you a debt of gratitude. <payment> have been transferred to your account, and I've informed my superiors of your excellent work today."`
@@ -264,7 +268,8 @@ mission "Navy Scouting 1"
 	on offer
 		conversation
 			`Another spaceport, another chance for adventure and glory. This time, however, you overhear a woman in a Navy uniform telling a rather bored-looking merchant about satellites in the empty systems to the north.`
-			`	"That sounds interesting," the merchant tells her, "but I've got a cargo bay full of medical supplies headed the other direction." The woman replies: "An important endeavour, I wish you safe travels."`
+			`	"That sounds interesting," the merchant tells her, "but I've got a cargo bay full of medical supplies headed the other direction."`
+			`	"An important endeavour," The woman replies, "I wish you safe travels."`
 			choice
 				`	(Ask her what's going on.)`
 				`	(Walk away.)`
@@ -309,7 +314,7 @@ mission "Navy Scouting 2"
 	on complete
 		payment 40000
 		dialog
-			`You transfer your sensor logs to Captain Mulgrew who thanks you for your work, as well as crediting <payment> to your account: "I'll let you know when scientific progress calls your name again," she says.`
+			`You transfer your sensor logs to Captain Mulgrew who thanks you for your work, as well as crediting <payment> to your account. "I'll let you know when scientific progress calls your name again," she says.`
 		log "People" "Captain Jane Melgrew" "A Navy captain charged with all manners of odd technological jobs, from diagnosing hyperspace network problems, to scouting uninhabited systems."
 	on decline
 		freelance ++
@@ -330,7 +335,7 @@ mission "Navy Scouting 3"
 	
 	on offer
 		conversation
-			`As you head back to your ship, you are accosted by an out-of-breath Captain Mulgrew: "Captain <last>," she shouts, "glad I caught you! I have another job, and this one I have to tell you in person.`
+			`As you head back to your ship, you are accosted by an out-of-breath Captain Mulgrew. "Captain <last>," she shouts, "glad I caught you! I have another job, and this one I have to tell you in person.`
 			choice
 				`	"What adventure awaits me today?"`
 				`	"Sorry, I've got an urgent appointment today."`
@@ -356,17 +361,18 @@ mission "Navy Scouting 3"
 		system
 			near "Yed Prior" 1 2
 		conversation
-			`As soon as you scan the <npc>, its captain hails you: "Excuse me, Captain," he says, "mind telling me why you felt the need to probe my ship?"`
+			`As soon as you scan the <npc>, its captain hails you.` 
+			`	"Excuse me, Captain," he says, "mind telling me why you felt the need to probe my ship?"`
 			choice
 				`	"Funny that you mention probing. With how powerful that ship looks, I thought it might be alien."`
 					goto alien
 				`	"I've dreamed of owning a ship so well-outfitted for years; I was just checking what went into the creation of such a beauty."`
 					goto equipment
 			label alien
-			`	"Alien, well maybe to someone flying a tub like yours," he says, chuckling: "No, I can assure you this is all standard human fare."`
+			`	"Alien, well maybe to someone flying a tub like yours," he says, chuckling. "No, I can assure you this is all standard human fare."`
 				goto close
 			label equipment
-			`	He looks awfully pleased with himself: "She is quite a dream. I would have never been able to afford anything like this without the Defense Pact's Thousand Eyes scouting program," he says, "She makes keeping pirates out of our territory as easy as running carpets to Longjump."`
+			`	He looks awfully pleased with himself. "She is quite a dream. I would have never been able to afford anything like this without the Defense Pact's Thousand Eyes scouting program," he says, "She makes keeping pirates out of our territory as easy as running carpets to Longjump."`
 				goto close
 			label close
 			`	He cuts the comlink, ending a potentially awkward conversation from continuing.`
