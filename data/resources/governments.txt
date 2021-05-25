@@ -39,6 +39,14 @@ government "YeeHaw"
 government "Uninhabited"	
 	color 0.5 0.5 0.5
 
+government "Derelict"
+	"player reputation" 1000
+	color 0.5 0.5 0.5
+
+government " Derelict "
+	"player reputation" -1000
+	color 0.5 0.5 0.5
+
 #Merchant Governments, Corporations, and Factions
 
 government "Freelance Merchants"
