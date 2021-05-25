@@ -33,30 +33,23 @@ mission "Northern Union Escort 1"
 			`As you are walking through the spaceport, a woman calls you over and asks, "Are you for hire?"`
 			choice
 				`	"I am."`
-					goto job
 				`	"That depends on the job."`
-					goto job
 				`	"Not right now, but perhaps later."`
 					defer
-			label job
 			`	"You'll love this, it's easy money." She says, "We need a fresh face to escort some perfectly legitimate businessmen into Syndicate space to purchase some Cruisers from them. The North is getting dangerous what with the Northern Union aggression and all." She winks and continues: "So, naturally, these captains need new escorts to protect their fleets."` 
 			choice
 				`	"I'll take the job."`
-					goto accept
 				`	"You had me at 'easy money.' I'm in."`
-					goto accept
 				`	"I'll need a better ship first."`
 					defer
 				`	"Maybe in the future."`
 					defer
-				
-			label accept
 			`	"Great," she says, "you'll be escorting six ships into Syndicate space. If they all make it there safely, you'll escort their shiny new Vanguards and Protectors back. Your payment will be four hundred thousand credits, paid in full upon completion."`
 				accept
 	
 	npc accompany save
 		personality escort timid
-		government Merchant
+		government "Northstar Shipping"
 		ship Bounder "Innocence"
 		ship Bounder "Princess Celestia"
 		ship Freighter "Icarus"
@@ -71,7 +64,6 @@ mission "Northern Union Escort 1"
 		freelance ++
 	on fail
 		freelance ++
-	
 	on visit
 		dialog "You have reached <planet>, but you left part of the convoy behind! Better depart and wait for them to arrive in this star system."
 		
@@ -89,7 +81,7 @@ mission "Northern Union Escort 1B"
 	
 	npc accompany save
 		personality escort timid
-		government Merchant
+		government "Northstar Shipping"
 		ship Bounder "Innocence"
 		ship Bounder "Princess Celestia"
 		ship Freighter "Icarus"
@@ -146,7 +138,7 @@ mission "Northern Union Escort 2"
 				
 	npc accompany save
 		personality escort timid
-		government Merchant
+		government "Northstar Shipping"
 		ship Bounder "Innocence"
 		ship Bounder "Princess Celestia"
 		ship Freighter "Icarus"
@@ -176,7 +168,7 @@ mission "Northern Union Escort 2B"
 
 	npc accompany save
 		personality escort timid
-		government Merchant
+		government "Northstar Shipping"
 		ship Bounder "Innocence"
 		ship Bounder "Princess Celestia"
 		ship Freighter "Icarus"
@@ -192,22 +184,23 @@ mission "Northern Union Escort 2B"
 
 	npc
 		personality plunders entering
-		government Pirate
-		fleet "Large Northern Pirates"
+		government "Freelance Pirates"
+		fleet "Cartel"
 	npc
 		personality plunders staying
-		government Pirate
-		fleet "Large Southern Pirates"
+		government "Freelance Pirates"
+		fleet "Southern Pirates"
 		system "Sheratan"
 	npc
 		personality plunders staying
-		government Pirate
-		fleet "Large Southern Pirates"
+		government "Freelance Pirates"
+		fleet "Southern Pirates"
 		system "Alcyone"
 	npc
 		personality plunders waiting
-		government Pirate
-		fleet "Large Southern Pirates" 2
+		government "Freelance Pirates"
+		fleet "Southern Pirates"
+		fleet "Cartel"
 		system "Endios"
 
 	on offer
@@ -258,8 +251,8 @@ mission "Northern Union Escort Finale"
 		personality plunders staying
 		government "Cartel"
 		system Aganippe
-		fleet "Small Core Pirates" 4
-		fleet "Large Core Pirates"
+		fleet "Cartel" 4
+		fleet "Southern Pirates"
 	
 	on offer
 		conversation
@@ -285,7 +278,7 @@ mission "Northern Union Escort Finale"
 	on complete
 		"reputation: Northern Union" += 10
 		"reputation: Cartel" -= 10
-		"reputation: Syndicate" -= 5
+		"reputation: Syndicate" -= 1
 		"assisted northern union" ++
 		payment 800000
 		dialog `Ruby contacts you soon after you land. "Very nicely done," she says, "not many merchants are willing to do this kind of heavy lifting. Your reward of <payment> has been transferred to your account, and I also put in a good word for you with the Northern Union's partnership committee.`
@@ -366,22 +359,22 @@ mission "Meeting an Alpha 1"
 			choice
 				`	(Join him and place an order.)`
 				`	(Leave.)`
-					decline
+					goto decline
 			`	"Good decision, joining me. My boss will be here any minute now."` 
 			
 			`Some time passes before eventually an incredibly tall, noseless man joins you. He looks almost exactly like the description of the augments known as Alphas from centuries ago.`
 			``
-			`	"Boss, I've brought you a tribute!" Peg shouts, as you feel a hard, cold object press against the side of your skull. Before you even get a chance to react, you feel something warm splattering on your cheek. You look over to see Peg dying, with some sort of metal spike sticking out of his forehead.`
-			`	"I would apologize for the mess," the towering beast drones, "but considering I just saved your life from my incompetent underling, I'll assume you've already forgiven me." He gives off a strange huffing sound that almost seems like a chuckle, and continues: "Please, stay. I sense you aren't as useless as the deflating mess next to you."`
+			`	"Boss, I've brought you a tribute!" Peg shouts, as you feel a hard, cold object press against the side of your head. Before you even get a chance to react, you feel something warm splattering on your cheek. You look over to see Peg dying, with some sort of metal spike sticking out of his forehead.`
+			`	"I would apologize for the mess," the towering beast drones, "but considering I just saved your life from my incompetent underling, I'll assume you've already forgiven me." He gives off a strange huffing sound that almost seems like a chuckle, and continues: "Please, stay. I sense you aren't as useless and moronic as the deflating mess next to you."`
 
 			choice
 				`	(Run for your life!)`
-					decline
+					goto decline
 				`	(Remain silent but stay.)`
 				`	(Stare blankly at the creature.)`
 					goto stare
 				`	"Well, there's blood in my food anyway."`
-			`	"See, you're already better at following kindly worded directives than Peg. Now, before we begin, you must have questions for me."`
+			`	"See, you're already better at following kindly worded directives than my former stooge, Peg. Now, before we begin, you must have questions for me."`
 
 			choice
 				`	"What the hell are you?"`
@@ -390,7 +383,8 @@ mission "Meeting an Alpha 1"
 					goto work
 				`	"Am I free to leave without getting a spike lodged into my body?"`
 					goto leave
-			
+				`	"Peg mentioned tribute?"`
+					goto tribute
 			label leave
 			`	"Go now in peace, and in one piece." The creature gestures towards the door. You follow its directive, and return to your ship.`
 				decline 
@@ -398,7 +392,10 @@ mission "Meeting an Alpha 1"
 			label stare
 			`	If this were a staring contest, you would have lost several times over. After an uncomfortable silence, the towering being leaves you in peace. Eventually, you leave the cafe and return to your ship.`
 				decline 
-			
+			label tribute
+			`	"Peg seemed to have believed that bringing me some..." The beast motions vaguely towards you, "Whatever you are, would land him back in my good graces after his recent string of failures. He never really did wrap his head around the fact that I dispise slavery and don't murder for sport."
+			`	The towering figure leans towards you, "Now, enough talk. I have a job for you."
+				goto work
 			label alpha
 			`	"Not human." The creature makes that strange chuckling sound again, and says: "I'm a genetically modified life form, similar to human augments, but not quite. I am specifically of the species known as Alphas."`
 			`"Do you have any other questions? Before you say it, yes I am an Alpha, and I promised myself the next person to say, 'Wait, you're an Alpha?' would die slowly by my hand."`
@@ -455,14 +452,16 @@ mission "Meeting an Alpha 1"
 					accept
 				`	"Sorry, but I can't make money when I'm dead."`
 					decline
-				`	"Scan a battlecruiser? Do you think I'm suicidal?"`
-					decline
-	
+				`	"Scan a battlecruiser? Like, the big ones? With all those guns? Do you think I'm suicidal? Pass."`
+					goto decline
+			label decline
+			`	You return to your ship, unharmed.`
+				decline
 	on accept
 		log "Volunteered to scan the Star Blade, one of the largest vessels in human space."
 		
 	npc "scan outfits"
-		government Betelgeuse
+		government "Betelgeuse"
 		personality staying uninterested
 		ship Veles "Star Blade"
 		system "Betelgeuse"
@@ -571,7 +570,7 @@ mission "Meeting an Alpha 2"
 
 	on complete
 		"reputation: Northern Union" += 10
-		"reputation: Syndicate" -= 5
+		"reputation: Syndicate" -= 1
 		conversation
 			`	As you arrive in orbit above <destination>, Dylan presents you with a box. Inside it is a plasma pistol with "Lucky" scratched on the side.`
 			`	In her ever aggressive voice, Dylan says: "My master believes this gun will be of use to you on this quest. Meet me near the landing pad closest to the outfitter as soon as you make yourself inconspicuous. Now, go!"`
@@ -650,7 +649,7 @@ mission "Meeting an Alpha 3"
 
 	on complete
 		"reputation: Northern Union" += 10
-		"reputation: Republic" -= 2
+		"reputation: Republic" -= 1
 		"reputation: Syndicate" -= 2
 		"assisted northern union" ++
 		payment 100000
@@ -692,7 +691,7 @@ mission "NU Bounty 1"
 				`	"I'm in."`
 					accept
 				`	"I'm in, but I need more details."`
-					goto acceptA
+					goto accept
 				`	"Not interested."`
 					decline
 					
@@ -702,7 +701,7 @@ mission "NU Bounty 1"
 				`	"I'm in."`
 					accept
 				`	"I'm in, but I need more details."`
-					goto acceptA
+					goto accept
 				`	"Not interested."`
 					decline
 					
@@ -712,10 +711,10 @@ mission "NU Bounty 1"
 				`	"I'm in."`
 					accept
 				`	"I'm in, but I need more details."`
-					goto acceptA
+					goto accept
 				`	"Not interested."`
 					decline
-			label acceptA
+			label accept
 			`	"Fantastic!" he shouts: "The NPC is an absolutely menacing Headhunter, which is stranded in Rajak. They should be just about done with repairs by the time we arrive."`
 				accept
 	on accept
@@ -723,7 +722,7 @@ mission "NU Bounty 1"
 	
 	npc kill
 		personality heroic staying nemesis target
-		government Bounty
+		government "Bounty"
 		system Rajak
 		ship "Headhunter" "Rubber Ducky"
 		dialog `The <npc> has been eliminated. You can claim the bounty payment by returning to <destination>.`
@@ -881,7 +880,7 @@ mission "NU Bounty 2B"
 				accept
 	
 	npc kill
-		government "Pirate"
+		government "Bounty"
 		personality staying plunders disables
 		system "Volax"
 		ship "Firebird" "Can Nibble"
@@ -938,7 +937,7 @@ mission "NU Bounty 3"
 	
 	npc save disable
 		personality disables staying heroic
-		government "Test Dummy"
+		government "Bounty"
 		ship "Bakunawa" "Bakunawa"
 
 	on complete
@@ -1097,9 +1096,6 @@ mission "NU Marina 2B"
 				`	"Big Randy, Marina sent me to come get you."`
 					goto marina
 				`	"How on earth are you doing that?"`
-					goto dumb
-
-			label dumb
 			`	The man turns around. "This is a low gravity world, I am from a high gravity world. Things weigh next to nothing here. It's really not that complicated. By the way, I don't think we've met, I'm Big Randy."`
 				goto name
 				
@@ -1704,7 +1700,7 @@ mission "NU Raiding 4"
 					accept
 
 	npc kill
-		government Republic
+		government "Republic Navy"
 		personality waiting heroic
 		ship "Achlys" "R.N.S. Avenger"
 		ship "Narcissus" "R.N.S. Paladin"
