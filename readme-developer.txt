@@ -71,11 +71,30 @@ To build Endless Sky, you will first need to download Xcode from the App Store.
 
 Next, install Homebrew (from http://brew.sh).
 
+ARM Processors:
+
+  If you have an ARM processor, such as the Apple M1, you will need to install an x86_64 version of Homebrew. You can do this by running the normal install command through an `arch` terminal:
+
+  $ arch -x86_64 zsh
+
+  You may find it useful to define an alias that you can use to interact with your x86_64 homebrew:
+
+  alias brex="arch -x86_64 /usr/local/Homebrew/bin/brew"
+
+  Use this alias instead of `brew` in any subsequent homebrew commands.
+
+  Before continuing, make sure that your x86_64 Homebrew install is prefixed to `/usr/local`:
+
+  $ brex --prefix
+  /usr/local
+
 Once Homebrew is installed, use it to install the libraries you will need:
-$ brew install libpng
-$ brew install libjpeg-turbo
-$ brew install libmad
-$ brew install sdl2
+
+  $ brew install pango cairo libpng libjpeg-turbo libmad sdl2
+
+ARM version:
+
+  $ brex install pango cairo libpng libjpg-turbo libmad sdl2
 
 If the versions of those libraries are different from the ones that the Xcode project is set up for, you will need to modify the file paths in the “Frameworks” section in Xcode.
 
