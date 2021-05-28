@@ -2188,7 +2188,7 @@ system Ankaa
 
 system Antares
 	pos -711 541
-	government Pirate
+	government "Southern Pirates"
 	music ambient/humangeneric
 	habitable 455.625
 	link Alniyat
@@ -3867,7 +3867,7 @@ system Dubhe
 
 system Durax
 	pos -59 -90
-	government Pirate
+	government Neutral
 	music ambient/humangeneric
 	habitable 1080
 	link Alcyone
@@ -6535,7 +6535,7 @@ system Mebsuta
 
 system Men
 	pos -888 361
-	government Pirate
+	government "Southern Pirates"
 	music ambient/humangeneric
 	habitable 320
 	link "Beta Lupi"
@@ -7901,7 +7901,7 @@ system Nocte
 
 system Nunki
 	pos -393 537
-	government Pirate
+	government "Freelance Pirates"
 	music ambient/humangeneric
 	habitable 214.375
 	link Albaldah
@@ -7966,7 +7966,7 @@ system Nunki
 
 system Oblate
 	pos -124 -119
-	government Pirate
+	government Neutral
 	music ambient/humangeneric
 	habitable 12000
 	link Alcyone
@@ -9874,7 +9874,7 @@ system Seginus
 
 system Shaula
 	pos -460 527
-	government Pirate
+	government "Southern Pirates"
 	music ambient/humangeneric
 	habitable 625
 	link Lesath
