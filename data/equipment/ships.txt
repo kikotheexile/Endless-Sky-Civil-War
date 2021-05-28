@@ -942,7 +942,7 @@ ship "Flivver"
 	thumbnail "thumbnail/flivver"
 	attributes
 		category "Gunship"
-		"cost" 180000
+		"cost" 160000
 		"landing gear" 1
 		"shields" 1400
 		"hull" 200
@@ -1214,7 +1214,7 @@ ship "Mason"
 	thumbnail "thumbnail/earth shaper"
 	attributes
 		category "Freighter"
-		"cost" 500000
+		"cost" 52000
 		"hull" 3300
 		"mass" 30
 		"required crew" 1
