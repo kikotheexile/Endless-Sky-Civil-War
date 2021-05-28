@@ -527,7 +527,7 @@ outfit "AR120 Reverse Thruster"
 	
 outfit "Small Biochemical Cell"
 	category "Power"
-	cost 230000
+	cost 55000
 	thumbnail "outfit/small biochemical"
 	"mass" 17
 	"outfit space" -17
