@@ -130,6 +130,7 @@ government "Tarazed"
 
 #Pirate Governments
 government "Freelance Pirates"
+	"display name" "Pirate (Unaffiliated)"
 	color .78 0 0
 	"player reputation" 1
 	"attitude toward"
@@ -146,6 +147,7 @@ government "Freelance Pirates"
 	raid "pirate raid"
 
 government "Southern Pirates"
+	"display name" "Pirate (South)"
 	color .78 0 0
 	"player reputation" 1
 	"attitude toward"
