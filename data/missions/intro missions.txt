@@ -726,12 +726,12 @@ mission "Intro [1 Interceptor]"
 		not "Intro [1 Transport]: offered"
 		not "Intro [1 Freighter]: offered"
 	npc save
-		government Merchant
+		government "Freelance Merchant"
 		personality timid escort
 		ship "Freighter" "Horn of Plenty"
 		ship "Freighter" "Morning Light"
 	npc
-		government Pirate
+		government "Freelance Pirate"
 		personality entering plunders
 		ship "Sparrow" "Bloodletter"
 		ship "Fury" "Hand of Fate"
@@ -745,6 +745,8 @@ mission "Intro [1 Interceptor]"
 					decline
 			`	"Great," he says. Whenever we're ready to leave the planet, they'll take off behind us and follow us to <planet>." As you begin walking away together, he adds in a quieter voice, "Normally a fresh pilot like you with no combat reputation would never be offered a mission like this, but they are desperate. Really, jobs like this are just about target saturation, so its hard mess things up. Remember that we don't have to kill the pirates, all we have to do is make sure the convoy isn't destroyed. You can take a few hits for the freighter if you need to, but its good to realize that guns don't work in hyperspace, and we can repair our ships on just about any planet."`
 				accept
+	on accept
+		"reputation: Freelance Pirate" -= 10
 	
 	on complete
 		payment 30000
@@ -762,13 +764,13 @@ mission "Intro [2 Interceptor]"
 	description "Deliver <commodity> to <destination>, while avoiding pirate attacks."
 	blocked `When you meet up with James in the spaceport, he says, "Hi there, <first>! I found you another mission, but it looks like you'll need <capacity> in order to take it on. So, you'll either have to cancel another mission, or come back here later to continue this one. Sorry!"`
 	passengers 1
-	cargo gemstones 15
+	cargo "Luxury Gems" 1
 	source "Gemstone"
 	destination "Ingot"
 	to offer
 		has "Intro [1 Interceptor]: done"
 	npc
-		government Pirate
+		government "Freelance Pirate"
 		personality entering plunders
 		ship "Bastion" "Hammer of Thor"
 	
@@ -777,8 +779,8 @@ mission "Intro [2 Interceptor]"
 			`You find James in the spaceport bar, talking with a woman wearing a business suit. The expression on James's face is growing increasingly concerned as she speaks. Seeing you come in, he waves to you and you join them at the table.`
 			`	"Hello <first>," says James. "This is Marissa, a senior manager at the mines." She shakes your hand.`
 			`	"Here's the deal,"  Marissa begins, without so much as saying hello. "Most of the gemstones we mine here are industrial grade, not pretty enough to be worth using as anything but sandpaper grit or drill bits. But every once in a while we happen on some higher quality gems. No one in this sector has the money to spend on jewelry, so we ship them north to the paradise worlds."`
-			`	"And this is where the problem begins," James interrupts. Marissa shoots him a brief glare, then continues."`
-			`	"Yes, in the past few months every shipment we've sent has been attacked by a pirate ship. The same ship. A bastion by the name of 'Hammer of Thor.' We can't justify the expense to pay a bounty hunter to take out the pirate, so instead we're going to pay you to outrun it. I assume the <ship> is faster than a Bastion?"`
+			`	"And this is where the problem begins," James interrupts. Marissa shoots him a brief glare, then continues.`
+			`	"Yes, in the past few months every shipment we've sent has been attacked by a pirate ship. The same ship. A bastion by the name of 'Hammer of Thor.' We can't justify the expense to pay a bounty hunter to take out the bastard, so instead we're going to pay you to outrun him. I assume the <ship> is faster than a Bastion?"`
 			choice
 				`	"As fast as they come. Not much could chase it down."`
 				`	"Not fast enough. I don't think I can risk taking on this mission."`
@@ -848,7 +850,7 @@ mission "Intro [3 Interceptor]"
 
 
 conversation "end of intro missions"
-	`	As you are piloting your ship down to land on <planet>, James disappears into his bunk room. After the ship has landed he comes out, no longer in the grease-stained coveralls he's been wearing up until now, but in a suit. As a lifelong textile worker, you automatically note that the suit is made of real wool, very finely woven, and that it has been tailored to fit him. He smooths down the front of the suit distractedly and then looks at his hands as if unsure of where to put them. "How do I look?" he asks.`
+	`	As you are piloting your ship down to land on <planet>, James disappears into his bunk room. After the ship has landed he comes out, no longer in the grease-stained coveralls he's been wearing up until now, but in a suit. It's easy to tell that the suit is made of real wool, very finely woven, and that it has been tailored to fit him. He smooths down the front of the suit distractedly and then looks at his hands as if unsure of where to put them. "How do I look?" he asks.`
 	choice
 		`	"Like a millionaire."`
 			goto millionaire
