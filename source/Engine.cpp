@@ -713,7 +713,6 @@ void Engine::Step(bool isActive)
 		else
 			info.SetString("target government", target->GetGovernment()->GetName());
 		targetSwizzle = target->GetSwizzle();
-		targetFlag = target->GetSwizzle();
 		info.SetString("mission target", target->GetPersonality().IsTarget() ? "(mission target)" : "");
 		
 		int targetType = RadarType(*target, step);
@@ -981,15 +980,18 @@ void Engine::Draw() const
 		for(int i = 0; i < 2; ++i)
 			SpriteShader::Draw(mark[i], center + Point(dx[i], 0.), 1., targetSwizzle);
 	}
-	// Draw the faction flags.
-	if(targetFlag >= 0 && interface->HasPoint("faction flag"))
+	
+	// Draw the faction flag.
+	if(targetSwizzle >= 0 && interface->HasPoint("faction flag"))
 	{
-		Point center = interface->GetPoint("faction flag");
-
-		const Sprite *mark[1] = {SpriteSet::Get("flags/"+info.GetString("target government").first)};
-		for(int i = 0; i < 2; ++i)
-			SpriteShader::Draw(mark[i], center + Point(0, 0), 1., targetSwizzle);
+		SpriteShader::Draw(
+			SpriteSet::Get("flags/"+info.GetString("target government").first),
+			interface->GetPoint("faction flag") + Point(0, 0),
+			1.,
+			targetSwizzle
+		);
 	}
+	
 	if(jumpCount && Preferences::Has("Show mini-map"))
 		MapPanel::DrawMiniMap(player, .5f * min(1.f, jumpCount / 30.f), jumpInProgress, step);
 	
