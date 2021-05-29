@@ -393,8 +393,8 @@ mission "Meeting an Alpha 1"
 			`	If this were a staring contest, you would have lost several times over. After an uncomfortable silence, the towering being leaves you in peace. Eventually, you leave the cafe and return to your ship.`
 				decline 
 			label tribute
-			`	"Peg seemed to have believed that bringing me some..." The beast motions vaguely towards you, "Whatever you are, would land him back in my good graces after his recent string of failures. He never really did wrap his head around the fact that I dispise slavery and don't murder for sport."
-			`	The towering figure leans towards you, "Now, enough talk. I have a job for you."
+			`	"Peg seemed to have believed that bringing me some..." The beast motions vaguely towards you, "Whatever you are, would land him back in my good graces after his recent string of failures. He never really did wrap his head around the fact that I dispise slavery and don't murder for sport."`
+			`	The towering figure leans towards you, "Now, enough talk. I have a job for you."`
 				goto work
 			label alpha
 			`	"Not human." The creature makes that strange chuckling sound again, and says: "I'm a genetically modified life form, similar to human augments, but not quite. I am specifically of the species known as Alphas."`
@@ -1428,7 +1428,7 @@ mission "NU Raiding 1"
 			choice
 				`	"I'm in."`
 					goto accept
-				`	"I'm no thief. Bye."
+				`	"I'm no thief. Bye."`
 					goto leave
 				`	"Do I at least get a briefing?"`
 					goto briefing
