@@ -986,7 +986,7 @@ void Engine::Draw() const
 	{
 		SpriteShader::Draw(
 			SpriteSet::Get("flags/"+info.GetString("target government").first),
-			interface->GetPoint("faction flag") + Point(0, 0),
+			interface->GetPoint("faction flag"),
 			1.,
 			targetSwizzle
 		);
