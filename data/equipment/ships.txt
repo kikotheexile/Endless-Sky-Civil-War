@@ -983,7 +983,7 @@ ship "Flivver"
 	leak "leak" 60 50
 	explode "tiny explosion" 10
 	explode "small explosion" 10
-	description "With space for not cargo nor passengers nor heavy weaponry, the Flivver's only selling point is speed. Flivvers are sold mostly to wealthy individuals who want to be able to travel the stars without needing to share a bunk room on a merchant transport with common people."
+	description "Lacking space for cargo, passengers, or even heavy weaponry, the Flivver's only selling point is speed. Most Flivvers are sold to wealthy individuals who want to be able to travel the stars, without needing to share a bunk on a merchant transport with common people."
 
 ship "Fury"
 	plural "Furies"
