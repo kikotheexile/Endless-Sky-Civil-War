@@ -329,7 +329,7 @@ mission "Meeting an Alpha 0"
 		payment
 		conversation
 			`The warlord thanks you for the ride and pays you <payment>. As he is leaving he says: "If you're interested in meeting my boss, head to a shop called "The Rusted Wheel" and find my commander. He's impossible to miss, though try not to stare."`
-			`	Upon returning to your ship, you find communicator lying on the floor of your cargo bay. Upon checking its, you find out it belongs to Peg, and it's full of information that could be useful to the Republic. Maybe they'll pay you for it?`
+			`	Upon returning to your ship, you find a communicator lying on the floor of your cargo bay. Upon checking its, you find out it belongs to Peg, and it's full of information that could be useful to the Republic. Maybe they'll pay you for it?`
 
 	on decline
 		freelance ++
