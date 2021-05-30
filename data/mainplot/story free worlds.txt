@@ -726,7 +726,7 @@ mission "FW Katya 1C"
 					goto greedy
 				`	"I'm of a mind to report this violation of my privacy! Let me speak to your supervisor!"`
 					goto karen
-				`	"Since when has the Republic gotten so heavy handed about searching civilian ships?"`
+				`	"About time! I don't have so much as a parking violation. Since when has the Republic gotten so heavy-handed about searching civilian ships?"`
 					goto angry
 				`	"I'm just happy you didn't shoot me."`
 					goto shoot
