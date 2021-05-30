@@ -315,7 +315,9 @@ mission "A pirate's life!"
 			`The Quarg seem to be revolted by the Wanderers for unknown reasons, but have disclosed that they consider the species to be "Tier Two" and that the two species are very unlikely to go to war.`
 
 		conversation
-			`The <npc> has landed next to you! With his reputation, this bounty hunter has likely been on your trail for weeks now. The Vanguard is slow and easy enough to avoid, but having a hostile Cruiser chasing you will make paying off this loan considerably more difficult.`
+			`As you finalise your landing and make your way toward the bar, you hear the sound of a heavy warship entering the upper atmosphere. Glancing upward, you notice with some alarm that it bears the insignia of the <npc> - a bounty hunter that has been pursuing you for the last several weeks. You had hoped that buying a completely new ship would allow you a fresh start, but that clearly hasn't worked.`
+			`Hiding behind a cargo crate, you watch as it comes in to land. It's a Vanguard, one of the newer designs with several forward gun ports. Next to it, your ship looks like a small child. Luckily, its crew seem to be keeping their distance. You remember hearing once that most bounty hunters prefer not to attack their targets while in port. It creates problems for them with the local law enforcement, and having to pay fines for collateral damage is bad for business.`
+			`Space is a different story. Once you leave the planet, you're going to have a big problem on your hands. Fortunately, your small ship should be a lot faster than theirs, and you can take off a lot more quickly. By the time they clear the atmosphere, you might be able to outrange their guns and jump to hyperspace. Rushing to discreetly carry out your business, you recall that the <npc> has a reputation for never abandoning a job once they've accepted it. Paying off your new mortgage might be the least of your worries.`
 				accept
 	on accept
 	npc kill
