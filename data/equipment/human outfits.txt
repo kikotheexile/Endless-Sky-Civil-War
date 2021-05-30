@@ -1061,7 +1061,7 @@ outfit "Plasma-5 Violet Flame D&K"
 	"shield energy" 2.6
 	"energy consumption" 2.6
 	"heat generation" 2.6
-	description "A joint effort between the Kraz and Delta V contestents, this is the most powerful mobile shield generator in all of known space. Rivaling the regenerative power of some planetary and stationbound shields, the Kraz and Delta V teams just wanted to see if it could be done. Their efforts completely overloaded their local power grid, and the radiant heat started many fires. This was put into production and up for sale mostly as a gimmick and a joke, they never expected anyone to be crazy enough to actually buy one."
+	description "A joint effort between the Kraz and Delta V contestants, this is the most powerful mobile shield generator in all of known space. Rivaling the regenerative power of some planetary and stationbound shields, the Kraz and Delta V teams just wanted to see if it could be done. Their efforts completely overloaded their local power grid, and the radiant heat started many fires. This was put into production and up for sale mostly as a gimmick and a joke, they never expected anyone to be crazy enough to actually buy one."
 
 
 outfit "S-270 Regenerator"
