@@ -640,7 +640,7 @@ mission "FW Katya 1B"
 				`	"Pleased to meet you both. Why the deception?"`
 				`	"Wait a minute, were they the secret cargo?"`
 				`	"I already figured that out."`
-				`	"Yea that's nice but what's this about?"`
+				`	"Yeah that's nice, but what's this about?"`
 			
 			`	Katya explains, "The Andersons are defecting to the Free Worlds. Their dream is to make terraforming a public service, supported by government funds, rather than a luxury available only to the richest of planets. We worked for years to get Parliament to accept that idea, but with no luck. And because of Henry's background and knowledge about the intelligence community, the Republic would have stopped them if they knew they were defecting."`
 			`	She adds, "The real secret cargo, which arrived several days ago via a faster ship, was their personal possessions and Lynn's lab equipment and instruments, which were loaded onto a ship supposedly bound for Hestia."`
