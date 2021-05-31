@@ -1152,7 +1152,7 @@ mission "NU Marina 3"
 	on offer
 		conversation
 			`As you arrive, Marina is giving a bunch of confused individuals one of her long and rambling speeches. Eventually, she climbs down from her shipping crate full of explosives and disappears onto a nearby ship. The young man from earlier takes over.`
-			`	"Sorry about that, everyone." He sighs, "My name is Jack, and I really do want to thank you for playing along here. Truth is, what we are doing is an unofficial prisoner transfer. Our job is to go to the prison, make a big scene about a prison break, get out, and get paid. The Cartel will report the loss to the syndicate, who will then use it as a way to weasel more money out of the Republic. Any questions?"`
+			`	"Sorry about that, everyone." He sighs, "My name is Jack, and I really do want to thank you for playing along here. Truth is, what we are doing is an unofficial prisoner transfer. Our job is to go to the prison, make a big scene about a prison break, get out, and get paid. The Cartel will report the loss to the Syndicate, who will then use it as a way to weasel more money out of the Republic. Any questions?"`
 			`	"Yes," a young woman in the crowd speaks up, "Why is the Union helping the Syndicate scam the Republic? I thought they were the bad guys."`
 			`	"They are," Jack replies, "But this is an easy way for us to gain more ships, supplies, and volunteers for our cause. We will be arriving at about the same time as a resupply convoy, who will conveniently leave their ships unguarded. We get our prisoners out, steal the convoy, and return to the safety of the union richer for it."`
 			choice
