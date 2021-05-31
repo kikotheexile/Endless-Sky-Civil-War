@@ -1169,6 +1169,7 @@ mission "NU Marina 3"
 			`	You have been left with a choice, to take on the job and join the fleet, or walk away. `
 			choice
 				`	(Take the job.)`
+					accept
 				`	(Walk away from this job.)`
 					decline
 			`	Jack, Sally, and two others approach your ship. "Comrade Captain, a pleasure to see you again." Sally states, "We'll be riding with you, and the fleet will follow us to the prison. Take off when you're ready."`
