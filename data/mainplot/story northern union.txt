@@ -1060,7 +1060,7 @@ mission "NU Marina 2"
 		has "chosen sides"
 	on offer
 		conversation
-			`The directions to find Marina are incredibly straight forward to follow, in fact you could have found her by accident, as she is held up in the only tavern on this colony.`
+			`The directions to find Marina are incredibly easy to follow. In fact, you could have found her by accident, as she is hanging out in the only tavern on this colony.`
 			`"I've got another friend who needs to be transported," she says. "A demolitions expert named Big Randy. He is key in our plans to accelerate our revolution throughout Syndicate space."`
 			choice
 				`	"Sure, I'd be glad to transport him."`
@@ -1089,7 +1089,7 @@ mission "NU Marina 2B"
 		has "chosen sides"
 	on offer
 		conversation
-			`Per Marina's instructions you ask a local forman where you can find Big Randy, without even looking up from his datapad he points you in the direction of one of the storehouses. You enter to find a very short man lifting and throwing impossibly large crates around.`
+			`Per Marina's instructions, you ask a local foreman where you can find Big Randy. Without even looking up from his datapad he points you in the direction of one of the larger warehouses. You enter to find a very short man throwing around impossibly large crates.`
 			choice
 				`	"I'm looking for Big Randy, would that be you?"`
 					goto marina
@@ -1116,11 +1116,11 @@ mission "NU Marina 2B"
 				`	"She is awfully advanced."`
 					goto unsurprised
 			label surprised
-			`	His expression softens, "A very long time ago, before the Republic existed, the same people who genetically engineered augments like the Alpha also made robots like her to do their bidding. As far as I am aware, she is the last of her kind. She's not sentient, but she's programmed to pretend to be."`
+			`	His expression softens, "A very long time ago, before the Republic existed, the same people who used genetic engineering to create things like the Alphas also made robots like her to do their bidding. As far as I am aware, she is the last of her kind. She's not sentient, but she's programmed to pretend to be."`
 					goto end
 		
 			label unsurprised
-			`	"Yes," he says, "It's a damn shame the Republic restricted the manufacture of advanced robotics like her. Do you have any idea how many lives we could save sending drones like her into mines? I guess it's true what they say, they really don't make them like they used to."`
+			`	"Yes," he says, "It's a damn shame the Republic restricted the manufacture of advanced robots like her. Do you have any idea how many lives we could save sending drones like her into mines? I guess it's true what they say, they really don't make them like they used to."`
 				goto end
 
 			label end
