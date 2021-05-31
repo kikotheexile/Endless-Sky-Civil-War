@@ -62,6 +62,7 @@ mission "Deep Archaeology 1"
 			choice
 				`	"Sorry, that sounds a bit too shady to me."`
 				`	"Wait a minute, can I get your name?"`
+					goto name
 				`	"Okay, I'm willing to do that."`
 					goto yes
 			`	"That really is too bad," He says, walking towards the exit of your ship. "You're really missing out."`
