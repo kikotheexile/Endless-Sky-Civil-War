@@ -8,9 +8,6 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-# This reorganization moves us away from the alphabetical ordering of governments. They will now be broken down into sectors, alliances, and groups.
-# This also applies to unique fleets 
-
 #The Player
 government "Escort"
 	"fine" 0
@@ -30,6 +27,7 @@ government "YeeHaw"
 	"attitude toward"
 		"Freelance Pirates" -.4
 		"Cartel" -.1
+		"Southern Pirates" -.1
 	"player reputation" 1
 	"bribe" 0
 	"hostile hail" "hostile cowboy"
@@ -43,17 +41,31 @@ government "Derelict"
 	"player reputation" 1000
 	color 0.5 0.5 0.5
 
-government " Derelict "
+government "Loot"
+	"display name" "Derelict"
 	"player reputation" -1000
 	color 0.5 0.5 0.5
 
-#Merchant Governments, Corporations, and Factions
+government "Neutral"
+	color .84 .61 .37
+	"player reputation" 1
+	"attitude toward"
+		"Local" 1
+		"Freelance Merchants" .3
+	"bribe" .05
+	"friendly hail" "friendly civilian"
+	"hostile hail" "hostile civilian"
+	raid "pirate raid"
+	
+# Trade Organizations
 
 government "Freelance Merchants"
 	"player reputation" 1
 	"attitude toward"
 		"Local" 1
 		"Freelance Pirates" -.2
+		"Southern Pirates" -1
+		"Caravan" 1
 	"bribe" .05
 	"fine" 0
 	"friendly hail" "friendly civilian"
@@ -64,6 +76,11 @@ government "Northstar Shipping"
 	"attitude toward"
 		"Local" 1
 		"Freelance Pirates" -.2
+		"Northern Union" .01
+		"Southern Pirates" -1
+		"Cartel" -.1
+		"Southern Logistics" -.1
+		"Caravan" 1
 	"bribe" .05
 	"fine" 0
 	"friendly hail" "friendly civilian"
@@ -74,6 +91,9 @@ government "Syndicated Transport"
 	"attitude toward"
 		"Local" 1
 		"Freelance Pirates" -.2
+		"Southern Pirates" -.2
+		"Syndicate" 0.01
+		"Caravan" 1
 	"bribe" .05
 	"fine" 0
 	"friendly hail" "friendly civilian"
@@ -84,22 +104,15 @@ government "Southern Logistics"
 	"attitude toward"
 		"Local" 1
 		"Freelance Pirates" -.2
+		"Militia" 1
+		"Southern Independent" 1
+		"Southern Mutual Defense Pact" 1
+		"Caravan" 1
 	"bribe" .05
 	"fine" 0
 	"friendly hail" "friendly civilian"
 	"hostile hail" "hostile civilian"
 
-government "Neutral"
-	color .84 .61 .37
-	"player reputation" 1
-	"attitude toward"
-		"Local" 1
-		"Freelance Merchants" .3
-		"Freelance Pirates" -.2
-	"bribe" .05
-	"friendly hail" "friendly civilian"
-	"hostile hail" "hostile civilian"
-	raid "pirate raid"
 	
 government "Betelgeuse"
 	"player reputation" 1
@@ -107,7 +120,16 @@ government "Betelgeuse"
 	"attitude toward"
 		"Northern Union" -.1
 		"Freelance Pirates" -.1
-	
+		"Southern Pirates" -.1
+		"Free Worlds Wolfpack" -.1
+		"Lionheart Shipping" 1
+		"Republic" 1
+		"Republic Navy" 1
+		"Republic Navy Humanitarian Corps" 1
+		"Republic Navy (Oathkeeper)" 1
+		"Republic Navy Intelligence" 1
+		"Caravan" 1
+		
 government "Tarazed"
 	color .06 .68 0
 	"player reputation" 1
@@ -119,50 +141,66 @@ government "Tarazed"
 		"Freelance Merchants" .3
 		"Freelance Pirates" -.4
 		"Cartel" -.1
+		"Southern Pirates" -1
+		"Caravan" 1
 	"bribe" .1
 	"friendly hail" "friendly militia"
 	"hostile hail" "hostile militia"
-		"Syndicate" -.01
-		"Republic" -.01
-		"Free Worlds" -.01
 	"bribe" 0
 	"hostile hail" "hostile syndicate"
+	
 
-#Pirate Governments
-government "Freelance Pirates"
-	"display name" "Pirate (Unaffiliated)"
-	color .78 0 0
+government "Syndicate"
+	color 0 .41 .71
 	"player reputation" 1
 	"attitude toward"
-		"Local" .01
+		"Local" 1
+		"Freelance Merchants" .3
+		"Freelance Pirates" -.4
+		"Korath" -.5
+		"Caravan" 1
+	"bribe" .08
+	"friendly hail" "friendly syndicate"
+	"hostile hail" "hostile syndicate"
+	raid "pirate raid"
+
+government "Cartel"
+	color .89 .38 .62
+	"player reputation" 1
+	"attitude toward"
+		"Local" 1
 		"Author" -.01
-		"Hai" -.01
+		"Republic" -.01
 		"Korath" -.01
-		"Freelance Merchants" -.1
-		"Syndicate" -.01
+		"Freelance Merchants" 1
+		"Syndicate" 1
+		"Northern Union" -2
 	"bribe" .05
 	"fine" 0
-	"friendly hail" "friendly pirate"
-	"hostile hail" "hostile pirate"
-	raid "pirate raid"
 
-government "Southern Pirates"
-	"display name" "Pirate (South)"
-	color .78 0 0
+government "Caravan"
+	color .88 .3 .1
 	"player reputation" 1
 	"attitude toward"
-		"Local" .01
-		"Author" -.01
-		"Freelance Merchants" -.1
-		"Syndicate" -.01
-		"Freelance Pirates" -.01
-	"bribe" .05
-	"fine" 0
-	"friendly hail" "friendly pirate"
-	"hostile hail" "hostile pirate"
-	raid "pirate raid"
+		"Local" 1
+		"Freelance Merchants" .5
+		"Northern Union" -.01
+		"Freelance Pirates" -.2
+		"Lionheart Shipping" 1
+		"Deep Security" 1
+		"Deep" 1
+		
+government "Lionheart Shipping"
+	"player reputation" 1
+	"attitude toward"
+		"Local" 1
+		"Freelance Merchants" .5
+		"Northern Union" -.01
+		"Freelance Pirates" -.2
+	"friendly hail" "friendly deep"
+	"hostile hail" "hostile deep"
 
-#The Republic
+# Republic and subfactions
 
 government "Republic"
 	color .91 .42 .09
@@ -181,21 +219,11 @@ government "Republic"
 		"Navy (Oathkeeper)" 1
 		"Neutral" .1
 		"Northern Union" -.3
+		"Southern Pirates" -.3
+		"Caravan" 1
 	"friendly hail" "friendly navy"
 	"hostile hail" "hostile navy"
 	raid "pirate raid"
-
-government "Militia"
-	color .06 .68 0
-	"player reputation" 1
-	"attitude toward"
-		"Local" 1
-		"Freelance Merchants" .3
-		"Freelance Pirates" -1
-		"Souther Pirates" -1
-	"bribe" .1
-	"friendly hail" "friendly militia"
-	"hostile hail" "hostile militia"
 
 government "Republic Navy Humanitarian Corps"
 	"display name" "Humanitarian Corps"
@@ -212,6 +240,10 @@ government "Republic Navy Humanitarian Corps"
 		"Navy Intelligence" 1
 		"Navy (Oathkeeper)" 1
 		"Neutral" .1
+		"Northern Union" -.3
+		"Southern Pirates" -.3
+		"Caravan" 1"
+		"Free Worlds Wolfpack" -2
 	"friendly hail" "friendly navy"
 	"hostile hail" "hostile navy"
 	raid "pirate raid"
@@ -239,7 +271,7 @@ government "Republic Navy"
 	raid "pirate raid"
 
 government "Navy Intelligence"
-	"display name" "Navy"
+	"display name" "RN Intelligence"
 	"crew attack" 1.2
 	"crew defense" 2.2
 	"attitude toward"
@@ -261,87 +293,10 @@ government "Navy (Oathkeeper)"
 		"Kor Sestor" -.1
 		"Kor Mereti" -.1
 		"Navy Intelligence" 1
+		"Caravan" 1
 	"friendly hail" "friendly navy"
 	"hostile hail" "hostile navy"
 
-#Northern Union and Allies
-
-government "Northern Union"
-	color .05 .35 .25
-	"player reputation" 1
-	"attitude toward"
-		"Local" -1
-		"Author" -.01
-		"Freelance Merchants" -.01
-		"Syndicate" -1
-		"Freelance Pirates" -1
-		"Navy Intelligence" -1
-		"Cartel" -2
-	"bribe" .05
-	"fine" 0
-	"friendly hail" "friendly pirate"
-	"hostile hail" "hostile pirate"
-
-government "Gaven"
-	"player reputation" 1
-	"bribe" 0
-	"attitude toward"
-		"Syndicated Security" -.1
-		"Cartel" -1
-
-#Syndicate Space
-
-government "Syndicate"
-	color 0 .41 .71
-	"player reputation" 1
-	"attitude toward"
-		"Local" 1
-		"Freelance Merchants" .3
-		"Freelance Pirates" -.4
-		"Korath" -.5
-	"bribe" .08
-	"friendly hail" "friendly syndicate"
-	"hostile hail" "hostile syndicate"
-	raid "pirate raid"
-
-government "Syndicated Security"
-	"player reputation" 1
-	"bribe" 0
-	"fine" 0
-	"hostile hail" "hostile syndicate"
-
-government "Syndicate (Extremist)"
-	"display name" "Syndicate"
-	color 0 .41 .71
-	"player reputation" 1
-	"attitude toward"
-
-government "Cartel"
-	color .89 .38 .62
-	"player reputation" 1
-	"attitude toward"
-		"Local" 1
-		"Author" -.01
-		"Republic" -.01
-		"Korath" -.01
-		"Freelance Merchants" 1
-		"Syndicate" 1
-		"Northern Union" -2
-	"bribe" .05
-	"fine" 0
-
-#The Deep
-
-government "Lionheart Shipping"
-	"player reputation" 1
-	"attitude toward"
-		"Local" 1
-		"Freelance Merchants" .5
-		"Northern Union" -.01
-		"Freelance Pirates" -.2
-	"friendly hail" "friendly deep"
-	"hostile hail" "hostile deep"
-	
 government "Deep"
 	color .88 .3 .1
 	"player reputation" 1
@@ -352,7 +307,8 @@ government "Deep"
 		"Freelance Pirates" -.2
 		"Lionheart Shipping" 1
 		"Deep Security" 1
-
+		"Caravan" 5
+		
 government "Deep Security"
 	"player reputation" 1
 	"attitude toward"
@@ -361,10 +317,44 @@ government "Deep Security"
 		"Northern Union" -.01
 		"Freelance Pirates" -.2
 		"Lionheart Shipping" 5
+		"Caravan" 5
 	"friendly hail" "friendly deep"
 	"hostile hail" "hostile deep"
 
-#The Free Worlds and their allies. 
+
+government "Militia"
+	color .06 .68 0
+	"player reputation" 1
+	"attitude toward"
+		"Local" 1
+		"Freelance Merchants" .3
+		"Freelance Pirates" -1
+		"Souther Pirates" -1
+		"Caravan" 1
+	"bribe" .1
+	"friendly hail" "friendly militia"
+	"hostile hail" "hostile militia"
+
+government "Southern Mutual Defense Pact"
+	"display name" "SMDP"
+	color .06 .68 0
+	"player reputation" 1
+	"attitude toward"
+		"Local" 2
+		"Freelance Merchants" .3
+		"Militia" .3
+		"Freelance Pirates" -.4
+		"Southern Pirates" -1
+		"Neutral" .1
+		"Navy Intelligence" 1
+		"Republic" 1
+		"Republic Navy" 1
+	"bribe" .1
+	"friendly hail" "friendly free worlds"
+	"hostile hail" "hostile free worlds"
+	raid "pirate raid"
+	
+# Rebel Factions
 
 government "Free Worlds"
 	color .06 .68 0
@@ -374,6 +364,7 @@ government "Free Worlds"
 		"Freelance Merchants" .3
 		"Militia" .3
 		"Freelance Pirates" -.4
+		"Southern Pirates" -.01
 		"Neutral" .1
 		"Navy Intelligence" 1
 		"Southern Mutual Defense Pact" 20
@@ -381,22 +372,6 @@ government "Free Worlds"
 	"friendly hail" "friendly free worlds"
 	"hostile hail" "hostile free worlds"
 	raid "pirate raid"
-
-government "Southern Mutual Defense Pact"
-	color .06 .68 0
-	"player reputation" 1
-	"attitude toward"
-		"Local" 2
-		"Freelance Merchants" .3
-		"Militia" .3
-		"Freelance Pirates" -.4
-		"Neutral" .1
-		"Navy Intelligence" 1
-	"bribe" .1
-	"friendly hail" "friendly free worlds"
-	"hostile hail" "hostile free worlds"
-	raid "pirate raid"
-
 
 government "Free Worlds Wolfpack"
 	color .06 .68 0
@@ -411,6 +386,7 @@ government "Free Worlds Wolfpack"
 		"Deep Security" -5
 		"Deep" -1
 		"Northern Union" -2
+		"Caravan" -1
 	"friendly hail" "friendly free worlds"
 	"hostile hail" "hostile free worlds"
 	raid "pirate raid"
@@ -418,12 +394,168 @@ government "Free Worlds Wolfpack"
 government "Southern Independent"
 	color .78 .36 .36
 	"player reputation" 1
+	"attitude toward"
+		"Local" 0.01
+		"Freelance Merchants" .01
+		"Militia" .01
+		"Freelance Pirates" -.04
+		"Republic" -.1
+		"Lionheart Shipping" -1
+		"Deep Security" -5
+		"Deep" -1
+		"Northern Union" -2
+		"Caravan" -1
 	"bribe" .05
 	"fine" 0
 	"friendly hail" "friendly civilian"
 	"hostile hail" "hostile civilian"
 	raid "Large Southern Pirates"
 	
+government "Northern Union"
+	color .05 .35 .25
+	"player reputation" 1
+	"attitude toward"
+		"Local" -1
+		"Author" -.01
+		"Freelance Merchants" -.01
+		"Syndicate" -1
+		"Freelance Pirates" -1
+		"Navy Intelligence" -1
+		"Cartel" -2
+		"Caravan" -5
+	"bribe" .05
+	"fine" 0
+	"friendly hail" "friendly pirate"
+	"hostile hail" "hostile pirate"
+
+government "Northern Union"
+	color .05 .35 .25
+	"player reputation" 1
+	"attitude toward"
+		"Local" -1
+		"Author" -.01
+		"Freelance Merchants" -.01
+		"Syndicate" -1
+		"Freelance Pirates" -1
+		"Navy Intelligence" -1
+		"Cartel" -2
+		"Caravan" -5
+	"bribe" .05
+	"fine" 0
+	"friendly hail" "friendly pirate"
+	"hostile hail" "hostile pirate"
+
+
+# Pirates and Raiders
+
+government "Freelance Pirates"
+	"display name" "Pirate (Unaffiliated)"
+	color .78 0 0
+	"player reputation" 1
+	"attitude toward"
+		"Local" .01
+		"Author" -.01
+		"Hai" -.01
+		"Korath" -.01
+		"Freelance Merchants" -.1
+		"Syndicate" -.01
+		"Republic" -.01
+		"Free Worlds" -.01
+		"Free Worlds Wolfpack" -1
+		"Southern Pirates" -1
+		"Southern Independent" -1
+		"Northern Union" -1 
+		"Republic Navy" -1
+		"Republic Navy (Oathkeeper)" -1
+		"Republic Navy Intelligence" -1
+		"Republic Navy Humanitarian Corps" -1 
+		"Cartel" -1
+		"Caravan" -5
+	"bribe" .05
+	"fine" 0
+	"friendly hail" "friendly pirate"
+	"hostile hail" "hostile pirate"
+	raid "pirate raid"
+
+government "Southern Pirates"
+	"display name" "Pirate (South)"
+	color .78 0 0
+	"player reputation" 1
+	"attitude toward"
+		"Local" .01
+		"Author" -.01
+		"Freelance Merchants" -.1
+		"Freelance Pirates" -.01
+		"Syndicate" -.01
+		"Republic" -.01
+		"Free Worlds" -.01
+		"Free Worlds Wolfpack" -0.1
+		"Southern Independent" -1
+		"Militia" -.01
+		"Republic Navy" -.01
+		"Syndicated Transport" -.01
+		"Lionheart Shipping" -.01
+		"Caravan" -2
+	"bribe" .05
+	"fine" 0
+	"friendly hail" "friendly pirate"
+	"hostile hail" "hostile pirate"
+	raid "pirate raid"
+	
+#Always Hostile
+
+government "Alien (Hostile)"	
+	"display name" "Alien"
+	"player reputation" -1000
+	"hostile hail" "hostile civilian"
+
+government "Alpha"
+	color .78 0 .50
+	"crew attack" 1.4
+	"crew defense" 2.2
+	"player reputation" -1000
+	"bribe" 0
+
+government "Local"	
+	"player reputation" -1000
+	"hostile hail" "hostile civilian"
+
+government "Bounty"
+	"player reputation" -1000
+	"fine" 0
+	"hostile hail" "hostile bounty"
+
+government "Bounty Hunter"
+	color .78 0 0
+	"player reputation" -1000
+	"bribe" .2
+	"fine" 0
+	"hostile hail" "hostile bounty hunter"
+
+government "Test Dummy"
+	"player reputation" -1000
+	"hostile hail" "test dummy"
+	"hostile disabled hail" "disabled test dummy"
+
+government "Syndicated Security"
+	"player reputation" -10000
+	"bribe" 0
+	"fine" 0
+	"hostile hail" "hostile syndicate"
+
+government "Deep (extremist)"
+	"display name" "Deep"
+	color .78 0 0
+	"player reputation" -1000
+	"bribe" .2
+	"fine" 0
+	"hostile hail" "hostile bounty hunter"
+
+government "Syndicate (Extremist)"
+	"display name" "Syndicate"
+	color 0 .41 .71
+	"player reputation" 1
+	"attitude toward"
 	
 #Aliens
 
@@ -481,37 +613,20 @@ government "Wanderer"
 government "Alien"
 	"player reputation" 1
 	
-government "Alien (Hostile)"	
-	"display name" "Alien"
-	"player reputation" -1000
-	"hostile hail" "hostile civilian"
+# Rarities and One-Offs
 
-#Always Hostile
-government "Alpha"
-	color .78 0 .50
-	"crew attack" 1.4
-	"crew defense" 2.2
-	"player reputation" -1000
+government "Gaven"
+	"player reputation" 1
 	"bribe" 0
-
-government "Local"	
-	"player reputation" -1000
-	"hostile hail" "hostile civilian"
-
-government "Bounty"
-	"player reputation" -1000
-	"fine" 0
-	"hostile hail" "hostile bounty"
-
-government "Bounty Hunter"
-	color .78 0 0
-	"player reputation" -1000
-	"bribe" .2
-	"fine" 0
-	"hostile hail" "hostile bounty hunter"
-
-government "Test Dummy"
-	"player reputation" -1000
-	"hostile hail" "test dummy"
-	"hostile disabled hail" "disabled test dummy"
-	
+	"attitude toward"
+		"Syndicated Security" -.1
+		"Cartel" -1
+		
+government "Star Blade"
+	"display name" "Objective"
+	"player reputation" 1
+	"bribe" 0
+	"attitude toward"
+		"Northern Union" 1
+		"Betelgeuse" -.1
+		"Republic Navy" -1
