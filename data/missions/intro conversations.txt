@@ -9,8 +9,8 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 conversation "intro"
-	`	Would you like a quick, text based overview of how the game works before we begin?? This will briefly cover the controls, interface, and how the game is played.`
-	`	If you select "No" don't worry. The overview will be added to your logbook.(Default I, then Logbook.)`
+	`	Would you like an overview of how the game works before we begin? This will briefly cover the controls, the interface, and how the game's systems work.`
+	`	If you select "No", don't worry. The overview will be added to your logbook. (Default I, then Logbook.)`
 	`	(Click an option, or press its corresponding number on your keyboard.)`
 	choice
 		`	No.`
