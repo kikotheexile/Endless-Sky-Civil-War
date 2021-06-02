@@ -62,6 +62,8 @@ int64_t Crew::CalculateSalaries(const vector<shared_ptr<Ship>> &ships, const Shi
 {
 	int64_t totalSalaries = 0;
 
+	if(!flagship) return totalSalaries;
+
 	for(const shared_ptr<Ship> &ship : ships)
 	{
 		totalSalaries += Crew::SalariesForShip(
