@@ -531,6 +531,7 @@ void PlayerInfoPanel::DrawPlayer(const Rectangle &bounds)
 		vector<pair<int64_t, string>> fleetSummary = Crew::FleetSummary(player);
 		DrawList(fleetSummary, table, "fleet summary: ");
 	}
+	
 	// Other special information:
 	auto salary = Match(player, "salary: ", "");
 	sort(salary.begin(), salary.end());
