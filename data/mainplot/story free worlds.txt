@@ -3202,7 +3202,7 @@ ship "Fury" "Doombat"
 		"Ion Rain" 4
 		"nGVF-BB Fuel Cell"
 		"Supercapacitor"
-		"D14-XS Shield Generator"
+		"D14-1"
 		"Ramscoop"
 		"X2700 Ion Thruster"
 		"X2200 Ion Steering"
