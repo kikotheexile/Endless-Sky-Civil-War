@@ -2740,14 +2740,14 @@ outfit "Gatling Turret"
 		"inaccuracy" 3
 		"velocity" 16
 		"lifetime" 1
-		"reload" 3
+		"reload" 2
 		"burst count" 180
 		"burst reload" 1
 		"firing energy" .06
-		"firing heat" 5
+		"firing heat" 7
 		"cluster"
 		"hit effect" "bullet impact"
-	description "Two Gatling guns attached to a swivelling base. The gatling turret, occasionally used by pirates and traditional captains, is a formidible relic of the dark ages."
+	description "Two Gatling guns, modified for faster cooldown, attached to a swivelling base. The gatling turret, occasionally used by pirates and traditional captains, is a formidible relic of the dark ages."
 
 # Boarding
 outfit "Plasma Pistol"
