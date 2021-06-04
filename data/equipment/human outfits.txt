@@ -2730,7 +2730,7 @@ outfit "Gatling Turret"
 	"gatling round capacity" 12000
 	"turret mounts" -1
 	weapon
-		"hardpoint sprite" "hardpoint/proton turret"
+		"hardpoint sprite" "hardpoint/gatling turret"
 		sprite "projectile/tinyflare"
 		sound "explosion tiny"
 		ammo "Gatling Gun Ammo"
