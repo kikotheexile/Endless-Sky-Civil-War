@@ -1994,6 +1994,7 @@ ship "Firebird" "Firebird (Plasma)"
 # Leviathan
 
 ship "Leviathan" "Leviathan (Struggle)"
+	outfits
 		"Fusion Reactor"
 		"Dwarf Core"
 		"Greyhound Plasma Steering"
@@ -2833,7 +2834,7 @@ ship "Odyssey" "Odyssey (Missile)"
 		"Meteor Missile" 105
 		"Meteor Missile Box" 3
 		"Heavy Rocket Launcher" 2
-		""Freelance Pirates"et" 60
+		"Heavy Rocket" 60
 		"Heavy Laser Turret"
 		"AMS-2 Preserver"
 		"S3 Thermionic"

@@ -9,7 +9,7 @@
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 fleet "Freelance Merchant"
-	government "Freelance Merchant"
+	government "Freelance Merchants"
 	names "civilian"
 	formation "Vee"
 	cargo 4
@@ -137,7 +137,7 @@ fleet "Freelance Merchant"
 	variant 5
 		"Bulk Freighter (Blaster)"
 	variant 8
-		Bulk Freighter (Heavy)"
+		"Bulk Freighter (Heavy)"
 	variant 2
 		"Protector (Blaster)"
 	variant 4
@@ -190,7 +190,7 @@ fleet "Northstar Shipping"
 
 fleet "Syndicated Transport"
 	government "Syndicated Transport"
-	names "syndicate"
+	names "syndicate small"
 	formation "Vee"
 	cargo 4
 	personality
@@ -280,7 +280,7 @@ fleet "Betelgeuse Navy"
 	formation "Line (center)"
 	cargo 4
 	personality
-		heoric unconstrained
+		heroic unconstrained
 	variant 15
 		"Leviathan (Heavy)" 5
 		"Nomos (Heavy)" 5
@@ -300,7 +300,7 @@ fleet "Betelgeuse Veles"
 	formation "Hexagon"
 	cargo 4
 	personality
-		heoric unconstrained
+		heroic unconstrained
 	variant 15
 		"Veles"
 		"Nomos (Mark II)" 3
@@ -450,7 +450,7 @@ fleet "Freelance Pirates"
 	variant 5
 		"Bulk Freighter (Blaster)"
 	variant 8
-		Bulk Freighter (Heavy)"
+		"Bulk Freighter (Heavy)"
 	variant 2
 		"Protector (Blaster)"
 	variant 4
@@ -1696,9 +1696,9 @@ fleet "Human Miners"
 	variant 2
 		"Headhunter (Miner)"
 
----------------------------------------------------------
+#--------------------------------------------------------
 ######################### Raids #########################
----------------------------------------------------------
+#--------------------------------------------------------
 
 # Betelgeuse fleets will only exist during raids
 # They do not have easy, medium, or hard settings. They're just hard.
@@ -1709,7 +1709,7 @@ fleet "Betelgeuse Raid"
 	formation "Echelon (right)"
 	cargo 4
 	personality
-		heoric unconstrained
+		heroic unconstrained
 	variant 15
 		"Leviathan (Heavy)" 5
 	variant 4
@@ -1732,7 +1732,7 @@ fleet "Local Navy"
 	formation "Line (center)"
 	cargo 4
 	personality
-		heoric unconstrained
+		heroic unconstrained
 	variant 15
 		"Leviathan (Heavy)" 5
 		"Nomos (Heavy)" 5

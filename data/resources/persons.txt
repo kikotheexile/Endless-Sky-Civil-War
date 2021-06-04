@@ -35,7 +35,7 @@ person "Michael Zahniser"
 		outfits
 			"Ion Cannon" 12
 			"Electron Turret" 4
-			"Heavy Anti-Missile Turret" 4
+			"AMS-2 Preserver" 4
 			
 			"Armageddon Core" 4
 			"LP036a Battery Pack"
@@ -64,12 +64,12 @@ person "Michael Zahniser"
 		gun 31 66 "Ion Cannon"
 		turret -7 -4 "Electron Turret"
 		turret 7 -4 "Electron Turret"
-		turret -7 -4 "Heavy Anti-Missile Turret"
-		turret 7 -4 "Heavy Anti-Missile Turret"
+		turret -7 -4 "AMS-2 Preserver"
+		turret 7 -4 "AMS-2 Preserver"
 		turret -23 14 "Electron Turret"
 		turret 23 14 "Electron Turret"
-		turret -23 14 "Heavy Anti-Missile Turret"
-		turret 23 14 "Heavy Anti-Missile Turret"
+		turret -23 14 "AMS-2 Preserver"
+		turret 23 14 "AMS-2 Preserver"
 		explode "small explosion" 50
 		explode "medium explosion" 80
 		explode "large explosion" 120
@@ -118,7 +118,7 @@ person "Cap'n Pester"
 		
 			"Dwarf Core"
 			"LP144a Battery Pack"
-			"D14-XS Shield Generator"
+			"D14-1"
 			"Liquid Nitrogen Cooler"
 			"Security Station" 3
 			"Laser Rifle" 8
@@ -151,7 +151,7 @@ person "Cap'n Pester"
 
 
 person "Marauding Max"
-	government "Independent"
+	government "Southern Independent"
 	frequency 400
 	personality
 		surveillance
@@ -251,7 +251,7 @@ ship "Marauder Fury"
 		"Meteor Missile Launcher" 6
 		"Meteor Missile" 240
 
-		"D14-S Shield Generator"
+		"D14-2"
 		"LP036a Battery Pack"
 		"Dwarf Core"
 		"Nerve Gas" 1
@@ -363,12 +363,12 @@ ship "Vanguard (Pointedstick)"
 		"Proton Gun" 11
 		"Heavy Rocket Launcher" 4
 		"Heavy Rocket" 400
-		"Anti-Missile Turret"
+		"AMS-1 Guardian"
 		
 		"Armageddon Core" 2
 		"KP-6 Photovoltaic Array" 4
 		"LP072a Battery Pack"
-		"D14-L Shield Generator" 2
+		"D14-4" 2
 		"Liquid Helium Cooler" 2
 		
 		"A860 Atomic Thruster"
@@ -394,7 +394,7 @@ ship "Vanguard (Pointedstick)"
 	gun -31 -45 "Heavy Rocket Launcher"
 	gun 31 -45 "Heavy Rocket Launcher"
 	gun 31 -45 "Heavy Rocket Launcher"
-	turret 0 42 "Anti-Missile Turret"
+	turret 0 42 "AMS-1 Guardian"
 	explode "tiny explosion" 18
 	explode "small explosion" 36
 	explode "medium explosion" 24
@@ -404,7 +404,7 @@ ship "Vanguard (Pointedstick)"
 
 
 person "Tranquility"
-	government "Merchant"
+	government "Freelance Merchants"
 	personality
 		timid
 	phrase
@@ -457,8 +457,8 @@ ship "Lampyrid-Class Transport"
 	outfits
 		"S3 Thermionic"
 		"LP036a Battery Pack"
-		"D14-L Shield Generator"
-		"Large Radar Jammer"
+		"D14-4"
+		"RD-2 Noise"
 		"Ramscoop"
 	
 		"Impala Plasma Thruster"
@@ -596,11 +596,11 @@ ship "Modified Osprey"
 		"Plasma Cannon" 2
 		"Ion Cannon" 2
 
-		"D14-XL Shield Generator"
+		"D14-5"
 		"Fusion Reactor"
 		"LP288a Battery Pack"
 		"Asteroid Scanner"
-		"Large Radar Jammer"
+		"RD-2 Noise"
 		"Tactical Scanner"
 		"Liquid Helium Cooler"
 
@@ -677,8 +677,8 @@ ship "Prototype Weapons Platform"
 		"A525 Atomic Steering"
 		"Ionic Afterburner"
 		"Liquid Helium Cooler"
-		"Heavy Anti-Missile Turret" 4
-		"D14-XL Shield Generator"
+		"AMS-2 Preserver" 4
+		"D14-5"
 		"Scram Drive"
 		"Tactical Scanner"
 		"Proton Turret" 6
@@ -690,10 +690,10 @@ ship "Prototype Weapons Platform"
 	engine 81.5 188.5 0.5
 	engine -52 185 0.7
 	engine -81.5 188.5 0.5
-	turret 39 -7.5 "Heavy Anti-Missile Turret"
-	turret -39 -7 "Heavy Anti-Missile Turret"
-	turret 105 165 "Heavy Anti-Missile Turret"
-	turret -105 165 "Heavy Anti-Missile Turret"
+	turret 39 -7.5 "AMS-2 Preserver"
+	turret -39 -7 "AMS-2 Preserver"
+	turret 105 165 "AMS-2 Preserver"
+	turret -105 165 "AMS-2 Preserver"
 	gun 0.5 -150 "Prototype Beam Talon"
 	turret -37.5 37 "Proton Turret"
 	turret 37.5 36 "Proton Turret"

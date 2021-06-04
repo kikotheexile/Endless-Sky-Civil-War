@@ -891,7 +891,7 @@ outfit "D14-5"
 	"outfit space" -60
 	"shield generation" 1.31
 	"shield energy" 1.31
-	description "This is the most powerful D14 shield generator. Because of their large size, D14-XL shield generators are mostly used in large warships, but you can fit one in a smaller ship if you are willing to sacrifice engine power or weaponry to make space for it."
+	description "This is the most powerful D14 shield generator. Because of their large size, D14-5 shield generators are mostly used in large warships, but you can fit one in a smaller ship if you are willing to sacrifice engine power or weaponry to make space for it."
 
 outfit "Pacifist-1"
 	category "Defenses"

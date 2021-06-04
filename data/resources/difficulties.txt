@@ -645,6 +645,7 @@ event "normal fleets"
 
 
 event "hard fleets"
+	fleet "Freelance Merchant"
 		add variant 5
 			"Falcon (Rocket)"
 			"Osprey (Rocket)" 2
@@ -765,6 +766,7 @@ event "hard fleets"
 			"Schooner" 3
 
 	fleet "Syndicated Transport"
+		add variant 4
 			"Star Barge (Armed)" 7
 			"Protector (jvaler Proton)" 2
 			"Protector (Hydragyrum Proton)" 2

@@ -241,14 +241,14 @@ mission "Oathkeeper Escort Intro"
 			`While looking around the spaceport, you notice a stressed-looking Navy officer coming your way, and he strikes up a conversation. "Captain <last>, right?" Without waiting for an answer, he changes topic and says, "I'm Officer Nguyen. I heard Captain Mulgrew sent you with a message, is that right?"`
 			choice
 				`	"Yeah, for her superiors."`
-					goto continue
+					goto superiors
 				`	"Woah, could you slow down a bit? Yes, I'm Captain <last>, and I do have a letter from Captain Mulgrew, but I can barely follow all this."`
 					goto slowdown
-		label slowdown
-		`	Nguyen chuckles. "Sorry, I might have come on a bit too strong there. It's been busy, what with the attacks and all. The Northern Union's getting bolder."`
-		label continue
-		`	"Well, there's been a little change in plans. I can take that message for you, because we've got a new job lined up for you. Meet me in the spaceport in an hour so we can talk. Here's a reward for bringing this message, by the way." Nguyen hands you <payment> and leaves.`
-		reward 20000
+			label slowdown
+			`	Nguyen chuckles. "Sorry, I might have come on a bit too strong there. It's been busy, what with the attacks and all. The Northern Union's getting bolder."`
+			label superiors
+			`	"Well, there's been a little change in plans. I can take that message for you, because we've got a new job lined up for you. Meet me in the spaceport in an hour so we can talk. Here's a reward for bringing this message, by the way." Nguyen hands you <payment> and leaves.`
+		payment 20000
 		
 mission `Oathkeeper Escort`
 	name `Escort Humanitarian Corps to Betelgeuse`

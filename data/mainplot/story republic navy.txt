@@ -216,7 +216,7 @@ mission "Republic Bounty 3 alt"
 				`	"I'm in."`
 					accept
 				`	"I'm sorry, but that's definetly above my pay grade."`
-					goto decline
+					decline
 			apply
 				set "shah really likes you"
 			`	"Let's hope you were in the honors program," Captain Shah replies with a bit of a chuckle, moving in close to you to show you her watch, "The ship was last spotted here, in Tias." She points to a system south-east of New Boston, "We believe you'll find it there. Goodbye and good luck."`
@@ -231,7 +231,7 @@ mission "Republic Bounty 3 alt"
 				`	"I'm in."`
 					accept
 				`	"I'm sorry, but that's definetly above my pay grade."`
-					goto decline
+					decline
 			`	"Let's hope you were in the honors program," Captain Shah replies with a relieved smile: "The ship was last spotted in Tias. We believe you'll find it there."`
 				accept
 	npc disable
@@ -582,7 +582,7 @@ mission "rush south"
 		conversation 
 			`As you come in for a landing, your emergency channels light up. Much of the conversation is in code, and clearly not intended for your ears. However, you do catch an officer saying "We lost Kornephoros." It might be a good idea to ask around the spaceport.`
 	on decline
-		freelance +3
+		freelance += 3
 
 mission "rns oathkeeper split"
 	name "Return to Farpoint and stay in the North."
@@ -1047,11 +1047,11 @@ mission "RNHC Food Transport"
 			`	"I mean you can always quit, and give up the juicy Republic contracts. I don't think you'll be doing that over a little harmeless running of food to those in need, though. Godspeed <last>."`
 			`	He walks away.`
 				accept
-				goto makessense
+			label makessense
 			`	"I was hoping you would see it my way. Best of luck to you out there, <last>."`
 			`	He walks away.`
 				accept
-				goto bonus
+			label bonus
 			`	"Your checks have always been signed. That will only change if you stop working for us. Have fun out there, <last>."`
 			`	He walks away.`
 				accept
@@ -1087,7 +1087,7 @@ mission "RNHC Food Delivery 2"
 	
 	on complete
 		dialog "You meet up with Kent in the Navy base and he listens to your report, concerned. "So they're specifically targeting our food supplies. Nice, great, they are trying to starve us out. This is going to be a public relations nightmare." He rubs his temples, pays you <payment>, and walks off dejected."
-	payment 100000
+		payment 100000
 	
 mission "RNHC Break Start"
 	to offer
@@ -1098,7 +1098,7 @@ mission "RNHC Break Start"
 		planet "Earth"
 	
 	on offer
-		dialogue
+		conversation
 			`An admiral you somewhat recognize from the news some time ago called a meeting of the Humanitarian Corps stationed on New Wales. You show up with the others, a few dozen in total, and the admiral silences the crowd by holding up her hand before speaking into the microphone, "Alright, this won't take long. My name is Stella, and I have some good and bad news for you all."`
 			`	"Just to get this out of the way, no, we're not losing the war or anything. In fact, things are looking up for us. The Free Worlds just demoted and denounced a member of their council and their strategist, Tomek Voigt. We're hoping to bring the Free Worlds back into line very soon."`
 			`	"Now for the bad news.  You're all being cut loose for at least a few months. The Free Worlds have pirates working for them, and it's just too dangerous to have pacifists working around them." This draws complaints from the crowd, but Stella keeps talking. "Don't worry, we'll still sign your paychecks if you can find work somewhere else in the Republic. I'd try the Deep or the Syndicate. Any questions?"`

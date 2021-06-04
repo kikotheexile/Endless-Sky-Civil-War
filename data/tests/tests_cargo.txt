@@ -45,7 +45,7 @@ test-data "commodity barges"
 				"X1700 Ion Thruster"
 				"X1200 Ion Steering"
 				Hyperdrive
-				"Anti-Missile Turret"
+				"AMS-1 Guardian"
 				"D14-RN Shield Generator"
 				"nGVF-BB Fuel Cell"
 				"LP036a Battery Pack"
@@ -56,7 +56,7 @@ test-data "commodity barges"
 			position 0 0
 			engine -9 38 1
 			engine 9 38 1
-			turret 0 -8 "Anti-Missile Turret"
+			turret 0 -8 "AMS-1 Guardian"
 			leak leak 60 50
 			explode "tiny explosion" 10
 			explode "small explosion" 10
@@ -85,7 +85,7 @@ test-data "commodity barges"
 				"X1700 Ion Thruster"
 				"X1200 Ion Steering"
 				Hyperdrive
-				"Anti-Missile Turret"
+				"AMS-1 Guardian"
 				"D14-RN Shield Generator"
 				"nGVF-BB Fuel Cell"
 				"LP036a Battery Pack"
@@ -96,7 +96,7 @@ test-data "commodity barges"
 			position 0 0
 			engine -9 38 1
 			engine 9 38 1
-			turret 0 -8 "Anti-Missile Turret"
+			turret 0 -8 "AMS-1 Guardian"
 			leak leak 60 50
 			explode "tiny explosion" 10
 			explode "small explosion" 10
@@ -125,7 +125,7 @@ test-data "commodity barges"
 				"X1700 Ion Thruster"
 				"X1200 Ion Steering"
 				Hyperdrive
-				"Anti-Missile Turret"
+				"AMS-1 Guardian"
 				"D14-RN Shield Generator"
 				"nGVF-BB Fuel Cell"
 				"LP036a Battery Pack"
@@ -136,7 +136,7 @@ test-data "commodity barges"
 			position 0 0
 			engine -9 38 1
 			engine 9 38 1
-			turret 0 -8 "Anti-Missile Turret"
+			turret 0 -8 "AMS-1 Guardian"
 			leak leak 60 50
 			explode "tiny explosion" 10
 			explode "small explosion" 10
@@ -193,7 +193,7 @@ test-data "outfits cargo overload"
 				"X1700 Ion Thruster"
 				"X1200 Ion Steering"
 				Hyperdrive
-				"Anti-Missile Turret"
+				"AMS-1 Guardian"
 				"D14-RN Shield Generator"
 				"nGVF-BB Fuel Cell"
 				"LP036a Battery Pack"
@@ -204,7 +204,7 @@ test-data "outfits cargo overload"
 			position 0 0
 			engine -9 38 1
 			engine 9 38 1
-			turret 0 -8 "Anti-Missile Turret"
+			turret 0 -8 "AMS-1 Guardian"
 			leak leak 60 50
 			explode "tiny explosion" 10
 			explode "small explosion" 10
@@ -233,7 +233,7 @@ test-data "outfits cargo overload"
 				"X1700 Ion Thruster"
 				"X1200 Ion Steering"
 				Hyperdrive
-				"Anti-Missile Turret"
+				"AMS-1 Guardian"
 				"D14-RN Shield Generator"
 				"nGVF-BB Fuel Cell"
 				"LP036a Battery Pack"
@@ -244,7 +244,7 @@ test-data "outfits cargo overload"
 			position 0 0
 			engine -9 38 1
 			engine 9 38 1
-			turret 0 -8 "Anti-Missile Turret"
+			turret 0 -8 "AMS-1 Guardian"
 			leak leak 60 50
 			explode "tiny explosion" 10
 			explode "small explosion" 10
