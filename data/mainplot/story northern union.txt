@@ -1524,7 +1524,7 @@ mission "NU Raiding 2"
 			apply
 				set "ada: valuable"
 			`	You load up some really nice quality goods. Surely this will more than prove your loyalty to the Union.`
-				goto finale1
+				goto finale
 			label caught
 			`	This planet may be under the banner of the Republic, but apparently no one ever informed the auto-turret system, which quickly identifies you and cuts you down. Perhaps a frontal assault was not your best option.`
 				die
