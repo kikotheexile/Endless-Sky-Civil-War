@@ -429,7 +429,7 @@ ship "Millipede"
 	outfits
 		"NT-200 Nucleovoltaic"
 		"LP144a Battery Pack"
-		"D14-3 Shield Generator"
+		"D14-3"
 		
 		"X3700 Ion Thruster"
 		"X3200 Ion Steering"

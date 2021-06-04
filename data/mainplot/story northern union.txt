@@ -1454,7 +1454,7 @@ mission "NU Raiding 1"
 		
 	on complete
 		conversation
-		`	You have arrived on Ada, now it's time to search the spaceport for anything you can use.`
+			`You have arrived on Ada, now it's time to search the spaceport for anything you can use.`
 		
 mission "NU Raiding 2"
 	name "Deliver loot to Haven"
