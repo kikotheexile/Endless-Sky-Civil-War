@@ -2720,7 +2720,7 @@ outfit "Proton Turret"
 		"firing heat" 60
 	description "Developed by Syndicated Systems, the Proton Turret's rate of fire and hitforce makes it arguably the best anti-fighter weapon on the market."
 
-outfit "Gatling turret"
+outfit "Gatling Turret"
 	category "Turrets"
 	cost 200000
 	thumbnail "outfit/gatur"
@@ -2739,13 +2739,15 @@ outfit "Gatling turret"
 		"inaccuracy" 2
 		"velocity" 16
 		"lifetime" 1
-		"reload" 3
+		"reload" 2
+		"burst count" 60
+		"burst reload" 1
 		"firing energy" .06
 		"firing heat" 5
 		"cluster"
 		"hit effect" "bullet impact"
-	description 'Two Gatling guns, modified for maximum damage, attached to a swivelling base. The gatling turret, occasionally used by pirates and traditional captains, is a formidible relic of the dark ages.'
-	
+	description "Two Gatling guns, modified for maximum damage, attached to a swivelling base. The gatling turret, occasionally used by pirates and traditional captains, is a formidible relic of the dark ages."
+
 # Boarding
 outfit "Plasma Pistol"
 	category "Boarding"
@@ -3733,4 +3735,18 @@ outfit "gbullet"
 		"shield damage" 3
 		"hull damage" 6
 		"hit force" 2
+		"hit effect" "bullet impact"
+
+outfit "gtbullet"
+	weapon
+		sprite "projectile/bullet"
+			"delay" 5
+			"random start frame"
+			"frame rate" 0
+		"random velocity" 8
+		"lifetime" 20
+		"random lifetime" 5
+		"shield damage" 4
+		"hull damage" 8
+		"hit force" 3
 		"hit effect" "bullet impact"
