@@ -9676,7 +9676,7 @@ mission "Electron Beam 1"
 	description ""
 	source
 		government "Free Worlds"
-	destination "Kraz"
+	destination "Rust"
 	to offer
 		has "FW Wolf Pack 4: done"
 	to fail
@@ -9721,7 +9721,7 @@ mission "FW Southern Recon 1B (Turret)"
 		has "FW Southern Recon 1B: done"
 	on complete
 		payment 1000000
-		fail "FW Southern Recon 1B"
+		fail "FW Southern Recon 1"
 		outfit "Electron Turret" -1
 		dialog `You hand off the Electron Turret to the Kraz science team, who inform you that <payment> will hit your account by the end of the day.`
 

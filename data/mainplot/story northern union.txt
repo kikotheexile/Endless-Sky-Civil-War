@@ -1514,12 +1514,12 @@ mission "NU Raiding 2"
 			`	Checking around the armory door, you notice robotic cleaners entering and exiting through small ventilation units. With a little effort, you manage to catch one of these droids, and move it into range of the vent. The droid remotely opens the vent and you wedge it into the small door, allowing you to slip inside, if only barely.`
 			`	Sure enough, you are rewarded by the sight of unlocked storage units, gun racks, scanners, and the like. Some of the weapons located here are marked with strange 'X' patterns, and appear completely unique.`
 			`	Obviously, this is exactly what you were looking for. You are fortunate enough to find a couple of duffel bags and load them up before pushing them out the vent you entered through. You are able to escape - and release your captive cleaning droid - before anyone notices you.`
-				goto finale1
+				goto finale
 			label random
 			apply
 				set "ada: cheap"
 			`	You load up some obviously low quality goods, but it's not like the Union will ever know the difference, and this will prove your loyalty to them.`
-				goto finale1
+				goto finale
 			label valuable
 			apply
 				set "ada: valuable"

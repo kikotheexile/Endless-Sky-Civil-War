@@ -92,7 +92,7 @@ system Achernar
 	fleet "Freelance Miners" 3000
 	belt 1963
 	minables copper 4 1.5
-	minables iron 4 2.1.5
+	minables iron 4 2.5
 	minables titanium 6 1.5
 	object
 		sprite star/g5

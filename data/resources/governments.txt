@@ -126,8 +126,8 @@ government "Betelgeuse"
 		"Republic" 1
 		"Republic Navy" 1
 		"Republic Navy Humanitarian Corps" 1
-		"Republic Navy (Oathkeeper)" 1
-		"Republic Navy Intelligence" 1
+		"Navy (Oathkeeper)" 1
+		"Navy Intelligence" 1
 		"Caravan" 1
 		
 government "Tarazed"
@@ -242,7 +242,7 @@ government "Republic Navy Humanitarian Corps"
 		"Neutral" .1
 		"Northern Union" -.3
 		"Southern Pirates" -.3
-		"Caravan" 1"
+		"Caravan" 1
 		"Free Worlds Wolfpack" -2
 	"friendly hail" "friendly navy"
 	"hostile hail" "hostile navy"
@@ -329,7 +329,7 @@ government "Militia"
 		"Local" 1
 		"Freelance Merchants" .3
 		"Freelance Pirates" -1
-		"Souther Pirates" -1
+		"Southern Pirates" -1
 		"Caravan" 1
 	"bribe" .1
 	"friendly hail" "friendly militia"
@@ -466,8 +466,8 @@ government "Freelance Pirates"
 		"Southern Independent" -1
 		"Northern Union" -1 
 		"Republic Navy" -1
-		"Republic Navy (Oathkeeper)" -1
-		"Republic Navy Intelligence" -1
+		"Navy (Oathkeeper)" -1
+		"Navy Intelligence" -1
 		"Republic Navy Humanitarian Corps" -1 
 		"Cartel" -1
 		"Caravan" -5

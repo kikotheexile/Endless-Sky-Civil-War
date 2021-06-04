@@ -244,7 +244,7 @@ ship "Unknown Ship Type"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D14-XL Shield Generator"
+		"D14-5"
 		"Liquid Nitrogen Cooler"
 		"Tactical Scanner" 2
 		
@@ -301,7 +301,7 @@ ship "Kestrel"
 		
 		"Fusion Reactor"
 		"LP144a Battery Pack"
-		"D14-XL Shield Generator"
+		"D14-5"
 		"Liquid Nitrogen Cooler"
 		"Tactical Scanner" 2
 		
