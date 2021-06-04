@@ -2731,7 +2731,7 @@ outfit "Gatling Turret"
 	"turret mounts" -1
 	weapon
 		"hardpoint sprite" "hardpoint/gatling turret"
-		"hardpoint offset" 14
+		"hardpoint offset" 10
 		sprite "projectile/tinyflare2"
 		sound "explosion tiny"
 		ammo "Gatling Gun Ammo" 2
