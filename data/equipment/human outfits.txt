@@ -2732,11 +2732,11 @@ outfit "Gatling Turret"
 	weapon
 		"hardpoint sprite" "hardpoint/gatling turret"
 		"hardpoint offset" 14
-		sprite "projectile/tinyflare"
+		sprite "projectile/tinyflare2"
 		sound "explosion tiny"
 		ammo "Gatling Gun Ammo" 2
 		"turret turn" 3.0
-		"submunition" "gbullet" 2
+		"submunition" "gtbullet"
 		"inaccuracy" 3
 		"velocity" 16
 		"lifetime" 1
@@ -3737,3 +3737,18 @@ outfit "gbullet"
 		"hull damage" 6
 		"hit force" 2
 		"hit effect" "bullet impact"
+
+outfit "gtbullet"
+	weapon
+		sprite "projectile/bullet2"
+			"delay" 5
+			"random start frame"
+			"frame rate" 0
+		"random velocity" 8
+		"lifetime" 20
+		"random lifetime" 5
+		"shield damage" 6
+		"hull damage" 12
+		"hit force" 4
+		"hit effect" "bullet impact"
+
