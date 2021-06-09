@@ -54,7 +54,8 @@ public:
 	const std::vector<Mortgage> &Mortgages() const;
 	void AddMortgage(int64_t principal);
 	void AddFine(int64_t amount);
-	void AddDeathBenefits(int64_t bonus);
+	void AddDeathBenefits(int64_t reparations);
+	void AddProfitShares(int64_t bonus);
 	int64_t Prequalify() const;
 	// Assets:
 	int64_t NetWorth() const;

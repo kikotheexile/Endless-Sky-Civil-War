@@ -228,7 +228,7 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		// When closing the panel, mark the player dead if their ship was captured.
 		if(playerDied)
 			player.Die();
-		// Handle any death benefits that are owed.
+		// Handle any death benefits or profit shares that are owed.
 		if(deathBenefits)
 		{
 			Messages::Add(("You must pay " + Format::Number(deathBenefits)
@@ -236,6 +236,15 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 				+ ((casualties > 1) ? "families of your dead crew members."
 					: "family of your dead crew member."));
 			player.Accounts().AddDeathBenefits(deathBenefits);
+		}
+		GetUI()->Pop(this);
+		if(profitShares)
+		{
+			Messages::Add(("You must pay " + Format::Number(profitShares)
+				+ " credits in profit shares to the ")
+				+ (((you->Crew() - 1) > 1) ? "crew members who took part in this boarding action."
+					: "crew member who took part in this action."));
+			player.Accounts().AddProfitShares(profitShares);
 		}
 		GetUI()->Pop(this);
 	}
@@ -407,12 +416,14 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 					}
 				isCapturing = false;
 				
-				// If you suffered any casualties, you need to split the value
-				// of the ship with their bereaved families. You get two shares,
-				// and each dead crew member gets one.
-				int64_t bonus = (victim->Cost() * casualties * Depreciation::Full()) / (casualties + 2);
-				deathBenefits += bonus;
-				
+				// You need to split the value of the ship with your crew.  You
+				// get 1000 shares, each crew member gets one.  If you don't
+				// pay, surviving crewmembers demand a higher interest rate
+				// than the familes of dead crewmembers.
+				int64_t reparations = (victim->Cost() * casualties * Depreciation::Full()) / (yourStartCrew + 999);
+				deathBenefits += reparations;
+				int64_t bonus = (victim->Cost() * (you->Crew() - 1) * Depreciation::Full()) / (yourStartCrew + 999);
+				profitShares += bonus;
 				// Report this ship as captured in case any missions care.
 				ShipEvent event(you, victim, ShipEvent::CAPTURE);
 				player.HandleEvent(event, GetUI());

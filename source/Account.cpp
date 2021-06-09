@@ -342,9 +342,16 @@ void Account::AddFine(int64_t amount)
 
 
 // Death benefits have a short term but lower interest than the best mortgage rate.
-void Account::AddDeathBenefits(int64_t bonus)
+void Account::AddDeathBenefits(int64_t reparations)
 {
-	mortgages.emplace_back(bonus, 1000, 60);
+	mortgages.emplace_back(reparations, 1000, 60);
+}
+
+
+// Unpaid profit shares have a short term and a high but variable interest rate.
+void Account::AddProfitShares(int64_t bonus)
+{
+	mortgages.emplace_back(bonus, ((creditScore - 196) / 3.1), 60);
 }
 
 
