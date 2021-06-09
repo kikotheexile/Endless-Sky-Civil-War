@@ -276,7 +276,7 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 			out << creditString(mortgagesPaid) << " in mortgages"
 				<< (finesPaid ? " and " : ".");
 		if(finesPaid)
-			out << creditString(finesPaid) << " in fines.";
+			out << creditString(finesPaid) << " in other payments.";
 	}
 	return out.str();
 }
@@ -337,6 +337,14 @@ void Account::AddMortgage(int64_t principal)
 void Account::AddFine(int64_t amount)
 {
 	mortgages.emplace_back(amount, 0, 60);
+}
+
+
+
+// Death benefits have a short term but lower interest than the best mortgage rate.
+void Account::AddDeathBenefits(int64_t bonus)
+{
+	mortgages.emplace_back(bonus, 1000, 60);
 }
 
 
