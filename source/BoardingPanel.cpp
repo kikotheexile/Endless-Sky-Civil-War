@@ -232,10 +232,11 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		// Handle any profit shares that are owed.
 		if(profitShares)
 		{
-			Messages::Add(("You must pay " + Format::Number(profitShares)
-				+ " credits in profit shares to the ")
-				+ (((you->Crew() - 1) > 1) ? "crew members who took part in this boarding action."
-					: "crew member who took part in this boarding action."));
+			Messages::Add(
+				"You must pay " +
+				Format::Number(profitShares) +
+				" credits to your fleet as profit shares."
+			);
 			player.Accounts().AddProfitShares(profitShares);
 		}
 		GetUI()->Pop(this);
@@ -248,8 +249,11 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		int count = plunder[selected].Count();
 		
 		const Outfit *outfit = plunder[selected].GetOutfit();
-		int currentShares = Crew::SharesForShip(player.FlagshipPtr(), true, true);
-		profitShares += (plunder[selected].UnitValue() * currentShares * Depreciation::Full()) / (currentShares + 1000);
+		profitShare += Crew::CalculateProfitShare(
+			player.Ships(),
+			player.Flagship(),
+			plunder[selected].UnitValue() * currentShares * Depreciation::Full()
+		);
 		if(outfit)
 		{
 			// Check if this outfit is ammo for one of your weapons. If so, use
@@ -323,7 +327,6 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 	{
 		int yourStartCrew = you->Crew();
 		int enemyStartCrew = victim->Crew();
-		int startShares = Crew::SharesForShip(player.FlagshipPtr(), true, true);
 		
 		// Figure out what action the other ship will take. As a special case,
 		// if you board them but immediately "defend" they will let you return
@@ -410,10 +413,12 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 					}
 				isCapturing = false;
 				
-				// You need to split the value of the ship with your crew.
-				// You get 1000 shares, each crew member gets one.
-				int64_t bonus = (victim->Cost() * startShares * Depreciation::Full()) / (startShares + 1000);
-				profitShares += bonus;
+				// By taking the ship, you have earned profit. You must share it.
+				profitShares += Crew::CalculateProfitShare(
+					player.Ships(),
+					player.Flagship(),
+					victim->Cost() * startShares * Depreciation::Full()
+				);
 				// Report this ship as captured in case any missions care.
 				ShipEvent event(you, victim, ShipEvent::CAPTURE);
 				player.HandleEvent(event, GetUI());
