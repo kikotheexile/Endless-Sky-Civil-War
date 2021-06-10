@@ -248,6 +248,8 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		int count = plunder[selected].Count();
 		
 		const Outfit *outfit = plunder[selected].GetOutfit();
+		int currentShares = Crew::SharesForShip(player.FlagshipPtr(), true, true);
+		profitShares += (plunder[selected].UnitValue() * currentShares * Depreciation::Full()) / (currentShares + 1000);
 		if(outfit)
 		{
 			// Check if this outfit is ammo for one of your weapons. If so, use
