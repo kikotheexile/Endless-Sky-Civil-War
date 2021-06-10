@@ -18,11 +18,11 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 class Crew
 {
 public:
-	// Calculate one day's salaries for the Player's fleet
-	static int64_t CalculateSalaries(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship, const bool includeExtras = true);
-	
 	// Calculate the proportion of profit to be paid out in shares
 	static double CalculateProfitShare(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship);
+	
+	// Calculate one day's salaries for the Player's fleet
+	static int64_t CalculateSalaries(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship, const bool includeExtras = true);
 	
 	// Calculate the total cost of the flagship's extra crew
 	static int64_t CostOfExtraCrew(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship);
