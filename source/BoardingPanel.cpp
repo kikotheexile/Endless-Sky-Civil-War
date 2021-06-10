@@ -56,11 +56,13 @@ namespace {
 // Constructor.
 BoardingPanel::BoardingPanel(PlayerInfo &player, const shared_ptr<Ship> &victim)
 	: player(player), you(player.FlagshipPtr()), victim(victim),
-	attackOdds(*you, *victim), defenseOdds(*victim, *you),
-	initialCrew(you->Crew())
+	attackOdds(*you, *victim), defenseOdds(*victim, *you)
 {
 	// The escape key should close this panel rather than bringing up the main menu.
 	SetInterruptible(false);
+	
+	// Calculate the profit sharing margin before any action is taken
+	double profitShareRatio = Crew::CalculateProfitShare(player.Ships(),player.Flagship());
 	
 	// Figure out how much the victim's commodities are worth in the current
 	// system and add them to the list of plunder.
@@ -249,11 +251,7 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		int count = plunder[selected].Count();
 		
 		const Outfit *outfit = plunder[selected].GetOutfit();
-		profitShare += Crew::CalculateProfitShare(
-			player.Ships(),
-			player.Flagship(),
-			plunder[selected].UnitValue() * currentShares * Depreciation::Full()
-		);
+		profitShares += profitShareRatio * plunder[selected].UnitValue();
 		if(outfit)
 		{
 			// Check if this outfit is ammo for one of your weapons. If so, use
@@ -414,11 +412,7 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 				isCapturing = false;
 				
 				// By taking the ship, you have earned profit. You must share it.
-				profitShares += Crew::CalculateProfitShare(
-					player.Ships(),
-					player.Flagship(),
-					victim->Cost() * startShares * Depreciation::Full()
-				);
+				profitShares += profitShareRatio * victim->Cost() * Depreciation::Full();
 				// Report this ship as captured in case any missions care.
 				ShipEvent event(you, victim, ShipEvent::CAPTURE);
 				player.HandleEvent(event, GetUI());

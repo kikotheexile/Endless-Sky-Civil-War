@@ -127,6 +127,7 @@ private:
 	// When you capture a ship, you must pay your crew a share of the profits.
 	// This is a mechanism to make capturing ships less absurdly lucrative.
 	int64_t profitShares = 0;
+	double profitShareRatio = 0;
 };
 
 

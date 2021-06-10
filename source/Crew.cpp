@@ -297,6 +297,34 @@ int64_t Crew::ShareProfit(const std::vector<std::shared_ptr<Ship>> &ships, const
 
 
 
+double Crew::CalculateProfitShare(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship)
+{
+	
+	const Crew * playerCrew = GameData::Crews().Get("player");
+	if(!playerCrew || playerCrew->Shares() == 0)
+		return 0;
+	
+	int64_t totalFleetShares = 0;
+	
+	for(const shared_ptr<Ship> &ship : ships)
+	{
+		totalFleetShares += Crew::SharesForShip(
+			ship,
+			ship.get() == flagship
+		);
+	}
+	
+	// If the player is the sole shareholder, return 0 directly.
+	// This prevents us from sharing a small amount of profit due to
+	// floating point rounding issues.
+	if(playerCrew->Shares() == totalFleetShares)
+		return 0;
+	int64_t totalCrewShares = totalFleetShares - playerCrew->Shares();
+	return totalCrewShares / (double)totalFleetShares;
+}
+
+
+
 bool Crew::AvoidsEscorts() const
 {
 	return avoidsEscorts;
