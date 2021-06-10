@@ -188,7 +188,7 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 	// or skipped completely (accruing interest and reducing your credit score).
 	int64_t mortgagesPaid = 0;
 	int64_t finesPaid = 0;
-	int64_t sharesPaid = 0;
+	int64_t profitSharesPaid = 0;
 	for(Mortgage &mortgage : mortgages)
 	{
 		int64_t payment = mortgage.Payment();
@@ -207,7 +207,7 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 			if(mortgage.Type() == "Mortgage")
 				mortgagesPaid += payment;
 			else if(mortgage.Type() == "Profit Shares")
-				sharesPaid += payment;
+				profitSharesPaid += payment;
 			else
 				finesPaid += payment;
 		}
@@ -250,8 +250,8 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 		typesPaid["crew salaries"] = salariesPaid;
 	if(maintenancePaid)
 		typesPaid["maintenance"] = maintenancePaid;
-	if(sharesPaid)
-		typesPaid["profit shares"] = sharesPaid;
+	if(profitSharesPaid)
+		typesPaid["profit shares"] = profitSharesPaid;
 	if(mortgagesPaid)
 		typesPaid["mortgages"] = mortgagesPaid;
 	if(finesPaid)
@@ -273,12 +273,12 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 	{
 		if(salariesPaid)
 			out << creditString(salariesPaid) << " in crew salaries"
-				<< ((mortgagesPaid || finesPaid || maintenancePaid || sharesPaid) ? " and " : ".");
+				<< ((mortgagesPaid || finesPaid || maintenancePaid || profitSharesPaid) ? " and " : ".");
 		if(maintenancePaid)
 			out << creditString(maintenancePaid) << "  in maintenance"
-				<< ((mortgagesPaid || finesPaid || sharesPaid) ? " and " : ".");
+				<< ((mortgagesPaid || finesPaid || profitSharesPaid) ? " and " : ".");
 		if(sharesPaid)
-			out << creditString(sharesPaid) << " in profit shares"
+			out << creditString(profitSharesPaid) << " in outstanding profit shares"
 				<< ((finesPaid || mortgagesPaid) ? " and " : ".");
 		if(mortgagesPaid)
 			out << creditString(mortgagesPaid) << " in mortgages"
@@ -350,9 +350,9 @@ void Account::AddFine(int64_t amount)
 
 
 // Unpaid profit shares have a medium term and a low interest rate.
-void Account::AddProfitShares(int64_t bonus)
+void Account::AddProfitShares(int64_t amount)
 {
-	mortgages.emplace_back(bonus, 1000, 90);
+	mortgages.emplace_back(amount, 1000, 90);
 }
 
 
