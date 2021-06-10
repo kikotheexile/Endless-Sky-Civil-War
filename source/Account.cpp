@@ -188,6 +188,7 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 	// or skipped completely (accruing interest and reducing your credit score).
 	int64_t mortgagesPaid = 0;
 	int64_t finesPaid = 0;
+	int64_t sharesPaid = 0;
 	for(Mortgage &mortgage : mortgages)
 	{
 		int64_t payment = mortgage.Payment();
@@ -205,6 +206,8 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 			// For the status text, keep track of whether this is a mortgage or a fine.
 			if(mortgage.Type() == "Mortgage")
 				mortgagesPaid += payment;
+			else if(mortgage.Type() == "Profit Shares")
+				sharesPaid += payment;
 			else
 				finesPaid += payment;
 		}
@@ -247,6 +250,8 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 		typesPaid["crew salaries"] = salariesPaid;
 	if(maintenancePaid)
 		typesPaid["maintenance"] = maintenancePaid;
+	if(sharesPaid)
+		typesPaid["profit shares"] = sharesPaid;
 	if(mortgagesPaid)
 		typesPaid["mortgages"] = mortgagesPaid;
 	if(finesPaid)
@@ -268,15 +273,18 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 	{
 		if(salariesPaid)
 			out << creditString(salariesPaid) << " in crew salaries"
-				<< ((mortgagesPaid || finesPaid || maintenancePaid) ? " and " : ".");
+				<< ((mortgagesPaid || finesPaid || maintenancePaid || sharesPaid) ? " and " : ".");
 		if(maintenancePaid)
 			out << creditString(maintenancePaid) << "  in maintenance"
-				<< ((mortgagesPaid || finesPaid) ? " and " : ".");
+				<< ((mortgagesPaid || finesPaid || sharesPaid) ? " and " : ".");
+		if(sharesPaid)
+			out << creditString(sharesPaid) << " in profit shares"
+				<< ((finesPaid || mortgagesPaid) ? " and " : ".");
 		if(mortgagesPaid)
 			out << creditString(mortgagesPaid) << " in mortgages"
 				<< (finesPaid ? " and " : ".");
 		if(finesPaid)
-			out << creditString(finesPaid) << " in other payments.";
+			out << creditString(finesPaid) << " in fines.";
 	}
 	return out.str();
 }
@@ -341,17 +349,10 @@ void Account::AddFine(int64_t amount)
 
 
 
-// Death benefits have a short term but lower interest than the best mortgage rate.
-void Account::AddDeathBenefits(int64_t reparations)
-{
-	mortgages.emplace_back(reparations, 1000, 60);
-}
-
-
-// Unpaid profit shares have a short term and a high but variable interest rate.
+// Unpaid profit shares have a medium term and a low interest rate.
 void Account::AddProfitShares(int64_t bonus)
 {
-	mortgages.emplace_back(bonus, ((creditScore - 196) / 3.1), 60);
+	mortgages.emplace_back(bonus, 1000, 90);
 }
 
 
