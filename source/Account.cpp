@@ -277,7 +277,7 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 		if(maintenancePaid)
 			out << creditString(maintenancePaid) << "  in maintenance"
 				<< ((mortgagesPaid || finesPaid || profitSharesPaid) ? " and " : ".");
-		if(sharesPaid)
+		if(profitSharesPaid)
 			out << creditString(profitSharesPaid) << " in outstanding profit shares"
 				<< ((finesPaid || mortgagesPaid) ? " and " : ".");
 		if(mortgagesPaid)
