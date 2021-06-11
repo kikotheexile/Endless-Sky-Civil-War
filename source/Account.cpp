@@ -188,6 +188,7 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 	// or skipped completely (accruing interest and reducing your credit score).
 	int64_t mortgagesPaid = 0;
 	int64_t finesPaid = 0;
+	int64_t profitSharesPaid = 0;
 	for(Mortgage &mortgage : mortgages)
 	{
 		int64_t payment = mortgage.Payment();
@@ -205,6 +206,8 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 			// For the status text, keep track of whether this is a mortgage or a fine.
 			if(mortgage.Type() == "Mortgage")
 				mortgagesPaid += payment;
+			else if(mortgage.Type() == "Profit Shares")
+				profitSharesPaid += payment;
 			else
 				finesPaid += payment;
 		}
@@ -247,6 +250,8 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 		typesPaid["crew salaries"] = salariesPaid;
 	if(maintenancePaid)
 		typesPaid["maintenance"] = maintenancePaid;
+	if(profitSharesPaid)
+		typesPaid["profit shares"] = profitSharesPaid;
 	if(mortgagesPaid)
 		typesPaid["mortgages"] = mortgagesPaid;
 	if(finesPaid)
@@ -268,10 +273,13 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 	{
 		if(salariesPaid)
 			out << creditString(salariesPaid) << " in crew salaries"
-				<< ((mortgagesPaid || finesPaid || maintenancePaid) ? " and " : ".");
+				<< ((mortgagesPaid || finesPaid || maintenancePaid || profitSharesPaid) ? " and " : ".");
 		if(maintenancePaid)
 			out << creditString(maintenancePaid) << "  in maintenance"
-				<< ((mortgagesPaid || finesPaid) ? " and " : ".");
+				<< ((mortgagesPaid || finesPaid || profitSharesPaid) ? " and " : ".");
+		if(profitSharesPaid)
+			out << creditString(profitSharesPaid) << " in outstanding profit shares"
+				<< ((finesPaid || mortgagesPaid) ? " and " : ".");
 		if(mortgagesPaid)
 			out << creditString(mortgagesPaid) << " in mortgages"
 				<< (finesPaid ? " and " : ".");
@@ -337,6 +345,14 @@ void Account::AddMortgage(int64_t principal)
 void Account::AddFine(int64_t amount)
 {
 	mortgages.emplace_back(amount, 0, 60);
+}
+
+
+
+// Shared profits that the player owes the fleet, but hasn't paid yet.
+void Account::AddProfitShares(int64_t amount)
+{
+	mortgages.emplace_back(amount, 1000, 90);
 }
 
 

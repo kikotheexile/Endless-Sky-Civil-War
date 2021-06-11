@@ -22,7 +22,7 @@ class DataWriter;
 
 // Class representing a mortgage (or a fine that can be paid in installments).
 // The interest rate depends on your credit score, and on whether this is an
-// ordinary mortgage versus a fine (high interest) or a crew bonus (low). This
+// ordinary mortgage versus a fine (max interest) or a crew bonus (low). This
 // also handles the calculations for determining how big a new mortgage you can
 // qualify for, based on your average daily income.
 class Mortgage {

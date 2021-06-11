@@ -117,12 +117,19 @@ private:
 	bool playerDied = false;
 	bool isCapturing = false;
 	bool isFirstCaptureAction = true;
+	bool victimCaptured = false;
+	
 	// Calculating the odds of combat success, and the expected casualties, is
 	// non-trivial. So, cache the results for all crew amounts up to full.
 	CaptureOdds attackOdds;
 	CaptureOdds defenseOdds;
 	// These messages are shown to report the results of hand to hand combat.
 	std::vector<std::string> messages;
+	
+	// When you capture a ship, you must pay your crew a share of the profits.
+	// This is a mechanism to make capturing ships less absurdly lucrative.
+	int64_t profitShares = 0;
+	double profitShareRatio = 0;
 };
 
 

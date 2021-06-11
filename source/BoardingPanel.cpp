@@ -13,6 +13,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "BoardingPanel.h"
 
 #include "CargoHold.h"
+#include "Crew.h"
 #include "Depreciation.h"
 #include "Dialog.h"
 #include "FillShader.h"
@@ -59,6 +60,9 @@ BoardingPanel::BoardingPanel(PlayerInfo &player, const shared_ptr<Ship> &victim)
 {
 	// The escape key should close this panel rather than bringing up the main menu.
 	SetInterruptible(false);
+	
+	// Calculate the profit sharing margin before any action is taken
+	profitShareRatio = Crew::CalculateProfitShareRatio(player.Ships(), player.Flagship());
 	
 	// Figure out how much the victim's commodities are worth in the current
 	// system and add them to the list of plunder.
@@ -227,6 +231,22 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		// When closing the panel, mark the player dead if their ship was captured.
 		if(playerDied)
 			player.Die();
+		// Handle any profit shares that are owed.
+		if(profitShares)
+		{
+			std::string profitableAction = victimCaptured ? "captured" : "plundered";
+			
+			Messages::Add(
+				"Having " +
+				profitableAction +
+				" the " +
+				victim->Name() +
+				", you must pay " +
+				Format::Number(profitShares) +
+				" credits in profit shares to your fleet."
+			);
+			player.Accounts().AddProfitShares(profitShares);
+		}
 		GetUI()->Pop(this);
 	}
 	else if(playerDied)
@@ -237,6 +257,8 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		int count = plunder[selected].Count();
 		
 		const Outfit *outfit = plunder[selected].GetOutfit();
+		profitShares += profitShareRatio * plunder[selected].UnitValue();
+		
 		if(outfit)
 		{
 			// Check if this outfit is ammo for one of your weapons. If so, use
@@ -385,6 +407,7 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 				messages.push_back("You have succeeded in capturing this ship.");
 				victim->GetGovernment()->Offend(ShipEvent::CAPTURE, victim->RequiredCrew());
 				victim->WasCaptured(you);
+				victimCaptured = true;
 				if(!victim->JumpsRemaining() && you->CanRefuel(*victim))
 					you->TransferFuel(victim->JumpFuelMissing(), &*victim);
 				player.AddShip(victim);
@@ -396,6 +419,9 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 					}
 				isCapturing = false;
 				
+				// By taking the ship, you have earned profit. You must share it.
+				profitShares += profitShareRatio * victim->Cost() * Depreciation::Full();
+
 				// Report this ship as captured in case any missions care.
 				ShipEvent event(you, victim, ShipEvent::CAPTURE);
 				player.HandleEvent(event, GetUI());
