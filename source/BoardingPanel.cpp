@@ -237,7 +237,7 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 			Messages::Add(
 				"You must pay " +
 				Format::Number(profitShares) +
-				" credits to your crew as profit shares."
+				" credits for the profit shares of this boarding action to your fleet."
 			);
 			player.Accounts().AddProfitShares(profitShares);
 		}
