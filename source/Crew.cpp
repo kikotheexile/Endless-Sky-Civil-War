@@ -58,7 +58,7 @@ void Crew::Load(const DataNode &node)
 
 
 
-double Crew::CalculateProfitShare(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship)
+double Crew::CalculateProfitShareRatio(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship)
 {
 	
 	const Crew * playerCrew = GameData::Crews().Get("player");
