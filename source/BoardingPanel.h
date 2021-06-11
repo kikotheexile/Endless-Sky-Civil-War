@@ -117,6 +117,8 @@ private:
 	bool playerDied = false;
 	bool isCapturing = false;
 	bool isFirstCaptureAction = true;
+	bool victimCaptured = false;
+	
 	// Calculating the odds of combat success, and the expected casualties, is
 	// non-trivial. So, cache the results for all crew amounts up to full.
 	CaptureOdds attackOdds;

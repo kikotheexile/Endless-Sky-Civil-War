@@ -235,9 +235,13 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		if(profitShares)
 		{
 			Messages::Add(
-				"You must pay " +
+				"Having " +
+				victimCaptured ? "captured" : "plundered" + 
+				" the " +
+				victim->Name() +
+				", you must pay " + 
 				Format::Number(profitShares) +
-				" credits in profit shares to your fleet from the value of this boarding action."
+				" credits in profit shares to your fleet."
 			);
 			player.Accounts().AddProfitShares(profitShares);
 		}
@@ -252,6 +256,7 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		
 		const Outfit *outfit = plunder[selected].GetOutfit();
 		profitShares += profitShareRatio * plunder[selected].UnitValue();
+		
 		if(outfit)
 		{
 			// Check if this outfit is ammo for one of your weapons. If so, use
@@ -400,6 +405,7 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 				messages.push_back("You have succeeded in capturing this ship.");
 				victim->GetGovernment()->Offend(ShipEvent::CAPTURE, victim->RequiredCrew());
 				victim->WasCaptured(you);
+				victimCaptured = true;
 				if(!victim->JumpsRemaining() && you->CanRefuel(*victim))
 					you->TransferFuel(victim->JumpFuelMissing(), &*victim);
 				player.AddShip(victim);
