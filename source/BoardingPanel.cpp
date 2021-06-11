@@ -234,12 +234,14 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		// Handle any profit shares that are owed.
 		if(profitShares)
 		{
+			std::string profitableAction = victimCaptured ? "captured" : "plundered";
+			
 			Messages::Add(
 				"Having " +
-				victimCaptured ? "captured" : "plundered" + 
+				profitableAction +
 				" the " +
 				victim->Name() +
-				", you must pay " + 
+				", you must pay " +
 				Format::Number(profitShares) +
 				" credits in profit shares to your fleet."
 			);
