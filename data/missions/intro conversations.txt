@@ -135,11 +135,11 @@ conversation "intro"
 	choice	
 		`	You: No salary, 100 fleet shares.`
 			goto crewyou
-		`	Regular Crew: 50 credits per day, 1 fleet share.`
+		`	Regular Crew: 80 credits per day, 1 fleet share.`
 			goto crewreg
-		`	Pilots: 100 credits per day, 20 fleet shares.`
+		`	Pilots: 150 credits per day, 20 fleet shares.`
 			goto crewpilot
-		`	Junior Officers: 150 credits per day, 10 fleet shares.`
+		`	Junior Officers: 200 credits per day, 10 fleet shares.`
 			goto crewjo
 		`	Senior Officers: 300 credits per day, 20 fleet shares.`
 			goto crewso
@@ -169,7 +169,7 @@ conversation "intro"
 			goto logbook
 	label crewreg
 	`	Ships need an assortment of different crew members to handle various duties. These include maintaining the ship, cooking, cleaning, hosting passengers, firing the ship's weapons, operating the engineering bay, providing security, and more.`
-	`	Your most common crew members, the "Regular Crew", handle these jobs. They also cost the least, each drawing a salary of 50 credits per day and only taking one share in the fleet's profits.`
+	`	Your most common crew members, the "Regular Crew", handle these jobs. They also cost the least, each drawing a salary of 80 credits per day and only taking one share in the fleet's profits.`
 	`	Some, usually cruel, captains have been known to throw hoards of their Regular Crew at hostile ships in boarding operations. Most people find this distasteful, and it is absolutely an abuse of your workforce. However, thanks to the Syndicate's economic influence, the Republic has yet to pass any laws restricting or prohibiting the practice.`
 	choice	
 		`	(Back to the Crew overview.)`
@@ -181,7 +181,7 @@ conversation "intro"
 		`	(Continue to the intro.)`
 			goto logbook
 	label crewpilot
-	`	You rely on pilots to fly the other ships in your fleet. These crew members range from your high-risk fighter jockies to the seasoned helm officers that steer your heavy freighters and warships. Their job is important, so they get paid well for it: 100 credits per day, and 10 fleet shares.`
+	`	You rely on pilots to fly the other ships in your fleet. These crew members range from your high-risk fighter jockies to the seasoned helm officers that steer your heavy freighters and warships. Their job is important, so they get paid well for it: 150 credits per day, and 10 fleet shares.`
 	`	Although Pilots take your place aboard any ship you aren't currently flying, they do not have on any officer responsibilities. They will seldom act independently of you, preferring to follow your orders to the letter.`
 	choice	
 		`	(Back to the Crew overview.)`
@@ -193,7 +193,7 @@ conversation "intro"
 		`	(Continue to the intro.)`
 			goto logbook
 	label crewjo
-	`	These officers manage teams of about five regular crew members, and you will automatically hire one for ever five crew members you have. Their jobs are more challenging but a little safer than those of your pilots, so they draw a heavier salary of 150 credits per day, but take only 5 shares of any profit.`
+	`	These officers manage teams of about five regular crew members, and you will automatically hire one for ever five crew members you have. Their jobs are more challenging but a little safer than those of your pilots, so they draw a heavier salary of 200 credits per day, but take only 5 shares of any profit.`
 	`	You will automatically hire one Junior Officer for every 5 crew members aboard a given ship.`
 	choice	
 		`	(Back to the Crew overview.)`
