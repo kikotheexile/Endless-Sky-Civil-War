@@ -349,7 +349,7 @@ void Account::AddFine(int64_t amount)
 
 
 
-// Unpaid profit shares have a medium term and a low interest rate.
+// Shared profits that the player owes the fleet, but hasn't paid yet.
 void Account::AddProfitShares(int64_t amount)
 {
 	mortgages.emplace_back(amount, 1000, 90);
