@@ -62,7 +62,7 @@ BoardingPanel::BoardingPanel(PlayerInfo &player, const shared_ptr<Ship> &victim)
 	SetInterruptible(false);
 	
 	// Calculate the profit sharing margin before any action is taken
-	double profitShareRatio = Crew::CalculateProfitShare(player.Ships(),player.Flagship());
+	profitShareRatio = Crew::CalculateProfitShare(player.Ships(),player.Flagship());
 	
 	// Figure out how much the victim's commodities are worth in the current
 	// system and add them to the list of plunder.
