@@ -413,6 +413,7 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 				
 				// By taking the ship, you have earned profit. You must share it.
 				profitShares += profitShareRatio * victim->Cost() * Depreciation::Full();
+
 				// Report this ship as captured in case any missions care.
 				ShipEvent event(you, victim, ShipEvent::CAPTURE);
 				player.HandleEvent(event, GetUI());
