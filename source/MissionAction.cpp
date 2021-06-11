@@ -14,6 +14,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 #include "CargoHold.h"
 #include "ConversationPanel.h"
+#include "Crew.h"
 #include "DataNode.h"
 #include "DataWriter.h"
 #include "Dialog.h"
@@ -454,9 +455,21 @@ void MissionAction::Do(PlayerInfo &player, UI *ui, const System *destination, co
 		if(it.second > 0)
 			DoGift(player, it.first, it.second, ui);
 	
-	if(payment)
-		player.Accounts().AddCredits(payment);
-	
+	if(payment) 
+	{
+		// The player is about to make a profit, so they need to share it with the fleet.
+		double profitShareRatio = Crew::CalculateProfitShareRatio(player.Ships(), player.Flagship());
+		int64_t profitShares = payment * profitShareRatio;
+
+		player.Accounts().AddCredits(payment - profitShares);
+
+		Messages::Add(
+				"After receiving your mission payment, you distributed " +
+				Format::Number(profitShares) +
+				" credits among your fleet as profit shares."
+		);
+	}
+
 	for(const auto &it : events)
 		player.AddEvent(*it.first, player.GetDate() + it.second.first);
 	
