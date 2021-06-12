@@ -36,6 +36,7 @@ class GameEvent;
 class Government;
 class ImageSet;
 class Interface;
+class MoraleAffected;
 class Minable;
 class Mission;
 class News;
@@ -107,6 +108,7 @@ public:
 	static const Set<Interface> &Interfaces();
 	static const Set<Minable> &Minables();
 	static const Set<Mission> &Missions();
+	static const Set<MoraleAffected> &MoraleAffecteds();
 	static const Set<Outfit> &Outfits();
 	static const Set<Sale<Outfit>> &Outfitters();
 	static const Set<Person> &Persons();

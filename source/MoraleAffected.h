@@ -17,6 +17,8 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Ship.h"
 #include "PlayerInfo.h"
 
+using namespace std;
+
 class MoraleAffected
 {
 public:
@@ -31,37 +33,13 @@ public:
 		const int64_t deathCount
 	);
 
-	// The player owes the fleet profit shares and has missed an incremental payment
+	// One of the fleet's ships has been destroyed
 	// Triggers the following events:
-	// "profit debt failure"
-	// "profit debt failure while parked"
-	// The amount is applied for each credit in the missed payment
-	static void ProfitDebtFailure(
+	// "fleet ship destroyed"
+	// The amount is applied only once; the crew deaths are handled by CrewMemberDeath.
+	static double FleetShipDestroyed(
 		const PlayerInfo &player,
-		const std::shared_ptr<Ship> &ship,
-		const int64_t sharedProfit
-	);
-
-	// The player owes the fleet profit shares and a day has passed
-	// Triggers the following events:
-	// "profit debt owed"
-	// "profit debt owed while parked"
-	// The amount is applied for each credit in the payment
-	static void ProfitDebtOwed(
-		const PlayerInfo &player,
-		const std::shared_ptr<Ship> &ship,
-		const int64_t sharedProfit
-	);
-
-	// The player owes the fleet profit shares and has made an incremental payment
-	// Triggers the following events:
-	// "profit debt payment"
-	// "profit debt payment while parked"
-	// The amount is applied for each credit in the payment
-	static void ProfitDebtPayment(
-		const PlayerInfo &player,
-		const std::shared_ptr<Ship> &ship,
-		const int64_t sharedProfit
+		const std::shared_ptr<Ship> &ship
 	);
 
 	// Profit has been shared with the crew on the ship as a lump sum
@@ -69,8 +47,38 @@ public:
 	// "profit shared"
 	// "profit shared while parked"
 	// The amount is applied for each credit of shared profit
-	static void ProfitShared(
-		const PlayerInfo &player,
+	// Returns the amount that morale has changed on the ship
+	static double ProfitShared(
+		const std::shared_ptr<Ship> &ship,
+		const int64_t sharedProfit
+	);
+
+	// The player owes the fleet profit shares and has missed an incremental payment
+	// Triggers the following events:
+	// "profit sharing debt failure"
+	// "profit sharing debt failure while parked"
+	// The amount is applied for each credit in the missed payment
+	static double ProfitSharingDebtFailure(
+		const std::shared_ptr<Ship> &ship,
+		const int64_t missedPaymentAmount
+	);
+
+	// The player owes the fleet profit shares and a day has passed
+	// Triggers the following events:
+	// "profit sharing debt owed"
+	// "profit sharing debt owed while parked"
+	// The amount is applied for each credit in the payment
+	static double ProfitSharingDebtOwed(
+		const std::shared_ptr<Ship> &ship,
+		const int64_t profitShareDebtOwed
+	);
+
+	// The player owes the fleet profit shares and has made an incremental payment
+	// Triggers the following events:
+	// "profit sharing debt payment"
+	// "profit sharing debt payment while parked"
+	// The amount is applied for each credit in the payment
+	static double ProfitSharingDebtPayment(
 		const std::shared_ptr<Ship> &ship,
 		const int64_t sharedProfit
 	);
@@ -78,39 +86,40 @@ public:
 	// The player has paid all of the daily crew salaries
 	// Triggers "salary payment" event
 	// The amount is applied for each credit in the payment
-	static void SalaryPayment(
-		const PlayerInfo &player
-	);
+	static void SalaryPayment(const PlayerInfo &player);
 
 	// The player has missed a salary payment
 	// Triggers "salary failure" event
 	// The amount is applied for each credit in the missed payment
-	static void SalaryFailure(
-		const PlayerInfo &player
-	);
+	static void SalaryFailure(const PlayerInfo &player);
 
 
 
 	// Load a definition for a morale event
-	void Load(
-		const DataNode &node
-	);
+	void Load(const DataNode &node);
+
+	// Returns true if this MoraleAffected event does not apply to parked ships
+	const bool &IgnoresParkedShips() const;
 
 	// The ship's morale changes by this number divided by the number of crew members it has.
 	// For events that are diffused across the ship's crew as a whole.
 	// Often multiplied by other factors, such as a number of credits.
 	// amount = amountDividedByCrewMembers / ship->Crew():
-	double AmountDividedByCrewMembers() const;
+	const double &AmountDividedByCrewMembers() const;
 
 	// The ship's morale changes by this much for each crew member it has.
 	// For events that have a more intense effect on large ships.
 	// Often multiplied by other factors, such as a number of credits.
 	// amount = amountPerCrewMember * ship->Crew():
-	double AmountPerCrewMember() const;
+	const double &AmountPerCrewMember() const;
 
 	// A flat amount that the event changes the ship's morale by.
 	// Never multiplied by any other factors.
-	double FlatAmount() const;
+	const double &FlatAmount() const;
+
+	// If an affected ship is parked, multiply the morale change by this amount
+	// Defaults to 1.
+	const double &ParkedMultiplier() const;
 
 	// The id that the morale event is stored against in GameData::Crews()
 	const std::string &Id() const;
@@ -125,7 +134,30 @@ private:
 		const std::string &id
 	);
 
-	// Apply morale change to the whole fleet in response to crew death
+	// Apply a MoraleAffected event to a single ship
+	// Returns the amount that it changed the morale by
+	static void AffectFleetMorale(
+		const PlayerInfo &player,
+		const MoraleAffected * moraleAffected,
+		double multiplier
+	);
+
+	// Apply a MoraleAffected event to a single ship
+	// Returns the amount that it changed the morale by
+	static double AffectShipMorale(
+		const shared_ptr<Ship> &ship,
+		const MoraleAffected * moraleAffected,
+		double multiplier
+	);
+
+	// Apply a flat morale change to every ship in the player's fleet
+	// This is a useful performance shortcut when we know that we are using a flatAmount
+	static void ChangeFleetMoraleByFlatAmount(
+		const PlayerInfo &player,
+		double flatAmount
+	);
+
+	// Apply morale change to the fleet in response to crew death
 	static void DeathInFleet(
 		const PlayerInfo &player,
 		const int64_t deathCount
@@ -155,6 +187,7 @@ private:
 	double amountDividedByCrewMembers = 0.;
 	double amountPerCrewMember = 0.;
 	double flatAmount = 0.;
+	double parkedMultiplier = 1.;
 	std::string id;
 	std::string message;
 };

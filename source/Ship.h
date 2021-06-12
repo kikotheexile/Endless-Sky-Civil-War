@@ -298,6 +298,11 @@ public:
 	// Check if this is a ship that can be used as a flagship.
 	bool CanBeFlagship() const;
 	
+	// Access the current morale rating of the ship
+	double Morale() const;
+	// Change the morale rating of the ship and return the new morale rating
+	double ChangeMorale(double amount);
+
 	// Get this ship's movement characteristics.
 	double Mass() const;
 	double TurnRate() const;
@@ -510,6 +515,9 @@ private:
 	int pilotError = 0;
 	int pilotOkay = 0;
 	
+	// The morale rating of the ship
+	double morale = 0;
+
 	// Current status of this particular ship:
 	const System *currentSystem = nullptr;
 	// A Ship can be locked into one of three special states: landing,
