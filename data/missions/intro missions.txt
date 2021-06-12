@@ -75,26 +75,26 @@ mission "Trust fund baby"
 			`	You are part of the crew of your own ship, with all the rights and privileges that brings. However, you are also in charge, so you get treated quite differently.`
 			`	You will draw no salary out of your own bank account because, well, it's your bank account. You also get 100 fleet shares, so you should always get a greater share of the profits than any other individual crew member.`
 			``
-			`	Regular Crew: 100 credits per day, 1 fleet share.`
+			`	Regular Crew: 80 credits per day, 1 fleet share.`
 			`	Ships need an assortment of different crew members to handle various duties. These include maintaining the ship, cooking, cleaning, hosting passengers, firing the ship's weapons, operating the engineering bay, providing security, and more.`
 			`	Your most common crew members, the "Regular Crew", handle these jobs. They also cost the least.`
 			`	Some, usually cruel, captains have been known to throw hoards of their Regular Crew at hostile ships in boarding operations. Most people find this distasteful, and it is absolutely an abuse of your workforce. However, thanks to the Syndicate's economic influence, the Republic has yet to pass any laws restricting or prohibiting the practice.`
 			``
-			`	Pilots: 500 credits per day, 10 fleet shares.`
+			`	Pilots: 150 credits per day, 10 fleet shares.`
 			`	You rely on pilots to fly the other ships in your fleet. These crew members range from your high-risk fighter jockies to the seasoned helm officers that steer your heavy freighters and warships. Their job is important, so they get paid well for it.`
 			`	Although Pilots take your place aboard any ship you aren't currently flying, they do not have any officer responsibilities. They will seldom act independently of you, preferring to follow your orders to the letter.`
 			``
 			`	Even Pirates that utilise slave labor abide by the laws requiring officers. That said, many suspect that Pirate crews do it simply because they can't run their ships effectively without them.`
 			``
-			`	Junior Officers: 1000 credits per day, 5 fleet shares.`
+			`	Junior Officers: 200 credits per day, 5 fleet shares.`
 			`	These officers manage teams of about five regular crew members, and you will automatically hire one for ever five crew members you have. Their jobs are more challenging but less high risk than that of your pilots, so they draw a heavier salary, but take less fleet shares.`
 			`	You will automatically hire one Junior Officer for every 5 crew members aboard a given ship.`
 			``
-			`	Senior Officers: 2,000 credits per day, 20 fleet shares.`
+			`	Senior Officers: 300 credits per day, 20 fleet shares.`
 			`	Large ships require Senior Officers to operate the bridge and coordinate the Junior Officers that serve under them. These crew members are experienced decision makers who have command experience and know their ship inside out. Many are former ship captains that have opted for employment as a less risky way to earn a living.`
 			`	You will automatically hire one Senior Officer for every 20 crew members aboard a given ship.`
 			``
-			`	Executive Officers: 10,000 credits per day, 50 fleet shares.`
+			`	Executive Officers: 1,000 credits per day, 50 fleet shares.`
 			`	Commanding a heavy warship, city ship, or similarly huge vessel is no easy task; it normally requires someone with years of training and experience. These people are hard to come by, and they charge a lot for their services.`
 			`	You will automatically hire one Executive Officer to command each ship that has at least 50 crew members.`
 		log "Factions" "Republic" `Hundreds of years ago, the independent territories in different parts of human space agreed to join together into a single democratic government, with Earth as its capital. The rise of the Republic ushered in a long period of peace and prosperity in human history.`
@@ -184,26 +184,26 @@ mission "Perfectly Vanilla"
 			`	You are part of the crew of your own ship, with all the rights and privileges that brings. However, you are also in charge, so you get treated quite differently.`
 			`	You will draw no salary out of your own bank account because, well, it's your bank account. You also get 100 fleet shares, so you should always get a greater share of the profits than any other individual crew member.`
 			``
-			`	Regular Crew: 100 credits per day, 1 fleet share.`
+			`	Regular Crew: 80 credits per day, 1 fleet share.`
 			`	Ships need an assortment of different crew members to handle various duties. These include maintaining the ship, cooking, cleaning, hosting passengers, firing the ship's weapons, operating the engineering bay, providing security, and more.`
 			`	Your most common crew members, the "Regular Crew", handle these jobs. They also cost the least.`
 			`	Some, usually cruel, captains have been known to throw hoards of their Regular Crew at hostile ships in boarding operations. Most people find this distasteful, and it is absolutely an abuse of your workforce. However, thanks to the Syndicate's economic influence, the Republic has yet to pass any laws restricting or prohibiting the practice.`
 			``
-			`	Pilots: 500 credits per day, 10 fleet shares.`
+			`	Pilots: 150 credits per day, 10 fleet shares.`
 			`	You rely on pilots to fly the other ships in your fleet. These crew members range from your high-risk fighter jockies to the seasoned helm officers that steer your heavy freighters and warships. Their job is important, so they get paid well for it.`
 			`	Although Pilots take your place aboard any ship you aren't currently flying, they do not have any officer responsibilities. They will seldom act independently of you, preferring to follow your orders to the letter.`
 			``
 			`	Even Pirates that utilise slave labor abide by the laws requiring officers. That said, many suspect that Pirate crews do it simply because they can't run their ships effectively without them.`
 			``
-			`	Junior Officers: 1000 credits per day, 5 fleet shares.`
+			`	Junior Officers: 200 credits per day, 5 fleet shares.`
 			`	These officers manage teams of about five regular crew members, and you will automatically hire one for ever five crew members you have. Their jobs are more challenging but less high risk than that of your pilots, so they draw a heavier salary, but take less fleet shares.`
 			`	You will automatically hire one Junior Officer for every 5 crew members aboard a given ship.`
 			``
-			`	Senior Officers: 2,000 credits per day, 20 fleet shares.`
+			`	Senior Officers: 300 credits per day, 20 fleet shares.`
 			`	Large ships require Senior Officers to operate the bridge and coordinate the Junior Officers that serve under them. These crew members are experienced decision makers who have command experience and know their ship inside out. Many are former ship captains that have opted for employment as a less risky way to earn a living.`
 			`	You will automatically hire one Senior Officer for every 20 crew members aboard a given ship.`
 			``
-			`	Executive Officers: 10,000 credits per day, 50 fleet shares.`
+			`	Executive Officers: 1,000 credits per day, 50 fleet shares.`
 			`	Commanding a heavy warship, city ship, or similarly huge vessel is no easy task; it normally requires someone with years of training and experience. These people are hard to come by, and they charge a lot for their services.`
 			`	You will automatically hire one Executive Officer to command each ship that has at least 50 crew members.`
 		log "Factions" "Republic" `Hundreds of years ago, the independent territories in different parts of human space agreed to join together into a single democratic government, with Earth as its capital. The rise of the Republic ushered in a long period of peace and prosperity in human history.`
@@ -289,26 +289,26 @@ mission "A pirate's life!"
 			`	You are part of the crew of your own ship, with all the rights and privileges that brings. However, you are also in charge, so you get treated quite differently.`
 			`	You will draw no salary out of your own bank account because, well, it's your bank account. You also get 100 fleet shares, so you should always get a greater share of the profits than any other individual crew member.`
 			``
-			`	Regular Crew: 100 credits per day, 1 fleet share.`
+			`	Regular Crew: 80 credits per day, 1 fleet share.`
 			`	Ships need an assortment of different crew members to handle various duties. These include maintaining the ship, cooking, cleaning, hosting passengers, firing the ship's weapons, operating the engineering bay, providing security, and more.`
 			`	Your most common crew members, the "Regular Crew", handle these jobs. They also cost the least.`
 			`	Some, usually cruel, captains have been known to throw hoards of their Regular Crew at hostile ships in boarding operations. Most people find this distasteful, and it is absolutely an abuse of your workforce. However, thanks to the Syndicate's economic influence, the Republic has yet to pass any laws restricting or prohibiting the practice.`
 			``
-			`	Pilots: 500 credits per day, 10 fleet shares.`
+			`	Pilots: 150 credits per day, 10 fleet shares.`
 			`	You rely on pilots to fly the other ships in your fleet. These crew members range from your high-risk fighter jockies to the seasoned helm officers that steer your heavy freighters and warships. Their job is important, so they get paid well for it.`
 			`	Although Pilots take your place aboard any ship you aren't currently flying, they do not have any officer responsibilities. They will seldom act independently of you, preferring to follow your orders to the letter.`
 			``
 			`	Even Pirates that utilise slave labor abide by the laws requiring officers. That said, many suspect that Pirate crews do it simply because they can't run their ships effectively without them.`
 			``
-			`	Junior Officers: 1000 credits per day, 5 fleet shares.`
+			`	Junior Officers: 200 credits per day, 5 fleet shares.`
 			`	These officers manage teams of about five regular crew members, and you will automatically hire one for ever five crew members you have. Their jobs are more challenging but less high risk than that of your pilots, so they draw a heavier salary, but take less fleet shares.`
 			`	You will automatically hire one Junior Officer for every 5 crew members aboard a given ship.`
 			``
-			`	Senior Officers: 2,000 credits per day, 20 fleet shares.`
+			`	Senior Officers: 300 credits per day, 20 fleet shares.`
 			`	Large ships require Senior Officers to operate the bridge and coordinate the Junior Officers that serve under them. These crew members are experienced decision makers who have command experience and know their ship inside out. Many are former ship captains that have opted for employment as a less risky way to earn a living.`
 			`	You will automatically hire one Senior Officer for every 20 crew members aboard a given ship.`
 			``
-			`	Executive Officers: 10,000 credits per day, 50 fleet shares.`
+			`	Executive Officers: 1,000 credits per day, 50 fleet shares.`
 			`	Commanding a heavy warship, city ship, or similarly huge vessel is no easy task; it normally requires someone with years of training and experience. These people are hard to come by, and they charge a lot for their services.`
 			`	You will automatically hire one Executive Officer to command each ship that has at least 50 crew members.`
 		log "Factions" "Republic" `Hundreds of years ago, the independent territories in different parts of human space agreed to join together into a single democratic government, with Earth as its capital. The rise of the Republic ushered in a long period of peace and prosperity in human history.`

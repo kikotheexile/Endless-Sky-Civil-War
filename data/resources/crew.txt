@@ -16,30 +16,30 @@ crew "player"
 
 crew "regular"
 	name "Regular Crew"
-	salary 100
+	salary 80
 	shares 1
 
 crew "pilot"
 	name "Pilot"
-	salary 500
+	salary 150
 	shares 10
 	"avoids flagship"
 	"place at" 1
 
 crew "junior officer"
 	name "Junior Officers"
-	salary 1000
+	salary 200
 	shares 5
 	"ship population per member" 5
 
 crew "senior officer"
 	name "Senior Officers"
-	salary 2000
+	salary 300
 	shares 20
 	"ship population per member" 20
 
 crew "executive officer"
 	name "Executive Officer"
-	salary 5000
+	salary 1000
 	shares 50
 	"place at" 50
