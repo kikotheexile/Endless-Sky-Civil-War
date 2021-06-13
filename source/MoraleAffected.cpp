@@ -267,14 +267,14 @@ const double &MoraleAffected::FlatAmount() const
 
 
 
-const const string &MoraleAffected::Id() const
+const string &MoraleAffected::Id() const
 {
 	return id;
 }
 
 
 
-const const string &MoraleAffected::Message() const
+const string &MoraleAffected::Message() const
 {
 	return message;
 }
