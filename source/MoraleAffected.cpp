@@ -75,9 +75,11 @@ double MoraleAffected::ProfitShared(
 	const int64_t sharedProfit
 )
 {
-	const MoraleAffected * moraleAffected = GetMoraleAffected("profit shared");
-
-	return AffectShipMorale(ship, moraleAffected, sharedProfit);
+	return AffectShipMorale(
+		ship,
+		GetMoraleAffected("profit shared"),
+		sharedProfit
+	);
 }
 
 
@@ -87,9 +89,11 @@ double MoraleAffected::ProfitSharingDebtFailure(
 	const int64_t missedPaymentAmount
 )
 {
-	const MoraleAffected * moraleAffected = GetMoraleAffected("profit sharing debt failure");
-
-	return AffectShipMorale(ship, moraleAffected, missedPaymentAmount);
+	return AffectShipMorale(
+		ship,
+		GetMoraleAffected("profit sharing debt failure"),
+		missedPaymentAmount
+	);
 }
 
 
@@ -98,9 +102,11 @@ double MoraleAffected::ProfitSharingDebtOwed(
 	const int64_t debtAmount
 )
 {
-	const MoraleAffected * moraleAffected = GetMoraleAffected("profit sharing debt owed");
-
-	return AffectShipMorale(ship, moraleAffected, debtAmount);
+	return AffectShipMorale(
+		ship,
+		GetMoraleAffected("profit sharing debt owed"),
+		debtAmount
+	);
 }
 
 
@@ -110,9 +116,11 @@ double MoraleAffected::ProfitSharingDebtPayment(
 	const int64_t paymentAmount
 )
 {
-	const MoraleAffected * moraleAffected = GetMoraleAffected("profit sharing debt payment");
-
-	return AffectShipMorale(ship, moraleAffected, paymentAmount);
+	return AffectShipMorale(
+		ship,
+		GetMoraleAffected("profit sharing debt payment"),
+		paymentAmount
+	);
 }
 
 
