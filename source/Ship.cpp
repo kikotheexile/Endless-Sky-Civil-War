@@ -2762,10 +2762,10 @@ bool Ship::CanBeFlagship() const
 
 
 
-double ChangeMorale(double amount) const
+double Ship::ChangeMorale(double amount)
 {
-	// Morale cannot be more than 1000 or less than -1000
-	morale = min(max(morale + amount, -1000), 1000);
+	// Morale must be between -1000 and 1000.
+	morale = std::max(-1000., std::min(morale + amount, 1000.));
 	
 	return morale;
 }
@@ -2773,7 +2773,7 @@ double ChangeMorale(double amount) const
 
 
 // Access the current morale rating of the ship
-double Morale() const
+double Ship::Morale() const
 {
 	return morale;
 }
