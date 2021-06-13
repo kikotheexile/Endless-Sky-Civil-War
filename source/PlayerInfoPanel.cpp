@@ -563,9 +563,10 @@ void PlayerInfoPanel::DrawFleet(const Rectangle &bounds)
 	
 	// Table attributes.
 	Table table;
-	table.AddColumn(0, Font::Layout{Font::TRUNC_MIDDLE, 217, Font::LEFT});
-	table.AddColumn(220, Font::Layout{Font::TRUNC_BACK, 127, Font::LEFT});
-	table.AddColumn(350, Font::Layout{Font::TRUNC_BACK, 137, Font::LEFT});
+	table.AddColumn(0, Font::Layout{Font::TRUNC_MIDDLE, 197, Font::LEFT});
+	table.AddColumn(200, Font::Layout{Font::TRUNC_BACK, 127, Font::LEFT});
+	table.AddColumn(330, Font::Layout{Font::TRUNC_BACK, 137, Font::LEFT});
+	table.AddColumn(490, Font::Layout{Font::TRUNC_BACK, 57, Font::RIGHT});
 	table.AddColumn(550, Font::Layout{Font::TRUNC_BACK, 57, Font::RIGHT});
 	table.AddColumn(610, Font::Layout{Font::TRUNC_BACK, 57, Font::RIGHT});
 	table.AddColumn(670, Font::Layout{Font::TRUNC_BACK, 57, Font::RIGHT});
@@ -579,6 +580,7 @@ void PlayerInfoPanel::DrawFleet(const Rectangle &bounds)
 	table.Draw("ship");
 	table.Draw("model");
 	table.Draw("system");
+	table.Draw("morale");
 	table.Draw("shields");
 	table.Draw("hull");
 	table.Draw("fuel");
@@ -614,6 +616,9 @@ void PlayerInfoPanel::DrawFleet(const Rectangle &bounds)
 		
 		const System *system = ship.GetSystem();
 		table.Draw(system ? system->Name() : "");
+
+		string morale = to_string(static_cast<int>(ship.Morale()));
+		table.Draw(morale);
 		
 		string shields = to_string(static_cast<int>(100. * max(0., ship.Shields()))) + "%";
 		table.Draw(shields);
