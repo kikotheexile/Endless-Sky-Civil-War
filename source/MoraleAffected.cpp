@@ -54,7 +54,7 @@ const MoraleAffected * MoraleAffected::GetMoraleAffected(const std::string &id)
 	return moraleAffected;
 }
 
-// Public Static
+// Public Static Functions
 
 void MoraleAffected::CrewMemberDeath(
 	const PlayerInfo &player,
@@ -63,9 +63,17 @@ void MoraleAffected::CrewMemberDeath(
 )
 {
 	if(!ship->IsDestroyed())
-		DeathOnShip(player, ship, deathCount);
-	
-	DeathInFleet(player, deathCount);	
+		AffectShipMorale(
+			ship,
+			GetMoraleAffected("death on ship"),
+			deathCount
+		);
+
+	return AffectFleetMorale(
+		player,
+		GetMoraleAffected("death in fleet"),
+		deathCount
+	);
 }
 
 
@@ -79,6 +87,40 @@ void MoraleAffected::EnemyShipDisabled(
 		player,
 		GetMoraleAffected("enemy ship disabled"),
 		enemyShip->Cost()
+	);
+}
+
+
+
+void MoraleAffected::FleetShipDestroyed(
+	const PlayerInfo &player,
+	const shared_ptr<Ship> &ship
+)
+{
+	return AffectFleetMorale(
+		player,
+		GetMoraleAffected("fleet ship destroyed"),
+		ship->Cost()
+	);
+}
+
+
+
+void MoraleAffected::FleetShipDisabled(
+	const PlayerInfo &player,
+	const shared_ptr<Ship> &ship
+)
+{
+	AffectShipMorale(
+		ship,
+		GetMoraleAffected("ship disabled"),
+		ship->Cost()
+	);
+
+	return AffectFleetMorale(
+		player,
+		GetMoraleAffected("fleet ship disabled"),
+		ship->Cost()
 	);
 }
 
@@ -182,7 +224,7 @@ void MoraleAffected::SalaryPayment(const PlayerInfo &player)
 
 
 
-// Private Static
+// Private Static Functions
 
 void MoraleAffected::AffectFleetMorale(
 	const PlayerInfo &player,
@@ -230,27 +272,7 @@ double MoraleAffected::AffectShipMorale(
 
 
 
-void MoraleAffected::DeathInFleet(
-	const PlayerInfo &player,
-	const int64_t deathCount
-)
-{
-	return AffectFleetMorale(player, GetMoraleAffected("death in fleet"), deathCount);
-}
-
-
-
-double MoraleAffected::DeathOnShip(
-	const PlayerInfo &player,
-	const shared_ptr<Ship> &ship,
-	const int64_t deathCount
-)
-{
-	return AffectShipMorale(ship, GetMoraleAffected("death on ship"), deathCount);
-}
-
-
-// Public Instance
+// Public Instance Methods
 
 
 const double &MoraleAffected::ParkedMultiplier() const
