@@ -26,17 +26,29 @@ public:
 	// Triggers the following events:
 	// "death on ship"
 	// "death in fleet"; includes ship where death occurred
-	// The amount is applied for each crew member that died
+	// The amount is multiplied by the number of crew members that died
 	static void CrewMemberDeath(
 		const PlayerInfo &player,
 		const std::shared_ptr<Ship> &ship,
 		const int64_t deathCount
 	);
 
+
+
+	// The player's fleet has disabled an enemy ship
+	// Triggers the following events:
+	// "enemy ship disabled"
+	// The amount is multiplied by the cost of the enemy ship
+	static void EnemyShipDisabled(
+		const PlayerInfo &player,
+		const std::shared_ptr<Ship> &enemyShip
+	);
+
 	// One of the fleet's ships has been destroyed
 	// Triggers the following events:
 	// "fleet ship destroyed"
-	// The amount is applied only once; the crew deaths are handled by CrewMemberDeath.
+	// The amount is multiplied by the cost of the ship.
+	// The crew deaths are handled separately by CrewMemberDeath.
 	static double FleetShipDestroyed(
 		const PlayerInfo &player,
 		const std::shared_ptr<Ship> &ship
@@ -46,7 +58,7 @@ public:
 	// Triggers the following events:
 	// "profit shared"
 	// "profit shared while parked"
-	// The amount is applied for each credit of shared profit
+	// The amount is multiplied by the number of credits of shared profit
 	// Returns the amount that morale has changed on the ship
 	static double ProfitShared(
 		const std::shared_ptr<Ship> &ship,
@@ -57,7 +69,7 @@ public:
 	// Triggers the following events:
 	// "profit sharing debt failure"
 	// "profit sharing debt failure while parked"
-	// The amount is applied for each credit in the missed payment
+	// The amount is multiplied by the number of credits in the missed payment
 	static double ProfitSharingDebtFailure(
 		const std::shared_ptr<Ship> &ship,
 		const int64_t missedPaymentAmount
@@ -67,7 +79,7 @@ public:
 	// Triggers the following events:
 	// "profit sharing debt owed"
 	// "profit sharing debt owed while parked"
-	// The amount is applied for each credit in the payment
+	// The amount is multiplied by the number of credits in the payment
 	static double ProfitSharingDebtOwed(
 		const std::shared_ptr<Ship> &ship,
 		const int64_t profitShareDebtOwed
@@ -77,7 +89,7 @@ public:
 	// Triggers the following events:
 	// "profit sharing debt payment"
 	// "profit sharing debt payment while parked"
-	// The amount is applied for each credit in the payment
+	// The amount is multiplied by the number of credits in the payment
 	static double ProfitSharingDebtPayment(
 		const std::shared_ptr<Ship> &ship,
 		const int64_t sharedProfit
@@ -85,12 +97,12 @@ public:
 
 	// The player has paid all of the daily crew salaries
 	// Triggers "salary payment" event
-	// The amount is applied for each credit in the payment
+	// The amount for each ship is multiplied by that ship's total salary payment
 	static void SalaryPayment(const PlayerInfo &player);
 
 	// The player has missed a salary payment
 	// Triggers "salary failure" event
-	// The amount is applied for each credit in the missed payment
+	// The amount for each ship is multiplied by that ship's total expected salary
 	static void SalaryFailure(const PlayerInfo &player);
 
 

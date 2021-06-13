@@ -70,6 +70,20 @@ void MoraleAffected::CrewMemberDeath(
 
 
 
+void MoraleAffected::EnemyShipDisabled(
+	const PlayerInfo &player,
+	const shared_ptr<Ship> &enemyShip
+)
+{
+	return AffectFleetMorale(
+		player,
+		GetMoraleAffected("enemy ship disabled"),
+		enemyShip->Cost()
+	);
+}
+
+
+
 double MoraleAffected::ProfitShared(
 	const shared_ptr<Ship> &ship,
 	const int64_t sharedProfit
