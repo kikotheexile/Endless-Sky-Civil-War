@@ -297,11 +297,11 @@ public:
 	void AddCrew(int count);
 	// Check if this is a ship that can be used as a flagship.
 	bool CanBeFlagship() const;
-	
-	// Access the current morale rating of the ship
-	double Morale() const;
+
 	// Change the morale rating of the ship and return the new morale rating
 	double ChangeMorale(double amount);
+	// Access the current morale rating of the ship
+	double Morale() const;
 
 	// Get this ship's movement characteristics.
 	double Mass() const;
