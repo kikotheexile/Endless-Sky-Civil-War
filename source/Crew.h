@@ -19,31 +19,68 @@ class Crew
 {
 public:
 	// Calculate the proportion of profit that must be shared with the fleet
-	static double CalculateProfitShareRatio(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship);
+	// To actually share profit, call Crew::ShareProfit instead.
+	static double CalculateProfitShareRatio(
+		const std::vector<std::shared_ptr<Ship>> &ships,
+		const Ship * flagship
+	);
 	
 	// Calculate one day's salaries for the Player's fleet
-	static int64_t CalculateSalaries(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship, const bool includeExtras = true);
+	static int64_t CalculateSalaries(
+		const std::vector<std::shared_ptr<Ship>> &ships,
+		const Ship * flagship,
+		const bool includeExtras = true
+	);
 	
 	// Calculate the total cost of the flagship's extra crew
-	static int64_t CostOfExtraCrew(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship);
+	static int64_t CostOfExtraCrew(
+		const std::vector<std::shared_ptr<Ship>> &ships,
+		const Ship * flagship
+	);
 
 	// Generate a fleet summary for display
 	static std::vector<std::pair<int64_t, std::string>> FleetSummary(const PlayerInfo &player);
 	
 	// Figure out how many of a given crew member are on a ship
-	static int64_t NumberOnShip(const Crew &crew, const std::shared_ptr<Ship> &ship, const bool isFlagship, const bool includeExtras = true);
+	static int64_t NumberOnShip(
+		const Crew &crew,
+		const std::shared_ptr<Ship> &ship,
+		const bool isFlagship,
+		const bool includeExtras = true
+	);
 
 	// Return the total number of profit shares for a ship
-	static int64_t SharesForShip(const std::shared_ptr<Ship> &ship, const bool isFlagship, const bool includeExtras = true);
+	static int64_t SharesForShip(
+		const std::shared_ptr<Ship> &ship,
+		const bool isFlagship,
+		const bool includeExtras = true
+	);
 
 	// Calculate one day's salaries for a ship
-	static int64_t SalariesForShip(const std::shared_ptr<Ship> &ship, const bool isFlagship, const bool includeExtras = true);
+	static int64_t SalariesForShip(
+		const std::shared_ptr<Ship> &ship,
+		const bool isFlagship,
+		const bool includeExtras = true
+	);
 
 	// Share profits the fleet. Returns how many credits were distributed.
-	static int64_t ShareProfit(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship, const int64_t grossProfit);
+	// Calling this function triggers a MoraleAffected::ProfitShared event
+	// for each ship that received a share of the profits.
+	// If shareEverything is true, distributes the entire amount, ignoring the player's share.
+	// If shareEverything is false, avoids distributing the player's share.
+	static int64_t ShareProfit(
+		const std::vector<std::shared_ptr<Ship>> &ships,
+		const Ship * flagship,
+		const int64_t credits,
+		const bool distributeEverything = false
+	);
 	
 	// List the crew members on a ship, and how many there are of each type
-	static const std::map<const std::string, int64_t> ShipManifest(const std::shared_ptr<Ship> &ship, bool isFlagship, bool includeExtras = true);
+	static const std::map<const std::string, int64_t> ShipManifest(
+		const std::shared_ptr<Ship> &ship,
+		bool isFlagship,
+		bool includeExtras = true
+	);
 
 	// Load a definition for a crew member.
 	void Load(const DataNode &node);
