@@ -2762,6 +2762,24 @@ bool Ship::CanBeFlagship() const
 
 
 
+double ChangeMorale(double amount) const
+{
+	// Morale cannot be more than 1000 or less than -1000
+	morale = min(max(morale + amount, -1000), 1000);
+	
+	return morale;
+}
+
+
+
+// Access the current morale rating of the ship
+double Morale() const
+{
+	return morale;
+}
+
+
+
 double Ship::Mass() const
 {
 	return carriedMass + cargo.Used() + attributes.Mass();
