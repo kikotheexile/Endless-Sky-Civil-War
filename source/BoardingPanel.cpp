@@ -420,10 +420,12 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 				if(!victim->JumpsRemaining() && you->CanRefuel(*victim))
 					you->TransferFuel(victim->JumpFuelMissing(), &*victim);
 				player.AddShip(victim);
+				victim->ChangeMorale(player.Flagship()->Morale());
 				for(const Ship::Bay &bay : victim->Bays())
 					if(bay.ship)
 					{
 						player.AddShip(bay.ship);
+						bay.ship->ChangeMorale(player.Flagship()->Morale());
 						player.HandleEvent(ShipEvent(you, bay.ship, ShipEvent::CAPTURE), GetUI());
 					}
 				isCapturing = false;

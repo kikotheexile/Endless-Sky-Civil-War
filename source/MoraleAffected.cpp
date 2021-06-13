@@ -14,7 +14,9 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Crew.h"
 #include "DataNode.h"
 #include "Files.h"
+#include "Format.h"
 #include "GameData.h"
+#include "Messages.h"
 #include "PlayerInfo.h"
 
 using namespace std;
@@ -36,8 +38,12 @@ void MoraleAffected::Load(const DataNode &node)
 				amountPerCrewMember = child.Value(1);
 			else if(child.Token(0) == "flat amount")
 				flatAmount = child.Value(1);
-			else if(child.Token(0) == "message")
-				message = child.Token(1);
+			else if(child.Token(0) == "fleet message")
+				fleetMessage = child.Token(1);
+			else if(child.Token(0) == "parked multiplier")
+				parkedMultiplier = child.Value(1);
+			else if(child.Token(0) == "ship message")
+				shipMessage = child.Token(1);
 			else
 				child.PrintTrace("Skipping unrecognized attribute:");
 		}
@@ -232,18 +238,54 @@ void MoraleAffected::AffectFleetMorale(
 	double multiplier
 )
 {
+	// If the morale affected record only specifies a flat amount, we can short-circuit the process.
+	// This improves performance and allows us to provide a more precise message to the player.
 	if(
 		moraleAffected->AmountDividedByCrewMembers() == 0. &&
 		moraleAffected->AmountPerCrewMember() == 0. &&
 		moraleAffected->FlatAmount() != 0.
-	) {
+	)
+	{
+		double amount = moraleAffected->FlatAmount() * multiplier;
+
 		for(auto ship = player.Ships().begin(); ship != player.Ships().end(); ++ship)
-			(*ship)->ChangeMorale(moraleAffected->FlatAmount());
+			(*ship)->ChangeMorale(amount);
+		
+		if(moraleAffected->FleetMessage().length() > 0)
+		{
+			string changeDescription = amount > 0 ? "increased" : "decreased";
+
+			Messages::Add(
+				moraleAffected->FleetMessage() +
+				". Your fleet's morale has " +
+				changeDescription +
+				" by " +
+				Format::Number(abs(amount)) +
+				"."
+			);
+		}
+
 		return;
 	}
 
+	// If the morale change includes non-flat amounts, we need to process it for each ship.
+	double totalMoraleChange = 0.;
+
 	for(auto ship = player.Ships().begin(); ship != player.Ships().end(); ++ship)
-		AffectShipMorale(*ship, moraleAffected, multiplier);
+		totalMoraleChange += AffectShipMorale(*ship, moraleAffected, multiplier);
+
+	string changeDescription = totalMoraleChange > 0 ? "increased" : "decreased";
+
+	if(moraleAffected->FleetMessage().length() > 0)
+
+	Messages::Add(
+		moraleAffected->ShipMessage() +
+		". Your fleet's morale has " +
+		changeDescription +
+		" by an average of " +
+		Format::Number(abs(totalMoraleChange / player.Ships().size())) +
+		"."
+	);
 }
 
 
@@ -251,22 +293,41 @@ void MoraleAffected::AffectFleetMorale(
 double MoraleAffected::AffectShipMorale(
 	const shared_ptr<Ship> &ship,
 	const MoraleAffected * moraleAffected,
-	double multiplier
+	double multiplier,
+	bool silenceMessage
 )
 {
 	if(!moraleAffected || ship->Crew() <= 0) return 0.;
 
 	double amount = 0.;
 
-	amount += multiplier * moraleAffected->AmountDividedByCrewMembers() / ship->Crew();
-	amount += multiplier * moraleAffected->AmountPerCrewMember() * ship->Crew();
+	amount += moraleAffected->AmountDividedByCrewMembers() / ship->Crew();
+	amount += moraleAffected->AmountPerCrewMember() * ship->Crew();
+	amount += moraleAffected->FlatAmount();
+
+	amount *= multiplier;
 
 	if(ship->IsParked())
 		amount *= moraleAffected->ParkedMultiplier();
-		
-	amount += moraleAffected->FlatAmount();
 
 	ship->ChangeMorale(amount);
+
+	if(!silenceMessage && moraleAffected->ShipMessage().length() > 0)
+	{
+		string changeDescription = amount > 0 ? "increased" : "decreased";
+
+		Messages::Add(
+			moraleAffected->ShipMessage() +
+			". The " +
+			ship->Name() + 
+			" has " +
+			changeDescription +
+			" in morale by " +
+			Format::Number(abs(amount)) + 
+			"."
+		);
+	}
+
 	return amount;
 }
 
@@ -303,6 +364,14 @@ const double &MoraleAffected::FlatAmount() const
 
 
 
+
+const string &MoraleAffected::FleetMessage() const
+{
+	return fleetMessage;
+}
+
+
+
 const string &MoraleAffected::Id() const
 {
 	return id;
@@ -310,7 +379,7 @@ const string &MoraleAffected::Id() const
 
 
 
-const string &MoraleAffected::Message() const
+const string &MoraleAffected::ShipMessage() const
 {
-	return message;
+	return shipMessage;
 }

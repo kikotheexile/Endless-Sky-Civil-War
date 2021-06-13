@@ -1,0 +1,99 @@
+# Copyright (c) 2021 by Luke Arndt
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+# This file is for configuring how various events affect morale.
+
+# All fields are optional except "morale affected" and "unique id".
+#
+# Record format:
+# "morale affected" "unique id"
+#   "amount divided by crew members" (number; divided by the number of crew on the ship)
+#   "amount per crew member" (number; multiplied by the number of crew on the ship)
+#   "flat amount" (number; a flat morale change, unaffected by crew count)
+#   "fleet message" (string; displayed if the event applies to a fleet)
+#   "parked multiplier" (number; the morale change is multiplied by this for parked ships)
+#   "ship message" (string; displayed if the event applies to a single ship)
+
+
+# Crew members have died on a ship in the fleet
+"morale affected" "death in fleet"
+  "flat amount" -0.5
+  "fleet message" "News of your slain crew travels through your fleet"
+
+# Some of a ship's crew members have been killed
+# This happens in addition to "death in fleet"
+"morale affected" "death on ship"
+  "amount divided by crew members" -500
+  "ship message" "Crew have been slain"
+
+# The fleet has disabled an enemy ship
+# Multiplied by the cost of the enemy ship
+"morale affected" "enemy ship disabled"
+  "flat amount" 0.000001
+  "fleet message" "An enemy ship has been disabled"
+
+# A ship in the player's fleet has been destroyed
+# Crew deaths on that ship are handed by "death in fleet"
+# Multiplied by the cost of the ship
+"morale affected" "fleet ship destroyed"
+  "amount divided by crew members" -0.00001
+  "fleet message" "A ship in your fleet has been destroyed"
+
+# A ship in the player's fleet has been disabled
+# Multiplied by the cost of the ship
+"morale affected" "fleet ship disabled"
+  "amount divided by crew members" -0.00001
+  "fleet message" "A ship in your fleet has been disabled"
+
+# This event applies to a ship in the player's fleet that has been disabled,
+# in addition to "fleet ship disabled"
+# Multiplied by the cost of the ship
+"morale affected" "ship disabled"
+  "flat amount" -0.0001
+  "ship message" "A ship has become disabled, and its crew fear for their lives"
+
+# Profit has been shared with the crew on the ship
+# Multiplied by the number of credits
+"morale affected" "profit shared"
+  "amount divided by crew members" 0.001
+  "ship message" "Profit has been shared"
+
+# The player has failed to pay crew salaries
+# Multiplied by the number of credits the ship expected
+"morale affected" "salary failure"
+  "amount divided by crew members" -0.1
+  "parked multiplier" 0
+  "fleet message" "News of the missed salary payment travels through your fleet"
+
+# The player has paid crew salaries
+# Multiplied by the number of credits the ship received
+"morale affected" "salary payment"
+  "amount divided by crew members" 0.01
+  "parked multiplier" 0
+  "fleet message" "Everybody got paid on time"
+
+# The player has missed an incremental payment for a profit sharing debt
+# Multiplied by the number of credits that a given ship was supposed to receive today
+"morale affected" "profit sharing debt failure"
+  "amount divided by crew members" -0.1
+  "fleet message" "News of the missed profit share payment travels through your fleet"
+
+# The player has an outstanding profit sharing debt
+# Multiplied by the number of credits that a given ship is currently owed 
+"morale affected" "profit sharing debt owed"
+  "amount divided by crew members" -0.01
+  "fleet message" "You owe your fleet profit shares"
+
+# The player has made an incremental payment for their profit sharing debt
+# Multiplied by the number of credits that a given ship received today
+"morale affected" "profit sharing debt payment"
+  "amount divided by crew members" 0.0001
+  "fleet message" "You made an incremental payment for your profit sharing debt"
+

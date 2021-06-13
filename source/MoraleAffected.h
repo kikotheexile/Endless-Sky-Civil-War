@@ -113,7 +113,7 @@ public:
 
 
 
-	// Load a definition for a morale event
+	// Load a definition for a morale affected record
 	void Load(const DataNode &node);
 
 	// Returns true if this MoraleAffected event does not apply to parked ships
@@ -132,18 +132,23 @@ public:
 	const double &AmountPerCrewMember() const;
 
 	// A flat amount that the event changes the ship's morale by.
-	// Never multiplied by any other factors.
+	// For events that apply evenly to all ships, regardless of crew count.
+	// Often multiplied by other factors, such as a number of credits.
 	const double &FlatAmount() const;
 
-	// If an affected ship is parked, multiply the morale change by this amount
+	// If an affected ship is parked, multiply the morale change by this amount.
 	// Defaults to 1.
 	const double &ParkedMultiplier() const;
 
-	// The id that the morale event is stored against in GameData::Crews()
+	// A message to display when the morale affected record is applied to the player's fleet.
+	const std::string &FleetMessage() const;
+
+	// The id that the morale affected record is stored against in GameData::Crews().
 	const std::string &Id() const;
 
-	// A message to display when the morale event occurs
-	const std::string &Message() const;
+	// A message to display when the morale affected record is applied to a single ship.
+	// If the record is applied to the whole fleet, this will be ignored.
+	const std::string &ShipMessage() const;
 
 private:
 
@@ -165,7 +170,8 @@ private:
 	static double AffectShipMorale(
 		const shared_ptr<Ship> &ship,
 		const MoraleAffected * moraleAffected,
-		double multiplier
+		double multiplier,
+		bool silenceMessage = false
 	);
 
 	// Apply a flat morale change to every ship in the player's fleet
@@ -173,19 +179,6 @@ private:
 	static void ChangeFleetMoraleByFlatAmount(
 		const PlayerInfo &player,
 		double flatAmount
-	);
-
-	// Apply morale change to the fleet in response to crew death
-	static void DeathInFleet(
-		const PlayerInfo &player,
-		const int64_t deathCount
-	);
-
-	// Apply morale change to the ship that crew members died on
-	static double DeathOnShip(
-		const PlayerInfo &player,
-		const std::shared_ptr<Ship> &ship,
-		const int64_t deathCount
 	);
 
 	// Apply morale change to an active ship for a successful salary payment
@@ -206,8 +199,9 @@ private:
 	double amountPerCrewMember = 0.;
 	double flatAmount = 0.;
 	double parkedMultiplier = 1.;
+	std::string fleetMessage;
 	std::string id;
-	std::string message;
+	std::string shipMessage;
 };
 
 #endif
