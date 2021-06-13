@@ -176,9 +176,6 @@ void MoraleAffected::AffectFleetMorale(
 	double multiplier
 )
 {
-
-	double amount = 0.;
-
 	if(
 		moraleAffected->AmountDividedByCrewMembers() == 0. &&
 		moraleAffected->AmountPerCrewMember() == 0. &&
@@ -186,6 +183,7 @@ void MoraleAffected::AffectFleetMorale(
 	) {
 		for(auto ship = player.Ships().begin(); ship != player.Ships().end(); ++ship)
 			(*ship)->ChangeMorale(moraleAffected->FlatAmount());
+		return;
 	}
 
 	for(auto ship = player.Ships().begin(); ship != player.Ships().end(); ++ship)
