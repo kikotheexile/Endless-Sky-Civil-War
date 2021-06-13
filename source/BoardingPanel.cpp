@@ -24,6 +24,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Government.h"
 #include "Information.h"
 #include "Interface.h"
+#include "MoraleAffected.h"
 #include "Messages.h"
 #include "PlayerInfo.h"
 #include "Preferences.h"
@@ -393,7 +394,15 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 				messages.back() += "You lose " + to_string(yourCasualties) + " crew.";
 			else if(enemyCasualties)
 				messages.back() += "They lose " + to_string(enemyCasualties) + " crew.";
-			
+
+			// If you suffered casualties, their deaths will affect morale
+			if(yourCasualties)
+				MoraleAffected::CrewMemberDeath(
+					player,
+					player.FlagshipPtr(),
+					yourCasualties
+				);
+
 			// Check if either ship has been captured.
 			if(!you->Crew())
 			{
