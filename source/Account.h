@@ -14,6 +14,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #define ACCOUNT_H_
 
 #include "Mortgage.h"
+#include "Ship.h"
 
 #include <cstdint>
 #include <string>
@@ -41,7 +42,13 @@ public:
 	void PayExtra(int mortgage, int64_t amount);
 	
 	// Step forward one day, and return a string summarizing payments made.
-	std::string Step(int64_t assets, int64_t salaries, int64_t maintenance);
+	std::string Step(
+		int64_t assets,
+		int64_t salaries,
+		int64_t maintenance,
+		const std::vector<std::shared_ptr<Ship>> &ships,
+		const Ship * flagship
+	);
 	
 	// Overdue crew salaries:
 	int64_t SalariesOwed() const;

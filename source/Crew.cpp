@@ -201,6 +201,113 @@ int64_t Crew::NumberOnShip(
 
 
 
+const string Crew::PROFIT_SHARING_DEBT_FAILURE = "failure";
+const string Crew::PROFIT_SHARING_DEBT_PAYMENT = "payment";
+
+void Crew::ProcessProfitSharingDebt(
+	const std::vector<std::shared_ptr<Ship>> &ships,
+	const Ship * flagship,
+	const int64_t payment,
+	const int64_t principal,
+	const string eventType
+)
+{
+	if(payment <= 0)
+		return;
+	
+	const Crew * playerCrew = GameData::Crews().Get("player");
+	if(!playerCrew || playerCrew->Shares() == 0)
+		return;
+	
+	// We don't want to calculate the ships' crew shares more than once,
+	// so let's cache them in an array for the second step of the process.
+	int64_t crewSharesCache [ships.size()];
+	
+		// Calculate how many shares are in the entire fleet.
+	int64_t totalFleetShares = 0;
+	for(size_t index = 0; index != ships.size(); ++index)
+	{
+		// Calculate how many shares this ship has in total.
+		const shared_ptr<Ship> &ship = ships[index];
+		
+		int64_t crewShares = Crew::SharesForShip(
+			ship,
+			ship.get() == flagship
+		);
+
+		crewSharesCache[index] = crewShares;
+		totalFleetShares += crewShares;
+	}
+
+	// Since this is specifically for a profit sharing debt, we need to
+	// exclude the player's shares from the calculation.
+	totalFleetShares -= playerCrew->Shares();
+
+	// If the player is the sole shareholder in the fleet, we don't need to continue.
+	if(totalFleetShares == 0)
+		return;
+	
+	for(size_t index = 0; index != ships.size(); ++index)
+	{
+		const shared_ptr<Ship> &ship = ships[index];
+		
+		// Determine how many non-player shares this ship has
+		int64_t shipCrewShares = ship.get() == flagship
+			? crewSharesCache[index] - playerCrew->Shares()
+			: crewSharesCache[index];
+		
+		// Calculate the total number of credits that this ship is owed
+		int64_t shipPrincipal = principal * shipCrewShares / (double)totalFleetShares;
+
+		// Affect the morale of the ship based on how much they are owed
+		MoraleAffected::ProfitSharingDebtOwed(ship, shipPrincipal);
+		
+		// Calculate the number of credits that this ship expects today
+		int64_t shipPayment = payment * shipCrewShares / (double)totalFleetShares;
+
+		// Affect the morale of the ship based on whether the payment happened today
+		if(eventType == Crew::PROFIT_SHARING_DEBT_FAILURE)
+			MoraleAffected::ProfitSharingDebtFailure(ship, shipPayment);
+		else if(eventType == Crew::PROFIT_SHARING_DEBT_PAYMENT)
+			MoraleAffected::ProfitSharingDebtPayment(ship, shipPayment);
+	}
+}
+
+
+
+const string Crew::SALARY_FAILURE = "failure";
+const string Crew::SALARY_PAYMENT = "payment";
+
+void Crew::ProcessSalaries(
+	const std::vector<std::shared_ptr<Ship>> &ships,
+	const Ship * flagship,
+	const double proportionPaid,
+	const string eventType
+)
+{
+	for(size_t index = 0; index != ships.size(); ++index)
+	{
+		const shared_ptr<Ship> &ship = ships[index];
+		
+		// Determine the total salary expectation for this ship
+		int64_t shipSalary = SalariesForShip(
+			ship,
+			ship.get() == flagship
+		);
+
+		if(shipSalary > 0)
+		{ 
+			// Affect the morale of the ship based on whether the payment happened today
+			if(eventType == Crew::SALARY_FAILURE)
+				MoraleAffected::SalaryFailure(ship, 1 - proportionPaid * shipSalary);
+			else if(eventType == Crew::SALARY_PAYMENT)
+				MoraleAffected::SalaryPayment(ship, shipSalary);
+		}
+	}
+}
+
+
+
 int64_t Crew::SalariesForShip(
 	const shared_ptr<Ship> &ship,
 	const bool isFlagship,

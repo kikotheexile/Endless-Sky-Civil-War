@@ -64,6 +64,9 @@ BoardingPanel::BoardingPanel(PlayerInfo &player, const shared_ptr<Ship> &victim)
 	
 	// Calculate the profit sharing margin before any action is taken
 	profitShareRatio = Crew::CalculateProfitShareRatio(player.Ships(), player.Flagship());
+
+	// Store how many crew the player's ship starts with
+	startingPlayerCrew = player.Flagship()->Crew();
 	
 	// Figure out how much the victim's commodities are worth in the current
 	// system and add them to the list of plunder.
@@ -395,14 +398,6 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 			else if(enemyCasualties)
 				messages.back() += "They lose " + to_string(enemyCasualties) + " crew.";
 
-			// If you suffered casualties, their deaths will affect morale
-			if(yourCasualties)
-				MoraleAffected::CrewMemberDeath(
-					player,
-					player.FlagshipPtr(),
-					yourCasualties
-				);
-
 			// Check if either ship has been captured.
 			if(!you->Crew())
 			{
@@ -420,6 +415,16 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 				if(!victim->JumpsRemaining() && you->CanRefuel(*victim))
 					you->TransferFuel(victim->JumpFuelMissing(), &*victim);
 				player.AddShip(victim);
+				
+				// If you suffered casualties, their deaths will affect morale
+				const int totalPlayerCasualties = startingPlayerCrew - player.Flagship()->Crew();
+				if(totalPlayerCasualties)
+					MoraleAffected::CrewMemberDeath(
+						player,
+						player.FlagshipPtr(),
+						totalPlayerCasualties
+					);
+
 				victim->ChangeMorale(player.Flagship()->Morale());
 				for(const Ship::Bay &bay : victim->Bays())
 					if(bay.ship)

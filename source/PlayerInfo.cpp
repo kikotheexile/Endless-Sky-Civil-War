@@ -576,7 +576,13 @@ void PlayerInfo::IncrementDate()
 	
 	// Have the player pay salaries, mortgages, etc. and print a message that
 	// summarizes the payments that were made.
-	string message = accounts.Step(assets, Salaries(), Maintenance());
+	string message = accounts.Step(
+		assets,
+		Salaries(),
+		Maintenance(),
+		Ships(),
+		Flagship()
+	);
 	if(!message.empty())
 		Messages::Add(message);
 	

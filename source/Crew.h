@@ -15,50 +15,52 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 #include "Ship.h"
 
+using namespace std;
+
 class Crew
 {
 public:
 	// Calculate the proportion of profit that must be shared with the fleet
 	// To actually share profit, call Crew::ShareProfit instead.
 	static double CalculateProfitShareRatio(
-		const std::vector<std::shared_ptr<Ship>> &ships,
+		const vector<shared_ptr<Ship>> &ships,
 		const Ship * flagship
 	);
 	
 	// Calculate one day's salaries for the Player's fleet
 	static int64_t CalculateSalaries(
-		const std::vector<std::shared_ptr<Ship>> &ships,
+		const vector<shared_ptr<Ship>> &ships,
 		const Ship * flagship,
 		const bool includeExtras = true
 	);
 	
 	// Calculate the total cost of the flagship's extra crew
 	static int64_t CostOfExtraCrew(
-		const std::vector<std::shared_ptr<Ship>> &ships,
+		const vector<shared_ptr<Ship>> &ships,
 		const Ship * flagship
 	);
 
 	// Generate a fleet summary for display
-	static std::vector<std::pair<int64_t, std::string>> FleetSummary(const PlayerInfo &player);
+	static vector<pair<int64_t, string>> FleetSummary(const PlayerInfo &player);
 	
 	// Figure out how many of a given crew member are on a ship
 	static int64_t NumberOnShip(
 		const Crew &crew,
-		const std::shared_ptr<Ship> &ship,
+		const shared_ptr<Ship> &ship,
 		const bool isFlagship,
 		const bool includeExtras = true
 	);
 
 	// Return the total number of profit shares for a ship
 	static int64_t SharesForShip(
-		const std::shared_ptr<Ship> &ship,
+		const shared_ptr<Ship> &ship,
 		const bool isFlagship,
 		const bool includeExtras = true
 	);
 
 	// Calculate one day's salaries for a ship
 	static int64_t SalariesForShip(
-		const std::shared_ptr<Ship> &ship,
+		const shared_ptr<Ship> &ship,
 		const bool isFlagship,
 		const bool includeExtras = true
 	);
@@ -69,15 +71,45 @@ public:
 	// If shareEverything is true, distributes the entire amount, ignoring the player's share.
 	// If shareEverything is false, avoids distributing the player's share.
 	static int64_t ShareProfit(
-		const std::vector<std::shared_ptr<Ship>> &ships,
+		const vector<shared_ptr<Ship>> &ships,
 		const Ship * flagship,
 		const int64_t credits,
 		const bool distributeEverything = false
 	);
-	
+
+	static const string PROFIT_SHARING_DEBT_FAILURE;
+	static const string PROFIT_SHARING_DEBT_PAYMENT;
+
+	// Process one day's worth of profit sharing debt.
+	// Calling this function triggers a MoraleAffected event for each ship, based on the eventType:
+	// PROFIT_SHARING_DEBT_FAILURE: MoraleAffected::ProfitSharingDebtFailure
+	// PROFIT_SHARING_DEBT_PAYMENT: MoraleAffected::ProfitSharingDebtPayment
+	// It also triggers a MoraleAffected::ProfitSharingDebtOwed event.
+	static void ProcessProfitSharingDebt(
+		const vector<shared_ptr<Ship>> &ships,
+		const Ship * flagship,
+		const int64_t missedPayment,
+		const int64_t principal,
+		const string eventType
+	);
+
+	static const string SALARY_FAILURE;
+	static const string SALARY_PAYMENT;
+
+	// Process one day's worth of salaries.
+	// Calling this function triggers a MoraleAffected event for each ship, based on the eventType: 
+	// SALARY_FAILURE: MoraleAffected::SalaryFailure
+	// SALARY_PAYMENT: MoraleAffected::SalaryPayment
+	static void ProcessSalaries(
+		const vector<shared_ptr<Ship>> &ships,
+		const Ship * flagship,
+		const double proportionPaid,
+		const string eventType
+	);
+
 	// List the crew members on a ship, and how many there are of each type
-	static const std::map<const std::string, int64_t> ShipManifest(
-		const std::shared_ptr<Ship> &ship,
+	static const map<const string, int64_t> ShipManifest(
+		const shared_ptr<Ship> &ship,
 		bool isFlagship,
 		bool includeExtras = true
 	);
@@ -92,9 +124,9 @@ public:
 	int64_t Salary() const;
 	int64_t Shares() const;
 	int64_t ShipPopulationPerMember() const;
-	const std::string &Id() const;
-	const std::string &Name() const;
-	const std::vector<int64_t> &PlaceAt() const;
+	const string &Id() const;
+	const string &Name() const;
+	const vector<int64_t> &PlaceAt() const;
 
 private:
 	// If true, the crew member will not appear on escorts
@@ -112,15 +144,15 @@ private:
 	// Every nth crew member on the ship will be this crew member
 	int64_t shipPopulationPerMember = 0;
 	// The id that the crew member is stored against in GameData::Crews()
-	std::string id;
+	string id;
 	// The display name for this kind of crew members (plural, Title Case)
-	std::string name;
+	string name;
 	// The crew member will be placed at these crew member numbers if possible
 	// Note: if multiple crew definitions claim the same crew positions,
 	// we can end up paying for more crew than we expect to.
 	// To avoid this, don't place different crew members in the same spots.
 	// Example usage: "place at" 1 3 5 7 13
-	std::vector<int64_t> placeAt;
+	vector<int64_t> placeAt;
 };
 
 #endif

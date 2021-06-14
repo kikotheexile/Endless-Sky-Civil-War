@@ -99,17 +99,23 @@ public:
 		const int64_t sharedProfit
 	);
 
+	// The player has missed a salary payment
+	// Triggers the following events:
+	// Fleet: "salary failure"
+	// The amount for each ship is multiplied by how many credits were missing in that ship's payment
+	static double SalaryFailure(
+		const shared_ptr<Ship> &ship,
+		const int64_t missingCredits
+	);
+
 	// The player has paid all of the daily crew salaries
 	// Triggers the following events:
 	// Fleet: "salary payment"
 	// The amount for each ship is multiplied by that ship's total salary payment
-	static void SalaryPayment(const PlayerInfo &player);
-
-	// The player has missed a salary payment
-	// Triggers the following events:
-	// Fleet: "salary failure"
-	// The amount for each ship is multiplied by that ship's total expected salary
-	static void SalaryFailure(const PlayerInfo &player);
+	static double SalaryPayment(
+		const shared_ptr<Ship> &ship,
+		const int64_t credits
+	);
 
 
 

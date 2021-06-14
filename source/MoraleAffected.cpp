@@ -11,7 +11,6 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 */
 
 #include "MoraleAffected.h"
-#include "Crew.h"
 #include "DataNode.h"
 #include "Files.h"
 #include "Format.h"
@@ -65,7 +64,7 @@ const MoraleAffected * MoraleAffected::GetMoraleAffected(const std::string &id)
 void MoraleAffected::CrewMemberDeath(
 	const PlayerInfo &player,
 	const shared_ptr<Ship> &ship,
-	const int64_t deathCount
+	const int deathCount
 )
 {
 	if(!ship->IsDestroyed())
@@ -120,13 +119,13 @@ void MoraleAffected::FleetShipDisabled(
 	AffectShipMorale(
 		ship,
 		GetMoraleAffected("ship disabled"),
-		ship->Cost()
+		1
 	);
 
 	return AffectFleetMorale(
 		player,
 		GetMoraleAffected("fleet ship disabled"),
-		ship->Cost()
+		ship->Crew()
 	);
 }
 
@@ -188,44 +187,30 @@ double MoraleAffected::ProfitSharingDebtPayment(
 
 
 
-void MoraleAffected::SalaryFailure(const PlayerInfo &player)
+double MoraleAffected::SalaryFailure(
+	const shared_ptr<Ship> &ship,
+	const int64_t missingCredits
+)
 {
-	const MoraleAffected * moraleAffected = GetMoraleAffected("salary failure");
-	if(!moraleAffected) return;
-	
-	for(const shared_ptr<Ship> &ship : player.Ships())
-	{
-		AffectShipMorale(
-			ship,
-			moraleAffected,
-			// Perhaps we should call `Crew::SalaryFailure` instead, and have that call this?
-			Crew::SalariesForShip(
-				ship,
-				ship.get() == player.Flagship()
-			)
-		);
-	}
+	return AffectShipMorale(
+		ship,
+		GetMoraleAffected("salary failure"),
+		missingCredits
+	);
 }
 
 
 
-void MoraleAffected::SalaryPayment(const PlayerInfo &player)
+double MoraleAffected::SalaryPayment(
+	const shared_ptr<Ship> &ship,
+	const int64_t credits
+)
 {
-	const MoraleAffected * moraleAffected = GetMoraleAffected("salary payment");
-		if(!moraleAffected) return;
-
-	for(const shared_ptr<Ship> &ship : player.Ships())
-	{
-		AffectShipMorale(
-			ship,
-			moraleAffected,
-			// Perhaps we should call `Crew::SalaryPayment` instead, and have that call this?
-			Crew::SalariesForShip(
-				ship,
-				ship.get() == player.Flagship()
-			)
-		);
-	}
+	return AffectShipMorale(
+		ship,
+		GetMoraleAffected("salary payment"),
+		credits
+	);
 }
 
 
@@ -279,7 +264,7 @@ void MoraleAffected::AffectFleetMorale(
 	if(moraleAffected->FleetMessage().length() > 0)
 
 	Messages::Add(
-		moraleAffected->ShipMessage() +
+		moraleAffected->FleetMessage() +
 		". Your fleet's morale has " +
 		changeDescription +
 		" by an average of " +

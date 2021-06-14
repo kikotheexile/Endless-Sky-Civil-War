@@ -118,6 +118,7 @@ private:
 	bool isCapturing = false;
 	bool isFirstCaptureAction = true;
 	bool victimCaptured = false;
+	int startingPlayerCrew = 0;
 	
 	// Calculating the odds of combat success, and the expected casualties, is
 	// non-trivial. So, cache the results for all crew amounts up to full.
