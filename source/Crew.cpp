@@ -182,7 +182,7 @@ vector< pair<int64_t, string> > Crew::FleetSummary(
 	int64_t totalCrewShares = totalFleetShares - playerCrew->Shares();
 	
 	// Add the total crew count
-	fleetSummary.push_back(make_pair(totalCrewShares, "total crew"));
+	fleetSummary.push_back(make_pair(totalFleetCrew, "total crew"));
 
 	// Add the total crew shares
 	fleetSummary.push_back(make_pair(totalCrewShares, "crew shares"));
