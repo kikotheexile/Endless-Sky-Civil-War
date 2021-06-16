@@ -30,27 +30,27 @@
 "morale description" "400 to 600"
   "maximum morale" 600
   "minimum morale" 400
-  "name" "Keen"
+  "name" "Animate"
 
 "morale description" "200 to 400"
   "maximum morale" 400
   "minimum morale" 200
-  "name" "Happy"
+  "name" "Keen"
 
 "morale description" "0 to 200"
   "maximum morale" 200
   "minimum morale" 0
-  "name" "Neutral"
+  "name" "Fair"
 
 "morale description" "0 to -200"
   "maximum morale" 0
   "minimum morale" -200
-  "name" "Unhappy"
+  "name" "Poor"
 
 "morale description" "-200 to -400"
   "maximum morale" -200
   "minimum morale" -400
-  "name" "Upset"
+  "name" "Annoyed"
 
 "morale description" "-400 to -600"
   "maximum morale" -400
