@@ -23,25 +23,36 @@ public:
 	// Calculate the proportion of profit that must be shared with the fleet
 	// To actually share profit, call Crew::ShareProfit instead.
 	static double CalculateProfitShareRatio(
-		const vector<shared_ptr<Ship>> &ships,
+		const vector< shared_ptr<Ship> > &fleet,
 		const Ship * flagship
 	);
 	
 	// Calculate one day's salaries for the Player's fleet
 	static int64_t CalculateSalaries(
-		const vector<shared_ptr<Ship>> &ships,
+		const vector< shared_ptr<Ship> > &fleet,
 		const Ship * flagship,
 		const bool includeExtras = true
 	);
 	
 	// Calculate the total cost of the flagship's extra crew
 	static int64_t CostOfExtraCrew(
-		const vector<shared_ptr<Ship>> &ships,
+		const vector< shared_ptr<Ship> > &fleet,
 		const Ship * flagship
 	);
 
+	// Calculate the average morale of the fleet and return a description.
+	// If you already know the total number of crew in the fleet,
+	// you can pass it as an argument to prevent it from being recalculated.
+	static string FleetMoraleDescription(
+		const vector< shared_ptr<Ship> > &fleet,
+		const int64_t totalFleetCrew = 0
+	);
+
 	// Generate a fleet summary for display
-	static vector<pair<int64_t, string>> FleetSummary(const PlayerInfo &player);
+	static vector< pair<int64_t, string> > FleetSummary(
+		const vector< shared_ptr<Ship> > &fleet,
+		const Ship * flagship
+	);
 	
 	// Figure out how many of a given crew member are on a ship
 	static int64_t NumberOnShip(
@@ -71,7 +82,7 @@ public:
 	// If shareEverything is true, distributes the entire amount, ignoring the player's share.
 	// If shareEverything is false, avoids distributing the player's share.
 	static int64_t ShareProfit(
-		const vector<shared_ptr<Ship>> &ships,
+		const vector< shared_ptr<Ship> > &fleet,
 		const Ship * flagship,
 		const int64_t credits,
 		const bool distributeEverything = false
@@ -86,7 +97,7 @@ public:
 	// PROFIT_SHARING_DEBT_PAYMENT: MoraleAffected::ProfitSharingDebtPayment
 	// It also triggers a MoraleAffected::ProfitSharingDebtOwed event.
 	static void ProcessProfitSharingDebt(
-		const vector<shared_ptr<Ship>> &ships,
+		const vector< shared_ptr<Ship> > &fleet,
 		const Ship * flagship,
 		const int64_t missedPayment,
 		const int64_t principal,
@@ -101,7 +112,7 @@ public:
 	// SALARY_FAILURE: MoraleAffected::SalaryFailure
 	// SALARY_PAYMENT: MoraleAffected::SalaryPayment
 	static void ProcessSalaries(
-		const vector<shared_ptr<Ship>> &ships,
+		const vector< shared_ptr<Ship> > &fleet,
 		const Ship * flagship,
 		const double proportionPaid,
 		const string eventType

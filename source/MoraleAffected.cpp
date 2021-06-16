@@ -19,7 +19,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 using namespace std;
 
-const bool MoraleAffected::SHOW_DEBUG_MESSAGES = true;
+const bool MoraleAffected::SHOW_DEBUG_MESSAGES = false;
 
 // Loading
 
@@ -344,6 +344,7 @@ string MoraleAffected::BuildShipMessage(
 	return (
 		moraleAffected->ShipMessage() +
 		GetLinkingWord(moraleAffected->ShipMessage()) +
+		" morale of the " +
 		ship->Name() +
 		" is now " +
 		moraleDescription +
@@ -364,11 +365,11 @@ string MoraleAffected::GetLinkingWord(
 		linkingWord += " ";
 
 		if(message[message.length() - 1] == '.')
-			linkingWord += "The ";
+			linkingWord += "The";
 		else
-			linkingWord += "the ";
+			linkingWord += "the";
 	} else
-		linkingWord += "The ";
+		linkingWord += "The";
 
 	return linkingWord;
 }
