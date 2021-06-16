@@ -37,6 +37,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Minable.h"
 #include "Mission.h"
 #include "MoraleAffected.h"
+#include "MoraleDescription.h"
 #include "Music.h"
 #include "News.h"
 #include "Outfit.h"
@@ -83,6 +84,7 @@ namespace {
 	Set<Minable> minables;
 	Set<Mission> missions;
 	Set<MoraleAffected> moraleAffecteds;
+	Set<MoraleDescription> moraleDescriptions;
 	Set<Outfit> outfits;
 	Set<Person> persons;
 	Set<Phrase> phrases;
@@ -281,6 +283,9 @@ void GameData::CheckReferences()
 	for(const auto &it : moraleAffecteds)
 		if(it.second.Id().empty())
 			Files::LogError("Warning: morale affected \"" + it.first + "\" is referred to, but never defined.");
+	for(const auto &it : moraleDescriptions)
+		if(it.second.Id().empty())
+			Files::LogError("Warning: morale description \"" + it.first + "\" is referred to, but never defined.");
 	for(const auto &it : outfits)
 		if(it.second.Name().empty())
 			Files::LogError("Warning: outfit \"" + it.first + "\" is referred to, but never defined.");
@@ -689,6 +694,13 @@ const Set<MoraleAffected> &GameData::MoraleAffecteds()
 
 
 
+const Set<MoraleDescription> &GameData::MoraleDescriptions()
+{
+	return moraleDescriptions;
+}
+
+
+
 const Set<Outfit> &GameData::Outfits()
 {
 	return outfits;
@@ -998,6 +1010,8 @@ void GameData::LoadFile(const string &path, bool debugMode)
 			missions.Get(node.Token(1))->Load(node);
 		else if(key == "morale affected" && node.Size() >= 2)
 			moraleAffecteds.Get(node.Token(1))->Load(node);
+		else if(key == "morale description" && node.Size() >= 2)
+			moraleDescriptions.Get(node.Token(1))->Load(node);
 		else if(key == "outfit" && node.Size() >= 2)
 			outfits.Get(node.Token(1))->Load(node);
 		else if(key == "outfitter" && node.Size() >= 2)

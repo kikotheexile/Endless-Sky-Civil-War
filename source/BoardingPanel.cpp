@@ -55,18 +55,20 @@ namespace {
 
 
 // Constructor.
-BoardingPanel::BoardingPanel(PlayerInfo &player, const shared_ptr<Ship> &victim)
-	: player(player), you(player.FlagshipPtr()), victim(victim),
-	attackOdds(*you, *victim), defenseOdds(*victim, *you)
+BoardingPanel::BoardingPanel(
+	PlayerInfo &player,
+	const shared_ptr<Ship> &victim
+) : player(player),
+	you(player.FlagshipPtr()),
+	victim(victim),
+	attackOdds(*you, *victim),
+	defenseOdds(*victim, *you)
 {
 	// The escape key should close this panel rather than bringing up the main menu.
 	SetInterruptible(false);
 	
 	// Calculate the profit sharing margin before any action is taken
 	profitShareRatio = Crew::CalculateProfitShareRatio(player.Ships(), player.Flagship());
-
-	// Store how many crew the player's ship starts with
-	startingPlayerCrew = player.Flagship()->Crew();
 	
 	// Figure out how much the victim's commodities are worth in the current
 	// system and add them to the list of plunder.
@@ -352,6 +354,9 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 		{
 			messages.push_back("You retreat to your ships. Combat ends.");
 			isCapturing = false;
+			HandleCrewMemberDeaths();
+			// Reset the total casualties in case the player attempts to capture again
+			yourTotalCasualties = 0;
 		}
 		else
 		{
@@ -398,6 +403,8 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 			else if(enemyCasualties)
 				messages.back() += "They lose " + to_string(enemyCasualties) + " crew.";
 
+			yourTotalCasualties += yourCasualties;
+
 			// Check if either ship has been captured.
 			if(!you->Crew())
 			{
@@ -408,6 +415,8 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 			}
 			else if(!victim->Crew())
 			{
+				// You have captured the enemy ship.
+				HandleCrewMemberDeaths();
 				messages.push_back("You have succeeded in capturing this ship.");
 				victim->GetGovernment()->Offend(ShipEvent::CAPTURE, victim->RequiredCrew());
 				victim->WasCaptured(you);
@@ -416,15 +425,6 @@ bool BoardingPanel::KeyDown(SDL_Keycode key, Uint16 mod, const Command &command,
 					you->TransferFuel(victim->JumpFuelMissing(), &*victim);
 				player.AddShip(victim);
 				
-				// If you suffered casualties, their deaths will affect morale
-				const int totalPlayerCasualties = startingPlayerCrew - player.Flagship()->Crew();
-				if(totalPlayerCasualties)
-					MoraleAffected::CrewMemberDeath(
-						player,
-						player.FlagshipPtr(),
-						totalPlayerCasualties
-					);
-
 				victim->ChangeMorale(player.Flagship()->Morale());
 				for(const Ship::Bay &bay : victim->Bays())
 					if(bay.ship)
@@ -544,6 +544,22 @@ bool BoardingPanel::CanCapture() const
 bool BoardingPanel::CanAttack() const
 {
 	return isCapturing;
+}
+
+
+
+// Check if any of the player's crew members have died and respond accordingly.
+void BoardingPanel::HandleCrewMemberDeaths()
+{
+	if(yourTotalCasualties > 0)
+	{
+		// If you suffered casualties, their deaths will affect morale.
+		MoraleAffected::CrewMemberDeath(
+			player.Ships(),
+			player.FlagshipPtr(),
+			yourTotalCasualties
+		);
+	}
 }
 
 

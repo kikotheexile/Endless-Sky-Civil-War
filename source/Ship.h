@@ -302,6 +302,9 @@ public:
 	double ChangeMorale(double amount);
 	// Access the current morale rating of the ship
 	double Morale() const;
+	// Get a string description of the ship's current morale
+	// Not free from a performance point of view; cache the result if needed
+	std::string MoraleDescription() const;
 
 	// Get this ship's movement characteristics.
 	double Mass() const;

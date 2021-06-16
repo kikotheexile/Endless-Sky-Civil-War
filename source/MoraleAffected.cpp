@@ -1,5 +1,5 @@
 /* MoraleAffected.cpp
-Copyright (c) 2019 by Luke Arndt
+Copyright (c) 2021 by Luke Arndt
 
 Endless Sky is free software: you can redistribute it and/or modify it under the
 terms of the GNU General Public License as published by the Free Software
@@ -16,9 +16,10 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Format.h"
 #include "GameData.h"
 #include "Messages.h"
-#include "PlayerInfo.h"
 
 using namespace std;
+
+const bool MoraleAffected::SHOW_DEBUG_MESSAGES = true;
 
 // Loading
 
@@ -62,9 +63,9 @@ const MoraleAffected * MoraleAffected::GetMoraleAffected(const std::string &id)
 // Public Static Functions
 
 void MoraleAffected::CrewMemberDeath(
-	const PlayerInfo &player,
+	const vector< shared_ptr<Ship> > &fleet,
 	const shared_ptr<Ship> &ship,
-	const int deathCount
+	const int64_t deathCount
 )
 {
 	if(!ship->IsDestroyed())
@@ -75,7 +76,7 @@ void MoraleAffected::CrewMemberDeath(
 		);
 
 	return AffectFleetMorale(
-		player,
+		fleet,
 		GetMoraleAffected("death in fleet"),
 		deathCount
 	);
@@ -84,12 +85,12 @@ void MoraleAffected::CrewMemberDeath(
 
 
 void MoraleAffected::EnemyShipDisabled(
-	const PlayerInfo &player,
+	const vector< shared_ptr<Ship> > &fleet,
 	const shared_ptr<Ship> &enemyShip
 )
 {
 	return AffectFleetMorale(
-		player,
+		fleet,
 		GetMoraleAffected("enemy ship disabled"),
 		enemyShip->Cost()
 	);
@@ -98,12 +99,12 @@ void MoraleAffected::EnemyShipDisabled(
 
 
 void MoraleAffected::FleetShipDestroyed(
-	const PlayerInfo &player,
+	const vector< shared_ptr<Ship> > &fleet,
 	const shared_ptr<Ship> &ship
 )
 {
 	return AffectFleetMorale(
-		player,
+		fleet,
 		GetMoraleAffected("fleet ship destroyed"),
 		ship->Cost()
 	);
@@ -112,7 +113,7 @@ void MoraleAffected::FleetShipDestroyed(
 
 
 void MoraleAffected::FleetShipDisabled(
-	const PlayerInfo &player,
+	const vector< shared_ptr<Ship> > &fleet,
 	const shared_ptr<Ship> &ship
 )
 {
@@ -123,7 +124,7 @@ void MoraleAffected::FleetShipDisabled(
 	);
 
 	return AffectFleetMorale(
-		player,
+		fleet,
 		GetMoraleAffected("fleet ship disabled"),
 		ship->Crew()
 	);
@@ -218,13 +219,13 @@ double MoraleAffected::SalaryPayment(
 // Private Static Functions
 
 void MoraleAffected::AffectFleetMorale(
-	const PlayerInfo &player,
+	const vector< shared_ptr<Ship> > &fleet,
 	const MoraleAffected * moraleAffected,
-	double multiplier
+	const double multiplier
 )
 {
 	// If the morale affected record only specifies a flat amount, we can short-circuit the process.
-	// This improves performance and allows us to provide a more precise message to the player.
+	// This improves performance and allows us to provide a more precise message to the fleet.
 	if(
 		moraleAffected->AmountDividedByCrewMembers() == 0. &&
 		moraleAffected->AmountPerCrewMember() == 0. &&
@@ -233,44 +234,40 @@ void MoraleAffected::AffectFleetMorale(
 	{
 		double amount = moraleAffected->FlatAmount() * multiplier;
 
-		for(auto ship = player.Ships().begin(); ship != player.Ships().end(); ++ship)
-			(*ship)->ChangeMorale(amount);
+		for(auto shipIt = fleet.begin(); shipIt != fleet.end(); ++shipIt)
+			(*shipIt)->ChangeMorale(amount);
 		
-		if(moraleAffected->FleetMessage().length() > 0)
-		{
-			string changeDescription = amount > 0 ? "increased" : "decreased";
-
-			Messages::Add(
-				moraleAffected->FleetMessage() +
-				". Your fleet's morale has " +
-				changeDescription +
-				" by " +
-				Format::Number(abs(amount)) +
-				"."
-			);
-		}
-
 		return;
 	}
 
 	// If the morale change includes non-flat amounts, we need to process it for each ship.
 	double totalMoraleChange = 0.;
 
-	for(auto ship = player.Ships().begin(); ship != player.Ships().end(); ++ship)
-		totalMoraleChange += AffectShipMorale(*ship, moraleAffected, multiplier);
+	for(auto shipIt = fleet.begin(); shipIt != fleet.end(); ++shipIt)
+		totalMoraleChange += AffectShipMorale(*shipIt, moraleAffected, multiplier);
 
 	string changeDescription = totalMoraleChange > 0 ? "increased" : "decreased";
 
 	if(moraleAffected->FleetMessage().length() > 0)
+	{
+		string joiningWord = " your";
 
-	Messages::Add(
-		moraleAffected->FleetMessage() +
-		". Your fleet's morale has " +
-		changeDescription +
-		" by an average of " +
-		Format::Number(abs(totalMoraleChange / player.Ships().size())) +
-		"."
-	);
+		if(moraleAffected->FleetMessage()[moraleAffected->FleetMessage().length() - 1] == '.')
+			joiningWord = " Your";
+		
+		double averageAmount = abs(totalMoraleChange / fleet.size());
+		
+		if(SHOW_DEBUG_MESSAGES)
+			Messages::Add(
+				moraleAffected->FleetMessage() +
+				joiningWord +
+				" fleet's morale has "
+				+ changeDescription +
+				" by an average of " +
+				to_string(averageAmount) +
+				"."
+			);
+	}
 }
 
 
@@ -278,8 +275,8 @@ void MoraleAffected::AffectFleetMorale(
 double MoraleAffected::AffectShipMorale(
 	const shared_ptr<Ship> &ship,
 	const MoraleAffected * moraleAffected,
-	double multiplier,
-	bool silenceMessage
+	const double multiplier,
+	const bool silenceMessage
 )
 {
 	if(!moraleAffected || ship->Crew() <= 0) return 0.;
@@ -295,25 +292,85 @@ double MoraleAffected::AffectShipMorale(
 	if(ship->IsParked())
 		amount *= moraleAffected->ParkedMultiplier();
 
+	const string previousDescription = ship->MoraleDescription();
+
 	ship->ChangeMorale(amount);
 
-	if(!silenceMessage && moraleAffected->ShipMessage().length() > 0)
+	const string description = ship->MoraleDescription();
+
+	if(description != previousDescription)
 	{
+		Messages::Add(
+			BuildShipMessage(
+				moraleAffected,
+				ship,
+				description
+			)
+		);
+	}
+
+	if(SHOW_DEBUG_MESSAGES && !silenceMessage && moraleAffected->ShipMessage().length() > 0)
+	{
+		string joiningWord = " the";
+
+		if(moraleAffected->ShipMessage()[moraleAffected->ShipMessage().length() - 1] == '.')
+			joiningWord = " The";
+			
 		string changeDescription = amount > 0 ? "increased" : "decreased";
 
 		Messages::Add(
 			moraleAffected->ShipMessage() +
-			". The " +
-			ship->Name() + 
-			" has " +
-			changeDescription +
-			" in morale by " +
-			Format::Number(abs(amount)) + 
+			joiningWord +
+			" morale of the " +
+			ship->Name() +
+			" has " + changeDescription +
+			" by " +
+			to_string(abs(amount)) +
 			"."
 		);
 	}
 
 	return amount;
+}
+
+
+
+string MoraleAffected::BuildShipMessage(
+	const MoraleAffected * moraleAffected,
+	const shared_ptr<Ship> &ship,
+	const string moraleDescription
+)
+{
+	return (
+		moraleAffected->ShipMessage() +
+		GetLinkingWord(moraleAffected->ShipMessage()) +
+		ship->Name() +
+		" is now " +
+		moraleDescription +
+		"."
+	);
+}
+
+
+
+string MoraleAffected::GetLinkingWord(
+	const string message
+)
+{
+	string linkingWord = "";
+
+	if(message.length() > 0)
+	{
+		linkingWord += " ";
+
+		if(message[message.length() - 1] == '.')
+			linkingWord += "The ";
+		else
+			linkingWord += "the ";
+	} else
+		linkingWord += "The ";
+
+	return linkingWord;
 }
 
 

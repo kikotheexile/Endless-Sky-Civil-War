@@ -246,6 +246,8 @@ void Crew::ProcessProfitSharingDebt(
 	// If the player is the sole shareholder in the fleet, we don't need to continue.
 	if(totalFleetShares == 0)
 		return;
+
+	double moraleChangeAmounts [ships.size()];
 	
 	for(size_t index = 0; index != ships.size(); ++index)
 	{
@@ -476,7 +478,7 @@ int64_t Crew::ShareProfit(
 		totalFleetShares -= playerCrew->Shares();
 	
 	int64_t totalSharedProfit = 0;
-	
+
 	for(size_t index = 0; index != ships.size(); ++index)
 	{
 		const shared_ptr<Ship> &ship = ships[index];
@@ -495,7 +497,7 @@ int64_t Crew::ShareProfit(
 		// Sharing profit with the ship affects its morale
 		MoraleAffected::ProfitShared(ship, sharedProfit);
 	}
-	
+
 	return totalSharedProfit;
 }
 

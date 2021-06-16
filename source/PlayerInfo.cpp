@@ -1683,7 +1683,7 @@ void PlayerInfo::HandleEvent(const ShipEvent &event, UI *ui)
 			rating = min(maxRating, rating + (event.Target()->Cost() + 250000) / 500000);
 
 			MoraleAffected::EnemyShipDisabled(
-				*this,
+				ships,
 				event.Target()
 			);
 		}
@@ -1692,7 +1692,7 @@ void PlayerInfo::HandleEvent(const ShipEvent &event, UI *ui)
 	{
 		if(event.Type() & ShipEvent::DISABLE)
 			MoraleAffected::FleetShipDisabled(
-				*this,
+				ships,
 				event.Target()
 			);
 
@@ -1702,12 +1702,12 @@ void PlayerInfo::HandleEvent(const ShipEvent &event, UI *ui)
 		if((event.Type() & ShipEvent::DESTROY) && !event.Target()->ShouldBeRemoved())
 		{
 			MoraleAffected::FleetShipDestroyed(
-				*this,
+				ships,
 				event.Target()
 			);
 
 			MoraleAffected::CrewMemberDeath(
-				*this,
+				ships,
 				event.Target(),
 				event.Target()->Crew()
 			);

@@ -457,15 +457,13 @@ void MissionAction::Do(PlayerInfo &player, UI *ui, const System *destination, co
 	
 	if(payment) 
 	{
-		// The player is about to make a profit, so they need to share it with the fleet.
-		double profitShareRatio = Crew::CalculateProfitShareRatio(player.Ships(), player.Flagship());
-		int64_t profitShares = payment * profitShareRatio;
-
-		player.Accounts().AddCredits(payment - profitShares);
+		// The player has made a profit, so they have to share it with the fleet.
+		int64_t sharedProfit = Crew::ShareProfit(player.Ships(), player.Flagship(), payment);
+		player.Accounts().AddCredits(payment - sharedProfit);
 
 		Messages::Add(
 				"After receiving your mission payment, you distributed " +
-				Format::Number(profitShares) +
+				Format::Number(sharedProfit) +
 				" credits among your fleet as profit shares."
 		);
 	}

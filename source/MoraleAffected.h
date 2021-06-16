@@ -15,7 +15,6 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 #include "DataNode.h"
 #include "Ship.h"
-#include "PlayerInfo.h"
 
 using namespace std;
 
@@ -28,8 +27,8 @@ public:
 	// Ship: "death on ship"
 	// The amount is multiplied by the number of crew members that died
 	static void CrewMemberDeath(
-		const PlayerInfo &player,
-		const std::shared_ptr<Ship> &ship,
+		const vector< shared_ptr<Ship> > &fleet,
+		const shared_ptr<Ship> &ship,
 		const int64_t deathCount
 	);
 
@@ -38,8 +37,8 @@ public:
 	// Fleet: "enemy ship disabled"
 	// The amount is multiplied by the cost of the enemy ship
 	static void EnemyShipDisabled(
-		const PlayerInfo &player,
-		const std::shared_ptr<Ship> &enemyShip
+		const vector< shared_ptr<Ship> > &fleet,
+		const shared_ptr<Ship> &enemyShip
 	);
 
 	// One of the fleet's ships has been destroyed
@@ -48,8 +47,8 @@ public:
 	// The amount is multiplied by the cost of the ship.
 	// The crew deaths are handled separately by CrewMemberDeath.
 	static void FleetShipDestroyed(
-		const PlayerInfo &player,
-		const std::shared_ptr<Ship> &ship
+		const vector< shared_ptr<Ship> > &fleet,
+		const shared_ptr<Ship> &ship
 	);
 
 	// The player's fleet has disabled an enemy ship
@@ -58,8 +57,8 @@ public:
 	// Ship: "ship disabled"
 	// The amount is multiplied by the cost of the ship
 	static void FleetShipDisabled(
-		const PlayerInfo &player,
-		const std::shared_ptr<Ship> &ship
+		const vector< shared_ptr<Ship> > &fleet,
+		const shared_ptr<Ship> &ship
 	);
 
 	// Profit has been shared with the crew on the ship as a lump sum
@@ -68,7 +67,7 @@ public:
 	// The amount is multiplied by the number of credits of shared profit
 	// Returns the amount that morale has changed on the ship
 	static double ProfitShared(
-		const std::shared_ptr<Ship> &ship,
+		const shared_ptr<Ship> &ship,
 		const int64_t sharedProfit
 	);
 
@@ -77,7 +76,7 @@ public:
 	// Ship: "profit sharing debt failure"
 	// The amount is multiplied by the number of credits in the missed payment
 	static double ProfitSharingDebtFailure(
-		const std::shared_ptr<Ship> &ship,
+		const shared_ptr<Ship> &ship,
 		const int64_t missedPaymentAmount
 	);
 
@@ -86,7 +85,7 @@ public:
 	// Ship: "profit sharing debt owed"
 	// The amount is multiplied by the number of credits in the payment
 	static double ProfitSharingDebtOwed(
-		const std::shared_ptr<Ship> &ship,
+		const shared_ptr<Ship> &ship,
 		const int64_t profitShareDebtOwed
 	);
 
@@ -95,7 +94,7 @@ public:
 	// Ship: "profit sharing debt payment"
 	// The amount is multiplied by the number of credits in the payment
 	static double ProfitSharingDebtPayment(
-		const std::shared_ptr<Ship> &ship,
+		const shared_ptr<Ship> &ship,
 		const int64_t sharedProfit
 	);
 
@@ -147,28 +146,30 @@ public:
 	const double &ParkedMultiplier() const;
 
 	// A message to display when the morale affected record is applied to the player's fleet.
-	const std::string &FleetMessage() const;
+	const string &FleetMessage() const;
 
 	// The id that the morale affected record is stored against in GameData::Crews().
-	const std::string &Id() const;
+	const string &Id() const;
 
 	// A message to display when the morale affected record is applied to a single ship.
 	// If the record is applied to the whole fleet, this will be ignored.
-	const std::string &ShipMessage() const;
+	const string &ShipMessage() const;
 
 private:
 
+	static const bool SHOW_DEBUG_MESSAGES;
+
 	// Get a MoraleAffected from the GameData and log an error if it's missing
 	static const MoraleAffected *GetMoraleAffected(
-		const std::string &id
+		const string &id
 	);
 
 	// Apply a MoraleAffected event to a single ship
 	// Returns the amount that it changed the morale by
 	static void AffectFleetMorale(
-		const PlayerInfo &player,
+		const vector< shared_ptr<Ship> > &fleet,
 		const MoraleAffected * moraleAffected,
-		double multiplier
+		const double multiplier
 	);
 
 	// Apply a MoraleAffected event to a single ship
@@ -176,38 +177,30 @@ private:
 	static double AffectShipMorale(
 		const shared_ptr<Ship> &ship,
 		const MoraleAffected * moraleAffected,
-		double multiplier,
-		bool silenceMessage = false
+		const double multiplier,
+		const bool silenceMessage = false
 	);
 
-	// Apply a flat morale change to every ship in the player's fleet
-	// This is a useful performance shortcut when we know that we are using a flatAmount
-	static void ChangeFleetMoraleByFlatAmount(
-		const PlayerInfo &player,
-		double flatAmount
+	// Build a message that we can display in response to a morale change
+	static string BuildShipMessage(
+		const MoraleAffected * moraleAffected,
+		const shared_ptr<Ship> &ship,
+		const string moraleDescription
 	);
 
-	// Apply morale change to an active ship for a successful salary payment
-	static double ShipSalaryPaymentActive(
-		const PlayerInfo &player,
-		const std::shared_ptr<Ship> &ship
+	// Supporting function that builds a sentence-linking word based on a given message
+	static string GetLinkingWord(
+		const string message
 	);
-
-	// Apply morale change to a parked ship for a successful salary payment
-	static double ShipSalaryPaymentParked(
-		const PlayerInfo &player,
-		const std::shared_ptr<Ship> &ship
-	);
-
 
 	// Instance members; see accessor methods for details
 	double amountDividedByCrewMembers = 0.;
 	double amountPerCrewMember = 0.;
 	double flatAmount = 0.;
 	double parkedMultiplier = 1.;
-	std::string fleetMessage;
-	std::string id;
-	std::string shipMessage;
+	string fleetMessage;
+	string id;
+	string shipMessage;
 };
 
 #endif
