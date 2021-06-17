@@ -3921,8 +3921,8 @@ ship "Mule"
 		"shields" 14500
 		"hull" 5600
 		"hull repair rate" .1
-		"required crew" 45
-		"bunks" 120
+		"required crew" 450
+		"bunks" 1200
 		"mass" 5400
 		"drag" 14.1
 		"heat dissipation" .4
@@ -4002,8 +4002,8 @@ ship "Bactrian"
 		"shields" 17500
 		"hull" 8600
 		"hull repair rate" .1
-		"required crew" 70
-		"bunks" 245
+		"required crew" 526
+		"bunks" 2450
 		"mass" 9400
 		"drag" 16.1
 		"heat dissipation" .4
@@ -4164,8 +4164,8 @@ ship "Veles"
 		"shields" 85000
 		"hull" 50000
 		"hull repair rate" .1
-		"required crew" 210
-		"bunks" 350
+		"required crew" 315
+		"bunks" 700
 		"mass" 10500
 		"drag" 35
 		"heat dissipation" 0.25
@@ -4248,8 +4248,8 @@ ship " Veles "
 		"shields" 85000
 		"hull" 50000
 		"hull repair rate" .1
-		"required crew" 210
-		"bunks" 350
+		"required crew" 315
+		"bunks" 700
 		"mass" 10500
 		"drag" 35
 		"heat dissipation" 0.25
