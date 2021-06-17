@@ -14,7 +14,7 @@
 # "morale description" "unique id"
 #   "maximum morale" (number; morale where this description no longer matches)
 #   "minimum morale" (number; morale required to match this description)
-#   "name" (string; this is what we display to the player)
+#   "name" (string, maximum 8 characters; this is what we display to the player)
 
 
 "morale description" "800 to 1000"
@@ -30,12 +30,12 @@
 "morale description" "400 to 600"
   "maximum morale" 600
   "minimum morale" 400
-  "name" "Animate"
+  "name" "Keen"
 
 "morale description" "200 to 400"
   "maximum morale" 400
   "minimum morale" 200
-  "name" "Keen"
+  "name" "Content"
 
 "morale description" "0 to 200"
   "maximum morale" 200
@@ -50,7 +50,7 @@
 "morale description" "-200 to -400"
   "maximum morale" -200
   "minimum morale" -400
-  "name" "Annoyed"
+  "name" "Troubled"
 
 "morale description" "-400 to -600"
   "maximum morale" -400
