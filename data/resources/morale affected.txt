@@ -41,7 +41,7 @@
 "morale affected" "death on ship"
   "amount divided by crew members" -10
   "flat amount" -5
-  "ship message" "Angered and saddened by the deaths of its crew members,"
+  "ship message" "Angered and saddened by the deaths of their crew members,"
 
 
 
@@ -135,4 +135,3 @@
 "morale affected" "profit sharing debt payment"
   "amount divided by crew members" 0.00001
   "ship message" "Receiving an incremental profit share payment,"
-
