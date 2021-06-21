@@ -10,10 +10,10 @@ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 */
 
-#include "MoraleDescription.h"
 #include "DataNode.h"
 #include "Files.h"
 #include "GameData.h"
+#include "MoraleDescription.h"
 
 using namespace std;
 
