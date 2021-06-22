@@ -510,6 +510,12 @@ Copyright: Various
 License: public-domain
  Based on public domain sounds taken from freesound.org.
 
+Files:
+ sounds/atomic?*
+Copyright: Lia Gerty
+License: CC-BY-SA-4.0
+Comment: Derived from public domain sounds taken from freesound.org.
+
 Files: sounds/heavy?rocket?hit.wav
 Copyright: Copyright Mike Koenig
 License: CC-BY-SA-3.0
