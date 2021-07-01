@@ -55,7 +55,8 @@ private:
 	bool CanCapture() const;
 	// Check if you are in the midst of hand to hand combat.
 	bool CanAttack() const;
-	
+	// Check if any of the player's crew members have died and respond accordingly.
+	void HandleCrewMemberDeaths();
 	
 private:
 	// This class represents one item in the list of outfits you can plunder.
@@ -118,6 +119,7 @@ private:
 	bool isCapturing = false;
 	bool isFirstCaptureAction = true;
 	bool victimCaptured = false;
+	int yourTotalCasualties = 0;
 	
 	// Calculating the odds of combat success, and the expected casualties, is
 	// non-trivial. So, cache the results for all crew amounts up to full.
@@ -125,7 +127,7 @@ private:
 	CaptureOdds defenseOdds;
 	// These messages are shown to report the results of hand to hand combat.
 	std::vector<std::string> messages;
-	
+
 	// When you capture a ship, you must pay your crew a share of the profits.
 	// This is a mechanism to make capturing ships less absurdly lucrative.
 	int64_t profitShares = 0;

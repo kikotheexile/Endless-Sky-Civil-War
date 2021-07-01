@@ -12,8 +12,9 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 #include "Crew.h"
 #include "Files.h"
+#include "MoraleAffected.h"
+#include "MoraleDescription.h"
 #include "GameData.h"
-#include "PlayerInfo.h"
 
 using namespace std;
 
@@ -58,7 +59,10 @@ void Crew::Load(const DataNode &node)
 
 
 
-double Crew::CalculateProfitShareRatio(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship)
+double Crew::CalculateProfitShareRatio(
+	const vector< shared_ptr<Ship> > &ships,
+	const Ship * flagship
+)
 {
 	
 	const Crew * playerCrew = GameData::Crews().Get("player");
@@ -86,7 +90,11 @@ double Crew::CalculateProfitShareRatio(const std::vector<std::shared_ptr<Ship>> 
 
 
 
-int64_t Crew::CalculateSalaries(const vector<shared_ptr<Ship>> &ships, const Ship * flagship, const bool includeExtras)
+int64_t Crew::CalculateSalaries(
+	const vector< shared_ptr<Ship> > &ships,
+	const Ship * flagship,
+	const bool includeExtras
+)
 {
 	int64_t totalSalaries = 0;
 
@@ -106,7 +114,10 @@ int64_t Crew::CalculateSalaries(const vector<shared_ptr<Ship>> &ships, const Shi
 
 
 
-int64_t Crew::CostOfExtraCrew(const vector<shared_ptr<Ship>> &ships, const Ship * flagship)
+int64_t Crew::CostOfExtraCrew(
+	const vector< shared_ptr<Ship> > &ships,
+	const Ship * flagship
+)
 {
 	// Calculate with and without extras and return the difference.
 	return Crew::CalculateSalaries(ships, flagship, true)
@@ -115,12 +126,42 @@ int64_t Crew::CostOfExtraCrew(const vector<shared_ptr<Ship>> &ships, const Ship 
 
 
 
-vector<pair<int64_t, string>> Crew::FleetSummary(const PlayerInfo &player)
+string Crew::FleetMoraleDescription(
+	const vector< shared_ptr<Ship> > &fleet,
+	const int64_t totalFleetCrew
+)
 {
-	vector<pair<int64_t, string>> fleetSummary;
+	int64_t fleetCrew = totalFleetCrew;
+	if(totalFleetCrew == 0)
+	{
+		for(const shared_ptr<Ship> &ship : fleet)
+		{
+			fleetCrew += ship->Crew();
+		}
+	}
+
+	double fleetMorale = 0.;
+	for(const shared_ptr<Ship> &ship : fleet)
+	{
+		if(ship->Crew() > 0)
+		{
+			fleetMorale += (ship->Morale() * ship->Crew() / fleetCrew);
+		}
+	}
+	return MoraleDescription::GetMoraleDescription(fleetMorale);
+}
+
+
+
+vector< pair<int64_t, string> > Crew::FleetSummary(
+	const vector< shared_ptr<Ship> > &fleet,
+	const Ship * flagship
+)
+{
+	vector< pair<int64_t, string> > fleetSummary;
 	
 	// Add the total crew salaries to the fleet summary
-	fleetSummary.push_back(make_pair(CalculateSalaries(player.Ships(), player.Flagship()), "crew salaries"));
+	fleetSummary.push_back(make_pair(CalculateSalaries(fleet, flagship), "crew salaries"));
 
 	const Crew * playerCrew = GameData::Crews().Get("player");
 	if(!playerCrew || playerCrew->Shares() <= 0)
@@ -129,28 +170,42 @@ vector<pair<int64_t, string>> Crew::FleetSummary(const PlayerInfo &player)
 		return fleetSummary;
 	}
 
-	// Total the shares of each ship in the fleet
+	// Total the crew and shares of each ship in the fleet
+	int64_t totalFleetCrew = 0;
 	int64_t totalFleetShares = 0;
-	for(const shared_ptr<Ship> &ship : player.Ships())
-		totalFleetShares += SharesForShip(ship, ship.get() == player.Flagship());
+	for(const shared_ptr<Ship> &ship : fleet)
+	{
+		totalFleetCrew += ship->Crew();
+		totalFleetShares += SharesForShip(ship, ship.get() == flagship);
+	}
 	
 	int64_t totalCrewShares = totalFleetShares - playerCrew->Shares();
 	
-	// Add the total crew shares to the fleet summary
+	// Add the total crew count
+	fleetSummary.push_back(make_pair(totalFleetCrew, "total crew"));
+
+	// Add the total crew shares
 	fleetSummary.push_back(make_pair(totalCrewShares, "crew shares"));
-	
-	// Add the player's shares to the fleet summary
+
+	// Add the player's shares
 	fleetSummary.push_back(make_pair(playerCrew->Shares(), "your shares"));
 
-	// Add the current profit share % to the fleet summary
-	fleetSummary.push_back(make_pair(totalCrewShares * 100 / totalFleetShares, "profit share %"));
+	// Add the current profit share percentage
+	fleetSummary.push_back(
+		make_pair(totalCrewShares * 100 / totalFleetShares, "profit share %")
+	);
 
 	return fleetSummary;
 }
 
 
 
-int64_t Crew::NumberOnShip(const Crew &crew, const shared_ptr<Ship> &ship, const bool isFlagship, const bool includeExtras)
+int64_t Crew::NumberOnShip(
+	const Crew &crew,
+	const shared_ptr<Ship> &ship,
+	const bool isFlagship,
+	const bool includeExtras
+)
 {	
 	// If this is the flagship, check if this crew avoids the flagship.
 	if(isFlagship && crew.AvoidsFlagship())
@@ -185,7 +240,118 @@ int64_t Crew::NumberOnShip(const Crew &crew, const shared_ptr<Ship> &ship, const
 
 
 
-int64_t Crew::SalariesForShip(const shared_ptr<Ship> &ship, const bool isFlagship, const bool includeExtras)
+const string Crew::PROFIT_SHARING_DEBT_FAILURE = "failure";
+const string Crew::PROFIT_SHARING_DEBT_PAYMENT = "payment";
+
+void Crew::ProcessProfitSharingDebt(
+	const vector< shared_ptr<Ship> > &ships,
+	const Ship * flagship,
+	const int64_t payment,
+	const int64_t principal,
+	const string eventType
+)
+{
+	if(payment <= 0)
+		return;
+	
+	const Crew * playerCrew = GameData::Crews().Get("player");
+	if(!playerCrew || playerCrew->Shares() == 0)
+		return;
+	
+	// We don't want to calculate the ships' crew shares more than once,
+	// so let's cache them in an array for the second step of the process.
+	int64_t crewSharesCache [ships.size()];
+	
+		// Calculate how many shares are in the entire fleet.
+	int64_t totalFleetShares = 0;
+	for(size_t index = 0; index != ships.size(); ++index)
+	{
+		// Calculate how many shares this ship has in total.
+		const shared_ptr<Ship> &ship = ships[index];
+		
+		int64_t crewShares = Crew::SharesForShip(
+			ship,
+			ship.get() == flagship
+		);
+
+		crewSharesCache[index] = crewShares;
+		totalFleetShares += crewShares;
+	}
+
+	// Since this is specifically for a profit sharing debt, we need to
+	// exclude the player's shares from the calculation.
+	totalFleetShares -= playerCrew->Shares();
+
+	// If the player is the sole shareholder in the fleet, we don't need to continue.
+	if(totalFleetShares == 0)
+		return;
+
+	for(size_t index = 0; index != ships.size(); ++index)
+	{
+		const shared_ptr<Ship> &ship = ships[index];
+		
+		// Determine how many non-player shares this ship has
+		int64_t shipCrewShares = ship.get() == flagship
+			? crewSharesCache[index] - playerCrew->Shares()
+			: crewSharesCache[index];
+		
+		// Calculate the total number of credits that this ship is owed
+		int64_t shipPrincipal = principal * shipCrewShares / (double)totalFleetShares;
+
+		// Affect the morale of the ship based on how much they are owed
+		MoraleAffected::ProfitSharingDebtOwed(ship, shipPrincipal);
+		
+		// Calculate the number of credits that this ship expects today
+		int64_t shipPayment = payment * shipCrewShares / (double)totalFleetShares;
+
+		// Affect the morale of the ship based on whether the payment happened today
+		if(eventType == Crew::PROFIT_SHARING_DEBT_FAILURE)
+			MoraleAffected::ProfitSharingDebtFailure(ship, shipPayment);
+		else if(eventType == Crew::PROFIT_SHARING_DEBT_PAYMENT)
+			MoraleAffected::ProfitSharingDebtPayment(ship, shipPayment);
+	}
+}
+
+
+
+const string Crew::SALARY_FAILURE = "failure";
+const string Crew::SALARY_PAYMENT = "payment";
+
+void Crew::ProcessSalaries(
+	const vector< shared_ptr<Ship> > &ships,
+	const Ship * flagship,
+	const double proportionPaid,
+	const string eventType
+)
+{
+	for(size_t index = 0; index != ships.size(); ++index)
+	{
+		const shared_ptr<Ship> &ship = ships[index];
+		
+		// Determine the total salary expectation for this ship
+		int64_t shipSalary = SalariesForShip(
+			ship,
+			ship.get() == flagship
+		);
+
+		if(shipSalary > 0)
+		{ 
+			// Affect the morale of the ship based on whether the payment happened today
+			if(eventType == Crew::SALARY_FAILURE)
+				MoraleAffected::SalaryFailure(ship, 1 - proportionPaid * shipSalary);
+			else if(eventType == Crew::SALARY_PAYMENT)
+				MoraleAffected::SalaryPayment(ship, shipSalary);
+		}
+	}
+}
+
+
+
+int64_t Crew::SalariesForShip(
+	const shared_ptr<Ship> &ship,
+	const bool isFlagship,
+	const bool includeExtras
+)
 {
 	// We don't need to pay dead people.
 	if(ship->IsDestroyed())
@@ -209,7 +375,11 @@ int64_t Crew::SalariesForShip(const shared_ptr<Ship> &ship, const bool isFlagshi
 
 
 
-int64_t Crew::SharesForShip(const std::shared_ptr<Ship> &ship, const bool isFlagship, const bool includeExtras)
+int64_t Crew::SharesForShip(
+	const shared_ptr<Ship> &ship,
+	const bool isFlagship,
+	const bool includeExtras
+)
 {
 	// We don't need to pay dead people.
 	if(ship->IsDestroyed())
@@ -233,7 +403,11 @@ int64_t Crew::SharesForShip(const std::shared_ptr<Ship> &ship, const bool isFlag
 
 
 
-const map<const string, int64_t> Crew::ShipManifest(const shared_ptr<Ship> &ship, bool isFlagship, bool includeExtras)
+const map<const string, int64_t> Crew::ShipManifest(
+	const shared_ptr<Ship> &ship,
+	bool isFlagship,
+	bool includeExtras
+)
 {
 	int64_t crewAccountedFor = 0;
 	// A crew ID, the number on the ship, and their individual salary amount
@@ -295,32 +469,73 @@ const map<const string, int64_t> Crew::ShipManifest(const shared_ptr<Ship> &ship
 
 
 
-int64_t Crew::ShareProfit(const std::vector<std::shared_ptr<Ship>> &ships, const Ship * flagship, const int64_t grossProfit)
+int64_t Crew::ShareProfit(
+	const vector< shared_ptr<Ship> > &ships,
+	const Ship * flagship,
+	const int64_t credits,
+	const bool distributeEverything
+)
 {
-	if(grossProfit <= 0)
+	if(credits <= 0)
 		return 0;
 	
 	const Crew * playerCrew = GameData::Crews().Get("player");
 	if(!playerCrew || playerCrew->Shares() == 0)
 		return 0;
 	
-	int64_t totalFleetShares = 0;
+	// We don't want to calculate the ships' crew shares more than once,
+	// so let's cache them in an array for the second step of the process.
+	int64_t crewSharesCache [ships.size()];
 	
-	for(const shared_ptr<Ship> &ship : ships)
+		// Calculate how many shares are in the entire fleet.
+	int64_t totalFleetShares = 0;
+	for(size_t index = 0; index != ships.size(); ++index)
 	{
-		totalFleetShares += Crew::SharesForShip(
+		// Calculate how many shares this ship has in total.
+		const shared_ptr<Ship> &ship = ships[index];
+		
+		int64_t crewShares = Crew::SharesForShip(
 			ship,
 			ship.get() == flagship
 		);
+
+		crewSharesCache[index] = crewShares;
+		totalFleetShares += crewShares;
 	}
-	
-	// If the player is the sole shareholder, return 0 directly.
-	// This prevents us from sharing a small amount of profit due to
-	// floating point rounding issues.
+
+	// If the player is the sole shareholder, we won't share any profit.
+	// Returning 0 directly prevents us from sharing a small amount of
+	// profit due to floating point rounding issues.
 	if(playerCrew->Shares() == totalFleetShares)
 		return 0;
-	int64_t totalCrewShares = totalFleetShares - playerCrew->Shares();
-	return grossProfit * totalCrewShares / (double)totalFleetShares;
+
+	// If the goal is to distribute everything, such as when paying off
+	// profit share debt, we need to omit player shares from the calculation
+	if(distributeEverything)
+		totalFleetShares -= playerCrew->Shares();
+	
+	int64_t totalSharedProfit = 0;
+
+	for(size_t index = 0; index != ships.size(); ++index)
+	{
+		const shared_ptr<Ship> &ship = ships[index];
+		
+		// Determine how many non-player shares this ship has
+		int64_t shipCrewShares = ship.get() == flagship
+			? crewSharesCache[index] - playerCrew->Shares()
+			: crewSharesCache[index];
+		
+		// Calculate the number of credits of profit that this ship receives
+		int64_t sharedProfit = credits * shipCrewShares / (double)totalFleetShares;
+		
+		// Add the shared profit to the total
+		totalSharedProfit += sharedProfit;
+
+		// Sharing profit with the ship affects its morale
+		MoraleAffected::ProfitShared(ship, sharedProfit);
+	}
+
+	return totalSharedProfit;
 }
 
 

@@ -25,6 +25,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Government.h"
 #include "Mask.h"
 #include "Messages.h"
+#include "MoraleDescription.h"
 #include "Phrase.h"
 #include "Planet.h"
 #include "PlayerInfo.h"
@@ -362,6 +363,8 @@ void Ship::Load(const DataNode &node)
 			cargo.Load(child);
 		else if(key == "crew" && child.Size() >= 2)
 			crew = static_cast<int>(child.Value(1));
+		else if(key == "morale" && child.Size() >= 2)
+			morale = child.Value(1);
 		else if(key == "fuel" && child.Size() >= 2)
 			fuel = child.Value(1);
 		else if(key == "shields" && child.Size() >= 2)
@@ -697,6 +700,7 @@ void Ship::Save(DataWriter &out) const
 		
 		cargo.Save(out);
 		out.Write("crew", crew);
+		out.Write("morale", morale);
 		out.Write("fuel", fuel);
 		out.Write("shields", shields);
 		out.Write("hull", hull);
@@ -2758,6 +2762,33 @@ void Ship::AddCrew(int count)
 bool Ship::CanBeFlagship() const
 {
 	return !CanBeCarried() && RequiredCrew() && Crew() && !IsDisabled();
+}
+
+
+
+double Ship::ChangeMorale(double amount)
+{
+	// Morale must be between -1000 and 1000.
+	morale = std::max(-1000., std::min(morale + amount, 1000.));
+	
+	return morale;
+}
+
+
+
+// Access the current morale rating of the ship
+double Ship::Morale() const
+{
+	return morale;
+}
+
+
+
+// Get a string description of the ship's current morale
+// Not free from a performance point of view; cache the result if needed
+string Ship::MoraleDescription() const
+{
+	return MoraleDescription::GetMoraleDescription(morale);
 }
 
 

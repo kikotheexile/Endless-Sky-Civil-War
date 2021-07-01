@@ -12,9 +12,11 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 #include "Account.h"
 
+#include "Crew.h"
 #include "DataNode.h"
 #include "DataWriter.h"
 #include "Format.h"
+#include "Ship.h"
 
 #include <algorithm>
 #include <sstream>
@@ -132,7 +134,13 @@ void Account::PayExtra(int mortgage, int64_t amount)
 
 
 // Step forward one day, and return a string summarizing payments made.
-string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
+string Account::Step(
+	int64_t assets,
+	int64_t salaries,
+	int64_t maintenance,
+	const std::vector<std::shared_ptr<Ship>> &ships,
+	const Ship * flagship
+)
 {
 	ostringstream out;
 	
@@ -150,6 +158,12 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 			// If you can't pay the full salary amount, still pay some of it and
 			// remember how much back wages you owe to your crew.
 			salariesPaid = max<int64_t>(credits, 0);
+			Crew::ProcessSalaries(
+				ships,
+				flagship,
+				salariesPaid / salariesOwed,
+				Crew::SALARY_FAILURE
+			);
 			salariesOwed -= salariesPaid;
 			credits -= salariesPaid;
 			missedPayment = true;
@@ -159,6 +173,12 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 		{
 			credits -= salariesOwed;
 			salariesOwed = 0;
+			Crew::ProcessSalaries(
+				ships,
+				flagship,
+				1.,
+				Crew::SALARY_PAYMENT
+			);
 		}
 	}
 	
@@ -195,6 +215,15 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 		if(payment > credits)
 		{
 			mortgage.MissPayment();
+			if(mortgage.Type() == "Profit Shares")
+				Crew::ProcessProfitSharingDebt(
+					ships,
+					flagship,
+					payment,
+					mortgage.Principal(),
+					Crew::PROFIT_SHARING_DEBT_FAILURE
+				);
+
 			if(!missedPayment)
 				out << "You missed a mortgage payment.";
 			missedPayment = true;
@@ -207,12 +236,22 @@ string Account::Step(int64_t assets, int64_t salaries, int64_t maintenance)
 			if(mortgage.Type() == "Mortgage")
 				mortgagesPaid += payment;
 			else if(mortgage.Type() == "Profit Shares")
+			{
+				Crew::ProcessProfitSharingDebt(
+					ships,
+					flagship,
+					payment,
+					mortgage.Principal(),
+					Crew::PROFIT_SHARING_DEBT_PAYMENT
+				);
 				profitSharesPaid += payment;
+			}
 			else
 				finesPaid += payment;
 		}
 		assets -= mortgage.Principal();
 	}
+
 	// If any mortgage has been fully paid off, remove it from the list.
 	for(auto it = mortgages.begin(); it != mortgages.end(); )
 	{

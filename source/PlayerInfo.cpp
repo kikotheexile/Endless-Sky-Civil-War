@@ -25,6 +25,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Hardpoint.h"
 #include "Messages.h"
 #include "Mission.h"
+#include "MoraleAffected.h"
 #include "Outfit.h"
 #include "Person.h"
 #include "Planet.h"
@@ -575,7 +576,13 @@ void PlayerInfo::IncrementDate()
 	
 	// Have the player pay salaries, mortgages, etc. and print a message that
 	// summarizes the payments that were made.
-	string message = accounts.Step(assets, Salaries(), Maintenance());
+	string message = accounts.Step(
+		assets,
+		Salaries(),
+		Maintenance(),
+		Ships(),
+		Flagship()
+	);
 	if(!message.empty())
 		Messages::Add(message);
 	
@@ -1665,18 +1672,49 @@ void PlayerInfo::FailMission(const Mission &mission)
 
 
 
-// Update mission status based on an event.
 void PlayerInfo::HandleEvent(const ShipEvent &event, UI *ui)
 {
-	// Combat rating increases when you disable an enemy ship.
 	if(event.ActorGovernment()->IsPlayer())
 		if((event.Type() & ShipEvent::DISABLE) && event.Target())
 		{
+			// Combat rating increases when you disable an enemy ship.
 			auto &rating = conditions["combat rating"];
 			static const int64_t maxRating = 2000000000;
 			rating = min(maxRating, rating + (event.Target()->Cost() + 250000) / 500000);
+
+			MoraleAffected::EnemyShipDisabled(
+				ships,
+				event.Target()
+			);
 		}
+
+	if(event.TargetGovernment()->IsPlayer() && event.Target())
+	{
+		if(event.Type() & ShipEvent::DISABLE)
+			MoraleAffected::FleetShipDisabled(
+				ships,
+				event.Target()
+			);
+
+		// The game emits two DESTROY events per ship: the first when hull runs out,
+		// the second when the ship finally explodes. The ShouldBeRemoved() check
+		// prevents us from emitting two Morale Events per ship.
+		if((event.Type() & ShipEvent::DESTROY) && !event.Target()->ShouldBeRemoved())
+		{
+			MoraleAffected::FleetShipDestroyed(
+				ships,
+				event.Target()
+			);
+
+			MoraleAffected::CrewMemberDeath(
+				ships,
+				event.Target(),
+				event.Target()->Crew()
+			);
+		}
+	}
 	
+	// Update mission status based on an event.
 	for(Mission &mission : missions)
 		mission.Do(event, *this, ui);
 	
