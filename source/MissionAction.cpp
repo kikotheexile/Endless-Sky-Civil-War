@@ -461,11 +461,12 @@ void MissionAction::Do(PlayerInfo &player, UI *ui, const System *destination, co
 		int64_t sharedProfit = Crew::ShareProfit(player.Ships(), player.Flagship(), payment);
 		player.Accounts().AddCredits(payment - sharedProfit);
 
-		Messages::Add(
-				"After receiving your mission payment, you distributed " +
-				Format::Number(sharedProfit) +
-				" credits among your fleet as profit shares."
-		);
+		if(sharedProfit > 0)
+			Messages::Add(
+					"After receiving your mission payment, you distributed " +
+					Format::Number(sharedProfit) +
+					" credits among your fleet as profit shares."
+			);
 	}
 
 	for(const auto &it : events)
