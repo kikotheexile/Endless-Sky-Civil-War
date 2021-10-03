@@ -3410,7 +3410,7 @@ system Danoa
 			distance 607
 			period 33.895
 	object "Wormhole Beta"
-		sprite planet/wormhole-red
+		sprite planet/lockedgate
 		distance 2077.64
 		period 1835.49
 
@@ -10867,7 +10867,7 @@ system "Ultima Thule"
 			distance 216
 			period 11.1964
 	object "Wormhole Alpha"
-		sprite planet/wormhole
+		sprite planet/lockedgate
 		distance 4208.63
 		period 2158.5
 
